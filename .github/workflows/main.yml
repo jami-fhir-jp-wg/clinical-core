@@ -9,7 +9,8 @@ on:
       - 'input/**'
       - '.github/workflows/main.yml'
   pull_request:
-    branches: [ develop1.0 ]   
+    branches: [ develop1.0 ]
+
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -85,7 +86,6 @@ jobs:
         : # 
         java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx https://tx.jpfhir.jp:8081
         : # java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
-
     - name: prepare gtz files for upload to remote site
       run: | 
         : # cd fsh-generated
@@ -94,7 +94,6 @@ jobs:
         : # mv eReferral-0.9.3.tgz ../eReferral-0.9.3.tgz
         : # cd ..
         tar czf output.tgz output
-
     - name: ssh key generate
       run: |
         echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
