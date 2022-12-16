@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>CLINICAL-CORE-SET\ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称） - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/JPCore.css" rel="stylesheet"/>
+    <link href="assets/css/fix-fonts.css" rel="stylesheet"/>
+    
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.jami.jp/">
+           <img height="60" alt="Visit JAMI website" src="assets/images/jami-logo.png"/>
+          </a>
+        </div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 Japan-JAMI ccs ImplementationGuide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - draft
+
+
+
+  JP
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">本文</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Artifacts
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifacts</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称）</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 Japan-JAMI ccs ImplementationGuide - Local Development build (v0.1.0). See the <a href="http://jpfhir.jp/fhir/ccs/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称）</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+    <tr><td><b>項目</b></td><td><b>内容</b></td></tr>
+    
+    <tr>
+      <td ><i>定義URL</i></td>
+      <td><span class="copy-text">http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set"/></span></td>
+    </tr>
+    <tr>
+      <td><i>Version</i></td>
+      <td><span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set|0.1.0"/></span></td>
+    </tr>
+    
+
+
+    <tr>
+      <td><i>Name</i></td>
+      <td><p>HL7Japan_JAMIccsImplementationGuide</p>
+</td>
+    </tr>
+
+
+    <tr>
+      <td><i>Title</i></td>
+      <td><p>HL7 Japan-JAMI ccs ImplementationGuide</p>
+</td>
+    </tr>
+
+<tr>
+  <td><i>Status</i></td>
+  <td>Draft
+    
+      ( 2022-12-16 )
+    </td>
+</tr>
+
+
+
+
+    <tr>
+      <td><i>Copyright</i></td>
+      <td><p>Copyright JAMI+JAHIS+HL7Japan+PMDA+etc. SS-MIX2-Specification Maintenance TaskForce, CC(Creative Commons license) BY-ND CC表示・改変禁止</p>
+</td>
+    </tr>
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#clinical-core" id="markdown-toc-clinical-core">clinical-core</a></li>
+  <li><a href="#名称fhirコアリソース取得基本仕様仮称" id="markdown-toc-名称fhirコアリソース取得基本仕様仮称">名称：FHIRコアリソース取得基本仕様（仮称）</a>    <ul>
+      <li><a href="#目的" id="markdown-toc-目的">目的：</a></li>
+      <li><a href="#コアリソースの範囲" id="markdown-toc-コアリソースの範囲">コアリソースの範囲：</a>        <ul>
+          <li><a href="#厚労省6情報" id="markdown-toc-厚労省6情報">厚労省6情報</a></li>
+          <li><a href="#追加情報" id="markdown-toc-追加情報">追加情報</a></li>
+        </ul>
+      </li>
+      <li><a href="#基本方針" id="markdown-toc-基本方針">基本方針：</a></li>
+      <li><a href="#詳細仕様" id="markdown-toc-詳細仕様">詳細仕様</a>        <ul>
+          <li><a href="#fhirリソース要求仕様" id="markdown-toc-fhirリソース要求仕様">FHIRリソース要求仕様</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#ss-mix2標準化ストレージ-マッピングガイドラインon-clinical-core-ig" id="markdown-toc-ss-mix2標準化ストレージ-マッピングガイドラインon-clinical-core-ig">SS-MIX2標準化ストレージ-マッピングガイドラインon Clinical-Core IG</a>    <ul>
+      <li><a href="#目的-1" id="markdown-toc-目的-1">目的：</a></li>
+    </ul>
+  </li>
+  <li><a href="#参考" id="markdown-toc-参考">参考</a></li>
+</ul>
+
+</div>
+<style type="text/css">
+
+table {
+  border: solid 1px black;
+  border-collapse: collapse;
+}
+ 
+table td {
+  border: solid 1px black;
+
+}
+
+table th {
+  border: solid 1px black;
+}
+   h1 {
+      counter-reset: chapter;
+    }
+
+    h2 {
+      counter-reset: sub-chapter;
+    }
+
+    h3 {
+      counter-reset: section;
+    }
+
+    h4 {
+      counter-reset: sub-section;
+    }
+
+    h5 {
+      counter-reset: composite;
+    }
+
+    h6 {
+      counter-reset: sub-composite;
+    }
+
+    h1:before {
+      color: black;
+      counter-increment: bchapter;
+      content:  " ";
+    }
+
+    h2:before {
+      color: black;
+      counter-increment: chapter;
+      content: counter(chapter) ". ";
+    }
+
+    h3:before {
+      color: black;
+      counter-increment: sub-chapter;
+      content: counter(chapter) "."counter(sub-chapter) ". ";
+    }
+
+
+    h4:before {
+      color: black;
+      counter-increment: section;
+      content: counter(chapter) "."counter(sub-chapter) "."counter(section) " ";
+    }
+
+    h5:before {
+      color: black;
+      counter-increment: sub-section;
+      content: counter(chapter) "."counter(sub-chapter) "."counter(section) "."counter(sub-section) " ";
+    }
+
+    h6:before {
+      color: black;
+      counter-increment: sub-sub-section;
+      content: "　　"counter(sub-sub-section) "）";
+    }
+
+</style>
+
+<h1 id="clinical-core">clinical-core</h1>
+<h1 id="名称fhirコアリソース取得基本仕様仮称">名称：FHIRコアリソース取得基本仕様（仮称）</h1>
+<h2 id="目的">目的：</h2>
+<p>厚労省が掲げる6情報（傷病名、アレルギー情報、感染症情報、薬剤禁忌情報、検査情報（救急時に有用な検査、 生活習慣病関連の検査） 、処方情報）および患者基本情報、外来受診情報、入退院歴情報、注射点滴情報について、医療機関に設置されるFHIR対応システムに対して、FHIR　REST-API仕様にもとづき、①対応するFHIRリソースの要求、②要求に対するFHIRリソースによる応答、のそれぞれで満たすべき必須要件を定めた仕様を策定し、実装ガイドを作成する。</p>
+
+<h2 id="コアリソースの範囲">コアリソースの範囲：</h2>
+<h3 id="厚労省6情報">厚労省6情報</h3>
+<ul>
+  <li>傷病名	Condition</li>
+  <li>アレルギー情報	AllergyIntolerance</li>
+  <li>感染症情報	Observation</li>
+  <li>薬剤禁忌情報	AllergyIntolerance
+　- 検査情報	Observation
+　- 処方情報	MedicationRequest</li>
+</ul>
+
+<h3 id="追加情報">追加情報</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- 患者基本情報	Patient
+- 外来受診歴情報	Encounter
+- 入退院歴情報	Encounter
+- 注射点滴情報	MedicationResuest
+</code></pre></div></div>
+
+<h2 id="基本方針">基本方針：</h2>
+<ol>
+  <li>各リソースの仕様はJP-Core V1.1に準拠する。必要な場合には、制約を緩める方向の仕様修正をJP-Coreに依頼する。</li>
+  <li>対応する各リソースのエレメント仕様について、①SS-MIX2標準化ストレージの仕様における対応メッセージの必須項目のデータが確実に格納でき、かつ②同ストレージで任意となっている項目のデータが必須エレメントとならないように、JP-Core V1.1に必要な制約と説明を追加する。ただし、HL7メッセージ管理目的の項目やSS-MIX2標準化ストレージ管理目的の項目はこの限りではない。</li>
+  <li>外部からのFHIR REST API仕様にもとづく要求に対して結果を応答する方式（Pull型）を基本とし、応答をファイル仕様にして外部になんらかのトリガーにより送信（Push型）する場合のファイル仕様を策定する。Push型では送信手順等は策定しない。</li>
+  <li>Pull型における１回の要求応答では、患者IDを1つだけ指定して一人の患者にもとづく情報のやりとりだけを行うものとする。</li>
+  <li>Pull型における要求は対応する特定のリソースを指定し、情報の絞り込み（特定）は、FHIR仕様にもとづいたパラメータ指定の組み合わせのみにより行う。</li>
+  <li>Pull型における応答およびPush型のがいる仕様では対応するリソースの1インスタンス以上の集合をBundleリソースでFHIR仕様にもとづいた形式で返すものとする。</li>
+  <li>認証の取り決めは本仕様のスコープ外とする。</li>
+  <li>実装ガイド（IG）を作成し、名称をClinical-Core IGとする。</li>
+</ol>
+
+<h2 id="詳細仕様">詳細仕様</h2>
+<h3 id="fhirリソース要求仕様">FHIRリソース要求仕様</h3>
+<p>＜エクセルも参照＞</p>
+
+<h1 id="ss-mix2標準化ストレージ-マッピングガイドラインon-clinical-core-ig">SS-MIX2標準化ストレージ-マッピングガイドラインon Clinical-Core IG</h1>
+<h2 id="目的-1">目的：</h2>
+<p>SS-MIX2標準化ストレージのデータ項目を確実にClinical-Core IG の対応リソースへ対応づけて変換するためにルールを作成し、ガイドラインとして公表する。
+SS-MIX2標準化ストレージからFHIRリソースデータを作成する際に、実装者はこれに準拠することを期待するものとする。</p>
+
+<h1 id="参考">参考</h1>
+<p>https://build.fhir.org/ig/HL7/v2-to-fhir/mappings.html
+<img src="https://user-images.githubusercontent.com/57020949/207955925-7ccbeb8b-5514-456a-a757-03ff5df12aac.png" alt="image" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="http://jpfhir.jp">Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo</a>.  Package clinical-core-set#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 16, 2022 08:37+0900">2022-12-16</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)"></span>
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -36,15 +36,16 @@ dependencies:
 
 pages:
   index.md:
-    title: ClinicalCoreSet
+    title: ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称）
 
 #-----------------------------------------
 # メニュー設定
 #-----------------------------------------
 menu:
   Home:
-    index.html
-
+    本文: index.html
+  Artifacts: 
+    Artifacts: artifacts.html
 
 #-----------------------------------------
 # IG 外部パラメータ設定
@@ -71,7 +72,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   excludexml: 'true'
   excludejsn: 'false'
   excludettl: 'true'
-  excludemap: 'true'
+  excludemap: 'false'
   excludeexample: 'false'
   generate: #what does this do - todo: remove and see
     - json

@@ -1,0 +1,53 @@
+{
+  "ImplementationGuide/clinical-core-set" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "/Users/kohe/GitHub/clinical-core/fsh-generated/resources/ImplementationGuide-clinical-core-set.json",
+    "sourceTail" : "ImplementationGuide-clinical-core-set.json",
+    "path" : "ImplementationGuide-clinical-core-set.html",
+    "url" : "http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set",
+    "version" : "0.1.0",
+    "name" : "HL7Japan_JAMIccsImplementationGuide",
+    "title" : "HL7 Japan-JAMI ccs ImplementationGuide",
+    "date" : "2022-12-16",
+    "description" : "HL7 Japan-JAMI ccs ImplementationGuide",
+    "jurisdictions" : [
+      {
+        "name" : "JP"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright JAMI+JAHIS+HL7Japan+PMDA+etc. SS-MIX2-Specification Maintenance TaskForce, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Patient-ccs" : {
+    "history" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Patient-ccs.json",
+    "sourceTail" : "StructureDefinition-JP-Patient-ccs.json",
+    "path" : "StructureDefinition-JP-Patient-ccs.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_ccs",
+    "version" : "0.1.0",
+    "name" : "JP_Patient_ccs",
+    "date" : "2022-12-16T08:37:16+09:00",
+    "description" : "対象患者のPatientプロファイル　JP_Patientの派生プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "JP"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright JAMI+JAHIS+HL7Japan+PMDA+etc. SS-MIX2-Specification Maintenance TaskForce, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  }
+}
