@@ -10,7 +10,7 @@ on:
       - '.github/workflows/main.yml'
   pull_request:
     branches: [ develop1.0 ]
-
+    
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -54,15 +54,15 @@ jobs:
         path: .
         file: publisher.jar
 
-    : # - name: Download Japanese version of hl7.fhir.core package
-    : #   uses: wei/wget@v1
-    : #   with:
-    : #     args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz
+    - name: Download Japanese version of hl7.fhir.core package
+      uses: wei/wget@v1
+      with:
+        args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz
 
     - name: Run IG Publisher
       env:
         PACKAGE: jp-core.r4#1.1.1-snap
-        : # PACKAGECORE: hl7.fhir.r4.core#4.0.1
+        PACKAGECORE: hl7.fhir.r4.core#4.0.1
       run: | 
         mkdir input-cache
         mv ./publisher.jar ./input-cache
@@ -86,22 +86,18 @@ jobs:
         : # 
         java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx https://tx.jpfhir.jp:8081
         : # java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
+
     - name: prepare gtz files for upload to remote site
       run: | 
-        : # cd fsh-generated
-        : # mv resources package
-        : # tar czf eReferral-0.9.3.tgz package
-        : # mv eReferral-0.9.3.tgz ../eReferral-0.9.3.tgz
-        : # cd ..
         tar czf output.tgz output
+
     - name: ssh key generate
-      run: |
-        echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
-        env:
+      run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
+      env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_TO_JPFHIR }}
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz ${{ secrets.JAMIWG_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs/ --exclude .htaccess
-        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs/ ; rm -rf output; tar xzf output.tgz; '
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  ${{ secrets.JAMIWG_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs/ --exclude .htaccess
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs/ ; tar xzf output.tgz; '
 
 
