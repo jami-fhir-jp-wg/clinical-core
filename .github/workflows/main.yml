@@ -10,7 +10,6 @@ on:
       - '.github/workflows/main.yml'
   pull_request:
     branches: [ develop1.0 ]
-    
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -94,16 +93,16 @@ jobs:
         : # tar czf eReferral-0.9.3.tgz package
         : # mv eReferral-0.9.3.tgz ../eReferral-0.9.3.tgz
         : # cd ..
-        : # tar czf output.tgz output
+        tar czf output.tgz output
 
     - name: ssh key generate
       run: |
-      : # echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
-      : # env:
-      : #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_TO_JPFHIR }}
+        echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_TO_JPFHIR }}
     - name: rsync remote-site-deploy
       run: |
-      : #   rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz eReferral-0.9.3.tgz ${{ secrets.JAMIWG_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/eReferral/ --exclude .htaccess
-      : #   ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/eReferral/ ; tar xzf output.tgz; '
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz ${{ secrets.JAMIWG_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs/ --exclude .htaccess
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs/ ; rm -rf output; tar xzf output.tgz; '
 
 
