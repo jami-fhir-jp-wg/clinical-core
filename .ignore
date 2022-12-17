@@ -1,6 +1,5 @@
 .DS_Store
 Thumbs.db
 /fsh-generated
-/input/fsh
-/output-json
-/packages_snapshot/package
+/output
+/input-cache
