@@ -1,0 +1,72 @@
+{
+  "toc.html" : {
+    "title" : "Table of Contents",
+    "label" : "0.0",
+    "breadcrumb" : "<li><b>Table of Contents</b></li>",
+    "next" : "index.html"
+  },
+  "index.html" : {
+    "title" : "ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称）",
+    "label" : "1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>ClinicalCoreSet FHIRコアリソース取得基本仕様（仮称）</b></li>",
+    "previous" : "toc.html",
+    "next" : "artifacts.html"
+  },
+  "artifacts.html" : {
+    "title" : "Artifacts Summary",
+    "label" : "2.0",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>",
+    "previous" : "index.html",
+    "next" : "StructureDefinition-JP-Patient-ccs.html"
+  },
+  "StructureDefinition-JP-Patient-ccs.html" : {
+    "title" : "JP_Patient_ccs",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "examples" : [],
+    "testscripts" : [],
+    "previous" : "artifacts.html",
+    "next" : "StructureDefinition-JP-Patient-ccs-definitions.html"
+  },
+  "StructureDefinition-JP-Patient-ccs-definitions.html" : {
+    "title" : "JP_Patient_ccs - Definitions",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "previous" : "StructureDefinition-JP-Patient-ccs.html",
+    "next" : "StructureDefinition-JP-Patient-ccs-mappings.html"
+  },
+  "StructureDefinition-JP-Patient-ccs-mappings.html" : {
+    "title" : "JP_Patient_ccs - Mappings",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "previous" : "StructureDefinition-JP-Patient-ccs-definitions.html",
+    "next" : "StructureDefinition-JP-Patient-ccs-testing.html"
+  },
+  "StructureDefinition-JP-Patient-ccs-testing.html" : {
+    "title" : "JP_Patient_ccs - Testing",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "previous" : "StructureDefinition-JP-Patient-ccs-mappings.html",
+    "next" : "StructureDefinition-JP-Patient-ccs.profile.xml.html"
+  },
+  "StructureDefinition-JP-Patient-ccs.profile.xml.html" : {
+    "title" : "JP_Patient_ccs - XML Representation",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "previous" : "StructureDefinition-JP-Patient-ccs-testing.html",
+    "next" : "StructureDefinition-JP-Patient-ccs.profile.json.html"
+  },
+  "StructureDefinition-JP-Patient-ccs.profile.json.html" : {
+    "title" : "JP_Patient_ccs - JSON Representation",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "previous" : "StructureDefinition-JP-Patient-ccs.profile.xml.html",
+    "next" : "StructureDefinition-JP-Patient-ccs.profile.ttl.html"
+  },
+  "StructureDefinition-JP-Patient-ccs.profile.ttl.html" : {
+    "title" : "JP_Patient_ccs - TTL Representation",
+    "label" : "2.1",
+    "breadcrumb" : "<li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>JP_Patient_ccs</b></li>",
+    "previous" : "StructureDefinition-JP-Patient-ccs.profile.json.html"
+  }
+}
