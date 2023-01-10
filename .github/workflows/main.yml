@@ -42,19 +42,12 @@ jobs:
       uses: Legion2/download-release-action@v2.1.0
       with:
         repository: HL7/fhir-ig-publisher
-        tag: '1.2.24'
         path: .
         file: publisher.jar
-
-    - name: Download Japanese version of hl7.fhir.core package
-      uses: wei/wget@v1
-      with:
-        args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz
 
     - name: Run IG Publisher
       env:
         PACKAGE: jp-core.r4#1.1.1-snap
-        PACKAGECORE: hl7.fhir.r4.core#4.0.1
       run: | 
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
