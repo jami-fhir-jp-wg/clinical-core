@@ -36,8 +36,10 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * name 1.. MS
 * name ^short = "患者の氏名"
 * name ^definition = "患者の氏名。漢字表記とカナ表記の別はname.extension.valueCode で表す。【SS-MIX2】PID-5[*]の情報。"
+* name.extension 1..1 MS
 * name.extension ^short = "氏名が漢字表記かカナ表記かを区別する拡張"
 * name.extension ^definition = "氏名が漢字表記かカナ表記かを区別する拡張"
+* name.extension.url 1..1 MS
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name.extension.valueCode 1..1 MS 
 * name.extension.valueCode ^short =  "漢字表記:\"IDE\"、カナ表記:\"SYL\"。"
@@ -95,10 +97,41 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * address 0..1 MS
 * address ^short = "患者の住所"
 * address ^definition = "患者の住所。"
+
 * address.text 1.. MS
-* address.text ^short = "患者の住所の文字列部分で、郵便番号部分を除く。"
+* address.text ^short = "患者の住所の文字列部分で、郵便番号部分を除く。【SS-MIX2】<PID-11-8>地理的な表示"
 * address ^example.label = "General"
-* address ^example.valueString = "東京都文京区"
+* address ^example.valueString = "東京都文京区本郷7-3-1"
+
+* address.use 0..1 MS
+* address.use  ^short = "住所の用途　home、work、temp、old、billing"
+* address.use  ^comment = "【SS-MIX2】<PID-11-7>住所タイプコード H:自宅-> \"home\""
+* address ^example.label = "General"
+* address ^example.valueCode = #home
+
+* address.line 0..1 MS
+* address.line ^example.label = "General"
+* address.line ^example.valueString = "本郷7-3-1"
+
+* address.city 0..1 MS
+* address.city ^example.label = "General"
+* address.city ^example.valueString = "文京区"
+
+* address.district ..0 MS
+
+* address.state 0..1 MS
+* address.state ^example.label = "General"
+* address.state ^example.valueString = "東京都"
+
 
 * address.postalCode 1.. MS
+* address.postalCode  ^short = "郵便番号"
+* address.postalCode  ^definition = "郵便番号"
+* address.postalCode  ^Comments = "郵便番号。日本の郵便番号の場合には3桁数字とハイフン1文字と4桁数字からなる半角８文字、または最初の3桁だけの3文字のいずれかとする。【SS-MIX2】<PID-11-5>郵便番号"
+* address.postalCode ^example.label = "General"
+* address.postalCode ^example.valueString = "113-0047"
+
+
 * address.country 0.. MS
+* address.country ^example.label = "General"
+* address.country ^example.valueString = "jp"
