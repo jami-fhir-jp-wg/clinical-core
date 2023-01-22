@@ -97,8 +97,8 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * address ^definition = "患者の住所。"
 * address.text 1.. MS
 * address.text ^short = "患者の住所の文字列部分で、郵便番号部分を除く。"
-* address.exapmle.label = "General"
-* address.exapmle.valueString = "東京都文京区"
+* address ^example.label = "General"
+* address ^example.valueString = "東京都文京区"
 
 * address.postalCode 1.. MS
 * address.country 0.. MS
