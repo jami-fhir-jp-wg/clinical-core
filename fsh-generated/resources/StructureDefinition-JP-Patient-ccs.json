@@ -151,7 +151,10 @@
         "id": "Patient.name.extension",
         "path": "Patient.name.extension",
         "short": "氏名が漢字表記かカナ表記かを区別する拡張",
-        "definition": "氏名が漢字表記かカナ表記かを区別する拡張"
+        "definition": "氏名が漢字表記かカナ表記かを区別する拡張",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
       },
       {
         "id": "Patient.name.extension.extension",
@@ -162,6 +165,7 @@
         "id": "Patient.name.extension.url",
         "path": "Patient.name.extension.url",
         "patternUri": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "ssmix2-adt00-pid-r4-jppatient",
@@ -376,7 +380,8 @@
         "example": [
           {
             "label": "General",
-            "valueString": "東京都文京区"
+            "valueString": "東京都文京区本郷7-3-1",
+            "valueCode": "home"
           }
         ],
         "mustSupport": true
@@ -384,6 +389,9 @@
       {
         "id": "Patient.address.use",
         "path": "Patient.address.use",
+        "short": "住所の用途　home、work、temp、old、billing",
+        "comment": "【SS-MIX2】<PID-11-7>住所タイプコード H:自宅-> \"home\"",
+        "mustSupport": true,
         "mapping": [
           {
             "identity": "ssmix2-adt00-pid-r4-jppatient",
@@ -394,7 +402,7 @@
       {
         "id": "Patient.address.text",
         "path": "Patient.address.text",
-        "short": "患者の住所の文字列部分で、郵便番号部分を除く。",
+        "short": "患者の住所の文字列部分で、郵便番号部分を除く。【SS-MIX2】<PID-11-8>地理的な表示",
         "min": 1,
         "mustSupport": true,
         "mapping": [
@@ -405,9 +413,58 @@
         ]
       },
       {
+        "id": "Patient.address.line",
+        "path": "Patient.address.line",
+        "max": "1",
+        "example": [
+          {
+            "label": "General",
+            "valueString": "本郷7-3-1"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.city",
+        "path": "Patient.address.city",
+        "example": [
+          {
+            "label": "General",
+            "valueString": "文京区"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.district",
+        "path": "Patient.address.district",
+        "max": "0",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.address.state",
+        "path": "Patient.address.state",
+        "example": [
+          {
+            "label": "General",
+            "valueString": "東京都"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.address.postalCode",
         "path": "Patient.address.postalCode",
+        "short": "郵便番号",
+        "definition": "郵便番号",
+        "comment": "郵便番号。日本の郵便番号の場合には3桁数字とハイフン1文字と4桁数字からなる半角８文字、または最初の3桁だけの3文字のいずれかとする。【SS-MIX2】<PID-11-5>郵便番号",
         "min": 1,
+        "example": [
+          {
+            "label": "General",
+            "valueString": "113-0047"
+          }
+        ],
         "mustSupport": true,
         "mapping": [
           {
@@ -419,6 +476,12 @@
       {
         "id": "Patient.address.country",
         "path": "Patient.address.country",
+        "example": [
+          {
+            "label": "General",
+            "valueString": "jp"
+          }
+        ],
         "mustSupport": true,
         "mapping": [
           {

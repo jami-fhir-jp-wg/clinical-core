@@ -127,7 +127,7 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * address.postalCode 1.. MS
 * address.postalCode  ^short = "郵便番号"
 * address.postalCode  ^definition = "郵便番号"
-* address.postalCode  ^Comments = "郵便番号。日本の郵便番号の場合には3桁数字とハイフン1文字と4桁数字からなる半角８文字、または最初の3桁だけの3文字のいずれかとする。【SS-MIX2】<PID-11-5>郵便番号"
+* address.postalCode  ^comment = "郵便番号。日本の郵便番号の場合には3桁数字とハイフン1文字と4桁数字からなる半角８文字、または最初の3桁だけの3文字のいずれかとする。【SS-MIX2】<PID-11-5>郵便番号"
 * address.postalCode ^example.label = "General"
 * address.postalCode ^example.valueString = "113-0047"
 
