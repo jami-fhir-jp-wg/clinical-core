@@ -102,7 +102,7 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者
 * telecom.system 0..1 MS
 * telecom.system ^short = "患者の連絡先のタイプコード"
 * telecom.system ^definition = "患者の連絡先のタイプコード。phone、fax、email、pager、url、sms、otherが使用可能。"
-* telecom.system ^comment = "【SS-MIX2】<PID-13or14-3> PH:電話の場合、phoheを設定。【JP Core仕様】患者の連絡先の種別をValueSet(ContactPointSystem)より選択する。  
+* telecom.system ^comment = "【SS-MIX2】<PID-13or14-3> PH:電話の場合、phoneを設定。【JP Core仕様】患者の連絡先の種別をValueSet(ContactPointSystem)より選択する。  
 - phone : 電話
 - fax : Fax 
 - email : 電子メール
