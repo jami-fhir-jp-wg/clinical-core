@@ -20,7 +20,7 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレ
 // IAM-17 アレルギー臨床確認状況
 * verificationStatus ^short = "unconfirmed | confirmed | refuted | entered-in-error (未確認 | 確認済み | 否定された | 入力エラー)"
 * verificationStatus ^definition = "特定された物質（医薬品を含む）が有害反応を誘発する確実性の度合い。"
-* verificationStatus  ^comment = "【SS-MIX2】<IAM-17> コード表「-#0438 アレルギー臨床状態」U(未確認)->"unconfirmed"、(P)保留、(S)疑わしい、(C)確認済み->"confirmed"、(I)確認済み（非活性）->"confirmed"、(E)誤り->"entered-in-error"、(D)疑問あり->"unconfirmed""
+* verificationStatus  ^comment = "【SS-MIX2】<IAM-17> コード表「-#0438 アレルギー臨床状態」U(未確認)->\"unconfirmed\"、(P)保留、(S)疑わしい、(C)確認済み->\"confirmed\"、(I)確認済み（非活性）->\"confirmed\"、(E)誤り->\"entered-in-error\"、(D)疑問あり->\"unconfirmed\""
 
 // IAM-9 アレルギー物質に対する感受性 (コード表「#0436 アレルギー物質に対する感受性」）
 * type MS
