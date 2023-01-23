@@ -48,16 +48,7 @@
     }
   ],
   "definition": {
-    "resource": [
-      {
-        "reference": {
-          "reference": "StructureDefinition/JP-Patient-ccs"
-        },
-        "name": "JP_Patient_ccs",
-        "description": "対象患者のPatientプロファイル　JP_Patientの派生プロファイル",
-        "exampleBoolean": false
-      }
-    ],
+    "resource": [],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",
