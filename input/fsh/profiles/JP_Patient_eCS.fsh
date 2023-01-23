@@ -1,8 +1,12 @@
+// ==============================
+//   Profile 定義
+// ==============================
 Profile: JP_Patient_ccs
 Parent: JP_Patient
-Id: JP-Patient-ccs
-Description: "対象患者のPatientプロファイル　JP_Patientの派生プロファイル"
-* ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_ccs"
+Id: jp-patient-ccs
+Title: "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者基本情報Patientリソースプロファイル"
+Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者基本情報Patientリソースプロファイル　JP_Patientの派生プロファイル"
+* ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_CCS"
 * ^status = #active
 * ^date = "2023-01-23"
 
