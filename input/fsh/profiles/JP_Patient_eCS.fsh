@@ -36,7 +36,7 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * identifier.system ^definition = "固定値:\"urn:oid:1.2.392.100495.20.3.51.医療機関識別OID番号\""
 * identifier.system ^comment = "医療機関識別OID番号;患者IDの発行者である機関の医療機関コード（１０桁）の先頭に１をつけた11桁"
 * identifier.system ^example.label = "General"
-* identifier.system ^example.label = "urn:oid:1.2.392.100495.20.3.51.10211234567"
+* identifier.system ^example.valueUri = "urn:oid:1.2.392.100495.20.3.51.10211234567"
 
 * identifier.value 1.. MS
 * identifier.value  ^short = "当該医療機関における患者ID。"
@@ -44,7 +44,7 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * identifier.value ^comment =  "英数字列とし、途中にはいる記号は原則として削除する。[SS-MIX2]
 英数字 6 文字以上で設定する。なお、患者 ID が 6 桁未満で表現される可能性がある場合は、6 桁以上になるように設定する。原則として、先頭に０をつけたその医療機関の患者IDは全て同じ固定桁数となるようにすること。"
 * identifier.value ^example.label = "General"
-* identifier.value ^example.label = "0123456"
+* identifier.value ^example.valueString = "0123456"
 
 * name 1.. MS
 * name ^short = "患者の氏名"
@@ -59,7 +59,7 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * name.extension.valueCode ^definition =  "漢字表記:\"IDE\"、カナ表記:\"SYL\"。"
 * name.extension.valueCode ^comment =  "【SS-MIX2】<PID-5[*]-8>='I'の場合、そのパートは漢字表記、 <PID-5[*]-8>='P'の場合、そのパートはカナ表記、"
 * name.extension.valueCode ^example.label = "General"
-* name.extension.valueCode ^example.label = #IDE
+* name.extension.valueCode ^example.valueCode = #IDE
 
 * name.use 0..1 MS
 * name.use ^short = "氏名の用途タイプ。通常は \"official\"を使用する（住民票や保険証と一致した名前）。"
@@ -99,7 +99,7 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * telecom.system  ^example.label = "General"
 * telecom.system  ^example.valueCode = #phone
 
-* telecom.value 0..1 MS
+* telecom.value 1..1 MS
 * telecom.value ^short = "患者の連絡先の文字列"
 * telecom.value ^definition = "患者の連絡先の文字列。\"054-211-9999\"など。"
 * telecom.value ^comment = "【SS-MIX2】「054-211-9999」のような非定型形式の電話番号の場合、<PID-13or14-12>の文字列に相当。"
@@ -121,50 +121,66 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * gender  ^example.valueCode = #female
 
 * birthDate 1.. MS
-* birthDate ^short = "患者の生年月日"
+* birthDate ^short = "患者の生年月日。YYYY-MM-DD形式"
 * birthDate ^definition = "患者の生年月日。YYYY-MM-DD形式"
 * birthDate ^comment = "【SS-MIX2】<PID-7> (YYYYMMDD形式)を、YYYY-MM-DD形式に変換。"
 * birthDate  ^example.label = "General"
 * birthDate  ^example.valueDate = "1960-12-03"
 
 * address 0..1 MS
-* address ^short = "患者の住所"
-* address ^definition = "患者の住所。"
+* address ^short = "患者の住所情報"
+* address ^definition = "患者の住所情報"
+* address ^comment = "【SS-MIX2】<PID-11>に対応"
 
 * address.text 1.. MS
-* address.text ^short = "患者の住所の文字列部分で、郵便番号部分を除く。【SS-MIX2】<PID-11-8>地理的な表示"
+* address.text ^short = "患者の住所の文字列部分で、郵便番号部分を除く。"
+* address.text ^definition = "患者の住所の文字列部分で、郵便番号部分を除く。"
+* address.text ^comment = "SS-MIX2】<PID-11-8>地理的な表示"
 * address.text  ^example.label = "General"
 * address.text  ^example.valueString = "東京都文京区本郷7-3-1"
 
 * address.use 0..1 MS
-* address.use  ^short = "住所の用途　home、work、temp、old、billing"
+* address.use  ^short = "住所の用途コード　home、work、temp、old、billing"
+* address.use  ^definition = "住所の用途コード　home、work、temp、old、billing"
 * address.use  ^comment = "【SS-MIX2】<PID-11-7>住所タイプコード H:自宅-> \"home\""
 * address.use   ^example.label = "General"
 * address.use   ^example.valueCode = #home
 
 * address.line 0..1 MS
+* address.line ^short = "ストリート名や番地など"
+* address.line ^definition = "このコンポーネントには、家番号、アパート番号、通りの名前、通りの方向、P.O。が含まれる。ボックス番号、配達のヒント、および同様の住所情報など。"
+* address.line ^comment = "【SS-MIX2】<PID-11-1> 通りの住所。および<PID-11-2>その他の住所表示（住所の２行目）【JP Core仕様】state要素とcity要素で表現しなかったそのあとの住所部分を番地以降の部分も含めてすべていれる。  
+英数字は半角でも全角でもよい。文字列の前後および途中に空白文字を含めないこと。  
+繰り返し要素が許されているので、区切りを表現したい場合には、複数要素に分けて格納してもよい。"
 * address.line ^example.label = "General"
 * address.line ^example.valueString = "本郷7-3-1"
 
 * address.city 0..1 MS
+* address.city ^short = "市区町村名 【詳細参照】"
+* address.city ^definition = "市、町、郊外、村、その他のコミュニティまたは配達センターの名前。"
+* address.city ^comment = "【SS-MIX2】<PID-11-3> （住所の）市。【JP Core仕様】郡市区町村部分だけを「郡」「市」「区」「町」「村」などの文字を含めて設定する。 例：文京区"
 * address.city ^example.label = "General"
 * address.city ^example.valueString = "文京区"
 
 * address.district ..0 MS
 
 * address.state 0..1 MS
+* address.state ^short = "国の直下レベルの地区単位で、都道府県名に相当"
+* address.state ^definition = "都道府県名。「都」「道」「府」「県」のそれぞれの文字を含める。 例：東京都"
+* address.state ^comment = "【SS-MIX2】<PID-11-4>州または省、都道府県"
 * address.state ^example.label = "General"
 * address.state ^example.valueString = "東京都"
 
-
 * address.postalCode 1.. MS
 * address.postalCode  ^short = "郵便番号"
-* address.postalCode  ^definition = "郵便番号"
-* address.postalCode  ^comment = "郵便番号。日本の郵便番号の場合には3桁数字とハイフン1文字と4桁数字からなる半角８文字、または最初の3桁だけの3文字のいずれかとする。【SS-MIX2】<PID-11-5>郵便番号"
+* address.postalCode  ^definition = "郵便番号。日本の郵便番号の場合には3桁数字とハイフン1文字と4桁数字からなる半角８文字、または最初の3桁だけの3文字のいずれかとする。"
+* address.postalCode  ^comment = "【SS-MIX2】<PID-11-5>郵便番号"
 * address.postalCode ^example.label = "General"
 * address.postalCode ^example.valueString = "113-0047"
 
-
 * address.country 0.. MS
+* address.country ^short = "国名またはISO 3166コード"
+* address.country ^definition = "一般的に理解されている、または一般的に受け入れられている国の国名かISO 3166コード。"
+* address.country ^comment = "【SS-MIX2】<PID-11-6>国コード"
 * address.country ^example.label = "General"
 * address.country ^example.valueString = "jp"
