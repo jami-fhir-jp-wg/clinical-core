@@ -196,4 +196,5 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * address.country ^example.label = "General"
 * address.country ^example.valueString = "jp"
 
+* communication 0..1 MS
 * communication.language MS
