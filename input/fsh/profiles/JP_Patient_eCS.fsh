@@ -6,13 +6,16 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * ^status = #active
 * ^date = "2023-01-23"
 
+* meta.source  1..1 MS
 * meta.source  ^short = "情報の出所"
 * meta.source  ^definition = "情報の出所"
 * meta.source  ^comment = "【SS-MIX2】\"http://jpfhir.jp/ssmix2std/<MSH-21-1>/医療機関識別OID番号\"【電子カルテ】適宜設定してよいが、最後のパートに医療機関番号11桁を設定すること。"
 
+* meta.profile 1..1 MS
 * meta.profile  ^short = "適用するFHIR プロファイルのURL.固定値:\"http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient_ccs\""
 * meta.profile  ^definition = "適用するFHIR プロファイルのURL.固定値:\"http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient_ccs\""
 
+* text 0..1 
 * text.status ^short = "固定値:generated テキスト内容の全てがリソースのコンテンツから生成されたことを示す。"
 * text.status ^definition = "固定値:generated テキスト内容の全てがリソースのコンテンツから生成されたことを示す。"
 
@@ -184,3 +187,5 @@ Description: "対象患者のPatientプロファイル　JP_Patientの派生プ�
 * address.country ^comment = "【SS-MIX2】<PID-11-6>国コード"
 * address.country ^example.label = "General"
 * address.country ^example.valueString = "jp"
+
+* communication.language MS
