@@ -44,12 +44,12 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレ
 * patient only Reference(JP_Patient)
 * patient ^short = "このアレルギー不耐症を有する患者"
 * patient ^definition = "このアレルギー不耐症を有する患者。"
-* patient ^comment "Patient/患者ID　と記述する。"
+* patient ^comment = "Patient/患者ID　と記述する。"
 
 * encounter MS
 * encounter only Reference(JP_Encounter)
 * encounter ^short = "このアレルギー不耐症が判明した受療の状況（外来、入院、救急、在宅など）"
-* encounter ^definition = "このアレルギー不耐症が判明した受療の状況（外来、入院、救急、在宅など）
+* encounter ^definition = "このアレルギー不耐症が判明した受療の状況（外来、入院、救急、在宅など）"
 * onset[x] MS
 * onset[x] ^short = "このアレルギー不耐症の発症（検出）時期"
 * onset[x] ^definition = "このアレルギー不耐症が同定された事実もしくは推定された時期（日付、日時、年齢）。"
