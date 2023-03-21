@@ -48,7 +48,112 @@
     }
   ],
   "definition": {
-    "resource": [],
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-allergyintolerance-ccs"
+        },
+        "name": "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル",
+        "description": "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル。JP_AllergyIntoleranceの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-allergyintolerance-drugcix-ccs"
+        },
+        "name": "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル",
+        "description": "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル。JP_AllergyIntoleranceの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-condition"
+        },
+        "name": "JP Core Condition Profile",
+        "description": "このプロファイルはConditionリソースに対して、患者の健康状態に関するデータを送受信するための共通の制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-encounter"
+        },
+        "name": "JP Core Encounter Profile",
+        "description": "このプロファイルはEncounterリソースに対して、来院/入院情報のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-medicationrequest"
+        },
+        "name": "JP Core MedicationRequest Profile",
+        "description": "このプロファイルはMedicationRequestリソースに対して、内服・外用薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-medicationrequest-injection"
+        },
+        "name": "JP Core MedicationRequest Injection Profile",
+        "description": "このプロファイルはMedicationRequestリソースに対して、注射薬剤処方のデータを送受信するための基礎となる制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-observation-bodymeasurement"
+        },
+        "name": "JP Core Observation BodyMeasurement Profile",
+        "description": "このプロファイルはObservationリソースに対して、身体計測のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-observation-labresult-ccs"
+        },
+        "name": "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル",
+        "description": "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル。JP_Observation_LabResultの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-observation-physicalexam"
+        },
+        "name": "JP Core Observation PhysicalExam Profile",
+        "description": "このプロファイルはObservationリソースに対して、身体所見のデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-observation-vitalsigns"
+        },
+        "name": "JP Core Observation VitalSigns Profile",
+        "description": "このプロファイルはObservationリソースに対して、バイタルサインのデータを送受信するための制約と拡張を定めたものである。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-patient-ccs"
+        },
+        "name": "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者基本情報Patientリソースプロファイル",
+        "description": "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者基本情報Patientリソースプロファイル　JP_Patientの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-medicationrequest-dispenserequest-expectedrepeatcount"
+        },
+        "name": "JP Core MedicationRequest DispenseRequest ExpectedRepeatCount Extension",
+        "description": "頓用回数",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense"
+        },
+        "name": "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
+        "description": "調剤指示。薬剤単位の調剤指示を表現するための拡張",
+        "exampleBoolean": false
+      }
+    ],
     "page": {
       "nameUrl": "toc.html",
       "title": "Table of Contents",

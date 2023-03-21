@@ -1,0 +1,244 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "jp-observation-labresult-ccs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Diagnostics"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_AllergyIntolerance_CCS",
+  "version": "0.1.0",
+  "name": "JP_Observation_LabResult_CCS",
+  "title": "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル",
+  "status": "active",
+  "date": "2023-03-15",
+  "description": "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル。JP_Observation_LabResultの派生プロファイル",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "definition": "検体検査結果の格納に使用する。",
+        "comment": "検体検査結果の制約プロファイル"
+      },
+      {
+        "id": "Observation.text",
+        "path": "Observation.text",
+        "short": "このリソースを人間が直感的に概要を解釈するためのテキスト要約",
+        "definition": "以降の要素の情報から計算機により自動生成されること。このテキストには情報に過不足がありうるので、受信側がこの情報を一部情報の可視化確認ためだけに利用するものとし、医療情報の構造的情報として使用してはならない。"
+      },
+      {
+        "id": "Observation.contained",
+        "path": "Observation.contained",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Observation.contained:patient",
+        "path": "Observation.contained",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.contained:specimen",
+        "path": "Observation.contained",
+        "sliceName": "specimen",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Specimen"
+          }
+        ]
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "definition": "この検査項目に割り当てられた一意の識別子。リソースの識別子やシステム的なシーケンスではなく、ビジネスID。"
+      },
+      {
+        "id": "Observation.identifier.use",
+        "path": "Observation.identifier.use",
+        "definition": "この識別子の目的。",
+        "comment": "アプリケーションは、identifierが一時的であると明示的に述べられない限り、永続的であると想定できる。"
+      },
+      {
+        "id": "Observation.identifier.value",
+        "path": "Observation.identifier.value",
+        "definition": "システムのコンテキスト内で一意の識別子となる文字列を設定。"
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "definition": "検査結果値の状態。",
+        "comment": "【JP Core仕様】v2.5の「F」に相当する値は「final」であるが、ここでは 必須コード表「ObservationStatus」より、全てのコード値を使用可とする。-\n(registered | preliminary | final | amended |   corrected | cancelled | entered-in-error | unknown)",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "definition": "行われた検査の一般的なタイプの分類。取得、表示の際のフィルタリングに使用。",
+        "comment": "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "comment": "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "definition": "検査項目のコードと名称",
+        "comment": "JLAC10必須の項目と任意の項目がある。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "definition": "コード体系によって定義されたコードへの参照。",
+        "comment": "標準コード、ローカルコードの2つを設定可能とし、いずれか一方は必須とする。さらにJLAC10とJLAC11などの複数の標準コードも設定できるよう、上限は設けない。\r\n\r\n標準コード、ローカルコードの2つまで格納可。順不同。\r\nSS-MIX2だとCWE.1 ～CWE.3に標準コード、CWE.4～CWE.6にローカルコード、など（順不同）。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "definition": "コード体系。",
+        "comment": "【JP Core仕様】標準コードの場合、JLAC10を表すURIを設定。\r\n\r\nURIは本WGで定義する。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.code",
+        "path": "Observation.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "definition": "項目名。報告書などに記載する場合に使用する表示名。",
+        "comment": "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "definition": "検体検査の対象となる患者。",
+        "comment": "【JP Core仕様】このプロファイルでは、Patient 限定、かつ必須とする。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "definition": "この検査が行われるヘルスケアイベント。医療提供者と患者の接点。",
+        "comment": "【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報に使用する。\r\n\r\n※このプロファイルの用途では通常は必須と考えられるが、ユースケースにより使用されない場合を考慮し、1..1に制約しない。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "definition": "検体検査の場合は、検体採取日時。",
+        "comment": "【Clinical Core Set仕様】dateTime型に限定する",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "検体検査の結果",
+        "definition": "検体検査の結果"
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "definition": "検査結果値が欠落している理由。",
+        "comment": "【JP Core仕様】SS-MIX2で未使用だが、valueの欠落時に使用する必要があり、重要な項目である。\r\n\r\n制約「obs-6」に示す通り、valueが存在する場合、当該項目は存在してはならない。\r\n\r\ntextのみでの使用は基本的に不可とし、必ずcodingを設定すること。\r\n\r\n(unknown |   asked-unknown |   temp-unknown |   not-asked |   asked-declined | masked | not-applicable | unsupported | as-text | error |   not-a-number |   negative-infinity |   positive-infinity | not-performed | not-permitted)"
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "definition": "検査結果値の、（高、低、正常）といったカテゴリー評価。結果報告書に記載されることもある情報。",
+        "comment": "【JP Core仕様】拡張可コード表「ObservationInterpretationCodes」を使用する。\r\n\r\nコード表が大きいため、下記参照。\r\n\r\nhttps://www.hl7.org/fhir/R4/valueset-observation-interpretation.html",
+        "requirements": "特に数値結果については、結果の重要性を完全に理解するために解釈を必要とする場合がある。",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://jpfhir.jp/...."
+        }
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "definition": "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。"
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "definition": "この検査に使用された検体（標本）。",
+        "comment": "【JP Core仕様】必須とする。"
+      }
+    ]
+  }
+}

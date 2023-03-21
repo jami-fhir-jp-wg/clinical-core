@@ -1,0 +1,169 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "jp-allergyintolerance-drugcix-ccs",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_CCS",
+  "version": "0.1.0",
+  "name": "JP_AllergyIntolerance_DrugCIX_CCS",
+  "title": "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル",
+  "status": "active",
+  "date": "2023-01-23",
+  "description": "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル。JP_AllergyIntoleranceの派生プロファイル",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance",
+        "path": "AllergyIntolerance",
+        "short": "アレルギー不耐症 (特定の物質への暴露で生じた有害反応)",
+        "definition": "このリソースは患者のアレルギー不耐症を表現する。具体的には、特定の物質または物質群への暴露によって生じる有害反応の傾向や、潜在的なリスクを表現する。"
+      },
+      {
+        "id": "AllergyIntolerance.text",
+        "path": "AllergyIntolerance.text",
+        "short": "このリソースを人間が解釈するためのテキスト要約"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus",
+        "path": "AllergyIntolerance.clinicalStatus",
+        "short": "このアレルギー不耐症のステータス",
+        "definition": "このアレルギー不耐症のステータス。active | inactive | resolved (アクティブ | 非アクティブ | 解決済み"
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus",
+        "path": "AllergyIntolerance.verificationStatus",
+        "definition": "特定された物質（医薬品を含む）が有害反応を誘発する確実性の度合い。",
+        "comment": "【SS-MIX2】<IAM-17> コード表「-#0438 アレルギー臨床状態」U(未確認)->\"unconfirmed\"、(P)保留、(S)疑わしい、(C)確認済み->\"confirmed\"、(I)確認済み（非活性）->\"confirmed\"、(E)誤り->\"entered-in-error\"、(D)疑問あり->\"unconfirmed\""
+      },
+      {
+        "id": "AllergyIntolerance.type",
+        "path": "AllergyIntolerance.type",
+        "short": "アレルギーか不耐性かの区分。allergy | intolerance - Underlying mechanism (if known) （アレルギー | 不耐症）",
+        "definition": "有害反応を誘発する生理的なメカニズムが特定できる場合にアレルギーか不耐性かを区別する。",
+        "comment": "【SS-MIX2】<IAM-9> アレルギー物質に対する感受性 (コード表「#0436 アレルギー物質に対する感受性」AD(他に分類できない副作用)->\"intolerance\"、 AL(アレルギー)->\"allergy\"、CT(禁忌)->\"intolerance\"、IN(過敏症)->\"intolerance\"",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+        "short": "同定された物質のカテゴリー. food | medication | environment | biologic (食品 | 薬品 | 環境 | 生体)",
+        "definition": "同定された物質のカテゴリー",
+        "comment": "【SS-MIX2】<IAM-2> アレルゲン分類「0127-アレルゲン分類」コード表　DA(薬物)->\"medication\"、FA(食物)->\"food\"、EA(環境)->\"environment\"、AA(動物),PA(植物),LA(花粉)->\"biologic\"、MA(種々のアレルギー),MC(種々の禁忌)については適切な分類先コードがないので、分類先不能の場合には\"biologic\"としておく。",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.criticality",
+        "path": "AllergyIntolerance.criticality",
+        "short": "同定された物質が誘発する有害反応の臨床的な重要度。low | high | unable-to-assess (低い | 高い | 評価できない)",
+        "definition": "同定された物質が誘発する有害反応の臨床的な重要度。",
+        "comment": "【SS-MIX2】<IAM-4> アレルギー重症度「0128-アレルゲン重症度」コード表　SV(重度)->\"high\"、MO(中等度)->\"high\"、MI(軽度)->\"low\"、U（不明）->\"high\"",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.code",
+        "path": "AllergyIntolerance.code",
+        "short": "このアレルギー不耐症の識別コード",
+        "definition": "アレルギー不耐症を識別するためのコード（肯定または否定・除外の両者を含む）。このコードは、アレルゲンとなる物資（例:Latex）、状態としてのアレルギー不耐性（例:Latex allergy）、特定の物質やクラスに対する否定・除外コード（例: No latex allergy）、物質やクラス全般に対する否定・除外コード（例: No known allergy, No known drug allergies）などが考えられる。\r\n\r\n注: 特定の有害反応を誘発する物質は、原因として特定された物質と異なっていてもよいが、整合がとれていなければならない。たとえば、より具体的な物質（ブランド薬など）や、特定された物質を含む複合製品の場合がある。\r\nAllergyIntolerance.codeのみを処理し、AllergyIntolerance.reaction.substanceを無視しても、臨床的に安全でなければならない。\r\n受信システムがAllergyIntolerance.reaction.substanceがAllergyIntolerance.codeのセマンティックスコープ内に（前者が後者の意味的な下位概念にあること）を確認できない場合、受信システムはAllergyIntolerance.reaction.substanceを無視する必要がある。",
+        "comment": "【SS-MIX2】<IAM-3>アレルゲン情報。【JP Core仕様】このプロファイルを利用するにあたっては注意事項も参照のこと。[JP Core Allergyintoleranceプロファイル 注意事項]",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "short": "このアレルギー不耐症を有する患者",
+        "definition": "このアレルギー不耐症を有する患者。",
+        "comment": "Patient/患者ID　と記述する。"
+      },
+      {
+        "id": "AllergyIntolerance.encounter",
+        "path": "AllergyIntolerance.encounter",
+        "short": "このアレルギー不耐症が判明した受療の状況（外来、入院、救急、在宅など）",
+        "definition": "このアレルギー不耐症が判明した受療の状況（外来、入院、救急、在宅など）",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.onset[x]",
+        "path": "AllergyIntolerance.onset[x]",
+        "short": "このアレルギー不耐症の発症（検出）時期",
+        "definition": "このアレルギー不耐症が同定された事実もしくは推定された時期（日付、日時、年齢）。",
+        "comment": "？【SS-MIX2】<IAM-13>情報提供日時(アレルギーが医療提供者に情報提供された日時) でよいか？",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.recordedDate",
+        "path": "AllergyIntolerance.recordedDate",
+        "short": "このアレルギー不耐症が初めて記録された日時",
+        "definition": "このアレルギー不耐症の記録がシステムで作成された日時を表し、多くの場合、システムが生成した日付である。",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.recorder",
+        "path": "AllergyIntolerance.recorder",
+        "short": "誰がこのアレルギー不耐症を記録したか",
+        "definition": "このアレルギー不耐症を記録しその内容に責任を持つ個人。",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.asserter",
+        "path": "AllergyIntolerance.asserter",
+        "short": "このアレルギー不耐症の情報源",
+        "definition": "このアレルギー不耐症に関する情報の発生源または取得元。",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.lastOccurrence",
+        "path": "AllergyIntolerance.lastOccurrence",
+        "short": "このアレルギー不耐症が最も直近に発生した日時",
+        "definition": "最も直近に発生した日時を表す。",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "short": "他のフィールド要素では記述できない追加テキスト",
+        "definition": "他のフィールド要素では表現できない、このアレルギー不耐症に関する追加的な記述。",
+        "mustSupport": true
+      },
+      {
+        "id": "AllergyIntolerance.reaction",
+        "path": "AllergyIntolerance.reaction",
+        "short": "このアレルゲンへの暴露に関連する有害反応",
+        "definition": "同定された物質への暴露に関連する個々の有害反応に関する詳細情報。",
+        "max": "0",
+        "mustSupport": true
+      }
+    ]
+  }
+}
