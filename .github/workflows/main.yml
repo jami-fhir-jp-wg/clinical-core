@@ -59,7 +59,7 @@ jobs:
       uses: wei/wget@v1
       with:
         args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-US
-      un: |
+      run: |
         mkdir -p packages_snapshot
         mv hl7.fhir.r4.core-4.0.1.tgz-US packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-US
 
