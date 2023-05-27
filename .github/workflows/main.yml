@@ -58,9 +58,9 @@ jobs:
         args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-US
     - name: mv pkg to packages_snapshot folder
       run: |
-        mkdir -p packages_snapshot
-        mv hl7.fhir.r4.core-4.0.1.tgz-JPV2 packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-JPV2
-        mv hl7.fhir.r4.core-4.0.1.tgz-US packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-US
+        mkdir -p packages_snapshot with renaming from - to #
+        mv hl7.fhir.r4.core-4.0.1.tgz-JPV2 packages_snapshot/hl7.fhir.r4.core#4.0.1.tgz-JPV2
+        mv hl7.fhir.r4.core-4.0.1.tgz-US packages_snapshot/hl7.fhir.r4.core#4.0.1.tgz-US
 
     - name: Run IG Publisher        
       env:
