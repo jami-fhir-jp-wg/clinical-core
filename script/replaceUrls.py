@@ -26,5 +26,19 @@ with open(sys.argv[1], "r") as f:
                 line = line.replace("https://simplifier.net/resolve?scope=jp-core.r4@1.1.1-snap&amp;canonical=http://jpfhir.jp/fhir/core/StructureDefinition/"+m.group(1),
                                  "https://jpfhir.jp/fhir/core/"+sys.argv[2]+"/StructureDefinition-"+profileUrl)
             print(line)
-        else:
+        elif 'href="https://jpfhir.jp/fhir/core/1.1.1/' in line:
+            if re.search('href="https:\/\/jpfhir\.jp\/fhir\/core\/1\.1\.1\/([a-zA-Z0-9-_\/]+?)\.html"',line):   # href 先が.htmlの場合は、変換しない
+                print(line)
+                continue
+            else:
+                m = re.search('href="https:\/\/jpfhir\.jp\/fhir\/core\/1\.1\.1\/([a-zA-Z0-9-_\/]+?)"(.*)$',line) # href 先が.html以外の場合は、変換する
+                if m :
+    #                print("m.group(1)="+m.group(1),file=sys.stderr)
+    #                print("m.group(2)="+m.group(2),file=sys.stderr)
+                    profileUrl = m.group(1)+".html"
+                    line = line.replace('href="https://jpfhir.jp/fhir/core/1.1.1/'+m.group(1)+'"'+m.group(2),
+                                        'href="https://jpfhir.jp/fhir/core/1.1.1/'+m.group(1)+'.html"'+m.group(2))
+                    print(line)
+                print(line)
+        else:            
             print(line)
