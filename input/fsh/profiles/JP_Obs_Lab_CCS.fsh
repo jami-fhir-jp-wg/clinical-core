@@ -1,4 +1,4 @@
-
+`z
 // ==================================================
 //   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
 //   検体検査結果 リソースタイプ:Observation
@@ -11,11 +11,11 @@
 Profile: JP_Observation_LabResult_CCS
 Parent: JP_Observation_LabResult
 Id: jp-observation-labresult-ccs
-Title: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル"
+Title: "FHIR臨床コア情報 Clinical-coreセット(厚労省6情報)のひとつ。検体検査結果プロファイル"
 Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル。JP_Observation_LabResultの派生プロファイル"
-* ^url = "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_AllergyIntolerance_CCS"
+* ^url = "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_Observation_LabResult_CCS"
 * ^status = #active
-* ^date = "2023-03-15"
+* ^date = "2023-05-27
 
 * . ^short = "検体検査結果"
 * . ^definition = "検体検査結果の格納に使用する。"
@@ -23,114 +23,134 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 * text ^short = "このリソースを人間が直感的に概要を解釈するためのテキスト要約"
 * text ^definition = "以降の要素の情報から計算機により自動生成されること。このテキストには情報に過不足がありうるので、受信側がこの情報を一部情報の可視化確認ためだけに利用するものとし、医療情報の構造的情報として使用してはならない。"
 
-// Patinet とSpecimenは最低限の情報をContainedリソースとして記述する
+// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
 * contained contains patient 1..1
 * contained contains specimen 1..1
-* contained[patient] only  JP_Patient
-* contained[specimen] only  Specimen
+* contained contains organization 1..1
+* contained[patient] only  JP_Patient_CCS
+* contained[specimen] only  JP_Specimen_CCS
+* contained[organization] only  JP_Organizaion_CCS
+* meta 1..1 MS
+* meta.lastUpdated 1..1 MS
+* meta.lastUpdated ^short = "このデータの最終更新日時"
+* meta.lastUpdated ^definition = "このデータの最終更新日時。データ内容の更新日時を原則とするが、このリソースが内容の変更を伴わずにコピーや更新された場合に、その更新日時を設定してもよい。"
 
+* identifier 1..* MS
 * identifier ^short = "当該検査項目に対して、施設内で割り振られる一意の識別子"
-* identifier ^definition = "この検査項目に割り当てられた一意の識別子。リソースの識別子やシステム的なシーケンスではなく、ビジネスID。"
-* identifier ^comment = "【JP Core仕様】当該検査項目に対して、施設内で割り振られる一意の識別子があればそれを使用する。なければ次のルールを参考に一意となる識別子を生成し設定する。\r\n\r\nアプリケーション側のデータベースにおけるフィールド長の定義については、最低64バイトを確保すること。\r\n\r\n--- 参考 ---\r\n\r\n次の項目を順にセパレータ「_(アンダースコア)」で連結し、 identifier.value に設定する。グループ項目でない場合など、該当コード／番号がない場合はセパレータを連続で連結する。各コードはローカルコードを使用し、必ず設定できること。\r\n\r\n　１．ORC-2(依頼者オーダ番号)　SS-MIX2の15桁前ゼロ形式の番号\r\n\r\n　２．OBR-4(検査項目ID)　検査セットの識別コード\r\n\r\n　３．SPM-4(検体タイプ)\r\n\r\n　４．OBX-3(検査項目)\r\n\r\n　５．OBX-4(検査副ID)・・・オプション。必要に応じて使用。\r\n\r\n形式：[ORC-2]_[OBR-4]_[SPM-4]_[OBX-3]（_[OBX-4]）"
-* identifier.use ^definition = "この識別子の目的。"
-* identifier.use ^comment = "アプリケーションは、identifierが一時的であると明示的に述べられない限り、永続的であると想定できる。"
-// * identifier.system ^comment = "Identifier.system is always case sensitive."
-* identifier.value ^definition = "システムのコンテキスト内で一意の識別子となる文字列を設定。"
+* identifier ^definition = "この検査項目に割り当てられた一意の識別子で64バイト以内。リソースの識別子やシステム的なシーケンスではなく、当該施設内で割り振られる一意の識別キー。"
+* identifier ^comment = "当該施設内で割り振られる一意の識別子があればそれを使用する。すくなくともひとつのidentifierは、当該施設で作成された全診療データのなかからこの検査結果を一意に識別でき、削除や更新が可能な論理キーとなる。それ以外に追加で当該施設または別の施設が別のsystem値との組み合わせによる異なるidentifierを1個以上設定してもよい。\r\nSS-MIX2から生成する場合には、次のルールを参考に一意となる識別子を生成し設定してもよい。\r\nアプリケーション側のデータベースにおけるフィールド長の定義については、最低64バイトを確保すること。\r\n\r\n--- 参考 ---\r\n\r\n次の項目を順にセパレータ「_(アンダースコア)」で連結し、 identifier.value に設定する。グループ項目でない場合など、該当コード／番号がない場合はセパレータを連続で連結する。各コードはローカルコードを使用し、必ず設定できること。\r\n\r\n　１．ORC-2(依頼者オーダ番号)　SS-MIX2の15桁前ゼロ形式の番号\r\n\r\n　２．OBR-4(検査項目ID)　検査セットの識別コード\r\n\r\n　３．SPM-4(検体タイプ)\r\n\r\n　４．OBX-3(検査項目)\r\n\r\n　５．OBX-4(検査副ID)・・・オプション。必要に応じて使用。\r\n\r\n形式：[ORC-2]_[OBR-4]_[SPM-4]_[OBX-3]（_[OBX-4]）"
 
+* identifier.system 1..1 MS
+* identifier.system ^short = "このidebtifierの番号体系を識別するurl"
+* identifier.system ^definitionrt = "このidentifierの番号体系を識別するurl"
+* identifier.system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/clinicalCoreSet/IdSystem/システム識別文字列/医療機関識別ID　を設定する。システム識別文字列が、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
+
+* identifier.value 1..1 MS
+* identifier.value ^short = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
+* identifier.value ^definition = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
+* identifier.system ^comment = 
+* identifier.use 0..1   MS
+* identifier.use ^short = "この識別子の設定・利用目的を表すコード。"
+* identifier.use ^definition = "この識別子の設定・利用目的コード。当該施設における一意のキーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。"
+* identifier.use ^comment = "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。"
+
+* basedOn 0..1   MS
 * basedOn only Reference(ServiceRequest)
-* basedOn ^definition = "A plan, proposal or order that is fulfilled in whole or in part by this event.  For example, a MedicationRequest may require a patient to have laboratory test performed before  it is dispensed.\r\n\r\nこのプロファイルでは、検体検査オーダに関する情報。"
-* basedOn ^comment = "References SHALL be a reference to an actual FHIR resource, and SHALL be resolvable (allowing for access control, temporary unavailability, etc.). Resolution can be either by retrieval from the URL, or, where applicable by resource type, by treating an absolute reference as a canonical URL and looking it up in a local registry/repository.\r\n\r\n【JP Core仕様】オーダ情報がある場合、このプロファイルでは ServiceRequest のリソースを参照する。オーダIDの情報はここで使用する。"
-
-* partOf ^definition = "A larger event of which this particular Observation is a component or step.  For example,  an observation as part of a procedure.\r\n\r\nこのリソースが一部として、あるいは手順の一つとして含まれるより大きなイベント。"
-* partOf ^comment = "To link an Observation to an Encounter use `encounter`.  See the  [Notes](observation.html#obsgrouping) below for guidance on referencing another Observation.\r\n\r\n【JP Core仕様】当面は使用しない。"
+* basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
+* basedOn ^comment = "元のオーダID情報はここで使用する。"
 
 // OUL^R22.OBX[*]-11 結果状態
 * status ^definition = "検査結果値の状態。"
-* status ^comment = "【JP Core仕様】v2.5の「F」に相当する値は「final」であるが、ここでは 必須コード表「ObservationStatus」より、全てのコード値を使用可とする。-
-(registered | preliminary | final | amended |   corrected | cancelled | entered-in-error | unknown)"
-* status MS
-//
-// SS-MIX2コード表 17 HL7 表-#0085 検査結果状態
-// HL7v2.5コード FHIRコード v2.5名称
-// C corrected 到着レコードは修正であり結果を書き換え
-// D cancelled OBX レコードを削除する
-// F final 最終結果： 修正結果でのみ変更可能
-// I preliminary 臨床検査室の検体；結果保留
-// N unknown 未確認、OBX-４で探せないOBX 検査ID を確定するために使用する
-// O registered 依頼詳細記述 （結果なし）
-// P preliminary 事前結果
-// R registered 結果を入力 ―― 未検証 
-// S 部分結果
-// X この検査では、結果は得られない
-// U 結果状態を最終へ変更。結果は変化しなかった(テストを転送しない) 例えば、放射線科により状態が事前から最終へ変更される
-// W オリジナルを間違っているものとしてポストする。例えば、間違っている患者のために送信された。
-// ?  amended
-// ?  cancelled
-// ?  entered-in-error
-// ?  unknown
+* status ^definition = "検査結果値の状態。"
+* status ^comment = "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告だk泣きでは確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）、cancelled: この結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）。これらのステータスコード以外は意味的に紛らわしいので使わない。【SS-MIX2】OUL^R22.OBX[*]-11 結果状態"
+* status 1..1 MS
 
 // OUL^R22
 * category 1.. MS       // MS 追加
-// * category ^slicing.discriminator.type = #pattern
-// * category ^slicing.discriminator.path = "$this"
-// * category ^slicing.rules = #open
-// * category contains laboratory 1..1
-// * category[laboratory] = $observation-category#laboratory
-* category ^definition = "行われた検査の一般的なタイプの分類。取得、表示の際のフィルタリングに使用。"
-* category ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
-* category.coding ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains
+ laboratory 1..1
+ and localLaboGroup 0..1 // 施設固有の検査室グループコード（生化学免疫、血液、など）
+ and localItemGroup 0..1 // 施設固有の項目グループコード
+ and other 0..*
+
+* category[laboratory] 1..1 MS
+* category[laboratory] = $observation-category#laboratory
+* category[laboratory] ^short = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
+* category[laboratory] ^definition = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
+* category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
 
 // OUL^R22.OBX[*]-3 検査項目情報
-* code MS       // MS 追加
-* code from $JP_ObservationLabResultCode_VS (preferred)
+* code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
-* code ^binding.description = "MEDIS 臨床検査マスター"
-* code.coding   MS    // MS 追加
-* code.coding ^definition = "コード体系によって定義されたコードへの参照。"
-* code.coding ^comment = "標準コード、ローカルコードの2つを設定可能とし、いずれか一方は必須とする。さらにJLAC10とJLAC11などの複数の標準コードも設定できるよう、上限は設けない。\r\n\r\n標準コード、ローカルコードの2つまで格納可。順不同。\r\nSS-MIX2だとCWE.1 ～CWE.3に標準コード、CWE.4～CWE.6にローカルコード、など（順不同）。"
+* code.coding ^binding.description = "MEDIS 臨床検査マスター（JLAC10 17桁）、または未コード化コード(17桁のall 9)"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #open
+* code.coding category contains
+    jlac10Coded 0..1 MS
+and jlac10wNoMethod 0..1 MS
+and jlac10Uncoded 0..1 MS
+and localCoded 0..1 MS
+and localUncoded 0..1 MS
 
-// OUL^R22.OBX[*]-3[*]-3    コードシステム
-* code.coding.system    MS    // MS 追加
+* code.coding ^comment = "JLAC10標準コード、ローカルコードの2つを設定するものとし、どちらも必須とする。さらにJLAC10以外にJLAC11などの複数の標準コードも設定できるよう、上限は設けない。\r\n\r\n標準コード、ローカルコードの順不同。\r\nSS-MIX2だとCWE.1 ～CWE.3に標準コード、CWE.4～CWE.6にローカルコード、など（順不同）。"
+* code.coding.system 1..1 MS    // MS 追加 // OUL^R22.OBX[*]-3[*]-3    コードシステム
 * code.coding.system ^definition = "コード体系。"
-* code.coding.system ^comment = "【JP Core仕様】標準コードの場合、JLAC10を表すURIを設定。\r\n\r\nURIは本WGで定義する。"
+* code.coding.system ^comment = "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3"
+* code.coding[jlac10Coded].system = $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
+* code.coding[jlac10wUnmethod].system = $JP_ObservationLabResultCodeUnmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
+* code.coding[jlac10Uncoded].system = http://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS (exactly) // 17桁未コード化コード
+* code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)
+* code.coding[localCoded].system = $JP_ObservationLabResultLocal_CS (exactly)    // その施設のローカルコード
+* code.coding[localUncoded].system = $JP_ObservationLabResultLocalUncoded_CS (exactly)    // その施設のローカルコード
+* code.coding[localUncoded].code = #LUNCODED    // ローカルコード体系でのコード化ができない
 
 // OUL^R22.OBX[*]-3[*]-1    コード　
 // OUL^R22.OBX[*]-3[*]-1のコードが &TCM　で終了する場合には、&TCMの直前までの文字列をコメントコードとみなして、同じ
-* code.coding.code   MS    // MS 追加
 
 // OUL^R22.OBX[*]-3[*]-2
-// * code.coding.display
+* code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
+* code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
+* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。"
 
-* code.text 1.. MS   // MS 追加
+* code.text 1..1 MS   
 * code.text ^definition = "項目名。報告書などに記載する場合に使用する表示名。"
-* code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。"
+* code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。"
 
 // OUL^R22.PID
-* subject 1..   MS   // MS 追加
+* subject 1..1   MS   // MS 追加
 * subject only Reference(JP_Patient)
+* subject ^short = "検体検査の対象となる患者。"
 * subject ^definition = "検体検査の対象となる患者。"
-* subject ^comment = "【JP Core仕様】このプロファイルでは、Patient 限定、かつ必須とする。"
+* subject ^comment = "Containedリソースに含まれる患者リソースをリソース内で参照する。"
 
 // OUL^R22.PV1
 * encounter    MS   // MS 追加
-* encounter ^definition = "この検査が行われるヘルスケアイベント。医療提供者と患者の接点。"
-* encounter ^comment = "【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報に使用する。\r\n\r\n※このプロファイルの用途では通常は必須と考えられるが、ユースケースにより使用されない場合を考慮し、1..1に制約しない。"
+* encounter ^definition = "この検査が行われた医療提供者と患者の接点に関する付帯情報。"
+* encounter ^comment = "【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報、外来での検査か入院での検査かの区別に使用する。必須ではない。"
 
 // OUL^R22.OBX[*]-14 検査日時
 * effective[x] 1..    MS   // MS 追加
 * effective[x] only dateTime // or Period or Timing 
-* effective[x] ^definition = "検体検査の場合は、検体採取日時。"
-* effective[x] ^comment = "【Clinical Core Set仕様】dateTime型に限定する"
+* effectiveDateTime ^short = "検体採取日時"
+* effectiveDateTime ^definition = "検体採取日時。検体採取日時が不明な場合には、検査実施日時、検体受付日時の場合もある。結果報告日時はissued要素を使用する。"
+* effectiveDateTime ^comment = "dateTime型に限定する。dateTime側は、1905-08-23, 2015-02-07T13:28:17+09:00 "
 
-// * issued 
-// * performer
+* issued MS
+* issued ^short = "検査結果がシステムに格納された日時、システム的な結果報告（登録）日時"
+* issued ^definition = "検査結果がシステムに格納された日時、システム的な結果報告（登録）日時。"
+* issued ^comment = "instance型であるため、2015-02-07T13:28:17+09:00 のように時刻までの精度が必要である。"
 
 // OUL^R22.OBX[*]-5  結果
 // OUL^R22.OBX[*]-6  単位
+* value[x] MS
 * value[x] only Quantity or CodeableConcept or string
 * value[x] ^short = "検体検査の結果"
 * value[x] ^definition = "検体検査の結果"
@@ -152,38 +172,25 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 * valueString ^short = "検査結果値が「文字列」の場合、その文字列を指定する。SS-MIX2／HL7 V2.5→ OBX-2＝「ST」の時の OBX-5(結果値)"
 
 // Valueが欠落する場合には必ずその理由コードを記述する
+* dataAbsentReason MS
 * dataAbsentReason ^definition = "検査結果値が欠落している理由。"
-* dataAbsentReason ^comment = "【JP Core仕様】SS-MIX2で未使用だが、valueの欠落時に使用する必要があり、重要な項目である。\r\n\r\n制約「obs-6」に示す通り、valueが存在する場合、当該項目は存在してはならない。\r\n\r\ntextのみでの使用は基本的に不可とし、必ずcodingを設定すること。\r\n\r\n(unknown |   asked-unknown |   temp-unknown |   not-asked |   asked-declined | masked | not-applicable | unsupported | as-text | error |   not-a-number |   negative-infinity |   positive-infinity | not-performed | not-permitted)"
+* dataAbsentReason ^comment = "【JP Core仕様】SS-MIX2で未使用だが、valueの欠落時に使用する必要があり、重要な項目である。\r\n\r\n制約「obs-6」に示す通り、valueが存在する場合、この要素は存在してはならない。\r\n\r\ntextのみでの使用は基本的に不可とし、必ずcodingを以下から設定すること。適切な理由を選べないシステムの場合には、unknownを使用するものとする。\r\n\r\n(unknown：値が存在するかしないか不明 |  masked：結果非開示 | not-applicable：適用外（システム適用外など、生体にありえない項目（男性患者における女性固有検査値など）） | as-text ：テキスト表現で別途記述| error ：システムエラー|   not-a-number：結果が数値でない、数値化エラー |   negative-infinity：数値が小さすぎて表現できない |   positive-infinity：数値が大きすぎて表現 | not-performed：未実施| not-permitted：結果取得が許可されていない"
 
 // OUL^R22.OBX[*]-8 （基準値範囲はOUL^R22.OBX[*]-7) 
+* interpretation MS
 * interpretation ^short = "High, low, normal, etc. 高、低、正常など"
 * interpretation ^definition = "検査結果値の、（高、低、正常）といったカテゴリー評価。結果報告書に記載されることもある情報。"
-* interpretation ^comment = "【JP Core仕様】拡張可コード表「ObservationInterpretationCodes」を使用する。\r\n\r\nコード表が大きいため、下記参照。\r\n\r\nhttps://www.hl7.org/fhir/R4/valueset-observation-interpretation.html"
-* interpretation ^requirements = "特に数値結果については、結果の重要性を完全に理解するために解釈を必要とする場合がある。"
-* interpretation from http://jpfhir.jp/.... 	// 以下のコードに絞ったValueSetを作成する（<:Off scale low, >:Off scale high, A:Abnormal, H:High, L:Low, N:Normal ）
-// SS-MIX2表 54 使用者定義表 #0078 異常フラグ
-// HL7v2.5コード FHIRコード v2.5名称
-// 半角Space N 基準値内
-// L L 基準値下限以下
-// H H 基準値上限以上
-// LL L パニック下限以下
-// HH H パニック上限以上
-// < < 測定限界下限未満
-// > > 測定限界上限越
-// N N 正常(非数値結果に適用)
-// A A 異常(非数値結果に適用)
-// AA A 非常に異常(数値単位のパニック値に対応するが、これは非数値単位に適用される)
-// null （値なし）範囲未定義、もしくは正常が適用されない
-// U U 大幅な上昇変化
-// D D 大幅な下降変化
-// B B 改善 － 方向が適用されない場合使用
-// W W 悪化 － 方向が適用されない場合使用
+* interpretation ^comment = "【JP Core仕様】拡張可コード表「ObservationInterpretationCodes」からいずれかの適当なコードをひとつ使用するが、本要素はなくてもよい。その施設における基準値が設定されている数値検査結果に対しては、基準値範囲により解釈したH（高）、L（低）、N（正常範囲） のいずれかを設定することが望ましい。\r\n\r\nコード表が大きいため、下記参照。\r\n\r\nhttps://www.hl7.org/fhir/R4/valueset-observation-interpretation.html"
+* interpretation ^requirements = "特に数値結果については、結果の重要性を完全に理解するために解釈を必要。"
 
+* note MS
+* note ^short = "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。"
 * note ^definition = "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。"
-// * note.text ^comment = "Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/"
+
 
 // OUL^R22.SPM-4[*]
-* specimen 1..
+* specimen 1.. MS
+* specimen ^short = "この検査に使用された検体（標本）。"
 * specimen ^definition = "この検査に使用された検体（標本）。"
 * specimen ^comment = "【JP Core仕様】必須とする。"
 /* 記述例：ロジカルリファレンス
@@ -207,28 +214,16 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 * device ^comment = "Note that this is not meant to represent a device involved in the transmission of the result, e.g., a gateway.  Such devices may be documented using the Provenance resource where relevant.\r\n\r\n【JP Core仕様】検査に使用した機器等の情報に使用する。"
 
 // OUL^R22.OBX[*]-7
-* referenceRange ^definition = "Guidance on how to interpret the value by comparison to a normal or recommended range.  Multiple reference ranges are interpreted as an \"OR\".   In other words, to represent two distinct target populations, two `referenceRange` elements would be used.\r\n\r\n推奨範囲として結果値を解釈するためのガイダンス。基準値。"
-* referenceRange ^comment = "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties.\r\n\r\n【JP Core仕様】可能な限りlow、highに構造化すべき。構造化できない場合、あるいはlow、highに該当しない場合はtextを使用。"
-* referenceRange.low ^comment = "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."
-* referenceRange.high ^comment = "The context of use may frequently define what kind of quantity this is and therefore what kind of units can be used. The context of use may also restrict the values for the comparator."
-* referenceRange.type ^definition = "Codes to indicate the what part of the targeted reference population it applies to. For example, the normal or therapeutic range.\r\n\r\n対象となる母集団のどの部分に適用するかを示すコード。正常範囲、要治療範囲、など。"
-* referenceRange.type ^comment = "This SHOULD be populated if there is more than one range.  If this element is not present then the normal range is assumed."
-* referenceRange.appliesTo ^definition = "Codes to indicate the target population this reference range applies to.  For example, a reference range may be based on the normal population or a particular sex or race.  Multiple `appliesTo`  are interpreted as an \"AND\" of the target populations.  For example, to represent a target population of African American females, both a code of female and a code for African American would be used.\r\n\r\n基準値が適用される母集団を示すコード。人種、性別など。"
-* referenceRange.appliesTo ^comment = "This SHOULD be populated if there is more than one range.  If this element is not present then the normal population is assumed."
-* referenceRange.age ^definition = "The age at which this reference range is applicable. This is a neonatal age (e.g. number of weeks at term) if the meaning says so.\r\n\r\n基準値が適用される年齢。新生児の場合、週数もありうる。"
-* referenceRange.age ^comment = "The stated low and high value are assumed to have arbitrarily high precision when it comes to determining which values are in the range. I.e. 1.99 is not in the range 2 -> 3."
-* referenceRange.text ^definition = "Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of \"Negative\" or a list or table of \"normals\".\r\n\r\n量的範囲で表せない場合などに使用する。"
-* referenceRange.text ^comment = "Note that FHIR strings SHALL NOT exceed 1MB in size"
+* referenceRange ^definition = "推奨範囲として結果値を解釈するためのガイダンス。基準値。"
+* referenceRange ^comment = "【JP Core仕様】可能な限りlow、highに構造化すべき。構造化できない場合、あるいはlow、highに該当しない場合はtextを使用。"
+* referenceRange.type ^definition = "対象となる母集団のどの部分に適用するかを示すコード。正常範囲、要治療範囲、など。"
+* referenceRange.appliesTo ^definition = "基準値が適用される母集団を示すコード。人種、性別など。"
+* referenceRange.age ^definition = "T基準値が適用される年齢。新生児の場合、週数もありうる。"
+* referenceRange.text ^definition = "量的範囲で表せない場合などに使用する。"
 
-* hasMember ^definition = "This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group.\r\n\r\nこの検査が含まれるグループを示す。"
-* hasMember ^comment = "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation.\r\n\r\n【JP Core仕様】1検査で複数の検査項目が実施される場合の親検査項目を設定する。"
+* hasMember ^short = "この検査に含まれる個々の検査結果項目を示す。"
+* hasMember ^definition = "この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。"
+* hasMember ^comment = "【JP Core仕様】1検査で複数の検査項目が実施される場合の親検査項目を設定する。"
 
-* derivedFrom ^definition = "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image.\r\n\r\nこの検査値の発生元である関連リソース。例えば他のObservation を受けて、本検査値が発生した場合など。"
-* derivedFrom ^comment = "All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](observation.html#obsgrouping) below."
-
-* component ^definition = "Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations.\r\n\r\n一度のタイミングでの1回の検査で複数の結果を同時に得る場合にのみ使用される。例えば、血圧の収縮期、拡張期。新生児のApgarスコア。質問に対する複数の回答（飲んだアルコールの種類、など）。"
-* component ^comment = "For a discussion on the ways Observations can be assembled in groups together see [Notes](observation.html#notes) below."
-* component.code ^comment = "*All* code-value and  component.code-component.value pairs need to be taken into account to correctly understand the meaning of the observation."
-* component.value[x] ^comment = "Used when observation has a set of component observations. An observation may have both a value (e.g. an  Apgar score)  and component observations (the observations from which the Apgar score was derived). If a value is present, the datatype for this element should be determined by Observation.code. A CodeableConcept with just a text would be used instead of a string if the field was usually coded, or if the type associated with the Observation.code defines a coded value.  For additional guidance, see the [Notes section](observation.html#notes) below."
-* component.interpretation ^comment = "Historically used for laboratory results (known as 'abnormal flag' ),  its use extends to other use cases where coded interpretations  are relevant.  Often reported as one or more simple compact codes this element is often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result."
-* component.referenceRange ^comment = "Most observations only have one generic reference range. Systems MAY choose to restrict to only supplying the relevant reference range based on knowledge about the patient (e.g., specific to the patient's age, gender, weight and other factors), but this might not be possible or appropriate. Whenever more than one reference range is supplied, the differences between them SHOULD be provided in the reference range and/or age properties."
+* derivedFrom ^definition = "この検査値の発生元である関連リソース。例えば他のObservation を受けて、本検査値が発生した場合など。"
+* component ^definition = "一度のタイミングでの1回の検査で複数の結果を同時に得る場合にのみ使用される。例えば、血圧の収縮期、拡張期。新生児のApgarスコア。質問に対する複数の回答（飲んだアルコールの種類、など）。"

@@ -1,0 +1,18 @@
+ValueSet:  JP_CCS_ObsLabResult_JLAC10wUncoded_VS"
+Id:   jp-ccs-obslabresult-jlac10wuncoded-vs
+Description: "未コード化検体検査結果項目コードを含むMEDIS臨床検査項目コードvalueSet"
+* ^url = "http://jpfhir.jp/fhir/clinicalCoreSet/ValueSet/JP_CCS_ObsLabResult_JLAC10wUncoded_VS"
+* ^title = "未コード化検体検査結果項目コードを含むMEDIS臨床検査項目コードvalueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system urn:oid:1.2.392.200119.4.504  // MEDIS臨床検査項目コードJLAC10 17桁
+* include codes from system http://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS#99999999999999999  // 未コード化検体検査結果項目コード 17桁
+
+ValueSet:  JP_CCS_ObsLabResult_JLAC10Unmethod_VS"
+Id:   jp-ccs-obslabresult-jlac10unmethod-vs
+Description: "未コード化測定法999を含むMEDIS臨床検査項目コードだけからなるvalueSet"
+* ^url = "http://jpfhir.jp/fhir/clinicalCoreSet/ValueSet/JP_CCS_ObsLabResult_JLAC10Unmethod_VS"
+* ^title = "未コード化検体検査結果項目コードを含むMEDIS臨床検査項目コードvalueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system http://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_JLAC10Unmethod_CS  // 測定法999を含むMEDIS臨床検査項目コード
