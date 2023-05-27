@@ -67,7 +67,7 @@ jobs:
       env:
         PACKAGE: jp-core.r4#1.1.1-snap
         PACKAGECORE: hl7.fhir.r4.core#4.0.1
-        PACKAGECOREVERSION: JPV2
+        PACKAGECOREVERSION: JPV1
       run: | 
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
