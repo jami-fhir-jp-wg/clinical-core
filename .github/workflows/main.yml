@@ -47,11 +47,28 @@ jobs:
         path: .
         file: publisher.jar
 
-    - name: Run IG Publisher
+    - name: Download Jp modified version of hl7.fhir.r4.core Package
+      uses: wei/wget@v1
+      with:
+        args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-JPV2
+
+    - name: Download US version of hl7.fhir.r4.core Package
+      uses: wei/wget@v1
+      with:
+        args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-US
+  
+    - name: mv pcg to snapshot forlder
+        run: |
+          mkdir -p packages_snapshot
+          mv hl7.fhir.r4.core-4.0.1.tgz-JPV2 packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-JPV2
+          mv hl7.fhir.r4.core-4.0.1.tgz-US packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-US
+
+    - name: Run IG Publisher        
       env:
         PACKAGE: jp-core.r4#1.1.1-snap
         PACKAGECORE: hl7.fhir.r4.core#4.0.1
-      run: | 
+        PACKAGECOREVERSION: US
+        run: | 
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
         : # - name: Wget IG PublisherJPFHIR
@@ -65,9 +82,9 @@ jobs:
         mkdir -p  /home/runner/.fhir/packages/$PACKAGECORE
         : # local cache にpackage をcopyして展開する
         cp ./packages_snapshot/$PACKAGE.tgz /home/runner/.fhir/packages/$PACKAGE/$PACKAGE.tgz
-        : # cp ./packages_snapshot/$PACKAGECORE.tgz /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz
+        cp ./packages_snapshot/$PACKAGECORE.tgz-$PACKAGECOREVERSION /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz-$PACKAGECOREVERSION
         tar xzf /home/runner/.fhir/packages/$PACKAGE/$PACKAGE.tgz -C /home/runner/.fhir/packages/$PACKAGE/
-        : # tar xzf /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz -C /home/runner/.fhir/packages/$PACKAGECORE/
+        tar xzf /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz-$PACKAGECOREVERSION -C /home/runner/.fhir/packages/$PACKAGECORE/
         unset DISPLAY
         : # 
         java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx https://tx.jpfhir.jp:8081
