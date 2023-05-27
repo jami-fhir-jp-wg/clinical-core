@@ -51,17 +51,17 @@ jobs:
       uses: wei/wget@v1
       with:
         args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-JPV2
+      run: |
+        mkdir -p packages_snapshot
+        mv hl7.fhir.r4.core-4.0.1.tgz-JPV2 packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-JPV2
 
     - name: Download US version of hl7.fhir.r4.core Package
       uses: wei/wget@v1
       with:
         args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-US
-  
-    - name: mv pcg to snapshot forlder
-        run: |
-          mkdir -p packages_snapshot
-          mv hl7.fhir.r4.core-4.0.1.tgz-JPV2 packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-JPV2
-          mv hl7.fhir.r4.core-4.0.1.tgz-US packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-US
+      un: |
+        mkdir -p packages_snapshot
+        mv hl7.fhir.r4.core-4.0.1.tgz-US packages_snapshot/hl7.fhir.r4.core-4.0.1.tgz-US
 
     - name: Run IG Publisher        
       env:
