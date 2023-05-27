@@ -1,4 +1,4 @@
-`z
+
 // ==================================================
 //   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
 //   検体検査結果 リソースタイプ:Observation
@@ -15,10 +15,9 @@ Title: "FHIR臨床コア情報 Clinical-coreセット(厚労省6情報)のひと
 Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル。JP_Observation_LabResultの派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_Observation_LabResult_CCS"
 * ^status = #active
-* ^date = "2023-05-27
-
-* . ^short = "検体検査結果"
-* . ^definition = "検体検査結果の格納に使用する。"
+* ^date = "2023-05-27"
+* . ^short = " Clinical-coreセット(厚労省6情報)における検体検査結果の格納に使用する"
+* . ^definition = "Clinical-coreセット(厚労省6情報)における検体検査結果の格納に使用する。"
 * . ^comment = "検体検査結果の制約プロファイル"
 * text ^short = "このリソースを人間が直感的に概要を解釈するためのテキスト要約"
 * text ^definition = "以降の要素の情報から計算機により自動生成されること。このテキストには情報に過不足がありうるので、受信側がこの情報を一部情報の可視化確認ためだけに利用するものとし、医療情報の構造的情報として使用してはならない。"
@@ -31,8 +30,8 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 * contained contains specimen 1..1
 * contained contains organization 1..1
 * contained[patient] only  JP_Patient_CCS
-* contained[specimen] only  JP_Specimen_CCS
-* contained[organization] only  JP_Organizaion_CCS
+// * contained[specimen] only  JP_Specimen_CCS
+// * contained[organization] only  JP_Organizaion_CCS
 * meta 1..1 MS
 * meta.lastUpdated 1..1 MS
 * meta.lastUpdated ^short = "このデータの最終更新日時"
@@ -45,13 +44,12 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 
 * identifier.system 1..1 MS
 * identifier.system ^short = "このidebtifierの番号体系を識別するurl"
-* identifier.system ^definitionrt = "このidentifierの番号体系を識別するurl"
+* identifier.system ^definition = "このidentifierの番号体系を識別するurl"
 * identifier.system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/clinicalCoreSet/IdSystem/システム識別文字列/医療機関識別ID　を設定する。システム識別文字列が、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
 
 * identifier.value 1..1 MS
 * identifier.value ^short = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
 * identifier.value ^definition = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
-* identifier.system ^comment = 
 * identifier.use 0..1   MS
 * identifier.use ^short = "この識別子の設定・利用目的を表すコード。"
 * identifier.use ^definition = "この識別子の設定・利用目的コード。当該施設における一意のキーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。"
@@ -70,17 +68,16 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 
 // OUL^R22
 * category 1.. MS       // MS 追加
+/*
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains
  laboratory 1..1
- and localLaboGroup 0..1 // 施設固有の検査室グループコード（生化学免疫、血液、など）
- and localItemGroup 0..1 // 施設固有の項目グループコード
- and other 0..*
 
 * category[laboratory] 1..1 MS
 * category[laboratory] = $observation-category#laboratory
+*/
 * category[laboratory] ^short = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^definition = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
@@ -93,9 +90,9 @@ Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。検体
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
-* code.coding category contains
+* code.coding contains
     jlac10Coded 0..1 MS
-and jlac10wNoMethod 0..1 MS
+and jlac10wUnmethod 0..1 MS
 and jlac10Uncoded 0..1 MS
 and localCoded 0..1 MS
 and localUncoded 0..1 MS
@@ -105,8 +102,8 @@ and localUncoded 0..1 MS
 * code.coding.system ^definition = "コード体系。"
 * code.coding.system ^comment = "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3"
 * code.coding[jlac10Coded].system = $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
-* code.coding[jlac10wUnmethod].system = $JP_ObservationLabResultCodeUnmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
-* code.coding[jlac10Uncoded].system = http://jpfhir.jp/fhir/clinicalCoreSet/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS (exactly) // 17桁未コード化コード
+* code.coding[jlac10wUnmethod].system = $JP_CCS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
+* code.coding[jlac10Uncoded].system = $JP_CCS_ObsLabResultUncoded_CS (exactly) // 17桁未コード化コード
 * code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)
 * code.coding[localCoded].system = $JP_ObservationLabResultLocal_CS (exactly)    // その施設のローカルコード
 * code.coding[localUncoded].system = $JP_ObservationLabResultLocalUncoded_CS (exactly)    // その施設のローカルコード

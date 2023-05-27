@@ -1,7 +1,7 @@
 // ==============================
 //   Profile 定義
 // ==============================
-Profile: JP_Patient_ccs
+Profile: JP_Patient_CCS
 Parent: JP_Patient
 Id: jp-patient-ccs
 Title: "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者基本情報Patientリソースプロファイル"
