@@ -1,0 +1,63 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "jp-observation-labresult-ccs6",
+  "url": "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_Observation_LabResult_CCS6",
+  "version": "0.1.0",
+  "name": "JP_Observation_LabResult_CCS6",
+  "title": "6FHIR臨床コア情報 Clinical-coreセット(厚労省6情報)のひとつ。検体検査結果プロファイル",
+  "status": "active",
+  "date": "2023-05-27",
+  "description": "6FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル。JP_Observation_LabResultの派生プロファイル",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_Observation_LabResult_CCS",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "definition": "6この検査が行われた医療提供者と患者の接点に関する付帯情報。"
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "mustSupport": true
+      }
+    ]
+  }
+}
