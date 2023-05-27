@@ -25,6 +25,13 @@ with open(sys.argv[1], "r") as f:
                 profileUrl = m.group(1).lower().replace("_","-")+".html"
                 line = line.replace("https://simplifier.net/resolve?scope=jp-core.r4@1.1.1-snap&amp;canonical=http://jpfhir.jp/fhir/core/StructureDefinition/"+m.group(1),
                                  "https://jpfhir.jp/fhir/core/"+sys.argv[2]+"/StructureDefinition-"+profileUrl)
+            m = re.search('https:\/\/simplifier\.net\/resolve\?scope=jp-core\.r4@' + escapedVersion + '-snap&amp;canonical=http:\/\/jpfhir\.jp\/fhir\/core\/Extension\/StructureDefinition\/(.*?)">(.*)$',line)
+            if m :
+#                print("m.group(1)="+m.group(1),file=sys.stderr)
+#                print("m.group(2)="+m.group(2),file=sys.stderr)
+                profileUrl = m.group(1).lower().replace("_","-")+".html"
+                line = line.replace("https://simplifier.net/resolve?scope=jp-core.r4@1.1.1-snap&amp;canonical=http://jpfhir.jp/fhir/core/Extension\/StructureDefinition/"+m.group(1),
+                                 "https://jpfhir.jp/fhir/core/"+sys.argv[2]+"/StructureDefinition-"+profileUrl)
             print(line)
         elif 'href="https://jpfhir.jp/fhir/core/1.1.1/' in line:
             if re.search('href="https:\/\/jpfhir\.jp\/fhir\/core\/1\.1\.1\/([a-zA-Z0-9-_\/]+?)\.html"',line):   # href 先が.htmlの場合は、変換しない
