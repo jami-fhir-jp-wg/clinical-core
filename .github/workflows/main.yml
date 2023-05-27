@@ -65,7 +65,6 @@ jobs:
         : # local cache にpackage をcopyして展開する
         cp ./packages_snapshot/$PACKAGE.tgz /home/runner/.fhir/packages/$PACKAGE/$PACKAGE.tgz
         cp ./packages_snapshot/$PACKAGECORE.tgz /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz
-        cp $PACKAGECORE.tgz /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz
         tar xzf /home/runner/.fhir/packages/$PACKAGE/$PACKAGE.tgz -C /home/runner/.fhir/packages/$PACKAGE/
         tar xzf /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz -C /home/runner/.fhir/packages/$PACKAGECORE/
         unset DISPLAY
