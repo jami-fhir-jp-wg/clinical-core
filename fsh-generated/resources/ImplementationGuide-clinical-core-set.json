@@ -67,6 +67,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/jp-observation-labresult-ccs6JP"
+        },
+        "name": "6FHIR臨床コア情報 Clinical-coreセット(厚労省6情報)のひとつ。検体検査結果プロファイル",
+        "description": "6FHIR臨床コア情報 Clinical-coreセットのひとつ。検体検査結果プロファイル。JP_Observation_LabResultの派生プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/jp-patient-ccs"
         },
         "name": "FHIR臨床コア情報 Clinical-coreセットのひとつ。患者基本情報Patientリソースプロファイル",

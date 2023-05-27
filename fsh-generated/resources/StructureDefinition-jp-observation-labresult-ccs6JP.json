@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "jp-observation-labresult-ccs6",
+  "id": "jp-observation-labresult-ccs6JP",
   "url": "http://jpfhir.jp/fhir/clinicalCoreSet/StructureDefinition/JP_Observation_LabResult_CCS6",
   "version": "0.1.0",
-  "name": "JP_Observation_LabResult_CCS6",
+  "name": "JP_Observation_LabResult_CCS6JP",
   "title": "6FHIR臨床コア情報 Clinical-coreセット(厚労省6情報)のひとつ。検体検査結果プロファイル",
   "status": "active",
   "date": "2023-05-27",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
   "derivation": "constraint",
   "differential": {
     "element": [
