@@ -17,6 +17,7 @@ Description: "allergyeferralExample01 アレルギー例1　サバ"
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "102934701"
+
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
  // active | recurrence | relapse | inactive | remission | resolved
 
