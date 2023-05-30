@@ -78,49 +78,56 @@ table th {
 
 
 # clinical-core
-# 名称：FHIR臨床コア情報取得基本仕様（仮称）
+# 名称：臨床コア情報FHIR仕様 : 　JP-FHIR-CCS (Clinical Core Set)
+#  （　６情報　を主とする臨床情報のコアセット　FHIR仕様）
 ## このImplementationガイド(IG)の目的：
 臨床情報のうち主要な情報種別について、患者や他の医療機関との診療情報の共有、退院時サマリーなど医療文書の作成、臨床研究のためのデータ利用などを想定して、主要なデータ項目をFHIRに準拠する形式で記述するとともに、そのデータをFHIRのAPIで要求側（通常ははデータを保有しないクライアント）が要求を行い、応答側（通常はデータを保有するサーバ）する（Pull方式）ためのIGである。
 
 また、運用規定にもとづき、定められた期間における定められたデータ種別のデータを、定められたタイミングまたは自発的に、応答側が別のシステムに送信する（Push方式）ことも含める。
  
-## 主要な情報種別の範囲：
-### 2022年度時点で厚生労働省が提示する臨床コア6情報（いわゆる６情報）
-  - 傷病名情報	Conditionリソース
-  - アレルギー情報	AllergyIntoleranceリソース
-  - 薬剤禁忌情報	AllergyIntoleranceリソース
-  - 検査情報（救急時に有用な検査、 生活習慣病関連の検査） 	Observationリソース
-  - 感染症情報	Observationリソース
-  - 処方依頼情報	MedicationRequestリソース
+ #### [Profiles （プロファイル）](artifacts.html#structures-resource-profiles)
+* [Administrationグループ （運営管理）](group-administration.html)
+  * [JP Core Patient （患者）プロファイル][JP_Patient]
+  * [JP Core Coverage （保険・公費）プロファイル][JP_Coverage]
+
+
+## 主要な情報種別の範囲とプロファイル
+* 2022年度時点で厚生労働省が提示する臨床コア6情報（いわゆる６情報）
+  * アレルギー情報	AllergyIntoleranceリソース
+  * 薬剤禁忌情報	AllergyIntoleranceリソース
+  * [傷病名情報	Conditionリソース] (JP_Condition_eCS)
+  * 検査情報（救急時に有用な検査、 生活習慣病関連の検査） 	Observationリソース
+  * 感染症情報	Observationリソース
+  * 処方依頼情報	MedicationRequestリソース
 
 ### 上記から参照される情報
 　以下の情報は上記主要の6情報から、その要素情報として参照されることがある情報種別として特に定義している。またこのうち、＠印の情報については、後述するContainedリソース専用のプロファイル定義をしている。
 
-  - 保険・公費情報 Coverageリソース
-  - 外来受診・入院歴情報	Encounterリソース　＠
-  - 医療機関情報　Organizationリソース ＠
-  - 診療科情報　Organizationリソース ＠
-  - 患者基本情報	Patientリソース　＠
-  - 医療者情報　Practitionerリソース ＠
-  - サービス依頼（オーダ）情報　ServiceRequestリソース　＠
-  - 検査検体情報	Sepecimenリソース　＠
+  * 保険・公費情報 Coverageリソース
+  * 外来受診・入院歴情報	Encounterリソース　＠
+  * 医療機関情報　Organizationリソース ＠
+  * 診療科情報　Organizationリソース ＠
+  * 患者基本情報	Patientリソース　＠
+  * 医療者情報　Practitionerリソース ＠
+  * サービス依頼（オーダ）情報　ServiceRequestリソース　＠
+  * 検査検体情報	Sepecimenリソース　＠
 
 
 
 ### 診療情報提供書、退院時サマリーに含まれる上記以外の情報種別
 　以下のすべてのリソースは、現時点ではFHIRの基底仕様からまだ吟味されておらず、日本国内での使用についての特別な記述がないが、必要であれば使用できる。また＊印のリソースはJP-Core　V1.1でJP-Core仕様が公表されている。
-  - バイナリーデータ情報　Binaryリソース
-  - ケア計画	CarePlanリソース
-  - 同意情報　Consentリソース
-  - 医療デバイス情報 Deviceリソース
-  - 医療デバイス使用情報　DeviceUseStatementリソース
-  - 家族歴情報	FamilyMemberHistoryリソース　＊
-  - 予防接種情報　Immunizationリソース ＊
-  - 処方内容情報　MedicationStatementリソース ＊
-  - 手術処置情報　Procedureリソース ＊
-  - 患者関係者情報　RelatedPersonリソース
-  - 臨床研究対象者情報　ResearchSubjectリソース
-  - 臨床研究課題情報　ResearchStudyリソース
+  * バイナリーデータ情報　Binaryリソース
+  * ケア計画	CarePlanリソース
+  * 同意情報　Consentリソース
+  * 医療デバイス情報 Deviceリソース
+  * 医療デバイス使用情報　DeviceUseStatementリソース
+  * 家族歴情報	FamilyMemberHistoryリソース　＊
+  * 予防接種情報　Immunizationリソース ＊
+  * 処方内容情報　MedicationStatementリソース ＊
+  * 手術処置情報　Procedureリソース ＊
+  * 患者関係者情報　RelatedPersonリソース
+  * 臨床研究対象者情報　ResearchSubjectリソース
+  * 臨床研究課題情報　ResearchStudyリソース
  
 
 ## 基本方針：
@@ -153,24 +160,18 @@ JP_\[リソースタイプ\]\(_0個以上の付加的な階層名\)_eCS_プロ�
 
 
 ## 詳細仕様
-### 共通仕様
-　他のリソースの参照記述
-リソースを参照する（Reference(JP_Patient) など）要素では、Reference.reference要素に当該施設でそのリソースのidentifierによって取得可能な
-##### Patientリソース
- - AllergyIntolerance.patient 	Reference(JP Core Patient Profile) 
-	.reference  当該施設の患者番号など
+### JP Core FHIRコンテンツ
+JP Core FHIRコンテンツ: JP Coreで利用するFHIRの詳細について記載をしている。
 
-
-### FHIRリソース要求仕様
-＜エクセルも参照＞
-
-
-# SS-MIX2標準化ストレージ-マッピングガイドラインon 
-Clinical-Core IG 
-## ---- 以下は今後整備予定　----
-## 目的：
-SS-MIX2標準化ストレージのデータ項目を確実にClinical-Core IG の対応リソースへ対応づけて変換するためにルールを作成し、ガイドラインとして公表する。
-SS-MIX2標準化ストレージからFHIRリソースデータを作成する際に、実装者はこれに準拠することを期待するものとする。
+#### [Profiles （プロファイル）](artifacts.html#structures-resource-profiles)
+* [Administrationグループ （運営管理）](group-administration.html)
+  * [JP Core Patient （患者）プロファイル][JP_Patient]
+  * [JP Core Coverage （保険・公費）プロファイル][JP_Coverage]
+  * [JP Core Encounter （来院・入院）プロファイル][JP_Encounter]
+  * [JP Core Location （所在場所）プロファイル][JP_Location]
+  * [JP Core Organization （組織）プロファイル][JP_Organization]
+  * [JP Core Practitioner （医療従事者）プロファイル][JP_Practitioner]
+  * [JP Core PractitionerRole （医療従事者役割）プロファイル][JP_PractitionerRole]
 
 # 参考
 https://build.fhir.org/ig/HL7/v2-to-fhir/mappings.html
