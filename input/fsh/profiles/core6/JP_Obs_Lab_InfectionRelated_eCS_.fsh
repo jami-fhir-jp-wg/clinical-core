@@ -7,7 +7,7 @@ Profile: JP_Observation_LabResult_InfectionRelated_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-InfectionRelated-eCS
 Title:  "Core6 : JP_Observation_LabResult_InfectionRelated_eCS"
-Description: "診療情報コアサマリー用　Observationリソース(感染症検体検査結果）プロファイル　（JP_Observation_LabResultの派生プロファイル）　対象検査結果項目を感染症関連の指定された特定の項目に限定"
+Description: "診療情報コアサマリー用　Observationリソース(感染症検体検査結果）プロファイル　（JP_Observation_LabResultの派生プロファイル）　★対象検査結果項目を感染症関連の指定された特定の項目に限定"
 * ^url = $JP_Observation__InfectionRelated_eCS
 * ^status = #active
 * ^date = "2023-05-27"
