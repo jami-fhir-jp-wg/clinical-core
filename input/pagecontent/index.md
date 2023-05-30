@@ -94,7 +94,7 @@ table th {
   * [感染症情報　Observationリソース][JP_Observation_LabResult_eCS]
   * [処方依頼情報　MedicationRequestリソース][JP_Observation_LabResult_InfectionRelated_eCS]
 
-### 上記から参照される情報
+* 上記から参照される情報
 　以下の情報は上記主要の6情報から、その要素情報として参照されることがある情報種別として定義されている。
 　これらは後述するContainedリソース専用のプロファイルである。
   * [保険情報 Coverageリソース][JP_Coverage_eCS_insurance]
@@ -107,21 +107,21 @@ table th {
   * [サービス依頼（オーダ）情報　ServiceRequestリソース][JP_ServiceRequest_eCS_Contained]
   * [検査検体情報	Sepecimenリソース][JP_Specimen_LaboResult_eCS_Contained]
   
-### 診療情報提供書、退院時サマリーに含まれる上記以外の情報種別
+* 診療情報提供書、退院時サマリーに含まれる上記以外の情報種別
 　以下のすべてのリソースは、現時点ではFHIRの基底仕様からまだ吟味されておらず、日本国内での使用についての特別な記述がないが、必要であれば使用できる。また＊印のリソースはJP-Core　V1.1でJP-Core仕様が公表されている。
-  * [バイナリーデータ情報　Binaryリソース]
-  * [ケア計画	CarePlanリソース]
-  * [同意情報　Consentリソース]
-  * [医療デバイス情報 Deviceリソース]
-  * [医療デバイス使用情報　DeviceUseStatementリソース]
-  * [家族歴情報	FamilyMemberHistoryリソース]　＊
-  * [予防接種情報　Immunizationリソース] ＊
-  * [処方内容情報　MedicationStatementリソース] ＊
-  * [手術処置情報　Procedureリソース] ＊
-  * [患者関係者情報　RelatedPersonリソース]
-  * [臨床研究対象者情報　ResearchSubjectリソース]
-  * [臨床研究課題情報　ResearchStudyリソース]
- 
+  * [バイナリーデータ情報　Binaryリソース][JP_Binary]
+  * [ケア計画	CarePlanリソース][JP_CarePlan]
+  * [同意情報　Consentリソース][JP_Concent]
+  * [医療デバイス情報 Deviceリソース][JP_Device]
+  * [医療デバイス使用情報　DeviceUseStatementリソース][JP_DeviceStatement]
+  * [家族歴情報	FamilyMemberHistoryリソース][JP_FamilyMemberHistory]　＊
+  * [予防接種情報　Immunizationリソース][JP_Immunization] ＊
+  * [処方内容情報　MedicationStatementリソース][JP_MedicationStatement] ＊
+  * [手術処置情報　Procedureリソース][JP_Procedure] ＊
+  * [患者関係者情報　RelatedPersonリソース][JP_RelatedPerson]
+  * [臨床研究対象者情報　ResearchSubjectリソース][JP_ResearchSubject]
+  * [臨床研究課題情報　ResearchStudyリソース][JP_ResearchStudy]
+
 
 ## 基本方針：
 1. 2023年3月時点では、各リソースの仕様はFHIR R4.0.1 および JP-Core V1.1に準拠する。
@@ -220,8 +220,5 @@ JP_\[リソースタイプ\]\(_0個以上の付加的な階層名\)_eCS_プロ�
 
   },
 ```
-
-
-
 
 {% include markdown-link-references.md %}
