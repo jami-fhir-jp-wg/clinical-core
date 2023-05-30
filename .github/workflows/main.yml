@@ -1,5 +1,4 @@
-name: Ohe-testing
-
+name: Ohe-Develp and  Dispatch
 on:
   push:
     branches: 
@@ -10,9 +9,9 @@ on:
       - '.github/workflows/main.yml'
   pull_request:
     branches: [ develop1.0 ]
-    
+
 jobs:
-  turn:
+  turn1:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,15 +20,16 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: ssh key generate
-      run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
-      env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_TO_JPFHIR }}
-    - name: rsync remote-site-deploy
-      run: rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 8022" --delete ./output ./fsh-generated r2217734@www41.onamae.ne.jp:/home/r2217734/public_html/jpfhir.jp/eMunicipalCheckup/ --exclude .htaccess
+      run: |
+          echo "starting"
+          echo "secrets.PERSONAL_TOKEN " ${{ secrets.PERSONAL_TOKEN }}
+          echo "secrets.PERSONAL_TOKEN2 " ${{ secrets.PERSONAL_TOKEN2 }}
+          curl -vv -H "Authorization: token ${{ secrets.PERSONAL_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" "https://api.github.com/repos/jami-fhir-jp-wg/eReferral/dispatches" --data '{"event_type": "update", "client_payload": {"ref": "develop1.0"}}'
+          curl -vv -H "Authorization: token ${{ secrets.PERSONAL_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" "https://api.github.com/repos/jami-fhir-jp-wg/eDischargeSummary/dispatches" --data '{"event_type": "update", "client_payload": {"ref": "develop1.0"}}'
 
     - name: Setup npm
       uses: actions/setup-node@v2
-      with: 
+      with:
         check-latest: true
     - name: Setup Sushi
       run: |
@@ -57,10 +57,12 @@ jobs:
       with:
         args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-JPV2
 
+        
     - name: Download US version of hl7.fhir.r4.core Package
       uses: wei/wget@v1
       with:
         args:  https://jpfhir.jp/fhir/hl7.fhir.r4.core-4.0.1.tgz-US
+        
     - name: mv pkg to packages_snapshot folder
       run: |
         mkdir -p packages_snapshot with renaming from - to #
@@ -72,7 +74,7 @@ jobs:
       env:
         PACKAGE: jp-core.r4#1.1.1-snap
         PACKAGECORE: hl7.fhir.r4.core#4.0.1
-        PACKAGECOREVERSION: US
+        PACKAGECOREVERSION: JPV2
       run: | 
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
@@ -121,5 +123,4 @@ jobs:
       run: |
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs1/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/ccs1/ ; tar xzf output.tgz'
-
 
