@@ -197,7 +197,7 @@ JP_\[リソースタイプ\]\(_0個以上の付加的な階層名\)_eCS_プロ�
 ##### 長期保存の対象であることの格納
 電子カルテ情報交換サービス（仮称）に医療機関から送信する場合、送信するFHIRリソースが長期保存対象の情報である場合には、そのことを明示的に示すため、それぞれのリソース識別子情報を設定しなければならない。<br>以下にその仕様を示す。<br>
 
-##### 長期保存情報の仕様
+ｓ##### 長期保存情報の仕様
 リソースのデータを長期保存対象とする場合には、そのリソースのデータにおけるmeta要素のtag要素に以下の形式で記述しなければならない。<br>
 　meta.tag.system = "http:/jpfhir.jp/fhir/ccs/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
 　meta.tag.code = "LTS"　(この固定値とする)<br>
@@ -219,6 +219,63 @@ JP_\[リソースタイプ\]\(_0個以上の付加的な階層名\)_eCS_プロ�
     }
 
   },
+```
+
+### 送信時の複数リソースデータのまとめ方
+電子カルテ情報交換サービス（仮称）に医療機関から送信する場合、１回に送信するリソースデータは、複数リソースタイプの複数リソースデータから構成されるのが普通である。FHIRではこのような送受信のまめに、異なるリソースタイプの複数リソースデータをひとまりにしたひとつのリソースとしてBundleリソースタイプが用意されている。<br>
+電子カルテ情報交換サービス（仮称）に医療機関から送信する場合には、このBundleリソースタイプのひとつのリソースデータにして１回の送信で送信する。
+Bundleリソースのタイプ（type要素）は"collection"を使用する。<br>
+なお格納されるリソースデータ（以下の例では、Observation）同士を相互参照することはできない。<br>
+
+```
+{
+    "resourceType": "Bundle",
+    "id": "Bundle-for-Example01",
+    "meta": {
+        :
+        <省略>
+        :
+    },
+    "identifier": {
+        :
+        <省略>
+        :
+    },
+    "type": "collection",
+    "timestamp": "2020-08-21T12:12:21+09:00",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:20ade057-b106-9223-585e-20aa8d1635af",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "JP-Observation-Example001",
+                :
+                <１個目の検査結果><省略>
+                :
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:20ade057-b106-9223-585e-20aa8d1635af",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "JP-Observation-Example001",
+                :
+                <２個目の検査結果><省略>
+                :
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:20ade057-b106-9223-585e-20aa8d1635af",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "JP-Observation-Example001",
+                :
+                <３個目の検査結果><省略>
+                :
+            }
+        }
+    ]
+}
 ```
 
 {% include markdown-link-references.md %}
