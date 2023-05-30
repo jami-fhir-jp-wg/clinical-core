@@ -1,0 +1,167 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JP-Specimen-eCS",
+  "url": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Specimen_eCS_Contained",
+  "version": "0.1.0",
+  "name": "JP_Specimen_LaboResult_eCS_Contained",
+  "status": "active",
+  "date": "2023-05-27",
+  "description": "診療情報コアサマリー埋め込み用 Specimenリソース（検体検査の検体情報 ）プロファイル ",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen",
+        "path": "Specimen",
+        "short": "診療情報コアサマリーにおける検体検査結果リソースへの埋め込み用の検体材料情報の格納に使用する。",
+        "definition": "診療情報コアサマリー・厚労省6情報などにおける検体検査結果リソースへの埋め込み用の検体材料情報の格納に使用する。",
+        "comment": "Contaiedリソースであるため、これ自身はContainedリソースを持てない。"
+      },
+      {
+        "id": "Specimen.id",
+        "path": "Specimen.id",
+        "min": 1
+      },
+      {
+        "id": "Specimen.meta.profile",
+        "path": "Specimen.meta.profile",
+        "patternCanonical": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Specimen_eCS_Contained"
+      },
+      {
+        "id": "Specimen.implicitRules",
+        "path": "Specimen.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.text",
+        "path": "Specimen.text",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.contained",
+        "path": "Specimen.contained",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "short": "検体の材料コード。JLAC10材料コード（必須）とローカル材料コードを設定する。",
+        "definition": "検体の材料コード。JLAC10材料コード（必須）とローカル材料コードを設定する。",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Specimen.type.coding",
+        "path": "Specimen.type.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "binding": {
+          "description": "JLAC10材料コード"
+        }
+      },
+      {
+        "id": "Specimen.type.coding:jlac10Coded",
+        "path": "Specimen.type.coding",
+        "sliceName": "jlac10Coded",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Specimen.type.coding:jlac10Coded.system",
+        "path": "Specimen.type.coding.system",
+        "short": "JLAC10材料コードでコード記述をする場合のsystem値（url)",
+        "definition": "JLAC10材料コードでコード記述をする場合のsystem値（url)で、未コード化コード999を使用する場合も同じsystem値。",
+        "min": 1,
+        "fixedUri": "http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes"
+      },
+      {
+        "id": "Specimen.type.coding:jlac10Coded.code",
+        "path": "Specimen.type.coding.code",
+        "short": "JLAC10材料コード",
+        "definition": "JLAC10材料コード.もっとも近い材料コードを選択する。",
+        "comment": "適当なコードがない場合には、999（未コード化検体材料）を使用し、type.textに実際の検体材料名を設定する。",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_Specimen_JLAC10_SpecimenCode_VS"
+        }
+      },
+      {
+        "id": "Specimen.type.coding:jlac10Coded.display",
+        "path": "Specimen.type.coding.display",
+        "short": "JLAC10材料コードでコード記述をする場合のコードに対応する表示名。999の場合には「未コード化検体材料」を設定する。"
+      },
+      {
+        "id": "Specimen.type.coding:localCoded",
+        "path": "Specimen.type.coding",
+        "sliceName": "localCoded",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Specimen.type.coding:localCoded.system",
+        "path": "Specimen.type.coding.system",
+        "short": "その施設固有の材料コードでコード記述をする場合のsystem値（url)",
+        "definition": "その施設固有の材料コードでコード記述をする場合のsystem値（url)、施設によらず固定値とする。",
+        "min": 1,
+        "fixedUri": "http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabSepecimen_LocalCode_CS"
+      },
+      {
+        "id": "Specimen.type.coding:localCoded.display",
+        "path": "Specimen.type.coding.display",
+        "short": "ローカル材料コードでコード記述をする場合の、そのコードに対応する表示名。"
+      },
+      {
+        "id": "Specimen.type.text",
+        "path": "Specimen.type.text",
+        "short": "検体材料名",
+        "definition": "検体材料名。コードごとの表示名は、そのコード体系でのコードに対応する表示名であるのに対して、このテキストは当該医療機関のその検査で使用された材料の名称をコード化方法によらず設定する。",
+        "min": 1
+      },
+      {
+        "id": "Specimen.note",
+        "path": "Specimen.note",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Specimen.note.text",
+        "path": "Specimen.note.text",
+        "short": "自由記載の検体材料コメント",
+        "definition": "自由記載の検体材料コメント",
+        "mustSupport": true
+      }
+    ]
+  }
+}

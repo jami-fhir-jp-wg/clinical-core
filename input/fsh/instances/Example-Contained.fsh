@@ -5,7 +5,7 @@ Usage: #inline
 
 Description: "埋め込み　患者情報01"
 
-//* meta.profile[+] = $JP_Patient_eCS_Contained
+* meta.profile[+] = $JP_Patient_eCS_Contained
 
 * id = "Patient1"
 
@@ -28,7 +28,7 @@ InstanceOf: JP_Patient_eCS_Contained
 Usage: #inline
 Description: "埋め込み　患者情報02"
 
-//* meta.profile[+] = $JP_Patient_eCS_Contained
+* meta.profile[+] = $JP_Patient_eCS_Contained
 
 * id = "Patient2"
 * identifier.system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
@@ -54,9 +54,7 @@ InstanceOf: JP_Encounter
 Usage: #inline
 
 Description: "埋め込み　外来受診01 "
-
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_eClinicalSummary"
+* meta.profile[+] = $JP_Encounter_OW_eCS_Contained
 
 * id = "Encounter1"
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"

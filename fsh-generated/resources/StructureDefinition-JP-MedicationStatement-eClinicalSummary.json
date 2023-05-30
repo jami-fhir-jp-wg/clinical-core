@@ -1,0 +1,46 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JP-MedicationStatement-eClinicalSummary",
+  "url": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_MedicationStatement_eClinicalSummary",
+  "version": "0.1.0",
+  "name": "JP_MedicationStatement_eClinicalSummary",
+  "status": "active",
+  "date": "2023-03-31",
+  "description": "Derived Profile from JP-Core",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationStatement",
+  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationStatement",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationStatement",
+        "path": "MedicationStatement"
+      }
+    ]
+  }
+}
