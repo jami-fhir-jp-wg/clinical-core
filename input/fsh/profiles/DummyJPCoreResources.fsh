@@ -7,6 +7,7 @@ Description:    "JP-ServiceRequest　暫定プロファイル"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 
+
 Profile: JP_Specimen
 Parent:	Specimen
 Id:             JP-Specimen
@@ -209,6 +210,14 @@ Parent:			JP_RelatedPerson
 Id:             JP-RelatedPerson-eClinicalSummary
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_RelatedPerson_eClinicalSummary"
+* ^date = "2023-03-31"
+* meta.lastUpdated 0.. MS
+
+Profile:        JP_Binary
+Parent:			Binary
+Id:             JP-Binary
+Description:    "Derived Profile from JP-Core"
+* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 

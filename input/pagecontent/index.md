@@ -111,13 +111,13 @@ table th {
 　以下のすべてのリソースは、現時点ではFHIRの基底仕様からまだ吟味されておらず、日本国内での使用についての特別な記述がないが、必要であれば使用できる。また＊印のリソースはJP-Core　V1.1でJP-Core仕様が公表されている。
   * [バイナリーデータ情報　Binaryリソース][JP_Binary]
   * [ケア計画	CarePlanリソース][JP_CarePlan]
-  * [同意情報　Consentリソース][JP_Concent]
+  * [同意情報　Consentリソース][JP_Consent]
   * [医療デバイス情報 Deviceリソース][JP_Device]
-  * [医療デバイス使用情報　DeviceUseStatementリソース][JP_DeviceStatement]
-  * [家族歴情報	FamilyMemberHistoryリソース][JP_FamilyMemberHistory]　＊
+  * [医療デバイス使用情報　DeviceUseStatementリソース][JP_DeviceUseStatement]
+  * [家族歴情報	FamilyMemberHistoryリソース][JP_FamilyMemberHistory_eClinicalSummary]　＊
   * [予防接種情報　Immunizationリソース][JP_Immunization] ＊
   * [処方内容情報　MedicationStatementリソース][JP_MedicationStatement] ＊
-  * [手術処置情報　Procedureリソース][JP_Procedure] ＊
+  * [手術処置情報　Procedureリソース][JP_Procedure_eClinicalSummary] ＊
   * [患者関係者情報　RelatedPersonリソース][JP_RelatedPerson]
   * [臨床研究対象者情報　ResearchSubjectリソース][JP_ResearchSubject]
   * [臨床研究課題情報　ResearchStudyリソース][JP_ResearchStudy]
