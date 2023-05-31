@@ -37,6 +37,3 @@
 SS-MIX2標準化ストレージのデータ項目を確実にClinical-Core IG の対応リソースへ対応づけて変換するためにルールを作成し、ガイドラインとして公表する。
 SS-MIX2標準化ストレージからFHIRリソースデータを作成する際に、実装者はこれに準拠することを期待するものとする。
 
-# 参考
-https://build.fhir.org/ig/HL7/v2-to-fhir/mappings.html
-![image](https://user-images.githubusercontent.com/57020949/207955925-7ccbeb8b-5514-456a-a757-03ff5df12aac.png)
