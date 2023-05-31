@@ -32,7 +32,7 @@
 </grouping>
 <grouping xmlns="http://hl7.org/fhir" id="-str-profile">
   <name value="Structures: Resource Profiles"/>
-  <description value="これらは、この実装ガイドに準拠するシステムでの、FHIRリソースに対する制約を定義します。"/>
+  <description value="これらは、この実装ガイドに準拠するシステムでの、FHIRリソースに対する制約を定義します。\r\n第１列（タイトル）がCore6：で始まるプロファイルは６情報のプロファイルです。"/>
 </grouping>
 <grouping xmlns="http://hl7.org/fhir" id="-str-datatype">
   <name value="Structures: Data Type Profiles"/>
