@@ -1,16 +1,10 @@
-//-------------------------------
-//--- Profile for conatained resource within other resources
-//-------------------------------
 
 Profile: JP_Organization_eCS_department
 Parent: JP_Organization
 Id: JP-Organization-eCS-department
-
+Description: "診療情報サマリー用　Organizationリソース（診療科情報）プロファイル"
 // * obeys checkOrganizationType0
 // * obeys checkOrganizationType1
-
-
-Description: "診療情報コアサマリー用　Organizationリソース（診療科情報）プロファイル　（JP_Organizationの派生プロファイル）"
 //* obeys checkPhoneNumberExists
 * ^url = $JP_Organization_eCS_department
 * ^status = #active

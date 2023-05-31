@@ -6,7 +6,7 @@ Profile: JP_Organization_eCS_Contained
 Parent: JP_Organization_eCS
 Id: JP-Organization-eCS-Contained
 Title: "JP_Organization_eCS_Contained"
-Description: "診療情報コアサマリー埋め込み用 Organizationリソース(医療機関等組織情報)プロファイル　　（JP_Organization_eClinicalSummaryの派生プロファイル）"
+Description: "診療情報コアサマリー埋め込み用 Organizationリソース(医療機関等組織情報)プロファイル　"
 * ^url = $JP_Organization_eCS_Contained
 * ^status = #active
 * ^date = "2023-05-27"
@@ -15,7 +15,7 @@ Description: "診療情報コアサマリー埋め込み用 Organizationリソ�
 * . ^comment = "Contaiedリソースであるため、これ自身はContainedリソースを持てない。"
 
 * id 1..1
-//* meta.profile = $JP_Organization_LabResult_eCS_Contained
+
 * implicitRules ..0
 * text ..0
 * contained ..0

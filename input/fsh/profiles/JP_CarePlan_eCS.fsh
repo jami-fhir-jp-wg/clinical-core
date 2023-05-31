@@ -1,7 +1,7 @@
 Profile:        JP_CarePlan
 Parent:			CarePlan
 Id:             JP-CarePlan
-Description:    "Derived Profile from JP-Core"
+Description:    "診療情報コアサマリー用　CarePlanリソース（ケアプラン・診療計画）プロファイル"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan"
 
 
@@ -13,7 +13,6 @@ Description:    "Derived Profile from JP-Core"
 * ^status = #active
 * ^date = "2023-03-31"
 
-* meta.lastUpdated 1.. MS
 
 * text ^short = "本リソースをテキストで表現したものを入れてもよい。"
 * text.status ^short = "generated"

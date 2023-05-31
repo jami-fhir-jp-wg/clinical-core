@@ -7,13 +7,25 @@ Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "Core6 : JP_AllergyIntolerance_eCS"
-Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報（除く：薬剤禁忌））プロファイル　（JP_AllergyIntoleranceの派生プロファイル）"
+Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報（除く：薬剤禁忌））プロファイル"
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2023-05-27"
 * . ^short = "診療情報コアサマリーにおけるアレルギー情報（除く：薬剤禁忌）の格納に使用する"
 * . ^definition = "診療情報コアサマリー・厚労省6情報などにおけるアレルギー情報（除く：薬剤禁忌）の格納に使用する"
 * . ^comment = "厚労省6情報などの運用において、薬剤禁忌の情報は本プロフィルではなく、薬剤禁忌情報プロファイルを使用すること。"
+
+// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained contains patient 1..1
+    and encounter 0..1
+    and recorder 0..1
+
+* contained[patient] only  JP_Patient_eCS_Contained
+* contained[encounter] only  JP_Encounter_OW_eCS_Contained
+* contained[recorder] only  JP_Practitioner_eCS_Contained
 
 * identifier 0..1 MS
 * identifier.system 1..1 MS

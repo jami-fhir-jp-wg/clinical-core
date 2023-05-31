@@ -7,29 +7,28 @@
 Profile: JP_Practitioner_eCS
 Parent: JP_Practitioner
 Id: JP-Practitioner-eCS
-Description: "診療情報コアサマリー埋め込み用 Practitionerリソース（医師情報）　　（JP_Practitionerの派生プロファイル）"
+Description: "診療情報サマリー用 Practitionerリソース（医師情報）　"
 * ^url = $JP_Practitioner_eCS
 * ^status = #active
 * ^date = "2023-05-27"
-* . ^short = "診療情報コアサマリーにおけるオーダ等の医師情報の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおけるオーダ等の医師情報の格納に使用する"
+* . ^short = "診療情報サマリーにおける主としてオーダ等の医師情報の格納に使用する"
+* . ^definition = "診療情報サマリー・厚労省6情報などにおける主としてオーダ等の医師情報の格納に使用する"
 
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
-* meta.profile 1.. MS
-* meta.profile = $JP_Practitioner_eCS
 
-* identifier ^short = "依頼医師ID"
-* identifier ^definition = "依頼医師ID。\r\n依頼医師を識別するIDや番号として、依頼医師療機関における依頼医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
-* identifier.system ^short = "依頼医師ID（医師）のsystem値"
+
+* identifier ^short = "医師医師ID"
+* identifier ^definition = "医師医師ID。\r\n医師医師を識別するIDや番号として、医師医師療機関における医師医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
+* identifier.system ^short = "医師医師ID（医師）のsystem値"
 * identifier.system MS
 * identifier.system ^definition = "urn:oid:1.2.392.100495.20.3.41.1[保険医療機関コード(10桁)\r\n末尾の1[保険医療機関コード(10桁)]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。"
 * identifier.value ^short = "医療機関で発番している医師のID"
-* identifier.value ^definition = "依頼医師を識別するIDや番号として、依頼医師療機関における依頼医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
+* identifier.value ^definition = "医師医師を識別するIDや番号として、医師医師療機関における医師医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
 * identifier.value MS
 
-* name ^short = "依頼医師氏名"
+* name ^short = "医師医師氏名"
 /* 資格の明記は不要のためチェックしない
 * obeys
     checkQualification-DoctorLicenseExists and 

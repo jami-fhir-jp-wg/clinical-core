@@ -1,10 +1,10 @@
 Profile:        JP_FamilyMemberHistory_eClinicalSummary
 Parent:			JP_FamilyMemberHistory
 Id:             JP-FamilyMemberHistory-eClinicalSummary
-Description:    "Derived Profile from JP-Core"
+Description:    "診療情報サマリー用　FamilyMemberHistoryリソース（家族歴情報）プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_FamilyMemberHistory_eClinicalSummary"
 * ^date = "2023-03-31"
-* meta.lastUpdated 1.. MS
+
 * status 1..1 MS
 * status = #partial
 * dataAbsentReason 0..1 MS      //この家族の情報がとれない理由コード

@@ -7,7 +7,7 @@ Profile:        JP_DrugContraIndication_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-DrugContraIndication-eCS
 Title:  "Core6 : JP_DrugContraIndication_eCS"
-Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（薬剤禁忌情報に特化）プロファイル　（JP_AllergyIntoleranceの派生プロファイル）"
+Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（薬剤禁忌情報に特化）プロファイル"
 * ^url = $JP_DrugContraIndication_eCS
 * ^status = #active
 * ^date = "2023-05-27"

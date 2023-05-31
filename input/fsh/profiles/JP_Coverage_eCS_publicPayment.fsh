@@ -1,7 +1,7 @@
 Profile: JP_Coverage_eCS_publicPayment
 Parent: JP_Coverage
 Id: JP-Coverage-eCS-publicPayment
-Description: "公費負担情報　JP_Coverageの派生プロファイル"
+Description: "診療情報サマリー用　Coverageリソース（公費負担情報）プロファイル"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_publicPayment"
 * ^status = #draft
 * text ^short = "このリソースのショートサマリーで人が読んでわかるテキスト表現"

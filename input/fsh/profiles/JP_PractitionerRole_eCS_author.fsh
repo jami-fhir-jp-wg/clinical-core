@@ -1,10 +1,10 @@
 Profile: JP_PractitionerRole_eCS_author
 Parent: JP_PractitionerRole
 Id: JP-PractitionerRole-eCS-author
-Description: "処方を発行した医療者の資格情報　JP_PractitionerRole の派生プロファイル"
+Description: "診療情報サマリー用 PractitionerRoleリソース（資格や権限が必要な文書作成医療者の資格情報)
+プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_PractitionerRole_eClinicalSummary_author"
 * ^status = #draft
-* meta.lastUpdated 1.. MS
 
 * text ^short = "本リソースをテキストで表現したものを入れてもよい。"
 * text.status ^definition = "固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。"

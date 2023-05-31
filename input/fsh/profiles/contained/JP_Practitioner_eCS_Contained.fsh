@@ -21,8 +21,8 @@ Description: "診療情報コアサマリー埋め込み用 Practitionerリソ�
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
-* meta.profile 1.. MS
-//* meta.profile = $JP_Practitioner_eCS_Contained
+
+
 
 * identifier 0..1
 * name 1..1

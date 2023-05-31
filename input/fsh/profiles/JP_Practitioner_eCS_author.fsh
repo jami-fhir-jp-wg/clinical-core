@@ -1,25 +1,28 @@
 Profile: JP_Practitioner_eCS_author
 Parent: JP_Practitioner_eCS
 Id: JP-Practitioner-eCSauthor
-Description: "処方を作成した医師情報　JP_Practitionerの派生プロファイル"
+Description: "診療情報サマリー用　Practitionerリソース（医療文書作成医師情報）プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary_author"
 * ^status = #active
 * ^date = "2023-03-31"
-* meta.lastUpdated 1.. MS
+* . ^short = "診療情報サマリーにおける主として医療文書作成者としての医師情報の格納に使用する"
+* . ^definition = "診療情報サマリー・厚労省6情報などにおける主として医療文書作成者としての医師情報の格納に使用する"
+
+
 
 * text ^short = "本リソースをテキストで表現したものを入れてもよい。"
 * text.status ^short = "generated| extensions | additional | empty"
 * text.status ^definition = "固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。"
 * text.div ^definition = "本リソースの構造化情報から生成したテキスト表現をいれてもよい。\\\\r\\\\nXHTML形式。"
-* identifier ^short = "処方医ID"
-* identifier ^definition = "処方医ID。\r\n処方医を識別するIDや番号として、処方医療機関における処方医ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
-* identifier.system ^short = "処方医ID（医師）のsystem値"
+* identifier ^short = "医師ID"
+* identifier ^definition = "医師ID。\r\n医師を識別するIDや番号として、医療機関における医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
+* identifier.system ^short = "医師IDのsystem値"
 * identifier.system MS
 * identifier.system ^definition = "urn:oid:1.2.392.100495.20.3.41.1[保険医療機関コード(10桁)\r\n末尾の1[保険医療機関コード(10桁)]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。"
 * identifier.value ^short = "医療機関で発番している医師のID"
-* identifier.value ^definition = "処方医を識別するIDや番号として、処方医療機関における処方医ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
+* identifier.value ^definition = "医師を識別するIDや番号として、医療機関における医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
 * identifier.value MS
-* name ^short = "処方医氏名"
+* name ^short = "医師氏名"
 /* 診療情報提供書では資格の明記は不要のためチェックしない
 * obeys
     checkQualification-DoctorLicenseExists and 

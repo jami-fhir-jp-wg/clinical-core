@@ -2,7 +2,7 @@ Profile: JP_Patient_eCS
 Parent: JP_Patient
 Id: JP-Patient-eCS
 Title: "JP_Patient_eCS"
-Description: "診療情報コアサマリー用　Patientリソース（患者情報）プロファイル　（JP_Patientの派生プロファイル）"
+Description: "診療情報サマリー用　Patientリソース（患者情報）プロファイル"
 * ^url = $JP_Patient_eClinicalSummary
 * ^status = #active
 * ^date = "2023-03-31"
@@ -26,25 +26,21 @@ Description: "診療情報コアサマリー用　Patientリソース（患者�
 * identifier.value ^short = "医療機関での患者番号、または保険者・被保険者番号情報"
 * identifier.value ^definition = "医療機関での患者番号、または保険者・被保険者番号情報"
 * identifier.value ^comment = "リソースをオン資ネットワークに送信する場合には、保険者・被保険者番号情報は必須。"
+//""extension('http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation')""
 * name 1.. MS
-* name ^slicing.discriminator.type = #value
-* name ^slicing.discriminator.path = "extension($iso21090-EN-representation).value"
-* name ^slicing.rules = #open
-* name contains
-  kanji 1..1 MS
-and kana 0..1 MS
+
 * name.id ..0
-* name[kanji].extension[nameRepresentationUse].valueCode = #IDE (exactly) //漢字名
-* name[kanji] ^short =  "漢字の名前情報"
-* name[kanji] ^definition =  "漢字の名前情報"
-* name[kana] ^short =  "カタカナの名前情報"
-* name[kana] ^definition =  "カタカナの名前情報"
-* name.text 1..1    // 漢字名前　半角空白で姓と名を区切る
-* name.family 1..1  // 漢字姓
-* name.given 1..1  // 漢字名
+* name ^short =  "漢字またはカナの名前情報"
+* name ^definition =  "漢字またはカナの名前情報。extension.url='http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation' の拡張のvalueCode = IDE:漢字名前、SYL:カナ名前　で区別される"
+
+
+* name.text 1..1    // 名前　半角空白で姓と名を区切る
+* name.family 1..1  // 姓
+* name.given 1..1  // 名
 * name.prefix ..0
 * name.suffix ..0
 * name.period ..0
+
 * gender 1.. MS
 * birthDate 1.. MS
 * address 0..1 

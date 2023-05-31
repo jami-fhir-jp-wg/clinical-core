@@ -14,7 +14,7 @@ Description:    "診療情報コアサマリー埋め込み用 Specimenリソー
 * . ^definition = "診療情報コアサマリー・厚労省6情報などにおける検体検査結果リソースへの埋め込み用の検体材料情報の格納に使用する。"
 * . ^comment = "Contaiedリソースであるため、これ自身はContainedリソースを持てない。"
 * id 1..1
-* meta.profile = $JP_Specimen_LaboResult_eCS_Contained
+
 * implicitRules ..0
 * text ..0
 * contained ..0

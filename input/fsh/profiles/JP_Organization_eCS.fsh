@@ -3,7 +3,7 @@ Profile: JP_Organization_eCS
 Parent: JP_Organization
 Id: JP-Organization-eCS
 Title: "JP_Organization_eCS"
-Description: "診療情報コアサマリー用　Organizationリソース（医療機関等組織情報）プロファイル　（JP_Organizationの派生プロファイル）"
+Description: "診療情報サマリー用　Organizationリソース（医療機関等の組織情報）プロファイル"
 //* obeys checkPhoneNumberExists
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary"
 * ^status = #active

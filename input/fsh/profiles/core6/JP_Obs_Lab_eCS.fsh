@@ -7,7 +7,7 @@ Profile: JP_Observation_LabResult_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS
 Title:  "Core6 : JP_Observation_LabResult_eCS"
-Description: "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル　（JP_Observation_LabResultの派生プロファイル）"
+Description: "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル"
 * ^url = $JP_Observation_LabResult_eCS
 * ^status = #active
 * ^date = "2023-05-27"
@@ -36,8 +36,7 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
-* meta.profile 1.. MS
-* meta.profile = $JP_Observation_LabResult_eCS
+
 
 * identifier 1..* MS
 * identifier ^short = "当該検査項目に対して、施設内で割り振られる一意の識別子"

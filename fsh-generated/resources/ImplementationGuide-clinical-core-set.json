@@ -54,7 +54,7 @@
           "reference": "StructureDefinition/JP-AllergyIntolerance-eCS"
         },
         "name": "Core6 : JP_AllergyIntolerance_eCS",
-        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報（除く：薬剤禁忌））プロファイル　（JP_AllergyIntoleranceの派生プロファイル）",
+        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報（除く：薬剤禁忌））プロファイル",
         "exampleBoolean": false
       },
       {
@@ -70,7 +70,7 @@
           "reference": "StructureDefinition/JP-CarePlan"
         },
         "name": "JP_CarePlan",
-        "description": "Derived Profile from JP-Core",
+        "description": "診療情報コアサマリー用　CarePlanリソース（ケアプラン・診療計画）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -86,7 +86,7 @@
           "reference": "StructureDefinition/JP-Condition-eCS"
         },
         "name": "Core6 : JP_Condition_eCS",
-        "description": "診療情報コアサマリー用　Conditionリソース（傷病名情報）プロファイル　（JP_Coonditionの派生プロファイル）",
+        "description": "診療情報コアサマリー用　Conditionリソース（傷病名情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -110,7 +110,7 @@
           "reference": "StructureDefinition/JP-Coverage-eCS-insurance"
         },
         "name": "JP_Coverage_eCS_insurance",
-        "description": "保険情報　Coverageリソースプロファイル　JP_Coverageの派生プロファイル",
+        "description": "診療情報サマリー用　Coverageリソース（保険情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -118,7 +118,7 @@
           "reference": "StructureDefinition/JP-Coverage-eCS-publicPayment"
         },
         "name": "JP_Coverage_eCS_publicPayment",
-        "description": "公費負担情報　JP_Coverageの派生プロファイル",
+        "description": "診療情報サマリー用　Coverageリソース（公費負担情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -182,7 +182,7 @@
           "reference": "StructureDefinition/JP-DrugContraIndication-eCS"
         },
         "name": "Core6 : JP_DrugContraIndication_eCS",
-        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（薬剤禁忌情報に特化）プロファイル　（JP_AllergyIntoleranceの派生プロファイル）",
+        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（薬剤禁忌情報に特化）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -190,7 +190,7 @@
           "reference": "StructureDefinition/JP-Encounter-OW-eCS-Contained"
         },
         "name": "JP_Encounter_OW_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Encouterリソース(入院外来の別に関するのみの情報)プロファイル　　（JP_Encounter_eClinicalSummaryの派生プロファイル）",
+        "description": "診療情報コアサマリー埋め込み用 Encouterリソース(入院外来の別に関するのみの情報)プロファイル　",
         "exampleBoolean": false
       },
       {
@@ -198,7 +198,7 @@
           "reference": "StructureDefinition/JP-Encounter-eClinicalSummary"
         },
         "name": "JP_Encounter_eClinicalSummary",
-        "description": "診療情報提供では、紹介理由を記述するEncouter情報　JP_Encounterの派生プロファイル。診療サマリーではサマリー対象となる受診や入院に関する情報。",
+        "description": "診療情報サマリー用　Encounterリソース（受診時・入院時等のEncounter情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -206,7 +206,7 @@
           "reference": "StructureDefinition/JP-FamilyMemberHistory-eClinicalSummary"
         },
         "name": "JP_FamilyMemberHistory_eClinicalSummary",
-        "description": "Derived Profile from JP-Core",
+        "description": "診療情報サマリー用　FamilyMemberHistoryリソース（家族歴情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -238,7 +238,7 @@
           "reference": "StructureDefinition/JP-MedicationRequest-ePres-eCS"
         },
         "name": "Core6 : JP_MedicationRequest_ePres_eCS",
-        "description": "診療情報コアサマリー用　MedicationRequestリソース（処方オーダ情報）プロファイル　（JP_MedicationRequestの派生プロファイル）",
+        "description": "診療情報コアサマリー用　MedicationRequestリソース（処方オーダ情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -270,7 +270,7 @@
           "reference": "StructureDefinition/JP-Observation-LabResult-InfectionRelated-eCS"
         },
         "name": "Core6 : JP_Observation_LabResult_InfectionRelated_eCS",
-        "description": "診療情報コアサマリー用　Observationリソース(感染症検体検査結果）プロファイル　（JP_Observation_LabResultの派生プロファイル）　対象検査結果項目を感染症関連の指定された特定の項目に限定",
+        "description": "診療情報コアサマリー用　Observationリソース(感染症検体検査結果）プロファイル　★対象検査結果項目を感染症関連の指定された特定の項目に限定",
         "exampleBoolean": false
       },
       {
@@ -278,7 +278,7 @@
           "reference": "StructureDefinition/JP-Observation-LabResult-eCS"
         },
         "name": "Core6 : JP_Observation_LabResult_eCS",
-        "description": "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル　（JP_Observation_LabResultの派生プロファイル）",
+        "description": "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -286,7 +286,7 @@
           "reference": "StructureDefinition/JP-Observation-LabResult-eCS-Contained"
         },
         "name": "JP_Observation_LabResult_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Observationリソース（検体検査結果）　　（JP_Observation_LabResult_eCSの派生プロファイル）",
+        "description": "診療情報コアサマリー埋め込み用 Observationリソース（検体検査結果）　",
         "exampleBoolean": false
       },
       {
@@ -294,7 +294,7 @@
           "reference": "StructureDefinition/JP-Organization-eCS"
         },
         "name": "JP_Organization_eCS",
-        "description": "診療情報コアサマリー用　Organizationリソース（医療機関等組織情報）プロファイル　（JP_Organizationの派生プロファイル）",
+        "description": "診療情報サマリー用　Organizationリソース（医療機関等の組織情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -302,7 +302,7 @@
           "reference": "StructureDefinition/JP-Organization-eCS-Contained"
         },
         "name": "JP_Organization_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Organizationリソース(医療機関等組織情報)プロファイル　　（JP_Organization_eClinicalSummaryの派生プロファイル）",
+        "description": "診療情報コアサマリー埋め込み用 Organizationリソース(医療機関等組織情報)プロファイル　",
         "exampleBoolean": false
       },
       {
@@ -310,7 +310,7 @@
           "reference": "StructureDefinition/JP-Organization-eCS-coveragePayer"
         },
         "name": "JP_Organization_eCS_coveragePayer",
-        "description": "処方など医療サービスに適用される保険の保険者または公費の公費受給者　JP_Organizationの派生プロファイル",
+        "description": "診療情報サマリー用　Organizationリソース（保険者／公費受給者情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -318,7 +318,7 @@
           "reference": "StructureDefinition/JP-Organization-eCS-department"
         },
         "name": "JP_Organization_eCS_department",
-        "description": "診療情報コアサマリー用　Organizationリソース（診療科情報）プロファイル　（JP_Organizationの派生プロファイル）",
+        "description": "診療情報サマリー用　Organizationリソース（診療科情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -326,7 +326,7 @@
           "reference": "StructureDefinition/JP-Organization-eCS-department-Contained"
         },
         "name": "JP_Organization_eCS_department_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Organizationリソース(診療科情報)プロファイル　　（JP_Organization_eCS_departmentの派生プロファイル）",
+        "description": "診療情報コアサマリー埋め込み用 Organizationリソース(診療科情報)プロファイル　",
         "exampleBoolean": false
       },
       {
@@ -334,7 +334,7 @@
           "reference": "StructureDefinition/JP-Patient-eCS"
         },
         "name": "JP_Patient_eCS",
-        "description": "診療情報コアサマリー用　Patientリソース（患者情報）プロファイル　（JP_Patientの派生プロファイル）",
+        "description": "診療情報サマリー用　Patientリソース（患者情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -342,7 +342,7 @@
           "reference": "StructureDefinition/JP-Patient-eCS-Contained"
         },
         "name": "JP_Patient_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Patientリソース(患者情報)プロファイル　　（JP_Patient_eClinicalSummaryの派生プロファイル）",
+        "description": "診療情報コアサマリー埋め込み用 Patientリソース(患者情報)プロファイル　",
         "exampleBoolean": false
       },
       {
@@ -350,7 +350,7 @@
           "reference": "StructureDefinition/JP-PractitionerRole-eCS-author"
         },
         "name": "JP_PractitionerRole_eCS_author",
-        "description": "処方を発行した医療者の資格情報　JP_PractitionerRole の派生プロファイル",
+        "description": "診療情報サマリー用 PractitionerRoleリソース（資格や権限が必要な文書作成医療者の資格情報)\nプロファイル",
         "exampleBoolean": false
       },
       {
@@ -358,7 +358,7 @@
           "reference": "StructureDefinition/JP-Practitioner-eCS"
         },
         "name": "JP_Practitioner_eCS",
-        "description": "診療情報コアサマリー埋め込み用 Practitionerリソース（医師情報）　　（JP_Practitionerの派生プロファイル）",
+        "description": "診療情報サマリー用 Practitionerリソース（医師情報）　",
         "exampleBoolean": false
       },
       {
@@ -374,7 +374,7 @@
           "reference": "StructureDefinition/JP-Practitioner-eCSauthor"
         },
         "name": "JP_Practitioner_eCS_author",
-        "description": "処方を作成した医師情報　JP_Practitionerの派生プロファイル",
+        "description": "診療情報サマリー用　Practitionerリソース（医療文書作成医師情報）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -446,7 +446,7 @@
           "reference": "StructureDefinition/JP-ServiceRequest-eCS-Contained"
         },
         "name": "JP_ServiceRequest_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 ServiceRequestリソース(オーダ依頼)プロファイル　　（JP_ServiceRequest_eClinicalSummaryの派生プロファイル）",
+        "description": "診療情報コアサマリー埋め込み用 ServiceRequestリソース(オーダ依頼)プロファイル　",
         "exampleBoolean": false
       },
       {
