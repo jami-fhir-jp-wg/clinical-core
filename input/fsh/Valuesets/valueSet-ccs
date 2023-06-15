@@ -26,7 +26,6 @@ Description: "未コード化測定法999を含むMEDIS臨床検査項目コー�
 * ^experimental = false
 * include codes from system $JP_CCS_ObsLabResult_JLAC10Unmethod_CS  // 測定法999を含むMEDIS臨床検査項目コード
 
-
 ValueSet: JP_SimpleObservationCategory_VS
 Id: jp-simpleobservationcategory-vs
 Title: "JP Core Simple Observation Category ValueSet"
@@ -36,3 +35,16 @@ Description: "JP Coreにて定義したObservationリソースに関する分類
 * ^experimental = false
 * ^date = "2023-04-18"
 * include codes from system $JP_SimpleObservationCategory_CS
+
+ValueSet: JP_ObservationLabResultCode_InfectionRelated_VS
+Id: jp-observationlabresultcode-infectionrelated-vs 
+Title: "Observation Lab Result Code Infection Related ValueSet"
+Description: "診療情報コアサマリーで定義した感染症関連検査項目コードの値セット"
+* ^url = $JP_ObservationLabResultCode_InfectionRelated_VS
+* ^status = #active
+* ^experimental = false
+* ^date = "2023-04-18"
+//とりあえずCodeSystem全部のコードを含めているが、今後感染症の検査コードだけに絞りこむ
+* include codes from system $JP_ObservationLabResultCode_InfectionRelated_CS
+
+ValueSet: JP_CCS_ObsLabResult_JLAC10Unmethod__InfectionRelated_VS

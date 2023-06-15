@@ -15,6 +15,19 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
 * . ^definition = "診療情報コアサマリー・厚労省6情報などにおける薬剤禁忌情報の格納に使用する"
 * . ^comment = "厚労省6情報などの運用において、アレルギー情報のプロファイルではなく、薬剤禁忌の情報は本プロフィルを使用すること。両者の区別は、category要素=drug かつ criticality要素=high によって判定する。"
 
+// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained contains patient 1..1
+    and encounter 0..1
+    and recorder 0..1
+
+* contained[patient] only  JP_Patient_eCS_Contained
+* contained[encounter] only  JP_Encounter_OW_eCS_Contained
+* contained[recorder] only  JP_Practitioner_eCS_Contained
+
+
 * identifier 0..1 MS
 * identifier.system 1..1 MS
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"

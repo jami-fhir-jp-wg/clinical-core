@@ -67,6 +67,9 @@ Alias: $JP_CCS_ObsLabResult_JLAC10Unmethod_VS = http://jpfhir.jp/fhir/eClinicalS
 Alias: $JP_ObservationLabResultLocal_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_LocalCode_CS
 Alias: $JP_ObservationLabResultLocalUncoded_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultLocalUncoded_CS
 
+// 感染症項目サブカテゴリーを登録したCodeSystem 　とValueSet
+Alias: $observation-labo_subcategory-cs = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_Observation_Labo_SubCategory_CS
+
 
 // from jp-core v1.1.2
 Alias: $JP_SimpleObservationCategory_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_SimpleObservationCategory_VS
@@ -74,7 +77,10 @@ Alias: $observation-category = $JP_SimpleObservationCategory_VS
 
 Alias: $observation-category-cs = http://terminology.hl7.org/CodeSystem/v3-ObservationCategory
 
+
 Alias: $JP_CCS_ObsLabResultCode_VS = JP_CCS_ObsLabResult_UnknownCode_CS#99999999999999999
+
+
 
 Alias: $JP_Disease_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.101.6    // MEDIS病名交換用コード
 Alias: $JP_Disease_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号

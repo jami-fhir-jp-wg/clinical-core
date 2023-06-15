@@ -14,6 +14,16 @@ Description: "診療情報コアサマリー用　Conditionリソース（傷病
 * . ^short = "診療情報コアサマリーにおける傷病名情報の格納に使用する"
 * . ^definition = "診療情報コアサマリー・厚労省6情報などにおける傷病名情報の格納に使用する"
 
+// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained contains patient 1..1
+    and encounter 0..1
+
+* contained[patient] only  JP_Patient_eCS_Contained
+* contained[encounter] only  JP_Encounter_OW_eCS_Contained
+
 * clinicalStatus ^short = "病名最終日（onsetPeriod.end)での状態（転帰）"
 * clinicalStatus ^definition = "病名最終日（onsetPeriod.end)での状態（転帰）"
 * clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) のいずれかを選ぶ。"

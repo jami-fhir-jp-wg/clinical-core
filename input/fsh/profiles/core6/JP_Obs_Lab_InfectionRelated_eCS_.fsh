@@ -18,8 +18,8 @@ Description: "診療情報コアサマリー用　Observationリソース(感染
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
-* contained contains patient 0..1
-    and specimen 0..
+* contained contains patient 1..1
+    and specimen 1..
     and order 0..
     and organization 0..
     and department 0..
@@ -53,7 +53,7 @@ Description: "診療情報コアサマリー用　Observationリソース(感染
 * identifier.use ^comment = "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。"
 
 * basedOn 0..1   MS
-* basedOn only Reference(ServiceRequest)
+* basedOn only Reference(JP_ServiceRequest_eCS_Contained)
 * basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
 * basedOn ^comment = "元のオーダID情報や依頼者情報はここで使用する。"
 
@@ -78,6 +78,9 @@ Description: "診療情報コアサマリー用　Observationリソース(感染
 * category[laboratory] ^short = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^definition = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
+* category contains
+ indectionRelated 1..1
+* category[indectionRelated] = $observation-subcategory-cs#indectionRelated
 
 // OUL^R22.OBX[*]-3 検査項目情報
 * code 1..1 MS
@@ -98,10 +101,16 @@ and localUncoded 0..1 MS
 * code.coding.system 1..1 MS    // MS 追加 // OUL^R22.OBX[*]-3[*]-3    コードシステム
 * code.coding.system ^definition = "コード体系。"
 * code.coding.system ^comment = "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3"
+
 * code.coding[jlac10Coded].system = $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
+* code.coding[jlac10Coded].code from $JP_ObservationLabResultCode_InfectionRelated_VS     // MEDIS JLAC10　から感染症関係コードリスト
+
 * code.coding[jlac10wUnmethod].system = $JP_CCS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
+* code.coding[jlac10Coded].code from $JP_CCS_ObsLabResult_JLAC10Unmethod__InfectionRelated_VS  // MEDIS JLAC10　から感染症関係コードリスト
+
 * code.coding[jlac10Uncoded].system = $JP_CCS_ObsLabResultUncoded_CS (exactly) // 17桁未コード化コード
 * code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)
+
 * code.coding[localCoded].system = $JP_ObservationLabResultLocal_CS (exactly)    // その施設のローカルコード
 * code.coding[localUncoded].system = $JP_ObservationLabResultLocalUncoded_CS (exactly)    // その施設のローカルコード
 * code.coding[localUncoded].code = #LUNCODED    // ローカルコード体系でのコード化ができない

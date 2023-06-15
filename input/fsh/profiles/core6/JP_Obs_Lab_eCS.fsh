@@ -19,8 +19,8 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
-* contained contains patient 0..1
-    and specimen 0..
+* contained contains patient 1..1
+    and specimen 1..
     and order 0..
     and organization 0..
     and department 0..
@@ -57,7 +57,7 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * identifier.use ^comment = "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。"
 
 * basedOn 0..1   MS
-* basedOn only Reference(ServiceRequest)
+* basedOn only Reference(JP_ServiceRequest_eCS_Contained)
 * basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
 * basedOn ^comment = "元のオーダID情報や依頼者情報はここで使用する。"
 
