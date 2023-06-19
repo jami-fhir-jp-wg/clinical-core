@@ -54,7 +54,7 @@
           "reference": "StructureDefinition/JP-AllergyIntolerance-eCS"
         },
         "name": "Core6 : JP_AllergyIntolerance_eCS",
-        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報（除く：薬剤禁忌））プロファイル",
+        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -179,14 +179,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/JP-DrugContraIndication-eCS"
-        },
-        "name": "Core6 : JP_DrugContraIndication_eCS",
-        "description": "診療情報コアサマリー用　AllergyIntoleranceリソース（薬剤禁忌情報に特化）プロファイル",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/JP-Encounter-OW-eCS-Contained"
         },
         "name": "JP_Encounter_OW_eCS_Contained",
@@ -267,18 +259,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/JP-Observation-LabResult-InfectionRelated-eCS"
-        },
-        "name": "Core6 : JP_Observation_LabResult_InfectionRelated_eCS",
-        "description": "診療情報コアサマリー用　Observationリソース(感染症検体検査結果）プロファイル　★対象検査結果項目を感染症関連の指定された特定の項目に限定",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/JP-Observation-LabResult-eCS"
         },
         "name": "Core6 : JP_Observation_LabResult_eCS",
-        "description": "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル",
+        "description": "診療情報コアサマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル",
         "exampleBoolean": false
       },
       {

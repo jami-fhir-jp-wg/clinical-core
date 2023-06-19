@@ -7,7 +7,7 @@
   "title": "Core6 : JP_Observation_LabResult_eCS",
   "status": "active",
   "date": "2023-05-27",
-  "description": "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル",
+  "description": "診療情報コアサマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -51,8 +51,8 @@
       {
         "id": "Observation",
         "path": "Observation",
-        "short": "診療情報コアサマリーにおける検体検査結果の格納に使用する",
-        "definition": "診療情報コアサマリー・厚労省6情報などにおける検体検査結果の格納に使用する"
+        "short": "診療情報コアサマリーにおける検体検査結果／感染症検体検査結果の格納に使用する",
+        "definition": "診療情報コアサマリー・厚労省6情報などにおける検体検査結果／感染症検体検査結果の格納に使用する"
       },
       {
         "id": "Observation.meta.lastUpdated",
@@ -224,6 +224,7 @@
       {
         "id": "Observation.category",
         "path": "Observation.category",
+        "min": 2,
         "mustSupport": true
       },
       {
@@ -233,6 +234,21 @@
         "short": "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。",
         "definition": "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。",
         "comment": "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
+      },
+      {
+        "id": "Observation.category:indectionRelated",
+        "path": "Observation.category",
+        "sliceName": "indectionRelated",
+        "min": 1,
+        "max": "1",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "infectionRelated",
+              "system": "http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code",
@@ -287,6 +303,14 @@
         "fixedUri": "urn:oid:1.2.392.200119.4.504"
       },
       {
+        "id": "Observation.code.coding:jlac10Coded.code",
+        "path": "Observation.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationLabResultCode_VS"
+        }
+      },
+      {
         "id": "Observation.code.coding:jlac10wUnmethod",
         "path": "Observation.code.coding",
         "sliceName": "jlac10wUnmethod",
@@ -298,6 +322,14 @@
         "id": "Observation.code.coding:jlac10wUnmethod.system",
         "path": "Observation.code.coding.system",
         "fixedUri": "http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_JLAC10Unmethod_CS"
+      },
+      {
+        "id": "Observation.code.coding:jlac10wUnmethod.code",
+        "path": "Observation.code.coding.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_JLAC10Unmethod_VS"
+        }
       },
       {
         "id": "Observation.code.coding:jlac10Uncoded",
