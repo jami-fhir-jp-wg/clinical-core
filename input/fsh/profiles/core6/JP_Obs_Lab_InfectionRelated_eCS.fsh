@@ -80,7 +80,7 @@ Description: "診療情報コアサマリー用　Observationリソース(感染
 * category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
 * category contains
  indectionRelated 1..1
-* category[indectionRelated] = $observation-subcategory-cs#indectionRelated
+* category[indectionRelated] = $observation-subcategory-cs#infectionRelated
 
 // OUL^R22.OBX[*]-3 検査項目情報
 * code 1..1 MS
@@ -105,8 +105,8 @@ and localUncoded 0..1 MS
 * code.coding[jlac10Coded].system = $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
 * code.coding[jlac10Coded].code from $JP_ObservationLabResultCode_InfectionRelated_VS     // MEDIS JLAC10　から感染症関係コードリスト
 
-* code.coding[jlac10wUnmethod].system = $JP_CCS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
-* code.coding[jlac10Coded].code from $JP_CCS_ObsLabResult_JLAC10Unmethod__InfectionRelated_VS  // MEDIS JLAC10　から感染症関係コードリスト
+* code.coding[jlac10wUnmethod].system = $JP_CCS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を998(測定法問わず)にしたコード
+* code.coding[jlac10wUnmethod].code from $JP_CCS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS  // MEDIS JLAC10　から感染症関係コードリスト(測定法なし)
 
 * code.coding[jlac10Uncoded].system = $JP_CCS_ObsLabResultUncoded_CS (exactly) // 17桁未コード化コード
 * code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)

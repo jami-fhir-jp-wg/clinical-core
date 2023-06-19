@@ -6,7 +6,6 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^title = "未コード化検体検査結果項目コード(JLAC10)"
 * ^status = #active
 * ^experimental = false
-* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 * #99999999999999999  "JLAC10 Uncoded"
@@ -19,7 +18,6 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^title = "未コード化検体検査結果項目コード(Local)"
 * ^status = #active
 * ^experimental = false
-* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 * #LUNCODED  "Locally Uncoded"
@@ -31,10 +29,22 @@ Description: "未コード化測定法999を含むMEDIS臨床検査項目コー�
 * ^title = "未コード化測定法999を含むMEDIS臨床検査項目コードだけからなるCS"
 * ^status = #active
 * ^experimental = false
-* ^experimental = false
 * ^content = #partial
 * ^caseSensitive = false
 * #12345123451299912  "JLAC10 sample code"
+
+
+//$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
+CodeSystem: JP_Observation-SubCategory_CS
+Id: jp-observation-subcategory-cs
+Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
+* ^url = $observation-subcategory-cs
+* ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
+* ^status = #active
+* ^experimental = false
+* ^content = #partial
+* ^caseSensitive = false
+* #infectionRelated  "感染症関連検査結果"
 
 // from jpcore 2023-05-27
 CodeSystem: JP_SimpleObservationCategory_CS

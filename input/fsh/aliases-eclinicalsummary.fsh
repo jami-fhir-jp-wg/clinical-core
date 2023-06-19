@@ -35,6 +35,12 @@ Alias: $JP_DrugContraIndication_eCS = http://jpfhir.jp/fhir/eClinicalSummary/Str
 Alias: $JP_Condition_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary
 
 Alias: $JP_Observation__InfectionRelated_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_InfectionRelated_eClinicalSummary
+Alias: $observation-subcategory-cs = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
+Alias: $observation-subcategory-vs = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/observation-subcategory-vs
+
+Alias: $JP_ObservationLabResultCode_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultCode_InfectionRelated_VS
+Alias: $JP_CCS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
+Alias: $JP_ObservationLabResultCode_CS = urn:oid:1.2.392.200119.4.504
 
 Alias: $composition-clinicaldocument-versionNumber = http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber
 Alias: $coverage-copay-type = http://terminology.hl7.org/CodeSystem/coverage-copay-type
