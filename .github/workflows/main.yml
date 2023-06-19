@@ -1,4 +1,5 @@
 name: Ohe-Develp and  Dispatch
+
 on:
   push:
     branches: 
@@ -94,7 +95,7 @@ jobs:
         tar xzf /home/runner/.fhir/packages/$PACKAGECORE/$PACKAGECORE.tgz-$PACKAGECOREVERSION -C /home/runner/.fhir/packages/$PACKAGECORE/
         unset DISPLAY
         : # 
-        java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx https://tx.jpfhir.jp:8081
+        java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini -tx https://tx.jpfhir.jp:8081
         : # java -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini
 
 
