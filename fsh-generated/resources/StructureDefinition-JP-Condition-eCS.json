@@ -1,0 +1,324 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JP-Condition-eCS",
+  "url": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary",
+  "version": "0.1.0",
+  "name": "JP_Condition_eCS",
+  "title": "Core6 : JP_Condition_eCS",
+  "status": "active",
+  "date": "2023-05-27",
+  "description": "診療情報コアサマリー用　Conditionリソース（傷病名情報）プロファイル",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition",
+        "path": "Condition",
+        "short": "診療情報コアサマリーにおける傷病名情報の格納に使用する",
+        "definition": "診療情報コアサマリー・厚労省6情報などにおける傷病名情報の格納に使用する"
+      },
+      {
+        "id": "Condition.contained",
+        "path": "Condition.contained",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Condition.contained:patient",
+        "path": "Condition.contained",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.contained:encounter",
+        "path": "Condition.contained",
+        "sliceName": "encounter",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Encounter",
+            "profile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "short": "病名最終日（onsetPeriod.end)での状態（転帰）",
+        "definition": "病名最終日（onsetPeriod.end)での状態（転帰）",
+        "comment": "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) のいずれかを選ぶ。"
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "short": "傷病名のコードと名称",
+        "definition": "傷病名のコードと名称",
+        "comment": "傷病名のコードと名称",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "binding": {
+          "description": "MEDIS 病名交換コード、病名管理番号、ICD10分類コード、レセプト電算処理用傷病名コード、またはレセプト電算処理用傷病名コードの未コード化コード(7桁all 9)のいずれかまたは複数の組み合わせで表現する。"
+        }
+      },
+      {
+        "id": "Condition.code.coding:mediskoukan",
+        "path": "Condition.code.coding",
+        "sliceName": "mediskoukan",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:mediskoukan.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "urn:oid:1.2.392.200119.4.101.6"
+      },
+      {
+        "id": "Condition.code.coding:mediskanri",
+        "path": "Condition.code.coding",
+        "sliceName": "mediskanri",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:mediskanri.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "urn:oid:1.2.392.200119.4.101.2"
+      },
+      {
+        "id": "Condition.code.coding:syobo",
+        "path": "Condition.code.coding",
+        "sliceName": "syobo",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:syobo.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://jpfhi.jp/fhir/CodeSystem/claimSystem_syobyomei_CS"
+      },
+      {
+        "id": "Condition.code.coding:icd10",
+        "path": "Condition.code.coding",
+        "sliceName": "icd10",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:icd10.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "fixedUri": "urn:oid:2.16.840.1.113883.6.3.1"
+      },
+      {
+        "id": "Condition.bodySite",
+        "path": "Condition.bodySite",
+        "short": "傷病名の部位等の情報、部位以外の修飾語もここに格納する",
+        "definition": "修飾語のコードと名称",
+        "comment": "修飾語のコードと名称",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite.coding",
+        "path": "Condition.bodySite.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "binding": {
+          "description": "MEDIS 病名修飾語コード、修飾語管理番号、レセプト電算処理用傷病名修飾語コードのいずれかまたは複数の組み合わせで表現する。"
+        }
+      },
+      {
+        "id": "Condition.bodySite.coding:mediskoukan",
+        "path": "Condition.bodySite.coding",
+        "sliceName": "mediskoukan",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite.coding:mediskoukan.system",
+        "path": "Condition.bodySite.coding.system",
+        "min": 1,
+        "fixedUri": "urn:oid:1.2.392.200119.4.201.5"
+      },
+      {
+        "id": "Condition.bodySite.coding:mediskanri",
+        "path": "Condition.bodySite.coding",
+        "sliceName": "mediskanri",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite.coding:mediskanri.system",
+        "path": "Condition.bodySite.coding.system",
+        "min": 1,
+        "fixedUri": "urn:oid:1.2.392.200119.4.201.2"
+      },
+      {
+        "id": "Condition.bodySite.coding:syobo",
+        "path": "Condition.bodySite.coding",
+        "sliceName": "syobo",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.bodySite.coding:syobo.system",
+        "path": "Condition.bodySite.coding.system",
+        "min": 1,
+        "fixedUri": "http://jpfhi.jp/fhir/CodeSystem/claimSystem_syobyomei_CS"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "short": "患者",
+        "definition": "患者",
+        "comment": "Containedリソースに含まれる患者リソースのid(identifierではなく)をリソース内で#を最初につけて参照する。（患者リソースのid を　123 とすると、　{\"reference\" : \"#123\" }のようになる。）",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.encounter",
+        "path": "Condition.encounter",
+        "short": "病名をつけたときの受診情報（入外区分など）",
+        "definition": "病名をつけたときの受診情報（入外区分など）を表すEncounterリソース（Containedリソース）への参照",
+        "comment": "Containedリソースに含まれるEncounterリソースをリソース内で参照する。なくてもよい。",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Condition.onsetPeriod",
+        "path": "Condition.onsetPeriod",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Condition.onsetPeriod.start",
+        "path": "Condition.onsetPeriod.start",
+        "short": "病名開始日"
+      },
+      {
+        "id": "Condition.onsetPeriod.end",
+        "path": "Condition.onsetPeriod.end",
+        "short": "病名終了日"
+      }
+    ]
+  }
+}

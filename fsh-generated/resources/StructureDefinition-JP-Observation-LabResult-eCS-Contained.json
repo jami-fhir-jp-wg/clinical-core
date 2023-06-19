@@ -1,0 +1,406 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JP-Observation-LabResult-eCS-Contained",
+  "url": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS_Contained",
+  "version": "0.1.0",
+  "name": "JP_Observation_LabResult_eCS_Contained",
+  "title": "JP_Observation_LabResult_eCS_Contained",
+  "status": "active",
+  "date": "2023-05-27",
+  "description": "診療情報コアサマリー埋め込み用 Observationリソース（検体検査結果）　",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "short": "診療情報コアサマリーにおける他のリソースへの埋め込み用の検体検査結果の格納に使用する。",
+        "definition": "診療情報コアサマリー・厚労省6情報などにおける他のリソースへの埋め込み用の検体検査結果の格納に使用する。",
+        "comment": "Contaiedリソースであるため、これ自身はContainedリソースを持てない。子検査結果を格納できないため、検査結果をもたない親グループを記述できないことに注意。"
+      },
+      {
+        "id": "Observation.id",
+        "path": "Observation.id",
+        "min": 1
+      },
+      {
+        "id": "Observation.implicitRules",
+        "path": "Observation.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Observation.text",
+        "path": "Observation.text",
+        "max": "0"
+      },
+      {
+        "id": "Observation.contained",
+        "path": "Observation.contained",
+        "max": "0"
+      },
+      {
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "definition": "この検査項目に割り当てられた一意の識別子で64バイト以内。リソースの識別子やシステム的なシーケンスではなく、当該施設内で割り振られる一意の識別キー。",
+        "comment": "当該施設内で割り振られる一意の識別子があればそれを使用する。すくなくともひとつのidentifierは、当該施設で作成された全診療データのなかからこの検査結果を一意に識別でき、削除や更新が可能な論理キーとなる。それ以外に追加で当該施設または別の施設が別のsystem値との組み合わせによる異なるidentifierを1個以上設定してもよい。\r\nSS-MIX2から生成する場合には、次のルールを参考に一意となる識別子を生成し設定してもよい。\r\nアプリケーション側のデータベースにおけるフィールド長の定義については、最低64バイトを確保すること。\r\n\r\n--- 参考 ---\r\n\r\n次の項目を順にセパレータ「_(アンダースコア)」で連結し、 identifier.value に設定する。グループ項目でない場合など、該当コード／番号がない場合はセパレータを連続で連結する。各コードはローカルコードを使用し、必ず設定できること。\r\n\r\n　１．ORC-2(依頼者オーダ番号)　SS-MIX2の15桁前ゼロ形式の番号\r\n\r\n　２．OBR-4(検査項目ID)　検査セットの識別コード\r\n\r\n　３．SPM-4(検体タイプ)\r\n\r\n　４．OBX-3(検査項目)\r\n\r\n　５．OBX-4(検査副ID)・・・オプション。必要に応じて使用。\r\n\r\n形式：[ORC-2]_[OBR-4]_[SPM-4]_[OBX-3]（_[OBX-4]）",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier.use",
+        "path": "Observation.identifier.use",
+        "short": "この識別子の設定・利用目的を表すコード。",
+        "definition": "この識別子の設定・利用目的コード。当該施設における一意のキーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。",
+        "comment": "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier.system",
+        "path": "Observation.identifier.system",
+        "short": "このidebtifierの番号体系を識別するurl",
+        "definition": "このidentifierの番号体系を識別するurl",
+        "comment": "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/IdSystem/システム識別文字列/医療機関識別ID　を設定する。システム識別文字列が、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.identifier.value",
+        "path": "Observation.identifier.value",
+        "short": "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。",
+        "definition": "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.basedOn",
+        "path": "Observation.basedOn",
+        "definition": "このプロファイルでは、検体検査オーダに関する情報。",
+        "comment": "元のオーダID情報や依頼者情報はここで使用する。",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.status",
+        "path": "Observation.status",
+        "definition": "検査結果値の状態。",
+        "comment": "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告だk泣きでは確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）、cancelled: この結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）。これらのステータスコード以外は意味的に紛らわしいので使わない。【SS-MIX2】OUL^R22.OBX[*]-11 結果状態",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.category:laboratory",
+        "path": "Observation.category",
+        "sliceName": "laboratory",
+        "short": "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。",
+        "definition": "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。",
+        "comment": "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "definition": "検査項目のコードと名称",
+        "comment": "JLAC10必須の項目と任意の項目がある。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "JLAC10標準コード、ローカルコードの2つを設定するものとし、どちらも必須とする。さらにJLAC10以外にJLAC11などの複数の標準コードも設定できるよう、上限は設けない。\r\n\r\n標準コード、ローカルコードの順不同。\r\nSS-MIX2だとCWE.1 ～CWE.3に標準コード、CWE.4～CWE.6にローカルコード、など（順不同）。",
+        "binding": {
+          "description": "MEDIS 臨床検査マスター（JLAC10 17桁）、または未コード化コード(17桁のall 9)"
+        }
+      },
+      {
+        "id": "Observation.code.coding.system",
+        "path": "Observation.code.coding.system",
+        "definition": "コード体系。",
+        "comment": "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding.display",
+        "path": "Observation.code.coding.display",
+        "short": "コード化された場合に、そのコード表におけるコードに対応する文字列",
+        "definition": "コード化された場合に、そのコード表におけるコードに対応する文字列",
+        "comment": "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。"
+      },
+      {
+        "id": "Observation.code.coding:jlac10Coded",
+        "path": "Observation.code.coding",
+        "sliceName": "jlac10Coded",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:jlac10Coded.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "urn:oid:1.2.392.200119.4.504"
+      },
+      {
+        "id": "Observation.code.coding:jlac10wUnmethod",
+        "path": "Observation.code.coding",
+        "sliceName": "jlac10wUnmethod",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:jlac10wUnmethod.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_JLAC10Unmethod_CS"
+      },
+      {
+        "id": "Observation.code.coding:jlac10Uncoded",
+        "path": "Observation.code.coding",
+        "sliceName": "jlac10Uncoded",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:jlac10Uncoded.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS"
+      },
+      {
+        "id": "Observation.code.coding:jlac10Uncoded.code",
+        "path": "Observation.code.coding.code",
+        "fixedCode": "99999999999999999"
+      },
+      {
+        "id": "Observation.code.coding:localCoded",
+        "path": "Observation.code.coding",
+        "sliceName": "localCoded",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:localCoded.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_LocalCode_CS"
+      },
+      {
+        "id": "Observation.code.coding:localUncoded",
+        "path": "Observation.code.coding",
+        "sliceName": "localUncoded",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.code.coding:localUncoded.system",
+        "path": "Observation.code.coding.system",
+        "fixedUri": "http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultLocalUncoded_CS"
+      },
+      {
+        "id": "Observation.code.coding:localUncoded.code",
+        "path": "Observation.code.coding.code",
+        "patternCode": "LUNCODED"
+      },
+      {
+        "id": "Observation.code.text",
+        "path": "Observation.code.text",
+        "definition": "項目名。報告書などに記載する場合に使用する表示名。",
+        "comment": "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "検体検査の対象となる患者。",
+        "definition": "検体検査の対象となる患者。",
+        "comment": "Containedリソースに含まれる患者リソースのid(identifierではなく)をリソース内で#を最初につけて参照する。（患者リソースのid を　123 とすると、　{\"reference\" : \"#123\" }のようになる。）",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.encounter",
+        "path": "Observation.encounter",
+        "definition": "この検査が行われた医療提供者と患者の接点に関する付帯情報。",
+        "comment": "【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報、外来での検査か入院での検査かの区別に使用する。必須ではない。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effectiveDateTime",
+        "path": "Observation.effectiveDateTime",
+        "short": "検体採取日時",
+        "definition": "検体採取日時。検体採取日時が不明な場合には、検査実施日時、検体受付日時の場合もある。結果報告日時はissued要素を使用する。",
+        "comment": "dateTime型に限定する。dateTime側は、1905-08-23, 2015-02-07T13:28:17+09:00 ",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.issued",
+        "path": "Observation.issued",
+        "short": "検査結果がシステムに格納された日時、システム的な結果報告（登録）日時",
+        "definition": "検査結果がシステムに格納された日時、システム的な結果報告（登録）日時。",
+        "comment": "instance型であるため、2015-02-07T13:28:17+09:00 のように時刻までの精度が必要である。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "short": "検体検査の結果",
+        "definition": "検体検査の結果",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.dataAbsentReason",
+        "path": "Observation.dataAbsentReason",
+        "definition": "検査結果値が欠落している理由。",
+        "comment": "【JP Core仕様】SS-MIX2で未使用だが、valueの欠落時に使用する必要があり、重要な項目である。\r\n\r\n制約「obs-6」に示す通り、valueが存在する場合、この要素は存在してはならない。\r\n\r\ntextのみでの使用は基本的に不可とし、必ずcodingを以下から設定すること。適切な理由を選べないシステムの場合には、unknownを使用するものとする。\r\n\r\n(unknown：値が存在するかしないか不明 |  masked：結果非開示 | not-applicable：適用外（システム適用外など、生体にありえない項目（男性患者における女性固有検査値など）） | as-text ：テキスト表現で別途記述| error ：システムエラー|   not-a-number：結果が数値でない、数値化エラー |   negative-infinity：数値が小さすぎて表現できない |   positive-infinity：数値が大きすぎて表現 | not-performed：未実施| not-permitted：結果取得が許可されていない",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.interpretation",
+        "path": "Observation.interpretation",
+        "definition": "検査結果値の、（高、低、正常）といったカテゴリー評価。結果報告書に記載されることもある情報。",
+        "comment": "【JP Core仕様】拡張可コード表「ObservationInterpretationCodes」からいずれかの適当なコードをひとつ使用するが、本要素はなくてもよい。その施設における基準値が設定されている数値検査結果に対しては、基準値範囲により解釈したH（高）、L（低）、N（正常範囲） のいずれかを設定することが望ましい。\r\n\r\nコード表が大きいため、下記参照。\r\n\r\nhttps://www.hl7.org/fhir/R4/valueset-observation-interpretation.html",
+        "requirements": "特に数値結果については、結果の重要性を完全に理解するために解釈を必要。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "short": "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。",
+        "definition": "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "short": "この検査に使用された検体（標本）。",
+        "definition": "この検査に使用された検体（標本）。",
+        "comment": "【JP Core仕様】必須とする。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "short": "結果値を解釈するためのの推奨範囲。基準値範囲。",
+        "definition": "推奨範囲として結果値を解釈するためのガイダンス。基準値。",
+        "comment": "【JP Core仕様】可能な限りlow、highに構造化すべき。構造化できない場合、あるいはlow、highに該当しない場合はtextを使用。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange.type",
+        "path": "Observation.referenceRange.type",
+        "definition": "対象となる母集団のどの部分に適用するかを示すコード。正常範囲、要治療範囲、など。"
+      },
+      {
+        "id": "Observation.referenceRange.appliesTo",
+        "path": "Observation.referenceRange.appliesTo",
+        "definition": "基準値が適用される母集団を示すコード。人種、性別など。"
+      },
+      {
+        "id": "Observation.referenceRange.age",
+        "path": "Observation.referenceRange.age",
+        "definition": "T基準値が適用される年齢。新生児の場合、週数もありうる。"
+      },
+      {
+        "id": "Observation.referenceRange.text",
+        "path": "Observation.referenceRange.text",
+        "definition": "量的範囲で表せない場合などに使用する。"
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "short": "この検査に含まれる個々の検査結果項目を示す。",
+        "definition": "この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。",
+        "comment": "この検査に含まれる個々の検査結果Observationリソースを、このリソースに埋め込むのではなく、別の検査結果Observationリソースとして作成し、そのidentifierを論理参照する方法をとること。",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.derivedFrom",
+        "path": "Observation.derivedFrom",
+        "short": "の検査値の発生元である関連リソース",
+        "definition": "この検査値の発生元である関連リソース。例えば他のObservation を受けて、本検査値が発生した場合など。"
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "definition": "一度のタイミングでの1回の検査で複数の結果を同時に得る場合にのみ使用される。例えば、血圧の収縮期、拡張期。新生児のApgarスコア。質問に対する複数の回答（飲んだアルコールの種類、など）。"
+      }
+    ]
+  }
+}

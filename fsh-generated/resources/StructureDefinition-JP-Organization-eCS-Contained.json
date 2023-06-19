@@ -1,0 +1,70 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "JP-Organization-eCS-Contained",
+  "url": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained",
+  "version": "0.1.0",
+  "name": "JP_Organization_eCS_Contained",
+  "title": "JP_Organization_eCS_Contained",
+  "status": "active",
+  "date": "2023-05-27",
+  "description": "診療情報コアサマリー埋め込み用 Organizationリソース(医療機関等組織情報)プロファイル　",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization",
+        "path": "Organization",
+        "short": "診療情報コアサマリーにおける他のリソースへの埋め込み用の医療機関等組織情報の格納に使用する。",
+        "definition": "診療情報コアサマリー・厚労省6情報などにおける他のリソースへの埋め込み用の医療機関等組織情報の格納に使用する。",
+        "comment": "Contaiedリソースであるため、これ自身はContainedリソースを持てない。"
+      },
+      {
+        "id": "Organization.id",
+        "path": "Organization.id",
+        "min": 1
+      },
+      {
+        "id": "Organization.implicitRules",
+        "path": "Organization.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Organization.text",
+        "path": "Organization.text",
+        "max": "0"
+      },
+      {
+        "id": "Organization.contained",
+        "path": "Organization.contained",
+        "max": "0"
+      }
+    ]
+  }
+}
