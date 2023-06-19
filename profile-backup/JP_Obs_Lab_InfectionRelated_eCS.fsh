@@ -81,7 +81,6 @@ Description: "診療情報コアサマリー用　Observationリソース(感染
 * category contains
  indectionRelated 1..1
 * category[indectionRelated] = $observation-subcategory-cs#infectionRelated
-
 // OUL^R22.OBX[*]-3 検査項目情報
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"

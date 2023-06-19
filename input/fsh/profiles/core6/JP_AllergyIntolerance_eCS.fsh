@@ -1,19 +1,19 @@
 // ==================================================
 //   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
-//   アレルギー情報（除く：薬剤禁忌） リソースタイプ:AllergyIntolerance
+//   アレルギー情報／薬剤禁忌 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance
 // ==================================================
 Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "Core6 : JP_AllergyIntolerance_eCS"
-Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報（除く：薬剤禁忌））プロファイル"
+Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2023-05-27"
-* . ^short = "診療情報コアサマリーにおけるアレルギー情報（除く：薬剤禁忌）の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおけるアレルギー情報（除く：薬剤禁忌）の格納に使用する"
-* . ^comment = "厚労省6情報などの運用において、薬剤禁忌の情報は本プロフィルではなく、薬剤禁忌情報プロファイルを使用すること。"
+* . ^short = "診療情報コアサマリーにおけるアレルギー情報／薬剤禁忌の格納に使用する"
+* . ^definition = "診療情報コアサマリー・厚労省6情報などにおけるアレルギー情報／薬剤禁忌の格納に使用する"
+* . ^comment = "厚労省6情報などの運用において、薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
@@ -44,20 +44,31 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
 * type ^short = "副反応の生理的なメカニズムの種類（アレルギーによるものか不耐性によるものかどうか）"
 * type ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-type\" から　allergy | intolerance のいずれか（アレルギー反応、不耐性反応）"
 
-* category 0..1 MS
+* category 0..1 MS  // 薬剤近畿情報の場合は、必須
 * category ^short = "特定された原因物質のカテゴリ。記述を可能な限り推奨する。"
-* category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）"
-* category ^comment = "厚労省6情報などの運用において、薬剤禁忌の情報は本プロフィルではなく、薬剤禁忌情報プロファイルを使用することとしているで、medication を設定する場合には禁忌であれば、別のプロファイルを使用すること。"
+* category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）。薬剤禁忌情報の記述ではmedication 医薬品 を使用する。"
+* category ^comment = "厚労省6情報などの運用において、薬剤禁忌の情報として格納する場合にはmedicationを格納し、かつ criticality要素=high すること。逆にcategory=medicatoin かつ criticality=high である場合には、受信側において薬剤禁忌の情報とみなされる。"
 
 * criticality 0..1 MS
 * criticality ^short = "潜在的な臨床的危険性、致命度"
 * criticality ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-criticality\" から　low | high | unable-to-assess　のいずれか（低、高、評価不能）"
+* criticality ^comment = "厚労省6情報などの運用において、薬剤禁忌の情報として格納する場合にはcategory要素にmedicationを格納し、かつ criticality要素=high すること。逆にcategory=medicatoin かつ criticality=high である場合には、受信側において薬剤禁忌の情報とみなされる。" 
 
 * code  1..1 MS
-* code  ^short = "アレルギー・不耐反応の対象物の情報。アレルギー・不耐反応の対象物の情報。"
-* code  ^definition = "jp-coreで定めるallergy-substanceコード表のコードを使用を推奨する。コード化できない場合には、code.text のみで記述する。使用するコード表（推奨）：http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS 　（食物アレルギー）、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　（医薬品アレルギー）、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS　（その他のアレルギー）"
-* code from JP_AllergyIntolerance_VS (preferred)
+* code  ^short = "アレルギー・不耐反応の対象物の情報。アレルギー・不耐反応の対象物の情報。薬剤禁忌情報の場合には、医薬品情報のコード"
+* code  ^definition = "jp-coreで定めるallergy-substanceコード表のコードを使用を推奨する。コード化できない場合には、code.text のみで記述する。使用するコード表（推奨）：http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS 　（食物アレルギー）、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　（医薬品アレルギー）、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS　（その他のアレルギー）、薬剤禁忌情報の記述では、医薬品コードはYJコード、厚生労働省医薬品コード、同一般医薬品コード、HOT9コードなどを選べる。"
 * code  ^comment = "https://jami-fhir-jp-wg.github.io/jp-core-v1xpages/jpcore-r4/develop/StructureDefinition-jp-allergyintolerance.html#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85 の注意事項を参照のこと。またアレルギー情報はコードにより正確に表現することが困難であることが多いので、必ずcode.textにより文字列で記述すること。"
+* code.coding 0..1 MS
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    medication 0..1 MS
+and food 0..1 MS
+and nonFoodnonMedication  0..1 MS
+* code.coding[medication].system =  $JP_JfagyMedicationAllergen_CS (exactly)
+* code.coding[food].system =  $JP_JfagyMedicationAllergen_CS (exactly)
+* code.coding[nonFoodnonMedication].system =  $JP_JfagyNonFoodNonMedicationAllergen_CS (exactly)
 * code.text 1..1 MS
 * code.text ^short = "アレルギー情報をフリーテキストで記述した内容"
 

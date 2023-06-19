@@ -1,18 +1,18 @@
 // ==================================================
 //   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
-//   検体検査結果 リソースタイプ:Observation
+//   検体検査結果／感染症検体検査結果 リソースタイプ:Observation
 //   親プロファイル:JP_Observation_LabResult
 // ==================================================
 Profile: JP_Observation_LabResult_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS
 Title:  "Core6 : JP_Observation_LabResult_eCS"
-Description: "診療情報コアサマリー用　Observationリソース（検体検査結果）プロファイル"
+Description: "診療情報コアサマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 * ^url = $JP_Observation_LabResult_eCS
 * ^status = #active
 * ^date = "2023-05-27"
-* . ^short = "診療情報コアサマリーにおける検体検査結果の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおける検体検査結果の格納に使用する"
+* . ^short = "診療情報コアサマリーにおける検体検査結果／感染症検体検査結果の格納に使用する"
+* . ^definition = "診療情報コアサマリー・厚労省6情報などにおける検体検査結果／感染症検体検査結果の格納に使用する"
 
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
@@ -82,7 +82,9 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * category[laboratory] ^short = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^definition = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
-
+* category contains
+ indectionRelated 1..1
+* category[indectionRelated] = $observation-subcategory-cs#infectionRelated
 // OUL^R22.OBX[*]-3 検査項目情報
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
@@ -102,11 +104,16 @@ and localUncoded 0..1 MS
 * code.coding.system 1..1 MS    // MS 追加 // OUL^R22.OBX[*]-3[*]-3    コードシステム
 * code.coding.system ^definition = "コード体系。"
 * code.coding.system ^comment = "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3"
-* code.coding[jlac10Coded].system = $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
-* code.coding[jlac10wUnmethod].system = $JP_CCS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
+* code.coding[jlac10Coded].system =  $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
+* code.coding[jlac10Coded].code from $JP_ObservationLabResultCode_VS     // MEDIS JLAC10　
+
+* code.coding[jlac10wUnmethod].system =  $JP_CCS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を998にしたコード
+* code.coding[jlac10wUnmethod].code from $JP_CCS_ObsLabResult_JLAC10Unmethod_VS  // MEDIS JLAC10　
+
 * code.coding[jlac10Uncoded].system = $JP_CCS_ObsLabResultUncoded_CS (exactly) // 17桁未コード化コード
 * code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)
 * code.coding[localCoded].system = $JP_ObservationLabResultLocal_CS (exactly)    // その施設のローカルコード
+
 * code.coding[localUncoded].system = $JP_ObservationLabResultLocalUncoded_CS (exactly)    // その施設のローカルコード
 * code.coding[localUncoded].code = #LUNCODED    // ローカルコード体系でのコード化ができない
 
