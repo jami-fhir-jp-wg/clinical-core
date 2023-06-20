@@ -20,9 +20,13 @@ Description: "診療情報コアサマリー用　Conditionリソース（傷病
 * contained ^slicing.rules = #open
 * contained contains patient 1..1
     and encounter 0..1
+    and recorder 0..1
 
 * contained[patient] only  JP_Patient_eCS_Contained
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained
+* contained[recorder] only  JP_Practitioner_eCS_Contained
+
+* insert IdentifierProfileForInstanceOf6CoreSet
 
 * clinicalStatus ^short = "病名最終日（onsetPeriod.end)での状態（転帰）"
 * clinicalStatus ^definition = "病名最終日（onsetPeriod.end)での状態（転帰）"
@@ -86,3 +90,24 @@ and syobo 0.. MS
 * onset[x] only Period
 * onsetPeriod.start ^short = "病名開始日"
 * onsetPeriod.end ^short = "病名終了日"
+
+* recordedDate 0..1 MS
+* recordedDate ^short = "この情報を記録した登録日"
+* recordedDate ^definition = "この情報を記録した登録日"
+
+* recorder 0.. MS
+* recorder only Reference(JP_Practitioner_eCS_Contained)
+* recorder ^short = "この情報を記録した登録者"
+* recorder ^definition = "登録者を表すPractitionerリソース（Containedリソース）への参照"
+* recorder ^comment = "Containedリソースに含まれるPractitioner（登録者/医療者）リソースをこのリソース内で参照する。"
+
+* asserter 0..1 MS
+  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+
+* stage
+  * assesment ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+
+* evidence
+  * detail ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+
+

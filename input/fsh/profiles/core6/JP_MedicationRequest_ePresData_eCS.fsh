@@ -34,10 +34,11 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 
+* insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[rpNumber])
+* insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[orderInRp])
 
-* identifier[rpNumber] 1..1 MS
-* identifier[orderInRp] 1..1 MS
-* identifier[requestIdentifier] ..0 MS
+* reorted.reportedReference 
+  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
 
 * medication[x] ^definition = "医薬品コードと医薬品名称。coding要素を繰り返すことでHOT9 やYJコードなど複数のコード体系で医薬品コード並記することが可能。\r\n本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。\r\n日本では同じ用法の複数の薬剤をひとつの処方区分とすることがある。複数の薬剤を表記するMedication Resourceのインスタンスを参照する。"
 * medication[x] MS
@@ -113,6 +114,8 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 
 * basedOn 0.. MS
 * basedOn only Reference(JP_ServiceRequest_eCS_Contained)
+
+
 * requester ^short = "処方オーダ情報"
 * requester ^definition = "処方オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照"
 * requester ^comment = "Containedリソースに含まれるServiceRequest（処方オーダー情報）リソースをこのリソース内で参照する。"
@@ -124,8 +127,10 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 
 * note ..1 MS
 * note ^comment = "単一の薬剤に対する調剤者に対する指示は、本要素ではなく、MedicationRequestリソースのdispenseRequest要素に対して本文書で定義した拡張「InstructionForDispense」（http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense）を使用する。\r\nまた処方箋全体の備考や指示は、Communicationリソースに記述する。\r\n患者に対する補足指示や注意や、不均等投与指示などは、 dosageInstruction.additionalInstructionで記述する。\r\n本要素は、それらでは伝えられない薬剤単位の備考や指示を記述する。"
+
 * note.text ^definition = "備考文字列。markdown 記法により記述できる。\r\n例）”4月1日から4日間服用。2週間休薬後、4月19日から4日間服用。患者に書面にて説明済み。”"
 * note.text MS
+
 * dosageInstruction.extension ^slicing.discriminator.type = #value
 * dosageInstruction.extension ^slicing.discriminator.path = "url"
 * dosageInstruction.extension ^slicing.rules = #open
@@ -204,6 +209,7 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * dosageInstruction.doseAndRate.rateRatio.numerator.value MS
 * dosageInstruction.doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
 * dosageInstruction.doseAndRate.rateRatio.numerator.system MS
+
 * dispenseRequest 1.. MS
 * dispenseRequest ^definition = "調剤情報。\r\n薬剤オーダー(MedicationRequest, Medication Prescription, Medication Orderなどとしても表現される）や薬剤オーダーとの一部としての薬剤の払い出しあるいは提供。この情報はオーダーとしてかならず伝えられるというわけではないことに注意。薬剤部門で調剤・払い出しを完了するための施設（たとえば病院）やシステムでのサポートに関する設定をしてもよい。"
 * dispenseRequest.extension ^slicing.discriminator.type = #value
@@ -222,6 +228,9 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * dispenseRequest.quantity.code MS
 * dispenseRequest.expectedSupplyDuration.value ^definition = "調剤日数。\r\n例）１日３錠で７日分の場合、この要素には 7が設定される。"
 * dispenseRequest.expectedSupplyDuration.value MS
+* dispenseRequest.performer 
+  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）" 
+
 * substitution.allowed[x].coding.system ^definition = "後発品変更不可コードを識別するURI。固定値。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　OID: 1.2.392.100495.20.2.41"
 * substitution.allowed[x].coding.system MS
 * substitution.allowed[x].coding.code ^definition = "後発品変更不可コード。\r\n不可の場合には1を設定する。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　\r\n0 変更可　（省略可）\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"

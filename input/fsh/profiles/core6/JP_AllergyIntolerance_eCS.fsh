@@ -27,10 +27,7 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained
 * contained[recorder] only  JP_Practitioner_eCS_Contained
 
-* identifier 0..1 MS
-* identifier.system 1..1 MS
-* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier.value 1..1 MS
+* insert IdentifierProfileForInstanceOf6CoreSet
 
 * clinicalStatus   0..1 MS
 * clinicalStatus   ^short = "臨床的状態のステータス。"
@@ -99,6 +96,9 @@ and nonFoodnonMedication  0..1 MS
 * recorder ^comment = "Containedリソースに含まれるPractitioner（登録者/医療者）リソースをこのリソース内で参照する。"
 
 * asserter 0..1 MS
+  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+
+
 * lastOccurrence  0..1 MS
 * note  0..1 MS
 * reaction 0..1 MS
