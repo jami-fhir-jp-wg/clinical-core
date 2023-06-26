@@ -40,7 +40,7 @@ Description: "診療情報コアサマリー埋め込み用 Observationリソー
 * identifier.use ^definition = "この識別子の設定・利用目的コード。当該施設における一意のキーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。"
 * identifier.use ^comment = "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。"
 
-* basedOn 0..1   MS
+* basedOn ..0   MS
 * basedOn only Reference(ServiceRequest)
 * basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
 * basedOn ^comment = "元のオーダID情報や依頼者情報はここで使用する。"

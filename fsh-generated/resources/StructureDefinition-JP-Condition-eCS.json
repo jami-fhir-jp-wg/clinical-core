@@ -99,6 +99,65 @@
         ]
       },
       {
+        "id": "Condition.contained:recorder",
+        "path": "Condition.contained",
+        "sliceName": "recorder",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eCS_Contained"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "short": "当該リソースインスタンス（データ）に対して、施設内で割り振られる一意の識別子",
+        "definition": "このリソースインスタンス（データ）に割り当てられた一意の識別子で64バイト以内。リソースの識別子やシステム的なシーケンスではなく、当該施設内で割り振られる一意の識別キー。",
+        "comment": "当該施設内で割り振られる一意の識別子があればそれを使用する。すくなくともひとつのidentifierは、当該施設で作成された全診療データのなかからこのリソースインスタンスが表す情報を一意に識別でき、その削除や更新が可能な論理キーとなる。それ以外に追加で当該施設または別の施設が別のsystem値との組み合わせによる異なるidentifierを1個以上設定してもよい。\r\nSS-MIX2から生成する場合には、次のルールを参考に１伝票内の１項目を識別できるようにする。\r\nアプリケーション側のデータベースにおけるフィールド長の定義については、最低64バイトを確保すること。\r\n\r\n--- 参考（検査結果項目の場合） ---\r\n\r\n次の項目を順にセパレータ「_(アンダースコア)」で連結し、 identifier.value に設定する。グループ項目でない場合など、該当コード／番号がない場合はセパレータを連続で連結する。各コードはローカルコードを使用し、必ず設定できること。\r\n\r\n　１．ORC-2(依頼者オーダ番号)　SS-MIX2の15桁前ゼロ形式の番号\r\n\r\n　２．OBR-4(検査項目ID)　検査セットの識別コード\r\n\r\n　３．SPM-4(検体タイプ)\r\n\r\n　４．OBX-3(検査項目)\r\n\r\n　５．OBX-4(検査副ID)・・・オプション。必要に応じて使用。\r\n\r\n形式：[ORC-2]_[OBR-4]_[SPM-4]_[OBX-3]（_[OBX-4]）",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.identifier.id",
+        "path": "Condition.identifier.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.identifier.use",
+        "path": "Condition.identifier.use",
+        "short": "この識別子の設定・利用目的を表すコード。",
+        "definition": "この識別子の設定・利用目的コード。当該施設における一意のキーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。",
+        "comment": "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.identifier.system",
+        "path": "Condition.identifier.system",
+        "short": "このidebtifierの番号体系を識別するurl",
+        "definition": "このidentifierの番号体系を識別するurl",
+        "comment": "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/IdSystem/システム識別文字列/医療機関識別ID　を設定する。システム識別文字列が、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.identifier.value",
+        "path": "Condition.identifier.value",
+        "short": "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。",
+        "definition": "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.identifier.assigner",
+        "path": "Condition.identifier.assigner",
+        "comment": "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+      },
+      {
         "id": "Condition.clinicalStatus",
         "path": "Condition.clinicalStatus",
         "short": "病名最終日（onsetPeriod.end)での状態（転帰）",
@@ -318,6 +377,45 @@
         "id": "Condition.onsetPeriod.end",
         "path": "Condition.onsetPeriod.end",
         "short": "病名終了日"
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "short": "この情報を記録した登録日",
+        "definition": "この情報を記録した登録日",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "short": "この情報を記録した登録者",
+        "definition": "登録者を表すPractitionerリソース（Containedリソース）への参照",
+        "comment": "Containedリソースに含まれるPractitioner（登録者/医療者）リソースをこのリソース内で参照する。",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eCS_Contained"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "comment": "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.stage.assessment",
+        "path": "Condition.stage.assessment",
+        "comment": "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+      },
+      {
+        "id": "Condition.evidence.detail",
+        "path": "Condition.evidence.detail",
+        "comment": "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
       }
     ]
   }

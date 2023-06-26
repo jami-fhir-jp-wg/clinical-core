@@ -7,12 +7,6 @@
       "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary"
     ]
   },
-  "identifier": [
-    {
-      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "102934701"
-    }
-  ],
   "contained": [
     {
       "resourceType": "Patient",
@@ -71,6 +65,12 @@
         "code": "AMB",
         "display": "外来"
       }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "102934701"
     }
   ],
   "clinicalStatus": {

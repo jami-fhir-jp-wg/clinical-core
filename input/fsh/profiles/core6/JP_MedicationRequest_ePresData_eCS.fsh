@@ -37,8 +37,10 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[rpNumber])
 * insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[orderInRp])
 
-* reorted.reportedReference 
-  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+* basedOn 0..1   MS
+* basedOn only Reference(JP_ServiceRequest_eCS_Contained)
+* basedOn ^definition = "このプロファイルでは、処方オーダに関する情報。"
+* basedOn ^comment = "元のオーダID情報や依頼者情報はここで使用する。"
 
 * medication[x] ^definition = "医薬品コードと医薬品名称。coding要素を繰り返すことでHOT9 やYJコードなど複数のコード体系で医薬品コード並記することが可能。\r\n本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。\r\n日本では同じ用法の複数の薬剤をひとつの処方区分とすることがある。複数の薬剤を表記するMedication Resourceのインスタンスを参照する。"
 * medication[x] MS

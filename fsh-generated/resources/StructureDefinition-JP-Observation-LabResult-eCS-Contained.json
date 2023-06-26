@@ -113,7 +113,7 @@
         "path": "Observation.basedOn",
         "definition": "このプロファイルでは、検体検査オーダに関する情報。",
         "comment": "元のオーダID情報や依頼者情報はここで使用する。",
-        "max": "1",
+        "max": "0",
         "mustSupport": true
       },
       {
