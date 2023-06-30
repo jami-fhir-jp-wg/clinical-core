@@ -32,7 +32,7 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * contained[organization] only  JP_Organization_eCS_Contained
 * contained[department] only  JP_Organization_eCS_department_Contained
 * contained[childObsLaboResult] only  JP_Observation_LabResult_eCS_Contained
-
+/*
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
@@ -52,6 +52,7 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 
 // OUL^R22
 * category 1.. MS       // MS 追加
+*/
 /*
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
