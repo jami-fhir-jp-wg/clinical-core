@@ -65,16 +65,8 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 */
 
 
-* category[laboratory] ^short = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
-* category[laboratory] ^definition = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
-* category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
-* category contains
- indectionRelated 1..1
-* category[indectionRelated] = $observation-subcategory-cs#infectionRelated
-
-
 // OUL^R22.OBX[*]-3 検査項目情報
-/*
+
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
@@ -209,4 +201,3 @@ and localUncoded 0..1 MS
 
 
 
-*/
