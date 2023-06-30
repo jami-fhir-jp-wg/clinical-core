@@ -87,11 +87,9 @@ table th {
  
 ## 主要な情報種別の範囲：
 * 2022年度時点で厚生労働省が提示する臨床コア6情報（いわゆる６情報）
-  * [アレルギー情報　AllergyIntoleranceリソース][JP_AllergyIntolerance_eCS]
-  * [薬剤禁忌情報　AllergyIntoleranceリソース][JP_DrugContraIndication_eCS]
+  * [アレルギー情報／薬剤禁忌情報　AllergyIntoleranceリソース][JP_AllergyIntolerance_eCS]
   * [傷病名情報	Conditionリソース][JP_Condition_eCS]
-  * [検査情報（救急時に有用な検査、生活習慣病関連の検査）Observationリソース][JP_Observation_LabResult_eCS]
-  * [感染症情報　Observationリソース][JP_Observation_LabResult_InfectionRelated_eCS]
+  * [検査情報（注⁂）／感染症情報　Observationリソース][JP_Observation_LabResult_eCS] （注⁂）救急時に有用な検査、生活習慣病関連の検査）
   * [処方依頼情報　MedicationRequestリソース][JP_MedicationRequest_ePres_eCS]
 
 * 上記から参照される情報
@@ -152,7 +150,17 @@ JP_\[リソースタイプ\]\(_0個以上の付加的な階層名\)_eCS_プロ�
 
 ## 電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様について
 
+### 送信完了したFHIRリソースインスタンス（FHIRリソースデータ）を指定する識別子について
+６情報として電子カルテ情報共有サービス（仮称）に送信し、受理されたFHIRリソースインスタンスを指定して、削除、更新などの行いたい場合、対象となる特定のFHIRリソースインスタンスを指定するために、以下の方法で識別子を指定するものとする。
+  - 指定する識別子：そのリソースのidentifier要素(複数ある場合にはそのうちのひとつに限定） 
+  - 指定方法：リソースタイプとそのidentifier要素のsystem値とvalue値のペアで指定する。
+  - 電子カルテ情報共有サービス（仮称）での処理内容：
+    - 削除の場合：指定されたリソースタイプのインスタンスデータで、identifier要素のsystem値とvalue値のペアが一致するidentifierをひとつだけ持つFHIRリソースインスタンスをすべて検索して、その全てのFHIRリソースインスタンスに対して指定された処理削除を行なう。削除処理の途中で失敗した対象があった場合には、この処理すべて（今回の削除処理すべて）を中止し、削除処理の前の状態に戻る（ロールバック）。
+  更新処理の場合には、削除＋更新の処理によって更新処理を実現する。すなわち、該当した全てのFHIRリソースインスタンスを削除したのちに、送信されたFHIRリソースインスタンスを新規に書き込むことによって行なう。<br>この際、送信されたFHIRリソースインスタンスのidentifier要素のsystem値とvalue値のペアが、更新処理対象として指定されたidentifier要素のsystem値とvalue値と一致しない場合ものがある場合には、この処理すべて（削除＋更新のうちの削除を含むすべての処理）を中止し、削除＋更新の処理前の状態に戻る（ロールバック）。
+
+したがって、指定された対象となる既存のFHIRリソースインスタンスより、
 <br>
+
 
 ### 検体検査結果情報における検査項目のコーディング
 いわゆる6情報のうち、検体検査結果情報は、Observationリソースタイプを使用し、Profile「診療情報コアサマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル」に準拠してデータを作成するものとする。
