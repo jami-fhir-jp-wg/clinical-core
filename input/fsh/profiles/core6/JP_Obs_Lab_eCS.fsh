@@ -62,6 +62,8 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * category[laboratory] 1..1 MS
 * category[laboratory] = $observation-category-cs#laboratory
 */
+
+/**********
 * category[laboratory] ^short = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^definition = "Observationカテゴリーで検体検査の場合には 'laboratory'固定。追加で別のカテゴリコードも設定できる。"
 * category[laboratory] ^comment = "【JP Core仕様】推奨コード表「ObservationCategoryCodes」より、このプロファイルでは「laboratory」固定とする。"
@@ -201,3 +203,6 @@ and localUncoded 0..1 MS
 * derivedFrom ^definition = "この検査値の発生元である関連リソース。例えば他のObservation を受けて、本検査値が発生した場合など。"
 * component ^definition = "一度のタイミングでの1回の検査で複数の結果を同時に得る場合にのみ使用される。例えば、血圧の収縮期、拡張期。新生児のApgarスコア。質問に対する複数の回答（飲んだアルコールの種類、など）。"
 
+
+
+********/
