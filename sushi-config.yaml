@@ -6,7 +6,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-core-set
 canonical: http://jpfhir.jp/fhir/ccs
-name: "HL7Japan_JAMIccsImplementationGuide"
+name: "臨床コア情報／６情報 実装ガイド"
 title: "臨床コア情報／６情報 実装ガイド（Clnical Core Set ImplementationGuide）"
 description: "臨床コア情報／６情報 実装ガイド ImplementationGuide"
 status: draft # draft | active | retired | unknown 
