@@ -46,7 +46,8 @@ pages:
 menu:
   Home:
     本文: index.html
-    本文: core6spec.html
+    ６情報仕様: core6spec.html
+    プロファイル: artifacts.html
   Artifacts: 
     Artifacts: artifacts.html
 
