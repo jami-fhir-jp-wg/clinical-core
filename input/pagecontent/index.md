@@ -80,8 +80,13 @@ table th {
 # clinical-core
 # 名称：臨床コア情報FHIR仕様 : 　JP-FHIR-CCS (Clinical Core Set)作成中
 #  （６情報を含む臨床情報のコアセット　FHIR仕様）
-#<span style="color: red; "><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。>></span>
-#<span style="color: red; "><<リソースのProfileも暫定版です。>></span>
+
+# <span style="color: red; "><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。>></span>
+
+# <span style="color: red; "><<リソースのProfileも暫定版です。>></span>
+
+<br>
+
 ## このImplementationガイド(IG)の目的：
 臨床情報のうち主要な情報種別について、患者や他の医療機関との診療情報の共有、退院時サマリーなど医療文書の作成、臨床研究のためのデータ利用などを想定して、主要なデータ項目をFHIRに準拠する形式で記述するための実装ガイドである。
 
