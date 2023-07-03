@@ -7,8 +7,8 @@
 id: clinical-core-set
 canonical: http://jpfhir.jp/fhir/ccs
 name: "HL7Japan_JAMIccsImplementationGuide"
-title: "HL7 Japan-JAMI ccs ImplementationGuide"
-description: "HL7 Japan-JAMI ccs ImplementationGuide"
+title: "臨床コア情報／６情報 実装ガイド（Clnical Core Set ImplementationGuide）"
+description: "臨床コア情報／６情報 実装ガイド ImplementationGuide"
 status: draft # draft | active | retired | unknown 
 version: 0.1.0
 date: 2022-12-16
@@ -21,7 +21,7 @@ publisher:
   name: Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo
   url: http://jpfhir.jp
   email: office@hlfhir.jp
-copyright: Copyright JAMI+JAHIS+HL7Japan+PMDA+etc. SS-MIX2-Specification Maintenance TaskForce, CC(Creative Commons license) BY-ND CC表示・改変禁止
+copyright: Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止
 jurisdiction: 'urn:iso:std:iso:3166-2#JP'
 
 dependencies:
