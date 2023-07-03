@@ -37,6 +37,8 @@ dependencies:
 pages:
   index.md:
     title: 名称：臨床コア情報FHIR仕様  　JP-FHIR-CCS (Clinical Core Set)
+  core6spec.md:
+    title: 名称：６情報FHIR仕様  　JP-FHIR-CCS6 (Clinical Core6 Set)
 
 #-------------------------------------
 # メニュー設定
@@ -44,6 +46,7 @@ pages:
 menu:
   Home:
     本文: index.html
+    本文: core6spec.html
   Artifacts: 
     Artifacts: artifacts.html
 
