@@ -37,6 +37,7 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[rpNumber])
 * insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[orderInRp])
 
+/*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
@@ -57,6 +58,7 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * identifier[systemTypeB_FillerID]  ^definition = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
 * identifier[systemTypeB_FillerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
 * identifier[systemTypeB_FillerID].type = $systemTypeOfIdentifier#FILL
+*/
 
 * basedOn 0..1   MS
 * basedOn only Reference(JP_ServiceRequest_eCS_Contained)
