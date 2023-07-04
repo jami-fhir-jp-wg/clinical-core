@@ -5,7 +5,7 @@
   "name": "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits",
   "id": "jami-codeSystem-ePreDetailUsageMethod-TwoDigits",
   "description": "JAMI標準投与方法区分コード2桁",
-  "version": "0.1.0",
+  "version": "0.8.1",
   "url": "urn:oid:1.2.392.200250.2.2.20.40",
   "concept": [
     {

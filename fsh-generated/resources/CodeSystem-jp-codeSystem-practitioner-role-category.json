@@ -5,7 +5,7 @@
   "name": "JP_codeSystem_practitioner_role_category",
   "id": "jp-codeSystem-practitioner-role-category",
   "description": "医療者役割コード(処方)",
-  "version": "0.1.0",
+  "version": "0.8.1",
   "url": "http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category",
   "concept": [
     {

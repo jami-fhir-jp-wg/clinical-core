@@ -37,6 +37,27 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[rpNumber])
 * insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[orderInRp])
 
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "type"
+* identifier ^slicing.rules = #open
+* identifier contains
+    systemTypeA_AccessionID 0..1 and
+    systemTypeB_PlacerID 0..1 and
+    systemTypeB_FillerID 0..1
+* identifier[systemTypeA_AccessionID]  ^short = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeA_AccessionID]  ^definition = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier。このidentifierで特定のリソースインスタンスをアクセスできる。"
+* identifier[systemTypeA_AccessionID].type = $systemTypeOfIdentifier#ACSN
+
+* identifier[systemTypeB_PlacerID]  ^short = "オーダ番号など、ひとつのオーダIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeB_PlacerID]  ^definition = "オーダ番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
+* identifier[systemTypeB_PlacerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
+* identifier[systemTypeB_PlacerID].type = $systemTypeOfIdentifier#PLAC
+
+* identifier[systemTypeB_FillerID]  ^short = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeB_FillerID]  ^definition = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
+* identifier[systemTypeB_FillerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
+* identifier[systemTypeB_FillerID].type = $systemTypeOfIdentifier#FILL
+
 * basedOn 0..1   MS
 * basedOn only Reference(JP_ServiceRequest_eCS_Contained)
 * basedOn ^definition = "このプロファイルでは、処方オーダに関する情報。"

@@ -2,11 +2,11 @@
   "resourceType": "ImplementationGuide",
   "id": "clinical-core-set",
   "url": "http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set",
-  "version": "0.1.0",
-  "name": "HL7Japan_JAMIccsImplementationGuide",
-  "title": "HL7 Japan-JAMI ccs ImplementationGuide",
+  "version": "0.8.1",
+  "name": "",
+  "title": "臨床コア情報／６情報 実装ガイド（Clnical Core Set ImplementationGuide）",
   "status": "draft",
-  "date": "2022-12-16",
+  "date": "2023-07-04",
   "publisher": "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "HL7 Japan-JAMI ccs ImplementationGuide",
+  "description": "臨床コア情報／６情報 実装ガイド ImplementationGuide",
   "jurisdiction": [
     {
       "coding": [
@@ -34,7 +34,7 @@
       ]
     }
   ],
-  "copyright": "Copyright JAMI+JAHIS+HL7Japan+PMDA+etc. SS-MIX2-Specification Maintenance TaskForce, CC(Creative Commons license) BY-ND CC表示・改変禁止",
+  "copyright": "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止",
   "packageId": "clinical-core-set",
   "fhirVersion": [
     "4.0.1"
@@ -786,6 +786,11 @@
         {
           "nameUrl": "index.html",
           "title": "名称：臨床コア情報FHIR仕様  　JP-FHIR-CCS (Clinical Core Set)",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "core6spec.html",
+          "title": "名称：臨床6情報FHIR仕様  　JP-FHIR-CCS6 (Clinical Core6 Set)",
           "generation": "markdown"
         }
       ]

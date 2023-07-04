@@ -5,7 +5,7 @@
   "name": "JP_codeSystem_practitioner_certificate_category",
   "id": "jp-codeSystem-practitioner-certificate-category",
   "description": "医療従事者資格種別",
-  "version": "0.1.0",
+  "version": "0.8.1",
   "url": "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category",
   "concept": [
     {

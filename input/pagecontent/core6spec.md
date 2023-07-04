@@ -174,11 +174,11 @@ Bundleに含まれる個々のリソース・インスタンスのidentifier要�
 <tr>
 
 <td>
-<img src="identifier-typeA.png" style="display: block; margin: auto;" width="40%"><br clear="all">
+<img src="identifier-typeA.png" style="display: block; margin: auto;" width="100%"><br clear="all">
 
 </td>
 <td>
-<img src="identifier-typeB.png" style="display: block; margin: auto;" width="40%"><br clear="all">
+<img src="identifier-typeB.png" style="display: block; margin: auto;" width="100%"><br clear="all">
 
 </td>
 </tr>
@@ -191,8 +191,11 @@ Bundleに含まれる個々のリソース・インスタンスのidentifier要�
   - ＜IdentifierタイプA＞では、その医療機関のそのシステム系統では、過去未来に跨がり、すべてのリソース・インスタンスをひとつひとつ、必ず一意に、同じものとして識別できるID値をidentifier.valueに設定<span style="color: red; ">しなければならない。</span>
   - ＜IdentifierタイプB＞では、その医療機関のそのシステム系統では、過去未来に跨がり、リソース・インスタンスが含まれるオーダ単位や結果報告書単位で一意に識別できるID値（たとえばオーダ番号や結果報告書番号）をidentifier.valueに設定<span style="color: red; ">しなければならない。</span>このタイプでは、同じオーダ単位や結果報告書単位に含まれるすべてのリソース・インスタンスには同一のidentifierが少なくともひとつ付与<span style="color: red; ">されなければならない。</span>
 
-<img src="identifier-typetype.png" style="display: block; margin: auto;" width="50%"><br clear="all">
-
+<table>
+<tr>
+<img src="identifier-typetype.png" style="display: block; margin: auto;" width="80%"><br clear="all">
+</tr>
+</table>
 
 ＜IdentifierタイプA＞または＜IdentifierタイプB＞における、identifier要素のtype値の設定方法：
 
