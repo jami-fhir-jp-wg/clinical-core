@@ -28,6 +28,14 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
 * contained[recorder] only  JP_Practitioner_eCS_Contained
 
 * insert IdentifierProfileForInstanceOf6CoreSet
+* identifier[systemTypeA_eachInstance]  ^short = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeA_eachInstance]  ^definition = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeA_eachInstance].system =  $systemTypeA_eachInstance 
+* identifier[systemTypeA_eachInstance].value 0..
+* identifier[systemTypeB_eachOrder]  ^short = "リソースインスタンスを複数一括して、それに同じIDがインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeB_eachOrder]  ^definition = "リソースインスタンスを複数一括して、それに同じIDがインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeB_eachOrder].system =  $systemTypeB_eachOrder 
+* identifier[systemTypeB_eachOrder].value 0..
 
 * clinicalStatus   0..1 MS
 * clinicalStatus   ^short = "臨床的状態のステータス。"

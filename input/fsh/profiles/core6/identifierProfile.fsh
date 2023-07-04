@@ -14,7 +14,7 @@ RuleSet:  IdentifierProfileForInstanceOf6CoreSetSliced(namedIdentifier)
   * system 1..1 MS
   * system ^short = "このidebtifierの番号体系を識別するurl"
   * system ^definition = "このidentifierの番号体系を識別するurl"
-  * system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/IdSystem/システム識別文字列/医療機関識別ID　を設定する。システム識別文字列が、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
+  * system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/医療機関識別ID/システム識別文字列/システムバージョン記号番号/システムIdentifierタイプ　を設定する。システム識別文字列は、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
   * value 1..1 MS
   * value ^short = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
   * value ^definition = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
@@ -35,11 +35,16 @@ RuleSet:  IdentifierProfileForInstanceOf6CoreSet
   * system 1..1 MS
   * system ^short = "このidebtifierの番号体系を識別するurl"
   * system ^definition = "このidentifierの番号体系を識別するurl"
-  * system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/IdSystem/システム識別文字列/医療機関識別ID　を設定する。システム識別文字列が、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
+  * system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/医療機関識別ID/システム識別文字列/システムバージョン記号番号/システムIdentifierタイプ　を設定する。システム識別文字列は、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
   * value 1..1 MS
   * value ^short = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
   * value ^definition = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
   * assigner
     * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
-
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains
+    systemTypeA_eachInstance 0..1 and
+    systemTypeB_eachOrder 0..1 and
 
