@@ -77,8 +77,7 @@ Alias: $JP_ObservationLabResultLocalUncoded_CS = http://jpfhir.jp/fhir/eClinical
 Alias: $observation-labo_subcategory-cs = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_Observation_Labo_SubCategory_CS
 
 // リソースを識別するidentifierのsystem
-Alias: $systemTypeA_eachInstance = http://jpfhir.jp/fhir/eClinicalSummary/1311234567/SAMPLEEHR/1.1.1/systemTypeA
-Alias: $systemTypeB_eachOrder = http://jpfhir.jp/fhir/eClinicalSummary/1311234567/SAMPLEEHR/1.1.1/systemTypeB
+Alias: $systemTypeOfIdentifier = http://terminology.hl7.org/CodeSystem/v2-0203
 
 // from jp-core v1.1.2
 Alias: $JP_SimpleObservationCategory_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_SimpleObservationCategory_VS

@@ -30,20 +30,33 @@ RuleSet:  IdentifierProfileForInstanceOf6CoreSet
   * id ..1   MS
   * use 0..1   MS
   * use ^short = "この識別子の設定・利用目的を表すコード。"
-  * use ^definition = "この識別子の設定・利用目的コード。当該施設における一意のキーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。"
-  * use ^comment = "追加されたidentifierには必ずofficial以外のコードを設定するものとし、通常は'secondary'を設定する。目的に応じてhttp://hl7.org/fhir/identifier-useに定義される他のコード（usual, temp, old）も利用してもよい。"
+  * use ^definition = "この識別子の設定・利用目的コード。当該施設やシステムにおける一意キーには 'official'を設定する。この要素が存在しない場合にもofficialとみなす。"
   * system 1..1 MS
   * system ^short = "このidebtifierの番号体系を識別するurl"
   * system ^definition = "このidentifierの番号体系を識別するurl"
-  * system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/医療機関識別ID/システム識別文字列/システムバージョン記号番号/システムIdentifierタイプ　を設定する。システム識別文字列は、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。"
+  * system ^comment = "identifier.useが'official'の場合には、http://jpfhir.jp/fhir/eClinicalSummary/医療機関識別ID/システム識別文字列/システムバージョン記号番号　（例）を設定する。システム識別文字列は、当該施設でこの識別子の一意性を確保できるシステム識別文字列、たとえばMEDEMR2023など。医療機関識別IDは原則として、数字1の後ろに都道府県番号2桁、施設区分1桁（医科：1、歯科：3、調剤：4）、 機関番号7桁を連結した11桁とする。このsystem値のもとでvalueに設定される値が意味的に一意であればよい。"
   * value 1..1 MS
-  * value ^short = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
-  * value ^definition = "システムのコンテキスト内で一意の識別子となるidentifierの文字列を設定。"
+  * value ^short = "システムのコンテキスト内で一意の識別子となるidentifierの値を設定。"
+  * value ^definition = "システムのコンテキスト内で一意の識別子となるidentifierの値を設定。"
   * assigner
     * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
-    systemTypeA_eachInstance 0..1 and
-    systemTypeB_eachOrder 0..1
+    systemTypeA_AccessionID 0..1 and
+    systemTypeB_PlacerID 0..1 and
+    systemTypeB_FillerID 0..1
+* identifier[systemTypeA_AccessionID]  ^short = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeA_AccessionID]  ^definition = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier。このidentifierで特定のリソースインスタンスをアクセスできる。"
+* identifier[systemTypeA_AccessionID].type = $systemTypeOfIdentifier#ACSN
+
+* identifier[systemTypeB_PlacerID]  ^short = "オーダ番号など、ひとつのオーダIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeB_PlacerID]  ^definition = "オーダ番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
+* identifier[systemTypeB_PlacerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
+* identifier[systemTypeB_PlacerID].type = $systemTypeOfIdentifier#PLAC
+
+* identifier[systemTypeB_FillerID]  ^short = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier"
+* identifier[systemTypeB_FillerID]  ^definition = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
+* identifier[systemTypeB_FillerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
+* identifier[systemTypeB_FillerID].type = $systemTypeOfIdentifier#FILL
