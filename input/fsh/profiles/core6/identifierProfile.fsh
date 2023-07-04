@@ -46,5 +46,4 @@ RuleSet:  IdentifierProfileForInstanceOf6CoreSet
 * identifier ^slicing.rules = #open
 * identifier contains
     systemTypeA_eachInstance 0..1 and
-    systemTypeB_eachOrder 0..1 and
-
+    systemTypeB_eachOrder 0..1
