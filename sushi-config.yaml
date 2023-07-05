@@ -10,7 +10,7 @@ name: "臨床コア情報／６情報 実装ガイド"
 title: "臨床コア情報／６情報 実装ガイド（Clnical Core Set ImplementationGuide）"
 description: "臨床コア情報／６情報 実装ガイド ImplementationGuide"
 status: draft # draft | active | retired | unknown 
-version: 0.8.1
+version: 0.8.1-a
 date: 2023-07-04
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2022+
