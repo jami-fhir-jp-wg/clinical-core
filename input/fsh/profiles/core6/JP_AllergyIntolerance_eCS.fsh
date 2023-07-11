@@ -11,8 +11,7 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2023-05-27"
-* . ^short = "診療情報コアサマリーにおけるアレルギー情報／薬剤禁忌の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおけるアレルギー情報／薬剤禁忌の格納に使用する"
+* insert toplevel_short_definition("診療情報コアサマリーにおけるアレルギー情報／薬剤禁忌の格納に使用する")
 * . ^comment = "厚労省6情報などの運用において、薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
@@ -24,6 +23,9 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
     and recorder 0..1
 
 * contained[patient] only  JP_Patient_eCS_Contained
+  * insert relative_short_definition( "診療情報コアサマリーにおける患者情報をコンパクトに格納したPatientリソース")
+  * ^comment = ""
+
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained
 * contained[recorder] only  JP_Practitioner_eCS_Contained
 

@@ -6,7 +6,7 @@
   "id": "JP-Specimen-JLAC10-SpecimenCode-CS",
   "title": "JP_Specimen_JLAC10_SpecimenCode_CS",
   "description": "JLAC10検査材料コード",
-  "version": "0.8.1",
+  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes",
   "concept": [
     {

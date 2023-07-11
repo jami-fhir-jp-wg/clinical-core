@@ -5,7 +5,7 @@
   "name": "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit",
   "id": "jami-codeSystem-ePreBasicUsageMethod-OneDigit",
   "description": "JAMI標準基本用法区分コード1桁",
-  "version": "0.8.1",
+  "version": "0.8.1-a",
   "url": "urn:oid:1.2.392.200250.2.2.20.30",
   "concept": [
     {

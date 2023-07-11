@@ -9,6 +9,9 @@ Description: "診療情報コアサマリー埋め込み用 Patientリソース(
 * ^url = $JP_Patient_eCS_Contained
 * ^status = #active
 * ^date = "2023-03-31"
+* insert toplevel_short_definition("診療情報コアサマリーにおける患者情報の格納に使用する(他のリソースに埋め込まれる（contained要素）専用)")
+* . ^comment = "他のリソースに埋め込まれる（contained要素）患者情報のためには、別のプロファイルが用意されている。"
+
 * id 1..1
 
 * implicitRules ..0

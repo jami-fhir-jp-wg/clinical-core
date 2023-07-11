@@ -4,7 +4,7 @@
   "name": "JAMI_valueSet_ePreDispenseInstruction",
   "id": "jami-valueSet-ePreDispenseInstruction",
   "description": "調剤指示コード（備考欄）",
-  "version": "0.8.1",
+  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction",
   "compose": {
     "include": [

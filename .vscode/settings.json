@@ -1,0 +1,6 @@
+{
+    "markdown.styles": [
+        "sample.css"
+    ],
+    "markdown-pdf.includeDefaultStyles": true
+}

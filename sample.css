@@ -1,0 +1,23 @@
+.markdown-preview.markdown-preview {
+    table {
+        background-color: #ffffff;
+        /* 背景色指定 */
+        /*    border-collapse: separate; */
+        /* 表の線と線の間を空ける */
+        border-collapse: collapse;
+        /* 表の線と線の間を空けない */
+    }
+
+    th {
+        background-color: #aaaaaa;
+        /* 背景色指定 */
+    }
+
+    th,
+    td {
+        border: solid 1px;
+        /* 枠線指定 */
+        padding: 10px;
+        /* 余白指定 */
+    }
+}

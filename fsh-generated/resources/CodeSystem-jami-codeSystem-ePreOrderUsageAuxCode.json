@@ -5,7 +5,7 @@
   "name": "JAMI_codeSystem_ePreOrderUsageAuxCode",
   "id": "jami-codeSystem-ePreOrderUsageAuxCode",
   "description": "JAMI補足用法コード8桁",
-  "version": "0.8.1",
+  "version": "0.8.1-a",
   "url": "urn:oid:1.2.392.200250.2.2.20.22",
   "concept": [
     {

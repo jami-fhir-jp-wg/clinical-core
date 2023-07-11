@@ -24,9 +24,8 @@ RuleSet:  IdentifierProfileForInstanceOf6CoreSetSliced(namedIdentifier)
 
 RuleSet:  IdentifierProfileForInstanceOf6CoreSet
 * identifier 1.. MS
-* identifier ^short = "当該リソースインスタンス（データ）に対して、施設内で割り振られる一意の識別子"
-* identifier ^definition = "このリソースインスタンス（データ）に割り当てられた一意の識別子で64バイト以内。リソースの識別子やシステム的なシーケンスではなく、当該施設内で割り振られる一意の識別キー。"
-* identifier ^comment = "当該施設内で割り振られる一意の識別子があればそれを使用する。すくなくともひとつのidentifierは、当該施設で作成された全診療データのなかからこのリソースインスタンスが表す情報を一意に識別でき、その削除や更新が可能な論理キーとなる。それ以外に追加で当該施設または別の施設が別のsystem値との組み合わせによる異なるidentifierを1個以上設定してもよい。\r\nSS-MIX2から生成する場合には、次のルールを参考に１伝票内の１項目を識別できるようにする。\r\nアプリケーション側のデータベースにおけるフィールド長の定義については、最低64バイトを確保すること。\r\n\r\n--- 参考（検査結果項目の場合） ---\r\n\r\n次の項目を順にセパレータ「_(アンダースコア)」で連結し、 identifier.value に設定する。グループ項目でない場合など、該当コード／番号がない場合はセパレータを連続で連結する。各コードはローカルコードを使用し、必ず設定できること。\r\n\r\n　１．ORC-2(依頼者オーダ番号)　SS-MIX2の15桁前ゼロ形式の番号\r\n\r\n　２．OBR-4(検査項目ID)　検査セットの識別コード\r\n\r\n　３．SPM-4(検体タイプ)\r\n\r\n　４．OBX-3(検査項目)\r\n\r\n　５．OBX-4(検査副ID)・・・オプション。必要に応じて使用。\r\n\r\n形式：[ORC-2]_[OBR-4]_[SPM-4]_[OBX-3]（_[OBX-4]）"
+  * insert relative_short_definition("当該リソースインスタンス（データ）に対して、施設内で当該システムにより割りふられる一意の識別子")
+  * ^comment = "当該施設内で当該リソースインスタンスに割り振られる一意の識別子があればそれを使用する。すくなくともひとつのidentifierは、その削除や更新が可能な論理キーとなれる、識別IDである必要がある。それ以外に追加で当該施設または別の施設が別のsystem値との組み合わせによる異なるidentifierを1個以上設定してもよい。\r\nSS-MIX2から生成する場合には、次のルールを参考に１伝票内の１項目を識別できるようにする。\r\nアプリケーション側のデータベースにおけるフィールド長の定義については、最低64バイトを確保すること。\r\n\r\n--- 参考（検査結果項目の場合） ---\r\n\r\n次の項目を順にセパレータ「_(アンダースコア)」で連結し、 identifier.value に設定する。グループ項目でない場合など、該当コード／番号がない場合はセパレータを連続で連結する。各コードはローカルコードを使用し、必ず設定できること。\r\n\r\n　１．ORC-2(依頼者オーダ番号)　SS-MIX2の15桁前ゼロ形式の番号\r\n\r\n　２．OBR-4(検査項目ID)　検査セットの識別コード\r\n\r\n　３．SPM-4(検体タイプ)\r\n\r\n　４．OBX-3(検査項目)\r\n\r\n　５．OBX-4(検査副ID)・・・オプション。必要に応じて使用。\r\n\r\n形式：[ORC-2]_[OBR-4]_[SPM-4]_[OBX-3]（_[OBX-4]）"
   * id ..1   MS
   * use 0..1   MS
   * use ^short = "この識別子の設定・利用目的を表すコード。"
@@ -48,15 +47,25 @@ RuleSet:  IdentifierProfileForInstanceOf6CoreSet
     systemTypeB_PlacerID 0..1 and
     systemTypeB_FillerID 0..1
 * identifier[systemTypeA_AccessionID]  ^short = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier"
-* identifier[systemTypeA_AccessionID]  ^definition = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier。このidentifierで特定のリソースインスタンスをアクセスできる。"
-* identifier[systemTypeA_AccessionID].type = $systemTypeOfIdentifier#ACSN
+* identifier[systemTypeA_AccessionID]  ^definition = "リソースインスタンスごとに異なる安定したIDがインスタンス識別子として割りあてられたidentifier。このidentifierにより特定の「１個だけの」リソースインスタンスをアクセスできる。"
+* identifier[systemTypeA_AccessionID]  ^comment = "６情報としてこのリソースインスタンスが送信される場合には、削除や更新処理時にキーとして指定されるIDとして、systemTypeA_AccessionID、systemTypeB_PlacerID、systemTypeB_FillerIDのいずれかのタイプのidentifierのひとつが必須である。２つ以上あってはいけない。"
+  * type 1..1 MS
+  * type = $systemTypeOfIdentifier#ACSN
+    * coding.system 1..1 MS
+    * coding.code 1..1 MS
 
 * identifier[systemTypeB_PlacerID]  ^short = "オーダ番号など、ひとつのオーダIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier"
-* identifier[systemTypeB_PlacerID]  ^definition = "オーダ番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
-* identifier[systemTypeB_PlacerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
-* identifier[systemTypeB_PlacerID].type = $systemTypeOfIdentifier#PLAC
+* identifier[systemTypeB_PlacerID]  ^definition = "オーダ番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。このidentifierにより一括して「複数の」「同時に削除や更新がなされる」リソースインスタンスをアクセスできる。"
+* identifier[systemTypeB_PlacerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。６情報としてこのリソースインスタンスが送信される場合には、削除や更新処理時にキーとして指定されるIDとして、systemTypeA_AccessionID、systemTypeB_PlacerID、systemTypeB_FillerIDのいずれかのタイプのidentifierのひとつが必須である。２つ以上あってはいけない。"
+  * type 1..1 MS
+  * type = $systemTypeOfIdentifier#PLAC
+    * coding.system 1..1 MS
+    * coding.code 1..1 MS
 
 * identifier[systemTypeB_FillerID]  ^short = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier"
-* identifier[systemTypeB_FillerID]  ^definition = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。"
-* identifier[systemTypeB_FillerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。"
-* identifier[systemTypeB_FillerID].type = $systemTypeOfIdentifier#FILL
+* identifier[systemTypeB_FillerID]  ^definition = "報告書番号や実施番号など、ひとつのIDのもとに発行されたリソースインスタンスを一括してアクセスするためにインスタンス識別子として割りあてられたidentifier。このidentifierにより一括して「複数の」「同時に削除や更新がなされる」リソースインスタンスをアクセスできる。"
+* identifier[systemTypeB_FillerID]  ^comment = "systemTypeB_PlacerIDとsystemTypeB_FillerIDは厳密に区別する必要はない。６情報としてこのリソースインスタンスが送信される場合には、削除や更新処理時にキーとして指定されるIDとして、systemTypeA_AccessionID、systemTypeB_PlacerID、systemTypeB_FillerIDのいずれかのタイプのidentifierのひとつが必須である。２つ以上あってはいけない。"
+  * type 1..1 MS
+  * type = $systemTypeOfIdentifier#FILL
+    * coding.system 1..1 MS
+    * coding.code 1..1 MS

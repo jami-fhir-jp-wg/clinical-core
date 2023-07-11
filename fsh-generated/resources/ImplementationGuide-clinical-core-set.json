@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "clinical-core-set",
   "url": "http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set",
-  "version": "0.8.1",
+  "version": "0.8.1-a",
   "name": "",
   "title": "臨床コア情報／６情報 実装ガイド（Clnical Core Set ImplementationGuide）",
   "status": "draft",

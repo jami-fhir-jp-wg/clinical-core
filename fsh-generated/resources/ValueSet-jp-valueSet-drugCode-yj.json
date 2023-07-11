@@ -4,7 +4,7 @@
   "name": "JP_valueSet_drugCode_yj",
   "id": "jp-valueSet-drugCode-yj",
   "description": "医薬品コード（YJコード）",
-  "version": "0.8.1",
+  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj",
   "compose": {
     "include": [
