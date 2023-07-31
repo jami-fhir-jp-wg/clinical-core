@@ -59,6 +59,134 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/JP-Condition-eCS"
+        },
+        "name": "Core6 : JP_Condition_eCS",
+        "description": "診療情報コアサマリー用　Conditionリソース（傷病名情報）プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/JP-MedicationRequest-ePres-eCS"
+        },
+        "name": "Core6 : JP_MedicationRequest_ePres_eCS",
+        "description": "診療情報コアサマリー用　MedicationRequestリソース（処方オーダ情報）プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/JP-Observation-LabResult-eCS"
+        },
+        "name": "Core6 : JP_Observation_LabResult_eCS",
+        "description": "診療情報コアサマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-valueSet-documentTypeCode"
+        },
+        "name": "doc-typecodes",
+        "description": "FHIR文書の文書区分（医療文書全般）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/Example-JP-AllergyIntolerance-eCS-01"
+        },
+        "name": "Example-JP-AllergyIntolerance-eCS-01",
+        "description": "allergyeferralExample01 アレルギー例1　サバ",
+        "exampleCanonical": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit"
+        },
+        "name": "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit",
+        "description": "JAMI標準基本用法区分コード1桁",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits"
+        },
+        "name": "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits",
+        "description": "JAMI標準投与方法区分コード2桁",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreDispenseInstruction"
+        },
+        "name": "JAMI_codeSystem_ePreDispenseInstruction",
+        "description": "調剤指示コード（備考欄）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode"
+        },
+        "name": "JAMI_codeSystem_ePreOrderUsageAuxCode",
+        "description": "JAMI補足用法コード8桁",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreSiteCode"
+        },
+        "name": "JAMI_codeSystem_ePreSiteCode",
+        "description": "JAMI標準用法部位コード（３桁）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jami-codeSystem-ePreUsageRoute"
+        },
+        "name": "JAMI_codeSystem_ePreUsageRoute",
+        "description": "HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jami-valueSet-ePreDispenseInstruction"
+        },
+        "name": "JAMI_valueSet_ePreDispenseInstruction",
+        "description": "調剤指示コード（備考欄）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jami-valueSet-ePreOrderUsageCode-16digits"
+        },
+        "name": "JAMI_valueSet_ePreOrderUsageCode_16digits",
+        "description": "JAMI16桁用法コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-department-ssmix-cs"
+        },
+        "name": "JP Core Department SS-MIX CodeSystem",
+        "description": "SS-MIX統一診療科コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medicallicensecertificate-cs"
+        },
+        "name": "JP Core MedicalLicenseCertificate CodeSystem",
+        "description": "医療関連免許証明に関するコードシステム。",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense"
+        },
+        "name": "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
+        "description": "調剤指示。薬剤単位の調剤指示を表現するための拡張",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/JP-Binary"
         },
         "name": "JP_Binary",
@@ -83,10 +211,74 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/JP-Condition-eCS"
+          "reference": "CodeSystem/jp-codeSystem-documentTypeCode"
         },
-        "name": "Core6 : JP_Condition_eCS",
-        "description": "診療情報コアサマリー用　Conditionリソース（傷病名情報）プロファイル",
+        "name": "JP_codeSystem_documentTypeCode",
+        "description": "FHIR文書の文書区分（医療文書全般）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-ePreCommunication-category"
+        },
+        "name": "JP_codeSystem_ePreCommunication_category",
+        "description": "処方箋備考区分",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-ePrescription-section"
+        },
+        "name": "JP_codeSystem_ePrescription_section",
+        "description": "処方セクション区分コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-insurerNumber"
+        },
+        "name": "JP_codeSystem_insurerNumber",
+        "description": "保険者番号",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-practitioner-certificate-category"
+        },
+        "name": "JP_codeSystem_practitioner_certificate_category",
+        "description": "医療従事者資格種別",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-practitioner-role-category"
+        },
+        "name": "JP_codeSystem_practitioner_role_category",
+        "description": "医療者役割コード(処方)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-prefectureNumber"
+        },
+        "name": "JP_codeSystem_prefectureNumber",
+        "description": "都道府県番号",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-prescription-category"
+        },
+        "name": "JP_codeSystem_prescription_category",
+        "description": "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codeSystem-publicPyerNumber"
+        },
+        "name": "JP_codeSystem_publicPyerNumber",
+        "description": "公費負担者番号",
         "exampleBoolean": false
       },
       {
@@ -179,18 +371,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/JP-Encounter-OW-eCS-Contained"
-        },
-        "name": "JP_Encounter_OW_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Encouterリソース(入院外来の別に関するのみの情報)プロファイル　",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/JP-Encounter-eClinicalSummary"
         },
         "name": "JP_Encounter_eClinicalSummary",
         "description": "診療情報サマリー用　Encounterリソース（受診時・入院時等のEncounter情報）プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/JP-Encounter-OW-eCS-Contained"
+        },
+        "name": "JP_Encounter_OW_eCS_Contained",
+        "description": "診療情報コアサマリー埋め込み用 Encouterリソース(入院外来の別に関するのみの情報)プロファイル　",
         "exampleBoolean": false
       },
       {
@@ -227,14 +419,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/JP-MedicationRequest-ePres-eCS"
-        },
-        "name": "Core6 : JP_MedicationRequest_ePres_eCS",
-        "description": "診療情報コアサマリー用　MedicationRequestリソース（処方オーダ情報）プロファイル",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/JP-MedicationStatement"
         },
         "name": "JP_MedicationStatement",
@@ -255,14 +439,6 @@
         },
         "name": "JP_Observation_Common_eClinicalSummary",
         "description": "P_Observation_Common_eClinicalSummary　暫定プロファイル",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/JP-Observation-LabResult-eCS"
-        },
-        "name": "Core6 : JP_Observation_LabResult_eCS",
-        "description": "診療情報コアサマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル",
         "exampleBoolean": false
       },
       {
@@ -347,18 +523,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/JP-Practitioner-eCS-Contained"
-        },
-        "name": "JP_Practitioner_eCS_Contained",
-        "description": "診療情報コアサマリー埋め込み用 Practitionerリソース（医師情報）　　（JP-Practitioner-eCSの派生プロファイル）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/JP-Practitioner-eCSauthor"
         },
         "name": "JP_Practitioner_eCS_author",
         "description": "診療情報サマリー用　Practitionerリソース（医療文書作成医師情報）プロファイル",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/JP-Practitioner-eCS-Contained"
+        },
+        "name": "JP_Practitioner_eCS_Contained",
+        "description": "診療情報コアサマリー埋め込み用 Practitionerリソース（医師情報）　　（JP-Practitioner-eCSの派生プロファイル）",
         "exampleBoolean": false
       },
       {
@@ -443,42 +619,18 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/JP-Specimen-JLAC10-SpecimenCode-CS"
+        },
+        "name": "JP_Specimen_JLAC10_SpecimenCode_CS",
+        "description": "JLAC10検査材料コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/JP-Specimen-eCS"
         },
         "name": "JP_Specimen_LaboResult_eCS_Contained",
         "description": "診療情報コアサマリー埋め込み用 Specimenリソース（検体検査の検体情報 ）プロファイル ",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense"
-        },
-        "name": "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
-        "description": "調剤指示。薬剤単位の調剤指示を表現するための拡張",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/jami-valueSet-ePreDispenseInstruction"
-        },
-        "name": "JAMI_valueSet_ePreDispenseInstruction",
-        "description": "調剤指示コード（備考欄）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/jami-valueSet-ePreOrderUsageCode-16digits"
-        },
-        "name": "JAMI_valueSet_ePreOrderUsageCode_16digits",
-        "description": "JAMI16桁用法コード",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/jp-valueSet-documentTypeCode"
-        },
-        "name": "doc-typecodes",
-        "description": "FHIR文書の文書区分（医療文書全般）",
         "exampleBoolean": false
       },
       {
@@ -503,166 +655,6 @@
         },
         "name": "JP_valueSet_drugCode_yj",
         "description": "医薬品コード（YJコード）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mhlw-valueSet-drugCode-generalNameCode"
-        },
-        "name": "MHLW_valueSet_drugCode_generalNameCode",
-        "description": "厚労省一般処方名マスター(厚労省保険局コード)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11"
-        },
-        "name": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
-        "description": "厚労省電子処方CDA規格別表11 保険種別コード",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit"
-        },
-        "name": "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit",
-        "description": "JAMI標準基本用法区分コード1桁",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits"
-        },
-        "name": "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits",
-        "description": "JAMI標準投与方法区分コード2桁",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jami-codeSystem-ePreDispenseInstruction"
-        },
-        "name": "JAMI_codeSystem_ePreDispenseInstruction",
-        "description": "調剤指示コード（備考欄）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode"
-        },
-        "name": "JAMI_codeSystem_ePreOrderUsageAuxCode",
-        "description": "JAMI補足用法コード8桁",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jami-codeSystem-ePreSiteCode"
-        },
-        "name": "JAMI_codeSystem_ePreSiteCode",
-        "description": "JAMI標準用法部位コード（３桁）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jami-codeSystem-ePreUsageRoute"
-        },
-        "name": "JAMI_codeSystem_ePreUsageRoute",
-        "description": "HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-department-ssmix-cs"
-        },
-        "name": "JP Core Department SS-MIX CodeSystem",
-        "description": "SS-MIX統一診療科コード",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-medicallicensecertificate-cs"
-        },
-        "name": "JP Core MedicalLicenseCertificate CodeSystem",
-        "description": "医療関連免許証明に関するコードシステム。",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/JP-Specimen-JLAC10-SpecimenCode-CS"
-        },
-        "name": "JP_Specimen_JLAC10_SpecimenCode_CS",
-        "description": "JLAC10検査材料コード",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-documentTypeCode"
-        },
-        "name": "JP_codeSystem_documentTypeCode",
-        "description": "FHIR文書の文書区分（医療文書全般）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-ePreCommunication-category"
-        },
-        "name": "JP_codeSystem_ePreCommunication_category",
-        "description": "処方箋備考区分",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-ePrescription-section"
-        },
-        "name": "JP_codeSystem_ePrescription_section",
-        "description": "処方セクション区分コード",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-insurerNumber"
-        },
-        "name": "JP_codeSystem_insurerNumber",
-        "description": "保険者番号",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-practitioner-certificate-category"
-        },
-        "name": "JP_codeSystem_practitioner_certificate_category",
-        "description": "医療従事者資格種別",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-practitioner-role-category"
-        },
-        "name": "JP_codeSystem_practitioner_role_category",
-        "description": "医療者役割コード(処方)",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-prefectureNumber"
-        },
-        "name": "JP_codeSystem_prefectureNumber",
-        "description": "都道府県番号",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-prescription-category"
-        },
-        "name": "JP_codeSystem_prescription_category",
-        "description": "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/jp-codeSystem-publicPyerNumber"
-        },
-        "name": "JP_codeSystem_publicPyerNumber",
-        "description": "公費負担者番号",
         "exampleBoolean": false
       },
       {
@@ -771,11 +763,19 @@
       },
       {
         "reference": {
-          "reference": "AllergyIntolerance/Example-JP-AllergyIntolerance-eCS-01"
+          "reference": "ValueSet/mhlw-valueSet-drugCode-generalNameCode"
         },
-        "name": "Example-JP-AllergyIntolerance-eCS-01",
-        "description": "allergyeferralExample01 アレルギー例1　サバ",
-        "exampleCanonical": "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary"
+        "name": "MHLW_valueSet_drugCode_generalNameCode",
+        "description": "厚労省一般処方名マスター(厚労省保険局コード)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11"
+        },
+        "name": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
+        "description": "厚労省電子処方CDA規格別表11 保険種別コード",
+        "exampleBoolean": false
       }
     ],
     "page": {

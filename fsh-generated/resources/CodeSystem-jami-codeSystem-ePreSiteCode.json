@@ -5,7 +5,6 @@
   "name": "JAMI_codeSystem_ePreSiteCode",
   "id": "jami-codeSystem-ePreSiteCode",
   "description": "JAMI標準用法部位コード（３桁）",
-  "version": "0.8.1-a",
   "url": "urn:oid:1.2.392.200250.2.2.20.32",
   "concept": [
     {

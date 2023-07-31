@@ -5,7 +5,6 @@
   "name": "JP_codeSystem_ePreCommunication_category",
   "id": "jp-codeSystem-ePreCommunication-category",
   "description": "処方箋備考区分",
-  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category",
   "concept": [
     {

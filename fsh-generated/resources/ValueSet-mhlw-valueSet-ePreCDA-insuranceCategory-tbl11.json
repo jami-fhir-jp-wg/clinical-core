@@ -4,7 +4,6 @@
   "name": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
   "id": "mhlw-valueSet-ePreCDA-insuranceCategory-tbl11",
   "description": "厚労省電子処方CDA規格別表11 保険種別コード",
-  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
   "compose": {
     "include": [

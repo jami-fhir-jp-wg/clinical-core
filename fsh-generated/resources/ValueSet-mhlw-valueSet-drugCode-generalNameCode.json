@@ -4,7 +4,6 @@
   "name": "MHLW_valueSet_drugCode_generalNameCode",
   "id": "mhlw-valueSet-drugCode-generalNameCode",
   "description": "厚労省一般処方名マスター(厚労省保険局コード)",
-  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode",
   "compose": {
     "include": [

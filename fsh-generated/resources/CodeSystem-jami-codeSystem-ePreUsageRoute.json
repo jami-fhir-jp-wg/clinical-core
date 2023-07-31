@@ -5,7 +5,6 @@
   "name": "JAMI_codeSystem_ePreUsageRoute",
   "id": "jami-codeSystem-ePreUsageRoute",
   "description": "HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）",
-  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes",
   "concept": [
     {

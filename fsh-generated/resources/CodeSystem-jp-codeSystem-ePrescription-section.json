@@ -5,7 +5,6 @@
   "name": "JP_codeSystem_ePrescription_section",
   "id": "jp-codeSystem-ePrescription-section",
   "description": "処方セクション区分コード",
-  "version": "0.8.1-a",
   "url": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section",
   "concept": [
     {

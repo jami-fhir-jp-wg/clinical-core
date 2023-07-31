@@ -22,12 +22,12 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
     and encounter 0..1
     and recorder 0..1
 
-* contained[patient] only  JP_Patient_eCS_Contained
+* contained[patient] only JP_Patient_eCS_Contained or JP_Patient
   * insert relative_short_definition( "診療情報コアサマリーにおける患者情報をコンパクトに格納したPatientリソース")
   * ^comment = ""
 
-* contained[encounter] only  JP_Encounter_OW_eCS_Contained
-* contained[recorder] only  JP_Practitioner_eCS_Contained
+* contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter
+* contained[recorder] only  JP_Practitioner_eCS_Contained or JP_Practitioner
 
 * insert IdentifierProfileForInstanceOf6CoreSet
 

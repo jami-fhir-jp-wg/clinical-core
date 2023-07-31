@@ -6,7 +6,6 @@
   "id": "jp-department-ssmix-cs",
   "title": "JP Core Department SS-MIX CodeSystem",
   "description": "SS-MIX統一診療科コード",
-  "version": "0.8.1-a",
   "url": "urn:oid:1.2.392.200250.2.2.2",
   "concept": [
     {
