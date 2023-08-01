@@ -24,11 +24,11 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
     and author 0..1
     and order 0..1
 
-* contained[patient] only  JP_Patient_eCS_Contained
-* contained[organization] only  JP_Organization_eCS_Contained
-* contained[encounter] only  JP_Encounter_OW_eCS_Contained
-* contained[author] only  JP_Practitioner_eCS_Contained
-* contained[order] only  JP_ServiceRequest_eCS_Contained
+* contained[patient] only  JP_Patient_eCS_Contained or  JP_Patient
+* contained[organization] only  JP_Organization_eCS_Contained or JP_Organization
+* contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter
+* contained[author] only  JP_Practitioner_eCS_Contained or JP_Practitioner
+* contained[order] only  JP_ServiceRequest_eCS_Contained or JP_ServiceRequest
 
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
