@@ -29,8 +29,8 @@ Description: "診療情報コアサマリー用　Observationリソース（検�
 * contained[patient] only  JP_Patient_eCS_Contained or JP_Patient
 * contained[specimen] only  JP_Specimen_LaboResult_eCS_Contained or JP_Specimen
 * contained[order] only  JP_ServiceRequest_eCS_Contained or JP_ServiceRequest
-* contained[organization] only  JP_Organization_eCS_Contained
-* contained[department] only  JP_Organization_eCS_department_Contained
+* contained[organization] only  JP_Organization_eCS_Contained or JP_Organization_eCS or JP_Organization
+* contained[department] only  JP_Organization_eCS_department_Contained  or JP_Organization_eCS_department
 * contained[childObsLaboResult] only  JP_Observation_LabResult_eCS_Contained or JP_Observation_LabResult
 
 * meta.lastUpdated 0.. MS

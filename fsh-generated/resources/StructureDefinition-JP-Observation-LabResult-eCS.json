@@ -84,7 +84,8 @@
           {
             "code": "Patient",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
             ]
           }
         ]
@@ -99,7 +100,8 @@
           {
             "code": "Specimen",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Specimen_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Specimen_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
             ]
           }
         ]
@@ -114,7 +116,8 @@
           {
             "code": "ServiceRequest",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ServiceRequest_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ServiceRequest_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest"
             ]
           }
         ]
@@ -159,7 +162,8 @@
           {
             "code": "Observation",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_LabResult"
             ]
           }
         ]

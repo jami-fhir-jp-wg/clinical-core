@@ -77,9 +77,8 @@ table th {
 </style>
 
 
-# clinical-core
-# 名称：診療情報共有サービス : 　JP-CLINS (仮称)(CLinical Information Sharing) ★★作成中★★
-（６情報を含む診療情報共有のためのFHIR実装ガイド）
+# FHIR診療情報共有サービス実装ガイド : 　JP-CLINS (仮称)(CLinical Information Sharing) ★★作成中★★
+（６情報を含む診療情報共有サービスのためのFHIR実装ガイド）
 
 # <span style="color: red; "><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。リソースのProfileも暫定版です。>></span>
 <br>

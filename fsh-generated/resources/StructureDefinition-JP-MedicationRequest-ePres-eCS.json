@@ -79,7 +79,8 @@
           {
             "code": "Patient",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
             ]
           }
         ]
@@ -94,7 +95,8 @@
           {
             "code": "Encounter",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
             ]
           }
         ]
@@ -109,7 +111,8 @@
           {
             "code": "Organization",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Organization"
             ]
           }
         ]
@@ -124,7 +127,8 @@
           {
             "code": "Practitioner",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
             ]
           }
         ]
@@ -139,7 +143,8 @@
           {
             "code": "ServiceRequest",
             "profile": [
-              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ServiceRequest_eCS_Contained"
+              "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ServiceRequest_eCS_Contained",
+              "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest"
             ]
           }
         ]
