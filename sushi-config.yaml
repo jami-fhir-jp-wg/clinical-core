@@ -7,9 +7,9 @@
 
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/ccs
-name: "２文書６情報 診療情報共有サービス FHIR実装ガイド"
-title: "２文書６情報 診療情報共有サービス FHIR実装ガイド 実装ガイド（CLinical Information Sharing ImplementationGuide）"
-description: "２文書６情報 診療情報共有サービス FHIR実装ガイド ImplementationGuide"
+name: "電子カルテ情報共有サービスFHIR実装ガイド"
+title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）"
+description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide"
 status: draft # draft | active | retired | unknown 
 version: 0.8.1-a
 date: 2023-08-08

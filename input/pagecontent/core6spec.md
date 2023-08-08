@@ -1,5 +1,30 @@
 <style type="text/css">
+  h1 {
+    padding: 0.4em 0.5em;
+    /*文字の上下 左右の余白*/
+    color: #494949;
+    /*文字色*/
+    background: #f4f4f4;
+    /*背景色*/
+    border-left: solid 5px #7db4e6;
+    /*左線*/
+    border-bottom: solid 3px #d7d7d7;
+    /*下線*/
+  }
 
+  h2 {
+    position: relative;
+    padding: 0.5em;
+    background: #7db4e6;
+    color: white;
+  }
+
+  h2::before {
+    position: relative;
+    //content: '';
+    color: white;
+  }
+  ]
 table {
   border: solid 1px black;
   border-collapse: collapse;

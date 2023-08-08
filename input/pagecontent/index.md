@@ -1,5 +1,32 @@
 <style type="text/css">
 
+  h1 {
+    padding: 0.4em 0.5em;
+    /*文字の上下 左右の余白*/
+    color: #494949;
+    /*文字色*/
+    background: #f4f4f4;
+    /*背景色*/
+    border-left: solid 5px #7db4e6;
+    /*左線*/
+    border-bottom: solid 3px #d7d7d7;
+    /*下線*/
+  }
+
+  h2 {
+    position: relative;
+    padding: 0.5em;
+    background: #7db4e6;
+    color: white;
+  }
+
+  h2::before {
+    position: relative;
+    //content: '';
+    color: white;
+  }
+
+
 table {
   border: solid 1px black;
   border-collapse: collapse;
@@ -77,14 +104,22 @@ table th {
 </style>
 
 
-# FHIR診療情報共有サービス実装ガイド : 　JP-CLINS (仮称)(CLinical Information Sharing) ★★作成中★★
-（６情報を含む診療情報共有サービスのためのFHIR実装ガイド）
+# 電子カルテ情報共有サービスFHIR実装ガイド : 　JP-CLINS　　<br>★★作成中★★
+（2文書６情報を含む診療情報共有サービスのためのFHIR実装ガイド）
 
 # <span style="color: red; "><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。リソースのProfileも暫定版です。>></span>
 <br>
 
 ## このImplementationガイド(IG)の目的：
+
 厚生労働省が定めるいわゆる「2文書6情報」で使用されるFHIRリソースについてのプロファイルを定義する実装ガイドである。また、6情報を「電子カルテ情報共有サービス」に送信する際のBundle仕様や、送信した情報を同定するための識別子に関する仕様もここで定めている。
+ただし、２文書（診療情報提供書、退院時サマリー）の文書ごとのFHIR実装ガイドは、以下で記載されている。
+
+  -  FHIR厚生労働省標準規格の資料 [https://std.jpfhir.jp/]
+  
+     - HS038　診療情報提供書HL7FHIR記述仕様 第１版
+     - HS039　退院時サマリー HL7 FHIR記述仕様
+
 本実装ガイドは、FHIR R4.0.1に従い、JP-Core V1.1.xからの派生プロファイルの実装ガイドとして作成されている。従って、本IGに記述されていないことについては、JP-Core V1.1.xを参照していただきたい。
 
 ## 想定する運用形態
