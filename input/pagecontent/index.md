@@ -1,111 +1,5 @@
-<style type="text/css">
 
-  h1 {
-    padding: 0.4em 0.5em;
-    /*文字の上下 左右の余白*/
-    color: #494949;
-    /*文字色*/
-    background: #f4f4f4;
-    /*背景色*/
-    border-left: solid 5px #7db4e6;
-    /*左線*/
-    border-bottom: solid 3px #d7d7d7;
-    /*下線*/
-  }
-
-  h2 {
-    position: relative;
-    padding: 0.5em;
-    background: #7db4e6;
-    color: white;
-    font-size: 120%;
-  }
-
-
-
-table {
-  border: solid 1px black;
-  border-collapse: collapse;
-}
- 
-table td {
-  border: solid 1px black;
-
-}
-
-table th {
-  border: solid 1px black;
-}
-
-   h1 {
-      counter-reset: chapter;
-      counter-reset: bchapter;
-    }
-
-    h2 {
-      counter-reset: sub-chapter;
-    }
-
-    h3 {
-      counter-reset: section;
-    }
-
-    h4 {
-      counter-reset: sub-section;
-    }
-
-    h5 {
-      counter-reset: composite;
-    }
-
-    h6 {
-      counter-reset: sub-composite;
-    }
-
-
-    h1:before {
-      color: black;
-      counter-increment: bchapter;
-      content:  " ";
-    }
-
-    h2:before {
-      position: relative;
-      color: white;
-      //color: black;
-      counter-increment: chapter;
-      content: counter(chapter) ". ";
-    }
-
-    h3:before {
-      color: black;
-      counter-increment: sub-chapter;
-      content: counter(chapter) "."counter(sub-chapter) ". ";
-    }
-
-
-    h4:before {
-      color: black;
-      counter-increment: section;
-      content: counter(chapter) "."counter(sub-chapter) "."counter(section) " ";
-    }
-
-    h5:before {
-      color: black;
-      counter-increment: sub-section;
-      content: counter(chapter) "."counter(sub-chapter) "."counter(section) "."counter(sub-section) " ";
-    }
-
-    h6:before {
-      color: black;
-      counter-increment: sub-sub-section;
-      content: "　　"counter(sub-sub-section) "）";
-    }
-
-</style>
-
-
-<span style="font-size: 120%;">（2文書６情報を含む電子カルテ情報共有サービスのためのFHIR実装ガイド）</span><br>
+# （2文書６情報を含む）電子カルテ情報共有サービスのためのFHIR実装ガイド
  <span style="color: red; font-size: 120%;"><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。リソースのProfileも暫定版です。>></span>
 <br>
 
@@ -194,7 +88,7 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 
 ## 電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様
 
-<A href="core6spec.html">電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様について</a>
+<A href="core6spec.html">「電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様について」にジャンプ</a>
 
 
 {% include markdown-link-references.md %}
