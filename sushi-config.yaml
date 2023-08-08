@@ -4,14 +4,14 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: clinical-core-set
+id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/ccs
-name: "臨床コア情報／６情報 実装ガイド"
-title: "臨床コア情報／６情報 実装ガイド（Clnical Core Set ImplementationGuide）"
-description: "臨床コア情報／６情報 実装ガイド ImplementationGuide"
+name: "２文書６情報 診療情報共有サービス FHIR実装ガイド"
+title: "２文書６情報 診療情報共有サービス FHIR実装ガイド 実装ガイド（CLinical Information Sharing ImplementationGuide）"
+description: "２文書６情報 診療情報共有サービス FHIR実装ガイド ImplementationGuide"
 status: draft # draft | active | retired | unknown 
 version: 0.8.1-a
-date: 2023-07-04
+date: 2023-08-08
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2022+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -36,9 +36,9 @@ dependencies:
 
 pages:
   index.md:
-    title: 名称：臨床コア情報FHIR仕様  　JP-FHIR-CCS (Clinical Core Set)
+    title: 名称：診療情報共有サービスFHIR仕様  　JP-CLINS (CLinical Information Sharing)
   core6spec.md:
-    title: 名称：臨床6情報FHIR仕様  　JP-FHIR-CCS6 (Clinical Core6 Set)
+    title: 名称：診療情報共有サービスFHIR仕様  　JP-CLINS (CLinical Information Sharing)
 
 #-------------------------------------
 # メニュー設定
