@@ -1,4 +1,5 @@
 <style type="text/css">
+
   h1 {
     padding: 0.4em 0.5em;
     /*文字の上下 左右の余白*/
@@ -17,14 +18,11 @@
     padding: 0.5em;
     background: #7db4e6;
     color: white;
+    font-size: 120%;
   }
 
-  h2::before {
-    position: relative;
-    //content: '';
-    color: white;
-  }
-  ]
+
+
 table {
   border: solid 1px black;
   border-collapse: collapse;
@@ -38,8 +36,10 @@ table td {
 table th {
   border: solid 1px black;
 }
+
    h1 {
       counter-reset: chapter;
+      counter-reset: bchapter;
     }
 
     h2 {
@@ -62,6 +62,7 @@ table th {
       counter-reset: sub-composite;
     }
 
+
     h1:before {
       color: black;
       counter-increment: bchapter;
@@ -69,7 +70,9 @@ table th {
     }
 
     h2:before {
-      color: black;
+      position: relative;
+      color: white;
+      //color: black;
       counter-increment: chapter;
       content: counter(chapter) ". ";
     }

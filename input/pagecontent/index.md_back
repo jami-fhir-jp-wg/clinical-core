@@ -18,9 +18,13 @@
     padding: 0.5em;
     background: #7db4e6;
     color: white;
-    font-size: 120%;
   }
 
+  h2::before {
+    position: relative;
+    //content: '';
+    color: white;
+  }
 
 
 table {
@@ -70,9 +74,7 @@ table th {
     }
 
     h2:before {
-      position: relative;
-      color: white;
-      //color: black;
+      color: black;
       counter-increment: chapter;
       content: counter(chapter) ". ";
     }
@@ -105,8 +107,10 @@ table th {
 </style>
 
 
-<span style="font-size: 120%;">（2文書６情報を含む電子カルテ情報共有サービスのためのFHIR実装ガイド）</span><br>
- <span style="color: red; font-size: 120%;"><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。リソースのProfileも暫定版です。>></span>
+# 電子カルテ情報共有サービスFHIR実装ガイド : 　JP-CLINS　　<br>★★作成中★★
+（2文書６情報を含む診療情報共有サービスのためのFHIR実装ガイド）
+
+# <span style="color: red; "><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。リソースのProfileも暫定版です。>></span>
 <br>
 
 ## このImplementationガイド(IG)の目的：
