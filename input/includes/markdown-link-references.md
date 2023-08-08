@@ -13,7 +13,7 @@
 [JP_DiagnosticReport_Common_interaction]: StructureDefinition-jp-diagnosticreport-common.html#interaction一覧
 
 <!-- ImplementationGuide -->
-[HL7Japan_JAMIccsImplementationGuide]: ImplementationGuide-clinical-core-set.html
+[HL7Japan_JAMIclinsImplementationGuide]: ImplementationGuide-clinical-core-set.html
 
 <!-- StructureDefinition: Profile, DataType -->
 [JP_Observation_LabResult_eCS_Contained]: StructureDefinition-JP-Observation-LabResult-eCS-Contained.html

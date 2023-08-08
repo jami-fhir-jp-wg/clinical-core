@@ -1,24 +1,24 @@
 ---
 ---
 <!-- get modelType -->
-{% include fragment-modelType.html id='JP-Patient-ccs' %}
+{% include fragment-modelType.html id='JP-Patient-clins' %}
 
 {% include fragment-pagebegin.html %}
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
-  {% include fragment-profile-navtabs.html type='StructureDefinition' id='JP-Patient-ccs' active='content' %}
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='JP-Patient-clins' active='content' %}
 
   <a name="root"> </a>
   <h2 id="root">{{modelType}}:
-{% if site.data.structuredefinitions["JP-Patient-ccs"].abstract == true %}
+{% if site.data.structuredefinitions["JP-Patient-clins"].abstract == true %}
     <i>{{site.data.pages[page.path].title | escape_once}}</i>
 {% else %}
     {{site.data.pages[page.path].title}}
 {% endif %}
-{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["JP-Patient-ccs"].abstract == true %}({% endif %}
-{% if site.data.structuredefinitions["JP-Patient-ccs"].abstract == true %}Abstract{% endif %}
+{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["JP-Patient-clins"].abstract == true %}({% endif %}
+{% if site.data.structuredefinitions["JP-Patient-clins"].abstract == true %}Abstract{% endif %}
 {% if site.data.resources[resource_].experimental == true %}Experimental{% endif %}
-{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["JP-Patient-ccs"].abstract == true %}){% endif %}
+{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["JP-Patient-clins"].abstract == true %}){% endif %}
   </h2>
 
 {% include fragment-resourceTable.html %}
@@ -34,9 +34,9 @@
 
 
 <!-- insert intro if present -->
-{% include fragment-intro.html type='StructureDefinition' id='JP-Patient-ccs' %}
+{% include fragment-intro.html type='StructureDefinition' id='JP-Patient-clins' %}
 
-{%include StructureDefinition-JP-Patient-ccs-sd-xref.xhtml%}
+{%include StructureDefinition-JP-Patient-clins-sd-xref.xhtml%}
 
   <!-- no uri -->
   <a name="profile"> </a>
@@ -80,22 +80,22 @@
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-ccs'].basepath}}">{{site.data.structuredefinitions['JP-Patient-ccs'].basename}}</a>
+        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-clins'].basepath}}">{{site.data.structuredefinitions['JP-Patient-clins'].basename}}</a>
         </p>
         <div id="tbl-diff-inner">
-          {%include StructureDefinition-JP-Patient-ccs-diff.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-diff.xhtml%}
           <a name="tx"> </a>
           <!--Terminology Bindings heading in the fragment -->
-          {%include StructureDefinition-JP-Patient-ccs-tx-diff.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-tx-diff.xhtml%}
         
           {% capture invariantsdiff %}
-            {% include StructureDefinition-JP-Patient-ccs-inv-diff.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-diff.xhtml %}
           {% endcapture %}
           <!-- 218 is size of empty table -->
           {% unless invariantsdiff.size <= 218 %}
             <a name="inv"> </a>
             <!--Constraints  heading in the fragment -->
-            {% include StructureDefinition-JP-Patient-ccs-inv-diff.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-diff.xhtml %}
           {% endunless%}
         </div>
       </div>
@@ -104,18 +104,18 @@
     <div id="tabs-key">
       <div id="tbl-key">
         <div id="tbl-key-inner">
-          {%include StructureDefinition-JP-Patient-ccs-snapshot-by-key.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-snapshot-by-key.xhtml%}
           <!--Terminology Bindings heading in the fragment -->
-          {%include StructureDefinition-JP-Patient-ccs-tx-key.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-tx-key.xhtml%}
         
           {% capture invariantskey %}
-            {% include StructureDefinition-JP-Patient-ccs-inv-key.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-key.xhtml %}
           {% endcapture %}
           <!-- 218 is size of empty table -->
           {% unless invariantskey.size <= 218 %}
             <a name="inv"> </a>
             <!--Constraints  heading in the fragment -->
-            {% include StructureDefinition-JP-Patient-ccs-inv-key.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-key.xhtml %}
           {% endunless%}
         </div>
       </div>
@@ -124,18 +124,18 @@
     <div id="tabs-snap">
       <div id="tbl-snap">
         <div id="tbl-snap-inner">
-          {%include StructureDefinition-JP-Patient-ccs-snapshot.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-snapshot.xhtml%}
           <!--Terminology Bindings heading in the fragment -->
-          {%include StructureDefinition-JP-Patient-ccs-tx.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-tx.xhtml%}
         
           {% capture invariants %}
-            {% include StructureDefinition-JP-Patient-ccs-inv.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv.xhtml %}
           {% endcapture %}
           <!-- 218 is size of empty table -->
           {% unless invariants.size <= 218 %}
             <a name="inv"> </a>
             <!--Constraints  heading in the fragment -->
-            {% include StructureDefinition-JP-Patient-ccs-inv.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv.xhtml %}
           {% endunless%}
         </div>
       </div>
@@ -145,7 +145,7 @@
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
-          {%include StructureDefinition-JP-Patient-ccs-pseudo-xml.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-pseudo-xml.xhtml%}
         </div>
       </div>
     </div>-->
@@ -155,7 +155,7 @@
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
-          {%include StructureDefinition-JP-Patient-ccs-pseudo-json.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-pseudo-json.xhtml%}
         </div>
       </div>
     </div>-->
@@ -165,7 +165,7 @@
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
-          {%include StructureDefinition-JP-Patient-ccs-pseudo-ttl.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-pseudo-ttl.xhtml%}
         </div>
       </div>
     </div>-->
@@ -173,11 +173,11 @@
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
       <div id="tbl-summ">
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-ccs'].basepath}}">{{site.data.structuredefinitions['JP-Patient-ccs'].basename}}</a>
+        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-clins'].basepath}}">{{site.data.structuredefinitions['JP-Patient-clins'].basename}}</a>
         </p>
         <div id="tbl-summ-inner">
           <a name="summary"> </a>
-          {%include StructureDefinition-JP-Patient-ccs-summary.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-summary.xhtml%}
         </div>
       </div>
     </div>
@@ -187,21 +187,21 @@
         <p>
           <b>Differential View</b>
         </p>
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-ccs'].basepath}}">{{site.data.structuredefinitions['JP-Patient-ccs'].basename}}</a>
+        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-clins'].basepath}}">{{site.data.structuredefinitions['JP-Patient-clins'].basename}}</a>
         </p>
         <div id="all-tbl-diff-inner">
-          {%include StructureDefinition-JP-Patient-ccs-diff.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-diff.xhtml%}
           <!--Terminology Bindings heading in the fragment -->
-          {%include StructureDefinition-JP-Patient-ccs-tx-diff.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-tx-diff.xhtml%}
         
           {% capture invariantsdiff %}
-            {% include StructureDefinition-JP-Patient-ccs-inv-diff.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-diff.xhtml %}
           {% endcapture %}
           <!-- 218 is size of empty table -->
           {% unless invariantsdiff.size <= 218 %}
             <a name="inv"> </a>
             <!--Constraints  heading in the fragment -->
-            {% include StructureDefinition-JP-Patient-ccs-inv-diff.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-diff.xhtml %}
           {% endunless%}
         </div>
       </div>
@@ -210,18 +210,18 @@
           <b>Key Elements View</b>
         </p>
         <div id="all-tbl-key-inner">
-          {%include StructureDefinition-JP-Patient-ccs-snapshot-by-key.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-snapshot-by-key.xhtml%}
           <!--Terminology Bindings heading in the fragment -->
-          {%include StructureDefinition-JP-Patient-ccs-tx-key.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-tx-key.xhtml%}
         
           {% capture invariantskey %}
-            {% include StructureDefinition-JP-Patient-ccs-inv-key.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-key.xhtml %}
           {% endcapture %}
           <!-- 218 is size of empty table -->
           {% unless invariantskey.size <= 218 %}
             <a name="inv"> </a>
             <!--Constraints  heading in the fragment -->
-            {% include StructureDefinition-JP-Patient-ccs-inv-key.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv-key.xhtml %}
           {% endunless%}
         </div>
       </div>
@@ -230,18 +230,18 @@
           <b>Snapshot View</b>
         </p>
         <div id="all-tbl-snap-inner">
-          {%include StructureDefinition-JP-Patient-ccs-snapshot.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-snapshot.xhtml%}
           <!--Terminology Bindings heading in the fragment -->
-          {%include StructureDefinition-JP-Patient-ccs-tx.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-tx.xhtml%}
         
           {% capture invariants %}
-            {% include StructureDefinition-JP-Patient-ccs-inv.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv.xhtml %}
           {% endcapture %}
           <!-- 218 is size of empty table -->
           {% unless invariants.size <= 218 %}
             <a name="inv"> </a>
             <!--Constraints  heading in the fragment -->
-            {% include StructureDefinition-JP-Patient-ccs-inv.xhtml %}
+            {% include StructureDefinition-JP-Patient-clins-inv.xhtml %}
           {% endunless%}
         </div>
       </div>
@@ -251,7 +251,7 @@
           <b>XML Template</b>
         </p>
         <div id="all-xml-inner">
-          {%include StructureDefinition-JP-Patient-ccs-pseudo-xml.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-pseudo-xml.xhtml%}
         </div>
       </div>-->
 {% endunless %}
@@ -261,7 +261,7 @@
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
-          {%include StructureDefinition-JP-Patient-ccs-pseudo-json.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-pseudo-json.xhtml%}
         </div>
       </div>-->
 {% endunless %}
@@ -271,31 +271,31 @@
           <b>TTL Template</b>
         </p>
         <div id="all-ttl-inner">
-          {%include StructureDefinition-JP-Patient-ccs-pseudo-ttl.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-pseudo-ttl.xhtml%}
         </div>
       </div>-->
 {% endunless %}
       <div id="all-summ">
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-ccs'].basepath}}">{{site.data.structuredefinitions['JP-Patient-ccs'].basename}}</a>
+        <p>This structure is derived from <a href="{{site.data.structuredefinitions['JP-Patient-clins'].basepath}}">{{site.data.structuredefinitions['JP-Patient-clins'].basename}}</a>
         </p>
         <div id="all-summ-inner">
-          {%include StructureDefinition-JP-Patient-ccs-summary.xhtml%}
+          {%include StructureDefinition-JP-Patient-clins-summary.xhtml%}
         </div>
       </div>
     </div>
   </div>
   <p>&#160;</p>
-  <p>Other representations of profile: <a href="StructureDefinition-JP-Patient-ccs.csv">CSV</a>, <a href="StructureDefinition-JP-Patient-ccs.xlsx">Excel</a>{% unless modelType == 'Logical Model' %}, <a href="StructureDefinition-JP-Patient-ccs.sch">Schematron</a>
+  <p>Other representations of profile: <a href="StructureDefinition-JP-Patient-clins.csv">CSV</a>, <a href="StructureDefinition-JP-Patient-clins.xlsx">Excel</a>{% unless modelType == 'Logical Model' %}, <a href="StructureDefinition-JP-Patient-clins.sch">Schematron</a>
 {% endunless %} 
   </p>
 
   {% if site.data.resources[resource_].contained != nil %}
   <h4>Contained resources</h4>
-  {% include StructureDefinition-JP-Patient-ccs-contained-index.xhtml %}
+  {% include StructureDefinition-JP-Patient-clins-contained-index.xhtml %}
   {% endif %}
 
 <!-- insert notes if present -->
-{% include fragment-notes.html type='StructureDefinition' id='JP-Patient-ccs' %}
+{% include fragment-notes.html type='StructureDefinition' id='JP-Patient-clins' %}
 
 </div>
 {% assign includetabscripts = 'true' %}

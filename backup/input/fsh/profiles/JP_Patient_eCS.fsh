@@ -1,8 +1,8 @@
-Profile: JP_Patient_ccs
+Profile: JP_Patient_clins
 Parent: JP_Patient
-Id: JP-Patient-ccs
+Id: JP-Patient-
 Description: "対象患者のPatientプロファイル　JP_Patientの派生プロファイル"
-* ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_ccs"
+* ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_clins"
 * ^status = #active
 * text.status ^definition = "テキスト内容の全てがリソースのコンテンツから生成されたことを示す。"
 * text.div ^definition = "本リソースの構造化情報から生成したテキスト表現をいれてもよい。\r\nXHTML形式。\r\n例：田中一郎、男、1980/7/1生、東京都中央区日本橋１－１－１, 03_1234_5678"

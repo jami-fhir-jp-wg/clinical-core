@@ -11,7 +11,7 @@ Description: "埋め込み　患者情報01"
 
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
 * identifier[=].value = "826739"
-* identifier[+].system = "http:/jpfhir.jp/fhir/ccs/Idsysmem/JP_Insurance_member/00012345"
+* identifier[+].system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member/00012345"
 * identifier[=].value = "00012345:あいう:１８７:05"
 * name[+].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension[=].valueCode = #IDE

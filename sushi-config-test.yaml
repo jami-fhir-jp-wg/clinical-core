@@ -5,10 +5,10 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-core-set
-canonical: http://jpfhir.jp/fhir/ccs
-name: "HL7Japan_JAMIccsImplementationGuide"
-title: "HL7 Japan-JAMI ccs ImplementationGuide"
-description: "HL7 Japan-JAMI ccs ImplementationGuide"
+canonical: http://jpfhir.jp/fhir/clins
+name: "HL7Japan_JAMIclinsImplementationGuide"
+title: "HL7 Japan-JAMI clins ImplementationGuide"
+description: "HL7 Japan-JAMI clins ImplementationGuide"
 status: draft # draft | active | retired | unknown 
 version: 0.1.0
 date: 2022-12-16

@@ -39,7 +39,7 @@ Alias: $observation-subcategory-cs = http://jpfhir.jp/fhir/eClinicalSummary/Code
 Alias: $observation-subcategory-vs = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/observation-subcategory-vs
 
 Alias: $JP_ObservationLabResultCode_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultCode_InfectionRelated_VS
-Alias: $JP_CCS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
+Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
 Alias: $JP_ObservationLabResultCode_CS = urn:oid:1.2.392.200119.4.504
 
 Alias: $composition-clinicaldocument-versionNumber = http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber
@@ -62,15 +62,15 @@ Alias: $JP_PractionerRole_eClinicalSummary_VS = http://jpfhir.jp/fhir/eClinicalS
 // 検体材料
 Alias:  $JP_Specimen_JLAC10_SpecimenCode_VS = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_Specimen_JLAC10_SpecimenCode_VS
 Alias: $JP_Specimen_JLAC10_SpecimenCode_CS = http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes
-Alias: $JP_ObservationLabSpecimenLocal_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabSepecimen_LocalCode_CS
+Alias: $JP_ObservationLabSpecimenLocal_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabSepecimen_LocalCode_CS
 
 
 // 検査結果項目
-Alias: $JP_CCS_ObsLabResult_JLAC10wUncoded_VS = 	http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_JLAC10wUncoded_VS
-Alias: $JP_CCS_ObsLabResultUncoded_CS = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_Uncoded_CS
-Alias: $JP_CCS_ObsLabResult_JLAC10Unmethod_CS = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CCS_ObsLabResult_JLAC10Unmethod_CS
-Alias: $JP_CCS_ObsLabResult_JLAC10Unmethod_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_JLAC10Unmethod_VS
-Alias: $JP_ObservationLabResultLocal_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_LocalCode_CS
+Alias: $JP_CLINS_ObsLabResult_JLAC10wUncoded_VS = 	http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_JLAC10wUncoded_VS
+Alias: $JP_CLINS_ObsLabResultUncoded_CS = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS
+Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_CS = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CLINS_ObsLabResult_JLAC10Unmethod_CS
+Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_JLAC10Unmethod_VS
+Alias: $JP_ObservationLabResultLocal_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS
 Alias: $JP_ObservationLabResultLocalUncoded_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultLocalUncoded_CS
 
 // 感染症項目サブカテゴリーを登録したCodeSystem 　とValueSet
@@ -86,7 +86,7 @@ Alias: $observation-category = $JP_SimpleObservationCategory_VS
 Alias: $observation-category-cs = http://terminology.hl7.org/CodeSystem/v3-ObservationCategory
 
 
-Alias: $JP_CCS_ObsLabResultCode_VS = JP_CCS_ObsLabResult_UnknownCode_CS#99999999999999999
+Alias: $JP_CLINS_ObsLabResultCode_VS = JP_CLINS_ObsLabResult_UnknownCode_CS#99999999999999999
 
 
 

@@ -320,7 +320,7 @@ Bundleリソースに格納されるすべてのリソース・インスタン�
 以下では「JLACコード」とは、JLAC10コードまたはJLAC11コードを指す。
 
 ### 「臨床検査項目基本コードセット」＊に掲載される検査項目の場合：
-[臨床検査項目基本コードセット一覧](ccslabo43set.html)
+[臨床検査項目基本コードセット一覧](clinslabo43set.html)
 ```
  * 「臨床検査項目基本コードセット」 : 別に厚生労働省が定める、6情報の「臨床検査項目基本コードセット」（43項目）を指す。
 ```
@@ -333,7 +333,7 @@ Bundleリソースに格納されるすべてのリソース・インスタン�
 
 #### 施設固有の検査項目コードとその名称の設定について
 JLAC10コードの設定の有無に関わらず、施設固有コードとそれに対応する施設固有名称のペアは、上記コードを設定したcode.codingとは別のcode.codingに設定（code.coding.codeとcode.coding.displayに設定）<span style="color: red; ">しなければならない。</span>
-この場合のsystem値は"http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_LocalCode_CS"を固定で設定する。
+この場合のsystem値は"http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS"を固定で設定する。
 
 ### 「臨床検査項目基本コードセット」に掲載されない検査項目の場合：
  - 当該項目のJLACコード
@@ -346,7 +346,7 @@ JLAC10コードの設定の有無に関わらず、施設固有コードとそ�
 
 #### 施設固有の検査項目コードとその名称の設定について
 JLAC10コード、未標準化コードの設定の有無に関わらず、施設固有コードとそれに対応する施設固有名称のペアは、上記コードを設定したcode.codingとは別のcode.codingに設定（code.coding.codeとcode.coding.displayに設定）<span style="color: red; ">しなければならない。</span>
-この場合のsystem値は"http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CCS_ObsLabResult_LocalCode_CS"を固定で設定する。
+この場合のsystem値は"http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS"を固定で設定する。
 
 ## アレルギー情報と薬剤禁忌情報の区別
 いわゆる6情報のうち、アレルギー情報と薬剤禁忌情報とは同じAllergyIntoleranceリソースタイプを使用し、同じProfile「診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル」に準拠してデータを作成するものとし、両者の区別はAllergyIntoleranceリソースデータのcategory要素とcriticality要素に設定される値の組み合わせの違いにより以下の表に従い処理される。
@@ -395,7 +395,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 　　保険個人識別子＝ "00012345::１８７:" となる。この場合、最後のコロンは必須である。<br><br>
 
 ### 保険個人識別子の格納方法
-保険個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「保険個人識別子」であることを示す「http:/jpfhir.jp/fhir/ccs/Idsysmem/JP_Insurance_member/保険者等番号８桁文字列」を設定する。
+保険個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「保険個人識別子」であることを示す「http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member/保険者等番号８桁文字列」を設定する。
 ```
     {
       "resourceType": "Patient",
@@ -407,7 +407,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
           "value": "12345"
         },
         {
-          "system": "http:/jpfhir.jp/fhir/ccs/Idsysmem/JP_Insurance_member/00012345",
+          "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member/00012345",
           "value": "00012345:あいう:１８７:05"
         }
       ],
@@ -421,7 +421,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 
 ### 長期保存情報の仕様
 リソースのデータを長期保存対象とする場合には、そのリソースのデータにおけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
-　meta.tag.system = "http:/jpfhir.jp/fhir/ccs/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
+　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
 　meta.tag.code = "LTS"　(この固定値とする)<br>
 
 ```
@@ -434,7 +434,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
     :
     "tag": {[
       {
-        "system": "http:/jpfhir.jp/fhir/ccs/CodeSystem/JP_ehrexs_indication",
+        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
         "code": "LTS"
       }
     ]
@@ -449,7 +449,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 
 ### 【未告知病名】情報の仕様
 病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
-　meta.tag.system = "http:/jpfhir.jp/fhir/ccs/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
+　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
 　meta.tag.code = "UNINFORMED"　(この固定値とする)<br>
 
 ```
@@ -462,7 +462,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
     :
     "tag": {[
       {
-        "system": "http:/jpfhir.jp/fhir/ccs/CodeSystem/JP_ehrexs_indication",
+        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
         "code": "UNINFORMED"
       }
     ]

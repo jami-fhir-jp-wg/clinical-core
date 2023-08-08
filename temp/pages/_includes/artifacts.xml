@@ -17,7 +17,7 @@
             <tbody>
                 <tr>
                     <td style="column-width:30%">
-                        <a href="StructureDefinition-JP-Patient-ccs.html" title="StructureDefinition/JP-Patient-ccs">JP_Patient_ccs</a>
+                        <a href="StructureDefinition-JP-Patient-clins.html" title="StructureDefinition/JP-Patient-clins">JP_Patient_clins</a>
                     </td>
                     <td>{% capture desc %}対象患者のPatientプロファイル　JP_Patientの派生プロファイル{% endcapture %}
 {{ desc | markdownify}}</td>

@@ -1,12 +1,12 @@
 // ==============================
 //   Profile 定義 薬剤禁忌情報
 // ==============================
-Profile: JP_AllergyIntolerance_DrugCIX_CCS
+Profile: JP_AllergyIntolerance_DrugCIX_CLINS
 Parent: JP_AllergyIntolerance
-Id: jp-allergyintolerance-drugcix-ccs
+Id: jp-allergyintolerance-drugcix-clins
 Title: "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル"
 Description: "FHIR臨床コア情報 Clinical-coreセットのひとつ。アレルギー・不耐性情報AllergyIntoleranceプロファイル。JP_AllergyIntoleranceの派生プロファイル"
-* ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_CCS"
+* ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_CLINS"
 * ^status = #active
 * ^date = "2023-01-23"
 

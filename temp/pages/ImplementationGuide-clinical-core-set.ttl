@@ -5,17 +5,17 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set> a fhir:ImplementationGuide;
+<http://jpfhir.jp/fhir/clins/ImplementationGuide/clinical-core-set> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "clinical-core-set"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7Japan_JAMIccsImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set</pre><div><p>HL7 Japan-JAMI ccs ImplementationGuide</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HL7Japan_JAMIclinsImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>http://jpfhir.jp/fhir/clins/ImplementationGuide/clinical-core-set</pre><div><p>HL7 Japan-JAMI clins ImplementationGuide</p>\n</div></div>"
   ]; # 
-  fhir:ImplementationGuide.url [ fhir:value "http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set"]; # 
+  fhir:ImplementationGuide.url [ fhir:value "http://jpfhir.jp/fhir/clins/ImplementationGuide/clinical-core-set"]; # 
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"]; # 
-  fhir:ImplementationGuide.name [ fhir:value "HL7Japan_JAMIccsImplementationGuide"]; # 
-  fhir:ImplementationGuide.title [ fhir:value "HL7 Japan-JAMI ccs ImplementationGuide"]; # 
+  fhir:ImplementationGuide.name [ fhir:value "HL7Japan_JAMIclinsImplementationGuide"]; # 
+  fhir:ImplementationGuide.title [ fhir:value "HL7 Japan-JAMI clins ImplementationGuide"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
   fhir:ImplementationGuide.date [ fhir:value "2022-12-16"^^xsd:date]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"]; # 
@@ -32,7 +32,7 @@
        fhir:ContactPoint.value [ fhir:value "office@hlfhir.jp" ]
      ]
   ]; # 
-  fhir:ImplementationGuide.description [ fhir:value "HL7 Japan-JAMI ccs ImplementationGuide"]; # 
+  fhir:ImplementationGuide.description [ fhir:value "HL7 Japan-JAMI clins ImplementationGuide"]; # 
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [
@@ -394,7 +394,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/ccs/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/clins/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -814,7 +814,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/ccs/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://jpfhir.jp/fhir/clins/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -922,10 +922,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://jpfhir.jp/fhir/ccs/StructureDefinition/JP-Patient-ccs>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Patient-ccs" ]
+         fhir:link <http://jpfhir.jp/fhir/clins/StructureDefinition/JP-Patient-clins>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/JP-Patient-clins" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Patient_ccs" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "JP_Patient_clins" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "対象患者のPatientプロファイル　JP_Patientの派生プロファイル" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
@@ -1019,7 +1019,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://jpfhir.jp/fhir/ccs/ImplementationGuide/clinical-core-set.ttl> a owl:Ontology;
+<http://jpfhir.jp/fhir/clins/ImplementationGuide/clinical-core-set.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

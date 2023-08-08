@@ -1,11 +1,11 @@
 ﻿<html>
 <head>
-  <title>StructureDefinition-JP-Patient-ccs-maps</title>
+  <title>StructureDefinition-JP-Patient-clins-maps</title>
   <link rel="stylesheet" href="fhir.css"/>
 </head>
 <body>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>JP_Patient_ccs</b></td></tr>
+ <tr><td colspan="3"><b>JP_Patient_clins</b></td></tr>
  <tr><td>Patient</td><td>Entity. Role, or Act, Patient[classCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
@@ -107,7 +107,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>typeCode</td> </tr>
 </table>
 <a name="cda"> </a><h3>Mappings for CDA (R2) (<a href="http://hl7.org/comparison-cda.html">http://hl7.org/v3/cda</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>JP_Patient_ccs</b></td></tr>
+ <tr><td colspan="3"><b>JP_Patient_clins</b></td></tr>
  <tr><td>Patient</td><td>ClinicalDocument.recordTarget.patientRole</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>n/a</td> </tr>
@@ -138,13 +138,13 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>n/a</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
- <tr><td colspan="3"><b>JP_Patient_ccs</b></td></tr>
+ <tr><td colspan="3"><b>JP_Patient_clins</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
 </table>
 <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>JP_Patient_ccs</b></td></tr>
+ <tr><td colspan="3"><b>JP_Patient_clins</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>PID-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
@@ -199,12 +199,12 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;other</td><td>PID-3, MRG-1</td> </tr>
 </table>
 <a name="loinc"> </a><h3>Mappings for LOINC code for the element (<a href="http://loinc.org">http://loinc.org</a>)</h3><table class="grid">
- <tr><td colspan="3"><b>JP_Patient_ccs</b></td></tr>
+ <tr><td colspan="3"><b>JP_Patient_clins</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;birthDate</td><td>21112-8</td> </tr>
 </table>
 <a name="ssmix2-adt00-pid-r4-jppatient"> </a><h3>Mappings for SSMIX2ADT00PID  to JP_Patient (http://ssmix2)</h3><table class="grid">
- <tr><td colspan="3"><b>JP_Patient_ccs</b></td></tr>
+ <tr><td colspan="3"><b>JP_Patient_clins</b></td></tr>
  <tr><td>Patient</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;source</td><td>SS-MIX2標準化ストレージの場合には、http://jpfhir.jp/ssmix2std/&lt;MSH-21-1&gt;/医療機関識別OID番号 を設定。&lt;MSH-21-1&gt;　SS-MIX2_1.20 などのバージョン番号。

@@ -6,7 +6,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 id: clinical-information-sharing
-canonical: http://jpfhir.jp/fhir/ccs
+canonical: http://jpfhir.jp/fhir/clincs
 name: "電子カルテ情報共有サービスFHIR実装ガイド"
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide"
