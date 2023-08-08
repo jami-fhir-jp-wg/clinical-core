@@ -29,8 +29,6 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter
 * contained[recorder] only  JP_Practitioner_eCS_Contained or JP_Practitioner
 
-* insert IdentifierProfileForInstanceOf6CoreSet
-
 * clinicalStatus   0..1 MS
 * clinicalStatus   ^short = "臨床的状態のステータス。"
 * clinicalStatus    ^definition = "active | inactive | resolved のいすれか（現存、非現存、解消）system=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"

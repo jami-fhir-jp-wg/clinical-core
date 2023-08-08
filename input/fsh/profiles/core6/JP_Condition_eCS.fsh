@@ -26,8 +26,6 @@ Description: "診療情報コアサマリー用　Conditionリソース（傷病
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter
 * contained[recorder] only  JP_Practitioner_eCS_Contained or JP_Practitioner
 
-* insert IdentifierProfileForInstanceOf6CoreSet
-
 * clinicalStatus ^short = "病名最終日（onsetPeriod.end)での状態（転帰）"
 * clinicalStatus ^definition = "病名最終日（onsetPeriod.end)での状態（転帰）"
 * clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) のいずれかを選ぶ。"

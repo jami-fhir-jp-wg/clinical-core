@@ -34,9 +34,6 @@ Description: "診療情報コアサマリー用　MedicationRequestリソース�
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 
-* insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[rpNumber])
-* insert IdentifierProfileForInstanceOf6CoreSetSliced(identifier[orderInRp])
-
 /*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "type"
