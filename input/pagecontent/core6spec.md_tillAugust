@@ -211,29 +211,106 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 
 <br>
 
-## 送信済みBundleリソース・インスタンスを指定する識別子について
+## FHIRリソース・インスタンスを指定する識別子について
 ＜＜特に本項目は関係機関と協議中の仕様を含む＞＞<br>
 
-### 対象となるBundleリソース・インスタンスの指定
+### 対象となる特定のFHIRリソース・インスタンスを指定する方法
+６情報として送信し受理されたFHIRリソースインスタンスを対象にして、次回以降の送信時に削除、更新などの処理を行いたい場合に、対象となる特定のFHIRリソース・インスタンスを指定する方法を説明する。
 
-６情報として送信し、受理された１報告単位のデータは、この単位で全体を削除するか、更新（削除＋新規登録）するかいずれかのみ行うことができる。１報告単位のデータのなかの特定のリソースを指定しての削除や更新はできない。
-対象となる送信済みのBundleリソース・インスタンスの指定は、前項で記載したBundleリソースを識別するIdentifier要素により行う。
+概要：　リソース・インスタンスのidentifier要素により、送信済みのリソース・インスタンスを処理対象として指定する。
+指定方法：対象リソースタイプと、そのidentifier要素のtype値、およびsystem値とvalue値のペア
 
-### 電子カルテ情報共有サービス（仮称）での削除と更新処理
 
+【参考：FHIRのidentifierの要素構成】
+<img src="identifier.png" style="display: block; margin: auto;" width="50%"><br clear="all">
+
+通常、１回のオーダや結果報告で、複数の処方薬、複数の検査結果項目が発生するので、その複数のリソースインスタンスを１回のBundleで送信する。
+Bundleに含まれる個々のリソース・インスタンスのidentifier要素が、 そのリソース・インスタンスを一意に識別できるidentiferか、それとも１回のオーダや報告に含まれるすべてのリソースを一括して指定しているかの違いにより、以下の２通りのシステムがありうる。
+<table>
+<tr>
+
+<td>
+<img src="identifier-typeA.png" style="display: block; margin: auto;" width="100%"><br clear="all">
+
+</td>
+<td>
+<img src="identifier-typeB.png" style="display: block; margin: auto;" width="100%"><br clear="all">
+
+</td>
+</tr>
+</table>
+
+  - ＜IdentifierタイプA＞：　リソース・インスタンスひとつひとつを個別に異なるインスタンスとして識別できる個別のidentifierを、送信する側が割り当てることができる。最初の送信の後の（２回目以降での）更新や削除の指示において、１回目に送信したときと同じidentifierを指定すれば１回目に送信したときのリソース・インスタンスを間違いなく指し示すことができるシステムである。このタイプのシステムでは、削除や更新は個々のリソース・インスタンスごとに可能である。
+  注意が必要なのは、一見、個々のリソース・インスタンスごとに異なるidentifierが割り当てられていても、例えばひとつの処方箋内の医薬品の出現順序や結果報告書の項目順序に依存した順序番号などを割り当てているようなシステムがある。こうしたシステムでは、１回目と２回目で処方医薬品の数が変更されているような場合には同じidentifierが異なる処方医薬品情報を指し示してしまうことがあるので、＜IdentifierタイプA＞とはならない。この場合には、次に記載する＜IdentifierタイプB＞のidentifierを別に生成して設定する必要がある。
+
+  - ＜IdentifierタイプB＞：　リソースインスタンスひとつひとつは区別されず、オーダ番号や結果報告書番号のように１回のオーダ単位での識別しかできないid情報を割り当てるシステムの場合がある。このようなシステムでは、削除や更新は１回のオーダや結果報告に含まれるすべてのリソース・インスタンスに対して一括して実施するのが普通である。たとえばただひとつの医薬品の処方量の変更や、1医薬品の削除だけであっても、そのときの１回の処方オーダで同時に処方したすべての医薬品に対応したすべてのリソース・インスタンスをまとめて削除した上で、それらすべてを新規に登録しなおすことが必要である。この場合、１回のオーダや結果報告に含まれるすべてのリソース・インスタンスは同じidentifierを持っている必要があり、こうしたシステムを＜IdentifierタイプB＞とする。
+
+Bundleリソースに格納されるすべてのリソース・インスタンスには、Identifier要素に必ず＜IdentifierタイプA＞または＜IdentifierタイプB＞のどちらかに対応する決められたtype値を設定しなければならない（後述）。その上でsystem値と、その下で一意となるそれぞれのvalueを生成して設定<span style="color: red; ">しなければならない。</span>
+すなわち、
+  - ＜IdentifierタイプA＞では、その医療機関のそのシステム系統では、過去未来に跨がり、すべてのリソース・インスタンスをひとつひとつ、必ず一意に、同じものとして識別できるID値をidentifier.valueに設定<span style="color: red; ">しなければならない。</span>
+  - ＜IdentifierタイプB＞では、その医療機関のそのシステム系統では、過去未来に跨がり、リソース・インスタンスが含まれるオーダ単位や結果報告書単位で一意に識別できるID値（たとえばオーダ番号や結果報告書番号）をidentifier.valueに設定<span style="color: red; ">しなければならない。</span>このタイプでは、同じオーダ単位や結果報告書単位に含まれるすべてのリソース・インスタンスには同一のidentifierが少なくともひとつ付与<span style="color: red; ">されなければならない。</span>
+
+<table>
+<tr>
+
+<img src="identifier-typetype.png" style="display: block; margin: auto;" width="80%"><br clear="all">
+
+</tr>
+</table>
+
+＜IdentifierタイプA＞または＜IdentifierタイプB＞における、identifier要素のtype値の設定方法：
+
+```
+1) ＜IdentifierタイプA＞の場合のidentifier.typeの例：
+"type": {
+  "coding": [
+    {
+      "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+      "code": "ACSN"
+    }
+  ]
+}
+```
+```
+2) ＜IdentifierタイプB＞の場合で、identifierとしてオーダ番号を設定する場合のidentifier.typeの例：
+"type": {
+  "coding": [
+    {
+      "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+      "code": "PLAC"
+    }
+  ]
+}
+```
+```
+3) ＜IdentifierタイプB＞の場合で、identifierとして実施番号や報告書番号を設定する場合のidentifier.typeの例：
+"type": {
+  "coding": [
+    {
+      "system": "http://hl7.org/fhir/ValueSet/identifier-type",
+      "code": "FILL"
+    }
+  ]
+}
+```
+なお、2)と3)は厳密に区別する必要はなく、＜IdentifierタイプB＞であれば、2)3)のどちらの方法で設定しても構わない。
+以上の仕様の意味を理解するために、受信側のサービスの処理内容を説明する。
+
+### 電子カルテ情報共有サービス（仮称）での処理内容の説明
+  前提として、以下で扱うidentifier.type要素には前項で定められた固定値のいずれかが設定<span style="color: red; ">されていなければならない。</span>
 　本節では、電子カルテ情報共有サービス（仮称）を単に共有サービスと記載する。
 
   1. 削除処理：
-    削除処理要求では、削除要求コマンドが、①患者識別情報（被保険者番号情報）、
-    ②Bundle.identifier.system値、③Bundle.identifier.value値、の3つのパラメータとともに送信される。削除対象となるBundleリソースそのものは送信されない。
-    共有サービスでは、これらのパラメータがすべて一致するBundleリソース・インスタンスのデータを当該医療機関から受理したデータから削除する。
+    削除処理要求では、FHIRリソースの送信時には、削除要求コマンドが患者識別情報（被保険者番号情報）、リソースタイプ、identifier.type.code値、identifier.system値、identifier.value値の５つのパラメータとともに送信され、削除対象となるBundleリソースは送信されない。
+    共有サービスでは、これらのパラメータがすべて一致するリソース・インスタンスのデータを削除する。
   1. 更新処理：
-    更新処理要求では、更新処理要求コマンドが、新しいBundleリソース・インスタンスのデータともに送信される。<br>
-    共有サービスでは、①患者識別情報（被保険者番号情報）、②Bundle.identifier.system値、③Bundle.identifier.value値がすべて一致するBundleリソース・インスタンスのデータを当該医療機関から受理したデータから削除する。<br>
-    次に、送信されたBundleリソース・インスタンスのデータを登録する。
+  削除＋新規登録の処理を、ひと組みの「identifier.type.code値、identifier.system値、identifier.value値」ごとに行う。
+  更新処理要求時に受信したBundleリソースに含まれる個々のリソース・インスタンスについて、そのリソースのidentifier要素のtype要素が＜IdentifierタイプA＞または＜IdentifierタイプB＞のどちらかを示している場合だけ、そのリソースを処理要求元のリソースとする。それ以外のリソースは無視する。得られた処理要求元のリソースの「identifier.type.code値、identifier.system値、identifier.value値」が完全一致する保存済みリソースインスタンスをすべて検索して、ヒットした全てのを処理対象とする。ただし、＜IdentifierタイプA＞の場合には、ヒットしたFHIRリソースインスタンスが複数あればエラーとロールバックする。
+  一連の削除ー新規登録が成功した場合には、次の「identifier.type.code値、identifier.system値、identifier.value値」を対象とした処理に移る。
+  <br>なお、指定された対象となる既存のFHIRリソースインスタンスと比べて更新データに過不足があっても構わない。
 
 削除処理、更新処理のどの過程でも途中で失敗、エラーとなった場合には、全ての処理をロールバックし、処理前の状態に戻す。
-以上の処理要件を満せるよう、６情報の各リソースインスタンスには、送信側の責任で適切に①患者識別情報（被保険者番号情報）、②Bundle.identifier.system値、③Bundle.identifier.value値、を設定<span style="color: red; ">しなければならない。</span>
+以上の処理要件を満せるよう、６情報の各リソースインスタンスには、送信側の責任で適切にidentifier要素のtype値、system値とvalue値とを設定すること。
 
 
 ## 検体検査結果情報における検査項目のコーディング規則
