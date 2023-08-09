@@ -6,6 +6,7 @@
 Profile: JP_ServiceRequest_eCS_Contained
 Parent: JP_ServiceRequest
 Id: JP-ServiceRequest-eCS-Contained
+Title: "Core6Contained : JP_ServiceRequest_eCS_Contained"
 Description: "診療主要6情報への埋め込み用 ServiceRequestリソース(オーダ依頼)プロファイル　"
 * ^url = $JP_ServiceRequest_eCS_Contained
 * ^status = #active

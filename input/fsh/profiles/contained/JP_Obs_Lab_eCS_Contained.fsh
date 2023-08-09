@@ -6,7 +6,7 @@
 Profile: JP_Observation_LabResult_eCS_Contained
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS-Contained
-Title: "JP_Observation_LabResult_eCS_Contained"
+Title: "Core6Contained : JP_Observation_LabResult_eCS_Contained"
 Description: "診療主要6情報への埋め込み用 Observationリソース（検体検査結果）　"
 * ^url = $JP_Observation_LabResult_eCS_Contained
 * ^status = #active
