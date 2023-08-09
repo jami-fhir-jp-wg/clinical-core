@@ -8,8 +8,8 @@ Description: "診療情報サマリー用　Organizationリソース（医療機
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary"
 * ^status = #active
 * ^date = "2023-03-31"
-* . ^short = "診療情報コアサマリーにおける検体検査結果の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおける検体検査結果の格納に使用する"
+* . ^short = "診療主要情報における検体検査結果の格納に使用する"
+* . ^definition = "診療主要情報・厚労省6情報などにおける検体検査結果の格納に使用する"
 
 * text ^short = "本リソースをテキストで表現したものを入れてもよい。"
 * text.status ^short = "generated| extensions | additional | empty"

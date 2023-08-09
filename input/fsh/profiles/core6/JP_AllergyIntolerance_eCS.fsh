@@ -7,11 +7,11 @@ Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "Core6 : JP_AllergyIntolerance_eCS"
-Description: "診療情報コアサマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
+Description: "診療主要情報サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2023-05-27"
-* insert toplevel_short_definition("診療情報コアサマリーにおけるアレルギー情報／薬剤禁忌の格納に使用する")
+* insert toplevel_short_definition("診療主要情報におけるアレルギー情報／薬剤禁忌の格納に使用する")
 * . ^comment = "厚労省6情報などの運用において、薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
@@ -23,7 +23,7 @@ Description: "診療情報コアサマリー用　AllergyIntoleranceリソース
     and recorder 0..1
 
 * contained[patient] only JP_Patient_eCS_Contained or JP_Patient
-  * insert relative_short_definition( "診療情報コアサマリーにおける患者情報をコンパクトに格納したPatientリソース")
+  * insert relative_short_definition( "診療主要情報における患者情報をコンパクトに格納したPatientリソース")
   * ^comment = ""
 
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter

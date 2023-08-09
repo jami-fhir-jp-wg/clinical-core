@@ -6,12 +6,12 @@
 Profile: JP_ServiceRequest_eCS_Contained
 Parent: JP_ServiceRequest
 Id: JP-ServiceRequest-eCS-Contained
-Description: "診療情報コアサマリー埋め込み用 ServiceRequestリソース(オーダ依頼)プロファイル　"
+Description: "診療主要情報埋め込み用 ServiceRequestリソース(オーダ依頼)プロファイル　"
 * ^url = $JP_ServiceRequest_eCS_Contained
 * ^status = #active
 * ^date = "2023-03-31"
-* . ^short = "診療情報コアサマリーにおける検体検査結果の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおける検体検査結果の格納に使用する"
+* . ^short = "診療主要情報における検体検査結果の格納に使用する"
+* . ^definition = "診療主要情報・厚労省6情報などにおける検体検査結果の格納に使用する"
 
 * . ^comment = "Contaiedリソースであるため、これ自身はContainedリソースを持てない。この依頼情報が発行された医療機関への参照や診療科の参照、依頼者への参照を記述する場合には、それらの参照先リソースは、このContaiedリソースを包含する親リソースのContaiedリソースに記述し、そのidを参照すること。"
 

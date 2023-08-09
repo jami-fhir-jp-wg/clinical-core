@@ -7,12 +7,12 @@ Profile: JP_Observation_LabResult_eCS_Contained
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS-Contained
 Title: "JP_Observation_LabResult_eCS_Contained"
-Description: "診療情報コアサマリー埋め込み用 Observationリソース（検体検査結果）　"
+Description: "診療主要情報埋め込み用 Observationリソース（検体検査結果）　"
 * ^url = $JP_Observation_LabResult_eCS_Contained
 * ^status = #active
 * ^date = "2023-05-27"
-* . ^short = "診療情報コアサマリーにおける他のリソースへの埋め込み用の検体検査結果の格納に使用する。"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおける他のリソースへの埋め込み用の検体検査結果の格納に使用する。"
+* . ^short = "診療主要情報における他のリソースへの埋め込み用の検体検査結果の格納に使用する。"
+* . ^definition = "診療主要情報・厚労省6情報などにおける他のリソースへの埋め込み用の検体検査結果の格納に使用する。"
 * . ^comment = "Contaiedリソースであるため、これ自身はContainedリソースを持てない。子検査結果を格納できないため、検査結果をもたない親グループを記述できないことに注意。"
 
 * id 1..1
