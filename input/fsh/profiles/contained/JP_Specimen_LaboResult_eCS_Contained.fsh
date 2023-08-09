@@ -6,6 +6,7 @@
 Profile:        JP_Specimen_LaboResult_eCS_Contained
 Parent:         JP_Specimen
 Id:             JP-Specimen-eCS
+Title: "Core6Contained : JP_Specimen_LaboResult_eCS_Contained"
 Description:    "診療主要6情報への埋め込み用 Specimenリソース（検体検査の検体情報 ）プロファイル "
 * ^url = $JP_Specimen_LaboResult_eCS_Contained
 * ^status = #active

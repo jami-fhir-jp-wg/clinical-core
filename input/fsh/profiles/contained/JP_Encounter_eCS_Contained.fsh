@@ -7,6 +7,7 @@
 Profile: JP_Encounter_OW_eCS_Contained
 Parent: JP_Encounter
 Id: JP-Encounter-OW-eCS-Contained
+Title:  "Core6Contained : JP_Encounter_OW_eCS_Contained"
 Description: "診療主要6情報への埋め込み用 Encouterリソース(入院外来の別に関するのみの情報)プロファイル　"
 * ^url = $JP_Encounter_OW_eCS_Contained
 * ^status = #active
