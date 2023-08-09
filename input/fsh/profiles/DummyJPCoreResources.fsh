@@ -20,7 +20,7 @@ Description:    "JP-Specimen　暫定プロファイル"
 Profile:        JP_Observation_Common_eClinicalSummary
 Parent:			JP_Observation_Common
 Id:             JP-Observation-eClinicalSummary
-Description:    "P_Observation_Common_eClinicalSummary　暫定プロファイル"
+Description:    "JP_Observation_Common_eClinicalSummary　暫定プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_Common_eClinicalSummary"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
@@ -46,7 +46,7 @@ Description:    "JP_DocumentReference　暫定プロファイル"
 Profile:        JP_DocumentReference_eClinicalSummary
 Parent:			JP_DocumentReference
 Id:             JP-DocumentReference-eClinicalSummary
-Description:    "P_DocumentReference_eClinicalSummary　暫定プロファイル"
+Description:    "JP_DocumentReference_eClinicalSummary　暫定プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DocumentReference_eClinicalSummary"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
