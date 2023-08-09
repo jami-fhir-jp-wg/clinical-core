@@ -7,7 +7,7 @@ Profile: JP_Observation_LabResult_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS
 Title:  "Core6 : JP_Observation_LabResult_eCS"
-Description: "診療主要情報サマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
+Description: "診療主要6情報サマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 * ^url = $JP_Observation_LabResult_eCS
 * ^status = #active
 * ^date = "2023-05-27"

@@ -7,7 +7,7 @@ Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "Core6 : JP_AllergyIntolerance_eCS"
-Description: "診療主要情報サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
+Description: "診療主要6情報サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2023-05-27"

@@ -5,7 +5,7 @@
 Profile: JP_Practitioner_eCS_Contained
 Parent: JP_Practitioner_eCS
 Id: JP-Practitioner-eCS-Contained
-Description: "診療主要情報埋め込み用 Practitionerリソース（医師情報）　　（JP-Practitioner-eCSの派生プロファイル）"
+Description: "診療主要6情報への埋め込み用 Practitionerリソース（医師情報）　　（JP-Practitioner-eCSの派生プロファイル）"
 * ^url = $JP_Practitioner_eCS_Contained
 * ^status = #active
 * ^date = "2023-05-27"

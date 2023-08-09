@@ -5,7 +5,7 @@ Profile: JP_Patient_eCS_Contained
 Parent: JP_Patient_eCS
 Id: JP-Patient-eCS-Contained
 Title: "JP_Patient_eCS_Contained"
-Description: "診療主要情報埋め込み用 Patientリソース(患者情報)プロファイル　"
+Description: "診療主要6情報への埋め込み用 Patientリソース(患者情報)プロファイル　"
 * ^url = $JP_Patient_eCS_Contained
 * ^status = #active
 * ^date = "2023-03-31"

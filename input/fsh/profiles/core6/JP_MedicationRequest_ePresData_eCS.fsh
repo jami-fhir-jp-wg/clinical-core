@@ -7,7 +7,7 @@ Profile: JP_MedicationRequest_ePres_eCS
 Parent: JP_MedicationRequest
 Id: JP-MedicationRequest-ePres-eCS
 Title:  "Core6 : JP_MedicationRequest_ePres_eCS"
-Description: "診療主要情報サマリー用　MedicationRequestリソース（処方オーダ情報）プロファイル"
+Description: "診療主要6情報サマリー用　MedicationRequestリソース（処方オーダ情報）プロファイル"
 * ^url = $JP_MedicationRequest_ePres_eCS
 * ^status = #active
 * ^date = "2023-05-27"

@@ -1,7 +1,7 @@
 Profile:        JP_CarePlan
 Parent:			CarePlan
 Id:             JP-CarePlan
-Description:    "診療主要情報サマリー用　CarePlanリソース（ケアプラン・診療計画）プロファイル"
+Description:    "診療情報サマリー用　CarePlanリソース（ケアプラン・診療計画）プロファイル"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan"
 
 

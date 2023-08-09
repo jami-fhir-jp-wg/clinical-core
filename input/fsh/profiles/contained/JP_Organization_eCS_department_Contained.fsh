@@ -3,7 +3,7 @@ Profile: JP_Organization_eCS_department_Contained
 Parent: JP_Organization_eCS_department
 Id: JP-Organization-eCS-department-Contained
 Title: "JP_Organization_eCS_department_Contained"
-Description: "診療主要情報埋め込み用 Organizationリソース(診療科情報)プロファイル　"
+Description: "診療主要6情報への埋め込み用 Organizationリソース(診療科情報)プロファイル　"
 * ^url = $JP_Organization_eCS_department_Contained 
 * ^status = #active
 * ^date = "2023-05-27"
