@@ -86,7 +86,7 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 [https://www.hl7.org/fhir/references.html](https://www.hl7.org/fhir/references.html) （2.1.3.0.10 節参照）
 
 
-## 電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様
+## ６情報送信に関するFHIR仕様
 
 <A href="core6spec.html">「電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様について」にジャンプ</a>
 
