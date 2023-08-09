@@ -31,8 +31,9 @@
 
 </table>http://terminology.hl7.org/CodeSystem/v2-0203
 
+
 |要素<br>Lv1|要素<br>Lv2|要素<br>Lv3 |要素<br>Lv4 |多重度|型|値|説明||
-|---|---|---|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|---|
 <tr class="lightblue">|resourceType||||1..1|string|"AllergyIntolerance" |**AllergyIntolerance**リソースであることを示す ||</tr>
 |meta| |||0..1|Meta| | ||</tr>
 ||lastUpdated|||1..1|instant| |最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz (例. 2015-02-07T13:28:17.239+09:00)|
