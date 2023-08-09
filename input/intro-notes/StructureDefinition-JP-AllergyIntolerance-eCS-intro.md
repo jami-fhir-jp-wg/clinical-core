@@ -29,7 +29,20 @@
 
 <tr><td>resourceType</td><td>要素2</td><td>要素3</td><td>要素4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
 
-</table>http://terminology.hl7.org/CodeSystem/v2-0203
+</table>
+
+
+|要素<br>Lv1|要素<br>Lv2|要素<br>Lv3 |要素<br>Lv4 |多重度|型|値|説明||
+|---|---|---|---|---|---|---|---|---|
+<tr class="lightblue">|resourceType||||1..1|string|"AllergyIntolerance" |**AllergyIntolerance**リソースであることを示す ||</tr>
+|meta| |||0..1|Meta| | ||</tr>
+
+
+|要素<br>Lv1|要素<br>Lv2|要素<br>Lv3 |要素<br>Lv4 |多重度|型|値|説明||
+|---|---|---|---|---|---|---|---|---|
+|resourceType||||1..1|string|"AllergyIntolerance" |**AllergyIntolerance**リソースであることを示す ||</tr>
+|meta| |||0..1|Meta| | ||</tr>
+
 
 
 |要素<br>Lv1|要素<br>Lv2|要素<br>Lv3 |要素<br>Lv4 |多重度|型|値|説明||
@@ -106,6 +119,8 @@
 || ||authorString|0..1|string|"患者の母親" |記載者氏名などの文字列。必ずしも氏名でなくてもよい。 |
 || |time||0..1|dateTime| |この追加的な情報が作成された日時。 |
 || |text||1..1|markdown| |追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。 |
+
+
 <link rel="stylesheet" href="sample.css">
 <br>
 {% include markdown-link-references.md %}
