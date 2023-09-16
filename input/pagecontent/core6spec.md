@@ -248,7 +248,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 　　保険個人識別子＝ "00012345::１８７:" となる。この場合、最後のコロンは必須である。<br><br>
 
 ### 保険個人識別子の格納方法
-保険個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「保険個人識別子」であることを示す「http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member/保険者等番号８桁文字列」を設定する。
+保険個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「保険個人識別子」であることを示す「http:/jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member/保険者等番号８桁文字列」を設定する。
 ```
     {
       "resourceType": "Patient",
@@ -260,7 +260,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
           "value": "12345"
         },
         {
-          "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member/00012345",
+          "system": "http:/jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member/00012345",
           "value": "00012345:あいう:１８７:05"
         }
       ],
