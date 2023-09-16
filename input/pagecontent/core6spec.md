@@ -274,7 +274,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 
 ### 長期保存情報の仕様
 リソースのデータを長期保存対象とする場合には、そのリソースのデータにおけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
-　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
+　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"　(この固定値とする)<br>
 　meta.tag.code = "LTS"　(この固定値とする)<br>
 
 ```
@@ -287,7 +287,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
     :
     "tag": {[
       {
-        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
+        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
         "code": "LTS"
       }
     ]
@@ -302,7 +302,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 
 ### 【未告知病名】情報の仕様
 病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
-　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
+　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"　(この固定値とする)<br>
 　meta.tag.code = "UNINFORMED"　(この固定値とする)<br>
 
 ```
@@ -315,7 +315,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
     :
     "tag": {[
       {
-        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
+        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
         "code": "UNINFORMED"
       }
     ]

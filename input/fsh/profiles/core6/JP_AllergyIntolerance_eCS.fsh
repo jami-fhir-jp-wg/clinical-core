@@ -14,7 +14,7 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
 * insert toplevel_short_definition("診療主要情報におけるアレルギー情報／薬剤禁忌の格納に使用する")
 * . ^comment = "厚労省6情報などの運用において、薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
 
-// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
+// Patinet、encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
