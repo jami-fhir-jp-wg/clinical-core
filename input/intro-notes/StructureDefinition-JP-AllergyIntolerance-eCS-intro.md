@@ -181,8 +181,8 @@ rt
 
 </table>
 
-
-<table border=0 cellpadding=0 cellspacing=0 width=1919 style='bord=er-collapse: collapse;table-layout:fixed;width:1440pt'> <col width=100 span=4 style='width:75pt'> <col width=232 style='mso-width-source:userset;mso-width-alt:6363;width=:174pt'> <col width=53 style='mso-width-source:userset;mso-width-alt:1462;width:=40pt'> <col width=57 style='mso-width-source:userset;mso-width-alt:1572;width:=43pt'> <col width=52 style='mso-width-source:userset;mso-width-alt:1426;width:=39pt'> <col width=100 style='width:75pt'> <col width=199 style='mso-width-source:userset;mso-width-alt:5449;width=:149pt'> <col width=389 style='mso-width-source:userset;mso-width-alt:10678;widt=h:292pt'> <col width=437 style='mso-width-source:userset;mso-width-alt:11995;widt=h:328pt'> <tr height=27 style='height:20.0pt'>  
+<table>
+<col width=100 span=4 style='width:75pt'> <col width=232 style='mso-width-source:userset;mso-width-alt:6363;width=:174pt'> <col width=53 style='mso-width-source:userset;mso-width-alt:1462;width:=40pt'> <col width=57 style='mso-width-source:userset;mso-width-alt:1572;width:=43pt'> <col width=52 style='mso-width-source:userset;mso-width-alt:1426;width:=39pt'> <col width=100 style='width:75pt'> <col width=199 style='mso-width-source:userset;mso-width-alt:5449;width=:149pt'> <col width=389 style='mso-width-source:userset;mso-width-alt:10678;widt=h:292pt'> <col width=437 style='mso-width-source:userset;mso-width-alt:11995;widt=h:328pt'> <tr height=27 style='height:20.0pt'>  
 <td height=27 class=xl63 width=100 style='height:20.0pt;width:75pt='><a  name="Print_Area">要素Lv1</a></td>
 
   </table>
