@@ -156,1613 +156,3665 @@ rt
 
 ##　次の表は作成中です
 
-<table border=0 cellpadding=0 cellspacing=0 width=1718 style='border-collapse:
- collapse;table-layout:fixed;width:1288pt;box-sizing: border-box;border-spacing: 0px;
- max-width:100%;font-variant-ligatures: normal;font-variant-caps: normal;
- orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
- text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial'>
- <col class=xl64 width=100 span=5 style='width:75pt'>
- <col class=xl64 width=251 style='mso-width-source:userset;mso-width-alt:6875;
- width:188pt'>
- <col class=xl64 width=404 style='mso-width-source:userset;mso-width-alt:11081;
- width:303pt'>
- <col class=xl64 width=563 style='mso-width-source:userset;mso-width-alt:15433;
- width:422pt'>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl65 align=left width=100 style='height:20.0pt;
-  width:75pt'>要素</td>
-  <td class=xl65 align=left width=100 style='border-left:none;width:75pt'>要素</td>
-  <td class=xl65 align=left width=100 style='border-left:none;width:75pt'>要素</td>
-  <td class=xl65 align=left width=100 style='border-left:none;width:75pt'>要素</td>
-  <td rowspan=2 class=xl65 align=left width=100 style='width:75pt'>多重度</td>
-  <td rowspan=2 class=xl65 align=left width=251 style='width:188pt'>型</td>
-  <td rowspan=2 class=xl65 align=left width=404 style='width:303pt'>値</td>
-  <td rowspan=2 class=xl65 align=left width=563 style='width:422pt'>説明</td>
+<div id=3D"AllergyIntoleranceTable_11276" align=3Dcenter x:publishsource=3D"=
+Excel">
+
+<table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1919 style=3D'bord=
+er-collapse:
+ collapse;table-layout:fixed;width:1440pt'>
+ <col width=3D100 span=3D4 style=3D'width:75pt'>
+ <col width=3D232 style=3D'mso-width-source:userset;mso-width-alt:6363;width=
+:174pt'>
+ <col width=3D53 style=3D'mso-width-source:userset;mso-width-alt:1462;width:=
+40pt'>
+ <col width=3D57 style=3D'mso-width-source:userset;mso-width-alt:1572;width:=
+43pt'>
+ <col width=3D52 style=3D'mso-width-source:userset;mso-width-alt:1426;width:=
+39pt'>
+ <col width=3D100 style=3D'width:75pt'>
+ <col width=3D199 style=3D'mso-width-source:userset;mso-width-alt:5449;width=
+:149pt'>
+ <col width=3D389 style=3D'mso-width-source:userset;mso-width-alt:10678;widt=
+h:292pt'>
+ <col width=3D437 style=3D'mso-width-source:userset;mso-width-alt:11995;widt=
+h:328pt'>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl63 width=3D100 style=3D'height:20.0pt;width:75pt=
+'><a
+  name=3D"Print_Area">要素Lv1</a></td>
+  <td class=3Dxl64 width=3D100 style=3D'border-left:none;width:75pt'>要素L=
+v2</td>
+  <td class=3Dxl64 width=3D100 style=3D'border-left:none;width:75pt'>要素L=
+v3</td>
+  <td class=3Dxl64 width=3D100 style=3D'border-left:none;width:75pt'>要素L=
+v4</td>
+  <td class=3Dxl64 width=3D232 style=3D'border-left:none;width:174pt'><ruby>=
+要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>パス</td>
+  <td class=3Dxl65 width=3D53 style=3D'border-left:none;width:40pt'>FHIR</td=
+>
+  <td class=3Dxl65 width=3D57 style=3D'border-left:none;width:43pt'>JP_Core<=
+/td>
+  <td class=3Dxl65 width=3D52 style=3D'border-left:none;width:39pt'>多重=
+度</td>
+  <td class=3Dxl64 width=3D100 style=3D'border-left:none;width:75pt'>型</td=
+>
+  <td class=3Dxl64 width=3D199 style=3D'border-left:none;width:149pt'><ruby>=
+設定<span
+  style=3D'display:none'><rt>コテイ </rt></span></ruby>す<ruby>る<span
+  style=3D'display:none'><rt>セッテイ </rt></span></ruby><ruby>場合<sp=
+an
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>の<ruby>固定値=
+<span
+  style=3D'display:none'><rt>コテイチ </rt></span></ruby></td>
+  <td class=3Dxl64 width=3D389 style=3D'border-left:none;width:292pt'><ruby>=
+設定<span
+  style=3D'display:none'><rt>セッテイ </rt></span></ruby>する<ruby>値=
+<span
+  style=3D'display:none'><rt>アタイ </rt></span></ruby>の<ruby>例示<sp=
+an
+  style=3D'display:none'><rt>&#128347;</rt></span></ruby></td>
+  <td class=3Dxl66 width=3D437 style=3D'border-left:none;width:328pt'>説明=
+</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl65 align=left width=100 style='height:20.0pt;
-  border-top:none;width:75pt'>Lv1</td>
-  <td class=xl65 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt'>Lv2</td>
-  <td class=xl65 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt'>Lv3</td>
-  <td class=xl65 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt'>Lv4</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>resourceType</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>resourceType</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>　</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>　</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;AllergyIntolerance&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl71 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>AllergyIntolerance<font
+  class=3D"font6">リソースであることを示す</font></td>
  </tr>
- <tr height=53 style='height:40.0pt'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Meta</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>　</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>lastUpdated</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.lastUpdated</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>instant</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;2015-02-07T13:28:17.239+09:00&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>profile[+}</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.profile[+}</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>canonical(StructureDefinition)</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/J=
+P_AllergyIntolerance_eClinicalSummary&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>準拠しているプロファイルを受信側に通知したい=
+場合には、本文書のプロファイルを識別するURLを指定す=
+る。</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>tag[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.tag[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>　</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl67 width=3D100 style=3D'height:45.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>tag[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.tag[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&=
+quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl74 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>電子カルテ情報共有サービスで長期保存情報フラ=
+グの設定する場合に使用</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>tag[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.tag[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;LTS&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>長期保存情報フラグ</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>tag[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.tag[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&=
+quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl74 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>電子カルテ情報共有サービスで未告知情報または=
+<ruby>未説明<span
+  style=3D'display:none'><rt>ミセツメイ </rt></span></ruby><ruby>フ<sp=
+an
+  style=3D'display:none'><rt>ホン </rt></span></ruby>ラグを設<ruby>定=
+す<span
+  style=3D'display:none'><rt>シュベツ </rt></span></ruby>る<ruby>場合=
+<span
+  style=3D'display:none'><rt>シヨウ </rt></span></ruby>に使用（本<ru=
+by>リソ<span
+  style=3D'display:none'><rt>キョカ </rt></span></ruby>ース種別で使=
+用することが許可されているか、あるいは<ruby>設定<span
+  style=3D'display:none'><rt>セッテイ </rt></span></ruby>した<ruby>情=
+報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>が<ruby>利=
+用<span
+  style=3D'display:none'><rt>リヨウ </rt></span></ruby>されるかどう=
+かについては、電子カルテ情報共有サービスの<ruby>運用<=
+span
+  style=3D'display:none'><rt>&#0;&#22;&#3;&#6;&#25;&#1;	&#30;&#2;&#14;!&#2;&=
+#18;(&#2;&#22;C&#2;&#27;</rt></span></ruby>仕様によって確認するこ=
+とが必要）</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>meta</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>tag[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>meta.tag[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;UNINFORMED&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>未告知情報または未説明フラグ</td>
+ </tr>
+ <tr height=3D160 style=3D'height:120.0pt'>
+  <td height=3D160 class=3Dxl67 width=3D100 style=3D'height:120.0pt;border-t=
+op:none;
+  width:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Narrative</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>本<span
+  style=3D'display:none'><rt>ホン </rt></span></ruby>リソースの<ruby>=
+概要<span
+  style=3D'display:none'><rt>ガイヨウ </rt></span></ruby>を<ruby>記述=
+<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>した、<ruby>=
+人間<span
+  style=3D'display:none'><rt>ニンゲン </rt></span></ruby>が<ruby>読<sp=
+an
+  style=3D'display:none'><rt>ヨミトリ </rt></span></ruby>み取り<ruby>=
+可能<span
+  style=3D'display:none'><rt>カノウ </rt></span></ruby>なテキスト<ru=
+by>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>。叙述(Narat=
+ive)はすべての構造化されたデータをエンコードする必要=
+はないが、人間が叙述(Narative)を読むだけで「臨床的に安=
+全」にするために十分な詳細を含める必要がある。アレ=
+ルギーにおいては、code.text<ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>、note.test<ruby>=
+要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>の<ruby>値<span
+  style=3D'display:none'><rt>アタイ </rt></span></ruby>があれば<ruby>=
+必<span
+  style=3D'display:none'><rt>カナラズ </rt></span></ruby>ずそれらを=
+テキスト<ruby>表現<span
+  style=3D'display:none'><rt>ヒョウゲン </rt></span></ruby>に<ruby>含=
+<span
+  style=3D'display:none'><rt>フクメル </rt></span></ruby>めること。=
+<br>
+    <ruby>本<span style=3D'display:none'><rt>ホン </rt></span></ruby>リ=
+ソースが<ruby>他<span
+  style=3D'display:none'><rt>ホカ </rt></span></ruby>のリソース<ruby>=
+内<span
+  style=3D'display:none'><rt>&#127514;️</rt></span></ruby>にContainedリ=
+ソースとして<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>される<ruby>=
+場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>には<ruby>本<sp=
+an
+  style=3D'display:none'><rt>ホン </rt></span></ruby><ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>は<ruby>記述<sp=
+an
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>しない（<ru=
+by>多重度<span
+  style=3D'display:none'><rt>タジュウド </rt></span></ruby>0..0）。</=
+td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>status</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>text.status</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>1..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>1..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;generated&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>テキスト内容の全てがリソースのコンテンツから=
+生成されたことを示す。</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>div</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>text.div</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>1..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>1..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>xhtml</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&lt;div
+  xmlns=3D&quot;http://www.w3.org/1999/xhtml&quot;&gt;xxx&lt;/div&gt;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>テキスト<ruby>表現<span
+  style=3D'display:none'><rt>ヒョウゲン </rt></span></ruby>をXTHML<rub=
+y>形式<span
+  style=3D'display:none'><rt>ケイシキ </rt></span></ruby>で<ruby>記述=
+<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>したデータ=
+</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>contained[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>contained[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>　</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>contained[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>contained[+]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Resource(JP_Patient
+  | JP_Patient_eCS_Contained )</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>patient<ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>から<ruby>参照=
+<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>される<ru=
+by>場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>には、そのJP_=
+Patientリソースの<ruby>実体<span
+  style=3D'display:none'><rt>ジッタイ </rt></span></ruby>。JP_Patient=
+リソースの<ruby>必須<span
+  style=3D'display:none'><rt>&#0;&#7;&#2;&#4;</rt></span></ruby><ruby>要素=
+<span
+  style=3D'display:none'><rt><br>
+    &#2;<br>
+    &#16;</rt></span></ruby>だけが<ruby>含<span style=3D'display:none'><=
+rt></rt></span></ruby>まれればよい。</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>contained[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>contained[+]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Resource(JP_Encounter
+  | JP_Encounter_eCS_Contained)</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>encounter<ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>から<ruby>参照=
+<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>される<ru=
+by>場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>には、そのJP_=
+Encounterリソースの<ruby>実体<span
+  style=3D'display:none'><rt>ジッタイ </rt></span></ruby>。JP_Encounter=
+リソースの<ruby>必須<span
+  style=3D'display:none'><rt>ウメコマ</rt></span></ruby><ruby>要素<spa=
+n
+  style=3D'display:none'><rt>レル シ</rt></span></ruby>だけが<ruby>含=
+<span
+  style=3D'display:none'><rt></rt></span></ruby>まれればよい。ここ=
+で<ruby>埋<span
+  style=3D'display:none'><rt>ウメコマレル </rt></span></ruby>め込ま=
+れるJP_Encounterリソースでは、Encounter.classにこの情報を記=
+録した<ruby>とき<span
+  style=3D'display:none'><rt>シヨウ &#0;シヨウ </rt></span></ruby>の=
+受診情報（入外区分など）を記述して使用する。</td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl67 width=3D100 style=3D'height:75.0pt;border-to=
+p:none;
+  width:75pt'>contained[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>contained[+]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Resource(JP_Practitioner
+  | JP_Practitioner_eCS_Contained )</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>recorder<ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>から<ruby>参照=
+<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>される<ru=
+by>場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>には、そのJP_=
+Practitionerリソースの<ruby>実体<span
+  style=3D'display:none'><rt>ジッタイ </rt></span></ruby>。JP_Practitio=
+ner<ruby>リソ<span
+  style=3D'display:none'><rt>&#0;&#8;&#2;&#4;</rt></span></ruby><ruby>ース=
+<span
+  style=3D'display:none'><rt>&#12;&#2;<br>
+    &#17;</rt></span></ruby>の必須<ruby>要<span style=3D'display:none'><=
+rt></rt></span></ruby>素だけが含まれればよい。</td>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl67 width=3D100 style=3D'height:75.0pt;border-to=
+p:none;
+  width:75pt'>identifier[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>identifier[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Identifier</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>このアレルギー情報を<ruby>作成<span
+  style=3D'display:none'><rt>サクセイ </rt></span></ruby>した施設<ru=
+by>内<span
+  style=3D'display:none'><rt>ナイ </rt></span></ruby>で、このアレル=
+ギー<ruby>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>を<ruby>他=
+<span
+  style=3D'display:none'><rt>ホカ </rt></span></ruby>のアレルギー<ru=
+by>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>と<ruby>一=
+意<span
+  style=3D'display:none'><rt>&#129351;</rt></span></ruby>に<ruby>区別<spa=
+n
+  style=3D'display:none'><rt>クベツ </rt></span></ruby>できるID。こ=
+のID<ruby>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>をキーと=
+して<ruby>本<span
+  style=3D'display:none'><rt>ホン </rt></span></ruby>アレルギー<ruby>=
+情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>の<ruby>更=
+新<span
+  style=3D'display:none'><rt>コウシン </rt></span></ruby>・<ruby>削除=
+<span
+  style=3D'display:none'><rt>サクジョ </rt></span></ruby>ができる<ru=
+by>一意<span
+  style=3D'display:none'><rt>イチイ </rt></span></ruby><ruby>性<span
+  style=3D'display:none'><rt>セイ </rt></span></ruby>があること。こ=
+のidentifier<ruby>以外<span
+  style=3D'display:none'><rt>イガイ </rt></span></ruby>のIDも<ruby>追=
+加<span
+  style=3D'display:none'><rt>ツイカ </rt></span></ruby>して<ruby>複数=
+<span
+  style=3D'display:none'><rt>フクスウ </rt></span></ruby><ruby>格納<sp=
+an
+  style=3D'display:none'><rt>カクノウ </rt></span></ruby>しても<ruby>=
+構<span
+  style=3D'display:none'><rt>カマワナイ </rt></span></ruby>わない。=
+少なくともひとつのidentifierは<ruby>次<span
+  style=3D'display:none'><rt>&#0;<br>
+  =20
+  &#2;&#5;&#16;&#1;&#8;&#26;&#2;&#14;&#29;&#1;&#17;$&#2;&#23;'&#2;&#25;*&#2;=
+&#29;6&#2;#&gt;&#1;&amp;D&#2;,G</rt></span></ruby>の仕様に従う値を=
+設定すること。</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl67 width=3D100 style=3D'height:45.0pt;border-top=
+:none;
+  width:75pt'>identifier[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>identifier[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identif=
+ier
+  &quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>　</td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>identifier[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>value</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>identifier[+].value</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;1311234567-2020-00123456&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>アレルギー情報IDの文字列。URI<ruby>形式<span
+  style=3D'display:none'><rt>ケイシキ </rt></span></ruby>を<ruby>使<sp=
+an
+  style=3D'display:none'><rt>ツカウ </rt></span></ruby>う<ruby>場合<sp=
+an
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>には、urn:ietf:=
+rfc:3986に<ruby>準拠<span
+  style=3D'display:none'><rt>ジュンキョ </rt></span></ruby>すること=
+。</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl67 width=3D100 style=3D'height:45.0pt;border-top=
+:none;
+  width:75pt'>clinicalStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>clinicalStatus</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl76 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>CodeableConcept</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>臨床的状態のステータス。コードで記述は必須。=
+ただし、verificationStatus要素が'entered-in-error'であれば、本=
+要素は<ruby>存<span
+  style=3D'display:none'><rt>ホン </rt></span></ruby><ruby>在し<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>て<ruby>はな<sp=
+an
+  style=3D'display:none'><rt>ソンザイ </rt></span></ruby>らない。そ=
+れ以外では<ruby>必須<span
+  style=3D'display:none'><rt>ヒッス </rt></span></ruby>。</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>clinicalStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>clinicalStatus.coding[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>臨床的状態のステータスのコード化情報</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl67 width=3D100 style=3D'height:45.0pt;border-top=
+:none;
+  width:75pt'>clinicalStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>clinicalStatus.coding[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>ur</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-cli=
+nical&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コードで記述が<ruby>必須<span
+  style=3D'display:none'><rt>ヒッス </rt></span></ruby>で、<ruby>少<sp=
+an
+  style=3D'display:none'><rt>スクナクトモ </rt></span></ruby>なくと=
+もひとつのsystem値は固定値。</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>clinicalStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>clinicalStatus.coding[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;active&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>active
+  | inactive | resolved　 (アクティブ | 非アクティブ | 解決済=
+み)のいずれか（ValueSet
+  http://hl7.org/fhir/ValueSet/allergyintolerance-clinicalより選択する=
+ことが必須）。「<ruby>解決<span
+  style=3D'display:none'><rt>カイケツ </rt></span></ruby><ruby>済<span
+  style=3D'display:none'><rt>ズミ </rt></span></ruby>み」は「<ruby>非=
+<span
+  style=3D'display:none'><rt>&#129512;</rt></span></ruby>アクティブ」=
+に<ruby>含<span
+  style=3D'display:none'><rt>フクマレル </rt></span></ruby>まれる。=
+</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>clinicalStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dispkay</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>clinicalStatus.coding[=3D].dispkay</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>”Active&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>Active
+  | Inactive | Resolved　のいずれかの文字列。</td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>clinicalStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>clinicalStatus.text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コードだけでは<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>できない<ru=
+by>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>がある<ru=
+by>場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>にコードと<ru=
+by>併用<span
+  style=3D'display:none'><rt>ヘイヨウ </rt></span></ruby>してもよい=
+。<ruby>値<span
+  style=3D'display:none'><rt>アタイオ </rt></span></ruby>が<ruby>使用=
+<span
+  style=3D'display:none'><rt>シヨウ </rt></span></ruby>されない<ruby>=
+可能性<span
+  style=3D'display:none'><rt>カノウセイ </rt></span></ruby>はある。=
+</td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>verificationStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>verificationStatus</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>CodeableConcept</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>入力された臨床的状態に対する検証状況を示す。=
+確からしさと考えられる。コード<ruby>化<span
+  style=3D'display:none'><rt>カ </rt></span></ruby><ruby>記述<span style=
+=3D'display:
+  none'><rt>キジュツ </rt></span></ruby>が<ruby>必須<span style=3D'di=
+splay:none'><rt>ヒッス
+  </rt></span></ruby>。clinicalStatusとの<ruby>制約<span style=3D'displ=
+ay:none'><rt>セイヤク
+  </rt></span></ruby><ruby>条件<span style=3D'display:none'><rt>ジョウ=
+ケン </rt></span></ruby>を<ruby>参照<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>のこと。=
+</td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>verificationStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>verificationStatus.coding[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl78 style=3D'border-top:none;border-left:none'>臨床的状=
+態に対する検証状況のコード化情報</td>
+ </tr>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl67 width=3D100 style=3D'height:45.0pt;border-top=
+:none;
+  width:75pt'>verificationStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>verificationStatus.coding[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-ver=
+ification&quot;</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コードで記述が<ruby>必須<span
+  style=3D'display:none'><rt>ヒッス </rt></span></ruby>で、<ruby>少<sp=
+an
+  style=3D'display:none'><rt>スクナクトモ </rt></span></ruby>なくと=
+もひとつのsystem値は固定値。</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>verificationStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>verificationStatus.coding[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;Unconfirmed&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>unconfirmed
+  | confirmed | refuted | entered-in-error　(未確認 | 確認済み | 否=
+定された |
+  入力エラー)　のいずれか（ValueSet
+  http://hl7.org/fhir/ValueSet/allergyintolerance-verificationより選択=
+することが必須）。</td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>verificationStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dispkay</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>verificationStatus.coding[=3D].dispkay</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>”Unconfirmed&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>Unconfirmed
+  | Confirmed | Refuted | Entered in Error　のいずれかの文字列。<=
+/td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>verificationStatus</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>verificationStatus.text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コードだけでは記述できない情報がある場合や、=
+コード化できない場合には本要素だけで記述してもよい=
+。コードと併用してもよい</td>
+ </tr>
+ <tr height=3D120 style=3D'height:90.0pt'>
+  <td height=3D120 class=3Dxl67 width=3D100 style=3D'height:90.0pt;border-to=
+p:none;
+  width:75pt'>type</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>type</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'><span
+  style=3D'mso-spacerun:yes'> </span>&quot;allergy&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>副反応の生理的なメカニズムの種類（アレルギー=
+によるものか不耐性によるものかどうか）。記述する場=
+合は、コード表：&quot;http://hl7.org/fhir/allergy-intolerance-type&q=
+uot;
+  から、allergy | intolerance　（アレルギー反応、不耐性反=
+応）のいずれか。メカニズムの<ruby>種類<span
+  style=3D'display:none'><rt>シュルイ </rt></span></ruby>を<ruby>正確=
+<span
+  style=3D'display:none'><rt>セイカク </rt></span></ruby>に<ruby>決<sp=
+an
+  style=3D'display:none'><rt>キメル </rt></span></ruby>めることは<ru=
+by>難<span
+  style=3D'display:none'><rt>ムズカシイ </rt></span></ruby>しいので=
+、この<ruby>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>はあくま=
+で<ruby>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby><ruby>登録=
+<span
+  style=3D'display:none'><rt>トウロク </rt></span></ruby><ruby>側<span
+  style=3D'display:none'><rt>ガワ </rt></span></ruby>の<ruby>判断<span
+  style=3D'display:none'><rt>ハンダン </rt></span></ruby>に<ruby>依存=
+<span
+  style=3D'display:none'><rt>イゾン </rt></span></ruby>する。</td>
+ </tr>
+ <tr height=3D220 style=3D'height:165.0pt'>
+  <td height=3D220 class=3Dxl67 width=3D100 style=3D'height:165.0pt;border-t=
+op:none;
+  width:75pt'>category</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>category</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;food&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>特定された原因物質のカテゴリ。記述を可能な限=
+り推奨する。コード表：&quot;http://hl7.org/fhir/allergy-intoleran=
+ce-category&quot;　から　food
+  | medication | environment | biologic　（食物、医薬品、環境、=
+バイオロジー<ruby>物質<span
+  style=3D'display:none'><rt>ブッシツ </rt></span></ruby>）のいずれ=
+かを<ruby>選択<span
+  style=3D'display:none'><rt>センタク </rt></span></ruby>する。<ruby>=
+電子<span
+  style=3D'display:none'><rt>デンシ </rt></span></ruby>カルテシステ=
+ムで、これらのカテゴリーが<ruby>区別<span
+  style=3D'display:none'><rt>クベツ </rt></span></ruby>されて<ruby>登=
+録<span
+  style=3D'display:none'><rt>トウロク </rt></span></ruby>されている=
+<ruby>場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>には<ruby>可能=
+<span
+  style=3D'display:none'><rt>カノウ </rt></span></ruby>な<ruby>限<span
+  style=3D'display:none'><rt>カギリ </rt></span></ruby>りコードを<ru=
+by>設定<span
+  style=3D'display:none'><rt>セッテイ </rt></span></ruby>すること。=
+<br>
+    <font class=3D"font7">電子カルテ情報共有サービスでは、</=
+font><ruby><font class=3D"font7">薬剤</font><span
+  style=3D'display:none'><rt>ヤクザイ </rt></span></ruby><ruby><font cla=
+ss=3D"font7">禁忌</font><span
+  style=3D'display:none'><rt>キンキ </rt></span></ruby><ruby><font class=
+=3D"font7">情報</font><span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby><font class=
+=3D"font7">として</font><ruby><font
+  class=3D"font7">本</font><span style=3D'display:none'><rt>ホン </rt></s=
+pan></ruby><font
+  class=3D"font7">リソース</font><ruby><font class=3D"font7">種別</fon=
+t><span
+  style=3D'display:none'><rt>シュベツ </rt></span></ruby><font class=3D"=
+font7">を</font><ruby><font
+  class=3D"font7">使用</font><span style=3D'display:none'><rt>シヨウ </=
+rt></span></ruby><font
+  class=3D"font7">する</font><ruby><font class=3D"font7">場合</font><spa=
+n
+  style=3D'display:none'><rt>バアイ </rt></span></ruby><font class=3D"fon=
+t7">には、</font><ruby><font
+  class=3D"font7">必</font><span style=3D'display:none'><rt>カナラズ </=
+rt></span></ruby><font
+  class=3D"font7">ず</font><ruby><font class=3D"font7">本</font><span
+  style=3D'display:none'><rt>ホン </rt></span></ruby><ruby><font class=3D"=
+font7">要素</font><span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby><font class=3D"fon=
+t7">は&quot;medication&quot;として</font><ruby><font
+  class=3D"font7">存在</font><span style=3D'display:none'><rt>ソンザイ=
+ </rt></span></ruby><font
+  class=3D"font7">しなければならず、criticality</font><ruby><font c=
+lass=3D"font7">要素</font><span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby><font class=3D"fon=
+t7">は&quot;high&quot;を</font><ruby><font
+  class=3D"font7">設定</font><span style=3D'display:none'><rt>セッテイ=
+ </rt></span></ruby><font
+  class=3D"font7">しなければならない。これ以外の</font><ruby>=
+<font class=3D"font7">場合</font><span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby><font class=3D"fon=
+t7">には、</font><ruby><font
+  class=3D"font7">本</font><span style=3D'display:none'><rt>ホン </rt></s=
+pan></ruby><font
+  class=3D"font7">リソースの</font><ruby><font class=3D"font7">情報</=
+font><span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby><font class=
+=3D"font7">はや薬剤</font><ruby><font
+  class=3D"font7">禁忌</font><span style=3D'display:none'><rt>キンキ </=
+rt></span></ruby><ruby><font
+  class=3D"font7">以外</font><span style=3D'display:none'><rt>イガイ </=
+rt></span></ruby><font
+  class=3D"font7">のアレルギー</font><ruby><font class=3D"font7">情=
+報</font><span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby><font class=
+=3D"font7">として</font><ruby><font
+  class=3D"font7">取</font><span style=3D'display:none'><rt>トリアツカ=
+ワレル </rt></span></ruby><font
+  class=3D"font7">り扱われる。</font></td>
+ </tr>
+ <tr height=3D120 style=3D'height:90.0pt'>
+  <td height=3D120 class=3Dxl67 width=3D100 style=3D'height:90.0pt;border-to=
+p:none;
+  width:75pt'>criticality</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>　</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;high&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>潜在的な臨床的危険性、致命度。記述する場合は=
+、コード表：&quot;http://hl7.org/fhir/allergy-intolerance-criticality&=
+quot;
+  から　low | high | unable-to-assess　のいずれかを<ruby>選択<sp=
+an style=3D'display:none'><rt>センタク
+  </rt></span></ruby>する。（低、高、評価不能）。<br>
+    <font class=3D"font7">電子カルテ情報共有サービスでは、=
+薬剤禁忌情報として本リソース種別を使用する場合には=
+、category</font><ruby><font
+  class=3D"font7">要素</font><span style=3D'display:none'><rt>&#0;y&#2;&#5=
+;¼&#2;	¼&#2;<br>
+    ¿&#2;&#18;¿&#2;&#23;Â&#2;</rt></span></ruby><font class=3D"font7">の=
+記述を参照すること。</font></td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>　</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>CodeableConcept</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>アレルギー・不耐反応の対象物の情報。</td>
+ </tr>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>code.coding[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>JP-Coreで定めるallergy-substanceコード表のコードを使=
+用を推奨する。コード化できない場合には、code.text
+  のみで記述する。コード化の<ruby>有無<span style=3D'display:=
+none'><rt>ウム </rt></span></ruby>にかかわらず、<ruby>電子<span
+  style=3D'display:none'><rt>デンシ </rt></span></ruby>カルテシステ=
+ム<ruby>等<span
+  style=3D'display:none'><rt>トウ </rt></span></ruby>で<ruby>登録<span
+  style=3D'display:none'><rt>トウロク </rt></span></ruby>され<ruby>表=
+示<span
+  style=3D'display:none'><rt>ヒョウジ </rt></span></ruby>されている=
+<ruby>文字列<span
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby>をcode.textに=
+<ruby>必<span
+  style=3D'display:none'><rt>カナラズ </rt></span></ruby>ず<ruby>設定=
+<span
+  style=3D'display:none'><rt>セッテイ </rt></span></ruby>すること。=
+</td>
+ </tr>
+ <tr height=3D160 style=3D'height:120.0pt'>
+  <td height=3D160 class=3Dxl67 width=3D100 style=3D'height:120.0pt;border-t=
+op:none;
+  width:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>code.coding[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS<span
+  style=3D'mso-spacerun:yes'> </span></td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>使用するコード表（推奨）：ValueSet
+  http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS<br>
+    CodeSystem は、category<ruby>要素<span style=3D'display:none'><rt>=
+ヨウソ </rt></span></ruby>に<ruby>対応<span
+  style=3D'display:none'><rt>タイオウ </rt></span></ruby>して、http:/=
+/jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS<br>
+  =20
+  http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen=
+_CS<br>
+  =20
+  http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　の3=
+つのいずれかから選択することが推奨されている。</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>code.coding[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;J7F7311990&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コード</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dispkay</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>code.coding[=3D].dispkay</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;牛乳・乳製品（詳細不明）&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コードに<ruby>対応<span
+  style=3D'display:none'><rt>タイオウ </rt></span></ruby>する<ruby>表=
+示<span
+  style=3D'display:none'><rt>ヒョウジ </rt></span></ruby><ruby>名<span
+  style=3D'display:none'><rt>メイ </rt></span></ruby></td>
+ </tr>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>code.text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;<ruby>牛乳<span
+  style=3D'display:none'><rt>ギュウニュウ </rt></span></ruby>&quot;</t=
+d>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コード化の有無にかかわらず、電子カルテシステ=
+ム等で登録され表示されている文字列をcode.textに必ず設=
+定すること。</td>
+ </tr>
+ <tr height=3D120 style=3D'height:90.0pt'>
+  <td height=3D120 class=3Dxl67 width=3D100 style=3D'height:90.0pt;border-to=
+p:none;
+  width:75pt'>patient</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>patient</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>1..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>1..1</td>
+  <td class=3Dxl70 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Reference(JP_Patient|
+  JP_Patient_eCS_Contained)</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'><ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>1<br>
+    {<br>
+    <span style=3D'mso-spacerun:yes'>  </span>&quot;reference&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>&quot;urn: .....&quot;<br>
+    }</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>このアレルギー不耐症を有する患者のFHIRリソ<ruby=
+>ース<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>への参照=
+。Bundleリソースなどで<ruby>本<span
+  style=3D'display:none'><rt>ホン </rt></span></ruby>リソースから<ru=
+by>参照<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby><ruby>可能=
+<span
+  style=3D'display:none'><rt>カノウ </rt></span></ruby>なPatientリソ=
+ースが<ruby>同時<span
+  style=3D'display:none'><rt>ソンザイ </rt></span></ruby>に存<ruby>在=
+す<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>る場合には、=
+そのリソ<ruby>ース<span
+  style=3D'display:none'><rt>シキベツ </rt></span></ruby>の識別U<ruby=
+>RI<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>を参照す=
+る。Containedリソ<ruby>ース<span
+  style=3D'display:none'><rt>ソンザイ </rt></span></ruby>が存<ruby>在=
+す<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>る場合には、=
+<ruby>それ<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>を参<ruby>=
+照す<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>る<ruby>記述=
+<span
+  style=3D'display:none'><rt>ジギョウ </rt></span></ruby>（<ruby>次<sp=
+an
+  style=3D'display:none'><rt>レイ </rt></span></ruby>行の例）、保険=
+個人識<ruby>別子<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>が記述<ruby>=
+され<span
+  style=3D'display:none'><rt>ガイブ </rt></span></ruby>る外部リソ<ru=
+by>ース<span
+  style=3D'display:none'><rt>チクセキ </rt></span></ruby>が蓄積され=
+ていて<ruby>それ<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>を参照す=
+る<ruby>場合<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>の<ruby>記述=
+（<span
+  style=3D'display:none'><rt>ジジギョウ </rt></span></ruby>次<ruby>次=
+<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>行の<ruby>例<span
+  style=3D'display:none'><rt>シメス </rt></span></ruby>）を示す。</t=
+d>
+ </tr>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl67 width=3D100 style=3D'height:75.0pt;border-to=
+p:none;
   width:75pt'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>resourceType</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>“AllergyIntolerance”</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>　</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>　</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>　</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'><ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>2<br>
+    {<br>
+    <span style=3D'mso-spacerun:yes'>  </span>&quot;reference&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>&quot;#patient203987&quot;<br>
+    }</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>電子カルテ共有サービスにおける6情報のひとつ=
+として本リソース<ruby>が<span
+  style=3D'display:none'><rt>アタイ </rt></span></ruby>記述される場=
+合で、JP_Pat<ruby>i<span
+  style=3D'display:none'><rt>ウメコミ </rt></span></ruby>en<ruby>tタ<sp=
+an
+  style=3D'display:none'><rt>カテイ </rt></span></ruby>イプ<ruby>のリ=
+<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>ソース（P<r=
+uby>at<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>ient.idの値が&q=
+uot;#patient2<ruby>0<span
+  style=3D'display:none'><rt>レイ &#0;&#30;&#1;レイ </rt></span></ruby>3=
+987&quot;と仮定）が本リソースのContainedリソースとして埋=
+め込み記述されている場合に、そのcontainedリソースのid=
+値(Patient.id)を記述する例。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 align=left width=100 style='height:20.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>meta</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Meta</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
- </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>lastUpdated</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>instant</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz
-  (例. 2015-02-07T13:28:17.239+09:00)</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=4 height=108 class=xl63 width=100 style='height:80.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>profile</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..*</td>
-  <td rowspan=4 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>canonical(StructureDefinition)</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://jpfhir.jp/fhir</td>
-  <td rowspan=4 class=xl63 align=left width=563 style='border-top:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。値は固定。</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/eClinicalSummary</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/StructureDefinition</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/JP_AllergyIntolerance_eClinicalSummary”</td>
- </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>text</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Narrative</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>本リソースをテキストで表現したものを入れてもよい。入れる場合には、以降のリソースからシステムにより自動生成されたものに限ること。</td>
- </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>status</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“generated”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。</td>
- </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>div</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>xhtml</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>&lt;div
-  xmlns=”http://www.w3.org/1999/xhtml”&gt;xxx&lt;/div&gt;</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>値は例示。</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
+ <tr height=3D220 style=3D'height:165.0pt'>
+  <td height=3D220 class=3Dxl67 width=3D100 style=3D'height:165.0pt;border-t=
+op:none;
   width:75pt'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>contained</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>1..1*</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>Resource</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>Resource(JP_Patient_eCS_Contained)</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>　</td>
+  <td class=3Dxl79 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>　</td>
+  <td class=3Dxl79 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>　</td>
+  <td class=3Dxl79 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl77 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'><ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>３<br>
+    {<br>
+    <span style=3D'mso-spacerun:yes'>    </span>&quot;type&quot;:
+  &quot;Patient&quot;,<span style=3D'mso-spacerun:yes'>  </span><br>
+    <span style=3D'mso-spacerun:yes'>     </span>&quot;identifier&quot;:=
+{<br>
+    <span style=3D'mso-spacerun:yes'>         </span>&quot;system&qu=
+ot;:
+  &quot;http:/jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member/00012345&quo=
+t;,<br>
+    <span style=3D'mso-spacerun:yes'>          </span>&quot;value&q=
+uot;:
+  &quot;00012345:あいう:１８７:05&quot;<br>
+    <span style=3D'mso-spacerun:yes'>       </span>}<br>
+    }<br>
+    </td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>電子<span
+  style=3D'display:none'><rt>デンシ </rt></span></ruby>カルテ<ruby>共=
+有<span
+  style=3D'display:none'><rt>キョウユウ </rt></span></ruby>サービス=
+における6<ruby>情報<span
+  style=3D'display:none'><rt>ジョウホウ </rt></span></ruby>のひとつ=
+として<ruby>本<span
+  style=3D'display:none'><rt>ホン </rt></span></ruby>リソースが<ruby>=
+記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>される<ruby>=
+場合<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>に、保険個人=
+識別子(<ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>では、保険<ruby>=
+者等<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>番号<ruby>＝=
+1<span
+  style=3D'display:none'><rt>カンジャ </rt></span></ruby>2345、<ruby>=
+被保<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>険者<ruby>=
+証<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>等の記号＝あ=
+いう、被保険者証等の番号＝１８７、枝番＝05
+  の<ruby>患者<span style=3D'display:none'><rt>カンジャ </rt></span><=
+/ruby>)を記述した<ruby>外部<span
+  style=3D'display:none'><rt>ガイブ </rt></span></ruby>にある患者リ=
+ソースを参照する場合の例。</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl67 width=3D100 style=3D'height:75.0pt;border-to=
+p:none;
+  width:75pt'>encounter</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>encounter</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Reference
+  (JP_Encounter | JP_Encounter_eCS_Contained)</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'><ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby><ruby>1<span style=
+=3D'display:
+  none'><rt>レイ </rt></span></ruby><br>
+    {<br>
+    <span style=3D'mso-spacerun:yes'>  </span>&quot;reference&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>&quot;urn: .....&quot;<br>
+    }</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>このアレルギ情報を記録したときの受診情報（入=
+外区分など）を<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>しているEnc=
+ounterリソースへの参照。Bundleリソースなどで本リソース=
+から参照可能なEncouertリソースが<ruby>同時<span
+  style=3D'display:none'><rt>ドウジ </rt></span></ruby>に存在する場=
+合には、そのリソースの識別URIを参照する。Containedリソ=
+ースが存在する場合には、それを参照する記述（次行の=
+例）。</td>
+ </tr>
+ <tr height=3D180 style=3D'height:135.0pt'>
+  <td height=3D180 class=3Dxl67 width=3D100 style=3D'height:135.0pt;border-t=
+op:none;
   width:75pt'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>contained</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>0..1*</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>Resource</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>Resource(JP_Encounter_OW_eCS_Contained)</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>　</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>　</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>　</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'><ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>2<br>
+    {<br>
+    <span style=3D'mso-spacerun:yes'>  </span>&quot;reference&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>&quot;#encounter203987&quot;<br>
+    }</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>電子カルテシステムで入院時、外来受診時のいず=
+れにおいて本情報が登録されたか記録さている場合には=
+その入院・外来区分をEncounter.class要素に設定し、そのEnco=
+unterリソースをContaine<ruby>dリ<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>ソースとして=
+本リソースに埋め込んで、それを参照すること。<br>
+  =20
+  電子カルテ共有サービスにおける6情報のひとつとして=
+本リソースが記述される場合に、JP_Encounterタイプのリソ=
+ース（Encounter.idの値が&quot;#encounter203987&quot;と仮定）が本=
+リソースのContainedリソースとして埋め込み記述されてい=
+る場合に、そのcontainedリソースのid値(Encounter.id)を記述す=
+る例。</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>contained</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>0..1*</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>Resource</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>Resource(JP_Practitioner_eCS_Contained)</td>
+ <tr height=3D200 style=3D'height:150.0pt'>
+  <td height=3D200 class=3Dxl67 width=3D100 style=3D'height:150.0pt;border-t=
+op:none;
+  width:75pt'>(onset)</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>　</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>（dateTime、Age、Period、Range、string）のいずれかの型=
+をとる。</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>このアレルギー・不耐性状態が同定された時期。=
+<ruby>患者<span
+  style=3D'display:none'><rt>カンジャ </rt></span></ruby>に<ruby>反応=
+<span
+  style=3D'display:none'><rt>ハンノウ </rt></span></ruby>が<ruby>出現=
+<span
+  style=3D'display:none'><rt>シュツゲン </rt></span></ruby>した<ruby>=
+時期<span
+  style=3D'display:none'><rt>ジキ </rt></span></ruby>、あるいはなん=
+らかのエビデンスによりこの<ruby>反応<span
+  style=3D'display:none'><rt>ハンノウ </rt></span></ruby>が<ruby>患者=
+<span
+  style=3D'display:none'><rt>カンジャ </rt></span></ruby>にあると<ru=
+by>確認<span
+  style=3D'display:none'><rt>カクニン </rt></span></ruby>できた<ruby>=
+時期<span
+  style=3D'display:none'><rt>ジキ </rt></span></ruby>を<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する。<ruby>=
+記録<span
+  style=3D'display:none'><rt>キロク </rt></span></ruby>を<ruby>登録<sp=
+an
+  style=3D'display:none'><rt>トウロク </rt></span></ruby>した<ruby>日=
+時<span
+  style=3D'display:none'><rt>ニチジ </rt></span></ruby>は、<ruby>別途=
+<span
+  style=3D'display:none'><rt>ベット </rt></span></ruby>recordedDateに<ru=
+by>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する。<ruby>=
+記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby><ruby>方法<sp=
+an
+  style=3D'display:none'><rt>ホウホウ </rt></span></ruby>として、1=
+時点の<ruby>日時<span
+  style=3D'display:none'><rt>ニチジ </rt></span></ruby>、<ruby>患者<sp=
+an
+  style=3D'display:none'><rt>カンジャ </rt></span></ruby>の<ruby>年齢=
+<span
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby>（<ruby>曖昧=
+<span
+  style=3D'display:none'><rt>アイマイ </rt></span></ruby>な<ruby>年齢=
+<span
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby><ruby>時期<sp=
+an
+  style=3D'display:none'><rt>ジキ </rt></span></ruby>の<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>も<ruby>可能=
+<span
+  style=3D'display:none'><rt>カノウ </rt></span></ruby>）、<ruby>開始=
+<span
+  style=3D'display:none'><rt>カイシ </rt></span></ruby><ruby>時期<span
+  style=3D'display:none'><rt>ジキ </rt></span></ruby>と<ruby>終了<span
+  style=3D'display:none'><rt>シュウリョウ </rt></span></ruby><ruby>時=
+期<span
+  style=3D'display:none'><rt>ジキ </rt></span></ruby>による<ruby>期間=
+<span
+  style=3D'display:none'><rt>キカン </rt></span></ruby>、<ruby>年齢<sp=
+an
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby>の<ruby>区間=
+<span
+  style=3D'display:none'><rt>クカン </rt></span></ruby>、（なんらか=
+の<ruby>出来事<span
+  style=3D'display:none'><rt>デキゴト </rt></span></ruby>を<ruby>引用=
+<span
+  style=3D'display:none'><rt>インヨウ </rt></span></ruby>して<ruby>記=
+述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>するような=
+）<ruby>文字列<span
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby>で<ruby>時期=
+<span
+  style=3D'display:none'><rt>ジキ </rt></span></ruby>を<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>、の5通り=
+のいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRang=
+e、onsetString）からひとつの<ruby>記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby><ruby>方法<sp=
+an
+  style=3D'display:none'><rt>ホウホウ </rt></span></ruby>を選択して=
+、それにより記述する。複数を選択はできない。onset要=
+素は記述しないで、直接onsetDateTime要素などonsetXXXXの<ruby>=
+要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>により記述す=
+る。</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>identifier</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>Identifier</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>onsetDateTime</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetDateTime</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>2018<br>
+    1973-06<br>
+    1905-08-23<br>
+    2015-02-07T13:28:17+09:00</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>一<span
+  style=3D'display:none'><rt>イチジテン </rt></span></ruby><ruby>時点=
+<span
+  style=3D'display:none'><rt>ジテン </rt></span></ruby>の<ruby>記述<sp=
+an
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby><ruby>方式<sp=
+an
+  style=3D'display:none'><rt>ホウシキ </rt></span></ruby>：<br>
+    日付または日時。年や年月だけでもよい。例：2018, 197=
+3-06, 1905-08-23,
+  2015-02-07T13:28:17+09:00。<br>
+    時刻に24:00 の使用はできない。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=54 class=xl63 width=100 style='height:40.0pt;border-top:
-  none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>type</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td rowspan=2 class=xl63 width=251 style='border-top:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://jpfhir.jp/fhir</td>
-  <td rowspan=2 class=xl63 width=563 style='border-top:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>onsetAge</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetAge</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Age</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>50<ruby>歳<span
+  style=3D'display:none'><rt>サイ </rt></span></ruby>の<ruby>例<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>、50<ruby>歳<span
+  style=3D'display:none'><rt>サイ </rt></span></ruby><ruby>以上<span
+  style=3D'display:none'><rt>イジョウ </rt></span></ruby>の<ruby>例<sp=
+an
+  style=3D'display:none'><rt>レイ </rt></span></ruby>を<ruby>以下<span
+  style=3D'display:none'><rt>イカ </rt></span></ruby>に<ruby>示<span
+  style=3D'display:none'><rt>シメス </rt></span></ruby>す。</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>年齢や<ruby>年齢<span
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby>を<ruby>基準=
+<span
+  style=3D'display:none'><rt>キジュン </rt></span></ruby>にして<ruby>=
+記述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する<ruby>方=
+式<span
+  style=3D'display:none'><rt>ホウシキ トクテイ ネンレイ チ イ=
+カ シヨウ </rt></span></ruby>：<br>
+    患者の申告による、状態が出現し始めた年齢。</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/core/IdSystem/resourceInstance-identifier”</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetAge</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>value</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetAge.value</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>decimal</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;50&quot;</td>
+  <td class=3Dxl80 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>年齢の値。月齢や週齢なども可能。</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>system</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://terminology.hl7.org/CodeSystem/v2-0203”</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl67 width=3D100 style=3D'height:75.0pt;border-to=
+p:none;
+  width:75pt'>onsetAge</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>comparator</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetAge.comparator</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;&gt;=3D&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>valueの<ruby>値<span
+  style=3D'display:none'><rt>アタイ </rt></span></ruby>と等しい<ruby>=
+年齢<span
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby>を<ruby>表現=
+<span
+  style=3D'display:none'><rt>ヒョウゲン </rt></span></ruby>したい場=
+合には、=3D は不要でこの<ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>は<ruby>出現<sp=
+an
+  style=3D'display:none'><rt>シュツゲン </rt></span></ruby>しない。=
+<br>
+    そうでない指定をしたい場合には、&lt; 、 &lt;=3D、 &gt;=
+= 、 &gt;　のいずれか。<br>
+    要素valueの値の解釈方法。例では、「50歳以上で」と=
+記述したい場合には、&gt;=3D を記述する。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=3 height=133 class=xl63 width=100 style='height:100.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>value</td>
-  <td rowspan=3 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td rowspan=3 class=xl63 width=251 style='border-top:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 align=left width=404 style='border-top:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“ACSN”,”PLAC”,”FILL”
-  のいずれか</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>“ACSN”:特定の1つのリソースを常に確実に指示可能なID</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetAge</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>unit</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetAge.unit</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;歳&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位表現。<ruby>文字列<span
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby>で<ruby>単位=
+<span
+  style=3D'display:none'><rt>タンイ </rt></span></ruby><ruby>文字列<sp=
+an
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby>を<ruby>記述=
+<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する。</td>
  </tr>
- <tr height=53 style='height:40.0pt'>
-  <td height=53 class=xl63 align=left width=563 style='height:40.0pt;
-  border-top:none;border-left:none;width:422pt'>“PLAC”:オーダ依頼時の番号。一括処理時に指定可能な複数のリソースを指定するID</td>
- </tr>
- <tr height=53 style='height:40.0pt'>
-  <td height=53 class=xl63 align=left width=563 style='height:40.0pt;
-  border-top:none;border-left:none;width:422pt'>“FILL”:報告番号、実施番号。一括処理時に指定可能な複数のリソースを指定するID</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=54 class=xl63 width=100 style='height:40.0pt;border-top:
-  none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>system</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td rowspan=2 class=xl63 width=251 style='border-top:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://jpfhir.jp/fhir</td>
-  <td rowspan=2 class=xl63 width=563 style='border-top:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/core/IdSystem/resourceInstance-identifier”</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>value</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“1311234567-2020-00123456”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>アレルギー情報IDの文字列。値は例示。</td>
- </tr>
- <tr height=107 style='height:80.0pt;box-sizing: border-box'>
-  <td height=107 class=xl63 align=left width=100 style='height:80.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>&lt;tr
-  bgcolor=&quot;lightYellow&quot;&gt;</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>identifier</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>0..*</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>Identifier</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=54 class=xl63 width=100 style='height:40.0pt;border-top:
-  none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>type</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td rowspan=2 class=xl63 width=251 style='border-top:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://jpfhir.jp/fhir</td>
-  <td rowspan=2 class=xl63 width=563 style='border-top:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/core/IdSystem/resourceInstance-identifier”</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=54 class=xl63 width=100 style='height:40.0pt;border-top:
-  none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>system</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td rowspan=2 class=xl63 width=251 style='border-top:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://jpfhir.jp/fhir</td>
-  <td rowspan=2 class=xl63 width=563 style='border-top:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>/core/IdSystem/resourceInstance-identifier”</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>value</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“1311234567-2020-00123456”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>アレルギー情報IDの文字列。値は例示。</td>
- </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>clinicalStatus</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td rowspan=2 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>CodeableConcept</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical”</td>
-  <td rowspan=2 class=xl63 align=left width=563 style='border-top:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>臨床的状態のステータス。コードで記述する場合にはsyetem値は固定値。clinicalStatus.text
-  のみで記述することもできる。。active | inactive | resolved現存、非現存、解消</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“active”</td>
- </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td rowspan=2 height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>verificationStatus</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=2 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td rowspan=2 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>CodeableConcept</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://terminology.hl7.org/CodeSystem/allergyintolerance-verification”</td>
-  <td rowspan=2 class=xl63 align=left width=563 style='border-top:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コードで記述する場合にはsystem値は固定値。verificationStatus.text
-  のみで記述することもできる。。unconfirmed | confirmed | refuted |
-  entered-in-error未確認、確認ずみ、否定、エラー</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“confirmed”</td>
- </tr>
- <tr height=107 style='height:80.0pt;box-sizing: border-box'>
-  <td height=107 class=xl63 align=left width=100 style='height:80.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>type</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“allergy”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>副反応の生理的なメカニズムの種類（アレルギーによるものか不耐性によるものかどうか）。記述する場合は、コード表：”http://hl7.org/fhir/allergy-intolerance-type”allergy
-  | intoleranceアレルギー反応、不耐性反応</td>
- </tr>
- <tr height=107 style='height:80.0pt;box-sizing: border-box'>
-  <td height=107 class=xl63 align=left width=100 style='height:80.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>category</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1*</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“food”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>特定された原因物質のカテゴリ。記述を可能な限り推奨する。コード表：”http://hl7.org/fhir/allergy-intolerance-category”food
-  | medication | environment | biologic食物、医薬品、環境、生物学的</td>
- </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>cliticality</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..*</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“high”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>潜在的な臨床的危険性、致命度。記述する場合は、コード表：”http://hl7.org/fhir/allergy-intolerance-criticality”low
-  | high | unable-to-assess低、高、評価不能</td>
- </tr>
- <tr height=107 style='height:80.0pt;box-sizing: border-box'>
-  <td rowspan=4 height=347 class=xl63 align=left width=100 style='height:260.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td rowspan=4 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>CodeableConcept</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>http://jpfhir.jp/fhir</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>アレルギー・不耐反応の対象物の情報。jp-coreで定めるallergy-substanceコード表のコードを推奨する。コード化できない場合には、code.text
-  のみで記述する。code.textは必須である。</td>
- </tr>
- <tr height=53 style='height:40.0pt'>
-  <td height=53 class=xl63 align=left width=404 style='height:40.0pt;
-  border-top:none;border-left:none;width:303pt'>/core/CodeSystem/JP_JfagyFoodAllergen_CS
-  “J7F7311990”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt'>使用するコード表（推奨）：</td>
- </tr>
- <tr height=160 style='height:120.0pt'>
-  <td height=160 class=xl63 align=left width=404 style='height:120.0pt;
-  border-top:none;border-left:none;width:303pt'>“牛乳・乳製品（詳細不明）”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt'>http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS
-  　（食物アレルギー）http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　（医薬品アレルギー）http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS　（その他のアレルギー）</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 width=404 style='height:20.0pt;border-top:none;
-  border-left:none;width:303pt'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt'>のいずれかを使用できる。</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 align=left width=100 style='height:20.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>patient</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Reference(Patient)</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“urn: …..”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>対象となる患者リソースへの参照。</td>
- </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>encounter</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Reference
-  (Encounter)</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“urn: …..”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>このアレルギ情報が確認され記録された受診情報（入院詳細情報または外来受診情報）への参照.Encounterリソースのインスタンスを参照することでよい。</td>
- </tr>
- <tr height=133 style='height:100.0pt;box-sizing: border-box'>
-  <td height=133 class=xl63 align=left width=100 style='height:100.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>(onset)</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>このアレルギー・不耐性状態が同定された時期。5通りのいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRange、onsetString）ひとつを選択して、それにより記述する。複数を選択はできない。onset要素は記述しないで、直接onsetDateTime要素のレベルを記述する。</td>
- </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td height=80 class=xl63 width=100 style='height:60.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>onsetDateTime</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>dateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>日付または日時。年や年月だけでもよい。例：2018,
-  1973-06, 1905-08-23, 2015-02-07T13:28:17+09:00。時刻に24:00 の使用はできない。</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>onseAge</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Age</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>年齢。患者の申告による、状態が出現し始めた年齢。</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>value</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>decimal</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“50”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>年齢の値。</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=3 height=133 class=xl63 width=100 style='height:100.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>comparator</td>
-  <td rowspan=3 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=3 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td rowspan=3 class=xl63 align=left width=404 style='border-top:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“&gt;=”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>要素valueの値の解釈方法。</td>
- </tr>
- <tr height=53 style='height:40.0pt'>
-  <td height=53 class=xl63 align=left width=563 style='height:40.0pt;
-  border-top:none;border-left:none;width:422pt'>等しい場合には、=
-  は不要。そうでない指定をしたい場合には、&lt; 、 &lt;=、 &gt;= 、 &gt;　のいずれか。</td>
- </tr>
- <tr height=53 style='height:40.0pt'>
-  <td height=53 class=xl63 align=left width=563 style='height:40.0pt;
-  border-top:none;border-left:none;width:422pt'>例では、「50歳以上で」と記述したい場合には、&gt;=
-  を記述する。</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>unit</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“歳”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位表現</td>
- </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>system</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>uri</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://unitsofmeasure.org”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位体系
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetAge</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetAge.system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://unitsofmeasure.org&quot;</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位体系
   UCUMコード体系。固定値。</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“a”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位体系における単位コード。コードと意味min：minutesh：hoursd：dayswk：weeksmo：monthsa：years</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>onsetAge</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetAge.code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;a&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位体系における単位コード。min：minutes
+  、h：hours　、d：days 、wk：weeks 、mo：months 、a：years</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>onsetPeriod</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Preiod</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>期間。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetPeriod</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetPeriod</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Preiod</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>期間。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>start</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>DateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>期間の開始日時</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetPeriod</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>start</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetPeriod.start</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>期間の開始日時</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>end</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>DateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>期間の終了日時</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetPeriod</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>end</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetPeriod.end</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>期間の終了日時</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>onsetRange</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Range</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>曖昧な時期を最小値と最大値とで記述する。以下の記述例は50歳台。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Range</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>曖昧な時期を最小値と最大値とで記述する。以下=
+の記述例は50歳台。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>low</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>low</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.low</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>SimpleQuantity</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>下限<span
+  style=3D'display:none'><rt>カゲン </rt></span></ruby><ruby>値<span
+  style=3D'display:none'><rt>チ </rt></span></ruby><ruby>表現<span style=
+=3D'display:
+  none'><rt>ヒョウゲン </rt></span></ruby></td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>value</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>decimal</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“50”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>年齢の値。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>low</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>value</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.low.value</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>decimal</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;50&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>年齢の値。<ruby>月齢<span
+  style=3D'display:none'><rt>ゲツレイ </rt></span></ruby>や週<ruby>齢=
+<span
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby>なども<ruby>=
+可能<span
+  style=3D'display:none'><rt>カノウ </rt></span></ruby></td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>unit</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“歳”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位表現</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>low</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>unit</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.low.unit</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;歳&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位表現</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>system</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>uri</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://unitsofmeasure.org”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位体系
-  UCUMコード体系。固定値。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>low</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.low.system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://unitsofmeasure.org&quot;</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位体系
+  UCUMコード体系。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“a”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位体系における単位コード。コードと意味a：years</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>low</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.low.code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;a&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位体系における単位コード。min：minutes
+  、h：hours　、d：days 、wk：weeks 、mo：months 、a：years</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>high</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>high</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.high</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>SimpleQuantity</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>　</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>value</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>decimal</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“59”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>年齢の値。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>high</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>value</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.high.value</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>decimal</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;59&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>年齢の値。<ruby>月齢<span
+  style=3D'display:none'><rt>ゲツレイ </rt></span></ruby>や週<ruby>齢=
+<span
+  style=3D'display:none'><rt>ネンレイ </rt></span></ruby>なども<ruby>=
+可能<span
+  style=3D'display:none'><rt>カノウ </rt></span></ruby></td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>unit</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“歳”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位表現</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>high</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>unit</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.high.unit</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;歳&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位表現</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>system</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>uri</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“http://unitsofmeasure.org”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位体系
-  UCUMコード体系。固定値。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>high</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.high.system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>uri</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>&quot;http://unitsofmeasure.org&quot;</td>
+  <td class=3Dxl75 style=3D'border-top:none;border-left:none'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位体系
+  UCUMコード体系。</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“a”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>単位体系における単位コード。コードと意味a：years</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>onsetRange</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>high</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetRange.high.code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;a&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>単位体系における単位コード。min：minutes
+  、h：hours　、d：days 、wk：weeks 、mo：months 、a：years</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>onsetString</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“50歳台”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>文字列表現</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>onsetString</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>onsetString</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;70歳台&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>｀</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 align=left width=100 style='height:40.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>recordedDate</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>dateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>この状態が最初に記録された日時。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>recordedDate</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>recordedDate</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>この状態が最初に記録された日時</td>
  </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>recorder</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Reference(Practitioner
-  | PractitionerRole | Patient | RelatedPerson)</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>この状態を記録した人情報への参照。</td>
+ <tr height=3D100 style=3D'height:75.0pt'>
+  <td height=3D100 class=3Dxl67 width=3D100 style=3D'height:75.0pt;border-to=
+p:none;
+  width:75pt'>recorder</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>recorder</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Reference(JP_Practitioner|
+  JP_Practitioner_eCS_Contained)</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;reference&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>&quot;#practitioner20394&quot;<br>
+    }</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>この状態を記録した人情報への参照。<ruby>医療者=
+<span
+  style=3D'display:none'><rt>イリョウシャ </rt></span></ruby>のContai=
+nedリソースへの<ruby>参照<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>を<ruby>記=
+述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する。また=
+はdisplay要素に文字列を記述する。</td>
  </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td height=80 class=xl63 align=left width=100 style='height:60.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>asserter</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>Reference(Practitioner
-  | PractitionerRole | Patient | RelatedPerson)</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>この状態があると確認（主張）した人情報への参照。</td>
+ <tr height=3D220 style=3D'height:165.0pt'>
+  <td height=3D220 class=3Dxl67 width=3D100 style=3D'height:165.0pt;border-t=
+op:none;
+  width:75pt'>asserter</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>asserter</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl73 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Reference(JP_Patient|
+  JP_Patient_eCS_Contained| JP_Practitioner| JP_Practitioner_eCS_Contained
+  |RelatedPerson|)</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>{<br>
+    <span style=3D'mso-spacerun:yes'>   </span>&quot;display&quot;:<span
+  style=3D'mso-spacerun:yes'>  </span>&quot;<ruby>本人<span style=3D'disp=
+lay:none'><rt>ホンニン
+  </rt></span></ruby>の<ruby>母<span style=3D'display:none'><rt>ハハ </r=
+t></span></ruby>&quot;<br>
+    }</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>この状態があると確認（主張）した人情報への参=
+照。<ruby>医療者<span
+  style=3D'display:none'><rt>イリョウシャ </rt></span></ruby>、<ruby>=
+患者<span
+  style=3D'display:none'><rt>カンジャ </rt></span></ruby><ruby>本人<sp=
+an
+  style=3D'display:none'><rt>ホンニン </rt></span></ruby>の<ruby>場合=
+<span
+  style=3D'display:none'><rt>バアイ </rt></span></ruby>にはそれぞれ=
+のContainedリソースへの<ruby>参照<span
+  style=3D'display:none'><rt>サンショウ </rt></span></ruby>を<ruby>記=
+述<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する。また=
+はdisplay<ruby>要素<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>に<ruby>文字列=
+<span
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby>を<ruby>記述=
+<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>する。</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 align=left width=100 style='height:40.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>lastOccurrence</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>dateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>最後（直近）に知られている発生日時</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>lastOccurrence</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>lastOccurrence</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>最後（直近）に知られている発生日時</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 align=left width=100 style='height:40.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>note</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..*</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>状態に関する追加的な情報で他の要素で記述できないような情報。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>note[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>note[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Annotation</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>状態に関する追加的な情報で他の要素で記述でき=
+ないような情報</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>author</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>note[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>authorString</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>note[+].authorString</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;看護担当者&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>記載者氏名などの文字列。必ずしも氏名でなくて=
+もよい。</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>authorString</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“看護担当者”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>note[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>time</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>note[=3D].time</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>この追加的な情報が作成された日時</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>time</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>dateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>この追加的な情報が作成された日時。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>note[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>note[=3D].text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>1..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>1..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>markdown</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>追加的な情報の内容。markdown形式のテキストが使=
+用できる。データとして1Mバイト以内であること。</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>text</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>markdown</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>BackboneElement</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>対象物質に暴露したことに関連して<ruby>派生<span
+  style=3D'display:none'><rt>ハセイ </rt></span></ruby>した有害反応=
+の<ruby>履歴<span
+  style=3D'display:none'><rt>リレキ </rt></span></ruby><ruby>事実<span
+  style=3D'display:none'><rt>ジジツ </rt></span></ruby>に<ruby>関<span
+  style=3D'display:none'><rt>カンスル </rt></span></ruby>する情報。=
+<ruby>複数<span
+  style=3D'display:none'><rt>フクスウ </rt></span></ruby><ruby>記述<sp=
+an
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>できる。</t=
+d>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 align=left width=100 style='height:20.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>reaction</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..*</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>BackboneElement</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>対象物質に暴露したことに関連した有害反応の情報</td>
+ <tr height=3D240 style=3D'height:180.0pt'>
+  <td height=3D240 class=3Dxl67 width=3D100 style=3D'height:180.0pt;border-t=
+op:none;
+  width:75pt'>reaction[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>substance</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[+].substance</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>CodeableConcept</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>有害反応の原因と考えられる物質（または医薬品=
+）。<br>
+    <br>
+  =20
+  注：特定の有害反応を誘発する物質は、原因として特=
+定された物質と異なっていてもよいが、整合がとれてい=
+なければならない。たとえば、より具体的な物質（ブラ=
+ンド薬など）や、特定された物質を含む複合製品の場合=
+がある。
+  AllergyIntolerance.codeのみを処理し、AllergyIntolerance.reaction.su=
+bstanceを無視しても、臨床的に安全でなければならない。
+  受信システムがAllergyIntolerance.reaction.substanceがAllergyIntole=
+rance.codeのセマンティックスコープ内に（前者が後者の意=
+味的な下位概念にあること）を確認できない場合、受信=
+システムはAllergyIntolerance.reaction.substanceを無視する必要が=
+ある。</td>
  </tr>
- <tr height=80 style='height:60.0pt;box-sizing: border-box'>
-  <td rowspan=4 height=481 class=xl63 width=100 style='height:360.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>substance</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td rowspan=4 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>CodeableConcept</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>http://jpfhir.jp/fhir</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>有害反応イベントの原因であると考えられる特定の物質（または医薬品）。jp-coreで定めるallergy-substanceコード表のコードの使用で表現できる場合にはその使用を推奨する。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>substance</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].substance.coding[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>有害<span
+  style=3D'display:none'><rt>ユウガイ </rt></span></ruby><ruby>反応<sp=
+an
+  style=3D'display:none'><rt>ハンノウ </rt></span></ruby>の<ruby>原因=
+<span
+  style=3D'display:none'><rt>ゲンイン </rt></span></ruby><ruby>物質<sp=
+an
+  style=3D'display:none'><rt>ブッシツ </rt></span></ruby>のコード<ru=
+by>化<span
+  style=3D'display:none'><rt>カ </rt></span></ruby><ruby>情報<span style=
+=3D'display:
+  none'><rt>ジョウホウ </rt></span></ruby></td>
  </tr>
- <tr height=347 style='height:260.0pt'>
-  <td height=347 class=xl63 align=left width=404 style='height:260.0pt;
-  border-top:none;border-left:none;width:303pt'>/core/CodeSystem/JP_JfagyFoodAllergen_CS</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt'>注：特定の反応の物質は、リスクの原因として特定された物質とは異なる場合があるが、それと一貫性がある必要がある。例えば、「reaction.substance」の物質は、<font
-  class="font5">AllergyIntolerance</font><font class="font6">&nbsp;.code要素と比べて、より具体的な物質（例えば、ブランド薬）または特定された物質を含む複合製品であり得る。&nbsp;</font><font
-  class="font5">AllergyIntolerance</font><font class="font6">&nbsp;.code要素の記述（アレルギー・不耐反応の対象物の情報要素）のみを処理して「reaction.substance」の情報を無視しても、臨床的に安全でなければならない。このリソースを受信して処理するシステムが、もし「reaction.substance」と</font><font
-  class="font5">AllergyIntolerance</font><font class="font6">&nbsp;.code要素の記述物質との意味的な包含関係を処理できないのであれば、システムはこの「reaction.substance」要素を無視しなければならない。</font></td>
+ <tr height=3D180 style=3D'height:135.0pt'>
+  <td height=3D180 class=3Dxl67 width=3D100 style=3D'height:135.0pt;border-t=
+op:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>substance</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].substance.coding[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>ur</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS<span
+  style=3D'mso-spacerun:yes'> </span></td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>jpfhir.jp<ruby>で<span
+  style=3D'display:none'><rt>レイ </rt></span></ruby>のアレルゲンコ=
+ード表のコードを使用できる。<br>
+    使用するコード表（例）：ValueSet http://jpfhir.jp/fhir/core/=
+ValueSet/JP_AllergyInto<ruby>le<span
+  style=3D'display:none'><rt>ヨウソ </rt></span></ruby>r<ruby>an<span
+  style=3D'display:none'><rt>タイオウ </rt></span></ruby>ce_VS<br>
+    CodeSystem
+  は、category要素に対応して、http://jpfhir.jp/fhir/core/CodeSyste=
+m/JP_JfagyFoodAllergen_CS<br>
+  =20
+  http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen=
+_CS<br>
+    http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　=
+の3つのいずれかから選択することができる。</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“J7F7311154”</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt'>　</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>substance</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].substance.coding[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;J7F7311154&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コード</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“モッツァレラチーズ”</td>
-  <td class=xl63 width=563 style='border-top:none;border-left:none;width:422pt'>　</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>substance</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>display</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].substance.coding[=3D].display</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;モッツァレラチーズ&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>コードに<ruby>対応<span
+  style=3D'display:none'><rt>タイオウ </rt></span></ruby>する<ruby>表=
+示<span
+  style=3D'display:none'><rt>ヒョウジ </rt></span></ruby><ruby>名<span
+  style=3D'display:none'><rt>メイ </rt></span></ruby></td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=4 height=108 class=xl63 width=100 style='height:80.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>manifestation</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..*</td>
-  <td rowspan=4 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>CodeableConcept</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“urn:oid:1.2.392.200119.4.101.6”</td>
-  <td rowspan=4 class=xl63 align=left width=563 style='border-top:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>アレルギー反応に関連する症状や所見。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。”BOEF”は、MEDIS標準病名マスター病名交換用コードで”持続腹痛”のコード。”持続腹痛”はそのテキスト記述の例。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>substance</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].substance.text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl77 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;モッツァレラチーズ&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>有害反<span
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby>応の原<ruby>=
+因物<span
+  style=3D'display:none'><rt>キジュツ </rt></span></ruby>質の文字列=
+による記述</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“B0EF”</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>manifestation[*]<span
+  style=3D'mso-spacerun:yes'> </span></td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].manifestation[*]<span
+  style=3D'mso-spacerun:yes'> </span></td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>1..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>1..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>CodeableConcept</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>アレルギー反応に関連する症状や所見</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“持続腹痛”</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>manifestation[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].manifestation[+].coding[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>アレルギー反応に関連する症状や所見のコード化=
+情報</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“長く続く腹部の痛み”</td>
+ <tr height=3D60 style=3D'height:45.0pt'>
+  <td height=3D60 class=3Dxl67 width=3D100 style=3D'height:45.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>manifestation<span
+  style=3D'mso-spacerun:yes'> </span></td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].manifestation
+  .coding[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>ur</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;urn:oid:1.2.392.200119.4.101.6&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>system値はMEDIS標準病名マスター病名交換用コード=
+を使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マ=
+スター病名交換用コードで&quot;持続腹痛&quot;のコード</td=
+>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>description</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“チーズを食べて1時間後から激しい腹痛と下痢がながく続いた。”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>イベントの全体的な記述。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>manifestation
+  [=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].manifestation
+  [=3D].coding[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;B0EF&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>&quot;持続腹痛&quot;はその<ruby>表示<span
+  style=3D'display:none'><rt>ヒョウジメ </rt></span></ruby><ruby>名<sp=
+an
+  style=3D'display:none'><rt>メイ </rt></span></ruby>の例</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>onset</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>dateTime</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“2010-01-02”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>関連する症状や所見が見られた日時。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>manifestation[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>display</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].manifestation[=3D].coding[=3D].display</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;持続腹痛&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>　</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>severity</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>code</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“severe”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>反応の激しさ程度。コード表：http://hl7.org/fhir/reaction-event-severitymild
-  | moderate | severe軽度、中等度、強度</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>manifestation[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].manifestation[=3D].text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;長く続く腹部の痛み&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>アレ<span
+  style=3D'display:none'><rt>ショウジョウ </rt></span></ruby>ルギー=
+反応<ruby>に関<span
+  style=3D'display:none'><rt>ヒョウゲン </rt></span></ruby>連する症=
+状や所見症状のテキスト表現</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td rowspan=4 height=108 class=xl63 width=100 style='height:80.0pt;
-  border-top:none;width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>exposureRoute</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 width=100 style='border-top:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td rowspan=4 class=xl63 align=left width=100 style='border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td rowspan=4 class=xl63 align=left width=251 style='border-top:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>CodeableConcept</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“urn:oid:1.2.392.200250.2.2.20.40”</td>
-  <td rowspan=4 class=xl63 align=left width=563 style='border-top:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>物質の摂取経路の情報。JAMI標準用法の投与経路コード表（JAMI
-  用法コード表基本用法2桁コードに相当）を使用する。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>description</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>0..1</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;チーズを食べて1時間後から激しい腹痛と下=
+痢がながく続いた。&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>イベントの全体的な記述</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“10”</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>onset</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].onset</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;2010-01-02&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>関連する症状や所見が見られた日時</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“内服経口”</td>
+ <tr height=3D80 style=3D'height:60.0pt'>
+  <td height=3D80 class=3Dxl67 width=3D100 style=3D'height:60.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>severity</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].severity</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;severe&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>反応の激しさ程度。mild
+  | moderate | severe (of event as a whole) （軽度 | 中度 | 重度）=
+　ValueSet
+  http://hl7.org/fhir/ValueSet/reaction-event-severityから選択する。(=
+コード表：http://hl7.org/fhir/reaction-event-severity)</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl63 align=left width=404 style='height:20.0pt;
-  border-top:none;border-left:none;width:303pt'>“経口摂取”</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>exposureRoute</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].exposureRoute</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>CodeableConcept</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>物質の摂取経路の情報</td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>note</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..*</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>他のフィールドで記述できないイベントに関するテキスト記述</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>exposureRoute</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].exposureRoute.coding[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Coding</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>物質の摂取経路のコード化情報</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>author</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 width=251 style='border-top:none;border-left:none;width:188pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>記載者の情報</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>exposureRoute</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>system</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].exposureRoute.coding[+].system</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>ur</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;urn:oid:1.2.392.200250.2.2.20.40&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>JAMI標準用法の投与経路コード表（JAMI
+  用法コード表基本用法2桁コードに相当）を使用する。<=
+/td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>authorString</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>string</td>
-  <td class=xl63 align=left width=404 style='border-top:none;border-left:none;
-  width:303pt;box-sizing: border-box;overflow-wrap: break-word'>“患者の母親”</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>exposureRoute</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].exposureRoute.coding[=3D].code</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>code</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;10&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>摂取<span
+  style=3D'display:none'><rt>セッシュ </rt></span></ruby><ruby>経路<sp=
+an
+  style=3D'display:none'><rt>ケイロ </rt></span></ruby>コード</td>
  </tr>
- <tr height=27 style='height:20.0pt;box-sizing: border-box'>
-  <td height=27 class=xl63 width=100 style='height:20.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>time</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>0..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>dateTime</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>この追加的な情報が作成された日時。</td>
+ <tr height=3D40 style=3D'height:30.0pt'>
+  <td height=3D40 class=3Dxl67 width=3D100 style=3D'height:30.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>exposureRoute</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>coding[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>display</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].exposureRoute.coding[=3D].display</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;内服経口&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>摂取経路<span
+  style=3D'display:none'><rt>セッシュケイロ </rt></span></ruby>コー=
+ドに<ruby>対応<span
+  style=3D'display:none'><rt>タイオウ </rt></span></ruby>する<ruby>表=
+示<span
+  style=3D'display:none'><rt>ヒョウジ </rt></span></ruby><ruby>名<span
+  style=3D'display:none'><rt>メイ </rt></span></ruby></td>
  </tr>
- <tr height=53 style='height:40.0pt;box-sizing: border-box'>
-  <td height=53 class=xl63 width=100 style='height:40.0pt;border-top:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>text</td>
-  <td class=xl63 width=100 style='border-top:none;border-left:none;width:75pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=100 style='border-top:none;border-left:none;
-  width:75pt;box-sizing: border-box;overflow-wrap: break-word'>1..1</td>
-  <td class=xl63 align=left width=251 style='border-top:none;border-left:none;
-  width:188pt;box-sizing: border-box;overflow-wrap: break-word'>markdown</td>
-  <td class=xl63 width=404 style='border-top:none;border-left:none;width:303pt;
-  box-sizing: border-box;overflow-wrap: break-word'>　</td>
-  <td class=xl63 align=left width=563 style='border-top:none;border-left:none;
-  width:422pt;box-sizing: border-box;overflow-wrap: break-word'>追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。</td>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>exposureRoute</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].exposureRoute.text</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl81 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;経口摂取&quot;</td>
+  <td class=3Dxl82 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'><ruby>接種<span
+  style=3D'display:none'><rt>セッシュ </rt></span></ruby><ruby>経路<sp=
+an
+  style=3D'display:none'><rt>ケイロ </rt></span></ruby>の<ruby>文字列=
+<span
+  style=3D'display:none'><rt>モジレツ </rt></span></ruby><ruby>表現<sp=
+an
+  style=3D'display:none'><rt>ヒョウゲン </rt></span></ruby></td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>note[*]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].note[*]</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..*</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..*</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..*</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>Annotation</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>他のフィールドで記述できないイベントに関する=
+テキスト記述</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>note[+]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>authorString</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].note[+].authorString</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>string</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>&quot;患者の母親&quot;</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>記載者氏名などの文字列。必ずしも氏名でなくて=
+もよい。</td>
+ </tr>
+ <tr height=3D27 style=3D'height:20.0pt'>
+  <td height=3D27 class=3Dxl67 width=3D100 style=3D'height:20.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>note[=3D]</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>time</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl68 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].note[=3D].time</td>
+  <td class=3Dxl69 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>0..1</td>
+  <td class=3Dxl69 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>0..1</td>
+  <td class=3Dxl69 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>0..1</td>
+  <td class=3Dxl68 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>dateTime</td>
+  <td class=3Dxl68 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl68 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl72 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>この追加的な情報が作成された日時</td>
+ </tr>
+ <tr height=3D41 style=3D'height:31.0pt'>
+  <td height=3D41 class=3Dxl83 width=3D100 style=3D'height:31.0pt;border-top=
+:none;
+  width:75pt'>reaction[=3D]</td>
+  <td class=3Dxl84 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>note[=3D]</td>
+  <td class=3Dxl84 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>text</td>
+  <td class=3Dxl84 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>　</td>
+  <td class=3Dxl84 width=3D232 style=3D'border-top:none;border-left:none;wid=
+th:174pt'>reaction[=3D].note[=3D].text</td>
+  <td class=3Dxl85 width=3D53 style=3D'border-top:none;border-left:none;widt=
+h:40pt'>1..1</td>
+  <td class=3Dxl85 width=3D57 style=3D'border-top:none;border-left:none;widt=
+h:43pt'>1..1</td>
+  <td class=3Dxl85 width=3D52 style=3D'border-top:none;border-left:none;widt=
+h:39pt'>1..1</td>
+  <td class=3Dxl84 width=3D100 style=3D'border-top:none;border-left:none;wid=
+th:75pt'>markdown</td>
+  <td class=3Dxl84 width=3D199 style=3D'border-top:none;border-left:none;wid=
+th:149pt'>　</td>
+  <td class=3Dxl84 width=3D389 style=3D'border-top:none;border-left:none;wid=
+th:292pt'>　</td>
+  <td class=3Dxl86 width=3D437 style=3D'border-top:none;border-left:none;wid=
+th:328pt'>追加的な情報の内容。markdown形式のテキストが使=
+用できる。データとして1Mバイト以内であること。</td>
  </tr>
  <![if supportMisalignedColumns]>
- <tr height=0 style='display:none'>
-  <td width=100 style='width:75pt'></td>
-  <td width=100 style='width:75pt'></td>
-  <td width=100 style='width:75pt'></td>
-  <td width=100 style='width:75pt'></td>
-  <td width=100 style='width:75pt'></td>
-  <td width=251 style='width:188pt'></td>
-  <td width=404 style='width:303pt'></td>
-  <td width=563 style='width:422pt'></td>
+ <tr height=3D0 style=3D'display:none'>
+  <td width=3D100 style=3D'width:75pt'></td>
+  <td width=3D100 style=3D'width:75pt'></td>
+  <td width=3D100 style=3D'width:75pt'></td>
+  <td width=3D100 style=3D'width:75pt'></td>
+  <td width=3D232 style=3D'width:174pt'></td>
+  <td width=3D53 style=3D'width:40pt'></td>
+  <td width=3D57 style=3D'width:43pt'></td>
+  <td width=3D52 style=3D'width:39pt'></td>
+  <td width=3D100 style=3D'width:75pt'></td>
+  <td width=3D199 style=3D'width:149pt'></td>
+  <td width=3D389 style=3D'width:292pt'></td>
+  <td width=3D437 style=3D'width:328pt'></td>
  </tr>
  <![endif]>
 </table>
 
-
-<table>
-<tr><td>要素<br>Lv1</td><td>要素<br>Lv2</td><td>要素<br>Lv3</td><td>要素<br>Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>resourceType</td><td></td><td></td><td></td><td>1..1</td><td>string</td><td>"AllergyIntolerance"</td><td>**AllergyIntolerance**リソースであることを示す。</td></tr>
-
-<tr><td>contained</td><td></td><td></td><td></td><td>1..1*</td><td>Resource</td><td>Resource(JP_Patient_eCS_Contained | JP_Patient)</td><td>診療情報コアサマリーにおける患者情報をコンパクトに格納したPatientリソースを埋め込む。JP_Patient_eCS_Containedプロファイル、またはJP_Patientプロファイルに準拠したリソースであること。</td></tr>
-
-<tr><td></td><td></td><td></td><td></td><td>0..1*</td><td>Resource</td><td>Resource(JP_Encounter_OW_eCS_Contained | JP_Encounter)</td><td>診療情報コアサマリーにおける入院外来区分情報をコンパクトに格納したEncounterリソースを埋め込む。JP_Encounter_OW_eCS_Containedプロファイル、またはJP_Encounterプロファイルに準拠したリソースであること。</td></tr>
-
-<tr><td></td><td></td><td></td><td></td><td>0..1*</td><td>Resource</td><td>Resource(JP_Practitioner_eCS_Contained | JP_Practitioner)</td><td>診療情報コアサマリーにおける登録医療者情報をコンパクトに格納したPractitionerリソースを埋め込む。JP_Practitioner_eCS_Containedプロファイル、またはJP_Practitionerプロファイルに準拠したリソースであること。</td></tr>
-
-<tr><td>clinicalStatus</td><td></td><td></td><td></td><td>0..1</td><td>CodeableConcept</td><td>値</td><td>臨床的状態のステータス。コードで記述する場合にはsyetem値は固定値。clinicalStatus.text のみで記述することもできる。<br>Binding:[AllergyIntoleranceClinicalStatusCodes]  (http://hl7.org/fhir/R4/valueset-allergyintolerance-clinical.html)(:target="_blank") (required)<br>active | inactive | resolved現存、非現存、解消</td></tr>
-
-<tr><td>verificationStatus</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>type</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>category</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>criticality</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-
-<tr><td>code</td><td></td><td></td><td></td><td>1..1</td><td>CodeableConcept</td><td>http://jpfhir.jp/fhir
-/core/CodeSystem/JP_JfagyFoodAllergen_CS <br>"J7F7311990"<br>
-"牛乳・乳製品（詳細不明）"</td><td>アレルギー・不耐反応の対象物の情報。<br>jp-coreで定めるallergy-substanceコード表のコードを推奨する。<br>コード化できない場合には、code.text のみで記述する。code.textは必須である。<br>
-使用するコード表（推奨）：<br>
-http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS 　（食物アレルギー）<br>
-http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　（医薬品アレルギー）<br>
-http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS　（その他のアレルギー）<br>
-のいずれかを使用できる。</td></tr>
-
-<tr><td>patient</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>encounter</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>onsetDateTime</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>onsetString</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>recordedDate</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>recorder</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>asserter</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-<tr><td>note</td><td>要素Lv2</td><td>要素Lv3</td><td>要素Lv4</td><td>多重度</td><td>型</td><td>値</td><td>説明</td></tr>
-
-</table>
-
-
-
-|要素<br>Lv1|要素<br>Lv2|要素<br>Lv3 |要素<br>Lv4 |多重度|型|値|説明||
-|---|---|---|---|---|---|---|---|---|
-<tr class="lightblue">|resourceType||||1..1|string|"AllergyIntolerance" |**AllergyIntolerance**リソースであることを示す ||</tr>
-|meta| |||0..1|Meta| | ||</tr>
-||lastUpdated|||1..1|instant| |最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz (例. 2015-02-07T13:28:17.239+09:00)|
-||profile|||0..*|canonical(StructureDefinition)|"http://jpfhir.jp/fhir<br>/eClinicalSummary<br>/StructureDefinition<br>/JP_AllergyIntolerance_eClinicalSummary"|準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。値は固定。|
-|text| |||0..1|Narrative | |本リソースをテキストで表現したものを入れてもよい。入れる場合には、以降のリソースからシステムにより自動生成されたものに限ること。 |
-||status |||1..1|code|"generated"|固定値。テキスト内容の全てがリソースのコンテンツから生成されたことを示す。 |
-||div|||1..1|xhtml |&lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;xxx&lt;/div&gt;|値は例示。 |
-<tr bgcolor="lightGreen">|contained| |||1..1\*|Resource|Resource(JP_Patient_eCS_Contained)|診療情報コアサマリーにおける患者情報をコンパクトに格納したPatientリソースを埋め込む||</tr>
-<tr bgcolor="lightYellow">|contained| |||0..1\*|Resource|Resource(JP_Encounter_OW_eCS_Contained)|診療情報コアサマリーにおける入院外来情報をコンパクトに格納したEncounterリソースを埋め込む||</tr>
-<tr bgcolor="lightYellow">|contained| |||0..1\*|Resource|Resource(JP_Practitioner_eCS_Contained)|診療情報コアサマリーにおける登録医療者情報をコンパクトに格納したPractitionerリソースを埋め込む||</tr>
-|<tr bgcolor="lightGreen">|identifier| |||1..1|Identifier| |このアレルギー情報に付番された、削除や更新でキーとして指定される目的のID。type.value要素が"ACSN","PLAC","FILL" のいずれかであるidentifierがひとつだけ必須。 ||
-||type |||1..1||"http://jpfhir.jp/fhir<br>/core/IdSystem/resourceInstance-identifier" | |
-|||system||1..1||"http://terminology.hl7.org/CodeSystem/v2-0203" | |
-|||value||1..1||"ACSN","PLAC","FILL" のいずれか|"ACSN":特定の1つのリソースを常に確実に指示可能なID<br>"PLAC":オーダ依頼時の番号。一括処理時に指定可能な複数のリソースを指定するID<br>"FILL":報告番号、実施番号。一括処理時に指定可能な複数のリソースを指定するID |
-||system |||1..1||"http://jpfhir.jp/fhir<br>/core/IdSystem/resourceInstance-identifier" | |
-||value|||1..1||"1311234567-2020-00123456" |アレルギー情報IDの文字列。値は例示。 |
-|<tr bgcolor="lightYellow">|identifier| |||0..\*|Identifier| |このアレルギー情報に付番されたID ||
-||type |||1..1||"http://jpfhir.jp/fhir<br>/core/IdSystem/resourceInstance-identifier" | |
-||system |||1..1||"http://jpfhir.jp/fhir<br>/core/IdSystem/resourceInstance-identifier" | |
-||value|||1..1||"1311234567-2020-00123456" |アレルギー情報IDの文字列。値は例示。 |
-|clinicalStatus| |||0..1|CodeableConcept |"http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"<br>"active"|臨床的状態のステータス。コードで記述する場合にはsyetem値は固定値。clinicalStatus.text のみで記述することもできる。。active \| inactive \| resolved現存、非現存、解消 |
-|verificationStatus| |||0..1|CodeableConcept |"http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"<br>"confirmed" |入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コードで記述する場合にはsystem値は固定値。verificationStatus.text のみで記述することもできる。。unconfirmed \| confirmed \| refuted \| entered-in-error未確認、確認ずみ、否定、エラー |
-|type| |||0..1|code| "allergy" |副反応の生理的なメカニズムの種類（アレルギーによるものか不耐性によるものかどうか）。記述する場合は、コード表："http://hl7.org/fhir/allergy-intolerance-type"allergy \| intoleranceアレルギー反応、不耐性反応|
-|category| |||0..1\*|code|"food" |特定された原因物質のカテゴリ。記述を可能な限り推奨する。コード表："http://hl7.org/fhir/allergy-intolerance-category"food \| medication \| environment \| biologic食物、医薬品、環境、生物学的 |
-|cliticality | |||0..\* |code|"high" |潜在的な臨床的危険性、致命度。記述する場合は、コード表："http://hl7.org/fhir/allergy-intolerance-criticality"low \| high \| unable-to-assess低、高、評価不能 |
-|code| |||1..1|CodeableConcept |http://jpfhir.jp/fhir<br>/core/CodeSystem/JP_JfagyFoodAllergen_CS  "J7F7311990"<br>"牛乳・乳製品（詳細不明）"|アレルギー・不耐反応の対象物の情報。jp-coreで定めるallergy-substanceコード表のコードを推奨する。コード化できない場合には、code.text のみで記述する。code.textは必須である。<br>使用するコード表（推奨）：<br>http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS 　（食物アレルギー）http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　（医薬品アレルギー）http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS　（その他のアレルギー）<br>のいずれかを使用できる。|
-|patient | |||1..1|Reference(Patient)|"urn: ....." |対象となる患者リソースへの参照。 |
-|encounter | |||0..1|Reference (Encounter) |"urn: ....." |このアレルギ情報が確認され記録された受診情報（入院詳細情報または外来受診情報）への参照.Encounterリソースのインスタンスを参照することでよい。 |
-|(onset) | ||||（dateTime、Age、Period、Range、string）のいずれかの型をとる。| |このアレルギー・不耐性状態が同定された時期。5通りのいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRange、onsetString）ひとつを選択して、それにより記述する。複数を選択はできない。onset要素は記述しないで、直接onsetDateTime要素のレベルを記述する。|
-||onsetDateTime|||0..1|dateTime| |日付または日時。年や年月だけでもよい。例：2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17+09:00。時刻に24:00 の使用はできない。 |
-||onseAge|||0..1|Age | |年齢。患者の申告による、状態が出現し始めた年齢。 |
-|| |value |||decimal |"50" |年齢の値。 |
-|| |comparator|||code|"&gt;="|要素valueの値の解釈方法。<br>等しい場合には、= は不要。そうでない指定をしたい場合には、&lt; 、 &lt;=、 &gt;= 、 &gt;　のいずれか。<br>例では、「50歳以上で」と記述したい場合には、&gt;= を記述する。 |
-|| |unit|||string|"歳" |単位表現 |
-|| |system|||uri |"http://unitsofmeasure.org"|単位体系 UCUMコード体系。固定値。|
-|| |code|||code|"a"|単位体系における単位コード。コードと意味min：minutesh：hoursd：dayswk：weeksmo：monthsa：years |
-||onsetPeriod|||0..1|Preiod| |期間。 |
-|| |start ||0..1|DateTime| |期間の開始日時 |
-|| |end ||0..1|DateTime| |期間の終了日時 |
-||onsetRange |||0..1|Range | |曖昧な時期を最小値と最大値とで記述する。以下の記述例は50歳台。 |
-|| |low ||0..1|| | |
-|| ||value ||decimal |"50" |年齢の値。 |
-|| ||unit||string|"歳" |単位表現 |
-|| ||system||uri |"http://unitsofmeasure.org"|単位体系 UCUMコード体系。固定値。|
-|| ||code||code|"a"|単位体系における単位コード。コードと意味a：years |
-|| |high||0..1|| | |
-|| ||value ||decimal |"59" |年齢の値。 |
-|| ||unit||string|"歳" |単位表現 |
-|| ||system||uri |"http://unitsofmeasure.org"|単位体系 UCUMコード体系。固定値。|
-|| ||code||code|"a"|単位体系における単位コード。コードと意味a：years |
-||onsetString|||0..1|string|"50歳台" |文字列表現 |
-|recordedDate| |||0..1|dateTime| |この状態が最初に記録された日時。 |
-|recorder| |||0..1|Reference(Practitioner \| PractitionerRole \| Patient \| RelatedPerson)| |この状態を記録した人情報への参照。 |
-|asserter| |||0..1|Reference(Practitioner \| PractitionerRole \| Patient \| RelatedPerson)| |この状態があると確認（主張）した人情報への参照。 |
-|lastOccurrence| |||0..1|dateTime| |最後（直近）に知られている発生日時 |
-|note| |||0..\* || |状態に関する追加的な情報で他の要素で記述できないような情報。 |
-||author ||||| | |
-|| |authorString||0..1|string|"看護担当者" |記載者氏名などの文字列。必ずしも氏名でなくてもよい。 |
-||time |||0..1|dateTime| |この追加的な情報が作成された日時。 |
-||text |||1..1|markdown| |追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。 |
-|reaction| |||0..\* |BackboneElement | |対象物質に暴露したことに関連した有害反応の情報 |
-||substance|||0..1|CodeableConcept |http://jpfhir.jp/fhir<br>/core/CodeSystem/JP_JfagyFoodAllergen_CS<br> "J7F7311154"<br>"モッツァレラチーズ" |有害反応イベントの原因であると考えられる特定の物質（または医薬品）。jp-coreで定めるallergy-substanceコード表のコードの使用で表現できる場合にはその使用を推奨する。<br>注：特定の反応の物質は、リスクの原因として特定された物質とは異なる場合があるが、それと一貫性がある必要がある。例えば、「reaction.substance」の物質は、**AllergyIntolerance** .code要素と比べて、より具体的な物質（例えば、ブランド薬）または特定された物質を含む複合製品であり得る。 **AllergyIntolerance** .code要素の記述（アレルギー・不耐反応の対象物の情報要素）のみを処理して「reaction.substance」の情報を無視しても、臨床的に安全でなければならない。このリソースを受信して処理するシステムが、もし「reaction.substance」と**AllergyIntolerance** .code要素の記述物質との意味的な包含関係を処理できないのであれば、システムはこの「reaction.substance」要素を無視しなければならない。|
-||manifestation|||1..\* |CodeableConcept |"urn:oid:1.2.392.200119.4.101.6"<br>"B0EF"<br>"持続腹痛"<br>"長く続く腹部の痛み" |アレルギー反応に関連する症状や所見。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。"BOEF"は、MEDIS標準病名マスター病名交換用コードで"持続腹痛"のコード。"持続腹痛"はそのテキスト記述の例。 |
-||description|||0..1|string|"チーズを食べて1時間後から激しい腹痛と下痢がながく続いた。"|イベントの全体的な記述。 |
-||onset|||0..1|dateTime|"2010-01-02" |関連する症状や所見が見られた日時。 |
-||severity |||0..1|code|"severe" |反応の激しさ程度。コード表：http://hl7.org/fhir/reaction-event-severitymild \| moderate \| severe軽度、中等度、強度|
-||exposureRoute|||0..1|CodeableConcept |"urn:oid:1.2.392.200250.2.2.20.40"<br>"10"<br>"内服経口"<br>"経口摂取" |物質の摂取経路の情報。JAMI標準用法の投与経路コード表（JAMI 用法コード表基本用法2桁コードに相当）を使用する。 |
-||note |||0..\* || |他のフィールドで記述できないイベントに関するテキスト記述 |
-|| |author||0..1|| |記載者の情報 |
-|| ||authorString|0..1|string|"患者の母親" |記載者氏名などの文字列。必ずしも氏名でなくてもよい。 |
-|| |time||0..1|dateTime| |この追加的な情報が作成された日時。 |
-|| |text||1..1|markdown| |追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。 |
-
+</div>
 
 <link rel="stylesheet" href="sample.css">
 <br>
