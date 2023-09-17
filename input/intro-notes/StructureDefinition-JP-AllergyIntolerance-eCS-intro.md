@@ -156,8 +156,7 @@ rt
 
 ##　次の表は作成中です
 
-<div id=3D"AllergyIntoleranceTable_11276" align=3Dcenter x:publishsource=3D"=
-Excel">
+
 
 <table border=3D0 cellpadding=3D0 cellspacing=3D0 width=3D1919 style=3D'bord=
 er-collapse:
@@ -3814,7 +3813,6 @@ th:328pt'>追加的な情報の内容。markdown形式のテキストが使=
  <![endif]>
 </table>
 
-</div>
 
 <link rel="stylesheet" href="sample.css">
 <br>
