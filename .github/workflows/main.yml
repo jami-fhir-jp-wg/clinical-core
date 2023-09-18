@@ -79,7 +79,6 @@ jobs:
         cd /home/runner/.fhir
         mkdir -p packages/$JPTerminologyCOREdir
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPTerminologyCOREdir
-        rm -r /home/runner/.fhir/work/package
         mv packages_snapshot/$JPCOREtgzjp /home/runner/.fhir/work/
         cd /home/runner/.fhir/work
         tar xzf $JPCOREtgzjp
