@@ -529,6 +529,9 @@ rt
   - この表に現れない要素であるが、JP-Coreでは出現してもよい要素（多重度が0..1または0..*の要素）については、その要素は存在しても構わない。ただし、受信側では無視（破棄）されるかもしれないことに注意すること。
   - この表で多重度が、0..1* または 1..1* となっている要素は、上位プロファイル（派生元のプロファイル）で多重度の最大値が１を超える要素である。したがって、JSONデータでは、値が１個であっても、リスト型で記述しなければならない。
 
+[表 AllergyIntolerance]()
+
+
 <table border=0 cellpadding=0 cellspacing=0 width=1298 style='border-collapse:
  collapse;table-layout:fixed;width:974pt'>
  <col width=100 span=4 style='width:75pt'>
