@@ -81,6 +81,7 @@ jobs:
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPTerminologyCOREdir
         cd
         ls -l .
+        ls -l /home/runners
         ls -l /home/runner
         ls -l /home
         ls -l /home/runner/packages_snapshot
