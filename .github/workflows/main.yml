@@ -69,6 +69,7 @@ jobs:
         JPCOREdir: jp-core.r4#1.1.2-dev
       run: |
         ls -l .
+        pwd
         echo '---'
         mkdir -p /home/runner/.fhir
         mv $JPPACKAGECOREtgz /home/runner/.fhir/
