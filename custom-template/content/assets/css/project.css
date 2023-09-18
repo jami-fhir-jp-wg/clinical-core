@@ -611,7 +611,7 @@ overflow: visible;
 }
 
 h1 {
-/*  counter-reset:section;*/
+  counter-reset:section;
   padding: 0.4em 0.5em;
   /*文字の上下 左右の余白*/
   color: #494949;
