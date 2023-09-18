@@ -1,13 +1,4 @@
 <style type="text/css">
-tr
-	{mso-height-source:auto;
-	mso-ruby-visibility:none;}
-col
-	{mso-width-source:auto;
-	mso-ruby-visibility:none;}
-br
-	{mso-data-placement:same-cell;}
-
 .style0
 	{mso-number-format:General;
 	text-align:general;
@@ -63,26 +54,6 @@ col
 	mso-ruby-visibility:none;}
 br
 	{mso-data-placement:same-cell;}
-.style0
-	{mso-number-format:General;
-	text-align:general;
-	vertical-align:middle;
-	white-space:nowrap;
-	mso-rotate:0;
-	mso-background-source:auto;
-	mso-pattern:auto;
-	color:black;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:游ゴシック;
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	border:none;
-	mso-protection:locked visible;
-	mso-style-name:標準;
-	mso-style-id:0;}
 td
 	{mso-style-parent:style0;
 	padding-top:1px;

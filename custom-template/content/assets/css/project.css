@@ -97,6 +97,7 @@ body {
   position: relative;
   padding-top: 0;
 }
+
 .segment {
   position: relative;
 }
@@ -355,6 +356,7 @@ blockquote.stu-note {
 }
 .nav-tabs {
   margin-bottom: 20px;
+  border-bottom-color: #955159;
 }
 .nav-tabs a {
   color: #555555;
@@ -362,9 +364,6 @@ blockquote.stu-note {
 
 .nav-tabs li a:hover,
 .nav-tabs li a:focus {
-  border-bottom-color: #955159;
-}
-.nav-tabs {
   border-bottom-color: #955159;
 }
 
@@ -465,7 +464,7 @@ a:focus {
 }
 .breadcrumb {
   margin-bottom: 0;
-  background-color: var(--breadcrumb-bg-color);;
+  background-color: var(--breadcrumb-bg-color);
 }
 .breadcrumb a {
   color: var(--breadcrumb-text-color);
@@ -612,6 +611,7 @@ overflow: visible;
 }
 
 h1 {
+/*  counter-reset:section;*/
   padding: 0.4em 0.5em;
   /*文字の上下 左右の余白*/
   color: #494949;
@@ -625,8 +625,6 @@ h1 {
   font-size: 120%;
 }
 
-/* Common content for section numbering */
-body{counter-reset:section}
 
 h2{counter-reset:sub-section;
   position: relative;
