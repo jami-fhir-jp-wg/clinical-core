@@ -23,13 +23,11 @@ publisher:
   email: office@hlfhir.jp
 copyright: Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止
 jurisdiction: 'urn:iso:std:iso:3166-2#JP'
-
 dependencies:
   jp-core.r4:
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
     uri: http://jpfhir.jp/fhir/core/ImplementationGuide/jp-core.r4
     version: 1.1.2-dev
-
   jpfhir-terminology:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology/
     version: 1.1.1
