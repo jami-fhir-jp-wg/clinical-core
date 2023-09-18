@@ -33,13 +33,9 @@ dependencies:
   jpfhir-terminology:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology/
     version: 1.1.1
-
-
-
 #----------------------------------------
 # ページタイトル名称設定
 #----------------------------------------
-
 pages:
   index.md:
     title: 名称：電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
