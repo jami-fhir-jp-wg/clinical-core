@@ -70,7 +70,7 @@ jobs:
       run: |
         ls -l .
         pwd
-        echo '---'
+        echo '--1-'
         mkdir -p /home/runner/.fhir
         mv $JPPACKAGECOREtgz /home/runner/.fhir/
         mkdir -p /home/runner/.fhir/work
@@ -83,7 +83,11 @@ jobs:
         mkdir -p packages/$JPTerminologyCOREdir
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPTerminologyCOREdir
         cd
+        echo '--2-'
         ls -l .
+        echo '--3-'
+        ls -l /home/runner/work/clinical-core/clinical-core
+        echo '--4-'
         ls -l /home/runners
         ls -l /home/runner
         ls -l /home
