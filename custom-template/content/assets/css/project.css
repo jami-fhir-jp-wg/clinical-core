@@ -636,7 +636,21 @@ h2{counter-reset:sub-section;
   color: black;
   font-size: 120%;
 }
-h3{counter-reset:composite}
+
+h3{counter-reset:composite;
+  padding: 0.4em 0.5em;
+  /*文字の上下 左右の余白*/
+  color: #494949;
+  /*文字色*/
+  background: #f4f4f4;
+  /*背景色*/
+  border-left: solid 5px #7db4e6;
+  /*左線*/
+  border-bottom: solid 3px #d7d7d7;
+  /*下線*/
+  font-size: 110%;
+}
+
 h4{counter-reset:detail}
 h5{counter-reset:more-detail}
 h2:before{color:black;content:" ";}

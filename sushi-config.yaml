@@ -10,7 +10,7 @@ name: "電子カルテ情報共有サービスFHIR実装ガイド"
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide"
 status: draft # draft | active | retired | unknown 
-version: 0.9.0-a
+version: 0.9.1
 date: 2023-08-09
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2022+
@@ -28,7 +28,13 @@ dependencies:
   jp-core.r4:
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
     uri: http://jpfhir.jp/fhir/core/ImplementationGuide/jp-core.r4
-    version: 1.1.1-snap
+    version: 1.1.2-dev
+
+  jpfhir-terminology:
+    uri: http://jpfhir.jp/fhir/jpfhir-terminology/
+    version: 1.1.1
+
+
 
 #----------------------------------------
 # ページタイトル名称設定
