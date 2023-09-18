@@ -68,6 +68,8 @@ jobs:
         JPCOREtgzjp: jp-core.r4-1.1.2-dev.tgz
         JPCOREdir: jp-core.r4#1.1.2-dev
       run: |
+        ls -l .
+        echo '---'
         mkdir -p /home/runner/.fhir
         mv $JPPACKAGECOREtgz /home/runner/.fhir/
         mkdir -p /home/runner/.fhir/work
