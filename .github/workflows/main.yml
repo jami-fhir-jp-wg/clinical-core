@@ -65,7 +65,7 @@ jobs:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
         JPTerminologyCOREdir: jpfhir-terminology#1.1.1
         JPTerminologyCOREPtgz: jpfhir-terminology-1.1.1.tgz
-        JPCOREtgzjp: jp-core.r4#1.1.2-dev.tgz
+        JPCOREtgzjp: jp-core.r4-1.1.2-dev.tgz
         JPCOREdir: jp-core.r4#1.1.2-dev
       run: |
         mkdir -p /home/runner/.fhir
