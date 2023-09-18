@@ -82,19 +82,7 @@ jobs:
         cd /home/runner/.fhir
         mkdir -p packages/$JPTerminologyCOREdir
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPTerminologyCOREdir
-        cd
-        echo '--2-'
-        ls -l .
-        echo '--3-'
-        ls -l /home/runner/work/clinical-core/clinical-core
-        echo '--4-'
-        ls -l /home/runners
-        ls -l /home/runner
-        ls -l /home
-        ls -l /home/runner/packages_snapshot
-        ls -l /home/runner/packages_snapshot/$JPCOREtgzjp
-        cd /home/runner/work/clinical-core/clinical-core
-        mv packages_snapshot/$JPCOREtgzjp /home/runner/.fhir/work/
+        mv /home/runner/work/clinical-core/clinical-core/packages_snapshot/$JPCOREtgzjp /home/runner/.fhir/work/
         cd /home/runner/.fhir/work
         tar xzf $JPCOREtgzjp
         mkdir -p packages/$JPCOREdir
