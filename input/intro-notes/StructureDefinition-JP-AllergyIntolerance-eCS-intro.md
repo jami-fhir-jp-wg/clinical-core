@@ -495,12 +495,15 @@ rt
   - recorder : アレルギー登録者の情報。
   - asserter : この状態があると確認（主張）した人情報への参照。
 
-## 要素の説明表
+## 要素の説明とプロファイル
   - 多重度欄の色：濃い黄色＝必須要素、薄い黄色＝条件により必須要素、薄い緑＝推奨要素
   - この表に現れない要素であるが、JP-Coreでは出現してもよい要素（多重度が0..1または0..*の要素）については、その要素は存在しても構わない。ただし、受信側では無視（破棄）されるかもしれないことに注意すること。
   - この表で多重度が、0..1* または 1..1* となっている要素は、上位プロファイル（派生元のプロファイル）で多重度の最大値が１を超える要素である。したがって、JSONデータでは、値が１個であっても、リスト型で記述しなければならない。
+  - 要素[*] ：　この要素は繰り返し可能であり、値の記述はリストとなる。
+  - 要素[+] ：　（繰り返し可能な要素において）新たなひとつの要素の子要素値として記述される。
+  - 要素[=] ：　（繰り返し可能な要素において）すぐ上の要素と同じ要素の子要素値として記述される。
 
-[表 AllergyIntolerance]()
+### [表 AllergyIntolerance](AllergyIntolerance.html)
 
 
 <table border=0 cellpadding=0 cellspacing=0 width=1298 style='border-collapse:
@@ -811,7 +814,7 @@ rt
   &quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl68 width=100 style='height:30.0pt;width:75pt'>identifier[+]</td>
+  <td height=40 class=xl68 width=100 style='height:30.0pt;width:75pt'>identifier[=]</td>
   <td class=xl69 width=100 style='width:75pt'>value</td>
   <td class=xl69 width=100 style='width:75pt'>　</td>
   <td class=xl69 width=100 style='width:75pt'>　</td>
