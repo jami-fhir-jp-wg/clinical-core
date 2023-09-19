@@ -4,3 +4,5 @@ Thumbs.db
 /backup
 /temp
 /template
+/input-cache
+/output
