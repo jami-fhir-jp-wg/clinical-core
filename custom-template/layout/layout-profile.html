@@ -5,44 +5,48 @@
 
 {% include fragment-pagebegin.html %}
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader-->
+  <p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
   {% include fragment-profile-navtabs.html type='{{[type]}}' id='{{[id]}}' active='content' %}
 
   <a name="root"> </a>
   <h2 id="root">{{modelType}}:
-{% if site.data.structuredefinitions["{{[id]}}"].abstract == true %}
+    {% if site.data.structuredefinitions["{{[id]}}"].abstract == true %}
     <i>{{site.data.pages[page.path].title | escape_once}}</i>
-{% else %}
+    {% else %}
     {{site.data.pages[page.path].title}}
-{% endif %}
-{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["{{[id]}}"].abstract == true %}({% endif %}
-{% if site.data.structuredefinitions["{{[id]}}"].abstract == true %}Abstract{% endif %}
-{% if site.data.resources[resource_].experimental == true %}Experimental{% endif %}
-{% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["{{[id]}}"].abstract == true %}){% endif %}
+    {% endif %}
+    {% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["{{[id]}}"].abstract ==
+    true %}({% endif %}
+    {% if site.data.structuredefinitions["{{[id]}}"].abstract == true %}Abstract{% endif %}
+    {% if site.data.resources[resource_].experimental == true %}Experimental{% endif %}
+    {% if site.data.resources[resource_].experimental == true or site.data.structuredefinitions["{{[id]}}"].abstract ==
+    true %}){% endif %}
   </h2>
 
-{% include fragment-resourceTable.html %}
-{%if site.data.resources[resource_].description %}
-<p>
-{{site.data.resources[resource_].description|markdownify}}
-</p>
-{% endif %}{%if site.data.resources[resource_].purpose %}
-<p>
-{{site.data.resources[resource_].purpose|markdownify}}
-</p>
-{% endif %}
+  {% include fragment-resourceTable.html %}
+  {%if site.data.resources[resource_].description %}
+  <p>
+    {{site.data.resources[resource_].description|markdownify}}
+  </p>
+  {% endif %}{%if site.data.resources[resource_].purpose %}
+  <p>
+    {{site.data.resources[resource_].purpose|markdownify}}
+  </p>
+  {% endif %}
 
-<br/>
-<!-- insert intro if present -->
-{% include fragment-intro.html type='{{[type]}}' id='{{[id]}}' %}
+  <br />
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='{{[type]}}' id='{{[id]}}' %}
 
-{%include StructureDefinition-{{[id]}}-sd-xref.xhtml%}
+  {%include StructureDefinition-{{[id]}}-sd-xref.xhtml%}
 
   <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">プロファイル詳細</h3>
   <p>
-    <a href="{{site.data.fhir.path}}profiling.html#presentation">Description of Profiles, Differentials, Snapshots and how the different presentations work</a>.
+    <a href="{{site.data.fhir.path}}profiling.html#presentation">Description of Profiles, Differentials, Snapshots and
+      how the different presentations work</a>.
   </p>
   <div id="tabs">
     <ul>
@@ -61,21 +65,21 @@
       <li>
         <a href="#tabs-constraints-view">Constraints</a>
       </li>
-{% unless excludexml == 'y' %}
-<!--      <li>
+      {% unless excludexml == 'y' %}
+      <!--      <li>
         <a href="#tabs-xml">Pseudo-XML</a>
       </li>-->
-{% endunless %}
-{% unless excludejson == 'y' %}
-<!--      <li>
+      {% endunless %}
+      {% unless excludejson == 'y' %}
+      <!--      <li>
         <a href="#tabs-json">Pseudo-JSON</a>
       </li>-->
-{% endunless %}
-{% unless excludettl == 'y' %}
+      {% endunless %}
+      {% unless excludettl == 'y' %}
       <!--<li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
       </li>-->
-{% endunless %}
+      {% endunless %}
       <li>
         <a href="#tabs-all">All</a>
       </li>
@@ -83,7 +87,8 @@
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
       <div id="tbl-summ">
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['{{[id]}}'].basepath}}">{{site.data.structuredefinitions['{{[id]}}'].basename}}</a>
+        <p>This structure is derived from <a
+            href="{{site.data.structuredefinitions['{{[id]}}'].basepath}}">{{site.data.structuredefinitions['{{[id]}}'].basename}}</a>
         </p>
         <div id="tbl-summ-inner">
           <a name="summary"> </a>
@@ -130,8 +135,8 @@
         </div>
       </div>
     </div>
-{% unless excludexml == 'y' %}
-<!--    <a name="tabs-xml"> </a>
+    {% unless excludexml == 'y' %}
+    <!--    <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
@@ -139,9 +144,9 @@
         </div>
       </div>
     </div>-->
-{% endunless %}
-{% unless excludejson == 'y' %}
-<!--    <a name="tabs-json"> </a>
+    {% endunless %}
+    {% unless excludejson == 'y' %}
+    <!--    <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
@@ -149,8 +154,8 @@
         </div>
       </div>
     </div>-->
-{% endunless %}
-{% unless excludettl == 'y' %}
+    {% endunless %}
+    {% unless excludettl == 'y' %}
     <!--<a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
@@ -159,11 +164,12 @@
         </div>
       </div>
     </div>-->
-{% endunless %}
+    {% endunless %}
     <a name="tabs-all"> </a>
     <div id="tabs-all">
       <div id="all-summ">
-        <p>This structure is derived from <a href="{{site.data.structuredefinitions['{{[id]}}'].basepath}}">{{site.data.structuredefinitions['{{[id]}}'].basename}}</a>
+        <p>This structure is derived from <a
+            href="{{site.data.structuredefinitions['{{[id]}}'].basepath}}">{{site.data.structuredefinitions['{{[id]}}'].basename}}</a>
         </p>
         <div id="all-summ-inner">
           {%include StructureDefinition-{{[id]}}-summary.xhtml%}
@@ -185,7 +191,7 @@
           {%include StructureDefinition-{{[id]}}-snapshot.xhtml%}
         </div>
       </div>
-{% unless excludexml == 'y' %}
+      {% unless excludexml == 'y' %}
       <!--<div id="all-xml">
         <p>
           <b>XML Template</b>
@@ -194,8 +200,8 @@
           {%include StructureDefinition-{{[id]}}-pseudo-xml.xhtml%}
         </div>
       </div>-->
-{% endunless %}
-{% unless excludejson == 'y' %}
+      {% endunless %}
+      {% unless excludejson == 'y' %}
       <!--<div id="all-json">
         <p>
           <b>JSON Template</b>
@@ -204,8 +210,8 @@
           {%include StructureDefinition-{{[id]}}-pseudo-json.xhtml%}
         </div>
       </div>-->
-{% endunless %}
-{% unless excludettl == 'y' %}
+      {% endunless %}
+      {% unless excludettl == 'y' %}
       <!--<div id="all-ttl">
         <p>
           <b>TTL Template</b>
@@ -214,7 +220,7 @@
           {%include StructureDefinition-{{[id]}}-pseudo-ttl.xhtml%}
         </div>
       </div>-->
-{% endunless %}
+      {% endunless %}
       <div id="all-tbl-terminology-bindings-view-inner">
         <!--Terminology Bindings heading in the fragment -->
         <p>
@@ -231,8 +237,10 @@
     </div>
   </div>
   <p>&#160;</p>
-  <p>Other representations of profile: <a href="{{[type]}}-{{[id]}}.csv">CSV</a>, <a href="{{[type]}}-{{[id]}}.xlsx">Excel</a>{% unless modelType == 'Logical Model' %}, <a href="{{[type]}}-{{[id]}}.sch">Schematron</a>
-{% endunless %} 
+  <p>Other representations of profile: <a href="{{[type]}}-{{[id]}}.csv">CSV</a>, <a
+      href="{{[type]}}-{{[id]}}.xlsx">Excel</a>{% unless modelType == 'Logical Model' %}, <a
+      href="{{[type]}}-{{[id]}}.sch">Schematron</a>
+    {% endunless %}
   </p>
 
   {% if site.data.resources[resource_].contained != nil %}
@@ -240,10 +248,10 @@
   {% include {{[type]}}-{{[id]}}-contained-index.xhtml %}
   {% endif %}
 
-<!-- insert notes if present -->
-{% include fragment-notes.html type='{{[type]}}' id='{{[id]}}' %}
-<br/>
-<br/>
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='{{[type]}}' id='{{[id]}}' %}
+  <br />
+  <br />
 </div>
 {% assign includetabscripts = 'true' %}
 {% include fragment-pageend.html %}
