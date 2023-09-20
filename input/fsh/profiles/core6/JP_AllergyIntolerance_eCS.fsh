@@ -14,13 +14,24 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
 * insert toplevel_short_definition("診療主要情報におけるアレルギー情報／薬剤禁忌の格納に使用する")
 * . ^comment = "厚労省6情報などの運用において、薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
 
+* ^meta.lastUpdated 1..1 MS
+* ^meta.profile 0..1 MS
+* ^meta.tag  ^slicing.discriminator.type = #value
+* ^meta.tag  ^slicing.discriminator.path = "$this"
+* ^meta.tag  ^slicing.rules = #open
+* ^meta.tag contains lts 0..1 MS
+  and uninformed 0..1 MS
+
+* ^meta.tag[lts] = http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS
+* ^meta.tag[uninformed] = http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED
+
 // Patinet、encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
-* contained contains patient 1..1
-    and encounter 0..1
-    and recorder 0..1
+* contained contains patient 1..1 MS
+    and encounter 0..1 MS
+    and recorder 0..1 MS
 
 * contained[patient] only JP_Patient_eCS_Contained or JP_Patient
   * insert relative_short_definition( "診療主要情報における患者情報をコンパクトに格納したPatientリソース")
@@ -29,19 +40,24 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
 * contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter
 * contained[recorder] only  JP_Practitioner_eCS_Contained or JP_Practitioner
 
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier contains resourceInstance-identifier 1..1 MS
+
 * clinicalStatus   0..1 MS
-* clinicalStatus   ^short = "臨床的状態のステータス。"
+* clinicalStatus   ^short = "臨床的状態のステータス。コードで記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存 在し てはな らない。それ以外では必須 。"
 * clinicalStatus    ^definition = "active | inactive | resolved のいすれか（現存、非現存、解消）system=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
 
-* verificationStatus    0..1 MS
-* verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。"
+* verificationStatus    1..1 MS
+* verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化 記述 が必須 。clinicalStatusとの制約 条件 を参照 のこと。"
 * verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）　system=http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
 
-* type 0..1  MS
+* type 0..1 
 * type ^short = "副反応の生理的なメカニズムの種類（アレルギーによるものか不耐性によるものかどうか）"
 * type ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-type\" から　allergy | intolerance のいずれか（アレルギー反応、不耐性反応）"
 
-* category 0..1 MS  // 薬剤近畿情報の場合は、必須
+* category 0..1 MS  // 薬剤近畿情報の場合は、必須 
 * category ^short = "特定された原因物質のカテゴリ。記述を可能な限り推奨する。"
 * category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）。薬剤禁忌情報の記述ではmedication 医薬品 を使用する。"
 * category ^comment = "厚労省6情報などの運用において、薬剤禁忌の情報として格納する場合にはmedicationを格納し、かつ criticality要素=high すること。逆にcategory=medicatoin かつ criticality=high である場合には、受信側において薬剤禁忌の情報とみなされる。"
