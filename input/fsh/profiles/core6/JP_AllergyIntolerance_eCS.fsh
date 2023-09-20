@@ -49,7 +49,7 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
 * clinicalStatus   ^short = "臨床的状態のステータス。コードで記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存 在し てはな らない。それ以外では必須 。"
 * clinicalStatus    ^definition = "active | inactive | resolved のいすれか（現存、非現存、解消）system=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
 
-* verificationStatus    1..1 MS
+* verificationStatus    0..1 MS
 * verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化 記述 が必須 。clinicalStatusとの制約 条件 を参照 のこと。"
 * verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）　system=http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
 
