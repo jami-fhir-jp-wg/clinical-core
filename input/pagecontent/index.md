@@ -1,6 +1,6 @@
 
 # （2文書６情報を含む）電子カルテ情報共有サービスのためのFHIR実装ガイド
- <span style="color: red; font-size: 120%;"><<注意：このIGは協議中の暫定的な内容を一部に含んでいます。リソースのProfileも暫定版です。>></span>
+ <span style="color: red; font-size: 120%;"><<注意：このIGは協議中の暫定的な内容です。リソースのProfileも暫定版です。また頻繁に書き換え作業中ですので、内容は間違いや暫定情報を含みます。>></span>
 <br>
 
 ## このImplementationガイド(IG)の目的：
