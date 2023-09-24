@@ -1,0 +1,204 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/clincs/CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "jami-codeSystem-ePreDetailUsageMethod-TwoDigits"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>urn:oid:1.2.392.200250.2.2.20.40</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-10\"> </a></td><td>経口</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-11\"> </a></td><td>舌下</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-12\"> </a></td><td>バッカル</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-13\"> </a></td><td>経口内塗布</td></tr><tr><td style=\"white-space:nowrap\">2A<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2A\"> </a></td><td>貼付</td></tr><tr><td style=\"white-space:nowrap\">2B<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2B\"> </a></td><td>塗布</td></tr><tr><td style=\"white-space:nowrap\">2C<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2C\"> </a></td><td>湿布</td></tr><tr><td style=\"white-space:nowrap\">2D<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2D\"> </a></td><td>撒布</td></tr><tr><td style=\"white-space:nowrap\">2E<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2E\"> </a></td><td>噴霧</td></tr><tr><td style=\"white-space:nowrap\">2F<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2F\"> </a></td><td>消毒</td></tr><tr><td style=\"white-space:nowrap\">2G<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2G\"> </a></td><td>点耳</td></tr><tr><td style=\"white-space:nowrap\">2H<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2H\"> </a></td><td>点眼</td></tr><tr><td style=\"white-space:nowrap\">2J<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2J\"> </a></td><td>点鼻</td></tr><tr><td style=\"white-space:nowrap\">2K<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2K\"> </a></td><td>うがい</td></tr><tr><td style=\"white-space:nowrap\">2L<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2L\"> </a></td><td>吸入</td></tr><tr><td style=\"white-space:nowrap\">2M<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2M\"> </a></td><td>トローチ</td></tr><tr><td style=\"white-space:nowrap\">2N<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2N\"> </a></td><td>膀胱洗浄</td></tr><tr><td style=\"white-space:nowrap\">2P<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2P\"> </a></td><td>鼻腔内洗浄</td></tr><tr><td style=\"white-space:nowrap\">2Q<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2Q\"> </a></td><td>浣腸</td></tr><tr><td style=\"white-space:nowrap\">2R<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2R\"> </a></td><td>肛門挿入</td></tr><tr><td style=\"white-space:nowrap\">2S<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2S\"> </a></td><td>肛門注入</td></tr><tr><td style=\"white-space:nowrap\">2T<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2T\"> </a></td><td>膣内挿入</td></tr><tr><td style=\"white-space:nowrap\">2U<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-2U\"> </a></td><td>膀胱注入</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-30\"> </a></td><td>静脈注射</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-31\"> </a></td><td>中心静脈注射</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-32\"> </a></td><td>皮下注射</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-33\"> </a></td><td>筋肉内注射</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-34\"> </a></td><td>皮内注射</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-35\"> </a></td><td>動脈注射</td></tr><tr><td style=\"white-space:nowrap\">3A<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3A\"> </a></td><td>硬膜外注射</td></tr><tr><td style=\"white-space:nowrap\">3B<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3B\"> </a></td><td>脳脊髄腔注射</td></tr><tr><td style=\"white-space:nowrap\">3C<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3C\"> </a></td><td>骨髄内注射</td></tr><tr><td style=\"white-space:nowrap\">3D<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3D\"> </a></td><td>関節腔内注射</td></tr><tr><td style=\"white-space:nowrap\">3E<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3E\"> </a></td><td>腱鞘内注射</td></tr><tr><td style=\"white-space:nowrap\">3F<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3F\"> </a></td><td>腱鞘周囲注射</td></tr><tr><td style=\"white-space:nowrap\">3G<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3G\"> </a></td><td>硝子体内注射</td></tr><tr><td style=\"white-space:nowrap\">3H<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3H\"> </a></td><td>結膜下注射</td></tr><tr><td style=\"white-space:nowrap\">3J<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3J\"> </a></td><td>テノン氏のう内注射</td></tr><tr><td style=\"white-space:nowrap\">3K<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3K\"> </a></td><td>耳茸内注射</td></tr><tr><td style=\"white-space:nowrap\">3L<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3L\"> </a></td><td>咽頭注射</td></tr><tr><td style=\"white-space:nowrap\">3M<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3M\"> </a></td><td>胸腔内注射</td></tr><tr><td style=\"white-space:nowrap\">3N<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3N\"> </a></td><td>痔核注射</td></tr><tr><td style=\"white-space:nowrap\">3P<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3P\"> </a></td><td>角膜内注射</td></tr><tr><td style=\"white-space:nowrap\">3Q<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3Q\"> </a></td><td>球後注射</td></tr><tr><td style=\"white-space:nowrap\">3R<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3R\"> </a></td><td>腹腔内注射</td></tr><tr><td style=\"white-space:nowrap\">3Z<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-3Z\"> </a></td><td>局所・病巣内注射</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-40\"> </a></td><td>腹膜透析</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-41\"> </a></td><td>気管内注入</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-42\"> </a></td><td>涙のう内注入</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-43\"> </a></td><td>鼓室内注入</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-44\"> </a></td><td>滑液囊穿刺後の注入</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-45\"> </a></td><td>腹腔内注入</td></tr><tr><td style=\"white-space:nowrap\">4Z<a name=\"jami-codeSystem-ePreDetailUsageMethod-TwoDigits-4Z\"> </a></td><td>病巣内注入</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "urn:oid:1.2.392.200250.2.2.20.40"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
+  fhir:name [ fhir:v "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-24T12:46:39+09:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://jpfhir.jp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "office@hlfhir.jp" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "JAMI標準投与方法区分コード2桁"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166-2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "JP" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "53"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "経口" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "舌下" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "バッカル" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "経口内塗布" ]
+  ] [
+     fhir:code [ fhir:v "2A" ] ;
+     fhir:display [ fhir:v "貼付" ]
+  ] [
+     fhir:code [ fhir:v "2B" ] ;
+     fhir:display [ fhir:v "塗布" ]
+  ] [
+     fhir:code [ fhir:v "2C" ] ;
+     fhir:display [ fhir:v "湿布" ]
+  ] [
+     fhir:code [ fhir:v "2D" ] ;
+     fhir:display [ fhir:v "撒布" ]
+  ] [
+     fhir:code [ fhir:v "2E" ] ;
+     fhir:display [ fhir:v "噴霧" ]
+  ] [
+     fhir:code [ fhir:v "2F" ] ;
+     fhir:display [ fhir:v "消毒" ]
+  ] [
+     fhir:code [ fhir:v "2G" ] ;
+     fhir:display [ fhir:v "点耳" ]
+  ] [
+     fhir:code [ fhir:v "2H" ] ;
+     fhir:display [ fhir:v "点眼" ]
+  ] [
+     fhir:code [ fhir:v "2J" ] ;
+     fhir:display [ fhir:v "点鼻" ]
+  ] [
+     fhir:code [ fhir:v "2K" ] ;
+     fhir:display [ fhir:v "うがい" ]
+  ] [
+     fhir:code [ fhir:v "2L" ] ;
+     fhir:display [ fhir:v "吸入" ]
+  ] [
+     fhir:code [ fhir:v "2M" ] ;
+     fhir:display [ fhir:v "トローチ" ]
+  ] [
+     fhir:code [ fhir:v "2N" ] ;
+     fhir:display [ fhir:v "膀胱洗浄" ]
+  ] [
+     fhir:code [ fhir:v "2P" ] ;
+     fhir:display [ fhir:v "鼻腔内洗浄" ]
+  ] [
+     fhir:code [ fhir:v "2Q" ] ;
+     fhir:display [ fhir:v "浣腸" ]
+  ] [
+     fhir:code [ fhir:v "2R" ] ;
+     fhir:display [ fhir:v "肛門挿入" ]
+  ] [
+     fhir:code [ fhir:v "2S" ] ;
+     fhir:display [ fhir:v "肛門注入" ]
+  ] [
+     fhir:code [ fhir:v "2T" ] ;
+     fhir:display [ fhir:v "膣内挿入" ]
+  ] [
+     fhir:code [ fhir:v "2U" ] ;
+     fhir:display [ fhir:v "膀胱注入" ]
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "静脈注射" ]
+  ] [
+     fhir:code [ fhir:v "31" ] ;
+     fhir:display [ fhir:v "中心静脈注射" ]
+  ] [
+     fhir:code [ fhir:v "32" ] ;
+     fhir:display [ fhir:v "皮下注射" ]
+  ] [
+     fhir:code [ fhir:v "33" ] ;
+     fhir:display [ fhir:v "筋肉内注射" ]
+  ] [
+     fhir:code [ fhir:v "34" ] ;
+     fhir:display [ fhir:v "皮内注射" ]
+  ] [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "動脈注射" ]
+  ] [
+     fhir:code [ fhir:v "3A" ] ;
+     fhir:display [ fhir:v "硬膜外注射" ]
+  ] [
+     fhir:code [ fhir:v "3B" ] ;
+     fhir:display [ fhir:v "脳脊髄腔注射" ]
+  ] [
+     fhir:code [ fhir:v "3C" ] ;
+     fhir:display [ fhir:v "骨髄内注射" ]
+  ] [
+     fhir:code [ fhir:v "3D" ] ;
+     fhir:display [ fhir:v "関節腔内注射" ]
+  ] [
+     fhir:code [ fhir:v "3E" ] ;
+     fhir:display [ fhir:v "腱鞘内注射" ]
+  ] [
+     fhir:code [ fhir:v "3F" ] ;
+     fhir:display [ fhir:v "腱鞘周囲注射" ]
+  ] [
+     fhir:code [ fhir:v "3G" ] ;
+     fhir:display [ fhir:v "硝子体内注射" ]
+  ] [
+     fhir:code [ fhir:v "3H" ] ;
+     fhir:display [ fhir:v "結膜下注射" ]
+  ] [
+     fhir:code [ fhir:v "3J" ] ;
+     fhir:display [ fhir:v "テノン氏のう内注射" ]
+  ] [
+     fhir:code [ fhir:v "3K" ] ;
+     fhir:display [ fhir:v "耳茸内注射" ]
+  ] [
+     fhir:code [ fhir:v "3L" ] ;
+     fhir:display [ fhir:v "咽頭注射" ]
+  ] [
+     fhir:code [ fhir:v "3M" ] ;
+     fhir:display [ fhir:v "胸腔内注射" ]
+  ] [
+     fhir:code [ fhir:v "3N" ] ;
+     fhir:display [ fhir:v "痔核注射" ]
+  ] [
+     fhir:code [ fhir:v "3P" ] ;
+     fhir:display [ fhir:v "角膜内注射" ]
+  ] [
+     fhir:code [ fhir:v "3Q" ] ;
+     fhir:display [ fhir:v "球後注射" ]
+  ] [
+     fhir:code [ fhir:v "3R" ] ;
+     fhir:display [ fhir:v "腹腔内注射" ]
+  ] [
+     fhir:code [ fhir:v "3Z" ] ;
+     fhir:display [ fhir:v "局所・病巣内注射" ]
+  ] [
+     fhir:code [ fhir:v "40" ] ;
+     fhir:display [ fhir:v "腹膜透析" ]
+  ] [
+     fhir:code [ fhir:v "41" ] ;
+     fhir:display [ fhir:v "気管内注入" ]
+  ] [
+     fhir:code [ fhir:v "42" ] ;
+     fhir:display [ fhir:v "涙のう内注入" ]
+  ] [
+     fhir:code [ fhir:v "43" ] ;
+     fhir:display [ fhir:v "鼓室内注入" ]
+  ] [
+     fhir:code [ fhir:v "44" ] ;
+     fhir:display [ fhir:v "滑液囊穿刺後の注入" ]
+  ] [
+     fhir:code [ fhir:v "45" ] ;
+     fhir:display [ fhir:v "腹腔内注入" ]
+  ] [
+     fhir:code [ fhir:v "4Z" ] ;
+     fhir:display [ fhir:v "病巣内注入" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,21 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='JP-DocumentReference-CDAdocument' %}
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='JP-DocumentReference-CDAdocument' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{modelType}}: JP_DocumentReference_CDAdocument - Change History</h2>
+{% include fragment-simpletable.html %}
+  <p>Changes in the JP-DocumentReference-CDAdocument {{modelType | downcase}}.</p>
+
+  {%include StructureDefinition-JP-DocumentReference-CDAdocument-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

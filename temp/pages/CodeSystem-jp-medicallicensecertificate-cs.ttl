@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/clincs/CodeSystem/jp-medicallicensecertificate-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "jp-medicallicensecertificate-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">narcotics-practitioner<a name=\"jp-medicallicensecertificate-cs-narcotics-practitioner\"> </a></td><td>麻薬施用者番号</td><td>各都道府県にて管理される麻薬施用に関する免許番号</td></tr><tr><td style=\"white-space:nowrap\">medical-registration<a name=\"jp-medicallicensecertificate-cs-medical-registration\"> </a></td><td>医籍登録番号</td><td>厚労省が発行する医師免許に割り振られる登録番号</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
+  fhir:name [ fhir:v "JP_MedicalLicenseCertificate_CS"] ; # 
+  fhir:title [ fhir:v "JP Core MedicalLicenseCertificate CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-10-24"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://jpfhir.jp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "office@hlfhir.jp" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "医療関連免許証明に関するコードシステム。"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166-2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "JP" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "narcotics-practitioner" ] ;
+     fhir:display [ fhir:v "麻薬施用者番号" ] ;
+     fhir:definition [ fhir:v "各都道府県にて管理される麻薬施用に関する免許番号" ]
+  ] [
+     fhir:code [ fhir:v "medical-registration" ] ;
+     fhir:display [ fhir:v "医籍登録番号" ] ;
+     fhir:definition [ fhir:v "厚労省が発行する医師免許に割り振られる登録番号" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

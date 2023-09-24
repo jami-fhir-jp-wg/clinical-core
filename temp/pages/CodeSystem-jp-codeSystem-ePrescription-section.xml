@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="jp-codeSystem-ePrescription-section"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">01<a name="jp-codeSystem-ePrescription-section-01"> </a></td><td>処方情報セクション</td></tr><tr><td style="white-space:nowrap">11<a name="jp-codeSystem-ePrescription-section-11"> </a></td><td>分割処方箋セクション</td></tr><tr><td style="white-space:nowrap">12<a name="jp-codeSystem-ePrescription-section-12"> </a></td><td>別紙セクション</td></tr></table></div>
+  </text>
+  <url value="http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"/>
+  <version value="0.9.1"/>
+  <name value="JP_codeSystem_ePrescription_section"/>
+  <status value="active"/>
+  <date value="2023-09-24T12:46:39+09:00"/>
+  <publisher value="Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"/>
+  <contact>
+    <name value="Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://jpfhir.jp"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="office@hlfhir.jp"/>
+    </telecom>
+  </contact>
+  <description value="処方セクション区分コード"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166-2"/>
+      <code value="JP"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="01"/>
+    <display value="処方情報セクション"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="分割処方箋セクション"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="別紙セクション"/>
+  </concept>
+</CodeSystem>

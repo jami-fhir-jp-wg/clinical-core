@@ -1,0 +1,46 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/clincs/ValueSet/jami-valueSet-ePreDispenseInstruction> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "jami-valueSet-ePreDispenseInstruction"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-jami-codeSystem-ePreDispenseInstruction.html\"><code>urn:oid:1.2.392.200250.2.2.30.10</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
+  fhir:name [ fhir:v "JAMI_valueSet_ePreDispenseInstruction"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-24T12:46:39+09:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://jpfhir.jp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "office@hlfhir.jp" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "調剤指示コード（備考欄）"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166-2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "JP" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:1.2.392.200250.2.2.30.10"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

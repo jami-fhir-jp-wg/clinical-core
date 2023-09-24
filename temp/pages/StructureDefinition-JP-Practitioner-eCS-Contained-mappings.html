@@ -1,0 +1,27 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='JP-Practitioner-eCS-Contained' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='JP-Practitioner-eCS-Contained' active='mapping' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: JP_Practitioner_eCS_Contained - Mappings</h2>
+{% include fragment-simpletable.html %}
+
+<p>Mappings for the JP-Practitioner-eCS-Contained {{modelType | downcase }}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='JP-Practitioner-eCS-Contained' %}
+
+  {%include StructureDefinition-JP-Practitioner-eCS-Contained-maps.xhtml%}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='JP-Practitioner-eCS-Contained' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/clincs/CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>urn:oid:1.2.392.100495.20.2.63</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13-1\"> </a></td><td>高齢者一般（高一）</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13-2\"> </a></td><td>高齢者 7 割（高７）</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13-3\"> </a></td><td>６歳未満（６歳）</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "urn:oid:1.2.392.100495.20.2.63"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
+  fhir:name [ fhir:v "MHLW_codeSystem_ePreCDA_insuredCoPayCategory_tbl13"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-09-24T12:46:39+09:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://jpfhir.jp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "office@hlfhir.jp" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "厚労省電子処方CDA規格別表13 患者一部負担コード"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166-2"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "JP" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "高齢者一般（高一）" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "高齢者 7 割（高７）" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "６歳未満（６歳）" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

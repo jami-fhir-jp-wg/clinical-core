@@ -1,0 +1,809 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "JP-Specimen-JLAC10-SpecimenCode-CS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">001<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-001\"> </a></td><td>尿(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">002<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-002\"> </a></td><td>自然排尿</td></tr><tr><td style=\"white-space:nowrap\">003<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-003\"> </a></td><td>新鮮尿</td></tr><tr><td style=\"white-space:nowrap\">004<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-004\"> </a></td><td>蓄尿</td></tr><tr><td style=\"white-space:nowrap\">005<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-005\"> </a></td><td>時間尿</td></tr><tr><td style=\"white-space:nowrap\">006<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-006\"> </a></td><td>早朝尿</td></tr><tr><td style=\"white-space:nowrap\">007<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-007\"> </a></td><td>負荷後尿</td></tr><tr><td style=\"white-space:nowrap\">008<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-008\"> </a></td><td>分杯尿</td></tr><tr><td style=\"white-space:nowrap\">009<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-009\"> </a></td><td>カテーテル採取尿</td></tr><tr><td style=\"white-space:nowrap\">010<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-010\"> </a></td><td>尿ろ紙</td></tr><tr><td style=\"white-space:nowrap\">011<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-011\"> </a></td><td>膀胱穿刺</td></tr><tr><td style=\"white-space:nowrap\">012<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-012\"> </a></td><td>動物尿</td></tr><tr><td style=\"white-space:nowrap\">015<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-015\"> </a></td><td>便</td></tr><tr><td style=\"white-space:nowrap\">017<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-017\"> </a></td><td>血液(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">018<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-018\"> </a></td><td>全血</td></tr><tr><td style=\"white-space:nowrap\">019<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-019\"> </a></td><td>全血(添加物入り)</td></tr><tr><td style=\"white-space:nowrap\">020<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-020\"> </a></td><td>動脈血</td></tr><tr><td style=\"white-space:nowrap\">021<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-021\"> </a></td><td>毛細管血</td></tr><tr><td style=\"white-space:nowrap\">022<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-022\"> </a></td><td>血漿</td></tr><tr><td style=\"white-space:nowrap\">023<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-023\"> </a></td><td>血清</td></tr><tr><td style=\"white-space:nowrap\">024<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-024\"> </a></td><td>血球浮遊液</td></tr><tr><td style=\"white-space:nowrap\">025<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-025\"> </a></td><td>赤血球</td></tr><tr><td style=\"white-space:nowrap\">026<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-026\"> </a></td><td>リンパ球</td></tr><tr><td style=\"white-space:nowrap\">027<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-027\"> </a></td><td>血小板</td></tr><tr><td style=\"white-space:nowrap\">028<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-028\"> </a></td><td>白血球</td></tr><tr><td style=\"white-space:nowrap\">029<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-029\"> </a></td><td>臍帯血</td></tr><tr><td style=\"white-space:nowrap\">030<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-030\"> </a></td><td>溶血液</td></tr><tr><td style=\"white-space:nowrap\">031<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-031\"> </a></td><td>除タンパク液</td></tr><tr><td style=\"white-space:nowrap\">032<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-032\"> </a></td><td>血液抽出液</td></tr><tr><td style=\"white-space:nowrap\">033<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-033\"> </a></td><td>血液ろ紙</td></tr><tr><td style=\"white-space:nowrap\">034<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-034\"> </a></td><td>血液塗抹標本</td></tr><tr><td style=\"white-space:nowrap\">035<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-035\"> </a></td><td>造血幹細胞</td></tr><tr><td style=\"white-space:nowrap\">036<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-036\"> </a></td><td>動物血</td></tr><tr><td style=\"white-space:nowrap\">037<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-037\"> </a></td><td>動物全血</td></tr><tr><td style=\"white-space:nowrap\">038<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-038\"> </a></td><td>動物血漿</td></tr><tr><td style=\"white-space:nowrap\">039<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-039\"> </a></td><td>動物血清</td></tr><tr><td style=\"white-space:nowrap\">040<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-040\"> </a></td><td>穿刺液(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">041<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-041\"> </a></td><td>髄液</td></tr><tr><td style=\"white-space:nowrap\">042<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-042\"> </a></td><td>胸水</td></tr><tr><td style=\"white-space:nowrap\">043<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-043\"> </a></td><td>腹水</td></tr><tr><td style=\"white-space:nowrap\">044<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-044\"> </a></td><td>関節液</td></tr><tr><td style=\"white-space:nowrap\">045<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-045\"> </a></td><td>心嚢液</td></tr><tr><td style=\"white-space:nowrap\">046<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-046\"> </a></td><td>骨髄液</td></tr><tr><td style=\"white-space:nowrap\">047<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-047\"> </a></td><td>羊水</td></tr><tr><td style=\"white-space:nowrap\">048<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-048\"> </a></td><td>腰椎</td></tr><tr><td style=\"white-space:nowrap\">049<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-049\"> </a></td><td>骨髄塗抹標本</td></tr><tr><td style=\"white-space:nowrap\">050<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-050\"> </a></td><td>分泌液(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">051<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-051\"> </a></td><td>消化器系からの分泌液</td></tr><tr><td style=\"white-space:nowrap\">052<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-052\"> </a></td><td>胃液</td></tr><tr><td style=\"white-space:nowrap\">053<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-053\"> </a></td><td>十二指腸液</td></tr><tr><td style=\"white-space:nowrap\">054<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-054\"> </a></td><td>胆汁</td></tr><tr><td style=\"white-space:nowrap\">055<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-055\"> </a></td><td>膵液</td></tr><tr><td style=\"white-space:nowrap\">056<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-056\"> </a></td><td>唾液</td></tr><tr><td style=\"white-space:nowrap\">057<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-057\"> </a></td><td>乳頭分泌液</td></tr><tr><td style=\"white-space:nowrap\">058<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-058\"> </a></td><td>子宮頸管粘液</td></tr><tr><td style=\"white-space:nowrap\">059<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-059\"> </a></td><td>前立腺液</td></tr><tr><td style=\"white-space:nowrap\">060<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-060\"> </a></td><td>精液</td></tr><tr><td style=\"white-space:nowrap\">061<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-061\"> </a></td><td>喀痰</td></tr><tr><td style=\"white-space:nowrap\">062<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-062\"> </a></td><td>乳汁</td></tr><tr><td style=\"white-space:nowrap\">063<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-063\"> </a></td><td>鼻汁，鼻腔・鼻咽頭擦過物</td></tr><tr><td style=\"white-space:nowrap\">064<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-064\"> </a></td><td>咽喉からの分泌液</td></tr><tr><td style=\"white-space:nowrap\">065<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-065\"> </a></td><td>耳からの分泌液</td></tr><tr><td style=\"white-space:nowrap\">066<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-066\"> </a></td><td>目からの分泌液</td></tr><tr><td style=\"white-space:nowrap\">067<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-067\"> </a></td><td>膣からの分泌液</td></tr><tr><td style=\"white-space:nowrap\">068<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-068\"> </a></td><td>皮膚からの分泌液(汗)</td></tr><tr><td style=\"white-space:nowrap\">069<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-069\"> </a></td><td>気管からの分泌液</td></tr><tr><td style=\"white-space:nowrap\">070<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-070\"> </a></td><td>組織*(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">071<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-071\"> </a></td><td>生検組織*</td></tr><tr><td style=\"white-space:nowrap\">072<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-072\"> </a></td><td>試験切除組織*</td></tr><tr><td style=\"white-space:nowrap\">073<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-073\"> </a></td><td>手術切除組織*</td></tr><tr><td style=\"white-space:nowrap\">074<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-074\"> </a></td><td>剖検切除組織*</td></tr><tr><td style=\"white-space:nowrap\">075<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-075\"> </a></td><td>固定組織*</td></tr><tr><td style=\"white-space:nowrap\">076<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-076\"> </a></td><td>固定細胞</td></tr><tr><td style=\"white-space:nowrap\">077<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-077\"> </a></td><td>毛髪</td></tr><tr><td style=\"white-space:nowrap\">078<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-078\"> </a></td><td>爪</td></tr><tr><td style=\"white-space:nowrap\">079<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-079\"> </a></td><td>うがい液</td></tr><tr><td style=\"white-space:nowrap\">080<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-080\"> </a></td><td>菌株</td></tr><tr><td style=\"white-space:nowrap\">081<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-081\"> </a></td><td>結石(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">082<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-082\"> </a></td><td>尿路系結石</td></tr><tr><td style=\"white-space:nowrap\">083<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-083\"> </a></td><td>胆石</td></tr><tr><td style=\"white-space:nowrap\">084<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-084\"> </a></td><td>細胞浮遊液</td></tr><tr><td style=\"white-space:nowrap\">085<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-085\"> </a></td><td>擦過物</td></tr><tr><td style=\"white-space:nowrap\">086<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-086\"> </a></td><td>膿(含むその他)</td></tr><tr><td style=\"white-space:nowrap\">087<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-087\"> </a></td><td>開放性の膿</td></tr><tr><td style=\"white-space:nowrap\">088<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-088\"> </a></td><td>非開放性の膿</td></tr><tr><td style=\"white-space:nowrap\">089<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-089\"> </a></td><td>水泡内容物</td></tr><tr><td style=\"white-space:nowrap\">090<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-090\"> </a></td><td>嘔吐物</td></tr><tr><td style=\"white-space:nowrap\">091<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-091\"> </a></td><td>洗浄液</td></tr><tr><td style=\"white-space:nowrap\">092<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-092\"> </a></td><td>血液以外の抽出液</td></tr><tr><td style=\"white-space:nowrap\">093<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-093\"> </a></td><td>浸出液</td></tr><tr><td style=\"white-space:nowrap\">094<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-094\"> </a></td><td>塗抹標本(血液，骨髄以外)</td></tr><tr><td style=\"white-space:nowrap\">095<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-095\"> </a></td><td>透析液</td></tr><tr><td style=\"white-space:nowrap\">096<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-096\"> </a></td><td>かん流液</td></tr><tr><td style=\"white-space:nowrap\">097<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-097\"> </a></td><td>培養液</td></tr><tr><td style=\"white-space:nowrap\">098<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-098\"> </a></td><td>ペア材料</td></tr><tr><td style=\"white-space:nowrap\">099<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-099\"> </a></td><td>その他の材料</td></tr><tr><td style=\"white-space:nowrap\">200<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-200\"> </a></td><td>皮膚</td></tr><tr><td style=\"white-space:nowrap\">205<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-205\"> </a></td><td>乳房</td></tr><tr><td style=\"white-space:nowrap\">210<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-210\"> </a></td><td>乳腺</td></tr><tr><td style=\"white-space:nowrap\">220<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-220\"> </a></td><td>リンパ節</td></tr><tr><td style=\"white-space:nowrap\">225<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-225\"> </a></td><td>脾臓</td></tr><tr><td style=\"white-space:nowrap\">230<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-230\"> </a></td><td>骨髄</td></tr><tr><td style=\"white-space:nowrap\">250<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-250\"> </a></td><td>骨</td></tr><tr><td style=\"white-space:nowrap\">255<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-255\"> </a></td><td>関節</td></tr><tr><td style=\"white-space:nowrap\">260<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-260\"> </a></td><td>骨格筋，筋膜</td></tr><tr><td style=\"white-space:nowrap\">265<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-265\"> </a></td><td>軟骨</td></tr><tr><td style=\"white-space:nowrap\">270<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-270\"> </a></td><td>靭帯</td></tr><tr><td style=\"white-space:nowrap\">275<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-275\"> </a></td><td>腱，腱鞘</td></tr><tr><td style=\"white-space:nowrap\">280<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-280\"> </a></td><td>軟部組織</td></tr><tr><td style=\"white-space:nowrap\">300<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-300\"> </a></td><td>鼻</td></tr><tr><td style=\"white-space:nowrap\">305<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-305\"> </a></td><td>鼻腔</td></tr><tr><td style=\"white-space:nowrap\">310<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-310\"> </a></td><td>上顎洞，他の副鼻腔</td></tr><tr><td style=\"white-space:nowrap\">315<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-315\"> </a></td><td>喉頭蓋，喉頭</td></tr><tr><td style=\"white-space:nowrap\">330<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-330\"> </a></td><td>肺</td></tr><tr><td style=\"white-space:nowrap\">335<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-335\"> </a></td><td>気管</td></tr><tr><td style=\"white-space:nowrap\">340<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-340\"> </a></td><td>気管支</td></tr><tr><td style=\"white-space:nowrap\">345<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-345\"> </a></td><td>肋膜</td></tr><tr><td style=\"white-space:nowrap\">350<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-350\"> </a></td><td>縦隔</td></tr><tr><td style=\"white-space:nowrap\">355<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-355\"> </a></td><td>胸膜</td></tr><tr><td style=\"white-space:nowrap\">365<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-365\"> </a></td><td>その他の呼吸器</td></tr><tr><td style=\"white-space:nowrap\">370<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-370\"> </a></td><td>心臓</td></tr><tr><td style=\"white-space:nowrap\">375<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-375\"> </a></td><td>心臓弁膜</td></tr><tr><td style=\"white-space:nowrap\">380<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-380\"> </a></td><td>心嚢</td></tr><tr><td style=\"white-space:nowrap\">385<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-385\"> </a></td><td>血管</td></tr><tr><td style=\"white-space:nowrap\">390<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-390\"> </a></td><td>動脈</td></tr><tr><td style=\"white-space:nowrap\">395<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-395\"> </a></td><td>頸動脈</td></tr><tr><td style=\"white-space:nowrap\">400<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-400\"> </a></td><td>口腔</td></tr><tr><td style=\"white-space:nowrap\">405<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-405\"> </a></td><td>口唇</td></tr><tr><td style=\"white-space:nowrap\">410<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-410\"> </a></td><td>舌</td></tr><tr><td style=\"white-space:nowrap\">415<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-415\"> </a></td><td>歯</td></tr><tr><td style=\"white-space:nowrap\">420<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-420\"> </a></td><td>歯肉</td></tr><tr><td style=\"white-space:nowrap\">425<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-425\"> </a></td><td>唾液腺</td></tr><tr><td style=\"white-space:nowrap\">430<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-430\"> </a></td><td>咽頭</td></tr><tr><td style=\"white-space:nowrap\">435<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-435\"> </a></td><td>扁桃</td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-450\"> </a></td><td>食道</td></tr><tr><td style=\"white-space:nowrap\">455<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-455\"> </a></td><td>胃</td></tr><tr><td style=\"white-space:nowrap\">460<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-460\"> </a></td><td>小腸，十二指腸膨大部</td></tr><tr><td style=\"white-space:nowrap\">465<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-465\"> </a></td><td>空腸および回腸</td></tr><tr><td style=\"white-space:nowrap\">470<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-470\"> </a></td><td>大腸</td></tr><tr><td style=\"white-space:nowrap\">480<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-480\"> </a></td><td>直腸</td></tr><tr><td style=\"white-space:nowrap\">485<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-485\"> </a></td><td>肛門</td></tr><tr><td style=\"white-space:nowrap\">500<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-500\"> </a></td><td>肝，肝内胆管</td></tr><tr><td style=\"white-space:nowrap\">510<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-510\"> </a></td><td>胆道(外胆管，外胆道)</td></tr><tr><td style=\"white-space:nowrap\">515<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-515\"> </a></td><td>膵</td></tr><tr><td style=\"white-space:nowrap\">530<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-530\"> </a></td><td>腹膜</td></tr><tr><td style=\"white-space:nowrap\">535<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-535\"> </a></td><td>後腹膜，尾仙部</td></tr><tr><td style=\"white-space:nowrap\">545<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-545\"> </a></td><td>その他の消化器</td></tr><tr><td style=\"white-space:nowrap\">550<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-550\"> </a></td><td>膣</td></tr><tr><td style=\"white-space:nowrap\">555<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-555\"> </a></td><td>子宮</td></tr><tr><td style=\"white-space:nowrap\">560<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-560\"> </a></td><td>子宮頸部</td></tr><tr><td style=\"white-space:nowrap\">565<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-565\"> </a></td><td>子宮膣部</td></tr><tr><td style=\"white-space:nowrap\">570<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-570\"> </a></td><td>子宮内膜</td></tr><tr><td style=\"white-space:nowrap\">575<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-575\"> </a></td><td>卵管</td></tr><tr><td style=\"white-space:nowrap\">580<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-580\"> </a></td><td>卵巣</td></tr><tr><td style=\"white-space:nowrap\">585<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-585\"> </a></td><td>胎盤，臍帯</td></tr><tr><td style=\"white-space:nowrap\">587<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-587\"> </a></td><td>流産内容物</td></tr><tr><td style=\"white-space:nowrap\">590<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-590\"> </a></td><td>絨毛その他</td></tr><tr><td style=\"white-space:nowrap\">595<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-595\"> </a></td><td>外陰およびその他の女性器</td></tr><tr><td style=\"white-space:nowrap\">600<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-600\"> </a></td><td>前立腺，精嚢</td></tr><tr><td style=\"white-space:nowrap\">605<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-605\"> </a></td><td>睾丸</td></tr><tr><td style=\"white-space:nowrap\">610<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-610\"> </a></td><td>陰茎</td></tr><tr><td style=\"white-space:nowrap\">615<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-615\"> </a></td><td>その他の男性性器</td></tr><tr><td style=\"white-space:nowrap\">620<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-620\"> </a></td><td>男女不明性器</td></tr><tr><td style=\"white-space:nowrap\">650<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-650\"> </a></td><td>腎臓</td></tr><tr><td style=\"white-space:nowrap\">655<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-655\"> </a></td><td>腎盂</td></tr><tr><td style=\"white-space:nowrap\">660<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-660\"> </a></td><td>尿管</td></tr><tr><td style=\"white-space:nowrap\">665<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-665\"> </a></td><td>膀胱</td></tr><tr><td style=\"white-space:nowrap\">670<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-670\"> </a></td><td>尿道</td></tr><tr><td style=\"white-space:nowrap\">695<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-695\"> </a></td><td>その他の泌尿器</td></tr><tr><td style=\"white-space:nowrap\">700<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-700\"> </a></td><td>眼および眼付属器</td></tr><tr><td style=\"white-space:nowrap\">705<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-705\"> </a></td><td>大脳(大脳半球，脳梁)</td></tr><tr><td style=\"white-space:nowrap\">710<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-710\"> </a></td><td>中脳，橋</td></tr><tr><td style=\"white-space:nowrap\">715<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-715\"> </a></td><td>小脳</td></tr><tr><td style=\"white-space:nowrap\">720<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-720\"> </a></td><td>延髄，脊髄</td></tr><tr><td style=\"white-space:nowrap\">725<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-725\"> </a></td><td>脳膜，脊髄膜</td></tr><tr><td style=\"white-space:nowrap\">730<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-730\"> </a></td><td>内耳</td></tr><tr><td style=\"white-space:nowrap\">735<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-735\"> </a></td><td>脳神経</td></tr><tr><td style=\"white-space:nowrap\">740<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-740\"> </a></td><td>脊髄神経</td></tr><tr><td style=\"white-space:nowrap\">795<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-795\"> </a></td><td>その他の神経系</td></tr><tr><td style=\"white-space:nowrap\">800<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-800\"> </a></td><td>下垂体，頭咽管</td></tr><tr><td style=\"white-space:nowrap\">805<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-805\"> </a></td><td>松果体</td></tr><tr><td style=\"white-space:nowrap\">810<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-810\"> </a></td><td>副腎</td></tr><tr><td style=\"white-space:nowrap\">815<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-815\"> </a></td><td>傍神経節</td></tr><tr><td style=\"white-space:nowrap\">820<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-820\"> </a></td><td>甲状腺</td></tr><tr><td style=\"white-space:nowrap\">825<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-825\"> </a></td><td>副甲状腺</td></tr><tr><td style=\"white-space:nowrap\">830<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-830\"> </a></td><td>胸腺</td></tr><tr><td style=\"white-space:nowrap\">895<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-895\"> </a></td><td>その他の内分泌</td></tr><tr><td style=\"white-space:nowrap\">900<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-900\"> </a></td><td>頭頸部</td></tr><tr><td style=\"white-space:nowrap\">910<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-910\"> </a></td><td>胸郭</td></tr><tr><td style=\"white-space:nowrap\">920<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-920\"> </a></td><td>腹部</td></tr><tr><td style=\"white-space:nowrap\">930<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-930\"> </a></td><td>上下肢</td></tr><tr><td style=\"white-space:nowrap\">990<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-990\"> </a></td><td>その他部位</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"JP-Specimen-JLAC10-SpecimenCode-CS-999\"> </a></td><td>未コード化検体材料</td></tr></table></div>"
+  },
+  "url" : "http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes",
+  "version" : "0.9.1",
+  "name" : "JP_Specimen_JLAC10_SpecimenCode_CS",
+  "title" : "JP_Specimen_JLAC10_SpecimenCode_CS",
+  "status" : "active",
+  "date" : "2023-09-24T12:46:39+09:00",
+  "publisher" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+  "contact" : [{
+    "name" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://jpfhir.jp"
+    },
+    {
+      "system" : "email",
+      "value" : "office@hlfhir.jp"
+    }]
+  }],
+  "description" : "JLAC10検査材料コード",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166-2",
+      "code" : "JP"
+    }]
+  }],
+  "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 193,
+  "concept" : [{
+    "code" : "001",
+    "display" : "尿(含むその他)"
+  },
+  {
+    "code" : "002",
+    "display" : "自然排尿"
+  },
+  {
+    "code" : "003",
+    "display" : "新鮮尿"
+  },
+  {
+    "code" : "004",
+    "display" : "蓄尿"
+  },
+  {
+    "code" : "005",
+    "display" : "時間尿"
+  },
+  {
+    "code" : "006",
+    "display" : "早朝尿"
+  },
+  {
+    "code" : "007",
+    "display" : "負荷後尿"
+  },
+  {
+    "code" : "008",
+    "display" : "分杯尿"
+  },
+  {
+    "code" : "009",
+    "display" : "カテーテル採取尿"
+  },
+  {
+    "code" : "010",
+    "display" : "尿ろ紙"
+  },
+  {
+    "code" : "011",
+    "display" : "膀胱穿刺"
+  },
+  {
+    "code" : "012",
+    "display" : "動物尿"
+  },
+  {
+    "code" : "015",
+    "display" : "便"
+  },
+  {
+    "code" : "017",
+    "display" : "血液(含むその他)"
+  },
+  {
+    "code" : "018",
+    "display" : "全血"
+  },
+  {
+    "code" : "019",
+    "display" : "全血(添加物入り)"
+  },
+  {
+    "code" : "020",
+    "display" : "動脈血"
+  },
+  {
+    "code" : "021",
+    "display" : "毛細管血"
+  },
+  {
+    "code" : "022",
+    "display" : "血漿"
+  },
+  {
+    "code" : "023",
+    "display" : "血清"
+  },
+  {
+    "code" : "024",
+    "display" : "血球浮遊液"
+  },
+  {
+    "code" : "025",
+    "display" : "赤血球"
+  },
+  {
+    "code" : "026",
+    "display" : "リンパ球"
+  },
+  {
+    "code" : "027",
+    "display" : "血小板"
+  },
+  {
+    "code" : "028",
+    "display" : "白血球"
+  },
+  {
+    "code" : "029",
+    "display" : "臍帯血"
+  },
+  {
+    "code" : "030",
+    "display" : "溶血液"
+  },
+  {
+    "code" : "031",
+    "display" : "除タンパク液"
+  },
+  {
+    "code" : "032",
+    "display" : "血液抽出液"
+  },
+  {
+    "code" : "033",
+    "display" : "血液ろ紙"
+  },
+  {
+    "code" : "034",
+    "display" : "血液塗抹標本"
+  },
+  {
+    "code" : "035",
+    "display" : "造血幹細胞"
+  },
+  {
+    "code" : "036",
+    "display" : "動物血"
+  },
+  {
+    "code" : "037",
+    "display" : "動物全血"
+  },
+  {
+    "code" : "038",
+    "display" : "動物血漿"
+  },
+  {
+    "code" : "039",
+    "display" : "動物血清"
+  },
+  {
+    "code" : "040",
+    "display" : "穿刺液(含むその他)"
+  },
+  {
+    "code" : "041",
+    "display" : "髄液"
+  },
+  {
+    "code" : "042",
+    "display" : "胸水"
+  },
+  {
+    "code" : "043",
+    "display" : "腹水"
+  },
+  {
+    "code" : "044",
+    "display" : "関節液"
+  },
+  {
+    "code" : "045",
+    "display" : "心嚢液"
+  },
+  {
+    "code" : "046",
+    "display" : "骨髄液"
+  },
+  {
+    "code" : "047",
+    "display" : "羊水"
+  },
+  {
+    "code" : "048",
+    "display" : "腰椎"
+  },
+  {
+    "code" : "049",
+    "display" : "骨髄塗抹標本"
+  },
+  {
+    "code" : "050",
+    "display" : "分泌液(含むその他)"
+  },
+  {
+    "code" : "051",
+    "display" : "消化器系からの分泌液"
+  },
+  {
+    "code" : "052",
+    "display" : "胃液"
+  },
+  {
+    "code" : "053",
+    "display" : "十二指腸液"
+  },
+  {
+    "code" : "054",
+    "display" : "胆汁"
+  },
+  {
+    "code" : "055",
+    "display" : "膵液"
+  },
+  {
+    "code" : "056",
+    "display" : "唾液"
+  },
+  {
+    "code" : "057",
+    "display" : "乳頭分泌液"
+  },
+  {
+    "code" : "058",
+    "display" : "子宮頸管粘液"
+  },
+  {
+    "code" : "059",
+    "display" : "前立腺液"
+  },
+  {
+    "code" : "060",
+    "display" : "精液"
+  },
+  {
+    "code" : "061",
+    "display" : "喀痰"
+  },
+  {
+    "code" : "062",
+    "display" : "乳汁"
+  },
+  {
+    "code" : "063",
+    "display" : "鼻汁，鼻腔・鼻咽頭擦過物"
+  },
+  {
+    "code" : "064",
+    "display" : "咽喉からの分泌液"
+  },
+  {
+    "code" : "065",
+    "display" : "耳からの分泌液"
+  },
+  {
+    "code" : "066",
+    "display" : "目からの分泌液"
+  },
+  {
+    "code" : "067",
+    "display" : "膣からの分泌液"
+  },
+  {
+    "code" : "068",
+    "display" : "皮膚からの分泌液(汗)"
+  },
+  {
+    "code" : "069",
+    "display" : "気管からの分泌液"
+  },
+  {
+    "code" : "070",
+    "display" : "組織*(含むその他)"
+  },
+  {
+    "code" : "071",
+    "display" : "生検組織*"
+  },
+  {
+    "code" : "072",
+    "display" : "試験切除組織*"
+  },
+  {
+    "code" : "073",
+    "display" : "手術切除組織*"
+  },
+  {
+    "code" : "074",
+    "display" : "剖検切除組織*"
+  },
+  {
+    "code" : "075",
+    "display" : "固定組織*"
+  },
+  {
+    "code" : "076",
+    "display" : "固定細胞"
+  },
+  {
+    "code" : "077",
+    "display" : "毛髪"
+  },
+  {
+    "code" : "078",
+    "display" : "爪"
+  },
+  {
+    "code" : "079",
+    "display" : "うがい液"
+  },
+  {
+    "code" : "080",
+    "display" : "菌株"
+  },
+  {
+    "code" : "081",
+    "display" : "結石(含むその他)"
+  },
+  {
+    "code" : "082",
+    "display" : "尿路系結石"
+  },
+  {
+    "code" : "083",
+    "display" : "胆石"
+  },
+  {
+    "code" : "084",
+    "display" : "細胞浮遊液"
+  },
+  {
+    "code" : "085",
+    "display" : "擦過物"
+  },
+  {
+    "code" : "086",
+    "display" : "膿(含むその他)"
+  },
+  {
+    "code" : "087",
+    "display" : "開放性の膿"
+  },
+  {
+    "code" : "088",
+    "display" : "非開放性の膿"
+  },
+  {
+    "code" : "089",
+    "display" : "水泡内容物"
+  },
+  {
+    "code" : "090",
+    "display" : "嘔吐物"
+  },
+  {
+    "code" : "091",
+    "display" : "洗浄液"
+  },
+  {
+    "code" : "092",
+    "display" : "血液以外の抽出液"
+  },
+  {
+    "code" : "093",
+    "display" : "浸出液"
+  },
+  {
+    "code" : "094",
+    "display" : "塗抹標本(血液，骨髄以外)"
+  },
+  {
+    "code" : "095",
+    "display" : "透析液"
+  },
+  {
+    "code" : "096",
+    "display" : "かん流液"
+  },
+  {
+    "code" : "097",
+    "display" : "培養液"
+  },
+  {
+    "code" : "098",
+    "display" : "ペア材料"
+  },
+  {
+    "code" : "099",
+    "display" : "その他の材料"
+  },
+  {
+    "code" : "200",
+    "display" : "皮膚"
+  },
+  {
+    "code" : "205",
+    "display" : "乳房"
+  },
+  {
+    "code" : "210",
+    "display" : "乳腺"
+  },
+  {
+    "code" : "220",
+    "display" : "リンパ節"
+  },
+  {
+    "code" : "225",
+    "display" : "脾臓"
+  },
+  {
+    "code" : "230",
+    "display" : "骨髄"
+  },
+  {
+    "code" : "250",
+    "display" : "骨"
+  },
+  {
+    "code" : "255",
+    "display" : "関節"
+  },
+  {
+    "code" : "260",
+    "display" : "骨格筋，筋膜"
+  },
+  {
+    "code" : "265",
+    "display" : "軟骨"
+  },
+  {
+    "code" : "270",
+    "display" : "靭帯"
+  },
+  {
+    "code" : "275",
+    "display" : "腱，腱鞘"
+  },
+  {
+    "code" : "280",
+    "display" : "軟部組織"
+  },
+  {
+    "code" : "300",
+    "display" : "鼻"
+  },
+  {
+    "code" : "305",
+    "display" : "鼻腔"
+  },
+  {
+    "code" : "310",
+    "display" : "上顎洞，他の副鼻腔"
+  },
+  {
+    "code" : "315",
+    "display" : "喉頭蓋，喉頭"
+  },
+  {
+    "code" : "330",
+    "display" : "肺"
+  },
+  {
+    "code" : "335",
+    "display" : "気管"
+  },
+  {
+    "code" : "340",
+    "display" : "気管支"
+  },
+  {
+    "code" : "345",
+    "display" : "肋膜"
+  },
+  {
+    "code" : "350",
+    "display" : "縦隔"
+  },
+  {
+    "code" : "355",
+    "display" : "胸膜"
+  },
+  {
+    "code" : "365",
+    "display" : "その他の呼吸器"
+  },
+  {
+    "code" : "370",
+    "display" : "心臓"
+  },
+  {
+    "code" : "375",
+    "display" : "心臓弁膜"
+  },
+  {
+    "code" : "380",
+    "display" : "心嚢"
+  },
+  {
+    "code" : "385",
+    "display" : "血管"
+  },
+  {
+    "code" : "390",
+    "display" : "動脈"
+  },
+  {
+    "code" : "395",
+    "display" : "頸動脈"
+  },
+  {
+    "code" : "400",
+    "display" : "口腔"
+  },
+  {
+    "code" : "405",
+    "display" : "口唇"
+  },
+  {
+    "code" : "410",
+    "display" : "舌"
+  },
+  {
+    "code" : "415",
+    "display" : "歯"
+  },
+  {
+    "code" : "420",
+    "display" : "歯肉"
+  },
+  {
+    "code" : "425",
+    "display" : "唾液腺"
+  },
+  {
+    "code" : "430",
+    "display" : "咽頭"
+  },
+  {
+    "code" : "435",
+    "display" : "扁桃"
+  },
+  {
+    "code" : "450",
+    "display" : "食道"
+  },
+  {
+    "code" : "455",
+    "display" : "胃"
+  },
+  {
+    "code" : "460",
+    "display" : "小腸，十二指腸膨大部"
+  },
+  {
+    "code" : "465",
+    "display" : "空腸および回腸"
+  },
+  {
+    "code" : "470",
+    "display" : "大腸"
+  },
+  {
+    "code" : "480",
+    "display" : "直腸"
+  },
+  {
+    "code" : "485",
+    "display" : "肛門"
+  },
+  {
+    "code" : "500",
+    "display" : "肝，肝内胆管"
+  },
+  {
+    "code" : "510",
+    "display" : "胆道(外胆管，外胆道)"
+  },
+  {
+    "code" : "515",
+    "display" : "膵"
+  },
+  {
+    "code" : "530",
+    "display" : "腹膜"
+  },
+  {
+    "code" : "535",
+    "display" : "後腹膜，尾仙部"
+  },
+  {
+    "code" : "545",
+    "display" : "その他の消化器"
+  },
+  {
+    "code" : "550",
+    "display" : "膣"
+  },
+  {
+    "code" : "555",
+    "display" : "子宮"
+  },
+  {
+    "code" : "560",
+    "display" : "子宮頸部"
+  },
+  {
+    "code" : "565",
+    "display" : "子宮膣部"
+  },
+  {
+    "code" : "570",
+    "display" : "子宮内膜"
+  },
+  {
+    "code" : "575",
+    "display" : "卵管"
+  },
+  {
+    "code" : "580",
+    "display" : "卵巣"
+  },
+  {
+    "code" : "585",
+    "display" : "胎盤，臍帯"
+  },
+  {
+    "code" : "587",
+    "display" : "流産内容物"
+  },
+  {
+    "code" : "590",
+    "display" : "絨毛その他"
+  },
+  {
+    "code" : "595",
+    "display" : "外陰およびその他の女性器"
+  },
+  {
+    "code" : "600",
+    "display" : "前立腺，精嚢"
+  },
+  {
+    "code" : "605",
+    "display" : "睾丸"
+  },
+  {
+    "code" : "610",
+    "display" : "陰茎"
+  },
+  {
+    "code" : "615",
+    "display" : "その他の男性性器"
+  },
+  {
+    "code" : "620",
+    "display" : "男女不明性器"
+  },
+  {
+    "code" : "650",
+    "display" : "腎臓"
+  },
+  {
+    "code" : "655",
+    "display" : "腎盂"
+  },
+  {
+    "code" : "660",
+    "display" : "尿管"
+  },
+  {
+    "code" : "665",
+    "display" : "膀胱"
+  },
+  {
+    "code" : "670",
+    "display" : "尿道"
+  },
+  {
+    "code" : "695",
+    "display" : "その他の泌尿器"
+  },
+  {
+    "code" : "700",
+    "display" : "眼および眼付属器"
+  },
+  {
+    "code" : "705",
+    "display" : "大脳(大脳半球，脳梁)"
+  },
+  {
+    "code" : "710",
+    "display" : "中脳，橋"
+  },
+  {
+    "code" : "715",
+    "display" : "小脳"
+  },
+  {
+    "code" : "720",
+    "display" : "延髄，脊髄"
+  },
+  {
+    "code" : "725",
+    "display" : "脳膜，脊髄膜"
+  },
+  {
+    "code" : "730",
+    "display" : "内耳"
+  },
+  {
+    "code" : "735",
+    "display" : "脳神経"
+  },
+  {
+    "code" : "740",
+    "display" : "脊髄神経"
+  },
+  {
+    "code" : "795",
+    "display" : "その他の神経系"
+  },
+  {
+    "code" : "800",
+    "display" : "下垂体，頭咽管"
+  },
+  {
+    "code" : "805",
+    "display" : "松果体"
+  },
+  {
+    "code" : "810",
+    "display" : "副腎"
+  },
+  {
+    "code" : "815",
+    "display" : "傍神経節"
+  },
+  {
+    "code" : "820",
+    "display" : "甲状腺"
+  },
+  {
+    "code" : "825",
+    "display" : "副甲状腺"
+  },
+  {
+    "code" : "830",
+    "display" : "胸腺"
+  },
+  {
+    "code" : "895",
+    "display" : "その他の内分泌"
+  },
+  {
+    "code" : "900",
+    "display" : "頭頸部"
+  },
+  {
+    "code" : "910",
+    "display" : "胸郭"
+  },
+  {
+    "code" : "920",
+    "display" : "腹部"
+  },
+  {
+    "code" : "930",
+    "display" : "上下肢"
+  },
+  {
+    "code" : "990",
+    "display" : "その他部位"
+  },
+  {
+    "code" : "999",
+    "display" : "未コード化検体材料"
+  }]
+}

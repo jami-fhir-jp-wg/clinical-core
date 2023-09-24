@@ -1,0 +1,40 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "jp-codeSystem-publicPyerNumber",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>urn:oid:1.2.392.100495.20.3.71</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">01234567<a name=\"jp-codeSystem-publicPyerNumber-01234567\"> </a></td><td>サンプル公費負担者0123456</td></tr></table></div>"
+  },
+  "url" : "urn:oid:1.2.392.100495.20.3.71",
+  "version" : "0.9.1",
+  "name" : "JP_codeSystem_publicPyerNumber",
+  "status" : "active",
+  "date" : "2023-09-24T12:46:39+09:00",
+  "publisher" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+  "contact" : [{
+    "name" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://jpfhir.jp"
+    },
+    {
+      "system" : "email",
+      "value" : "office@hlfhir.jp"
+    }]
+  }],
+  "description" : "公費負担者番号",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166-2",
+      "code" : "JP"
+    }]
+  }],
+  "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "01234567",
+    "display" : "サンプル公費負担者0123456"
+  }]
+}

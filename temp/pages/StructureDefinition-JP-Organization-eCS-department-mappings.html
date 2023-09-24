@@ -1,0 +1,27 @@
+---
+---
+<!-- get modelType -->
+{% include fragment-modelType.html id='JP-Organization-eCS-department' %}
+
+{% include fragment-pagebegin.html %}
+<div style="counter-reset: section 5" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-profile-navtabs.html type='StructureDefinition' id='JP-Organization-eCS-department' active='mapping' %}
+
+<a name="root"> </a>
+<h2 id="root">{{modelType}}: JP_Organization_eCS_department - Mappings</h2>
+{% include fragment-simpletable.html %}
+
+<p>Mappings for the JP-Organization-eCS-department {{modelType | downcase }}.</p>
+
+  <!-- insert intro if present -->
+  {% include fragment-intro.html type='StructureDefinition' id='JP-Organization-eCS-department' %}
+
+  {%include StructureDefinition-JP-Organization-eCS-department-maps.xhtml%}
+
+  <!-- insert notes if present -->
+  {% include fragment-notes.html type='StructureDefinition' id='JP-Organization-eCS-department' %}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

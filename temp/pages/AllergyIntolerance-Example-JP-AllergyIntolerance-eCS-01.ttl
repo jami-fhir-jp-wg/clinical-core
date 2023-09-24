@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://jpfhir.jp/fhir/clincs/AllergyIntolerance/Example-JP-AllergyIntolerance-eCS-01> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Example-JP-AllergyIntolerance-eCS-01"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-04-01T10:00:00+09:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary"^^xsd:anyURI ;
+       fhir:link <http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"Example-JP-AllergyIntolerance-eCS-01\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;Example-JP-AllergyIntolerance-eCS-01&quot; Updated &quot;2023-04-01 10:00:00+0900&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-JP-AllergyIntolerance-eCS.html\">Core6 : JP_AllergyIntolerance_eCS</a></p></div><p><b>identifier</b>: id: 102934701</p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: unable-to-assess</p><p><b>code</b>: サバ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>patient</b>: <a name=\"Patient1\"> </a></p><blockquote><p/><p><a name=\"Patient1\"> </a></p><p><b>identifier</b>: id: 826739, id: 00012345:あいう:１８７:05</p><p><b>name</b>: 田中 太郎</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1955-05-04</p></blockquote><p><b>encounter</b>: <a name=\"Encounter1\"> </a></p><blockquote><p/><p><a name=\"Encounter1\"> </a></p><p><b>identifier</b>: id: 192844</p><p><b>status</b>: finished</p><p><b>class</b>: 外来 (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as '外来')</p></blockquote><p><b>onset</b>: 2020-04-10 --&gt; (ongoing)</p><p><b>note</b>: サバ食後３時間ほどで全身に発疹と腹痛あり</p><hr/><blockquote><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>田中 太郎</b> male, DoB: 1955-05-04 ( id: 826739)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id: 00012345:あいう:１８７:05</td></tr></table></blockquote><hr/><blockquote><p><b>Generated Narrative: Encounter #Encounter1</b><a name=\"Encounter1\"> </a></p><p><b>identifier</b>: id: 192844</p><p><b>status</b>: finished</p><p><b>class</b>: 外来 (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code AMB = 'ambulatory', stated as '外来')</p></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Patient ;
+     fhir:id [ fhir:v "Patient1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained"^^xsd:anyURI ;
+         fhir:link <http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "urn:oid:1.2.392.100495.20.3.51.11234567890"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "826739" ]
+     ] [
+       fhir:system [ fhir:v "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member/00012345"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "00012345:あいう:１８７:05" ]
+     ] ) ;
+     fhir:name ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "IDE" ]
+       ] ) ;
+       fhir:text [ fhir:v "田中 太郎" ] ;
+       fhir:family [ fhir:v "田中" ] ;
+       fhir:given ( [ fhir:v "太郎" ] )
+     ] ) ;
+     fhir:gender [ fhir:v "male" ] ;
+     fhir:birthDate [ fhir:v "1955-05-04"^^xsd:date ]
+  ] [
+     a fhir:Encounter ;
+     fhir:id [ fhir:v "Encounter1" ] ;
+     fhir:meta [
+       fhir:profile ( [
+         fhir:v "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"^^xsd:anyURI ;
+         fhir:link <http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter>
+       ] [
+         fhir:v "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained"^^xsd:anyURI ;
+         fhir:link <http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained>
+       ] )
+     ] ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "192844" ]
+     ] ) ;
+     fhir:status [ fhir:v "finished" ] ;
+     fhir:class [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AMB" ] ;
+       fhir:display [ fhir:v "外来" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "102934701" ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "food"] ) ; # 
+  fhir:criticality [ fhir:v "unable-to-assess"] ; # 
+  fhir:code [
+     fhir:text [ fhir:v "サバ" ]
+  ] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "#Patient1" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:reference [ fhir:v "#Encounter1" ]
+  ] ; # 
+  fhir:onset [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2020-04-10"^^xsd:date ]
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "サバ食後３時間ほどで全身に発疹と腹痛あり" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

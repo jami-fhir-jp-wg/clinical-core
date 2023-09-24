@@ -1,0 +1,11 @@
+{
+  "releaselabel":"draft",
+  "copyrightyear":"2022+",
+  "shownav":"N",
+  "excludexml":"y",
+  "excludejson":"N",
+  "excludettl":"y",
+  "excludelogbinaryformat":"y",
+  "excludemap":"N",
+  "fmm-definition":"http://hl7.org/fhir/versions.html#maturity"
+}

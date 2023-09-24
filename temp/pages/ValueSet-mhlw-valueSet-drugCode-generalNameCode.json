@@ -1,0 +1,38 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mhlw-valueSet-drugCode-generalNameCode",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"https://simplifier.net/resolve?scope=jpfhir-terminology@1.1.1&amp;canonical=urn:oid:1.2.392.100495.20.1.81\"><code>urn:oid:1.2.392.100495.20.1.81</code></a></li></ul></div>"
+  },
+  "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode",
+  "version" : "0.9.1",
+  "name" : "MHLW_valueSet_drugCode_generalNameCode",
+  "status" : "active",
+  "date" : "2023-09-24T12:46:39+09:00",
+  "publisher" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+  "contact" : [{
+    "name" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://jpfhir.jp"
+    },
+    {
+      "system" : "email",
+      "value" : "office@hlfhir.jp"
+    }]
+  }],
+  "description" : "厚労省一般処方名マスター(厚労省保険局コード)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166-2",
+      "code" : "JP"
+    }]
+  }],
+  "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:1.2.392.100495.20.1.81"
+    }]
+  }
+}

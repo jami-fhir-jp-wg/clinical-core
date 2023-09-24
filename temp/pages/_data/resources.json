@@ -1,0 +1,2403 @@
+{
+  "ImplementationGuide/clinical-information-sharing" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 0,
+    "source" : "/Users/kohe/GitHub/clinical-core/fsh-generated/resources/ImplementationGuide-clinical-information-sharing.json",
+    "sourceTail" : "ImplementationGuide-clinical-information-sharing.json",
+    "path" : "ImplementationGuide-clinical-information-sharing.html",
+    "url" : "http://jpfhir.jp/fhir/clincs/ImplementationGuide/clinical-information-sharing",
+    "version" : "0.9.1",
+    "name" : "FHIR",
+    "title" : "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）",
+    "date" : "2023-08-09",
+    "description" : "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Observation-LabResult-eCS-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 1,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Observation-LabResult-eCS-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-Observation-LabResult-eCS-Contained.json",
+    "path" : "StructureDefinition-JP-Observation-LabResult-eCS-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Observation_LabResult_eCS_Contained",
+    "title" : "Core6Contained : JP_Observation_LabResult_eCS_Contained",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報への埋め込み用 Observationリソース（検体検査結果）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-insurerNumber" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 2,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-insurerNumber.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-insurerNumber.json",
+    "path" : "CodeSystem-jp-codeSystem-insurerNumber.html",
+    "url" : "urn:oid:1.2.392.100495.20.3.61",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_insurerNumber",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "保険者番号",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Procedure-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 3,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Procedure-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-Procedure-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-Procedure-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Procedure_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Procedure_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_Procedure_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Encounter-OW-eCS-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 4,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Encounter-OW-eCS-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-Encounter-OW-eCS-Contained.json",
+    "path" : "StructureDefinition-JP-Encounter-OW-eCS-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Encounter_OW_eCS_Contained",
+    "title" : "Core6Contained : JP_Encounter_OW_eCS_Contained",
+    "date" : "2023-03-31",
+    "description" : "診療主要6情報への埋め込み用 Encouterリソース(入院外来の別に関するのみの情報)プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/mhlw-valueSet-ePreCDA-insuranceCategory-tbl11" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 5,
+    "source" : "fsh-generated/resources/ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json",
+    "sourceTail" : "ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json",
+    "path" : "ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.html",
+    "url" : "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory",
+    "version" : "0.9.1",
+    "name" : "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表11 保険種別コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-ServiceRequest-eCS-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 6,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ServiceRequest-eCS-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-ServiceRequest-eCS-Contained.json",
+    "path" : "StructureDefinition-JP-ServiceRequest-eCS-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ServiceRequest_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_ServiceRequest_eCS_Contained",
+    "title" : "Core6Contained : JP_ServiceRequest_eCS_Contained",
+    "date" : "2023-03-31",
+    "description" : "診療主要6情報への埋め込み用 ServiceRequestリソース(オーダ依頼)プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Practitioner-eCS-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 7,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Practitioner-eCS-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-Practitioner-eCS-Contained.json",
+    "path" : "StructureDefinition-JP-Practitioner-eCS-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Practitioner_eCS_Contained",
+    "title" : "Core6Contained : JP_Practitioner_eCS_Contained",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報への埋め込み用 Practitionerリソース（医師情報）\u3000\u3000（JP-Practitioner-eCSの派生プロファイル）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/mhlw-valueSet-drugCode-generalNameCode" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 8,
+    "source" : "fsh-generated/resources/ValueSet-mhlw-valueSet-drugCode-generalNameCode.json",
+    "sourceTail" : "ValueSet-mhlw-valueSet-drugCode-generalNameCode.json",
+    "path" : "ValueSet-mhlw-valueSet-drugCode-generalNameCode.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode",
+    "version" : "0.9.1",
+    "name" : "MHLW_valueSet_drugCode_generalNameCode",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省一般処方名マスター(厚労省保険局コード)",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-MedicationRequest-ePres-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 9,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-MedicationRequest-ePres-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-MedicationRequest-ePres-eCS.json",
+    "path" : "StructureDefinition-JP-MedicationRequest-ePres-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_MedicationRequest_ePres_eCS",
+    "title" : "Core6 : JP_MedicationRequest_ePres_eCS",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報サマリー用\u3000MedicationRequestリソース（処方オーダ情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Organization-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 10,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Organization-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-Organization-eCS.json",
+    "path" : "StructureDefinition-JP-Organization-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Organization_eCS",
+    "date" : "2023-03-31",
+    "description" : "診療情報サマリー用\u3000Organizationリソース（医療機関等の組織情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 11,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-clinicalDepartment-tbl10.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.51",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_clinicalDepartment_tbl10",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表10 診療科コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-ResearchSubject" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 12,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ResearchSubject.json",
+    "sourceTail" : "StructureDefinition-JP-ResearchSubject.json",
+    "path" : "StructureDefinition-JP-ResearchSubject.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchSubject",
+    "version" : "0.9.1",
+    "name" : "JP_ResearchSubject",
+    "date" : "2023-03-31",
+    "description" : "JP_ResearchSubject 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Specimen" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 13,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Specimen.json",
+    "sourceTail" : "StructureDefinition-JP-Specimen.json",
+    "path" : "StructureDefinition-JP-Specimen.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen",
+    "version" : "0.9.1",
+    "name" : "JP_Specimen",
+    "date" : "2023-03-31",
+    "description" : "JP-Specimen\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-MedicationStatement-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 14,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-MedicationStatement-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-MedicationStatement-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-MedicationStatement-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_MedicationStatement_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_MedicationStatement_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_MedicationStatement_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Device-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 15,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Device-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-Device-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-Device-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Device_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Device_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_Device_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-PractitionerRole-eCS-author" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 16,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-PractitionerRole-eCS-author.json",
+    "sourceTail" : "StructureDefinition-JP-PractitionerRole-eCS-author.json",
+    "path" : "StructureDefinition-JP-PractitionerRole-eCS-author.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_PractitionerRole_eClinicalSummary_author",
+    "version" : "0.9.1",
+    "name" : "JP_PractitionerRole_eCS_author",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "診療情報サマリー用 PractitionerRoleリソース（資格や権限が必要な文書作成医療者の資格情報)\nプロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jami-codeSystem-ePreSiteCode" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 17,
+    "source" : "fsh-generated/resources/CodeSystem-jami-codeSystem-ePreSiteCode.json",
+    "sourceTail" : "CodeSystem-jami-codeSystem-ePreSiteCode.json",
+    "path" : "CodeSystem-jami-codeSystem-ePreSiteCode.html",
+    "url" : "urn:oid:1.2.392.200250.2.2.20.32",
+    "version" : "0.9.1",
+    "name" : "JAMI_codeSystem_ePreSiteCode",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "JAMI標準用法部位コード（３桁）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-ResearchStudy-" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 18,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ResearchStudy-.json",
+    "sourceTail" : "StructureDefinition-JP-ResearchStudy-.json",
+    "path" : "StructureDefinition-JP-ResearchStudy-.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ResearchStudy_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_ResearchStudy_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_ResearchStudy_eClinicalSummary 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/jp-medicationrequest-dispenserequest-instructionfordispense" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 19,
+    "source" : "fsh-generated/resources/StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json",
+    "sourceTail" : "StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.json",
+    "path" : "StructureDefinition-jp-medicationrequest-dispenserequest-instructionfordispense.html",
+    "url" : "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense",
+    "version" : "0.9.1",
+    "name" : "JP_MedicationRequest_DispenseRequest_InstructionForDispense",
+    "title" : "JP Core MedicationRequest DispenseRequest InstructionForDispense Extension",
+    "date" : "2022-03-16",
+    "description" : "調剤指示。薬剤単位の調剤指示を表現するための拡張",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "purpose" : "薬剤単位の調剤指示を表現するための拡張",
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-prescription-category" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 20,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-prescription-category.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-prescription-category.json",
+    "path" : "CodeSystem-jp-codeSystem-prescription-category.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_prescription_category",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "処方箋区分コード\u3000（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-medicallicensecertificate-cs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 21,
+    "source" : "fsh-generated/resources/CodeSystem-jp-medicallicensecertificate-cs.json",
+    "sourceTail" : "CodeSystem-jp-medicallicensecertificate-cs.json",
+    "path" : "CodeSystem-jp-medicallicensecertificate-cs.html",
+    "url" : "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS",
+    "version" : "0.9.1",
+    "name" : "JP_MedicalLicenseCertificate_CS",
+    "title" : "JP Core MedicalLicenseCertificate CodeSystem",
+    "experimental" : false,
+    "date" : "2022-10-24",
+    "description" : "医療関連免許証明に関するコードシステム。",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-ImagingStudy-Radiology-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 22,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ImagingStudy-Radiology-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-ImagingStudy-Radiology-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-ImagingStudy-Radiology-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_ImagingStudy_Radiology_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_ImagingStudy_Radiology_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-DocumentReference" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 23,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-DocumentReference.json",
+    "sourceTail" : "StructureDefinition-JP-DocumentReference.json",
+    "path" : "StructureDefinition-JP-DocumentReference.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DocumentReference",
+    "version" : "0.9.1",
+    "name" : "JP_DocumentReference",
+    "date" : "2023-03-31",
+    "description" : "JP_DocumentReference\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 24,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-drugDosageStrength-tbl04.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.22",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_drugDosageStrength_tbl04",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表4 力価区分コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Binary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 25,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Binary.json",
+    "sourceTail" : "StructureDefinition-JP-Binary.json",
+    "path" : "StructureDefinition-JP-Binary.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary",
+    "version" : "0.9.1",
+    "name" : "JP_Binary",
+    "date" : "2023-03-31",
+    "description" : "JP_Binary 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Organization-eCS-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 26,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Organization-eCS-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-Organization-eCS-Contained.json",
+    "path" : "StructureDefinition-JP-Organization-eCS-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Organization_eCS_Contained",
+    "title" : "Core6Contained : JP_Organization_eCS_Contained",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報への埋め込み用 Organizationリソース(医療機関等組織情報)プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-FamilyMemberHistory-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 27,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-FamilyMemberHistory-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-FamilyMemberHistory-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-FamilyMemberHistory-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_FamilyMemberHistory_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_FamilyMemberHistory_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "診療情報サマリー用\u3000FamilyMemberHistoryリソース（家族歴情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jami-codeSystem-ePreDetailUsageMethod-TwoDigits" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 28,
+    "source" : "fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json",
+    "sourceTail" : "CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.json",
+    "path" : "CodeSystem-jami-codeSystem-ePreDetailUsageMethod-TwoDigits.html",
+    "url" : "urn:oid:1.2.392.200250.2.2.20.40",
+    "version" : "0.9.1",
+    "name" : "JAMI_codeSystem_ePreDetailUsageMethod_TwoDigits",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "JAMI標準投与方法区分コード2桁",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-DocumentReference-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 29,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-DocumentReference-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-DocumentReference-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-DocumentReference-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DocumentReference_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_DocumentReference_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_DocumentReference_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Practitioner-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 30,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Practitioner-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-Practitioner-eCS.json",
+    "path" : "StructureDefinition-JP-Practitioner-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Practitioner_eCS",
+    "date" : "2023-05-27",
+    "description" : "診療情報サマリー用 Practitionerリソース（医師情報）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 31,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-insuredRelationship-tbl12.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.62",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_insuredRelationship_tbl12",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表12 被保険者区分コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-practitioner-role-category" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 32,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-practitioner-role-category.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-practitioner-role-category.json",
+    "path" : "CodeSystem-jp-codeSystem-practitioner-role-category.html",
+    "url" : "http://jpfhir.jp/fhir/Common/CodeSystem/practitioner-role-category",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_practitioner_role_category",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "医療者役割コード(処方)",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Consent-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 33,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Consent-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-Consent-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-Consent-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Consent_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Consent_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_Consent_eClinicalSummary 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-DeviceUseStatement" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 34,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-DeviceUseStatement.json",
+    "sourceTail" : "StructureDefinition-JP-DeviceUseStatement.json",
+    "path" : "StructureDefinition-JP-DeviceUseStatement.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DeviceUseStatement",
+    "version" : "0.9.1",
+    "name" : "JP_DeviceUseStatement",
+    "date" : "2023-03-31",
+    "description" : "JP_DeviceUseStatement\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jami-codeSystem-ePreBasicUsageMethod-OneDigit" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 35,
+    "source" : "fsh-generated/resources/CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json",
+    "sourceTail" : "CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.json",
+    "path" : "CodeSystem-jami-codeSystem-ePreBasicUsageMethod-OneDigit.html",
+    "url" : "urn:oid:1.2.392.200250.2.2.20.30",
+    "version" : "0.9.1",
+    "name" : "JAMI_codeSystem_ePreBasicUsageMethod_OneDigit",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "JAMI標準基本用法区分コード1桁",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-instructionResidual-tbl09" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 36,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-instructionResidual-tbl09.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-instructionResidual-tbl09.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-instructionResidual-tbl09.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.42",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_instructionResidual_tbl09",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表9 残薬確認指示コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Patient-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 37,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Patient-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-Patient-eCS.json",
+    "path" : "StructureDefinition-JP-Patient-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Patient_eCS",
+    "title" : "JP_Patient_eCS",
+    "date" : "2023-03-31",
+    "description" : "診療情報サマリー用\u3000Patientリソース（患者情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Condition-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 38,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Condition-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-Condition-eCS.json",
+    "path" : "StructureDefinition-JP-Condition-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Condition_eCS",
+    "title" : "Core6 : JP_Condition_eCS",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報サマリー用\u3000Conditionリソース（傷病名情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-MedicationStatement" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 39,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-MedicationStatement.json",
+    "sourceTail" : "StructureDefinition-JP-MedicationStatement.json",
+    "path" : "StructureDefinition-JP-MedicationStatement.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationStatement",
+    "version" : "0.9.1",
+    "name" : "JP_MedicationStatement",
+    "date" : "2023-03-31",
+    "description" : "JP_MedicationStatement\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-claimOrganizationCategory-tbl22" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 40,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-claimOrganizationCategory-tbl22.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-claimOrganizationCategory-tbl22.json",
+    "path" : "CodeSystem-mhlw-codeSystem-claimOrganizationCategory-tbl22.html",
+    "url" : "urn:oid:1.2.392.100495.20.3.22",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_claimOrganizationCategory_tbl22",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別別表２２ 点数表番号",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-documentTypeCode" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 41,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-documentTypeCode.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-documentTypeCode.json",
+    "path" : "CodeSystem-jp-codeSystem-documentTypeCode.html",
+    "url" : "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_documentTypeCode",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "FHIR文書の文書区分（医療文書全般）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-sectionCategory-tbl02" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 42,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-sectionCategory-tbl02.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.12",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_sectionCategory_tbl02",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表2 セクション区分コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-DocumentReference-CDAdocument" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 43,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-DocumentReference-CDAdocument.json",
+    "sourceTail" : "StructureDefinition-JP-DocumentReference-CDAdocument.json",
+    "path" : "StructureDefinition-JP-DocumentReference-CDAdocument.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DocumentReference_CDAdocument",
+    "version" : "0.9.1",
+    "name" : "JP_DocumentReference_CDAdocument",
+    "date" : "2023-03-31",
+    "description" : "JP_DocumentReference_CDAdocument\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-documentCategory-tbl011" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 44,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-documentCategory-tbl011.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-documentCategory-tbl011.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-documentCategory-tbl011.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.11",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_documentCategory_tbl01",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表１ 文書区分コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-practitioner-certificate-category" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 45,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-practitioner-certificate-category.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-practitioner-certificate-category.json",
+    "path" : "CodeSystem-jp-codeSystem-practitioner-certificate-category.html",
+    "url" : "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_practitioner_certificate_category",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "医療従事者資格種別",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Immunization-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 46,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Immunization-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-Immunization-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-Immunization-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Immunization_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Immunization_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_Immunization_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 47,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-insuredCoPayCategory-tbl13.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.63",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_insuredCoPayCategory_tbl13",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表13 患者一部負担コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Organization-eCS-department-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 48,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Organization-eCS-department-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-Organization-eCS-department-Contained.json",
+    "path" : "StructureDefinition-JP-Organization-eCS-department-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary_department_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Organization_eCS_department_Contained",
+    "title" : "Core6Contained : JP_Organization_eCS_department_Contained",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報への埋め込み用 Organizationリソース(診療科情報)プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-CarePlan" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 49,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-CarePlan.json",
+    "sourceTail" : "StructureDefinition-JP-CarePlan.json",
+    "path" : "StructureDefinition-JP-CarePlan.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan",
+    "version" : "0.9.1",
+    "name" : "JP_CarePlan",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "診療情報サマリー用\u3000CarePlanリソース（ケアプラン・診療計画）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-ePrescription-section" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 50,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-ePrescription-section.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-ePrescription-section.json",
+    "path" : "CodeSystem-jp-codeSystem-ePrescription-section.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_ePrescription_section",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "処方セクション区分コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/jami-valueSet-ePreOrderUsageCode-16digits" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 51,
+    "source" : "fsh-generated/resources/ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json",
+    "sourceTail" : "ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json",
+    "path" : "ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode",
+    "version" : "0.9.1",
+    "name" : "JAMI_valueSet_ePreOrderUsageCode_16digits",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "JAMI16桁用法コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Specimen-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 52,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Specimen-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-Specimen-eCS.json",
+    "path" : "StructureDefinition-JP-Specimen-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Specimen_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Specimen_LaboResult_eCS_Contained",
+    "title" : "Core6Contained : JP_Specimen_LaboResult_eCS_Contained",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報への埋め込み用 Specimenリソース（検体検査の検体情報 ）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/jp-valueSet-drugCode-yj" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 53,
+    "source" : "fsh-generated/resources/ValueSet-jp-valueSet-drugCode-yj.json",
+    "sourceTail" : "ValueSet-jp-valueSet-drugCode-yj.json",
+    "path" : "ValueSet-jp-valueSet-drugCode-yj.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj",
+    "version" : "0.9.1",
+    "name" : "JP_valueSet_drugCode_yj",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "医薬品コード（YJコード）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jami-codeSystem-ePreDispenseInstruction" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 54,
+    "source" : "fsh-generated/resources/CodeSystem-jami-codeSystem-ePreDispenseInstruction.json",
+    "sourceTail" : "CodeSystem-jami-codeSystem-ePreDispenseInstruction.json",
+    "path" : "CodeSystem-jami-codeSystem-ePreDispenseInstruction.html",
+    "url" : "urn:oid:1.2.392.200250.2.2.30.10",
+    "version" : "0.9.1",
+    "name" : "JAMI_codeSystem_ePreDispenseInstruction",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "調剤指示コード（備考欄）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Encounter-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 55,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Encounter-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-Encounter-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-Encounter-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Encounter_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "診療情報サマリー用\u3000Encounterリソース（受診時・入院時等のEncounter情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-drugUnitAbbr-tbl20" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 56,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-drugUnitAbbr-tbl20.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-drugUnitAbbr-tbl20.json",
+    "path" : "CodeSystem-mhlw-codeSystem-drugUnitAbbr-tbl20.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.101",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_drugUnitAbbr_tbl20",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表２０\t医薬品単位略号",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Patient-eCS-Contained" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 57,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Patient-eCS-Contained.json",
+    "sourceTail" : "StructureDefinition-JP-Patient-eCS-Contained.json",
+    "path" : "StructureDefinition-JP-Patient-eCS-Contained.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained",
+    "version" : "0.9.1",
+    "name" : "JP_Patient_eCS_Contained",
+    "title" : "Core6Contained : JP_Patient_eCS_Contained",
+    "date" : "2023-03-31",
+    "description" : "診療主要6情報への埋め込み用 Patientリソース(患者情報)プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jami-codeSystem-ePreOrderUsageAuxCode" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 58,
+    "source" : "fsh-generated/resources/CodeSystem-jami-codeSystem-ePreOrderUsageAuxCode.json",
+    "sourceTail" : "CodeSystem-jami-codeSystem-ePreOrderUsageAuxCode.json",
+    "path" : "CodeSystem-jami-codeSystem-ePreOrderUsageAuxCode.html",
+    "url" : "urn:oid:1.2.392.200250.2.2.20.22",
+    "version" : "0.9.1",
+    "name" : "JAMI_codeSystem_ePreOrderUsageAuxCode",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "JAMI補足用法コード8桁",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Observation-LabResult-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 59,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Observation-LabResult-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-Observation-LabResult-eCS.json",
+    "path" : "StructureDefinition-JP-Observation-LabResult-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Observation_LabResult_eCS",
+    "title" : "Core6 : JP_Observation_LabResult_eCS",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報サマリー用\u3000Observationリソース（検体検査結果／感染症検体検査結果）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Organization-eCS-department" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 60,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Organization-eCS-department.json",
+    "sourceTail" : "StructureDefinition-JP-Organization-eCS-department.json",
+    "path" : "StructureDefinition-JP-Organization-eCS-department.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary_department",
+    "version" : "0.9.1",
+    "name" : "JP_Organization_eCS_department",
+    "date" : "2023-03-31",
+    "description" : "診療情報サマリー用\u3000Organizationリソース（診療科情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 61,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-drugUsageForm-tbl03.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.21",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_drugsageForm_tbl03",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表3  剤形区分コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jami-codeSystem-ePreUsageRoute" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 62,
+    "source" : "fsh-generated/resources/CodeSystem-jami-codeSystem-ePreUsageRoute.json",
+    "sourceTail" : "CodeSystem-jami-codeSystem-ePreUsageRoute.json",
+    "path" : "CodeSystem-jami-codeSystem-ePreUsageRoute.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes",
+    "version" : "0.9.1",
+    "name" : "JAMI_codeSystem_ePreUsageRoute",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "HL7医薬品投与経路コード（JAHIS 使用者定義表 0162 投薬経路）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/JP-Specimen-JLAC10-SpecimenCode-CS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 63,
+    "source" : "fsh-generated/resources/CodeSystem-JP-Specimen-JLAC10-SpecimenCode-CS.json",
+    "sourceTail" : "CodeSystem-JP-Specimen-JLAC10-SpecimenCode-CS.json",
+    "path" : "CodeSystem-JP-Specimen-JLAC10-SpecimenCode-CS.html",
+    "url" : "http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes",
+    "version" : "0.9.1",
+    "name" : "JP_Specimen_JLAC10_SpecimenCode_CS",
+    "title" : "JP_Specimen_JLAC10_SpecimenCode_CS",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "JLAC10検査材料コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-prefectureNumber" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 64,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-prefectureNumber.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-prefectureNumber.json",
+    "path" : "CodeSystem-jp-codeSystem-prefectureNumber.html",
+    "url" : "urn:oid:1.2.392.100495.20.3.21",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_prefectureNumber",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "都道府県番号",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-claimOrganizationNo7digits-tbl23" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 65,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-claimOrganizationNo7digits-tbl23.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-claimOrganizationNo7digits-tbl23.json",
+    "path" : "CodeSystem-mhlw-codeSystem-claimOrganizationNo7digits-tbl23.html",
+    "url" : "urn:oid:1.2.392.100495.20.1.23",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_claimOrganizationNo7digits_tbl23",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別別表２３ 保険医療機関番号（7桁）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-CarePlan-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 66,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-CarePlan-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-CarePlan-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-CarePlan-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_CarePlan_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_CarePlan_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "Derived Profile from JP-Core",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-DeviceUseStatement-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 67,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-DeviceUseStatement-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-DeviceUseStatement-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-DeviceUseStatement-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DeviceUseStatement_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_DeviceUseStatement_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_DeviceUseStatement_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Device" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 68,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Device.json",
+    "sourceTail" : "StructureDefinition-JP-Device.json",
+    "path" : "StructureDefinition-JP-Device.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Device",
+    "version" : "0.9.1",
+    "name" : "JP_Device",
+    "date" : "2023-03-31",
+    "description" : "JP_Device\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Coverage-eCS-insurance" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 69,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Coverage-eCS-insurance.json",
+    "sourceTail" : "StructureDefinition-JP-Coverage-eCS-insurance.json",
+    "path" : "StructureDefinition-JP-Coverage-eCS-insurance.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_insurance",
+    "version" : "0.9.1",
+    "name" : "JP_Coverage_eCS_insurance",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "診療情報サマリー用\u3000Coverageリソース（保険情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 70,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-unable2Change2Generic-tbl08.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.41",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_unable2Change2Generic_tbl08",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表8 後発品変更不可コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 71,
+    "source" : "fsh-generated/resources/CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.json",
+    "sourceTail" : "CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.json",
+    "path" : "CodeSystem-mhlw-codeSystem-ePreCDA-insuranceCategory-tbl11.html",
+    "url" : "urn:oid:1.2.392.100495.20.2.61",
+    "version" : "0.9.1",
+    "name" : "MHLW_codeSystem_ePreCDA_insuranceCategory_tbl11",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "厚労省電子処方CDA規格別表11 保険種別コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-ResearchStudy" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 72,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ResearchStudy.json",
+    "sourceTail" : "StructureDefinition-JP-ResearchStudy.json",
+    "path" : "StructureDefinition-JP-ResearchStudy.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchStudy",
+    "version" : "0.9.1",
+    "name" : "JP_ResearchStudy",
+    "date" : "2023-03-31",
+    "description" : "JP_ResearchStudy 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/jp-valueSet-documentTypeCode" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 73,
+    "source" : "fsh-generated/resources/ValueSet-jp-valueSet-documentTypeCode.json",
+    "sourceTail" : "ValueSet-jp-valueSet-documentTypeCode.json",
+    "path" : "ValueSet-jp-valueSet-documentTypeCode.html",
+    "url" : "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes",
+    "version" : "0.9.1",
+    "name" : "JP_valueSet_documentTypeCode",
+    "title" : "doc-typecodes",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "FHIR文書の文書区分（医療文書全般）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Observation-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 74,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Observation-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-Observation-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-Observation-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_Common_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_Observation_Common_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_Observation_Common_eClinicalSummary\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "AllergyIntolerance/Example-JP-AllergyIntolerance-eCS-01" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 75,
+    "source" : "fsh-generated/resources/AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-01.json",
+    "sourceTail" : "AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-01.json",
+    "path" : "AllergyIntolerance-Example-JP-AllergyIntolerance-eCS-01.html",
+    "status" : {
+      "class" : "colsi"
+    }
+  },
+  "StructureDefinition/JP-ServiceRequest" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 76,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ServiceRequest.json",
+    "sourceTail" : "StructureDefinition-JP-ServiceRequest.json",
+    "path" : "StructureDefinition-JP-ServiceRequest.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest",
+    "version" : "0.9.1",
+    "name" : "JP_ServiceRequest",
+    "date" : "2023-03-31",
+    "description" : "JP-ServiceRequest\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/jp-valueSet-drugCode-hot9" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 77,
+    "source" : "fsh-generated/resources/ValueSet-jp-valueSet-drugCode-hot9.json",
+    "sourceTail" : "ValueSet-jp-valueSet-drugCode-hot9.json",
+    "path" : "ValueSet-jp-valueSet-drugCode-hot9.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9",
+    "version" : "0.9.1",
+    "name" : "JP_valueSet_drugCode_hot9",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "MEDIS 医薬品コードHOTコード（9桁）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/jp-valueSet-drugCode-gs1-14" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 78,
+    "source" : "fsh-generated/resources/ValueSet-jp-valueSet-drugCode-gs1-14.json",
+    "sourceTail" : "ValueSet-jp-valueSet-drugCode-gs1-14.json",
+    "path" : "ValueSet-jp-valueSet-drugCode-gs1-14.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-gs1-14",
+    "version" : "0.9.1",
+    "name" : "JP_valueSet_drugCode_gs1_14",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "医薬品コードGTIN 14桁",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Coverage-eCS-publicPayment" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 79,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Coverage-eCS-publicPayment.json",
+    "sourceTail" : "StructureDefinition-JP-Coverage-eCS-publicPayment.json",
+    "path" : "StructureDefinition-JP-Coverage-eCS-publicPayment.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_publicPayment",
+    "version" : "0.9.1",
+    "name" : "JP_Coverage_eCS_publicPayment",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "診療情報サマリー用\u3000Coverageリソース（公費負担情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-publicPyerNumber" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 80,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-publicPyerNumber.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-publicPyerNumber.json",
+    "path" : "CodeSystem-jp-codeSystem-publicPyerNumber.html",
+    "url" : "urn:oid:1.2.392.100495.20.3.71",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_publicPyerNumber",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "公費負担者番号",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Consent" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 81,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Consent.json",
+    "sourceTail" : "StructureDefinition-JP-Consent.json",
+    "path" : "StructureDefinition-JP-Consent.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Consent",
+    "version" : "0.9.1",
+    "name" : "JP_Consent",
+    "date" : "2023-03-31",
+    "description" : "JP_Consent 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-AllergyIntolerance-eCS" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 82,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-AllergyIntolerance-eCS.json",
+    "sourceTail" : "StructureDefinition-JP-AllergyIntolerance-eCS.json",
+    "path" : "StructureDefinition-JP-AllergyIntolerance-eCS.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_AllergyIntolerance_eCS",
+    "title" : "Core6 : JP_AllergyIntolerance_eCS",
+    "date" : "2023-05-27",
+    "description" : "診療主要6情報サマリー用\u3000AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "ValueSet/jami-valueSet-ePreDispenseInstruction" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 83,
+    "source" : "fsh-generated/resources/ValueSet-jami-valueSet-ePreDispenseInstruction.json",
+    "sourceTail" : "ValueSet-jami-valueSet-ePreDispenseInstruction.json",
+    "path" : "ValueSet-jami-valueSet-ePreDispenseInstruction.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction",
+    "version" : "0.9.1",
+    "name" : "JAMI_valueSet_ePreDispenseInstruction",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "調剤指示コード（備考欄）",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Organization-eCS-coveragePayer" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 84,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Organization-eCS-coveragePayer.json",
+    "sourceTail" : "StructureDefinition-JP-Organization-eCS-coveragePayer.json",
+    "path" : "StructureDefinition-JP-Organization-eCS-coveragePayer.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_eCS_coveragePayer",
+    "version" : "0.9.1",
+    "name" : "JP_Organization_eCS_coveragePayer",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "診療情報サマリー用\u3000Organizationリソース（保険者／公費受給者情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Practitioner-eCSauthor" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 85,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Practitioner-eCSauthor.json",
+    "sourceTail" : "StructureDefinition-JP-Practitioner-eCSauthor.json",
+    "path" : "StructureDefinition-JP-Practitioner-eCSauthor.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary_author",
+    "version" : "0.9.1",
+    "name" : "JP_Practitioner_eCS_author",
+    "date" : "2023-03-31",
+    "description" : "診療情報サマリー用\u3000Practitionerリソース（医療文書作成医師情報）プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-ResearchSubject-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 86,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-ResearchSubject-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-ResearchSubject-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-ResearchSubject-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ResearchSubject_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_ResearchSubject_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_ResearchSubject_eClinicalSummary 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-Immunization" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 87,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-Immunization.json",
+    "sourceTail" : "StructureDefinition-JP-Immunization.json",
+    "path" : "StructureDefinition-JP-Immunization.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Immunization",
+    "version" : "0.9.1",
+    "name" : "JP_Immunization",
+    "date" : "2023-03-31",
+    "description" : "JP_Immunization\u3000暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "StructureDefinition/JP-RelatedPerson" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 88,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-RelatedPerson.json",
+    "sourceTail" : "StructureDefinition-JP-RelatedPerson.json",
+    "path" : "StructureDefinition-JP-RelatedPerson.html",
+    "url" : "http://jpfhir.jp/fhir/core/StructureDefinition/JP_RelatedPerson",
+    "version" : "0.9.1",
+    "name" : "JP_RelatedPerson",
+    "date" : "2023-03-31",
+    "description" : "JP_RelatedPerson 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-department-ssmix-cs" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 89,
+    "source" : "fsh-generated/resources/CodeSystem-jp-department-ssmix-cs.json",
+    "sourceTail" : "CodeSystem-jp-department-ssmix-cs.json",
+    "path" : "CodeSystem-jp-department-ssmix-cs.html",
+    "url" : "urn:oid:1.2.392.200250.2.2.2",
+    "identifiers" : "id:\u00a0urn:oid:1.2.392.200250.2.2.2",
+    "version" : "0.9.1",
+    "name" : "JP_Department_SsMix_CS",
+    "title" : "JP Core Department SS-MIX CodeSystem",
+    "experimental" : false,
+    "date" : "2022-09-26",
+    "description" : "SS-MIX統一診療科コード",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Japan Association of Medical Informatics (JAMI)  一般社団法人日本医療情報学会"
+  },
+  "StructureDefinition/JP-RelatedPerson-eClinicalSummary" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 90,
+    "source" : "fsh-generated/resources/StructureDefinition-JP-RelatedPerson-eClinicalSummary.json",
+    "sourceTail" : "StructureDefinition-JP-RelatedPerson-eClinicalSummary.json",
+    "path" : "StructureDefinition-JP-RelatedPerson-eClinicalSummary.html",
+    "url" : "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_RelatedPerson_eClinicalSummary",
+    "version" : "0.9.1",
+    "name" : "JP_RelatedPerson_eClinicalSummary",
+    "date" : "2023-03-31",
+    "description" : "JP_RelatedPerson_eClinicalSummary 暫定プロファイル",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsd",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Draft"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  },
+  "CodeSystem/jp-codeSystem-ePreCommunication-category" : {
+    "history" : false,
+    "testplan" : false,
+    "testscript" : false,
+    "index" : 91,
+    "source" : "fsh-generated/resources/CodeSystem-jp-codeSystem-ePreCommunication-category.json",
+    "sourceTail" : "CodeSystem-jp-codeSystem-ePreCommunication-category.json",
+    "path" : "CodeSystem-jp-codeSystem-ePreCommunication-category.html",
+    "url" : "http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category",
+    "version" : "0.9.1",
+    "name" : "JP_codeSystem_ePreCommunication_category",
+    "date" : "2023-09-24T12:46:39+09:00",
+    "description" : "処方箋備考区分",
+    "jurisdictions" : [
+      {
+        "name" : "Japan"
+      }
+    ],
+    "status" : {
+      "class" : "colsi",
+      "owner" : "Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo",
+      "link" : "http://jpfhir.jp",
+      "status" : "Active"
+    },
+    "copyright" : "Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止"
+  }
+}
