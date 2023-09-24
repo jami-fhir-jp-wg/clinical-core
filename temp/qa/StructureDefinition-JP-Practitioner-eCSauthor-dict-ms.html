@@ -1,0 +1,369 @@
+﻿<html>
+<head>
+  <title>StructureDefinition-JP-Practitioner-eCSauthor-dict-ms</title>
+  <link rel="stylesheet" href="fhir.css"/>
+</head>
+<body>
+<p>Guidance on how to interpret the contents of this table can be found <a href="https://build.fhir.org/ig/FHIR/ig-guidance//readingIgs.html#data-dictionaries">here</a>.</p>
+<table class="dict">
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner"> </a><span style="color: grey">1.</span> <b>Practitioner</b><a href="#ms_Practitioner" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>診療情報サマリー・厚労省6情報などにおける主として医療文書作成者としての医師情報の格納に使用する</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">dom-2</b>: リソースが別のリソースに含まれている場合、ネストされたリソースを含めてはなりません / If the resource is contained in another resource, it SHALL NOT contain nested Resources (: contained.contained.empty())<br/><b title="Formal Invariant Identifier">dom-3</b>: リソースが別のリソースに含まれている場合、それはリソースの他の場所から参照されるか、含有リソースを参照するものとします / If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource (: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty())<br/><b title="Formal Invariant Identifier">dom-4</b>: リソースが別のリソースに含まれている場合、meta.versionidまたはmeta.lastupdatedを持たないものとします / If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated (: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty())<br/><b title="Formal Invariant Identifier">dom-5</b>: 別のリソースにリソースが含まれている場合、セキュリティラベルはありません / If a resource is contained in another resource, it SHALL NOT have a security label (: contained.meta.security.empty())<br/><b title="Formal Invariant Identifier">dom-6</b>: リソースには、堅牢な管理のための叙述(Narative)が必要です / A resource should have narrative for robust management (: text.`div`.exists())</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.meta"> </a><span style="color: grey">2.</span> <b>Practitioner.meta</b><a href="#ms_Practitioner.meta" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>リソースに関するメタデータ。これは、インフラストラクチャによって維持されるコンテンツです。コンテンツの変更は、常にリソースのバージョンの変更に関連付けられているとは限りません。 / The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Meta">Meta</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.meta.lastUpdated"> </a><span style="color: grey">3.</span> <b>Practitioner.meta.lastUpdated</b><a href="#ms_Practitioner.meta.lastUpdated" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#instant">instant</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>この値はリソースが初めて作成される場合を除いて常に設定されています。サーバー/リソースマネージャーがこの値を設定します。クライアントが提供する値は関係ありません。これはHTTP Last-Modifiedに相当し、<a href="http://hl7.org/fhir/R4/http.html#read">read</a>のインタラクションで同じ値を持つべきです。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素は、@valueまたはchildrenを持っている必要があります。 (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.identifier"> </a><span style="color: grey">4.</span> <b>Practitioner.identifier</b><a href="#ms_Practitioner.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>医師ID。
+医師を識別するIDや番号として、医療機関における医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。</p>
+</td></tr>
+  <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>多くの場合、エージェントには特定の識別子が割り当てられている。</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>【JP Core仕様】IDの名前空間を表す Practitioner.identifier.systemと ID値そのものを表す Practitioner.identifier.value の組み合わせとして表現する。<br />
+Practitioner.identifier.systemは以下の割り当てる。</p>
+<ul>
+<li>医師の場合 : urn:oid:1.2.392.100495.20.3.41.医療機関識別OID番号</li>
+<li>歯科医師の場合、urn:oid:1.2.392.100495.20.3.42.医療機関識別OID番号</li>
+</ul>
+<p>医療機関識別OID番号は患者IDの発行者である施設を識別するものであり、医療機関コード（１０桁）の先頭に１をつけた11桁とする。医療機関コード（１０桁）の詳細についてはOrganizationプロファイルの医療機関コード１０桁の説明を参照すること。<br />
+例：医療機関コード「1312345670」での医師の場合「urn:oid:1.2.392.100495.20.3.41.11312345670」</p>
+<p>なお、rn:oid:1.2.392.100495.20.3.41 の部分は、「<a href="https://std.jpfhir.jp/stddoc/ePrescriptionDataFHIR_v1x.pdf">処方情報 HL7FHIR 記述仕様</a>」表19 識別子名前空間一覧において処方医 IDに割り当てられたOIDのURL型である。</p>
+<p>地域医療連携ネットワークの地域医療従事者IDを指定する場合も同様に、地域医療従事者IDを識別する名前空間（IHE ITI PIX等で使用されるOID等）を system に使用することができる。<br />
+医師、歯科医師以外の医療者のIDの名前空間を表す system 値はまだ未定のため、空白もしくは「ドメイン名/PractitionerのSystem発行キー」などの識別コードを入れること。<br />
+例：http://www.abd-hospital.co.jp/practitioner-system</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.identifier.system"> </a><span style="color: grey">5.</span> <b>Practitioner.identifier.system</b><a href="#ms_Practitioner.identifier.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>urn:oid:1.2.392.100495.20.3.41.1[保険医療機関コード(10桁)
+末尾の1[保険医療機関コード(10桁)]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>識別子のセットがたくさんあります。2つの識別子を一致させるには、どのセットを扱っているかを知る必要があります。システムは、特定の一意の識別子セットを識別します。 / There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>識別子。システムは常にケースに敏感です。 / Identifier.system is always case sensitive.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.identifier.value"> </a><span style="color: grey">6.</span> <b>Practitioner.identifier.value</b><a href="#ms_Practitioner.identifier.value" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>医師を識別するIDや番号として、医療機関における医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>値が完全なURIの場合、システムはurn：ietf：rfc：3986でなければなりません。値の主な目的は、計算マッピングです。その結果、比較目的で正規化される可能性があります（例えば、有意でない白文字、ダッシュなどの削除）ヒューマンディスプレイ用の値は、[レンダリングされた値拡張]（拡張レンダリングValue.html）を使用して伝達できます。識別子。価値は、識別子の知識を使用しない限り、ケースに敏感なものとして扱われます。システムにより、プロセッサーは、非セイズに固有の処理が安全であると確信できます。 / If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the <a href="http://hl7.org/fhir/R4/extension-rendered-value.html">Rendered Value extension</a>. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification"> </a><span style="color: grey">7.</span> <b>Practitioner.qualification</b><a href="#ms_Practitioner.qualification" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>医療従事者によるケアの提供を認可する、あるいは関連する、公式の証明書、トレーニング、免許証等。
+例えば、医療委員会が発行した医師免許証は、認定された地域内で医療を行うことを開業医に許可するものである。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Comments</td><td><p>麻薬施用者免許番号、または医籍登録番号を格納するためのQualification/Slicing定義。</p>
+<p>麻薬施用者免許番号の場合のsystemはFixed Valueの urn:oid:1.2.392.100495.20.3.32.1[都道府県番号] を使用する。
+( 頭に1をつけて末尾3桁で表現する。これは北海道などの場合、都道府県番号は01になるが、OID
+では先頭が0は許可されていないため、頭に1をつけて3桁で表現する)
+つまり麻薬施用者免許番号を発行した都道府県ごとにsystemも異なる値となる。
+医籍登録番号のsystemはFixed Valueの urn:oid:1.2.392.100495.20.3.31 を使用する。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on Practitioner.qualification. The slices are unordered and Open, and can be differentiated using the following discriminators: <ul> <li>value @ code</li></ul></td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.identifier"> </a><span style="color: grey">8.</span> <b>Practitioner.qualification.identifier</b><a href="#ms_Practitioner.qualification.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>この人物のこの役割における資格に適用される識別子。</p>
+</td></tr>
+  <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Requirements</td><td><p>多くの場合、資格には特定の識別子が割り当てられる。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.identifier.system"> </a><span style="color: grey">9.</span> <b>Practitioner.qualification.identifier.system</b><a href="#ms_Practitioner.qualification.identifier.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>医籍登録番号等（歯科医籍登録番号を含む、以下同じ）の場合、識別する名前空間のURI urn:oid:1.2.392.100495.20.3.31。
+麻薬施用免許番号の場合：都道府県番号を２桁（１桁の都道府県では０をつけた２桁）を末尾につけた
+urn:oid:1.2.392.100495.20.3.32.1[都道府県番号2桁]　形式。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>識別子のセットがたくさんあります。2つの識別子を一致させるには、どのセットを扱っているかを知る必要があります。システムは、特定の一意の識別子セットを識別します。 / There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>識別子。システムは常にケースに敏感です。 / Identifier.system is always case sensitive.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.identifier.value"> </a><span style="color: grey">10.</span> <b>Practitioner.qualification.identifier.value</b><a href="#ms_Practitioner.qualification.identifier.value" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>医籍登録番号または麻薬施用者免許番号</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>値が完全なURIの場合、システムはurn：ietf：rfc：3986でなければなりません。値の主な目的は、計算マッピングです。その結果、比較目的で正規化される可能性があります（例えば、有意でない白文字、ダッシュなどの削除）ヒューマンディスプレイ用の値は、[レンダリングされた値拡張]（拡張レンダリングValue.html）を使用して伝達できます。識別子。価値は、識別子の知識を使用しない限り、ケースに敏感なものとして扱われます。システムにより、プロセッサーは、非セイズに固有の処理が安全であると確信できます。 / If the value is a full URI, then the system SHALL be urn:ietf:rfc:3986.  The value's primary purpose is computational mapping.  As a result, it may be normalized for comparison purposes (e.g. removing non-significant whitespace, dashes, etc.)  A value formatted for human display can be conveyed using the <a href="http://hl7.org/fhir/R4/extension-rendered-value.html">Rendered Value extension</a>. Identifier.value is to be treated as case sensitive unless knowledge of the Identifier.system allows the processer to be confident that non-case-sensitive processing is safe.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.code"> </a><span style="color: grey">11.</span> <b>Practitioner.qualification.code</b><a href="#ms_Practitioner.qualification.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>資格のコード化された表現。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>For example codes, see <a href="http://hl7.org/fhir/R4/v2/0360/2.7/index.html">v2 table 0360, Version 2.7</a>
+特定の資格開業医はサービスを提供する必要があります。 / Specific qualification the practitioner has to provide a service
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Comments</td><td><p>すべての用語の使用がこの一般的なパターンに適合するわけではない。いくつかのケースでは、モデルはCodeableConceptを使用せず、Codingを直接使用し、テキスト、コーディング、翻訳、要素間の関係、および前後の調整を管理するための独自の構造を提供することが望ましい。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.code.coding"> </a><span style="color: grey">12.</span> <b>Practitioner.qualification.code.coding</b><a href="#ms_Practitioner.qualification.code.coding" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>用語システムによって定義されたコードへの参照。 / A reference to a code defined by a terminology system.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>コードシステム内の代替エンコーディング、および他のコードシステムへの翻訳が可能になります。 / Allows for alternative encodings within a code system, and translations to other code systems.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>コードは、列挙されたCTなどの非常に正式な定義まで、列挙またはコードリストで非常にさりげなく定義される場合があります。詳細については、HL7 V3コアプリンシップを参照してください。コーディングの順序付けは未定義であり、意味を推測するために使用されません。一般に、せいぜい、コーディング値の1つのみがuserselected = trueとしてラベル付けされます。 / Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.code.coding.system"> </a><span style="color: grey">13.</span> <b>Practitioner.qualification.code.coding.system</b><a href="#ms_Practitioner.qualification.code.coding.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>コード体系 Certificateの種類を識別するURI http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>シンボルの定義のソースについて明確である必要があります。 / Need to be unambiguous about the source of the definition of the symbol.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>uriは、oid（urn：oid：...）またはuuid（urn：uuid：...）である場合があります。OIDとUUIDは、HL7 OIDレジストリへの参照となります。それ以外の場合、URIは、FHIRの特別なURIを定義したHL7のリストから来るか、システムを明確かつ明確に確立する定義を参照する必要があります。 / The URI may be an OID (urn:oid:...) or a UUID (urn:uuid:...).  OIDs and UUIDs SHALL be references to the HL7 OID registry. Otherwise, the URI should come from HL7's list of FHIR defined special URIs or it should reference to some definition that establishes the system clearly and unambiguously.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification.code.coding.code"> </a><span style="color: grey">14.</span> <b>Practitioner.qualification.code.coding.code</b><a href="#ms_Practitioner.qualification.code.coding.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>Certificateの種類コード 'medical-registration'、'dental-registration'、または'narcotics-practitioner'の固定値。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>システム内の特定のコードを参照する必要があります。 / Need to refer to a particular code in the system.</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber"> </a><span style="color: grey">15.</span> <b>Practitioner.qualification:narcoticPrescriptionLicenseNumber</b><a href="#ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>narcoticPrescriptionLicenseNumber</td></tr>
+  <tr><td>Definition</td><td><p>医療従事者によるケアの提供を認可する、あるいは関連する、公式の証明書、トレーニング、免許証等。
+例えば、医療委員会が発行した医師免許証は、認定された地域内で医療を行うことを開業医に許可するものである。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..47</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Comments</td><td><p>麻薬施用者免許番号、または医籍登録番号を格納するためのQualification/Slicing定義。</p>
+<p>麻薬施用者免許番号の場合のsystemはFixed Valueの urn:oid:1.2.392.100495.20.3.32.1[都道府県番号] を使用する。
+( 頭に1をつけて末尾3桁で表現する。これは北海道などの場合、都道府県番号は01になるが、OID
+では先頭が0は許可されていないため、頭に1をつけて3桁で表現する)
+つまり麻薬施用者免許番号を発行した都道府県ごとにsystemも異なる値となる。
+医籍登録番号のsystemはFixed Valueの urn:oid:1.2.392.100495.20.3.31 を使用する。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier"> </a><span style="color: grey">16.</span> <b>Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier</b><a href="#ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>この人物のこの役割における資格に適用される識別子。</p>
+</td></tr>
+  <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Requirements</td><td><p>多くの場合、資格には特定の識別子が割り当てられる。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.system"> </a><span style="color: grey">17.</span> <b>Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.system</b><a href="#ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>麻薬施用者免許番号OIDを格納。OIDは右記のルールに従う。urn:oid:1.2.392.100495.20.3.32.[1(固定)+都道府県番号(２桁)]</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>識別子のセットがたくさんあります。2つの識別子を一致させるには、どのセットを扱っているかを知る必要があります。システムは、特定の一意の識別子セットを識別します。 / There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>麻薬施用者免許番号OIDを格納。OIDは右記のルールに従う。urn:oid:1.2.392.100495.20.3.32.[1(固定)+都道府県番号(２桁)]。<br />
+都道府県毎のOIDを以下に示す。</p>
+<ul>
+<li>urn:oid:1.2.392.100495.20.3.32.101(北海道)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.102(青森県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.103(岩手県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.104(宮城県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.105(秋田県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.106(山形県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.107(福島県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.108(茨城県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.109(栃木県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.110(群馬県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.111(埼玉県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.112(千葉県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.113(東京都)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.114(神奈川)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.115(新潟県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.116(富山県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.117(石川県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.118(福井県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.119(山梨県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.120(長野県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.121(岐阜県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.122(静岡県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.123(愛知県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.124(三重県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.125(滋賀県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.126(京都府)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.127(大阪府)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.128(兵庫県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.129(奈良県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.130(和歌山県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.131(鳥取県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.132(島根県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.133(岡山県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.134(広島県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.135(山口県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.136(徳島県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.137(香川県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.138(愛媛県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.139(高知県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.140(福岡県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.141(佐賀県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.142(長崎県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.143(熊本県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.144(大分県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.145(宮崎県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.146(鹿児島県)</li>
+<li>urn:oid:1.2.392.100495.20.3.32.147(沖縄県)</li>
+</ul>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.value"> </a><span style="color: grey">18.</span> <b>Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.value</b><a href="#ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.identifier.value" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>通常、識別子の部分はユーザーに関連し、システムのコンテキスト内で一意のユーザーに関連しています。 / The portion of the identifier typically relevant to the user and which is unique within the context of the system.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>都道府県別　麻薬施用者免許番号</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.code"> </a><span style="color: grey">19.</span> <b>Practitioner.qualification:narcoticPrescriptionLicenseNumber.code</b><a href="#ms_Practitioner.qualification:narcoticPrescriptionLicenseNumber.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>資格のコード化された表現。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://simplifier.net/resolve?scope=jp-core.r4@1.1.2-dev&amp;canonical=http://jpfhir.jp/fhir/core/ValueSet/JP_MedicalLicenseCertificate_VS">JP Core MedicalLicense Certificate ValueSet</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Comments</td><td><p>すべての用語の使用がこの一般的なパターンに適合するわけではない。いくつかのケースでは、モデルはCodeableConceptを使用せず、Codingを直接使用し、テキスト、コーディング、翻訳、要素間の関係、および前後の調整を管理するための独自の構造を提供することが望ましい。</p>
+</td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;narcotics-practitioner&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:medicalRegistrationNumber"> </a><span style="color: grey">20.</span> <b>Practitioner.qualification:medicalRegistrationNumber</b><a href="#ms_Practitioner.qualification:medicalRegistrationNumber" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/profiling.html#slicing">SliceName</a></td><td>medicalRegistrationNumber</td></tr>
+  <tr><td>Definition</td><td><p>医療従事者によるケアの提供を認可する、あるいは関連する、公式の証明書、トレーニング、免許証等。
+例えば、医療委員会が発行した医師免許証は、認定された地域内で医療を行うことを開業医に許可するものである。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Comments</td><td><p>麻薬施用者免許番号、または医籍登録番号を格納するためのQualification/Slicing定義。</p>
+<p>麻薬施用者免許番号の場合のsystemはFixed Valueの urn:oid:1.2.392.100495.20.3.32.1[都道府県番号] を使用する。
+( 頭に1をつけて末尾3桁で表現する。これは北海道などの場合、都道府県番号は01になるが、OID
+では先頭が0は許可されていないため、頭に1をつけて3桁で表現する)
+つまり麻薬施用者免許番号を発行した都道府県ごとにsystemも異なる値となる。
+医籍登録番号のsystemはFixed Valueの urn:oid:1.2.392.100495.20.3.31 を使用する。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:medicalRegistrationNumber.identifier"> </a><span style="color: grey">21.</span> <b>Practitioner.qualification:medicalRegistrationNumber.identifier</b><a href="#ms_Practitioner.qualification:medicalRegistrationNumber.identifier" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>この人物のこの役割における資格に適用される識別子。</p>
+</td></tr>
+  <tr><td>Note</td><td>This is a business identifier, not a resource identifier (see <a href="http://hl7.org/fhir/R4/resource.html#identifiers">discussion</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Requirements</td><td><p>多くの場合、資格には特定の識別子が割り当てられる。</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:medicalRegistrationNumber.identifier.system"> </a><span style="color: grey">22.</span> <b>Practitioner.qualification:medicalRegistrationNumber.identifier.system</b><a href="#ms_Practitioner.qualification:medicalRegistrationNumber.identifier.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>値の名前空間、つまり一意のセット値を記述するURLを確立します。 / Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Requirements</td><td><p>識別子のセットがたくさんあります。2つの識別子を一致させるには、どのセットを扱っているかを知る必要があります。システムは、特定の一意の識別子セットを識別します。 / There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.</p>
+</td></tr>
+  <tr><td>Comments</td><td><p>識別子。システムは常にケースに敏感です。 / Identifier.system is always case sensitive.</p>
+</td></tr>
+  <tr><td>Fixed Value</td><td>urn:oid:1.2.392.100495.20.3.31</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:medicalRegistrationNumber.identifier.value"> </a><span style="color: grey">23.</span> <b>Practitioner.qualification:medicalRegistrationNumber.identifier.value</b><a href="#ms_Practitioner.qualification:medicalRegistrationNumber.identifier.value" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>通常、識別子の部分はユーザーに関連し、システムのコンテキスト内で一意のユーザーに関連しています。 / The portion of the identifier typically relevant to the user and which is unique within the context of the system.</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
+  <tr><td>Comments</td><td><p>医籍登録番号</p>
+</td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+  <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="ms_Practitioner.qualification:medicalRegistrationNumber.code"> </a><span style="color: grey">24.</span> <b>Practitioner.qualification:medicalRegistrationNumber.code</b><a href="#ms_Practitioner.qualification:medicalRegistrationNumber.code" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
+  <tr><td>Definition</td><td><p>資格のコード化された表現。</p>
+</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://simplifier.net/resolve?scope=jp-core.r4@1.1.2-dev&amp;canonical=http://jpfhir.jp/fhir/core/ValueSet/JP_MedicalLicenseCertificate_VS">JP Core MedicalLicense Certificate ValueSet</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
+  <tr><td>Comments</td><td><p>すべての用語の使用がこの一般的なパターンに適合するわけではない。いくつかのケースでは、モデルはCodeableConceptを使用せず、Codingを直接使用し、テキスト、コーディング、翻訳、要素間の関係、および前後の調整を管理するための独自の構造を提供することが望ましい。</p>
+</td></tr>
+  <tr><td>Pattern Value</td><td>&lt;valueCodeableConcept&nbsp;xmlns=&quot;http://hl7.org/fhir&quot;&gt;<br/>&nbsp;&nbsp;&lt;coding&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;system&nbsp;value=&quot;http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS&quot;/&gt;<br/>&nbsp;&nbsp;&nbsp;&nbsp;&lt;code&nbsp;value=&quot;medical-registration&quot;/&gt;<br/>&nbsp;&nbsp;&lt;/coding&gt;<br/>&lt;/valueCodeableConcept&gt;<br/></td></tr>
+  <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
+<b title="Formal Invariant Identifier">ele-1</b>: すべてのFHIR要素には、@valueまたは子供が必要です / All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
+</table>
+</body>
+</html>
