@@ -62,6 +62,10 @@
 
 ### [表 AllergyIntolerance](AllergyIntolerance.html)
 
+ <details>
+<summary>▶️表の続きを展開表示／非表示　切り替え</summary>
+
+
 <div id="AllergyIntoleranceTable_9842" class="StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1013 style='border-collapse:
@@ -153,7 +157,7 @@
   <td class=xl70 width=87 style='width:65pt'>uri</td>
   <td class=xl75 width=359 style='width:269pt'>電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に使用</td>
   <td class=xl70 width=44 style='width:33pt'>固定値</td>
-  <td class=xl73 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
+  <td class=xl73 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl69 width=73 style='height:30.0pt;width:55pt'>meta</td>
@@ -175,7 +179,7 @@
   <td class=xl70 width=87 style='width:65pt'>uri</td>
   <td class=xl75 width=359 style='width:269pt'>電子カルテ情報共有サービスで未告知情報または未説明フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）</td>
   <td class=xl70 width=44 style='width:33pt'>固定値</td>
-  <td class=xl73 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
+  <td class=xl73 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl69 width=73 style='height:30.0pt;width:55pt'>meta</td>
@@ -188,10 +192,6 @@
   <td class=xl70 width=44 style='width:33pt'>固定値</td>
   <td class=xl73 width=195 style='width:146pt'>&quot;UNINFORMED&quot;</td>
  </tr>
-
- <details>
-<summary>▶️表の続きを展開表示／非表示　切り替え</summary>
-
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl69 width=73 style='height:30.0pt;width:55pt'>contained[*]</td>
   <td class=xl70 width=73 style='width:55pt'>　</td>
@@ -1260,10 +1260,11 @@
   <td class=xl81 width=44 style='width:33pt'>　</td>
   <td class=xl83 width=195 style='width:146pt'>　</td>
  </tr>
- </details>
+
 </table>
 
 </div>
+ </details>s
 <br>
 
 ## プロファイル
