@@ -2,7 +2,7 @@
 CodeSystem: JP_ehrshrs_indication_CS
 Id: jp-ehrshrs-indication-cs
 Description: "長期保存／未告知診療情報のためのフラグコード"
-* ^url = $P_ehrshrs_indication_CS
+* ^url = $JP_ehrshrs_indication_CS
 * ^title = "長期保存／未告知診療情報のためのフラグコード"
 * ^status = #active
 * ^experimental = false
