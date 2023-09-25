@@ -65,22 +65,6 @@
       <li>
         <a href="#tabs-constraints-view">Constraints</a>
       </li>
-      {% unless excludexml == 'y' %}
-      <li>
-        <a href="#tabs-xml">Pseudo-XML</a>
-      </li>
-      {% endunless %}
-      
-      {% unless excludettl == 'y' %}
-      <li>
-        <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li>
-      {% endunless %}
-      {% unless excludeall == 'y' %}
-      <li>
-        <a href="#tabs-all">All</a>
-      </li>
-      {% endunless %}
     </ul>
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -133,17 +117,6 @@
         </div>
       </div>
     </div>
-    {% unless excludexml == 'y' %}
-    <a name="tabs-xml"> </a>
-    <div id="tabs-xml">
-      <div id="xml">
-        <div id="xml-inner">
-          {%include StructureDefinition-{{[id]}}-pseudo-xml.xhtml%}
-        </div>
-      </div>
-    </div>
-    {% endunless %}
-    {% unless excludejson == 'y' %}
     <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
@@ -152,91 +125,6 @@
         </div>
       </div>
     </div>
-    {% endunless %}
-    {% unless excludettl == 'y' %}
-    <a name="tabs-ttl"> </a>
-    <div id="tabs-ttl">
-      <div id="ttl">
-        <div id="ttl-inner">
-          {%include StructureDefinition-{{[id]}}-pseudo-ttl.xhtml%}
-        </div>
-      </div>
-    </div>
-    {% endunless %}
-    {% unless excludeAll == 'y' %}
-    <a name="tabs-all"> </a>
-    <div id="tabs-all">
-      <div id="all-summ">
-        <p>This structure is derived from <a
-            href="{{site.data.structuredefinitions['{{[id]}}'].basepath}}">{{site.data.structuredefinitions['{{[id]}}'].basename}}</a>
-        </p>
-        <div id="all-summ-inner">
-          {%include StructureDefinition-{{[id]}}-summary.xhtml%}
-        </div>
-      </div>
-      <div id="all-tbl-diff">
-        <p>
-          <b>Differential View</b>
-        </p>
-        <div id="all-tbl-diff-inner">
-          {%include StructureDefinition-{{[id]}}-diff.xhtml%}
-        </div>
-      </div>
-      <div id="all-tbl-snap">
-        <p>
-          <b>Snapshot View</b>
-        </p>
-        <div id="all-tbl-snap-inner">
-          {%include StructureDefinition-{{[id]}}-snapshot.xhtml%}
-        </div>
-      </div>
-      {% unless excludexml == 'y' %}
-      <div id="all-xml">
-        <p>
-          <b>XML Template</b>
-        </p>
-        <div id="all-xml-inner">
-          {%include StructureDefinition-{{[id]}}-pseudo-xml.xhtml%}
-        </div>
-      </div>
-      {% endunless %}
-      {% unless excludejson == 'y' %}
-      <div id="all-json">
-        <p>
-          <b>JSON Template</b>
-        </p>
-        <div id="all-json-inner">
-          {%include StructureDefinition-{{[id]}}-pseudo-json.xhtml%}
-        </div>
-      </div>
-      {% endunless %}
-      {% unless excludettl == 'y' %}
-      <div id="all-ttl">
-        <p>
-          <b>TTL Template</b>
-        </p>
-        <div id="all-ttl-inner">
-          {%include StructureDefinition-{{[id]}}-pseudo-ttl.xhtml%}
-        </div>
-      </div>
-      {% endunless %}
-      {% unless excludeall == 'y' %}
-      <div id="all-tbl-terminology-bindings-view-inner">
-        <!--Terminology Bindings heading in the fragment -->
-        <p>
-          <b>Terminology Bindings</b>
-        </p>
-        {%include StructureDefinition-{{[id]}}-tx.xhtml%}
-      </div>
-      <div id="all-tbl-constraints-view-inner">
-        <p>
-          <b>Constraints</b>
-        </p>
-        {%include StructureDefinition-{{[id]}}-inv.xhtml%}
-      </div>
-      {% endunless %}
-    </div>
-    {% endunless %}
   </div>
   <p>&#160;</p>
   <p>Other representations of profile: <a href="{{[type]}}-{{[id]}}.csv">CSV</a>, <a
