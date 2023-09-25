@@ -65,7 +65,7 @@
       <li>
         <a href="#tabs-constraints-view">Constraints</a>
       </li>
-      {% unless excludexml == 'true' %}
+      {% unless excludexml == 'y' %}
       <li>
         <a href="#tabs-xml">Pseudo-XML</a>
       </li>
@@ -80,7 +80,7 @@
         <a href="#tabs-ttl">Pseudo-TTL</a>
       </li>
       {% endunless %}
-      {% unless excludeAll == 'true' %}
+      {% unless excludeAll == 'y' %}
       <li>
         <a href="#tabs-all">All</a>
       </li>
@@ -167,7 +167,7 @@
       </div>
     </div>
     {% endunless %}
-    {% unless excludeAll == 'true' %}
+    {% unless excludeAll == 'y' %}
     <a name="tabs-all"> </a>
     <div id="tabs-all">
       <div id="all-summ">
@@ -224,7 +224,7 @@
         </div>
       </div>
       {% endunless %}
-      {% unless excludeAll == 'true' %}
+      {% unless excludeAll == 'y' %}
       <div id="all-tbl-terminology-bindings-view-inner">
         <!--Terminology Bindings heading in the fragment -->
         <p>
