@@ -25,13 +25,13 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
 * meta.tag contains lts 0..1 MS
   and uninformed 0..1 MS
 
-* meta.tag[lts] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS
+* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に使用する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
-* meta.tag[uninformed] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED
+* meta.tag[uninformed] = $JP_ehrshrs_indication_CS#UNINFORMED
   * insert relative_short_definition("電子カルテ情報共有サービスで未告知情報または未説明フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
@@ -103,17 +103,8 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
 CodeSystemは、category要素の値に対応して、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS
 http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS
 http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つのいずれかから選択することが推奨されている。\n アレルギー情報はコードにより正確に表現することが困難であることが多いので、必ずcode.textにより文字列で記述すること。"
-* code.coding 0..1 MS
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    medication 0..1 MS
-and food 0..1 MS
-and nonFoodnonMedication  0..1 MS
-* code.coding[medication].system =  $JP_JfagyMedicationAllergen_CS
-* code.coding[food].system =  $JP_JfagyMedicationAllergen_CS
-* code.coding[nonFoodnonMedication].system =  $JP_JfagyNonFoodNonMedicationAllergen_CS
+
+* code from $JP_AllergyIntolerance_VS
 * code.text 1..1 MS
 * code.text ^short = "コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
 
