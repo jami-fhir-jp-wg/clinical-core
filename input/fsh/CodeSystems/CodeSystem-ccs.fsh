@@ -46,7 +46,6 @@ Description: "測定法問わず998を含むMEDIS臨床検査項目コードだ�
 * ^caseSensitive = false
 * #12345123451299812  "JLAC10 sample code"
 
-
 //$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
 CodeSystem: JP_Observation_SubCategory_CS
 Id: jp-observation-subcategory-cs
