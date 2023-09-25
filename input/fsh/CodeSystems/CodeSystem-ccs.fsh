@@ -48,7 +48,7 @@ Description: "測定法問わず998を含むMEDIS臨床検査項目コードだ�
 
 
 //$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
-CodeSystem: JP_Observation-SubCategory_CS
+CodeSystem: JP_Observation_SubCategory_CS
 Id: jp-observation-subcategory-cs
 Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
 * ^url = $observation-subcategory-cs

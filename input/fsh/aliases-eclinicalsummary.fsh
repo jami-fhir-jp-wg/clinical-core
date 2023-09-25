@@ -1,6 +1,7 @@
 Alias: $JP_ehrshrs_indication_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
 
 Alias: $JP_Patient_eClinicalSummary = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eClinicalSummary
+
 Alias: $JP_Observation_LabResult_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eClinicalSummary
 
 Alias: $JP_Observation_LabResult_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS_Contained
@@ -43,6 +44,7 @@ Alias: $observation-subcategory-vs = http://jpfhir.jp/fhir/eClinicalSummary/Valu
 Alias: $JP_ObservationLabResultCode_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultCode_InfectionRelated_VS
 Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
 Alias: $JP_ObservationLabResultCode_CS = urn:oid:1.2.392.200119.4.504
+Alias: $JP_SimpleObservationCategory_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
 
 Alias: $composition-clinicaldocument-versionNumber = http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber
 Alias: $coverage-copay-type = http://terminology.hl7.org/CodeSystem/coverage-copay-type
