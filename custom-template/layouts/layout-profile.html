@@ -62,25 +62,23 @@
         <a href="#tabs-constraints-view">Constraints</a>
       </li>
 {% unless excludexml == 'y' %}
-     <li>
+<!--      <li>
         <a href="#tabs-xml">Pseudo-XML</a>
-      </li>
+      </li>-->
 {% endunless %}
 {% unless excludejson == 'y' %}
-      <li>
+<!--      <li>
         <a href="#tabs-json">Pseudo-JSON</a>
-      </li>
+      </li>-->
 {% endunless %}
 {% unless excludettl == 'y' %}
-      <li>
+      <!--<li>
         <a href="#tabs-ttl">Pseudo-TTL</a>
-      </li>
+      </li>-->
 {% endunless %}
-{% unless excludeAll == 'y' %}
       <li>
         <a href="#tabs-all">All</a>
       </li>
-{% endunless %}
     </ul>
     <a name="tabs-summ"> </a>
     <div id="tabs-summ">
@@ -133,36 +131,35 @@
       </div>
     </div>
 {% unless excludexml == 'y' %}
-    <a name="tabs-xml"> </a>
+<!--    <a name="tabs-xml"> </a>
     <div id="tabs-xml">
       <div id="xml">
         <div id="xml-inner">
           {%include StructureDefinition-{{[id]}}-pseudo-xml.xhtml%}
         </div>
       </div>
-    </div>
+    </div>-->
 {% endunless %}
 {% unless excludejson == 'y' %}
-   <a name="tabs-json"> </a>
+<!--    <a name="tabs-json"> </a>
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
           {%include StructureDefinition-{{[id]}}-pseudo-json.xhtml%}
         </div>
       </div>
-    </div>
+    </div>-->
 {% endunless %}
 {% unless excludettl == 'y' %}
-    <a name="tabs-ttl"> </a>
+    <!--<a name="tabs-ttl"> </a>
     <div id="tabs-ttl">
       <div id="ttl">
         <div id="ttl-inner">
           {%include StructureDefinition-{{[id]}}-pseudo-ttl.xhtml%}
         </div>
       </div>
-    </div>
+    </div>-->
 {% endunless %}
-{% unless excludeAll == 'y' %}
     <a name="tabs-all"> </a>
     <div id="tabs-all">
       <div id="all-summ">
@@ -189,36 +186,35 @@
         </div>
       </div>
 {% unless excludexml == 'y' %}
-      <div id="all-xml">
+      <!--<div id="all-xml">
         <p>
           <b>XML Template</b>
         </p>
         <div id="all-xml-inner">
           {%include StructureDefinition-{{[id]}}-pseudo-xml.xhtml%}
         </div>
-      </div>
+      </div>-->
 {% endunless %}
 {% unless excludejson == 'y' %}
-      <div id="all-json">
+      <!--<div id="all-json">
         <p>
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
           {%include StructureDefinition-{{[id]}}-pseudo-json.xhtml%}
         </div>
-      </div>
+      </div>-->
 {% endunless %}
 {% unless excludettl == 'y' %}
-      <div id="all-ttl">
+      <!--<div id="all-ttl">
         <p>
           <b>TTL Template</b>
         </p>
         <div id="all-ttl-inner">
           {%include StructureDefinition-{{[id]}}-pseudo-ttl.xhtml%}
         </div>
-      </div>
+      </div>-->
 {% endunless %}
-{% unless excludeAll == 'y' %}
       <div id="all-tbl-terminology-bindings-view-inner">
         <!--Terminology Bindings heading in the fragment -->
         <p>
@@ -233,8 +229,6 @@
         {%include StructureDefinition-{{[id]}}-inv.xhtml%}
       </div>
     </div>
-{% endunless %}
-{% endunless %}
   </div>
   <p>&#160;</p>
   <p>Other representations of profile: <a href="{{[type]}}-{{[id]}}.csv">CSV</a>, <a href="{{[type]}}-{{[id]}}.xlsx">Excel</a>{% unless modelType == 'Logical Model' %}, <a href="{{[type]}}-{{[id]}}.sch">Schematron</a>
