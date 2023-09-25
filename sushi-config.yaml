@@ -49,7 +49,7 @@ menu:
     プロファイル: artifacts.html
   Artifacts: 
     Artifacts: artifacts.html
-    
+
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
@@ -72,6 +72,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   apply-jurisdiction: 'true'
   show-inherited-invariants: 'true'
   usage-stats-opt-out: 'true'
+  display-warnings: 'true'
   excludexml: 'true'
   excludejsn: 'false'
   excludettl: 'true'
@@ -83,6 +84,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   no-validate:
     - '*/hl7.fhir.jp.core'
   special-url:
+    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eClinicalSummary
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS

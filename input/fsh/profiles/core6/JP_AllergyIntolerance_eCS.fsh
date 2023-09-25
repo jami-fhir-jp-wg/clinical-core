@@ -36,7 +36,7 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
   * system 1..1 MS
     * insert relative_short_definition("固定値 http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
-    * insert relative_short_definition("未告知情報または未説明フラグ　固定値 LTSを設定する。")
+    * insert relative_short_definition("未告知情報または未説明フラグ　固定値 UNINFORMEDを設定する。")
 
 // Patinet、encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
@@ -111,13 +111,13 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
     medication 0..1 MS
 and food 0..1 MS
 and nonFoodnonMedication  0..1 MS
-* code.coding[medication].system =  $JP_JfagyMedicationAllergen_CS (exactly)
-* code.coding[food].system =  $JP_JfagyMedicationAllergen_CS (exactly)
-* code.coding[nonFoodnonMedication].system =  $JP_JfagyNonFoodNonMedicationAllergen_CS (exactly)
+* code.coding[medication].system =  $JP_JfagyMedicationAllergen_CS
+* code.coding[food].system =  $JP_JfagyMedicationAllergen_CS
+* code.coding[nonFoodnonMedication].system =  $JP_JfagyNonFoodNonMedicationAllergen_CS
 * code.text 1..1 MS
 * code.text ^short = "コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
 
-* patient 1..1   MS   
+* patient 1..1   MS
 * patient only Reference(JP_Patient_eCS_Contained)
 * patient ^short = "患者情報"
 * patient ^definition = "このアレルギー不耐症を有する患者のFHIRリソースへの参照。"

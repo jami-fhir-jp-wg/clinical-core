@@ -1260,7 +1260,7 @@
   <td class=xl81 width=44 style='width:33pt'>　</td>
   <td class=xl83 width=195 style='width:146pt'>　</td>
  </tr>
- <details>
+ </details>
 </table>
 
 </div>
