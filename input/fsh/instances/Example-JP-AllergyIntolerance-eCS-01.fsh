@@ -15,8 +15,8 @@ Description: "allergyeferralExample01 アレルギー例1　サバ"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
 
-* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier.value = "102934701"
+* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].value = "102934701"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
  // active | recurrence | relapse | inactive | remission | resolved
