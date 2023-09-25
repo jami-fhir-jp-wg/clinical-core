@@ -48,7 +48,7 @@
   - contained (JP_Practitioner) : アレルギー登録者の情報
   - category : 特定された原因物質のカテゴリ
   - encounter : アレルギー登録時の入院外来区分情報。
-  - recordedDate : この状態が最初に記録された日時
+  - recordedDate : この状態が記録された日時
   - recorder : アレルギー登録者の情報。
   - asserter : この状態があると確認（主張）した人情報への参照。
 
@@ -61,9 +61,6 @@
   - 要素[=] ：　（繰り返し可能な要素において）すぐ上の要素と同じ要素の子要素値として記述される。
 
 ### [表 AllergyIntolerance](AllergyIntolerance.html)
-
-<details>
-<summary>▶️表を展開表示または非表示</summary>
 
 <div id="AllergyIntoleranceTable_9842" class="StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
@@ -191,6 +188,10 @@
   <td class=xl70 width=44 style='width:33pt'>固定値</td>
   <td class=xl73 width=195 style='width:146pt'>&quot;UNINFORMED&quot;</td>
  </tr>
+
+ <details>
+<summary>▶️表の続きを展開表示／非表示　切り替え</summary>
+
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl69 width=73 style='height:30.0pt;width:55pt'>contained[*]</td>
   <td class=xl70 width=73 style='width:55pt'>　</td>
@@ -870,7 +871,7 @@
   <td class=xl70 width=73 style='width:55pt'>　</td>
   <td class=xl74 width=36 style='width:27pt'>0..1</td>
   <td class=xl70 width=87 style='width:65pt'>dateTime</td>
-  <td class=xl70 width=359 style='width:269pt'>この状態が最初に記録された日時</td>
+  <td class=xl70 width=359 style='width:269pt'>この状態が記録された日時</td>
   <td class=xl70 width=44 style='width:33pt'>　</td>
   <td class=xl73 width=195 style='width:146pt'>　</td>
  </tr>
@@ -1259,11 +1260,10 @@
   <td class=xl81 width=44 style='width:33pt'>　</td>
   <td class=xl83 width=195 style='width:146pt'>　</td>
  </tr>
-
+ <details>
 </table>
 
 </div>
-</details>
 <br>
 
 ## プロファイル
