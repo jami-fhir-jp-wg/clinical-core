@@ -110,13 +110,13 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 * code.text ^short = "コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
 
 * patient 1..1   MS
-* patient only Reference(JP_Patient_eCS_Contained or JP_Patient)
+* patient only Reference(JP_Patient)
 * patient ^short = "患者情報"
 * patient ^definition = "このアレルギー不耐症を有する患者のFHIRリソースへの参照。"
 * patient ^comment = "電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合は、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter_OW_eCS_Contained or JP_Encounter)
+* encounter only  Reference(JP_Encounter)
 * encounter ^short = "この情報を記録したときの受診情報（入外区分など）"
 * encounter ^definition = "この情報を記録したときの受診情報（入外区分など）を表すEncounterリソース（Containedリソース）への参照"
 * encounter ^comment = "Containedリソースに含まれるEncounterリソースをリソース内で参照する。"
@@ -129,7 +129,7 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 * recordedDate ^definition = "この情報が記録された登録日"
 
 * recorder 0.. MS
-* recorder only Reference(JP_Practitioner_eCS_Contained or JP_Practitioner)
+* recorder only Reference(JP_Practitioner)
 * recorder ^short = "この情報を記録した登録者"
 * recorder ^definition = "登録者を表すPractitionerリソース（Containedリソース）への参照"
 * recorder ^comment = "Containedリソースに含まれるPractitioner（登録者/医療者）リソースをこのリソース内で参照する。"

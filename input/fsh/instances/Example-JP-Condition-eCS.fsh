@@ -27,7 +27,7 @@ Description: "conditionExample01 必須要素だけのサンプル"
 
 * subject = Reference(Example-JP-Patient-eCS-01-Contained)
 
-
+//--------------------------
 // JP_Condition_eCS
 Instance: Example-JP-Condition-eCS-02
 InstanceOf: JP_Condition_eCS

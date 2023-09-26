@@ -139,14 +139,14 @@ and syobo 0..
 //* bodySite.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名修飾語コード
 
 * subject 1..1   MS   
-* subject only Reference(JP_Patient_eCS_Contained or JP_Patient)
+* subject only Reference(JP_Patient)
 * subject ^short = "対象となる患者のFHIRリソースへの参照。"
 * subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
 * subject ^comment = "電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合は、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
 
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter_OW_eCS_Contained or JP_Encounter)
+* encounter only  Reference(JP_Encounter)
 * encounter ^short = "病名をつけたときの受診情報（入外区分など）"
 * encounter ^definition = "病名をつけたときの受診情報（入外区分など）を表すEncounterリソース（Containedリソース）への参照"
 * encounter ^comment = "Containedリソースに含まれるEncounterリソースをリソース内で参照する。なくてもよい。"
@@ -165,7 +165,7 @@ and syobo 0..
 * abatementDateTime ^short = "患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。通常は、この日付がある場合のclinicalStatus要素は\"active\"以外の値となるが、例外的に\"active\"でもよい。"
 
 * recorder 0.. MS
-* recorder only Reference(JP_Practitioner_eCS_Contained or JP_Practitioner)
+* recorder only Reference(JP_Practitioner)
 * recorder ^short = "この情報を記録した登録者"
 * recorder ^definition = "登録者を表すPractitionerリソース（Containedリソース）への参照"
 * recorder ^comment = "Containedリソースに含まれるPractitioner（登録者/医療者）リソースをこのリソース内で参照する。"
