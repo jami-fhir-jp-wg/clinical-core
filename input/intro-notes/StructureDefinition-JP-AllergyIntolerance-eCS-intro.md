@@ -62,10 +62,8 @@
 
 ### [表 AllergyIntolerance](AllergyIntolerance.html)
 
- <details>
-<summary>▶️表の続きを展開表示／非表示　切り替え</summary>
-
-
+<details>
+<summary>▶️表を展開表示または非表示</summary>
 <div id="AllergyIntoleranceTable_9842" class="StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1038 style='border-collapse:
@@ -1267,7 +1265,7 @@
 
 
 </div>
- </details>s
+</details>
 <br>
 
 ## プロファイル
