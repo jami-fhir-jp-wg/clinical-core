@@ -111,14 +111,14 @@ and mediskanri 0.. MS
 and syobo 0.. MS
 and icd10 0.. MS
 
-//* code.coding[mediskoukan].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
-* code.coding[mediskoukan].code from $JP_Disease_MEDIS_Concept_VS
-//* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
-* code.coding[mediskoukan].code from $JP_Disease_MEDIS_ManagementID_VS
-//* code.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
-* code.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
-//* code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
-* code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   　// ICD10分類コード
+* code.coding[mediskoukan].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
+// * code.coding[mediskoukan].code from $JP_Disease_MEDIS_Concept_VS
+* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
+// * code.coding[mediskoukan].code from $JP_Disease_MEDIS_ManagementID_VS
+* code.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
+// * code.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
+* code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
+// * code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
 
 * bodySite 0..*
 * bodySite ^short = "該当する状態が現れている解剖学的な場所を示す。"
@@ -132,12 +132,13 @@ and icd10 0.. MS
     mediskoukan 0.. 
 and mediskanri 0.. 
 and syobo 0.. 
-//* bodySite.coding[mediskoukan].system = $JP_BodySite_MEDIS_Concept_CS (exactly)    // MEDIS 病名修飾語交換コード
-* bodySite.coding[mediskoukan].code from $JP_BodySite_MEDIS_Concept_VS    // MEDIS 病名修飾語交換コード
-//* bodySite.coding[mediskanri].system = $JP_BodySite_MEDIS_ManagementID_CS (exactly) // MEDIS 病名修飾語番号
-* bodySite.coding[mediskanri].code from $JP_BodySite_MEDIS_ManagementID_VS  // MEDIS 病名修飾語番号
-//* bodySite.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名修飾語コード
-* bodySite.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名修飾語コード
+
+* bodySite.coding[mediskoukan].system = $JP_BodySite_MEDIS_Concept_CS (exactly)    // MEDIS 病名修飾語交換コード
+//* bodySite.coding[mediskoukan].code from $JP_BodySite_MEDIS_Concept_VS    // MEDIS 病名修飾語交換コード
+* bodySite.coding[mediskanri].system = $JP_BodySite_MEDIS_ManagementID_CS (exactly) // MEDIS 病名修飾語番号
+//* bodySite.coding[mediskanri].code from $JP_BodySite_MEDIS_ManagementID_VS  // MEDIS 病名修飾語番号
+* bodySite.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名修飾語コード
+//* bodySite.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名修飾語コード
 
 * subject 1..1   MS   
 * subject only Reference(JP_Patient_eCS_Contained or JP_Patient)
@@ -161,7 +162,7 @@ and syobo 0..
 * recordedDate ^definition = "この情報を記録した登録日"
 
 * abatement[x] 0..1 MS
-* abatement only DateTime
+* abatement[x] only dateTime
 * abatementDateTime ^short = "この傷病名情報による患者状態が終了したと同定された時期。"
 * abatementDateTime ^short = "患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。通常は、この日付がある場合のclinicalStatus要素は\"active\"以外の値となるが、例外的に\"active\"でもよい。"
 
@@ -184,7 +185,7 @@ and syobo 0..
 
 * note 
   * insert relative_short_definition("患者状態に関する追加的な情報")
-  * author 0..1
-    * authorString ^short = "記載者氏名などの文字列。必ずしも氏名でなくてもよい。"
-    * time ^short = "この追加的な情報が作成された日時。"
-    * text ^short = "追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。markdown形式のデータ。"
+  * author[x] 0..1
+  * authorString ^short = "記載者氏名などの文字列。必ずしも氏名でなくてもよい。"
+  * time ^short = "この追加的な情報が作成された日時。"
+  * text ^short = "追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。markdown形式のデータ。"
