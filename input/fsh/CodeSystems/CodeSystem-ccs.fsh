@@ -45,7 +45,7 @@ Description: "測定法問わず998を含むMEDIS臨床検査項目コードだ�
 * ^title = "測定法問わず998を含むMEDIS臨床検査項目コードだけからなるCS"
 * ^status = #active
 * ^experimental = false
-* ^content = #partial
+* ^content = #fragment
 * ^caseSensitive = false
 * #12345123451299812  "JLAC10 sample code"
 
@@ -57,7 +57,7 @@ Description: "感染症関連検査結果として検体検査結果を報告す
 * ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
 * ^status = #active
 * ^experimental = false
-* ^content = #partial
+* ^content = #fragment
 * ^caseSensitive = false
 * #infectionRelated  "感染症関連検査結果"
 

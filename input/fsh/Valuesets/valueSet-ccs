@@ -34,7 +34,7 @@ Description: "感染症関連検査結果として検体検査結果を報告す
 * ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
 * ^status = #active
 * ^experimental = false
-* ^content = #partial
+* ^content = #fragment
 * ^caseSensitive = false
 * include codes from system $observation-subcategory-cs
 
@@ -46,7 +46,7 @@ Description: "感染症関連検査結果として検体検査結果を報告す
 * ^title = "感染症関連検査結果として検体検査結果を報告する場合のJLAC10"
 * ^status = #active
 * ^experimental = false
-* ^content = #partial
+* ^content = #fragment
 * ^caseSensitive = false
 * $JP_ObservationLabResultCode_CS#12345123451227112  "JLAC10 sample code1"
 * $JP_ObservationLabResultCode_CS#12345123451227113  "JLAC10 sample code2"
@@ -60,7 +60,7 @@ Description: "感染症関連検査結果として検体検査結果を報告す
 * ^title = "感染症関連検査結果として検体検査結果を報告する場合のJLAC10（測定法998）"
 * ^status = #active
 * ^experimental = false
-* ^content = #partial
+* ^content = #fragment
 * ^caseSensitive = false
 * $JP_ObservationLabResultCode_CS#12345123451299812  "JLAC10 sample code1"
 * $JP_ObservationLabResultCode_CS#12345123451299813  "JLAC10 sample code2"

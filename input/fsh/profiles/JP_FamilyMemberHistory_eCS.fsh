@@ -6,7 +6,7 @@ Description:    "診療情報サマリー用　FamilyMemberHistoryリソース�
 * ^date = "2023-03-31"
 
 * status 1..1 MS
-* status = #partial
+* status = #fragment
 * dataAbsentReason 0..1 MS      //この家族の情報がとれない理由コード
 * dataAbsentReason ^short = "家族の情報がとれない理由コード"
 * dataAbsentReason ^definition = "家族の情報がとれない理由コード"
