@@ -4,7 +4,7 @@
 //--------------------------------------------------------------------
 CodeSystem: JP_Specimen_JLAC10_SpecimenCode_CS
 Id: JP-Specimen-JLAC10-SpecimenCode-CS
-Title: "JP_Specimen_JLAC10_SpecimenCode_CS"
+Title: "JP Specimen JLAC10 SpecimenCode CS"
 Description: "JLAC10検査材料コード"
 * ^url = $JP_Specimen_JLAC10_SpecimenCode_CS
 * ^status = #active
