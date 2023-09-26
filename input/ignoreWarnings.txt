@@ -20,6 +20,8 @@ The markdown contains content that appears to be an embedded HTML tag starting a
 # PublisherのHTMLタグ チェック 
 The string value contains text that looks like embedded HTML tags
 
+# PublisherのNarative チェック 
+%should have narrative%
 
 # DICOM関係
 ValueSet http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html not found by validator

@@ -8,6 +8,7 @@ Title: "JP Specimen JLAC10 SpecimenCode CS"
 Description: "JLAC10検査材料コード"
 * ^url = $JP_Specimen_JLAC10_SpecimenCode_CS
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 //	 ○尿・便

@@ -8,6 +8,7 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * ^url = "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"
 // * ^valueSet = "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 * #JPGCHKUP01 "健診結果報告書"
@@ -23,6 +24,7 @@ Description: "処方箋区分コード　（01:一般処方箋、02:麻薬処方
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 * #01 "一般処方箋"
@@ -37,6 +39,7 @@ Description: "処方セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 * #01 "処方情報セクション"
@@ -52,6 +55,7 @@ Description: "医療従事者資格種別"
 * ^url = "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/practitioner-certificate-category"
 * ^status = #active
+* ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
 * #MedicalDoctorLicense "医師"
