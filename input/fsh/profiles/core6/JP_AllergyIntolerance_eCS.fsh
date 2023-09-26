@@ -46,15 +46,15 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
     and encounter 0..1 MS
     and recorder 0..1 MS
 
-* contained[patient] only JP_Patient_eCS_Contained or JP_Patient
+* contained[patient] only JP_Patient
   * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
   * ^comment = "patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースの必須要素だけが含まれればよい。電子カルテ情報共有サービスでは、JP_Patientリソースのcontainは必須。"
 
-* contained[encounter] only  JP_Encounter_OW_eCS_Contained or JP_Encounter
+* contained[encounter] only  JP_Encounter
   * insert relative_short_definition("診療主要情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースの必須要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
-* contained[recorder] only  JP_Practitioner_eCS_Contained or JP_Practitioner
+* contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースの必須要素だけが含まれればよい。"
 

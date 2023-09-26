@@ -52,7 +52,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
-* meta.tag[+] = http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
+* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 
 * identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier[resourceInstance-identifier].value = "102934702"
@@ -99,7 +99,7 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 * contained[+] = Example-JP-Encounter-OW-eCS-01-Contained
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.tag[+] = http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
+* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 
 * identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier[resourceInstance-identifier].value = "102934703"
@@ -119,8 +119,8 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 * criticality = #high
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#2260701F1ZZZ "【般】ポビドンヨード含嗽用液７％"
-* code.text = "ポビドンヨード"
+* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#YCM2260701F1271 "イソジンガーグル液７％"
+* code.text = "ヨードうがい液"
 
 * patient = Reference(Example-JP-Patient-eCS-01-Contained)
 

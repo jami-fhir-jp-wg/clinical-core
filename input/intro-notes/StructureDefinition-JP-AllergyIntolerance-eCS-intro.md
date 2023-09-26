@@ -156,7 +156,7 @@
   <td class=xl71 width=87 style='width:65pt'>uri</td>
   <td class=xl76 width=359 style='width:269pt'>電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に使用</td>
   <td class=xl71 width=36 style='width:27pt'>固定値</td>
-  <td class=xl74 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
+  <td class=xl74 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl70 width=107 style='height:30.0pt;width:80pt'>meta</td>
@@ -178,7 +178,7 @@
   <td class=xl71 width=87 style='width:65pt'>uri</td>
   <td class=xl76 width=359 style='width:269pt'>電子カルテ情報共有サービスで未告知情報または未説明フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）</td>
   <td class=xl71 width=36 style='width:27pt'>固定値</td>
-  <td class=xl74 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
+  <td class=xl74 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl70 width=107 style='height:30.0pt;width:80pt'>meta</td>

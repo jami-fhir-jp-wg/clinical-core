@@ -26,12 +26,12 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
     and department 0..
     and childObsLaboResult 0..
 
-* contained[patient] only  JP_Patient_eCS_Contained or JP_Patient
-* contained[specimen] only  JP_Specimen_LaboResult_eCS_Contained or JP_Specimen
-* contained[order] only  JP_ServiceRequest_eCS_Contained or JP_ServiceRequest
-* contained[organization] only  JP_Organization_eCS_Contained or JP_Organization_eCS or JP_Organization
-* contained[department] only  JP_Organization_eCS_department_Contained  or JP_Organization_eCS_department
-* contained[childObsLaboResult] only  JP_Observation_LabResult_eCS_Contained or JP_Observation_LabResult
+* contained[patient] only  JP_Patient
+* contained[specimen] only  JP_Specimen
+* contained[order] only  JP_ServiceRequest
+* contained[organization] only  JP_Organization
+* contained[department] only  JP_Organization_eCS_department
+* contained[childObsLaboResult] only  JP_Observation_LabResult
 
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"

@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: clinical-information-sharing
+id: jpfhir.jp.clins
 canonical: http://jpfhir.jp/fhir/clincs
 name: "電子カルテ情報共有サービスFHIR実装ガイド"
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）"
