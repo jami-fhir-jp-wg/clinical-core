@@ -12,6 +12,9 @@ Description: "長期保存／未告知診療情報のためのフラグコード
 * #LTS  "長期保存"
 * #UNINFORMED  "未告知"
 
+
+
+
 CodeSystem: JP_CLINS_ObsLabResult_Uncoded_CS
 Id: jp-clins-obslabresult-uncoded-cs
 Description: "検体検査結果項目で標準コードが割り当てられない場合に使用する未コード化コード(JLAC10)"
