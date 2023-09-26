@@ -62,7 +62,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 
 * onsetDateTime = "2020-04-10"
 * recordedDate = "2020-04-18"
-* recorder = { "display": "消化器内科　田中太郎"}
+* recorder.display = "消化器内科　田中太郎"
 
 
 // JP_Condition_eCS 疑い病名
@@ -98,5 +98,5 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * onsetDateTime = "2020-04-10"
 * abatementDateTime = "2020-05-01"
 * recordedDate = "2020-04-18"
-* recorder = { "display": "消化器内科　田中太郎"}
+* recorder.display = "消化器内科　田中太郎"
 

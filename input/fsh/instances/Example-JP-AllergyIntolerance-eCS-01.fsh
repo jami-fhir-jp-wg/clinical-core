@@ -83,8 +83,8 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 //100on_アレルギ時期日(ARGdate)
 * onsetDateTime = "2020-04-10"
 
-* recorder = { "display": "看護師A"}
-* asserter = { "display": "本人"}
+* recorder.display =  "看護師A"
+* asserter.display =  "本人"
 
 * note.text = "サバ食後３時間ほどで全身に発疹と腹痛あり"
 
@@ -130,8 +130,9 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 //100on_アレルギ時期日(ARGdate)
 * onsetDateTime = "2020-04-10"
 
-* recorder = { "display": "看護師A"}
-* asserter = { "display": "本人"}
+* recorder.display =  "看護師A"
+* asserter.display =  "本人"
+
 
 * note.text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
 
@@ -176,7 +177,8 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 //100on_アレルギ時期日(ARGdate)
 * onsetDateTime = "2020-04-10"
 
-* recorder = { "display": "看護師A"}
-* asserter = { "display": "本人"}
+* recorder.display =  "看護師A"
+* asserter.display =  "本人"
+
 
 * note.text = "ヨード含嗽後に嘔吐と全身に発疹"
