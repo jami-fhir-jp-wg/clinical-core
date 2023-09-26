@@ -44,10 +44,10 @@
   <!-- no uri -->
   <a name="profile"> </a>
   <h3 id="profile">プロファイル詳細</h3>
-  <p>
+  <!--<p>
     <a href="{{site.data.fhir.path}}profiling.html#presentation">Description of Profiles, Differentials, Snapshots and
       how the different presentations work</a>.
-  </p>
+  </p>-->
   <div id="tabs">
     <ul>
       <!--      <li>
@@ -55,10 +55,10 @@
       </li>
 -->
       <li>
-        <a href="#tabs-diff">差分要素の表</a>
+        <a href="#tabs-diff">差分要素のツリー</a>
       </li>
       <li>
-        <a href="#tabs-snap">全要素の表</a>
+        <a href="#tabs-snap">全要素のツリー</a>
       </li>
       <li>
         <a href="#tabs-terminology-bindings-view">Terminology バインディング</a>
@@ -84,6 +84,9 @@
     <a name="tabs-diff"> </a>
     <div id="tabs-diff">
       <div id="tbl-diff">
+        <p>This structure is derived from <a
+            href="{{site.data.structuredefinitions['{{[id]}}'].basepath}}">{{site.data.structuredefinitions['{{[id]}}'].basename}}</a>
+        </p>
         <div id="tbl-diff-inner">
           {%include StructureDefinition-{{[id]}}-diff.xhtml%}
         </div>
@@ -103,7 +106,7 @@
         <div id="terminology-bindings-view-inner">
           <!--Terminology Bindings heading in the fragment -->
           <p>
-            <b>Terminology Bindings</b>
+            <b>Terminology バインディング</b>
           </p>
           {%include StructureDefinition-{{[id]}}-tx.xhtml%}
         </div>
@@ -120,21 +123,8 @@
         </div>
       </div>
     </div>
-    <a name="tabs-json"> </a>
-    <div id="tabs-json">
-      <div id="json">
-        <div id="json-inner">
-          {%include StructureDefinition-{{[id]}}-pseudo-json.xhtml%}
-        </div>
-      </div>
-    </div>
   </div>
   <p>&#160;</p>
-  <p>Other representations of profile: <a href="{{[type]}}-{{[id]}}.csv">CSV</a>, <a
-      href="{{[type]}}-{{[id]}}.xlsx">Excel</a>{% unless modelType == 'Logical Model' %}, <a
-      href="{{[type]}}-{{[id]}}.sch">Schematron</a>
-    {% endunless %}
-  </p>
 
   {% if site.data.resources[resource_].contained != nil %}
   <h4>Contained resources</h4>
