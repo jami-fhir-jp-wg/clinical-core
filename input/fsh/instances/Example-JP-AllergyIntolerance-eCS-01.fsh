@@ -91,7 +91,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 
 //------ 医薬品禁忌-----------------
 Instance: Example-JP-DrugContraindications-eCS-03
-InstanceOf: JP_DrugContraindications_eCS
+InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁忌情報のサンプル"
 
