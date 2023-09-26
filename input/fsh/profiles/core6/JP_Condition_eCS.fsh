@@ -84,7 +84,7 @@ Description: "診療主要6情報サマリー用　Conditionリソース（傷�
 * verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須 。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。"
 * verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）　system=http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
 * verificationStatus.text 0..1
-  * insert relative_short_definition("	コードだけでは記述できない情報がある場合や、コード化できない場合には本要素だけで記述してもよい。コードと併用してもよい")
+  * insert relative_short_definition("コードだけでは記述できない情報がある場合や、コード化できない場合には本要素だけで記述してもよい。コードと併用してもよい")
 
 * category 1..1 MS
 * category ^short = "臨床的状態に割り当てられたカテゴリー。"
@@ -101,7 +101,6 @@ Description: "診療主要6情報サマリー用　Conditionリソース（傷�
 * code ^definition = "傷病名のコードと名称。MEDIS 病名交換コード、病名管理番号、ICD10分類コード、レセプト電算処理用傷病名コード、またはレセプト電算処理用傷病名コードの未コード化コード(7桁all 9)のいずれかまたは複数の組み合わせで表現することを推奨する。
 電子カルテ情報共有サービスでは、病名管理番号またはレセプト電算処理用傷病名コードのいずれかを必ず使用し、それ以外にICD10分類コードを追加することを推奨する。なお、病名のコード化ができない場合には、レセプト電算処理用傷病名コードとして、未コード化コード(7桁all 9）を使用使用する。"
 * code ^comment = "code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。"
-* code.coding ^binding.description = "MEDIS 病名交換コード、病名管理番号、ICD10分類コード、レセプト電算処理用傷病名コード、またはレセプト電算処理用傷病名コードの未コード化コード(7桁all 9)のいずれかまたは複数の組み合わせで表現する。\nMEDIS 病名交換コード：urn:oid:1.2.392.200119.4.101.6\n病名管理番号：urn:oid:1.2.392.200119.4.101.2\nICD10分類コード：urn:oid:2.16.840.1.113883.6.3.1（仮）\nレセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/CodeSystem/claimSystem_syobyomei_CS（仮）"
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -124,7 +123,6 @@ and icd10 0.. MS
 * bodySite ^short = "該当する状態が現れている解剖学的な場所を示す。"
 * bodySite ^definition = "解剖学的な部位表現のコードと名称"
 * bodySite ^comment = "MEDIS 病名修飾語コード、修飾語管理番号、レセプト電算処理用傷病名修飾語コードなどが使用できる。"
-* bodySite.coding ^binding.description = "MEDIS 病名修飾語コード、修飾語管理番号、レセプト電算処理用傷病名修飾語コードのいずれかまたは複数の組み合わせで表現する。"
 * bodySite.coding ^slicing.discriminator.type = #value
 * bodySite.coding ^slicing.discriminator.path = "system"
 * bodySite.coding ^slicing.rules = #open
