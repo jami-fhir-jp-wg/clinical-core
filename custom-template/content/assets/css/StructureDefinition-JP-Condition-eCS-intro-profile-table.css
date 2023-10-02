@@ -4,7 +4,7 @@
 	mso-footer-margin: .31in;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .StructureDefinition-JP-Condition-eCS-intro-profile-table .font5 {
+.StructureDefinition-JP-Condition-eCS-intro-profile-table .font5 {
 	color: windowtext;
 	font-size: 6.0pt;
 	font-weight: 400;
@@ -15,7 +15,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .StructureDefinition-JP-Condition-eCS-intro-profile-table .font6 {
+.StructureDefinition-JP-Condition-eCS-intro-profile-table .font6 {
 	color: black;
 	font-size: 10.0pt;
 	font-weight: 400;
@@ -26,7 +26,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .StructureDefinition-JP-Condition-eCS-intro-profile-table .font7 {
+.StructureDefinition-JP-Condition-eCS-intro-profile-table  .font7 {
 	color: red;
 	font-size: 10.0pt;
 	font-weight: 700;
@@ -37,7 +37,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .StructureDefinition-JP-Condition-eCS-intro-profile-table .font8 {
+.StructureDefinition-JP-Condition-eCS-intro-profile-table  .font8 {
 	color: windowtext;
 	font-size: 6.0pt;
 	font-weight: 400;
@@ -48,7 +48,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .StructureDefinition-JP-Condition-eCS-intro-profile-table .font9 {
+.StructureDefinition-JP-Condition-eCS-intro-profile-table  .font9 {
 	color: red;
 	font-size: 10.0pt;
 	font-weight: 400;
@@ -59,7 +59,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .StructureDefinition-JP-Condition-eCS-intro-profile-table .font10 {
+.StructureDefinition-JP-Condition-eCS-intro-profile-table  .font10 {
 	color: black;
 	font-size: 10.0pt;
 	font-weight: 400;
@@ -81,17 +81,17 @@
 	mso-font-charset: 0;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabltr {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl tr {
 	mso-height-source: auto;
 	mso-ruby-visibility: none;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tablcol {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl col {
 	mso-width-source: auto;
 	mso-ruby-visibility: none;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tablbr {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl br {
 	mso-data-placement: same-cell;
 }
 
@@ -109,7 +109,7 @@
 	mso-style-id: 8;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabla:link {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl a:link {
 	color: #0563C1;
 	font-size: 12.0pt;
 	font-weight: 400;
@@ -121,7 +121,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabla:visited {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl a:visited {
 	color: #954F72;
 	font-size: 12.0pt;
 	font-weight: 400;
@@ -697,11 +697,11 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tablruby {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl ruby {
 	ruby-align: left;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tablrt {
+.StructureDefinition-JP-Condition-eCS-intro-profile-tabl rt {
 	color: windowtext;
 	font-size: 6.0pt;
 	font-weight: 400;
