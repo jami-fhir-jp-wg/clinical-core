@@ -40,8 +40,19 @@
 
 
 ## 詳細説明
+<script>
+var elems = document.getElementsByTagName('details');
+function details_open(bool){
+for(elem of elems){
+elem.open = bool;
+}
+}
+</script>
+<button type="button" onclick="details_open(true)">開く</button>
+<button type="button" onclick="details_open(false)">閉じる</button>
+
 <details>
-<summary>▶️表を展開表示または非表示</summary>
+<summary>▶️表（MedicationRequest）</summary>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
