@@ -43,8 +43,7 @@
 <details>
 <summary>▶️表を展開表示または非表示</summary>
 
-<div id="MedicationRequestTable_13040" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table"  align=center x:publishsource="Excel">
-
+<div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1046 style='border-collapse:
  collapse;table-layout:fixed;width:784pt'>
@@ -526,7 +525,7 @@
   <td class=xl108 width=359 style='border-top:none;width:269pt'>薬剤単位の備考。<ruby><font
   class="font14"><rt class=font14></rt></font></ruby></td>
   <td class=xl108 width=36 style='border-top:none;width:27pt'>　</td>
-  <td class=xl128 style='border-top:none'>　</td>
+  <td class=xl109 width=195 style='border-top:none;width:146pt'>　</td>
  </tr>
  <tr height=81 style='height:61.0pt'>
   <td height=81 class=xl91 width=105 style='height:61.0pt;width:79pt'>note[+]<ruby><font
@@ -827,6 +826,7 @@
 </table>
 
 </div>
+
 </details>
 
 <br>
