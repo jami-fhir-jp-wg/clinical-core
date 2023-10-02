@@ -554,7 +554,7 @@
   <td class=xl102 width=35 style='border-top:none;width:26pt'>1..*<ruby><font
   class="font14"><rt class=font14></rt></font></ruby></td>
   <td class=xl103 width=87 style='border-top:none;width:65pt'>Dosage</td>
-  <td class=xl103 width=359 style='border-top:none;width:269pt'>用法や投与量を含む処方指示。表「dosageInstructionTable」を参照のこと。<ruby><font
+  <td class=xl103 width=359 style='border-top:none;width:269pt'>用法や投与量を含む処方指示。<a fref="#dosageInstructionTable_17705">表「dosageInstructionTable」を参照</a>のこと。<ruby><font
   class="font14"><rt class=font14></rt></font></ruby></td>
   <td class=xl103 width=36 style='border-top:none;width:27pt'>　</td>
   <td class=xl122 width=195 style='border-top:none;width:146pt'>　</td>
@@ -828,7 +828,11 @@
 </div>
 
 </details>
-
+<!-- =========================================== -->
+<!-- ====                                   ==== -->
+<!-- ====      表（DosageInstruction)　　　　 ==== -->
+<!-- ====                                   ==== -->
+<!-- =========================================== -->
 <details>
 <summary>▶️表（DosageInstruction)を展開表示または非表示</summary>
 
