@@ -43,7 +43,7 @@
 <details>
 <summary>▶️表を展開表示または非表示</summary>
 
-<div id="MedicationRequestTable_13040" class="StructureDefinition-JP-Condition-eCS-intro-profile-table"  align=center x:publishsource="Excel">
+<div id="MedicationRequestTable_13040" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table"  align=center x:publishsource="Excel">
 
 
 <table border=0 cellpadding=0 cellspacing=0 width=1046 style='border-collapse:
