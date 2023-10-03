@@ -53,9 +53,9 @@ elem.open = bool;
 </script>
 
 <details id="MedicationRequestDetails">
-<summary>▶️表（MedicationRequest）</summary>
 <button type="button" onclick="details_open(true,"MedicationRequestDetails")">開く</button>
 <button type="button" onclick="details_open(false,"MedicationRequestDetails")">閉じる</button>
+<summary>▶️表（MedicationRequest）</summary>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
@@ -838,6 +838,7 @@ elem.open = bool;
  </tr>
 
 </table>
+<button type="button" onclick="details_open(false,"MedicationRequestDetails")">閉じる</button>
 
 </div>
 
@@ -848,9 +849,9 @@ elem.open = bool;
 <!-- ====                                   ==== -->
 <!-- =========================================== -->
 <details id="DosageInstructionDetails">
-<summary>▶️表（DosageInstruction)を展開表示または非表示</summary>
 <button type="button" onclick="details_open(true,"DosageInstructionDetails")">開く</button>
 <button type="button" onclick="details_open(false,"DosageInstructionDetails")">閉じる</button>
+<summary>▶️表（DosageInstruction)を展開表示または非表示</summary>
 
 <div id="dosageInstructionTable">
 <div id="dosageInstructionTable_17705" class="DosageInstruction" align=center x:publishsource="Excel">
