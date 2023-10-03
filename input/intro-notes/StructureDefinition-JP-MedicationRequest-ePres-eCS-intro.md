@@ -14,23 +14,24 @@
   - 必須要素は、その要素が必ず１個以上出現しなければならない要素。FHIR仕様ではMust Supportフラグを設定している。
   - 推奨要素は、送信側はシステムに値が存在しているなら、値を格納した要素が必ず１個以上出現しなければならず、受信側は必ずその値を格納しなければならない要素。FHIR仕様ではMust Supportフラグを設定している。
 
-### 必須要素　（リソースの直下の要素だけを説明。その下の子要素以下については表を参照）
+### 必須要素　（リソースの直下の必須要素だけを説明している。その下の子要素以下については詳細説明を参照）
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
-  - identifier : インスタンス識別ID
+  - identifier[] : インスタンス識別ID
   - status : 調剤が完了しているかどうかは不明であるが、交付が完了した処方として、completedを設定することとする。
   - intent : 投薬指示の意図。"order" を固定で設定する。
-  - medicationCodeableConcept : 医薬品のコードと名称。ひとつの必須の text 子要素と、複数の（可能なかぎり一組以上の） coding 子要素で記述する。coding子要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。電子カルテ共有サービスで使用する場合には、YJコード、HOT9またはHOT7コード、厚生労働省一般名コードのいずれかを必須とする。text子要素はコード化の方法に関わらず、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず設定する。
+  - medicationCodeableConcept : 医薬品のコードと名称。ひとつの必須の text 子要素と、複数の（可能なかぎり一組以上の） coding[] 子要素で記述する。text子要素はコード化の方法に関わらず、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず設定する。coding[]子要素で使用すべきコード表については詳細説明を参照のこと。
   - subject : 対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、 contained (JP_Patient)リソースへのリテラル参照を設定する。
   - authoredOn : 処方指示が最初に作成された日時。
-  - dosageInstruction[] : 用法や投与量を含む処方指示。表「dosageInstructionTable」を参照。
+  - dosageInstruction[] : 用法や投与量を含む処方指示。<a href="#DosageInstructionTable">表「dosageInstructionTable」</a>を参照。
 
 ### 条件により必須
   - meta.tag : 電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に必須。
-  - contained (JP_Patient) : 電子カルテ情報共有サービスでは、JP_Patientリソースのcontainは必須。
+  - contained (JP_Patient) : 電子カルテ情報共有サービスでは、JP_Patientリソースのcontainedは必須。
 
 ### 推奨要素
-  - caetgory
+  - caetgory : 薬剤使用区分。OHP:外来処方、OHI:院内処方（外来）、OHO:院外処方（外来）、IHP:入院処方、DCG:退院時処方、ORD:定期処方（入院）、XTR:臨時処方(入院）
+JHSP0007コードから、BDP:持参薬処方　などの区分を設定する。
 
 ## 要素の説明とプロファイル
   - 多重度欄の背景色：濃い黄色＝必須要素、薄い黄色＝条件により必須要素、薄い緑＝推奨要素、無色＝本要素を記述する場合の説明を参考までに記載しているが多重度は0..1または0..*であるため出現してもしなくてもよい。受信側では無視（破棄）されるかもしれないことに注意すること。
@@ -43,18 +44,18 @@
 
 ## 詳細説明
 <script>
-var elems = document.getElementsByTagName('details');
-function details_open(bool){
+function details_open(bool,idname){
+var elems = document.getElementsById(idname);
 for(elem of elems){
 elem.open = bool;
 }
 }
 </script>
-<button type="button" onclick="details_open(true)">開く</button>
-<button type="button" onclick="details_open(false)">閉じる</button>
 
-<details>
+<details id="MedicationRequestDetails">
 <summary>▶️表（MedicationRequest）</summary>
+<button type="button" onclick="details_open(true,"MedicationRequestDetails")">開く</button>
+<button type="button" onclick="details_open(false,"MedicationRequestDetails")">閉じる</button>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
@@ -846,9 +847,12 @@ elem.open = bool;
 <!-- ====      表（DosageInstruction)　　　　 ==== -->
 <!-- ====                                   ==== -->
 <!-- =========================================== -->
-<details>
+<details id="DosageInstructionDetails">
 <summary>▶️表（DosageInstruction)を展開表示または非表示</summary>
+<button type="button" onclick="details_open(true,"DosageInstructionDetails")">開く</button>
+<button type="button" onclick="details_open(false,"DosageInstructionDetails")">閉じる</button>
 
+<div id="dosageInstructionTable">
 <div id="dosageInstructionTable_17705" class="DosageInstruction" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1067 style='border-collapse:
@@ -2247,6 +2251,7 @@ elem.open = bool;
 
 </table>
 
+</div>
 </div>
 </details>
 
