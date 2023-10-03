@@ -21,7 +21,7 @@
 [JP_Encounter_OW_eCS_Contained]: StructureDefinition-JP-Encounter-OW-eCS-Contained.html
 [JP_ServiceRequest_eCS_Contained]: StructureDefinition-JP-ServiceRequest-eCS-Contained.html
 [JP_Practitioner_eCS_Contained]: StructureDefinition-JP-Practitioner-eCS-Contained.html
-[JP_MedicationRequest_ePres_eCS]: StructureDefinition-JP-MedicationRequest-ePres-eCS.html
+[JP_MedicationRequest_eCS]: StructureDefinition-JP-MedicationRequest-eCS.html
 [JP_Organization_eCS]: StructureDefinition-JP-Organization-eCS.html
 [JP_ResearchSubject]: StructureDefinition-JP-ResearchSubject.html
 [JP_Specimen]: StructureDefinition-JP-Specimen.html

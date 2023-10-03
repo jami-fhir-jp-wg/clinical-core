@@ -55,7 +55,7 @@ elem.open = aaa;
 <button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じる</button>
 <summary>表（MedicationRequest）</summary>
 
-<div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table" align=center x:publishsource="Excel">
+<div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1046 style='border-collapse:
  collapse;table-layout:fixed;width:784pt'>
@@ -138,7 +138,7 @@ elem.open = aaa;
   <td class=xl68 width=87 style='width:65pt'>canonical(StructureDefinition)</td>
   <td class=xl73 width=359 style='width:269pt'>準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。</td>
   <td class=xl73 width=36 style='width:27pt'>固定値</td>
-  <td class=xl74 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData&quot;</td>
+  <td class=xl74 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_eClinicalSummary&quot;</td>
  </tr>
  <tr class=xl80 height=27 style='height:20.0pt'>
   <td height=27 class=xl75 width=105 style='height:20.0pt;width:79pt'>meta</td>

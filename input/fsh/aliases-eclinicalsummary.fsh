@@ -28,7 +28,7 @@ Alias: $JP_Organization_eCS_department_Contained = http://jpfhir.jp/fhir/eClinic
 //////
 Alias: $communication-category = http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category
 
-Alias: $JP_MedicationRequest_ePres_eCS = http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_ePrescriptionData_eClinicalSummary
+Alias: $JP_MedicationRequest_eCS = http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_eClinicalSummary
 
 Alias: $JP_Organization_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained
 

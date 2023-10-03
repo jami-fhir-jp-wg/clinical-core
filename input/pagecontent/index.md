@@ -44,7 +44,7 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
   * [アレルギー情報／薬剤禁忌情報　AllergyIntoleranceリソース][JP_AllergyIntolerance_eCS]
   * [傷病名情報	Conditionリソース][JP_Condition_eCS]
   * [検査結果情報（注⁂）／感染症情報　Observationリソース][JP_Observation_LabResult_eCS] （注⁂）救急時に有用な検査、生活習慣病関連の検査）
-  * [処方依頼情報　MedicationRequestリソース][JP_MedicationRequest_ePres_eCS]
+  * [処方依頼情報　MedicationRequestリソース][JP_MedicationRequest_eCS]
 　<br>
 アレルギー情報と薬剤禁忌情報と、別に説明するように、同じプロファイルにしたがって記述され、受信側で区別される。また検査結果情報と感染症情報も同様である。
 <br>処方依頼情報には当面、注射点滴手法（自己注射を除く）によるものは含まれない。

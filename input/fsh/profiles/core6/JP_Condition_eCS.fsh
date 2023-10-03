@@ -10,7 +10,7 @@ Title:  "Core6 : JP_Condition_eCS"
 Description: "診療主要6情報サマリー用　Conditionリソース（傷病名情報）プロファイル"
 * ^url = $JP_Condition_eCS
 * ^status = #active
-* ^date = "2023-05-27"
+* ^date = "2023-10-04"
 * insert toplevel_short_definition("診療主要情報における傷病名情報の格納に使用する")
 * . ^comment = ""
 
@@ -57,7 +57,7 @@ Description: "診療主要6情報サマリー用　Conditionリソース（傷�
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースの必須要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[recorder] only  JP_Practitioner
-  * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPractitionerリソース")
+  * insert relative_short_definition("診療主要情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースの必須要素だけが含まれればよい。"
 
 
