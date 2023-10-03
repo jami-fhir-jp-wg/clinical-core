@@ -14,7 +14,7 @@
   - 必須要素は、その要素が必ず１個以上出現しなければならない要素。FHIR仕様ではMust Supportフラグを設定している。
   - 推奨要素は、送信側はシステムに値が存在しているなら、値を格納した要素が必ず１個以上出現しなければならず、受信側は必ずその値を格納しなければならない要素。FHIR仕様ではMust Supportフラグを設定している。
 
-### 必須要素　（リソースの直下の必須要素だけを説明している。その下の子要素以下については詳細説明を参照）
+### 必須要素　（MedicationRequestの直下の必須要素だけを説明している。）
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
   - identifier[] : インスタンス識別ID
@@ -44,16 +44,28 @@ JHSP0007コードから、BDP:持参薬処方　などの区分を設定する�
 
 ## 詳細説明
 <script>
-function details_open(aaa, idname){
-var elem = document.getElementById(idname);
-elem.open = aaa;
+function details_open(onoff, idname, idCloseButton){
+  var elem = document.getElementById(idname);
+  elem.open = onoff;
+  if (onoff == true){
+    undisplay_cloaseButton(idCloseButton)
+  } else {
+    display_cloaseButton(idCloseButton)
+  }
+}
+
+function display_cloaseButton(idCloseButton){
+  document.getElementById(idCloseButton).style.display = 'inline';
+}
+function undisplay_cloaseButton(idCloseButton){
+  document.getElementById(idCloseButton).style.display = 'none';
 }
 </script>
-<button type="button" onclick="details_open(true,'MedicationRequestDetails')">表：MedicationRequest 開く</button>
+
 
 <details id="MedicationRequestDetails">
 <button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じる</button>
-<summary>表（MedicationRequest）</summary>
+<summary><button id="mrc" type="button" onclick="details_open(true,'MedicationRequestDetails','mrc')">表「MedicationRequest」開く</button></summary>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
@@ -846,8 +858,8 @@ elem.open = aaa;
 <!-- =========================================== -->
 
 <details id="DosageInstructionDetails">
-<summary><button type="button" onclick="details_open(true,'DosageInstructionDetails')">表（DosageInstruction)を開く</button></summary>
-<button type="button" onclick="details_open(false,'DosageInstructionDetails')">閉じる</button>
+<summary><button type="button" onclick="details_open(true,'DosageInstructionDetails')">表「MedicationRequest.DosageInstruction」を開く</button></summary>
+<button id="dic" type="button" onclick="details_open(false,'DosageInstructionDetails', 'dic')">閉じる</button>
 
 <div id="dosageInstructionTable">
 <div id="dosageInstructionTable_17705" class="DosageInstruction" align=center x:publishsource="Excel">
