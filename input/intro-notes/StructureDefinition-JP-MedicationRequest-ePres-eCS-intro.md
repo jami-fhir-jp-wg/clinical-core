@@ -51,10 +51,10 @@ elem.open = bool;
 }
 }
 </script>
-
-<details id="MedicationRequestDetails">
 <button type="button" onclick="details_open(true,"MedicationRequestDetails")">開く</button>
 <button type="button" onclick="details_open(false,"MedicationRequestDetails")">閉じる</button>
+
+<details id="MedicationRequestDetails">
 <summary>▶️表（MedicationRequest）</summary>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-ePres-eCS-intro-profile-table" align=center x:publishsource="Excel">
@@ -836,21 +836,19 @@ elem.open = bool;
   <td class=xl95 width=195 style='width:146pt'>&quot;<font class="font12">変更不可</font><font
   class="font11">&quot;</font></td>
  </tr>
-
 </table>
+</div>
+</details>
 <button type="button" onclick="details_open(false,"MedicationRequestDetails")">閉じる</button>
 
-</div>
-
-</details>
 <!-- =========================================== -->
 <!-- ====                                   ==== -->
 <!-- ====      表（DosageInstruction)　　　　 ==== -->
 <!-- ====                                   ==== -->
 <!-- =========================================== -->
-<details id="DosageInstructionDetails">
 <button type="button" onclick="details_open(true,"DosageInstructionDetails")">開く</button>
 <button type="button" onclick="details_open(false,"DosageInstructionDetails")">閉じる</button>
+<details id="DosageInstructionDetails">
 <summary>▶️表（DosageInstruction)を展開表示または非表示</summary>
 
 <div id="dosageInstructionTable">
