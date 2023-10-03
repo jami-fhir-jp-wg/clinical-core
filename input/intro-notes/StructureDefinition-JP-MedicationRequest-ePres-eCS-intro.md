@@ -52,10 +52,10 @@ elem.open = bool;
 }
 </script>
 <button type="button" onclick="details_open(true,'MedicationRequestDetails')">開く</button>
-<button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じる</button>
+<button type="button" onclick="details_open(false,MedicationRequestDetails)">閉じる</button>
 
 <details id="MedicationRequestDetails">
-<button type="button" onclick="details_open(true,'MedicationRequestDetails')">開くうち</button>
+<button type="button" onclick="details_open(true,MedicationRequestDetails)">開くうち</button>
 <button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じるうち</button>
 <summary>▶️表（MedicationRequest）</summary>
 
