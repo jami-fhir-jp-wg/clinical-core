@@ -44,15 +44,13 @@ JHSP0007コードから、BDP:持参薬処方　などの区分を設定する�
 
 ## 詳細説明
 <script>
-function details_open(bool,idname){
+function details_open(aaa, idname){
 var elems = document.getElementsById(idname);
-for(elem of elems){
-elem.open = bool;
-}
+elem.open = aaa;
 }
 </script>
 <button type="button" onclick="details_open(true,'MedicationRequestDetails')">開く</button>
-<button type="button" onclick="details_open(false,MedicationRequestDetails)">閉じる</button>
+<button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じる</button>
 
 <details id="MedicationRequestDetails">
 <button type="button" onclick="details_open(true,MedicationRequestDetails)">開くうち</button>
