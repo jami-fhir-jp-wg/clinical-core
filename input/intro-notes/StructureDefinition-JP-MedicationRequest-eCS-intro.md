@@ -48,23 +48,16 @@ function details_open(onoff, idname, idCloseButton){
   var elem = document.getElementById(idname);
   elem.open = onoff;
   if (onoff == true){
-    undisplay_cloaseButton(idCloseButton)
+    document.getElementById(idCloseButton).style.display = 'none';
   } else {
-    display_cloaseButton(idCloseButton)
+    document.getElementById(idCloseButton).style.display = 'inline';
   }
-}
-
-function display_cloaseButton(idCloseButton){
-  document.getElementById(idCloseButton).style.display = 'inline';
-}
-function undisplay_cloaseButton(idCloseButton){
-  document.getElementById(idCloseButton).style.display = 'none';
 }
 </script>
 
 
 <details id="MedicationRequestDetails">
-<button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じる</button>
+<button type="button" onclick="details_open(false,'MedicationRequestDetails', 'mrc')">閉じる</button>
 <summary><button id="mrc" type="button" onclick="details_open(true,'MedicationRequestDetails','mrc')">表「MedicationRequest」開く</button></summary>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table" align=center x:publishsource="Excel">
@@ -848,7 +841,7 @@ function undisplay_cloaseButton(idCloseButton){
  </tr>
 </table>
 </div>
-<button type="button" onclick="details_open(false,'MedicationRequestDetails')">閉じる</button>
+<button type="button" onclick="details_open(false,'MedicationRequestDetails','mrc')">閉じる</button>
 </details>
 
 <!-- =========================================== -->
@@ -858,8 +851,8 @@ function undisplay_cloaseButton(idCloseButton){
 <!-- =========================================== -->
 
 <details id="DosageInstructionDetails">
-<summary><button type="button" onclick="details_open(true,'DosageInstructionDetails')">表「MedicationRequest.DosageInstruction」を開く</button></summary>
-<button id="dic" type="button" onclick="details_open(false,'DosageInstructionDetails', 'dic')">閉じる</button>
+<summary><button id="dic" type="button" onclick="details_open(true,'DosageInstructionDetails', 'dic')">表「MedicationRequest.DosageInstruction」を開く</button></summary>
+<button type="button" onclick="details_open(false,'DosageInstructionDetails', 'dic')">閉じる</button>
 
 <div id="dosageInstructionTable">
 <div id="dosageInstructionTable_17705" class="DosageInstruction" align=center x:publishsource="Excel">
@@ -2262,7 +2255,7 @@ function undisplay_cloaseButton(idCloseButton){
 
 </div>
 </div>
-<button type="button" onclick="details_open(false,'DosageInstructionDetails')">閉じる</button>
+<button type="button" onclick="details_open(false,'DosageInstructionDetails','dic')">閉じる</button>
 
 </details>
 
