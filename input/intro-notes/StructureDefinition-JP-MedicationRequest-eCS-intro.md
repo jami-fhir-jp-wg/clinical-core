@@ -52,6 +52,13 @@ JHSP0007コードから、BDP:持参薬処方　などの区分を設定する�
 function details_open(onoff, idname, idCloseButton){
   var elem = document.getElementById(idname);
   elem.open = onoff;
+  elem.addEventListener('click', function() {
+    if elem.open == true {
+      document.getElementById(idCloseButton).style.display = 'none';
+    } else {
+      document.getElementById(idCloseButton).style.display = 'inline';
+    }
+  }, false);
   if (onoff == true){
     document.getElementById(idCloseButton).style.display = 'none';
   } else {
