@@ -849,7 +849,8 @@ function details_open(onoff, idname, idCloseButton){
 <!-- ====      表（DosageInstruction)　　　　 ==== -->
 <!-- ====                                   ==== -->
 <!-- =========================================== -->
-<p>
+<br>
+
 <details id="DosageInstructionDetails">
 <summary><button id="dic" type="button" onclick="details_open(true,'DosageInstructionDetails', 'dic')">表「MedicationRequest.DosageInstruction」を開く</button></summary>
 <button type="button" onclick="details_open(false,'DosageInstructionDetails', 'dic')">閉じる</button>
@@ -2255,10 +2256,12 @@ function details_open(onoff, idname, idCloseButton){
 
 </div>
 </div>
+
 <button type="button" onclick="details_open(false,'DosageInstructionDetails','dic')">閉じる</button>
 
 </details>
 
 <br>
+
 
 ## プロファイル
