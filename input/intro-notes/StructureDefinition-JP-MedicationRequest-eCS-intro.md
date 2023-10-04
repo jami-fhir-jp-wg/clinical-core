@@ -59,6 +59,27 @@ function details_open(onoff, idname, idCloseButton){
     document.getElementById(idCloseButton).style.display = 'inline';
   }
 }
+
+var delemMrc = document.getElementById('MedicationRequestDetails');
+var delemDoi = document.getElementById('DosageInstructionDetails');
+
+delemMrc.addEventListener('toggle', () => {
+  const isOpen = delemMrc.open;
+  if (isOpen) {
+    document.getElementById('mrc').style.display = 'none';
+  }else{
+    document.getElementById('mrc').style.display = 'inline';
+  }
+});
+
+delemDoi.addEventListener('toggle', () => {
+  const isOpen = delemDoi.open;
+  if (isOpen) {
+    document.getElementById('dic').style.display = 'none';
+  }else{
+    document.getElementById('dic').style.display = 'inline';
+  }
+});
 </script>
 
 
