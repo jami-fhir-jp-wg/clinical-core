@@ -61,7 +61,7 @@ function details_open(onoff, idname, idCloseButton){
 <summary><button id="mrc" type="button" onclick="details_open(true,'MedicationRequestDetails','mrc')">表「MedicationRequest」開く</button></summary>
 
 <div id="Core6ResourcesTable_14148" class="StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table" align=center x:publishsource="Excel">
-
+<h3>表「MedicationRequest」</h3>
 <table border=0 cellpadding=0 cellspacing=0 width=1046 style='border-collapse:
  collapse;table-layout:fixed;width:784pt'>
  <col class=xl88 width=105 style='mso-width-source:userset;mso-width-alt:2889;
@@ -857,6 +857,7 @@ function details_open(onoff, idname, idCloseButton){
 
 <div id="dosageInstructionTable">
 <div id="dosageInstructionTable_17705" class="DosageInstruction" align=center x:publishsource="Excel">
+<h3>表「MedicationRequest.DosageInstruction」</h3>
 
 <table border=0 cellpadding=0 cellspacing=0 width=1067 style='border-collapse:
  collapse;table-layout:fixed;width:800pt'>
