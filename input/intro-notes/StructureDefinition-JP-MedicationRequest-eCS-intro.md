@@ -63,11 +63,12 @@ function details_open(onoff, idname, idCloseButton){
 
 
 <h3>表「MedicationRequest」</h3>
+<button id="mrc" type="button" onclick="details_open(true,'MedicationRequestDetails','mrc')">表「MedicationRequest」開く</button>
 <details id="MedicationRequestDetails">
 <button type="button" onclick="details_open(false,'MedicationRequestDetails', 'mrc')">閉じる</button>
-<button id="mrc" type="button" onclick="details_open(true,'MedicationRequestDetails','mrc')">表「MedicationRequest」開く</button>
+<summary></summary>
 
-<div id="MedicationRequestTable_20934" align=center x:publishsource="Excel">
+<div id="MedicationRequestTable_20934" class="StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1046 style='border-collapse:
  collapse;table-layout:fixed;width:784pt'>
@@ -905,13 +906,14 @@ function details_open(onoff, idname, idCloseButton){
 <br>
 
 <h3>表「MedicationRequest.DosageInstruction」</h3>
+<button id="dic" type="button" onclick="details_open(true,'DosageInstructionDetails', 'dic')">表「MedicationRequest.DosageInstruction」を開く</button>
 <details id="DosageInstructionDetails">
-<summary><button id="dic" type="button" onclick="details_open(true,'DosageInstructionDetails', 'dic')">表「MedicationRequest.DosageInstruction」を開く</button></summary>
 <button type="button" onclick="details_open(false,'DosageInstructionDetails', 'dic')">閉じる</button>
+<summary></summary>
 
 <div id="dosageInstructionTable">
 
-<div id="dosageInstructionTable_23568" align=center x:publishsource="Excel">
+<div id="dosageInstructionTable_23568"  class="DosageInstruction"  align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1067 style='border-collapse:
  collapse;table-layout:fixed;width:800pt'>
