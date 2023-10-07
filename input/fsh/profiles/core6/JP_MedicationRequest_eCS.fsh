@@ -33,16 +33,6 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
   * code 1..1 MS
     * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
 
-
-
-
-
-
-
-
-
-
-
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
@@ -52,7 +42,6 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
     and organization 0..1
     and author 0..1
     and order 0..1
-
 
 * contained[patient] only  JP_Patient
   * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
@@ -169,6 +158,8 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * requester ^definition = "処方者を表すPractitionerリソース（Containedリソース）への参照"
 * requester ^comment = "Containedリソースに含まれるPractitioner（医療者）リソースをこのリソース内で参照する。"
 
+* authoredOn 1..1 MS
+
 * basedOn 0..1   MS
 * basedOn ^short = "処方オーダ情報"
 * basedOn only Reference(JP_ServiceRequest)
@@ -182,46 +173,40 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * note.text ^comment = "例）”4月1日から4日間服用。2週間休薬後、4月19日から4日間服用。患者に書面にて説明済み。”"
 * note.text MS
 
+* dosageInstruction 0..* MS
 * dosageInstruction.extension ^slicing.discriminator.type = #value
 * dosageInstruction.extension ^slicing.discriminator.path = "url"
 * dosageInstruction.extension ^slicing.rules = #open
-* dosageInstruction.extension ^min = 0
 * dosageInstruction.extension MS
-* dosageInstruction.extension[periodOfUse] ^min = 0
-* dosageInstruction.extension[periodOfUse].value[x] ^definition = "MedicationRequestに投与期間の開始日を明示するための拡張。\r\n投与期間の終了日は記述しない。これは例えば隔日投与の場合に、終了日が服用しない日となり紛らわしいためである。"
-* dosageInstruction.extension[periodOfUse] MS
+
+* dosageInstruction.extension[periodOfUse] 1..1 MS
+* dosageInstruction.extension[periodOfUse].valuePeriod  1..1 MS
+* dosageInstruction.extension[periodOfUse].valuePeriod ^definition = "MedicationRequestに投与期間の開始日を明示するための拡張。\r\n投与期間の終了日は記述しない。これは例えば隔日投与の場合に、終了日が服用しない日となり紛らわしいためである。"
+* dosageInstruction.extension[periodOfUse].valuePeriod.start 1..1 MS
+
+* dosageInstruction.extension[usageDuration] 0..1 MS
 * dosageInstruction.extension[usageDuration] ^definition = "隔日投与などで実投与日数と処方期間が異なる場合に用いられる。\r\n実際に服用する日数を記述する。"
-* dosageInstruction.extension[usageDuration] ^min = 0
-* dosageInstruction.extension[usageDuration] MS
+
+* dosageInstruction.text 1..1 MS
 * dosageInstruction.text ^definition = "JP Coreでは必須。フリーテキストの用法指示。\r\ndosageInstructionが表す処方指示の文字列表現。\r\n例）\"内服・経口・１日３回朝昼夕食後　１回１錠　７日分\""
-* dosageInstruction.text MS
+
 * dosageInstruction.additionalInstruction ^short = "患者に対する補足指示や注意"
 * dosageInstruction.additionalInstruction ^definition = "補足的な処方指示。\r\n本仕様では、不均等投与を1日用法として記載する場合に、各回ごとのJAMI補足補足用法コードを記述するために使用する。\r\nまた、隔日投与、曜日指定投与の場合にも、JAMI補足補足用法コードを使用して記述する。"
-* dosageInstruction.additionalInstruction MS
-* dosageInstruction.additionalInstruction.coding 1..1 MS
+* dosageInstruction.additionalInstruction 0..* MS
+* dosageInstruction.additionalInstruction.coding 1..* MS
+* dosageInstruction.additionalInstruction.coding.system 1..1 MS
+* dosageInstruction.additionalInstruction.coding.system ^definition = "JAMI補足用法８桁コードを識別するURI。"
+* dosageInstruction.additionalInstruction.coding.code 1..1 MS
 * dosageInstruction.additionalInstruction.coding.code ^definition = "JAMI 補⾜⽤法コード８桁を指定する。"
-* dosageInstruction.additionalInstruction.coding.code MS
+* dosageInstruction.additionalInstruction.coding.display 0.. MS
 * dosageInstruction.additionalInstruction.coding.display ^definition = "コードの表示名。\r\n例）\"不均等・１回目・４錠\""
-* dosageInstruction.additionalInstruction.coding.display MS
-* dosageInstruction.additionalInstruction.text ^definition = "dosageInstruction.additionalInstruction要素に、1 日の服用回数分だけ繰り返し、JAMI補足用法コードを使用し記述するが、その場合でも、またコード化できない場合は、明細単位の備考としてテキストで記述する。"
-* dosageInstruction.additionalInstruction.text MS
-* dosageInstruction.timing.event ^definition = "服用タイミングを具体的な日時で指定する場合に使用する。複数回の指定日で指示する場合には、本要素を繰り返す。"
+* dosageInstruction.additionalInstruction.text 1..1 MS
+* dosageInstruction.additionalInstruction.text ^definition = "dosageInstruction.additionalInstruction要素に、1 日の服用回数分だけ繰り返し、JAMI補足用法コードを使用し記述する仕様であるが、コード化できるかどうかにかかわらず常にテキストでも記述する。"
+
+* dosageInstruction.timing　1..1 MS
+* dosageInstruction.timing.event ^definition = "服用タイミングを具体的な日時で指定する。複数回の指定日で指示する場合には、本要素を繰り返す。"
 * dosageInstruction.timing.event MS
 * dosageInstruction.timing.repeat.boundsDuration.value MS
-* dosageInstruction.timing.repeat.count ..0
-* dosageInstruction.timing.repeat.countMax ..0
-* dosageInstruction.timing.repeat.duration ..0
-* dosageInstruction.timing.repeat.durationMax ..0
-* dosageInstruction.timing.repeat.durationUnit ..0
-* dosageInstruction.timing.repeat.frequency ..0
-* dosageInstruction.timing.repeat.frequencyMax ..0
-* dosageInstruction.timing.repeat.period ..0
-* dosageInstruction.timing.repeat.periodMax ..0
-* dosageInstruction.timing.repeat.periodUnit ..0
-* dosageInstruction.timing.repeat.dayOfWeek ..0
-* dosageInstruction.timing.repeat.timeOfDay ..0
-* dosageInstruction.timing.repeat.when ..0
-* dosageInstruction.timing.repeat.offset ..0
 * dosageInstruction.timing.code 1.. MS
 * dosageInstruction.timing.code from http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode
 * dosageInstruction.timing.code ^short = "用法コード"
@@ -261,13 +246,11 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * dosageInstruction.doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
 * dosageInstruction.doseAndRate.rateRatio.numerator.system MS
 
-* dispenseRequest 1.. MS
+* dispenseRequest 0..1 MS
 * dispenseRequest ^definition = "調剤情報。\r\n薬剤オーダー(MedicationRequest, Medication Prescription, Medication Orderなどとしても表現される）や薬剤オーダーとの一部としての薬剤の払い出しあるいは提供。この情報はオーダーとしてかならず伝えられるというわけではないことに注意。薬剤部門で調剤・払い出しを完了するための施設（たとえば病院）やシステムでのサポートに関する設定をしてもよい。"
 * dispenseRequest.extension ^slicing.discriminator.type = #value
 * dispenseRequest.extension ^slicing.discriminator.path = "url"
 * dispenseRequest.extension ^slicing.rules = #open
-* dispenseRequest.extension ^min = 0
-* dispenseRequest.extension[expectedRepeatCount] ^min = 0
 * dispenseRequest.extension[expectedRepeatCount] MS
 * dispenseRequest.quantity.value ^definition = "調剤量。精度を含めた値が暗示される。\r\n例）１日３錠で７日分の場合、この要素には21 が設定される。"
 * dispenseRequest.quantity.value MS
@@ -280,18 +263,16 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * dispenseRequest.expectedSupplyDuration.value ^definition = "調剤日数。\r\n例）１日３錠で７日分の場合、この要素には 7が設定される。"
 * dispenseRequest.expectedSupplyDuration.value MS
 * dispenseRequest.performer 
-  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）" 
+  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
 
-* substitution.allowed[x].coding.system ^definition = "後発品変更不可コードを識別するURI。固定値。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　OID: 1.2.392.100495.20.2.41"
-* substitution.allowed[x].coding.system MS
-* substitution.allowed[x].coding.code ^definition = "後発品変更不可コード。\r\n不可の場合には1を設定する。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　\r\n0 変更可　（省略可）\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"
-* substitution.allowed[x].coding.code MS
-* substitution.allowed[x].coding.display ^definition = "後発品変更不可コード表示名。\r\n0 変更可\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"
-* substitution.allowed[x].coding.display MS
+* substitution.allowedCodeableConcept 0..1 MS
+* substitution.allowedCodeableConcept.coding.system ^definition = "後発品変更不可コードを識別するURI。固定値。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　OID: 1.2.392.100495.20.2.41"
+* substitution.allowedCodeableConcept.coding.system MS
+* substitution.allowedCodeableConcept.coding.code ^definition = "後発品変更不可コード。\r\n不可の場合には1を設定する。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　\r\n0 変更可　（省略可）\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"
+* substitution.allowedCodeableConcept.coding.code MS
+* substitution.aallowedCodeableConcept.coding.display ^definition = "後発品変更不可コード表示名。\r\n0 変更可\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"
+* substitution.allowedCodeableConcept.coding.display MS
 * substitution.reason ^definition = "オーダー情報では、後発品変更不可の理由。"
 * substitution.reason MS
 * substitution.reason.text ^definition = "理由を表す文字列。\r\n例）　\"患者からの強い要望により\""
 * substitution.reason.text MS
-* priorPrescription ..0
-* detectedIssue ..0
-* eventHistory ..0
