@@ -2481,30 +2481,5 @@ function details_open(onoff, idname, idCloseButton){
 
 <br>
 
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  var delemMrc = document.getElementById('MedicationRequestDetails');
-  var delemDoi = document.getElementById('DosageInstructionDetails');
-
-  delemMrc.addEventListener('toggle', function() => {
-    const isOpen = delemMrc.open;
-    if (isOpen) {
-      document.getElementById('mrc').style.display = 'none';
-    }else{
-      document.getElementById('mrc').style.display = 'inline';
-    }
-  });
-
-  delemDoi.addEventListener('toggle', function() => {
-    const isOpen = delemDoi.open;
-    if (isOpen) {
-      document.getElementById('dic').style.display = 'none';
-    }else{
-      document.getElementById('dic').style.display = 'inline';
-    }
-  });
-});
-
-</script>
 
 ## プロファイル
