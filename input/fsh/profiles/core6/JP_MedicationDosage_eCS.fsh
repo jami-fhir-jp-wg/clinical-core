@@ -91,23 +91,50 @@ Description: "このデータタイプは注射以外の処方用法の制約を
 * doseAndRate.type ^comment = ""
 * doseAndRate.type ^requirements = ""
 
-//--- ここからまだ作業してない
+* doseAndRate.type.coding 1..*
+* doseAndRate.type.coding.system 1..1 MS
 * doseAndRate.type.coding.system ^definition = "力価区分コードのコード体系を識別するURI。固定値。\r\n厚生労働省電子処方箋 CDA 記述仕様　第１版別表４を準用。"
-* doseAndRate.type.coding.system MS
+* doseAndRate.type.coding.code 1..1 MS
 * doseAndRate.type.coding.code ^definition = "力価区分コード（1：製剤量　2：原薬量）"
-* doseAndRate.type.coding.code MS
+* doseAndRate.type.coding.display 1..1 MS
 * doseAndRate.type.coding.display ^definition = "力価区分コードの表示名（1：製剤量　2：原薬量）"
-* doseAndRate.type.coding.display MS
-* doseAndRate.dose[x] ^definition = "1回投与量。\r\n用量は、1回投与量の記録を基本とし、MedicationRequestリソースの doseAndRate.doseQuantity要素 にSimpleQuantity型で記述する。"
-* doseAndRate.dose[x] MS
-* doseAndRate.doseQuantity.system ^definition = "医薬品単位略号を識別するOID。固定値。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
-* doseAndRate.doseQuantity.system MS
+
+* doseAndRate.dose[x] ^definition = "1回投与量。\r\n用量は、1回投与量の記録を基本とし、MedicationRequestリソースの doseAndRate.doseQuantity要素 にSimpleQuantity型で記述する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。内服、外用ともに１回投与量を指定する場合にはこの要素を使用する。"
+* doseAndRate.dose[x] 0..1 MS
+* doseAndRate.doseQuantity ^comment = ""
+* doseAndRate.doseQuantity.value 1..1 MS
+* doseAndRate.doseQuantity.unit 1..1 MS
+* doseAndRate.doseQuantity.system 1..1 MS
+* doseAndRate.doseQuantity.system ^definition = "医薬品単位略号を識別するOID。固定値\"urn:oid:1.2.392.100495.20.2.101\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。"
+* doseAndRate.doseQuantity.code 1..1 MS
 * doseAndRate.doseQuantity.code ^definition = "医薬品単位略号。\r\n例）"
-* doseAndRate.doseQuantity.code MS
-* doseAndRate.rateRatio ^definition = "単位時間内での薬剤量。JP Coreでは1 日投与量を表す。\r\n例）１日３錠　の場合、 rateRatio.numerator.value=3  、 rateRatio.numerator.unit=\"錠\" 、　、 rateRatio.numerator.system=\"urn:oid:1.2.392.100495.20.2.101\" 、rateRatio.numerator.code=\"TAB\""
-* doseAndRate.rateRatio MS
-* doseAndRate.rateRatio.numerator.value ^definition = "1 日投与量。"
-* doseAndRate.rateRatio.numerator.value MS
-* doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
-* doseAndRate.rateRatio.numerator.system MS
+
+* doseAndRate.rateRatio 0..1 MS
+* doseAndRate.rateRatio ^short = "1日投与量を表す"
+* doseAndRate.rateRatio ^definition = "1日投与量を表す。処方期間の中で 1 日量が常に一定となる場合には、1 回量に加えて 1 日量の記録も可能とし、rateRatio 要素に Ratio 型で記録す
+る。Ratio 型は比を扱うデータ型で、分母にあたるrateRatio.denominator 要素には、投与量の基準となる期間、つまり、1 日量の場合は「1 日」を Quantity 型で指定する。単位には、単位コードUCUM（http://unitsofmeasure.org）で定義されている「日」を表す単位コード「d」を使用する。分子にあたる rateRatio.numerator 要素には、1 回量と同様の記法で、1 日投与量を Quantity 型で指定する。内服、外用ともに１日量を指定する場合にはこの要素を使用する。doseAndRate.typeで指定される力価区分に対応した量であることが必須である。\r\n例）１日３錠　の場合、 rateRatio.numerator.value=3  、 rateRatio.numerator.unit=\"錠\" 、　、 rateRatio.numerator.system=\"urn:oid:1.2.392.100495.20.2.101\" 、rateRatio.numerator.code=\"TAB\""
+
+* doseAndRate.rateRatio.numerator 1..1 MS
+  * insert relative_short_definition("1日投与量の分子の情報を表す。")
+* doseAndRate.rateRatio.numerator.value 1..1 MS
+  * insert relative_short_definition("1日投与量")
+* doseAndRate.rateRatio.numerator.unit 1..1 MS
+  * insert relative_short_definition("投与量の単位。")
+* doseAndRate.rateRatio.numerator.system 1..1 MS
+* doseAndRate.rateRatio.numerator.system ^short="投与量の単位。"
+* doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値 \"urn:oid:1.2.392.100495.20.2.101\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
+* doseAndRate.rateRatio.numerator.code 1..1 MS
+  * insert relative_short_definition("医薬品単位略号。")
+
+* doseAndRate.rateRatio.denominator 1..1 MS
+  * insert relative_short_definition("1日投与量の分母である「1日」を表す。混乱を避けるため、「1日」以外の分母は指定しないこと。")
+* doseAndRate.rateRatio.denominator.value 1..1 MS
+  * insert relative_short_definition("分母である「1日」の日数「1」")
+* doseAndRate.rateRatio.denominator.unit 1..1 MS
+  * insert relative_short_definition("分母である「1日」の単位「日」")
+* doseAndRate.rateRatio.denominator.system 1..1 MS
+* doseAndRate.rateRatio.denominator.system ^short="UCUM単位コードを識別するURI。"
+* doseAndRate.rateRatio.denominator.system ^definition = "UCUM単位コードを識別するURI。固定値 \"http://unitsofmeasure.org\"。"
+* doseAndRate.rateRatio.denominator.code 1..1 MS
+  * insert relative_short_definition("「日」を表すUCUM単位コード。\"d\"")
 
