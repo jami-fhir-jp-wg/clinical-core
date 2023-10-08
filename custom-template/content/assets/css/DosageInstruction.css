@@ -2,7 +2,7 @@
 	{margin:.75in .7in .75in .7in;
 	mso-header-margin:.3in;
 	mso-footer-margin:.3in;}
-.DosageInstruction .font5
+.DosageInstruction  .font5
 	{color:windowtext;
 	font-size:6.0pt;
 	font-weight:400;
@@ -11,7 +11,25 @@
 	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.DosageInstruction .font6
+.DosageInstruction  .font6
+	{color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;}
+.DosageInstruction  .font7
+	{color:red;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;}
+.DosageInstruction  .font8
 	{color:windowtext;
 	font-size:6.0pt;
 	font-weight:400;
@@ -20,7 +38,25 @@
 	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.DosageInstruction .font7
+.DosageInstruction  .font9
+	{color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;}
+.DosageInstruction  .font10
+	{color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Cambria;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;}
+.DosageInstruction  .font11
 	{color:black;
 	font-size:10.5pt;
 	font-weight:400;
@@ -29,7 +65,7 @@
 	font-family:Cambria;
 	mso-generic-font-family:auto;
 	mso-font-charset:0;}
-.DosageInstruction .font8
+.DosageInstruction  .font12
 	{color:black;
 	font-size:10.5pt;
 	font-weight:400;
@@ -38,7 +74,7 @@
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.DosageInstruction .font9
+.DosageInstruction  .font13
 	{color:black;
 	font-size:9.0pt;
 	font-weight:400;
@@ -47,41 +83,31 @@
 	font-family:Cambria;
 	mso-generic-font-family:auto;
 	mso-font-charset:0;}
-.DosageInstruction .font10
-	{color:black;
-	font-size:10.5pt;
+.DosageInstruction  .font14
+	{color:windowtext;
+	font-size:6.0pt;
 	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
-	font-family:"MS Mincho";
+	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.DosageInstruction .font11
-	{color:#305496;
-	font-size:10.5pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:"MS Mincho";
-	mso-generic-font-family:auto;
-	mso-font-charset:128;}
-.DosageInstruction .font12
-	{color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:none;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;}
-.DosageInstruction .font13
-	{color:black;
+.DosageInstruction  .font15
+	{color:red;
 	font-size:10.5pt;
 	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
 	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;}
+.DosageInstruction  .font16
+	{color:red;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
 .DosageInstruction tr
@@ -92,7 +118,7 @@
 	mso-ruby-visibility:none;}
 .DosageInstruction br
 	{mso-data-placement:same-cell;}
-.DosageInstruction .style0
+.DosageInstruction  .style0
 	{mso-number-format:General;
 	text-align:general;
 	vertical-align:middle;
@@ -112,7 +138,7 @@
 	mso-protection:locked visible;
 	mso-style-name:標準;
 	mso-style-id:0;}
-.DosageInstruction .style58
+.DosageInstruction  .style58
 	{mso-number-format:General;
 	text-align:general;
 	vertical-align:middle;
@@ -131,7 +157,7 @@
 	border:none;
 	mso-protection:locked visible;
 	mso-style-name:"標準 2";}
-.DosageInstruction .style59
+.DosageInstruction  .style59
 	{mso-number-format:General;
 	text-align:general;
 	vertical-align:middle;
@@ -173,8 +199,21 @@
 	mso-protection:locked visible;
 	white-space:nowrap;
 	mso-rotate:0;}
-.DosageInstruction .xl67
-	{mso-style-parent:style59;
+.DosageInstruction  .xl67
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl68
+	{mso-style-parent:style0;
 	color:black;
 	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
@@ -186,235 +225,271 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl68
+.DosageInstruction  .xl69
 	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:"ＭＳ 明朝";
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl69
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl70
-	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border:.5pt solid windowtext;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl71
-	{mso-style-parent:style58;
+.DosageInstruction  .xl70
+	{mso-style-parent:style0;
 	color:black;
 	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl72
-	{mso-style-parent:style0;
-	border:.5pt solid windowtext;}
-.DosageInstruction .xl73
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	background:#FFC000;
-	mso-pattern:black none;
-	white-space:normal;}
-.DosageInstruction .xl74
-	{mso-style-parent:style0;
-	text-align:left;}
-.DosageInstruction .xl75
-	{mso-style-parent:style58;
-	color:black;
-	font-size:10.0pt;
-	font-family:"ＭＳ 明朝";
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	border-top:.5pt solid windowtext;
+	text-align:center;
+	border-top:none;
 	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl76
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
 	background:#E2EFDA;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl77
+.DosageInstruction  .xl71
 	{mso-style-parent:style0;
 	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	text-align:left;
-	border-top:.5pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl78
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl79
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
+	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border-top:.5pt solid windowtext;
+	text-align:center;
+	border-top:none;
 	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl80
+.DosageInstruction  .xl72
 	{mso-style-parent:style0;
 	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	text-align:left;
-	border-top:.5pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl81
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
+	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl82
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	text-align:left;
-	border-top:1.0pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl83
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
+	text-align:center;
+	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl84
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	background:#FFC000;
+	border-left:none;
+	background:#FFF2CC;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl85
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:"ＭＳ 明朝";
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl86
+.DosageInstruction  .xl73
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl87
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
 	text-align:left;
-	border-top:1.0pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl88
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
+	border-top:none;
 	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl74
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl75
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl76
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl77
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl89
+.DosageInstruction  .xl78
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl79
+	{mso-style-parent:style59;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl80
+	{mso-style-parent:style59;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl81
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl82
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl83
+	{mso-style-parent:style59;
+	color:red;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl84
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl85
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl86
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl87
+	{mso-style-parent:style59;
+	color:red;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl88
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -427,13 +502,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl90
-	{mso-style-parent:style0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;}
-.DosageInstruction .xl91
+.DosageInstruction  .xl89
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -446,410 +515,595 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl92
-	{mso-style-parent:style0;
+.DosageInstruction  .xl90
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
+	font-size:9.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
 	text-align:left;
-	border-top:.5pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl93
-	{mso-style-parent:style0;
-	border-top:1.0pt solid windowtext;
+	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;}
-.DosageInstruction .xl94
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.DosageInstruction .xl95
-	{mso-style-parent:style0;
-	font-weight:700;
-	border:.5pt solid windowtext;}
-.DosageInstruction .xl96
-	{mso-style-parent:style0;
+.DosageInstruction  .xl91
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	mso-font-charset:128;
 	text-align:left;
-	border-top:.5pt solid windowtext;
-	border-right:1.0pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl97
-	{mso-style-parent:style0;
+.DosageInstruction  .xl92
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
+	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border:.5pt solid windowtext;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl98
-	{mso-style-parent:style0;
+.DosageInstruction  .xl93
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
+	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl99
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	background:#FFC000;
-	mso-pattern:black none;
-	white-space:normal;}
-.DosageInstruction .xl100
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
+	text-align:left;
+	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl101
-	{mso-style-parent:style0;
+.DosageInstruction  .xl94
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	background:#FFC000;
-	mso-pattern:black none;
-	white-space:normal;}
-.DosageInstruction .xl102
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-weight:700;
+	font-size:9.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl103
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl104
-	{mso-style-parent:style0;
-	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl105
-	{mso-style-parent:style0;
+.DosageInstruction  .xl95
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	mso-font-charset:128;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#D9D9D9;
+	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl106
-	{mso-style-parent:style0;
+.DosageInstruction  .xl96
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#D9D9D9;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl97
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl98
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl99
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl107
-	{mso-style-parent:style0;
+.DosageInstruction  .xl100
+	{mso-style-parent:style58;
 	color:black;
-	font-size:10.5pt;
-	font-weight:700;
-	font-family:Cambria;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl101
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl102
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl103
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl108
-	{mso-style-parent:style0;
+.DosageInstruction  .xl104
+	{mso-style-parent:style58;
 	color:black;
-	font-size:9.0pt;
-	font-family:Cambria;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
+	mso-font-charset:128;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
-	border-left:1.0pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl109
-	{mso-style-parent:style0;
+.DosageInstruction  .xl105
+	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
-	font-family:Cambria;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl110
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:1.0pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl111
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl112
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.DosageInstruction .xl113
-	{mso-style-parent:style0;
+.DosageInstruction  .xl106
+	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
+	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl114
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:1.0pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl115
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl116
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:1.0pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl117
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl118
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:1.0pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl119
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:.5pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl120
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:1.0pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl121
-	{mso-style-parent:style0;
-	color:black;
-	font-size:9.0pt;
-	font-weight:700;
-	font-family:Cambria;
-	mso-generic-font-family:auto;
-	mso-font-charset:0;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:1.0pt solid windowtext;
-	border-left:.5pt solid windowtext;
-	white-space:normal;}
-.DosageInstruction .xl122
-	{mso-style-parent:style0;
-	font-size:9.0pt;}
-.DosageInstruction .xl123
+.DosageInstruction  .xl107
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl108
+	{mso-style-parent:style59;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl109
+	{mso-style-parent:style59;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl110
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl111
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl112
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl113
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl114
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl115
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl116
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl117
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl118
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
 	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl119
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl120
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl121
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl122
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl123
+	{mso-style-parent:style58;
+	white-space:normal;}
+.DosageInstruction  .xl124
+	{mso-style-parent:style59;
+	white-space:normal;}
+.DosageInstruction  .xl125
+	{mso-style-parent:style58;
+	font-size:9.0pt;
+	white-space:normal;}
+.DosageInstruction  .xl126
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl127
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:1.0pt solid windowtext;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.DosageInstruction .xl124
+.DosageInstruction  .xl128
+	{mso-style-parent:style59;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl129
+	{mso-style-parent:style59;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl130
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#FFC000;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl131
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl132
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	text-align:center;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl133
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl134
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
 	border-left:1.0pt solid windowtext;
-	background:#D9D9D9;
-	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl125
+.DosageInstruction  .xl135
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	text-align:center;
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
-	border-left:.5pt solid windowtext;
-	background:#D9D9D9;
-	mso-pattern:black none;
+	border-left:none;
 	white-space:normal;}
-.DosageInstruction .xl126
+.DosageInstruction  .xl136
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -860,26 +1114,406 @@
 	border-top:1.0pt solid windowtext;
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
-	border-left:.5pt solid windowtext;
-	background:#D9D9D9;
+	border-left:none;
+	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction .xl127
+.DosageInstruction  .xl137
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;
-	text-align:center;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl138
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl139
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
 	border-top:1.0pt solid windowtext;
 	border-right:1.0pt solid windowtext;
 	border-bottom:none;
-	border-left:.5pt solid windowtext;
+	border-left:none;
 	background:#D9D9D9;
 	mso-pattern:black none;
 	white-space:normal;}
-.DosageInstruction ruby
+.DosageInstruction  .xl140
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl141
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl142
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl143
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl144
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl145
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl146
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl147
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl148
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl149
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl150
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl151
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl152
+	{mso-style-parent:style58;
+	color:red;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl153
+	{mso-style-parent:style58;
+	mso-number-format:"\@";
+	white-space:normal;}
+.DosageInstruction  .xl154
+	{mso-style-parent:style0;
+	color:black;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl155
+	{mso-style-parent:style0;
+	color:black;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl156
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl157
+	{mso-style-parent:style58;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl158
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.DosageInstruction  .xl159
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl160
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl161
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.DosageInstruction  .xl162
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl163
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl164
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl165
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  .xl166
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.DosageInstruction  ruby
 	{ruby-align:left;}
 .DosageInstruction rt
 	{color:windowtext;

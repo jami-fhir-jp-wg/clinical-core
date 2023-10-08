@@ -1278,15 +1278,15 @@ function details_open(onoff, idname, idCloseButton){
 
 <div id="dosageInstructionTable">
 
-<div id="dosageInstructionTable_23568"  class="DosageInstruction"  align=center x:publishsource="Excel">
+<div id="dosageInstructionTable_6238"  class="DosageInstruction"  align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1067 style='border-collapse:
  collapse;table-layout:fixed;width:800pt'>
- <col class=xl122 width=105 style='mso-width-source:userset;mso-width-alt:2889;
+ <col class=xl119 width=105 style='mso-width-source:userset;mso-width-alt:2889;
  width:79pt'>
- <col class=xl122 width=92 style='mso-width-source:userset;mso-width-alt:2523;
+ <col class=xl119 width=92 style='mso-width-source:userset;mso-width-alt:2523;
  width:69pt'>
- <col class=xl122 width=73 span=2 style='mso-width-source:userset;mso-width-alt:
+ <col class=xl119 width=73 span=2 style='mso-width-source:userset;mso-width-alt:
  2011;width:55pt'>
  <col width=47 style='mso-width-source:userset;mso-width-alt:1280;width:35pt'>
  <col width=87 style='mso-width-source:userset;mso-width-alt:2377;width:65pt'>
@@ -1295,478 +1295,521 @@ function details_open(onoff, idname, idCloseButton){
  <col class=xl74 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl124 width=105 style='height:75.0pt;width:79pt'>要素<font
+  <td height=100 class=xl121 width=105 style='height:75.0pt;width:79pt'>要素<font
   class="font9">Lv1</font></td>
-  <td class=xl125 width=92 style='border-left:none;width:69pt'>要素<font
+  <td class=xl122 width=92 style='border-left:none;width:69pt'>要素<font
   class="font9">Lv2</font></td>
-  <td class=xl125 width=73 style='border-left:none;width:55pt'>要素<font
+  <td class=xl122 width=73 style='border-left:none;width:55pt'>要素<font
   class="font9">Lv3</font></td>
-  <td class=xl125 width=73 style='border-left:none;width:55pt'>要素<font
+  <td class=xl122 width=73 style='border-left:none;width:55pt'>要素<font
   class="font9">Lv4</font></td>
-  <td class=xl126 width=47 style='border-left:none;width:35pt'>多重度</td>
-  <td class=xl126 width=87 style='border-left:none;width:65pt'>型</td>
-  <td class=xl126 width=359 style='border-left:none;width:269pt'>説明<ruby><font
+  <td class=xl123 width=47 style='border-left:none;width:35pt'>多重度</td>
+  <td class=xl123 width=87 style='border-left:none;width:65pt'>型</td>
+  <td class=xl123 width=359 style='border-left:none;width:269pt'>説明<ruby><font
   class="font5"><rt class=font5></rt></font></ruby></td>
-  <td class=xl126 width=36 style='border-left:none;width:27pt'>固定値 <br>
+  <td class=xl123 width=36 style='border-left:none;width:27pt'>固定値 <br>
     ／ 例 示</td>
-  <td class=xl127 width=195 style='border-left:none;width:146pt'>値</td>
+  <td class=xl124 width=195 style='border-left:none;width:146pt'>値</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl116 width=105 style='height:31.0pt;width:79pt'>extension[*]</td>
-  <td class=xl117 width=92 style='border-left:none;width:69pt'>　</td>
-  <td class=xl117 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl117 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl73 width=47 style='border-left:none;width:35pt'>1..1*</td>
-  <td class=xl94 width=87 style='border-left:none;width:65pt'>　</td>
+  <td height=41 class=xl113 width=105 style='height:31.0pt;width:79pt'>extension[*]</td>
+  <td class=xl114 width=92 style='border-left:none;width:69pt'>　</td>
+  <td class=xl114 width=73 style='border-left:none;width:55pt'>　</td>
+  <td class=xl114 width=73 style='border-left:none;width:55pt'>　</td>
+  <td class=xl73 width=47 style='border-left:none;width:35pt'>1..*</td>
+  <td class=xl93 width=87 style='border-left:none;width:65pt'>　</td>
   <td class=xl68 width=359 style='border-left:none;width:269pt'>投与開始日や<ruby>実<span
   style='display:none'><rt>ジツ </rt></span></ruby><ruby>投与<span
   style='display:none'><rt>トウヨ </rt></span></ruby><ruby>日数<span
   style='display:none'><rt>ニッスウ </rt></span></ruby>を明示するために使用する拡張を<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>。</td>
   <td class=xl70 width=36 style='border-left:none;width:27pt'>　</td>
-  <td class=xl77 width=195 style='border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=101 style='height:76.0pt'>
-  <td height=101 class=xl108 width=105 style='height:76.0pt;width:79pt'>extension[+]</td>
-  <td class=xl113 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl113 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl113 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl88 width=47 style='border-top:none;border-left:none;width:35pt'>　</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'><font
-  class="font13">投与開始日を明示するために使用する拡張「PeriodOfUse</font><font class="font8">」。投与開始日を明示しない処方の場合には、処方箋発行日を投与開始日として設定する。電子カルテ情報共有サービスにおいては、本要素を必須とする。</font></td>
-  <td class=xl123 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td height=101 class=xl105 width=105 style='height:76.0pt;width:79pt'>extension[+]</td>
+  <td class=xl110 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl110 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl110 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl87 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'><font
+  class="font13">投与開始日を明示するために使用する拡張「PeriodOfUse</font><font class="font8">」。投与開始日を明示しない処方の場合には、処方箋発行日を投与開始日として設定する。</font><font
+  class="font10">電子カルテ情報共有サービスにおいては、本要素を必須とする。</font></td>
+  <td class=xl120 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl108 width=105 style='height:60.0pt;width:79pt'>extension[=]</td>
-  <td class=xl109 width=92 style='border-top:none;border-left:none;width:69pt'>url</td>
-  <td class=xl109 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl109 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl84 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
-  <td class=xl83 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'>拡張を識別するURL。</td>
-  <td class=xl86 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
+  <td height=80 class=xl105 width=105 style='height:60.0pt;width:79pt'>extension[=]</td>
+  <td class=xl106 width=92 style='border-top:none;border-left:none;width:69pt'>url</td>
+  <td class=xl106 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl106 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl83 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl82 width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl84 width=359 style='border-top:none;border-left:none;width:269pt'>投与開始日を明示するために使用する拡張を識別するURL。</td>
+  <td class=xl85 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse&quot;</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>valuePeriod</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>valuePeriod</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl73 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Period</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与期間を表す</td>
   <td class=xl70 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=28 style='height:21.0pt'>
-  <td height=28 class=xl112 width=105 style='height:21.0pt;border-top:none;
+  <td height=28 class=xl109 width=105 style='height:21.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl113 width=92 style='border-top:none;border-left:none;width:69pt'>valuePeriod</td>
-  <td class=xl113 width=73 style='border-top:none;border-left:none;width:55pt'>start</td>
-  <td class=xl113 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl101 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl100 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
-  <td class=xl102 width=359 style='border-top:none;border-left:none;width:269pt'>処方期間の開始日</td>
-  <td class=xl89 width=36 style='width:27pt'>例示</td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2020-08-21&quot;</td>
+  <td class=xl110 width=92 style='border-top:none;border-left:none;width:69pt'>valuePeriod</td>
+  <td class=xl110 width=73 style='border-top:none;border-left:none;width:55pt'>start</td>
+  <td class=xl110 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl99 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl98 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
+  <td class=xl100 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>投与<span
+  style='display:none'><rt>トウヨ </rt></span></ruby>期間（または<ruby>処方<span
+  style='display:none'><rt>ショホウ </rt></span></ruby>）の開始日</td>
+  <td class=xl88 width=36 style='width:27pt'>例示</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2020-08-21&quot;</td>
  </tr>
  <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl114 width=105 style='height:60.0pt;border-top:none;
+  <td height=80 class=xl111 width=105 style='height:60.0pt;border-top:none;
   width:79pt'>extension[+]</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>0..1*</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'>隔日投与など、服用開始日から終了日までの日数と実投与日数が異なる場合に、<font
-  class="font13">実投与日数を明示したい場合に使用する拡張</font><font class="font12"> </font><font
-  class="font13">「</font><font class="font12">UsageDuration</font><font
-  class="font13">」</font><font class="font8">。詳細は処方情報</font><font class="font7">HL</font><font
-  class="font8">７</font><font class="font7">FHIR</font><font class="font8">記述仕様も参照すること。</font></td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>0..1*</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
+  <td class=xl84 width=359 style='border-top:none;border-left:none;width:269pt'>隔日投与など、投与開始日から終了日までの日数と実投与日数が異なる場合に、実投与日数を明示したい場合に使用する拡張
+  「UsageDuration」。詳細は処方情報HL７FHIR記述仕様も参照すること。</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl110 width=105 style='height:60.0pt;border-top:none;
+  <td height=80 class=xl107 width=105 style='height:60.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>url</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>url</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>拡張を識別するためのURL。</td>
+  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>実投与日数を明示したい場合に使用する拡張を識別するためのURL。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Duration</td>
-  <td class=xl103 width=359 style='border-top:none;border-left:none;width:269pt'><font
-  class="font10">投与期間とは別に投与実日数を表現したい場合にこの拡張を使用し、</font><font class="font7">Duration
-  </font><font class="font10">型で開始日を記載する。</font></td>
+  <td class=xl101 width=359 style='border-top:none;border-left:none;width:269pt'><font
+  class="font11">投与期間とは別に投与実日数を表現したい場合にこの拡張を使用し、</font><font class="font7">Duration
+  </font><font class="font11">型で開始日を記載する。</font></td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl116 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl113 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl117 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl94 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>decimal</td>
-  <td class=xl97 width=359 style='border-top:none;border-left:none;width:269pt'>実投与日数。</td>
+  <td class=xl114 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl127 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>decimal</td>
+  <td class=xl96 width=359 style='border-top:none;border-left:none;width:269pt'>実投与日数。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>7</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>7</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>単位「日」。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">日</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>単位コード
   UCUMを識別するURI。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl118 width=105 style='height:31.0pt;border-top:none;
+  <td height=41 class=xl115 width=105 style='height:31.0pt;border-top:none;
   width:79pt'>extension[=]</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl78 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'>単位コードUCUMにおける実投与日数の単位を表すコード。</td>
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>valueDuration</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl128 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>単位コードUCUMにおける実投与日数の単位を表すコード。</td>
   <td class=xl75 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl120 width=105 style='height:31.0pt;border-top:none;
+  <td height=41 class=xl117 width=105 style='height:31.0pt;border-top:none;
   width:79pt'>text</td>
-  <td class=xl121 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl121 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl121 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl106 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl105 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl105 width=359 style='border-top:none;border-left:none;width:269pt'>dosageInstruction<font
+  <td class=xl118 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl118 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl118 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl103 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl103 width=359 style='border-top:none;border-left:none;width:269pt'>dosageInstruction<font
   class="font13">が表す処方指示の文字列表現。</font></td>
-  <td class=xl91 width=36 style='border-top:none;width:27pt'>例示</td>
-  <td class=xl82 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl90 width=36 style='border-top:none;width:27pt'>例示</td>
+  <td class=xl81 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">内服・経口・１日３回朝昼夕食後　１回１錠　７日分</font><font class="font7">&quot;</font></td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl114 width=105 style='height:45.0pt;border-top:none;
+ <tr height=280 style='height:210.0pt'>
+  <td height=280 class=xl111 width=105 style='height:210.0pt;border-top:none;
   width:79pt'>additionalInstruction[*]</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>0..*</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'><font
-  class="font13">補足的な処方指示。不均等投与を1日用法として記載する場合に、補足用法コードを記録するために使用する。</font><font
-  class="font8">詳細は処方情報HL７FHIR記述仕様も参照。</font></td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>0..*</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl84 width=359 style='border-top:none;border-left:none;width:269pt'><font
+  class="font13">補足的な処方または</font><ruby><font class="font13">投与</font><span
+  style='display:none'><rt>トウヨ </rt></span></ruby><font class="font13">指示。不均等投与を1日用法として記載する場合に、補足用法コードを記録するために使用する。不均等な投与指示の場合には、additionalInstruction要素に、1
+  日の投与回数分だけ繰り返し、JAMI補足用法コードを使用し記述する。また、隔日投与、曜日指定投与の場合にも、JAMI補足補足用法コードを使用して記述する。</font>
+  本要素は繰り返し記述が可能であり、どのように薬剤を内服するかについての患者への補足指示（たとえば、「食事と一緒に」や「30分から1時間前に内服」）や薬剤についての注意書き（たとえば、「眠くなることがある」や「日光や紫外線が皮膚にあたららないようにすること」）なども記述するのに使用できる。<font
+  class="font13"><br>
+    </font>詳細は処方情報HL７FHIR記述仕様も参照。</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=35 style='height:26.0pt'>
-  <td height=35 class=xl110 width=105 style='height:26.0pt;border-top:none;
+  <td height=35 class=xl107 width=105 style='height:26.0pt;border-top:none;
   width:79pt'>additionalInstruction[+]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl107 width=105 style='height:75.0pt;border-top:none;
   width:79pt'>additionalInstruction[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI補足用法８桁コードを識別するURI。</td>
+  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
+  class="font11">補足用法８桁コードを識別する</font>URI<font class="font11">（</font><ruby><font
+  class="font11">固定値</font><span style='display:none'><rt>コテイチ </rt></span></ruby><ruby><font
+  class="font11">参照</font><span style='display:none'><rt>サンショウ </rt></span></ruby><font
+  class="font11">）。やむを得ず施設固有コードを使用する場合には、</font>&quot;http://jpfhir.jp/fhir/CodeSystem/MedicationUsageAdditional/<font
+  class="font11">医療機関</font>10<font class="font11">桁コード</font>&quot;<font
+  class="font11">を設定する。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.200250.2.2.20.22&quot;</td>
+  <td class=xl132 width=195 style='border-top:none;border-left:none;width:146pt'><a
+  href="http://jami.jp/CodeSystem/MedicationUsageAdditional">http://jami.jp/CodeSystem/MedicationUsageAdditional</a></td>
  </tr>
  <tr height=35 style='height:26.0pt'>
-  <td height=35 class=xl110 width=105 style='height:26.0pt;border-top:none;
+  <td height=35 class=xl107 width=105 style='height:26.0pt;border-top:none;
   width:79pt'>additionalInstruction[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
   class="font8">補足用法コード指定する。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;V14NNNNN&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;V14NNNNN&quot;</td>
  </tr>
  <tr height=35 style='height:26.0pt'>
-  <td height=35 class=xl110 width=105 style='height:26.0pt;border-top:none;
+  <td height=35 class=xl107 width=105 style='height:26.0pt;border-top:none;
   width:79pt'>additionalInstruction[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>コードの表示名。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">不均等・１回目・４錠</font><font class="font7">&quot;</font></td>
  </tr>
- <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl118 width=105 style='height:31.0pt;border-top:none;
+ <tr height=101 style='height:76.0pt'>
+  <td height=101 class=xl115 width=105 style='height:76.0pt;border-top:none;
   width:79pt'>additionalInstruction[=]</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl78 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'>不均等投与の表現文字列。</td>
-  <td class=xl89 width=36 style='width:27pt'>例示</td>
-  <td class=xl92 width=195 style='border-top:none;border-left:none;width:146pt'>１日３回　毎食後　７錠（４錠－２錠－１錠）</td>
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl128 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>補足的な処方または投与指示の表現文字列。<ruby>不均等<span
+  style='display:none'><rt>フキントウ </rt></span></ruby>な<ruby>投与<span
+  style='display:none'><rt>トウヨ </rt></span></ruby><ruby>指示<span
+  style='display:none'><rt>シジ </rt></span></ruby>の<ruby>場合<span
+  style='display:none'><rt>バアイ </rt></span></ruby>には、additionalInstruction要素に、1
+  日の投与回数分だけ繰り返し、JAMI補<ruby>足用<span style='display:none'><rt>シヨウ </rt></span></ruby>法コードを使用し<ruby>記<span
+  style='display:none'><rt>カ </rt></span></ruby>述する仕様であるが、コード<ruby>化<span
+  style='display:none'><rt>ツネ </rt></span></ruby>できるかどうかにかかわらず常にテキストでも記述する。</td>
+  <td class=xl88 width=36 style='width:27pt'>例示</td>
+  <td class=xl91 width=195 style='border-top:none;border-left:none;width:146pt'>１日３回　毎食後　７錠（４錠－２錠－１錠）</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl114 width=105 style='height:20.0pt;border-top:none;
+ <tr height=120 style='height:90.0pt'>
+  <td height=120 class=xl111 width=105 style='height:90.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl107 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>Timing</td>
-  <td class=xl98 width=359 style='border-top:none;border-left:none;width:269pt'>服用タイミングを記録する。</td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>Timing</td>
+  <td class=xl97 width=359 style='border-top:none;border-left:none;width:269pt'>投与タイミングや投与<ruby>期間<span
+  style='display:none'><rt>キカン </rt></span></ruby>と<ruby>期間中<span
+  style='display:none'><rt>キカンチュウ </rt></span></ruby>の投与<ruby>用法<span
+  style='display:none'><rt>ヨウホウ </rt></span></ruby>を記録する。<br>
+    <ruby>投与<span style='display:none'><rt>トウヨ </rt></span></ruby>期間と期間中の投与用法を指定する場合には通常、code子要素とrepeant子要素とで記述する。投与タイミングを直接具体的な日時で指定する場合には、event子要素を使用することができる。</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>event[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..*</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>event[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>0..*</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
-  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>服用タイミングを具体的な日時で指定する場合に使用する。詳細は処方情報HL７FHIR記述仕様も参照。</td>
+  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与タイミングを具体的な日時で指定する場合に使用する。詳細は処方情報HL７FHIR記述仕様も参照。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2020-08-21&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2020-08-21&quot;</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl107 width=105 style='height:45.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Element</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
+  <td class=xl130 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>投与期<span
+  style='display:none'><rt>キカンチュウ </rt></span></ruby>間<ruby>と<span
+  style='display:none'><rt>クリカエシ </rt></span></ruby>期間中<ruby>の投<span
+  style='display:none'><rt>ホウホウ </rt></span></ruby>与の繰<ruby>り返<span
+  style='display:none'><rt>ヨウソ </rt></span></ruby>し方法を記述する要素。このrepeat<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>で<ruby>投与<span
+  style='display:none'><rt>トウヨ </rt></span></ruby><ruby>期間<span
+  style='display:none'><rt>キカン </rt></span></ruby>の<ruby>全日数<span
+  style='display:none'><rt>ゼンニッスウ </rt></span></ruby>、code<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>でこの<ruby>期間中<span
+  style='display:none'><rt>キカンチュウ </rt></span></ruby>の<ruby>投与<span
+  style='display:none'><rt>トウヨ </rt></span></ruby><ruby>方法<span
+  style='display:none'><rt>ホウホウ </rt></span></ruby>を<ruby>記述<span
+  style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl116 width=105 style='height:75.0pt;border-top:none;
+ <tr height=140 style='height:105.0pt'>
+  <td height=140 class=xl113 width=105 style='height:105.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl117 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl94 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>Duration</td>
-  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'><font
-  class="font13">投薬期間（服用開始日から服用終了日まで）の全日数。</font>実投与（<ruby>服用<span
-  style='display:none'><rt>フクヨウ </rt></span></ruby>）日数ではないことに注意する。すなわち、<ruby>実際<span
-  style='display:none'><rt>ジッサイ </rt></span></ruby>に服用しない<ruby>日<span
+  <td class=xl114 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl127 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>Duration</td>
+  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投薬期間（投与開始日から投与終了日まで）の全日数。実投与（投与）日数ではないことに注意する。すなわち、<ruby>実際<span
+  style='display:none'><rt>ジッサイ </rt></span></ruby>に投与しない<ruby>日<span
   style='display:none'><rt>ヒ </rt></span></ruby>も１日と<ruby>数<span
   style='display:none'><rt>カゾエル </rt></span></ruby>える。詳細は処方情報HL７FHIR記述仕様も参照。なお、この<ruby>実投与<span
-  style='display:none'><rt>ジツトウヨ </rt></span></ruby>（<ruby>服用<span
-  style='display:none'><rt>フクヨウ </rt></span></ruby>）<ruby>日数<span
+  style='display:none'><rt>ジツトウヨ </rt></span></ruby>（投与）<ruby>日数<span
   style='display:none'><rt>ニッスウ </rt></span></ruby>を<ruby>別<span
   style='display:none'><rt>ベツ </rt></span></ruby>に<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>したい<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、</td>
+  style='display:none'><rt>バアイ </rt></span></ruby>には、実投与日数を明示したい場合に使用する拡張を<ruby>使用<span
+  style='display:none'><rt>シヨウ </rt></span></ruby>して<ruby>記述<span
+  style='display:none'><rt>キジュツ </rt></span></ruby>すること。</td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>decimal</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投<ruby>薬<span
   style='display:none'><rt>キカｎ </rt></span></ruby>期<ruby>間<span
-  style='display:none'><rt>ゼｎ </rt></span></ruby>（服用開始日から服用終了日まで）の全日数。</td>
+  style='display:none'><rt>ゼｎ </rt></span></ruby>（投与開始日から投与終了日まで）の全日数。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>7</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>7</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投薬期間（服用開始日から服用終了日まで）の全日数の単位文字列。</td>
+  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投薬期間（投与開始日から投与終了日まで）の全日数の単位文字列。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">日</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=35 style='height:26.0pt'>
-  <td height=35 class=xl110 width=105 style='height:26.0pt;border-top:none;
+  <td height=35 class=xl107 width=105 style='height:26.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>単位コード<font
   class="font7">UCUM</font><font class="font8">のコード体系を識別する</font><font
   class="font7">URI</font><font class="font8">。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
  </tr>
  <tr height=35 style='height:26.0pt'>
-  <td height=35 class=xl110 width=105 style='height:26.0pt;border-top:none;
+  <td height=35 class=xl107 width=105 style='height:26.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>repeat</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>boundsDuration</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>日を意味する単位コード「<font
   class="font7">d</font><font class="font8">」。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl116 width=105 style='height:30.0pt;border-top:none;
-  width:79pt'>timing</td>
-  <td class=xl117 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl99 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl97 width=359 style='border-top:none;border-left:none;width:269pt'>用法。できるかぎりコード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby>をすることを<ruby>推奨<span
-  style='display:none'><rt>スイショウ カ スイショウ </rt></span></ruby>する。</td>
-  <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl110 width=105 style='height:75.0pt;border-top:none;
-  width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl76 width=47 style='border-top:none;border-left:none;width:35pt'>0..1*</td>
-  <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
-  class="font10">標準用法コードによりコード化することを推奨する。詳細は処方情報</font>HL<font class="font10">７</font>FHIR<font
-  class="font10">記述仕様も参照すること。施設固有のコード化による</font><ruby><font class="font10">記述</font><span
-  style='display:none'><rt>キジュツ </rt></span></ruby><font class="font10">も</font><ruby><font
-  class="font10">可能</font><span style='display:none'><rt>カノウ </rt></span></ruby><font
-  class="font10">であるが、できるかぎり、JAMI標準用法コードと併用することが</font><ruby><font
-  class="font10">望</font><span style='display:none'><rt>ノゾマシイ </rt></span></ruby><font
-  class="font10">ましい。</font></td>
-  <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl110 width=105 style='height:45.0pt;border-top:none;
+  <td height=60 class=xl113 width=105 style='height:45.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[+]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl76 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl114 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl127 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl96 width=359 style='border-top:none;border-left:none;width:269pt'>用法。できるかぎりコード<ruby>化<span
+  style='display:none'><rt>カ </rt></span></ruby>をすることを<ruby>推奨<span
+  style='display:none'><rt>スイショウ カ スイショウ </rt></span></ruby>する。コード化の有無にかかわらず、用法の完全な文字列をtext<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>に設定する。</td>
+  <td class=xl72 style='border-top:none;border-left:none'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl107 width=105 style='height:75.0pt;border-top:none;
+  width:79pt'>timing</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>0..1*</td>
+  <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
+  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
+  class="font11">標準用法コードによりコード化することを推奨する。詳細は処方情報</font>HL<font class="font11">７</font>FHIR<font
+  class="font11">記述仕様も参照すること。施設固有のコード化による</font><ruby><font class="font11">記述</font><span
+  style='display:none'><rt>キジュツ </rt></span></ruby><font class="font11">も</font><ruby><font
+  class="font11">可能</font><span style='display:none'><rt>カノウ </rt></span></ruby><font
+  class="font11">であるが、できるかぎり、JAMI標準用法コードと併用することが</font><ruby><font
+  class="font11">望</font><span style='display:none'><rt>ノゾマシイ </rt></span></ruby><font
+  class="font11">ましい。</font></td>
+  <td class=xl72 style='border-top:none;border-left:none'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl107 width=105 style='height:75.0pt;border-top:none;
+  width:79pt'>timing</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[+]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
   class="font8">標準用法の</font><ruby><font class="font8">場合</font><span
   style='display:none'><rt>バアイ </rt></span></ruby><font class="font8">にはJAMI標準用法</font>16<font
-  class="font8">桁コードを識別する</font>URI<font class="font10">。</font><ruby><font
-  class="font11">施設</font><span style='display:none'><rt>シセツ </rt></span></ruby><ruby><font
-  class="font11">固有</font><span style='display:none'><rt>コユウ </rt></span></ruby><font
-  class="font11">コードの</font><ruby><font class="font11">場合</font><span
-  style='display:none'><rt>バアイ </rt></span></ruby><font class="font11">にはXXXXXXを</font><ruby><font
-  class="font11">設定</font><span style='display:none'><rt>セッテイ </rt></span></ruby><font
-  class="font11">する。</font></td>
-  <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.200250.2.2.20&quot;</td>
+  class="font8">桁コードを識別する</font>URI<font class="font11">（</font><ruby><font
+  class="font11">固定値</font><span style='display:none'><rt>コテイチ </rt></span></ruby><ruby><font
+  class="font11">参照</font><span style='display:none'><rt>サンショウ </rt></span></ruby><font
+  class="font11">）。やむを</font><ruby><font class="font11">得</font><span
+  style='display:none'><rt>エズ </rt></span></ruby><font class="font11">ず</font><ruby><font
+  class="font14">施設</font><span style='display:none'><rt>シセツ </rt></span></ruby><ruby><font
+  class="font14">固有</font><span style='display:none'><rt>コユウ </rt></span></ruby><font
+  class="font14">コードを</font><ruby><font class="font14">使用</font><span
+  style='display:none'><rt>シヨウ </rt></span></ruby><font class="font14">する</font><ruby><font
+  class="font14">場合</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
+  class="font14">には、&quot;http://jpfhir.jp/fhir/Co</font><ruby><font
+  class="font14">de</font><span style='display:none'><rt>キカン </rt></span></ruby><font
+  class="font14">System/Me</font><ruby><font class="font14">di</font><span
+  style='display:none'><rt>セッテイ </rt></span></ruby><font class="font14">cationUsage/医療機関10桁コード&quot;を設定する。</font></td>
+  <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
+  style='display:none'><rt>コテイ </rt></span></ruby></td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jami.jp/CodeSystem/MedicationUsage&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl76 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>用<span
   style='display:none'><rt>ヨウホウ </rt></span></ruby>法コード</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1013044400000000&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1013044400000000&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
+  <td class=xl126 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>用法コードに<ruby>対応<span
   style='display:none'><rt>タイオウ </rt></span></ruby>する表示名。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">内服・経口・１日３回朝昼夕食後</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl118 width=105 style='height:31.0pt;border-top:none;
+  <td height=41 class=xl115 width=105 style='height:31.0pt;border-top:none;
   width:79pt'>timing</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl88 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>用<span
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>code</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl128 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl129 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>用<span
   style='display:none'><rt>ヨウホウ </rt></span></ruby>法のコード<ruby>化<span
   style='display:none'><rt>カ </rt></span></ruby>の<ruby>有無<span
   style='display:none'><rt>ウム </rt></span></ruby>にかかわらず、<ruby>用法<span
@@ -1774,222 +1817,261 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>カンゼン </rt></span></ruby>な<ruby>文字列<span
   style='display:none'><rt>モジレツ </rt></span></ruby>を<ruby>設定<span
   style='display:none'><rt>セッテイ </rt></span></ruby>する。</td>
-  <td class=xl89 width=36 style='width:27pt'>　</td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl67 width=36 style='width:27pt'>例示</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  class="font8">内服・経口・１日３回朝昼夕食後</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl120 width=105 style='height:31.0pt;border-top:none;
+  <td height=41 class=xl117 width=105 style='height:31.0pt;border-top:none;
   width:79pt'>asNeededBoolean</td>
-  <td class=xl121 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl121 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl121 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl105 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl105 width=87 style='border-top:none;border-left:none;width:65pt'>boolean</td>
-  <td class=xl81 width=359 style='border-top:none;border-left:none;width:269pt'><font
+  <td class=xl118 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl118 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl118 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl131 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl103 width=87 style='border-top:none;border-left:none;width:65pt'>boolean</td>
+  <td class=xl80 width=359 style='border-top:none;border-left:none;width:269pt'><font
   class="font13">頓用型の用法を指定する場合に&quot;true&quot;を指定する</font><font class="font8">。詳細は処方情報HL７FHIR記述仕様も参照。</font></td>
-  <td class=xl93 style='border-top:none;border-left:none'>　</td>
-  <td class=xl82 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl92 style='border-left:none'>　</td>
+  <td class=xl81 width=195 style='border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl114 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl111 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>site</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'><font
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl84 width=359 style='border-top:none;border-left:none;width:269pt'><font
   class="font13">外用薬で部位を指定する場合に使用する。</font><font class="font8">詳細は処方情報HL７FHIR記述仕様も参照。</font></td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>site</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
+  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>外用<span
+  style='display:none'><rt>ガイヨウ </rt></span></ruby><ruby>部位<span
+  style='display:none'><rt>ブイ </rt></span></ruby>をコード<ruby>化<span
+  style='display:none'><rt>カ </rt></span></ruby>するか、text<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>で<ruby>記述<span
+  style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>site</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI外用部位３桁コードを識別するURI。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.200250.2.2.20.32&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jami.jp/CodeSystem/MedicationBodySiteExternal&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>site</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
   class="font8">部位コード。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;950&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;950&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>site</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
   class="font8">部位コードの表示名。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">膝</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=28 style='height:21.0pt'>
-  <td height=28 class=xl118 width=105 style='height:21.0pt;border-top:none;
+  <td height=28 class=xl115 width=105 style='height:21.0pt;border-top:none;
   width:79pt'>site</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl78 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'>部位のテキスト表現。</td>
-  <td class=xl89 width=36 style='width:27pt'>例示</td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl77 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>部位のテキスト表現。</td>
+  <td class=xl88 width=36 style='width:27pt'>例示</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">膝</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl114 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl111 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>route</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl98 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路</td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl97 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>route</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
+  <td class=xl101 width=359 style='border-top:none;border-left:none;width:269pt'><ruby><font
+  class="font11">投与</font><span style='display:none'><rt>ガイヨウ </rt></span></ruby><ruby><font
+  class="font11">経路</font><span style='display:none'><rt>ブイ </rt></span></ruby><font
+  class="font11">をコード</font><ruby><font class="font11">化</font><span
+  style='display:none'><rt>カ </rt></span></ruby><font class="font11">するか、</font><font
+  class="font7">text</font><ruby><font class="font11">子要素</font><span
+  style='display:none'><rt>コヨウソ </rt></span></ruby><font class="font11">で</font><ruby><font
+  class="font11">記述</font><span style='display:none'><rt>キジュツ </rt></span></ruby><font
+  class="font11">する。</font></td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl110 width=105 style='height:45.0pt;border-top:none;
+  <td height=60 class=xl107 width=105 style='height:45.0pt;border-top:none;
   width:79pt'>route</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路コード表のsystemを設定する。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>route</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路コード表で規定するコード。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;PO&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;PO&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>route</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路コード表で規定するコードの表示名。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">口</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl118 width=105 style='height:31.0pt;border-top:none;
+  <td height=41 class=xl115 width=105 style='height:31.0pt;border-top:none;
   width:79pt'>route</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl78 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路の文字列表現。コードで指定できない場合、本要素で文字列として指定してもよい。</td>
-  <td class=xl89 width=36 style='width:27pt'>例示</td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl77 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>投与経路の文字列表現。コードで指定できない場合、本要素で文字列として指定してもよい。</td>
+  <td class=xl88 width=36 style='width:27pt'>例示</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">経口</font><font class="font7">&quot;</font></td>
  </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl114 width=105 style='height:30.0pt;border-top:none;
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl111 width=105 style='height:60.0pt;border-top:none;
   width:79pt'>method</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl98 width=359 style='border-top:none;border-left:none;width:269pt'>投与方法</td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl97 width=359 style='border-top:none;border-left:none;width:269pt'>投与方法の<ruby>基本<span
+  style='display:none'><rt>キホン </rt></span></ruby><ruby>用法<span
+  style='display:none'><rt>ヨウホウ </rt></span></ruby><ruby>区分<span
+  style='display:none'><rt>クブン </rt></span></ruby>（1 : <ruby>内服<span
+  style='display:none'><rt>ナイフク </rt></span></ruby>、2 : <ruby>外用<span
+  style='display:none'><rt>ガイヨウ </rt></span></ruby>、3 : <ruby>注射<span
+  style='display:none'><rt>チュウシャ </rt></span></ruby>、4 : <ruby>注入<span
+  style='display:none'><rt>チュウニュウ </rt></span></ruby>の<ruby>区分<span
+  style='display:none'><rt>クブン </rt></span></ruby>）、またはさらに1段階<ruby>詳<span
+  style='display:none'><rt>クワシイ </rt></span></ruby>しい<ruby>用法<span
+  style='display:none'><rt>ヨウホウ </rt></span></ruby><ruby>区分<span
+  style='display:none'><rt>クブン </rt></span></ruby>（10：<ruby>経口<span
+  style='display:none'><rt>ケイコウ </rt></span></ruby>、11：<ruby>舌下<span
+  style='display:none'><rt>ゼッカ </rt></span></ruby>、…など）を<ruby>記述<span
+  style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>method</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
+  <td class=xl101 width=359 style='border-top:none;border-left:none;width:269pt'><ruby><font
+  class="font11">投与</font><span style='display:none'><rt>ガイヨウ </rt></span></ruby><ruby><font
+  class="font11">方法</font><span style='display:none'><rt>ホウホウ </rt></span></ruby><ruby><font
+  class="font11">区分</font><span style='display:none'><rt>クブン </rt></span></ruby><font
+  class="font11">をコード</font><ruby><font class="font11">化</font><span
+  style='display:none'><rt>カ </rt></span></ruby><font class="font11">するか、</font><font
+  class="font7">text</font><ruby><font class="font11">子要素</font><span
+  style='display:none'><rt>コヨウソ </rt></span></ruby><font class="font11">で</font><ruby><font
+  class="font11">記述</font><span style='display:none'><rt>キジュツ </rt></span></ruby><font
+  class="font11">する。</font></td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl110 width=105 style='height:60.0pt;border-top:none;
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl107 width=105 style='height:75.0pt;border-top:none;
   width:79pt'>method</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[+]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与方法に対応する<font
-  class="font7">JAMI</font><font class="font8">用法コード表基本用法１桁コードを識別する</font><font
-  class="font7">URI</font><font class="font8">。同</font><font class="font7">2</font><font
-  class="font8">桁コード（</font><font class="font7">&quot;urn:oid:1.2.392.200250.2.2.20.40&quot;</font><font
-  class="font8">）を使用してもよい。</font></td>
+  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与方法の<ruby>区分<span
+  style='display:none'><rt>クブン </rt></span></ruby>に対応する<font class="font7">JAMI</font>用法コード表基本用法１桁コードを識別する<font
+  class="font7">URI</font><font class="font11">（</font><ruby><font
+  class="font11">固定</font><span style='display:none'><rt>コテイ </rt></span></ruby><ruby><font
+  class="font11">値</font><span style='display:none'><rt>チ </rt></span></ruby><ruby><font
+  class="font11">参照</font><span style='display:none'><rt>サンショウ </rt></span></ruby><font
+  class="font11">）</font>。同<font class="font7">2</font>桁コード（<font class="font7">&quot;http://jami.jp/CodeSystem/MedicationMethodDetailUsage&quot;</font>）を使用してもよい。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.200250.2.2.20.30&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jami.jp/CodeSystem/MedicationMethodBasicUsage&quot;</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl110 width=105 style='height:45.0pt;border-top:none;
+  <td height=60 class=xl107 width=105 style='height:45.0pt;border-top:none;
   width:79pt'>method</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
@@ -1997,46 +2079,46 @@ function details_open(onoff, idname, idCloseButton){
   class="font8">桁コード（</font><font class="font7">&quot;urn:oid:1.2.392.200250.2.2.20.40&quot;</font><font
   class="font8">）を使用してもよい。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1&quot;</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl110 width=105 style='height:45.0pt;border-top:none;
+  <td height=60 class=xl107 width=105 style='height:45.0pt;border-top:none;
   width:79pt'>method</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI<font
-  class="font8">用法コード表基本用法１桁コードの表示名。同</font><font class="font7">2</font><font
+  class="font8">用法コード表基本用法１桁コードの表示名または同</font><font class="font7">2</font><font
   class="font8">桁コード（</font><font class="font7">&quot;urn:oid:1.2.392.200250.2.2.20.40&quot;</font><font
-  class="font8">）を使用してもよい。</font></td>
+  class="font8">）を使用する。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">内服</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl118 width=105 style='height:31.0pt;border-top:none;
+  <td height=41 class=xl115 width=105 style='height:31.0pt;border-top:none;
   width:79pt'>method</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl78 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'>投与方法のテキスト表現。コードで指定できない場合、本要素で文字列として指定してもよい。</td>
-  <td class=xl89 width=36 style='width:27pt'>例示</td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>text</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl77 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>投与方法のテキスト表現。コードで指定できない場合、本要素で文字列として指定してもよい。</td>
+  <td class=xl88 width=36 style='width:27pt'>例示</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">内服</font><font class="font7">&quot;</font></td>
  </tr>
- <tr height=180 style='height:135.0pt'>
-  <td height=180 class=xl114 width=105 style='height:135.0pt;border-top:none;
+ <tr height=220 style='height:165.0pt'>
+  <td height=220 class=xl111 width=105 style='height:165.0pt;border-top:none;
   width:79pt'>doseAndRate[*]</td>
-  <td class=xl115 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl115 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl104 width=47 style='border-top:none;border-left:none;width:35pt'>0..*</td>
-  <td class=xl104 width=87 style='border-top:none;border-left:none;width:65pt'>Element</td>
-  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'><font
+  <td class=xl112 width=92 style='border-top:none;border-left:none;width:69pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl112 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl125 width=47 style='border-top:none;border-left:none;width:35pt'>0..*</td>
+  <td class=xl102 width=87 style='border-top:none;border-left:none;width:65pt'>Element</td>
+  <td class=xl84 width=359 style='border-top:none;border-left:none;width:269pt'><font
   class="font13">投与量を記録する。</font><ruby><br>
     内<span style='display:none'><rt>ナイフク </rt></span></ruby>服１<ruby>回<span
   style='display:none'><rt>リョウ </rt></span></ruby>量<ruby>、外<span
@@ -2052,20 +2134,25 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>バアイ </rt></span></ruby>は、<ruby>内服<span
   style='display:none'><rt>バアイ </rt></span></ruby>１日量、外用１日量は<ruby>、<span
   style='display:none'><rt>シテイ </rt></span></ruby>dos<ruby>eA<span
-  style='display:none'><rt>ガイヨウ </rt></span></ruby>ndRate.rateRatioの分子で指定する。外用の全量指定（２本など）の場合は、調剤量として、MedicationRequestリソースのdispenseRequest.quantity
-  要素に、SimpleQuantity 型で記録する。</td>
-  <td class=xl90 style='border-top:none;border-left:none'>　</td>
-  <td class=xl87 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  style='display:none'><rt>ガイヨウ </rt></span></ruby>ndRate.rateRatioの分子で指定する。<br>
+    外用の全量指定（２本など）の場合は、調剤量として、MedicationRequestリソースのdispenseRequest.quantity
+  要素に、SimpleQuantity 型で記録するので、その1回<ruby>量<span style='display:none'><rt>リョウ </rt></span></ruby>を<ruby>併<span
+  style='display:none'><rt>アワセテ </rt></span></ruby>せて<ruby>指定<span
+  style='display:none'><rt>シテイ </rt></span></ruby>するのでなければこの<ruby>要素<span
+  style='display:none'><rt>ヨウソ </rt></span></ruby>は<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>しない。</td>
+  <td class=xl89 style='border-top:none;border-left:none'>　</td>
+  <td class=xl86 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl116 width=105 style='height:60.0pt;border-top:none;
+  <td height=80 class=xl113 width=105 style='height:60.0pt;border-top:none;
   width:79pt'>doseAndRate[+]</td>
-  <td class=xl117 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl94 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl97 width=359 style='border-top:none;border-left:none;width:269pt'>力価区分。<font
+  <td class=xl114 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl127 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl96 width=359 style='border-top:none;border-left:none;width:269pt'>力価区分。<font
   class="font8">用量は製剤量で記述することを基本とするが、必要に応じて原薬量指定も可能とする。本要素は、安全性のため、</font><ruby><font
   class="font8">外用薬</font><span style='display:none'><rt>ガイヨウヤク </rt></span></ruby><font
   class="font8">の</font><ruby><font class="font8">全量</font><span
@@ -2074,74 +2161,75 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>シジ </rt></span></ruby><font class="font8">を</font><ruby><font
   class="font8">除</font><span style='display:none'><rt>ノゾキ </rt></span></ruby><font
   class="font8">き省略せずに必須とする。</font></td>
-  <td class=xl95 style='border-top:none;border-left:none'>　</td>
-  <td class=xl96 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl94 style='border-top:none;border-left:none'>　</td>
+  <td class=xl95 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[*]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[*]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1*</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[+]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[+]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>力価区分コードのコード体系を識別するURI。</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.100495.20.2.22&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.100495.20.2.22&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>力価区分コード。（1：製剤量　2：原薬量）</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>type</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>coding[=]</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>力価区分コードの表示名。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">製剤量</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl116 width=105 style='height:90.0pt;border-top:none;
+  <td height=120 class=xl113 width=105 style='height:90.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl117 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl94 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>SimpleQuantity</td>
-  <td class=xl94 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
-  class="font13">回投与量。 </font><font class="font8">回投与量の記録を基本とし、doseQuantity 要素
+  <td class=xl114 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl127 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>SimpleQuantity</td>
+  <td class=xl93 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
+  class="font13">回投与量。 1</font><font class="font8">回投与量の記録を基本とし、doseQuantity 要素
   に SimpleQuantity
   型で記述する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。</font><ruby><font
   class="font8">内服</font><span style='display:none'><rt>ナイフク </rt></span></ruby><font
   class="font8">、</font><ruby><font class="font8">外用</font><span
   style='display:none'><rt>ガイヨウ </rt></span></ruby><font class="font8">ともに１回</font><ruby><font
+  class="font8">投与</font><span style='display:none'><rt>トウヨ </rt></span></ruby><ruby><font
   class="font8">量</font><span style='display:none'><rt>リョウ </rt></span></ruby><font
   class="font8">を</font><ruby><font class="font8">指定</font><span
   style='display:none'><rt>シテイ </rt></span></ruby><font class="font8">する</font><ruby><font
@@ -2150,184 +2238,197 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>ヨウソ </rt></span></ruby><font class="font8">を</font><ruby><font
   class="font8">使用</font><span style='display:none'><rt>シヨウ </rt></span></ruby><font
   class="font8">する。</font></td>
-  <td class=xl95 style='border-top:none;border-left:none'>　</td>
-  <td class=xl96 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl94 style='border-top:none;border-left:none'>　</td>
+  <td class=xl95 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>decimal</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>1回投与量。</td>
+  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
+  class="font11">回投与量。</font>doseAndRate.type<font class="font11">で指定される力価区分に対応した</font><ruby><font
+  class="font11">量</font><span style='display:none'><rt>リョウ </rt></span></ruby><font
+  class="font11">であることが必須である。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>1</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>1</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与量の単位。</td>
+  <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与量の単位。doseAndRate.typeで指定される力価区分に対応した<ruby>単位<span
+  style='display:none'><rt>タンイ </rt></span></ruby>であることが必須である。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">錠</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>医薬品単位略号を識別する<font
   class="font7">OID</font><font class="font8">。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.100495.20.2.101&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.100495.20.2.101&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>doseQuantity</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>医薬品単位略号。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;TAB&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;TAB&quot;</td>
  </tr>
- <tr height=260 style='height:195.0pt'>
-  <td height=260 class=xl116 width=105 style='height:195.0pt;border-top:none;
+ <tr height=300 style='height:225.0pt'>
+  <td height=300 class=xl113 width=105 style='height:225.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl117 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl117 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl94 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
-  <td class=xl94 width=87 style='border-top:none;border-left:none;width:65pt'>Ratio</td>
-  <td class=xl94 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
-  class="font13">日投与量を表す。</font><font class="font10">処方期間の中で</font><font
-  class="font7"> 1 </font><font class="font10">日量が常に一定となる場合には、</font><font
-  class="font7">1 </font><font class="font10">回量に加えて</font><font class="font7">
-  1 </font><font class="font10">日量の<br>
-    記録も可能とし、</font><font class="font7">rateRatio </font><font class="font10">要素に</font><font
-  class="font7"> Ratio </font><font class="font10">型で記録す<br>
+  <td class=xl114 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl114 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl127 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
+  <td class=xl93 width=87 style='border-top:none;border-left:none;width:65pt'>Ratio</td>
+  <td class=xl93 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
+  class="font13">日投与量を表す。</font><font class="font11">処方期間の中で</font><font
+  class="font7"> 1 </font><font class="font11">日量が常に一定となる場合には、</font><font
+  class="font7">1 </font><font class="font11">回量に加えて</font><font class="font7">
+  1 </font><font class="font11">日量の<br>
+    記録も可能とし、</font><font class="font7">rateRatio </font><font class="font11">要素に</font><font
+  class="font7"> Ratio </font><font class="font11">型で記録す<br>
     る。Ratio 型は比を扱うデータ型で、分母にあたる<br>
     rateRatio.denominator 要素には、投与量の基準となる期間、つまり、1 日量の場合は「1 日」を Quantity
   型で指定する。単位には、単位コードUCUM（http://unitsofmeasure.org）で定義されている「日」を表す単位コード「d」を使用する。<br>
     分子にあたる rateRatio.numerator 要素には、1 回量と同様の記法で、1 日投与量を Quantity
-  型で指定する。内服、外用ともに１日量を指定する場合にはこの要素を使用する。</font></td>
-  <td class=xl95 style='border-top:none;border-left:none'>　</td>
-  <td class=xl96 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  型で指定する。内服、外用ともに１日量を指定する場合にはこの要素を使用する。</font><font class="font12"><br>
+    </font><font class="font7">doseAndRate.type</font><font class="font11">で指定される力価区分に対応した量であることが必須である。</font></td>
+  <td class=xl94 style='border-top:none;border-left:none'>　</td>
+  <td class=xl95 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Quantity</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
-  class="font10">日投与量の</font><ruby><font class="font10">分子</font><span
-  style='display:none'><rt>ブンシ </rt></span></ruby><font class="font10">の</font><ruby><font
-  class="font10">情報</font><span style='display:none'><rt>ジョウホウ </rt></span></ruby><ruby><font
-  class="font10">を</font><span style='display:none'><rt>ヲ</rt></span></ruby><font
-  class="font10">表す。</font></td>
+  class="font11">日投与量の</font><ruby><font class="font11">分子</font><span
+  style='display:none'><rt>ブンシ </rt></span></ruby><font class="font11">の</font><ruby><font
+  class="font11">情報</font><span style='display:none'><rt>ジョウホウ </rt></span></ruby><ruby><font
+  class="font11">を</font><span style='display:none'><rt>ヲ</rt></span></ruby><font
+  class="font11">表す。</font></td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>decimal</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>1日投与量。</td>
+  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
+  class="font11">日投与量。</font></td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>3</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>3</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>投与量の単位。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">錠</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl110 width=105 style='height:30.0pt;border-top:none;
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>医薬品単位略号を識別する<font
   class="font7">OID</font><font class="font8">。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.100495.20.2.101&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.100495.20.2.101&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>numerator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>医薬品単位略号。</td>
   <td class=xl67 width=36 style='width:27pt'>例示</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;TAB&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;TAB&quot;</td>
  </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl107 width=105 style='height:30.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>Quantity</td>
   <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>1<font
-  class="font8">日投与量の分母である「</font><font class="font7">1</font><font
-  class="font8">日」を表す。</font></td>
+  class="font8">日投与量の分母である「</font>1<font class="font8">日」を表す。</font><ruby><font
+  class="font8">混乱</font><span style='display:none'><rt>コンラン </rt></span></ruby><font
+  class="font8">を</font><ruby><font class="font8">避</font><span
+  style='display:none'><rt>サケル </rt></span></ruby><font class="font8">けるため、「1日」</font><ruby><font
+  class="font8">以外</font><span style='display:none'><rt>イガイ </rt></span></ruby><font
+  class="font8">の</font><ruby><font class="font8">分母</font><span
+  style='display:none'><rt>ブンボ </rt></span></ruby><font class="font8">は</font><ruby><font
+  class="font8">指定</font><span style='display:none'><rt>シテイ </rt></span></ruby><font
+  class="font8">しないこと。</font></td>
   <td class=xl72 style='border-top:none;border-left:none'>　</td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>decimal</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'>分母である「1日」の日数「1」</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>1</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>1</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>unit</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
   <td class=xl68 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>分母<span
@@ -2335,42 +2436,44 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>ヒ </rt></span></ruby>」</td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<font
   class="font8">日</font><font class="font7">&quot;</font></td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl110 width=105 style='height:20.0pt;border-top:none;
+  <td height=27 class=xl107 width=105 style='height:20.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl111 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
-  <td class=xl111 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td class=xl108 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
+  <td class=xl108 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
   <td class=xl69 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl69 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>UCUM単位コードを識別するURI。</td>
+  <td class=xl69 width=359 style='border-top:none;border-left:none;width:269pt'>UCUM<font
+  class="font11">単位コードを識別する</font><font class="font7">URI</font><font
+  class="font11">。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl77 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
+  <td class=xl76 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
  </tr>
  <tr height=28 style='height:21.0pt'>
-  <td height=28 class=xl118 width=105 style='height:21.0pt;border-top:none;
+  <td height=28 class=xl115 width=105 style='height:21.0pt;border-top:none;
   width:79pt'>doseAndRate[=]</td>
-  <td class=xl119 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
-  <td class=xl119 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl78 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
-  <td class=xl79 width=359 style='border-top:none;border-left:none;width:269pt'>「日」を表す<font
+  <td class=xl116 width=92 style='border-top:none;border-left:none;width:69pt'>rateRatio</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>denominator</td>
+  <td class=xl116 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
+  <td class=xl77 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>「日」を表す<font
   class="font7">UCUM</font><font class="font8">単位コード。</font></td>
   <td class=xl75 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl80 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
+  <td class=xl79 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
  </tr>
 
 </table>
 
 </div>
-
 </div>
+
 
 <button type="button" onclick="details_open(false,'DosageInstructionDetails','dic')">閉じる</button>
 
