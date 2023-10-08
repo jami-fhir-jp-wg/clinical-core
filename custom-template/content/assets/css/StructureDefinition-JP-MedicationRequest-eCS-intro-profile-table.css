@@ -1,8 +1,10 @@
-@page
+.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table 
+{
+	@page
 	{margin:.75in .7in .75in .7in;
 	mso-header-margin:.3in;
 	mso-footer-margin:.3in;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font5
+.font5
 	{color:windowtext;
 	font-size:6.0pt;
 	font-weight:400;
@@ -11,7 +13,7 @@
 	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font6
+.font6
 	{color:black;
 	font-size:10.0pt;
 	font-weight:400;
@@ -20,7 +22,7 @@
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font7
+.font7
 	{color:red;
 	font-size:10.0pt;
 	font-weight:700;
@@ -29,7 +31,7 @@
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font8
+.font8
 	{color:windowtext;
 	font-size:6.0pt;
 	font-weight:400;
@@ -38,7 +40,7 @@
 	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font9
+.font9
 	{color:black;
 	font-size:10.0pt;
 	font-weight:400;
@@ -47,7 +49,7 @@
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font10
+.font10
 	{color:black;
 	font-size:10.0pt;
 	font-weight:400;
@@ -56,7 +58,7 @@
 	font-family:Cambria;
 	mso-generic-font-family:auto;
 	mso-font-charset:0;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font11
+.font11
 	{color:black;
 	font-size:10.5pt;
 	font-weight:400;
@@ -65,7 +67,7 @@
 	font-family:Cambria;
 	mso-generic-font-family:auto;
 	mso-font-charset:0;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font12
+.font12
 	{color:black;
 	font-size:10.5pt;
 	font-weight:400;
@@ -74,7 +76,7 @@
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font13
+.font13
 	{color:black;
 	font-size:9.0pt;
 	font-weight:400;
@@ -83,7 +85,7 @@
 	font-family:Cambria;
 	mso-generic-font-family:auto;
 	mso-font-charset:0;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font14
+.font14
 	{color:windowtext;
 	font-size:6.0pt;
 	font-weight:400;
@@ -92,7 +94,7 @@
 	font-family:游ゴシック;
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .font15
+.font15
 	{color:red;
 	font-size:10.5pt;
 	font-weight:700;
@@ -101,47 +103,24 @@
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
 	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table tr
+.font16
+	{color:red;
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:游ゴシック;
+	mso-generic-font-family:auto;
+	mso-font-charset:128;}
+tr
 	{mso-height-source:auto;
 	mso-ruby-visibility:none;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table col
+col
 	{mso-width-source:auto;
 	mso-ruby-visibility:none;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table  br
+br
 	{mso-data-placement:same-cell;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .style57
-	{color:#0563C1;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:游ゴシック;
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	mso-style-name:ハイパーリンク;
-	mso-style-id:8;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table a:link
-	{color:#0563C1;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:游ゴシック;
-	mso-generic-font-family:auto;
-	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table a:visited
-	{color:#954F72;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:游ゴシック;
-	mso-generic-font-family:auto;
-	mso-font-charset:128;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .style0
+.style0
 	{mso-number-format:General;
 	text-align:general;
 	vertical-align:middle;
@@ -161,7 +140,7 @@
 	mso-protection:locked visible;
 	mso-style-name:標準;
 	mso-style-id:0;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .style58
+.style58
 	{mso-number-format:General;
 	text-align:general;
 	vertical-align:middle;
@@ -180,7 +159,7 @@
 	border:none;
 	mso-protection:locked visible;
 	mso-style-name:"標準 2";}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .style59
+.style59
 	{mso-number-format:General;
 	text-align:general;
 	vertical-align:middle;
@@ -199,7 +178,7 @@
 	border:none;
 	mso-protection:locked visible;
 	mso-style-name:"標準 3";}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table td
+td
 	{mso-style-parent:style0;
 	padding-top:1px;
 	padding-right:1px;
@@ -222,7 +201,89 @@
 	mso-protection:locked visible;
 	white-space:nowrap;
 	mso-rotate:0;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl67
+.xl67
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl68
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl69
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:none;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl70
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#E2EFDA;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl71
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl72
+	{mso-style-parent:style0;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl73
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -235,7 +296,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl68
+.xl74
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -248,7 +309,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl69
+.xl75
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -261,7 +322,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl70
+.xl76
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -274,7 +335,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl71
+.xl77
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -289,7 +350,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl72
+.xl78
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -302,7 +363,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl73
+.xl79
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -315,7 +376,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl74
+.xl80
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -328,7 +389,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl75
+.xl81
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -343,7 +404,7 @@
 	background:#FFF2CC;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl76
+.xl82
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -358,7 +419,7 @@
 	background:#FFF2CC;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl77
+.xl83
 	{mso-style-parent:style59;
 	color:red;
 	font-size:10.0pt;
@@ -372,7 +433,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl78
+.xl84
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -387,7 +448,7 @@
 	background:#FFF2CC;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl79
+.xl85
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -402,7 +463,7 @@
 	background:#E2EFDA;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl80
+.xl86
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -417,7 +478,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl81
+.xl87
 	{mso-style-parent:style59;
 	color:red;
 	font-size:10.0pt;
@@ -430,7 +491,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl82
+.xl88
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -443,7 +504,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl83
+.xl89
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -456,7 +517,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl84
+.xl90
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -469,7 +530,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl85
+.xl91
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -482,7 +543,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl86
+.xl92
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -495,7 +556,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl87
+.xl93
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -508,7 +569,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl88
+.xl94
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -523,7 +584,7 @@
 	background:#D9D9D9;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl89
+.xl95
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -538,7 +599,7 @@
 	background:#D9D9D9;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl90
+.xl96
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -553,7 +614,7 @@
 	background:#D9D9D9;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl91
+.xl97
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -566,7 +627,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl92
+.xl98
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -579,7 +640,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl93
+.xl99
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -594,7 +655,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl94
+.xl100
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -607,7 +668,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl95
+.xl101
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -620,7 +681,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl96
+.xl102
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -633,7 +694,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl97
+.xl103
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -648,7 +709,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl98
+.xl104
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -661,7 +722,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl99
+.xl105
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -674,7 +735,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl100
+.xl106
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -687,7 +748,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl101
+.xl107
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -702,7 +763,7 @@
 	background:#FFF2CC;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl102
+.xl108
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -715,7 +776,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl103
+.xl109
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -728,7 +789,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl104
+.xl110
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -743,7 +804,7 @@
 	background:#FFF2CC;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl105
+.xl111
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -756,7 +817,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl106
+.xl112
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -771,7 +832,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl107
+.xl113
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -786,7 +847,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl108
+.xl114
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -801,7 +862,7 @@
 	background:#E2EFDA;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl109
+.xl115
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -816,7 +877,7 @@
 	background:#E2EFDA;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl110
+.xl116
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -831,7 +892,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl111
+.xl117
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -846,20 +907,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl112
-	{mso-style-parent:style58;
-	color:black;
-	font-size:10.0pt;
-	font-family:"ＭＳ 明朝";
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	text-align:center;
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl113
+.xl118
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -872,7 +920,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl114
+.xl119
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -885,7 +933,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl115
+.xl120
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -900,7 +948,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl116
+.xl121
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -913,7 +961,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl117
+.xl122
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -926,23 +974,23 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl118
+.xl123
 	{mso-style-parent:style58;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl119
+.xl124
 	{mso-style-parent:style59;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl120
+.xl125
 	{mso-style-parent:style58;
 	font-size:9.0pt;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl121
+.xl126
 	{mso-style-parent:style0;
 	color:black;
 	font-size:10.0pt;
 	border:.5pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl122
+.xl127
 	{mso-style-parent:style0;
 	color:black;
 	font-size:10.0pt;
@@ -951,7 +999,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl123
+.xl128
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -964,7 +1012,7 @@
 	border-bottom:none;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl124
+.xl129
 	{mso-style-parent:style59;
 	color:black;
 	font-size:9.0pt;
@@ -977,7 +1025,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl125
+.xl130
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -992,7 +1040,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl126
+.xl131
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -1005,7 +1053,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl127
+.xl132
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -1018,7 +1066,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl128
+.xl133
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1031,7 +1079,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl129
+.xl134
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -1044,7 +1092,7 @@
 	border-bottom:none;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl130
+.xl135
 	{mso-style-parent:style58;
 	color:black;
 	font-size:9.0pt;
@@ -1057,7 +1105,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl131
+.xl136
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1072,7 +1120,7 @@
 	background:#FFC000;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl132
+.xl137
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1085,7 +1133,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl133
+.xl138
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -1098,7 +1146,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl134
+.xl139
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1114,7 +1162,7 @@
 	background:#D9D9D9;
 	mso-pattern:black none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl135
+.xl140
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1129,7 +1177,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl136
+.xl141
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1143,7 +1191,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl137
+.xl142
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -1157,19 +1205,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl138
-	{mso-style-parent:style57;
-	color:#0563C1;
-	text-decoration:underline;
-	text-underline-style:single;
-	mso-number-format:"\@";
-	text-align:left;
-	border-top:none;
-	border-right:1.0pt solid windowtext;
-	border-bottom:.5pt solid windowtext;
-	border-left:none;
-	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl139
+.xl143
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -1183,7 +1219,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl140
+.xl144
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -1197,7 +1233,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl141
+.xl145
 	{mso-style-parent:style59;
 	color:black;
 	font-size:10.0pt;
@@ -1211,7 +1247,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl142
+.xl146
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1225,7 +1261,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl143
+.xl147
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1239,7 +1275,7 @@
 	border-bottom:none;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl144
+.xl148
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1253,7 +1289,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl145
+.xl149
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1267,7 +1303,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl146
+.xl150
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1281,7 +1317,7 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl147
+.xl151
 	{mso-style-parent:style58;
 	color:black;
 	font-size:10.0pt;
@@ -1295,7 +1331,7 @@
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl148
+.xl152
 	{mso-style-parent:style58;
 	color:red;
 	font-size:10.0pt;
@@ -1309,24 +1345,179 @@
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl149
+.xl153
 	{mso-style-parent:style58;
 	mso-number-format:"\@";
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table .xl150
-	{mso-style-parent:style57;
-	color:#0563C1;
-	text-decoration:underline;
-	text-underline-style:single;
-	mso-number-format:"\@";
-	border-top:1.0pt solid windowtext;
-	border-right:.5pt solid windowtext;
+.xl154
+	{mso-style-parent:style0;
+	color:black;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table  ruby
+.xl155
+	{mso-style-parent:style0;
+	color:black;
+	border-top:1.0pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl156
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl157
+	{mso-style-parent:style58;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl158
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	background:#FFF2CC;
+	mso-pattern:black none;
+	white-space:normal;}
+.xl159
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl160
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:1.0pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.xl161
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl162
+	{mso-style-parent:style58;
+	color:black;
+	font-size:9.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl163
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl164
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl165
+	{mso-style-parent:style59;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.xl166
+	{mso-style-parent:style58;
+	color:black;
+	font-size:10.0pt;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	mso-number-format:"\@";
+	text-align:left;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:1.0pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+ruby
 	{ruby-align:left;}
-.StructureDefinition-JP-MedicationRequest-eCS-intro-profile-table  rt
+rt
 	{color:windowtext;
 	font-size:6.0pt;
 	font-weight:400;
@@ -1337,3 +1528,4 @@
 	mso-font-charset:128;
 	mso-char-type:katakana;
 	display:none;}
+}
