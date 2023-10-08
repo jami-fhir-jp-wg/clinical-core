@@ -121,7 +121,7 @@ Description: "このデータタイプは注射以外の処方用法の制約を
 * doseAndRate.rateRatio.numerator.unit 1..1 MS
   * insert relative_short_definition("投与量の単位。")
 * doseAndRate.rateRatio.numerator.system 1..1 MS
-* doseAndRate.rateRatio.numerator.system ^short="投与量の単位。"
+* doseAndRate.rateRatio.numerator.system ^short = "投与量の単位。"
 * doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値 \"urn:oid:1.2.392.100495.20.2.101\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
 * doseAndRate.rateRatio.numerator.code 1..1 MS
   * insert relative_short_definition("医薬品単位略号。")
@@ -133,7 +133,7 @@ Description: "このデータタイプは注射以外の処方用法の制約を
 * doseAndRate.rateRatio.denominator.unit 1..1 MS
   * insert relative_short_definition("分母である「1日」の単位「日」")
 * doseAndRate.rateRatio.denominator.system 1..1 MS
-* doseAndRate.rateRatio.denominator.system ^short="UCUM単位コードを識別するURI。"
+* doseAndRate.rateRatio.denominator.system ^short = "UCUM単位コードを識別するURI。"
 * doseAndRate.rateRatio.denominator.system ^definition = "UCUM単位コードを識別するURI。固定値 \"http://unitsofmeasure.org\"。"
 * doseAndRate.rateRatio.denominator.code 1..1 MS
   * insert relative_short_definition("「日」を表すUCUM単位コード。\"d\"")
