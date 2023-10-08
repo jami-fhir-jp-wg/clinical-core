@@ -1278,7 +1278,7 @@ function details_open(onoff, idname, idCloseButton){
 
 <div id="dosageInstructionTable">
 
-<div id="dosageInstructionTable_6238"  class="DosageInstruction"  align=center x:publishsource="Excel">
+<div id="dosageInstructionTable_836" class="DosageInstruction" align=center x:publishsource="Excel">
 
 <table border=0 cellpadding=0 cellspacing=0 width=1067 style='border-collapse:
  collapse;table-layout:fixed;width:800pt'>
