@@ -1,4 +1,4 @@
-Instance: 0001987023-0A172BAD00C8F82023091412502302-1-4-1
+Instance: 0009997023-0A172BAD00C8F82023091412502302-1-4-1
 InstanceOf: MedicationRequest
 Usage: #inline
 * meta.lastUpdated = "2023-09-14T14:03:37.000+09:00"
@@ -8,9 +8,9 @@ Usage: #inline
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.82"
 * identifier[=].value = "1"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[=].value = "1318814790-0001987023-0A172BAD00C8F82023091412502302-1"
+* identifier[=].value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 * identifier[+].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier[=].value = "1318814790-0001987023-0A172BAD00C8F82023091412502302-1"
+* identifier[=].value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 * status = #active
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#OHO "院外処方"
@@ -19,16 +19,16 @@ Usage: #inline
 * medicationCodeableConcept.coding[0] = urn:oid:1.2.392.200119.4.403.1#120572501 "フェブリク錠１０ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1546800 "フェブリク錠１０ｍｇ"
 * medicationCodeableConcept.text = "フェブリク錠１０ｍｇ"
-* subject = Reference(Patient/0001987023)
+* subject = Reference(Patient/0009997023)
 * subject.type = "Patient"
 * supportingInformation = Reference(Organization/Dept-.32) "循環器内科"
 * supportingInformation.type = "Organization"
 * authoredOn = "2023-09-14T12:50:36+09:00"
-* requester = Reference(Practitioner/D03141) "赤澤　宏"
+* requester = Reference(Practitioner/D03141) "田中　宏"
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/D03141)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-0001987023-0A172BAD00C8F82023091412502302-1"
+* groupIdentifier.value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 * insurance = Reference(Coverage/.２８９０２４４２００)
 * insurance.type = "Coverage"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"

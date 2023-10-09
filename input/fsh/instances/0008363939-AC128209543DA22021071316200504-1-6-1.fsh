@@ -1,4 +1,4 @@
-Instance: 0008363939-AC128209543DA22021071316200504-1-6-1
+Instance: 0009993939-AC128209543DA22021071316200504-1-6-1
 InstanceOf: MedicationRequest
 Usage: #inline
 * meta.lastUpdated = "2021-07-13T19:21:18.000+09:00"
@@ -8,9 +8,9 @@ Usage: #inline
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.82"
 * identifier[=].value = "1"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[=].value = "1318814790-0008363939-AC128209543DA22021071316200504-1"
+* identifier[=].value = "1318814790-0009993939-AC128209543DA22021071316200504-1"
 * identifier[+].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier[=].value = "1318814790-0008363939-AC128209543DA22021071316200504-1"
+* identifier[=].value = "1318814790-0009993939-AC128209543DA22021071316200504-1"
 * status = #active
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#BDP "持参薬処方"
@@ -19,16 +19,16 @@ Usage: #inline
 * medicationCodeableConcept.coding[0] = urn:oid:1.2.392.200119.4.403.1#107302701 "クエン酸第一鉄Ｎａ錠５０ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1551650 "クエン酸第一鉄Ｎａ錠５０ｍｇ"
 * medicationCodeableConcept.text = "クエン酸第一鉄Ｎａ錠５０ｍｇ"
-* subject = Reference(Patient/0008363939)
+* subject = Reference(Patient/0009993939)
 * subject.type = "Patient"
 * supportingInformation = Reference(Organization/Dept-.41) "老年病科"
 * supportingInformation.type = "Organization"
 * authoredOn = "2021-07-13T16:23:57+09:00"
-* requester = Reference(Practitioner/D41190) "太田　由衣"
+* requester = Reference(Practitioner/D41190) "医療　太郎""
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/D41190)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-0008363939-AC128209543DA22021071316200504-1"
+* groupIdentifier.value = "1318814790-0009993939-AC128209543DA22021071316200504-1"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-13"
 * dosageInstruction.text = "1日2回 朝夕食後 １回 1錠  (１日  2錠) 28　日分"

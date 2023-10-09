@@ -1,4 +1,4 @@
-Instance: 0008363939-AC1282105454852021070914184801-1-1-1
+Instance: 0009993939-AC1282105454852021070914184801-1-1-1
 InstanceOf: MedicationRequest
 Usage: #inline
 * meta.lastUpdated = "2021-07-09T19:24:16.000+09:00"
@@ -8,9 +8,9 @@ Usage: #inline
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.82"
 * identifier[=].value = "1"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[=].value = "1318814790-0008363939-AC1282105454852021070914184801-1"
+* identifier[=].value = "1318814790-0009993939-AC1282105454852021070914184801-1"
 * identifier[+].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier[=].value = "1318814790-0008363939-AC1282105454852021070914184801-1"
+* identifier[=].value = "1318814790-0009993939-AC1282105454852021070914184801-1"
 * status = #active
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
@@ -19,16 +19,16 @@ Usage: #inline
 * medicationCodeableConcept.coding[0] = urn:oid:1.2.392.200119.4.403.1#124045001 "タケキャブ錠２０ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1350100 "タケキャブ錠２０ｍｇ"
 * medicationCodeableConcept.text = "タケキャブ錠２０ｍｇ"
-* subject = Reference(Patient/0008363939)
+* subject = Reference(Patient/0009993939)
 * subject.type = "Patient"
 * supportingInformation = Reference(Organization/Dept-.41) "老年病科"
 * supportingInformation.type = "Organization"
 * authoredOn = "2021-07-09T14:19:20+09:00"
-* requester = Reference(Practitioner/D41190) "太田　由衣"
+* requester = Reference(Practitioner/D41190) "医療　太郎""
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/D41190)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-0008363939-AC1282105454852021070914184801-1"
+* groupIdentifier.value = "1318814790-0009993939-AC1282105454852021070914184801-1"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-09"
 * dosageInstruction.text = "1日1回 夕食後 １回 1錠  (１日  1錠) 2　日分"

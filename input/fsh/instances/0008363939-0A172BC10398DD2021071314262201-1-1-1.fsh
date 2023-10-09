@@ -1,4 +1,4 @@
-Instance: 0008363939-0A172BC10398DD2021071314262201-1-1-1
+Instance: 0009993939-0A172BC10398DD2021071314262201-1-1-1
 InstanceOf: MedicationRequest
 Usage: #inline
 * meta.lastUpdated = "2021-07-13T19:21:18.000+09:00"
@@ -8,9 +8,9 @@ Usage: #inline
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.82"
 * identifier[=].value = "1"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[=].value = "1318814790-0008363939-0A172BC10398DD2021071314262201-1"
+* identifier[=].value = "1318814790-0009993939-0A172BC10398DD2021071314262201-1"
 * identifier[+].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier[=].value = "1318814790-0008363939-0A172BC10398DD2021071314262201-1"
+* identifier[=].value = "1318814790-0009993939-0A172BC10398DD2021071314262201-1"
 * status = #active
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
@@ -19,16 +19,16 @@ Usage: #inline
 * medicationCodeableConcept.coding[0] = urn:oid:1.2.392.200119.4.403.1#123812902 "カロナール錠５００"
 * medicationCodeableConcept.coding[+] = $Icode#I1187300 "カロナール錠５００"
 * medicationCodeableConcept.text = "カロナール錠５００"
-* subject = Reference(Patient/0008363939)
+* subject = Reference(Patient/0009993939)
 * subject.type = "Patient"
 * supportingInformation = Reference(Organization/Dept-.10) "整形外科・脊椎外科"
 * supportingInformation.type = "Organization"
 * authoredOn = "2021-07-13T15:01:29+09:00"
-* requester = Reference(Practitioner/D10584) "大津　勝義"
+* requester = Reference(Practitioner/D10584) "診療　和子"
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/D10584)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-0008363939-0A172BC10398DD2021071314262201-1"
+* groupIdentifier.value = "1318814790-0009993939-0A172BC10398DD2021071314262201-1"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-13"
 * dosageInstruction.text = "1日4回 毎食後と就寝前 １回 1錠  (１日  4錠) 7　日分"
