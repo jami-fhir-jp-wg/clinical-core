@@ -142,7 +142,7 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
   * insert relative_short_definition("医薬品名称。処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず設定する。")
 
 
-* subject 1..1   MS   // MS 追加
+* subject 1..1   MS
 * subject only Reference(JP_Patient)
 * subject ^short = "処方対象となる患者のFHIRリソースへの参照。"
 * subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"

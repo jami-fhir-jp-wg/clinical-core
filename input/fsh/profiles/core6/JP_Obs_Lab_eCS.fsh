@@ -20,6 +20,7 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
 * contained contains patient 1..1
+    and encounter 0..
     and specimen 1..
     and order 0..
     and organization 0..
@@ -38,7 +39,7 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 
 * basedOn 0..1   MS
-* basedOn only Reference(JP_ServiceRequest_eCS_Contained)
+* basedOn only Reference(JP_ServiceRequest)
 * basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
 * basedOn ^comment = "元のオーダID情報や依頼者情報はここで使用する。"
 
@@ -109,16 +110,18 @@ and localUncoded 0..1 MS
 * code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。"
 
 // OUL^R22.PID
-* subject 1..1   MS   // MS 追加
-* subject only Reference(JP_Patient_eCS_Contained)
+* subject 1..1   MS
+* subject only Reference(JP_Patient)
 * subject ^short = "検体検査の対象となる患者。"
-* subject ^definition = "検体検査の対象となる患者。"
-* subject ^comment = "Containedリソースに含まれる患者リソースのid(identifierではなく)をリソース内で#を最初につけて参照する。（患者リソースのid を　123 とすると、　{\"reference\" : \"#123\" }のようになる。）"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
+* subject ^comment = "電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合は、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
 
 // OUL^R22.PV1
-* encounter    MS   // MS 追加
-* encounter ^definition = "この検査が行われた医療提供者と患者の接点に関する付帯情報。"
-* encounter ^comment = "【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報、外来での検査か入院での検査かの区別に使用する。必須ではない。"
+* encounter 0..1 MS
+* encounter only  Reference(JP_Encounter)
+* encounter ^short = "この検査が行われた受診情報（入外区分など）"
+* encounter ^definition = "この検査が行われた受診情報（入外区分など）を表すEncounterリソース（Containedリソース）への参照"
+* encounter ^comment = "Containedリソースに含まれるEncounterリソースをリソース内で参照する。【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報、外来での検査か入院での検査かの区別に使用する。必須ではない。"
 
 // OUL^R22.OBX[*]-14 検査日時
 * effective[x] 1..    MS   // MS 追加
@@ -174,9 +177,10 @@ and localUncoded 0..1 MS
 
 // OUL^R22.SPM-4[*]
 * specimen 1.. MS
+* specimen only Reference(JP_Specimen)
 * specimen ^short = "この検査に使用された検体（標本）。"
-* specimen ^definition = "この検査に使用された検体（標本）。"
-* specimen ^comment = "【JP Core仕様】必須とする。"
+* specimen ^definition = "この検査に使用された検体（標本）を表すSpecimenリソース（Containedリソース）への参照"
+* specimen ^comment = "Containedリソースに含まれるSpecimenリソースをリソース内で参照する。必須。"
 
 // OUL^R22.OBX[*]-7
 * referenceRange MS
@@ -193,9 +197,6 @@ and localUncoded 0..1 MS
 * hasMember ^definition = "この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。"
 * hasMember ^comment = "この検査に含まれる個々の検査結果Observationリソースを、このリソースに埋め込むのではなく、別の検査結果Observationリソースとして作成し、そのidentifierを論理参照する方法をとること。"
 
-* derivedFrom ^short = "の検査値の発生元である関連リソース"
-* derivedFrom ^definition = "この検査値の発生元である関連リソース。例えば他のObservation を受けて、本検査値が発生した場合など。"
-* component ^definition = "一度のタイミングでの1回の検査で複数の結果を同時に得る場合にのみ使用される。例えば、血圧の収縮期、拡張期。新生児のApgarスコア。質問に対する複数の回答（飲んだアルコールの種類、など）。"
 
 
 
