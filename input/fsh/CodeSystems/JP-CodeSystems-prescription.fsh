@@ -20,6 +20,7 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 // 処方箋区分コード
 CodeSystem:  JP_codeSystem_prescription_category
 Id:   jp-codeSystem-prescription-category
+Title: "JP codeSystem prescription category"
 Description: "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"

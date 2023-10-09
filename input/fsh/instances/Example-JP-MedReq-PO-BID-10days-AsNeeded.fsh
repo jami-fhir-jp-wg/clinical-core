@@ -1,7 +1,11 @@
-Instance: Example-Patient-minimun-0A17296D729AE72021071219211801-2-1-1
+Instance: Example-JP-MedReq-PO-BID-10days-AsNeeded
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
+Id: Example_JP_MedReq_PO_BID_10days_AsNeeded
+
+* contained[+] = Example-Patient-minimun
+* contained[+] = Example_Practitioner_minimun_D001
 
 * meta.lastUpdated = "2021-07-13T14:24:21.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"

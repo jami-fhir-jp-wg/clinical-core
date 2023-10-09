@@ -1,6 +1,7 @@
 Instance: Example-Patient-standard
 InstanceOf: JP_Patient
 Usage: #example
+
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
 * identifier[=].value = "Example-Patient-minimun"
 * name[0].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"

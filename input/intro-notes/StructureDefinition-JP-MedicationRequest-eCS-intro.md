@@ -567,7 +567,8 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt class=font14>マツビ </rt></span></ruby>/master-HOT7&quot;　(HO<ruby>T<span
   style='display:none'><rt class=font14>カギル </rt></span></ruby>9の末<ruby>尾２桁<span
   style='display:none'><rt class=font14>コウロウショウ </rt></span></ruby>である販社コードが不明の場合に限る)<br>
-    厚労省一般名処方マスタコード: &quot;1.2.392.100495.20.2.81&quot;</td>
+    厚労省一般名処方マスタコード: &quot;urn:oid:1.2.392.100495.20.2.81&quot;<br>
+    これ以外に施設固有コードを追加する場合には、施設固有コード体系のsystem値は、&quot;http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/医療機関10桁コード&quot;を使用すること。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl148 width=195 style='width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-HOT9&quot;</td>
  </tr>
@@ -927,7 +928,7 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>バアイ </rt></span></ruby>のコードsystem<ruby>値<span
   style='display:none'><rt>チ </rt></span></ruby>。<ruby>施設<span
   style='display:none'><rt>ヒョウゲン </rt></span></ruby>固<ruby>有コ<span
-  style='display:none'><rt>ヒッス </rt></span></ruby>ードを使用する場合には、&quot;http://jpfhir.jp/fhir/CodeSystem/DrugDispensePreparationMethod/医療機関10桁コード&quot;を設定する。</td>
+  style='display:none'><rt>ヒッス </rt></span></ruby>ードを使用する場合には、&quot;http://jpfhir.jp/fhir/clins/CodeSystem/DrugDispensePreparationMethod/医療機関10桁コード&quot;を設定する。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl148 width=195 style='width:146pt'>http://jami.jp/CodeSystem/DrugDispensePreparationMethod</td>
  </tr>
@@ -1526,7 +1527,7 @@ function details_open(onoff, idname, idCloseButton){
   class="font11">補足用法８桁コードを識別する</font>URI<font class="font11">（</font><ruby><font
   class="font11">固定値</font><span style='display:none'><rt>コテイチ </rt></span></ruby><ruby><font
   class="font11">参照</font><span style='display:none'><rt>サンショウ </rt></span></ruby><font
-  class="font11">）。やむを得ず施設固有コードを使用する場合には、</font>&quot;http://jpfhir.jp/fhir/CodeSystem/MedicationUsageAdditional/<font
+  class="font11">）。やむを得ず施設固有コードを使用する場合には、</font>&quot;http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsageAdditional/<font
   class="font11">医療機関</font>10<font class="font11">桁コード</font>&quot;<font
   class="font11">を設定する。</font></td>
   <td class=xl71 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span

@@ -501,7 +501,7 @@
     ICD10分類コード：urn:oid:2.16.840.1.113883.6.3.1（<ruby>仮<span style='display:
   none'><rt>&#0;&#8;&quot;十二指腸潰瘍&quot;&#1;&#0;ĉ&#0;&#8;耀&#8;&quot;十二</rt></span></ruby>）<br>
    
-  レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/CodeSystem/claimSystem_syobyomei_CS（仮）<br>
+  レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/clins/CodeSystem/claimSystem_syobyomei_CS（仮）<br>
     <br>
     </td>
   <td class=xl71 width=36 style='width:27pt'>例示</td>

@@ -34,7 +34,7 @@ Description: "このデータタイプは注射以外の処方用法の制約を
 * additionalInstruction ^definition = "補足的な処方指示。\r\n本仕様では、不均等投与を1日用法として記載する場合に、各回ごとのJAMI補足補足用法コードを記述するために使用する。不均等な投与指示の場合には、additionalInstruction要素に、1 日の投与回数分だけ繰り返し、JAMI補足用法コードを使用し記述する。\r\nまた、隔日投与、曜日指定投与の場合にも、JAMI補足補足用法コードを使用して記述する。 \r\n本要素は繰り返し記述が可能であり、どのように薬剤を内服するかについての患者への補足指示（たとえば、「食事と一緒に」や「30分から1時間前に内服」）や薬剤についての注意書き（たとえば、「眠くなることがある」や「日光や紫外線が皮膚にあたららないようにすること」）なども記述するのに使用できる。"
 * additionalInstruction.coding 1..* MS
 * additionalInstruction.coding.system 1..1 MS
-* additionalInstruction.coding.system ^definition = "JAMI補足用法８桁コードを識別するURI(\"http://jami.jp/CodeSystem/MedicationUsageAdditiona\")。やむを得ず施設固有コードを使用する場合には、"http://jpfhir.jp/fhir/CodeSystem/MedicationUsageAdditional/医療機関10桁コード"を設定する。"
+* additionalInstruction.coding.system ^definition = "JAMI補足用法８桁コードを識別するURI(\"http://jami.jp/CodeSystem/MedicationUsageAdditiona\")。やむを得ず施設固有コードを使用する場合には、"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsageAdditional/医療機関10桁コード"を設定する。"
 * additionalInstruction.coding.code 1..1 MS
 * additionalInstruction.coding.code ^definition = "JAMI 補⾜⽤法コード８桁を指定する。"
 * additionalInstruction.coding.display 0.. MS
@@ -63,7 +63,7 @@ Description: "このデータタイプは注射以外の処方用法の制約を
 * timing.code.coding 0..1 MS
 * timing.code.coding ^definition = "JAMI標準用法コードによりコード化することを推奨する。詳細は処方情報HL７FHIR記述仕様も参照すること。施設固有のコード化による記述も可能であるが、できるかぎり、JAMI標準用法コードと併用することが望ましい。"
 * timing.code.coding.system 1..1 MS
-* timing.code.coding.system ^definition = "JAMI標準用法の場合にはJAMI標準用法16桁コードを識別するURI（\"http://jami.jp/CodeSystem/MedicationUsage\"）。やむを得ず施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
+* timing.code.coding.system ^definition = "JAMI標準用法の場合にはJAMI標準用法16桁コードを識別するURI（\"http://jami.jp/CodeSystem/MedicationUsage\"）。やむを得ず施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
 
 * timing.code.coding.code ^short = "用法コード"
 * timing.code.coding.code 1..1 MS

@@ -64,6 +64,8 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCodeHOT7_CS"
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://medis.or.jp/CodeSystem/master-HOT7"
 
 
 Instance: jp-medicationcodehot9-namingsystem
@@ -85,6 +87,8 @@ Usage: #definition
 * uniqueId[=].value = "urn:oid:1.2.392.100495.20.2.74"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCodeHOT9_CS"
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://medis.or.jp/CodeSystem/master-HOT9"
 
 
 
@@ -103,6 +107,8 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCodeHOT13_CS"
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://medis.or.jp/CodeSystem/master-HOT13"
 
 Instance: jp-medicationcodeyj-namingsystem
 InstanceOf: NamingSystem
@@ -153,7 +159,8 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationMethodJAMIBasicUsage_CS"
-
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://jami.jp/CodeSystem/MedicationMethodBasicUsage"
 
 Instance: jp-medicationmethodjamidetailusage-namingsystem
 InstanceOf: NamingSystem
@@ -221,7 +228,8 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value =  "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationUsageJAMI_CS"
-
+* uniqueId[+].type = #uri
+* uniqueId[=].value =  "http://jami.jp/CodeSystem/MedicationUsage"
 
 Instance: jp-medicationusagejamiadditional-namingsystem
 InstanceOf: NamingSystem
@@ -292,7 +300,8 @@ Usage: #definition
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/route-codes"
 * uniqueId[=].preferred = true
-
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"
 
 Instance: jp-observation-jlac10-namingsystem
 InstanceOf: NamingSystem
@@ -309,6 +318,8 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationLabResultCode_CS"
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://medis.or.jp/CodeSystem/master-JLAC10-17digits"
 
 
 Instance: jp-observation-vitalsignscode-namingsystem
@@ -326,6 +337,8 @@ Usage: #definition
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationVitalSignsCode_CS"
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "http://medis.or.jp/CodeSystem/master-nursingObservationKeyCode"
 
 Instance: jp-endoscopyterminology-codes-jed-ns
 InstanceOf: NamingSystem

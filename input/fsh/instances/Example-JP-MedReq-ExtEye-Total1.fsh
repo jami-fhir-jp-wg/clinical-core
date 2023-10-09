@@ -1,7 +1,11 @@
-Instance: Example-Patient-minimun-AC12821012A0552021070513070302-1-3-1
+Instance: Example-JP-MedReq-ExtEye-Total1
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
+Id: Example_JP_MedReq_ExtEye_Total1
+
+* contained[+] = Example-Patient-minimun
+* contained[+] = Example_Practitioner_minimun_D001
 
 * meta.lastUpdated = "2021-07-05T19:28:23.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"

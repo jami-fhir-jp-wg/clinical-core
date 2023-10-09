@@ -52,3 +52,5 @@ Code System URI 'http://abc-hospital.local/fhir/devide/local-device-type' is unk
 # The following 'urn:oid:1.2.392.200119.4.101.6' was registerd on the JPFHIR TerminologyServer 
 # Code System URI 'urn:oid:1.2.392.200119.4.101.6' is unknown so the code cannot be validated
 
+# HTML Warnings
+The string value contains text that looks like embedded HTML tags%

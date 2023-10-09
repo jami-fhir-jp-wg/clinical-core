@@ -1,7 +1,8 @@
-Instance: Example-Patient-minimun-0A172220B35F172021071410514001-1-1-1
+Instance: Example-JP-MedReq-ExtAnus-AsNeeded-Total1
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+Id: Example_JP_MedReq_ExtAnus_AsNeeded_Total1
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example-JP-Encounter-IMP
@@ -42,7 +43,7 @@ Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量
 * groupIdentifier.value = "1318814790-9990767-0A172220B35F172021071410514001-1"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-14"
-* dosageInstruction.text = "坐薬 便秘時 1回1個 肛門へ挿入  "
+* dosageInstruction.text = "坐薬 便秘時 1回1個 肛門へ挿入"
 * dosageInstruction.timing.event = "2021-07-14T08:00:00+09:00"
 * dosageInstruction.timing.code.text = "坐薬 便秘時 1回1個 肛門へ挿入"
 * dosageInstruction.doseAndRate.type = urn:oid:1.2.392.100495.20.2.22#1 "製剤量"

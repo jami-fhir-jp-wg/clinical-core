@@ -1,7 +1,11 @@
-Instance: Example-Patient-minimun-0A172C13361BBE2021070517301001-1-1-1
+Instance: Example-JP-MedReq-ExtSkin-Total2
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　外用（塗布）全量処方　1回量をコードで記述できない例"
+Id: Example_JP_MedReq_ExtSkin_Total2
+
+* contained[+] = Example-Patient-minimun
+* contained[+] = Example_Practitioner_minimun_R001
 
 * meta.lastUpdated = "2021-07-05T19:07:58.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"

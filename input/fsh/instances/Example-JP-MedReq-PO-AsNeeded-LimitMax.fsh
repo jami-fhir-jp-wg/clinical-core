@@ -1,7 +1,11 @@
-Instance: Example-Patient-minimun-0A1721342FB30D2021070718303401-1-1-1
+Instance: Example-JP-MedReq-PO-AsNeeded-LimitMax
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
+Id: Example_JP_MedReq_PO_AsNeeded_LimitMax
+
+* contained[+] = Example-Patient-minimun
+* contained[+] = Example_Practitioner_minimun_D001
 
 * meta.lastUpdated = "2021-07-07T21:34:05.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"

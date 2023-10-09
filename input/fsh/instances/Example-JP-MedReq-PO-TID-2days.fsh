@@ -1,7 +1,8 @@
-Instance: Example-Patient-minimun-0A1720D83807672021070909210705-2-1-1
+Instance: Example-JP-MedReq-PO-TID-2days
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
+Id: Example_JP_MedReq_PO_TID_2days
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -20,6 +21,9 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * identifier[=].value = "1318814790-9990767-0A1720D83807672021070909210705-2"
 * identifier[+].system = $JP_MedicationRequest_eCS_RequestDepartment
 * identifier[=].value = "HISMED0A1720D99907672021070909210705"
+
+* contained[+] = Example-Patient-minimun
+* contained[+] = Example_Practitioner_minimun_D001
 
 * status = #active
 * intent = #order

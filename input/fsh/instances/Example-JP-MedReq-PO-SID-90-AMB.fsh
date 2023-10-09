@@ -1,7 +1,11 @@
-Instance: 0009997023-0A172BAD00C8F82023091412502302-1-1-1
+Instance: Example-JP-MedReq-PO-SID-90-AMB
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法フルコード化90日分処方例"
+Id: Example_JP_MedReq_PO_SID_90_AMB
+
+* contained[+] = Example-Patient-minimun
+* contained[+] = Example_Practitioner_minimun_D002
 
 * meta.lastUpdated = "2023-09-14T14:03:37.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -29,8 +33,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * recorder = Reference(Practitioner/Example_Practitioner_minimun_D002)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
-* insurance = Reference(Coverage/.２８９０２４４２００)
-* insurance.type = "Coverage"
+
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2023-09-14"
 * dosageInstruction.text = "1日1回 朝食後 １回 1錠  (１日  1錠) 90日分"
