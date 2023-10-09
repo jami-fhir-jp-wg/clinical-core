@@ -23,7 +23,7 @@ Usage: #inline
 * supportingInformation = Reference(Organization/Dept-.41) "老年病科"
 * supportingInformation.type = "Organization"
 * authoredOn = "2021-07-13T14:22:09+09:00"
-* requester = Reference(Practitioner/D41190) "医療　太郎""
+* requester = Reference(Practitioner/D41190) "医療　太郎"
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/T40118)
 * recorder.type = "Practitioner"

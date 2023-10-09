@@ -24,7 +24,7 @@ Usage: #inline
 * supportingInformation = Reference(Organization/Dept-.41) "老年病科"
 * supportingInformation.type = "Organization"
 * authoredOn = "2021-07-12T09:10:11+09:00"
-* requester = Reference(Practitioner/D41190) "医療　太郎""
+* requester = Reference(Practitioner/D41190) "医療　太郎"
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/D41190)
 * recorder.type = "Practitioner"
