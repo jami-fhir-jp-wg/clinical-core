@@ -5,7 +5,7 @@ Description: "入院処方　内服処方1日4回7日分　例"
 * id = "Example-JP-MedReq-PO-4timez-7days"
 
 * contained[+] = Example-Patient-minimun
-* contained[+] = Example_Practitioner_minimun_D003
+* contained[+] = Example-Practitioner-minimun-D003
 
 * meta.lastUpdated = "2021-07-13T19:21:18.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -28,9 +28,9 @@ Description: "入院処方　内服処方1日4回7日分　例"
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-13T15:01:29+09:00"
-* requester = Reference(Practitioner/Example_Practitioner_minimun_D003) "診療 和子"
+* requester = Reference(Practitioner/Example-Practitioner-minimun-D003) "診療 和子"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example_Practitioner_minimun_D003)
+* recorder = Reference(Practitioner/Example-Practitioner-minimun-D003)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

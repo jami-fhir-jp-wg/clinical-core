@@ -5,7 +5,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * id = "Example-JP-MedReq-PO-SID-90-AMB"
 
 * contained[+] = Example-Patient-minimun
-* contained[+] = Example_Practitioner_minimun_D002
+* contained[+] = Example-Practitioner-minimun-D002
 
 * meta.lastUpdated = "2023-09-14T14:03:37.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -28,9 +28,9 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * subject = Reference(Patient/Example-Patient-minimun)
 * subject.type = "Patient"
 * authoredOn = "2023-09-14T12:50:36+09:00"
-* requester = Reference(Practitioner/Example_Practitioner_minimun_D002) "田中　宏"
+* requester = Reference(Practitioner/Example-Practitioner-minimun-D002) "田中　宏"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example_Practitioner_minimun_D002)
+* recorder = Reference(Practitioner/Example-Practitioner-minimun-D002)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 

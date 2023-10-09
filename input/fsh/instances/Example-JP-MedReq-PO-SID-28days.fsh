@@ -5,7 +5,7 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * id = "Example-JP-MedReq-PO-SID-28days"
 
 * contained[+] = Example-Patient-minimun
-* contained[+] = Example_Practitioner_minimun_R001
+* contained[+] = Example-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -29,9 +29,9 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-12T16:19:06+09:00"
-* requester = Reference(Practitioner/Example_Practitioner_minimun_R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example_Practitioner_minimun_R001)
+* recorder = Reference(Practitioner/Example-Practitioner-minimun-R001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

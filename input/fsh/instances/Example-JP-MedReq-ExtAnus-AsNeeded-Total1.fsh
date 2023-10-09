@@ -6,7 +6,7 @@ Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example-JP-Encounter-IMP
-* contained[+] = Example_Practitioner_minimun_R001
+* contained[+] = Example-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-14T16:14:35.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -35,9 +35,9 @@ Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Practitioner/Example_Practitioner_minimun_R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example_Practitioner_minimun_R001) "医学 一郎"
+* recorder = Reference(Practitioner/Example-Practitioner-minimun-R001) "医学 一郎"
 * recorder.type = "Practitioner"
 
 * groupIdentifier.value = "1318814790-9990767-0A172220B35F172021071410514001-1"

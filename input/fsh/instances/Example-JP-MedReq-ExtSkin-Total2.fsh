@@ -5,7 +5,7 @@ Description: "入院処方　外用（塗布）全量処方　1回量をコー�
 * id = "Example-JP-MedReq-ExtSkin-Total2"
 
 * contained[+] = Example-Patient-minimun
-* contained[+] = Example_Practitioner_minimun_R001
+* contained[+] = Example-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-05T19:07:58.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
@@ -28,9 +28,9 @@ Description: "入院処方　外用（塗布）全量処方　1回量をコー�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-05T17:31:48+09:00"
-* requester = Reference(Practitioner/Example_Practitioner_minimun_R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example_Practitioner_minimun_R001)
+* recorder = Reference(Practitioner/Example-Practitioner-minimun-R001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
 * dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
