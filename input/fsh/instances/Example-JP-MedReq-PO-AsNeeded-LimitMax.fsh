@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-AsNeeded-LimitMax
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
-Id: Example_JP_MedReq_PO_AsNeeded_LimitMax
+* id = "Example-JP-MedReq-PO-AsNeeded-LimitMax"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_D001

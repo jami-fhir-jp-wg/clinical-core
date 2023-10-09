@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-SID-90-AMB
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法フルコード化90日分処方例"
-Id: Example_JP_MedReq_PO_SID_90_AMB
+* id = "Example-JP-MedReq-PO-SID-90-AMB"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_D002

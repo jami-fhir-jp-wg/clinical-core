@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-SID-28days
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
-Id: Example_JP_MedReq_PO_SID_28days
+* id = "Example-JP-MedReq-PO-SID-28days"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_R001

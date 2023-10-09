@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-PO-4timez-7days
-InstanceOf: 
+InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　内服処方1日4回7日分　例"
-Id: Example_JP_MedReq_PO_4timez_7days
+* id = "Example-JP-MedReq-PO-4timez-7days"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_D003

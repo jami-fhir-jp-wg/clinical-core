@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-ExtAnus-AsNeeded-Total1
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
-Id: Example_JP_MedReq_ExtAnus_AsNeeded_Total1
+* id = "Example-JP-MedReq-ExtAnus-AsNeeded-Total1"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example-JP-Encounter-IMP

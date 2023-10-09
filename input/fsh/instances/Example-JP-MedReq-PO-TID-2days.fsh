@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-TID-2days
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
-Id: Example_JP_MedReq_PO_TID_2days
+* id = "Example-JP-MedReq-PO-TID-2days"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"

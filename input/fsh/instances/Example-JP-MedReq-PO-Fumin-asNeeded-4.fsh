@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-Fumin-asNeeded-4
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　内服頓用　頓用と1回量をコードで記述する例"
-Id: Example_JP_MedReq_PO_Fumin_asNeeded_4
+* id = "Example-JP-MedReq-PO-Fumin-AsNeeded-4"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_D001

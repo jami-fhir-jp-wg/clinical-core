@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-BID-10days-AsNeeded
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
-Id: Example_JP_MedReq_PO_BID_10days_AsNeeded
+* id = "Example-JP-MedReq-PO-BID-10days-AsNeeded"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_D001

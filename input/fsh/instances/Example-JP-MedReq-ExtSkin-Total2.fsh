@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-ExtSkin-Total2
 InstanceOf: MedicationRequest
 Usage: #example
 Description: "入院処方　外用（塗布）全量処方　1回量をコードで記述できない例"
-Id: Example_JP_MedReq_ExtSkin_Total2
+* id = "Example-JP-MedReq-ExtSkin-Total2"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example_Practitioner_minimun_R001
