@@ -1,7 +1,7 @@
 //-------- 埋め込み　患者情報01
 Instance: Example-JP-Patient-eCS-01-Contained
 InstanceOf: JP_Patient_eCS_Contained
-Usage: #inline
+Usage: #example
 
 Description: "埋め込み　患者情報01"
 
@@ -25,7 +25,7 @@ Description: "埋め込み　患者情報01"
 //-------- 埋め込み　患者情報02
 Instance: Example-JP-Patient-eCS-02-Contained
 InstanceOf: JP_Patient_eCS_Contained
-Usage: #inline
+Usage: #example
 Description: "埋め込み　患者情報02"
 
 * meta.profile[+] = $JP_Patient_eCS_Contained
@@ -51,7 +51,7 @@ Description: "埋め込み　患者情報02"
 //-------- 埋め込み　外来受診01
 Instance: Example-JP-Encounter-OW-eCS-01-Contained
 InstanceOf: JP_Encounter
-Usage: #inline
+Usage: #example
 
 Description: "埋め込み　外来受診01 "
 * meta.profile[+] = $JP_Encounter_OW_eCS_Contained

@@ -1,6 +1,6 @@
 Instance: 0009993939-0A172B1DB7EF2B2021071211420001-1-1-1
 InstanceOf: MedicationRequest
-Usage: #inline
+Usage: #example
 * meta.lastUpdated = "2021-07-12T19:29:12.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
 * identifier[0].system = "urn:oid:1.2.392.100495.20.3.81"
