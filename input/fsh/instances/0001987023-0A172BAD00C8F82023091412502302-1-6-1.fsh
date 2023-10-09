@@ -31,7 +31,7 @@ Usage: #inline
 * groupIdentifier.value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 * insurance = Reference(Coverage/.２８９０２４４２００)
 * insurance.type = "Coverage"
-* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2023-09-14"
 * dosageInstruction.text = "1日1回 昼食後 １回 1錠  (１日  1錠) 90　日分"
 * dosageInstruction.timing.event = "2023-09-14T00:00:00+09:00"

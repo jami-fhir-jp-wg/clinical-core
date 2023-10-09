@@ -29,7 +29,8 @@ Usage: #inline
 * recorder = Reference(Practitioner/D41144)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009993939-0A17294B4D8D2D2021071118151801-1"
-* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
+                                     http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse
 * dosageInstruction.extension.valuePeriod.start = "2021-07-11"
 * dosageInstruction.text = "高血圧時に 1日2回まで  "
 * dosageInstruction.timing.event = "2021-07-11T08:00:00+09:00"

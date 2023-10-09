@@ -29,7 +29,7 @@ Usage: #inline
 * recorder = Reference(Practitioner/R20005)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009993939-0A17296DE9D0432021071514461603-1"
-* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-15"
 * dosageInstruction.text = "1日2回 朝夕食後 １回 3ＣＰ  (１日  6ＣＰ) 1　日分"
 * dosageInstruction.timing.event = "2021-07-15T08:00:00+09:00"

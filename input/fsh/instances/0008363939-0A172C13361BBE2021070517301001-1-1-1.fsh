@@ -28,7 +28,7 @@ Usage: #inline
 * recorder = Reference(Practitioner/R20005)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009993939-0A172C13361BBE2021070517301001-1"
-* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-05"
 * dosageInstruction.text = "1日数回 塗布  "
 * dosageInstruction.timing.event = "2021-07-05T08:00:00+09:00"

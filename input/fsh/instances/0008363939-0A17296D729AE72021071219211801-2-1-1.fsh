@@ -28,7 +28,7 @@ Usage: #inline
 * recorder = Reference(Practitioner/T40118)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009993939-0A17296D729AE72021071219211801-2"
-* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-12"
 * dosageInstruction.text = "1日2回 朝夕食後 １回 15ｍＬ  (１日  30ｍＬ) 10　日分,便秘時にお飲みください"
 * dosageInstruction.timing.event = "2021-07-12T00:00:00+09:00"

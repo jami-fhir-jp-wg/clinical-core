@@ -29,7 +29,7 @@ Usage: #inline
 * recorder = Reference(Practitioner/D41190)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009993939-0A1721342FB30D2021070718303401-1"
-* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse"
+* dosageInstruction.extension.url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension.valuePeriod.start = "2021-07-07"
 * dosageInstruction.text = "発熱時  4　回分,37.5度以上で本人希望時　4時間あけて1日3回まで"
 * dosageInstruction.timing.event = "2021-07-07T08:00:00+09:00"
