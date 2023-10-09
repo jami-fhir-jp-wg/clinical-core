@@ -230,7 +230,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl80 width=57 style='width:43pt'>　</td>
   <td class=xl84 width=39 style='width:29pt'>0..1*</td>
   <td class=xl78 width=87 style='width:65pt'>Resource(JP_Patient )</td>
-  <td class=xl78 width=359 style='width:269pt'>patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースの必須要素だけが含まれればよい。<br>
+  <td class=xl78 width=359 style='width:269pt'>patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。<br>
     <font class="font7">電子カルテ情報共有サービスでは、JP_Patientリソースのcontainedは必須。</font></td>
   <td class=xl78 width=36 style='width:27pt'>　</td>
   <td class=xl142 width=195 style='width:146pt'>　</td>
@@ -243,7 +243,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl68 width=57 style='width:43pt'>　</td>
   <td class=xl70 width=39 style='width:29pt'>0..1*</td>
   <td class=xl68 width=87 style='width:65pt'>Resource(JP_Encounter )</td>
-  <td class=xl68 width=359 style='width:269pt'>encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースの必須要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。</td>
+  <td class=xl68 width=359 style='width:269pt'>encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。</td>
   <td class=xl68 width=36 style='width:27pt'>　</td>
   <td class=xl69 width=195 style='width:146pt'>　</td>
  </tr>
@@ -256,7 +256,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl72 width=39 style='width:29pt'>0..1*</td>
   <td class=xl68 width=87 style='width:65pt'>Resource(JP_Practitioner<span
   style='mso-spacerun:yes'>  </span>)</td>
-  <td class=xl68 width=359 style='width:269pt'>requester要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースの必須要素だけが含まれればよい。<ruby>処方<span
+  <td class=xl68 width=359 style='width:269pt'>requester要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。<ruby>処方<span
   style='display:none'><rt>ショホウ </rt></span></ruby><ruby>者<span
   style='display:none'><rt>シャ </rt></span></ruby>のIDや<ruby>氏名<span
   style='display:none'><rt>シメイ </rt></span></ruby>の<ruby>情報<span
@@ -276,7 +276,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl72 width=39 style='width:29pt'>0..1*</td>
   <td class=xl68 width=87 style='width:65pt'>Resource(JP_Practitioner<span
   style='mso-spacerun:yes'>  </span>)</td>
-  <td class=xl68 width=359 style='width:269pt'>basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_Practitionerリソースの必須要素だけが含まれればよい。</td>
+  <td class=xl68 width=359 style='width:269pt'>basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。</td>
   <td class=xl68 width=36 style='width:27pt'>　</td>
   <td class=xl69 width=195 style='width:146pt'>　</td>
  </tr>

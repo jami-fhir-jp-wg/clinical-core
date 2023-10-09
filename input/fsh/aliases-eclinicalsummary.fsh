@@ -103,3 +103,9 @@ Alias: $JP_Disease_Claim_CS = http://jpfhi.jp/fhir/CodeSystem/claimSystem_syobyo
 Alias: $JP_BodySite_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.201.5   // MEDIS修飾語交換用コード
 Alias: $JP_BodySite_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.201.2 // MEDIS修飾語管理番号
 Alias: $JP_DiseaseCategory_WHO_ICD10_CS = urn:oid:2.16.840.1.113883.6.3.1  // ICD10  HL7 regisered
+
+// 拡張
+Alias: $JP_MedicationRequest_eCS_RequestDepartment = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_MedicationRequest_eCS_RequestDepartment
+
+// Idsystem
+Alias: $JP_ResourceInstanceIdentifier = http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier

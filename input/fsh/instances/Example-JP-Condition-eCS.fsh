@@ -8,7 +8,7 @@ Description: "conditionExample01 必須要素だけのサンプル"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "202934701"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
@@ -35,14 +35,14 @@ Usage: #example
 Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 
 * contained[+] = Example-JP-Patient-eCS-01-Contained
-* contained[+] = Example-JP-Encounter-OW-eCS-01-Contained
+* contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_Condition_eCS
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "202934702"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
@@ -58,7 +58,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * code.text = "胃癌"
 
 * subject = Reference(Example-JP-Patient-eCS-01-Contained)
-* encounter = Reference(Example-JP-Encounter-OW-eCS-01-Contained)
+* encounter = Reference(Example-JP-Encounter-AMB)
 
 * onsetDateTime = "2020-04-10"
 * recordedDate = "2020-04-18"
@@ -72,13 +72,13 @@ Usage: #example
 Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
 
 * contained[+] = Example-JP-Patient-eCS-01-Contained
-* contained[+] = Example-JP-Encounter-OW-eCS-01-Contained
+* contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_Condition_eCS
 
 
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "202934703"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#inactive "Inactive"
@@ -93,7 +93,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * code.text = "噴門癌早期"
 
 * subject = Reference(Example-JP-Patient-eCS-01-Contained)
-* encounter = Reference(Example-JP-Encounter-OW-eCS-01-Contained)
+* encounter = Reference(Example-JP-Encounter-AMB)
 
 * onsetDateTime = "2020-04-10"
 * abatementDateTime = "2020-05-01"

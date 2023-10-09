@@ -13,7 +13,7 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "102934701"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
@@ -48,13 +48,13 @@ Usage: #example
 Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
 
 * contained[+] = Example-JP-Patient-eCS-01-Contained
-* contained[+] = Example-JP-Encounter-OW-eCS-01-Contained
+* contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "102934702"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active  "Active"
@@ -77,7 +77,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 
 * patient = Reference(Example-JP-Patient-eCS-01-Contained)
 
-* encounter = Reference(Example-JP-Encounter-OW-eCS-01-Contained)
+* encounter = Reference(Example-JP-Encounter-AMB)
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
@@ -96,12 +96,12 @@ Usage: #example
 Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁忌情報のサンプル"
 
 * contained[+] = Example-JP-Patient-eCS-01-Contained
-* contained[+] = Example-JP-Encounter-OW-eCS-01-Contained
+* contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "102934703"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active  "Active"
@@ -124,7 +124,7 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 
 * patient = Reference(Example-JP-Patient-eCS-01-Contained)
 
-* encounter = Reference(Example-JP-Encounter-OW-eCS-01-Contained)
+* encounter = Reference(Example-JP-Encounter-AMB)
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)

@@ -49,16 +49,16 @@ Description: "診療主要6情報サマリー用　Conditionリソース（傷�
 
 * contained[patient] only  JP_Patient
   * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
-  * ^comment = "patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースの必須要素だけが含まれればよい。電子カルテ情報共有サービスでは、JP_Patientリソースのcontainは必須。"
+  * ^comment = "patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。電子カルテ情報共有サービスでは、JP_Patientリソースのcontainは必須。"
 
 
 * contained[encounter] only  JP_Encounter
   * insert relative_short_definition("診療主要情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースの必須要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("診療主要情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
-  * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースの必須要素だけが含まれればよい。"
+  * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
 
 
 * identifier 1..* MS
@@ -68,7 +68,7 @@ Description: "診療主要6情報サマリー用　Conditionリソース（傷�
 * identifier ^slicing.rules = #open
 
 * identifier contains resourceInstance-identifier 1..1 MS
-* identifier[resourceInstance-identifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value 1..1 MS
   * insert relative_short_definition("傷病名情報IDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2021-00123456\"")
 

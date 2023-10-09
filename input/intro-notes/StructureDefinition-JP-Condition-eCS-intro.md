@@ -203,7 +203,7 @@
   <td class=xl77 width=35 style='width:26pt'>0..1*</td>
   <td class=xl71 width=87 style='width:65pt'>Resource(JP_Patient |
   JP_Patient_eCS_Contained )</td>
-  <td class=xl71 width=359 style='width:269pt'>patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースの必須要素だけが含まれればよい。<br>
+  <td class=xl71 width=359 style='width:269pt'>patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。<br>
     <font class="font7">電子カルテ情報共有サービスでは、JP_Patientリソースのcontainedは必須。</font></td>
   <td class=xl71 width=36 style='width:27pt'>　</td>
   <td class=xl74 width=195 style='width:146pt'>　</td>
@@ -216,7 +216,7 @@
   <td class=xl75 width=35 style='width:26pt'>0..1*</td>
   <td class=xl71 width=87 style='width:65pt'>Resource(JP_Encounter |
   JP_Encounter_eCS_Contained)</td>
-  <td class=xl71 width=359 style='width:269pt'>encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースの必須要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。</td>
+  <td class=xl71 width=359 style='width:269pt'>encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。</td>
   <td class=xl71 width=36 style='width:27pt'>　</td>
   <td class=xl74 width=195 style='width:146pt'>　</td>
  </tr>
@@ -228,7 +228,7 @@
   <td class=xl75 width=35 style='width:26pt'>0..1*</td>
   <td class=xl71 width=87 style='width:65pt'>Resource(JP_Practitioner |
   JP_Practitioner_eCS_Contained )</td>
-  <td class=xl71 width=359 style='width:269pt'>recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースの必須要素だけが含まれればよい。</td>
+  <td class=xl71 width=359 style='width:269pt'>recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。</td>
   <td class=xl71 width=36 style='width:27pt'>　</td>
   <td class=xl74 width=195 style='width:146pt'>　</td>
  </tr>
@@ -253,7 +253,7 @@
   <td class=xl71 width=359 style='width:269pt'>　</td>
   <td class=xl71 width=36 style='width:27pt'>固定値</td>
   <td class=xl80 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier">http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier<ruby><font
+  href=$JP_ResourceInstanceIdentifier>http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier<ruby><font
   class="font5"><rt class=font5></rt></font></ruby></a></td>
  </tr>
  <tr height=40 style='height:30.0pt'>

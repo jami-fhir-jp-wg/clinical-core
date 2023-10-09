@@ -14,7 +14,7 @@ Description: "診療情報サマリー用　Encounterリソース（受診時・
 * identifier ^short = "この医療機関における患者の受診番号、入院管理番号"
 * identifier ^definition = "この医療機関における患者の受診番号、入院管理番号"
 * identifier.system 1..1 MS
-* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier" (exactly)
+* identifier.system = $JP_ResourceInstanceIdentifier (exactly)
 * identifier.value 1..1 MS
 
 * status = #finished (exactly)

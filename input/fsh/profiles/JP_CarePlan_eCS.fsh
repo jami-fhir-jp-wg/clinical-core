@@ -22,7 +22,7 @@ Description:    "Derived Profile from JP-Core"
 * text.div ^definition = "本リソースの構造化情報から生成したテキスト表現をいれてもよい。\\\\r\\\\nXHTML形式"
 * identifier 0..1 MS
 * identifier.system 1..1 MS
-* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier.system = $JP_ResourceInstanceIdentifier
 * identifier.value 1..1 MS
 * status 1..1 MS
 * status ^short = "プランのステータス"
