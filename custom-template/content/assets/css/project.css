@@ -924,8 +924,9 @@ pre.xml {
 
 pre[class*="language-"] {
   display: block;
-  width: 100%;
+  width: fit-content;
 }
+
 
 code[class*="language-"] {
   white-space: pre-wrap;
