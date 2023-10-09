@@ -1,0 +1,171 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "0001987023-0A172BAD00C8F82023091412502302-1-7-1",
+    "meta": {
+        "lastUpdated": "2023-09-14T14:03:37.000+09:00",
+        "profile": [
+            "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
+        ]
+    },
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>RP:7-1</li><li>ミネブロOD錠２．５ｍｇ</li><li>1日1回 朝食後　90　日分</li></ul></div>"
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:1.2.392.100495.20.3.81",
+            "value": "7"
+        },
+        {
+            "system": "urn:oid:1.2.392.100495.20.3.82",
+            "value": "1"
+        },
+        {
+            "system": "urn:oid:1.2.392.100495.20.3.11",
+            "value": "1318814790-0001987023-0A172BAD00C8F82023091412502302-1"
+        },
+        {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+            "value": "1318814790-0001987023-0A172BAD00C8F82023091412502302-1"
+        }
+    ],
+    "status": "active",
+    "intent": "order",
+    "category": [
+        {
+            "coding": [
+                {
+                    "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+                    "code": "OHO",
+                    "display": "院外処方"
+                },
+                {
+                    "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+                    "code": "OHP",
+                    "display": "外来処方"
+                }
+            ],
+            "text": "院外処方"
+        }
+    ],
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "system": "http://fujitsu.com/fhir/Medication/Icode",
+                "code": "I1652810",
+                "display": "ミネブロOD錠２．５ｍｇ"
+            }
+        ],
+        "text": "ミネブロOD錠２．５ｍｇ"
+    },
+    "subject": {
+        "reference": "Patient/0001987023",
+        "type": "Patient"
+    },
+    "supportingInformation": [
+        {
+            "reference": "Organization/Dept-.32",
+            "type": "Organization",
+            "display": "循環器内科"
+        }
+    ],
+    "authoredOn": "2023-09-14T12:50:36+09:00",
+    "requester": {
+        "reference": "Practitioner/D03141",
+        "type": "Practitioner",
+        "display": "赤澤　宏"
+    },
+    "recorder": {
+        "reference": "Practitioner/D03141",
+        "type": "Practitioner"
+    },
+    "groupIdentifier": {
+        "value": "1318814790-0001987023-0A172BAD00C8F82023091412502302-1"
+    },
+    "insurance": [
+        {
+            "reference": "Coverage/.２８９０２４４２００",
+            "type": "Coverage"
+        }
+    ],
+    "dosageInstruction": [
+        {
+            "extension": [
+                {
+                    "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse",
+                    "valuePeriod": {
+                        "start": "2023-09-14"
+                    }
+                }
+            ],
+            "text": "1日1回 朝食後 １回 1錠  (１日  1錠) 90　日分",
+            "timing": {
+                "event": [
+                    "2023-09-14T00:00:00+09:00"
+                ],
+                "repeat": {
+                    "boundsDuration": {
+                        "value": 90,
+                        "unit": "日",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                    },
+                    "count": 90,
+                    "frequency": 1,
+                    "period": 1,
+                    "periodUnit": "d"
+                },
+                "code": {
+                    "text": "1日1回 朝食後"
+                }
+            },
+            "doseAndRate": [
+                {
+                    "type": {
+                        "coding": [
+                            {
+                                "system": "urn:oid:1.2.392.100495.20.2.22",
+                                "code": "1",
+                                "display": "製剤量"
+                            }
+                        ]
+                    },
+                    "doseQuantity": {
+                        "value": 1,
+                        "unit": "錠",
+                        "system": "urn:oid:1.2.392.100495.20.2.101",
+                        "code": "TAB"
+                    },
+                    "rateRatio": {
+                        "numerator": {
+                            "value": 1,
+                            "unit": "錠",
+                            "system": "urn:oid:1.2.392.100495.20.2.101",
+                            "code": "TAB"
+                        },
+                        "denominator": {
+                            "value": 1,
+                            "unit": "日",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "d"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "dispenseRequest": {
+        "quantity": {
+            "value": 90,
+            "unit": "錠",
+            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "code": "TAB"
+        },
+        "expectedSupplyDuration": {
+            "value": 90,
+            "unit": "日",
+            "system": "http://unitsofmeasure.org",
+            "code": "d"
+        }
+    }
+}

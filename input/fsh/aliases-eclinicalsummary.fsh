@@ -1,3 +1,6 @@
+Alias: $JP_MedicationCategoryMERIT9_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS
+Alias: $Icode = http://fujitsu.com/fhir/Medication/Icode
+
 Alias: $JP_ehrshrs_indication_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
 
 Alias: $JP_Patient_eClinicalSummary = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eClinicalSummary
