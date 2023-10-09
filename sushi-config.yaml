@@ -182,4 +182,4 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
     - http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
     - http://jpfhir.jp/fhir/clincs/StructureDefinition/jp-medicationdosage-eCS
-    - http://jpfhir.jp/fhir/clincs/StructureDefinition/jp-medicationrequest-ecs-requestdepartment
+    - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/jp-medicationrequest-ecs-requestdepartment

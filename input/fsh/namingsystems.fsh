@@ -156,11 +156,11 @@ Usage: #definition
 * uniqueId[=].value = "1.2.392.200250.2.2.20.30"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "urn:oid:1.2.392.200250.2.2.20.30"
-* uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationMethodJAMIBasicUsage_CS"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jami.jp/CodeSystem/MedicationMethodBasicUsage"
+* uniqueId[=].preferred = true
 
 Instance: jp-medicationmethodjamidetailusage-namingsystem
 InstanceOf: NamingSystem
@@ -299,9 +299,9 @@ Usage: #definition
 * uniqueId[=].value = "urn:oid:2.16.840.1.113883.3.1937.777.10.5.162"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/route-codes"
-* uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"
+* uniqueId[=].preferred = true
 
 Instance: jp-observation-jlac10-namingsystem
 InstanceOf: NamingSystem

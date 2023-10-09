@@ -54,3 +54,6 @@ Code System URI 'http://abc-hospital.local/fhir/devide/local-device-type' is unk
 
 # HTML Warnings
 The string value contains text that looks like embedded HTML tags%
+
+#Unknown local code system
+Code System URI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/%
