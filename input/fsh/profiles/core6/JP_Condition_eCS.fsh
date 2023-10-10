@@ -8,6 +8,10 @@ Parent:			JP_Condition
 Id:             JP-Condition-eCS
 Title:  "Core6 : JP_Condition_eCS"
 Description: "診療主要6情報サマリー用　Conditionリソース（傷病名情報）プロファイル"
+
+* extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
+* extension contains JP_eCS_Department named eCS_Department ..* MS
+
 * ^url = $JP_Condition_eCS
 * ^status = #active
 * ^date = "2023-10-04"

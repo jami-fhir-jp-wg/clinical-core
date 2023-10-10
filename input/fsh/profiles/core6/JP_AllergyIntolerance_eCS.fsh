@@ -8,11 +8,16 @@ Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "Core6 : JP_AllergyIntolerance_eCS"
 Description: "診療主要6情報サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
+
+* extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
+* extension contains JP_eCS_Department named eCS_Department ..* MS
+
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2023-05-27"
 * insert toplevel_short_definition("診療主要情報におけるアレルギー情報／薬剤禁忌の格納に使用する")
 * . ^comment = "厚労省6情報などの運用において、薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
+
 
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
@@ -31,12 +36,6 @@ Description: "診療主要6情報サマリー用　AllergyIntoleranceリソー�
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
-* meta.tag[uninformed] = $JP_ehrshrs_indication_CS#UNINFORMED
-  * insert relative_short_definition("電子カルテ情報共有サービスで未告知情報または未説明フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
-  * system 1..1 MS
-    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * code 1..1 MS
-    * insert relative_short_definition("未告知または未説明フラグ　固定値 UNINFORMEDを設定する。")
 
 // Patinet、encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile

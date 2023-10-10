@@ -9,7 +9,8 @@ Id: JP-MedicationRequest-eCS
 Title:  "Core6 : JP_MedicationRequest_eCS"
 Description: "診療主要6情報サマリー用　MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
 
-* extension contains JP_eCS_Department named eCS_Department ..*
+* extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
+* extension contains JP_eCS_Department named eCS_Department ..* MS
 
 * ^url = $JP_MedicationRequest_eCS
 * ^status = #active
@@ -22,7 +23,7 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 * meta.profile 0..1 MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary")
+  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_eClinicalSummary　を設定する。電子カルテ情報共有サービスにおいて本リソースデータを検証したい場合には、"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_eClinicalSummary"を使用する。")
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
