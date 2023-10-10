@@ -4,7 +4,7 @@
 	mso-footer-margin: .31in;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font5 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table  .font5 {
 	color: windowtext;
 	font-size: 6.0pt;
 	font-weight: 400;
@@ -15,18 +15,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font6 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font7 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table  .font6 {
 	color: red;
 	font-size: 10.0pt;
 	font-weight: 700;
@@ -37,7 +26,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font8 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .font7 {
 	color: windowtext;
 	font-size: 6.0pt;
 	font-weight: 400;
@@ -48,54 +37,21 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font9 {
-	color: red;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font10 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .font11 {
-	color: black;
-	font-size: 10.5pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl tr {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table tr {
 	mso-height-source: auto;
 	mso-ruby-visibility: none;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl col {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table col {
 	mso-width-source: auto;
 	mso-ruby-visibility: none;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl br {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table br {
 	mso-data-placement: same-cell;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .style57 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .style57 {
 	color: #0563C1;
 	font-size: 12.0pt;
 	font-weight: 400;
@@ -109,7 +65,7 @@
 	mso-style-id: 8;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl a:link {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table a:link {
 	color: #0563C1;
 	font-size: 12.0pt;
 	font-weight: 400;
@@ -121,7 +77,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl a:visited {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table a:visited {
 	color: #954F72;
 	font-size: 12.0pt;
 	font-weight: 400;
@@ -133,7 +89,7 @@
 	mso-font-charset: 128;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .style0 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .style0 {
 	mso-number-format: General;
 	text-align: general;
 	vertical-align: middle;
@@ -155,7 +111,7 @@
 	mso-style-id: 0;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table td {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table td {
 	mso-style-parent: style0;
 	padding-top: 1px;
 	padding-right: 1px;
@@ -180,7 +136,7 @@
 	mso-rotate: 0;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl66 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl66 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -197,7 +153,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl67 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl67 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -214,7 +170,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl68 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl68 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -231,7 +187,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl69 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl69 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -248,7 +204,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl70 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl70 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -263,7 +219,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl71 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl71 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -278,7 +234,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl72 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl72 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -295,7 +251,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl73 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl73 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -311,7 +267,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl74 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl74 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -326,7 +282,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl75 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl75 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -343,7 +299,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl76 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl76 {
 	mso-style-parent: style0;
 	color: red;
 	font-size: 10.0pt;
@@ -359,7 +315,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl77 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl77 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -376,7 +332,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl78 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl78 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -390,7 +346,7 @@
 	border-left: none;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl79 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl79 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -405,7 +361,83 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl80 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl80 {
+	mso-style-parent: style0;
+	color: black;
+	font-size: 10.0pt;
+	font-family: "ＭＳ 明朝";
+	mso-generic-font-family: auto;
+	mso-font-charset: 128;
+	text-align: left;
+	vertical-align: top;
+	border-top: none;
+	border-right: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	border-left: none;
+	white-space: normal;
+}
+
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl81 {
+	mso-style-parent: style0;
+	color: black;
+	font-size: 10.0pt;
+	font-family: "ＭＳ 明朝";
+	mso-generic-font-family: auto;
+	mso-font-charset: 128;
+	text-align: left;
+	border-top: none;
+	border-right: .5pt solid windowtext;
+	border-bottom: 1.0pt solid windowtext;
+	border-left: 1.0pt solid windowtext;
+	white-space: normal;
+}
+
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl82 {
+	mso-style-parent: style0;
+	color: black;
+	font-size: 10.0pt;
+	font-family: "ＭＳ 明朝";
+	mso-generic-font-family: auto;
+	mso-font-charset: 128;
+	text-align: left;
+	border-top: none;
+	border-right: .5pt solid windowtext;
+	border-bottom: 1.0pt solid windowtext;
+	border-left: none;
+	white-space: normal;
+}
+
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl83 {
+	mso-style-parent: style0;
+	color: black;
+	font-size: 10.0pt;
+	font-family: "ＭＳ 明朝";
+	mso-generic-font-family: auto;
+	mso-font-charset: 128;
+	text-align: center;
+	border-top: none;
+	border-right: .5pt solid windowtext;
+	border-bottom: 1.0pt solid windowtext;
+	border-left: none;
+	white-space: normal;
+}
+
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl84 {
+	mso-style-parent: style0;
+	color: black;
+	font-size: 10.0pt;
+	font-family: "ＭＳ 明朝";
+	mso-generic-font-family: auto;
+	mso-font-charset: 128;
+	text-align: left;
+	border-top: none;
+	border-right: 1.0pt solid windowtext;
+	border-bottom: 1.0pt solid windowtext;
+	border-left: none;
+	white-space: normal;
+}
+
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl85 {
 	mso-style-parent: style57;
 	color: #0563C1;
 	text-decoration: underline;
@@ -418,39 +450,7 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl81 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	text-align: center;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border-left: none;
-	background: #FFC000;
-	mso-pattern: black none;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl82 {
-	mso-style-parent: style0;
-	color: red;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	text-align: left;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border-left: none;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl83 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl86 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -467,188 +467,21 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl84 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl87 {
 	mso-style-parent: style0;
-	color: black;
 	font-size: 10.0pt;
 	font-family: "ＭＳ 明朝";
 	mso-generic-font-family: auto;
 	mso-font-charset: 128;
 	text-align: left;
-	border-top: .5pt solid windowtext;
+	border-top: none;
 	border-right: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
 	border-left: none;
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl85 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	text-align: left;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: none;
-	border-left: 1.0pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl86 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	text-align: left;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: none;
-	border-left: none;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl87 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	text-align: center;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: none;
-	border-left: none;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl88 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	text-align: left;
-	border-top: none;
-	border-right: 1.0pt solid windowtext;
-	border-bottom: none;
-	border-left: none;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl89 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-	border: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl90 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	border: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl91 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-	border-top: .5pt solid windowtext;
-	border-right: 1.0pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl92 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-	border-top: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border-left: 1.0pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl93 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-	border-top: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-bottom: 1.0pt solid windowtext;
-	border-left: 1.0pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl94 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-	border-top: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-bottom: 1.0pt solid windowtext;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl95 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "ＭＳ 明朝";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	border-top: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-bottom: 1.0pt solid windowtext;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl96 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: Cambria;
-	mso-generic-font-family: auto;
-	mso-font-charset: 0;
-	border-top: .5pt solid windowtext;
-	border-right: 1.0pt solid windowtext;
-	border-bottom: 1.0pt solid windowtext;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl97 {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table .xl88 {
 	mso-style-parent: style0;
 	color: black;
 	font-size: 10.0pt;
@@ -665,43 +498,11 @@
 	white-space: normal;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl98 {
-	mso-style-parent: style0;
-	color: black;
-	font-size: 10.0pt;
-	font-family: "MS Mincho";
-	mso-generic-font-family: auto;
-	mso-font-charset: 128;
-	border-top: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-bottom: none;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl99 {
-	mso-style-parent: style0;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: none;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-table .xl100 {
-	mso-style-parent: style0;
-	border-top: none;
-	border-right: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border-left: .5pt solid windowtext;
-	white-space: normal;
-}
-
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl ruby {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table ruby {
 	ruby-align: left;
 }
 
-.StructureDefinition-JP-Condition-eCS-intro-profile-tabl rt {
+.StructureDefinition-JP-AllergyIntolerance-eCS-intro-profile-table rt {
 	color: windowtext;
 	font-size: 6.0pt;
 	font-weight: 400;
