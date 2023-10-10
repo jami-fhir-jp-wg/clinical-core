@@ -11,7 +11,7 @@ Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量
 * meta.lastUpdated = "2021-07-14T16:14:35.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
 
-* extension[0].url = $JP_MedicationRequest_eCS_RequestDepartment
+* extension[0].url = $JP_eCS_Department
 * extension[=].valueCodeableConcept = $JP_Department_SsMix_CS#01 "内科"
 
 * identifier[0].system = "urn:oid:1.2.392.100495.20.3.81"

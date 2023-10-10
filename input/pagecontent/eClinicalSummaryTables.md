@@ -1283,7 +1283,7 @@ Compositionリソースに出現するsection要素は以下のような構造�
 || |system|1..1|uri |"urn:oid:1.2.392.100495.20.3.23"|保険医療機関コードの名前空間を識別するURIを指定。固定値。 |
 || |value |1..1|string|"1234567" |保険医療機関番号７桁。値は例示。|
 |identifier| ||0..1\*|Identifier||保険医療機関番号10桁。|
-||system ||1..1|uri |"http://jpfhir.jp/fhir<br>/core/IdSystem/insurance-medical-nstitution-no" |保険医療機関番号10桁の名前空間を識別するURL。固定値。 |
+||system ||1..1|uri |"http://jpfhir.jp/fhir<br>/core/IdSystem/insurance-medical-institution-no" |保険医療機関番号10桁の名前空間を識別するURL。固定値。 |
 ||value||1..1|string|"1311234567"|保険医療機関番号10桁。値は例示。|
 |type| ||0..1\*|CodeableConcept ||施設種別|
 ||coding ||1..1\*||||

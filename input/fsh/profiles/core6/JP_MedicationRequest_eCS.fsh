@@ -9,7 +9,7 @@ Id: JP-MedicationRequest-eCS
 Title:  "Core6 : JP_MedicationRequest_eCS"
 Description: "診療主要6情報サマリー用　MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
 
-* extension contains JP_MedicationRequest_eCS_RequestDepartment named MedicationRequest_eCS_RequestDepartment ..*
+* extension contains JP_eCS_Department named eCS_Department ..*
 
 * ^url = $JP_MedicationRequest_eCS
 * ^status = #active
@@ -208,24 +208,3 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * substitution.reason.text ^definition = "理由を表す文字列。\r\n例）　\"患者からの強い要望により\""
 * substitution.reason.text MS
 
-
-// -----------------------------------------
-//JP_MedicationRequest_eCS_RequestDepartment
-// -----------------------------------------
-Extension: JP_MedicationRequest_eCS_RequestDepartment
-Id: jp-medicationrequest-ecs-requestdepartment
-Title: "JP MedicationRequest eCS DRequestDepartment Extension"
-Description: "MedicationRequestを診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述する拡張"
-* ^url = $JP_MedicationRequest_eCS_RequestDepartment
-* ^status = #active
-* ^date = "2023-10-09"
-* ^purpose = "MedicationRequestを診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述するため。"
-* ^context[+].type = #element
-* ^context[=].expression = "MedicationRequest"
-* . ^short = "発行診療科または発行者の診療科情報を記述するための拡張"
-* . ^definition = "MedicationRequestを診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述する"
-* url = $JP_MedicationRequest_eCS_RequestDepartment (exactly)
-* value[x] only CodeableConcept
-* value[x] ^short = "診療科コードと名称等を設定する。"
-* value[x] ^definition = "診療科コードと名称等を設定する。"
-* valueCodeableConcept from $JP_Department_SsMix_VS (preferred)

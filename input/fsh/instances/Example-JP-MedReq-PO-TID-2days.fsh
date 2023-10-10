@@ -7,7 +7,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
 
-* extension[0].url = $JP_MedicationRequest_eCS_RequestDepartment
+* extension[0].url = $JP_eCS_Department
 * extension[=].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器内科"
 * extension[=].valueCodeableConcept.text = "循環器診療科"
 
@@ -19,8 +19,6 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * identifier[=].value = "1318814790-9990767-0A1720D83807672021070909210705-2"
 * identifier[+].system = $JP_ResourceInstanceIdentifier
 * identifier[=].value = "1318814790-9990767-0A1720D83807672021070909210705-2"
-* identifier[+].system = $JP_MedicationRequest_eCS_RequestDepartment
-* identifier[=].value = "HISMED0A1720D99907672021070909210705"
 
 * contained[+] = Example-Patient-minimun
 * contained[+] = Example-Practitioner-minimun-D001

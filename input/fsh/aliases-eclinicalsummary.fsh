@@ -106,7 +106,8 @@ Alias: $JP_BodySite_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.201.2 // ME
 Alias: $JP_DiseaseCategory_WHO_ICD10_CS = urn:oid:2.16.840.1.113883.6.3.1  // ICD10  HL7 regisered
 
 // 拡張
-Alias: $JP_MedicationRequest_eCS_RequestDepartment = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_MedicationRequest_eCS_RequestDepartment
+Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP__eCS_Department
+Alias: $JP_eCS_InstitutionNumber = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
 
 // Idsystem
 Alias: $JP_ResourceInstanceIdentifier = http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier
