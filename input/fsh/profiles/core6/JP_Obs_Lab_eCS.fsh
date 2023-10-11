@@ -28,11 +28,40 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
     and order 0..
     and childObsLaboResult 0..
 
-* contained[patient] only  JP_Patient
-* contained[encounter] only  JP_Encounter
 * contained[specimen] only  JP_Specimen
 * contained[order] only  JP_ServiceRequest
 * contained[childObsLaboResult] only  JP_Observation_LabResult
+
+
+* contained[patient] only  JP_Patient
+  * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
+  * ^comment = "subject要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。電子カルテ情報共有サービスでは、JP_Patientリソースのcontainedは必須。"
+
+* contained[encounter] only  JP_Encounter
+  * insert relative_short_definition("診療主要情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+
+* contained[specimen] only  JP_Specimen
+  * insert relative_short_definition("検体材料情報をコンパクトに格納したSpecimenリソース")
+  * ^comment = "specimen要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。"
+
+* contained[order] only  JP_ServiceRequest
+  * insert relative_short_definition("診療主要情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
+  * ^comment = "basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
+
+* identifier  MS
+  * insert relative_short_definition("この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるID。このID情報をキーとして１処方薬情報の更新・削除ができる一意性があること。このidentifier以外のIDも追加して複数格納しても構わない。少なくともひとつのidentifierは次の仕様に従う値を設定すること。")
+  * ^comment = "１処方薬情報を他の１処方薬情報と一意に区別できるIDを発番できない場合には、省略可能であるが、その場合にはbasedOnで指し示す処方オーダ情報の中に、この処方を作成した施設内で元のオーダを一意に識別できるIDを格納することが望ましい。"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains resourceInstance-identifier 1..1 MS
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
+* identifier[resourceInstance-identifier].system ^comment = "この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。"
+* identifier[resourceInstance-identifier].value 1..1 MS
+  * insert relative_short_definition("１処方薬情報を識別するIDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2021-00123456\"")
+
 
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
