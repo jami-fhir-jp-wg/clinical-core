@@ -26,12 +26,6 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
     and encounter 0..
     and specimen 1..
     and order 0..
-    and childObsLaboResult 0..
-
-* contained[specimen] only  JP_Specimen
-* contained[order] only  JP_ServiceRequest
-* contained[childObsLaboResult] only  JP_Observation_LabResult
-
 
 * contained[patient] only  JP_Patient
   * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
@@ -44,7 +38,6 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
 * contained[specimen] only  JP_Specimen
   * insert relative_short_definition("検体材料情報をコンパクトに格納したSpecimenリソース")
   * ^comment = "specimen要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。"
-
 * contained[order] only  JP_ServiceRequest
   * insert relative_short_definition("診療主要情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
   * ^comment = "basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
@@ -87,19 +80,19 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
   * code 1..1 MS
     * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
 
-* basedOn 0..1   MS
+* basedOn 0..1
 * basedOn only Reference(JP_ServiceRequest)
 * basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
-* basedOn ^comment = "元のオーダID情報や依頼者情報はここで使用する。"
+* basedOn ^comment = "元のオーダID情報や依頼者情報は必要ならここで記述する。"
 
 // OUL^R22.OBX[*]-11 結果状態
 * status ^definition = "検査結果値の状態。"
 * status ^definition = "検査結果値の状態。"
-* status ^comment = "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告だk泣きでは確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）、cancelled: この結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）。これらのステータスコード以外は意味的に紛らわしいので使わない。【SS-MIX2】OUL^R22.OBX[*]-11 結果状態"
+* status ^comment = "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告だk泣きでは確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）、cancelled: この結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）。これらのステータスコード以外は意味的に紛らわしいので使わない方針とする。【SS-MIX2】OUL^R22.OBX[*]-11 結果状態"
 * status 1..1 MS
 
 // OUL^R22
-* category 1.. MS       // MS 追加
+* category MS       
 
 /*
 * category ^slicing.discriminator.type = #pattern
@@ -190,22 +183,22 @@ and localUncoded 0..1 MS
 * value[x] only Quantity or CodeableConcept or string
 * value[x] ^short = "検体検査の結果"
 * value[x] ^definition = "検体検査の結果"
-* value[x] ^comment = "以下のデータ型はSS-MIX2では未使用のため、未使用とした。今後の議論で使用の必要性が出れば復活させる。\r\n\r\nvalueBoolean\r\n\r\nvalueInteger　：検査結果値を整数値（Integer）で定義したい場合に指定する。ただし、valueQuantityで単位付き数値を示すので、通常は使わない。　SS-MIX2／HL7 V2.5→ OBX-2＝「NW」の時の OBX-5(結果値)\r\n\r\nvalueRange\r\n\r\nvalueRatio\r\n\r\nvalueSampledData\r\n\r\nvalueTime　：検査結果値が「時間」の場合、その時間を指定する。　SS-MIX2／HL7 V2.5→ OBX-2＝「TM」の時の OBX-5(結果値)\r\n\r\nvalueDateTime　：検査結果値が「日時」の場合、その日時を指定する。　SS-MIX2／HL7 V2.5→ OBX-2＝「DT」の時の OBX-5(結果値)\r\n\r\nvaluePeriod"
+* value[x] ^comment = "valueQuantity,valueCodeableConcept,valueStringのいずれかを使用する。"
 
 // if OUL^R22.OBX[*]-2 == "NM":
 // OUL^R22.OBX[*]-5  結果
 // OUL^R22.OBX[*]-6  単位
-* valueQuantity ^short = "検査結果が「数値」の場合、値、単位を設定する。　SS-MIX2／HL7 V2.5→ OBX-2＝「NM」の時の OBX-5(結果値)、OBX-6(単位)【詳細参照】"
-* valueQuantity ^comment = "valueQuantity.value　：結果値（数値）を定義。　SS-MIX2／HL7 V2.5：OBX-5(結果値)\r\n\r\nvalueQuantity.comparator　：QuantityComparator Value setから設定。　SS-MIX2／HL7 V2.5→ 検体検査結果メッセージでは未使用となっているデータ型だが、SN型のSN.1(比較演算子)が該当する。検査値の「0未満」の場合の「未満」などに相当するコードを設定。\r\n\r\nvalueQuantity.unit　：.systemで示す単位のValue setの文字列を指定。　SS-MIX2／HL7 V2.5→ OBX-6(単位) CWE.2 テキスト\r\n\r\nvalueQuantity.system　：単位のValue set名を指定。　SS-MIX2／HL7 V2.5→ OBX-6(単位) CWE.3 コード体系 HL7では「ISO+」だが、ローカルコード99zzzのHL7標準の「ISO+」が示すOID、ローカルコードの場合はOIDを別途取得必要\r\n\r\nvalueQuantity.code　：.systemで示す単位のValue setのコードを指定。　SS-MIX2／HL7 V2.5→ OBX-6(単位) CWE.1 識別子"
+* valueQuantity ^short = "検査結果が「数値」の場合、値、単位を設定する。"
+* valueQuantity ^comment = ""
 
 // if OUL^R22.OBX[*]-2 == "CWE":
 // OUL^R22.OBX[*]-5  結果
-* valueCodeableConcept ^short = "検査結果が「コード値」の場合、コード、テキスト、コードのValue setを定義する。　SS-MIX2／HL7 V2.5→ OBX-2＝「CWE」の時の OBX-5(結果値)【詳細参照】"
-* valueCodeableConcept ^comment = "valueCodeableConcept.coding　：ローカルコードと国際標準コードなど複数指定できる。　SS-MIX2／HL7 V2.5→ CWEは正規コード＋代替コードの2種類登録可能。\r\n\r\nvalueCodeableConcept.coding.system　：対象のValue set名を指定。　SS-MIX2／HL7 V2.5→ CWE.3 or 6 コード体系。対象コードの OIDを設定\r\n\r\nvalueCodeableConcept.coding.version　：対象のValue setのバージョンを指定。　SS-MIX2／HL7 V2.5→ CWE.7 コード体系バージョン ID valueCodeableConcept.coding.code　：対象のValue setのコードを指定。　SS-MIX2／HL7 V2.5→ CWE.1 or 4 識別子。対象コードシステムのコード\r\n\r\nvalueCodeableConcept.coding.display　：対象のValue setのテキストを指定。　SS-MIX2／HL7 V2.5→ CWE.2 or 5 テキスト。対象コードの名称\r\n\r\nvalueCodeableConcept.coding.userselected　：未使用。\r\n\r\nvalueCodeableConcept.text　：コードが示す意味を指定する。通常は.coding.displayの値を指定するが、複数ある場合は適宜編集すること。　SS-MIX2／HL7 V2.5→ CWE.2 テキスト。coding.display と同じ。"
+* valueCodeableConcept ^short = "検査結果が「コード値」の場合、コード、テキスト、コードのValue setを定義する。"
+* valueCodeableConcept ^definition = "結果がコード化されたコンセプトで記述できる場合。定性検査値の場合などに使用する。質問項目の回答記号もコードと回答文字列とみなしてこの結果記述方法を使用することができる。"
 
 // if OUL^R22.OBX[*]-2 == "ST":
 // OUL^R22.OBX[*]-5  結果
-* valueString ^short = "検査結果値が「文字列」の場合、その文字列を指定する。SS-MIX2／HL7 V2.5→ OBX-2＝「ST」の時の OBX-5(結果値)"
+* valueString ^short = "検査結果値が「文字列」の場合、その文字列を指定する。"
 
 // Valueが欠落する場合には必ずその理由コードを記述する
 * dataAbsentReason MS
@@ -228,24 +221,20 @@ and localUncoded 0..1 MS
 * specimen 1.. MS
 * specimen only Reference(JP_Specimen)
 * specimen ^short = "この検査に使用された検体（標本）。"
-* specimen ^definition = "この検査に使用された検体（標本）を表すSpecimenリソース（Containedリソース）への参照"
+* specimen ^definition = "この検査に使用された検体（標本）を表すSpecimenリソース（Containedリソース）への参照。検体材料に関する情報を記述したSpecimenリソースをContainedリソースとして本リソースに埋め込んで、それを参照すること。\r\n電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、JP_Specimenタイプのリソース（Specimen.idの値が\"#specimen203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述されることが必須であるため、そのcontainedリソースのid値(Specimen.id)を記述する。(例 2\r\n{\r\n  "reference":  \"#specimen203987\"\r\n})\r\nとなる。"
 * specimen ^comment = "Containedリソースに含まれるSpecimenリソースをリソース内で参照する。必須。"
 
 // OUL^R22.OBX[*]-7
 * referenceRange MS
-* referenceRange ^short = "結果値を解釈するためのの推奨範囲。基準値範囲。"
-* referenceRange ^definition = "推奨範囲として結果値を解釈するためのガイダンス。基準値。"
-* referenceRange ^comment = "【JP Core仕様】可能な限りlow、highに構造化すべき。構造化できない場合、あるいはlow、highに該当しない場合はtextを使用。"
-* referenceRange.type ^definition = "対象となる母集団のどの部分に適用するかを示すコード。正常範囲、要治療範囲、など。"
-* referenceRange.appliesTo ^definition = "基準値が適用される母集団を示すコード。人種、性別など。"
-* referenceRange.age ^definition = "T基準値が適用される年齢。新生児の場合、週数もありうる。"
-* referenceRange.text ^definition = "量的範囲で表せない場合などに使用する。"
 
 * hasMember MS
 * hasMember ^short = "この検査に含まれる個々の検査結果項目を示す。"
 * hasMember ^definition = "この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。"
-* hasMember ^comment = "この検査に含まれる個々の検査結果Observationリソースを、このリソースに埋め込むのではなく、別の検査結果Observationリソースとして作成し、そのidentifierを論理参照する方法をとること。"
-
+* hasMember ^comment = "この検査が複数の検査項目をグループ化したパネル検査もしくはバッテリー検査の場合に、このグループに含まれる個々の検査の参照へのリストである。この場合には、本Observationリソースのvalueは存在しない。Bundleリソースなどで本リソースから参照可能なObservationリソースが同時に存在する場合には、そのリソースの識別URIを参照する。この検査に含まれる個々の検査結果Observationリソースを、このリソースに埋め込むのではなく、別の検査結果Observationリソースとして作成し、そのidentifierを論理参照する方法をとること。"
+* hasMember only Reference(JP_Observation_LabResult)
+* derivedFrom only Reference(JP_Observation_LabResult)
+* derivedFrom ^short = "派生元（素材元）の検査結果への参照のリスト。"
+* derivedFrom ^definition = "この検査が他の1つ以上の検査値から派生している（BMIが体重と身長から派生して算出される場合など）場合に、その派生元の検査への参照のリスト。記述方法としては、hasMember要素と同様に記述する。"
 
 
 
