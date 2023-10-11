@@ -221,7 +221,8 @@ and localUncoded 0..1 MS
 * specimen 1.. MS
 * specimen only Reference(JP_Specimen)
 * specimen ^short = "この検査に使用された検体（標本）。"
-* specimen ^definition = "この検査に使用された検体（標本）を表すSpecimenリソース（Containedリソース）への参照。検体材料に関する情報を記述したSpecimenリソースをContainedリソースとして本リソースに埋め込んで、それを参照すること。\r\n電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、JP_Specimenタイプのリソース（Specimen.idの値が\"#specimen203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述されることが必須であるため、そのcontainedリソースのid値(Specimen.id)を記述する。(例 2\r\n{\r\n  "reference":  \"#specimen203987\"\r\n})\r\nとなる。"
+* specimen ^definition = "この検査に使用された検体（標本）を表すSpecimenリソース（Containedリソース）への参照。検体材料に関する情報を記述したSpecimenリソースをContainedリソースとして本リソースに埋め込んで、それを参照すること。\r\n電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、JP_Specimenタイプのリソース（Specimen.idの値が\"#specimen203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述されることが必須であるため、そのcontainedリソースのid値(Specimen.id)を記述する。(例 2\r\n{\r\n  \"reference\":  \"#specimen203987\"\r\n})\r\nとなる。"
+
 * specimen ^comment = "Containedリソースに含まれるSpecimenリソースをリソース内で参照する。必須。"
 
 // OUL^R22.OBX[*]-7
