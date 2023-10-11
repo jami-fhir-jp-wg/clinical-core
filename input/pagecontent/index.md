@@ -88,7 +88,7 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 
 ## ６情報送信に関するFHIR仕様
 
-<A href="core6spec.html">「電子カルテ情報共有サービス（仮称）に医療機関から送信するFHIR仕様について」にジャンプ</a>
+<A href="core6spec.html">「電子カルテ情報共有サービスに医療機関から送信するFHIR仕様について」にジャンプ</a>
 
 
 {% include markdown-link-references.md %}

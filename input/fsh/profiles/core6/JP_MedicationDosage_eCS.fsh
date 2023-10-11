@@ -20,7 +20,7 @@ Description: "このデータタイプは注射以外の処方用法の制約を
 //----
 * extension[periodOfUse] 1..1 MS
 * extension[periodOfUse].valuePeriod  1..1 MS
-* extension[periodOfUse].valuePeriod ^definition = "投与開始日を明示するために使用する拡張「PeriodOfUse」。投与開始日を明示しない処方の場合には、処方箋発行日を投与開始日として設定する。電子カルテ情報共有サービスにおいては、本要素を必須とする。\r\n投与期間の終了日は記述しない。これは例えば隔日投与の場合に、終了日が服用しない日となり紛らわしいためである。"
+* extension[periodOfUse].valuePeriod ^definition = "投与開始日を明示するために使用する拡張「PeriodOfUse」。投与開始日を明示しない処方の場合には、処方箋発行日を投与開始日として設定する。３文書６情報の作成においては、本要素を必須とする。\r\n投与期間の終了日は記述しない。これは例えば隔日投与の場合に、終了日が服用しない日となり紛らわしいためである。"
 * extension[periodOfUse].valuePeriod.start 1..1 MS
 
 * extension[usageDuration] 0..1 MS

@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @page {
-  .DosageInstruction {
-    margin: 0.75in 0.7in 0.75in 0.7in;
-    mso-header-margin: 0.3in;
-    mso-footer-margin: 0.3in;
+  .Allergy {
+    margin: 0.75in 0.71in 0.75in 0.71in;
+    mso-header-margin: 0.31in;
+    mso-footer-margin: 0.31in;
   }
 }
-.DosageInstruction .font5 {
+.Allergy .font5 {
   color: windowtext;
   font-size: 6pt;
   font-weight: 400;
@@ -16,7 +16,7 @@
   mso-generic-font-family: auto;
   mso-font-charset: 128;
 }
-.DosageInstruction .font6 {
+.Allergy .font6 {
   color: windowtext;
   font-size: 6pt;
   font-weight: 400;
@@ -26,59 +26,9 @@
   mso-generic-font-family: auto;
   mso-font-charset: 128;
 }
-.DosageInstruction .font7 {
+.Allergy .font7 {
   color: black;
-  font-size: 10.5pt;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-}
-.DosageInstruction .font8 {
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-}
-.DosageInstruction .font9 {
-  color: black;
-  font-size: 9pt;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-}
-.DosageInstruction .font10 {
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-family: "MS Mincho";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-}
-.DosageInstruction .font11 {
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-style: normal;
-  text-decoration: none;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-}
-.DosageInstruction .font12 {
-  color: black;
-  font-size: 10.5pt;
+  font-size: 10pt;
   font-weight: 700;
   font-style: normal;
   text-decoration: none;
@@ -86,28 +36,18 @@
   mso-generic-font-family: auto;
   mso-font-charset: 128;
 }
-.DosageInstruction .font13 {
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-family: "MS Mincho";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-}
-.DosageInstruction tr {
+.Allergy tr {
   mso-height-source: auto;
   mso-ruby-visibility: none;
 }
-.DosageInstruction col {
+.Allergy col {
   mso-width-source: auto;
   mso-ruby-visibility: none;
 }
-.DosageInstruction br {
+.Allergy br {
   mso-data-placement: same-cell;
 }
-.DosageInstruction .style57 {
+.Allergy .style57 {
   color: #0563C1;
   font-size: 12pt;
   font-weight: 400;
@@ -120,7 +60,7 @@
   mso-style-name: ハイパーリンク;
   mso-style-id: 8;
 }
-.DosageInstruction a:link {
+.Allergy a:link {
   color: #0563C1;
   font-size: 12pt;
   font-weight: 400;
@@ -131,7 +71,7 @@
   mso-generic-font-family: auto;
   mso-font-charset: 128;
 }
-.DosageInstruction a:visited {
+.Allergy a:visited {
   color: #954F72;
   font-size: 12pt;
   font-weight: 400;
@@ -142,7 +82,7 @@
   mso-generic-font-family: auto;
   mso-font-charset: 128;
 }
-.DosageInstruction .style0 {
+.Allergy .style0 {
   mso-number-format: General;
   text-align: general;
   vertical-align: middle;
@@ -163,7 +103,7 @@
   mso-style-name: 標準;
   mso-style-id: 0;
 }
-.DosageInstruction .style58 {
+.Allergy .style58 {
   mso-number-format: General;
   text-align: general;
   vertical-align: middle;
@@ -183,7 +123,7 @@
   mso-protection: locked visible;
   mso-style-name: "標準 2";
 }
-.DosageInstruction .style59 {
+.Allergy .style59 {
   mso-number-format: General;
   text-align: general;
   vertical-align: middle;
@@ -203,7 +143,7 @@
   mso-protection: locked visible;
   mso-style-name: "標準 3";
 }
-.DosageInstruction td {
+.Allergy td {
   mso-style-parent: style0;
   padding-top: 1px;
   padding-right: 1px;
@@ -227,8 +167,70 @@
   white-space: nowrap;
   mso-rotate: 0;
 }
-.DosageInstruction .xl67 {
-  mso-style-parent: style59;
+.Allergy .xl67 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 1pt solid windowtext;
+  background: #D9D9D9;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl68 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #D9D9D9;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl69 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: center;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #D9D9D9;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl70 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 1pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl71 {
+  mso-style-parent: style0;
   color: black;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
@@ -241,245 +243,84 @@
   border-left: none;
   white-space: normal;
 }
-.DosageInstruction .xl68 {
+.Allergy .xl72 {
   mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl69 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl70 {
-  mso-style-parent: style59;
   color: black;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  border: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl71 {
-  mso-style-parent: style58;
-  color: black;
-  font-size: 10pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl72 {
-  mso-style-parent: style0;
-  border: 0.5pt solid windowtext;
-}
-.DosageInstruction .xl73 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border: 0.5pt solid windowtext;
+  text-align: center;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
   background: #FFC000;
   mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl74 {
+.Allergy .xl73 {
   mso-style-parent: style0;
-  text-align: left;
-}
-.DosageInstruction .xl75 {
-  mso-style-parent: style58;
   color: black;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl76 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  text-align: left;
-  border-top: 0.5pt solid windowtext;
-  border-right: 1pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl77 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl78 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl79 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  text-align: left;
-  border-top: 0.5pt solid windowtext;
-  border-right: 1pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl80 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl81 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  text-align: left;
-  border-top: 1pt solid windowtext;
-  border-right: 1pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl82 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
+  text-align: center;
+  border-top: none;
   border-right: 0.5pt solid windowtext;
   border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl83 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  background: #FFC000;
+  border-left: none;
+  background: #E2EFDA;
   mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl84 {
+.Allergy .xl74 {
   mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl85 {
-  mso-style-parent: style58;
   color: black;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  border-top: 1pt solid windowtext;
+  text-align: center;
+  border-top: none;
   border-right: 0.5pt solid windowtext;
   border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl86 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  text-align: left;
-  border-top: 1pt solid windowtext;
-  border-right: 1pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl87 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  background: #FFC000;
+  border-left: none;
+  background: #FFF2CC;
   mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl88 {
-  mso-style-parent: style59;
+.Allergy .xl75 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: center;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl76 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 1pt solid windowtext;
+  border-left: 1pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl77 {
+  mso-style-parent: style0;
   color: black;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
@@ -492,109 +333,117 @@
   border-left: none;
   white-space: normal;
 }
-.DosageInstruction .xl89 {
+.Allergy .xl78 {
   mso-style-parent: style0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-}
-.DosageInstruction .xl90 {
-  mso-style-parent: style59;
   color: black;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  text-align: left;
-  border-top: 1pt solid windowtext;
+  text-align: center;
+  border-top: none;
   border-right: 0.5pt solid windowtext;
   border-bottom: 1pt solid windowtext;
   border-left: none;
   white-space: normal;
 }
-.DosageInstruction .xl91 {
+.Allergy .xl79 {
   mso-style-parent: style0;
   color: black;
-  font-size: 10.5pt;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: center;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #E2EFDA;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl80 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: center;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #FFC000;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl81 {
+  mso-style-parent: style0;
+  font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
   text-align: left;
-  border-top: 0.5pt solid windowtext;
-  border-right: 1pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl92 {
-  mso-style-parent: style0;
-  border-top: 1pt solid windowtext;
+  border-top: none;
   border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-}
-.DosageInstruction .xl93 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl94 {
-  mso-style-parent: style0;
-  font-weight: 700;
-  border: 0.5pt solid windowtext;
-}
-.DosageInstruction .xl95 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  text-align: left;
-  border-top: 0.5pt solid windowtext;
-  border-right: 1pt solid windowtext;
   border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
+  border-left: none;
   white-space: normal;
 }
-.DosageInstruction .xl96 {
+.Allergy .xl82 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: center;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #FFF2CC;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl83 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
-  font-weight: 700;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl84 {
+  mso-style-parent: style59;
+  color: black;
+  font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
   border: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl97 {
+.Allergy .xl85 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
-  font-weight: 700;
-  font-family: "ＭＳ 明朝";
+  font-family: Cambria;
   mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
+  mso-font-charset: 0;
+  border: 0.5pt solid windowtext;
+  background: #FFC000;
+  mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl98 {
+.Allergy .xl86 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
-  font-weight: 700;
   font-family: Cambria;
   mso-generic-font-family: auto;
   mso-font-charset: 0;
@@ -604,11 +453,36 @@
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl99 {
+.Allergy .xl87 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
-  font-weight: 700;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl88 {
+  mso-style-parent: style58;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl89 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10.5pt;
   font-family: Cambria;
   mso-generic-font-family: auto;
   mso-font-charset: 0;
@@ -620,31 +494,18 @@
   mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl100 {
+.Allergy .xl90 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
   font-weight: 700;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl101 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
   font-family: Cambria;
   mso-generic-font-family: auto;
   mso-font-charset: 0;
   border: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl102 {
+.Allergy .xl91 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
@@ -658,37 +519,7 @@
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl103 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl104 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  background: #FFC000;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl105 {
+.Allergy .xl92 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -701,20 +532,7 @@
   border-left: 1pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl106 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 9pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl107 {
+.Allergy .xl93 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -727,7 +545,7 @@
   border-left: 1pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl108 {
+.Allergy .xl94 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -737,49 +555,7 @@
   border: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl109 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 9pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 1pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl110 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 9pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl111 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 9pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 0.5pt solid windowtext;
-  border-left: 1pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl112 {
+.Allergy .xl95 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -793,7 +569,7 @@
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl113 {
+.Allergy .xl96 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -807,7 +583,7 @@
   border-left: 1pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl114 {
+.Allergy .xl97 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -818,7 +594,7 @@
   border: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl115 {
+.Allergy .xl98 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -831,7 +607,7 @@
   border-left: 1pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl116 {
+.Allergy .xl99 {
   mso-style-parent: style0;
   color: black;
   font-size: 9pt;
@@ -844,39 +620,7 @@
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl117 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 9pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 1pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl118 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 9pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl119 {
-  mso-style-parent: style0;
-  font-size: 9pt;
-}
-.DosageInstruction .xl120 {
+.Allergy .xl100 {
   mso-style-parent: style59;
   color: black;
   font-size: 10pt;
@@ -889,181 +633,389 @@
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction .xl121 {
-  mso-style-parent: style58;
-  color: black;
-  font-size: 9pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  text-align: center;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: none;
-  border-left: 1pt solid windowtext;
-  background: #D9D9D9;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl122 {
-  mso-style-parent: style58;
-  color: black;
-  font-size: 9pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  text-align: center;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: none;
-  border-left: 0.5pt solid windowtext;
-  background: #D9D9D9;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl123 {
-  mso-style-parent: style58;
-  color: black;
-  font-size: 10pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  text-align: center;
-  border-top: 1pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: none;
-  border-left: 0.5pt solid windowtext;
-  background: #D9D9D9;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl124 {
-  mso-style-parent: style58;
-  color: black;
-  font-size: 10pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  text-align: center;
-  border-top: 1pt solid windowtext;
-  border-right: 1pt solid windowtext;
-  border-bottom: none;
-  border-left: 0.5pt solid windowtext;
-  background: #D9D9D9;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl125 {
+.Allergy .xl101 {
   mso-style-parent: style0;
   color: black;
   font-size: 10.5pt;
-  font-weight: 700;
   font-family: Cambria;
   mso-generic-font-family: auto;
   mso-font-charset: 0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl102 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 9pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 1pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl103 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 9pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl104 {
+  mso-style-parent: style58;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl105 {
+  mso-style-parent: style59;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
   border-top: 1pt solid windowtext;
   border-right: 0.5pt solid windowtext;
   border-bottom: 0.5pt solid windowtext;
   border-left: 0.5pt solid windowtext;
-  background: #FFF2CC;
-  mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl126 {
+.Allergy .xl106 {
   mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border: 0.5pt solid windowtext;
-  background: #FFF2CC;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl127 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border: 0.5pt solid windowtext;
-  background: #FFF2CC;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl128 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  background: #FFF2CC;
-  mso-pattern: black none;
-  white-space: normal;
-}
-.DosageInstruction .xl129 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: "MS Mincho";
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl130 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-family: "MS Mincho";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border: 0.5pt solid windowtext;
-  white-space: normal;
-}
-.DosageInstruction .xl131 {
-  mso-style-parent: style0;
-  color: black;
-  font-size: 10.5pt;
-  font-weight: 700;
-  font-family: Cambria;
-  mso-generic-font-family: auto;
-  mso-font-charset: 0;
+  text-align: left;
   border-top: 1pt solid windowtext;
   border-right: 0.5pt solid windowtext;
-  border-bottom: 1pt solid windowtext;
-  border-left: 0.5pt solid windowtext;
-  background: #FFF2CC;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #D9D9D9;
   mso-pattern: black none;
   white-space: normal;
 }
-.DosageInstruction .xl132 {
+.Allergy .xl107 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-weight: 700;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl108 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl109 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl110 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl111 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border-top: 0.5pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 1pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl112 {
+  mso-style-parent: style59;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl113 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+}
+.Allergy .xl114 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  vertical-align: top;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl115 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 1pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl116 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  background: #D9D9D9;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy .xl117 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl118 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl119 {
   mso-style-parent: style57;
-  color: #0563C1;
   text-decoration: underline;
   text-underline-style: single;
   text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl120 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  text-align: left;
   border-top: 0.5pt solid windowtext;
   border-right: 1pt solid windowtext;
   border-bottom: 0.5pt solid windowtext;
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.DosageInstruction ruby {
+.Allergy .xl121 {
+  mso-style-parent: style57;
+  text-decoration: underline;
+  text-underline-style: single;
+  border-top: 0.5pt solid windowtext;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl122 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  text-align: left;
+  border-top: 0.5pt solid windowtext;
+  border-right: 1pt solid windowtext;
+  border-bottom: 1pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl123 {
+  mso-style-parent: style57;
+  text-decoration: underline;
+  text-underline-style: single;
+  text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl124 {
+  mso-style-parent: style0;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: 1pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.Allergy .xl125 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 9pt;
+  font-weight: 700;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl126 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10.5pt;
+  font-weight: 700;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl127 {
+  mso-style-parent: style0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+}
+.Allergy .xl128 {
+  mso-style-parent: style59;
+  color: black;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl129 {
+  mso-style-parent: style0;
+  font-size: 10.5pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.Allergy .xl130 {
+  mso-style-parent: style0;
+  color: black;
+  font-size: 10.5pt;
+  font-family: Cambria;
+  mso-generic-font-family: auto;
+  mso-font-charset: 0;
+  border-top: none;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  background: #FFC000;
+  mso-pattern: black none;
+  white-space: normal;
+}
+.Allergy ruby {
   ruby-align: left;
 }
-.DosageInstruction rt {
+.Allergy rt {
   color: windowtext;
   font-size: 6pt;
   font-weight: 400;
@@ -1074,4 +1026,4 @@
   mso-font-charset: 128;
   mso-char-type: katakana;
   display: none;
-}/*# sourceMappingURL=DosageInstruction.css.map */
+}/*# sourceMappingURL=Allergy.css.map */
