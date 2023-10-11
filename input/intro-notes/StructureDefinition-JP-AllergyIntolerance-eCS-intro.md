@@ -68,9 +68,12 @@
   - 要素[*] ：　この要素は繰り返し可能であり、値の記述はリストとなる。
   - 要素[+] ：　（繰り返し可能な要素において）新たなひとつの要素の子要素値として記述される。
   - 要素[=] ：　（繰り返し可能な要素において）すぐ上の要素と同じ要素の子要素値として記述される。
-## 詳細説明
-<script>
 
+
+## 詳細説明
+
+
+<script>
 function details_open(onoff, idname, idCloseButton){
   var elem = document.getElementById(idname);
   elem.open = onoff;

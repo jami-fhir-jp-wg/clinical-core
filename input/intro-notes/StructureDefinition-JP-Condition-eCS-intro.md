@@ -61,6 +61,22 @@
   - 要素[+] ：　（繰り返し可能な要素において）新たなひとつの要素の子要素値として記述される。
   - 要素[=] ：　（繰り返し可能な要素において）すぐ上の要素と同じ要素の子要素値として記述される。
 
+## 詳細説明
+
+
+<script>
+function details_open(onoff, idname, idCloseButton){
+  var elem = document.getElementById(idname);
+  elem.open = onoff;
+  if (onoff == true){
+    document.getElementById(idCloseButton).style.display = 'none';
+  } else {
+    document.getElementById(idCloseButton).style.display = 'inline';
+  }
+}
+</script>
+
+
 <h3>表 「Condition」</h3>
 <button id="mrc" type="button" onclick="details_open(true,'ConditionDetails','mrc')">表「Condition」開く</button>
 <details id="ConditionDetails">

@@ -66,8 +66,9 @@
   - 要素[=] ：　（繰り返し可能な要素において）すぐ上の要素と同じ要素の子要素値として記述される。
 
 ## 詳細説明
-<script>
 
+
+<script>
 function details_open(onoff, idname, idCloseButton){
   var elem = document.getElementById(idname);
   elem.open = onoff;
