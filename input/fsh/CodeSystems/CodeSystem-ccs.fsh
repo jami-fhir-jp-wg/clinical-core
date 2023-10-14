@@ -38,17 +38,6 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^caseSensitive = false
 * #LUNCODED  "Locally Uncoded"
 
-CodeSystem: JP_CLINS_ObsLabResult_JLAC10Unmethod_CS
-Id: jp-clins-obslabresult-jlac10unmethod-cs
-Description: "測定法問わず998を含むMEDIS臨床検査項目コードだけからなるCS"
-* ^url = $JP_CLINS_ObsLabResult_JLAC10Unmethod_CS
-* ^title = "測定法問わず998を含むMEDIS臨床検査項目コードだけからなるCS"
-* ^status = #active
-* ^experimental = false
-* ^content = #fragment
-* ^caseSensitive = false
-* #12345123451299812  "JLAC10 sample code"
-
 //$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
 CodeSystem: JP_Observation_SubCategory_CS
 Id: jp-observation-subcategory-cs

@@ -10,7 +10,7 @@ Description:    "診療情報サマリー用　FamilyMemberHistoryリソース�
 * dataAbsentReason 0..1 MS      //この家族の情報がとれない理由コード
 * dataAbsentReason ^short = "家族の情報がとれない理由コード"
 * dataAbsentReason ^definition = "家族の情報がとれない理由コード"
-* dataAbsentReason from http://hl7.org/fhir/ValueSet/history-absent-reason
+* dataAbsentReason from http://hl7.org/fhir/ValueSet/history-absent-reason 
 
 * patient 1..1 MS
 * patient ^short = "対象となる患者リソースへの参照。"

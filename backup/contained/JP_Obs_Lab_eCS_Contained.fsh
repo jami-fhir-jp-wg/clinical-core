@@ -71,28 +71,12 @@ Description: "診療主要6情報への埋め込み用 Observationリソース�
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
-* code.coding ^binding.description = "MEDIS 臨床検査マスター（JLAC10 17桁）、または未コード化コード(17桁のall 9)"
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    jlac10Coded 0..1 MS
-and jlac10wUnmethod 0..1 MS
-and jlac10Uncoded 0..1 MS
-and localCoded 0..1 MS
-and localUncoded 0..1 MS
+
 
 * code.coding ^comment = "JLAC10標準コード、ローカルコードの2つを設定するものとし、どちらも必須とする。さらにJLAC10以外にJLAC11などの複数の標準コードも設定できるよう、上限は設けない。\r\n\r\n標準コード、ローカルコードの順不同。\r\nSS-MIX2だとCWE.1 ～CWE.3に標準コード、CWE.4～CWE.6にローカルコード、など（順不同）。"
 * code.coding.system 1..1 MS    // MS 追加 // OUL^R22.OBX[*]-3[*]-3    コードシステム
 * code.coding.system ^definition = "コード体系。"
 * code.coding.system ^comment = "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3"
-* code.coding[jlac10Coded].system = $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
-* code.coding[jlac10wUnmethod].system = $JP_CLINS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を999にしたコード
-* code.coding[jlac10Uncoded].system = $JP_CLINS_ObsLabResultUncoded_CS (exactly) // 17桁未コード化コード
-* code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)
-* code.coding[localCoded].system = $JP_ObservationLabResultLocal_CS (exactly)    // その施設のローカルコード
-* code.coding[localUncoded].system = $JP_ObservationLabResultLocalUncoded_CS (exactly)    // その施設のローカルコード
-* code.coding[localUncoded].code = #LUNCODED    // ローカルコード体系でのコード化ができない
 
 // OUL^R22.OBX[*]-3[*]-1    コード　
 // OUL^R22.OBX[*]-3[*]-1のコードが &TCM　で終了する場合には、&TCMの直前までの文字列をコメントコードとみなして、同じ

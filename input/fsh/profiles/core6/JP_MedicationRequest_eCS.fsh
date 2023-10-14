@@ -55,10 +55,6 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
   * insert relative_short_definition("診療主要情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
-* contained[organization] only  JP_Organization
-  * insert relative_short_definition("診療主要情報における診療科情報をコンパクトに格納したOrganizationリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。"
-
 * contained[author] only  JP_Practitioner
   * insert relative_short_definition("診療主要情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
@@ -146,7 +142,7 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * subject 1..1   MS
 * subject only Reference(JP_Patient)
 * subject ^short = "処方対象となる患者のFHIRリソースへの参照。"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、被保険者個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
 * subject ^comment = "３文書６情報の作成では、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
 
 * encounter 0..1 MS

@@ -34,7 +34,7 @@ Description: "診療情報サマリー用　Coverageリソース（保険情報�
 * status ^definition = "リソースインスタンスのステータス。固定値active。真に有効な保険かどうかは意味しない。"
 * type ^short = "保険種別コード"
 * type 1.. MS
-* type from http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
+* type from http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory  (required)
 * type.coding 1..1 MS
 * type.coding.system 1.. MS
 * type.coding.system = "urn:oid:1.2.392.100495.20.2.61" (exactly)

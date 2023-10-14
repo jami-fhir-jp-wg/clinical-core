@@ -908,7 +908,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl131 width=87 style='border-top:none;width:65pt'>Reference(JP_Patient
   )</td>
   <td class=xl131 width=359 style='border-top:none;width:269pt'><ruby>対象<span
-  style='display:none'><rt>タイショウ </rt></span></ruby>となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URI（fullUrl要素に指定されるUUID）を参照する。Containedリソースが存在する場合には、それを参照する記述（次行の例）、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述（次次行の例）を示す。</td>
+  style='display:none'><rt>タイショウ </rt></span></ruby>となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URI（fullUrl要素に指定されるUUID）を参照する。Containedリソースが存在する場合には、それを参照する記述（次行の例）、被保険者個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述（次次行の例）を示す。</td>
   <td class=xl131 width=36 style='border-top:none;width:27pt'>例示</td>
   <td class=xl164 width=195 style='border-top:none;width:146pt'>例 1<br>
     {<br>
@@ -940,7 +940,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl126 width=57 style='width:43pt'>　</td>
   <td class=xl137 width=35 style='width:26pt'>　</td>
   <td class=xl101 width=87 style='width:65pt'>　</td>
-  <td class=xl101 width=359 style='width:269pt'>保険個人識別子(例では、保険者等番号＝12345、被保険者証等の記号＝あいう、被保険者証等の番号＝１８７、枝番＝05の患者)を記述した外部にある患者リソースを参照する場合の例。</td>
+  <td class=xl101 width=359 style='width:269pt'>被保険者個人識別子(例では、保険者等番号＝12345、被保険者証等の記号＝あいう、被保険者証等の番号＝１８７、枝番＝05の患者)を記述した外部にある患者リソースを参照する場合の例。</td>
   <td class=xl101 width=36 style='width:27pt'>例示</td>
   <td class=xl163 width=195 style='width:146pt'>例 ３<br>
     {<br>

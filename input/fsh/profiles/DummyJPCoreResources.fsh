@@ -52,15 +52,6 @@ Description:    "JP_DocumentReference_eClinicalSummary　暫定プロファイ�
 * meta.lastUpdated 0.. MS
 
 
-Profile:        JP_Immunization
-Parent:			Immunization
-Id:             JP-Immunization
-Description:    "JP_Immunization　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Immunization"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
-
 Profile:        JP_Immunization_eClinicalSummary
 Parent:			JP_Immunization
 Id:             JP-Immunization-eClinicalSummary

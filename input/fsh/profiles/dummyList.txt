@@ -1,0 +1,13 @@
+JP_Binary
+JP_CarePlan
+JP_Device
+JP_DeviceUseStatement
+JP_DocumentReference
+JP_MedicationStatement
+JP_RelatedPerson
+JP_ResearchStudy
+JP_ResearchSubject
+JP_Specimen
+JP_ServiceRequest
+
+

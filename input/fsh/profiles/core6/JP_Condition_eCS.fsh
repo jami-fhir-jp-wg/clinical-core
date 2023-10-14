@@ -145,7 +145,7 @@ and syobo 0..
 * subject 1..1   MS   
 * subject only Reference(JP_Patient)
 * subject ^short = "対象となる患者のFHIRリソースへの参照。"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、被保険者個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
 * subject ^comment = "３文書６情報の作成では、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
 
 

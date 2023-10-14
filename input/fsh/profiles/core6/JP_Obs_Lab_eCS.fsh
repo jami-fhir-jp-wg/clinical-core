@@ -111,33 +111,270 @@ Description: "診療主要6情報サマリー用　Observationリソース（検
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
-* code.coding ^binding.description = "MEDIS 臨床検査マスター（JLAC10 17桁）、または未コード化コード(17桁のall 9)"
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    jlac10Coded 0..1 MS
-and jlac10wUnmethod 0..1 MS
-and jlac10Uncoded 0..1 MS
-and localCoded 0..1 MS
-and localUncoded 0..1 MS
 
-* code.coding ^comment = "JLAC10標準コード、ローカルコードの2つを設定するものとし、どちらも必須とする。さらにJLAC10以外にJLAC11などの複数の標準コードも設定できるよう、上限は設けない。\r\n\r\n標準コード、ローカルコードの順不同。\r\nSS-MIX2だとCWE.1 ～CWE.3に標準コード、CWE.4～CWE.6にローカルコード、など（順不同）。"
-* code.coding.system 1..1 MS    // MS 追加 // OUL^R22.OBX[*]-3[*]-3    コードシステム
-* code.coding.system ^definition = "コード体系。"
-* code.coding.system ^comment = "JLAC10フル17桁の場合にはurn:oid:1.2.392.200119.4.504（MEDIS 臨床検査マスター（JLAC10 17桁））、JLAC10の測定法コード3桁を999(不明)としたコード体系の使用も許容され、http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS を使用する。どちらの標準コードも不要できない場合には、未コード化コード(17桁のall 9)を使用することとし、その場合のsystem値はhttp://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CSを使用する。【SS-MIX2】OUL^R22.OBX[*]-3[*]-3"
-* code.coding[jlac10Coded].system =  $JP_ObservationLabResultCode_CS (exactly)    // MEDIS JLAC10
-* code.coding[jlac10Coded].code from $JP_ObservationLabResultCode_VS     // MEDIS JLAC10　
+* code.coding  ^slicing.discriminator[+].type = #value
+* code.coding  ^slicing.discriminator[=].path = "system"
+* code.coding  ^slicing.discriminator[+].type = #value
+* code.coding  ^slicing.discriminator[=].path = "display"
+* code.coding  ^slicing.rules = #closed
+* code.coding  contains
+  localLaboCode 1..1 MS
+ and coreLabo/abo-bld 0..1 MS
+ and coreLabo/alb 0..1 MS
+ and coreLabo/alp 0..1 MS
+ and coreLabo/alt 0..1 MS
+ and coreLabo/amy 0..1 MS
+ and coreLabo/aptt 0..1 MS
+ and coreLabo/ast 0..1 MS
+ and coreLabo/bnp 0..1 MS
+ and coreLabo/bs 0..1 MS
+ and coreLabo/bun 0..1 MS
+ and coreLabo/ca 0..1 MS
+ and coreLabo/che 0..1 MS
+ and coreLabo/ck 0..1 MS
+ and coreLabo/cl 0..1 MS
+ and coreLabo/cre 0..1 MS
+ and coreLabo/crp 0..1 MS
+ and coreLabo/crp-class 0..1 MS
+ and coreLabo/cys-c 0..1 MS
+ and coreLabo/d-bil 0..1 MS
+ and coreLabo/dd 0..1 MS
+ and coreLabo/fbs 0..1 MS
+ and coreLabo/ggt 0..1 MS
+ and coreLabo/hb 0..1 MS
+ and coreLabo/hba1c-ngsp 0..1 MS
+ and coreLabo/hdl-c 0..1 MS
+ and coreLabo/k 0..1 MS
+ and coreLabo/ld 0..1 MS
+ and coreLabo/ldl-c 0..1 MS
+ and coreLabo/na 0..1 MS
+ and coreLabo/nt-probnp 0..1 MS
+ and coreLabo/plt 0..1 MS
+ and coreLabo/pt-act 0..1 MS
+ and coreLabo/pt-inr 0..1 MS
+ and coreLabo/pt-ratio 0..1 MS
+ and coreLabo/pt-sec 0..1 MS
+ and coreLabo/rbc 0..1 MS
+ and coreLabo/rh-bld 0..1 MS
+ and coreLabo/t-bil 0..1 MS
+ and coreLabo/t-cho 0..1 MS
+ and coreLabo/tg 0..1 MS
+ and coreLabo/tp 0..1 MS
+ and coreLabo/u-ac 0..1 MS
+ and coreLabo/u-bld 0..1 MS
+ and coreLabo/u-glu 0..1 MS
+ and coreLabo/u-pc 0..1 MS
+ and coreLabo/u-tp 0..1 MS
+ and coreLabo/ua 0..1 MS
+ and coreLabo/wbc 0..1 MS
+ and jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
+ and unCoded 0..1 MS
 
-* code.coding[jlac10wUnmethod].system =  $JP_CLINS_ObsLabResult_JLAC10Unmethod_CS (exactly)   // MEDIS JLAC10の測定法部分を998にしたコード
-* code.coding[jlac10wUnmethod].code from $JP_CLINS_ObsLabResult_JLAC10Unmethod_VS  // MEDIS JLAC10　
+//ローカルコード
+* code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
 
-* code.coding[jlac10Uncoded].system = $JP_CLINS_ObsLabResultUncoded_CS (exactly) // 17桁未コード化コード
-* code.coding[jlac10Uncoded].code = #99999999999999999  (exactly)
-* code.coding[localCoded].system = $JP_ObservationLabResultLocal_CS (exactly)    // その施設のローカルコード
+// 一般JLAC10コード
+* code.coding[jlac10LaboCode].system = "urn:oid:1.2.392.200119.4.504" (exactly)
+* code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
 
-* code.coding[localUncoded].system = $JP_ObservationLabResultLocalUncoded_CS (exactly)    // その施設のローカルコード
-* code.coding[localUncoded].code = #LUNCODED    // ローカルコード体系でのコード化ができない
+// 未標準化コード
+* code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS" (exactly)
+* code.coding[unCoded].code = #99999999999999999 (exactly)
+* code.coding[unCoded].display = "未標準化コード項目(JLAC)" (exactly)
+
+// 基本検査項目セット　48項目
+* code.coding[coreLabo/abo-bld].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/abo-bld].display = "ABO-BLD" (exactly)	
+* code.coding[coreLabo/abo-bld].code from $JP_CLINS_ValueSet_CoreLabo_abo_bld_VS (required)
+
+* code.coding[coreLabo/alb].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/alb].display = "ALB" (exactly)	
+* code.coding[coreLabo/alb].code from $JP_CLINS_ValueSet_CoreLabo_alb_VS (required)
+
+* code.coding[coreLabo/alp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/alp].display = "ALP" (exactly)	
+* code.coding[coreLabo/alp].code from $JP_CLINS_ValueSet_CoreLabo_alp_VS (required)
+
+* code.coding[coreLabo/alt].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/alt].display = "ALT" (exactly)	
+* code.coding[coreLabo/alt].code from $JP_CLINS_ValueSet_CoreLabo_alt_VS (required)
+
+* code.coding[coreLabo/amy].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/amy].display = "AMY" (exactly)	
+* code.coding[coreLabo/amy].code from $JP_CLINS_ValueSet_CoreLabo_amy_VS (required)
+
+* code.coding[coreLabo/aptt].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/aptt].display = "APTT" (exactly)	
+* code.coding[coreLabo/aptt].code from $JP_CLINS_ValueSet_CoreLabo_aptt_VS (required)
+
+* code.coding[coreLabo/ast].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ast].display = "AST" (exactly)	
+* code.coding[coreLabo/ast].code from $JP_CLINS_ValueSet_CoreLabo_ast_VS (required)
+
+* code.coding[coreLabo/bnp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/bnp].display = "BNP" (exactly)	
+* code.coding[coreLabo/bnp].code from $JP_CLINS_ValueSet_CoreLabo_bnp_VS (required)
+
+* code.coding[coreLabo/bs].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/bs].display = "BS" (exactly)	
+* code.coding[coreLabo/bs].code from $JP_CLINS_ValueSet_CoreLabo_bs_VS (required)
+
+* code.coding[coreLabo/bun].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/bun].display = "BUN" (exactly)	
+* code.coding[coreLabo/bun].code from $JP_CLINS_ValueSet_CoreLabo_bun_VS (required)
+
+* code.coding[coreLabo/ca].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ca].display = "Ca" (exactly)	
+* code.coding[coreLabo/ca].code from $JP_CLINS_ValueSet_CoreLabo_ca_VS (required)
+
+* code.coding[coreLabo/che].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/che].display = "ChE" (exactly)	
+* code.coding[coreLabo/che].code from $JP_CLINS_ValueSet_CoreLabo_che_VS (required)
+
+* code.coding[coreLabo/ck].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ck].display = "CK" (exactly)	
+* code.coding[coreLabo/ck].code from $JP_CLINS_ValueSet_CoreLabo_ck_VS (required)
+
+* code.coding[coreLabo/cl].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/cl].display = "Cl" (exactly)	
+* code.coding[coreLabo/cl].code from $JP_CLINS_ValueSet_CoreLabo_cl_VS (required)
+
+* code.coding[coreLabo/cre].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/cre].display = "Cre" (exactly)	
+* code.coding[coreLabo/cre].code from $JP_CLINS_ValueSet_CoreLabo_cre_VS (required)
+
+* code.coding[coreLabo/crp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/crp].display = "CRP" (exactly)	
+* code.coding[coreLabo/crp].code from $JP_CLINS_ValueSet_CoreLabo_crp_VS (required)
+
+* code.coding[coreLabo/crp-class].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/crp-class].display = "CRP-class" (exactly)	
+* code.coding[coreLabo/crp-class].code from $JP_CLINS_ValueSet_CoreLabo_crp_class_VS (required)
+
+* code.coding[coreLabo/cys-c].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/cys-c].display = "Cys-C" (exactly)	
+* code.coding[coreLabo/cys-c].code from $JP_CLINS_ValueSet_CoreLabo_cys_c_VS (required)
+
+* code.coding[coreLabo/d-bil].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/d-bil].display = "D-Bil" (exactly)	
+* code.coding[coreLabo/d-bil].code from $JP_CLINS_ValueSet_CoreLabo_d_bil_VS (required)
+
+* code.coding[coreLabo/dd].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/dd].display = "DD" (exactly)	
+* code.coding[coreLabo/dd].code from $JP_CLINS_ValueSet_CoreLabo_dd_VS (required)
+
+* code.coding[coreLabo/fbs].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/fbs].display = "FBS" (exactly)	
+* code.coding[coreLabo/fbs].code from $JP_CLINS_ValueSet_CoreLabo_fbs_VS (required)
+
+* code.coding[coreLabo/ggt].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ggt].display = "GGT" (exactly)	
+* code.coding[coreLabo/ggt].code from $JP_CLINS_ValueSet_CoreLabo_ggt_VS (required)
+
+* code.coding[coreLabo/hb].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/hb].display = "Hb" (exactly)	
+* code.coding[coreLabo/hb].code from $JP_CLINS_ValueSet_CoreLabo_hb_VS (required)
+
+* code.coding[coreLabo/hba1c-ngsp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/hba1c-ngsp].display = "HbA1c-NGSP" (exactly)	
+* code.coding[coreLabo/hba1c-ngsp].code from $JP_CLINS_ValueSet_CoreLabo_hba1c_ngsp_VS (required)
+
+* code.coding[coreLabo/hdl-c].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/hdl-c].display = "HDL-C" (exactly)	
+* code.coding[coreLabo/hdl-c].code from $JP_CLINS_ValueSet_CoreLabo_hdl_c_VS (required)
+
+* code.coding[coreLabo/k].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/k].display = "K" (exactly)	
+* code.coding[coreLabo/k].code from $JP_CLINS_ValueSet_CoreLabo_k_VS (required)
+
+* code.coding[coreLabo/ld].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ld].display = "LD" (exactly)	
+* code.coding[coreLabo/ld].code from $JP_CLINS_ValueSet_CoreLabo_ld_VS (required)
+
+* code.coding[coreLabo/ldl-c].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ldl-c].display = "LDL-C" (exactly)	
+* code.coding[coreLabo/ldl-c].code from $JP_CLINS_ValueSet_CoreLabo_ldl_c_VS (required)
+
+* code.coding[coreLabo/na].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/na].display = "Na" (exactly)	
+* code.coding[coreLabo/na].code from $JP_CLINS_ValueSet_CoreLabo_na_VS (required)
+
+* code.coding[coreLabo/nt-probnp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/nt-probnp].display = "NT-proBNP" (exactly)	
+* code.coding[coreLabo/nt-probnp].code from $JP_CLINS_ValueSet_CoreLabo_nt_probnp_VS (required)
+
+* code.coding[coreLabo/plt].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/plt].display = "PLT" (exactly)	
+* code.coding[coreLabo/plt].code from $JP_CLINS_ValueSet_CoreLabo_plt_VS (required)
+
+* code.coding[coreLabo/pt-act].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/pt-act].display = "PT-act" (exactly)	
+* code.coding[coreLabo/pt-act].code from $JP_CLINS_ValueSet_CoreLabo_pt_act_VS (required)
+
+* code.coding[coreLabo/pt-inr].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/pt-inr].display = "PT-INR" (exactly)	
+* code.coding[coreLabo/pt-inr].code from $JP_CLINS_ValueSet_CoreLabo_pt_inr_VS (required)
+
+* code.coding[coreLabo/pt-ratio].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/pt-ratio].display = "PT-ratio" (exactly)	
+* code.coding[coreLabo/pt-ratio].code from $JP_CLINS_ValueSet_CoreLabo_pt_ratio_VS (required)
+
+* code.coding[coreLabo/pt-sec].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/pt-sec].display = "PT-sec" (exactly)	
+* code.coding[coreLabo/pt-sec].code from $JP_CLINS_ValueSet_CoreLabo_pt_sec_VS (required)
+
+* code.coding[coreLabo/rbc].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/rbc].display = "RBC" (exactly)	
+* code.coding[coreLabo/rbc].code from $JP_CLINS_ValueSet_CoreLabo_rbc_VS (required)
+
+* code.coding[coreLabo/rh-bld].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/rh-bld].display = "Rh-BLD" (exactly)	
+* code.coding[coreLabo/rh-bld].code from $JP_CLINS_ValueSet_CoreLabo_rh_bld_VS (required)
+
+* code.coding[coreLabo/t-bil].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/t-bil].display = "T-Bil" (exactly)	
+* code.coding[coreLabo/t-bil].code from $JP_CLINS_ValueSet_CoreLabo_t_bil_VS (required)
+
+* code.coding[coreLabo/t-cho].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/t-cho].display = "T-CHO" (exactly)	
+* code.coding[coreLabo/t-cho].code from $JP_CLINS_ValueSet_CoreLabo_t_cho_VS (required)
+
+* code.coding[coreLabo/tg].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/tg].display = "TG" (exactly)	
+* code.coding[coreLabo/tg].code from $JP_CLINS_ValueSet_CoreLabo_tg_VS (required)
+
+* code.coding[coreLabo/tp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/tp].display = "TP" (exactly)	
+* code.coding[coreLabo/tp].code from $JP_CLINS_ValueSet_CoreLabo_tp_VS (required)
+
+* code.coding[coreLabo/u-ac].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/u-ac].display = "U-ac" (exactly)	
+* code.coding[coreLabo/u-ac].code from $JP_CLINS_ValueSet_CoreLabo_u_ac_VS (required)
+
+* code.coding[coreLabo/u-bld].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/u-bld].display = "U-Bld" (exactly)	
+* code.coding[coreLabo/u-bld].code from $JP_CLINS_ValueSet_CoreLabo_u_bld_VS (required)
+
+* code.coding[coreLabo/u-glu].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/u-glu].display = "U-Glu" (exactly)	
+* code.coding[coreLabo/u-glu].code from $JP_CLINS_ValueSet_CoreLabo_u_glu_VS (required)
+
+* code.coding[coreLabo/u-pc].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/u-pc].display = "U-pc" (exactly)	
+* code.coding[coreLabo/u-pc].code from $JP_CLINS_ValueSet_CoreLabo_u_pc_VS (required)
+
+* code.coding[coreLabo/u-tp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/u-tp].display = "U-TP" (exactly)	
+* code.coding[coreLabo/u-tp].code from $JP_CLINS_ValueSet_CoreLabo_u_tp_VS (required)
+
+* code.coding[coreLabo/ua].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/ua].display = "UA" (exactly)	
+* code.coding[coreLabo/ua].code from $JP_CLINS_ValueSet_CoreLabo_ua_VS (required)
+
+* code.coding[coreLabo/wbc].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/wbc].display = "WBC" (exactly)	
+* code.coding[coreLabo/wbc].code from $JP_CLINS_ValueSet_CoreLabo_wbc_VS (required)
+
 
 // OUL^R22.OBX[*]-3[*]-1    コード　
 // OUL^R22.OBX[*]-3[*]-1のコードが &TCM　で終了する場合には、&TCMの直前までの文字列をコメントコードとみなして、同じ
@@ -155,7 +392,7 @@ and localUncoded 0..1 MS
 * subject 1..1   MS
 * subject only Reference(JP_Patient)
 * subject ^short = "検体検査の対象となる患者。"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、保険個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、被保険者個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
 * subject ^comment = "３文書６情報の作成では、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
 
 // OUL^R22.PV1

@@ -36,7 +36,7 @@ Description:    "Derived Profile from JP-Core"
 * category 0..1 MS
 * category ^short = "プランのタイプ"
 * category ^definition = "hospital-plan または discharge-plan"
-* category.coding from http://jpfhir.jp/fhir/CarePlan/ValueSet/category
+* category.coding from http://jpfhir.jp/fhir/CarePlan/ValueSet/category (required)
 * title 1..1 MS
 * title ^short = "プランの課題名称"
 * title ^definition = "\"入院時方針\"　または　\"退院時の方針\" その他の課題名称でも構わない。"
