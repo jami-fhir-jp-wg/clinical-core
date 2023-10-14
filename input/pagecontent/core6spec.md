@@ -49,7 +49,7 @@ BundleリソースのIdentifier要素は、電子カルテ情報共有サービ�
 
 BundleリソースのIdentifier要素は以下の通りとする。<br>
 この仕様を満たすidentifierに加えて、これとは異なるsystem値をもつidentifierは複数存在しても構わない。<br>
-```
+
 Bundle.identifier.system	:  system値として、"http://jpfhir.jp/fhir/clins/bundle-identifier" を設定する。
 Bundle.identifier.value	:  以下に記載する\[報告単位識別ID\]　を設定する。
 
@@ -64,11 +64,13 @@ Bundle.identifier.value	:  以下に記載する\[報告単位識別ID\]　を�
   - 報告単位のデータを医療機関のシステムとして医療機関内で一意に識別できる粒度のID文字列：<br>
   　　当該システムが当該患者データの中で一意性を保証できるよう生成した半角文字列（英大文字、数字、ハイフン記号のみ可）<br>
   　　最大128文字とすること。
-```
+
 
 
 
 ### Bundleリソース・インスタンスの例（JSON形式）：
+
+
 ```
 {
     "resourceType": "Bundle",
@@ -226,6 +228,8 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
     　　　9ー12行　臨床検査項目基本コード（JLAC10）による記述。<br>
 　　　　　14ー16行　JLAC10コードによる記述。ここでは、9行目と同一コード。<br>
 　　　　  19行　コード化に依存しない検査項目名称。<br><br>
+
+
 ```
  1:  "code": {
  2:    "coding": [
@@ -257,6 +261,8 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
     　　　9ー12行　施設固有コードと名称による記述（元の施設固有system値による記述。なくてもよい）。<br>
 　　　　　14ー16行　JAC10コードに変換できなかった（しなかった）ことを示す記述（必須）。<br>
 　　　　  19行　コード化に依存しない検査項目名称。<br><br>
+
+
 ```
  1:  "code": {
  2:    "coding": [
@@ -333,6 +339,8 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 
 ### 被保険者個人識別子の格納方法
 被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http:/jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member」<span style="color: red; ">（当初記載のURL末尾のr/保険者等番号８桁文字列　を削除）</span>を設定する。<br>
+
+
 ```
     {
       "resourceType": "Patient",
@@ -361,6 +369,7 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 　meta.tag.system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"　(この固定値とする)<br>
 　meta.tag.code = "LTS"　(この固定値とする)<br>
 
+
 ```
 {
   "resourceType": "AllergyIntolerance",
@@ -388,6 +397,7 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
 　meta.tag.system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"　(この固定値とする)<br>
 　meta.tag.code = "UNINFORMED"　(この固定値とする)<br>
+
 
 ```
 {
