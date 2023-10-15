@@ -13,27 +13,17 @@ Description: "診療主要情報用　Patientリソース（患者情報）プ�
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
-/*
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
-* identifier[=].value = "000999739"
-* identifier[+].system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member"
-* identifier[=].value = "00012345:あいう:１８７:05"
-*/
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-* identifier contains 
-    jpInsuranceMember 1..1 MS
 
-* identifier[jpInsuranceMember] 1.. MS
-* identifier[jpInsuranceMember].system 1..1
-* identifier[jpInsuranceMember].system  ^short = "保険者・被保険者番号情報のためのsystem値(url)"
-* identifier[jpInsuranceMember].system  ^definition = "保険者・被保険者番号情報のためのsystem値(url)"
-* identifier[jpInsuranceMember].system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member" (exactly)
-* identifier[jpInsuranceMember].value 1..1
-* identifier[jpInsuranceMember].value ^short = "被保険者個人識別子"
-* identifier[jpInsuranceMember].value ^definition = "保険者・被保険者番号情報(被保険者個人識別子)"
-* identifier[jpInsuranceMember].value ^comment = "被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。"
+
+* identifier 1.. MS
+* identifier.system 1..1
+* identifier.system  ^short = "保険者・被保険者番号情報のためのsystem値(url)"
+* identifier.system  ^definition = "保険者・被保険者番号情報のためのsystem値(url)"
+* identifier.system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member" (exactly)
+* identifier.value 1..1
+* identifier.value ^short = "被保険者個人識別子"
+* identifier.value ^definition = "保険者・被保険者番号情報(被保険者個人識別子)"
+* identifier.value ^comment = "被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。"
 
 * name 1.. MS
 * name ^short =  "漢字またはカナの名前情報"

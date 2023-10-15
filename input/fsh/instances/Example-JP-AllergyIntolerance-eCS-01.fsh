@@ -29,15 +29,15 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 //* criticality = #unable-to-assess
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "サバ類"
-* code.text = "サバ"
+* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば類"
+* code.text = "さば"
 
 * patient = Reference(Example-JP-Patient-eCS-01-Contained)
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
 //* onsetPeriod.start = "2020-04-10"
-* note.text = "サバ食後３時間ほどで全身に発疹と腹痛あり"
+* note.text = "さば食後３時間ほどで全身に発疹と腹痛あり"
 
 
 
@@ -72,8 +72,8 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 //* criticality = #unable-to-assess
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "サバ類"
-* code.text = "サバ"
+* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば類"
+* code.text = "さば"
 
 * patient = Reference(Example-JP-Patient-eCS-01-Contained)
 
@@ -86,7 +86,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 * recorder.display =  "看護師A"
 * asserter.display =  "本人"
 
-* note.text = "サバ食後３時間ほどで全身に発疹と腹痛あり"
+* note.text = "さば食後３時間ほどで全身に発疹と腹痛あり"
 
 
 //------ 医薬品禁忌-----------------

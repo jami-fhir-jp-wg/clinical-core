@@ -105,10 +105,10 @@
       {
         "code": "J9FC11310000",
         "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS",
-        "display": "サバ類"
+        "display": "さば類"
       }
     ],
-    "text": "サバ"
+    "text": "さば"
   },
   "patient": {
     "reference": "#Patient1"
@@ -125,7 +125,7 @@
   },
   "note": [
     {
-      "text": "サバ食後３時間ほどで全身に発疹と腹痛あり"
+      "text": "さば食後３時間ほどで全身に発疹と腹痛あり"
     }
   ]
 }

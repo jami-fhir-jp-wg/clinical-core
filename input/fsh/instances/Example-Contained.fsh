@@ -4,14 +4,14 @@ Instance: Example-Patient-minimun
 InstanceOf: JP_Patient
 Usage: #example
 Description: "埋め込み　患者情報_患者識別情報だけ"
-* meta.profile[+] = $JP_Patient_CLINS_eCS
+//* meta.profile[+] = $JP_Patient_CLINS_eCS
 * id = "Example-Patient-minimun"
 //--　  Information @ Patient.identifier[0] (line 11, col6): この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
 //  上記が表示されるが問題ない
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
-* identifier[=].value = "000999739"
+//* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
+//* identifier[=].value = "000999739"
 //---
-* identifier[+].system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member"
+* identifier[+].system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberDummy"
 * identifier[=].value = "00012345:あいう:１８７:05"
 
 //-------- 埋め込み　患者情報01
