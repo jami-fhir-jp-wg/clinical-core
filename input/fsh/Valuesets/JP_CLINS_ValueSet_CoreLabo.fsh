@@ -15,6 +15,23 @@ Description: "６情報用検体検査項目セット"
 * $JP_CLINS_CodeSystem_CoreLabo_CS#5H010000001910114  "ABO-BLD"  // 赤血球凝集反応[定性]  (空白)  全血
 * $JP_CLINS_CodeSystem_CoreLabo_CS#5H010000001999911  "ABO-BLD"  // その他  (空白)  全血
 
+ValueSet: JP_CLINS_ValueSet_CoreLabo_rh_bld_VS
+Id: jp-clins-valueset-corelabo-rh-bld-vs
+Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
+Description: "６情報用検体検査項目セット"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLabo_rh_bld_VS
+* ^version = "1.1.0a"
+* ^status = #active
+* ^experimental = false
+* ^date = "2023-10-15"
+* ^copyright = "JAMI"
+// ⾎液型-Rh^^
+* #5H020000001910111  "Rh-BLD"  // 血液型(Rh)(カラム凝集法)  (空白)  (空白)
+* #5H020000001910114  "Rh-BLD"  // 赤血球凝集反応[定性]  (空白)  全血(添加物入り)
+* #5H020000001999911  "Rh-BLD"  // その他  (空白)  (空白)
+
 ValueSet: JP_CLINS_ValueSet_CoreLabo_alb_VS
 Id: jp-clins-valueset-corelabo-alb-vs
 Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
@@ -240,8 +257,7 @@ Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
 Description: "６情報用検体検査項目セット"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = "http://jpfhir.jp/fhir/ValueSet/jp-clins-valueset-corelabo_k_VS"
-//* ^url = $JP_CLINS_ValueSet_CoreLabo_VS 
+* ^url = $JP_CLINS_ValueSet_CoreLabo_k_VS 
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false

@@ -52,7 +52,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
-* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
+* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "102934702"
@@ -99,7 +99,7 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
+* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "102934703"
