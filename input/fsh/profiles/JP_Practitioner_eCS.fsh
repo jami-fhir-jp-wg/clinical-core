@@ -1,5 +1,5 @@
 // ==================================================
-//   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
+//   Profile 定義 診療６情報・サマリー用
 //   検体検査結果 リソースタイプ:Practitioner
 //   親プロファイル:JP_Practitioner
 // ==================================================
@@ -7,7 +7,7 @@
 Profile: JP_Practitioner_eCS
 Parent: JP_Practitioner
 Id: JP-Practitioner-eCS
-Description: "診療情報サマリー用 Practitionerリソース（医師情報）　"
+Description: "診療６情報・サマリー用 Practitionerリソース（医師情報）　"
 * ^url = $JP_Practitioner_eCS
 * ^status = #active
 * ^date = "2023-05-27"

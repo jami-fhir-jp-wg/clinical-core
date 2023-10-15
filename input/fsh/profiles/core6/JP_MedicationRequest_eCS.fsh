@@ -1,5 +1,5 @@
 // ==================================================
-//   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
+//   Profile 定義 診療６情報・サマリー用
 //   処方オーダの１処方薬情報 リソースタイプ:MedicationRequest
 //   親プロファイル:JP_MedicationRequest
 // ==================================================
@@ -7,7 +7,7 @@ Profile: JP_MedicationRequest_eCS
 Parent: JP_MedicationRequest
 Id: JP-MedicationRequest-eCS
 Title:  "Core6 : JP_MedicationRequest_eCS"
-Description: "診療主要6情報サマリー用　MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
+Description: "診療6情報・サマリー用　MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
@@ -191,7 +191,7 @@ Description: "診療主要6情報サマリー用　MedicationRequestリソース
 * dispenseRequest.expectedSupplyDuration.value ^definition = "調剤日数。\r\n例）１日３錠で７日分の場合、この要素には 7が設定される。"
 * dispenseRequest.expectedSupplyDuration.value MS
 * dispenseRequest.performer 
-  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
+  * ^comment = "当面、診療６情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
 
 * substitution.allowedCodeableConcept MS
 * substitution.allowedCodeableConcept.coding.system ^definition = "後発品変更不可コードを識別するURI。固定値。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　OID: 1.2.392.100495.20.2.41"

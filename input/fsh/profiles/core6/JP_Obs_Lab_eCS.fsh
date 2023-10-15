@@ -1,5 +1,5 @@
 // ==================================================
-//   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
+//   Profile 定義 診療６情報・サマリー用
 //   検体検査結果／感染症検体検査結果 リソースタイプ:Observation
 //   親プロファイル:JP_Observation_LabResult
 // ==================================================
@@ -7,7 +7,7 @@ Profile: JP_Observation_LabResult_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS
 Title:  "Core6 : JP_Observation_LabResult_eCS"
-Description: "診療主要6情報サマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
+Description: "診療6情報・サマリー用　Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS

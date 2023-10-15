@@ -1,5 +1,5 @@
 // ==================================================
-//   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
+//   Profile 定義 診療６情報・サマリー用
 //   アレルギー情報／薬剤禁忌 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance
 // ==================================================
@@ -7,7 +7,7 @@ Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "Core6 : JP_AllergyIntolerance_eCS"
-Description: "診療主要6情報サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
+Description: "診療6情報・サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
@@ -135,7 +135,7 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 
 * asserter 0..1 MS
   * insert relative_short_definition("この状態があると確認（主張）した人情報への参照。医療者、患者本人の場合にはそれぞれのContainedリソースへの参照を記述する。またはdisplay要素に文字列を記述する")
-  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+  * ^comment = "当面、診療６情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
 
 * lastOccurrence  0..1 
   * insert relative_short_definition("最後（直近）に知られている発生日時")

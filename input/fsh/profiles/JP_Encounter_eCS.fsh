@@ -2,7 +2,7 @@
 Profile: JP_Encounter_eClinicalSummary
 Parent: JP_Encounter
 Id: JP-Encounter-eClinicalSummary
-Description: "診療情報サマリー用　Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
+Description: "診療６情報・サマリー用　Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_eClinicalSummary"
 * ^status = #active
 * ^date = "2023-03-31"

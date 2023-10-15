@@ -2,7 +2,7 @@ Profile: JP_Patient_eCS
 Parent: JP_Patient
 Id: JP-Patient-eCS
 Title: "JP_Patient_eCS"
-Description: "診療情報サマリー用　Patientリソース（患者情報）プロファイル"
+Description: "診療６情報・サマリー用　Patientリソース（患者情報）プロファイル"
 * ^url = $JP_Patient_eClinicalSummary
 * ^status = #active
 * ^date = "2023-03-31"

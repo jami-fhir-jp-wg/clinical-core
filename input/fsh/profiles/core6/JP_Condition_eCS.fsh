@@ -1,5 +1,5 @@
 // ==================================================
-//   Profile 定義 FHIR臨床コア情報 Clinical-coreセット
+//   Profile 定義 診療６情報・サマリー用
 //   傷病名情報 リソースタイプ:Condition
 //   親プロファイル:JP_Condition
 // ==================================================
@@ -7,7 +7,7 @@ Profile:        JP_Condition_eCS
 Parent:			JP_Condition
 Id:             JP-Condition-eCS
 Title:  "Core6 : JP_Condition_eCS"
-Description: "診療主要6情報サマリー用　Conditionリソース（傷病名情報）プロファイル"
+Description: "診療6情報・サマリー用　Conditionリソース（傷病名情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
@@ -176,11 +176,11 @@ and syobo 0..
 
 * asserter 0..1 MS
   * insert relative_short_definition("この状態があると確認（主張）した人情報への参照。医療者、患者本人の場合にはそれぞれのContainedリソースへの参照を記述する。またはdisplay要素に文字列を記述する")
-  * ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+  * ^comment = "当面、診療６情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
 
 * stage 
   * insert relative_short_definition("この状態の臨床的ステージやグレード表現。")
-  * assessment ^comment = "当面、コア情報ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
+  * assessment ^comment = "当面、診療６情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなcontainedリソースの記述を避けるため）"
 
 * evidence
   * insert relative_short_definition("状態を確認または反駁した証拠など、状態の検証ステータスの基礎となる裏付けとなる証拠/兆候。")
