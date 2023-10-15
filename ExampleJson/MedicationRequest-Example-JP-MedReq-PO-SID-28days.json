@@ -1,0 +1,227 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "Example-JP-MedReq-PO-SID-28days",
+  "meta": {
+    "lastUpdated": "2021-07-13T02:41:19.000+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Patient",
+      "id": "Example-Patient-minimun",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient",
+          "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "urn:oid:1.2.392.100495.20.3.51.11234567890",
+          "value": "000999739"
+        },
+        {
+          "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
+          "value": "00012345:あいう:１８７:05"
+        }
+      ]
+    },
+    {
+      "resourceType": "Practitioner",
+      "id": "Example-Practitioner-minimun-R001",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
+        ]
+      },
+      "name": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+              "valueCode": "IDE"
+            }
+          ],
+          "text": "医学 一郎"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "value": "2"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "value": "1"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.11",
+      "value": "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
+    },
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "DCG",
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+          "display": "退院処方"
+        },
+        {
+          "code": "IHP",
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+          "display": "入院処方"
+        }
+      ],
+      "text": "退院時処方"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "127031001",
+        "system": "urn:oid:1.2.392.200119.4.403.1",
+        "display": "デエビゴ錠２．５ｍｇ"
+      },
+      {
+        "code": "I1379700",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567",
+        "display": "デエビゴ錠２．５ｍｇ"
+      }
+    ],
+    "text": "デエビゴ錠２．５ｍｇ"
+  },
+  "subject": {
+    "reference": "#Example-Patient-minimun",
+    "type": "Patient"
+  },
+  "authoredOn": "2021-07-12T16:19:06+09:00",
+  "requester": {
+    "reference": "#Example-Practitioner-minimun-R001",
+    "display": "医学 一郎",
+    "type": "Practitioner"
+  },
+  "recorder": {
+    "reference": "#Example-Practitioner-minimun-R001",
+    "type": "Practitioner"
+  },
+  "groupIdentifier": {
+    "value": "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
+  },
+  "dosageInstruction": [
+    {
+      "extension": [
+        {
+          "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse",
+          "valuePeriod": {
+            "start": "2021-07-12"
+          }
+        }
+      ],
+      "text": "1日1回 就寝前 １回 1錠  (１日  1錠) 28　日分,自己調節可",
+      "timing": {
+        "event": [
+          "2021-07-12T00:00:00+09:00"
+        ],
+        "repeat": {
+          "boundsDuration": {
+            "value": 28,
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "日"
+          },
+          "count": 28,
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "1011100000000000",
+              "system": "urn:oid:1.2.392.200250.2.2.20",
+              "display": "内服 １日１回 就寝前"
+            }
+          ],
+          "text": "1日1回 就寝前"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "code": "PO",
+            "system": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes",
+            "display": "口"
+          }
+        ],
+        "text": "経口"
+      },
+      "method": {
+        "coding": [
+          {
+            "code": "1",
+            "system": "http://jami.jp/CodeSystem/MedicationMethodBasicUsage",
+            "display": "内服"
+          }
+        ]
+      },
+      "doseAndRate": [
+        {
+          "type": {
+            "coding": [
+              {
+                "code": "1",
+                "system": "urn:oid:1.2.392.100495.20.2.22",
+                "display": "製剤量"
+              }
+            ]
+          },
+          "doseQuantity": {
+            "value": 1,
+            "code": "TAB",
+            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "unit": "錠"
+          },
+          "rateRatio": {
+            "numerator": {
+              "value": 1,
+              "code": "TAB",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "unit": "錠"
+            },
+            "denominator": {
+              "value": 1,
+              "code": "d",
+              "system": "http://unitsofmeasure.org",
+              "unit": "日"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "dispenseRequest": {
+    "quantity": {
+      "value": 28,
+      "code": "TAB",
+      "system": "urn:oid:1.2.392.100495.20.2.101",
+      "unit": "錠"
+    },
+    "expectedSupplyDuration": {
+      "value": 28,
+      "code": "d",
+      "system": "http://unitsofmeasure.org",
+      "unit": "日"
+    }
+  }
+}

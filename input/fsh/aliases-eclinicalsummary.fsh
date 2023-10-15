@@ -4,7 +4,8 @@ Alias: $Icode = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567
 
 Alias: $JP_ehrshrs_indication_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
 
-Alias: $JP_Patient_eClinicalSummary = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eClinicalSummary
+Alias: $JP_Patient_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS
+Alias: $JP_Patient_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
 
 Alias: $JP_Observation_LabResult_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eClinicalSummary
 

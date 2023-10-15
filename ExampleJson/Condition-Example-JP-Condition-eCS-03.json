@@ -1,0 +1,124 @@
+{
+  "resourceType": "Condition",
+  "id": "Example-JP-Condition-eCS-03",
+  "meta": {
+    "lastUpdated": "2023-04-01T10:00:00+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "202934703"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Patient",
+      "id": "Patient1",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "urn:oid:1.2.392.100495.20.3.51.11234567890",
+          "value": "826739"
+        },
+        {
+          "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
+          "value": "00012345:あいう:３８７４７６:01"
+        }
+      ],
+      "name": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+              "valueCode": "IDE"
+            }
+          ],
+          "text": "田中 太郎",
+          "family": "田中",
+          "given": [
+            "太郎"
+          ]
+        }
+      ],
+      "gender": "male",
+      "birthDate": "1955-05-04"
+    },
+    {
+      "resourceType": "Encounter",
+      "id": "Example-JP-Encounter-AMB",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+          "value": "192844"
+        }
+      ],
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "外来"
+      }
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "inactive",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+        "display": "Inactive"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "unconfirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+        "display": "Unconfirmed"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "encounter-diagnosis"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "L3RF",
+        "system": "http://medis.or.jp/CodeSystem/master-disease-exCode",
+        "display": "噴門癌"
+      }
+    ],
+    "text": "噴門癌早期"
+  },
+  "subject": {
+    "reference": "#Patient1"
+  },
+  "encounter": {
+    "reference": "#Example-JP-Encounter-AMB"
+  },
+  "onsetDateTime": "2020-04-10",
+  "abatementDateTime": "2020-05-01",
+  "recordedDate": "2020-04-18",
+  "recorder": {
+    "display": "消化器内科　田中太郎"
+  }
+}

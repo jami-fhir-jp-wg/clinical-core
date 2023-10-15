@@ -28,9 +28,9 @@ Description: "６情報用検体検査項目セット"
 * ^date = "2023-10-15"
 * ^copyright = "JAMI"
 // ⾎液型-Rh^^
-* #5H020000001910111  "Rh-BLD"  // 血液型(Rh)(カラム凝集法)  (空白)  (空白)
-* #5H020000001910114  "Rh-BLD"  // 赤血球凝集反応[定性]  (空白)  全血(添加物入り)
-* #5H020000001999911  "Rh-BLD"  // その他  (空白)  (空白)
+* $JP_CLINS_CodeSystem_CoreLabo_CS#5H020000001910111  "Rh-BLD"  // 血液型(Rh)(カラム凝集法)  (空白)  (空白)
+* $JP_CLINS_CodeSystem_CoreLabo_CS#5H020000001910114  "Rh-BLD"  // 赤血球凝集反応[定性]  (空白)  全血(添加物入り)
+* $JP_CLINS_CodeSystem_CoreLabo_CS#5H020000001999911  "Rh-BLD"  // その他  (空白)  (空白)
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_alb_VS
 Id: jp-clins-valueset-corelabo-alb-vs

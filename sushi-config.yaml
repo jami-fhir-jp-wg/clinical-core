@@ -106,7 +106,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationStatement
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eClinicalSummary
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_Common_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eClinicalSummary
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
+    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Procedure_eClinicalSummary
     - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_RelatedPerson_eClinicalSummary
@@ -161,7 +162,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-hb_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-hdl-c_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-plt_VS
-    - http://jpfhir.jp/fhir/ValueSet/jp-clins-valueset-corelabo_k_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-k_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ld_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ldl-c_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-na_VS
@@ -172,6 +173,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-pt-ratio_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-pt-sec_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-rbc_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-rh-bld_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-t-bil_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-t-cho_VS
     - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-tg_VS
