@@ -1,13 +1,15 @@
 // ==================================================
-//   Profile 定義 診療６情報・サマリー用
+//   Profile 定義 診療情報・サマリー汎用
+//   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
+//   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
 //   傷病名情報 リソースタイプ:Condition
 //   親プロファイル:JP_Condition
 // ==================================================
 Profile:        JP_Condition_eCS
 Parent:			JP_Condition
 Id:             JP-Condition-eCS
-Title:  "Core6 : JP_Condition_eCS"
-Description: "診療6情報・サマリー用　Conditionリソース（傷病名情報）プロファイル"
+Title:  "診療情報・サマリー汎用 :  JP_Condition_eCS"
+Description: "診療情報・サマリー汎用 　Conditionリソース（傷病名情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*

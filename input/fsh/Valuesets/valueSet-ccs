@@ -1,3 +1,12 @@
+ValueSet:  JP_CLINS_BundleCategory_VS
+Id:   jp-clins-bundlecategory-vs
+Description: "６情報Bundleカテゴリー　valueSet"
+* ^url = $JP_CLINS_BundleCategory_VS
+* ^title = "６情報Bundleカテゴリー　valueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system $JP_CLINS_BundleCategory_CS
+
 ValueSet:  JP_Specimen_JLAC10_SpecimenCode_VS
 Id:   jp-specimen-jlac10-specimencode-vs
 Description: "未コード化コードを含むJLAC10検体材料コードvalueSet"

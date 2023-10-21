@@ -12,7 +12,19 @@ Description: "長期保存／未告知診療情報のためのフラグコード
 * #LTS  "長期保存"
 * #UNINFORMED  "未告知"
 
-
+CodeSystem: JP_CLINS_BundleCategory_CS
+Id: jp-clins-bundlecategory-cs
+Description: "６情報Bundleカテゴリー　CodeSystem"
+* ^url = $JP_CLINS_BundleCategory_CS
+* ^title = "６情報Bundleカテゴリー　CodeSystem"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #AllergyIntolerance  "AllergyIntolerance"
+* #Condition "Condition"
+* #MedicationRequest "MedicationRequest"
+* #Observation  "Observation"
 
 
 CodeSystem: JP_CLINS_ObsLabResult_Uncoded_CS

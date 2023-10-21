@@ -1,7 +1,7 @@
 // ==================================================
 //   Profile 定義 診療情報・サマリー汎用
 //   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
-//   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
+//   電子カルテ情報共有サービスに送信する場合には、この派生プロファイルを用いること。
 //   処方オーダの１処方薬情報 リソースタイプ:MedicationRequest
 //   親プロファイル:JP_MedicationRequest
 // ==================================================
@@ -19,7 +19,7 @@ Description: "診療情報・サマリー汎用　MedicationRequestリソース�
 * ^date = "2023-10-18"
 * . ^short = "診療情報として処方オーダの１処方薬情報の格納に使用する"
 * . ^definition = "診療情報として処方オーダの１処方薬情報の格納に使用する"
-* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
+* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、この派生プロファイルを用いること。"
 
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
@@ -104,9 +104,16 @@ Description: "診療情報・サマリー汎用　MedicationRequestリソース�
 
 // 患者情報
 * subject 1..1   MS
+* subject.refernece 0..1 MS
+* subject.refernece only Reference(JP_Patient)
+* subject.identifier.system = $JP_CLINS_Idsysmem_JP_Insurance_member
+* subject.identifier.system = $JP_Hospital_PatientID
 * subject ^short = "患者の被保険者個人識別子情報によるPatientリソース参照指示"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在することを前提に、そのリソースに記述されれいる被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述するか。またはそのリソースのfullUrlを記述する（comment参照のこと）。"
-* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法をとっても構わない。"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在することを前提に、そのリソースでの被保険者個人識別子を記述する。"
+* subject ^comment = "３文書６情報の作成では、別途BundleリソースでPatientリソースが送信されているので、その被保険者個人識別子を明示することにより患者を参照する。"
+
+
+
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)

@@ -3,8 +3,7 @@
   "id": "Example-Patient-minimun",
   "meta": {
     "profile": [
-      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient",
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS"
+      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
     ]
   },
   "identifier": [

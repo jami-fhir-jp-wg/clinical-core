@@ -1,13 +1,15 @@
 // ==================================================
-//   Profile 定義 診療６情報・サマリー用
+//   Profile 定義 診療情報・サマリー汎用
+//   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
+//   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
 //   アレルギー情報／薬剤禁忌 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance
 // ==================================================
 Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
-Title:  "Core6 : JP_AllergyIntolerance_eCS"
-Description: "診療6情報・サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
+Title:  "診療情報・サマリー汎用 : JP_AllergyIntolerance_eCS"
+Description: "診療情報・サマリー汎用 AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*

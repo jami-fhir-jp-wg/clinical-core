@@ -1,3 +1,16 @@
+
+Alias: $JP_BundleIdentifier = http://jpfhir.jp/fhir/clins/bundle-identifier
+Alias: $JP_CLINS_BundleCategory_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_BundleCategory_CS
+Alias: $JP_CLINS_BundleCategory_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_BundleCategory_VS
+Alias: $JP_CLINS_BundleCategory = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_CLINS_BundleCategory
+Alias: $JP_Hospital_PatientID = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID
+Alias: $JP_Insurance_memberID = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
+Alias: $JP_Hospital_PatientID_Pseudonymized = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID_Pseudonymized
+Alias: $JP_Insurance_memberID_Pseudonymized = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID_Pseudonymized
+
+Alias: $JP_Bundle_CLINS_MedicationRequest = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS_MedicationRequest
+
+
 Alias: $JP_MedicationCategoryMERIT9_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS
 // 次のはローカルコード体系で医療機関ごとにかわる
 Alias: $Icode = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567
@@ -33,7 +46,8 @@ Alias: $JP_Organization_eCS_department_Contained = http://jpfhir.jp/fhir/eClinic
 //////
 Alias: $communication-category = http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category
 
-Alias: $JP_MedicationRequest_eCS = http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_eClinicalSummary
+Alias: $JP_MedicationRequest_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
+Alias: $JP_MedicationRequest_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS
 
 Alias: $JP_Organization_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained
 

@@ -8,6 +8,7 @@ rm -rf ../ExampleJson
 mkdir ../ExampleJson
 mv package/*Example* ../ExampleJson/
 gtar czf jp-clins.tgz package
+rm ../packages_snapshot/jp-clins.tgz
 mv jp-clins.tgz ../packages_snapshot
 cd ..
-rm -rf fsh-generated
+#rm -rf fsh-generated
