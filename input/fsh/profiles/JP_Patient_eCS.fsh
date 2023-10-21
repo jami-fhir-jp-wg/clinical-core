@@ -1,7 +1,8 @@
 Profile: JP_Patient_eCS
 Parent: JP_Patient
 Id: JP-Patient-eCS
-Description: "診療情報・サマリー汎用 : 対象患者のPatientプロファイル　JP_Patientの派生プロファイル"
+Title: "診療情報・サマリー汎用 : JP_Patient_eCS"
+Description: "診療情報・サマリー汎用 : Patientリソース（患者情報）プロファイル　ー　JP_Patientの派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
 * ^status = #active
 

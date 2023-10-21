@@ -1,8 +1,10 @@
 Profile: JP_Patient_CLINS_eCS
 Parent: JP_Patient_eCS
 Id: JP-Patient-CLINS-eCS
-Title: "JP_Patient_CLINS_eCS"
+Title: "電子カルテ共有サービス用: JP_Patient_CLINS_eCS"
 Description: "電子カルテ共有サービス用: Patientリソース（患者情報）プロファイル"
+
+
 * ^url = $JP_Patient_CLINS_eCS
 * ^status = #active
 * ^date = "2023-10-15"
