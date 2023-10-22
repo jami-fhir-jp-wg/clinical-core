@@ -1,4 +1,4 @@
-Alias: $JP_CLINS_CodeSystem_CoreLabo_CS = http://jpfhir.jp/fhir/CodeSystem/JP-CLINS-ObsLabResult-CoreLabo-CS
+Alias: $JP_CLINS_CodeSystem_CoreLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP-CLINS-ObsLabResult-CoreLabo-CS
 Alias: $JP_CLINS_ValueSet_CoreLabo_VS = http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-VS
 
 Alias: $JP_CLINS_CodeSystem_InfectionLabo_CS = http://jpfhir.jp/fhir/CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS

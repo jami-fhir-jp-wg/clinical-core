@@ -8,7 +8,7 @@
 Profile: JP_Patient_CLINS_eCS
 Parent: JP_Patient_eCS
 Id: JP-Patient-CLINS-eCS
-Title: "CLINS 電子カルテ共有サービス用:JP_Patient_CLINS_eCS"
+Title: "CLINS電カル共有サービス用:JP_Patient_CLINS_eCS"
 Description: "CLINS 電子カルテ共有サービス用: Patientリソース（患者情報）プロファイル。JP_Patient_eCSからの派生プロファイル。"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS

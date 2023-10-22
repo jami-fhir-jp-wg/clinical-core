@@ -6,8 +6,8 @@
 Profile: JP_Observation_LabResult_CLINS_eCS
 Parent: JP_Observation_LabResult_eCS
 Id: JP-Observation-LabResult-CLINS-eCS
-Title:  "CLINS:JP_Observation_LabResult_CLINS_eCS"
-Description: "CLINS 電子カルテ共有サービス用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル JP_Observation_LabResult_eCSからの派生プロファイル。"
+Title:  "CLINS電カル共有サービス用:JP_Observation_LabResult_CLINS_eCS"
+Description: "CLINS 電子カルテ共有サービス用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル。 JP_Observation_LabResult_eCSからの派生プロファイル。"
 
 
 * extension[eCS_InstitutionNumber] 1..1 MS

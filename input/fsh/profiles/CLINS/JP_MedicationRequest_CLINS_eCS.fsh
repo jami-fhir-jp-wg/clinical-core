@@ -6,7 +6,7 @@
 Profile: JP_MedicationRequest_CLINS_eCS
 Parent: JP_MedicationRequest_eCS
 Id: JP-MedicationRequest-CLINS-eCS
-Title:  "CLINS 電子カルテ共有サービス用:JP_MedicationRequest_CLINS_eCS"
+Title:  "CLINS電カル共有サービス用:JP_MedicationRequest_CLINS_eCS"
 Description: "CLINS 電子カルテ共有サービス用 MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル。JP_MedicationRequest_eCSからの派生プロファイル。"
 
 * extension[eCS_InstitutionNumber] 1..1 MS
