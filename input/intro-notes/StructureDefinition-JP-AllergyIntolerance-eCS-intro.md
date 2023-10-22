@@ -30,24 +30,22 @@
 ### 必須要素
   - resourceType : リソースタイプ "AllergyIntolerance"
   - meta.lastUpdated : 最終更新日時
-  - extension (InstitutionNumber) : 医療機関番号１０桁
-  - contained (JP_Patient) : JP_Patientリソースのcontainedは必須。
+  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - extension (eCS_InstitutionNumber) : 医療機関番号１０桁
   - identifier : インスタンス識別ID
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
-  - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。
   - code : アレルギー・不耐反応の対象物の情報
   - patient : このアレルギー不耐症を有する患者のFHIRリソースへの参照。３文書６情報の作成では、 contained (JP_Patient)リソースへのリテラル参照を設定する。
 
 ### 条件により必須
   - meta.tag : 電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に必須。
-  - meta.tag : ３文書６情報の作成で未説明フラグ（病名の未告知など）を設定する場合に必須。。
-  - category : ３文書６情報の作成では、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。
+  - category : 電子カルテ情報共有サービス、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。
   - criticality :  同上
 
 ### 推奨要素
   - contained (JP_Encounter) : アレルギー登録時の入院外来区分情報
   - contained (JP_Practitioner) : アレルギー登録者の情報
-  - category : 特定された原因物質のカテゴリ
+  - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。
   - encounter : アレルギー登録時の入院外来区分情報。
   - recordedDate : この状態が記録された日時
   - recorder : アレルギー登録者の情報。

@@ -19,23 +19,24 @@
 ### 必須要素
   - resourceType : リソースタイプ "Condition"
   - meta.lastUpdated : 最終更新日時
-  - extension (InstitutionNumber) : 医療機関番号１０桁
-  - contained (JP_Patient) : JP_Patientリソースのcontainedは必須。
+  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - extension (eCS_InstitutionNumber) : 医療機関番号１０桁
   - identifier : インスタンス識別ID
+  - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
   - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。
-  - category : 臨床的状態に割り当てられたカテゴリー。設定する場合には、problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。３文書６情報の作成では'encounter-diagnosis'を設定すること。
+  - category : 臨床的状態に割り当てられたカテゴリー。設定する場合には、problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは'encounter-diagnosis'を設定すること。
   - code : 傷病名のコードと名称。code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。コード化は必須。
-  - subject : 対象となる患者のFHIRリソースへの参照。contained (JP_Patient)リソースへのリテラル参照を設定する。
+  - subject : 対象となる患者のFHIRリソースへの参照。患者リソースのidentifierを設定する。
 
 ### 条件により必須
   - meta.tag : 電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に必須。
-  - meta.tag : ３文書６情報の作成で未説明フラグ（病名の未告知など）を設定する場合に必須。
+  - meta.tag : 電子カルテ情報共有サービスで未告知フラグを設定する場合に必須。
   - clinicalStatus : 臨床的状態(傷病の状態)のコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。abatementDateTime要素に日付が設定されている場合にはその時点での状態を設定し、同要素がない場合にはactiveを設定する。
-  - onsetDatetime : ３文書６情報の作成では、病名開始日をdateTime型で記述することが必須。
-  - abatementDateTime : ３文書６情報の作成では、病名終了日や転帰日がある場合には、dateTime型で記述することが必須。
+  - onsetDatetime : 電子カルテ情報共有サービスでは、病名開始日をdateTime型で記述することが必須。
+  - abatementDateTime : 電子カルテ情報共有サービスでは、病名終了日や転帰日がある場合には、dateTime型で記述することが必須。
 
 ### 推奨要素
-  - extension (Department) : 診療科情報
+  - extension (eCS_Department) : 診療科情報
   - contained (JP_Encounter) : 傷病名登録時の入院外来区分情報
   - contained (JP_Practitioner) : 傷病名登録者の情報
   - encounter : 傷病名登録時の入院外来区分情報
