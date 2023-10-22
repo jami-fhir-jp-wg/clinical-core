@@ -1,22 +1,3 @@
-Profile: JP_ServiceRequest
-Parent:	ServiceRequest
-Id:             JP-ServiceRequest
-Description:    "JP-ServiceRequest　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest"
-* ^status = #active
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
-
-Profile: JP_Specimen
-Parent:	Specimen
-Id:             JP-Specimen
-Description:    "JP-Specimen　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
-* ^status = #active
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
 Profile:        JP_Observation_Common_eCS
 Parent:			JP_Observation_Common
 Id:             JP-Observation-eCS
@@ -32,16 +13,6 @@ Description:    "JP_DocumentReference_CDAdocument　暫定プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DocumentReference_CDAdocument"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
-
-
-Profile:        JP_DocumentReference
-Parent:			DocumentReference
-Id:             JP-DocumentReference
-Description:    "JP_DocumentReference　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DocumentReference"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
 
 Profile:        JP_DocumentReference_eCS
 Parent:			JP_DocumentReference
@@ -70,15 +41,6 @@ Description:    "JP_ImagingStudy_Radiology_eCS　暫定プロファイル"
 * meta.lastUpdated 0.. MS
 
 
-Profile:        JP_MedicationStatement
-Parent:			MedicationStatement
-Id:             JP-MedicationStatement
-Description:    "JP_MedicationStatement　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationStatement"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
-
 Profile:        JP_MedicationStatement_eCS
 Parent:			JP_MedicationStatement
 Id:             JP-MedicationStatement-eCS
@@ -96,15 +58,6 @@ Description:    "JP_Procedure_eCS　暫定プロファイル"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 
-
-Profile:        JP_DeviceUseStatement
-Parent:			DeviceUseStatement
-Id:             JP-DeviceUseStatement
-Description:    "JP_DeviceUseStatement　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_DeviceUseStatement"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
 Profile:        JP_DeviceUseStatement_eCS
 Parent:			JP_DeviceUseStatement
 Id:             JP-DeviceUseStatement-eCS
@@ -113,14 +66,6 @@ Description:    "JP_DeviceUseStatement_eCS　暫定プロファイル"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 
-
-Profile:        JP_Device
-Parent:			Device
-Id:             JP-Device
-Description:    "JP_Device　暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Device"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
 
 
 Profile:        JP_Device_eCS
@@ -132,17 +77,6 @@ Description:    "JP_Device_eCS　暫定プロファイル"
 * meta.lastUpdated 0.. MS
 
 
-Profile:        JP_Consent
-Parent:			Consent
-Id:             JP-Consent
-Description:    "JP_Consent 暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Consent"
-* identifier
-  * ^example[0].label = "General"
-  * ^example[=].valueIdentifier.system = "http://jpfhir.jp/fhir/core/IdSystem/documentInstance-identifier"
-  * ^example[=].valueIdentifier.value = "123456"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
 
 Profile:        JP_Consent_eCS
 Parent:			JP_Consent
@@ -156,27 +90,11 @@ Description:    "JP_Consent_eCS 暫定プロファイル"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 
-Profile:        JP_ResearchSubject
-Parent:			ResearchSubject
-Id:             JP-ResearchSubject
-Description:    "JP_ResearchSubject 暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchSubject"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
 Profile:        JP_ResearchSubject_eCS
 Parent:			JP_ResearchSubject
 Id:             JP-ResearchSubject-eCS
 Description:    "JP_ResearchSubject_eCS 暫定プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_ResearchSubject_eCS"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
-Profile:        JP_ResearchStudy
-Parent:			ResearchStudy
-Id:             JP-ResearchStudy
-Description:    "JP_ResearchStudy 暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchStudy"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 
@@ -188,26 +106,11 @@ Description:    "JP_ResearchStudy_eCS 暫定プロファイル"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
 
-Profile:        JP_RelatedPerson
-Parent:			RelatedPerson
-Id:             JP-RelatedPerson
-Description:    "JP_RelatedPerson 暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_RelatedPerson"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
 
 Profile:        JP_RelatedPerson_eCS
 Parent:			JP_RelatedPerson
 Id:             JP-RelatedPerson-eCS
 Description:    "JP_RelatedPerson_eCS 暫定プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_RelatedPerson_eCS"
-* ^date = "2023-03-31"
-* meta.lastUpdated 0.. MS
-
-Profile:        JP_Binary
-Parent:			Binary
-Id:             JP-Binary
-Description:    "JP_Binary 暫定プロファイル"
-* ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary"
 * ^date = "2023-03-31"
 * meta.lastUpdated 0.. MS
