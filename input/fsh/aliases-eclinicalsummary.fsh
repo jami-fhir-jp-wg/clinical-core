@@ -1,8 +1,10 @@
 
 Alias: $JP_BundleIdentifier = http://jpfhir.jp/fhir/clins/bundle-identifier
+
 Alias: $JP_CLINS_BundleCategory_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_BundleCategory_CS
 Alias: $JP_CLINS_BundleCategory_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_BundleCategory_VS
 Alias: $JP_CLINS_BundleCategory = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_CLINS_BundleCategory
+
 Alias: $JP_Hospital_PatientID = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID
 Alias: $JP_Insurance_memberID = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
 Alias: $JP_Hospital_PatientID_Pseudonymized = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID_Pseudonymized
@@ -10,6 +12,8 @@ Alias: $JP_Insurance_memberID_Pseudonymized = http:/jpfhir.jp/fhir/eCS/Idsysmem/
 
 Alias: $JP_Bundle_CLINS_MedicationRequest = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS_MedicationRequest
 
+Alias: $JP_MedicationDosage_eCS  = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationDosage_eCS
+Alias: $JP_Encounter_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
 
 Alias: $JP_MedicationCategoryMERIT9_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS
 // 次のはローカルコード体系で医療機関ごとにかわる
@@ -17,51 +21,51 @@ Alias: $Icode = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567
 
 Alias: $JP_ehrshrs_indication_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
 
-Alias: $JP_Patient_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS
+Alias: $JP_Patient_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
 Alias: $JP_Patient_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
 
-Alias: $JP_Observation_LabResult_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eClinicalSummary
+Alias: $JP_Observation_LabResult_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
 
-Alias: $JP_Observation_LabResult_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eCS_Contained
+// Alias: $JP_Observation_LabResult_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS_Contained
 
-Alias: $JP_Practitioner_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary
+Alias: $JP_Practitioner_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS
 
-Alias: $JP_Patient_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS_Contained
+Alias: $JP_Patient_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS_Contained
 
-Alias: $JP_Specimen_LaboResult_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Specimen_eCS_Contained
+Alias: $JP_Specimen_LaboResult_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Specimen_eCS_Contained
 
-Alias: $JP_Encounter_OW_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_OW_eCS_Contained
+Alias: $JP_Encounter_OW_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_OW_eCS_Contained
 
-Alias: $JP_Practitioner_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eCS_Contained
+Alias: $JP_Practitioner_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS_Contained
 
-Alias: $JP_ServiceRequest_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ServiceRequest_eCS_Contained
+Alias: $JP_ServiceRequest_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_ServiceRequest_eCS_Contained
 
-Alias: $JP_PractitionerRole_eCS_author = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_PractitionerRole_eClinicalSummary_author
+Alias: $JP_PractitionerRole_eCS_author = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_PractitionerRole_eCS_author
 
-Alias: $JP_Practitioner_eCS_author = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary_author
+Alias: $JP_Practitioner_eCS_author = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS_author
 
-Alias: $JP_Organization_eCS_department = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary_department
+Alias: $JP_Organization_eCS_department = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_department
 
-Alias: $JP_Organization_eCS_department_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eClinicalSummary_department_Contained
+// Alias: $JP_Organization_eCS_department_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_department_Contained
 //////
 Alias: $communication-category = http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category
 
 Alias: $JP_MedicationRequest_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
 Alias: $JP_MedicationRequest_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS
 
-Alias: $JP_Organization_eCS_Contained = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Organization_eCS_Contained
+// Alias: $JP_Organization_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_Contained
 
-Alias: $JP_AllergyIntolerance_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary
-Alias: $JP_DrugContraIndication_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DrugContraIndication_eClinicalSummary
+Alias: $JP_AllergyIntolerance_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
+Alias: $JP_DrugContraIndication_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DrugContraIndication_eCS
 
-Alias: $JP_Condition_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary
+Alias: $JP_Condition_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
 
-Alias: $JP_Observation__InfectionRelated_eCS = http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_InfectionRelated_eClinicalSummary
-Alias: $observation-subcategory-cs = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
-Alias: $observation-subcategory-vs = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/observation-subcategory-vs
+Alias: $JP_Observation__InfectionRelated_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_InfectionRelated_eCS
+Alias: $observation-subcategory-cs = http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
+Alias: $observation-subcategory-vs = http://jpfhir.jp/fhir/eCS/ValueSet/observation-subcategory-vs
 
-Alias: $JP_ObservationLabResultCode_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_ObservationLabResultCode_InfectionRelated_VS
-Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
+Alias: $JP_ObservationLabResultCode_InfectionRelated_VS = http://jpfhir.jp/fhir/eCS/ValueSet/JP_ObservationLabResultCode_InfectionRelated_VS
+Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eCS/ValueSet/JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
 //Alias: $JP_ObservationLabResultCode_CS = http://medis.or.jp/CodeSystem/master-JLAC10-17digits
 Alias: $JP_ObservationLabResultCode_CSOID = urn:oid:1.2.392.200119.4.504
 
@@ -81,13 +85,13 @@ Alias: $route-codes = http://jpfhir.jp/fhir/core/CodeSystem/route-codes
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 
 
-Alias: $JP_PractionerRole_eClinicalSummary_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_PractitionerRole_CS
-Alias: $JP_PractionerRole_eClinicalSummary_VS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/practitioner-role-category
+Alias: $JP_PractionerRole_eCS_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_PractitionerRole_CS
+Alias: $JP_PractionerRole_eCS_VS = http://jpfhir.jp/fhir/eCS/ValueSet/practitioner-role-category
 
 // 検体材料
-Alias:  $JP_Specimen_JLAC10_SpecimenCode_VS = http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/JP_Specimen_JLAC10_SpecimenCode_VS
+Alias:  $JP_Specimen_JLAC10_SpecimenCode_VS = http://jpfhir.jp/fhir/eCS/CodeSystem/JP_Specimen_JLAC10_SpecimenCode_VS
 Alias: $JP_Specimen_JLAC10_SpecimenCode_CS = http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes
-Alias: $JP_ObservationLabSpecimenLocal_CS = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabSepecimen_LocalCode_CS
+Alias: $JP_ObservationLabSpecimenLocal_CS = http://jpfhir.jp/fhir/eCS/ValueSet/JP_CLINS_ObsLabSepecimen_LocalCode_CS
 
 
 // 検査結果項目
@@ -99,7 +103,7 @@ Alias: $JP_ObservationLabResultLocal_CS = http://jpfhir.jp/fhir/clins/CodeSystem
 Alias: $JP_ObservationLabResultLocalUncoded_CS = http://jpfhir.jp/fhir/clins/ValueSet/JP_ObservationLabResultLocalUncoded_CS
 
 // 感染症項目サブカテゴリーを登録したCodeSystem 　とValueSet
-Alias: $observation-labo_subcategory-cs = http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_Observation_Labo_SubCategory_CS
+Alias: $observation-labo_subcategory-cs = http://jpfhir.jp/fhir/eCS/ValueSet/JP_Observation_Labo_SubCategory_CS
 
 // リソースを識別するidentifierのsystem
 Alias: $systemTypeOfIdentifier = http://terminology.hl7.org/CodeSystem/v2-0203

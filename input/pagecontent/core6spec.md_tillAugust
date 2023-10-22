@@ -333,7 +333,7 @@ Bundleリソースに格納されるすべてのリソース・インスタン�
 
 #### 施設固有の検査項目コードとその名称の設定について
 JLAC10コードの設定の有無に関わらず、施設固有コードとそれに対応する施設固有名称のペアは、上記コードを設定したcode.codingとは別のcode.codingに設定（code.coding.codeとcode.coding.displayに設定）<span style="color: red; ">しなければならない。</span>
-この場合のsystem値は"http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS"を固定で設定する。
+この場合のsystem値は"http://jpfhir.jp/fhir/eCS/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS"を固定で設定する。
 
 ### 「臨床検査項目基本コードセット」に掲載されない検査項目の場合：
  - 当該項目のJLACコード
@@ -346,7 +346,7 @@ JLAC10コードの設定の有無に関わらず、施設固有コードとそ�
 
 #### 施設固有の検査項目コードとその名称の設定について
 JLAC10コード、未標準化コードの設定の有無に関わらず、施設固有コードとそれに対応する施設固有名称のペアは、上記コードを設定したcode.codingとは別のcode.codingに設定（code.coding.codeとcode.coding.displayに設定）<span style="color: red; ">しなければならない。</span>
-この場合のsystem値は"http://jpfhir.jp/fhir/eClinicalSummary/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS"を固定で設定する。
+この場合のsystem値は"http://jpfhir.jp/fhir/eCS/ValueSet/JP_CLINS_ObsLabResult_LocalCode_CS"を固定で設定する。
 
 ## アレルギー情報と薬剤禁忌情報の区別
 いわゆる6情報のうち、アレルギー情報と薬剤禁忌情報とは同じAllergyIntoleranceリソースタイプを使用し、同じProfile「診療６情報・サマリー用　AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル」に準拠してデータを作成するものとし、両者の区別はAllergyIntoleranceリソースデータのcategory要素とcriticality要素に設定される値の組み合わせの違いにより以下の表に従い処理される。

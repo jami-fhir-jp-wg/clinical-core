@@ -1,7 +1,7 @@
 ValueSet: JP_CLINS_ValueSet_CoreLabo_abo_bld_VS
 Id: jp-clins-valueset-corelabo-abo-bld-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: ABO-BLD ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 血液型(ABO) JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_abo_bld_VS
@@ -17,8 +17,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_rh_bld_VS
 Id: jp-clins-valueset-corelabo-rh-bld-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Rh-BLD ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 血液型(Rh) JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_rh_bld_VS
@@ -34,8 +34,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_alb_VS
 Id: jp-clins-valueset-corelabo-alb-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: ALB ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 アルブミン JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_alb_VS
@@ -53,8 +53,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_alp_VS
 Id: jp-clins-valueset-corelabo-alp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: ALP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 アルカリホスファターゼ JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_alp_VS
@@ -74,8 +74,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_alt_VS
 Id: jp-clins-valueset-corelabo-alt-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: ALT ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 ALT(GPT) JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_alt_VS
@@ -95,8 +95,9 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_amy_VS
 Id: jp-clins-valueset-corelabo-amy-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: AMY ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC10 ValueSet"
+
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_amy_VS
@@ -115,8 +116,9 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_aptt_VS
 Id: jp-clins-valueset-corelabo-aptt-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: APTT ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 活性化部分トロンボプラスチン時間 JLAC10 ValueSet"
+
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_aptt_VS
@@ -131,8 +133,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ast_VS
 Id: jp-clins-valueset-corelabo-ast-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: AST ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 AST(GOT) JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ast_VS
@@ -152,8 +154,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_nt_probnp_VS
 Id: jp-clins-valueset-corelabo-nt-probnp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: NT-proBNP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペプチド前駆体Ｎ端フラグメント JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_nt_probnp_VS
@@ -175,8 +177,9 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_bs_VS
 Id: jp-clins-valueset-corelabo-bs-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: BS ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 グルコース(血糖) JLAC10 ValueSet"
+
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_bs_VS
@@ -211,8 +214,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_bun_VS
 Id: jp-clins-valueset-corelabo-bun-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: BUN ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_bun_VS
@@ -234,8 +237,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ca_VS
 Id: jp-clins-valueset-corelabo-ca-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Ca ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 カルシウム JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ca_VS
@@ -253,8 +256,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_K_VS
 Id: jp-clins-valueset-corelabo-k-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: K ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 カリウム JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_k_VS 
@@ -272,8 +275,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_che_VS
 Id: jp-clins-valueset-corelabo-che-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: ChE ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 コリンエステラーゼ JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_che_VS
@@ -291,8 +294,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ck_VS
 Id: jp-clins-valueset-corelabo-ck-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: CK ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 クレアチンキナーゼ JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ck_VS
@@ -311,8 +314,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_cl_VS
 Id: jp-clins-valueset-corelabo-cl-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Cl ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 クロール JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_cl_VS
@@ -328,8 +331,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_cre_VS
 Id: jp-clins-valueset-corelabo-cre-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Cre ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 クレアチニン JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_cre_VS
@@ -352,8 +355,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_crp_VS
 Id: jp-clins-valueset-corelabo-crp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: CRP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_crp_VS
@@ -378,8 +381,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_crp_class_VS
 Id: jp-clins-valueset-corelabo-crp-class-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: CRP-class ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判定 JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_crp_class_VS
@@ -393,8 +396,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_cys_c_VS
 Id: jp-clins-valueset-corelabo-cys-c-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Cys-C ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 シスタチンC JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_cys_c_VS
@@ -413,8 +416,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_d_bil_VS
 Id: jp-clins-valueset-corelabo-d-bil-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: D-Bil ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 直接ビリルビン JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_d_bil_VS
@@ -431,8 +434,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_dd_VS
 Id: jp-clins-valueset-corelabo-dd-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: DD ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 Dダイマー JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_dd_VS
@@ -457,8 +460,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_fbs_VS
 Id: jp-clins-valueset-corelabo-fbs-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: FBS ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_fbs_VS
@@ -473,8 +476,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ggt_VS
 Id: jp-clins-valueset-corelabo-ggt-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: GGT ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ggt_VS
@@ -493,8 +496,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ngsp_VS
 Id: jp-clins-valueset-corelabo-ngsp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: HbA1c-NGSP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_hba1c_ngsp_VS
@@ -517,8 +520,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_hdl_c_VS
 Id: jp-clins-valueset-corelabo-hdl-c-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: HDL-C ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 HDL-コレステロール ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_hdl_c_VS
@@ -537,8 +540,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ld_VS
 Id: jp-clins-valueset-corelabo-ld-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: LD ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 LD(LDH) ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ld_VS
@@ -557,8 +560,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ldl_c_VS
 Id: jp-clins-valueset-corelabo-ldl-c-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: LDL-C ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 LDL-コレステロール ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ldl_c_VS
@@ -575,8 +578,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_na_VS
 Id: jp-clins-valueset-corelabo-na-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Na ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 ナトリウム ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_na_VS
@@ -593,8 +596,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_pt_sec_VS
 Id: jp-clins-valueset-corelabo-pt-sec-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: PT-sec ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 プロトロンビン時間 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_pt_sec_VS
@@ -612,8 +615,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_pt_act_VS
 Id: jp-clins-valueset-corelabo-pt-act-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: PT-act ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 プロトロンビンACT ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_pt_act_VS
@@ -628,8 +631,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_pt_inr_VS
 Id: jp-clins-valueset-corelabo-pt-inr-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: PT-INR ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 プロトロンビンINR ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_pt_inr_VS
@@ -646,8 +649,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_pt_ratio_VS
 Id: jp-clins-valueset-corelabo-pt-ratio-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: PT-ratio ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 プロトロンビン比 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_pt_ratio_VS
@@ -656,14 +659,14 @@ Description: "６情報用検体検査項目セット"
 * ^experimental = false
 * ^date = "2023-10-15"
 * ^copyright = "JAMI"
-// プロトロンビンINR^^
+// プロトロンビンratio^^
 * $JP_CLINS_CodeSystem_CoreLabo_CS#2B030000002299955  "PT-ratio"  // その他  (空白)  血漿
 * $JP_CLINS_CodeSystem_CoreLabo_CS#2B030000002231155  "PT-ratio"  // 凝固時間測定  (空白)  血漿
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_hb_VS
 Id: jp-clins-valueset-corelabo-hb-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: Hb ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 血算-ヘモグロビン ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_hb_VS
@@ -679,8 +682,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_plt_VS
 Id: jp-clins-valueset-corelabo-hplt-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: PLT ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 血算-血小板数 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_plt_VS
@@ -697,8 +700,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_rbc_VS
 Id: jp-clins-valueset-corelabo-rbc-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: RBC ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 血算-赤血球数 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_rbc_VS
@@ -714,8 +717,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_wbc_VS
 Id: jp-clins-valueset-corelabo-wbc-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: WBC ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 血算-白血球数 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_wbc_VS
@@ -731,8 +734,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_t_cho_VS
 Id: jp-clins-valueset-corelabo-t-cho-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: T-CHO ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 総コレステロール ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_t_cho_VS
@@ -749,8 +752,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_t_bil_VS
 Id: jp-clins-valueset-corelabo-t-bil-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: T-Bil ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 総ビリルビン ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_t_bil_VS
@@ -766,8 +769,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_tp_VS
 Id: jp-clins-valueset-corelabo-tp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: TP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 総蛋白 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_tp_VS
@@ -782,8 +785,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_tg_VS
 Id: jp-clins-valueset-corelabo-tg-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: TG ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 中性脂肪 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_tg_VS
@@ -801,8 +804,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ua_VS
 Id: jp-clins-valueset-corelabo-ua-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: UA ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿酸 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_ua_VS
@@ -818,8 +821,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_bld_VS
 Id: jp-clins-valueset-corelabo-u-bld-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: U-Bld ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿潜血 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_u_bld_VS
@@ -839,8 +842,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_tp_VS
 Id: jp-clins-valueset-corelabo-u-tp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: U-TP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿蛋⽩ ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_u_tp_VS
@@ -860,8 +863,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_ac_VS
 Id: jp-clins-valueset-corelabo-u-ac-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: U-A/C ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿中アルブミン/クレアチニン比 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_u_ac_VS
@@ -877,8 +880,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_pc_VS
 Id: jp-clins-valueset-corelabo-u-pc-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: U-P/C ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿中蛋白/クレアチニン比 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_u_pc_VS
@@ -894,8 +897,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_glu_VS
 Id: jp-clins-valueset-corelabo-u-glu-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: U-Glu ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 尿糖 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_u_glu_VS
@@ -915,8 +918,8 @@ Description: "６情報用検体検査項目セット"
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_bnp_VS
 Id: jp-clins-valueset-corelabo-bnp-vs
-Title: "JP Core Medication IngredientStrength StrengthType ValueSet"
-Description: "６情報用検体検査項目セット"
+Title: "JCLINS 電子カルテ共有サービス用: BNP ValueSet"
+Description: "JCLINS 電子カルテ共有サービス用 脳性Na利尿ペプチド ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLabo_bnp_VS

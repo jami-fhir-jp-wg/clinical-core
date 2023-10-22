@@ -11,12 +11,18 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 * ^status = #active
 * ^date = "2023-10-09"
 * ^purpose = "診療サマリーや6情報等に記述する際に、作成発行した医療機関番号を記述するため。"
+
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"
 * ^context[+].type = #element
 * ^context[=].expression = "AllergyIntolerance"
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
+* ^context[+].type = #element
+* ^context[=].expression = "Patient"
+* ^context[+].type = #element
+* ^context[=].expression = "Observation"
+
 * . ^short = "作成発行した医療機関番号を記述するための拡張"
 * . ^definition = "診療サマリーや6情報等に記述する際に、作成発行した医療機関番号を記述する"
 * url = $JP_eCS_InstitutionNumber (exactly)

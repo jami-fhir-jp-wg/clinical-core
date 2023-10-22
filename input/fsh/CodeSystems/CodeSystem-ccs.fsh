@@ -50,7 +50,7 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^caseSensitive = false
 * #LUNCODED  "Locally Uncoded"
 
-//$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eClinicalSummary/CodeSystem/observation-subcategory-cs
+//$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
 CodeSystem: JP_Observation_SubCategory_CS
 Id: jp-observation-subcategory-cs
 Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"

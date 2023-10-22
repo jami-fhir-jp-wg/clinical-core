@@ -157,7 +157,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl72 width=87 style='width:65pt'>canonical(StructureDefinition)</td>
   <td class=xl72 width=359 style='width:269pt'>準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。</td>
   <td class=xl72 width=36 style='width:27pt'>固定値</td>
-  <td class=xl75 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition&quot;<br>
+  <td class=xl75 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition&quot;<br>
    
   3文書６情報の作成において本リソースデータを検証したい場合には、&quot;http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition&quot;を使用する。</td>
  </tr>

@@ -170,7 +170,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl78 width=36 style='width:27pt'>固定値(<ruby>用途<span
   style='display:none'><rt>ヨウト </rt></span></ruby>に応じてどちらかを<ruby>選択<span
   style='display:none'><rt>センタク </rt></span></ruby>)</td>
-  <td class=xl202 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_MedicationRequest&quot;<br>
+  <td class=xl202 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest&quot;<br>
     3文書６情報の作成において本リソースデータ<ruby>を検<span style='display:none'><rt>ケンショウ </rt></span></ruby>証した<ruby>い場<span
   style='display:none'><rt>バアイ </rt></span></ruby>合には、&quot;h<ruby>tt<span
   style='display:none'><rt>シヨウ </rt></span></ruby>p://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest&quot;を使用する。</td>
