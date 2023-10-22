@@ -25,6 +25,7 @@ Alias: $JP_Patient_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patien
 Alias: $JP_Patient_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
 
 Alias: $JP_Observation_LabResult_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
+Alias: $JP_Observation_LabResult_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS
 
 // Alias: $JP_Observation_LabResult_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS_Contained
 
@@ -56,9 +57,12 @@ Alias: $JP_MedicationRequest_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDe
 // Alias: $JP_Organization_eCS_Contained = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_Contained
 
 Alias: $JP_AllergyIntolerance_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
+Alias: $JP_AllergyIntolerance_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS
+
 Alias: $JP_DrugContraIndication_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DrugContraIndication_eCS
 
 Alias: $JP_Condition_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
+Alias: $JP_Condition_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS
 
 Alias: $JP_Observation__InfectionRelated_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_InfectionRelated_eCS
 Alias: $observation-subcategory-cs = http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
@@ -127,7 +131,7 @@ Alias: $JP_BodySite_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.201.2 // ME
 Alias: $JP_DiseaseCategory_WHO_ICD10_CS = urn:oid:2.16.840.1.113883.6.3.1  // ICD10  HL7 regisered
 
 // 拡張
-Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP__eCS_Department
+Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department
 Alias: $JP_eCS_InstitutionNumber = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
 
 // Idsystem

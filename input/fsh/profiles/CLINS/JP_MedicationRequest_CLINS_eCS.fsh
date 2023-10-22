@@ -14,12 +14,13 @@ Description: "CLINS 電子カルテ共有サービス用 MedicationRequestリソ
 * ^url = $JP_MedicationRequest_CLINS_eCS
 * ^status = #active
 * ^date = "2023-10-04"
-* . ^short = "診療主要情報における処方オーダの１処方薬情報の格納に使用する"
-* . ^definition = "診療主要情報・厚労省6情報などにおける処方オーダの１処方薬情報の格納に使用する"
+* . ^short = "診療情報における処方オーダの１処方薬情報の格納に使用する"
+* . ^definition = "診療情報・厚労省6情報などにおける処方オーダの１処方薬情報の格納に使用する"
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS　を設定する。")
+  
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
@@ -46,25 +47,23 @@ Description: "CLINS 電子カルテ共有サービス用 MedicationRequestリソ
     and order 0..1
 /*
 * contained[patient] only  JP_Patient_CLINS_eCS
-  * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
+  * insert relative_short_definition("診療情報における患者情報をコンパクトに格納したPatientリソース")
   * ^comment = "patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。３文書６情報の作成では、JP_Patientリソースのcontainedは必須。"
 */
 * contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("診療主要情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * insert relative_short_definition("診療情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[author] only  JP_Practitioner
-  * insert relative_short_definition("診療主要情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
+  * insert relative_short_definition("診療情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
 
 * contained[order] only  JP_ServiceRequest
-  * insert relative_short_definition("診療主要情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
+  * insert relative_short_definition("診療情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
 
-
-
 // 患者情報
-* subject ^comment = "３文書６情報の作成では、別途BundleリソースでPatientリソースが送信されているので、その被保険者個人識別子を明示することにより患者を参照する。"
+* subject ^comment = "電子カルテ共有サービスでは、別途BundleリソースでPatientリソースが送信されているので、その被保険者個人識別子を明示することにより患者を参照する。"
 * subject.identifier.system = $JP_Insurance_memberID (exactly)
 
 

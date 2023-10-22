@@ -15,70 +15,33 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * ^url = $JP_Observation_LabResult_eCS
 * ^status = #active
 * ^date = "2023-05-27"
-* . ^short = "診療主要情報における検体検査結果／感染症検体検査結果の格納に使用する"
-* . ^definition = "診療主要情報・厚労省6情報などにおける検体検査結果／感染症検体検査結果の格納に使用する"
-
+* . ^short = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"
+* . ^definition = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"
+* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
-* contained ^slicing.discriminator.type = #profile
-* contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #open
-* contained contains patient 1..1
-    and encounter 0..
-    and specimen 1..
-    and order 0..
-
-* contained[patient] only  JP_Patient
-  * insert relative_short_definition("診療主要情報における患者情報をコンパクトに格納したPatientリソース")
-  * ^comment = "subject要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。３文書６情報の作成では、JP_Patientリソースのcontainedは必須。"
-
-* contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("診療主要情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
-
-* contained[specimen] only  JP_Specimen
-  * insert relative_short_definition("検体材料情報をコンパクトに格納したSpecimenリソース")
-  * ^comment = "specimen要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。"
-* contained[order] only  JP_ServiceRequest
-  * insert relative_short_definition("診療主要情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
-  * ^comment = "basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
-
-* identifier  MS
-  * insert relative_short_definition("この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるID。このID情報をキーとして１処方薬情報の更新・削除ができる一意性があること。このidentifier以外のIDも追加して複数格納しても構わない。少なくともひとつのidentifierは次の仕様に従う値を設定すること。")
-  * ^comment = "１処方薬情報を他の１処方薬情報と一意に区別できるIDを発番できない場合には、省略可能であるが、その場合にはbasedOnで指し示す処方オーダ情報の中に、この処方を作成した施設内で元のオーダを一意に識別できるIDを格納することが望ましい。"
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-
-* identifier contains resourceInstance-identifier 1..1 MS
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].system ^comment = "この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。"
-* identifier[resourceInstance-identifier].value 1..1 MS
-  * insert relative_short_definition("１処方薬情報を識別するIDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2021-00123456\"")
 
 
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 * meta.profile 0..1 MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest　を設定する。電子カルテ情報共有サービスにおいて本リソースデータを検証したい場合には、"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest"を使用する。")
-* meta.tag  ^slicing.discriminator.type = #value
-* meta.tag  ^slicing.discriminator.path = "$this"
-* meta.tag  ^slicing.rules = #open
-* meta.tag contains lts 0..1 MS
-  and uninformed 0..1 MS
+  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
 
-* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に使用する。")
-  * system 1..1 MS
-    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * code 1..1 MS
-    * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
-* meta.tag[uninformed] = $JP_ehrshrs_indication_CS#UNINFORMED
-  * insert relative_short_definition("６情報作成において未告知情報または未説明フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
-  * system 1..1 MS
-    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * code 1..1 MS
-    * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
+
+* identifier  MS
+  * insert relative_short_definition("この検査結果情報を作成した施設内で、この検査結果情報を他の処方薬情報と一意に区別できるID。このID情報をキーとして１検査結果情報の更新・削除ができる一意性があること。このidentifier以外のIDも追加して複数格納しても構わない。少なくともひとつのidentifierは次の仕様に従う値を設定すること。")
+  * ^comment = "検査結果情報を他の検査結果情報と一意に区別できるIDを発番できない場合には、省略可能であるが、その場合にはbasedOnで指し示す処方オーダ情報の中に、この処方を作成した施設内で元のオーダを一意に識別できるIDを格納することが望ましい。"
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains resourceInstance-identifier 1..1 MS
+* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
+* identifier[resourceInstance-identifier].system ^comment = "この検査結果情報を作成した施設内で、この検査結果情報を他の検査結果情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。"
+* identifier[resourceInstance-identifier].value 1..1 MS
+  * insert relative_short_definition("検査結果情報を識別するIDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2021-00123456\"")
+
+
 
 * basedOn 0..1
 * basedOn only Reference(JP_ServiceRequest)
@@ -88,23 +51,12 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 // OUL^R22.OBX[*]-11 結果状態
 * status ^definition = "検査結果値の状態。"
 * status ^definition = "検査結果値の状態。"
-* status ^comment = "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告だk泣きでは確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）、cancelled: この結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）。これらのステータスコード以外は意味的に紛らわしいので使わない方針とする。【SS-MIX2】OUL^R22.OBX[*]-11 結果状態"
+* status ^comment = "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告段階では確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）のどちらかを使用する。例外的に、cancelled: この結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）も使用でき、他にもも　http://hl7.org/fhir/observation-status　から選択可能であるが、意味的に紛らわしいので使わない。【SS-MIX2】OUL^R22.OBX[*]-11 結果状態"
 * status 1..1 MS
 
 // OUL^R22
 * category MS       
-
-/*
-* category ^slicing.discriminator.type = #pattern
-* category ^slicing.discriminator.path = "$this"
-* category ^slicing.rules = #open
-* category contains
- laboratory 1..1
-
-* category[laboratory] 1..1 MS
-* category[laboratory] = $observation-category-cs#laboratory
-*/
-
+  * insert relative_short_definition("検査結果カテゴリーのコード。system=http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS code=\"laboratory\"") 
 
 // OUL^R22.OBX[*]-3 検査項目情報
 
@@ -382,18 +334,18 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 // OUL^R22.OBX[*]-3[*]-2
 * code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
 * code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
-* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。"
+* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。ただし、3文書6情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
 
 * code.text 1..1 MS   
 * code.text ^definition = "項目名。報告書などに記載する場合に使用する表示名。"
-* code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。"
+* code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。ただし、3文書6情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
 
-// OUL^R22.PID
+// 患者情報
 * subject 1..1   MS
-* subject only Reference(JP_Patient)
-* subject ^short = "検体検査の対象となる患者。"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（、被保険者個人識別子が記述される外部リソースが蓄積されていてそれを参照する場合の記述など。"
-* subject ^comment = "３文書６情報の作成では、JP_Patientタイプのリソース（Patient.idの値が\"#patient203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述が必須であるため、そのContainedリソースのid値(Patient.id)を{\"reference\" : \"#patient203987\" }のように記述する"
+* subject ^short = "患者のPatientリソース参照記述"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在することを前提に、そのリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述するか。またはそのリソースのfullUrlを記述する（comment参照のこと）。"
+* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法をとっても構わない。電子カルテ共有サービスでは、別途BundleリソースでPatientリソースが送信されているので、その被保険者個人識別子を明示することにより患者を参照する。"
+
 
 // OUL^R22.PV1
 * encounter 0..1 MS
