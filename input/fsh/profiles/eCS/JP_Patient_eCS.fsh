@@ -1,7 +1,7 @@
 Profile: JP_Patient_eCS
 Parent: JP_Patient
 Id: JP-Patient-eCS
-Title: "eCS 診療情報・サマリー汎用:JP_Patient_eCS"
+Title: "eCS:JP_Patient_eCS"
 Description: "eCS 診療情報・サマリー汎用 Patientリソース（患者情報）プロファイル"
 
 

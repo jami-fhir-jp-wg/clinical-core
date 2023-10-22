@@ -7,7 +7,7 @@
 Profile: JP_Practitioner_eCS
 Parent: JP_Practitioner
 Id: JP-Practitioner-eCS
-Title: "eCS 診療情報・サマリー汎用:JP_Practitioner_eCS"
+Title: "eCS:JP_Practitioner_eCS"
 Description: "eCS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）プロファイル"
 
 * ^url = $JP_Practitioner_eCS

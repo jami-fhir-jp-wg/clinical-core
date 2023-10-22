@@ -6,7 +6,7 @@
 Profile: JP_Observation_LabResult_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS
-Title:  "eCS 診療情報・サマリー汎用:JP_Observation_LabResult_eCS"
+Title:  "eCS:JP_Observation_LabResult_eCS"
 Description: "eCS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS

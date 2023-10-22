@@ -8,8 +8,8 @@
 Profile: JP_MedicationRequest_eCS
 Parent: JP_MedicationRequest
 Id: JP-MedicationRequest-eCS
-Title:  "診療情報・サマリー汎用:JP_MedicationRequest_eCS"
-Description: "診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
+Title:  "eCS:JP_MedicationRequest_eCS"
+Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS

@@ -8,7 +8,7 @@
 Profile:        JP_Condition_eCS
 Parent:			JP_Condition
 Id:             JP-Condition-eCS
-Title:  "eCS 診療情報・サマリー汎用:JP_Condition_eCS"
+Title:  "eCS:JP_Condition_eCS"
 Description: "eCS 診療情報・サマリー汎用 Conditionリソース（傷病名情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS

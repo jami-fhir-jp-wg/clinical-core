@@ -2,7 +2,7 @@
 Profile: JP_Encounter_eCS
 Parent: JP_Encounter
 Id: JP-Encounter-eCS
-Title: "eCS 診療情報・サマリー汎用:JP_Encounter-eCS"
+Title: "eCS:JP_Encounter-eCS"
 Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
 
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
