@@ -80,7 +80,7 @@ function details_open(onoff, idname, idCloseButton){
 }
 </script>
 
-<h3>表「AllergyIntolerance」</h3>
+<h3>表「Observation_LabResult」</h3>
 <button id="mrc" type="button" onclick="details_open(true,'Details','mrc')">表「AllergyIntolerance」開く</button>
 <details id="Details">
 <button type="button" onclick="details_open(false,'Details', 'mrc')">閉じる</button>
