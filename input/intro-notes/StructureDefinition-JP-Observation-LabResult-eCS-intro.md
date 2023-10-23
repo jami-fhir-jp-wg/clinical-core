@@ -24,9 +24,9 @@
 ### 必須要素
   - resourceType : リソースタイプ "Observation"
   - meta.lastUpdated : 最終更新日時
-  - contained (JP_Patient): JP_Patientリソースのcontainedは必須。
+  - meta.profile : 電子カルテ情報共有サービスでは必須
   - contained (JP_Specimen): 検体材料情報を格納したSpecimenリソース
-  - extension (InstitutionNumber) : 医療機関番号１０桁
+  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。ｓ医療機関番号１０桁
   - identifier : インスタンス識別ID
   - status : 検査・観察のステータス
   - code : 検査・観察の項目コード

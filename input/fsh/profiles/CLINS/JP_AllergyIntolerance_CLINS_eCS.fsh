@@ -20,7 +20,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 
 
 
-* meta.profile 0..1 MS
+* meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS")
 
 * meta.tag  ^slicing.discriminator.type = #value

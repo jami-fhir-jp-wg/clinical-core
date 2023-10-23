@@ -18,7 +18,7 @@ Description: "eCS 診療情報・サマリー汎用 Practitionerリソース（�
 
 * meta.lastUpdated 0.. MS
 * meta.lastUpdated ^short = "最終更新日"
-* meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
+* meta.lastUpdated ^definition = "この情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 
 
 * identifier ^short = "医師医師ID"

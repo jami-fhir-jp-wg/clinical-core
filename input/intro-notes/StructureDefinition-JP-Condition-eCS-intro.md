@@ -20,7 +20,7 @@
   - resourceType : リソースタイプ "Condition"
   - meta.lastUpdated : 最終更新日時
   - meta.profile : 電子カルテ情報共有サービスでは必須
-  - extension (eCS_InstitutionNumber) : 医療機関番号１０桁
+  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - identifier : インスタンス識別ID
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
   - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。

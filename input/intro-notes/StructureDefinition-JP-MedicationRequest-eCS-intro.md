@@ -17,7 +17,8 @@
 ### 必須要素　（MedicationRequestの直下の必須要素）
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
-  - extension (InstitutionNumber) : 医療機関番号１０桁
+  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。ｓ医療機関番号１０桁
   - contained (JP_Patient) : JP_Patientリソースのcontainedは必須。
   - identifier[] : インスタンス識別ID
   - status : 調剤が完了しているかどうかは不明であるが、交付が完了した処方として、completedを設定することとする。

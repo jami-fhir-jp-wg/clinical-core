@@ -17,7 +17,7 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
 
-* meta.profile 0..1 MS
+* meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS")
 
 * meta.tag  ^slicing.discriminator.type = #value
