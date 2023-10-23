@@ -325,12 +325,12 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 薬剤禁忌情報においてはcategory要素にmedication、criticality要素にhighを必ず設定することによる。利用側（電子カルテ情報共有サービス）はこの両方の条件が満たされた場合にのみ「薬剤禁忌情報」として扱、どちらかまたは両方が満たされない場合には薬剤禁忌情報ではなくアレルギー情報として取り扱う。
 
 <div>
-<table border="1">
-<tr><th>category要素</th><th>riticality要素</th><th>取り扱われる<br>6情報での種別</th></tr>
+<table border="2"  style="border-collapse: collapse">
+<tr><th>category要素</th><th>criticality要素</th><th>取り扱われる<br>6情報での種別</th></tr>
 <tr><td>medication</td><td>high以外、または値なし（要素なし）</td><td>薬剤に対するアレルギー情報。<br>薬剤禁忌情報としては扱われない。</td></tr>
 <tr><td>medication</td><td>high</td><td>薬剤禁忌情報</td></tr>
 <tr><td>medication以外、または値なし（要素なし</td><td>いずれかの値、または値なし（要素なし）</td><td>薬剤薬剤以外の原因物質に対するアレルギー情報。<br>薬剤禁忌としては扱われない。禁忌情報</td></tr>
-
+</table>
 </div>
 
 <br>
