@@ -58,7 +58,7 @@ function details_open(onoff, idname, idCloseButton){
 
 
 <h3>表 「Encounter」</h3>
-<button id="mrc" type="button" onclick="details_open(true,'ConditionDetails','mrc')">表「Condition」開く</button>
+<button id="mrc" type="button" onclick="details_open(true,'ConditionDetails','mrc')">表「Encounter」開く</button>
 <details id="ConditionDetails">
 <button type="button" onclick="details_open(false,'ConditionDetails', 'mrc')">閉じる</button>
 <summary></summary>
@@ -179,7 +179,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>identifier[*]</span></td>
+  border-top:none;width:80pt'>identifier[*]</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -187,9 +187,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1*</span></td>
+  width:26pt'>0..1*</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Identifier</span></td>
+  width:65pt'>Identifier</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>この医療機関における入院管理番号、あるいは<ruby>受診<span style='display:none'><rt>ジュシｎ
   </rt></span></ruby><ruby>歴<span style='display:none'><rt>レキ </rt></span></ruby><ruby>管理<span
@@ -201,15 +201,15 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>identifier[+]</span></td>
+  border-top:none;width:80pt'>identifier[+]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>system</span></td>
+  width:55pt'>system</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -223,13 +223,13 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>identifier[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>value</span></td>
+  width:55pt'>value</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -241,7 +241,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>status</span></td>
+  border-top:none;width:80pt'>status</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -249,9 +249,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>code</span></td>
+  width:65pt'>code</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>この情報のステータス。EncounterStatus(http://
   hl7.org/fhir/ValueSet/encouner-status)より&quot;finished&quot;を指定する。</td>
@@ -262,7 +262,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>class</span></td>
+  border-top:none;width:80pt'>class</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -270,9 +270,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Coding</span></td>
+  width:65pt'>Coding</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'><ruby>入院<span style='display:none'><rt>ニュウイｎ </rt></span></ruby>または受診イベントの分類<ruby>情報<span
   style='display:none'><rt>ジョウホウ </rt></span></ruby>。</td>
@@ -282,17 +282,17 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=60 style='page-break-before:always;height:45.0pt'>
   <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>class</span></td>
+  border-top:none;width:80pt'>class</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>system</span></td>
+  width:55pt'>system</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>uri</span></td>
+  width:65pt'>uri</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>コード体系v3.ActEncounterCodeを識別するURI<ruby>。<span style='display:
   none'><rt>。</rt></span></ruby></td>
@@ -305,15 +305,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=80 class=xl401 align=left width=107 style='height:60.0pt;
   border-top:none;width:80pt'>class</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>code</span></td>
+  width:55pt'>code</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>code</span></td>
+  width:65pt'>code</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>「IMP:入院(inpatient
   Encounter)」または、「AMB:外来受診(ambulatory)」。退院時サマリーで退院時を記述する場合には&quot;IMP&quot;を使用する。INPではなくIMPであることに注意。</td>
@@ -326,15 +326,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>class</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>display</span></td>
+  width:55pt'>display</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>string</span></td>
+  width:65pt'>string</td>
   <td class=xl95 width=359 style='border-top:none;border-left:none;width:269pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
@@ -344,7 +344,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>classHistory[*]</span></td>
+  border-top:none;width:80pt'>classHistory[*]</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -352,7 +352,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..*</span></td>
+  width:26pt'>0..*</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -365,15 +365,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=45 class=xl401 align=left width=107 style='height:34.0pt;
   border-top:none;width:80pt'>classHistory[+]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>class</span></td>
+  width:55pt'>class</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Coding</span></td>
+  width:65pt'>Coding</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>受診イベントの分類</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -384,15 +384,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
   border-top:none;width:80pt'>classHistory[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>class</span></td>
+  width:55pt'>class</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>system</span></td>
+  width:55pt'>system</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>uri</span></td>
+  width:65pt'>uri</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>コード体系v3.ActEncounterCodeを識別するURI。</td>
   <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
@@ -406,11 +406,11 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>class</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>code</span></td>
+  width:55pt'>code</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -427,11 +427,11 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>class</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>display</span></td>
+  width:55pt'>display</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=359 style='border-top:none;border-left:none;width:269pt'><span
@@ -444,13 +444,13 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>classHistory[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>period</span></td>
+  width:55pt'>period</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -463,15 +463,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
   border-top:none;width:80pt'>classHistory[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>period</span></td>
+  width:55pt'>period</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>start</span></td>
+  width:55pt'>start</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>dateTime</span></td>
+  width:65pt'>dateTime</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>上記イベントの開始日時。入院の場合には入院日、外来受診の場合には診療情報提供書の記載基準となった外来受診日に相当するが、period要素自体は省略できる。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -484,13 +484,13 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>period</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>end</span></td>
+  width:55pt'>end</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>dateTime</span></td>
+  width:65pt'>dateTime</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>上記イベントの終了日時。入院の場合には退院日、外来受診の場合には不要。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -499,7 +499,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>period</span></td>
+  border-top:none;width:80pt'>period</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -507,9 +507,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Priod</span></td>
+  width:65pt'>Priod</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入院期間、<ruby>受診<span style='display:none'><rt>ジュシｎ </rt></span></ruby>イベント<ruby>期間<span
   style='display:none'><rt>キカｎ </rt></span></ruby>。退院時サマリーでは必須。</td>
@@ -519,17 +519,17 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>period</span></td>
+  border-top:none;width:80pt'>period</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>start</span></td>
+  width:55pt'>start</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>dateTime</span></td>
+  width:65pt'>dateTime</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>この入院の入院日時</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -540,15 +540,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>period</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>end</span></td>
+  width:55pt'>end</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>dateTime</span></td>
+  width:65pt'>dateTime</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>この入院の退院日時</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -557,7 +557,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>length</span></td>
+  border-top:none;width:80pt'>length</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -565,9 +565,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Duration</span></td>
+  width:65pt'>Duration</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>この入院の在院日数</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -576,17 +576,17 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>length</span></td>
+  border-top:none;width:80pt'>length</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>value</span></td>
+  width:55pt'>value</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>decimal</span></td>
+  width:65pt'>decimal</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>在院日数。値は例示。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -597,15 +597,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>length</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>unit</span></td>
+  width:55pt'>unit</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>string</span></td>
+  width:65pt'>string</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>在院日数の単位文字列。固定値。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -616,15 +616,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=32 class=xl401 align=left width=107 style='height:24.0pt;
   border-top:none;width:80pt'>length</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>system</span></td>
+  width:55pt'>system</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>uri</span></td>
+  width:65pt'>uri</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>単位コードUCUMのコード体系を識別するURI。固定値。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -635,15 +635,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>length</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>code</span></td>
+  width:55pt'>code</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>code</span></td>
+  width:65pt'>code</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>日を意味する単位コード「d」。固定値。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -652,7 +652,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=180 style='height:135.0pt'>
   <td height=180 class=xl401 align=left width=107 style='height:135.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>reasonCode[*]</span></td>
+  border-top:none;width:80pt'>reasonCode[*]</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -660,9 +660,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl403 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..*</span></td>
+  width:26pt'>0..*</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入院時主訴・入院理由。<br>
     診療情報提供書の場合、その理由（主訴・目的）<br>
@@ -678,7 +678,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>diagnosis[*]</span></td>
+  border-top:none;width:80pt'>diagnosis[*]</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -686,7 +686,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..*</span></td>
+  width:26pt'>0..*</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -697,17 +697,17 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>diagnosis[+]</span></td>
+  border-top:none;width:80pt'>diagnosis[+]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>condition</span></td>
+  width:55pt'>condition</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Reference(Condition)</span></td>
+  width:65pt'>Reference(Condition)</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>患者状態（病態・疾患名・症状）への参照</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -718,15 +718,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=120 class=xl401 align=left width=107 style='height:90.0pt;
   border-top:none;width:80pt'>diagnosis[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>use</span></td>
+  width:55pt'>use</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>診断の位置付け区分。<br>
    
@@ -739,13 +739,13 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>diagnosis[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>use</span></td>
+  width:55pt'>use</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>coding[*]</span></td>
+  width:55pt'>coding[*]</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..*</span></td>
+  width:26pt'>1..*</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -760,11 +760,11 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>use</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>coding[+]</span></td>
+  width:55pt'>coding[+]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>system</span></td>
+  width:55pt'>system</td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -782,13 +782,13 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>coding[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>code</span></td>
+  width:55pt'>code</td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'><span lang=EN-US>AD:入院時診断、DD:退院時診断、CC:主訴、CM:併存症診断、pre-op:術前診断、post-op:術後診断、billing:会計請求診断（FHIR準拠の場合のコード表）。値は例示。</span></td>
+  width:269pt'>AD:入院時診断、DD:退院時診断、CC:主訴、CM:併存症診断、pre-op:術前診断、post-op:術後診断、billing:会計請求診断（FHIR準拠の場合のコード表）。値は例示。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
   lang=EN-US>&quot;DD&quot;</span></td>
@@ -801,9 +801,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>coding[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>display</span></td>
+  width:55pt'>display</td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
@@ -816,15 +816,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>diagnosis[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>rank</span></td>
+  width:55pt'>rank</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>positiveInt</span></td>
+  width:65pt'>positiveInt</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>同じ診断位置付け内での順序数値（1から順）。順序は医療者の意図によりつけてよい。値は例示。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -833,7 +833,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>hospitalization</span></td>
+  border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -841,9 +841,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>BackboneElement</span></td>
+  width:65pt'>BackboneElement</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入退院詳細情報。診療情報提供書では不要。退院時サマリーでは必須。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -852,17 +852,17 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=80 style='height:60.0pt'>
   <td height=80 class=xl401 align=left width=107 style='height:60.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>hospitalization</span></td>
+  border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>origin</span></td>
+  width:55pt'>origin</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Reference(Location | Organization)</span></td>
+  width:65pt'>Reference(Location | Organization)</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入院前の所在場所または施設への参照。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -873,15 +873,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=180 class=xl401 align=left width=107 style='height:135.0pt;
   border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>admitSource</span></td>
+  width:55pt'>admitSource</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入院経路を表すコード情報。値は例示。system<ruby>値<span style='display:none'><rt>チ </rt></span></ruby>は<ruby>固定値<span
   style='display:none'><rt>コテイチ </rt></span></ruby>。<br>
@@ -903,15 +903,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>reAdmission</span></td>
+  width:55pt'>reAdmission</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>再入院の場合の再入院種類。当面未使用</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -922,15 +922,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>specialCourtesy</span></td>
+  width:55pt'>specialCourtesy</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>特別配慮を要する入院。VIP、職員、医療専門職といった区分。当面未使用</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -941,15 +941,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>SpecialArrangement</span></td>
+  width:55pt'>SpecialArrangement</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>特別調整を要する入院。車椅子、増設ベッド、通訳、付き添い、盲導犬等の必要性。当面未使用</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -960,15 +960,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=80 class=xl401 align=left width=107 style='height:60.0pt;
   border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>destination</span></td>
+  width:55pt'>destination</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Reference(Location | Organization)</span></td>
+  width:65pt'>Reference(Location | Organization)</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>退院先場所または施設への参照。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -979,15 +979,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=180 class=xl401 align=left width=107 style='height:135.0pt;
   border-top:none;width:80pt'>hospitalization</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>dischargeDisposition</span></td>
+  width:55pt'>dischargeDisposition</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>退院時転帰コード情報。コード表は暫定（出典：厚労省DPC導入影響評価調査）<br>
     1:傷病が治癒・軽快<br>
@@ -1006,7 +1006,7 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>location[*]</span></td>
+  border-top:none;width:80pt'>location[*]</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
@@ -1014,9 +1014,9 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..*</span></td>
+  width:26pt'>0..*</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>BackboneElement</span></td>
+  width:65pt'>BackboneElement</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入院中の所在場所（病棟病室など）。診療情報提供書では不要。</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -1025,17 +1025,17 @@ function details_open(onoff, idname, idCloseButton){
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
-  border-top:none;width:80pt'><span lang=EN-US>location[+]</span></td>
+  border-top:none;width:80pt'>location[+]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>location</span></td>
+  width:55pt'>location</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Reference(Location)</span></td>
+  width:65pt'>Reference(Location)</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>入院中の所在場所（病棟病室など）への参照</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -1046,15 +1046,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
   border-top:none;width:80pt'>location[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>status</span></td>
+  width:55pt'>status</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>1..1</span></td>
+  width:26pt'>1..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>code</span></td>
+  width:65pt'>code</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'><span lang=EN-US>planned | active | reserved | completed
   のいずれかであるが、退院時サマリーの<ruby>場合<span style='display:none'><rt>バアイ </rt></span></ruby>には、&quot;completed&quot;。</span></td>
@@ -1067,15 +1067,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=120 class=xl401 align=left width=107 style='height:90.0pt;
   border-top:none;width:80pt'>location[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>physicalType</span></td>
+  width:55pt'>physicalType</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  width:65pt'>CodeableConcept</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>所在場所のタイプ。system<ruby>値<span style='display:none'><rt>チ </rt></span></ruby>は<ruby>固定値<span
   style='display:none'><rt>コテイチ </rt></span></ruby>。<br>
@@ -1095,15 +1095,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>location[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>preiod</span></td>
+  width:55pt'>preiod</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>Period</span></td>
+  width:65pt'>Period</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>所在期間</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -1114,15 +1114,15 @@ function details_open(onoff, idname, idCloseButton){
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
   border-top:none;width:80pt'>location[=]</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>preiod</span></td>
+  width:55pt'>preiod</td>
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>start</span></td>
+  width:55pt'>start</td>
   <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>dateTime</span></td>
+  width:65pt'>dateTime</td>
   <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>所在期間の開始日時</td>
   <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -1135,13 +1135,13 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>preiod</td>
   <td class=xl100 align=left width=73 style='border-top:none;border-left:none;
-  width:55pt'><span lang=EN-US>end</span></td>
+  width:55pt'>end</td>
   <td class=xl100 width=73 style='border-top:none;border-left:none;width:55pt'><span
   lang=EN-US>　</span></td>
   <td class=xl100 align=left width=35 style='border-top:none;border-left:none;
-  width:26pt'><span lang=EN-US>0..1</span></td>
+  width:26pt'>0..1</td>
   <td class=xl100 align=left width=87 style='border-top:none;border-left:none;
-  width:65pt'><span lang=EN-US>dateTime</span></td>
+  width:65pt'>dateTime</td>
   <td class=xl100 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>所在期間の終了日時</td>
   <td class=xl100 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
