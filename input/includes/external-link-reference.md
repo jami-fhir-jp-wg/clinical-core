@@ -9,3 +9,5 @@
 [RadLex radiology lexicon]: https://www.rsna.org/practice-tools/data-tools-and-standards/radlex-radiology-lexicon
 [RadElement]: https://www.rsna.org/practice-tools/data-tools-and-standards/radelement-common-data-elements
 [IHE Radiology Technical Framework]: https://www.ihe.net/resources/technical_frameworks/#radiology
+
+[JP_Patient]: https://jpfhir.jp/fhir/core/1.1.1/StructureDefinition-jp-patient.html
