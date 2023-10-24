@@ -29,7 +29,7 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"
 * value[x] ^definition = "作成発行した医療機関番号を設定する。"
-* valueIdentifier.system = "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no" (exactly)
+* valueIdentifier.system = $JP_InstitutionNumber (exactly)
 
 // -----------------------------------------
 //JP_eCS_Department

@@ -1,11 +1,19 @@
 Instance: Example-Patient-standard
-InstanceOf: JP_Patient
+InstanceOf: JP_Patient_CLINS_eCS
 Usage: #example
 
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
-* identifier[=].value = "000999739"
-* identifier[+].system = "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member"
-* identifier[=].value = "00012345:あいう:１８７:05"
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+
+* meta.profile[+] = "http://hl7.jp/fhir/StructureDefinition/JP-Patient-CLINS-eCS"
+
+* identifier[other_identifier].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[other_identifier].value = "000999739"
+* identifier[insurance_memberID].system = $JP_Insurance_memberID
+* identifier[insurance_memberID].value = "00012345:あいう:１８７:05"
+
 
 * name[0].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension.valueCode = #IDE
@@ -25,6 +33,8 @@ Usage: #example
 * birthDate = "1930-06-28"
 * address.text = "高知県高知市五台山4200-6"
 * address.postalCode = "781-8125"
+* address.city = "高知市"
+* address.state = "高知県"
 * contact.telecom.system = #phone
 * contact.telecom.value = "03-0123-4545   99991"
 * contact.telecom.use = #work

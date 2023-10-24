@@ -337,7 +337,7 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 
 ## 被保険者個人識別子の格納
 電子カルテ情報共有サービスに医療機関から送信する場合には、個人識別子として、保険者情報と被保険者情報を送信することが必須である。このためFHIRリソースの患者情報であるPatientリソースのidentifier要素にこの識別子情報を設定<span style="color: red; ">しなければならない。</span><br>以下にその仕様を示す。<br>
-なお、Patientリソースは、６情報のいずれでもContainedリソースとして記述<span style="color: red; ">しなければならない。</span>またそのPatientリソースのidentifier要素にこの被保険者個人識別子を設定<span style="color: red; ">しなければならない。</span>
+なお、Patientリソースは、６情報のいずれでもBundleリソース内の先頭のentryに記述<span style="color: red; ">しなければならない。</span>またそのPatientリソースのidentifier要素にこの被保険者個人識別子を設定<span style="color: red; ">しなければならない。</span>
 
 ### 「被保険者個人識別子」の文字列仕様
 個人識別子として、保険者情報と被保険者情報とを以下の仕様で連結したひとつの文字列を使用する。<br>
@@ -361,7 +361,7 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 　　被保険者個人識別子＝ "00012345::１８７:" となる。この場合、最後のコロンは必須である。<br><br>
 
 ### 被保険者個人識別子の格納方法
-被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http:/jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member」<span style="color: red; ">（当初記載のURL末尾のr/保険者等番号８桁文字列　を削除）</span>を設定する。<br>
+被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID」を設定する。<br>
 
 
 ```
@@ -374,8 +374,8 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
           "system": "urn:oid:1.2.392.100495.20.3.51.11234567890",
           "value": "12345"
         },
-        {
-          "system": "http:/jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member",
+        {http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
+          "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member",
           "value": "00012345:あいう:１８７:05"
         }
       ],

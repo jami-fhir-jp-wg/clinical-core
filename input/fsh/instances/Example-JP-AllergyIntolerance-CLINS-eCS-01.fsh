@@ -4,14 +4,20 @@
 // 030 verificationStatus
 //当面中略（診療情報提供書）
 
-Instance: Example-JP-AllergyIntolerance-eCS-01
-InstanceOf: JP_AllergyIntolerance_eCS
+Instance: Example-JP-AllergyIntolerance-CLINS-eCS-01
+InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
-* contained[+] = Example-JP-Patient-eCS-01-Contained
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "102934701"
@@ -32,7 +38,10 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 * code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば類"
 * code.text = "さば"
 
-* patient = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient 
+* patient.identifier.system = $JP_Insurance_memberID
+* patient.identifier.value = "00012345:あいう:１８７:05"
+
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
@@ -42,16 +51,20 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
 
 //------------------------------------------------------
-Instance: Example-JP-AllergyIntolerance-eCS-02
-InstanceOf: JP_AllergyIntolerance_eCS
+Instance: Example-JP-AllergyIntolerance-CLINS-eCS-02
+InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
 
-* contained[+] = Example-JP-Patient-eCS-01-Contained
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_eCS
+* meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
@@ -75,7 +88,11 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 * code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば類"
 * code.text = "さば"
 
-* patient = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient 
+* patient.identifier.system = $JP_Insurance_memberID
+* patient.identifier.value = "00012345:あいう:１８７:05"
+
 
 * encounter = Reference(Example-JP-Encounter-AMB)
 
@@ -90,15 +107,20 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 
 
 //------ 医薬品禁忌-----------------
-Instance: Example-JP-DrugContraindications-eCS-03
-InstanceOf: JP_AllergyIntolerance_eCS
+Instance: Example-JP-DrugContraindications-CLINS-eCS-03
+InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁忌情報のサンプル"
 
-* contained[+] = Example-JP-Patient-eCS-01-Contained
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
@@ -122,7 +144,11 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 * code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#YCM2260701F1271 "イソジンガーグル液７％"
 * code.text = "ヨードうがい液"
 
-* patient = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient 
+* patient.identifier.system = $JP_Insurance_memberID
+* patient.identifier.value = "00012345:あいう:１８７:05"
+
 
 * encounter = Reference(Example-JP-Encounter-AMB)
 

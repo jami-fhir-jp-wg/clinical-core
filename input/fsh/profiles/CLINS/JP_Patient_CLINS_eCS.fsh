@@ -29,6 +29,7 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 * identifier ^slicing.rules = #open
 * identifier contains 
     insurance_memberID 1..1 MS
+  and other_identifier 0..1 MS
 
 * identifier[insurance_memberID] 1.. MS
 * identifier[insurance_memberID].system 1..1

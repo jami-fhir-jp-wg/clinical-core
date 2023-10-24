@@ -66,6 +66,1110 @@ function details_open(onoff, idname, idCloseButton){
 
 <div id="Condition_18042" class="htmlTable" align=center x:publishsource="Excel">
 
+<table border=0 cellpadding=0 cellspacing=0 width=1038 style='border-collapse:
+ collapse;table-layout:fixed;width:778pt'>
+ <col class=xl400 width=107 style='mso-width-source:userset;mso-width-alt:2925;
+ width:80pt'>
+ <col class=xl400 width=73 span=3 style='mso-width-source:userset;mso-width-alt:
+ 2011;width:55pt'>
+ <col class=xl400 width=35 style='mso-width-source:userset;mso-width-alt:950;
+ width:26pt'>
+ <col class=xl400 width=87 style='mso-width-source:userset;mso-width-alt:2377;
+ width:65pt'>
+ <col class=xl400 width=359 style='mso-width-source:userset;mso-width-alt:9837;
+ width:269pt'>
+ <col class=xl400 width=36 style='mso-width-source:userset;mso-width-alt:987;
+ width:27pt'>
+ <col class=xl406 width=195 style='mso-width-source:userset;mso-width-alt:5339;
+ width:146pt'>
+ <tr height=68 style='mso-height-source:userset;height:51.0pt'>
+  <td colspan=9 height=68 class=xl399 align=left width=1038 style='height:51.0pt;
+  width:778pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
+  </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
+  style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>した<ruby>場合<span
+  style='display:none'><rt>バアイ </rt></span></ruby>の<ruby>多重度<span
+  style='display:none'><rt>タジュウド </rt></span></ruby>。たとえばある<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>の<ruby>多重度<span
+  style='display:none'><rt>タジュウド </rt></span></ruby>が1..1であっても<ruby>親要素<span
+  style='display:none'><rt>オヤヨウソ </rt></span></ruby>が<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>しない<ruby>場合<span
+  style='display:none'><rt>バアイ </rt></span></ruby>にはその<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>は<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>しない。<ruby>逆<span
+  style='display:none'><rt>ギャク </rt></span></ruby>に<ruby>親要素<span
+  style='display:none'><rt>オヤヨウソ </rt></span></ruby>が<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>する<ruby>場合<span
+  style='display:none'><rt>バアイ </rt></span></ruby>には、この<ruby>子要素<span
+  style='display:none'><rt>コヨウソ </rt></span></ruby>は<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>しなければならない。</a></td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl67 width=107 style='height:75.0pt;border-top:none;
+  width:80pt'>要素Lv1</td>
+  <td class=xl389 width=73 style='border-top:none;border-left:none;width:55pt'>要素Lv2</td>
+  <td class=xl389 width=73 style='border-top:none;border-left:none;width:55pt'>要素Lv3</td>
+  <td class=xl389 width=73 style='border-top:none;border-left:none;width:55pt'>要素Lv4</td>
+  <td class=xl390 width=35 style='border-top:none;border-left:none;width:26pt'>多重度</td>
+  <td class=xl389 width=87 style='border-top:none;border-left:none;width:65pt'>型</td>
+  <td class=xl389 width=359 style='border-top:none;border-left:none;width:269pt'>説明</td>
+  <td class=xl389 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定値<span
+  style='display:none'><rt class=font6>コテイチ</rt></span></ruby> <br>
+    <ruby>／<span style='display:none'><rt class=font6>レイジ</rt></span></ruby> <ruby>例<span
+  style='display:none'><rt class=font6>ジ</rt></span></ruby> 示</td>
+  <td class=xl391 width=195 style='border-top:none;border-left:none;width:146pt'><ruby>固定値<span
+  style='display:none'><rt class=font6>コテイチ</rt></span></ruby> または<ruby>例示<span
+  style='display:none'><rt class=font6>レイジ</rt></span></ruby></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl277 width=107 style='height:30.0pt;border-top:none;
+  width:80pt'>resourceType</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl392 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
+  <td class=xl325 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
+  <td class=xl393 width=359 style='border-top:none;border-left:none;width:269pt'>Encounterリソースであることを示す。</td>
+  <td class=xl325 width=36 style='border-top:none;border-left:none;width:27pt'>固定値</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;Encounter&quot;</td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl277 width=107 style='height:15.0pt;border-top:none;
+  width:80pt'>meta</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl395 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl325 width=87 style='border-top:none;border-left:none;width:65pt'>Meta</td>
+  <td class=xl325 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
+  <td class=xl325 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+ </tr>
+ <tr height=340 style='height:255.0pt'>
+  <td height=340 class=xl277 width=107 style='height:255.0pt;border-top:none;
+  width:80pt'>meta</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>lastUpdated</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl395 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl325 width=87 style='border-top:none;border-left:none;width:65pt'>instant</td>
+  <td class=xl325 width=359 style='border-top:none;border-left:none;width:269pt'>最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz<br>
+   
+  この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。<ruby>本要素<span
+  style='display:none'><rt>ホンヨウソ </rt></span></ruby>に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。</td>
+  <td class=xl325 width=36 style='border-top:none;border-left:none;width:27pt'>例示</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2015-02-07T13:28:17.239+09:00&quot;</td>
+ </tr>
+ <tr height=160 style='height:120.0pt'>
+  <td height=160 class=xl277 width=107 style='height:120.0pt;border-top:none;
+  width:80pt'>meta</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>profile[+]</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl325 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
+  <td class=xl396 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
+  <td class=xl325 width=87 style='border-top:none;border-left:none;width:65pt'>canonical(StructureDefinition)</td>
+  <td class=xl397 width=359 style='border-top:none;border-left:none;width:269pt'>準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。<br>
+    http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS　を設定する。<br>
+    <font class="font11">電子カルテ情報共有サービスに本リソースデータを送信する場合には、http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Encounter_eCS　を設定すること。</font></td>
+  <td class=xl325 width=36 style='border-top:none;border-left:none;width:27pt'>固定値</td>
+  <td class=xl398 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS&quot;<br>
+    または<br>
+   
+  &quot;http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Encounter_eCS&quot;</td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>identifier[*]</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1*</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Identifier</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この医療機関における入院管理番号、あるいは<ruby>受診<span style='display:none'><rt>ジュシｎ
+  </rt></span></ruby><ruby>歴<span style='display:none'><rt>レキ </rt></span></ruby><ruby>管理<span
+  style='display:none'><rt>カンリ </rt></span></ruby><ruby>番号<span
+  style='display:none'><rt>バンゴウ </rt></span></ruby>。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>identifier[+]</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>system</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>付番方法については「識別子名前空間一覧」を参照。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'>固定値</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>identifier[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>value</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院管理番号、受診歴管理番号の文字列。値は例示。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例<span style='display:none'><rt>レイジ </rt></span></ruby>示</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;1311234567-2020-00123456&quot;</span></td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>status</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この情報のステータス。EncounterStatus(http://
+  hl7.org/fhir/ValueSet/encouner-status)より&quot;finished&quot;を指定する。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'>固定値</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;finished&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>class</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Coding</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>入院<span style='display:none'><rt>ニュウイｎ </rt></span></ruby>または受診イベントの分類<ruby>情報<span
+  style='display:none'><rt>ジョウホウ </rt></span></ruby>。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=60 style='page-break-before:always;height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>class</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>system</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>uri</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>コード体系v3.ActEncounterCodeを識別するURI<ruby>。<span style='display:
+  none'><rt>。</rt></span></ruby></td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'>固定値</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;http://terminology. hl7.org/CodeSystem/v3-ActCode&quot;</span></td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl401 align=left width=107 style='height:60.0pt;
+  border-top:none;width:80pt'>class</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>「IMP:入院(inpatient
+  Encounter)」または、「AMB:外来受診(ambulatory)」。退院時サマリーで退院時を記述する場合には&quot;IMP&quot;を使用する。INPではなくIMPであることに注意。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'>例示</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>“IMP&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>class</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>display</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl402 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>string</span></td>
+  <td class=xl95 width=359 style='border-top:none;border-left:none;width:269pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'>例示</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>“入院” または”外来”</span></td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>classHistory[*]</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..*</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この入院期間までの外来受診履歴や入院履歴を記述したい場合にここに繰り返しで記述する。紹介先受診情報では不要。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=45 style='mso-height-source:userset;height:34.0pt'>
+  <td height=45 class=xl401 align=left width=107 style='height:34.0pt;
+  border-top:none;width:80pt'>classHistory[+]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>class</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Coding</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>受診イベントの分類</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'>classHistory[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>class</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>system</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>uri</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>コード体系v3.ActEncounterCodeを識別するURI。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'>固定値</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;http://terminology. hl7.org/CodeSystem/v3-ActCode&quot;</span></td>
+ </tr>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl401 align=left width=107 style='height:75.0pt;
+  border-top:none;width:80pt'>classHistory[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>class</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>「IMP:入院(inpatient Encounter)」または、「AMB:外来受診(ambulatory)」<br>
+    退院時サマリーで退院時を記述する場合には&quot;IMP&quot;を使用する。<br>
+    * INPではなくIMPであることに注意。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>“IMP” または”AMB”</span></td>
+ </tr>
+ <tr height=35 style='mso-height-source:userset;height:26.0pt'>
+  <td height=35 class=xl401 align=left width=107 style='height:26.0pt;
+  border-top:none;width:80pt'>classHistory[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>class</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>display</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=359 style='border-top:none;border-left:none;width:269pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;入院&quot;または&quot;外来&quot;</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>classHistory[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>period</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院期間を表す必要がある場合には必須。外来では必要な場合を除き省略可。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'>classHistory[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>period</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>start</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>dateTime</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>上記イベントの開始日時。入院の場合には入院日、外来受診の場合には診療情報提供書の記載基準となった外来受診日に相当するが、period要素自体は省略できる。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;2020-08-21&quot;</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>classHistory[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>period</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>end</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>dateTime</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>上記イベントの終了日時。入院の場合には退院日、外来受診の場合には不要。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;2020-08-24&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>period</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Priod</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院期間、<ruby>受診<span style='display:none'><rt>ジュシｎ </rt></span></ruby>イベント<ruby>期間<span
+  style='display:none'><rt>キカｎ </rt></span></ruby>。退院時サマリーでは必須。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>period</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>start</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>dateTime</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この入院の入院日時</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;2020-09-01&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>period</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>end</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>dateTime</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この入院の退院日時</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;2020-09-18&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>length</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Duration</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この入院の在院日数</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>length</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>value</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>decimal</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>在院日数。値は例示。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>7</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>length</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>unit</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>string</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>在院日数の単位文字列。固定値。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;日&quot;</span></td>
+ </tr>
+ <tr height=32 style='mso-height-source:userset;height:24.0pt'>
+  <td height=32 class=xl401 align=left width=107 style='height:24.0pt;
+  border-top:none;width:80pt'>length</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>system</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>uri</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>単位コードUCUMのコード体系を識別するURI。固定値。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;http://unitsofmeasure.org&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>length</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>日を意味する単位コード「d」。固定値。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;d&quot;</span></td>
+ </tr>
+ <tr height=180 style='height:135.0pt'>
+  <td height=180 class=xl401 align=left width=107 style='height:135.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>reasonCode[*]</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl403 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..*</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院時主訴・入院理由。<br>
+    診療情報提供書の場合、その理由（主訴・目的）<br>
+   
+  コードで記述できる場合にそのコード記述。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード。&quot;持続腹痛&quot;は、入院時主訴・入院理由のテキスト記述。<br>
+    診療情報提供書の場合、text要素で理由を自由記述すること。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例<span style='display:none'><rt>レイジ </rt></span></ruby>示</td>
+  <td class=xl404 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US><a href="http://medis.or.jp/CodeSystem/master-disease-exCode"
+  target="_parent"><span style='font-family:"ＭＳ 明朝";mso-generic-font-family:
+  auto;mso-font-charset:128'>http://medis.or.jp/CodeSystem/master-disease-exCode</span></a></span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>diagnosis[*]</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..*</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院期間中の診断情報。診療情報提供書では不要。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>diagnosis[+]</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>condition</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Reference(Condition)</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>患者状態（病態・疾患名・症状）への参照</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=120 style='height:90.0pt'>
+  <td height=120 class=xl401 align=left width=107 style='height:90.0pt;
+  border-top:none;width:80pt'>diagnosis[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>use</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>診断の位置付け区分。<br>
+   
+  （DiagnosisRole）。これにより、入院時診断、退院時診断、などが区別される。入院中のすべての診断病名にこのコードが必須ではないが、少なくともAD:入院時診断、DD:退院時診断、CC:主訴、についてはそれぞれ1個以上はこのコードがついている必要がある。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>diagnosis[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>use</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>coding[*]</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..*</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>同じ診断名に複数の診断位置付けコードをつけることができる。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>diagnosis[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>use</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>coding[+]</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>system</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>診断位置付けValueSet（FHIR準拠の場合のコード表）</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;<font class="font44">http://terminology.hl7.org/CodeSystem/diagnosis-role</font><font
+  class="font9">&quot;</font></span></td>
+ </tr>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl401 align=left width=107 style='height:45.0pt;
+  border-top:none;width:80pt'>diagnosis[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>use</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><span lang=EN-US>AD:入院時診断、DD:退院時診断、CC:主訴、CM:併存症診断、pre-op:術前診断、post-op:術後診断、billing:会計請求診断（FHIR準拠の場合のコード表）。値は例示。</span></td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;DD&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>diagnosis[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>use</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>display</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 width=87 style='border-top:none;border-left:none;width:65pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>コードに対する名称。値は例示。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;退院時診断&quot;</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>diagnosis[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>rank</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>positiveInt</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>同じ診断位置付け内での順序数値（1から順）。順序は医療者の意図によりつけてよい。値は例示。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>1</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>hospitalization</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>BackboneElement</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入退院詳細情報。診療情報提供書では不要。退院時サマリーでは必須。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl401 align=left width=107 style='height:60.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>hospitalization</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>origin</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Reference(Location | Organization)</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院前の所在場所または施設への参照。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=180 style='height:135.0pt'>
+  <td height=180 class=xl401 align=left width=107 style='height:135.0pt;
+  border-top:none;width:80pt'>hospitalization</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>admitSource</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院経路を表すコード情報。値は例示。system<ruby>値<span style='display:none'><rt>チ </rt></span></ruby>は<ruby>固定値<span
+  style='display:none'><rt>コテイチ </rt></span></ruby>。<br>
+    （出典：厚労省DPC導入影響評価調査）<br>
+    0 院内の他病棟からの転棟<br>
+    1 家庭からの入院<br>
+    4 他の病院・診療所の病棟からの転院<br>
+    5 介護施設・福祉施設に入所中<br>
+    8 院内で出生<br>
+    9 その他</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>固定値<span style='display:none'><rt>コテイチ </rt></span></ruby></td>
+  <td class=xl404 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US><a href="http://jpfhir.jp/fhir/eCS/CodeSystem/admit-Source"
+  target="_parent"><span style='font-family:"ＭＳ 明朝";mso-generic-font-family:
+  auto;mso-font-charset:128'>http://jpfhir.jp/fhir/eCS/CodeSystem/admit-Source</span></a></span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>hospitalization</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>reAdmission</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>再入院の場合の再入院種類。当面未使用</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>hospitalization</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>specialCourtesy</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>特別配慮を要する入院。VIP、職員、医療専門職といった区分。当面未使用</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>hospitalization</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>SpecialArrangement</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>特別調整を要する入院。車椅子、増設ベッド、通訳、付き添い、盲導犬等の必要性。当面未使用</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl401 align=left width=107 style='height:60.0pt;
+  border-top:none;width:80pt'>hospitalization</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>destination</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Reference(Location | Organization)</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>退院先場所または施設への参照。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=180 style='height:135.0pt'>
+  <td height=180 class=xl401 align=left width=107 style='height:135.0pt;
+  border-top:none;width:80pt'>hospitalization</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>dischargeDisposition</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>退院時転帰コード情報。コード表は暫定（出典：厚労省DPC導入影響評価調査）<br>
+    1:傷病が治癒・軽快<br>
+    3:傷病（白血病、潰瘍性大腸炎、クローン病等）が寛解<br>
+    4:傷病が不変<br>
+    5:傷病が増悪<br>
+    6:傷病による死亡<br>
+    7:傷病以外による死亡<br>
+    9:その他（検査入院,正常分娩及び人間ドック含む）</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl404 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US><a
+  href="http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition"
+  target="_parent"><span style='font-family:"ＭＳ 明朝";mso-generic-font-family:
+  auto;mso-font-charset:128'>http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition</span></a></span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>location[*]</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..*</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>BackboneElement</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院中の所在場所（病棟病室など）。診療情報提供書では不要。</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'><span lang=EN-US>location[+]</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>location</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Reference(Location)</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>入院中の所在場所（病棟病室など）への参照</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=40 style='height:30.0pt'>
+  <td height=40 class=xl401 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>location[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>status</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>1..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>code</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><span lang=EN-US>planned | active | reserved | completed
+  のいずれかであるが、退院時サマリーの<ruby>場合<span style='display:none'><rt>バアイ </rt></span></ruby>には、&quot;completed&quot;。</span></td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例<span style='display:none'><rt>レイジ </rt></span></ruby>示</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;completed&quot;</span></td>
+ </tr>
+ <tr height=120 style='height:90.0pt'>
+  <td height=120 class=xl401 align=left width=107 style='height:90.0pt;
+  border-top:none;width:80pt'>location[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>physicalType</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>CodeableConcept</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>所在場所のタイプ。system<ruby>値<span style='display:none'><rt>チ </rt></span></ruby>は<ruby>固定値<span
+  style='display:none'><rt>コテイチ </rt></span></ruby>。<br>
+    bu: 建物<br>
+    wa: 病棟<br>
+    ro: 病室<br>
+    bd: ベッド<br>
+    area: エリア　など。</td>
+  <td class=xl95 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>固定値<span style='display:none'><rt class=font6>コテイチ</rt></span></ruby>
+  <br>
+    </td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>&quot;http://terminology.hl7.org/CodeSystem/location-physical-type&quot;</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>location[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>preiod</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>Period</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>所在期間</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl401 align=left width=107 style='height:15.0pt;
+  border-top:none;width:80pt'>location[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>preiod</span></td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>start</span></td>
+  <td class=xl95 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl95 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl95 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>dateTime</span></td>
+  <td class=xl95 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>所在期間の開始日時</td>
+  <td class=xl95 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl394 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <tr height=21 style='height:16.0pt'>
+  <td height=21 class=xl401 align=left width=107 style='height:16.0pt;
+  border-top:none;width:80pt'>location[=]</td>
+  <td class=xl95 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>preiod</td>
+  <td class=xl100 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'><span lang=EN-US>end</span></td>
+  <td class=xl100 width=73 style='border-top:none;border-left:none;width:55pt'><span
+  lang=EN-US>　</span></td>
+  <td class=xl100 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'><span lang=EN-US>0..1</span></td>
+  <td class=xl100 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'><span lang=EN-US>dateTime</span></td>
+  <td class=xl100 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>所在期間の終了日時</td>
+  <td class=xl100 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl405 width=195 style='border-top:none;border-left:none;width:146pt'><span
+  lang=EN-US>　</span></td>
+ </tr>
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=107 style='width:80pt'></td>
+  <td width=73 style='width:55pt'></td>
+  <td width=73 style='width:55pt'></td>
+  <td width=73 style='width:55pt'></td>
+  <td width=35 style='width:26pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=359 style='width:269pt'></td>
+  <td width=36 style='width:27pt'></td>
+  <td width=195 style='width:146pt'></td>
+ </tr>
+ <![endif]>
+</table>
+
+</div>
+
+<button type="button" onclick="details_open(false,'ConditionDetails','mrc')">閉じる</button>
+</details>
+
+<br>
 
 ## プロファイル
+
 

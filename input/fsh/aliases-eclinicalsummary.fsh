@@ -5,10 +5,10 @@ Alias: $JP_CLINS_BundleCategory_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_C
 Alias: $JP_CLINS_BundleCategory_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_BundleCategory_VS
 Alias: $JP_CLINS_BundleCategory = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_CLINS_BundleCategory
 
-Alias: $JP_Hospital_PatientID = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID
-Alias: $JP_Insurance_memberID = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
-Alias: $JP_Hospital_PatientID_Pseudonymized = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID_Pseudonymized
-Alias: $JP_Insurance_memberID_Pseudonymized = http:/jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID_Pseudonymized
+Alias: $JP_Hospital_PatientID = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID
+Alias: $JP_Insurance_memberID = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
+Alias: $JP_Hospital_PatientID_Pseudonymized = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID_Pseudonymized
+Alias: $JP_Insurance_memberID_Pseudonymized = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID_Pseudonymized
 
 Alias: $JP_Bundle_CLINS_MedicationRequest = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS_MedicationRequest
 
@@ -133,6 +133,7 @@ Alias: $JP_DiseaseCategory_WHO_ICD10_CS = urn:oid:2.16.840.1.113883.6.3.1  // IC
 // 拡張
 Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department
 Alias: $JP_eCS_InstitutionNumber = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
+Alias: $JP_InstitutionNumber = http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no
 
 // Idsystem
 Alias: $JP_ResourceInstanceIdentifier = http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier

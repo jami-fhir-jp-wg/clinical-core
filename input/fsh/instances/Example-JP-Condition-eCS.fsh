@@ -1,12 +1,17 @@
-// JP_Condition_eCS
-Instance: Example-JP-Condition-eCS-01
-InstanceOf: JP_Condition_eCS
+// JP_Condition_CLINS_eCS
+Instance: Example-JP-Condition-CLINS-eCS-01
+InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
 Description: "conditionExample01 必須要素だけのサンプル"
 
-* contained[+] = Example-JP-Patient-eCS-01-Contained
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_Condition_CLINS_eCS
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceInstance-identifier].value = "202934701"
@@ -25,20 +30,29 @@ Description: "conditionExample01 必須要素だけのサンプル"
 * code.coding = http://medis.or.jp/CodeSystem/master-disease-keyNumber#20064049 "十二指腸潰瘍"
 * code.text = "十二指腸潰瘍・H1期"
 
-* subject = Reference(Example-JP-Patient-eCS-01-Contained)
+//* subject = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient 
+* subject.identifier.system = $JP_Insurance_memberID
+* subject.identifier.value = "00012345:あいう:１８７:05"
+
+* onsetDateTime = "2020-04-10"
 
 //--------------------------
-// JP_Condition_eCS
-Instance: Example-JP-Condition-eCS-02
-InstanceOf: JP_Condition_eCS
+// JP_Condition_CLINS_eCS
+Instance: Example-JP-Condition-CLINS-eCS-02
+InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
 Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 
-* contained[+] = Example-JP-Patient-eCS-01-Contained
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
+* meta.profile[+] = $JP_Condition_CLINS_eCS
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
@@ -57,7 +71,11 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * code.coding = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169 "胃の悪性新生物＜腫瘍＞，胃，部位不明"
 * code.text = "胃癌"
 
-* subject = Reference(Example-JP-Patient-eCS-01-Contained)
+//* subject = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient 
+* subject.identifier.system = $JP_Insurance_memberID
+* subject.identifier.value = "00012345:あいう:１８７:05"
+
 * encounter = Reference(Example-JP-Encounter-AMB)
 
 * onsetDateTime = "2020-04-10"
@@ -65,17 +83,21 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * recorder.display = "消化器内科　田中太郎"
 
 
-// JP_Condition_eCS 疑い病名
-Instance: Example-JP-Condition-eCS-03
-InstanceOf: JP_Condition_eCS
+// JP_Condition_CLINS_eCS 疑い病名
+Instance: Example-JP-Condition-CLINS-eCS-03
+InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
 Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
 
-* contained[+] = Example-JP-Patient-eCS-01-Contained
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
+* meta.profile[+] = $JP_Condition_CLINS_eCS
 
 
 * identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
@@ -92,7 +114,11 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * code.coding = http://medis.or.jp/CodeSystem/master-disease-exCode#L3RF "噴門癌"
 * code.text = "噴門癌早期"
 
-* subject = Reference(Example-JP-Patient-eCS-01-Contained)
+//* subject = Reference(Example-JP-Patient-eCS-01-Contained)
+//* patient 
+* subject.identifier.system = $JP_Insurance_memberID
+* subject.identifier.value = "00012345:あいう:１８７:05"
+
 * encounter = Reference(Example-JP-Encounter-AMB)
 
 * onsetDateTime = "2020-04-10"

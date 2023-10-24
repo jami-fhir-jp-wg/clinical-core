@@ -12,7 +12,7 @@
       "value": "000999739"
     },
     {
-      "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
+      "system": "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
       "value": "00012345:あいう:１８７:05"
     }
   ],

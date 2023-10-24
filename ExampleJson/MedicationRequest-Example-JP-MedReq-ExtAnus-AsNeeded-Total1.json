@@ -18,7 +18,7 @@
       },
       "identifier": [
         {
-          "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberDummy",
+          "system": "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberDummy",
           "value": "00012345:あいう:１８７:05"
         }
       ]

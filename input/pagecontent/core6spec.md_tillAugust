@@ -395,7 +395,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 　　被保険者個人識別子＝ "00012345::１８７:" となる。この場合、最後のコロンは必須である。<br><br>
 
 ### 被保険者個人識別子の格納方法
-被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member」を設定<span style="color: red; ">(初版から変更し、末尾の保険者番号を削除)</span>する。<br>
+被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member」を設定<span style="color: red; ">(初版から変更し、末尾の保険者番号を削除)</span>する。<br>
 ```
     {
       "resourceType": "Patient",
@@ -407,7 +407,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
           "value": "12345"
         },
         {
-          "system": "http:/jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
+          "system": "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
           "value": "00012345:あいう:１８７:05"
         }
       ],
@@ -421,7 +421,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 
 ### 長期保存情報の仕様
 リソースのデータを長期保存対象とする場合には、そのリソースのデータにおけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
-　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
+　meta.tag.system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
 　meta.tag.code = "LTS"　(この固定値とする)<br>
 
 ```
@@ -434,7 +434,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
     :
     "tag": {[
       {
-        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
         "code": "LTS"
       }
     ]
@@ -449,7 +449,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
 
 ### 【未告知病名】情報の仕様
 病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で記述<span style="color: red; ">しなければならない。</span><br>
-　meta.tag.system = "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
+　meta.tag.system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication"　(この固定値とする)<br>
 　meta.tag.code = "UNINFORMED"　(この固定値とする)<br>
 
 ```
@@ -462,7 +462,7 @@ JLAC10コード、未標準化コードの設定の有無に関わらず、施�
     :
     "tag": {[
       {
-        "system": "http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrexs_indication",
         "code": "UNINFORMED"
       }
     ]
