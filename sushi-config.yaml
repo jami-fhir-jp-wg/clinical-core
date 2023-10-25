@@ -10,18 +10,18 @@ name: "電子カルテ情報共有サービスFHIR実装ガイド"
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide"
 status: draft # draft | active | retired | unknown 
-version: 0.9.2
-date: 2023-09-25
+version: 0.9.8
+date: 2023-10-25
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
-copyrightYear: 2022+
+copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC BY-ND  #  https://www.hl7.org/fhir/valueset-spdx-license.html
 # https://www.hl7.org/fhir/valueset-jurisdiction.html 
 publisher:
-  name: Kazuhiko Ohe@JAMI/HL7Japan and The University of Tokyo
+  name: Kazuhiko Ohe@JAMI/HL7Japan,JAMI, and The University of Tokyo
   url: http://jpfhir.jp
   email: office@hlfhir.jp
-copyright: Copyright Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止
+copyright: Copyright (temporaly) by Kazuhiko Ohe@The University of Tokyo, CC(Creative Commons license) BY-ND CC表示・改変禁止
 jurisdiction: 'urn:iso:std:iso:3166-2#JP'
 dependencies:
   jp-core.r4:
