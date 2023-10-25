@@ -11,6 +11,6 @@
     "jp-core.r4": "1.1.2-dev",
     "jpfhir-terminology": "1.1.1"
   },
-  "url": "http://jpfhir.jp/fhir/clincs",
-  "canonical": "http://jpfhir.jp/fhir/clincs"
+  "url": "http://jpfhir.jp/fhir/clins",
+  "canonical": "http://jpfhir.jp/fhir/clins"
 }

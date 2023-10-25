@@ -5,12 +5,12 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
-canonical: http://jpfhir.jp/fhir/clincs
+canonical: http://jpfhir.jp/fhir/clins
 name: "電子カルテ情報共有サービスFHIR実装ガイド"
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide）"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide"
 status: draft # draft | active | retired | unknown 
-version: 0.9.8
+version: 0.9.3
 date: 2023-10-25
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
@@ -47,6 +47,7 @@ menu:
     本文: index.html
     ６情報送信仕様: core6spec.html
     プロファイル: artifacts.html
+    改訂履歴: history.html
   Artifacts: 
     Artifacts: artifacts.html
     
