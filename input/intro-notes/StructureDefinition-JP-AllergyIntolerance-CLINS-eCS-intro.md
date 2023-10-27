@@ -7,6 +7,6 @@
 
 詳細は、[アレルギー情報と薬剤禁忌情報　JP_AllergyIntolerance_eCS][JP_AllergyIntolerance_eCS]　を参照のこと。
 
-
 ## プロファイル
 
+{% include markdown-link-references.md %}

@@ -61,8 +61,8 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 
   * [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
   * [医療者情報　Practitionerリソース][JP_Practitioner_eCS]
-  * [サービス依頼（オーダ）情報　ServiceRequestリソース][JP_ServiceRequest]
-  * [検査検体情報	Sepecimenリソース][JP_Specimen]  
+  * [サービス依頼（オーダ）情報　ServiceRequestリソース][JP_ServiceRequest]　（作成中）
+  * [検査検体情報	Sepecimenリソース][JP_Specimen]  （作成中）
   <br>
 
 - 3文書（診療情報提供書、退院時サマリー、健診結果報告書）に含まれる6情報に該当する情報の記述方法

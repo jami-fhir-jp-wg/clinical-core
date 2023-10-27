@@ -38,3 +38,4 @@
 
 ## プロファイル
 
+{% include markdown-link-references.md %}

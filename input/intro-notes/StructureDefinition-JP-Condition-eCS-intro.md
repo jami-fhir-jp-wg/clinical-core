@@ -1674,3 +1674,4 @@ function details_open(onoff, idname, idCloseButton){
 <br>
 
 ## プロファイル
+{% include markdown-link-references.md %}
