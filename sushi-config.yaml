@@ -87,50 +87,92 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   no-validate:
     - '*/hl7.fhir.jp.core'
   special-url:
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_AllergyIntolerance_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Consent_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Consent
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Device_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Device
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DeviceUseStatement_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_DeviceUseStatement
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DocumentReference_CDAdocument
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_DocumentReference_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_DocumentReference
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Encounter_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ImagingStudy_Radiology_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Immunization_eClinicalSummary
-    - http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_MedicationRequest_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_MedicationStatement_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationStatement
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_LabResult_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Observation_Common_eClinicalSummary
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Patient_eCS
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Practitioner_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Procedure_eClinicalSummary
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_RelatedPerson_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_RelatedPerson
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ResearchStudy_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchStudy
-    - http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_ResearchSubject_eClinicalSummary
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchSubject
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
-    - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP__eCS_Department
+    - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
-    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense
     - http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes
-    - http://jpfhir.jp/fhir/CodeSystem/JP-CLINS-ObsLabResult-CoreLabo-CS
+    - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_BundleCategory_CS
+    - http://jpfhir.jp/fhir/clins/CodeSystem/JP-CLINS-ObsLabResult-CoreLabo-CS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_ObservationLabResultLocalUncoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS
     - http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section
     - http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category
+    - urn:oid:1.2.392.200250.2.2.2
+    - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
+    - http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS
+    - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
+    - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
+    - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction
+    - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-abo-bld_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-alb_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-alp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-alt_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-amy_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-aptt_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ast_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-bnp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-bs_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-bun_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ca_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-che_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ck_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-cl_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-cre_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-crp-class_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-crp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-cys-c_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-d-bil_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-dd_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-fbs_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ggt_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-hb_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-hdl-c_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-plt_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-k_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ld_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ldl-c_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-na_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-hba1c-ngsp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-nt-probnp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-pt-act_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-pt-inr_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-pt-ratio_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-pt-sec_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-rbc_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-rh-bld_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-t-bil_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-t-cho_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-tg_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-tp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-u-a/c_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-u-bld_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-u-glu_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-u-p/c_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-u-tp_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-ua_VS
+    - http://jpfhir.jp/fhir/ValueSet/JP-CLINS-ObsLabResult-CoreLabo-wbc_VS
+    - http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
+    - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-gs1-14
+    - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9
+    - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj
+    - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
+    - http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
     - urn:oid:1.2.392.200250.2.2.2
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS
