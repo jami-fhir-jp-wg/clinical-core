@@ -26,7 +26,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#OHO "院外処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#OHP "外来処方"
 * category.text = "院外処方"
-* medicationCodeableConcept.coding[0] = http://medis.or.jp/CodeSystem/master-HOT9#121431401 "アムロジピンＯＤ錠１０ｍｇ"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#121431401 "アムロジピンＯＤ錠１０ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1042350 "アムロジピンＯＤ錠１０ｍｇ"
 * medicationCodeableConcept.text = "アムロジピンＯＤ錠１０ｍｇ"
 * subject.identifier.system = $JP_Insurance_memberID

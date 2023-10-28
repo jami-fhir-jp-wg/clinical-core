@@ -26,7 +26,7 @@ Description: "入院処方　内服処方頓用発熱時　1回量記述なし�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#ORD "定期処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院定期処方"
-* medicationCodeableConcept.coding[0] = http://medis.or.jp/CodeSystem/master-HOT9#115228902 "カロナール錠３００"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#115228902 "カロナール錠３００"
 * medicationCodeableConcept.coding[+] = $Icode#I1187710 "カロナール錠３００"
 * medicationCodeableConcept.text = "カロナール錠３００"
 * subject.identifier.system = $JP_Insurance_memberID

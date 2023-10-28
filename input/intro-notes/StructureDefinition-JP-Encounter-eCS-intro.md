@@ -674,7 +674,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl404 width=195 style='border-top:none;border-left:none;width:146pt'><span
   lang=EN-US><a href="http://medis.or.jp/CodeSystem/master-disease-exCode"
   target="_parent"><span style='font-family:"ＭＳ 明朝";mso-generic-font-family:
-  auto;mso-font-charset:128'>http://medis.or.jp/CodeSystem/master-disease-exCode</span></a></span></td>
+  auto;mso-font-charset:128'>urn:oid:1.2.392.200119.4.101.6</span></a></span></td>
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl401 align=left width=107 style='height:15.0pt;

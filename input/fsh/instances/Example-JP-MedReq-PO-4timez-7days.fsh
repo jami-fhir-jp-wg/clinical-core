@@ -25,7 +25,7 @@ Description: "入院処方　内服処方1日4回7日分　例"
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
-* medicationCodeableConcept.coding[0] = http://medis.or.jp/CodeSystem/master-HOT9#123812902 "カロナール錠５００"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#123812902 "カロナール錠５００"
 * medicationCodeableConcept.coding[+] = $Icode#I1187300 "カロナール錠５００"
 * medicationCodeableConcept.text = "カロナール錠５００"
 * subject.identifier.system = $JP_Insurance_memberID

@@ -27,7 +27,7 @@ Description: "conditionExample01 必須要素だけのサンプル"
 //* criticality = #unable-to-assess
 
 //病名情報
-* code.coding = http://medis.or.jp/CodeSystem/master-disease-keyNumber#20064049 "十二指腸潰瘍"
+* code.coding = $JP_Disease_MEDIS_ManagementID_CS#20064049 "十二指腸潰瘍"
 * code.text = "十二指腸潰瘍・H1期"
 
 //* subject = Reference(Example-JP-Patient-eCS-01-Contained)
@@ -67,7 +67,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * category = #encounter-diagnosis
 
 //病名情報
-* code.coding = http://medis.or.jp/CodeSystem/master-disease-keyNumber#20054178 "胃癌"
+* code.coding = $JP_Disease_MEDIS_ManagementID_CS#20054178 "胃癌"
 * code.coding = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169 "胃の悪性新生物＜腫瘍＞，胃，部位不明"
 * code.text = "胃癌"
 
@@ -111,7 +111,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * category = #encounter-diagnosis
 
 //病名情報
-* code.coding = http://medis.or.jp/CodeSystem/master-disease-exCode#L3RF "噴門癌"
+* code.coding = $JP_Disease_MEDIS_Concept_CS#L3RF "噴門癌"
 * code.text = "噴門癌早期"
 
 //* subject = Reference(Example-JP-Patient-eCS-01-Contained)

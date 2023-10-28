@@ -25,7 +25,7 @@ Description: "入院処方　内服頓用　頓用と1回量をコードで記�
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
-* medicationCodeableConcept.coding[0] = http://medis.or.jp/CodeSystem/master-HOT9#127031001 "デエビゴ錠２．５ｍｇ"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#127031001 "デエビゴ錠２．５ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1379700 "デエビゴ錠２．５ｍｇ"
 * medicationCodeableConcept.text = "デエビゴ錠２．５ｍｇ"
 * subject.identifier.system = $JP_Insurance_memberID

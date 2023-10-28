@@ -25,7 +25,7 @@ Description: "入院処方　内服処方1日1回１回2錠 2日分処方例"
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
-* medicationCodeableConcept.coding[0] = http://medis.or.jp/CodeSystem/master-HOT9#122394101 "デノタスチュアブル配合錠"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#122394101 "デノタスチュアブル配合錠"
 * medicationCodeableConcept.coding[+] = $Icode#I1388110 "デノタスチュアブル配合錠"
 * medicationCodeableConcept.text = "デノタスチュアブル配合錠"
 * subject.identifier.system = $JP_Insurance_memberID

@@ -881,7 +881,7 @@ function details_open(onoff, idname, idCloseButton){
   class="font23">を必須とする。</font><br>
     YJ: &quot;urn:oid:1.2.392.100495.20.1.73&quot;<br>
     HOT9:<span style='mso-spacerun:yes'> 
-  </span>&quot;http://medis.or.jp/CodeSystem/master-<ruby>HO<span
+  </span>&quot;urn:oid:1.2.392.200119.4.403.1<ruby>HO<span
   style='display:none'><rt class=font22>ハンシャ </rt></span></ruby>T9&quot;<br>
     HOT<ruby>7:<span style='display:none'><rt class=font22>バアイ </rt></span></ruby><ruby><span
   style='mso-spacerun:yes'>  </span><span style='display:none'><rt
@@ -901,7 +901,7 @@ function details_open(onoff, idname, idCloseButton){
   class="font13">/c</font><span style='display:none'><rt class=font22>シヨウ </rt></span></ruby><font
   class="font13">lins/CodeSystem/DrugCode/医療機関10桁コード&quot;を使用すること。</font></td>
   <td class=xl109 width=36 style='width:27pt'>例示</td>
-  <td class=xl225 width=195 style='width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-HOT9&quot;</td>
+  <td class=xl225 width=195 style='width:146pt'>&quot;urn:oid:1.2.392.200119.4.403.1&quot;</td>
  </tr>
  <tr height=56 style='height:42.0pt'>
   <td height=56 class=xl106 width=76 style='height:42.0pt;width:57pt'>medicationCodeableConcept</td>

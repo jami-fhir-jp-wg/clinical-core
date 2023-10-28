@@ -70,8 +70,7 @@ Alias: $observation-subcategory-vs = http://jpfhir.jp/fhir/eCS/ValueSet/observat
 
 Alias: $JP_ObservationLabResultCode_InfectionRelated_VS = http://jpfhir.jp/fhir/eCS/ValueSet/JP_ObservationLabResultCode_InfectionRelated_VS
 Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir.jp/fhir/eCS/ValueSet/JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
-//Alias: $JP_ObservationLabResultCode_CS = http://medis.or.jp/CodeSystem/master-JLAC10-17digits
-Alias: $JP_ObservationLabResultCode_CSOID = urn:oid:1.2.392.200119.4.504
+Alias: $JP_ObservationLabResultCode_CS = urn:oid:1.2.392.200119.4.504
 
 Alias: $JP_SimpleObservationCategory_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
 
@@ -124,13 +123,13 @@ Alias: $JP_CLINS_ObsLabResultCode_VS = JP_CLINS_ObsLabResult_UnknownCode_CS#9999
 
 
 Alias: $JP_Disease_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.101.6    // MEDIS病名交換用コード
-Alias: $JP_Disease_MEDIS_ManagementID_CS = http://medis.or.jp/CodeSystem/master-disease-keyNumber    // MEDIS病名管理番号
-Alias: $JP_Disease_MEDIS_ManagementID_CS_oid = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号
+Alias: $JP_Disease_MEDIS_ManagementID_CS_url = http://medis.or.jp/CodeSystem/master-disease-keyNumber    // MEDIS病名管理番号
+Alias: $JP_Disease_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号
 Alias: $JP_Disease_Claim_CS = http://jpfhi.jp/fhir/CodeSystem/claimSystem_syobyomei_CS
 Alias: $JP_BodySite_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.201.5   // MEDIS修飾語交換用コード
 Alias: $JP_BodySite_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.201.2 // MEDIS修飾語管理番号
-Alias: $JP_DiseaseCategory_WHO_ICD10_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full  // ICD10  HL7 regisered
-Alias: $JP_DiseaseCategory_WHO_ICD10_CS_oid = urn:oid:2.16.840.1.113883.6.3.1  // ICD10  HL7 regisered
+Alias: $JP_DiseaseCategory_WHO_ICD10_CS_url = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full  // ICD10  HL7 regisered
+Alias: $JP_DiseaseCategory_WHO_ICD10_CS = urn:oid:2.16.840.1.113883.6.3.1  // ICD10  HL7 regisered
 
 // 拡張
 Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department
