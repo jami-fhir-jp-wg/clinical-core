@@ -9,7 +9,8 @@ Invariant: patientID-localSystem
 Description: "patientIDの施設固有IDのsystem値は、urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]である。"
 Severity: #error
 //Expression: "((section.code.coding.where(code = '200')).exists()) xor ((section.code.coding.where(code = '300')).exists())"
-Expression: "$this = 'urn:oid:1.2.392.100495.20.3.51.11318814790'"
+Expression: (identifier.where(substring(system,0,30) = 'urn:oid:1.2.392.100495.20.3.51.').exists() and substring(identifier.system,31,11) = '11318814790') or (identifier.where(substring(system,0,30) != 'urn:oid:1.2.392.100495.20.3.51.').exists() )
+
 
 Profile: JP_Patient_CLINS_eCS
 Parent: JP_Patient_eCS
@@ -30,12 +31,14 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS")
 
+
+* obeys patientID-localSystem
+
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains 
     insurance_memberID 1..1 MS
-  and other_identifier 0..1 MS
 
 * identifier[insurance_memberID] 1.. MS
 * identifier[insurance_memberID].system 1..1
@@ -47,9 +50,9 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 * identifier[insurance_memberID].value ^definition = "保険者・被保険者番号情報(被保険者個人識別子)"
 * identifier[insurance_memberID].value ^comment = "被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。"
 
-* identifier[other_identifier] 1.. MS
-* identifier[other_identifier].system 1..1
-  * obeys patientID-localSystem
+//* identifier[other_identifier] 1.. MS
+//* identifier[other_identifier].system 1..1
+
 
 /*
 * identifier[hospitalPatientID] 1.. MS
