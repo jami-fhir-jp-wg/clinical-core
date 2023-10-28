@@ -58,5 +58,5 @@ Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量
 * dosageInstruction.text = "坐薬 便秘時 1回1個 肛門へ挿入"
 * dosageInstruction.timing.event = "2021-07-14T08:00:00+09:00"
 * dosageInstruction.timing.code.text = "坐薬 便秘時 1回1個 肛門へ挿入"
-* dosageInstruction.doseAndRate.type = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType#1 "製剤量"
-* dispenseRequest.quantity = 10 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#KO "個"
+* dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
+* dispenseRequest.quantity = 10 $JP_MedicationUnitMERIT9_CS#KO "個"

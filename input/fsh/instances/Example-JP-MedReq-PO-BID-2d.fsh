@@ -50,9 +50,9 @@ Description: "入院処方　内服処方1日1回１回2錠 2日分処方例"
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.timing.code.text = "1日1回 夕食後"
-* dosageInstruction.doseAndRate.type = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType#1 "製剤量"
-* dosageInstruction.doseAndRate.doseQuantity = 2 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
-* dosageInstruction.doseAndRate.rateRatio.numerator = 2 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
+* dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
+* dosageInstruction.doseAndRate.doseQuantity = 2 $JP_MedicationUnitMERIT9_CS#TAB "錠"
+* dosageInstruction.doseAndRate.rateRatio.numerator = 2 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 * dosageInstruction.doseAndRate.rateRatio.denominator = 1 'd' "日"
-* dispenseRequest.quantity = 4 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
+* dispenseRequest.quantity = 4 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 * dispenseRequest.expectedSupplyDuration = 2 'd' "日"

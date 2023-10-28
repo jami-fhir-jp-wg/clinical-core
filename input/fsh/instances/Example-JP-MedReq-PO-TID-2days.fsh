@@ -60,9 +60,9 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * dosageInstruction.timing.code.coding =  urn:oid:1.2.392.200250.2.2.20#1013044400000000 "内服 １日３回 朝昼夕食後"
 * dosageInstruction.timing.code.text = "1日1回 毎食後"
 
-* dosageInstruction.doseAndRate.type = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType#1 "製剤量"
-* dosageInstruction.doseAndRate.doseQuantity = 2 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
-* dosageInstruction.doseAndRate.rateRatio.numerator = 6 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
+* dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
+* dosageInstruction.doseAndRate.doseQuantity = 2 $JP_MedicationUnitMERIT9_CS#TAB "錠"
+* dosageInstruction.doseAndRate.rateRatio.numerator = 6 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 * dosageInstruction.doseAndRate.rateRatio.denominator = 1 'd' "日"
-* dispenseRequest.quantity = 12 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
+* dispenseRequest.quantity = 12 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 * dispenseRequest.expectedSupplyDuration = 2 'd' "日"

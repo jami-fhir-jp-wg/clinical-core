@@ -46,6 +46,6 @@ Description: "入院処方　内服頓用　頓用と1回量をコードで記�
 * dosageInstruction.timing.event = "2021-07-05T08:00:00+09:00"
 * dosageInstruction.timing.code.text = "不眠時"
 * dosageInstruction.asNeededBoolean = true
-* dosageInstruction.doseAndRate.type = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType#1 "製剤量"
-* dosageInstruction.doseAndRate.doseQuantity = 1 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
-* dispenseRequest.quantity = 4 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
+* dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
+* dosageInstruction.doseAndRate.doseQuantity = 1 $JP_MedicationUnitMERIT9_CS#TAB "錠"
+* dispenseRequest.quantity = 4 $JP_MedicationUnitMERIT9_CS#TAB "錠"

@@ -46,5 +46,5 @@ Description: "入院処方　外用（点眼）全量処方　1回量をコー�
 * dosageInstruction.text = "両眼点眼 1日1回  "
 * dosageInstruction.timing.event = "2021-07-05T12:00:00+09:00"
 * dosageInstruction.timing.code.text = "両眼点眼 1日1回"
-* dosageInstruction.doseAndRate.type = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType#1 "製剤量"
-* dispenseRequest.quantity = 1 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#BTL "瓶"
+* dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
+* dispenseRequest.quantity = 1 $JP_MedicationUnitMERIT9_CS#BTL "瓶"

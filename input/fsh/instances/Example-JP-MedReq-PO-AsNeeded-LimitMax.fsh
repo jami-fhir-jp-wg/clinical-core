@@ -47,5 +47,5 @@ Description: "入院処方　内服処方頓用発熱時　1回量記述なし�
 * dosageInstruction.timing.event = "2021-07-07T08:00:00+09:00"
 * dosageInstruction.timing.code.text = "発熱時"
 * dosageInstruction.asNeededBoolean = true
-* dosageInstruction.doseAndRate.type = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType#1 "製剤量"
-* dispenseRequest.quantity = 4 http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code#TAB "錠"
+* dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
+* dispenseRequest.quantity = 4 $JP_MedicationUnitMERIT9_CS#TAB "錠"
