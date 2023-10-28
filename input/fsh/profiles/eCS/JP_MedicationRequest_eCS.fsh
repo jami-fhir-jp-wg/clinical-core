@@ -50,29 +50,31 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
     codingYJ 0..1 MS and
     codingGS1 0..1 MS and
     codingGeneralName 0..1 MS
+
+    
 * medication[x].coding[codingHOT7].system 1.. MS
-* medication[x].coding[codingHOT7].system = "urn:oid:1.2.392.200119.4.403.2" (exactly)
+* medication[x].coding[codingHOT7].system = $JP_MedicationCodeHOT7_CS (exactly)
   * insert relative_short_definition("HOT7コードの識別ID")
 * medication[x].coding[codingHOT7].code 1.. MS
-* medication[x].coding[codingHOT7].code from http://jpfhir.jp/fhir/eCS/ValueSet/jp-drugCode-hot7
+* medication[x].coding[codingHOT7].code from $JP_MedicationCodeHOT7_VS
   * insert relative_short_definition("HOT7医薬品コード\(HOT9の末尾２桁である販社コードが不明の場合に限る\)")
 * medication[x].coding[codingHOT7].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
 * medication[x].coding[codingHOT9].system 1.. MS
-* medication[x].coding[codingHOT9].system = "urn:oid:1.2.392.200119.4.403.1" (exactly)
+* medication[x].coding[codingHOT9].system = $JP_MedicationCodeHOT9_CS (exactly)
   * insert relative_short_definition("HOT9コードの識別ID")
 * medication[x].coding[codingHOT9].code 1.. MS
-* medication[x].coding[codingHOT9].code from http://jpfhir.jp/fhir/eCS/ValueSet/jp-drugCode-hot9
+* medication[x].coding[codingHOT9].code from $JP_MedicationCodeHOT9_VS
   * insert relative_short_definition("HOT9医薬品コード")
 * medication[x].coding[codingHOT9].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
 * medication[x].coding[codingYJ].system 1.. MS
-* medication[x].coding[codingYJ].system = "urn:oid:1.2.392.100495.20.1.73" (exactly)
+* medication[x].coding[codingYJ].system = $JP_MedicationCodeYJ_CS (exactly)
   * insert relative_short_definition("YJコードを識別するsystem値")
 * medication[x].coding[codingYJ].code 1.. MS
-* medication[x].coding[codingYJ].code from http://jpfhir.jp/fhir/eCS/ValueSet/jp-drugCode-yj
+* medication[x].coding[codingYJ].code from $JP_MedicationCodeYJ_VS
 * medication[x].coding[codingYJ].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
@@ -81,16 +83,17 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * medication[x].coding[codingGS1].system MS
 * medication[x].coding[codingGS1].code ^definition = "GS1標準の識別コード。医薬品コードおよび医療材料等コードとして、調剤包装単位（最少包装単位、個別包装単位）14桁のフォーマットで使用する。"
 * medication[x].coding[codingGS1].code MS
-* medication[x].coding[codingGS1].code  from http://jpfhir.jp/fhir/eCS/ValueSet/jp-drugCode-gs1-14
+* medication[x].coding[codingGS1].code  from http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeGS1_VS
+
 * medication[x].coding[codingGS1].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
-* medication[x].coding[codingGeneralName].system = "urn:oid:1.2.392.100495.20.1.81" (exactly)
+* medication[x].coding[codingGeneralName].system = $JP_MedicationCodeCommon_CS (exactly)
   * insert relative_short_definition("厚生労働省保険局が定める一般処方名マスターコードを識別するcsystem値")
 * medication[x].coding[codingGeneralName].system MS
 * medication[x].coding[codingGeneralName].code ^definition = "厚生労働省保険局が定める一般処方名マスターコード"
 * medication[x].coding[codingGeneralName].code MS
-* medication[x].coding[codingGeneralName].code from http://jpfhir.jp/fhir/eCS/ValueSet/mhlw-drugCode-generalNameCode
+* medication[x].coding[codingGeneralName].code from $JP_MedicationCodeCommon_VS
 * medication[x].coding[codingGeneralName].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 

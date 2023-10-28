@@ -7,9 +7,9 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
+
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
-* meta.profile = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
 
 * identifier 1.. MS
 * identifier ^short = "この文書Bundleの固定識別番号。Bundle作成時にシステムが設定する。"
