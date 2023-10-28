@@ -42,7 +42,6 @@ Description: "CLINS 電子カルテ共有サービス用 MedicationRequestリソ
   /* patient 1..1
     and */
     encounter 0..1
-    and organization 0..1
     and author 0..1
     and order 0..1
 /*

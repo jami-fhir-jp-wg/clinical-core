@@ -30,14 +30,9 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * identifier  MS
   * insert relative_short_definition("この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるID。このID情報をキーとして１処方薬情報の更新・削除ができる一意性があること。このidentifier以外のIDも追加して複数格納しても構わない。少なくともひとつのidentifierは次の仕様に従う値を設定すること。")
   * ^comment = "1回の処方オーダで発行されるすべての処方薬情報が処方オーダ番号のように同一のIDでも構わない。この場合、更新や削除は同一IDの情報すべてに対して実施される。"
-* identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "system"
-* identifier ^slicing.rules = #open
-
-* identifier contains resourceInstance-identifier 0..1 MS
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].system ^comment = "この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。1回の処方オーダで発行されるすべての処方薬情報が処方オーダ番号のように同一のIDの場合でもこのsystem値を使用する。"
-* identifier[resourceInstance-identifier].value 1..1 MS
+* identifier[requestIdentifier] 1..1 MS
+* identifier[requestIdentifier].system ^comment = "この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。1回の処方オーダで発行されるすべての処方薬情報が処方オーダ番号のように同一のIDの場合でもこのsystem値を使用する。"
+* identifier[requestIdentifier].value 1..1 MS
   * insert relative_short_definition("１処方薬情報を識別するIDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2021-00123456\"")
 
 * status = #completed

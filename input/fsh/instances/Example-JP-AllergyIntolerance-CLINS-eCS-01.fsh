@@ -19,8 +19,8 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
 
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "102934701"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "102934701"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
@@ -67,8 +67,8 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 * meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "102934702"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "102934702"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active  "Active"
  // active | recurrence | relapse | inactive | remission | resolved
@@ -123,8 +123,8 @@ Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁�
 * meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "102934703"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "102934703"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active  "Active"
  // active | recurrence | relapse | inactive | remission | resolved

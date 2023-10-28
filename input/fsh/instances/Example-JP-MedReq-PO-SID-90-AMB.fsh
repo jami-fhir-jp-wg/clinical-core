@@ -19,8 +19,8 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#OHO "院外処方"

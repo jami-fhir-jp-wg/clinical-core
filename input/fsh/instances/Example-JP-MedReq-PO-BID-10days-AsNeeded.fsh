@@ -19,8 +19,8 @@ Description: "入院処方　内服処方1日1回１回2錠（投与指示あり
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#DCG "退院処方"

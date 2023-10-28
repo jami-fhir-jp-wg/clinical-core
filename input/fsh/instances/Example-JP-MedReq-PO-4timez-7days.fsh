@@ -19,8 +19,8 @@ Description: "入院処方　内服処方1日4回7日分　例"
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"

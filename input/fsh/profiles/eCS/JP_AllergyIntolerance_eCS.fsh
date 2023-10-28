@@ -35,10 +35,10 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 
-* identifier contains resourceInstance-identifier 1..1 MS
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].system ^comment = "このアレルギー情報を作成した施設内で、このアレルギー情報を他のアレルギー情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。1回の登録で複数のアレルギー情報が登録される場合に、それらは同一のIDで登録される場合でもこのsystem値を使用する。"
-* identifier[resourceInstance-identifier].value 1..1 MS
+* identifier contains requestIdentifier 1..1 MS
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].system ^comment = "このアレルギー情報を作成した施設内で、このアレルギー情報を他のアレルギー情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。1回の登録で複数のアレルギー情報が登録される場合に、それらは同一のIDで登録される場合でもこのsystem値を使用する。"
+* identifier[requestIdentifier].value 1..1 MS
   * insert relative_short_definition("アレルギー情報IDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2020-00123456\"")
 
 * clinicalStatus   0..1 MS

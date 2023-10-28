@@ -19,8 +19,8 @@ Description: "入院処方　内服処方頓用発熱時　1回量記述なし�
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A1721342FB30D2021070718303401-1"
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "1318814790-9990767-0A1721342FB30D2021070718303401-1"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "1318814790-9990767-0A1721342FB30D2021070718303401-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#ORD "定期処方"

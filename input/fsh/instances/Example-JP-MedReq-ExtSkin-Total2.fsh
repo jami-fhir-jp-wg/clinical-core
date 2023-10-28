@@ -20,8 +20,8 @@ Description: "入院処方　外用（塗布）全量処方　1回量をコー�
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#XTR "臨時処方"

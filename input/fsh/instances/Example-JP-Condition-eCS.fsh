@@ -13,8 +13,8 @@ Description: "conditionExample01 必須要素だけのサンプル"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_Condition_CLINS_eCS
 
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "202934701"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "202934701"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
@@ -56,8 +56,8 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "202934702"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "202934702"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
@@ -100,8 +100,8 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 * meta.profile[+] = $JP_Condition_CLINS_eCS
 
 
-* identifier[resourceInstance-identifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceInstance-identifier].value = "202934703"
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "202934703"
 
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#inactive "Inactive"
  // active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) 、unknown（不明）
