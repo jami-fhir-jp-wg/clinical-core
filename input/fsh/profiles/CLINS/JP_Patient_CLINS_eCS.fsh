@@ -4,6 +4,12 @@
 //   親プロファイル:JP_MedicationRequest
 // ==================================================
 
+// * identifier[other_identifier].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+Invariant: patientID-localSystem
+Description: "patientIDの施設固有IDのsystem値は、urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]である。"
+Severity: #error
+//Expression: "((section.code.coding.where(code = '200')).exists()) xor ((section.code.coding.where(code = '300')).exists())"
+Expression: "matches('urn:oid:1\\.2\\.392\\.100495\\.20\\.3\\.51\\.11318814790')"
 
 Profile: JP_Patient_CLINS_eCS
 Parent: JP_Patient_eCS
@@ -40,6 +46,10 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 * identifier[insurance_memberID].value ^short = "被保険者個人識別子"
 * identifier[insurance_memberID].value ^definition = "保険者・被保険者番号情報(被保険者個人識別子)"
 * identifier[insurance_memberID].value ^comment = "被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。"
+
+* identifier[other_identifier] 1.. MS
+* identifier[other_identifier].system 1..1
+  * obeys patientID-localSystem
 
 /*
 * identifier[hospitalPatientID] 1.. MS
