@@ -7,7 +7,7 @@ Usage: #example
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
 
-* meta.profile[+] = "http://hl7.jp/fhir/StructureDefinition/JP-Patient-CLINS-eCS"
+* meta.profile[+] = $JP_Patient_CLINS_eCS
 
 * identifier[other_identifier].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
 * identifier[other_identifier].value = "000999739"
