@@ -6,6 +6,10 @@
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
     ]
   },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者D001 サンプル</p></div>"
+  },
   "name": [
     {
       "extension": [

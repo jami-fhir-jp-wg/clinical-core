@@ -5,12 +5,23 @@
 // ==================================================
 
 // * identifier[other_identifier].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
-Invariant: patientID-localSystem
-Description: "patientIDの施設固有IDのsystem値は、urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]である。"
+Invariant: valid-system-local-patientID
+Description: "施設患者IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]'であり、かつその施設番号10桁はextension[eCS_InstitutionNumber].valueIdentifier.vaue値と一致しなければならない。"
 Severity: #error
-//Expression: "((section.code.coding.where(code = '200')).exists()) xor ((section.code.coding.where(code = '300')).exists())"
-Expression: (identifier.where(substring(system,0,30) = 'urn:oid:1.2.392.100495.20.3.51.').exists() and substring(identifier.system,31,11) = '11318814790') or (identifier.where(substring(system,0,30) != 'urn:oid:1.2.392.100495.20.3.51.').exists() )
+Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,11) = '1' + extension('http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').valueIdentifier.value) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
 
+Invariant: valid-system-insurance-patientIdentifier
+Description: "保険者・被保険者番号情報(system=\"http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID\")は１つだけ必須。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID').count()=1)"
+
+
+Invariant: valid-value-insurance-patientIdentifier
+Description: "保険者・被保険者番号情報の形式は、\"保険者等番号:被保険者記号:被保険者番号:被保険者証等枝番\"で、それぞれ半角英数字8桁固定、半角または全角文字列(空白を含まない)、半角または全角文字列(同)、半角数字2桁固定(1文字目は0)であり、それぞれ存在しない場合には、空文字列とする。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$')) "
+// '^[0-9]{8}:[^:^\\s^　]*:[^:^\\s^　]*:0[0-9]$''
+// '^[0-9]{8}:[^:]*:[^:]*:[0-9]{2}$'
 
 Profile: JP_Patient_CLINS_eCS
 Parent: JP_Patient_eCS
@@ -32,8 +43,14 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS")
 
 
-* obeys patientID-localSystem
+* obeys valid-system-local-patientID
+* obeys valid-system-insurance-patientIdentifier
+* obeys valid-value-insurance-patientIdentifier
+//* obeys institurionNumber
 
+* identifier ^short = "電子カルテ情報共有サービスでは、保険者・被保険者番号情報(system=\"http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID\")は必須。被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。それに加えて自施設の患者番号（system=\"urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]\"）やその他の識別子を記述することが可能。"
+
+/*
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
@@ -49,6 +66,7 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 * identifier[insurance_memberID].value ^short = "被保険者個人識別子"
 * identifier[insurance_memberID].value ^definition = "保険者・被保険者番号情報(被保険者個人識別子)"
 * identifier[insurance_memberID].value ^comment = "被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。"
+*/
 
 //* identifier[other_identifier] 1.. MS
 //* identifier[other_identifier].system 1..1

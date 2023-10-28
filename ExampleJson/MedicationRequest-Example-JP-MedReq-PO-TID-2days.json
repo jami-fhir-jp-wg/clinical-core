@@ -1,8 +1,8 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "Example-JP-MedReq-ExtAnus-AsNeeded-Total1",
+  "id": "Example-JP-MedReq-PO-TID-2days",
   "meta": {
-    "lastUpdated": "2021-07-14T16:14:35.000+09:00",
+    "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
       "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
     ]
@@ -22,11 +22,12 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "01",
+            "code": "08",
             "system": "urn:oid:1.2.392.200250.2.2.2",
-            "display": "内科"
+            "display": "循環器内科"
           }
-        ]
+        ],
+        "text": "循環器診療科"
       }
     }
   ],
@@ -41,11 +42,11 @@
     },
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+      "value": "1318814790-9990767-0A1720D83807672021070909210705-2"
     },
     {
       "system": "urn:oid:1.2.392.100495.20.3.11",
-      "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+      "value": "1318814790-9990767-0A1720D83807672021070909210705-2"
     }
   ],
   "subject": {
@@ -61,21 +62,26 @@
         {
           "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse",
           "valuePeriod": {
-            "start": "2021-07-14"
+            "start": "2021-07-09"
           }
         }
       ],
-      "text": "坐薬 便秘時 1回1個 肛門へ挿入",
-      "timing": {
-        "event": [
-          "2021-07-14T08:00:00+09:00"
-        ],
-        "code": {
-          "text": "坐薬 便秘時 1回1個 肛門へ挿入"
-        }
-      },
       "doseAndRate": [
         {
+          "rateRatio": {
+            "denominator": {
+              "value": 1,
+              "unit": "日",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            },
+            "numerator": {
+              "value": 6,
+              "code": "TAB",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "unit": "錠"
+            }
+          },
           "type": {
             "coding": [
               {
@@ -84,41 +90,53 @@
                 "display": "製剤量"
               }
             ]
+          },
+          "doseQuantity": {
+            "value": 2,
+            "code": "TAB",
+            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "unit": "錠"
           }
         }
-      ]
+      ],
+      "text": "1日3回 毎食後 １回 2錠  (１日  6錠) 2　日分",
+      "timing": {
+        "event": [
+          "2021-07-09T08:00:00+09:00"
+        ],
+        "repeat": {
+          "boundsDuration": {
+            "value": 3,
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "日"
+          },
+          "count": 6,
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "1013044400000000",
+              "system": "urn:oid:1.2.392.200250.2.2.20",
+              "display": "内服 １日３回 朝昼夕食後"
+            }
+          ],
+          "text": "1日1回 毎食後"
+        }
+      }
     }
   ],
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）</p></div>"
   },
   "contained": [
     {
-      "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-IMP",
-      "meta": {
-        "profile": [
-          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
-        ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　入院01 サンプル</p></div>"
-      },
-      "status": "finished",
-      "class": {
-        "code": "IMP",
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "display": "入院"
-      },
-      "period": {
-        "start": "2021-07-05"
-      }
-    },
-    {
       "resourceType": "Practitioner",
-      "id": "Example-Practitioner-minimun-R001",
+      "id": "Example-Practitioner-minimun-D001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -126,7 +144,7 @@
       },
       "text": {
         "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者R001 サンプル</p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者D001 サンプル</p></div>"
       },
       "name": [
         {
@@ -136,7 +154,7 @@
               "valueCode": "IDE"
             }
           ],
-          "text": "医学 一郎"
+          "text": "医療 太郎"
         }
       ]
     }
@@ -156,41 +174,48 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "104937401",
+        "code": "104195801",
         "system": "urn:oid:1.2.392.200119.4.403.1",
-        "display": "新レシカルボン坐剤"
+        "display": "ミヤＢＭ錠"
       },
       {
-        "code": "I3344500",
+        "code": "I1656900",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567",
-        "display": "新レシカルボン坐剤"
+        "display": "ミヤＢＭ錠（２０ｍｇ／錠）"
+      },
+      {
+        "code": "2316009F1022",
+        "system": "urn:oid:1.2.392.100495.20.1.73",
+        "display": "ミヤＢＭ錠"
       }
     ],
-    "text": "新レシカルボン坐剤"
+    "text": "ミヤＢＭ錠（２０ｍｇ／錠）"
   },
-  "encounter": {
-    "reference": "#Example-JP-Encounter-IMP"
-  },
-  "authoredOn": "2021-07-14T10:52:26+09:00",
+  "authoredOn": "2021-07-09T09:47:14+09:00",
   "requester": {
-    "reference": "#Example-Practitioner-minimun-R001",
-    "display": "医学 一郎",
+    "reference": "#Example-Practitioner-minimun-D001",
+    "display": "医療 太郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-Practitioner-minimun-R001",
-    "display": "医学 一郎",
+    "reference": "#Example-Practitioner-minimun-D001",
     "type": "Practitioner"
   },
   "groupIdentifier": {
-    "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+    "value": "1318814790-9990767-0A1720D83807672021070909210705-2"
   },
   "dispenseRequest": {
     "quantity": {
-      "value": 10,
-      "code": "KO",
+      "value": 12,
+      "code": "TAB",
       "system": "urn:oid:1.2.392.100495.20.2.101",
-      "unit": "個"
+      "unit": "錠"
+    },
+    "expectedSupplyDuration": {
+      "value": 2,
+      "code": "d",
+      "system": "http://unitsofmeasure.org",
+      "unit": "日"
     }
   }
 }

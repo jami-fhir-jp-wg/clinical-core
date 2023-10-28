@@ -3,8 +3,21 @@
   "id": "Example-Patient-standard",
   "meta": {
     "profile": [
-      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS"
     ]
+  },
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>患者情報　標準サンプル</p></div>"
   },
   "identifier": [
     {
@@ -12,8 +25,8 @@
       "value": "000999739"
     },
     {
-      "system": "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
-      "value": "00012345:あいう:１８７:05"
+      "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID",
+      "value": "50012:あいう:123:05"
     }
   ],
   "name": [
@@ -57,7 +70,9 @@
   "address": [
     {
       "text": "高知県高知市五台山4200-6",
-      "postalCode": "781-8125"
+      "postalCode": "781-8125",
+      "city": "高知市",
+      "state": "高知県"
     }
   ],
   "contact": [

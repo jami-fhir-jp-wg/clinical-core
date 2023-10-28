@@ -9,6 +9,11 @@ InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
+
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
+
+
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
@@ -55,6 +60,11 @@ Instance: Example-JP-AllergyIntolerance-CLINS-eCS-02
 InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
+
+
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述したサンプル</p> </div>"
+
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
@@ -111,6 +121,11 @@ Instance: Example-JP-DrugContraindications-CLINS-eCS-03
 InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁忌情報のサンプル"
+
+
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤禁忌情報のサンプル</p> </div>"
+
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

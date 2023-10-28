@@ -2,6 +2,9 @@ Instance: Example-Patient-standard
 InstanceOf: JP_Patient_CLINS_eCS
 Usage: #example
 
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報　標準サンプル</p> </div>"
+
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
@@ -9,10 +12,14 @@ Usage: #example
 
 * meta.profile[+] = $JP_Patient_CLINS_eCS
 
-* identifier[other_identifier].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
-* identifier[other_identifier].value = "000999739"
-* identifier[insurance_memberID].system = $JP_Insurance_memberID
-* identifier[insurance_memberID].value = "00012345:あいう:１８７:05"
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[=].value = "000999739"
+* identifier[+].system = $JP_Insurance_memberID
+//* identifier[=].value = "00012345:あいう:１８７:05"
+* identifier[=].value = "50012:あいう:123:05"
+//* identifier[=].value = "00012345::１８７:05"
+//* identifier[=].value = "00012345:あいう::05"
+//* identifier[=].value = "00012345:あいう:１８７:1"
 
 
 * name[0].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"

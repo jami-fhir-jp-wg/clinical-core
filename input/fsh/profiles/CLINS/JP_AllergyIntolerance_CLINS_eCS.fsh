@@ -1,14 +1,24 @@
+
+
 // ==================================================
 //   Profile 定義 電子カルテ共有サービス用
 //   アレルギー情報／薬剤禁忌 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance_eCS
 // ==================================================
+
+Invariant: waring-medication-allergy
+Description: "注意喚起：薬剤禁忌情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままでよければ修正不要。"
+Severity: #warning
+Expression: "(category='medication' and criticality='high') or category.exists().not() or category!='medication'"
+
+
 Profile:        JP_AllergyIntolerance_CLINS_eCS
 Parent:			JP_AllergyIntolerance_eCS
 Id:             JP-AllergyIntolerance-CLINS-eCS
 Title:  "CLINS電カル共有サービス用:JP_AllergyIntolerance_CLINS_eCS"
 Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル。 JP_AllergyIntolerance_eCSからの派生プロファイル。"
 
+* obeys waring-medication-allergy
 
 * extension[eCS_InstitutionNumber] 1..1 MS
 
@@ -54,7 +64,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 
 
 * category 0..1 MS  // 薬剤禁忌情報の場合は、必須 
-* category ^comment = "電子カルテ情報共有サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならず、criticality要素は\"high\"を設定しなければならない。これ以外の場合には、本リソースの情報はや薬剤禁忌以外のアレルギー情報として取り扱われる。"
+* category ^comment = "電子カルテ情報共有サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならず、criticality要素は\"high\"を設定しなければならない。これ以外の場合には、本リソースの情報は薬剤禁忌以外のアレルギー情報として取り扱われる。"
 
 * criticality ^comment = "電子カルテ情報共有サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、category要素の記述を参照すること。" 
 

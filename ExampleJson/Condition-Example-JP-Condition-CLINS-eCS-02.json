@@ -1,10 +1,10 @@
 {
   "resourceType": "Condition",
-  "id": "Example-JP-Condition-eCS-02",
+  "id": "Example-JP-Condition-CLINS-eCS-02",
   "meta": {
     "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eClinicalSummary/StructureDefinition/JP_Condition_eClinicalSummary"
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"
     ],
     "tag": [
       {
@@ -19,49 +19,32 @@
       }
     ]
   },
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
       "value": "202934702"
     }
   ],
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p></div>"
+  },
   "contained": [
-    {
-      "resourceType": "Patient",
-      "id": "Patient1",
-      "meta": {
-        "profile": [
-          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
-        ]
-      },
-      "identifier": [
-        {
-          "system": "urn:oid:1.2.392.100495.20.3.51.11234567890",
-          "value": "826739"
-        },
-        {
-          "system": "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member",
-          "value": "00012345:あいう:３８７４７６:01"
-        }
-      ],
-      "name": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
-              "valueCode": "IDE"
-            }
-          ],
-          "text": "田中 太郎",
-          "family": "田中",
-          "given": [
-            "太郎"
-          ]
-        }
-      ],
-      "gender": "male",
-      "birthDate": "1955-05-04"
-    },
     {
       "resourceType": "Encounter",
       "id": "Example-JP-Encounter-AMB",
@@ -69,6 +52,10 @@
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
         ]
+      },
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　外来受診01 サンプル</p></div>"
       },
       "identifier": [
         {
@@ -120,9 +107,6 @@
       }
     ],
     "text": "胃癌"
-  },
-  "subject": {
-    "reference": "#Patient1"
   },
   "encounter": {
     "reference": "#Example-JP-Encounter-AMB"

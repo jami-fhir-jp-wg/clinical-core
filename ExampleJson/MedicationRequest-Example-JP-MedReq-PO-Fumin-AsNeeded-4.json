@@ -1,8 +1,8 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "Example-JP-MedReq-ExtAnus-AsNeeded-Total1",
+  "id": "Example-JP-MedReq-PO-Fumin-AsNeeded-4",
   "meta": {
-    "lastUpdated": "2021-07-14T16:14:35.000+09:00",
+    "lastUpdated": "2021-07-27T01:31:19.000+09:00",
     "profile": [
       "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
     ]
@@ -15,18 +15,6 @@
       "valueIdentifier": {
         "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
         "value": "1318814790"
-      }
-    },
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "01",
-            "system": "urn:oid:1.2.392.200250.2.2.2",
-            "display": "内科"
-          }
-        ]
       }
     }
   ],
@@ -41,11 +29,11 @@
     },
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+      "value": "1318814790-9990767-0A172AE334669A2021070515574101-1"
     },
     {
       "system": "urn:oid:1.2.392.100495.20.3.11",
-      "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+      "value": "1318814790-9990767-0A172AE334669A2021070515574101-1"
     }
   ],
   "subject": {
@@ -61,19 +49,20 @@
         {
           "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse",
           "valuePeriod": {
-            "start": "2021-07-14"
+            "start": "2021-07-05"
           }
         }
       ],
-      "text": "坐薬 便秘時 1回1個 肛門へ挿入",
+      "text": "不眠時  4　回分",
       "timing": {
         "event": [
-          "2021-07-14T08:00:00+09:00"
+          "2021-07-05T08:00:00+09:00"
         ],
         "code": {
-          "text": "坐薬 便秘時 1回1個 肛門へ挿入"
+          "text": "不眠時"
         }
       },
+      "asNeededBoolean": true,
       "doseAndRate": [
         {
           "type": {
@@ -84,6 +73,12 @@
                 "display": "製剤量"
               }
             ]
+          },
+          "doseQuantity": {
+            "value": 1,
+            "code": "TAB",
+            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "unit": "錠"
           }
         }
       ]
@@ -91,34 +86,12 @@
   ],
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　内服頓用　頓用と1回量をコードで記述する例</p></div>"
   },
   "contained": [
     {
-      "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-IMP",
-      "meta": {
-        "profile": [
-          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
-        ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　入院01 サンプル</p></div>"
-      },
-      "status": "finished",
-      "class": {
-        "code": "IMP",
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "display": "入院"
-      },
-      "period": {
-        "start": "2021-07-05"
-      }
-    },
-    {
       "resourceType": "Practitioner",
-      "id": "Example-Practitioner-minimun-R001",
+      "id": "Example-Practitioner-minimun-D001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -126,7 +99,7 @@
       },
       "text": {
         "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者R001 サンプル</p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者D001 サンプル</p></div>"
       },
       "name": [
         {
@@ -136,7 +109,7 @@
               "valueCode": "IDE"
             }
           ],
-          "text": "医学 一郎"
+          "text": "医療 太郎"
         }
       ]
     }
@@ -156,41 +129,37 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "104937401",
+        "code": "127031001",
         "system": "urn:oid:1.2.392.200119.4.403.1",
-        "display": "新レシカルボン坐剤"
+        "display": "デエビゴ錠２．５ｍｇ"
       },
       {
-        "code": "I3344500",
+        "code": "I1379700",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567",
-        "display": "新レシカルボン坐剤"
+        "display": "デエビゴ錠２．５ｍｇ"
       }
     ],
-    "text": "新レシカルボン坐剤"
+    "text": "デエビゴ錠２．５ｍｇ"
   },
-  "encounter": {
-    "reference": "#Example-JP-Encounter-IMP"
-  },
-  "authoredOn": "2021-07-14T10:52:26+09:00",
+  "authoredOn": "2021-07-05T16:00:40+09:00",
   "requester": {
-    "reference": "#Example-Practitioner-minimun-R001",
-    "display": "医学 一郎",
+    "reference": "#Example-Practitioner-minimun-D001",
+    "display": "医療 太郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-Practitioner-minimun-R001",
-    "display": "医学 一郎",
+    "reference": "#Example-Practitioner-minimun-D001",
     "type": "Practitioner"
   },
   "groupIdentifier": {
-    "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+    "value": "1318814790-9990767-0A172AE334669A2021070515574101-1"
   },
   "dispenseRequest": {
     "quantity": {
-      "value": 10,
-      "code": "KO",
+      "value": 4,
+      "code": "TAB",
       "system": "urn:oid:1.2.392.100495.20.2.101",
-      "unit": "個"
+      "unit": "錠"
     }
   }
 }

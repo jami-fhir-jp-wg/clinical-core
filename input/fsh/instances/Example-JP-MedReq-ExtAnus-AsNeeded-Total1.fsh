@@ -3,6 +3,11 @@ InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
 
+
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p> </div>"
+
+
 * id = "Example-JP-MedReq-ExtAnus-AsNeeded-Total1"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

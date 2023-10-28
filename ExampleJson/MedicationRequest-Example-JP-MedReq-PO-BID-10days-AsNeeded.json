@@ -1,8 +1,8 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "Example-JP-MedReq-ExtAnus-AsNeeded-Total1",
+  "id": "Example-JP-MedReq-PO-BID-10days-AsNeeded",
   "meta": {
-    "lastUpdated": "2021-07-14T16:14:35.000+09:00",
+    "lastUpdated": "2021-07-13T14:24:21.000+09:00",
     "profile": [
       "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
     ]
@@ -15,18 +15,6 @@
       "valueIdentifier": {
         "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
         "value": "1318814790"
-      }
-    },
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "01",
-            "system": "urn:oid:1.2.392.200250.2.2.2",
-            "display": "内科"
-          }
-        ]
       }
     }
   ],
@@ -41,11 +29,11 @@
     },
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+      "value": "1318814790-9990767-0A17296D729AE72021071219211801-2"
     },
     {
       "system": "urn:oid:1.2.392.100495.20.3.11",
-      "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+      "value": "1318814790-9990767-0A17296D729AE72021071219211801-2"
     }
   ],
   "subject": {
@@ -61,21 +49,26 @@
         {
           "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse",
           "valuePeriod": {
-            "start": "2021-07-14"
+            "start": "2021-07-12"
           }
         }
       ],
-      "text": "坐薬 便秘時 1回1個 肛門へ挿入",
-      "timing": {
-        "event": [
-          "2021-07-14T08:00:00+09:00"
-        ],
-        "code": {
-          "text": "坐薬 便秘時 1回1個 肛門へ挿入"
-        }
-      },
       "doseAndRate": [
         {
+          "rateRatio": {
+            "denominator": {
+              "value": 1,
+              "unit": "日",
+              "system": "http://unitsofmeasure.org",
+              "code": "d"
+            },
+            "numerator": {
+              "value": 30,
+              "code": "ML",
+              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "unit": "ｍＬ"
+            }
+          },
           "type": {
             "coding": [
               {
@@ -84,41 +77,46 @@
                 "display": "製剤量"
               }
             ]
+          },
+          "doseQuantity": {
+            "value": 15,
+            "code": "ML",
+            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "unit": "ｍＬ"
           }
         }
-      ]
+      ],
+      "text": "1日2回 朝夕食後 １回 15ｍＬ  (１日  30ｍＬ) 10　日分,便秘時にお飲みください",
+      "timing": {
+        "event": [
+          "2021-07-12T00:00:00+09:00"
+        ],
+        "repeat": {
+          "boundsDuration": {
+            "value": 10,
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "日"
+          },
+          "count": 20,
+          "frequency": 2,
+          "period": 1,
+          "periodUnit": "d"
+        },
+        "code": {
+          "text": "1日2回 朝夕食後"
+        }
+      }
     }
   ],
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例</p></div>"
   },
   "contained": [
     {
-      "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-IMP",
-      "meta": {
-        "profile": [
-          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
-        ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　入院01 サンプル</p></div>"
-      },
-      "status": "finished",
-      "class": {
-        "code": "IMP",
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "display": "入院"
-      },
-      "period": {
-        "start": "2021-07-05"
-      }
-    },
-    {
       "resourceType": "Practitioner",
-      "id": "Example-Practitioner-minimun-R001",
+      "id": "Example-Practitioner-minimun-D001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -126,7 +124,7 @@
       },
       "text": {
         "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者R001 サンプル</p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者D001 サンプル</p></div>"
       },
       "name": [
         {
@@ -136,7 +134,7 @@
               "valueCode": "IDE"
             }
           ],
-          "text": "医学 一郎"
+          "text": "医療 太郎"
         }
       ]
     }
@@ -145,52 +143,54 @@
     {
       "coding": [
         {
+          "code": "DCG",
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+          "display": "退院処方"
+        },
+        {
           "code": "IHP",
           "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
           "display": "入院処方"
         }
       ],
-      "text": "入院臨時処方"
+      "text": "退院時処方"
     }
   ],
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "104937401",
-        "system": "urn:oid:1.2.392.200119.4.403.1",
-        "display": "新レシカルボン坐剤"
-      },
-      {
-        "code": "I3344500",
+        "code": "I1692880",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567",
-        "display": "新レシカルボン坐剤"
+        "display": "ラクツロースシロップ６５％「タカタ」"
       }
     ],
-    "text": "新レシカルボン坐剤"
+    "text": "ラクツロースシロップ６５％「タカタ」"
   },
-  "encounter": {
-    "reference": "#Example-JP-Encounter-IMP"
-  },
-  "authoredOn": "2021-07-14T10:52:26+09:00",
+  "authoredOn": "2021-07-13T14:22:09+09:00",
   "requester": {
-    "reference": "#Example-Practitioner-minimun-R001",
-    "display": "医学 一郎",
+    "reference": "#Example-Practitioner-minimun-D001",
+    "display": "医療 太郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-Practitioner-minimun-R001",
-    "display": "医学 一郎",
+    "reference": "#Example-Practitioner-minimun-D001",
     "type": "Practitioner"
   },
   "groupIdentifier": {
-    "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
+    "value": "1318814790-9990767-0A17296D729AE72021071219211801-2"
   },
   "dispenseRequest": {
     "quantity": {
-      "value": 10,
-      "code": "KO",
+      "value": 300,
+      "code": "ML",
       "system": "urn:oid:1.2.392.100495.20.2.101",
-      "unit": "個"
+      "unit": "ｍＬ"
+    },
+    "expectedSupplyDuration": {
+      "value": 10,
+      "code": "d",
+      "system": "http://unitsofmeasure.org",
+      "unit": "日"
     }
   }
 }

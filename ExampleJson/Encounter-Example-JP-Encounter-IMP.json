@@ -6,6 +6,10 @@
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
     ]
   },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　入院01 サンプル</p></div>"
+  },
   "status": "finished",
   "class": {
     "code": "IMP",

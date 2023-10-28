@@ -1,3 +1,9 @@
+Invariant: valid-value-bundleIdenfifier
+Description: "Bundle.identifier.value は、医療機関番号10桁^被保険者個人識別子^128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）であること。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\^][0-9]{8}:[^:^\\s^　]*:[^:^\\s^　]*:[0-9]{2}[\\^][A-Z0-9\\-]{1,128}$'))"
+
+
 Profile: JP_Bundle_CLINS
 Parent: Bundle
 Id: JP-Bundle-CLINS
@@ -12,7 +18,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * meta.profile 1.. MS
 
 * identifier 1.. MS
-* identifier ^short = "この文書Bundleの固定識別番号。Bundle作成時にシステムが設定する。"
+* identifier ^short = "この文書Bundleの固定識別子。Bundle作成時にシステムが設定する。"
 * identifier ^definition = "Bundleリソースのidentifier要素は、電子カルテ情報共有サービス側で保存される。送信側は、後続の送信においてこのidentifierを指定することで、過去に送信したBundleリソースを指定してそれに含まれていた全データについて削除、更新などの処理を行うことができる。"
 * identifier ^comment = "Bundleリソースのidentifier要素は以下の通りとする。\r\n
 この仕様を満たすidentifierに加えて、これとは異なるsystem値をもつidentifierは複数存在しても構わない。\r\n
@@ -21,8 +27,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 保険医療機関番号10桁：\r\n
 　（内訳：都道府県番号２桁、点数表コード（医療機関区分）１桁、医療機関番号７桁）\r\n
 被保険者個人識別子：\r\n
-　（内訳：保険者等番号８桁、被保険者証（手帳）等の記号、被保険者証（手帳）等の番号、被保険者証等枝番２桁を半角コロンで結合した文字列）\r\n
-　　最大51文字（全角38文字＋半角13文字、全角19文字＋半角32文字、または半角51文字）\r\n
+　本ページ「6:被保険者個人識別子の格納」の仕様に従う。\r\n
 報告単位のデータを医療機関のシステムとして医療機関内で一意に識別できる粒度のID文字列：\r\n
 　　当該システムが当該患者データの中で一意性を保証できるよう生成した半角文字列（英大文字、数字、ハイフン記号のみ可）\r\n
 　　最大128文字とすること。"
