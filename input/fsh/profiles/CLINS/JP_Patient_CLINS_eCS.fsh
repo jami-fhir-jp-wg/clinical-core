@@ -9,7 +9,7 @@ Invariant: patientID-localSystem
 Description: "patientIDの施設固有IDのsystem値は、urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]である。"
 Severity: #error
 //Expression: "((section.code.coding.where(code = '200')).exists()) xor ((section.code.coding.where(code = '300')).exists())"
-Expression: "matches('urn:oid:1\\.2\\.392\\.100495\\.20\\.3\\.51\\.11318814790')"
+Expression: "$this = 'urn:oid:1.2.392.100495.20.3.51.11318814790'"
 
 Profile: JP_Patient_CLINS_eCS
 Parent: JP_Patient_eCS
