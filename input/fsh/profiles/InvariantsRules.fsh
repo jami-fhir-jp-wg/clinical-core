@@ -23,7 +23,7 @@ Expression: "extension('http://jpfhir.jp/fhir/clins/Extension/StructureDefinitio
 Invariant: valid-value-institutionNumberExtension
 Description: "施設番号　valueIdentifier.value値は、２桁都道府県番号、１桁医療機関区分(1|2|3)、７桁保険医療機関番号の連結１０桁とする。"
 Severity: #error
-Expression: "valueIdentifier.value.matches('[0-4][0-9][1-3][0-9]{7}')"
+Expression: "value.ofType(Identifier).value.matches('[0-4][0-9][1-3][0-9]{7}')"
 
 Invariant: waring-medication-allergy
 Description: "注意喚起：薬剤禁忌情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままでよければ修正不要。"
