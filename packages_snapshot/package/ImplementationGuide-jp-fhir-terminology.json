@@ -1,0 +1,1519 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "jp-fhir-terminology",
+  "url": "http://jpfhir.jp/fhir/core/jp-fhir-terminology/ImplementationGuide/jp-fhir-terminology",
+  "version": "1.0.0",
+  "name": "JPFHIRTerminologyPackage",
+  "title": "JPFHIR Terminology Package",
+  "status": "draft",
+  "date": "2023-08-23",
+  "description": "JPFHIR Terminology Package",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "JP",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "packageId": "jp-fhir-terminology",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/iso1366-part1-2"
+        },
+        "name": "iso1366-part1-2",
+        "description": "iso1366-part1-N 2letters code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/iso1366-part1-3"
+        },
+        "name": "iso1366-part1-3",
+        "description": "iso1366-part1-N 3letters code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/iso1366-part1-n"
+        },
+        "name": "iso1366-part1-N",
+        "description": "iso1366-part1-N 3digits numeric code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-allergyintolerance-vs"
+        },
+        "name": "JP Core AllergyIntolerance ValueSet",
+        "description": "アレルギー・不耐症に関連するアレルゲン値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-condition-severity-cs"
+        },
+        "name": "JP Core Condition Severity CodeSystem",
+        "description": "Conditionの重症度を示すコードシステム（HL70421 Severity of Illness Code）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-department-ssmix-cs"
+        },
+        "name": "JP Core Department SS-MIX CodeSystem",
+        "description": "SS-MIX統一診療科コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-department-ssmix-vs"
+        },
+        "name": "JP Core Department SS-MIX ValueSet",
+        "description": "SS-MIX統一診療科コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codesystem-dispense-instruction"
+        },
+        "name": "JP Core Dispense Instruction Code",
+        "description": "調剤指示コード（備考欄用）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-valueset-dispense-instruction"
+        },
+        "name": "JP Core Dispense Instruction Code ValueSet",
+        "description": "調剤指示コード（備考欄）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-jfagy-food-allergen-cs"
+        },
+        "name": "JP Core JFAGY Food Allergen CodeSystem",
+        "description": "JFAGY アレルゲンコード（食品）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-jfagy-medication-allergen-cs"
+        },
+        "name": "JP Core JFAGY Medication Allergen CodeSystem",
+        "description": "JFAGY アレルゲンコード（医薬品）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-jfagy-non-food-non-medication-allergen-cs"
+        },
+        "name": "JP Core JFAGY Non Food None Medication Allergen CodeSystem",
+        "description": "JP Core JFAGY アレルゲンコード（非食品・非医薬品）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medicalfeescoretype-cs"
+        },
+        "name": "JP Core MedicalFeeScoreType CodeSystem",
+        "description": "診療報酬点数区分コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicalfeescoretype-vs"
+        },
+        "name": "JP Core MedicalFeeScoreType ValueSet",
+        "description": "診療報酬点数区分値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medicallicensecertificate-cs"
+        },
+        "name": "JP Core MedicalLicenseCertificate CodeSystem",
+        "description": "医療関連免許証明に関するコードシステム。（現在作成中、今後医療系免許に関する情報追加する予定です。）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-route-hl70162-cs"
+        },
+        "name": "JP Core Medication HL70162-based Route CodeSystem",
+        "description": "HL7表0162をベースにした投与経路のコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationroutehl70162-vs"
+        },
+        "name": "JP Core Medication HL70162-based Route ValueSet",
+        "description": "HL7表0162をベースにした投与経路の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-ingredientstrength-strengthtype-cs"
+        },
+        "name": "JP Core Medication IngredientStrength StrengthType CodeSystem",
+        "description": "力価区分",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationingredientstrengthstrengthtype-vs"
+        },
+        "name": "JP Core Medication IngredientStrength StrengthType ValueSet",
+        "description": "力価区分の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcategoryinjection-vs"
+        },
+        "name": "JP Core Medication Injection Category ValueSet",
+        "description": "注射・注入の処方区分コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-usage-jami-additional-cs"
+        },
+        "name": "JP Core Medication JAMI Additional Usage CodeSystem",
+        "description": "JAMI標準用法規格補足用法コードの８桁コードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationusagejamiadditional-vs"
+        },
+        "name": "JP Core Medication JAMI Additional Usage ValueSet",
+        "description": "JAMI標準用法規格補足用法コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-as-needed-condition-jami-cs"
+        },
+        "name": "JP Core Medication JAMI As Needed Condition CodeSystem",
+        "description": "JAMI標準用法規格頓用指示コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationasneededconditionjami-vs"
+        },
+        "name": "JP Core Medication JAMI As Needed Condition ValueSet",
+        "description": "JAMI標準用法規格頓用指示コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-method-jami-basic-usage-cs"
+        },
+        "name": "JP Core Medication JAMI Basic Usage Type CodeSystem",
+        "description": "JAMI標準用法規格表１基本用法区分のコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationmethodjamibasicusage-vs"
+        },
+        "name": "JP Core Medication JAMI Basic Usage Type ValueSet",
+        "description": "JAMI標準用法規格表１基本用法区分の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-method-jami-detail-usage-cs"
+        },
+        "name": "JP Core Medication JAMI Detail Usage Type CodeSystem",
+        "description": "JAMI標準用法規格表２用法詳細区分のコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationmethodjamidetailusage-vs"
+        },
+        "name": "JP Core Medication JAMI Detail Usage ValueSet",
+        "description": "JAMI標準用法規格表２用法詳細区分のの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-bodysite-jami-external-cs"
+        },
+        "name": "JP Core Medication JAMI External Body Site CodeSystem",
+        "description": "JAMI標準用法規格表１３外用部位コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationbodysitejamiexternal-vs"
+        },
+        "name": "JP Core Medication JAMI External Body Site ValueSet",
+        "description": "JAMI標準用法規格表１３外用部位コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-usage-jami-cs"
+        },
+        "name": "JP Core Medication JAMI Usage 16digits CodeSystem",
+        "description": "JAMI標準用法コードの１６桁コードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationusagejami-vs"
+        },
+        "name": "JP Core Medication JAMI Usage ValueSet",
+        "description": "JAMI標準用法コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-category-jhsi0001-cs"
+        },
+        "name": "JP Core Medication JHSI0001 Category CodeSystem",
+        "description": "JAHIS注射データ交換規約Ver.2.1C JHSI表0001処方区分コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcategoryjhsi0001-vs"
+        },
+        "name": "JP Core Medication JHSI0001 Category ValueSet",
+        "description": "JAHIS注射データ交換規約Ver.2.1C JHSI表0001処方区分コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medicationmethodjhsi0003-cs"
+        },
+        "name": "JP Core Medication JHSI0003 Method CodeSystem",
+        "description": "JAHIS注射データ交換規約Ver.2.1C JHSI表0003精密持続点滴コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationmethodjhsi0003-vs"
+        },
+        "name": "JP Core Medication JHSI0003 Method ValueSet",
+        "description": "JAHIS注射データ交換規約Ver.2.1C JHSI表0003精密持続点滴コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-instruction-for-dispense-jhsp0002-cs"
+        },
+        "name": "JP Core Medication JHSP0002 Instruction For Dispense CodeSystem",
+        "description": "JAHIS処方データ交換規約Ver.3.0C JHSP表0002調剤特別指示のコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationinstructionfordispensejhsp0002-vs"
+        },
+        "name": "JP Core Medication JHSP0002 Instruction For Dispense ValueSet",
+        "description": "JAHIS処方データ交換規約Ver.3.0C JHSP表0002調剤特別指示の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-category-jhsp0007-cs"
+        },
+        "name": "JP Core Medication JHSP0007 Category CodeSystem",
+        "description": "JAHIS処方データ交換規約Ver.3.0C JHSP表0007処方区分コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcategoryjhsp0007-vs"
+        },
+        "name": "JP Core Medication JHSP0007 Category ValueSet",
+        "description": "JAHIS処方データ交換規約Ver.3.0C JHSP表0007処方区分コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-as-needed-condition-merit9-cs"
+        },
+        "name": "JP Core Medication MERIT9 As Needed Condition CodeSystem",
+        "description": "MERIT9頓用指示コードのコードシステム(test)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationasneededconditionmerit9-vs"
+        },
+        "name": "JP Core Medication MERIT9 As Needed Condition ValueSet",
+        "description": "MERIT9頓用指示コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-category-merit9-cs"
+        },
+        "name": "JP Core Medication MERIT9 Category CodeSystem",
+        "description": "MERIT9処方区分コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcategorymerit9-vs"
+        },
+        "name": "JP Core Medication MERIT9 Category ValueSet",
+        "description": "MERIT9処方区分コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-form-merit9-cs"
+        },
+        "name": "JP Core Medication MERIT9 Form CodeSystem",
+        "description": "MERIT9剤形コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationformmerit9-vs"
+        },
+        "name": "JP Core Medication MERIT9 Form ValueSet",
+        "description": "MERIT9剤形コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-unit-merit9-cs"
+        },
+        "name": "JP Core Medication MERIT9 Unit CodeSystem",
+        "description": "MERIT9医薬品単位略号のコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationunitmerit9-vs"
+        },
+        "name": "JP Core Medication MERIT9 Unit ValueSet",
+        "description": "MERIT9医薬品単位略号の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcategory-vs"
+        },
+        "name": "JP Core Medication Oral/External Category ValueSet",
+        "description": "内服・外用の処方区分コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medication-substitution-not-allowed-reason-cs"
+        },
+        "name": "JP Core Medication Substitution Not Allowed Reason CodeSystem",
+        "description": "後発医薬品変更不可区分のコードシステム 厚労省電子処方CDA規格別表8 後発品変更不可コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationsubstitutionnotallowedreason-vs"
+        },
+        "name": "JP Core Medication Substitution Not Allowed Reason ValueSet",
+        "description": "後発医薬品変更不可区分の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcodeyj-vs"
+        },
+        "name": "JP Core Medication YJ ValueSet",
+        "description": "個別医薬品コード(YJコード)の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medicationcode-common-cs"
+        },
+        "name": "JP Core MedicationCode Common CodeSystem",
+        "description": "医薬品一般名処方コードのコードシステム",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcodecommon-vs"
+        },
+        "name": "JP Core MedicationCode Common ValueSet",
+        "description": "医薬品一般名処方コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcodehot13-vs"
+        },
+        "name": "JP Core MedicationCode HOT13 ValueSet",
+        "description": "医薬品HOT13コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcodehot7-vs"
+        },
+        "name": "JP Core MedicationCode HOT7 ValueSet",
+        "description": "医薬品HOT7コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcodehot9-vs"
+        },
+        "name": "JP Core MedicationCode HOT9 ValueSet",
+        "description": "医薬品HOT9コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcode-immunization-vs"
+        },
+        "name": "JP Core MedicationCode Immunization ValueSet",
+        "description": "Immunization用医薬品処方コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationcode-vs"
+        },
+        "name": "JP Core MedicationCode ValueSet",
+        "description": "医薬品処方コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-medicationusageinjection-vs"
+        },
+        "name": "JP Core MedicationReuqest Injection Usage ValueSet",
+        "description": "注射用MedicationRequestで使用する用法コードの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codesystem-mimetype"
+        },
+        "name": "JP Core MimeType",
+        "description": "mime type",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observation-labresult-code-cs"
+        },
+        "name": "JP Core Observation LabResult Code CodeSystem",
+        "description": "Observation（検体検査結果）で使用する項目コード  MEDIS　臨床検査マスターまとめ表17桁、JLAC10ベースのコード表、名称は合成名称",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationlabresultcode-vs"
+        },
+        "name": "JP Core Observation LabResult Code ValueSet",
+        "description": "Observation（検体検査結果）で使用する項目の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observationmethod-cs"
+        },
+        "name": "JP Core Observation Method CodeSystem",
+        "description": "Observationで使用する診察方法のコード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationmethod-vs"
+        },
+        "name": "JP Core Observation Method ValueSet",
+        "description": "Observationで使用する診察方法の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observationphysicalexambodysite-cs"
+        },
+        "name": "JP Core Observation PhysicalExam BodySite CodeSystem",
+        "description": "Observation（身体所見）で使用する身体部位のコード。J_ANAT（作成中）の使用を想定",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationphysicalexambodysite-vs"
+        },
+        "name": "JP Core Observation PhysicalExam BodySite ValueSet",
+        "description": "Observation（身体所見）で使用する身体部位の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observationphysicalexammethod-cs"
+        },
+        "name": "JP Core Observation PhysicalExam Method CodeSystem",
+        "description": "Observation（身体所見）で使用する診察方法のコード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationphysicalexammethod-vs"
+        },
+        "name": "JP Core Observation PhysicalExam Method ValueSet",
+        "description": "Observation（身体所見）で使用する診察方法の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observationsocialhistorycode-cs"
+        },
+        "name": "JP Core Observation SocialHistory Code CodeSystem",
+        "description": "Observation（生活背景）で使用する項目コード、電子保存された診療録情報の交換のためのデータ項目セット　J-MIX([https://www2.medis.or.jp/master/jmix/file/tab1.pdf](https://www2.medis.or.jp/master/jmix/file/tab1.pdf))にて定義される",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationsocialhistorycode-vs"
+        },
+        "name": "JP Core Observation SocialHistory Code ValueSet",
+        "description": "Observation（生活背景）で使用する項目の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observation-vitalsigns-category-cs"
+        },
+        "name": "JP Core Observation VitalSigns Category CodeSystem",
+        "description": "Observation（バイタルサイン）で使用する分類のコード　（出典：看護実践用語標準マスターの概要＜看護行為編＞Ver. 3. 6）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationvitalsignscategory-vs"
+        },
+        "name": "JP Core Observation VitalSigns Category ValueSet",
+        "description": "Observation（バイタルサイン）で使用する分類の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-observation-vitalsigns-code-cs"
+        },
+        "name": "JP Core Observation VitalSigns Code CodeSystem",
+        "description": "Observation（バイタルサイン）で使用する項目コード （出典：看護実践用語標準マスターの概要＜看護行為編＞Ver. 3. 6）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-observationvitalsignscode-vs"
+        },
+        "name": "JP Core Observation VitalSigns Code ValueSet",
+        "description": "Observation（バイタルサイン）で使用する項目の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-practitionerrole-cs"
+        },
+        "name": "JP Core Practitioner Role CodeSystem",
+        "description": "実施者のロール（役割・職種））を示すコード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-practitionerrole-vs"
+        },
+        "name": "JP Core PractitionerRole ValueSet",
+        "description": "実施者のロール（役割・職種）を表す値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-prefecturenumber-cs"
+        },
+        "name": "JP Core PrefectureNumber CodeSystem",
+        "description": "全国地方公共団体コードの都道府県コード（ISO 3166-2:JP）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-prefecturenumber-vs"
+        },
+        "name": "JP Core PrefectureNumber ValueSet",
+        "description": "都道県番号値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-procedurecategory-cs"
+        },
+        "name": "JP Core Procedure Category CodeSystem",
+        "description": "処置のカテゴリを示すコードのコードシステム（より適切なコードと用語に見直し必要）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-procedurecategory-vs"
+        },
+        "name": "JP Core Procedure Category ValueSet",
+        "description": "処置のカテゴリを示す値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-procedure-codes-dental-cs"
+        },
+        "name": "JP Core Procedure Codes Dental CodeSystem",
+        "description": "処置のコード:歯科診療行為マスタ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-procedurecodesdental-vs"
+        },
+        "name": "JP Core Procedure Codes Dental ValueSet",
+        "description": "処置のコード:歯科診療行為マスタの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-procedure-codes-medical-cs"
+        },
+        "name": "JP Core Procedure Codes Medical CodeSystem",
+        "description": "処置のコード:医科診療行為マスタ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-procedurecodesmedical-vs"
+        },
+        "name": "JP Core Procedure Codes Medical ValueSet",
+        "description": "処置のコード:医科診療行為マスタの値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-procedure-codes-nurse-cs"
+        },
+        "name": "JP Core Procedure Codes Nurse CodeSystem",
+        "description": "処置のコード:看護実践用語標準マスター(看護行為)　1.2.392.200119.4.701",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-procedurecodesnurse-vs"
+        },
+        "name": "JP Core Procedure Codes Nurse ValueSet",
+        "description": "処置のコード:看護実践用語標準マスター(看護行為)の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-procedure-codes-stem7-cs"
+        },
+        "name": "JP Core Procedure Codes STEM7 CodeSystem",
+        "description": "処置のコード:外保連手術基幹コード(STEM7)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/jp-procedurecodesstem7-vs"
+        },
+        "name": "JP Core Procedure Codes STEM7 ValueSet",
+        "description": "処置のコード:外保連手術基幹コード(STEM7)の値セット",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-codesystem-rpgroupnumber"
+        },
+        "name": "JP Core Rp-Group Number",
+        "description": "剤グループ番号",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-medicationcode-yj-cs"
+        },
+        "name": "JP Core YJ コード（個別医薬品コード）",
+        "description": "YJ コード（個別医薬品コード）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/jp-loinc-cs"
+        },
+        "name": "Loinc CodeSystem PART file + Core Table Japanese Modification",
+        "description": "LOINC PART file + Core Table(donwloaded from official site) version 2.74",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/us-loinc-cs"
+        },
+        "name": "Loinc CodeSystem PART file + Core Table Japanese Modification",
+        "description": "LOINC PART file + Core Table(donwloaded from official site) version 2.74",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medis-codesystem-hot7"
+        },
+        "name": "MEDIS 処方用番号（ＨＯＴ７）",
+        "description": "MEDIS 処方用番号（ＨＯＴ７）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medis-codesystem-hot13"
+        },
+        "name": "MEDIS 基準番号（ＨＯＴ１３）",
+        "description": "MEDIS 医薬品基準番号（ＨＯＴ１３）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medis-codesystem-hot9"
+        },
+        "name": "MEDIS 基準番号（ＨＯＴ９）",
+        "description": "MEDIS 医薬品基準番号（ＨＯＴ９）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medis-codesystem-diseasenamecodes-modifiers"
+        },
+        "name": "MEDIS標準病名 修飾語管理番号",
+        "description": "MEDIS標準病名 修飾語管理番号　https://www2.medis.or.jp/master/hcode/",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medis-codesystem-diseaseconceptcodes"
+        },
+        "name": "MEDIS病名交換用コード propertyなし",
+        "description": "MEDIS病名交換用コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medis-codesystem-diseasekanricodes"
+        },
+        "name": "MEDIS病名管理番号 propertyなし",
+        "description": "MEDIS病名管理番号",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-icd10-2013-jp"
+        },
+        "name": "MHLW 厚労省ICD102013版",
+        "description": "厚労省ICD10 2013版 http://www.mhlw.go.jp/toukei/sippei",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-claimorganizationcategory-tbl22"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別別表２２ 点数表番号",
+        "description": "厚労省電子処方CDA規格別別表２２ 点数表番号",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-claimorganizationno7digits-tbl23"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別別表２３ 保険医療機関番号（7桁）",
+        "description": "厚労省電子処方CDA規格別別表２３ 保険医療機関番号（7桁）",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-clinicaldepartment-tbl10"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表10 診療科コード",
+        "description": "厚労省電子処方CDA規格別表10 診療科コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-insurancecategory-tbl11"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表11 保険種別コード",
+        "description": "厚労省電子処方CDA規格別表11 保険種別コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mhlw-valueset-eprecda-insurancecategory-tbl11"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表11 保険種別コード ValueSet",
+        "description": "厚労省電子処方CDA規格別表11 保険種別コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-insuredrelationship-tbl12"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表12 被保険者区分コード",
+        "description": "厚労省電子処方CDA規格別表12 被保険者区分コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-insuredcopaycategory-tbl13"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表13 患者一部負担コード",
+        "description": "厚労省電子処方CDA規格別表13 患者一部負担コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-sectioncategory-tbl02"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表2 セクション区分コード",
+        "description": "厚労省電子処方CDA規格別表2 セクション区分コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-drugusageform-tbl03"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表3  剤形区分コード",
+        "description": "厚労省電子処方CDA規格別表3  剤形区分コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-instructionresidual-tbl09"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表9 残薬確認指示コード",
+        "description": "厚労省電子処方CDA規格別表9 残薬確認指示コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mhlw-codesystem-eprecda-documentcategory-tbl01"
+        },
+        "name": "MHLW 厚労省電子処方CDA規格別表１ 文書区分コード",
+        "description": "厚労省電子処方CDA規格別表１ 文書区分コード",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/units-of-measure"
+        },
+        "name": "The Unified Code for Units of Measure (UCUM)",
+        "description": "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/urn-ietf-bcp-47-CS"
+        },
+        "name": "urn:ietf:bcp:47 Lanuage CodeSystem",
+        "description": "urn:ietf:bcp:47 Lanuage CodeSystem",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "JP-FHIR-Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2022+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "draft"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/_resources/exp-params.json"
+      },
+      {
+        "code": "active-tables",
+        "value": "false"
+      },
+      {
+        "code": "apply-version",
+        "value": "true"
+      },
+      {
+        "code": "apply-copyright",
+        "value": "true"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "apply-license",
+        "value": "true"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "true"
+      },
+      {
+        "code": "usage-stats-opt-out",
+        "value": "true"
+      },
+      {
+        "code": "excludexml",
+        "value": "true"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
+      },
+      {
+        "code": "generate",
+        "value": "json"
+      },
+      {
+        "code": "no-validate",
+        "value": "*/hl7.fhir.jp.core"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:iso:std:iso:3166-2"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:iso:std:iso:3166-3"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:iso:std:iso:3166-N"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:iso:std:iso:3166"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.30.10"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/communication-category"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.3.61"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:ietf:bcp:13"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.3.71"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.3.81"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ConditionSeverity_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.2"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_DocumentCodes_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.3.22"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationAsNeededConditionJAMI_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationAsNeededConditionMERIT9_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.20.32"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JHSI0001"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JHSP0007"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationFormMERIT9_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.22"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JHSP0002"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.20.30"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.20.40"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/route-codes"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.41"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.101"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.20.22"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200250.2.2.20"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.1.81"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.1.73"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JHSI0003"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.504"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationVitalSignsCategory_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.804"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationMethod_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationPhysicalExamBodySite_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationPhysicalExamMethod_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSocialHistoryCode_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_PractitionerRole_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.3.21"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureCodesDental_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureCodesMedical_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.701"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureCodesSTEM7_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureCategory_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://loinc.org"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/CodeSystem/JP_Loinc_CS"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.101.6"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.101.2"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.201.2"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.402.1"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.403.2"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.200119.4.403.1"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.1.22"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.1.23"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.51"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.11"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.21"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.42"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.61"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.63"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.62"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:1.2.392.100495.20.2.12"
+      },
+      {
+        "code": "special-url",
+        "value": "http://www.mhlw.go.jp/toukei/sippei/2013/ICD10-JP"
+      },
+      {
+        "code": "special-url",
+        "value": "http://unitsofmeasure.org"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:ietf:bcp:47"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_Department_SsMix_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicalFeeScoreType_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationAsNeededConditionJAMI_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationAsNeededConditionMERIT9_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationBodySiteJAMIExternal_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCategory_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCategoryInjeciton_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCategoryJHSI0001_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCategoryJHSP0007_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCategoryMERIT9_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_Immunization_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeCommon_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeHOT13_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeHOT7_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeHOT9_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeYJ_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationFormMERIT9_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationIngredientStrengthStrengthType_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/Examples/ValueSet/JP_MedicationInstructionForDispenseJHSP0002_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationMethodJAMIBasicUsage_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationMethodJAMIDetailUsage_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationMethodJHSI0003_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationRouteHL70162_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationSubstitutionNotAllowedReason_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUnitMERIT9_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUsageInjection_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUsageJAMI_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUsageJAMIAdditional_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationLabResultCode_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationMethod_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationPhysicalExamBodySite_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationPhysicalExamMethod_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationSocialHistoryCode_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationVitalSignsCategory_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationVitalSignsCode_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_PractitionerRole_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_PrefectureNumber_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ProcedureCategory_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ProcedureCodesDental_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ProcedureCodesMedical_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ProcedureCodesNurse_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/core/ValueSet/JP_ProcedureCodesSTEM7_VS"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction"
+      },
+      {
+        "code": "special-url",
+        "value": "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory"
+      }
+    ]
+  }
+}

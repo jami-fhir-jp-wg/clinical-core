@@ -54,7 +54,8 @@
     {
       "coding": [
         {
-          "code": "encounter-diagnosis"
+          "code": "encounter-diagnosis",
+          "system": "http://terminology.hl7.org/CodeSystem/condition-category"
         }
       ]
     }

@@ -1,0 +1,16 @@
+{
+    "name": "jpfhir-terminology",
+    "version": "1.1.1",
+    "description": "jpfhir-terminology 1.1.1",
+    "author": "Kazuhiko Ohe",
+    "fhirVersions": [
+        "4.0.1"
+    ],
+    "dependencies": {
+        "hl7.fhir.r4.core": "4.0.1"
+    },
+    "tools-version": 3,
+    "type": "IG",
+    "url": "http://jpfhir.jp/fhir/jpfhir-terminology",
+    "canonical": "http://jpfhir.jp/fhir/jpfhir-terminology"
+}

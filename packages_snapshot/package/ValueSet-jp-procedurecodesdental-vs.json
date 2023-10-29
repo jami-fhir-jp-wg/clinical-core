@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "JP_ProcedureCodesDental_VS",
+  "id": "jp-procedurecodesdental-vs",
+  "title": "JP Core Procedure Codes Dental ValueSet",
+  "description": "処置のコード:歯科診療行為マスタの値セット",
+  "url": "http://jpfhir.jp/fhir/core/ValueSet/JP_ProcedureCodesDental_VS",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-11T21:33:16.668+09:00"
+  },
+  "version": "1.1.0a",
+  "experimental": false,
+  "date": "2022-09-26",
+  "copyright": "社会保険診療報酬支払基金　診療行為マスタ（レセプト電算処理用）",
+  "compose": {
+    "include": [
+      {
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureCodesDental_CS"
+      }
+    ]
+  }
+}

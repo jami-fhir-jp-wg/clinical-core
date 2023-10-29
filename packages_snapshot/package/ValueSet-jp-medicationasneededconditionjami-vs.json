@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "JP_MedicationAsNeededConditionJAMI_VS",
+  "id": "jp-medicationasneededconditionjami-vs",
+  "title": "JP Core Medication JAMI As Needed Condition ValueSet",
+  "description": "JAMI標準用法規格頓用指示コードの値セット",
+  "url": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationAsNeededConditionJAMI_VS",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-11T21:03:31.371+09:00"
+  },
+  "version": "1.1.0a",
+  "experimental": false,
+  "date": "2022-09-26",
+  "copyright": "Copyright Japan Association of Medical Informatics (JAMI)  一般社団法人日本医療情報学会",
+  "compose": {
+    "include": [
+      {
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationAsNeededConditionJAMI_CS"
+      }
+    ]
+  }
+}

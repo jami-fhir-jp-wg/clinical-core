@@ -31,6 +31,8 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 * value[x] ^definition = "作成発行した医療機関番号を設定する。"
 * valueIdentifier.system = $JP_InstitutionNumber (exactly)
 
+* obeys valid-value-institutionNumberExtension
+
 // -----------------------------------------
 //JP_eCS_Department
 // -----------------------------------------

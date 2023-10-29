@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "JP_ObservationMethod_CS",
+  "id": "jp-observationmethod-cs",
+  "title": "JP Core Observation Method CodeSystem",
+  "description": "Observationで使用する診察方法のコード",
+  "url": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationMethod_CS",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-11T21:28:26.839+09:00"
+  },
+  "experimental": false,
+  "date": "2022-09-26",
+  "caseSensitive": true
+}

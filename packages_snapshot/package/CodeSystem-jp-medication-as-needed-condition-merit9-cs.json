@@ -1,0 +1,116 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "JP_MedicationAsNeededConditionMERIT9_CS",
+  "id": "jp-medication-as-needed-condition-merit9-cs",
+  "title": "JP Core Medication MERIT9 As Needed Condition CodeSystem",
+  "description": "MERIT9頓用指示コードのコードシステム(test)",
+  "url": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationAsNeededConditionMERIT9_CS",
+  "concept": [
+    {
+      "code": "PRNLTs",
+      "display": "検査時"
+    },
+    {
+      "code": "PRNheadache",
+      "display": "頭痛時"
+    },
+    {
+      "code": "PRNpain",
+      "display": "疼痛時"
+    },
+    {
+      "code": "PRNteeth pain",
+      "display": "歯痛時"
+    },
+    {
+      "code": "PRNfever",
+      "display": "発熱時"
+    },
+    {
+      "code": "PRNfebrile",
+      "display": "発熱時"
+    },
+    {
+      "code": "PRNchest pain",
+      "display": "胸痛時"
+    },
+    {
+      "code": "PRNabdominal pain",
+      "display": "腹痛時"
+    },
+    {
+      "code": "PRNinsomnia",
+      "display": "不眠時"
+    },
+    {
+      "code": "PRNanxiety",
+      "display": "不安時"
+    },
+    {
+      "code": "PRNnervous",
+      "display": "いらいら時"
+    },
+    {
+      "code": "PRNdizziness",
+      "display": "めまい時"
+    },
+    {
+      "code": "PRNvertigo",
+      "display": "めまい時"
+    },
+    {
+      "code": "PRNitching",
+      "display": "かゆいとき"
+    },
+    {
+      "code": "PRNattack",
+      "display": "発作時"
+    },
+    {
+      "code": "PRNcostipation",
+      "display": "便秘時"
+    },
+    {
+      "code": "PRNdiarrhea",
+      "display": "下痢時"
+    },
+    {
+      "code": "PRNvommiting",
+      "display": "嘔吐時"
+    },
+    {
+      "code": "PRNcough",
+      "display": "咳き込み時"
+    },
+    {
+      "code": "PRNhungry",
+      "display": "空腹時"
+    },
+    {
+      "code": "PRNhigh BP",
+      "display": "血圧上昇時"
+    },
+    {
+      "code": "PRNauria",
+      "display": "亡尿時"
+    },
+    {
+      "code": "PRNpolyuria",
+      "display": "多尿時"
+    }
+  ],
+  "experimental": false,
+  "date": "2023-06-26",
+  "caseSensitive": true,
+  "valueSet": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationAsNeededConditionMERIT9_VS",
+  "copyright": "Copyright Japan Association of Medical Informatics (JAMI)  一般社団法人日本医療情報学会 https://www.jami.jp/jamistd/",
+  "publisher": "一般社団法人日本医療情報学会",
+  "contact": [
+    {
+      "name": "一般社団法人日本医療情報学会"
+    }
+  ],
+  "count": 23
+}

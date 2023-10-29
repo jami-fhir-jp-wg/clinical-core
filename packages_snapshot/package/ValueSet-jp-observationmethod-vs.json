@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "JP_ObservationMethod_VS",
+  "id": "jp-observationmethod-vs",
+  "title": "JP Core Observation Method ValueSet",
+  "description": "Observationで使用する診察方法の値セット",
+  "url": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationMethod_VS",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-11T21:30:30.739+09:00"
+  },
+  "version": "1.1.0a",
+  "experimental": false,
+  "date": "2022-09-26",
+  "compose": {
+    "include": [
+      {
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationMethod_CS"
+      }
+    ]
+  }
+}

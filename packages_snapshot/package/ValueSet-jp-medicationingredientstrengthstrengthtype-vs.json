@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "JP_MedicationIngredientStrengthStrengthType_VS",
+  "id": "jp-medicationingredientstrengthstrengthtype-vs",
+  "title": "JP Core Medication IngredientStrength StrengthType ValueSet",
+  "description": "力価区分の値セット",
+  "url": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationIngredientStrengthStrengthType_VS",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-11T21:17:22.426+09:00"
+  },
+  "version": "1.1.0a",
+  "experimental": false,
+  "date": "2022-09-26",
+  "copyright": "厚生労働省（電子処方箋CDA記述仕様 第1版（平成30年度））",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.2.392.100495.20.2.22"
+      }
+    ]
+  }
+}

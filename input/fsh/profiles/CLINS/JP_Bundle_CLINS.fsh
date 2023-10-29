@@ -1,8 +1,3 @@
-Invariant: valid-value-bundleIdenfifier
-Description: "Bundle.identifier.value は、医療機関番号10桁^被保険者個人識別子^128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）であること。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\^][0-9]{8}:[^:^\\s^　]*:[^:^\\s^　]*:[0-9]{2}[\\^][A-Z0-9\\-]{1,128}$'))"
-
 
 Profile: JP_Bundle_CLINS
 Parent: Bundle
@@ -13,6 +8,8 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
+
+* obeys valid-value-bundleIdenfifier
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS

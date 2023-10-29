@@ -26,7 +26,7 @@ Description: "conditionExample01 必須要素だけのサンプル"
 
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 
-* category = #encounter-diagnosis
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 // low | high | unable-to-assess 低、高、評価不能
 //* criticality = #unable-to-assess
@@ -74,7 +74,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 
-* category = #encounter-diagnosis
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 //病名情報
 * code.coding = $JP_Disease_MEDIS_ManagementID_CS#20054178 "胃癌"
@@ -122,7 +122,7 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed "Unconfirmed"
 
-* category = #encounter-diagnosis
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 //病名情報
 * code.coding = $JP_Disease_MEDIS_Concept_CS#L3RF "噴門癌"

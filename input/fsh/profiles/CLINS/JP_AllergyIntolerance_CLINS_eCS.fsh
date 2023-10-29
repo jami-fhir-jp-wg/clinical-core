@@ -1,16 +1,8 @@
-
-
 // ==================================================
 //   Profile 定義 電子カルテ共有サービス用
 //   アレルギー情報／薬剤禁忌 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance_eCS
 // ==================================================
-
-Invariant: waring-medication-allergy
-Description: "注意喚起：薬剤禁忌情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままでよければ修正不要。"
-Severity: #warning
-Expression: "(category='medication' and criticality='high') or category.exists().not() or category!='medication'"
-
 
 Profile:        JP_AllergyIntolerance_CLINS_eCS
 Parent:			JP_AllergyIntolerance_eCS

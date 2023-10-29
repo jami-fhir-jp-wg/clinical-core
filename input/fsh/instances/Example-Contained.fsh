@@ -104,7 +104,7 @@ Usage: #example
 
 * id = "Example-JP-Encounter-IMP"
 * status = #finished
-* class = $v3-ActCode#IMP "入院"
+* class = $v3-ActCode#IMP "入院中"
 * period.start = "2021-07-05"
 
 //-------- 埋め込み　医療者R001

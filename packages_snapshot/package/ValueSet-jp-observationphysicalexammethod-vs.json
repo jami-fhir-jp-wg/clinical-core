@@ -1,0 +1,24 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "JP_ObservationPhysicalExamMethod_VS",
+  "id": "jp-observationphysicalexammethod-vs",
+  "title": "JP Core Observation PhysicalExam Method ValueSet",
+  "description": "Observation（身体所見）で使用する診察方法の値セット",
+  "url": "http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationPhysicalExamMethod_VS",
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2022-10-11T21:30:50.933+09:00"
+  },
+  "version": "1.1.0a",
+  "experimental": false,
+  "date": "2022-09-26",
+  "copyright": "Copyright FHIR Japanese implementation research working group in Japan Association of Medical Informatics (JAMI) 一般社団法人日本医療情報学会NeXEHRS課題研究会FHIR日本実装検討WG",
+  "compose": {
+    "include": [
+      {
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationPhysicalExamMethod_CS"
+      }
+    ]
+  }
+}

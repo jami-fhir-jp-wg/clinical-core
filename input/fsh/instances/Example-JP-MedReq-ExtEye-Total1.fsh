@@ -46,7 +46,7 @@ Description: "入院処方　外用（点眼）全量処方　1回量をコー�
 * groupIdentifier.value = "1318814790-9990767-AC12821012A0552021070513070302-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-05"
-* dosageInstruction.text = "両眼点眼 1日1回  "
+* dosageInstruction.text = "両眼点眼 1日1回"
 * dosageInstruction.timing.event = "2021-07-05T12:00:00+09:00"
 * dosageInstruction.timing.code.text = "両眼点眼 1日1回"
 * dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"

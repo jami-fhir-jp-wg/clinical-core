@@ -26,7 +26,7 @@
     },
     {
       "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID",
-      "value": "50012:あいう:123:05"
+      "value": "00012345:あいう:１８７:05"
     }
   ],
   "name": [

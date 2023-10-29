@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "JP_MedicationCategoryJHSP0007_CS",
+  "id": "jp-medication-category-jhsp0007-cs",
+  "title": "JP Core Medication JHSP0007 Category CodeSystem",
+  "description": "JAHIS処方データ交換規約Ver.3.0C JHSP表0007処方区分コードのコードシステム",
+  "url": "http://jpfhir.jp/fhir/core/CodeSystem/JHSP0007",
+  "concept": [
+    {
+      "code": "BDP",
+      "display": "持参薬処方"
+    }
+  ],
+  "experimental": false,
+  "date": "2023-06-26",
+  "caseSensitive": true,
+  "valueSet": "http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCategoryJHSP0007_VS",
+  "copyright": "Copyright Japanese  Association of Healthcare Information Systems Industry(JAHIS)  一般社団法人保健医療福祉情報システム工業会、日本HL7協会",
+  "publisher": "保健医療情報システム工業会",
+  "contact": [
+    {
+      "name": "保健医療情報システム工業会"
+    }
+  ],
+  "count": 1
+}

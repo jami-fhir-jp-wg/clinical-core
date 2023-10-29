@@ -15,7 +15,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * meta.profile = $JP_MedicationRequest_CLINS_eCS
 
 * extension[eCS_Department].url = $JP_eCS_Department
-* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器内科"
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" //"http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
