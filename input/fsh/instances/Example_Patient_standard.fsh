@@ -1,6 +1,7 @@
 Instance: Example-Patient-standard
 InstanceOf: JP_Patient_CLINS_eCS
 Usage: #example
+Description: "患者情報　標準サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報　標準サンプル</p> </div>"

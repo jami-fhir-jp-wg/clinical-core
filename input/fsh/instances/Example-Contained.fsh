@@ -3,7 +3,7 @@
 Instance: Example-Patient-minimun
 InstanceOf: JP_Patient
 Usage: #example
-
+Description: "埋め込み　患者情報最小限 サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報最小限 サンプル</p> </div>"
@@ -21,7 +21,7 @@ Usage: #example
 Instance: Example-JP-Patient-eCS-01-Contained
 InstanceOf: JP_Patient
 Usage: #example
-
+Description: "埋め込み　患者情報01 サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報01 サンプル</p> </div>"
@@ -47,7 +47,7 @@ Usage: #example
 Instance: Example-JP-Patient-eCS-02-Contained
 InstanceOf: JP_Patient
 Usage: #example
-
+Description: "埋め込み　患者情報02 サンプル"
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報02 サンプル</p> </div>"
 
@@ -78,7 +78,7 @@ Usage: #example
 Instance: Example_JP_Encounter_AMB
 InstanceOf: JP_Encounter
 Usage: #example
-
+Description: "埋め込み　外来受診01 サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　外来受診01 サンプル</p> </div>"
@@ -96,6 +96,7 @@ Usage: #example
 Instance: Example_JP_Encounter_IMP
 InstanceOf: JP_Encounter
 Usage: #example
+Description: "埋め込み　入院01 サンプル"
 
 
 * text.status = #additional
@@ -111,7 +112,7 @@ Usage: #example
 Instance: Example_Practitioner_minimun_R001
 InstanceOf: JP_Practitioner
 Usage: #example
-
+Description: "埋め込み　医療者R001 サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者R001 サンプル</p> </div>"
@@ -126,7 +127,7 @@ Usage: #example
 Instance: Example_Practitioner_minimun_D001
 InstanceOf: JP_Practitioner
 Usage: #example
-
+Description: "埋め込み　医療者D001 サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D001 サンプル</p> </div>"
@@ -141,7 +142,7 @@ Usage: #example
 Instance: Example_Practitioner_minimun_D002
 InstanceOf: JP_Practitioner
 Usage: #example
-
+Description: "埋め込み　医療者D002 サンプル"
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D002 サンプル</p> </div>"
 
@@ -155,7 +156,7 @@ Usage: #example
 Instance: Example_Practitioner_minimun_D003
 InstanceOf: JP_Practitioner
 Usage: #example
-
+Description: "埋め込み　医療者D003 サンプル"
 
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D003 サンプル</p> </div>"
