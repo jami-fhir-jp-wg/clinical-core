@@ -672,10 +672,8 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl103 width=359 style='width:269pt'>検査結果カテゴリーのコードシステム値で、固定値。</td>
   <td class=xl109 width=36 style='width:27pt'><ruby>固定<span style='display:
   none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl321 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS"
-  target="_parent"><span style='font-size:10.0pt'>http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS<ruby><font
-  class="font22"><rt class=font22></rt></font></ruby></span></a></td>
+  <td class=xl321 width=195 style='width:146pt'><span style='font-size:10.0pt'>http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS<ruby><font
+  class="font22"><rt class=font22></rt></font></ruby></span></td>
   <td class=xl200 width=100 style='width:75pt'></td>
   <td class=xl200 width=100 style='width:75pt'></td>
  </tr>
