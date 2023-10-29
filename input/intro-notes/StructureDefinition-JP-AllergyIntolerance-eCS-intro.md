@@ -548,10 +548,8 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl72 width=87 style='width:65pt'>uri</td>
   <td class=xl347 width=359 style='width:269pt'>このリソース情報を他のリソース情報と一意に区別できるIDである場合に、system値を固定で設定する。1回の登録で複数のリソース情報が登録される場合に、それらは同一のIDで登録される場合でもこのsystem値を使用する。</td>
   <td class=xl72 width=36 style='width:27pt'>固定値</td>
-  <td class=xl358 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-  target="_parent"><span style='color:black'>http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier<ruby><font
-  class="font6"><rt class=font6></rt></font></ruby></span></a></td>
+  <td class=xl358 width=195 style='width:146pt'><span style='color:black'>http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier<ruby><font
+  class="font6"><rt class=font6></rt></font></ruby></span></td>
   <td colspan=3 style='mso-ignore:colspan'></td>
  </tr>
  <tr height=40 style='height:30.0pt'>

@@ -26,7 +26,7 @@
   - medicationCodeableConcept : 医薬品のコードと名称。ひとつの必須の text 子要素と、複数の（可能なかぎり一組以上の） coding[] 子要素で記述する。text子要素はコード化の方法に関わらず、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず設定する。coding[]子要素で使用すべきコード表については詳細説明を参照のこと。
   - subject : 対象となる患者のFHIRリソースへの参照。３文書６情報の作成では、 contained (JP_Patient)リソースへのリテラル参照を設定する。
   - authoredOn : 処方指示が最初に作成された日時。
-  - dosageInstruction[] : 用法や投与量を含む処方指示。<a href="#DosageInstructionTable">表「dosageInstructionTable」</a>を参照。
+  - dosageInstruction[] : 用法や投与量を含む処方指示。<a href="#dosageInstructionTable">表「dosageInstructionTable」</a>を参照。
 
 ### 必須要素　（MedicationRequest.DosageInstructionの直下の必須要素）
   - DosageInstruction[].extension[] : 投与開始日を明示するために使用する拡張「PeriodOfUse」
