@@ -101,6 +101,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
+    - http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeGS1_VS
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
     - http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes

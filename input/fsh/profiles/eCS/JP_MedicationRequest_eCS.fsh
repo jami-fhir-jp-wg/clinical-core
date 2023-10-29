@@ -83,7 +83,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * medication[x].coding[codingGS1].system MS
 * medication[x].coding[codingGS1].code ^definition = "GS1標準の識別コード。医薬品コードおよび医療材料等コードとして、調剤包装単位（最少包装単位、個別包装単位）14桁のフォーマットで使用する。"
 * medication[x].coding[codingGS1].code MS
-* medication[x].coding[codingGS1].code  from http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeGS1_VS
+* medication[x].coding[codingGS1].code  from $JP_MedicationCodeGS1_VS
 
 * medication[x].coding[codingGS1].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
