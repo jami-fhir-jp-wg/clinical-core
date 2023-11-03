@@ -68,7 +68,7 @@ Description: "CLINS 電子カルテ共有サービス用 アルカリホスフ�
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3B070000002327101  "ALP"  // 可視吸光光度法  U/L  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3B070000002327501  "ALP"  // 可視吸光光度法(IFCC対応法)  U/L  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3B070000002327701  "ALP"  // 可視吸光光度法(JSCC、IFCC対応法以外)  U/L  血清
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3B070000002329101  "ALP"  // 反射測光法(レフラクトメトリー)  U/L  全血
+* $JP_CLINS_CodeSystem_CoreLabo_CS#3B070000001829101  "ALP"  // 反射測光法(レフラクトメトリー)  U/L  全血
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3B070000002399901  "ALP"  // その他  U/L  血清
 
 
@@ -204,7 +204,7 @@ Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖)
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000002327101  "BS"  // 可視吸光光度法  mg/dL  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000002327201  "BS"  // 紫外吸光光度法(UV法)  mg/dL  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000002329101  "BS"  // 反射測光法(レフラクトメトリー)  mg/dL  血清
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000026226201  "BS"  // 電流測定  mg/dL  毛細管血
+//* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000002126201  "BS"  // 電流測定  mg/dL  毛細管血
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3D010129901926101  "BS"  // 電位差法(ブドウ糖酸化酵素電極法)  mg/dL  全血(添加物入り)
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3D010129901927201  "BS"  // 紫外吸光光度法(ヘキソキナーゼ法、グルコキナーゼ法、ブドウ糖脱水素酵素法)  mg/dL  全血(添加物入り)
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3D010129901999901  "BS"  // その他  mg/dL  全血(添加物入り)
@@ -348,9 +348,9 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3C015000002329101  "Cre"  // 反射測光法(レフラクトメトリー)  mg/dL  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3C015000002399901  "Cre"  // その他  mg/dL  血清
 // 血清クレアチニン(実施理由)^^
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3C015161002399949  "Cre"  // (空白)  (空白)  血清
+//* $JP_CLINS_CodeSystem_CoreLabo_CS#3C015161002399949  "Cre"  // (空白)  (空白)  血清
 // 血清クレアチニン(対象者)^^
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3C015161602399911  "Cre"  // (空白)  (空白)  血清
+//* $JP_CLINS_CodeSystem_CoreLabo_CS#3C015161602399911  "Cre"  // (空白)  (空白)  血清
 
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_crp_VS
@@ -430,7 +430,7 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3J015000002327101  "D-Bil"  // 可視吸光光度法  mg/dL  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3J015000002329101  "D-Bil"  // 反射測光法(レフラクトメトリー)  mg/dL  血清
 * $JP_CLINS_CodeSystem_CoreLabo_CS#3J015000002399901  "D-Bil"  // その他  mg/dL  血清
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3J023000002329151  "D-Bil"  // 反射測光法(レフラクトメトリー)  mg/dL  血清
+* $JP_CLINS_CodeSystem_CoreLabo_CS#3J015000002329151  "D-Bil"  // 反射測光法(レフラクトメトリー)  mg/dL  血清
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_dd_VS
 Id: jp-clins-valueset-corelabo-dd-vs
@@ -470,9 +470,9 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 
 * ^experimental = false
 * ^date = "2023-10-15"
 * ^copyright = "JAMI"
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000001926101  "FBS" 
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000001927201  "FBS" 
-* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010000001999901  "FBS" 
+* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010130001926101  "FBS" 
+* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010130001927201  "FBS" 
+* $JP_CLINS_CodeSystem_CoreLabo_CS#3D010130001999901  "FBS" 
 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ggt_VS
 Id: jp-clins-valueset-corelabo-ggt-vs
