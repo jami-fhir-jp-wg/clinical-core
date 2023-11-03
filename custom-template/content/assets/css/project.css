@@ -701,9 +701,9 @@ h3 {
   counter-reset: composite;
   padding: 0.4em 0.5em;
   /*文字の上下 左右の余白*/
-  color: #494949;
+  color: #000000;
   /*文字色*/
-  background: #f4f4f4;
+  background: #b2f1ed;
   /*背景色*/
   border-left: solid 5px #7db4e6;
   /*左線*/
@@ -713,7 +713,18 @@ h3 {
 }
 
 h4 {
-  counter-reset: detail
+  counter-reset: detail;
+  padding: 0.4em 0.5em;
+  /*文字の上下 左右の余白*/
+  color: #000000;
+  /*文字色*/
+  background: #f4f4f4;
+  /*背景色*/
+  border-left: solid 5px #7db4e6;
+  /*左線*/
+  border-bottom: solid 3px #090909;
+  /*下線*/
+  font-size: 105%;
 }
 
 h5 {
