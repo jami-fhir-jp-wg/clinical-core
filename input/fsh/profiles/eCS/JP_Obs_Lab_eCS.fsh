@@ -94,7 +94,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
  and coreLabo/fbs 0..1 MS
  and coreLabo/ggt 0..1 MS
  and coreLabo/hb 0..1 MS
- and coreLabo/hba1cngsp 0..1 MS
+ and coreLabo/hba1c-ngsp 0..1 MS
  and coreLabo/hdl-c 0..1 MS
  and coreLabo/k 0..1 MS
  and coreLabo/ld 0..1 MS
@@ -381,7 +381,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding[coreLabo/u-glu-HalfQty].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/u-glu-HalfQty].display = "U-Glu-定性半定量" (exactly)	
 * code.coding[coreLabo/u-glu-HalfQty].code from $JP_CLINS_ValueSet_CoreLabo_u_glu_HalfQty_VS (required)
--HalfQty
+
 * code.coding[coreLabo/u-glu-QLHalfQty].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/u-glu-QLHalfQty].display = "U-Glu-半定量" (exactly)	
 * code.coding[coreLabo/u-glu-QLHalfQty].code from $JP_CLINS_ValueSet_CoreLabo_u_glu_QLHalfQty_VS (required)
