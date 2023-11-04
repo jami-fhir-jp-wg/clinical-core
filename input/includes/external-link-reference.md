@@ -10,4 +10,5 @@
 [RadElement]: https://www.rsna.org/practice-tools/data-tools-and-standards/radelement-common-data-elements
 [IHE Radiology Technical Framework]: https://www.ihe.net/resources/technical_frameworks/#radiology
 
-[JP_Patient]: https://jpfhir.jp/fhir/core/1.1.1/StructureDefinition-jp-patient.html
+[JP_Patient]: https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-jp-patient.html
+
