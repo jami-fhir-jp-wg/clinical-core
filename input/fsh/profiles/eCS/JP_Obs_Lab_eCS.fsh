@@ -116,7 +116,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
  and coreLabo/u-bld 0..1 MS
  and coreLabo/u-glu 0..1 MS
  and coreLabo/u-pc 0..1 MS
- and coreLabo/u-tp 0..1 MS
+ and coreLabo/utp 0..1 MS
  and coreLabo/ua 0..1 MS
  and coreLabo/wbc 0..1 MS
  and jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
@@ -315,9 +315,9 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding[coreLabo/u-pc].display = "U-pc" (exactly)	
 * code.coding[coreLabo/u-pc].code from $JP_CLINS_ValueSet_CoreLabo_u_pc_VS (required)
 
-* code.coding[coreLabo/u-tp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
-* code.coding[coreLabo/u-tp].display = "U-TP" (exactly)	
-* code.coding[coreLabo/u-tp].code from $JP_CLINS_ValueSet_CoreLabo_u_tp_VS (required)
+* code.coding[coreLabo/utp].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/u-p].display = "U-TP" (exactly)	
+* code.coding[coreLabo/utp].code from $JP_CLINS_ValueSet_CoreLabo_utp_VS (required)
 
 * code.coding[coreLabo/ua].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/ua].display = "UA" (exactly)	

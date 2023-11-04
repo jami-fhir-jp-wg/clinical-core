@@ -692,7 +692,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) Value
 
 //  尿蛋⽩(半定量、判定) 
 ValueSet: JP_CLINS_ValueSet_CoreLabo_utpQLHalfQty_VS
-Id: jp-clins-valueset-corelabo-utphalfqty-vs
+Id: jp-clins-valueset-corelabo-utpqlhalfqty-vs
 Title: "CLINS: U-TP-定性半定量 ValueSet"
 Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定量) ValueSet"
 * ^meta.versionId = "1"
