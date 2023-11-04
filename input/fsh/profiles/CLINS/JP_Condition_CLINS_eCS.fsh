@@ -6,7 +6,7 @@
 Profile:        JP_Condition_CLINS_eCS
 Parent:			JP_Condition_eCS
 Id:             JP-Condition-CLINS-eCS
-Title:  "CLINS電カル共有サービス用:JP_Condition_CLINS_eCS"
+Title:  "CLINS電子カルテ情報共有サービス用:JP_Condition_CLINS_eCS"
 Description: "CLINS 電子カルテ共有サービス用  Conditionリソース（傷病名情報）プロファイル 。JP_Condition_eCSからの派生プロファイル。"
 
 * extension[eCS_InstitutionNumber] 1..1 MS
