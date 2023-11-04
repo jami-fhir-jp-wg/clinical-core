@@ -691,13 +691,13 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) Value
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-TP
 
 //  尿蛋⽩(半定量、判定) 
-ValueSet: JP_CLINS_ValueSet_CoreLabo_utpQLHalfQty_VS
-Id: jp-clins-valueset-corelabo-utpqlhalfqty-vs
+ValueSet: JP_CLINS_ValueSet_CoreLabo_utp_QLHalfQty_VS
+Id: jp-clins-valueset-corelabo-utp_qlhalfqty-vs
 Title: "CLINS: U-TP-定性半定量 ValueSet"
 Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定量) ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_CoreLabo_utpQLHalfQty_VS
+* ^url = $JP_CLINS_ValueSet_CoreLabo_utp_QLHalfQty_VS
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
@@ -706,13 +706,13 @@ Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定
 
 
 // 尿蛋⽩(半定量) 
-ValueSet: JP_CLINS_ValueSet_CoreLabo_utpHalfQty_VS
-Id: jp-clins-valueset-corelabo-utphalfqty-vs
+ValueSet: JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS
+Id: jp-clins-valueset-corelabo-utp_halfqty-vs
 Title: "CLINS: U-TP-半定量 ValueSet"
 Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(半定量) ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_CoreLabo_utpHalfQty_VS
+* ^url = $JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
