@@ -39,3 +39,4 @@
 ## プロファイル
 
 {% include markdown-link-references.md %}
+{% include external-link-reference.md %}

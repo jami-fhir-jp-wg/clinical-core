@@ -1918,3 +1918,4 @@ function details_open(onoff, idname, idCloseButton){
 ## プロファイル
 
 {% include markdown-link-references.md %}
+{% include external-link-reference.md %}
