@@ -107,7 +107,7 @@ jobs:
         for file in *.html
         do
           python ../script/replaceUrls.py $file >$file".2.html"
-          mv $file".2.html" $file
+          cp $file".2.html" $file
         done
         cd ..
 
