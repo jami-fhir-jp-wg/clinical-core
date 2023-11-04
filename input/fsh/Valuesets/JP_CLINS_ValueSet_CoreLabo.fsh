@@ -189,7 +189,7 @@ Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC10 
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Ca
 
 // カリウム(K)^^
-ValueSet: JP_CLINS_ValueSet_CoreLabo_K_VS
+ValueSet: JP_CLINS_ValueSet_CoreLabo_k_VS
 Id: jp-clins-valueset-corelabo-k-vs
 Title: "CLINS: K ValueSet"
 Description: "CLINS 電子カルテ共有サービス用 カリウム JLAC10 ValueSet"
@@ -369,8 +369,8 @@ Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #GGT
 
 // HbA1c(NGSP)^^
-ValueSet: JP_CLINS_ValueSet_CoreLabo_ngsp_VS
-Id: jp-clins-valueset-corelabo-ngsp-vs
+ValueSet: JP_CLINS_ValueSet_CoreLabo_hba1cngsp_VS
+Id: jp-clins-valueset-corelabo-hba1cngsp-vs
 Title: "CLINS: HbA1c-NGSP ValueSet"
 Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet"
 * ^meta.versionId = "1"
