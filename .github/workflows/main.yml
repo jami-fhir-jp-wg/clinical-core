@@ -110,7 +110,6 @@ jobs:
           cp $file".2.html" $file
         done
         cd ..
-
     - name: prepare gtz files for upload to remote site
       run: | 
         tar czf output.tgz output
