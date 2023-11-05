@@ -9,19 +9,20 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
 * id = "Example-JP-MedReq-PO-TID-2days"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_MedicationRequest_CLINS_eCS
 
-* extension[eCS_Department].url = $JP_eCS_Department
-* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
-* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
-
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" //"http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // "urn:oid:1.2.392.100495.20.3.82"
 * identifier[orderInRp].value = "1"
+
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A1720D83807672021070909210705-2"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
@@ -38,6 +39,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * medicationCodeableConcept.coding[+] = $Icode#I1656900 "ミヤＢＭ錠（２０ｍｇ／錠）"
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2316009F1022 "ミヤＢＭ錠"
 * medicationCodeableConcept.text = "ミヤＢＭ錠（２０ｍｇ／錠）"
+
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 

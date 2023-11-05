@@ -1,10 +1,25 @@
 Instance: Example-ObsLabo-Alb
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
-* meta.lastUpdated = "2021-07-05T15:38:59.000+09:00"
-* meta.profile = "http://test/StructureDefinition/JP-Observation-LabResult-Test"
-* identifier.system = "http://fhir/Observation"
-* identifier.value = "0008363939-LABOCL202107051150230274225000-0000181800"
+Description: "検体検査結果　アルブミン　80　mg/L \r\n　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101"
+
+* meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
+* meta.profile = $JP_Observation_LabResult_CLINS_eCS
+
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[requestIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
+
+// 検体材料　* contained[+] = Example_LaboMaterial_Serum
+* contained[+] = Example_LaboMaterial_Serum
+
 * status = #final
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
@@ -12,7 +27,9 @@ Usage: #example
 * code.coding[+] = $JP_CLINS_CodeSystem_CoreLabo_CS#3A015000001827101  "ALB"
 //* code.coding[+] = $LocalExamHistoryItemCode#0000181800 "ｱﾙﾌﾞﾐﾝ"
 * code.text = "アルブミン"
-* subject = Reference(Patient/0008363939)
+
+* subject.identifier.system = $JP_Insurance_memberID
+* subject.identifier.value = "00012345:あいう:１８７:05"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * issued = "2021-07-05T15:38:59.000+09:00"
@@ -21,6 +38,6 @@ Usage: #example
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
 //* interpretation.text = "範囲未定義、もしくは正常が適用されない"
-* specimen = Reference(Specimen/0008363939-2021-40824334-0000181800)
+* specimen = Reference(Specimen/Example-LaboMaterial-Serum)
 * specimen.type = "Specimen"
 

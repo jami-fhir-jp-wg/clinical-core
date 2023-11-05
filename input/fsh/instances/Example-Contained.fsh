@@ -168,3 +168,35 @@ Description: "埋め込み　医療者D003 サンプル"
 
 
 
+//----  埋め込み　検体検査材料　血清
+Instance: Example_LaboMaterial_Serum
+InstanceOf: JP_Specimen
+Usage: #example
+Description: "埋め込み　検体検査材料　血清"
+
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　検体検査材料　血清</p> </div>"
+
+//* meta.profile[+] = $JP_Patient_CLINS_eCS
+* id = "Example-LaboMaterial-Serum"
+
+* type.coding[+] = $JP_ObservationSampleMaterialCode_CS#023  "血清"
+* type.coding[+] = http://terminology.hl7.org/CodeSystem/v2-0487#SER "Serum"
+* type.text = "血清"
+
+//----  埋め込み　検体検査材料　尿（その他を含む）
+Instance: Example_LaboMaterial_Urine
+InstanceOf: JP_Specimen
+Usage: #example
+Description: "埋め込み　検体検査材料　尿(含むその他)"
+
+* text.status = #additional
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　検体検査材料　尿(含むその他)</p> </div>"
+
+//* meta.profile[+] = $JP_Patient_CLINS_eCS
+* id = "Example-LaboMaterial-Urine"
+
+* type.coding[+] = $JP_ObservationSampleMaterialCode_CS#001  "尿(含むその他)"
+* type.coding[+] = http://terminology.hl7.org/CodeSystem/v2-0487#UR	"Urine"
+* type.text = "尿"
+
