@@ -52,10 +52,10 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
  and medicationRequest 0..1
  and observationLaboResult 0..1
 
-* link[allergyIntolerance].url = $JP_AllergyIntolerance_CLINS_eCS
-* link[condition].url = $JP_Condition_CLINS_eCS
-* link[medicationRequest].url = $JP_MedicationRequest_CLINS_eCS
-* link[observationLaboResult].url = $JP_Observation_LabResult_CLINS_eCS
+* link[allergyIntolerance].url = $JP_AllergyIntolerance_CLINS_eCS (exactly)
+* link[condition].url = $JP_Condition_CLINS_eCS (exactly)
+* link[medicationRequest].url = $JP_MedicationRequest_CLINS_eCS (exactly)
+* link[observationLaboResult].url = $JP_Observation_LabResult_CLINS_eCS (exactly)
 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
@@ -68,27 +68,36 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
  and medicationRequest 0..1
  and observationLaboResult 0..1
 
+* entry ^short = "このBundleが格納するリソースの情報。"
+* entry.extension ..0
+* entry.modifierExtension ..0
+* entry.link ..0 MS
+* entry.search ..0
+* entry.request ..0
+* entry.response ..0
+
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "患者情報"
+
 * entry[patient].resource 1.. MS
 * entry[patient].resource only $JP_Patient_CLINS_eCS
 
 * entry[allergyIntolerance] ^short = "AllergyIntoleranceリソース"
 * entry[allergyIntolerance] ^definition = "アレルギー情報／薬剤禁忌情報"
 * entry[allergyIntolerance].resource 1.. MS
-* entry[allergyIntolerance].resource only $JP_AllergyIntolerance_CLINS_eCS
+* entry[allergyIntolerance].resource only $JP_AllergyIntolerance_CLINS_eCS (exactly)
 
 * entry[condition] ^short = "Conditionリソース"
 * entry[condition] ^definition = "傷病名情報"
 * entry[condition].resource 1.. MS
-* entry[condition].resource only $JP_Condition_CLINS_eCS
+* entry[condition].resource only $JP_Condition_CLINS_eCS (exactly)
 
 * entry[medicationRequest] ^short = "MedicationRequestリソース"
 * entry[medicationRequest] ^definition = "処方情報"
 * entry[medicationRequest].resource 1.. MS
-* entry[medicationRequest].resource only $JP_MedicationRequest_CLINS_eCS
+* entry[medicationRequest].resource only $JP_MedicationRequest_CLINS_eCS (exactly)
 
 * entry[observationLaboResult] ^short = "Observationリソース"
 * entry[observationLaboResult] ^definition = "検体検査結果／感染症情報"
 * entry[observationLaboResult].resource 1.. MS
-* entry[observationLaboResult].resource only $JP_Observation_LabResult_CLINS_eCS
+* entry[observationLaboResult].resource only $JP_Observation_LabResult_CLINS_eCS (exactly)

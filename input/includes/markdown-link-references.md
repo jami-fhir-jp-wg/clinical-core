@@ -26,6 +26,7 @@
 [JP_Encounter]: StructureDefinition-jp-encounter.html
 [JP_Patient]: StructureDefinition-jp-patient.html
 
+
 [JP_MedicationRequest_CLINS_eCS]: StructureDefinition-JP-MedicationRequest-CLINS-eCS.html
 [JP_MedicationRequest_eCS]: StructureDefinition-JP-MedicationRequest-eCS.html
 [JP_Observation_LabResult_CLINS_eCS]: StructureDefinition-JP-Observation-LabResult-CLINS-eCS.html
