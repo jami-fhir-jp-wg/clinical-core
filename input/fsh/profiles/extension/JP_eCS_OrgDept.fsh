@@ -50,6 +50,8 @@ Description: "診療サマリーや6情報等に記述する際に、発行診�
 * ^context[=].expression = "AllergyIntolerance"
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
+* ^context[+].type = #element
+* ^context[=].expression = "Observation"
 
 * . ^short = "診療科情報を記述するための拡張"
 * . ^definition = "発行診療科または発行者の診療科情報を記述する"

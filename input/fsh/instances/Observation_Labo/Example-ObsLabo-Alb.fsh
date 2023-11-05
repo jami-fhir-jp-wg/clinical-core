@@ -1,5 +1,5 @@
 Instance: Example-ObsLabo-Alb
-InstanceOf: JP_Observation_LabResult_eCS
+InstanceOf: JP_Observation_LabResult_CLINS_eCS
 Usage: #example
 Description: "検体検査結果　アルブミン　80　mg/L \r\n　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101"
 
