@@ -26,10 +26,10 @@ jurisdiction: 'urn:iso:std:iso:3166-2#JP'
 dependencies:
   jp-core.r4:
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
-    uri: http://jpfhir.jp/fhir/core/ImplementationGuide/jp-core.r4
+    uri: http://jpfhir.jp/fhir/core/1.1.2/ImplementationGuide/
     version: 1.1.2
   jpfhir-terminology:
-    uri: http://jpfhir.jp/fhir/jpfhir-terminology/
+    uri: http://jpfhir.jp/fhir//jpfhir-terminology/ImplementationGuide/
     version: 1.1.1
     
 #----------------------------------------
@@ -42,7 +42,7 @@ pages:
     title: 名称：６情報送信仕様
   history.md:
     title: 改訂履歴
-    
+
 #-------------------------------------
 # メニュー設定
 #-------------------------------------
