@@ -22,7 +22,7 @@ Description: "CLINS 電子カルテ共有サービス用 Observationリソース
 * contained ^slicing.rules = #open
 * contained contains
     encounter 0..
-    and specimen 1..
+    and specimen 0..
     and order 0..
 
 * contained[encounter] only  JP_Encounter

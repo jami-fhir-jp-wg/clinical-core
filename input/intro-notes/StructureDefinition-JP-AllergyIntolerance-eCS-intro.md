@@ -379,7 +379,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl272 width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl356 width=195 style='border-top:none;border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir%3cbr%3e/core/IdSystem/insurance-medical-institution-no"
+  href="http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no"
   target="_parent"><span style='color:black'>http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no</span></a></td>
   <td colspan=3 style='mso-ignore:colspan'></td>
  </tr>
