@@ -1,5 +1,38 @@
 //
 
+CodeSystem: JP_CLINS_ObsLabResult_Uncoded_CS
+Id: jp-clins-obslabresult-uncoded-cs
+Description: "検体検査結果項目で標準コードが割り当てられない場合に使用する未コード化コード(JLAC10)"
+* ^url = $JP_CLINS_ObsLabResultUncoded_CS
+* ^title = "未標準化コード項目(JLAC)"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #99999999999999999  "未標準化コード項目(JLAC)"
+
+CodeSystem: JP_CLINS_ObsLabResult_LocalUncoded_CS
+Id: jp-clins-obslabresult-localuncoded-cs
+Description: "検体検査結果項目で標準コードが割り当てられない場合に使用する未コード化コード(Local)"
+* ^url = $JP_ObservationLabResultLocalUncoded_CS
+* ^title = "未標準化コード項目(Local)"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #LUNCODED  "Locally Uncoded"
+
+CodeSystem: JP_CLINS_ObsLabResult_LocalCode_CS
+Id: jp-clins-obslabresult-localcode-cs
+Description: "検体検査項目ローカルコード識別用CS"
+* ^url = $JP_ObservationLabResultLocal_CS
+* ^title = "検体検査項目ローカルコード識別用コードシステム"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #dummy "コード化ローカルコード"
+
 CodeSystem: JP_ehrshrs_indication_CS
 Id: jp-ehrshrs-indication-cs
 Description: "長期保存／未告知診療情報のためのフラグコード"
@@ -27,28 +60,6 @@ Description: "６情報Bundleカテゴリー　CodeSystem"
 * #Observation  "Observation"
 
 
-CodeSystem: JP_CLINS_ObsLabResult_Uncoded_CS
-Id: jp-clins-obslabresult-uncoded-cs
-Description: "検体検査結果項目で標準コードが割り当てられない場合に使用する未コード化コード(JLAC10)"
-* ^url = $JP_CLINS_ObsLabResultUncoded_CS
-* ^title = "未標準化コード項目(JLAC)"
-* ^status = #active
-* ^experimental = false
-* ^content = #complete
-* ^caseSensitive = false
-* #99999999999999999  "JLAC10 Uncoded"
-
-
-CodeSystem: JP_CLINS_ObsLabResult_LocalUncoded_CS
-Id: jp-clins-obslabresult-localuncoded-cs
-Description: "検体検査結果項目で標準コードが割り当てられない場合に使用する未コード化コード(Local)"
-* ^url = $JP_ObservationLabResultLocalUncoded_CS
-* ^title = "未標準化コード項目(Local)"
-* ^status = #active
-* ^experimental = false
-* ^content = #complete
-* ^caseSensitive = false
-* #LUNCODED  "Locally Uncoded"
 
 //$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
 CodeSystem: JP_Observation_SubCategory_CS
