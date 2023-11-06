@@ -236,7 +236,7 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
 
  - （３）一般項目JLACコード設定パターン<br>
    検査項目コードと名称を、code.coding[n]に以下のように設定する。<br>
-    - code.coding[n].system :　”http://medis.or.jp/CodeSystem/master-JLAC10-17digits”　または　”urn:oid:1.2.392.200119.4.504” （できる限り前者のURL表記を使用する。）
+    - code.coding[n].system :　”urn:oid:1.2.392.200119.4.504” (MEDIS臨床検査項目コード17桁(JLAC10)”http://medis.or.jp/CodeSystem/master-JLAC10-17digits”に対応するOID)
     - code.coding[n].code :　一般項目JLACコード
     - code.coding[n].display :　検査項目名。（JLACコードに対応する標準検査項目名称は定義されていないため、施設固有の検査項目名を用いて構わない。またJLAC10コードには検体材料コード情報が含まれているので、検体材料名称はなくても構わない。）
 

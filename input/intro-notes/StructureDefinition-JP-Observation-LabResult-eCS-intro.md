@@ -26,7 +26,6 @@
   - resourceType : リソースタイプ "Observation"
   - meta.lastUpdated : 最終更新日時
   - meta.profile : 電子カルテ情報共有サービスでは必須
-  - contained (JP_Specimen): 検体材料情報を格納したSpecimenリソース
   - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。ｓ医療機関番号１０桁
   - identifier : インスタンス識別ID
   - status : 検査・観察のステータス
@@ -278,7 +277,7 @@ function details_open(onoff, idname, idCloseButton){
   style='display:none'><rt>ケンタイ </rt></span></ruby><ruby>材料<span
   style='display:none'><rt>ザイリョウ </rt></span></ruby><ruby>情報<span
   style='display:none'><rt>ジョウホウ </rt></span></ruby>bの<ruby>要素<span
-  style='display:none'><rt>ヨウソ </rt></span></ruby>)から参照される場合には、そのJP_Specimenリソースの実体。JP_Specimenリソースにおける必要最小限の要素だけが含まれればよい。</td>
+  style='display:none'><rt>ヨウソ </rt></span></ruby>)から参照される場合には、そのJP_Specimenリソースの実体。JP_Specimenリソースにおける必要最小限の要素(type要素に材料コード情報を記述するなど)だけが含まれればよい。</td>
   <td class=xl72 width=36 style='width:27pt'>　</td>
   <td class=xl75 width=195 style='width:146pt'>　</td>
   <td colspan=2 style='mso-ignore:colspan'></td>
