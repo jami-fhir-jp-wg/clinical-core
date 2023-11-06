@@ -22,6 +22,7 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^caseSensitive = false
 * #LUNCODED  "Locally Uncoded"
 
+/*
 CodeSystem: JP_CLINS_ObsLabResult_LocalCode_CS
 Id: jp-clins-obslabresult-localcode-cs
 Description: "検体検査項目ローカルコード識別用CS"
@@ -32,6 +33,7 @@ Description: "検体検査項目ローカルコード識別用CS"
 * ^content = #complete
 * ^caseSensitive = false
 * #dummy "コード化ローカルコード"
+*/
 
 CodeSystem: JP_ehrshrs_indication_CS
 Id: jp-ehrshrs-indication-cs
