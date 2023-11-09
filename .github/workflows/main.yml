@@ -121,7 +121,7 @@ jobs:
         cp ../forPackageRelease/package-diff.json package/package.json
         tar czf jp-clins-diff.tgz package
         cp jp-clins-diff.tgz ../forPackageRelease/
-s
+
     - name: generate snapshot package using sushi -s command       
       run: |
         rm -rf fsh-generated
