@@ -1,4 +1,13 @@
 #!/bin/bash
+
+#テスト用
+# diff　パッケージ版
+java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli_latest.jar ExampleJson/*Patient*.json  -display-issues-are-warnings  -version 4.0.1  -language ja  -ig  packagesForVali/jpcore-diff.tgz -ig packagesForVali/jpfhir-terminology.tgz -ig packagesForVali/jp-clins-package-diff.tgz  -locale ja-JP -tx n/a 
+
+# diff　パッケージ版
+java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli_latest.jar ExampleJson/*Patient*.json  -display-issues-are-warnings  -version 4.0.1  -language ja  -ig  packagesForVali/jpcore-snap.tgz -ig packagesForVali/jpfhir-terminology.tgz -ig packagesForVali/jp-clins-package-snap.tgz  -locale ja-JP -tx n/a 
+
+
 java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli.jar ExampleJson/*.json -display-issues-are-warnings  -version 4.0.1 -locale ja-JP  -ig  packages_snapshot/jp-clins.tgz -ig packages_snapshot/jp-core.r4-1.1.2-dev.tgz -ig packages_snapshot/jpfhir-terminology-1.1.1.tgz -tx n/a  -language ja
 
 java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli.jar ExampleJson/*Patient*.json -display-issues-are-warnings  -version 4.0.1 -locale ja-JP  -ig  packages_snapshot/jp-clins.tgz -ig packages_snapshot/jp-core.r4-1.1.2-dev.tgz -ig packages_snapshot/jpfhir-terminology-1.1.1.tgz -tx n/a  -language ja
