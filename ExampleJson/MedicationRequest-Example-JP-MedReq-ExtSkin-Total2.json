@@ -1,0 +1,158 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "Example-JP-MedReq-ExtSkin-Total2",
+  "meta": {
+    "lastUpdated": "2021-07-05T19:07:58.000+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
+    ]
+  },
+  "status": "completed",
+  "intent": "order",
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "value": "1"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "value": "1"
+    },
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+    },
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.11",
+      "value": "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+    }
+  ],
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    },
+    "type": "Patient"
+  },
+  "dosageInstruction": [
+    {
+      "extension": [
+        {
+          "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse",
+          "valuePeriod": {
+            "start": "2021-07-05"
+          }
+        }
+      ],
+      "text": "1日数回 塗布",
+      "timing": {
+        "event": [
+          "2021-07-05T08:00:00+09:00"
+        ],
+        "code": {
+          "text": "1日数回 塗布"
+        }
+      },
+      "doseAndRate": [
+        {
+          "type": {
+            "coding": [
+              {
+                "code": "1",
+                "system": "urn:oid:1.2.392.100495.20.2.22",
+                "display": "製剤量"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　外用（塗布）全量処方　1回量をコードで記述できない例</p></div>"
+  },
+  "contained": [
+    {
+      "resourceType": "Practitioner",
+      "id": "Example-Practitioner-minimun-R001",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
+        ]
+      },
+      "text": {
+        "status": "additional",
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者R001 サンプル</p></div>"
+      },
+      "name": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+              "valueCode": "IDE"
+            }
+          ],
+          "text": "医学 一郎"
+        }
+      ]
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "XTR",
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+          "display": "臨時処方"
+        },
+        {
+          "code": "IHP",
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS",
+          "display": "入院処方"
+        }
+      ],
+      "text": "時間外処方"
+    }
+  ],
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "I3240210",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567",
+        "display": "ヒルドイドローション２５ｇ"
+      }
+    ],
+    "text": "ヒルドイドローション２５ｇ"
+  },
+  "authoredOn": "2021-07-05T17:31:48+09:00",
+  "requester": {
+    "reference": "#Example-Practitioner-minimun-R001",
+    "display": "医学 一郎",
+    "type": "Practitioner"
+  },
+  "recorder": {
+    "reference": "#Example-Practitioner-minimun-R001",
+    "type": "Practitioner"
+  },
+  "groupIdentifier": {
+    "value": "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+  },
+  "dispenseRequest": {
+    "quantity": {
+      "value": 1,
+      "code": "HON",
+      "system": "urn:oid:1.2.392.100495.20.2.101",
+      "unit": "本"
+    }
+  }
+}

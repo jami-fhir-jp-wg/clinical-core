@@ -1,0 +1,85 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-ObsLabo-K",
+  "meta": {
+    "lastUpdated": "2021-07-09T14:11:13.000+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "08",
+            "system": "urn:oid:1.2.392.200250.2.2.2",
+            "display": "循環器科"
+          }
+        ],
+        "text": "循環器診療科"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "1318814790-9990767-OBSLAB13883807672021070909210705-2"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
+        "code": "10000181802",
+        "display": "カリウム"
+      },
+      {
+        "code": "3H015000002326101",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+        "display": "K"
+      },
+      {
+        "code": "3H015000002326101",
+        "system": "urn:oid:1.2.392.200119.4.504",
+        "display": "K"
+      }
+    ],
+    "text": "カリウム"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
+  },
+  "status": "final",
+  "effectiveDateTime": "2021-07-05T11:19:41+09:00",
+  "issued": "2021-07-05T15:38:59.000+09:00",
+  "valueQuantity": {
+    "value": 3.5,
+    "unit": "mEq/L"
+  },
+  "specimen": {
+    "display": "血清",
+    "type": "Specimen"
+  }
+}
