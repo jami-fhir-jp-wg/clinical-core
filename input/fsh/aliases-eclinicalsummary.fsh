@@ -94,7 +94,7 @@ Alias: $JP_PractionerRole_eCS_VS = http://jpfhir.jp/fhir/eCS/ValueSet/practition
 // 検体材料
 Alias:  $JP_Specimen_JLAC10_SpecimenCode_VS = http://jpfhir.jp/fhir/eCS/CodeSystem/JP_Specimen_JLAC10_SpecimenCode_VS
 Alias: $JP_Specimen_JLAC10_SpecimenCode_CS = http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes
-Alias: $JP_ObservationLabSpecimenLocal_CS = http://jpfhir.jp/fhir/eCS/ValueSet/JP_CLINS_ObsLabSepecimen_LocalCode_CS
+Alias: $JP_ObservationLabSpecimenLocal_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/JP_CLINS_ObsLabSepecimen_LocalCode_CS
 
 
 // 検査結果項目

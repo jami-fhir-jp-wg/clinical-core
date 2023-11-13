@@ -182,6 +182,9 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
  and jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
  and unCoded 0..1 MS
 
+// コードの全体に適用する大原則
+* code from $JP_eCS_ObservationLabResultCode_VS (required)
+
 //ローカルコード
 * code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
 
