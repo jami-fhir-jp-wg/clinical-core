@@ -230,7 +230,7 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
    検査項目コードと名称を、code.coding[n]に以下のように設定する。<br>
     - code.coding[n].system :　<br>
       - 臨床検査項目基本コードセットの検査項目：”http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS”
-      - 感染症検査項目リストの検査項目：”http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS”
+      - 感染症検査項目リストの検査項目：”http://jpfhir.jp/fhir/<span style="color: yellow;">clins/<span>CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS”
     - code.coding[n].code :　共有項目JLACコード
     - code.coding[n].display :　FHIR識別名
 
