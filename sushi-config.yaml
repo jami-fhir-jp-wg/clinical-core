@@ -31,7 +31,7 @@ dependencies:
   jpfhir-terminology:
     uri: http://jpfhir.jp/fhir//jpfhir-terminology/ImplementationGuide/
     version: 1.1.1
-    
+
 #----------------------------------------
 # ページタイトル名称設定
 #----------------------------------------
@@ -54,6 +54,10 @@ menu:
     改訂履歴: history.html
   Artifacts: 
     Artifacts: artifacts.html
+  パッケージDownload:
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins-package-diff.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins-package-snap.tgz
+    
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
