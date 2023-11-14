@@ -99,7 +99,7 @@ jobs:
         sed 's/1.0.0-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
         sed 's/1.0.0-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
         mv package-diff-temp.json package-diff.json
-        mv package-sanp-temp.json package-snap.json
+        mv package-snap-temp.json package-snap.json
         cd ..
 
     - name: Run IG Publisher
