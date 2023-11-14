@@ -37,11 +37,14 @@ dependencies:
 #----------------------------------------
 pages:
   index.md:
-    title: 名称：電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
+    title: 電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
   core6spec.md:
-    title: 名称：６情報送信仕様
+    title: ６情報送信仕様
+  validationGuide.md:
+    title: Validationガイド
   history.md:
     title: 改訂履歴
+  
 
 #-------------------------------------
 # メニュー設定
@@ -54,6 +57,8 @@ menu:
     改訂履歴: history.html
   Artifacts: 
     Artifacts: artifacts.html
+  Validationガイド:
+    Validationガイド: validationGuide.html
   パッケージDownload:
     標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7-diff.tgz 
     snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7-snap.tgz
