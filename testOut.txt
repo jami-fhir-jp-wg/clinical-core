@@ -1,0 +1,180 @@
+Last login: Tue Nov 14 00:15:45 on ttys000
+kohe@ooekazuhikonoMacBook-Pro ~ % java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json  -display-issues-are-warnings  -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a -output testout.json
+kohe@ooekazuhikonoMacBook-Pro ~ % cd GitHub/clinical-core
+kohe@ooekazuhikonoMacBook-Pro clinical-core % java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json  -display-issues-are-warnings  -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a -output testout.json
+FHIR Validation tool Version 6.1.8 (Git# 8413995d8bcf). Built 2023-09-21T19:52:22.833Z (53 days old)
+  Java:   17.0.5 from /Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home on aarch64 (64bit). 4096MB available
+  Paths:  Current = /Users/kohe/GitHub/clinical-core, Package Cache = /Users/kohe/.fhir/packages
+  Params: ExampleJson/AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.json ExampleJson/AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-02.json ExampleJson/AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.json ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-02.json ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-03.json ExampleJson/Encounter-Example-JP-Encounter-AMB.json ExampleJson/Encounter-Example-JP-Encounter-IMP.json ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json ExampleJson/MedicationRequest-Example-JP-MedReq-ExtEye-Total1.json ExampleJson/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-4timez-7days.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-2d.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-SID-28days.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-TID-2days.json ExampleJson/Observation-ErrorExample-ObsLabo-eGFR.json ExampleJson/Observation-Example-ObsLabo-Alb.json ExampleJson/Observation-Example-ObsLabo-K.json ExampleJson/Observation-Example-ObsLabo-eGFR.json ExampleJson/Patient-Example-Patient-minimun.json ExampleJson/Patient-Example-Patient-standard.json ExampleJson/Practitioner-Example-Practitioner-minimun-D001.json ExampleJson/Practitioner-Example-Practitioner-minimun-D002.json ExampleJson/Practitioner-Example-Practitioner-minimun-D003.json ExampleJson/Practitioner-Example-Practitioner-minimun-R001.json ExampleJson/Specimen-Example-LaboMaterial-Serum.json ExampleJson/Specimen-Example-LaboMaterial-Urine.json -display-issues-are-warnings -version 4.0.1 -language ja -ig pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a -output testout.json
+  Locale: 日本/JP
+  Jurisdiction: Japan
+Loading
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:04.412)
+  Load hl7.fhir.uv.extensions.r4#1.0.0 - 1328 resources (00:03.230)
+  Load hl7.terminology#5.3.0 - 4201 resources (00:00.716)
+  Load hl7.terminology.r5#5.0.0 - 4174 resources (00:01.014)
+  Load hl7.fhir.uv.extensions#1.0.0 - 1328 resources (00:00.964)
+  Terminology server null - Version n/a: No Terminology Server (00:00.000)
+  Load pkgValidation/jp-core.r4#1.1.2.tgz - 159 resources (00:00.253)
+  Load pkgValidation/jpfhir-terminology#1.1.1.tgz - 175 resources (00:04.091)
+  Load pkgValidation/jp-clins.r4-0.9.7-diff.tgz - 148 resources (00:00.085)
+  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.0.12, hl7.fhir.uv.extensions.r4#1.0.0, hl7.terminology#5.3.0, hl7.terminology.r5#5.0.0, hl7.fhir.uv.extensions#1.0.0]
+  Get set...  go (00:01.427)
+Validating
+  Validate ExampleJson/AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.json
+Validate AllergyIntolerance against http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|4.0.1..........20..........40..........60..........80.........|
+Validate AllergyIntolerance against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS..........20..........40..........60..........80..........100.|
+ 00:01.697
+  Validate ExampleJson/AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-02.json
+Validate AllergyIntolerance against http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|4.0.1..........20..........40..........60..........80.........|
+Validate AllergyIntolerance against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
+..........20..........40..........60........|
+ 00:00.059
+  Validate ExampleJson/AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.json
+Validate AllergyIntolerance against http://hl7.org/fhir/StructureDefinition/AllergyIntolerance|4.0.1..........20..........40..........60..........80.........|
+Validate AllergyIntolerance against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
+..........20..........40..........60........|
+ 00:00.052
+  Validate ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json
+Validate Condition against http://hl7.org/fhir/StructureDefinition/Condition|4.0.1..........20..........40..........60..........80.........|
+Validate Condition against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS..........20..........40..........60..........80..........100|
+ 00:00.023
+  Validate ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-02.json
+Validate Condition against http://hl7.org/fhir/StructureDefinition/Condition|4.0.1..........20..........40..........60..........80.........|
+Validate Condition against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
+..........20..........40..........60.........|
+ 00:00.068
+  Validate ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-03.json
+Validate Condition against http://hl7.org/fhir/StructureDefinition/Condition|4.0.1..........20..........40..........60..........80.........|
+Validate Condition against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
+..........20..........40..........60........|
+ 00:00.027
+  Validate ExampleJson/Encounter-Example-JP-Encounter-AMB.json
+Validate Encounter against http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1..........20..........40..........60..........80.........|
+Validate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter..........20..........40..........60..........80..........100...|
+ 00:00.009
+  Validate ExampleJson/Encounter-Example-JP-Encounter-IMP.json
+Validate Encounter against http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1..........20..........40..........60..........80.........|
+Validate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter..........20..........40..........60..........80..........100...|
+ 00:00.008
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60
+Error fetching http://packages.fhir.org/jp-clins.r4: Invalid HTTP response 404 from http://packages.fhir.org/jp-clins.r4 (Not Found) (content in /var/folders/pp/vf6q56nn2z10zv29ys27pkhm0000gn/T/http-log/fhir-http-3.log)
+2023-11-14 12:25:57.967 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: http://packages.fhir.org
+2023-11-14 12:25:59.922 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: https://packages2.fhir.org/packages
+2023-11-14 12:26:06.004 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:338] Failed to determine latest version of package jp-clins.r4 from server: build.fhir.org
+2023-11-14 12:26:06.005 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:355] Latest version of package jp-clins.r4 found locally is 1.0.0 - using that
+  Load jp-clins.r4#1.0.0 - 170 resources (00:09.236)
+Error fetching http://packages.fhir.org/jp-clins.r4: Invalid HTTP response 404 from http://packages.fhir.org/jp-clins.r4 (Not Found) (content in /var/folders/pp/vf6q56nn2z10zv29ys27pkhm0000gn/T/http-log/fhir-http-4.log)
+2023-11-14 12:26:07.116 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: http://packages.fhir.org
+2023-11-14 12:26:08.240 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: https://packages2.fhir.org/packages
+2023-11-14 12:26:08.243 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:338] Failed to determine latest version of package jp-clins.r4 from server: build.fhir.org
+2023-11-14 12:26:08.243 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:355] Latest version of package jp-clins.r4 found locally is 1.0.0 - using that
+..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
+Validate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60........|
+ 00:02.238
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-ExtEye-Total1.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80...|
+ 00:00.060
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80...|
+ 00:00.024
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-4timez-7days.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80....|
+ 00:00.045
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80...|
+ 00:00.034
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80....|
+ 00:00.026
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-2d.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80....|
+ 00:00.039
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80...|
+ 00:00.055
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-SID-28days.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80.....|
+ 00:00.028
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80.....|
+ 00:00.041
+  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-TID-2days.json
+Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
+Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
+..........20..........40..........60..........80.....|
+ 00:00.033
+  Validate ExampleJson/Observation-ErrorExample-ObsLabo-eGFR.json
+Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
+Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS..........20..........40..........60..........80..........100|
+ 00:00.213
+  Validate ExampleJson/Observation-Example-ObsLabo-Alb.json
+Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
+Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCSValidate Specimen against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen|
+..........20..........40..........60.......|
+ 00:00.033
+  Validate ExampleJson/Observation-Example-ObsLabo-K.json
+Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
+Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS..........20..........40..........60..........80..........100|
+ 00:00.021
+  Validate ExampleJson/Observation-Example-ObsLabo-eGFR.json
+Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
+Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS..........20..........40..........60..........80..........100|
+ 00:00.015
+  Validate ExampleJson/Patient-Example-Patient-minimun.json
+Validate Patient against http://hl7.org/fhir/StructureDefinition/Patient|4.0.1..........20..........40..........60..........80.........|
+Validate Patient against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient..........20..........40..........60..........80..........100...|
+ 00:00.006
+  Validate ExampleJson/Patient-Example-Patient-standard.json
+Validate Patient against http://hl7.org/fhir/StructureDefinition/Patient|4.0.1..........20..........40..........60..........80.........|
+Validate Patient against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS..........20..........40..........60..........80..........100|
+ 00:00.031
+  Validate ExampleJson/Practitioner-Example-Practitioner-minimun-D001.json
+Validate Practitioner against http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1..........20..........40..........60..........80.........|
+Validate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner..........20..........40..........60..........80..........100....|
+ 00:00.005
+  Validate ExampleJson/Practitioner-Example-Practitioner-minimun-D002.json
+Validate Practitioner against http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1..........20..........40..........60..........80.........|
+Validate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner..........20..........40..........60..........80..........100....|
+ 00:00.005
+  Validate ExampleJson/Practitioner-Example-Practitioner-minimun-D003.json
+Validate Practitioner against http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1..........20..........40..........60..........80.........|
+Validate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner..........20..........40..........60..........80..........100....|
+ 00:00.005
+  Validate ExampleJson/Practitioner-Example-Practitioner-minimun-R001.json
+Validate Practitioner against http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1..........20..........40..........60..........80.........|
+Validate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner..........20..........40..........60..........80..........100....|
+ 00:00.005
+  Validate ExampleJson/Specimen-Example-LaboMaterial-Serum.json
+Validate Specimen against http://hl7.org/fhir/StructureDefinition/Specimen|4.0.1..........20..........40..........60..........80.........|
+Validate Specimen against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen..........20..........40..........60..........80..........100..|
+ 00:00.005
+  Validate ExampleJson/Specimen-Example-LaboMaterial-Urine.json
+Validate Specimen against http://hl7.org/fhir/StructureDefinition/Specimen|4.0.1..........20..........40..........60..........80.........|
+Validate Specimen against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen..........20..........40..........60..........80..........100..|
+ 00:00.005
+Done. Times: Loading: 00:16.317, validation: 00:14.169 (#31). Memory = 793Mb
+
+Done. Times: Loading: 00:16.317, validation: 00:14.169 (#31). Max Memory = 4Gb
+kohe@ooekazuhikonoMacBook-Pro clinical-core % 

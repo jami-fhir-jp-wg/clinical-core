@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#ネットワークなし版
+java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings  -best-practice ignore  -output testout.json 
+
+-Xmx4G 
+
 #テスト用
 java -Xmx4G -Djava.awt.headless=true -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json  -display-issues-are-warnings  -version 4.0.1  -language ja   -ig  jp-core.r4#1.1.2.tgz -ig jpfhir-terminology#1.1.1.tgz -ig jp-clins#1.0.0.tgz  -locale ja-JP -tx n/a 
 

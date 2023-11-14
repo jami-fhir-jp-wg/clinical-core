@@ -1,0 +1,3697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <type value="collection"/>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-02.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169 の誤ったdisplay '胃の悪性新生物＜腫瘍＞，胃，部位不明' - 1 の選択肢のうちの一つであるべきです: '胃，部位不明' (言語 'ja' のため) for 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169 の誤ったdisplay '胃の悪性新生物＜腫瘍＞，胃，部位不明' - 1 の選択肢のうちの一つであるべきです: '胃，部位不明' (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-02.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="104"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169 の誤ったdisplay '胃の悪性新生物＜腫瘍＞，胃，部位不明' - 1 の選択肢のうちの一つであるべきです: '胃，部位不明' (言語 'ja' のため) for 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169'"/>
+          </details>
+          <expression value="Condition.code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="104"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full#C169 の誤ったdisplay '胃の悪性新生物＜腫瘍＞，胃，部位不明' - 1 の選択肢のうちの一つであるべきです: '胃，部位不明' (言語 'ja' のため)"/>
+          </details>
+          <expression value="Condition.code.coding[0]"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-03.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Encounter-Example-JP-Encounter-AMB.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Encounter-Example-JP-Encounter-IMP.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#104937401'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="163"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="163"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="158"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#104937401'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="156"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="158"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="165"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#118185202 の誤ったdisplay 'トラバタンズ点眼液０．００４％　２' - 1 の選択肢のうちの一つであるべきです: 'トラバタンズ点眼液０．００４％・ノバルティスＰ' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#118185202'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#118185202 の誤ったdisplay 'トラバタンズ点眼液０．００４％　２' - 1 の選択肢のうちの一つであるべきです: 'トラバタンズ点眼液０．００４％・ノバルティスＰ' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#118185202 の誤ったdisplay 'トラバタンズ点眼液０．００４％　２' - 1 の選択肢のうちの一つであるべきです: 'トラバタンズ点眼液０．００４％・ノバルティスＰ' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-ExtEye-Total1.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="134"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="134"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="129"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#118185202 の誤ったdisplay 'トラバタンズ点眼液０．００４％　２' - 1 の選択肢のうちの一つであるべきです: 'トラバタンズ点眼液０．００４％・ノバルティスＰ' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#118185202'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#118185202 の誤ったdisplay 'トラバタンズ点眼液０．００４％　２' - 1 の選択肢のうちの一つであるべきです: 'トラバタンズ点眼液０．００４％・ノバルティスＰ' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="129"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#118185202 の誤ったdisplay 'トラバタンズ点眼液０．００４％　２' - 1 の選択肢のうちの一つであるべきです: 'トラバタンズ点眼液０．００４％・ノバルティスＰ' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="136"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'JP Core MedicationCode ValueSet' (http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_VS|1.1.0a)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567#I3240210）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="129"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="127"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'JP Core MedicationCode ValueSet' (http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_VS|1.1.0a)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567#I3240210）"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="129"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="131"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#123812902 の誤ったdisplay 'カロナール錠５００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠５００・あゆみ製薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#123812902'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#123812902 の誤ったdisplay 'カロナール錠５００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠５００・あゆみ製薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#123812902 の誤ったdisplay 'カロナール錠５００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠５００・あゆみ製薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-4timez-7days.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="161"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="161"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="156"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#123812902 の誤ったdisplay 'カロナール錠５００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠５００・あゆみ製薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#123812902'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="154"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#123812902 の誤ったdisplay 'カロナール錠５００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠５００・あゆみ製薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="156"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#123812902 の誤ったdisplay 'カロナール錠５００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠５００・あゆみ製薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="163"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#115228902 の誤ったdisplay 'カロナール錠３００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠３００・あゆみ製薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#115228902'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#115228902 の誤ったdisplay 'カロナール錠３００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠３００・あゆみ製薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#115228902 の誤ったdisplay 'カロナール錠３００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠３００・あゆみ製薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="135"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="135"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="130"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#115228902 の誤ったdisplay 'カロナール錠３００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠３００・あゆみ製薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#115228902'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="128"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#115228902 の誤ったdisplay 'カロナール錠３００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠３００・あゆみ製薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="130"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#115228902 の誤ったdisplay 'カロナール錠３００' - 1 の選択肢のうちの一つであるべきです: 'カロナール錠３００・あゆみ製薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="137"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'JP Core MedicationCode ValueSet' (http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_VS|1.1.0a)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567#I1692880）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="161"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="159"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'JP Core MedicationCode ValueSet' (http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_VS|1.1.0a)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567#I1692880）"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="161"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="163"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#122394101 の誤ったdisplay 'デノタスチュアブル配合錠' - 1 の選択肢のうちの一つであるべきです: 'デノタスチュアブル配合錠・第一三共' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#122394101'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#122394101 の誤ったdisplay 'デノタスチュアブル配合錠' - 1 の選択肢のうちの一つであるべきです: 'デノタスチュアブル配合錠・第一三共' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#122394101 の誤ったdisplay 'デノタスチュアブル配合錠' - 1 の選択肢のうちの一つであるべきです: 'デノタスチュアブル配合錠・第一三共' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-2d.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="161"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="161"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="156"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#122394101 の誤ったdisplay 'デノタスチュアブル配合錠' - 1 の選択肢のうちの一つであるべきです: 'デノタスチュアブル配合錠・第一三共' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#122394101'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="154"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#122394101 の誤ったdisplay 'デノタスチュアブル配合錠' - 1 の選択肢のうちの一つであるべきです: 'デノタスチュアブル配合錠・第一三共' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="156"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#122394101 の誤ったdisplay 'デノタスチュアブル配合錠' - 1 の選択肢のうちの一つであるべきです: 'デノタスチュアブル配合錠・第一三共' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="163"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#127031001'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="136"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="136"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="131"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#127031001'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="129"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="131"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="138"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'TimingAbbreviation' (http://hl7.org/fhir/ValueSet/timing-abbreviation|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = urn:oid:1.2.392.200250.2.2.20#1011100000000000）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#127031001'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-SID-28days.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="192"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="10"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'TimingAbbreviation' (http://hl7.org/fhir/ValueSet/timing-abbreviation|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = urn:oid:1.2.392.200250.2.2.20#1011100000000000）"/>
+          </details>
+          <expression value="MedicationRequest.dosageInstruction[0].timing.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="192"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="187"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#127031001'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="185"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="187"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#127031001 の誤ったdisplay 'デエビゴ錠２．５ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'デエビゴ錠２．５ｍｇ・エーザイ' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="194"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'TimingAbbreviation' (http://hl7.org/fhir/ValueSet/timing-abbreviation|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = urn:oid:1.2.392.200250.2.2.20#1011000400000000）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#121431401 の誤ったdisplay 'アムロジピンＯＤ錠１０ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#121431401'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#121431401 の誤ったdisplay 'アムロジピンＯＤ錠１０ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#121431401 の誤ったdisplay 'アムロジピンＯＤ錠１０ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="192"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="106"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="10"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'TimingAbbreviation' (http://hl7.org/fhir/ValueSet/timing-abbreviation|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = urn:oid:1.2.392.200250.2.2.20#1011000400000000）"/>
+          </details>
+          <expression value="MedicationRequest.dosageInstruction[0].timing.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="192"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="187"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#121431401 の誤ったdisplay 'アムロジピンＯＤ錠１０ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#121431401'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="185"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#121431401 の誤ったdisplay 'アムロジピンＯＤ錠１０ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="187"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#121431401 の誤ったdisplay 'アムロジピンＯＤ錠１０ｍｇ' - 1 の選択肢のうちの一つであるべきです: 'アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="194"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'TimingAbbreviation' (http://hl7.org/fhir/ValueSet/timing-abbreviation|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = urn:oid:1.2.392.200250.2.2.20#1013044400000000）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#104195801 の誤ったdisplay 'ミヤＢＭ錠' - 1 の選択肢のうちの一つであるべきです: 'ミヤＢＭ錠・ミヤリサン製薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#104195801'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#104195801 の誤ったdisplay 'ミヤＢＭ錠' - 1 の選択肢のうちの一つであるべきです: 'ミヤＢＭ錠・ミヤリサン製薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.403.1#104195801 の誤ったdisplay 'ミヤＢＭ錠' - 1 の選択肢のうちの一つであるべきです: 'ミヤＢＭ錠・ミヤリサン製薬' (ja) (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/MedicationRequest-Example-JP-MedReq-PO-TID-2days.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="181"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="この要素はどの既知のスライスとも一致しません defined in the profile http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="119"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="10"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'TimingAbbreviation' (http://hl7.org/fhir/ValueSet/timing-abbreviation|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = urn:oid:1.2.392.200250.2.2.20#1013044400000000）"/>
+          </details>
+          <expression value="MedicationRequest.dosageInstruction[0].timing.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="181"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="176"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#104195801 の誤ったdisplay 'ミヤＢＭ錠' - 1 の選択肢のうちの一つであるべきです: 'ミヤＢＭ錠・ミヤリサン製薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#104195801'"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="174"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#104195801 の誤ったdisplay 'ミヤＢＭ錠' - 1 の選択肢のうちの一つであるべきです: 'ミヤＢＭ錠・ミヤリサン製薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept)"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="176"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.403.1#104195801 の誤ったdisplay 'ミヤＢＭ錠' - 1 の選択肢のうちの一つであるべきです: 'ミヤＢＭ錠・ミヤリサン製薬' (ja) (言語 'ja' のため)"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="183"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="80"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません"/>
+          </details>
+          <expression value="MedicationRequest.medication.ofType(CodeableConcept).coding[1].system"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>ERROR</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>Observation.code.coding:localLaboCode: 最小必要値 = 1、見つかった値 = 0 (from http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>すべてのObservationにはperformerが必要です</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Validation rule failed</td>
+                <td>Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Observation-ErrorExample-ObsLabo-eGFR.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="35"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Validation_VAL_Profile_Minimum"/>
+          </extension>
+          <severity value="error"/>
+          <code value="structure"/>
+          <details>
+            <text value="Observation.code.coding:localLaboCode: 最小必要値 = 1、見つかった値 = 0 (from http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS)"/>
+          </details>
+          <expression value="Observation.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="26"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="6"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）"/>
+          </details>
+          <expression value="Observation.category[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="All_observations_should_have_a_performer"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="すべてのObservationにはperformerが必要です"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="invariant"/>
+          <details>
+            <text value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>すべてのObservationにはperformerが必要です</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Validation rule failed</td>
+                <td>Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Observation-Example-ObsLabo-Alb.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="39"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="6"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）"/>
+          </details>
+          <expression value="Observation.category[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="50"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="Observation.code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="All_observations_should_have_a_performer"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="すべてのObservationにはperformerが必要です"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="51"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="94"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません"/>
+          </details>
+          <expression value="Observation.code.coding[0].system"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="invariant"/>
+          <details>
+            <text value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.504#3H015000002326101'</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>すべてのObservationにはperformerが必要です</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Validation rule failed</td>
+                <td>Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Observation-Example-ObsLabo-K.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="39"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="6"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）"/>
+          </details>
+          <expression value="Observation.category[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="50"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="Observation.code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="60"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_PassThrough_TX_Message"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.504#3H015000002326101'"/>
+          </details>
+          <expression value="Observation.code.coding[2]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="All_observations_should_have_a_performer"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="すべてのObservationにはperformerが必要です"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="48"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="4"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)"/>
+          </details>
+          <expression value="Observation.code"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="51"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="94"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません"/>
+          </details>
+          <expression value="Observation.code.coding[0].system"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="60"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)"/>
+          </details>
+          <expression value="Observation.code.coding[2]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="invariant"/>
+          <details>
+            <text value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+                <td>
+                  <b>Source</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Invalid Code</td>
+                <td>提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Unknown User</td>
+                <td>コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS'が不明なため、コードを検証できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>すべてのObservationにはperformerが必要です</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Structural Issue</td>
+                <td>URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+              <tr>
+                <td>WARNING</td>
+                <td/>
+                <td>Validation rule failed</td>
+                <td>Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td>
+                <td/>
+                <td>No display for Extension</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Observation-Example-ObsLabo-eGFR.json"/>
+        </extension>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="26"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="6"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="TerminologyEngine"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_NoValid_3_CC"/>
+          </extension>
+          <severity value="information"/>
+          <code value="code-invalid"/>
+          <details>
+            <text value="提供されたcodingのいずれもがValueSet'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1)に含まれていないません。このValueSetからのcodingが推奨されています）（codes = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS#laboratory）"/>
+          </details>
+          <expression value="Observation.category[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="37"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="8"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Terminology_TX_System_NotKnown"/>
+          </extension>
+          <severity value="information"/>
+          <code value="unknown"/>
+          <details>
+            <text value="コードシステムURI 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS'が不明なため、コードを検証できません"/>
+          </details>
+          <expression value="Observation.code.coding[0]"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="All_observations_should_have_a_performer"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="すべてのObservationにはperformerが必要です"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="38"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="94"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Type_Specific_Checks_DT_URL_Resolve"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="structure"/>
+          <details>
+            <text value="URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません"/>
+          </details>
+          <expression value="Observation.code.coding[0].system"/>
+        </issue>
+        <issue>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line">
+            <valueInteger value="1"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col">
+            <valueInteger value="2"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source">
+            <valueString value="InstanceValidator"/>
+          </extension>
+          <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id">
+            <valueCode value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </extension>
+          <severity value="warning"/>
+          <code value="invariant"/>
+          <details>
+            <text value="Rule dom-6: 'A resource should have narrative for robust management' Failed (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"/>
+          </details>
+          <expression value="Observation"/>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Patient-Example-Patient-minimun.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Patient-Example-Patient-standard.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Practitioner-Example-Practitioner-minimun-D001.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Practitioner-Example-Practitioner-minimun-D002.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Practitioner-Example-Practitioner-minimun-D003.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Practitioner-Example-Practitioner-minimun-R001.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Specimen-Example-LaboMaterial-Serum.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <OperationOutcome>
+        <text>
+          <status value="extensions"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>All OK</p>
+            <table class="grid">
+              <tr>
+                <td>
+                  <b>Severity</b>
+                </td>
+                <td>
+                  <b>Location</b>
+                </td>
+                <td>
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Details</b>
+                </td>
+                <td>
+                  <b>Diagnostics</b>
+                </td>
+              </tr>
+              <tr>
+                <td>INFORMATION</td>
+                <td/>
+                <td>Informational Note</td>
+                <td>すべてOK</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/operationoutcome-file">
+          <valueString value="ExampleJson/Specimen-Example-LaboMaterial-Urine.json"/>
+        </extension>
+        <issue>
+          <severity value="information"/>
+          <code value="informational"/>
+          <details>
+            <text value="すべてOK"/>
+          </details>
+        </issue>
+      </OperationOutcome>
+    </resource>
+  </entry>
+</Bundle>
