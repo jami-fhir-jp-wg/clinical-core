@@ -144,8 +144,9 @@ jobs:
         cp forPackageRelease/package-snap.json forPackageRelease/snapshot/package/package.json
         cd forPackageRelease/snapshot
         tar czf jp-clins-package-snap.tgz package
-        cd forPackageRelease
+        cd ..
         cp snapshot/jp-clins-package-snap.tgz jp-clins.r4-${{ env.release_version }}-snap.tgz
+        cd ..
 
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
