@@ -1,7 +1,7 @@
 {
-  "name": "jp-clins",
-  "version": "1.0.0",
-  "description": "jp-clins-diff 0.9.6",
+  "name": "jp-clins.r4",
+  "version": "1.0.0-temp",
+  "description": "jp-clins-diff 1.0.0-temp",
   "author": "Kazuhiko Ohe",
   "fhirVersions": [
     "4.0.1"

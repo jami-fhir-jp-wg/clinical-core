@@ -10,6 +10,8 @@ on:
       - '.github/workflows/main.yml'
   pull_request:
     branches: [ develop1.0 ]
+env:
+  release_version : 0.9.7
 jobs:
   turn1:
     runs-on: ubuntu-latest
@@ -89,6 +91,15 @@ jobs:
         ls -l /home/runner/.fhir/packages/
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPCOREdir/
 
+    - name: apply the version of sushi-config.yaml
+      run: |
+        sed 's/version: 1.0.0-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
+        sed 's/1.0.0-temp/${{ env.release_version }}/g' forPackageRelease/package-diff.json >forPackageRelease/package-diff.json
+        sed 's/1.0.0-temp/${{ env.release_version }}/g' forPackageRelease/package-snap.json >forPackageRelease/package-snap.json
+
+
+        mv sushi-config-temp.yaml sushi-config.yaml
+
     - name: Run IG Publisher
       run: | 
         mkdir -p input-cache
@@ -119,8 +130,8 @@ jobs:
         mv resources package
         cp ../forPackageRelease/package-diff.json package/package.json
         tar czf jp-clins-package-diff.tgz package
-        cp jp-clins-package-diff.tgz ../forPackageRelease/
-
+        cp jp-clins-package-diff.tgz ../forPackageRelease/jp-clins.r4-${{ env.release_version }}-diff.tgz
+        
     - name: generate snapshot package using sushi -s command       
       run: |
         rm -rf fsh-generated
@@ -131,6 +142,8 @@ jobs:
         cp forPackageRelease/package-snap.json forPackageRelease/snapshot/package/package.json
         cd forPackageRelease/snapshot
         tar czf jp-clins-package-snap.tgz package
+        cd forPackageRelease
+        cp snapshot/jp-clins-package-snap.tgz jp-clins.r4-${{ env.release_version }}-snap.tgz
 
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
@@ -139,7 +152,7 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-clins-package-diff.tgz forPackageRelease/snapshot/jp-clins-package-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-clins.r4-${{ env.release_version }}-diff.tgz forPackageRelease/jp-clins.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output.tgz'
 
 
