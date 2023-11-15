@@ -9,10 +9,10 @@ Description: "CLINSでのBundleリソースに含まれる６情報リソース�
 * ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
-* #JP_AllergyIntolerance_eCS
-* #JP_Condition_eCS
-* #JP_Observation_LabResult_eCS
-* #JP_MedicationRequest_eCS
+* #AllergyIntolerance
+* #Condition
+* #Observation
+* #MedicationRequest
 
 CodeSystem: JP_CLINS_ObsLabResult_Uncoded_CS
 Id: jp-clins-obslabresult-uncoded-cs
