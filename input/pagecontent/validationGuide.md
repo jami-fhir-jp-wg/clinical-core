@@ -8,12 +8,17 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 
 #### 手順（準備編）
 
-##### CLINS検証用FHIRコアパッケージ　を 圧縮形式に応じて以下のサイトからダウンロードする。解凍後の内容は同一である。
-    - zip形式 : https://jpfhir.jp/fhir/clins/validation/fhir-core-pkg.zip
-    - tgz形式 : https://jpfhir.jp/fhir/clins/validation/fhir-core-pkg.tgz
+##### CLINS検証用FHIRコアパッケージ　を 以下のサイトからどちらかの圧縮形式のファイルをダウンロードする。解凍後の内容は同一である。
+
+
+    - zip形式 : https://jpfhir.jp/fhir/clins/pkgValidation/fhir-core-pkg.zip （42MB）
+    - tgz形式 : https://jpfhir.jp/fhir/clins/pkgValidation/fhir-core-pkg.tgz （28MB）
 
 #####  ダウンロードしたCLINS検証用FHIRコアパッケージを、適当なフォルダ内で解凍する。
-  　 - fhir-core-pkgs-<span style="color: skyblue;">20231111-forV6.1.8-20230921</span> というフォルダが作成される。青字の部分はダウンロード時期により異なる。その中にpackagesフォルダが作成され、packagesフォルダ配下は以下のようなフォルダ構成になっていることを確認する。各フォルダ内にはさらにフォルダやファイルが存在するがここでは省略する。packageフォルダ内のフォルダ名や数は、ダウンロード時期による異なることがあるので、下図は一例である。
+
+
+  　 - fhir-core-pkgs-<span style="color: skyblue;">20231111-forV6.1.8-20230921</span> のような名前のフォルダが作成される。青字の部分はダウンロード時期により異なる。その中にpackagesフォルダが作成され、packagesフォルダ配下は以下のようなフォルダ構成になっていることを確認する。各フォルダ内にはさらにフォルダやファイルが存在するがここでは省略する。packageフォルダ内のフォルダ名や数は、ダウンロード時期による異なることがあるので、下図は一例である。
+
   
 ```
  packages
@@ -63,11 +68,11 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 
   - jpfhir-terminology.r4　パッケージ
       
-    - tgz形式 : [https://jpfhir.jp/fhir/core/1.1.2/jpfhir-terminology.r4-1.1.1.tgz]
+    - tgz形式 : [https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.1.1.tgz]
  　 
   - jp-clins.r4　パッケージ
       
-    - tgz形式 : https://jpfhir.jp/fhir/core/1.1.2/jp-clins.r4-0.9.7.tgz
+    - tgz形式 : [https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7.tgz]
 
 #####  検証対象となる json形式のファイルをひとつ以上、[targets] 直下に配置する。
 
