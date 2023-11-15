@@ -25,12 +25,22 @@ Bundleリソースのタイプ（type要素）は"collection"を使用する。<
 のいずれかひとつのリソースタイプのデータと、患者を識別するためのPatientリソース1個だけを格納する。<br>
 リソースの格納順序として、患者を識別するためのPatientリソース1個をまずBundleの最初のentryに格納し、以後は上記①から④のいずれか2ひとつのリソースタイプのデータを1個以上格納する。<br>
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない（エラーとなる）。
-①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
+
+
+~~ ①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
 
  - "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"
  - "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"
  - "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"
  - "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"
+ ~~
+
+<span style="color: skyblue;">[v0.9.8変更]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
+
+ - "AllergyIntolerance"
+ - "Condition"
+ - "Observation"
+ - "MedicationRequest"<span>
  
 　また、1回で送信するひとつのBundleリソースには、ひとりの患者の、同時に１回で報告される一連のデータ（１報告単位のデータ）だけを、すべて漏れなく格納する。異なる報告単位のデータや、異なる患者のデータをひとつのBundleリソースに含めてはならない。
 送信側または受信側でデータ検証後に送受信がなされる場合、１報告単位のデータはそのデータ全体がOKとなるか、全体が拒絶されるかどちらかとなる。１報告単位のデータのうち一部だけが検証にパスすることはない。

@@ -13,6 +13,21 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS")
+
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "system"
+* meta.tag  ^slicing.rules = #open
+* meta.tag contains resourceType 1..1 MS
+
+* meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
+* meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
+  * insert relative_short_definition("CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta要素に記述する。")
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 hhttp://jpfhir.jp/fhir/clins/BundleResourceType　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("Bundleリソースに含まれる６情報リソースカテゴリーのいずれかをhhttp://jpfhir.jp/fhir/clins/BundleResourceTypeのValuseSetから設定する。")
+
 
 * identifier 1.. MS
 * identifier ^short = "この文書Bundleの固定識別子。Bundle作成時にシステムが設定する。"

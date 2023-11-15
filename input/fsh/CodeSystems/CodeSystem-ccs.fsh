@@ -1,5 +1,19 @@
 //
 
+CodeSystem: JP_CLINS_BundleResourceType_CS
+Id: jp-clins-bundleresourcetype-cs
+Description: "CLINSでのBundleリソースに含まれる６情報リソースタイプをmeta要素に記述するためのコードセット"
+* ^url = $JP_CLINS_BundleResourceType_CS
+* ^title = "Bundleリソースに含まれる６情報リソースタイプ"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #JP_AllergyIntolerance_eCS
+* #JP_Condition_eCS
+* #JP_Observation_LabResult_eCS
+* #JP_MedicationRequest_eCS
+
 CodeSystem: JP_CLINS_ObsLabResult_Uncoded_CS
 Id: jp-clins-obslabresult-uncoded-cs
 Description: "検体検査結果項目で標準コードが割り当てられない場合に使用する未コード化コード(JLAC10)"
@@ -47,19 +61,6 @@ Description: "長期保存／未告知診療情報のためのフラグコード
 * #LTS  "長期保存"
 * #UNINFORMED  "未告知"
 
-CodeSystem: JP_CLINS_BundleCategory_CS
-Id: jp-clins-bundlecategory-cs
-Description: "６情報Bundleカテゴリー　CodeSystem"
-* ^url = $JP_CLINS_BundleCategory_CS
-* ^title = "６情報Bundleカテゴリー　CodeSystem"
-* ^status = #active
-* ^experimental = false
-* ^content = #complete
-* ^caseSensitive = false
-* #AllergyIntolerance  "AllergyIntolerance"
-* #Condition "Condition"
-* #MedicationRequest "MedicationRequest"
-* #Observation  "Observation"
 
 
 

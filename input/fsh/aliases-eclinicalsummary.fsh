@@ -1,10 +1,6 @@
 
 Alias: $JP_BundleIdentifier = http://jpfhir.jp/fhir/clins/bundle-identifier
 
-Alias: $JP_CLINS_BundleCategory_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_BundleCategory_CS
-Alias: $JP_CLINS_BundleCategory_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_BundleCategory_VS
-Alias: $JP_CLINS_BundleCategory = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_CLINS_BundleCategory
-
 Alias: $JP_Hospital_PatientID = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID
 Alias: $JP_Insurance_memberID = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
 Alias: $JP_Hospital_PatientID_Pseudonymized = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID_Pseudonymized

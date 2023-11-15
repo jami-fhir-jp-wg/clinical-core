@@ -23,7 +23,7 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 * . ^comment = "電子カルテ共有サービス以外では別のプロファイル　JP_Patient_eCSが用意されている。本プロファイルは、患者を識別するidentifierとして、被保険者個人識別子を必須としている。また親プロファイルJP_Patient_eCSでは、name.family, name.given, gender, birthdate,address.text, address.city, address.stateを必須としている。"
 
 * meta.profile 1..1 MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS")
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS")
 
 * obeys valid-system-local-patientID
 * obeys valid-system-insurance-patientIdentifier
