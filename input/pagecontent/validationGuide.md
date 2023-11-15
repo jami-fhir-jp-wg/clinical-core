@@ -64,23 +64,23 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 
   - jp-core.r4　パッケージ
 
-    - tgz形式 : [https://jpfhir.jp/fhir/core/1.1.2/jp-core.r4-1.1.2.tgz]
+    - tgz形式 : [https://jpfhir.jp/fhir/core/1.1.2/jp-core.r4-1.1.2.tgz](https://jpfhir.jp/fhir/core/1.1.2/jp-core.r4-1.1.2.tgz)
 
   - jpfhir-terminology.r4　パッケージ
       
-    - tgz形式 : [https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.1.1.tgz]
+    - tgz形式 : [https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.1.1.tgz](https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.1.1.tgz)
  　 
   - jp-clins.r4　パッケージ
       
-    - tgz形式 : [https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7.tgz]
+    - tgz形式 : [https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7.tgz](https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7.tgz)
 
 #####  検証対象となる json形式のファイルをひとつ以上、[targets] 直下に配置する。
 
-直下ではなく、さらにサブフォルダを作成して配置してもよい。その場合には、以降では　[targets]　にはそのサブフォルダを含めたパスとして読むこと。
+直下ではなく、さらにサブフォルダを作成して配置してもよい。その場合には、以降では　[targets]　はそのサブフォルダを含めたパスであるとして読むこと。
 
 #####  validatorをダウンロードし、[prog] 直下に配置する。
 以下のリンクからvalidator_cli.jarファイルを[prog]フォルダにダウンロードする。
-  - [https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.1.8/validator_cli.jar]
+  - <https://github.com/hapifhir/org.hl7.fhir.core/releases/download/6.1.8/validator_cli.jar>
 次にダウンロードしたプログラムのバージョンを明確にするため、ファイル名をvalidator_cli.jar から　validator_cli_6.1.8.jar に変更しておく。6.1.8　の部分はダウンロードしたバージョンに合わせること。
 
 備考：
@@ -103,42 +103,44 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
         java 17.0.5 2022-10-18 LTS
         Java(TM) SE Runtime Environment (build 17.0.5+9-LTS-191)
   - 実行コマンド例
-    [vwork] フォルダに位置した状態で、以下を途中で改行せず、１行で入力する。適宜、バッチファイル（スクリプトファイル）を作成すること。
+    [vwork] フォルダに位置した状態で、以下を途中で改行せず、１行で入力する(行末の\は次行との継続の意味でいれてある記号である。１行で入力するので不要であれば削除すること)。適宜、バッチファイル（スクリプトファイル）を作成するとよい。
 
-```  
- java -jar [prog]/validator_cli_6.1.8.jar
-    [targets]/*.json
-      -version 4.0.1
-      -language ja  
-      -locale ja-JP 
-      -want-invariants-in-messages  
-      -no-extensible-binding-warnings  
-      -display-issues-are-warnings   
-      -level warnings  
-      -best-practice ignore
-      -tx n/a 
-      -ig [pkgClins]/jp-core.r4-1.1.2.tgz 
-      -ig [pkgClins]/jpfhir-terminology-1.1.1.tgz 
-      -ig [pkgClins]/jp-clins.r4-0.9.7.tgz 
+```  bash
+ java -jar [prog]/validator_cli_6.1.8.jar \
+    [targets]/*.json \
+      -version 4.0.1 \
+      -language ja   \
+      -locale ja-JP  \
+      -want-invariants-in-messages   \
+      -no-extensible-binding-warnings   \
+      -display-issues-are-warnings    \
+      -level warnings   \
+      -best-practice ignore \
+      -tx n/a  \
+      -ig [pkgClins]/jp-core.r4-1.1.2.tgz  \
+      -ig [pkgClins]/jpfhir-terminology.r4-1.1.1.tgz  \
+      -ig [pkgClins]/jp-clins.r4-0.9.7.tgz  
         
 ```
+
 #####　Validationコマンドのパラメータ説明
-  - [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
+  <br>- [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
     明示的に複数のファイルを指定する場合には、例えば、
       [targets]/jppartient.json  [targets]/jpobservation001.json などのように空白であけて複数を指定する。
       現在の [vwork] からの相対パス、または絶対パスで各ファイルのパスを指定する。
-  -version 4.0.1 : 適用するFHIRの基底仕様のバージョン。4.0.1を固定で指定する。
-  -language ja : Terminology (CodeSystem, ValueSet)のvalidation時の言語環境を指定する。 jaを固定で指定する。
-  -locale ja-JP : Validation結果のメッセージの言語を指定する。英語のままでよい場合には、このオプション自体を削除すること。
-  -want-invariants-in-messages : Profileの制約だけでは記述できない制約ルールのうち、invariantsで記述された制約ルールによる警告やエラーの結果を出力するよう設定するオプション。。あったほうが、どのような制約ルールに抵触したかわかりやすい。
-  -no-extensible-binding-warnings : FHIR基底仕様において拡張が許可されているValueSetにバインディングされている要素に、別のValueSetを使用した場合に警告を出さないよう設定するオプション。あったほうが、無視できる警告を省略できる。
-  -display-issues-are-warnings : 標準コードに対応する表示文字列がCodeSystemに登録されているdisplayと違っている場合に、Errorにせず、警告にする設定オプション。さまざまな理由で表示の不一致はやむを得ないことが多いため、エラーにせず注意にとどめることにする。
-  -level warnings : 警告とErrorだけ出力し、参考情報は出力しない設定オプション。
-  -best-practice ignore : FHIR基底仕様においてベストプラクティスとされる推奨事項に違反している場合の警告を出さないオプション。
-  -tx n/a ：　外部のTerminologyServer を参照しないよう設定するオプション。ここでの手順では、パッケージ [jpfhir-terminology-1.1.1]をロードしてローカルに配置しているので、外部のTerminologyServerへの参照は必要がない。
-  -ig [pkgClins]/jp-core.r4-1.1.2.tgz : jp-core.r4 v1.1.2 のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
-  -ig [pkgClins]/jpfhir-terminology-1.1.1.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
-  -ig [pkgClins]/jp-clins.r4-0.9.7.tgz : 電子カルテ情報共有サービスで送信される６情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、３文書のパッケージは別にある。
+  <br>-version 4.0.1 : 適用するFHIRの基底仕様のバージョン。4.0.1を固定で指定する。
+
+  <br>-language ja : Terminology (CodeSystem, ValueSet)のvalidation時の言語環境を指定する。 jaを固定で指定する。
+  <br>-locale ja-JP : Validation結果のメッセージの言語を指定する。英語のままでよい場合には、このオプション自体を削除すること。
+  <br>-want-invariants-in-messages : Profileの制約だけでは記述できない制約ルールのうち、invariantsで記述された制約ルールによる警告やエラーの結果を出力するよう設定するオプション。。あったほうが、どのような制約ルールに抵触したかわかりやすい。
+  <br>-no-extensible-binding-warnings : FHIR基底仕様において拡張が許可されているValueSetにバインディングされている要素に、別のValueSetを使用した場合に警告を出さないよう設定するオプション。あったほうが、無視できる警告を省略できる。
+  <br>-display-issues-are-warnings : 標準コードに対応する表示文字列がCodeSystemに登録されているdisplayと違っている場合に、Errorにせず、警告にする設定オプション。さまざまな理由で表示の不一致はやむを得ないことが多いため、エラーにせず注意にとどめることにする。
+  <br>-level warnings : 警告とErrorだけ出力し、参考情報は出力しない設定オプション。
+  <br>-best-practice ignore : FHIR基底仕様においてベストプラクティスとされる推奨事項に違反している場合の警告を出さないオプション。
+  <br>-tx n/a ：　外部のTerminologyServer を参照しないよう設定するオプション。ここでの手順では、パッケージ [jpfhir-terminology-1.1.1]をロードしてローカルに配置しているので、外部のTerminologyServerへの参照は必要がない。
+  <br>-ig [pkgClins]/jp-core.r4-1.1.2.tgz : jp-core.r4 v1.1.2 のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
+  <br>-ig [pkgClins]/jpfhir-terminology-1.1.1.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
+  <br>-ig [pkgClins]/jp-clins.r4-0.9.7.tgz : 電子カルテ情報共有サービスで送信される６情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、３文書のパッケージは別にある。
 
 #### Validationの出力例の解説
 
@@ -159,7 +161,7 @@ Patient-standard
 
 実行コマンド例：
 
-```
+``` {.copy} 
 java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings  -best-practice ignore
 ```
 
@@ -169,27 +171,25 @@ java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -la
 説明作成中
 
 
-```
-FHIR Validation tool Version 6.1.8 (Git# 8413995d8bcf). Built 2023-09-21T19:52:22.833Z (53 days old)
+``` {title="環境準備フェーズ"}  {.line-number} 
+FHIR Validation tool Version 6.1.8 (Git# 8413995d8bcf). Built 2023-09-21T19:52:22.833Z (54 days old)
   Java:   17.0.5 from /Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home on aarch64 (64bit). 4096MB available
-  Paths:  Current = /Users/kohe/GitHub/clinical-core, Package Cache = /Users/kohe/.fhir/packages
-  Params: ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-02.json ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json ExampleJson/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json ExampleJson/Observation-ErrorExample-ObsLabo-eGFR.json ExampleJson/Observation-Example-ObsLabo-Alb.json ExampleJson/Observation-Example-ObsLabo-K.json ExampleJson/Patient-Example-Patient-standard-ErrorInsuranceNo.json ExampleJson/Patient-Example-Patient-standard.json -version 4.0.1 -language ja -ig pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a -want-invariants-in-messages -no-extensible-binding-warnings -display-issues-are-warnings -level warnings -best-practice ignore
+  Paths:  Current = /Users/kohe/clinsVTest, Package Cache = /Users/kohe/.fhir/packages
+  Params: Targets/Condition-Example-JP-Condition-CLINS-eCS-01.json Targets/Condition-Example-JP-Condition-CLINS-eCS-02.json Targets/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json Targets/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json Targets/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json Targets/Observation-ErrorExample-ObsLabo-eGFR.json Targets/Observation-Example-ObsLabo-Alb.json Targets/Observation-Example-ObsLabo-K.json Targets/Patient-Example-Patient-standard-ErrorInsuranceNo.json Targets/Patient-Example-Patient-standard.json -version 4.0.1 -language ja -locale ja-JP -want-invariants-in-messages -no-extensible-binding-warnings -display-issues-are-warnings -level warnings -best-practice ignore -tx n/a -ig pkgClins/jp-core.r4-1.1.2.tgz -ig pkgClins/jpfhir-terminology.r4-1.1.1.tgz -ig pkgClins/jp-clins.r4-0.9.7.tgz
   Locale: 日本/JP
   Jurisdiction: Japan
 Loading
-  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:05.100)
-  Load hl7.fhir.uv.extensions.r4#1.0.0 - 1328 resources (00:03.944)
-  Load hl7.terminology#5.3.0 - 4201 resources (00:00.700)
-  Load hl7.terminology.r5#5.0.0 - 4174 resources (00:01.093)
-  Load hl7.fhir.uv.extensions#1.0.0 - 1328 resources (00:00.912)
+  Load FHIR v4.0 from hl7.fhir.r4.core#4.0.1 - 4576 resources (00:03.302)
+  Load hl7.fhir.uv.extensions.r4#1.0.0 - 1328 resources (00:01.331)
+  Load hl7.terminology#5.3.0 - 4201 resources (00:00.704)
+  Load hl7.terminology.r5#5.0.0 - 4174 resources (00:00.566)
+  Load hl7.fhir.uv.extensions#1.0.0 - 1328 resources (00:00.840)
   Terminology server null - Version n/a: No Terminology Server (00:00.000)
-  <span style="color: skyblue;">この行は、-tx n/aオプション指定したので外部terminology server ga
-  使えないことがレポートされており、問題ない。</span>
-  Load pkgValidation/jp-core.r4#1.1.2.tgz - 159 resources (00:00.211)
-  Load pkgValidation/jpfhir-terminology#1.1.1.tgz - 175 resources (00:04.013)
-  Load pkgValidation/jp-clins.r4-0.9.7-diff.tgz - 148 resources (00:00.109)
+  Load pkgClins/jp-core.r4-1.1.2.tgz - 159 resources (00:00.197)
+  Load pkgClins/jpfhir-terminology.r4-1.1.1.tgz - 175 resources (00:03.988)
+  Load pkgClins/jp-clins.r4-0.9.7.tgz - 148 resources (00:00.081)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.0.12, hl7.fhir.uv.extensions.r4#1.0.0, hl7.terminology#5.3.0, hl7.terminology.r5#5.0.0, hl7.fhir.uv.extensions#1.0.0]
-  Get set...  go (00:01.432)
+  Get set...  go (00:01.131)
 
 ```
 
@@ -197,66 +197,20 @@ Loading
 説明作成中
 
 
-```
+``` {title="対象ファイルValidation途中フェーズ"} {.line-number} 
 Validating
-  Validate ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json
+  Validate Targets/Condition-Example-JP-Condition-CLINS-eCS-01.json
 Validate Condition against http://hl7.org/fhir/StructureDefinition/Condition|4.0.1..........20..........40..........60..........80.........|
 Validate Condition against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS..........20..........40..........60..........80..........100|
- 00:02.818
-  Validate ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-02.json
-Validate Condition against http://hl7.org/fhir/StructureDefinition/Condition|4.0.1..........20..........40..........60..........80.........|
-Validate Condition against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
-..........20..........40..........60.........|
- 00:00.091
-  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json
-Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60Error fetching http://packages.fhir.org/jp-clins.r4: Invalid HTTP response 404 from http://packages.fhir.org/jp-clins.r4 (Not Found) (content in /var/folders/pp/vf6q56nn2z10zv29ys27pkhm0000gn/T/http-log/fhir-http-3.log)
-2023-11-14 13:06:37.859 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: http://packages.fhir.org
-2023-11-14 13:06:40.412 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: https://packages2.fhir.org/packages
-2023-11-14 13:06:48.611 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:338] Failed to determine latest version of package jp-clins.r4 from server: build.fhir.org
-2023-11-14 13:06:48.611 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:355] Latest version of package jp-clins.r4 found locally is 1.0.0 - using that
-  Load jp-clins.r4#1.0.0 - 170 resources (00:12.128)
-Error fetching http://packages.fhir.org/jp-clins.r4: Invalid HTTP response 404 from http://packages.fhir.org/jp-clins.r4 (Not Found) (content in /var/folders/pp/vf6q56nn2z10zv29ys27pkhm0000gn/T/http-log/fhir-http-4.log)
-2023-11-14 13:06:50.148 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: http://packages.fhir.org
-2023-11-14 13:06:51.373 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:331] Failed to determine latest version of package jp-clins.r4 from server: https://packages2.fhir.org/packages
-2023-11-14 13:06:51.378 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:338] Failed to determine latest version of package jp-clins.r4 from server: build.fhir.org
-2023-11-14 13:06:51.379 [main] INFO  o.h.f.u.n.FilesystemPackageCacheManager [FilesystemPackageCacheManager.java:355] Latest version of package jp-clins.r4 found locally is 1.0.0 - using that
-..........80.........|
-Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Encounter against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter|
-Validate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
-..........20..........40..........60........|
- 00:02.766
-  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json
-Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
-Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
-..........20..........40..........60..........80...|
- 00:00.026
-  Validate ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json
-Validate MedicationRequest against http://hl7.org/fhir/StructureDefinition/MedicationRequest|4.0.1..........20..........40..........60..........80.........|
-Validate MedicationRequest against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCSValidate Practitioner against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner|
-..........20..........40..........60..........80....|
- 00:00.035
-  Validate ExampleJson/Observation-ErrorExample-ObsLabo-eGFR.json
-Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
-Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS..........20..........40..........60..........80..........100|
- 00:00.168
-  Validate ExampleJson/Observation-Example-ObsLabo-Alb.json
-Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
-Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCSValidate Specimen against http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen|
-..........20..........40..........60.......|
- 00:00.054
-  Validate ExampleJson/Observation-Example-ObsLabo-K.json
-Validate Observation against http://hl7.org/fhir/StructureDefinition/Observation|4.0.1..........20..........40..........60..........80.........|
-Validate Observation against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS..........20..........40..........60..........80..........100|
- 00:00.027
-  Validate ExampleJson/Patient-Example-Patient-standard-ErrorInsuranceNo.json
-Validate Patient against http://hl7.org/fhir/StructureDefinition/Patient|4.0.1..........20..........40..........60..........80.........|
-Validate Patient against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS..........20..........40..........60..........80..........100|
- 00:00.040
-  Validate ExampleJson/Patient-Example-Patient-standard.json
+ 00:00.791
+   :
+  中略
+   :
+  Validate Targets/Patient-Example-Patient-standard.json
 Validate Patient against http://hl7.org/fhir/StructureDefinition/Patient|4.0.1..........20..........40..........60..........80.........|
 Validate Patient against http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS..........20..........40..........60..........80..........100|
  00:00.016
-Done. Times: Loading: 00:17.636, validation: 00:18.173 (#10). Memory = 1Gb
+Done. Times: Loading: 00:12.264, validation: 00:01.189 (#10). Memory = 1Gb
 
 ```
 
@@ -264,7 +218,7 @@ Done. Times: Loading: 00:17.636, validation: 00:18.173 (#10). Memory = 1Gb
 説明作成中
 
 
-```
+``` {title="結果報告フェーズ"} {.line-number} {.scroll}
 -- ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json --------------------------------------------------------------------
 Success: 0 errors, 0 warnings, 1 notes
   Information: すべてOK
