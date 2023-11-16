@@ -24,6 +24,8 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS")
+* meta.profile = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS" (exactly)
+
 
 * obeys valid-system-local-patientID
 * obeys valid-system-insurance-patientIdentifier

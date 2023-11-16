@@ -4,29 +4,33 @@ Parent: Bundle
 Id: JP-Bundle-CLINS
 Title: "CLINS電子カルテ情報共有サービス用:JP_Bundle_CLINS"
 Description: "CLINS 電子カルテ情報共有サービスへの6情報送信用 Bundleリソース プロファイル"
-* ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
+* ^url = $JP_Bundle_CLINS
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 
 * obeys valid-value-bundleIdenfifier
+* obeys first-bundle-entry-is-Patient
+* obeys patients-profile-is-JP-Patient-CLINS-eCS
+* obeys bundle-profile-is-JP-Bundle-CLINS
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS")
+* meta.profile = $JP_Bundle_CLINS (exactly)
 
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains resourceType 1..1 MS
+  * insert relative_short_definition("CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta要素に記述する。")
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("Bundleリソースに含まれる６情報リソースカテゴリーのいずれかをhhttp://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VSのValuseSetから設定する。具体的には、\"AllergyIntolerance\"、\"Condition\"、\"Observation\"、\"MedicationRequest\"　のいずれかの値を設定する。")
 
 * meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
 * meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
-  * insert relative_short_definition("CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta要素に記述する。")
-  * system 1..1 MS
-    * insert relative_short_definition("固定値 hhttp://jpfhir.jp/fhir/clins/BundleResourceType　を設定する。" )
-  * code 1..1 MS
-    * insert relative_short_definition("Bundleリソースに含まれる６情報リソースカテゴリーのいずれかをhhttp://jpfhir.jp/fhir/clins/BundleResourceTypeのValuseSetから設定する。")
 
 
 * identifier 1.. MS
@@ -55,6 +59,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * timestamp ^short = "このバンドルリソースのインスタンスが作成された日時。"
 * timestamp ^definition = "このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。　例：\"2021-02-01T13:28:17.239+09:00\""
 
+/*
 * link ^short = "このBundleが格納するPatientリソース以外のリソースタイプ。"
 * link ^definition = "このBundleが6情報リソース（4種類）のどれを格納するためのものかを、そのリソースのprofile　URLにより記述する。"
 * link.relation = #profile
@@ -71,6 +76,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * link[condition].url = $JP_Condition_CLINS_eCS (exactly)
 * link[medicationRequest].url = $JP_MedicationRequest_CLINS_eCS (exactly)
 * link[observationLaboResult].url = $JP_Observation_LabResult_CLINS_eCS (exactly)
+*/
 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"

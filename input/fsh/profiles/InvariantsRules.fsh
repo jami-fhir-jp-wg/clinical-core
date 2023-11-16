@@ -42,4 +42,23 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 // 被保険者識別子: ^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$
 // 医療機関内Bundle識別子：[A-Z0-9\\\\-]{1,128}
 
+Invariant: first-bundle-entry-is-Patient
+Description: "最初のentryはPatientでなければない。"
+Severity: #error
+Expression: "entry.first().resource.is(Patient)"
+
+Invariant: patients-profile-is-JP-Patient-CLINS-eCS
+Description: "最初のentryであるPatientは、JP_Patient_CLINS_eCSプロファイルに準拠していなければならない。"
+Severity: #error
+Expression: "entry.first().resource.meta.profile.where($this = 'http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS').exists()"
+
+Invariant: bundle-profile-is-JP-Bundle-CLINS
+Description: "BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
+Severity: #error
+Expression: "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
+
+Invariant: bundle-tag-is-from-JP-CLINS-BundleResourceType-VS
+Description: "BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
+Severity: #error
+Expression: "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
 
