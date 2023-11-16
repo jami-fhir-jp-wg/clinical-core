@@ -11,7 +11,7 @@ Description: "Bundleリソースサンプル（検体検査結果３件）６情
 * meta.tag.code = #Observation
 
 * identifier.system = $JP_BundleIdentifier
-* identifier.value = "1318814790^00012345:あいう:１８７:1^1038463784e937"
+* identifier.value = "1318814790^00012345:あいう:１８７:1^1038463784937"
 * type = #collection
 
 * timestamp = "2023-11-12T10:00:00+09:00"

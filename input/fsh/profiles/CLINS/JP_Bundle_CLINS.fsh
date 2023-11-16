@@ -84,10 +84,10 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * entry ^slicing.rules = #closed
 * entry contains
     patient 1..1 MS  //  患者情報
- and allergyIntolerance 0..1 
- and condition 0..1
- and medicationRequest 0..1
- and observationLaboResult 0..1
+ and allergyIntolerance 0..
+ and condition 0..
+ and medicationRequest 0..
+ and observationLaboResult 0..
 
 * entry ^short = "このBundleが格納するリソースの情報。"
 * entry.extension ..0
