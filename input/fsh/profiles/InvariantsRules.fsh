@@ -30,10 +30,27 @@ Description: "注意喚起：薬剤禁忌情報として本リソース種別を
 Severity: #warning
 Expression: "(category.where($this='medication').exists() and criticality='high') or category.exists().not() or category.where($this='medication').exists().not()"
 
+Invariant: valid-valuePart1-bundleIdenfifier
+Description: "Bundle.identifier.value の最初の^までのパートが、医療機関番号10桁として適切な数字列でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^].*"
+
+Invariant: valid-valuePart2-bundleIdenfifier
+Description: "Bundle.identifier.value の最初の^から２番目の^までのパートが、被保険者個人識別子として適切な文字列でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^][0-9]{8}:[^:^\\\\s^　]*?:[^:^\\\\s^　]*?:[0-9]{2}[\\\\^].+$'))"
+
+Invariant: valid-valuePart3-bundleIdenfifier
+Description: "Bundle.identifier.value の2番目^から3番目の^までのパートが、一意識別として128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^]*?[\\\\^][A-Z0-9\\-]{1,128}$'))"
+
+
 Invariant: valid-value-bundleIdenfifier
 Description: "Bundle.identifier.value は、医療機関番号10桁^被保険者個人識別子^128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）であること。'^[0-4][0-9][1-3][0-9]{7}[\\^][0-9]{8}:[^:^\\s^　]*:[^:^\\s^　]*:[0-9]{2}[\\^][A-Z0-9\\-]{1,128}$'"
 Severity: #error
 Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^][0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:[0-9]{2}[\\\\^][A-Z0-9\\\\-]{1,128}$'))"
+
 // 医療機関番号１０桁：[0-4][0-9][1-3][0-9]{7}
 // 保険者番号８桁：[0-9]{8}
 // 被保険者記号：[^:^\\\\s^　]* 

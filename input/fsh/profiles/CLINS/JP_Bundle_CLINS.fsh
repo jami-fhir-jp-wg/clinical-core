@@ -13,6 +13,9 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * obeys first-bundle-entry-is-Patient
 * obeys patients-profile-is-JP-Patient-CLINS-eCS
 * obeys bundle-profile-is-JP-Bundle-CLINS
+* obeys valid-valuePart1-bundleIdenfifier
+* obeys valid-valuePart2-bundleIdenfifier
+* obeys valid-valuePart3-bundleIdenfifier
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
