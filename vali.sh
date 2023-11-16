@@ -1,8 +1,7 @@
 #!/bin/bash
 
 #ネットワークなし版
-java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*Bundle*.json -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4-1.1.2.tgz -ig pkgValidation/jpfhir-terminology.r4-1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages   -display-issues-are-warnings 
--level warnings  -best-practice ignore -no-extensible-binding-warnings  -output testout.json 
+java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*Bundle*.json ExampleJson/*Patient*.json -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4-1.1.2.tgz -ig pkgValidation/jpfhir-terminology.r4-1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7.tgz -locale ja-JP -tx n/a  -display-issues-are-warnings -level warnings  -best-practice ignore -no-extensible-binding-warnings  -want-invariants-in-messages   -output testout.json 
 
 -Xmx4G 
 

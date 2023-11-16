@@ -10,12 +10,19 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 
 * obeys valid-value-bundleIdenfifier
+* obeys valid-valuePart0-bundleIdenfifier
+* obeys valid-valuePart1-bundleIdenfifier
+//* obeys valid-valuePart2-bundleIdenfifier
+* obeys valid-valuePart2-0-bundleIdenfifier
+* obeys valid-valuePart2-1-bundleIdenfifier
+* obeys valid-valuePart2-2-bundleIdenfifier
+* obeys valid-valuePart2-3-bundleIdenfifier
+* obeys valid-valuePart2-4-bundleIdenfifier
+* obeys valid-valuePart3-bundleIdenfifier
 * obeys first-bundle-entry-is-Patient
 * obeys patients-profile-is-JP-Patient-CLINS-eCS
 * obeys bundle-profile-is-JP-Bundle-CLINS
-* obeys valid-valuePart1-bundleIdenfifier
-* obeys valid-valuePart2-bundleIdenfifier
-* obeys valid-valuePart3-bundleIdenfifier
+
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS

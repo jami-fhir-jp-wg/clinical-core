@@ -3,21 +3,28 @@
 ## Ver0.9.3 2023-10-25以降の履歴について掲載している。
 掲載にあたっては、内容の変更に関わらない修正（リンク切れの修正、表示体裁、表現修正、レイアウト変更、小さな説明追加、少数の事例追加など）の履歴は含まない。また、より正確なValidationを可能とするためのProfile記述方法の変更履歴も含みまない。
 
+### Ver0.9.8-draft  (2023-11-12)
+
+2.1.1.2 ひとつのBundleリソースに格納できるデータ
+ 
+    どのリソースタイプを格納しているかの情報を明示的に設定するために、link要素を使用していたのを、meta.tag要素を使用する方針に変更。これは、Bundleリソースを格納しているリソースタイプで検索することを容易にするための変更。
+
+Bundleリソースのサンプルを新規追加。
 
 ### Ver0.9.7-draft  (2023-11-12)
 
 CodeSystem、 ValueSetの定義URL、および　解説文
 
-  - CodeSystem、 ValueSetの定義URLのうち、http://jpfhir.jp/fhir/clins　、　http://jpfhir.jp/fhir/eCS で始まりURL中のすべてのハイフン(-)をアンダーバー文字（_）に変更、統一した。これまで両者が混在しており誤記につながりやすいため、JP-Coreに従いアンダーバーに統一することとした。なお、この統一はCodeSystem、 ValueSetに限られる。
+    CodeSystem、 ValueSetの定義URLのうち、http://jpfhir.jp/fhir/clins　、　http://jpfhir.jp/fhir/eCS で始まりURL中のすべてのハイフン(-)をアンダーバー文字（_）に変更、統一した。これまで両者が混在しており誤記につながりやすいため、JP-Coreに従いアンダーバーに統一することとした。なお、この統一はCodeSystem、 ValueSetに限られる。
 
 感染症検査項目リストを識別するURL
 
-  - 感染症検査項目リストの検査項目を示すURLを修正(clinsを挿入)。”http://jpfhir.jp/fhir/<span style="color: red;">clins/</span>CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS”
+    感染症検査項目リストの検査項目を示すURLを修正(clinsを挿入)。”http://jpfhir.jp/fhir/<span style="color: red;">clins/</span>CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS”
 
 
 ６情報仕様の解説文  
-  - 関連リソースの記述に、患者情報の説明リンクを追加。
-  - 処方依頼情報は、６情報として送信することはないことの説明を追加。
+    関連リソースの記述に、患者情報の説明リンクを追加。
+    処方依頼情報は、６情報として送信することはないことの説明を追加。
 
 
 ### Ver0.9.6-draft  (2023-11-06)

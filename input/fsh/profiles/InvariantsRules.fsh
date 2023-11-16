@@ -30,20 +30,71 @@ Description: "注意喚起：薬剤禁忌情報として本リソース種別を
 Severity: #warning
 Expression: "(category.where($this='medication').exists() and criticality='high') or category.exists().not() or category.where($this='medication').exists().not()"
 
-Invariant: valid-valuePart1-bundleIdenfifier
-Description: "Bundle.identifier.value の最初の^までのパートが、医療機関番号10桁として適切な数字列でなければならない。"
+Invariant: valid-valuePart0-bundleIdenfifier
+Description: "構成：Bundle.identifier.value は^区切りで３つのパートから構成されなければならない。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^].*"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+[\\\\^].+$'))"
 
+
+Invariant: valid-valuePart1-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^までのパートが、医療機関番号10桁として適切な数字列でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^].*$'))"
+
+/*
 Invariant: valid-valuePart2-bundleIdenfifier
 Description: "Bundle.identifier.value の最初の^から２番目の^までのパートが、被保険者個人識別子として適切な文字列でなければならない。"
 Severity: #error
 Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^][0-9]{8}:[^:^\\\\s^　]*?:[^:^\\\\s^　]*?:[0-9]{2}[\\\\^].+$'))"
+*/
+//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
+
+Invariant: valid-valuePart2-0-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、:区切り文字が３つでなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:.+?:.+?:.+?[\\\\^].+$'))"
+//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
+
+Invariant: valid-valuePart2-1-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第１要素が数字8桁（保険者番号）でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^][0-9]{8}:.+?:.+?:.+[\\\\^].+$'))"
+//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
+
+Invariant: valid-valuePart2-2-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第2要素が空白を含まない文字列（被保険者記号等）でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:[^:^\\\\s^　]*?:.+?:.+?[\\\\^].+$'))"
+//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
+
+/*
+Invariant: valid-valuePart2-2-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第2要素が空白を含まない全角文字列（被保険者記号等）または空白を含まない半角文字列でなければならない。"
+// [^:^\\\\s^　]*? 
+// 全角文字列＝　[^ -~｡-ﾟ]*　（半角でない文字からなる文字列）
+//　全角空白と半角文字以外の文字からなる文字列＝ [^ -~｡-ﾟ　]*
+// 半角だけの文字列 [ -~｡-ﾟ]*
+// 空白以外の半角だけの文字列　[ -~｡-ﾟ]*
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:[^ -~｡-ﾟ　]*?:.+?:.+?[\\\\^].+$'))"
+*/
+Invariant: valid-valuePart2-3-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第3要素が空白を含まない文字列（被保険者番号等）でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:.+?:[^:^\\\\s^　]*?:.+?[\\\\^].+$'))"
+//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
+
+Invariant: valid-valuePart2-4-bundleIdenfifier
+Description: "原因：Bundle.identifier.value の最初の^から２番目の^被保険者個人識別子パートは、第4要素が2桁の半角数字（枝番）でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:.+?:.+?:[0-9]{2}[\\\\^].+$'))"
+//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
+
 
 Invariant: valid-valuePart3-bundleIdenfifier
-Description: "Bundle.identifier.value の2番目^から3番目の^までのパートが、一意識別として128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）でなければならない。"
+Description: "原因：Bundle.identifier.value の2番目^から3番目の^までのパートが、一意識別として128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）でなければならない。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^]*?[\\\\^][A-Z0-9\\-]{1,128}$'))"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^]*?[\\\\^][A-Z0-9\\\\-]{1,128}$'))"
 
 
 Invariant: valid-value-bundleIdenfifier
