@@ -10,12 +10,12 @@ name: "電子カルテ情報共有サービスFHIR実装ガイド ドラフト�
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） ドラフト版"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide ドラフト版"
 status: draft # draft | active | retired | unknown 
-version: 0.9.7-draft
-date: 2023-11-12
+version: 0.9.8-draft
+date: 2023-11-16
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
-# license: CC BY-ND  #  https://www.hl7.org/fhir/valueset-spdx-license.html
+license: CC BY-ND  #  https://www.hl7.org/fhir/valueset-spdx-license.html
 # https://www.hl7.org/fhir/valueset-jurisdiction.html 
 publisher:
   name: 大江和彦（東京大学医学部附属病院企画情報運営部）Kazuhiko Ohe@JAMI/HL7Japan,JAMI NeXEHRS Research Group, and The University of Tokyo

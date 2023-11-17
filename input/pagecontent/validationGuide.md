@@ -17,7 +17,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 #####  ダウンロードしたCLINS検証用FHIRコアパッケージを、適当なフォルダ内で解凍する。
 
 
-  　 - fhir-core-pkgs-<span style="color: skyblue;">20231111-forV6.1.8-20230921</span> のような名前のフォルダが作成される。青字の部分はダウンロード時期により異なる。その中にpackagesフォルダが作成され、packagesフォルダ配下は以下のようなフォルダ構成になっていることを確認する。各フォルダ内にはさらにフォルダやファイルが存在するがここでは省略する。packageフォルダ内のフォルダ名や数は、ダウンロード時期による異なることがあるので、下図は一例である。
+  　 - fhir-core-pkgs-<span style="color: blue;">20231111-forV6.1.8-20230921</span> のような名前のフォルダが作成される。青字の部分はダウンロード時期により異なる。その中にpackagesフォルダが作成され、packagesフォルダ配下は以下のようなフォルダ構成になっていることを確認する。各フォルダ内にはさらにフォルダやファイルが存在するがここでは省略する。packageフォルダ内のフォルダ名や数は、ダウンロード時期による異なることがあるので、下図は一例である。
 
   
 ```
@@ -90,11 +90,11 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 また、最新版は以下のリンクからダウンロードできる。
   - [https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar]
  
-しかし、更新の頻度は非常に多く、時には最新版にバグがあって、数日後に修正版がリリースされたりするため、ある程度安定した版で、動作確認がとれており、本仕様のValidationに問題がない過去のバージョンを使うことを勧める。<span style="color: skyblue;">ここでは、v6.1.8 (2023.9.21)版を採用している</span>ので、特に今後の変更記載がなく、他に理由がない限りこのバージョンをダウンロードすることを勧める。
+しかし、更新の頻度は非常に多く、時には最新版にバグがあって、数日後に修正版がリリースされたりするため、ある程度安定した版で、動作確認がとれており、本仕様のValidationに問題がない過去のバージョンを使うことを勧める。<span style="color: blue;">ここでは、v6.1.8 (2023.9.21)版を採用している</span>ので、特に今後の変更記載がなく、他に理由がない限りこのバージョンをダウンロードすることを勧める。
 
-#### 手順（Validation編）
+####  手順（Validation編）
 
-#####　Validation の実行
+#####　　 Validation の実行
 
   - Validationは、Java言語により開発されたプログラム　validator_cli_6.1.8.jar　をJava -jarコマンドで実行する。
 対応するJavaのバージョンはJava 17（以降）である。
@@ -123,7 +123,8 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
         
 ```
 
-#####　Validationコマンドのパラメータ説明
+
+#####　　 Validationコマンドのパラメータ説明
   <br>- [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
     明示的に複数のファイルを指定する場合には、例えば、
       [targets]/jppartient.json  [targets]/jpobservation001.json などのように空白であけて複数を指定する。
@@ -142,19 +143,31 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
   <br>-ig [pkgClins]/jpfhir-terminology-1.1.1.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
   <br>-ig [pkgClins]/jp-clins.r4-0.9.7.tgz : 電子カルテ情報共有サービスで送信される６情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、３文書のパッケージは別にある。
 
-#### Validationの出力例の解説
+####  Validationの出力例の解説
 
-以下のでは、本IGに含まれるサンプルファイルを対象に一括Validationを行った例を示す。
+以下では、本IGに含まれるサンプルファイルを対象に一括Validationを行った例を示す。
+
+
 JP-Condition-CLINS-eCS-01
+
 JP-Condition-CLINS-eCS-02
+
 JP-MedReq-ExtAnus-AsNeeded-Total1
+
 JP-MedReq-ExtSkin-Total2
+
 JP-MedReq-PO-BID-10days-AsNeeded
+
 Observation-ErrorExample-ObsLabo-eGFR
+
 Observation-Example-ObsLabo-Alb
+
 ObsLabo-K
+
 Patient-standard-ErrorInsuranceNo
+
 Patient-standard
+
 
 これらのJSONファイルと [targets]フォルダ内に配置して　*.jsonを指定することにより実行する。
 
@@ -162,16 +175,23 @@ Patient-standard
 実行コマンド例：
 
 ``` {.copy} 
-java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -language ja   -ig  pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings  -best-practice ignore
+java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -language ja  \
+ -ig pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz \
+ -ig pkgValidation/jp-clins.r4-0.9.7-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  \
+ -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings  \
+ -best-practice ignore
 ```
 
 出力結果を、説明の便宜上、[環境準備フェーズ]、[対象ファイルValidation途中フェーズ]、[結果報告フェーズ]の３つにおおきくわけて説明付きで示す。
 
-##### 環境準備フェーズ
+
+#####  環境準備フェーズ
+
 説明作成中
 
 
-``` {title="環境準備フェーズ"}  {.line-number} 
+```  {title="環境準備フェーズ"}  {.line-number} 
+
 FHIR Validation tool Version 6.1.8 (Git# 8413995d8bcf). Built 2023-09-21T19:52:22.833Z (54 days old)
   Java:   17.0.5 from /Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home on aarch64 (64bit). 4096MB available
   Paths:  Current = /Users/kohe/clinsVTest, Package Cache = /Users/kohe/.fhir/packages
@@ -193,11 +213,13 @@ Loading
 
 ```
 
-##### 対象ファイルValidation途中フェーズ　
+#####  対象ファイルValidation途中フェーズ　
+
+
 説明作成中
 
-
 ``` {title="対象ファイルValidation途中フェーズ"} {.line-number} 
+
 Validating
   Validate Targets/Condition-Example-JP-Condition-CLINS-eCS-01.json
 Validate Condition against http://hl7.org/fhir/StructureDefinition/Condition|4.0.1..........20..........40..........60..........80.........|
@@ -214,11 +236,13 @@ Done. Times: Loading: 00:12.264, validation: 00:01.189 (#10). Memory = 1Gb
 
 ```
 
-##### 結果報告フェーズ
+#####  結果報告フェーズ
+
 説明作成中
 
 
 ``` {title="結果報告フェーズ"} {.line-number} {.scroll}
+
 -- ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json --------------------------------------------------------------------
 Success: 0 errors, 0 warnings, 1 notes
   Information: すべてOK
@@ -277,5 +301,6 @@ Success: 0 errors, 0 warnings, 1 notes
 --------------------------------------------------------------------------------------------------------------
 
 Done. Times: Loading: 00:17.636, validation: 00:18.173 (#10). Max Memory = 4Gb
+
 ```
 
