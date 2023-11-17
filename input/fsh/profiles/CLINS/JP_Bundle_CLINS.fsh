@@ -9,20 +9,30 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 
+* obeys bundle-profile-is-JP-Bundle-CLINS
+
 * obeys first-bundle-entry-is-Patient
 * obeys patients-profile-is-JP-Patient-CLINS-eCS
+
+* obeys valid-valuePart0-bundleIdenfifier
+* obeys valid-valuePart1-bundleIdenfifier
+* obeys valid-valuePart2-0-bundleIdenfifier
+* obeys valid-valuePart2-1-bundleIdenfifier
+* obeys valid-valuePart2-2-bundleIdenfifier
+* obeys valid-valuePart2-3-bundleIdenfifier
+* obeys valid-valuePart2-4-bundleIdenfifier
+* obeys valid-valuePart3-bundleIdenfifier
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS")
 * meta.profile = $JP_Bundle_CLINS (exactly)
-  * obeys bundle-profile-is-JP-Bundle-CLINS
 
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains resourceType 1..1 MS
-  * insert relative_short_definition("CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta要素に記述する。")
+  * insert relative_short_definition("CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta.tag要素に記述する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。" )
   * code 1..1 MS
@@ -31,10 +41,9 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
 * meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
 
-
 * identifier 1.. MS
 * identifier ^short = "この文書Bundleの固定識別子。Bundle作成時にシステムが設定する。"
-* identifier ^definition = "Bundleリソースのidentifier要素は、電子カルテ情報共有サービス側で保存される。送信側は、後続の送信においてこのidentifierを指定することで、過去に送信したBundleリソースを指定してそれに含まれていた全データについて削除、更新などの処理を行うことができる。"
+* identifier ^definition = "Bundleリソースのidentifier要素は、電子カルテ情報共有サービス側で保存される。送信側は、後続の送信においてこのidentifierを指定することで、受信側は過去に受信したBundleリソースを特定し、それに含まれていた全データについて削除、更新などの処理を行うためにこれを使用する。"
 * identifier ^comment = "Bundleリソースのidentifier要素は以下の通りとする。\r\n
 この仕様を満たすidentifierに加えて、これとは異なるsystem値をもつidentifierは複数存在しても構わない。\r\n
 Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n
@@ -42,7 +51,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 保険医療機関番号10桁：\r\n
 　（内訳：都道府県番号２桁、点数表コード（医療機関区分）１桁、医療機関番号７桁）\r\n
 被保険者個人識別子：\r\n
-　本ページ「6:被保険者個人識別子の格納」の仕様に従う。\r\n
+　６情報送信仕様に記載の「6:被保険者個人識別子の格納」の仕様に従う。\r\n
 報告単位のデータを医療機関のシステムとして医療機関内で一意に識別できる粒度のID文字列：\r\n
 　　当該システムが当該患者データの中で一意性を保証できるよう生成した半角文字列（英大文字、数字、ハイフン記号のみ可）\r\n
 　　最大128文字とすること。"
@@ -50,16 +59,6 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * identifier.system 1.. MS
 * identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
 * identifier.value 1.. MS
-  * obeys valid-value-bundleIdenfifier
-  * obeys valid-valuePart0-bundleIdenfifier
-  * obeys valid-valuePart1-bundleIdenfifier
-  //* obeys valid-valuePart2-bundleIdenfifier
-  * obeys valid-valuePart2-0-bundleIdenfifier
-  * obeys valid-valuePart2-1-bundleIdenfifier
-  * obeys valid-valuePart2-2-bundleIdenfifier
-  * obeys valid-valuePart2-3-bundleIdenfifier
-  * obeys valid-valuePart2-4-bundleIdenfifier
-  * obeys valid-valuePart3-bundleIdenfifier
 
 * type = #collection (exactly)
 * type ^definition = "このバンドルの目的コード。本プロファイルでは collection 固定とする。\r\n（document | message | transaction | transaction_response | batch | batch_response | history | searchset | collection）"

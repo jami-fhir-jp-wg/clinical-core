@@ -1,3 +1,5 @@
+
+
 // R1011-  患者IDチェック
 Invariant: valid-system-local-patientID
 Description: "R1011:施設患者IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]'であり、かつその施設番号10桁はextension[eCS_InstitutionNumber].valueIdentifier.value値と一致しなければならない。"
@@ -38,7 +40,6 @@ Invariant: valid-valuePart0-bundleIdenfifier
 Description: "R0111:構成：Bundle.identifier.value は^区切りで３つのパートから構成されなければならない。"
 Severity: #error
 Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+[\\\\^].+$'))"
-
 
 Invariant: valid-valuePart1-bundleIdenfifier
 Description: "原因：R0112:Bundle.identifier.value の最初の^までのパートが、医療機関番号10桁として適切な数字列でなければならない。"
