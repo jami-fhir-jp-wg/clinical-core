@@ -9,25 +9,14 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 
-* obeys valid-value-bundleIdenfifier
-* obeys valid-valuePart0-bundleIdenfifier
-* obeys valid-valuePart1-bundleIdenfifier
-//* obeys valid-valuePart2-bundleIdenfifier
-* obeys valid-valuePart2-0-bundleIdenfifier
-* obeys valid-valuePart2-1-bundleIdenfifier
-* obeys valid-valuePart2-2-bundleIdenfifier
-* obeys valid-valuePart2-3-bundleIdenfifier
-* obeys valid-valuePart2-4-bundleIdenfifier
-* obeys valid-valuePart3-bundleIdenfifier
 * obeys first-bundle-entry-is-Patient
 * obeys patients-profile-is-JP-Patient-CLINS-eCS
-* obeys bundle-profile-is-JP-Bundle-CLINS
-
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS")
 * meta.profile = $JP_Bundle_CLINS (exactly)
+  * obeys bundle-profile-is-JP-Bundle-CLINS
 
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "system"
@@ -61,6 +50,16 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * identifier.system 1.. MS
 * identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
 * identifier.value 1.. MS
+  * obeys valid-value-bundleIdenfifier
+  * obeys valid-valuePart0-bundleIdenfifier
+  * obeys valid-valuePart1-bundleIdenfifier
+  //* obeys valid-valuePart2-bundleIdenfifier
+  * obeys valid-valuePart2-0-bundleIdenfifier
+  * obeys valid-valuePart2-1-bundleIdenfifier
+  * obeys valid-valuePart2-2-bundleIdenfifier
+  * obeys valid-valuePart2-3-bundleIdenfifier
+  * obeys valid-valuePart2-4-bundleIdenfifier
+  * obeys valid-valuePart3-bundleIdenfifier
 
 * type = #collection (exactly)
 * type ^definition = "このバンドルの目的コード。本プロファイルでは collection 固定とする。\r\n（document | message | transaction | transaction_response | batch | batch_response | history | searchset | collection）"
@@ -109,6 +108,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "患者情報"
+
 
 * entry[patient].resource 1.. MS
 * entry[patient].resource only $JP_Patient_CLINS_eCS

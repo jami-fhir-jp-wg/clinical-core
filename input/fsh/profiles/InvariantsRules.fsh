@@ -111,7 +111,7 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 // 医療機関内Bundle識別子：[A-Z0-9\\\\-]{1,128}
 
 Invariant: first-bundle-entry-is-Patient
-Description: "最初のentryはPatientでなければない。"
+Description: "最初のentryはPatientでなければならない。"
 Severity: #error
 Expression: "entry.first().resource.is(Patient)"
 
