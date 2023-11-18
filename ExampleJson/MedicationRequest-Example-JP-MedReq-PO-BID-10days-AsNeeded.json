@@ -159,6 +159,11 @@
   "medicationCodeableConcept": {
     "coding": [
       {
+        "code": "NOCODED",
+        "system": "http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS",
+        "display": "標準コードなし"
+      },
+      {
         "code": "I1692880",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567",
         "display": "ラクツロースシロップ６５％「タカタ」"

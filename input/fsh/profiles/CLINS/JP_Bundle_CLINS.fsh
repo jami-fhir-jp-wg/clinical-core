@@ -26,7 +26,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS")
-* meta.profile = $JP_Bundle_CLINS (exactly)
+//* meta.profile = $JP_Bundle_CLINS
 
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "system"

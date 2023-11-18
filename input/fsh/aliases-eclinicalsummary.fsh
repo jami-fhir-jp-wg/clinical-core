@@ -69,7 +69,10 @@ Alias: $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS = http://jpfhir
 Alias: $JP_ObservationLabResultCode_CS = urn:oid:1.2.392.200119.4.504
 
 Alias: $JP_SimpleObservationCategory_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
+
 Alias: $JP_MedicationCodeGS1_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeGS1_VS
+Alias: $JP_MedicationUncoded_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeGS1_VS
+
 Alias: $composition-clinicaldocument-versionNumber = http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber
 Alias: $coverage-copay-type = http://terminology.hl7.org/CodeSystem/coverage-copay-type
 Alias: $doc-typecodes = http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes

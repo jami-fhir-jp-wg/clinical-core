@@ -3,8 +3,8 @@ InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例</p> </div>"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
@@ -29,7 +29,8 @@ Description: "入院処方　内服処方1日1回１回2錠（投与指示あり
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#DCG "退院処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "退院時処方"
-* medicationCodeableConcept = $Icode#I1692880 "ラクツロースシロップ６５％「タカタ」"
+* medicationCodeableConcept.coding[0] = $JP_eCS_MedicationCodeNocoded_CS#NOCODED "標準コードなし"
+* medicationCodeableConcept.coding[+] = $Icode#I1692880 "ラクツロースシロップ６５％「タカタ」"
 * medicationCodeableConcept.text = "ラクツロースシロップ６５％「タカタ」"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"

@@ -5,8 +5,8 @@ Usage: #example
 Description: "conditionExample01 必須要素だけのサンプル"
 
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -50,8 +50,8 @@ Usage: #example
 Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -99,8 +99,8 @@ InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
 Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

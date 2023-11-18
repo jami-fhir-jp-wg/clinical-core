@@ -9,3 +9,6 @@ Alias: $JP_eCS_ObservationLabResultCode_VS = http://jpfhir.jp/fhir/eCS/ValueSet/
 
 Alias: $JP_CLINS_BundleResourceType_CS = http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS
 Alias: $JP_CLINS_BundleResourceType_VS = http://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VS
+
+Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
+Alias: $JP_eCS_MedicationCodeNocoded_VS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS

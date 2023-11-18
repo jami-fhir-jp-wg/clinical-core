@@ -38,6 +38,8 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * status = #completed
 * intent = #order
 
+* obeys needs-anyOfStandardCode-medication
+
 * medication[x] ^short = "医薬品コードと医薬品名称。ひとつの 必須のtext 要素と、複数の coding 要素を記述できる。"
 * medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことでHOT9 やYJコードなど複数のコード体系で医薬品コード並記することが可能。\r\n本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。\r\n日本では同じ用法の複数の薬剤をひとつの処方区分とすることがある。複数の薬剤を表記するMedication Resourceのインスタンスを参照する。"
 * medication[x] MS
@@ -49,9 +51,18 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
     codingHOT9 0..1 MS and
     codingYJ 0..1 MS and
     codingGS1 0..1 MS and
-    codingGeneralName 0..1 MS
+    codingGeneralName 0..1 MS and
+    nocoded 0..1
 
-    
+* medication[x].coding[nocoded].system 1.. MS
+* medication[x].coding[nocoded].system = $JP_eCS_MedicationCodeNocoded_CS (exactly)
+  * insert relative_short_definition("標準医薬品コードがない場合のコード割り当てシステム")
+* medication[x].coding[nocoded].code 1.. MS
+* medication[x].coding[nocoded].code from $JP_eCS_MedicationCodeNocoded_VS
+  * insert relative_short_definition("標準コードが存在しない医薬品を意味するコード　NOCODED")
+* medication[x].coding[nocoded].display 1.. MS
+  * insert relative_short_definition("標準コードなし")
+
 * medication[x].coding[codingHOT7].system 1.. MS
 * medication[x].coding[codingHOT7].system = $JP_MedicationCodeHOT7_CS (exactly)
   * insert relative_short_definition("HOT7コードの識別ID")

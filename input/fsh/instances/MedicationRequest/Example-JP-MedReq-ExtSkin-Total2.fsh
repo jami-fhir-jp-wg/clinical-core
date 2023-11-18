@@ -3,8 +3,8 @@ InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "入院処方　外用（塗布）全量処方　1回量をコードで記述できない例"
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（塗布）全量処方　1回量をコードで記述できない例</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（塗布）全量処方　1回量をコードで記述できない例</p> </div>"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
@@ -30,7 +30,9 @@ Description: "入院処方　外用（塗布）全量処方　1回量をコー�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#XTR "臨時処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "時間外処方"
-* medicationCodeableConcept = $Icode#I3240210 "ヒルドイドローション２５ｇ"
+
+//* medicationCodeableConcept.coding[0] = $JP_eCS_MedicationCodeNocoded_CS#NOCODED "標準コードなし"
+* medicationCodeableConcept.coding[+] = $Icode#I3240210 "ヒルドイドローション２５ｇ"
 * medicationCodeableConcept.text = "ヒルドイドローション２５ｇ"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"

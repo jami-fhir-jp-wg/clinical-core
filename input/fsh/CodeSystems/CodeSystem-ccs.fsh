@@ -36,6 +36,17 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^caseSensitive = false
 * #LUNCODED  "Locally Uncoded"
 
+CodeSystem: JP_eCS_MedicationCode_Nocoded_CS
+Id: jp-eCS-medicationcode-nocoded-cs
+Description: "医薬品コードで標準コードが割り当てられない場合に使用する未コード化コード"
+* ^url = $JP_eCS_MedicationCodeNocoded_CS
+* ^title = "医薬品未標準化コード項目"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #NOCODED  "標準コードなし"
+
 /*
 CodeSystem: JP_CLINS_ObsLabResult_LocalCode_CS
 Id: jp-clins-obslabresult-localcode-cs

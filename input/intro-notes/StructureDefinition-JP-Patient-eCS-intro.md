@@ -36,7 +36,9 @@
 　- 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
   - 該当なし。
 
-## プロファイル
+## 要素の説明とプロファイル
+
+患者プロファイルについては、[JP-Core]() を参照のこと。ただし、上記必須情報を満たすこと。
 
 {% include markdown-link-references.md %}
 {% include external-link-reference.md %}

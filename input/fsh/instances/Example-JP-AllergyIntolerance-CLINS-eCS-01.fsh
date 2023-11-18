@@ -10,8 +10,8 @@ Usage: #example
 Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -62,8 +62,8 @@ Usage: #example
 Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
 
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述したサンプル</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述したサンプル</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -123,8 +123,8 @@ Usage: #example
 Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁忌情報のサンプル"
 
 
-* text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤禁忌情報のサンプル</p> </div>"
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤禁忌情報のサンプル</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

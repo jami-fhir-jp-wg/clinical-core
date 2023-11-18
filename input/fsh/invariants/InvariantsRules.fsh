@@ -137,3 +137,15 @@ Description: "BundleはJP-Bundle-CLINSプロファイルに準拠していなけ
 Severity: #error
 Expression: "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
 
+//
+Invariant: needs-anyOfStandardCode-medication
+Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、HOT9またはHOT7コード、厚生労働省一般名コード、標準コードなし、のいずれかを必須とする。"
+/*
+Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
+Alias: $JP_MedicationCodeHOT7_CS = urn:oid:1.2.392.200119.4.403.2
+Alias: $JP_MedicationCodeHOT9_CS = urn:oid:1.2.392.200119.4.403.1
+Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
+Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
+*/
+Severity: #error
+Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.200119.4.403.2').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.200119.4.403.1').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1)"
