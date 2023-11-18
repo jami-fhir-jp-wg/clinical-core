@@ -13,7 +13,7 @@ Alias: $JP_Encounter_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Enco
 
 Alias: $JP_MedicationCategoryMERIT9_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS
 // 次のはローカルコード体系で医療機関ごとにかわる
-Alias: $Icode = http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567
+Alias: $Icode = http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567
 
 Alias: $JP_ehrshrs_indication_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
 

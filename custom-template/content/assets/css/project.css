@@ -941,4 +941,5 @@ pre[class*="language-"] {
 
 code[class*="language-"] {
   white-space: pre-wrap;
+  overflow-wrap:  break-word;
 }

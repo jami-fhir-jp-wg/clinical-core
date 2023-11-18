@@ -10,8 +10,8 @@ name: "電子カルテ情報共有サービスFHIR実装ガイド ドラフト�
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） ドラフト版"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide ドラフト版"
 status: draft # draft | active | retired | unknown 
-version: 0.9.8-draft
-date: 2023-11-18
+version: 0.9.9-draft
+date: 2023-11-19
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -37,7 +37,7 @@ dependencies:
 #----------------------------------------
 pages:
   index.md:
-    title: 電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
+    title: 電子カルテ情報共有サービスFHIR仕様  　JP-clins
   core6spec.md:
     title: ６情報送信仕様
   validationGuide.md:
@@ -100,7 +100,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   special-url:
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_clins
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS

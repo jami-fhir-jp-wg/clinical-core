@@ -261,17 +261,17 @@ Success: 0 errors, 4 warnings, 0 notes
   Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#104937401'
   Warning @ MedicationRequest.medication.ofType(CodeableConcept) (line 156, col4): urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
   Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[1].system (line 165, col80): URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[1].system (line 165, col80): URL値 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567' は解決できません
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- ExampleJson/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json ---------------------------------------------------------------------------
 Success: 0 errors, 1 warnings, 0 notes
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0].system (line 131, col80): URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0].system (line 131, col80): URL値 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567' は解決できません
 --------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- ExampleJson/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json -----------------------------------------------------------------------------------
 Success: 0 errors, 1 warnings, 0 notes
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0].system (line 163, col80): URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/19911234567' は解決できません
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0].system (line 163, col80): URL値 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567' は解決できません
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 -- ExampleJson/Observation-ErrorExample-ObsLabo-eGFR.json --------------------------------------------------------------
