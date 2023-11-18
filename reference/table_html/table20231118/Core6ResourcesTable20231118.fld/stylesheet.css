@@ -5084,13 +5084,24 @@ td
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
 .xl452
+	{mso-style-parent:style58;
+	color:red;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:"ＭＳ 明朝";
+	mso-generic-font-family:auto;
+	mso-font-charset:128;
+	text-align:left;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl453
 	{mso-style-parent:style0;
 	border-top:none;
 	border-right:none;
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.xl453
+.xl454
 	{mso-style-parent:style0;
 	color:black;
 	font-size:10.0pt;
@@ -5102,27 +5113,27 @@ td
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl454
+.xl455
 	{mso-style-parent:style0;
 	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl455
+.xl456
 	{mso-style-parent:style0;
 	border-top:none;
 	border-right:none;
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;}
-.xl456
+.xl457
 	{mso-style-parent:style58;
 	border-top:none;
 	border-right:none;
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.xl457
+.xl458
 	{mso-style-parent:style58;
 	color:red;
 	font-size:10.0pt;
@@ -5135,7 +5146,7 @@ td
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl458
+.xl459
 	{mso-style-parent:style58;
 	font-size:10.0pt;
 	border-top:none;
@@ -5143,14 +5154,14 @@ td
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl459
+.xl460
 	{mso-style-parent:style58;
 	border-top:none;
 	border-right:.5pt solid windowtext;
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl460
+.xl461
 	{mso-style-parent:style58;
 	font-size:10.0pt;
 	text-align:left;
@@ -5159,7 +5170,7 @@ td
 	border-bottom:none;
 	border-left:.5pt solid windowtext;
 	white-space:normal;}
-.xl461
+.xl462
 	{mso-style-parent:style0;
 	font-family:"ＭＳ 明朝";
 	mso-generic-font-family:auto;
@@ -5169,7 +5180,7 @@ td
 	border-bottom:1.0pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.xl462
+.xl463
 	{mso-style-parent:style0;
 	color:black;
 	font-size:10.0pt;
@@ -5182,7 +5193,7 @@ td
 	border-bottom:.5pt solid windowtext;
 	border-left:1.0pt solid windowtext;
 	white-space:normal;}
-.xl463
+.xl464
 	{mso-style-parent:style0;
 	text-align:left;
 	border-top:.5pt solid windowtext;
@@ -5190,22 +5201,11 @@ td
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
 	white-space:normal;}
-.xl464
+.xl465
 	{mso-style-parent:style0;
 	text-align:left;
 	border-top:.5pt solid windowtext;
 	border-right:1.0pt solid windowtext;
 	border-bottom:.5pt solid windowtext;
 	border-left:none;
-	white-space:normal;}
-.xl465
-	{mso-style-parent:style58;
-	color:red;
-	font-size:10.0pt;
-	font-weight:700;
-	font-family:"ＭＳ 明朝";
-	mso-generic-font-family:auto;
-	mso-font-charset:128;
-	text-align:left;
-	border:.5pt solid windowtext;
 	white-space:normal;}
