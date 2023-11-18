@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-AsNeeded-LimitMax
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
-* note =  "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
+* note.text =  "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例</p> </div>"
 

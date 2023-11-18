@@ -2,6 +2,7 @@ Instance: Example-JP-MedReq-PO-TID-2days
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
+* note.text = "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）</p> </div>"

@@ -11,7 +11,7 @@ title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CL
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide ドラフト版"
 status: draft # draft | active | retired | unknown 
 version: 0.9.8-draft
-date: 2023-11-16
+date: 2023-11-18
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use

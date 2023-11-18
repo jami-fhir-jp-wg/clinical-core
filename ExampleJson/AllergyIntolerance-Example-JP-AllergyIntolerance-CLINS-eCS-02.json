@@ -35,10 +35,6 @@
       "value": "00012345:あいう:１８７:05"
     }
   },
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>必須要素と推奨要素とプラスアルファを記述したサンプル</p></div>"
-  },
   "contained": [
     {
       "resourceType": "Encounter",
@@ -47,10 +43,6 @@
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
         ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　外来受診01 サンプル</p></div>"
       },
       "identifier": [
         {
@@ -110,6 +102,9 @@
   "note": [
     {
       "text": "さば食後３時間ほどで全身に発疹と腹痛あり"
+    },
+    {
+      "text": "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
     }
   ]
 }

@@ -6,10 +6,6 @@
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
     ]
   },
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　患者情報最小限 サンプル</p></div>"
-  },
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID",

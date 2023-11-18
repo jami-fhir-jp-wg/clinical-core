@@ -774,7 +774,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl73 width=73 style='width:55pt'>　</td>
   <td class=xl73 width=73 style='width:55pt'>　</td>
   <td class=xl73 width=73 style='width:55pt'>　</td>
-  <td class=xl103 width=35 style='width:26pt'>0..1</td>
+  <td class=xl103 width=35 style='width:26pt'>0..*</td>
   <td class=xl73 width=87 style='width:65pt'>code</td>
   <td class=xl88 width=359 style='width:269pt'>特定された原因物質のカテゴリ。記述を可能な限り推奨する。コード表：&quot;http://hl7.org/fhir/allergy-intolerance-category&quot;からfood|medication|environment|biologic（食物、医薬品、環境、バイオロジー物質）のいずれかを選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には可能な限りコードを設定すること。<br>
     <font class="font12">電子カルテ情報サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は&quot;medication&quot;として存在しなければならず、criticality要素は&quot;high&quot;を設定しなければならない。これ以外の場合には、本リソースの情報はや薬剤禁忌以外のアレルギー情報として取り扱われる。</font></td>

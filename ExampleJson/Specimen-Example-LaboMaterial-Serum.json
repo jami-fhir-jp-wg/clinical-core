@@ -6,10 +6,6 @@
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
     ]
   },
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　検体検査材料　血清</p></div>"
-  },
   "type": {
     "coding": [
       {

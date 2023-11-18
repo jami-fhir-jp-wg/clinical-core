@@ -135,10 +135,11 @@
       }
     }
   ],
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>外来院外処方　内服1日1回１回1錠 標準用法フルコード化90日分処方例</p></div>"
-  },
+  "note": [
+    {
+      "text": "外来院外処方　内服1日1回１回1錠 標準用法フルコード化90日分処方例"
+    }
+  ],
   "contained": [
     {
       "resourceType": "Practitioner",
@@ -147,10 +148,6 @@
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
         ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者D002 サンプル</p></div>"
       },
       "name": [
         {

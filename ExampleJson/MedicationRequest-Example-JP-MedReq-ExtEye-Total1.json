@@ -77,10 +77,11 @@
       ]
     }
   ],
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>入院処方　外用（点眼）全量処方　1回量をコードで記述できない例</p></div>"
-  },
+  "note": [
+    {
+      "text": "入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
+    }
+  ],
   "contained": [
     {
       "resourceType": "Practitioner",
@@ -89,10 +90,6 @@
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
         ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　医療者D001 サンプル</p></div>"
       },
       "name": [
         {

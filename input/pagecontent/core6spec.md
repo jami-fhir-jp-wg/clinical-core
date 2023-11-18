@@ -16,6 +16,13 @@
 Bundleリソースのタイプ（type要素）は"collection"を使用する。<br>
 なお、電子カルテ情報共有サービスに６情報を送信する場合には、ひとつのBundlleに格納されるリソースデータ同士を相互に参照する（一方のリソースデータから同じBundle内の他のリソースを参照する）ことはできない。一方、３文書を送信する場合には、文書はそれぞれひとつの”document”タイプのBundleとして作成され、ひとつのBundlleに格納されるリソースデータ同士が相互参照できる。<br>
 
+<span style="color: blue;">[v0.9.8追記]
+Bundleリソースのプロファイルは以下を参照すること。
+
+* [CLINS電子カルテ情報共有６情報用　Bundleリソース][JP_Bundle_CLINS]
+</span>
+
+
 ##### ひとつのBundleリソースに格納できるデータ
 1回で送信するひとつのBundleリソースには、<br>
 ① アレルギー情報および薬剤禁忌情報　AllergyIntoleranceリソース<br>
@@ -27,19 +34,22 @@ Bundleリソースのタイプ（type要素）は"collection"を使用する。<
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない（エラーとなる）。
 
 
+<span style="color: marool;">[v0.9.8変更のため取り消し]
 ~~①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。~~
 
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"~~
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"~~
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"~~
  ~~- "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"~~
+</span>
 
-<span style="color: blue;">[v0.9.8変更]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
+
+<span style="color: blue;">[v0.9.8変更のため追記]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
 
  - "AllergyIntolerance"
  - "Condition"
  - "Observation"
- - "MedicationRequest"<span>
+ - "MedicationRequest"</span>
  
 　また、1回で送信するひとつのBundleリソースには、ひとりの患者の、同時に１回で報告される一連のデータ（１報告単位のデータ）だけを、すべて漏れなく格納する。異なる報告単位のデータや、異なる患者のデータをひとつのBundleリソースに含めてはならない。
 送信側または受信側でデータ検証後に送受信がなされる場合、１報告単位のデータはそのデータ全体がOKとなるか、全体が拒絶されるかどちらかとなる。１報告単位のデータのうち一部だけが検証にパスすることはない。
@@ -239,7 +249,7 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
    検査項目コードと名称を、code.coding[n]に以下のように設定する。<br>
     - code.coding[n].system :　<br>
       - 臨床検査項目基本コードセットの検査項目：”http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS”
-      - 感染症検査項目リストの検査項目：”http://jpfhir.jp/fhir/<span style="color: maroon;">clins/</span>CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS”
+      - 感染症検査項目リストの検査項目：”http://jpfhir.jp/fhir/<span style="color: blue;">clins/</span>CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS”
     - code.coding[n].code :　共有項目JLACコード
     - code.coding[n].display :　FHIR識別名
 
@@ -471,4 +481,6 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
 検体検査結果を未説明であることを示したい場合にも同じフラグを使用できるが、電子カルテ共有サービスでどのように取り扱われるかについては決定していない。
 <br>
 
+
+{% include markdown-link-references.md %}
 

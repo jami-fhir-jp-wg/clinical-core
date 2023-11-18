@@ -28,10 +28,6 @@
       "value": "00012345:あいう:１８７:05"
     }
   },
-  "text": {
-    "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>必須要素だけのサンプル</p></div>"
-  },
   "clinicalStatus": {
     "coding": [
       {
@@ -54,6 +50,9 @@
   "note": [
     {
       "text": "さば食後３時間ほどで全身に発疹と腹痛あり"
+    },
+    {
+      "text": "allergyIntoleranceExample01 必須要素だけのサンプル"
     }
   ]
 }

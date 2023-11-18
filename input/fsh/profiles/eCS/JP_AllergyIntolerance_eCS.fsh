@@ -59,7 +59,7 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * type ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-type\" から　allergy | intolerance のいずれか（アレルギー反応、不耐性反応）。"
 * type ^comment = "メカニズムの種類を正確に決めることは難しいので、この情報はあくまで情報登録側の判断に依存する。"
 
-* category 0..1 
+* category 0..
 * category ^short = "特定された原因物質のカテゴリ。記述を可能な限り推奨する。"
 * category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）を選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には可能な限りコードを設定すること。"
 
@@ -112,8 +112,8 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 
 * lastOccurrence  0..1 
   * insert relative_short_definition("最後（直近）に知られている発生日時")
-* note  0..1 
+* note  0..
   * insert relative_short_definition("状態に関する追加的な情報で他の要素で記述できないような情報")
-* reaction 0..1 
+* reaction 0..
   * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。")
 

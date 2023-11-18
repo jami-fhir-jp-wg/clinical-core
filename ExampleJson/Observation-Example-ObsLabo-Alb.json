@@ -66,6 +66,11 @@
       "value": "00012345:あいう:１８７:05"
     }
   },
+  "note": [
+    {
+      "text": "検体検査結果　アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
+    }
+  ],
   "contained": [
     {
       "resourceType": "Specimen",
@@ -74,10 +79,6 @@
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
         ]
-      },
-      "text": {
-        "status": "additional",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>埋め込み　検体検査材料　血清</p></div>"
       },
       "type": {
         "coding": [
