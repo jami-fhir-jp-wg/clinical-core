@@ -5,6 +5,7 @@ InstanceOf: JP_Patient
 Usage: #example
 Description: "埋め込み　患者情報最小限 サンプル"
 
+
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報最小限 サンプル</p> </div>"
 
@@ -22,6 +23,7 @@ Instance: Example-JP-Patient-eCS-01-Contained
 InstanceOf: JP_Patient
 Usage: #example
 Description: "埋め込み　患者情報01 サンプル"
+
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報01 サンプル</p> </div>"

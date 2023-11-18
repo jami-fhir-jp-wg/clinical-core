@@ -2,7 +2,7 @@ Instance: Example-JP-MedReq-PO-4timez-7days
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "入院処方　内服処方1日4回7日分　例"
-
+* note = "入院処方　内服処方1日4回7日分　例"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方1日4回7日分　例</p> </div>"
 

@@ -2,6 +2,7 @@ Instance: Example-JP-MedReq-PO-SID-28days
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
+* note = "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例</p> </div>"

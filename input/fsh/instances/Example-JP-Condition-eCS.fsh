@@ -3,6 +3,7 @@ Instance: Example-JP-Condition-CLINS-eCS-01
 InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
 Description: "conditionExample01 必須要素だけのサンプル"
+* note = "conditionExample01 必須要素だけのサンプル"
 
 
 // * text.status = #additional
@@ -47,8 +48,8 @@ Description: "conditionExample01 必須要素だけのサンプル"
 Instance: Example-JP-Condition-CLINS-eCS-02
 InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
-Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
-
+Description: "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+* note =  "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
@@ -97,8 +98,8 @@ Description: "conditionExample01 必須要素と推奨要素を記述したサ�
 Instance: Example-JP-Condition-CLINS-eCS-03
 InstanceOf: JP_Condition_CLINS_eCS
 Usage: #example
-Description: "conditionExample01 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
-
+Description: "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
+* note = "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了</p> </div>"
 

@@ -3,6 +3,7 @@ InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "意図的エラー例：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
 * note.text = "意図的エラー例：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
+
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（塗布）全量処方　1回量をコードで記述できない例</p> </div>"
 

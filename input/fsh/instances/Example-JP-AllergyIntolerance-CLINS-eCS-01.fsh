@@ -8,7 +8,7 @@ Instance: Example-JP-AllergyIntolerance-CLINS-eCS-01
 InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
-
+* note = "allergyIntoleranceExample01 必須要素だけのサンプル"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
@@ -60,7 +60,7 @@ Instance: Example-JP-AllergyIntolerance-CLINS-eCS-02
 InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
-
+* note = "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述したサンプル</p> </div>"
@@ -120,8 +120,8 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 Instance: Example-JP-DrugContraindications-CLINS-eCS-03
 InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
-Description: "allergyIntoleranceExample02 必須要素で記述した薬剤禁忌情報のサンプル"
-
+Description: "allergyIntoleranceExample03 必須要素で記述した薬剤禁忌情報のサンプル"
+* note = "allergyIntoleranceExample03 必須要素で記述した薬剤禁忌情報のサンプル"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤禁忌情報のサンプル</p> </div>"
