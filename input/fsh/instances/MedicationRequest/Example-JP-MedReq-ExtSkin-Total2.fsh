@@ -1,7 +1,7 @@
-Instance: Example-JP-MedReq-ExtSkin-Total2
+Instance: ErrorExample-JP-MedReq-ExtSkin-Total2
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
-Description: "入院処方　外用（塗布）全量処方　1回量をコードで記述できない例"
+Description: "入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（塗布）全量処方　1回量をコードで記述できない例</p> </div>"
