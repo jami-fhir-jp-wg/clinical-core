@@ -1868,11 +1868,10 @@ function details_open(onoff, idname, idCloseButton){
 
 
 
-<button type="button" onclick="details_open(false,'AllergyDetails','mrc')">閉じる</button>
+<button type="button" onclick="details_open(false,'TableDetails','mrc')">閉じる</button>
 
 </details>
 
-## プロファイル
 
 <br>
 
