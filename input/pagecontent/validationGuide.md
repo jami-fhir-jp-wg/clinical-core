@@ -108,6 +108,8 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 
 ####  手順（Validation編）
 
+以降では、Validationの手順を説明する。
+
 #####　　 Validation の実行
 
   - 実行コマンド例
@@ -131,9 +133,13 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
         
 ```
 
+上記のパラメータの説明は以下のとおり。
+
+
 #####　　Validationコマンドのパラメータ説明
 
-  - - [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
+
+  - -[targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
     明示的に複数のファイルを指定する場合には、例えば、
       [targets]/jppartient.json  [targets]/jpobservation001.json などのように空白であけて複数を指定する。
       現在の [vwork] からの相対パス、または絶対パスで各ファイルのパスを指定する。
