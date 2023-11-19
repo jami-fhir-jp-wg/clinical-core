@@ -62,6 +62,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 
 
 #####  CLINS検証用パッケージ群を [pkgClins] 直下にダウンロードする。
+
 以下の３つのパッケージをOS種別にかかわらずダウンロードしする。(Windowsの場合も拡張子tgzのファイル）。ダウンロード後の解凍はしない。なお、ファイル名中のr4-x.x.xのバージョン番号部分はダウンロード時期により異なる。
 
   - jp-core.r4　パッケージ
@@ -130,55 +131,41 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
         
 ```
 
-
 #####　　Validationコマンドのパラメータ説明
 
-  <br>- [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
+  - - [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
     明示的に複数のファイルを指定する場合には、例えば、
       [targets]/jppartient.json  [targets]/jpobservation001.json などのように空白であけて複数を指定する。
       現在の [vwork] からの相対パス、または絶対パスで各ファイルのパスを指定する。
-  <br>-version 4.0.1 : 適用するFHIRの基底仕様のバージョン。4.0.1を固定で指定する。
+  - -version 4.0.1 : 適用するFHIRの基底仕様のバージョン。4.0.1を固定で指定する。
 
-  <br>-language ja : Terminology (CodeSystem, ValueSet)のvalidation時の言語環境を指定する。 jaを固定で指定する。
-  <br>-locale ja-JP : Validation結果のメッセージの言語を指定する。英語のままでよい場合には、このオプション自体を削除すること。
-  <br>-want-invariants-in-messages : Profileの制約だけでは記述できない制約ルールのうち、invariantsで記述された制約ルールによる警告やエラーの結果を出力するよう設定するオプション。。あったほうが、どのような制約ルールに抵触したかわかりやすい。
-  <br>-no-extensible-binding-warnings : FHIR基底仕様において拡張が許可されているValueSetにバインディングされている要素に、別のValueSetを使用した場合に警告を出さないよう設定するオプション。あったほうが、無視できる警告を省略できる。
-  <br>-display-issues-are-warnings : 標準コードに対応する表示文字列がCodeSystemに登録されているdisplayと違っている場合に、Errorにせず、警告にする設定オプション。さまざまな理由で表示の不一致はやむを得ないことが多いため、エラーにせず注意にとどめることにする。
-  <br>-level warnings : 警告とErrorだけ出力し、参考情報は出力しない設定オプション。
-  <br>-best-practice ignore : FHIR基底仕様においてベストプラクティスとされる推奨事項に違反している場合の警告を出さないオプション。
-  <br>-tx n/a ：　外部のTerminologyServer を参照しないよう設定するオプション。ここでの手順では、パッケージ [jpfhir-terminology-1.1.1]をロードしてローカルに配置しているので、外部のTerminologyServerへの参照は必要がない。
-  <br>-ig [pkgClins]/jp-core.r4-1.1.2.tgz : jp-core.r4 v1.1.2 のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
-  <br>-ig [pkgClins]/jpfhir-terminology-1.1.1.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
-  <br>-ig [pkgClins]/jp-clins.r4-0.9.7.tgz : 電子カルテ情報共有サービスで送信される６情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、３文書のパッケージは別にある。
+  - -language ja : Terminology (CodeSystem, ValueSet)のvalidation時の言語環境を指定する。 jaを固定で指定する。
+  - -locale ja-JP : Validation結果のメッセージの言語を指定する。英語のままでよい場合には、このオプション自体を削除すること。
+  - -want-invariants-in-messages : Profileの制約だけでは記述できない制約ルールのうち、invariantsで記述された制約ルールによる警告やエラーの結果を出力するよう設定するオプション。。あったほうが、どのような制約ルールに抵触したかわかりやすい。
+  - -no-extensible-binding-warnings : FHIR基底仕様において拡張が許可されているValueSetにバインディングされている要素に、別のValueSetを使用した場合に警告を出さないよう設定するオプション。あったほうが、無視できる警告を省略できる。
+  - -display-issues-are-warnings : 標準コードに対応する表示文字列がCodeSystemに登録されているdisplayと違っている場合に、Errorにせず、警告にする設定オプション。さまざまな理由で表示の不一致はやむを得ないことが多いため、エラーにせず注意にとどめることにする。
+  - -level warnings : 警告とErrorだけ出力し、参考情報は出力しない設定オプション。
+  - -best-practice ignore : FHIR基底仕様においてベストプラクティスとされる推奨事項に違反している場合の警告を出さないオプション。
+  - -tx n/a ：　外部のTerminologyServer を参照しないよう設定するオプション。ここでの手順では、パッケージ [jpfhir-terminology-1.1.1]をロードしてローカルに配置しているので、外部のTerminologyServerへの参照は必要がない。
+  - -ig [pkgClins]/jp-core.r4-1.1.2.tgz : jp-core.r4 v1.1.2 のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
+  - -ig [pkgClins]/jpfhir-terminology-1.1.1.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
+  - -ig [pkgClins]/jp-clins.r4-0.9.7.tgz : 電子カルテ情報共有サービスで送信される６情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、３文書のパッケージは別にある。
 
 ####  Validationの出力例の解説
 
-以下では、本IGに含まれるサンプルファイルを対象に一括Validationを行った例を示す。
-
-
-JP-Condition-CLINS-eCS-01
-
-JP-Condition-CLINS-eCS-02
-
-JP-MedReq-ExtAnus-AsNeeded-Total1
-
-JP-MedReq-ExtSkin-Total2
-
-JP-MedReq-PO-BID-10days-AsNeeded
-
-Observation-ErrorExample-ObsLabo-eGFR
-
-Observation-Example-ObsLabo-Alb
-
-ObsLabo-K
-
-Patient-standard-ErrorInsuranceNo
-
-Patient-standard
-
+以下では、本IGに含まれる以下のサンプルファイルを対象に一括Validationを行った例を示す。
+  - JP-Condition-CLINS-eCS-01
+  - JP-Condition-CLINS-eCS-02
+  - JP-MedReq-ExtAnus-AsNeeded-Total1
+  - JP-MedReq-ExtSkin-Total2
+  - JP-MedReq-PO-BID-10days-AsNeeded
+  - Observation-ErrorExample-ObsLabo-eGFR
+  - Observation-Example-ObsLabo-Alb
+  - Observation-Example-ObsLabo-K
+  - Patient-standard-ErrorInsuranceNo
+  - Patient-standard
 
 これらのJSONファイルと [targets]フォルダ内に配置して　*.jsonを指定することにより実行する。
-
 
 実行コマンド例：
 
@@ -190,7 +177,7 @@ java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -la
  -best-practice ignore
 ```
 
-出力結果を、説明の便宜上、[環境準備フェーズ]、[対象ファイルValidation途中フェーズ]、[結果報告フェーズ]の３つにおおきくわけて説明付きで示す。
+出力結果を、説明の便宜上、[環境準備フェーズ]、[対象ファイルValidation途中フェーズ]、[結果報告フェーズ]の３つのブロックに分けて示す。
 
 
 #####  環境準備フェーズ
