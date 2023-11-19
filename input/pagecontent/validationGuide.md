@@ -197,7 +197,7 @@ java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -la
 説明作成中
 
 
-```  {title="環境準備フェーズ"}  {.line-number} 
+```
 
 FHIR Validation tool Version 6.1.8 (Git# 8413995d8bcf). Built 2023-09-21T19:52:22.833Z (54 days old)
   Java:   17.0.5 from /Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home on aarch64 (64bit). 4096MB available
@@ -217,7 +217,6 @@ Loading
   Load pkgClins/jp-clins.r4-0.9.7.tgz - 148 resources (00:00.081)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.0.12, hl7.fhir.uv.extensions.r4#1.0.0, hl7.terminology#5.3.0, hl7.terminology.r5#5.0.0, hl7.fhir.uv.extensions#1.0.0]
   Get set...  go (00:01.131)
-
 ```
 
 #####  対象ファイルValidation途中フェーズ　
@@ -225,7 +224,7 @@ Loading
 
 説明作成中
 
-``` {title="対象ファイルValidation途中フェーズ"} {.line-number} 
+```
 
 Validating
   Validate Targets/Condition-Example-JP-Condition-CLINS-eCS-01.json
@@ -248,7 +247,7 @@ Done. Times: Loading: 00:12.264, validation: 00:01.189 (#10). Memory = 1Gb
 説明作成中
 
 
-``` {title="結果報告フェーズ"} {.line-number} {.scroll}
+```
 
 -- ExampleJson/Condition-Example-JP-Condition-CLINS-eCS-01.json --------------------------------------------------------------------
 Success: 0 errors, 0 warnings, 1 notes
