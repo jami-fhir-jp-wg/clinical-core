@@ -81,9 +81,9 @@ function details_open(onoff, idname, idCloseButton){
 </script>
 
 <h3>表「Observation_LabResult」</h3>
-<button id="mrc" type="button" onclick="details_open(true,'TableDetails,'mrc')">表「Observation_LabResult」開く</button>
+<button id="mrc" type="button" onclick="details_open(true,'TableDetails','mrc')">表「Observation_LabResult」開く</button>
 <details id="TableDetails">
-<button type="button" onclick="details_open(false,'TableDetails, 'mrc')">閉じる</button>
+<button type="button" onclick="details_open(false,'TableDetails', 'mrc')">閉じる</button>
 <summary></summary>
 
 <div id="Table_20456" class="htmlTable" align=center x:publishsource="Excel">
