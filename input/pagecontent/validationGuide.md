@@ -131,7 +131,8 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 ```
 
 
-#####　　 Validationコマンドのパラメータ説明
+#####　　Validationコマンドのパラメータ説明
+
   <br>- [targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
     明示的に複数のファイルを指定する場合には、例えば、
       [targets]/jppartient.json  [targets]/jpobservation001.json などのように空白であけて複数を指定する。
