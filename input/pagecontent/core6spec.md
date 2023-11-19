@@ -34,14 +34,14 @@ Bundleリソースのプロファイルは以下を参照すること。
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない（エラーとなる）。
 
 
-<span style="color: marool;">[v0.9.8変更のため取り消し]
+<span style="color: maroon;">[v0.9.8変更のため取り消し]</span>
 ~~①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。~~
 
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"~~
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"~~
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"~~
  ~~- "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"~~
-</span>
+
 
 
 <span style="color: blue;">[v0.9.8変更のため追記]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
