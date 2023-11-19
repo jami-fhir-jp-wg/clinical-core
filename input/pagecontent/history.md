@@ -4,7 +4,7 @@
     掲載にあたっては、内容の変更に関わらない修正（リンク切れの修正、表示体裁、表現修正、レイアウト変更、小さな説明追加、
     少数の事例追加など）の履歴は含まない。また、より正確なValidationを可能とするためのProfile記述方法の変更履歴も含まない。
 
-### Ver0.9.8-draft  (2023-11-18)/Ver0.9.9-draft  (2023-11-19)
+### Ver0.9.8-draft  (2023-11-18) / Ver0.9.9-draft  (2023-11-19)
 
 * 2.1.1.2 ひとつのBundleリソースに格納できるデータ
 <span style="color: red;">【仕様変更】</span><br>
@@ -13,12 +13,10 @@
 * JP_MedicationRequest_eCS
 <span style="color: red;">【仕様追加】</span><br>
   MedicationRequest.medicationCodeableConcept.coding で、いずれの標準コードも割り当てられいない医薬品を処方する場合に、"標準コードなし"コード体系("http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS"),コード値 "NOCODED",表示文字列 "標準コードなし"　を設定することができる（設定しなければならない）こととした。
-
 <br>
 * JP_MedicationRequest_eCS
 <span style="color: red;">【仕様変更】</span><br>
   MedicationRequest.medicationCodeableConcept.coding で、施設固有コードを記述する場合のsystem値のuriを、"http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/医療機関10桁コード"　から、"http://jpfhir.jp/fhir/<span style="color: blue;">eCS</span>/CodeSystem/DrugCode/医療機関10桁コード" に修正（変更）。
-
 
 * BundleリソースのProfileとその詳細説明、表を説明のため追加。
 
