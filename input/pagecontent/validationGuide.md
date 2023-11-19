@@ -110,8 +110,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 
 以降では、Validationの手順を説明する。
 
-#####　Validation の実行
-#####　Validation の実行
+Validation の実行
 
   - 実行コマンド例
     [vwork] フォルダに位置した状態で、以下を途中で改行せず、１行で入力する。
@@ -139,7 +138,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 上記のパラメータの説明は以下のとおり。
 
 
-#####　Validationコマンドのパラメータ説明
+Validationコマンドのパラメータ説明
 
 
   - -[targets]/*.json : Validation対象とするFHIR JSONファイル。[targets]フォルダ内にあるすべてのjsonファイルを指定する例。
