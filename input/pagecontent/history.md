@@ -15,6 +15,7 @@
   MedicationRequest.medicationCodeableConcept.coding で、いずれの標準コードも割り当てられいない医薬品を処方する場合に、"標準コードなし"コード体系("http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS"),コード値 "NOCODED",表示文字列 "標準コードなし"　を設定することができる（設定しなければならない）こととした。
 
 <br>
+* JP_MedicationRequest_eCS
 <span style="color: red;">【仕様変更】</span><br>
   MedicationRequest.medicationCodeableConcept.coding で、施設固有コードを記述する場合のsystem値のuriを、"http://jpfhir.jp/fhir/clins/CodeSystem/DrugCode/医療機関10桁コード"　から、"http://jpfhir.jp/fhir/<span style="color: blue;">eCS</span>/CodeSystem/DrugCode/医療機関10桁コード" に修正（変更）。
 
