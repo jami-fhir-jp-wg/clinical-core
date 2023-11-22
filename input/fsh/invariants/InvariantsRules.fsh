@@ -196,6 +196,12 @@ Invariant: patients-profile-is-JP-Patient-CLINS-eCS
 Description: "R0212:最初のentryであるPatientは、JP_Patient_CLINS_eCSプロファイルに準拠していなければならない。" d
 
 ## ひとつのBundleリソースには、ひとりの患者の、同時に１回で報告される一連のデータ（１報告単位のデータ）だけを、すべて漏れなく格納する。
+必須ルール
+運用ルール
+
+## 
+
+
 
 */
 
