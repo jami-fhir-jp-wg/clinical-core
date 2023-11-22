@@ -42,7 +42,7 @@ Bundleリソースのプロファイルは以下を参照すること。</span>
 
 
 <span style="color: maroon;">[v0.9.8変更のため取り消し]</span>
-~~①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。~~
+~~①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を  設定する。~~
 
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"~~
  ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"~~
@@ -205,7 +205,7 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 
 なお、共有サービスでは、削除処理、更新処理のどの過程でも途中で失敗、エラーとなった場合には、全ての処理をロールバックし、処理前の状態に戻す。
 
-以上の共有サービス側の処理要件を満たせるよう、<span style="color: blue;">[v0.9.10表現変更] ~~ ６情報の各リソースインスタンスには、送信側の責任で適切に ~~ Bundleリソースインスタンス、Patientリソースインスタンスには、仕様に従って</span>①②③を設定<span style="color: red; ">しなければならない。</span>
+以上の共有サービス側の処理要件を満たせるよう、<span style="color: blue;">[v0.9.10表現変更]~~６情報の各リソースインスタンスには、送信側の責任で適切に~~Bundleリソースインスタンス、Patientリソースインスタンスには、仕様に従って</span>①②③を設定<span style="color: red; ">しなければならない。</span>
 
 
 #### Bundleリソースの送信タイミング
