@@ -974,7 +974,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl73 width=57 style='width:43pt'>　</td>
   <td class=xl77 width=35 style='width:26pt'>0..1</td>
   <td class=xl73 width=87 style='width:65pt'>Reference (JP_Encounter )</td>
-  <td class=xl73 width=359 style='width:269pt'>この傷病名情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。Bundleリソースなどで本リソースから参照可能なEncouertリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（次行の例）。</td>
+  <td class=xl73 width=359 style='width:269pt'>この処方依頼情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。Bundleリソースなどで本リソースから参照可能なEncouertリソースが同時に存在する場合には、そのリソースの識別URIを参照する。Containedリソースが存在する場合には、それを参照する記述（次行の例）。</td>
   <td class=xl73 width=36 style='width:27pt'>例示</td>
   <td class=xl76 width=195 style='width:146pt'>例 1 <br>
     {<br>
