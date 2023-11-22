@@ -155,33 +155,47 @@ Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:
 //
 /*
 //
+
+## BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。
+必須ルール
+Invariant
 Invariant: bundle-profile-is-JP-Bundle-CLINS
 Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
 //
 
-Bundleリソースのタイプ（type要素）は”collection”を使用する。
+## Bundleリソースのタイプ（type要素）は”collection”を使用する。
 必須ルール
+Profile
 Bundle.type = "collection"
-profile
+
 //
-1回で送信するひとつのBundleリソースには、4タイプのいずれかひとつのリソースタイプのデータと、患者を識別するためのPatientリソース1個だけを格納する。
+## 1回で送信するひとつのBundleリソースには、4タイプのいずれかひとつのリソースタイプのデータと、患者を識別するためのPatientリソース1個だけを格納する。
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない。
 必須ルール
+Profile
 entry contains... で closed slicing で記述されている。
-profile
+
 //
 
+## どのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tagにリソースタイプを設定する。
+必須ルール
+Profile
+Bundle.meta.tag 
+Bundle.meta.tag  ^slicing.discriminator.type = #value
+Bundle.meta.tag  ^slicing.discriminator.path = "system"
+Bundle.meta.tag  ^slicing.rules = #open
+Bundle.meta.tag contains resourceType 1..1
+meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
+meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
 
 //
 Invariant: first-bundle-entry-is-Patient
 Description: "R0211:最初のentryはPatientでなければならない。"
 //
 Invariant: patients-profile-is-JP-Patient-CLINS-eCS
-Description: "R0212:最初のentryであるPatientは、JP_Patient_CLINS_eCSプロファイルに準拠していなければならない。"
+Description: "R0212:最初のentryであるPatientは、JP_Patient_CLINS_eCSプロファイルに準拠していなければならない。" d
 
-
-
-
+## ひとつのBundleリソースには、ひとりの患者の、同時に１回で報告される一連のデータ（１報告単位のデータ）だけを、すべて漏れなく格納する。
 
 */
 
