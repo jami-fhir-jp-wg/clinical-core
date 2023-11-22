@@ -290,10 +290,10 @@ function details_open(onoff, idname, idCloseButton){
   width:65pt'>string</td>
   <td class=xl96 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>以下に記載する[報告単位識別ID]　を設定する。<br>
-    [報告単位識別ID]： 次の３つの文字列を半角ハット記号（^）で連携した文字列。<br>
+    [報告単位識別ID]： 次の３つの文字列を半角ハット記号（^）で連結した文字列。<br>
     <font class="font47">【保険医療機関番号10桁】</font><font class="font10">：（内訳：都道府県番号２桁、点数表コード（医療機関区分）１桁、医療機関番号７桁）<br>
     </font><font class="font47">【被保険者個人識別子】</font><font class="font10">：　６情報送信仕様に記載の「6:被保険者個人識別子の格納」の仕様に従う。<br>
-    </font><font class="font47">【報告単位のデータを医療機関のシステムとして医療機関内で一意に識別できる粒度のID文字列】</font><font
+    </font><font class="font47">【報告単位データ一意識別ID：報告単位のデータを医療機関のシステムとして医療機関内で一意に識別できる粒度のID文字列】</font><font
   class="font10">：当該システムが当該患者データの中で一意性を保証できるよう生成した半角文字列（英大文字、数字、ハイフン記号のみ可）。最大128文字とすること。&quot;</font></td>
   <td class=xl96 align=left width=36 style='border-top:none;border-left:none;
   width:27pt'><ruby>例<span style='display:none'><rt>レイジ </rt></span></ruby>示</td>
