@@ -146,3 +146,42 @@ Severity: #error
 Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.200119.4.403.2').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.200119.4.403.1').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1)"
 
 
+
+//========= 以下、未整理 =========
+// 
+// Bundleルール
+// Profileで書けるものはProfileで書く
+//
+//
+/*
+//
+Invariant: bundle-profile-is-JP-Bundle-CLINS
+Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
+//
+
+Bundleリソースのタイプ（type要素）は”collection”を使用する。
+必須ルール
+Bundle.type = "collection"
+profile
+//
+1回で送信するひとつのBundleリソースには、4タイプのいずれかひとつのリソースタイプのデータと、患者を識別するためのPatientリソース1個だけを格納する。
+複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない。
+必須ルール
+entry contains... で closed slicing で記述されている。
+profile
+//
+
+
+//
+Invariant: first-bundle-entry-is-Patient
+Description: "R0211:最初のentryはPatientでなければならない。"
+//
+Invariant: patients-profile-is-JP-Patient-CLINS-eCS
+Description: "R0212:最初のentryであるPatientは、JP_Patient_CLINS_eCSプロファイルに準拠していなければならない。"
+
+
+
+
+
+*/
+
