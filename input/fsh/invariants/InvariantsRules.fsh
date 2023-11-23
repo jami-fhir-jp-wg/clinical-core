@@ -158,28 +158,27 @@ Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:
 
 ## BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。
 必須ルール
-Invariant
 Invariant: bundle-profile-is-JP-Bundle-CLINS
 Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
 //
 
 ## Bundleリソースのタイプ（type要素）は”collection”を使用する。
 必須ルール
-Profile
+JP_FHIR Profile
 Bundle.type = "collection"
 
 //
 ## 1回で送信するひとつのBundleリソースには、4タイプのいずれかひとつのリソースタイプのデータと、患者を識別するためのPatientリソース1個だけを格納する。
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない。
 必須ルール
-Profile
+JP_FHIR Profile
 entry contains... で closed slicing で記述されている。
 
 //
 
 ## どのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tagにリソースタイプを設定する。
 必須ルール
-Profile
+JP_FHIR Profile
 Bundle.meta.tag 
 Bundle.meta.tag  ^slicing.discriminator.type = #value
 Bundle.meta.tag  ^slicing.discriminator.path = "system"
@@ -199,8 +198,64 @@ Description: "R0212:最初のentryであるPatientは、JP_Patient_CLINS_eCSプ�
 必須ルール
 運用ルール
 
-## 
 
+## Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。
+必須ルール
+JP_FHIR Profile
+* identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
+
+## Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設定する。
+必須ルール
+Invariant: valid-value-bundleIdenfifier
+
+## Bundle.entry[] に繰り返しで格納される個々のリソース・インスタンスは、必ずBundle.entry[].fullUrl要素に、uuidをその都度毎回生成して設定しなければならない。
+必須ルール
+Bundle Profile
+
+## 同じリソースインスタンスを別のBundleリソースにより再送する場合でも、前回使用したuuidを使用してはならない（エラーにはならない）。 
+必須ルール
+運用ルール　and 受信側チェック
+
+## 1回で送信するひとつのBundleインスタンスの中に同一のuuidが存在してはならない（エラーとなる）。
+必須ルール
+Bundle Profile
+
+## このuuidによるBundle内のentryの識別子を、前回送信時の特定のentryの内容を受信側に指し示すための識別子として利用することはできない。
+必須ルール
+運用ルール　and 受信側チェック
+
+## FHIR検査項目情報」の設定パターン、「FHIR検査項目情報」の設定パターン適用規則
+必須ルール
+JP Profile and JP Terminology
+
+## 感染症情報とそれ以外の検体検査結果情報の区別
+必須ルール
+JP Profile and JP Terminology
+
+## アレルギー情報と薬剤禁忌情報の区別
+必須ルール
+JP Profile and JP Terminology
+
+## 「被保険者個人識別子」の文字列仕様
+必須ルール
+Invariant: valid-value-insurance-patientIdentifier
+Invariant: valid-system-insurance-patientIdentifier
+
+## 「被保険者個人識別子」の指定system
+必須ルール
+Invariant: valid-system-insurance-patientIdentifier
+
+## 被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。
+必須ルール
+JP Patinet Profile 
+
+## 長期保存対象とする場合には、そのリソースのデータにおけるmeta要素のtag要素に以下の形式で記述しなければならない。
+###　meta.tag.system = “http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication”　(この固定値とする)
+###　meta.tag.code = “LTS”　(この固定値とする)
+必須ルール
+JP CLINS Profile 
+
+## 未告知病名】情報の仕様:病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で記述しなければならない。
 
 
 */
