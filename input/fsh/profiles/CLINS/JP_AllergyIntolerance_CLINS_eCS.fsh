@@ -10,7 +10,8 @@ Id:             JP-AllergyIntolerance-CLINS-eCS
 Title:  "CLINS電子カルテ情報共有サービス用:JP_AllergyIntolerance_CLINS_eCS"
 Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル。 JP_AllergyIntolerance_eCSからの派生プロファイル。"
 
-* obeys waring-medication-allergy
+* obeys warning-medication-allergy
+
 
 * extension[eCS_InstitutionNumber] 1..1 MS
 

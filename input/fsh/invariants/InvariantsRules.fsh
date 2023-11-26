@@ -30,10 +30,10 @@ Severity: #error
 Expression: "value.ofType(Identifier).value.matches('[0-4][0-9][1-3][0-9]{7}')"
 
 // R2011-  アレルギー・薬剤禁忌関係チェック
-Invariant: waring-medication-allergy
-Description: "注意喚起：R2011:薬剤禁忌情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままでよければ修正不要。"
+Invariant: warning-medication-allergy
+Description: "注意喚起：R2011:薬剤禁忌情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままcriticality要素が\"high\"以外で差し支えなければ修正不要。"
 Severity: #warning
-Expression: "(category.where($this='medication').exists() and criticality='high') or category.exists().not() or category.where($this='medication').exists().not()"
+Expression: "category.where($this='medication').exists() and criticality!='high'"
 
 // R0111- BundleIDチェック
 Invariant: valid-value-bundleIdenfifier
