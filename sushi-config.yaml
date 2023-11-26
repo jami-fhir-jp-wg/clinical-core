@@ -43,8 +43,6 @@ pages:
     title: Validationガイド
   history.md:
     title: 改訂履歴
-  
-
 #-------------------------------------
 # メニュー設定
 #-------------------------------------
@@ -61,7 +59,6 @@ menu:
   パッケージDownload:
     標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7-diff.tgz 
     snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7-snap.tgz
-    
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
