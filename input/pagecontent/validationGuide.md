@@ -180,7 +180,7 @@ Validationコマンドのパラメータ説明
 ``` {.copy} 
 java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -language ja  \
  -ig pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology#1.1.1.tgz \
- -ig pkgValidation/jp-clins.r4-0.9.11-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  \
+ -ig pkgValidation/jp-clins.r4-0.9.11.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  \
  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings  \
  -best-practice ignore
 ```

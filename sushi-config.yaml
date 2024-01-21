@@ -57,7 +57,7 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.11-diff.tgz 
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.11.tgz 
     snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.11-snap.tgz
     
 #-----------------------------------------
