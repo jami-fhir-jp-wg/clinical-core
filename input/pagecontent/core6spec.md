@@ -408,7 +408,7 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
 　　被保険者個人識別子＝ "00012345::１８７:" となる。この場合、最後のコロンは必須である。<br><br>
 
 ##### 被保険者個人識別子の格納方法
-被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID」を設定する。<br>
+被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。この場合、system値には、「被保険者個人識別子」であることを示す「http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID」を設定する。<br>
 
 
 ```
@@ -421,7 +421,7 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
           "system": "urn:oid:1.2.392.100495.20.3.51.11234567890",
           "value": "12345"
         },
-        {http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
+        {http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID
           "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member",
           "value": "00012345:あいう:１８７:05"
         }

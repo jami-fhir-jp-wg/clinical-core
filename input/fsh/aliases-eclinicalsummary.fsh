@@ -2,9 +2,9 @@
 Alias: $JP_BundleIdentifier = http://jpfhir.jp/fhir/clins/bundle-identifier
 
 Alias: $JP_Hospital_PatientID = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID
-Alias: $JP_Insurance_memberID = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
+Alias: $JP_Insurance_memberID = http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID
 Alias: $JP_Hospital_PatientID_Pseudonymized = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID_Pseudonymized
-Alias: $JP_Insurance_memberID_Pseudonymized = http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID_Pseudonymized
+Alias: $JP_Insurance_memberID_Pseudonymized = http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID_Pseudonymized
 
 Alias: $JP_Bundle_CLINS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
 

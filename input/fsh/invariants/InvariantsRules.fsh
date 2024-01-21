@@ -7,14 +7,14 @@ Severity: #error
 Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,11) = '1' + extension('http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').value.ofType(Identifier).value) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
 
 Invariant: valid-system-insurance-patientIdentifier
-Description: "R1012:被保険者識別子情報(identifier.system=\"http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID\")は１つだけ必須。"
+Description: "R1012:被保険者識別子情報(identifier.system=\"http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID\")は１つだけ必須。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID').count()=1)"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').count()=1)"
 
 Invariant: valid-value-insurance-patientIdentifier
 Description: "R1013:identifier.value 被保険者識別子情報の形式は、\"保険者等番号:被保険者記号:被保険者番号:被保険者証等枝番\"で、それぞれ半角英数字8桁固定、半角または全角文字列(空白を含まない)、半角または全角文字列(同)、半角数字2桁固定(1文字目は0)であり、それぞれ存在しない場合には、空文字列とする。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$'))"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$'))"
 // '^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$''
 // '^[0-9]{8}:[^:]*:[^:]*:[0-9]{2}$'
 

@@ -10,8 +10,8 @@ name: "電子カルテ情報共有サービスFHIR実装ガイド ドラフト�
 title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） ドラフト版"
 description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide ドラフト版"
 status: draft # draft | active | retired | unknown 
-version: 0.9.10-draft
-date: 2023-11-22
+version: 0.9.11-draft
+date: 2024-01-21
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -57,8 +57,8 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7-diff.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.7-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.11-diff.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-0.9.11-snap.tgz
     
 #-----------------------------------------
 # IG 外部パラメータ設定

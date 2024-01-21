@@ -6,6 +6,12 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
     
+## Ver0.9.11-draft  (2024-01-21) 
+
+患者リソースに保険個人識別子を記述する際のidentifier.system値を次のように修正する。（eCS → clinis、Idsysmem　→ Idsystem 誤記修正）
+http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID
+↓
+http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID
 
 ## Ver0.9.10-draft  (2023-11-22) 
 

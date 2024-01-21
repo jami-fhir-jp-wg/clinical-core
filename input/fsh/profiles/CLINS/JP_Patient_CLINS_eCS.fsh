@@ -34,7 +34,7 @@ Description: "CLINS 電子カルテ共有サービス用: Patientリソース（
 
 //* obeys institurionNumber
 
-* identifier ^short = "電子カルテ情報共有サービスでは、保険者・被保険者番号情報(system=\"http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID\")は必須。被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。それに加えて自施設の患者番号（system=\"urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]\"）やその他の識別子を記述することが可能。"
+* identifier ^short = "電子カルテ情報共有サービスでは、保険者・被保険者番号情報(system=\"http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID\")は必須。被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。それに加えて自施設の患者番号（system=\"urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]\"）やその他の識別子を記述することが可能。"
 
 /*
 * identifier ^slicing.discriminator.type = #value
