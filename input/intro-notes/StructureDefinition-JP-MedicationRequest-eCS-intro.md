@@ -1291,7 +1291,7 @@ function details_open(onoff, idname, idCloseButton){
   class="font17">URL</font><font class="font20">。</font></td>
   <td class=xl110 width=36 style='width:27pt'>固定<ruby><font class="font23"><rt
   class=font23></rt></font></ruby></td>
-  <td class=xl226 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/ePrescription/StructureDefinition/ExpectedRepeatCount&quot;</td>
+  <td class=xl226 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount&quot;</td>
  </tr>
  <tr height=39 style='height:29.0pt'>
   <td height=39 class=xl247 width=76 style='height:29.0pt;border-top:none;
@@ -2431,7 +2431,7 @@ function details_open(onoff, idname, idCloseButton){
   width:269pt'>投与経路コード表のsystemを設定する。</td>
   <td class=xl120 align=left width=36 style='border-top:none;border-left:none;
   width:27pt'><ruby>固定<span style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl125 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes&quot;</td>
+  <td class=xl125 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/CodeSystem/route-codes&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
   <td height=27 class=xl156 align=left width=105 style='height:20.0pt;

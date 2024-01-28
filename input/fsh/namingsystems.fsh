@@ -300,7 +300,7 @@ Usage: #definition
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/route-codes"
 * uniqueId[+].type = #uri
-* uniqueId[=].value = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/route-codes"
+* uniqueId[=].value = "http://jpfhir.jp/fhir/core/CodeSystem/route-codes"
 * uniqueId[=].preferred = true
 
 Instance: jp-observation-jlac10-namingsystem

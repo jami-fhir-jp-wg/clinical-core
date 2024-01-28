@@ -1030,7 +1030,7 @@ Compositionリソースに出現するsection要素は以下のような構造�
 | |text || |0..1|string |"膝" |部位のテキスト表現。|
 |route| || |0..1|CodeableConcept| |投与経路|
 | |coding || |1..1\*|Coding | ||
-| | |system| |1..1|uri|"http://jpfhir.jp/fhir<br>/eReferral/CodeSystem/route-codes" |投与経路コード表のsystemを設定する。固定値。|
+| | |system| |1..1|uri|"http://jpfhir.jp/fhir<br>/core/CodeSystem/route-codes" |投与経路コード表のsystemを設定する。固定値。|
 | | |code| |1..1|code |"PO" |投与経路コード表で規定するコード。値は例示。|
 | | |display | |0..1|string |"口" |投与経路コード表で規定するコードの表示名。値は例示。|
 | |text || |0..1|string |"経口" |投与経路の文字列表現。コードで指定できない場合、本要素で文字列として指定してもよい。|
