@@ -32,7 +32,7 @@
 ### 必須要素　（MedicationRequest.DosageInstructionの直下の必須要素）
   - DosageInstruction[].extension[] : 投与開始日を明示するために使用する拡張「PeriodOfUse」
   - DosageInstruction[].text : dosageInstructionが表す処方指示の文字列表現。
-  - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.txtに用法のテキストを記述。
+  - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
   - meta.tag : 電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に必須。
