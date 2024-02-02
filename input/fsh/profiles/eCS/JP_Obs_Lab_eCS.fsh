@@ -68,7 +68,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding  ^slicing.discriminator[=].path = "system"
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "display"
-* code.coding  ^slicing.rules = #closed
+* code.coding  ^slicing.rules = #open
 * code.coding  contains
  jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
  and unCoded 0..1 MS
