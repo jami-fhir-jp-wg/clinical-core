@@ -1,0 +1,1658 @@
+[
+  {
+    "outputFile": "AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.json",
+    "fshName": "Example-JP-AllergyIntolerance-CLINS-eCS-01",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-JP-AllergyIntolerance-CLINS-eCS-01.fsh",
+    "startLine": 7,
+    "endLine": 54
+  },
+  {
+    "outputFile": "AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-02.json",
+    "fshName": "Example-JP-AllergyIntolerance-CLINS-eCS-02",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-JP-AllergyIntolerance-CLINS-eCS-01.fsh",
+    "startLine": 59,
+    "endLine": 116
+  },
+  {
+    "outputFile": "AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.json",
+    "fshName": "Example-JP-DrugContraindications-CLINS-eCS-03",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-JP-AllergyIntolerance-CLINS-eCS-01.fsh",
+    "startLine": 120,
+    "endLine": 178
+  },
+  {
+    "outputFile": "Bundle-Example-Bundle-ObservationType-001.json",
+    "fshName": "Example-Bundle-ObservationType-001",
+    "fshType": "Instance",
+    "fshFile": "instances/Bundle/Example_Bundle_Observation_01.fsh",
+    "startLine": 2,
+    "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-JP-Specimen-JLAC10-SpecimenCode-CS.json",
+    "fshName": "JP_Specimen_JLAC10_SpecimenCode_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP_Specimen_JLAC10_SpecimenCode_CS.fsh",
+    "startLine": 5,
+    "endLine": 235
+  },
+  {
+    "outputFile": "CodeSystem-jp-clins-bundleresourcetype-cs.json",
+    "fshName": "JP_CLINS_BundleResourceType_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 3,
+    "endLine": 15
+  },
+  {
+    "outputFile": "CodeSystem-jp-clins-codesystem-corelabo-cs.json",
+    "fshName": "JP_CLINS_CodeSystem_CoreLabo_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP_CLINS_CodeSystem_CoreLabo.fsh",
+    "startLine": 1,
+    "endLine": 550
+  },
+  {
+    "outputFile": "CodeSystem-jp-clins-codesystem-infectionlabo-cs.json",
+    "fshName": "JP_CLINS_CodeSystem_InfectionLabo_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP_CLINS_CodeSystem_InfectionLabo.fsh",
+    "startLine": 1,
+    "endLine": 432
+  },
+  {
+    "outputFile": "CodeSystem-jp-clins-obslabresult-localuncoded-cs.json",
+    "fshName": "JP_CLINS_ObsLabResult_LocalUncoded_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 28,
+    "endLine": 37
+  },
+  {
+    "outputFile": "CodeSystem-jp-clins-obslabresult-uncoded-cs.json",
+    "fshName": "JP_CLINS_ObsLabResult_Uncoded_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 17,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-jp-codeSystem-documentTypeCode.json",
+    "fshName": "JP_codeSystem_documentTypeCode",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP-CodeSystems-prescription.fsh",
+    "startLine": 4,
+    "endLine": 18
+  },
+  {
+    "outputFile": "CodeSystem-jp-codeSystem-ePrescription-section.json",
+    "fshName": "JP_codeSystem_ePrescription_section",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP-CodeSystems-prescription.fsh",
+    "startLine": 36,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-jp-codeSystem-practitioner-certificate-category.json",
+    "fshName": "JP_codeSystem_practitioner_certificate_category",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP-CodeSystems-prescription.fsh",
+    "startLine": 52,
+    "endLine": 63
+  },
+  {
+    "outputFile": "CodeSystem-jp-codeSystem-prescription-category.json",
+    "fshName": "JP_codeSystem_prescription_category",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP-CodeSystems-prescription.fsh",
+    "startLine": 21,
+    "endLine": 33
+  },
+  {
+    "outputFile": "CodeSystem-jp-department-ssmix-cs.json",
+    "fshName": "JP_Department_SsMix_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP_Department_SsMix_CS.fsh",
+    "startLine": 1,
+    "endLine": 338
+  },
+  {
+    "outputFile": "CodeSystem-jp-eCS-medicationcode-nocoded-cs.json",
+    "fshName": "JP_eCS_MedicationCode_Nocoded_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 39,
+    "endLine": 48
+  },
+  {
+    "outputFile": "CodeSystem-jp-ehrshrs-indication-cs.json",
+    "fshName": "JP_ehrshrs_indication_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 63,
+    "endLine": 73
+  },
+  {
+    "outputFile": "CodeSystem-jp-medicallicensecertificate-cs.json",
+    "fshName": "JP_MedicalLicenseCertificate_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/JP_MedicalLicenseCertificate_CS.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "CodeSystem-jp-observation-subcategory-cs.json",
+    "fshName": "JP_Observation_SubCategory_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 79,
+    "endLine": 88
+  },
+  {
+    "outputFile": "CodeSystem-jp-simpleobservationcategory-cs.json",
+    "fshName": "JP_SimpleObservationCategory_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 91,
+    "endLine": 114
+  },
+  {
+    "outputFile": "Condition-Example-JP-Condition-CLINS-eCS-01.json",
+    "fshName": "Example-JP-Condition-CLINS-eCS-01",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-JP-Condition-eCS.fsh",
+    "startLine": 2,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Condition-Example-JP-Condition-CLINS-eCS-02.json",
+    "fshName": "Example-JP-Condition-CLINS-eCS-02",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-JP-Condition-eCS.fsh",
+    "startLine": 48,
+    "endLine": 94
+  },
+  {
+    "outputFile": "Condition-Example-JP-Condition-CLINS-eCS-03.json",
+    "fshName": "Example-JP-Condition-CLINS-eCS-03",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-JP-Condition-eCS.fsh",
+    "startLine": 98,
+    "endLine": 142
+  },
+  {
+    "outputFile": "Encounter-Example-JP-Encounter-AMB.json",
+    "fshName": "Example_JP_Encounter_AMB",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 80,
+    "endLine": 95
+  },
+  {
+    "outputFile": "Encounter-Example-JP-Encounter-IMP.json",
+    "fshName": "Example_JP_Encounter_IMP",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 98,
+    "endLine": 111
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json",
+    "fshName": "Example-JP-MedReq-ExtAnus-AsNeeded-Total1",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-ExtAnus-AsNeeded-Total1.fsh",
+    "startLine": 1,
+    "endLine": 67
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-ExtEye-Total1.json",
+    "fshName": "Example-JP-MedReq-ExtEye-Total1",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-ExtEye-Total1.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json",
+    "fshName": "ErrorExample-JP-MedReq-ExtSkin-Total2",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-ExtSkin-Total2.fsh",
+    "startLine": 1,
+    "endLine": 56
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-4timez-7days.json",
+    "fshName": "Example-JP-MedReq-PO-4timez-7days",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-4timez-7days.fsh",
+    "startLine": 1,
+    "endLine": 61
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.json",
+    "fshName": "Example-JP-MedReq-PO-AsNeeded-LimitMax",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-AsNeeded-LimitMax.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json",
+    "fshName": "Example-JP-MedReq-PO-BID-10days-AsNeeded",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-BID-10days-AsNeeded.fsh",
+    "startLine": 1,
+    "endLine": 63
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-BID-2d.json",
+    "fshName": "Example-JP-MedReq-PO-BID-2d",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-BID-2d.fsh",
+    "startLine": 1,
+    "endLine": 62
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.json",
+    "fshName": "Example-JP-MedReq-PO-Fumin-asNeeded-4",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-Fumin-asNeeded-4.fsh",
+    "startLine": 1,
+    "endLine": 55
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-SID-28days.json",
+    "fshName": "Example-JP-MedReq-PO-SID-28days",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-SID-28days.fsh",
+    "startLine": 1,
+    "endLine": 67
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.json",
+    "fshName": "Example-JP-MedReq-PO-SID-90-AMB",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-SID-90-AMB.fsh",
+    "startLine": 1,
+    "endLine": 69
+  },
+  {
+    "outputFile": "MedicationRequest-Example-JP-MedReq-PO-TID-2days.json",
+    "fshName": "Example-JP-MedReq-PO-TID-2days",
+    "fshType": "Instance",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-TID-2days.fsh",
+    "startLine": 1,
+    "endLine": 74
+  },
+  {
+    "outputFile": "NamingSystem-jp-department-ssmix-namingsystem.json",
+    "fshName": "jp-department-ssmix-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "NamingSystem-jp-endoscopyterminology-codes-jed-ns.json",
+    "fshName": "jp-endoscopyterminology-codes-jed-ns",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 343,
+    "endLine": 357
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicalfeescoretype-namingsystem.json",
+    "fshName": "jp-medicalfeescoretype-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 251,
+    "endLine": 265
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationbodysitejamiexternal-namingsystem.json",
+    "fshName": "jp-medicationbodysitejamiexternal-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 18,
+    "endLine": 32
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationcodecommon-namingsystem.json",
+    "fshName": "jp-medicationcodecommon-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 35,
+    "endLine": 49
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationcodehot13-namingsystem.json",
+    "fshName": "jp-medicationcodehot13-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 95,
+    "endLine": 111
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationcodehot7-namingsystem.json",
+    "fshName": "jp-medicationcodehot7-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 52,
+    "endLine": 68
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationcodehot9-namingsystem.json",
+    "fshName": "jp-medicationcodehot9-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 71,
+    "endLine": 91
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationcodeyj-namingsystem.json",
+    "fshName": "jp-medicationcodeyj-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 113,
+    "endLine": 127
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationingredientstrengthstrengthtype-namingsystem.json",
+    "fshName": "jp-medicationingredientstrengthstrengthtype-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 130,
+    "endLine": 144
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationmethodjamibasicusage-namingsystem.json",
+    "fshName": "jp-medicationmethodjamibasicusage-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 147,
+    "endLine": 163
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationmethodjamidetailusage-namingsystem.json",
+    "fshName": "jp-medicationmethodjamidetailusage-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 165,
+    "endLine": 179
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationroute-hl7-0162-namingsystem.json",
+    "fshName": "jp-medicationroute-hl7-0162-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 284,
+    "endLine": 304
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationsubstitutionnotallowedreason-namingsystem.json",
+    "fshName": "jp-medicationsubstitutionnotallowedreason-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 182,
+    "endLine": 196
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationunitmerit9-namingsystem.json",
+    "fshName": "jp-medicationunitmerit9-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 199,
+    "endLine": 213
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationusagejami-namingsystem.json",
+    "fshName": "jp-medicationusagejami-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 216,
+    "endLine": 232
+  },
+  {
+    "outputFile": "NamingSystem-jp-medicationusagejamiadditional-namingsystem.json",
+    "fshName": "jp-medicationusagejamiadditional-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 234,
+    "endLine": 248
+  },
+  {
+    "outputFile": "NamingSystem-jp-microbiology-antimicrobialdrug-ns.json",
+    "fshName": "jp-microbiology-antimicrobialdrug-ns",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 359,
+    "endLine": 374
+  },
+  {
+    "outputFile": "NamingSystem-jp-microbiology-infectious-agent-ns.json",
+    "fshName": "jp-microbiology-infectious-agent-ns",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 376,
+    "endLine": 391
+  },
+  {
+    "outputFile": "NamingSystem-jp-observation-jlac10-namingsystem.json",
+    "fshName": "jp-observation-jlac10-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 306,
+    "endLine": 322
+  },
+  {
+    "outputFile": "NamingSystem-jp-observation-vitalsignscode-namingsystem.json",
+    "fshName": "jp-observation-vitalsignscode-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 325,
+    "endLine": 341
+  },
+  {
+    "outputFile": "NamingSystem-jp-prefecturenumber-namingsystem.json",
+    "fshName": "jp-prefecturenumber-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 267,
+    "endLine": 281
+  },
+  {
+    "outputFile": "NamingSystem-mhlw-icd10-namingsystem.json",
+    "fshName": "mhlw-icd10-namingsystem",
+    "fshType": "Instance",
+    "fshFile": "namingsystems.fsh",
+    "startLine": 396,
+    "endLine": 410
+  },
+  {
+    "outputFile": "Observation-ErrorExample-ObsLabo-eGFR.json",
+    "fshName": "ErrorExample-ObsLabo-eGFR",
+    "fshType": "Instance",
+    "fshFile": "instances-error/Observation_Labo/Example-ObsLabo-eGFR.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "Observation-Example-ObsLabo-Alb.json",
+    "fshName": "Example-ObsLabo-Alb",
+    "fshType": "Instance",
+    "fshFile": "instances/Observation_Labo/Example-ObsLabo-Alb.fsh",
+    "startLine": 1,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-Example-ObsLabo-K.json",
+    "fshName": "Example-ObsLabo-K",
+    "fshType": "Instance",
+    "fshFile": "instances/Observation_Labo/Example-ObsLabo-K.fsh",
+    "startLine": 1,
+    "endLine": 44
+  },
+  {
+    "outputFile": "Observation-Example-ObsLabo-eGFR.json",
+    "fshName": "Example-ObsLabo-eGFR",
+    "fshType": "Instance",
+    "fshFile": "instances/Observation_Labo/Example-ObsLabo-eGFR.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
+    "outputFile": "Patient-Example-Patient-minimun.json",
+    "fshName": "Example-Patient-minimun",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 3,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Patient-Example-Patient-standard.json",
+    "fshName": "Example-Patient-standard",
+    "fshType": "Instance",
+    "fshFile": "instances/Example_Patient_standard.fsh",
+    "startLine": 1,
+    "endLine": 49
+  },
+  {
+    "outputFile": "Patient-Patient1.json",
+    "fshName": "Example-JP-Patient-eCS-01-Contained",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 22,
+    "endLine": 46
+  },
+  {
+    "outputFile": "Patient-Patient2.json",
+    "fshName": "Example-JP-Patient-eCS-02-Contained",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 49,
+    "endLine": 77
+  },
+  {
+    "outputFile": "Practitioner-Example-Practitioner-minimun-D001.json",
+    "fshName": "Example_Practitioner_minimun_D001",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 129,
+    "endLine": 141
+  },
+  {
+    "outputFile": "Practitioner-Example-Practitioner-minimun-D002.json",
+    "fshName": "Example_Practitioner_minimun_D002",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 144,
+    "endLine": 155
+  },
+  {
+    "outputFile": "Practitioner-Example-Practitioner-minimun-D003.json",
+    "fshName": "Example_Practitioner_minimun_D003",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 158,
+    "endLine": 169
+  },
+  {
+    "outputFile": "Practitioner-Example-Practitioner-minimun-R001.json",
+    "fshName": "Example_Practitioner_minimun_R001",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 114,
+    "endLine": 126
+  },
+  {
+    "outputFile": "Specimen-Example-LaboMaterial-Serum.json",
+    "fshName": "Example_LaboMaterial_Serum",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 174,
+    "endLine": 187
+  },
+  {
+    "outputFile": "Specimen-Example-LaboMaterial-Urine.json",
+    "fshName": "Example_LaboMaterial_Urine",
+    "fshType": "Instance",
+    "fshFile": "instances/Example-Contained.fsh",
+    "startLine": 190,
+    "endLine": 203
+  },
+  {
+    "outputFile": "StructureDefinition-JP-AllergyIntolerance-CLINS-eCS.json",
+    "fshName": "JP_AllergyIntolerance_CLINS_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/CLINS/JP_AllergyIntolerance_CLINS_eCS.fsh",
+    "startLine": 7,
+    "endLine": 71
+  },
+  {
+    "outputFile": "StructureDefinition-JP-AllergyIntolerance-eCS.json",
+    "fshName": "JP_AllergyIntolerance_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_AllergyIntolerance_eCS.fsh",
+    "startLine": 8,
+    "endLine": 118
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Bundle-CLINS.json",
+    "fshName": "JP_Bundle_CLINS",
+    "fshType": "Profile",
+    "fshFile": "profiles/CLINS/JP_Bundle_CLINS.fsh",
+    "startLine": 2,
+    "endLine": 133
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Condition-CLINS-eCS.json",
+    "fshName": "JP_Condition_CLINS_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/CLINS/JP_Condition_CLINS_eCS.fsh",
+    "startLine": 6,
+    "endLine": 72
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Condition-eCS.json",
+    "fshName": "JP_Condition_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_Condition_eCS.fsh",
+    "startLine": 8,
+    "endLine": 157
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Encounter-eCS.json",
+    "fshName": "JP_Encounter_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_Encounter_eCS.fsh",
+    "startLine": 2,
+    "endLine": 147
+  },
+  {
+    "outputFile": "StructureDefinition-JP-MedicationRequest-CLINS-eCS.json",
+    "fshName": "JP_MedicationRequest_CLINS_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/CLINS/JP_MedicationRequest_CLINS_eCS.fsh",
+    "startLine": 6,
+    "endLine": 66
+  },
+  {
+    "outputFile": "StructureDefinition-JP-MedicationRequest-eCS.json",
+    "fshName": "JP_MedicationRequest_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_MedicationRequest_eCS.fsh",
+    "startLine": 8,
+    "endLine": 178
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Observation-LabResult-CLINS-eCS.json",
+    "fshName": "JP_Observation_LabResult_CLINS_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/CLINS/JP_Obs_Lab_CLINS_eCS.fsh",
+    "startLine": 6,
+    "endLine": 63
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Observation-LabResult-eCS.json",
+    "fshName": "JP_Observation_LabResult_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_Obs_Lab_eCS.fsh",
+    "startLine": 6,
+    "endLine": 727
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Patient-CLINS-eCS.json",
+    "fshName": "JP_Patient_CLINS_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/CLINS/JP_Patient_CLINS_eCS.fsh",
+    "startLine": 9,
+    "endLine": 37
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Patient-eCS.json",
+    "fshName": "JP_Patient_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_Patient_eCS.fsh",
+    "startLine": 9,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-JP-Practitioner-eCS.json",
+    "fshName": "JP_Practitioner_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_Practitioner_eCS.fsh",
+    "startLine": 7,
+    "endLine": 53
+  },
+  {
+    "outputFile": "StructureDefinition-jp-ecs-department.json",
+    "fshName": "JP_eCS_Department",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension/JP_eCS_OrgDept.fsh",
+    "startLine": 39,
+    "endLine": 62
+  },
+  {
+    "outputFile": "StructureDefinition-jp-ecs-institution-number.json",
+    "fshName": "JP_eCS_InstitutionNumber",
+    "fshType": "Extension",
+    "fshFile": "profiles/extension/JP_eCS_OrgDept.fsh",
+    "startLine": 5,
+    "endLine": 34
+  },
+  {
+    "outputFile": "StructureDefinition-jp-medicationdosage-eCS.json",
+    "fshName": "JP_MedicationDosage_eCS",
+    "fshType": "Profile",
+    "fshFile": "profiles/eCS/JP_MedicationDosage_eCS.fsh",
+    "startLine": 7,
+    "endLine": 140
+  },
+  {
+    "outputFile": "ValueSet-jami-valueSet-ePreDispenseInstruction.json",
+    "fshName": "JAMI_valueSet_ePreDispenseInstruction",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 29,
+    "endLine": 36
+  },
+  {
+    "outputFile": "ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.json",
+    "fshName": "JAMI_valueSet_ePreOrderUsageCode_16digits",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 47,
+    "endLine": 54
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-bundleresourcetype-vs.json",
+    "fshName": "JP_CLINS_BundleResourceType_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/ValueSet-ccs.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-abo-bld-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_abo_bld_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 2,
+    "endLine": 14
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-alb-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_alb_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 40,
+    "endLine": 52
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-alp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_alp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 55,
+    "endLine": 67
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-alt-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_alt_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 70,
+    "endLine": 82
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-amy-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_amy_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 85,
+    "endLine": 99
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-aptt-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_aptt_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 102,
+    "endLine": 114
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ast-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ast_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 117,
+    "endLine": 129
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-bnp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_bnp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 795,
+    "endLine": 806
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-bs-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_bs_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 147,
+    "endLine": 159
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-bun-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_bun_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 162,
+    "endLine": 174
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ca-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ca_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 177,
+    "endLine": 189
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-che-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_che_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 207,
+    "endLine": 219
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ck-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ck_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 222,
+    "endLine": 234
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-cl-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_cl_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 237,
+    "endLine": 249
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-cre-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_cre_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 252,
+    "endLine": 264
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-crp-class-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_crp_class_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 282,
+    "endLine": 294
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-crp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_crp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 267,
+    "endLine": 279
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-cys-c-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_cys_c_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 297,
+    "endLine": 309
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-d-bil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_d_bil_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 312,
+    "endLine": 324
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-dd-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_dd_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 327,
+    "endLine": 339
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-fbs-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_fbs_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 342,
+    "endLine": 354
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ggt-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ggt_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 357,
+    "endLine": 369
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-hb-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_hb_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 507,
+    "endLine": 519
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-hba1cngsp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_hba1cngsp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 372,
+    "endLine": 384
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-hdl-c-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_hdl_c_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 387,
+    "endLine": 399
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-hplt-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_plt_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 522,
+    "endLine": 534
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-k-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_k_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 192,
+    "endLine": 204
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ld-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ld_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 402,
+    "endLine": 414
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ldl-c-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ldl_c_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 417,
+    "endLine": 429
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-na-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_na_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 432,
+    "endLine": 444
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-nt-probnp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_nt_probnp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 132,
+    "endLine": 144
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-pt-act-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_pt_act_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 462,
+    "endLine": 474
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-pt-inr-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_pt_inr_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 477,
+    "endLine": 489
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-pt-ratio-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_pt_ratio_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 492,
+    "endLine": 504
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-pt-sec-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_pt_sec_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 447,
+    "endLine": 459
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-rbc-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_rbc_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 537,
+    "endLine": 549
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-rh-bld-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_rh_bld_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 23,
+    "endLine": 35
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-t-bil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_t_bil_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 581,
+    "endLine": 592
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-t-cho-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_t_cho_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 567,
+    "endLine": 578
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-tg-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_tg_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 609,
+    "endLine": 620
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-tp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_tp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 595,
+    "endLine": 606
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-ac-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_ac_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 724,
+    "endLine": 735
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-bld-halfqty-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_bld_HalfQty_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 665,
+    "endLine": 676
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-bld-qlhalfqty-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_bld_QLHalfQty_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 651,
+    "endLine": 662
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-bld-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_bld_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 637,
+    "endLine": 648
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-glu-halfqty-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_glu_HalfQty_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 781,
+    "endLine": 792
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-glu-qlhalfqty-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_glu_QLHalfQty_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 766,
+    "endLine": 777
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-glu-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_glu_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 752,
+    "endLine": 763
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-u-pc-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_u_pc_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 738,
+    "endLine": 749
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-ua-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_ua_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 623,
+    "endLine": 634
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-utp-halfqty-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 709,
+    "endLine": 720
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-utp-qlhalfqty-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_utp_QLHalfQty_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 694,
+    "endLine": 705
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-utp-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_utp_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 680,
+    "endLine": 691
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-corelabo-wbc-vs.json",
+    "fshName": "JP_CLINS_ValueSet_CoreLabo_wbc_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_CoreLabo.fsh",
+    "startLine": 552,
+    "endLine": 564
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsabcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsABCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 121,
+    "endLine": 133
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsabdil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsABDIL_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 151,
+    "endLine": 163
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsabnegcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsABNEGCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 136,
+    "endLine": 148
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsabquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsABQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 166,
+    "endLine": 178
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsabresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsABRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 181,
+    "endLine": 193
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsAGCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 31,
+    "endLine": 43
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagdil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsAGDIL_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 46,
+    "endLine": 58
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagod-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HbsAGOD_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 61,
+    "endLine": 73
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagposcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsAGPOSCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 106,
+    "endLine": 118
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsAGQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 76,
+    "endLine": 88
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBsAGRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 91,
+    "endLine": 103
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hbsagsco-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HBSAGSCO_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 16,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvabcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVABCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 256,
+    "endLine": 268
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvabdil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVABDIL_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 271,
+    "endLine": 283
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvabposcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVABPOSCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 301,
+    "endLine": 313
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvabresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVABRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 286,
+    "endLine": 298
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvagquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVAGQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 226,
+    "endLine": 238
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvagresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVAGRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 241,
+    "endLine": 253
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvcheck-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVCHECK_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 196,
+    "endLine": 208
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hcvresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HCVRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 211,
+    "endLine": 223
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1abdil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1ABDIL_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 556,
+    "endLine": 568
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1abresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1ABRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 571,
+    "endLine": 583
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 496,
+    "endLine": 508
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abdil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABDIL_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 511,
+    "endLine": 523
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abod-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABOD_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 391,
+    "endLine": 403
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abp24coi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24COI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 361,
+    "endLine": 373
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abp24coiv-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24COIV_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 346,
+    "endLine": 358
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abp24negcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24NEGCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 376,
+    "endLine": 388
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abp24poscoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24POSCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 481,
+    "endLine": 493
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abp24qlresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24QLRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 421,
+    "endLine": 433
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abp24result-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24RESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 466,
+    "endLine": 478
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abposcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABPOSCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 541,
+    "endLine": 553
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 451,
+    "endLine": 463
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2abresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 526,
+    "endLine": 538
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2p24abquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2P24ABQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 436,
+    "endLine": 448
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1p2p24abresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1P2P24ABRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 406,
+    "endLine": 418
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1quant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1QUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 316,
+    "endLine": 328
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv1result-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV1RESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 331,
+    "endLine": 343
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv2abdil-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV2ABDIL_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 586,
+    "endLine": 598
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-hiv2abresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_HIV2ABRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 601,
+    "endLine": 613
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-sts-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_STS_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 781,
+    "endLine": 793
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-stshquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_STSHQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 661,
+    "endLine": 673
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-stsqlresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_STSQLRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 616,
+    "endLine": 628
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-stsquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_STSQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 631,
+    "endLine": 643
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-stsresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_STSRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 646,
+    "endLine": 658
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tphquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPHQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 766,
+    "endLine": 778
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tpnegcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPNEGCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 706,
+    "endLine": 718
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tpposcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPPOSCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 736,
+    "endLine": 748
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tpquant-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPQUANT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 751,
+    "endLine": 763
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tpquantcoi-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPQUANTCOI_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 691,
+    "endLine": 703
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tpquantresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPQUANTRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 721,
+    "endLine": 733
+  },
+  {
+    "outputFile": "ValueSet-jp-clins-valueset-infectionlabo-tpresult-vs.json",
+    "fshName": "JP_CLINS_ValueSet_InfectionLabo_TPRESULT_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_CLINS_ValueSet_InfectionLabo.fsh",
+    "startLine": 676,
+    "endLine": 688
+  },
+  {
+    "outputFile": "ValueSet-jp-ecs-medicationcode-nocoded-vs.json",
+    "fshName": "JP_eCS__MedicationCode_Nocoded_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/ValueSet-ccs.fsh",
+    "startLine": 11,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-jp-ecs-observationlabresultcode-vs.json",
+    "fshName": "JP_eCS_ObservationLabResultCode_VS",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP_eCS_ValueSet_ObsLabResult.fsh",
+    "startLine": 2,
+    "endLine": 15
+  },
+  {
+    "outputFile": "ValueSet-jp-valueSet-documentTypeCode.json",
+    "fshName": "JP_valueSet_documentTypeCode",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 2,
+    "endLine": 9
+  },
+  {
+    "outputFile": "ValueSet-jp-valueSet-drugCode-gs1-14.json",
+    "fshName": "JP_valueSet_drugCode_gs1_14",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 75,
+    "endLine": 82
+  },
+  {
+    "outputFile": "ValueSet-jp-valueSet-drugCode-hot9.json",
+    "fshName": "JP_valueSet_drugCode_hot9",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 66,
+    "endLine": 73
+  },
+  {
+    "outputFile": "ValueSet-jp-valueSet-drugCode-yj.json",
+    "fshName": "JP_valueSet_drugCode_yj",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 57,
+    "endLine": 64
+  },
+  {
+    "outputFile": "ValueSet-mhlw-valueSet-drugCode-generalNameCode.json",
+    "fshName": "MHLW_valueSet_drugCode_generalNameCode",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 84,
+    "endLine": 91
+  },
+  {
+    "outputFile": "ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json",
+    "fshName": "MHLW_valueSet_ePreCDA_insuranceCategory_tbl11",
+    "fshType": "ValueSet",
+    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
+    "startLine": 38,
+    "endLine": 45
+  }
+]

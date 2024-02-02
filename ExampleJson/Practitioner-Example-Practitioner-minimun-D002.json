@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Example-Practitioner-minimun-D002",
+  "meta": {
+    "profile": [
+      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
+    ]
+  },
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+          "valueCode": "IDE"
+        }
+      ],
+      "text": "田中 宏"
+    }
+  ]
+}
