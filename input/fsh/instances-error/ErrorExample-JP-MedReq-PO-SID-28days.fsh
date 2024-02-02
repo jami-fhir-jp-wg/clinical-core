@@ -10,7 +10,7 @@ Description: "図的エラー例：退院時処方　内服1日1回１回1錠 �
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
-* id = "Example-JP-MedReq-PO-SID-28days"
+* id = "ErrorExample-JP-MedReq-PO-SID-28days"
 
 // * contained[+] = Example-Patient-minimun
 * contained[+] = Example-Practitioner-minimun-R001
