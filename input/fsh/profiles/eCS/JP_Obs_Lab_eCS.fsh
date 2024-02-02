@@ -72,7 +72,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding  contains
  jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
  and unCoded 0..1 MS
- and localLaboCode 1..1 MS
+// and localLaboCode 1..1 MS
  and coreLabo/abo-bld 0..1 MS
  and coreLabo/alb 0..1 MS
  and coreLabo/alp 0..1 MS
@@ -187,7 +187,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 //* code from $JP_eCS_ObservationLabResultCode_VS (required)
 
 //ローカルコード
-* code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
+//* code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
 
 // 一般JLAC10コード
 * code.coding[jlac10LaboCode].system = "urn:oid:1.2.392.200119.4.504" (exactly)
