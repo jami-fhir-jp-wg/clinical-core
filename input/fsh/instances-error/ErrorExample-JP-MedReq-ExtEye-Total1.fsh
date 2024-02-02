@@ -1,4 +1,4 @@
-Instance: Example-JP-MedReq-ExtEye-Total1
+Instance: ErrorExample-JP-MedReq-ExtEye-Total1
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "意図的エラー例：入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"

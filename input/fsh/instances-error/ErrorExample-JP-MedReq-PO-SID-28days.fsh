@@ -1,4 +1,4 @@
-Instance: Example-JP-MedReq-PO-SID-28days
+Instance: ErrorExample-JP-MedReq-PO-SID-28days
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
 Description: "図的エラー例：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
