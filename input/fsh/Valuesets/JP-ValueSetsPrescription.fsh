@@ -72,6 +72,7 @@ Description: "MEDIS 医薬品コードHOTコード（9桁）"
 * ^status = #active
 * include codes from system   urn:oid:1.2.392.200119.4.403.1
 
+/*
 ValueSet:  JP_valueSet_drugCode_gs1_14
 Id:   jp-valueSet-drugCode-gs1-14
 Title: "JP valueSet drugCode gs1 14"
@@ -80,6 +81,7 @@ Description: "医薬品コードGTIN 14桁"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-gs1-14"
 * ^status = #active
 * include codes from system   urn:oid:2.51.1.1
+*/
 
 ValueSet:  MHLW_valueSet_drugCode_generalNameCode
 Id:   mhlw-valueSet-drugCode-generalNameCode

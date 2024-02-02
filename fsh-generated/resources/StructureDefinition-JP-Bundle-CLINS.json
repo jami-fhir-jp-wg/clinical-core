@@ -116,7 +116,7 @@
             "key": "bundle-profile-is-JP-Bundle-CLINS",
             "severity": "error",
             "human": "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。",
-            "expression": "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_clins').exists()",
+            "expression": "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()",
             "source": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
           },
           {
@@ -9307,7 +9307,7 @@
             "key": "bundle-profile-is-JP-Bundle-CLINS",
             "severity": "error",
             "human": "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。",
-            "expression": "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_clins').exists()",
+            "expression": "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()",
             "source": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
           },
           {

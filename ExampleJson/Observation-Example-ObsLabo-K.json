@@ -60,11 +60,6 @@
   "code": {
     "coding": [
       {
-        "code": "10000181802",
-        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
-        "display": "カリウム"
-      },
-      {
         "code": "3H015000002326101",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
         "display": "K"
@@ -75,7 +70,7 @@
         "display": "K"
       }
     ],
-    "text": "カリウム"
+    "text": "LocalCode^10000181802^カリウム"
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "issued": "2021-07-05T15:38:59.000+09:00",

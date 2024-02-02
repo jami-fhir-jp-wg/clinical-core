@@ -32,7 +32,7 @@ Description: "意図的エラー例：入院処方　外用（塗布）全量処
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "時間外処方"
 
-//* medicationCodeableConcept.coding[0] = $JP_eCS_MedicationCodeNocoded_CS#NOCODED "標準コードなし"
+* medicationCodeableConcept.coding[0] = $JP_eCS_MedicationCodeNocoded_CS#NOCODED "標準コードなし"
 * medicationCodeableConcept.coding[+] = $Icode#I3240210 "ヒルドイドローション２５ｇ"
 * medicationCodeableConcept.text = "ヒルドイドローション２５ｇ"
 * subject.identifier.system = $JP_Insurance_memberID

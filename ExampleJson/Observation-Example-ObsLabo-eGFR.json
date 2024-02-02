@@ -47,17 +47,12 @@
   "code": {
     "coding": [
       {
-        "code": "0000181910",
-        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
-        "display": "eGFR"
-      },
-      {
         "code": "8A065000002391901",
         "system": "urn:oid:1.2.392.200119.4.504",
         "display": "eGFR"
       }
     ],
-    "text": "推算GFR"
+    "text": "LocalCode^0000181910^推算GFR"
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "issued": "2021-07-05T15:38:59.000+09:00",
