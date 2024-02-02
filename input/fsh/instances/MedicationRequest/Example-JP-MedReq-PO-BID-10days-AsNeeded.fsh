@@ -31,8 +31,8 @@ Description: "入院処方　内服処方1日1回１回2錠（投与指示あり
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "退院時処方"
 * medicationCodeableConcept.coding[0] = $JP_eCS_MedicationCodeNocoded_CS#NOCODED "標準コードなし"
-* medicationCodeableConcept.coding[+] = $Icode#I1692880 "ラクツロースシロップ６５％「タカタ」"
-* medicationCodeableConcept.text = "ラクツロースシロップ６５％「タカタ」"
+* medicationCodeableConcept.coding[+] = $Icode#I1692880 "炭酸水素ナトリウム水"
+* medicationCodeableConcept.text = "炭酸水素ナトリウム水"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
@@ -47,7 +47,7 @@ Description: "入院処方　内服処方1日1回１回2錠（投与指示あり
 * groupIdentifier.value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-12"
-* dosageInstruction.text = "1日2回 朝夕食後 １回 15ｍＬ  (１日  30ｍＬ) 10　日分,便秘時にお飲みください"
+* dosageInstruction.text = "1日2回 朝夕食後 １回 15ｍＬ  (１日  30ｍＬ) 10　日分,指示あればお飲みください"
 * dosageInstruction.timing.event = "2021-07-12T00:00:00+09:00"
 * dosageInstruction.timing.repeat.boundsDuration = 10 'd' "日"
 * dosageInstruction.timing.repeat.count = 20

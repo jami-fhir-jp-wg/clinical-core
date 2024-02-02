@@ -28,7 +28,7 @@ Description: "検体検査結果　アルブミン　3.9　mg/L　　ローカ�
 * code.coding[+] = $JP_CLINS_CodeSystem_CoreLabo_CS#3A015000001827101  "ALB"
 //* code.coding[+] = $LocalExamHistoryItemCode#0000181800 "ｱﾙﾌﾞﾐﾝ"
 
-* code.text = "LocalCode^0000181800^アルブミン"
+* code.text = "アルブミン"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
