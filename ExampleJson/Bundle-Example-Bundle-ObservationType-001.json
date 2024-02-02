@@ -158,6 +158,16 @@
             ]
           }
         ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+              "code": "3A015000001827101",
+              "display": "ALB"
+            }
+          ],
+          "text": "LocalCode^0000181800^アルブミン"
+        },
         "subject": {
           "identifier": {
             "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
@@ -191,16 +201,6 @@
           }
         ],
         "status": "final",
-        "code": {
-          "coding": [
-            {
-              "code": "3A015000001827101",
-              "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
-              "display": "ALB"
-            }
-          ],
-          "text": "LocalCode^0000181800^アルブミン"
-        },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueQuantity": {
@@ -262,18 +262,11 @@
             ]
           }
         ],
-        "subject": {
-          "identifier": {
-            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-            "value": "00012345:あいう:１８７:05"
-          }
-        },
-        "status": "final",
         "code": {
           "coding": [
             {
-              "code": "3H015000002326101",
               "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+              "code": "3H015000002326101",
               "display": "K"
             },
             {
@@ -284,6 +277,13 @@
           ],
           "text": "LocalCode^10000181802^カリウム"
         },
+        "subject": {
+          "identifier": {
+            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+            "value": "00012345:あいう:１８７:05"
+          }
+        },
+        "status": "final",
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueQuantity": {
@@ -332,6 +332,16 @@
             ]
           }
         ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.392.200119.4.504",
+              "code": "8A065000002391901",
+              "display": "eGFR"
+            }
+          ],
+          "text": "LocalCode^0000181910^推算GFR"
+        },
         "subject": {
           "identifier": {
             "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
@@ -339,16 +349,6 @@
           }
         },
         "status": "final",
-        "code": {
-          "coding": [
-            {
-              "code": "8A065000002391901",
-              "system": "urn:oid:1.2.392.200119.4.504",
-              "display": "eGFR"
-            }
-          ],
-          "text": "LocalCode^0000181910^推算GFR"
-        },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueQuantity": {

@@ -211,7 +211,7 @@
     "outputFile": "MedicationRequest-Example-JP-MedReq-ExtEye-Total1.json",
     "fshName": "Example-JP-MedReq-ExtEye-Total1",
     "fshType": "Instance",
-    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-ExtEye-Total1.fsh",
+    "fshFile": "instances-error/ErrorExample-JP-MedReq-ExtEye-Total1.fsh",
     "startLine": 1,
     "endLine": 54
   },
@@ -229,7 +229,7 @@
     "fshType": "Instance",
     "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-4timez-7days.fsh",
     "startLine": 1,
-    "endLine": 61
+    "endLine": 62
   },
   {
     "outputFile": "MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.json",
@@ -277,7 +277,7 @@
     "fshType": "Instance",
     "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-SID-90-AMB.fsh",
     "startLine": 1,
-    "endLine": 69
+    "endLine": 70
   },
   {
     "outputFile": "MedicationRequest-Example-JP-MedReq-PO-TID-2days.json",
@@ -475,9 +475,9 @@
     "outputFile": "Observation-ErrorExample-ObsLabo-eGFR.json",
     "fshName": "ErrorExample-ObsLabo-eGFR",
     "fshType": "Instance",
-    "fshFile": "instances-error/Observation_Labo/Example-ObsLabo-eGFR.fsh",
+    "fshFile": "instances-error/ErrorExample-ObsLabo-eGFR.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 41
   },
   {
     "outputFile": "Observation-Example-ObsLabo-Alb.json",
@@ -645,7 +645,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/eCS/JP_MedicationRequest_eCS.fsh",
     "startLine": 8,
-    "endLine": 178
+    "endLine": 180
   },
   {
     "outputFile": "StructureDefinition-JP-Observation-LabResult-CLINS-eCS.json",
@@ -1616,14 +1616,6 @@
     "endLine": 9
   },
   {
-    "outputFile": "ValueSet-jp-valueSet-drugCode-gs1-14.json",
-    "fshName": "JP_valueSet_drugCode_gs1_14",
-    "fshType": "ValueSet",
-    "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
-    "startLine": 75,
-    "endLine": 82
-  },
-  {
     "outputFile": "ValueSet-jp-valueSet-drugCode-hot9.json",
     "fshName": "JP_valueSet_drugCode_hot9",
     "fshType": "ValueSet",
@@ -1644,8 +1636,8 @@
     "fshName": "MHLW_valueSet_drugCode_generalNameCode",
     "fshType": "ValueSet",
     "fshFile": "Valuesets/JP-ValueSetsPrescription.fsh",
-    "startLine": 84,
-    "endLine": 91
+    "startLine": 86,
+    "endLine": 93
   },
   {
     "outputFile": "ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.json",

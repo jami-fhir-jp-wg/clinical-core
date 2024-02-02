@@ -21,6 +21,7 @@ Description: "意図的エラー例：検体検査結果　eGFR　75.0 ml/min/1.
 * status = #final
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
+// ここでローカルコードを設定していない
 * code.coding[+] = $JP_ObservationLabResultCode_CS#8A065000002391901  "eGFR"   
 
 * code.text = "推算GFR"

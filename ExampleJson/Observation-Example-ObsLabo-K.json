@@ -45,6 +45,26 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
+        "code": "10000181802",
+        "display": "カリウム"
+      },
+      {
+        "code": "3H015000002326101",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+        "display": "K"
+      },
+      {
+        "code": "3H015000002326101",
+        "system": "urn:oid:1.2.392.200119.4.504",
+        "display": "K"
+      }
+    ],
+    "text": "カリウム"
+  },
   "subject": {
     "identifier": {
       "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
@@ -57,21 +77,6 @@
     }
   ],
   "status": "final",
-  "code": {
-    "coding": [
-      {
-        "code": "3H015000002326101",
-        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
-        "display": "K"
-      },
-      {
-        "code": "3H015000002326101",
-        "system": "urn:oid:1.2.392.200119.4.504",
-        "display": "K"
-      }
-    ],
-    "text": "LocalCode^10000181802^カリウム"
-  },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "issued": "2021-07-05T15:38:59.000+09:00",
   "valueQuantity": {

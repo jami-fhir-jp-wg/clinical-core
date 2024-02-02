@@ -170,7 +170,6 @@
 [JP_eCS_Department]: StructureDefinition-jp-ecs-department.html
 [JP_eCS_InstitutionNumber]: StructureDefinition-jp-ecs-institution-number.html
 [JP_Specimen_JLAC10_SpecimenCode_CS]: CodeSystem-JP-Specimen-JLAC10-SpecimenCode-CS.html
-[JP_valueSet_drugCode_gs1_14]: ValueSet-jp-valueSet-drugCode-gs1-14.html
 [JP_valueSet_drugCode_hot9]: ValueSet-jp-valueSet-drugCode-hot9.html
 [JP_valueSet_drugCode_yj]: ValueSet-jp-valueSet-drugCode-yj.html
 [jp-department-ssmix-namingsystem]: NamingSystem-jp-department-ssmix-namingsystem.html

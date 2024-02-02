@@ -151,8 +151,8 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "122394101",
-        "system": "urn:oid:1.2.392.200119.4.403.1",
+        "code": "3219100F1020",
+        "system": "urn:oid:1.2.392.100495.20.1.73",
         "display": "デノタスチュアブル配合錠"
       },
       {

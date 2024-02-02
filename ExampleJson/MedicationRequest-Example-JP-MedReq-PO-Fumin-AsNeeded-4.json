@@ -126,8 +126,8 @@
   "medicationCodeableConcept": {
     "coding": [
       {
-        "code": "127031001",
-        "system": "urn:oid:1.2.392.200119.4.403.1",
+        "code": "1190027F1022",
+        "system": "urn:oid:1.2.392.100495.20.1.73",
         "display": "デエビゴ錠２．５ｍｇ"
       },
       {
