@@ -124,7 +124,9 @@
 [JP_Observation_LabResult_eCS]: StructureDefinition-JP-Observation-LabResult-eCS.html
 [JP_Patient_eCS]: StructureDefinition-JP-Patient-eCS.html
 [JP_Practitioner_eCS]: StructureDefinition-JP-Practitioner-eCS.html
+[Example-JP-MedReq-ExtEye-Total1]: MedicationRequest-Example-JP-MedReq-ExtEye-Total1.html
 [Example-JP-MedReq-ExtSkin-Total2]: MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.html
+[Example-JP-MedReq-PO-SID-28days]: MedicationRequest-Example-JP-MedReq-PO-SID-28days.html
 [ErrorExample-ObsLabo-eGFR]: Observation-ErrorExample-ObsLabo-eGFR.html
 [Example-Bundle-ObservationType-001]: Bundle-Example-Bundle-ObservationType-001.html
 [Example-JP-AllergyIntolerance-CLINS-eCS-01]: AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.html
@@ -134,7 +136,6 @@
 [Example-JP-Condition-CLINS-eCS-03]: Condition-Example-JP-Condition-CLINS-eCS-03.html
 [Example-JP-DrugContraindications-CLINS-eCS-03]: AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.html
 [Example-JP-MedReq-ExtAnus-AsNeeded-Total1]: MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.html
-[Example-JP-MedReq-ExtEye-Total1]: MedicationRequest-Example-JP-MedReq-ExtEye-Total1.html
 [Example-JP-MedReq-PO-4timez-7days]: MedicationRequest-Example-JP-MedReq-PO-4timez-7days.html
 [Example-JP-MedReq-PO-AsNeeded-LimitMax]: MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.html
 [Example-JP-MedReq-PO-BID-10days-AsNeeded]: MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.html
