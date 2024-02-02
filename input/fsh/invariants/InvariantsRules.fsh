@@ -130,7 +130,7 @@ Expression: "entry.first().resource.meta.profile.where($this = 'http://jpfhir.jp
 Invariant: bundle-profile-is-JP-Bundle-CLINS
 Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
 Severity: #error
-Expression: "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS).exists()"
+Expression: "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
 
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
 Invariant: needs-anyOfStandardCode-medication
