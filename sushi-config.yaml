@@ -96,7 +96,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   special-url:
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_clins
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
