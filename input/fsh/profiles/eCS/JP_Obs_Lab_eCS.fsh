@@ -184,7 +184,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 
 
 // コードの全体に適用する大原則
-* code from $JP_eCS_ObservationLabResultCode_VS (required)
+//* code from $JP_eCS_ObservationLabResultCode_VS (required)
 
 //ローカルコード
 /** code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
@@ -193,6 +193,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 // 一般JLAC10コード
 * code.coding[jlac10LaboCode].system = "urn:oid:1.2.392.200119.4.504" (exactly)
 * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
+
 // 未標準化コード
 * code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS" (exactly)
 * code.coding[unCoded].code = #99999999999999999 (exactly)

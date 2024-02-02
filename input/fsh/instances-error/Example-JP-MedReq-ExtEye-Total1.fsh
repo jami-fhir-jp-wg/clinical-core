@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-ExtEye-Total1
 InstanceOf: JP_MedicationRequest_CLINS_eCS
 Usage: #example
-Description: "入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
-* note.text = "入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
+Description: "意図的エラー例：入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
+* note.text = "意図的エラー例（薬剤コードがYJ、一般処方コードのいずれも存在しない）：入院処方　外用（点眼）全量処方　1回量をコードで記述できない例. "
 
 //* text.status = #additional
 //* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（点眼）全量処方　1回量をコードで記述できない例</p> </div>"

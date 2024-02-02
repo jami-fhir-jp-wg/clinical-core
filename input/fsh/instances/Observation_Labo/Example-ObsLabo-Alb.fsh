@@ -24,7 +24,7 @@ Description: "検体検査結果　アルブミン　3.9　mg/L　　ローカ�
 * status = #final
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
-//* code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#0000181800 "アルブミン"
+* code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#0000181800 "アルブミン"
 * code.coding[+] = $JP_CLINS_CodeSystem_CoreLabo_CS#3A015000001827101  "ALB"
 //* code.coding[+] = $LocalExamHistoryItemCode#0000181800 "ｱﾙﾌﾞﾐﾝ"
 

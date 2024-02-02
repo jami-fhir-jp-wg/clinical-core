@@ -41,11 +41,11 @@ Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
 * medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#104937401 "新レシカルボン坐剤"
+* medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2359800J1035 "新レシカルボン坐剤"
 * medicationCodeableConcept.coding[+] = $Icode#I3344500 "新レシカルボン坐剤"
 * medicationCodeableConcept.text = "新レシカルボン坐剤"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
-
 
 * subject.type = "Patient"
 * encounter = Reference(Example-JP-Encounter-IMP)
