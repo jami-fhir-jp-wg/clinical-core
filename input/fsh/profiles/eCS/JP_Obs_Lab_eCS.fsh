@@ -70,6 +70,8 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding  ^slicing.discriminator[=].path = "display"
 * code.coding  ^slicing.rules = #closed
 * code.coding  contains
+ jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
+ and unCoded 0..1 MS
 //  localLaboCode 1..1 MS
  and coreLabo/abo-bld 0..1 MS
  and coreLabo/alb 0..1 MS
@@ -179,8 +181,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
  and infectionLabo/tpquant 0..1 MS
  and infectionLabo/tphquant 0..1 MS
  and infectionLabo/sts 0..1 MS
- and jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
- and unCoded 0..1 MS
+
 
 // コードの全体に適用する大原則
 * code from $JP_eCS_ObservationLabResultCode_VS (required)
