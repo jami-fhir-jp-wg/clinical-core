@@ -203,5 +203,6 @@
 [JP_Observation_SubCategory_CS]: CodeSystem-jp-observation-subcategory-cs.html
 [JP_CLINS_ObsLabResult_Uncoded_CS]: CodeSystem-jp-clins-obslabresult-uncoded-cs.html
 [JP_CLINS_ObsLabResult_LocalUncoded_CS]: CodeSystem-jp-clins-obslabresult-localuncoded-cs.html
+[JP_CLINS_ObsLabResult_LocalCode_CS]: CodeSystem-jp-clins-obslabresult-localcode-cs.html
 [JP_ehrshrs_indication_CS]: CodeSystem-jp-ehrshrs-indication-cs.html
 [JP_CLINS_BundleResourceType_VS]: ValueSet-jp-clins-bundleresourcetype-vs.html

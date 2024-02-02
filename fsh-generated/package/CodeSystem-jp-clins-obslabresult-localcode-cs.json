@@ -1,0 +1,19 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "JP_CLINS_ObsLabResult_LocalCode_CS",
+  "id": "jp-clins-obslabresult-localcode-cs",
+  "description": "検体検査項目ローカルコード識別用CS",
+  "url": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
+  "concept": [
+    {
+      "code": "dummy",
+      "display": "コード化ローカルコード"
+    }
+  ],
+  "title": "検体検査項目ローカルコード識別用コードシステム",
+  "experimental": false,
+  "caseSensitive": false,
+  "count": 1
+}

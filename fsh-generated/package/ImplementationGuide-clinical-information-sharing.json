@@ -1696,6 +1696,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/jp-clins-obslabresult-localcode-cs"
+        },
+        "name": "検体検査項目ローカルコード識別用コードシステム",
+        "description": "検体検査項目ローカルコード識別用CS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/jp-ehrshrs-indication-cs"
         },
         "name": "長期保存／未告知診療情報のためのフラグコード",
@@ -1849,7 +1857,7 @@
       },
       {
         "code": "special-url",
-        "value": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_clins"
+        "value": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
       },
       {
         "code": "special-url",

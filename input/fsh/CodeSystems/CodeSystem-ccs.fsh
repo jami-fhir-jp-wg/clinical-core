@@ -47,7 +47,7 @@ Description: "医薬品コードで標準コードが割り当てられない場
 * ^caseSensitive = false
 * #NOCODED  "標準コードなし"
 
-
+/*
 CodeSystem: JP_CLINS_ObsLabResult_LocalCode_CS
 Id: jp-clins-obslabresult-localcode-cs
 Description: "検体検査項目ローカルコード識別用CS"
@@ -58,6 +58,7 @@ Description: "検体検査項目ローカルコード識別用CS"
 * ^content = #complete
 * ^caseSensitive = false
 * #dummy "コード化ローカルコード"
+*/
 
 CodeSystem: JP_ehrshrs_indication_CS
 Id: jp-ehrshrs-indication-cs

@@ -64,6 +64,14 @@
     "endLine": 432
   },
   {
+    "outputFile": "CodeSystem-jp-clins-obslabresult-localcode-cs.json",
+    "fshName": "JP_CLINS_ObsLabResult_LocalCode_CS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
+    "startLine": 51,
+    "endLine": 60
+  },
+  {
     "outputFile": "CodeSystem-jp-clins-obslabresult-localuncoded-cs.json",
     "fshName": "JP_CLINS_ObsLabResult_LocalUncoded_CS",
     "fshType": "CodeSystem",
@@ -132,8 +140,8 @@
     "fshName": "JP_ehrshrs_indication_CS",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
-    "startLine": 63,
-    "endLine": 73
+    "startLine": 62,
+    "endLine": 72
   },
   {
     "outputFile": "CodeSystem-jp-medicallicensecertificate-cs.json",
@@ -148,16 +156,16 @@
     "fshName": "JP_Observation_SubCategory_CS",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
-    "startLine": 79,
-    "endLine": 88
+    "startLine": 78,
+    "endLine": 87
   },
   {
     "outputFile": "CodeSystem-jp-simpleobservationcategory-cs.json",
     "fshName": "JP_SimpleObservationCategory_CS",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystems/CodeSystem-ccs.fsh",
-    "startLine": 91,
-    "endLine": 114
+    "startLine": 90,
+    "endLine": 113
   },
   {
     "outputFile": "Condition-Example-JP-Condition-CLINS-eCS-01.json",
