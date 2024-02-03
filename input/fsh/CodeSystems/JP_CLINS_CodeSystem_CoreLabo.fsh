@@ -14,6 +14,13 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
 // ALB
 * #ALB
   * #3A015000001827101   "ALB"  // アルブミン  可視吸光光度法  　全血
+/*    * ^designation.language = #ja
+    * ^designation.value = "アルブミン"
+    * ^property[0].code = #unit
+    * ^property[=].valueCode = #active
+    * ^property[+].code = #internalId
+    * ^property[=].valueCode = #16239
+*/
   * #3A015000001899801   "ALB"  // アルブミン  測定法問わず（全血）  　全血
   * #3A015000001899901   "ALB"  // アルブミン  その他（全血）  　全血
   * #3A015000002306301   "ALB"  // アルブミン  免疫比朧法(ネフェロメトリー)  　血清
