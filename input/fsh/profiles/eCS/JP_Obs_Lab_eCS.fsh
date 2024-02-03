@@ -9,6 +9,8 @@ Id: JP-Observation-LabResult-eCS
 Title:  "eCS:JP_Observation_LabResult_eCS"
 Description: "eCS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 
+* obeys needs-localCode-observation-laboresult  // 検査項目コードにローカルコード記述は必須である。
+
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
 

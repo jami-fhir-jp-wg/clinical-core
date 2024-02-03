@@ -200,6 +200,22 @@
     "endLine": 111
   },
   {
+    "outputFile": "MedicationRequest-ErrorExample-JP-MedReq-ExtEye-Total1.json",
+    "fshName": "ErrorExample-JP-MedReq-ExtEye-Total1",
+    "fshType": "Instance",
+    "fshFile": "instances-error/ErrorExample-JP-MedReq-ExtEye-Total1.fsh",
+    "startLine": 1,
+    "endLine": 54
+  },
+  {
+    "outputFile": "MedicationRequest-ErrorExample-JP-MedReq-PO-SID-28days.json",
+    "fshName": "ErrorExample-JP-MedReq-PO-SID-28days",
+    "fshType": "Instance",
+    "fshFile": "instances-error/ErrorExample-JP-MedReq-PO-SID-28days.fsh",
+    "startLine": 1,
+    "endLine": 67
+  },
+  {
     "outputFile": "MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json",
     "fshName": "Example-JP-MedReq-ExtAnus-AsNeeded-Total1",
     "fshType": "Instance",
@@ -464,6 +480,14 @@
     "endLine": 410
   },
   {
+    "outputFile": "Observation-ErrorExample-ObsLabo-eGFR.json",
+    "fshName": "ErrorExample-ObsLabo-eGFR",
+    "fshType": "Instance",
+    "fshFile": "instances-error/ErrorExample-ObsLabo-eGFR.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
     "outputFile": "Observation-Example-ObsLabo-Alb.json",
     "fshName": "Example-ObsLabo-Alb",
     "fshType": "Instance",
@@ -645,7 +669,7 @@
     "fshType": "Profile",
     "fshFile": "profiles/eCS/JP_Obs_Lab_eCS.fsh",
     "startLine": 6,
-    "endLine": 729
+    "endLine": 731
   },
   {
     "outputFile": "StructureDefinition-JP-Patient-CLINS-eCS.json",

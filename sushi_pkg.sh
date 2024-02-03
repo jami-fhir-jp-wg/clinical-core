@@ -1,6 +1,8 @@
 #!/bin/bash
+chmod -R 755 ~/.fhir*
 rm -r ~/.fhir
 cp -r ~/.fhir_sushiVersion ~/.fhir
+chmod -R 755 ~/.fhir*
 sushi -s .
 cd fsh-generated
 mv resources package
@@ -15,6 +17,7 @@ rm ../pkgValidation/jp-clins.r4-0.9.11.tgz
 cp jp-clins.r4-0.9.11.tgz ../packages_snapshot
 cp jp-clins.r4-0.9.11.tgz ../pkgValidation
 cd ..
+chmod -R 755 ~/.fhir*
 rm -r ~/.fhir
 cp -r ~/.fhir.validation ~/.fhir
 #rm -rf fsh-generated

@@ -148,6 +148,12 @@ Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:
 // R4011 アレルギー情報と薬剤禁忌とを区別するため、電子カルテ情報サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はや薬剤禁忌以外のアレルギー情報として取り扱われる。
 // Invariant: needs-anyOfStandardCode-medication
 
+// R6021 Observation CLINS ではローカルコードの記述は必須である。
+Invariant: needs-localCode-observation-laboresult
+Description: "R6021:observation.code.codingには、ローカルコード記述が必須である。（system=\"http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS\")"
+Severity: #error
+Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
+
 
 //========= 以下、未整理 =========
 // 
