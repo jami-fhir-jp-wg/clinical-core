@@ -33,3 +33,7 @@ Description: "Bundleリソースサンプル（検体検査結果３件）６情
 * entry[+].fullUrl = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * entry[=].resource = InlineExample-ObsLabo-eGFR
 
+
+* entry[+].fullUrl = "urn:uuid:e3a7af80-ca1f-5638-dc97-00fa9458fe1c"
+* entry[=].resource = InlineExample-ObsLabo-UTP
+
