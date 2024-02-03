@@ -208,14 +208,6 @@
     "endLine": 67
   },
   {
-    "outputFile": "MedicationRequest-Example-JP-MedReq-ExtEye-Total1.json",
-    "fshName": "ErrorExample-JP-MedReq-ExtEye-Total1",
-    "fshType": "Instance",
-    "fshFile": "instances-error/ErrorExample-JP-MedReq-ExtEye-Total1.fsh",
-    "startLine": 1,
-    "endLine": 54
-  },
-  {
     "outputFile": "MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json",
     "fshName": "ErrorExample-JP-MedReq-ExtSkin-Total2",
     "fshType": "Instance",
@@ -265,9 +257,9 @@
   },
   {
     "outputFile": "MedicationRequest-Example-JP-MedReq-PO-SID-28days.json",
-    "fshName": "ErrorExample-JP-MedReq-PO-SID-28days",
+    "fshName": "Example-JP-MedReq-PO-SID-28days",
     "fshType": "Instance",
-    "fshFile": "instances-error/ErrorExample-JP-MedReq-PO-SID-28days.fsh",
+    "fshFile": "instances/MedicationRequest/Example-JP-MedReq-PO-SID-28days.fsh",
     "startLine": 1,
     "endLine": 67
   },
@@ -470,14 +462,6 @@
     "fshFile": "namingsystems.fsh",
     "startLine": 396,
     "endLine": 410
-  },
-  {
-    "outputFile": "Observation-ErrorExample-ObsLabo-eGFR.json",
-    "fshName": "ErrorExample-ObsLabo-eGFR",
-    "fshType": "Instance",
-    "fshFile": "instances-error/ErrorExample-ObsLabo-eGFR.fsh",
-    "startLine": 1,
-    "endLine": 41
   },
   {
     "outputFile": "Observation-Example-ObsLabo-Alb.json",

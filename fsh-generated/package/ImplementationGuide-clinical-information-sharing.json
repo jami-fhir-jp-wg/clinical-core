@@ -1064,35 +1064,11 @@
       },
       {
         "reference": {
-          "reference": "MedicationRequest/Example-JP-MedReq-ExtEye-Total1"
-        },
-        "name": "ErrorExample-JP-MedReq-ExtEye-Total1",
-        "description": "意図的エラー例：入院処方　外用（点眼）全量処方　1回量をコードで記述できない例",
-        "exampleCanonical": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
-      },
-      {
-        "reference": {
           "reference": "MedicationRequest/Example-JP-MedReq-ExtSkin-Total2"
         },
         "name": "ErrorExample-JP-MedReq-ExtSkin-Total2",
         "description": "意図的エラー例：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。",
         "exampleCanonical": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
-      },
-      {
-        "reference": {
-          "reference": "MedicationRequest/Example-JP-MedReq-PO-SID-28days"
-        },
-        "name": "ErrorExample-JP-MedReq-PO-SID-28days",
-        "description": "図的エラー例：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例",
-        "exampleCanonical": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
-      },
-      {
-        "reference": {
-          "reference": "Observation/ErrorExample-ObsLabo-eGFR"
-        },
-        "name": "ErrorExample-ObsLabo-eGFR",
-        "description": "意図的エラー例：検体検査結果　eGFR　75.0 ml/min/1.73m2 　　【ローカルコードなし】 一般項目JLACコードJLAC10=8A065000002391901 検体：血清",
-        "exampleCanonical": "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"
       },
       {
         "reference": {
