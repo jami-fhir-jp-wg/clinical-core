@@ -112,3 +112,57 @@ Description: "JP Coreにて定義したObservationリソースに関する分類
 * #exam "Exam" "臨床医による直接観察、単純な器具の使用、患者の体に直接行われた単純な操作の結果など、身体検査の結果によって生成された観察。"
 * #therapy "Therapy" "非介入治療プロトコル（例：職業療法、物理療法、放射線療法、栄養療法、投薬療法）によって生成された観察"
 * #activity "Activity" "体力と全体的な健康状態を向上または維持する身体活動を測定または記録する観察。 理学療法士などの施術者の直接の監督下にないこと。 (例: 水泳ラップ、歩数、睡眠データ)"
+
+// 入院経路を表すコード情報。値は例示。コード表は一例（出典：厚労省DPC導入影響評価調査）
+CodeSystem: JP_admit_Source_CS
+Id: jp-admit-Source-cs
+Title: "入院経路を表すコード (出典：厚労省DPC導入影響評価調査) CodeSystem"
+Description: "入院経路を表すコード (出典：厚労省DPC導入影響評価調査)  CodeSystem"
+* ^url = $JP_admit_Source_CS
+* ^status = #active
+* ^experimental = false
+* ^date = "2023-04-18"
+* ^caseSensitive = true
+* ^content = #complete
+* #0 "院内の他病棟からの転棟"
+* #1 "家庭からの入院"
+* #4 "他の病院・診療所の病棟からの転院"
+* #5 "介護施設・福祉施設に入所中"
+* #8 "院内で出生"
+* #9 "その他"
+
+// 退院時転帰コード情報
+CodeSystem: JP_codeSystem_dischargeDisposition
+Id: jp-codeSystem-dischargeDisposition
+Description: "退院時転帰コード情報（出典：厚労省DPC導入影響評価調査）CodeSystem"
+* ^url = $JP_dischargeDisposition_CS
+* ^title = "退院時転帰コード情報（出典：厚労省DPC導入影響評価調査） CodeSystem"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #1    "傷病が治癒・軽快"
+* #3    "傷病（白血病、潰瘍性大腸炎、クローン病等）が寛解"
+* #4    "傷病が不変"
+* #5    "傷病が増悪"
+* #6    "傷病による死亡"
+* #7    "傷病以外による死亡"
+* #9    "その他（検査入院,正常分娩及び人間ドック含む）"
+
+//
+// ケアプランのタイプ
+// "hospital-plan"(入院中のプラン)、または"discharge-plan"(退院時のプラン)のいずれか固定値。
+//
+CodeSystem: JP_carePlanCategory_CS
+Id: jp-careplancategory-cs
+Title: "ケアプランのタイプコード"
+Description: "ケアプランのタイプコード"
+* ^url = $JP_carePlanCategory_CS
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-01-31"
+* ^caseSensitive = true
+* ^content = #complete
+* #hospital-plan "入院中のプラン"
+* #discharge-plan "退院時のプラン"
+

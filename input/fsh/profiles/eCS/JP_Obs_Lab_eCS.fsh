@@ -70,7 +70,9 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding  ^slicing.discriminator[=].path = "display"
 * code.coding  ^slicing.rules = #open
 * code.coding  contains
- localLaboCode 1..1 MS
+ jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
+ and unCoded 0..1 MS
+ and localLaboCode 0..1 MS
  and coreLabo/abo-bld 0..1 MS
  and coreLabo/alb 0..1 MS
  and coreLabo/alp 0..1 MS
@@ -179,11 +181,10 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
  and infectionLabo/tpquant 0..1 MS
  and infectionLabo/tphquant 0..1 MS
  and infectionLabo/sts 0..1 MS
- and jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
- and unCoded 0..1 MS
+
 
 // コードの全体に適用する大原則
-* code from $JP_eCS_ObservationLabResultCode_VS (required)
+// code from $JP_eCS_ObservationLabResultCode_VS (required)
 
 //ローカルコード
 * code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
@@ -191,6 +192,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 // 一般JLAC10コード
 * code.coding[jlac10LaboCode].system = "urn:oid:1.2.392.200119.4.504" (exactly)
 * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
+
 // 未標準化コード
 * code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS" (exactly)
 * code.coding[unCoded].code = #99999999999999999 (exactly)
