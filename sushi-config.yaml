@@ -110,7 +110,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
-    - http://jpfhir.jp/fhir/eCheckup/CodeSystem/jlac10-specimen-codes
     - http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS
@@ -120,10 +119,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section
     - http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category
-    - urn:oid:1.2.392.200250.2.2.2
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
-    - http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicalLicenseCertificate_CS
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction
@@ -239,7 +236,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
     - http://jpfhir.jp/fhir/eCS/ValueSet/JP_eCS_ObservationLabResultCode_VS
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
-    - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-gs1-14
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
