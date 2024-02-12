@@ -1472,7 +1472,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl73 width=87 style='width:65pt'>ur</td>
   <td class=xl291 width=359 style='width:269pt'>system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード</td>
   <td class=xl73 width=36 style='width:27pt'>例示</td>
-  <td class=xl294 width=195 style='width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-exCode&quot;</td>
+  <td class=xl294 width=195 style='width:146pt'>&quot;urn:oid:1.2.392.200119.4.101.6&quot;</td>
   <td colspan=3 style='mso-ignore:colspan'></td>
  </tr>
  <tr height=40 style='height:30.0pt'>

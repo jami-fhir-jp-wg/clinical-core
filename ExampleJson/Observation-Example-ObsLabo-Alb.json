@@ -1,0 +1,118 @@
+{
+  "resourceType": "Observation",
+  "id": "Example-ObsLabo-Alb",
+  "meta": {
+    "tag": [
+      {
+        "code": "LTS",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
+        "display": "長期保存"
+      }
+    ],
+    "lastUpdated": "2021-07-09T14:11:13.000+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "08",
+            "system": "urn:oid:1.2.392.200250.2.2.2",
+            "display": "循環器科"
+          }
+        ],
+        "text": "循環器診療科"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "1318814790-9990767-OBSLAB13883807672021070909210705-2"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
+        "code": "0000181800",
+        "display": "アルブミン"
+      },
+      {
+        "code": "3A015000001827101",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+        "display": "ALB"
+      }
+    ],
+    "text": "アルブミン"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
+  },
+  "note": [
+    {
+      "text": "検体検査結果　アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
+    }
+  ],
+  "contained": [
+    {
+      "resourceType": "Specimen",
+      "id": "Example-LaboMaterial-Serum",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
+        ]
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "023",
+            "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCode_CS",
+            "display": "血清"
+          },
+          {
+            "code": "SER",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+            "display": "Serum"
+          }
+        ],
+        "text": "血清"
+      }
+    }
+  ],
+  "status": "final",
+  "effectiveDateTime": "2021-07-05T11:19:41+09:00",
+  "issued": "2021-07-05T15:38:59.000+09:00",
+  "valueQuantity": {
+    "value": 3.9,
+    "unit": "mg/L"
+  },
+  "specimen": {
+    "reference": "#Example-LaboMaterial-Serum",
+    "type": "Specimen"
+  }
+}

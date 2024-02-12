@@ -1,4 +1,5 @@
-name: Ohe-Develp and  Dispatch
+name: Ohe-build
+
 on:
   push:
     branches: 
@@ -8,12 +9,15 @@ on:
       - 'input/**'
       - 'custom-template/**'
       - '.github/workflows/main.yml'
+      - 'script/*.py'
   pull_request:
     branches: [ develop1.0 ]
+  repository_dispatch:
+    types: [update]
 env:
-  release_version : 0.9.12
+  release_version : 1.0.0
 jobs:
-  turn1:
+  turn:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,18 +25,36 @@ jobs:
     environment: SSH_PORT_JPFHIR  # JAMI WG アップロードサイトに関するアクセス情報の環境名
     steps:
     - uses: actions/checkout@v2
-    - name: ssh key generate
+      with:
+        ref: ${{ github.event.client_payload.ref }}
+        submodules: true
+
+    - name: move eClinicalSummary fsh files to input directory
       run: |
-          echo "starting"
-          echo "secrets.PERSONAL_TOKEN " ${{ secrets.PERSONAL_TOKEN }}
-          echo "secrets.PERSONAL_TOKEN2 " ${{ secrets.PERSONAL_TOKEN2 }}
-          curl -vv -H "Authorization: token ${{ secrets.PERSONAL_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" "https://api.github.com/repos/jami-fhir-jp-wg/eReferral/dispatches" --data '{"event_type": "update", "client_payload": {"ref": "develop1.0"}}'
-          curl -vv -H "Authorization: token ${{ secrets.PERSONAL_TOKEN }}" -H "Accept: application/vnd.github.everest-preview+json" "https://api.github.com/repos/jami-fhir-jp-wg/eDischargeSummary/dispatches" --data '{"event_type": "update", "client_payload": {"ref": "develop1.0"}}'
+        mkdir -p input/fsh/eClinicalSummary
+        rm -rf input/fsh/eClinicalSummary
+        mkdir -p input/fsh/eClinicalSummary
+        mv eClinicalSummary/input/fsh/* input/fsh/eClinicalSummary/
+
+    - name: makedir ./output
+      run: | 
+        mkdir output
+        mkdir fsh-generated
+        touch testfile
+
+    - name: ssh key generate
+      run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY_TO_JPFHIR }}
+    - name: rsync remote-site-deploy
+      run: rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 8022" --delete ./output ./fsh-generated r2217734@www41.onamae.ne.jp:/home/r2217734/public_html/jpfhir.jp/eMunicipalCheckup/ --exclude .htaccess
+
 
     - name: Setup npm
       uses: actions/setup-node@v2
-      with:
+      with: 
         check-latest: true
+
     - name: Setup Sushi
       run: |
         sudo npm install -g fsh-sushi
@@ -47,7 +69,7 @@ jobs:
         tag: 'latest'
         path: .
         file: publisher.jar
-
+  
     - name: Download the file
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile1
@@ -157,5 +179,3 @@ jobs:
       run: |
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-clins.r4-${{ env.release_version }}.tgz forPackageRelease/jp-clins.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output.tgz'
-
-

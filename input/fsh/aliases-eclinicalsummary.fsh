@@ -122,9 +122,9 @@ Alias: $JP_CLINS_ObsLabResultCode_VS = JP_CLINS_ObsLabResult_UnknownCode_CS#9999
 
 
 Alias: $JP_Disease_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.101.6    // MEDIS病名交換用コード
-Alias: $JP_Disease_MEDIS_ManagementID_CS_url = http://medis.or.jp/CodeSystem/master-disease-keyNumber    // MEDIS病名管理番号
+Alias: $JP_Disease_MEDIS_ManagementID_CS_url = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号
 Alias: $JP_Disease_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号
-Alias: $JP_Disease_Claim_CS = http://jpfhi.jp/fhir/CodeSystem/claimSystem_syobyomei_CS
+Alias: $JP_Disease_Claim_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease
 Alias: $JP_BodySite_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.201.5   // MEDIS修飾語交換用コード
 Alias: $JP_BodySite_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.201.2 // MEDIS修飾語管理番号
 Alias: $JP_DiseaseCategory_WHO_ICD10_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full  // ICD10  HL7 regisered
@@ -133,9 +133,16 @@ Alias: $JP_DiseaseCategory_WHO_ICD10_CS_oid = urn:oid:2.16.840.1.113883.6.3.1  /
 // 拡張
 Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
 Alias: $JP_eCS_InstitutionNumber = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
-
-
+Alias: $JP_InstitutionNumber = http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no
 
 // Idsystem
 Alias: $JP_ResourceInstanceIdentifier = http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier
-Alias: $JP_InstitutionNumber = http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no
+
+Alias: $JP_admit_Source_CS = http://jpfhir.jp/fhir/Common/CodeSystem/admit-Source
+Alias: $JP_admit_Source_VS = http://jpfhir.jp/fhir/Common/ValueSet/admit-Source
+
+Alias: $JP_dischargeDisposition_CS = http://jpfhir.jp/fhir/Common/CodeSystem/discharge-disposition
+Alias: $JP_dischargeDisposition_VS = http://jpfhir.jp/fhir/Common/ValueSet/discharge-disposition
+
+Alias: $JP_carePlanCategory_CS = http://jpfhir.jp/fhir/CarePlan/CodeSystem/category
+Alias: $JP_carePlanCategory_VS = http://jpfhir.jp/fhir/CarePlan/ValueSet/category
