@@ -29,12 +29,6 @@ jobs:
         ref: ${{ github.event.client_payload.ref }}
         submodules: true
 
-    - name: makedir ./output
-      run: | 
-        mkdir output
-        mkdir fsh-generated
-        touch testfile
-
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key
       env:
