@@ -29,13 +29,6 @@ jobs:
         ref: ${{ github.event.client_payload.ref }}
         submodules: true
 
-    - name: move eClinicalSummary fsh files to input directory
-      run: |
-        mkdir -p input/fsh/eClinicalSummary
-        rm -rf input/fsh/eClinicalSummary
-        mkdir -p input/fsh/eClinicalSummary
-        mv eClinicalSummary/input/fsh/* input/fsh/eClinicalSummary/
-
     - name: makedir ./output
       run: | 
         mkdir output
