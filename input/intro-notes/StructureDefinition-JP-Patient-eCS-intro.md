@@ -38,7 +38,7 @@
 
 ## 要素の説明とプロファイル
 
-患者プロファイルについては、[JP-Core]() を参照のこと。ただし、上記必須情報を満たすこと。
+患者プロファイルについては、[JP-CoreのJP_Patient](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-jp-patient.html) を参照のこと。ただし、上記必須情報を満たすこと。
 
 {% include markdown-link-references.md %}
 {% include external-link-reference.md %}

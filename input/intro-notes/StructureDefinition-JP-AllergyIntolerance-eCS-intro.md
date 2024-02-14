@@ -92,7 +92,7 @@ function details_open(onoff, idname, idCloseButton){
 
 <div id="Table_16675" class="htmlTable" align=center x:publishsource="Excel">
 
-{% include allergyTable.md %}
+{% include AllergyIntoleranceTable.md %}
 
 </div>
 

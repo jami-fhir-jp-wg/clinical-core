@@ -79,7 +79,7 @@ function details_open(onoff, idname, idCloseButton){
 
 <div id="Table_18042" class="htmlTable" align=center x:publishsource="Excel">
 
-{% include bundle.md %}
+{% include  BundleTable.md %}
 
 </div>
 
