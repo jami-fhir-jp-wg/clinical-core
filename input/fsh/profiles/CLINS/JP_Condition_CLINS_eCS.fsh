@@ -15,7 +15,7 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
 * ^status = #active
 * ^date = "2023-10-04"
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
-* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
+* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS")
@@ -25,21 +25,29 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
   and uninformed 0..1 MS
+  and undelivered 0..1 MS
+
 
 * meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に使用する。")
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
 
 * meta.tag[uninformed] = $JP_ehrshrs_indication_CS#UNINFORMED
-  * insert relative_short_definition("６情報作成において未告知情報または未説明フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
+  * insert relative_short_definition("６情報作成において未告知フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
 
+* meta.tag[undelivered] = $JP_ehrshrs_indication_CS#UNINFORMED
+  * insert relative_short_definition("６情報作成において未提供フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
