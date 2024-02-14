@@ -36,7 +36,7 @@ dependencies:
 #----------------------------------------
 pages:
   index.md:
-    title: 電子カルテ情報共有サービスFHIR仕様  　JP-clins
+    title: 電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
   validationGuide.md:
