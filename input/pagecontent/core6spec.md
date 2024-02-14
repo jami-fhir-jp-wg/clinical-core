@@ -4,7 +4,6 @@
 本ページは、国が進めている医療DXのなかでのサービスが検討されている「電子カルテ情報共有サービス」において扱われる、いわゆる「３文書６情報」に含まれる「６情報」を医療機関から送信する際のFHIR仕様に関係する部分を記述したものである。3文書に含まれる6情報に相当する情報については、本仕様の該当部分が適用されるが、3文書のBundle仕様はそれぞれの文書の仕様で規定されており、ここで取り扱わない。
 
 
-「電子カルテ情報共有サービス」については、<A href="https://www.mhlw.go.jp/content/10808000/001085126.pdf">健康・医療・介護情報利活用検討会 医療情報ネットワークの基盤に関するワーキンググループ とりまとめ(2023/3/29)</a>を参照できる。ただし、<span style="color: red; ">検討が現在進行形で進んでいるため、その後の情報収集は刻々とアップデートされる可能性がある。</span>
 
 #### 送信時の複数リソースデータのまとめ方
 ##### Bundleリソース（collectionタイプ）の使用
@@ -40,16 +39,6 @@ Bundleリソースのプロファイルは以下を参照すること。</span>
 リソースの格納順序として、患者を識別するためのPatientリソース1個をまずBundleの最初のentryに格納し、以後は上記①から④のいずれかひとつのリソースタイプのデータを*原則として*１個以上格納する。<br>
 「*原則として*」と記述している理由は、例外的に、過去に送信済みのBundleリソースの内容をすべて削除したい場合にBundleリソースを送信するケースにおいては、患者を識別するためのPatientリソース1個をだけを格納する形をとる。
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない（エラーとなる）。
-
-
-<span style="color: maroon;">[v0.9.8変更のため取り消し]</span>
-~~①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースのlink.relation要素に固定値"profile"を、link.url要素に①から④に対応して、それぞれ以下のいずれかの値を  設定する。~~
-
- ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"~~
- ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"~~
- ~~- "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"~~
- ~~- "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"~~
-
 
 
 <span style="color: blue;">[v0.9.8変更のため追記]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。</span>
@@ -206,7 +195,7 @@ Bundle.entry[] に繰り返しで格納される個々のリソース・イン�
 
 なお、共有サービスでは、削除処理、更新処理のどの過程でも途中で失敗、エラーとなった場合には、全ての処理をロールバックし、処理前の状態に戻す。
 
-以上の共有サービス側の処理要件を満たせるよう、<span style="color: blue;">[v0.9.10表現変更]~~６情報の各リソースインスタンスには、送信側の責任で適切に~~Bundleリソースインスタンス、Patientリソースインスタンスには、仕様に従って</span>①②③を設定<span style="color: red; ">しなければならない。</span>
+以上の共有サービス側の処理要件を満たせるよう、<span style="color: blue;">Bundleリソースインスタンス、Patientリソースインスタンスには、仕様に従って</span>①②③を設定<span style="color: red; ">しなければならない。</span>
 
 
 #### Bundleリソースの送信タイミング
