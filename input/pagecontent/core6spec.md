@@ -477,9 +477,33 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
   },
 ```
 
-検体検査結果を未説明であることを示したい場合にも同じフラグを使用できるが、電子カルテ共有サービスでどのように取り扱われるかについては決定していない。
+##### 【未提供病名】情報の仕様
+病名を未提供（他の医療機関にも患者さんにも提供しない病名）とする場合には、病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で未提供フラグを記述<span style="color: red; ">しなければならない。</span><br>
+　meta.tag.system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"　(この固定値とする)<br>
+　meta.tag.code = "UNDELIVERED"　(この固定値とする)<br>
 <br>
-
+ 以下の例のように他のフラグと併用できる。
+```
+{
+  "resourceType": "Condition",
+  "id": "Example-condition",
+  "meta": {
+    :
+    <省略>
+    :
+    "tag": {[
+      {
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
+        "code": "UNINFORMED"
+      },
+      {
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
+        "code": "UNDELIVERED"
+      }
+    ]
+    }
+  },
+```
 
 {% include markdown-link-references.md %}
 
