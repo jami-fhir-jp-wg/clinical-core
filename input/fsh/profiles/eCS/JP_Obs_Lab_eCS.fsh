@@ -35,10 +35,10 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 
-* identifier contains requestIdentifier 1..1 MS
-* identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].system ^comment = "この検査結果情報を作成した施設内で、この検査結果情報を他の検査結果情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。"
-* identifier[requestIdentifier].value 1..1 MS
+* identifier contains resourceIdentifier 1..1 MS
+* identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[resourceIdentifier].system ^comment = "この検査結果情報を作成した施設内で、この検査結果情報を他の検査結果情報と一意に区別できるIDを発番できる場合にのみ、このsystem値（$JP_ResourceInstanceIdentifier）を使用すること。"
+* identifier[resourceIdentifier].value 1..1 MS
   * insert relative_short_definition("検査結果情報を識別するIDの文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。例）\"1311234567-2021-00123456\"")
 
 

@@ -12,9 +12,6 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 
 * obeys warning-medication-allergy
 
-
-* extension[eCS_InstitutionNumber] 1..1 MS
-
 * ^url = $JP_AllergyIntolerance_CLINS_eCS
 * ^status = #active
 * ^date = "2023-10-22"
@@ -38,6 +35,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
   * code 1..1 MS
     * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
 
+/*
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
@@ -54,7 +52,12 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 * contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("診療情報における患者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
+*/
 
+* extension[eCS_InstitutionNumber] 1..1 MS
+//* extension[eCS_Department] 0..1 MS
+
+// * identifier 1..* MS
 
 * category 0.. MS  // 薬剤禁忌情報の場合は、必須 
 * category ^comment = "電子カルテ情報共有サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならず、criticality要素は\"high\"を設定しなければならない。これ以外の場合には、本リソースの情報は薬剤禁忌以外のアレルギー情報として取り扱われる。"
@@ -64,8 +67,8 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 
 // 患者情報
 * patient ^comment = "電子カルテ共有サービスでは、別途BundleリソースでPatientリソースが送信されているので、その被保険者個人識別子を明示することにより患者を参照する。"
+* patient only  Reference(JP_Patient_CLINS_eCS)
 * patient.identifier.system = $JP_Insurance_memberID (exactly)
-
 
 
 * asserter ^comment = "この情報は記述しなくてよいが、記述する場合には display子要素だけとし、別のリソースへの参照をしない。"
