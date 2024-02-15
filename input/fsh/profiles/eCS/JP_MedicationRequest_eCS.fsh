@@ -19,13 +19,43 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * ^date = "2023-10-18"
 * . ^short = "診療情報として処方オーダの１処方薬情報の格納に使用する"
 * . ^definition = "診療情報として処方オーダの１処方薬情報の格納に使用する"
-* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
+* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。（電子カルテ情報共有サービスに送信するためにこのプロファイルから派生した別の専用プロファイルが用意されているが、電子カルテ情報共有サービスでは、処方情報の送信は想定されていない。診療情報提供書や退院時サマリーに埋め込まれる"
 
+* meta 1..1 MS
+* meta.versionId ^short = "バージョン固有の識別子"
+* meta.versionId ^definition = "バージョン固有の識別子"
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 * meta.profile 0.. MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
+
+// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained contains 
+  /* patient 1..1
+    and */
+    encounter 0..1
+    and requester 0..1
+    and order 0..1
+/*
+* contained[patient] only  JP_Patient_CLINS_eCS
+  * insert relative_short_definition("診療情報における患者情報をコンパクトに格納したPatientリソース")
+  * ^comment = "patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。３文書６情報の作成では、JP_Patientリソースのcontainedは必須。"
+*/
+* contained[encounter] only  JP_Encounter
+  * insert relative_short_definition("処方情報を作成したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+
+* contained[requester] only  JP_Practitioner
+  * insert relative_short_definition("処方情報を作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
+  * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
+
+* contained[order] only  JP_ServiceRequest
+  * insert relative_short_definition("処方オーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
+  * ^comment = "recorder要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
 
 * identifier  MS
   * insert relative_short_definition("この１処方薬情報を作成した施設内で、この１処方薬情報を他の処方薬情報と一意に区別できるID。このID情報をキーとして１処方薬情報の更新・削除ができる一意性があること。このidentifier以外のIDも追加して複数格納しても構わない。少なくともひとつのidentifierは次の仕様に従う値を設定すること。")

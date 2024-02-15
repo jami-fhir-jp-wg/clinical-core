@@ -35,7 +35,7 @@
   - patient : このアレルギー不耐症を有する患者のFHIRリソースへの参照。３文書６情報の作成では、 contained (JP_Patient)リソースへのリテラル参照を設定する。
 
 ### 条件により必須
-  - meta.tag : 電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に必須。
+  - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
   - meta.profile : 電子カルテ情報共有サービスでは必須
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。

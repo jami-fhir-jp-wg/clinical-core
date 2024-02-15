@@ -11,6 +11,9 @@ Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受�
 * . ^short = ""
 * . ^definition = "診療情報提供では、紹介理由を記述する受診時情報. 診療サマリーではサマリー対象となる受診や入院に関する受診時または入院時情報。診療６情報において埋め込みリソースとして記述する場合にも適用できる。"
 
+* meta.versionId ^short = "バージョン固有の識別子"
+* meta.versionId ^definition = "バージョン固有の識別子"
+s
 * identifier 0..1 MS
 * identifier ^short = "この医療機関における患者の受診番号、入院管理番号"
 * identifier ^definition = "この医療機関における患者の受診番号、入院管理番号"

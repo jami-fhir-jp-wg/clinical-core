@@ -18,8 +18,6 @@
 ### 必須要素　（MedicationRequestの直下の必須要素）
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : 電子カルテ情報共有サービスでは必須
-  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。ｓ医療機関番号１０桁
   - contained (JP_Patient) : JP_Patientリソースのcontainedは必須。
   - identifier[] : インスタンス識別ID
   - status : 調剤が完了しているかどうかは不明であるが、交付が完了した処方として、completedを設定することとする。
@@ -35,11 +33,13 @@
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
-  - meta.tag : 電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に必須。
+  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
+  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
 
 ### 推奨要素
   - extension (Department) : 診療科情報
-  - caetgory : 薬剤使用区分。OHP:外来処方、OHI:院内処方（外来）、OHO:院外処方（外来）、IHP:入院処方、DCG:退院時処方、ORD:定期処方（入院）、XTR:臨時処方(入院）
+  - category : 薬剤使用区分。OHP:外来処方、OHI:院内処方（外来）、OHO:院外処方（外来）、IHP:入院処方、DCG:退院時処方、ORD:定期処方（入院）、XTR:臨時処方(入院）
 JHSP0007コードから、BDP:持参薬処方　などの区分を設定する。
 
 ### MustSupport要素

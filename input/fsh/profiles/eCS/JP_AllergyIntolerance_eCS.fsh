@@ -21,12 +21,17 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * . ^comment = "薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。なお、このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
 
 * meta 1..1 MS
+* meta.versionId ^short = "バージョン固有の識別子"
+* meta.versionId  ^definition = "バージョン固有の識別子"
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 
 * meta.profile 0.. MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP__AllergyIntolerance_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
+
+* meta.tag 0..
+  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_AllergyIntolerance_CLINS_eCSを参照のこと。")
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
@@ -37,13 +42,12 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
     and recorder 0..1 MS
 
 * contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("診療情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * insert relative_short_definition("アレルギー／薬剤禁忌情報を記述（取得）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[recorder] only  JP_Practitioner
-  * insert relative_short_definition("診療情報における患者情報をコンパクトに格納したPractitionerリソース")
+  * insert relative_short_definition("アレルギー／薬剤禁忌情報を記述（取得）した医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
-
 
 * extension[eCS_InstitutionNumber] 0..1 MS
 * extension[eCS_Department] 0..1 MS
@@ -130,9 +134,8 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 * recorder ^comment = "Containedリソースに含まれるPractitioner（登録者/医療者）リソースをこのリソース内で参照する。"
 
 * asserter 0..1 MS
-  * insert relative_short_definition("この状態があると確認（主張）した人情報への参照。医療者、患者本人の場合にはそれぞれのContainedリソースへの参照を記述する。またはdisplay要素に文字列を記述する")
-
-* asserter ^comment = ""
+  * insert relative_short_definition("この状態があると確認（主張）した人情報への参照であるが、患者本人の場合にはそれぞれのContainedリソースへの参照を記述する。それ以外の場合には、display要素に文字列を記述する")
+* asserter ^comment = "この情報は記述しなくてもよいが、記述する場合には 患者本人以外の場合には、display子要素だけに職種名や名前などを記載するだけとし、別のリソースへの参照をしないことで簡略化することを原則とする。"
 
 * lastOccurrence  0..1 
   * insert relative_short_definition("最後（直近）に知られている発生日時")

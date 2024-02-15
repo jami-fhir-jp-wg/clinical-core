@@ -33,7 +33,7 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
-    * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
 
 * meta.tag[uninformed] = $JP_ehrshrs_indication_CS#UNINFORMED
   * insert relative_short_definition("６情報作成において未告知フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
@@ -48,7 +48,7 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
-
+/*
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"
@@ -64,8 +64,9 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
 * contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("診療情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
+*/
 
-
+* extension[eCS_InstitutionNumber] 1..1 MS
 
 
 // 患者情報

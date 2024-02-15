@@ -21,7 +21,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 
 
 * meta.profile 1..1 MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS")
+  * insert relative_short_definition("準拠しているプロファイルを受信側に通知するため、本文書のプロファイルを識別するURLを必ず指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS")
 
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
@@ -29,11 +29,11 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 * meta.tag contains lts 0..1 MS
 
 * meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存情報フラグの設定する場合に使用する。")
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
-    * insert relative_short_definition("長期保存情報フラグ　固定値 LTSを設定する。")
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
 
 /*
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
@@ -59,7 +59,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 
 // * identifier 1..* MS
 
-* category 0.. MS  // 薬剤禁忌情報の場合は、必須 
+// * category 0.. MS  // 薬剤禁忌情報の場合は、必須 
 * category ^comment = "電子カルテ情報共有サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならず、criticality要素は\"high\"を設定しなければならない。これ以外の場合には、本リソースの情報は薬剤禁忌以外のアレルギー情報として取り扱われる。"
 
 * criticality ^comment = "電子カルテ情報共有サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、category要素の記述を参照すること。" 
@@ -71,4 +71,3 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 * patient.identifier.system = $JP_Insurance_memberID (exactly)
 
 
-* asserter ^comment = "この情報は記述しなくてよいが、記述する場合には display子要素だけとし、別のリソースへの参照をしない。"
