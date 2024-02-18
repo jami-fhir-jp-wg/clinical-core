@@ -150,7 +150,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * subject 1..1   MS
 * subject ^short = "患者のPatientリソース参照記述"
 * subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。Bundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）こともできる。"
-* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。{ "reference":  "#patient1234567"}"
+* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。"
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)

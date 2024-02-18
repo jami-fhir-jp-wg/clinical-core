@@ -120,7 +120,7 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 * patient only  Reference(JP_Patient)
 * patient ^short = "患者のPatientリソース参照記述"
 * patient ^definition = "対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在するので、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。電子カルテ情報共有サービス以外の一般的な利用ではBundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）。"
-* patient ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。{ "reference":  "#patient1234567"}"
+* patient ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。"
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)
