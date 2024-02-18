@@ -24,13 +24,14 @@
   - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。
   - category : 臨床的状態に割り当てられたカテゴリー。problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは'encounter-diagnosis'を設定すること。
   - code : 傷病名のコードと名称。code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。コード化は必須。
-  - subject : 対象となる患者のFHIRリソースへの参照。患者リソースのidentifierを設定する。
+  - subject : 対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、 contained (JP_Patient)リソースへのリテラル参照を設定する。
 
 ### 条件により必須
-  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - meta.profile : 電子カルテ情報共有サービスでは必須。
   - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
   - meta.tag : 電子カルテ情報共有サービスで未告知フラグを設定する場合に必須。
   - meta.tag : 電子カルテ情報共有サービスで未提供フラグを設定する場合に必須。
+  - contained (JP_Patient) :  電子カルテ情報共有サービスでは必須。
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - clinicalStatus : 臨床的状態(傷病の状態)のコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。abatementDateTime要素に日付が設定されている場合にはその時点での状態を設定し、同要素がない場合にはactiveを設定する。
   - onsetDatetime : 電子カルテ情報共有サービスでは、病名開始日をdateTime型で記述することが必須。

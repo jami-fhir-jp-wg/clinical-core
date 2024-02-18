@@ -40,11 +40,14 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
     encounter 0..1
     and requester 0..1
     and order 0..1
+//    and patient 0..1 MS
+
 /*
-* contained[patient] only  JP_Patient_CLINS_eCS
-  * insert relative_short_definition("診療情報における患者情報をコンパクトに格納したPatientリソース")
-  * ^comment = "patient要素から参照される場合には、そのJP_Patientリソースの実体。JP_Patientリソースにおける必要最小限の要素だけが含まれればよい。３文書６情報の作成では、JP_Patientリソースのcontainedは必須。"
+* contained[patient] only  JP_Patient
+  * insert relative_short_definition("対象者である患者情報を格納したPatientリソース。Bundleリソースのentryで記述してもよいが、ここにContainedリソースとして内包し、subject要素から参照する形式をとってもよい。")
+  * ^comment = "subject要素から参照される場合には、そのJP_Patient(JP_Patient_eCSでもよい)リソースの実体。"
 */
+
 * contained[encounter] only  JP_Encounter
   * insert relative_short_definition("処方情報を作成したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
@@ -146,8 +149,8 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 // 患者情報
 * subject 1..1   MS
 * subject ^short = "患者のPatientリソース参照記述"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在することを前提に、そのリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述するか。またはそのリソースのfullUrlを記述する（comment参照のこと）。"
-* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法をとっても構わない。"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。Bundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）こともできる。"
+* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。{ "reference":  "#patient1234567"}"
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)

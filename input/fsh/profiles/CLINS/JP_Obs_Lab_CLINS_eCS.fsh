@@ -16,29 +16,6 @@ Description: "CLINS 電子カルテ共有サービス用 Observationリソース
 * ^date = "2023-10-22"
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 
-// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
-* contained ^slicing.discriminator.type = #profile
-* contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #open
-* contained contains
-    encounter 0..
-    and specimen 0..
-    and order 0..
-
-* contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("診療情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
-
-* contained[specimen] only  JP_Specimen
-  * insert relative_short_definition("検体材料情報をコンパクトに格納したSpecimenリソース")
-  * ^comment = "specimen要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。"
-* contained[order] only  JP_ServiceRequest
-  * insert relative_short_definition("診療情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
-  * ^comment = "basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
-
-
-
-
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS　を設定する。")
 

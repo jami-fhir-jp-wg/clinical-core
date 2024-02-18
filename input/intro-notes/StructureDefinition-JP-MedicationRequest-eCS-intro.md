@@ -23,7 +23,7 @@
   - status : 調剤が完了しているかどうかは不明であるが、交付が完了した処方として、completedを設定することとする。
   - intent : 投薬指示の意図。"order" を固定で設定する。
   - medicationCodeableConcept : 医薬品のコードと名称。ひとつの必須の text 子要素と、複数の（可能なかぎり一組以上の） coding[] 子要素で記述する。text子要素はコード化の方法に関わらず、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず設定する。coding[]子要素で使用すべきコード表については詳細説明を参照のこと。
-  - subject : 対象となる患者のFHIRリソースへの参照。３文書６情報の作成では、 contained (JP_Patient)リソースへのリテラル参照を設定する。
+  - subject : 対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、 contained (JP_Patient)リソースへのリテラル参照を設定する。
   - authoredOn : 処方指示が最初に作成された日時。
   - dosageInstruction[] : 用法や投与量を含む処方指示。<a href="#dosageInstructionTable">表「dosageInstructionTable」</a>を参照。
 
@@ -33,8 +33,9 @@
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
-  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - meta.profile : 電子カルテ情報共有サービスでは必須。
   - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
+  - contained (JP_Patient) :  電子カルテ情報共有サービスでは必須。
   - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
 
 ### 推奨要素

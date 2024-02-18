@@ -29,6 +29,31 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
 
 
+// Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
+* contained ^slicing.discriminator.type = #profile
+* contained ^slicing.discriminator.path = "$this"
+* contained ^slicing.rules = #open
+* contained contains
+    encounter 0..1  MS
+    and specimen 0..1 MS
+    and order 0..1 MS
+//    and patient 0..1 MS
+
+* contained[encounter] only  JP_Encounter
+  * insert relative_short_definition("診療情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+
+* contained[specimen] only  JP_Specimen
+  * insert relative_short_definition("検体材料情報をコンパクトに格納したSpecimenリソース")
+  * ^comment = "specimen要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。"
+* contained[order] only  JP_ServiceRequest
+  * insert relative_short_definition("診療情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
+  * ^comment = "basedOn要素から参照される場合には、そのJP_ServiceRequestリソースの実体。JP_ServiceRequestリソースにおける必要最小限の要素だけが含まれればよい。"
+/*
+* contained[patient] only  JP_Patient
+  * insert relative_short_definition("対象者である患者情報を格納したPatientリソース。Bundleリソースのentryで記述してもよいが、ここにContainedリソースとして内包し、subject要素から参照する形式をとってもよい。")
+  * ^comment = "subject要素から参照される場合には、そのJP_Patient(JP_Patient_eCSでもよい)リソースの実体。"
+*/
 * identifier  MS
   * insert relative_short_definition("この検査結果情報を作成した施設内で、この検査結果情報を他の処方薬情報と一意に区別できるID。このID情報をキーとして１検査結果情報の更新・削除ができる一意性があること。このidentifier以外のIDも追加して複数格納しても構わない。少なくともひとつのidentifierは次の仕様に従う値を設定すること。")
   * ^comment = "検査結果情報を他の検査結果情報と一意に区別できるIDを発番できない場合には、省略可能であるが、その場合にはbasedOnで指し示す処方オーダ情報の中に、この処方を作成した施設内で元のオーダを一意に識別できるIDを格納することが望ましい。"
@@ -646,8 +671,8 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 // 患者情報
 * subject 1..1   MS
 * subject ^short = "患者のPatientリソース参照記述"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在することを前提に、そのリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述するか。またはそのリソースのfullUrlを記述する（comment参照のこと）。"
-* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法をとっても構わない。電子カルテ共有サービスでは、別途BundleリソースでPatientリソースが送信されているので、その被保険者個人識別子を明示することにより患者を参照する。"
+* subject ^definition = "対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在するので、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。電子カルテ情報共有サービス以外の一般的な利用ではBundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）。"
+* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。{ "reference":  "#patient1234567"}"
 
 
 // OUL^R22.PV1

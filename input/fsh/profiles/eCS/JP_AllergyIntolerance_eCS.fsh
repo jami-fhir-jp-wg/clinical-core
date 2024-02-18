@@ -40,6 +40,7 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * contained contains
     encounter 0..1 MS
     and recorder 0..1 MS
+//    and patient 0..1 MS
 
 * contained[encounter] only  JP_Encounter
   * insert relative_short_definition("アレルギー／薬剤禁忌情報を記述（取得）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
@@ -48,6 +49,13 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("アレルギー／薬剤禁忌情報を記述（取得）した医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
+
+/*
+* contained[patient] only  JP_Patient
+  * insert relative_short_definition("傷病名情報の対象者である患者情報を格納したPatientリソース。Bundleリソースのentryで記述してもよいが、ここにContainedリソースとして内包し、patient要素から参照する形式をとってもよい。")
+  * ^comment = "patient要素から参照される場合には、そのJP_Patient(JP_Patient_eCSでもよい)リソースの実体。"
+*/
+
 
 * extension[eCS_InstitutionNumber] 0..1 MS
 * extension[eCS_Department] 0..1 MS
@@ -111,8 +119,8 @@ http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つの�
 * patient 1..1   MS
 * patient only  Reference(JP_Patient)
 * patient ^short = "患者のPatientリソース参照記述"
-* patient ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースなどで本リソースから参照可能なPatientリソースが同時に存在することを前提に、そのリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述するか。またはそのリソースのfullUrlを記述する（comment参照のこと）。"
-* patient ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法をとっても構わない。"
+* patient ^definition = "対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在するので、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。電子カルテ情報共有サービス以外の一般的な利用ではBundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）。"
+* patient ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。{ "reference":  "#patient1234567"}"
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)
