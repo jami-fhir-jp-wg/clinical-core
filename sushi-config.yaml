@@ -246,3 +246,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
     - http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
+    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
+    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier
