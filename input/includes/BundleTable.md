@@ -393,6 +393,3 @@
  </tr>
 </table>
 
-</body>
-
-</html>

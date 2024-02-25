@@ -771,6 +771,3 @@
  </tr>
 </table>
 
-</body>
-
-</html>
