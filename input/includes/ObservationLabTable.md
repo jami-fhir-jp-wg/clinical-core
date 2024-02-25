@@ -1529,6 +1529,3 @@
  </tr>
 </table>
 
-</body>
-
-</html>
