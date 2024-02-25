@@ -145,6 +145,19 @@ Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/M
 Severity: #error
 Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1)"
 
+// R3011 医薬品コードの妥当性チェックYJか一般のみ（標準コードなしはX）
+Invariant: needs-anyOfYJorGeneral-medication
+Description: "R3011:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、厚生労働省一般名コードのいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
+/*
+Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
+Alias: $JP_MedicationCodeHOT7_CS = urn:oid:1.2.392.200119.4.403.2
+Alias: $JP_MedicationCodeHOT9_CS = urn:oid:1.2.392.200119.4.403.1
+Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
+Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
+*/
+Severity: #error
+Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
+
 // R4011 アレルギー情報と薬剤禁忌とを区別するため、電子カルテ情報サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はや薬剤禁忌以外のアレルギー情報として取り扱われる。
 // Invariant: needs-anyOfStandardCode-medication
 

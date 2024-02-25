@@ -13,7 +13,7 @@ Description: "CLINS 電子カルテ共有サービス用 Observationリソース
 * extension[eCS_InstitutionNumber] 1..1 MS
 * ^url = $JP_Observation_LabResult_CLINS_eCS
 * ^status = #active
-* ^date = "2023-10-22"
+* ^date = "2024-02-25"
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 
 * meta.profile 1..1 MS

@@ -77,6 +77,6 @@ Description: "JP Coreにて定義したObservationリソースに関する分類
 * ^url = $JP_SimpleObservationCategory_VS
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-04-18"
+* ^date = "2024-02-25"
 * include codes from system $JP_SimpleObservationCategory_CS
 

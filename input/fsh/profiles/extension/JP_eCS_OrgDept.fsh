@@ -9,7 +9,7 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 * ^url = $JP_eCS_InstitutionNumber
 // http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
 * ^status = #active
-* ^date = "2023-10-09"
+* ^date = "2024-02-25"
 * ^purpose = "診療サマリーや6情報等に記述する際に、作成発行した医療機関番号を記述するため。"
 
 * ^context[+].type = #element
@@ -42,7 +42,7 @@ Title: "JP eCS Department Extension"
 Description: "診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述する拡張"
 * ^url = $JP_eCS_Department
 * ^status = #active
-* ^date = "2023-10-09"
+* ^date = "2024-02-25"
 * ^purpose = "診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述するため。"
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"

@@ -25,28 +25,28 @@
 ### 必須要素
   - resourceType : リソースタイプ "Observation"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : 電子カルテ情報共有サービスでは必須
-  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。ｓ医療機関番号１０桁
   - identifier : インスタンス識別ID
   - status : 検査・観察のステータス
   - code : 検査・観察の項目コード
-  - subject : 患者のFHIRリソースへの参照。contained (JP_Patient)リソースへのリテラル参照を設定する。
+  - subject : 患者のFHIRリソースへの参照
   - effectiveDateTime : 検体採取日または検体採取日時
-  - specimen :　検体材料のFHIRリソースへの参照。 contained (JP_Patient)リソースへのリテラル参照を設定する。
+  - specimen :　検体材料のFHIRリソースへの参照
 
 ### 条件により必須
-  - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
-  - meta.tag : ３文書６情報の作成で未説明フラグを設定する場合に必須。
+  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - meta.tag  ("LTS"): 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
+  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - value[x] : 検査結果や観察結果。検査項目がバッテリー項目（グループ項目）の場合や理由があって検査値が得られなかった場合を除き必須。
   - dataAbsentReason : 検査値が得られなかった理由。検査値が得られなかった場合には必須。
   - hasMember : このグループに含まれる個々の検査の参照。この検査が複数の検査項目をグループ化したパネル検査もしくはバッテリー検査の場合には必須。
   - component : １回の検査・観察で同時に複数の検査結果が得られる場合には必須。
 
 ### 推奨要素
-  - extension (Department) : 診療科情報
-  - category : 検査結果カテゴリー。
-  - encounter : アレルギー登録時の入院外来区分情報。
-  - referenceRange : 基準値範囲。
+  - extension (eCS_Department) : 診療科情報
+  - category : 検査結果カテゴリー
+  - encounter : 検査実施時（検体採取時）の入院外来区分情報
+  - interpretation : 検査結果値の評価コード
+  - referenceRange : 基準値範囲
 
 ### MustSupport要素
 　- 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。

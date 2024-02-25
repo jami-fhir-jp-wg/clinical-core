@@ -8,7 +8,7 @@
 ## スコープ
 
 ### 対象
-電子カルテシステムで登録された病名、診断書、診療情報提供書、退院時サマリーなどの診療要約記録などに記述される、ひとつひとつの医薬品に関する処方情報を対象とする。
+電子カルテシステムで登録された病名、診断書、診療情報提供書、退院時サマリーなどの診療要約記録、などに記述される、ひとつひとつの医薬品に関する処方情報を対象とする。
 
 
 ## プロファイル定義における必須要素と推奨要素
@@ -18,14 +18,14 @@
 ### 必須要素　（MedicationRequestの直下の必須要素）
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
-  - contained (JP_Patient) : JP_Patientリソースのcontainedは必須。
-  - identifier[] : インスタンス識別ID
+  - identifier : インスタンス識別ID
   - status : 調剤が完了しているかどうかは不明であるが、交付が完了した処方として、completedを設定することとする。
   - intent : 投薬指示の意図。"order" を固定で設定する。
-  - medicationCodeableConcept : 医薬品のコードと名称。ひとつの必須の text 子要素と、複数の（可能なかぎり一組以上の） coding[] 子要素で記述する。text子要素はコード化の方法に関わらず、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず設定する。coding[]子要素で使用すべきコード表については詳細説明を参照のこと。
-  - subject : 対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、 contained (JP_Patient)リソースへのリテラル参照を設定する。
+  - medicationCodeableConcept : 医薬品のコードと名称。
+  - subject : 対象となる患者のFHIRリソースへの参照。
   - authoredOn : 処方指示が最初に作成された日時。
-  - dosageInstruction[] : 用法や投与量を含む処方指示。<a href="#dosageInstructionTable">表「dosageInstructionTable」</a>を参照。
+  - dosageInstruction : 用法や投与量を含む処方指示。
+  - dispenseRequest : 調剤（薬局での払い出し指示）情報
 
 ### 必須要素　（MedicationRequest.DosageInstructionの直下の必須要素）
   - DosageInstruction[].extension[] : 投与開始日を明示するために使用する拡張「PeriodOfUse」
@@ -34,19 +34,22 @@
 
 ### 条件により必須
   - meta.profile : 電子カルテ情報共有サービスでは必須。
-  - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
-  - contained (JP_Patient) :  電子カルテ情報共有サービスでは必須。
+  - meta.tag ("LTS") : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
   - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
 
 ### 推奨要素
-  - extension (Department) : 診療科情報
-  - category : 薬剤使用区分。OHP:外来処方、OHI:院内処方（外来）、OHO:院外処方（外来）、IHP:入院処方、DCG:退院時処方、ORD:定期処方（入院）、XTR:臨時処方(入院）
-JHSP0007コードから、BDP:持参薬処方　などの区分を設定する。
+  - contained (JP_Encounter) : 処方情報を作成したときの受診情報（入外区分など）を記述しているEncounterリソース
+  - extension (eCS_Department) : 診療科情報
+  - category : 薬剤使用区分
+  - encounter : この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
+  - requester : 処方者情報。この処方を作成した医療者の情報への参照。
 
 ### MustSupport要素
-　- 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
-　- dispenseRequest
-
+  - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
+  - basedOn : 元の処方オーダ情報。処方オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照。
+  - note :  薬剤単位の備考。
+  - substitution : 後発医薬品への変更可否情報。
+  
 ## 要素の説明とプロファイル
   - 多重度欄の背景色：
     - 濃い黄色＝「必須要素」に対応する。

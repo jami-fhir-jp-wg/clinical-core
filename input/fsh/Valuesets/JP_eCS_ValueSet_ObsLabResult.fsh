@@ -7,7 +7,7 @@ Description: "eCS 検体検査結果で使用することが可能な ValueSet"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-11-12"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS    //共有項目JLACコード
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS   //感染症検査項目コード

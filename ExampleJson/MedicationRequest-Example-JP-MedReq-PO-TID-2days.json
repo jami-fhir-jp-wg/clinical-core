@@ -41,11 +41,11 @@
       "value": "1"
     },
     {
-      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "system": "urn:oid:1.2.392.100495.20.3.11",
       "value": "1318814790-9990767-0A1720D83807672021070909210705-2"
     },
     {
-      "system": "urn:oid:1.2.392.100495.20.3.11",
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
       "value": "1318814790-9990767-0A1720D83807672021070909210705-2"
     }
   ],

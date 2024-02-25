@@ -7,7 +7,7 @@ Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受�
 
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
 * ^status = #active
-* ^date = "2023-03-31"
+* ^date = "2024-02-25"
 * . ^short = ""
 * . ^definition = "診療情報提供では、紹介理由を記述する受診時情報. 診療サマリーではサマリー対象となる受診や入院に関する受診時または入院時情報。診療６情報において埋め込みリソースとして記述する場合にも適用できる。"
 
@@ -23,9 +23,9 @@ Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受�
 * identifier 0..1 MS
 * identifier ^short = "この医療機関における患者の受診番号、入院管理番号"
 * identifier ^definition = "この医療機関における患者の受診番号、入院管理番号"
-* identifier.system 1..1 MS
-* identifier.system = $JP_ResourceInstanceIdentifier (exactly)
+
 * identifier.value 1..1 MS
+  * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
 
 * status = #finished (exactly)
 * status ^definition = "finished の固定値を設定する。"

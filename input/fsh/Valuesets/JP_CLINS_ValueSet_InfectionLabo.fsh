@@ -8,7 +8,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-CHECK
 
@@ -23,7 +23,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBS-AG-SCO
 
@@ -38,7 +38,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-COI
 
@@ -53,7 +53,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-DIL
 
@@ -68,7 +68,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #Hbs-AG-OD
 
@@ -83,7 +83,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-QUANT
 
@@ -98,7 +98,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-RESULT
 
@@ -113,7 +113,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-POS-COI
 
@@ -128,7 +128,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-COI
 
@@ -143,7 +143,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-NEG-COI
 
@@ -158,7 +158,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-DIL
 
@@ -173,7 +173,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-QUANT
 
@@ -188,7 +188,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-RESULT
 
@@ -203,7 +203,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-QUANT
 
@@ -218,7 +218,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-RESULT
 
@@ -233,7 +233,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AG-QUANT
 
@@ -248,7 +248,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AG-RESULT
 
@@ -263,7 +263,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-COI
 
@@ -278,7 +278,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-DIL
 
@@ -293,7 +293,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-RESULT
 
@@ -308,7 +308,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-POS-COI
 
@@ -323,7 +323,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-QUANT
 
@@ -338,7 +338,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-RESULT
 
@@ -353,7 +353,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COIV
 
@@ -368,7 +368,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COI
 
@@ -383,7 +383,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-NEG-COI
 
@@ -398,7 +398,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-OD
 
@@ -413,7 +413,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-P24-AB-RESULT
 
@@ -428,7 +428,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-QLRESULT
 
@@ -443,7 +443,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-P24-AB-QUANT
 
@@ -458,7 +458,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-QUANT
 
@@ -473,7 +473,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-RESULT
 
@@ -488,7 +488,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-POS-COI
 
@@ -503,7 +503,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-COI
 
@@ -518,7 +518,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-DIL
 
@@ -533,7 +533,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-RESULT
 
@@ -548,7 +548,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-POS-COI
 
@@ -563,7 +563,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-AB-DIL
 
@@ -578,7 +578,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-AB-RESULT
 
@@ -593,7 +593,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-2-AB-DIL
 
@@ -608,7 +608,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-2-AB-RESULT
 
@@ -623,7 +623,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-QLRESULT
 
@@ -638,7 +638,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-QUANT
 
@@ -653,7 +653,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-RESULT
 
@@ -668,7 +668,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-HQUANT
 
@@ -683,7 +683,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-RESULT
 
@@ -698,7 +698,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-QUANT-COI
 
@@ -713,7 +713,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-NEG-COI
 
@@ -728,7 +728,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-QUANT-RESULT
 
@@ -743,7 +743,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-POS-COI
 
@@ -758,7 +758,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-QUANT
 
@@ -773,7 +773,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-HQUANT
 
@@ -788,7 +788,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS
 

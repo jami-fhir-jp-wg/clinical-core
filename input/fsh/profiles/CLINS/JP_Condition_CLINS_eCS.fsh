@@ -13,7 +13,7 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
 
 * ^url = $JP_Condition_CLINS_eCS
 * ^status = #active
-* ^date = "2023-10-04"
+* ^date = "2024-02-25"
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 
@@ -48,25 +48,11 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
-/*
-// encounter、recorder、は最低限の情報をContainedリソースとして記述する
-* contained ^slicing.discriminator.type = #profile
-* contained ^slicing.discriminator.path = "$this"
-* contained ^slicing.rules = #open
-* contained contains
-    encounter 0..1 MS
-    and recorder 0..1 MS
 
-* contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("診療情報における入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
-
-* contained[recorder] only  JP_Practitioner
-  * insert relative_short_definition("診療情報における記録医療者情報をコンパクトに格納したPractitionerリソース")
-  * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
-*/
 
 * extension[eCS_InstitutionNumber] 1..1 MS
+  * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。電子カルテ情報サービスでは、この拡張による記述は必須。本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
+  * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
 
 
 // 患者情報
@@ -74,10 +60,9 @@ Description: "CLINS 電子カルテ共有サービス用  Conditionリソース�
 * subject.identifier.system = $JP_Insurance_memberID (exactly)
 
 
-
 * onset[x] 0..1 MS
 * onset[x]  ^short = "この傷病名情報が同定された時期"
-* onset[x]  ^definition = "患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。３文書６情報の作成では、病名開始日をdateTime型で記述するため、onsetDateTime要素を使用する。"
+* onset[x]  ^definition = "患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名開始日をdateTime型で記述するため、onsetDateTime要素を使用する。"
 * onsetDateTime 1..1 MS
 
 

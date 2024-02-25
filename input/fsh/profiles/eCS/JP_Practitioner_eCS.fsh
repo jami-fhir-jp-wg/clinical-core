@@ -12,7 +12,7 @@ Description: "eCS 診療情報・サマリー汎用 Practitionerリソース（�
 
 * ^url = $JP_Practitioner_eCS
 * ^status = #active
-* ^date = "2023-05-27"
+* ^date = "2024-02-25"
 * . ^short = "診療情報サマリーにおける主としてオーダ等の医師情報の格納に使用する"
 * . ^definition = "診療情報サマリー・厚労省6情報などにおける主としてオーダ等の医師情報の格納に使用する"
 

@@ -9,7 +9,7 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(ABO) JLAC10 V
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BLD-ABO
 
@@ -30,7 +30,7 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(Rh) JLAC10 Va
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BLD-Rh
 
@@ -47,7 +47,7 @@ Description: "CLINS 電子カルテ共有サービス用 アルブミン JLAC10 
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ALB
 
@@ -62,7 +62,7 @@ Description: "CLINS 電子カルテ共有サービス用 アルカリホスフ�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ALP
 
@@ -77,7 +77,7 @@ Description: "CLINS 電子カルテ共有サービス用 ALT(GPT) JLAC10 ValueSe
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ALT
 
@@ -94,7 +94,7 @@ Description: "CLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC10 
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #AMY
 
@@ -109,7 +109,7 @@ Description: "CLINS 電子カルテ共有サービス用 活性化部分トロ�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #APTT
 
@@ -124,7 +124,7 @@ Description: "CLINS 電子カルテ共有サービス用 AST(GOT) JLAC10 ValueSe
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #AST
 
@@ -139,7 +139,7 @@ Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペ
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #NT-proBNP
 
@@ -154,7 +154,7 @@ Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖)
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BS
 
@@ -169,7 +169,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC1
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BUN
 
@@ -184,7 +184,7 @@ Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC10 
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Ca
 
@@ -214,7 +214,7 @@ Description: "CLINS 電子カルテ共有サービス用 コリンエステラ�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ChE
 
@@ -229,7 +229,7 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチンキナ�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #CK
 
@@ -244,7 +244,7 @@ Description: "CLINS 電子カルテ共有サービス用 クロール JLAC10 Val
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Cl
 
@@ -259,7 +259,7 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Cre
 
@@ -274,7 +274,7 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #CRP
 
@@ -289,7 +289,7 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #CRP-class
 
@@ -304,7 +304,7 @@ Description: "CLINS 電子カルテ共有サービス用 シスタチンC JLAC10
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Cys-C
 
@@ -319,7 +319,7 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #D-Bil
 
@@ -334,7 +334,7 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー JLAC10 Va
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #DD
 
@@ -349,7 +349,7 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #FBS
 
@@ -364,7 +364,7 @@ Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #GGT
 
@@ -379,7 +379,7 @@ Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #HbA1c-NGSP
 
@@ -394,7 +394,7 @@ Description: "CLINS 電子カルテ共有サービス用 HDL-コレステロー�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #HDL-C
 
@@ -409,7 +409,7 @@ Description: "CLINS 電子カルテ共有サービス用 LD(LDH) ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #LD
 
@@ -424,7 +424,7 @@ Description: "CLINS 電子カルテ共有サービス用 LDL-コレステロー�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #LDL-C
 
@@ -439,7 +439,7 @@ Description: "CLINS 電子カルテ共有サービス用 ナトリウム ValueSe
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Na
 
@@ -454,7 +454,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-Sec
 
@@ -469,7 +469,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンAC
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-Act
 
@@ -484,7 +484,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンIN
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-INR
 
@@ -499,7 +499,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-Ratio
 
@@ -514,7 +514,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-ヘモグロビ�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Hb
 
@@ -529,7 +529,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-血小板数 Val
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PLT
 
@@ -544,7 +544,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-赤血球数 Val
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #RBC
 
@@ -559,7 +559,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-白血球数 Val
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * ^copyright = "JAMI"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #WBC
 
@@ -574,7 +574,7 @@ Description: "CLINS 電子カルテ共有サービス用 総コレステロー�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #T-CHO
 
 // 総ビリルビン(T-Bil)^^
@@ -588,7 +588,7 @@ Description: "CLINS 電子カルテ共有サービス用 総ビリルビン Valu
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #T-Bil
 
 // 総蛋白(TP)^^
@@ -602,7 +602,7 @@ Description: "CLINS 電子カルテ共有サービス用 総蛋白 ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #TP
 
 // 中性脂肪(TG)^^
@@ -616,7 +616,7 @@ Description: "CLINS 電子カルテ共有サービス用 中性脂肪 ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #TG
 
 // 尿酸(UA)^^
@@ -630,7 +630,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿酸 ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #UA
 
 // 尿潜血(定性)
@@ -644,7 +644,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(定性) Value
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-Bld
 
 // 尿潜血(半定量、判定) ^^
@@ -658,7 +658,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(半定量、�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-Bld-QLHalfQty
 
 //  尿潜血(半定量、希釈倍率) ^^
@@ -672,7 +672,7 @@ Description: "CLINS 電子カルテ共有サービス用  尿潜血(半定量、
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-Bld-HalfQty
 
 
@@ -687,7 +687,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) Value
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-TP
 
 //  尿蛋⽩(半定量、判定) 
@@ -701,7 +701,7 @@ Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-TP-QLHalfQty
 
 
@@ -716,7 +716,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(半定量) Va
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-TP-HalfQty
 
 
@@ -731,7 +731,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿中アルブミン/�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-AperC
 
 // 尿中蛋白/クレアチニン比(P/C比)^^
@@ -745,7 +745,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿中蛋白/クレア�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-PperC
 
 // 尿糖(定性) ^^
@@ -759,7 +759,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet"
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-Glu
 
 // U-Glu-定性半定量 ^^
@@ -773,7 +773,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量、判�
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-Glu-QLHalfQty
 
 
@@ -788,7 +788,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量) 　Va
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #U-Glu-HalfQty
 
 // 脳性Na利尿ペプチド(BNP)^^
@@ -802,5 +802,5 @@ Description: "CLINS 電子カルテ共有サービス用 脳性Na利尿ペプチ
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-10-15"
+* ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BNP

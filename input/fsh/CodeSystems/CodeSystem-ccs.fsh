@@ -95,7 +95,7 @@ Description: "JP Coreにて定義したObservationリソースに関する分類
 * ^url = $JP_SimpleObservationCategory_CS
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-04-18"
+* ^date = "2024-02-25"
 * ^caseSensitive = true
 * ^content = #complete
 * #sdoh "SDOH" "健康の社会的決定要因 (Social Determinant of Health)"
@@ -121,7 +121,7 @@ Description: "入院経路を表すコード (出典：厚労省DPC導入影響�
 * ^url = $JP_admit_Source_CS
 * ^status = #active
 * ^experimental = false
-* ^date = "2023-04-18"
+* ^date = "2024-02-25"
 * ^caseSensitive = true
 * ^content = #complete
 * #0 "院内の他病棟からの転棟"
