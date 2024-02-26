@@ -91,6 +91,30 @@ FHIRでは、リソースの要素（例えば患者情報を記述するsubject
 [https://www.hl7.org/fhir/references.html](https://www.hl7.org/fhir/references.html) （2.1.3.0.10 節参照）
 
 
+#### 診療情報・サマリー汎用リソース外部参照仕様
+
+前項で記述したようにFHIRでは、リソースの要素（例えば患者情報を記述するsubject要素）から別のリソースをReferenceデータ型の要素を使用して参照することがある。
+
+Referenceデータ型は、以下のように
+<pre>
+{
+  reference   0..1  string  // リテラル参照、相対参照、内部参照または絶対参照
+  type        0..1  uri // 参照するリソースタイプ
+  identifier  0..1  Identifier // 論理参照
+  display     0..1  string  // 
+}
+</pre>
+
+
+
+その方式には複数の記述方法があり、
+
+（１）Referenceデータ型要素のreference要素を用いるリテラル参照<br>
+（２）Referenceデータ型要素のidentifier論理参照<br>
+（３）Referenceデータ型要素のdisplay要素を用いる<br>
+ので、本仕様で用いる記述方法を説明する。本仕様ではここに記載されていない記述方法（リソースIDを）
+
+
 ### ６情報送信に関するFHIR仕様
 
 <A href="core6spec.html">「電子カルテ情報共有サービスに医療機関から送信するFHIR仕様について」にジャンプ</a>
