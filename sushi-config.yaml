@@ -98,6 +98,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
+    - http://jpfhir.jp/fhir/FASTHDJ/StructureDefinition/JP_Bundle_FASTHDJ
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
@@ -109,6 +110,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
+    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
+    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
     - http://jpfhir.jp/fhir/Common/CodeSystem/admit-Source
@@ -125,6 +128,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
+    - http://jpfhir.jp/fhir/FASTHDJ/CodeSystem/BundleTransactionType_CS
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction
@@ -241,10 +245,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/Common/ValueSet/discharge-disposition
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
     - http://jpfhir.jp/fhir/eCS/ValueSet/JP_eCS_ObservationLabResultCode_VS
+    - http://jpfhir.jp/fhir/FASTHDJ/CodeSystem/BundleTransactionType_VS
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
     - http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
-    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
-    - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier

@@ -158,3 +158,32 @@ jobs:
       run: |
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-clins.r4-${{ env.release_version }}.tgz forPackageRelease/jp-clins.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output.tgz'
+
+    - name: Run IG Publisher  for fasthdj
+      run: | 
+        cp ./input/fsh/profiles/FAST-HDJ/*.fsh_back ./input/fsh/profiles/FAST-HDJ/*.fsh        
+        unset DISPLAY
+        java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx n/a
+
+    - name: replace url of html files referring simplifier.net package
+      run:  |
+        : # https://simplifier.net/resolve?scope=jp-core.r4@1.1.1-snap&amp;canonical=http://jpfhir.jp/fhir/core/StructureDefinition/JP_Observation_Common"
+        : #   ↓
+        : # https://jpfhir.jp/fhir/core/1.1.1/StructureDefinition-jp-observation-common.html
+        : # https://simplifier.net/resolve?canonical=http%3A%2F%2Fjpfhir.jp%2Ffhir%2Fcore%2FValueSet%2FJP_MedicationSubstitutionNotAllowedReason_VS&scope=jpfhir-terminology@1.1.1
+        cd output
+        for file in *.html
+        do
+          python ../script/replaceUrls.py $file >$file".2.html"
+          cp $file".2.html" $file
+        done
+        cd ..
+
+    - name: prepare gtz files for upload to remote site for fasthdj
+      run: | 
+        tar czf output.tgz output
+
+    - name: rsync remote-site-deploy
+      run: |
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-fasthdj/ --exclude .htaccess
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/fasthdj/ ; tar xzf output.tgz'
