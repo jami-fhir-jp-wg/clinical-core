@@ -41,7 +41,7 @@ Bundleリソースのプロファイルは以下を参照すること。</span>
 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない（エラーとなる）。
 
 
-<span style="color: blue;">[v0.9.8変更のため追記]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。</span>
+<span style="color: blue;">[v0.9.8変更のため追記]①から④のどのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。</span>
 
  - "AllergyIntolerance"
  - "Condition"
@@ -410,8 +410,8 @@ Bundleリソースの電子カルテ情報サービスへの送信タイミン�
           "system": "urn:oid:1.2.392.100495.20.3.51.11234567890",
           "value": "12345"
         },
-        {http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID
-          "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member",
+        {
+          "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
           "value": "00012345:あいう:１８７:05"
         }
       ],

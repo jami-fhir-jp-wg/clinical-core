@@ -23,6 +23,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知するため、本文書のプロファイルを識別するURLを必ず指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS")
 
+/*
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
@@ -34,6 +35,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+*/
 
 * extension[eCS_InstitutionNumber] 1..1 MS
   * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。電子カルテ情報サービスでは、この拡張による記述は必須。本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")

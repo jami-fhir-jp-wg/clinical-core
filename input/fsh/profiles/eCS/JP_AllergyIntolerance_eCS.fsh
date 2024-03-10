@@ -33,6 +33,20 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 //* meta.tag 0..
 //  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_AllergyIntolerance_CLINS_eCSを参照のこと。")
 
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "$this"
+* meta.tag  ^slicing.rules = #open
+* meta.tag contains lts 0..1 MS
+
+* meta.tag[lts] 0..1 MS
+* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+
+
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
 * contained ^slicing.discriminator.path = "$this"

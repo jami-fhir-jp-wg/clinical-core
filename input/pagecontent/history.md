@@ -7,6 +7,8 @@
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
 
+Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
+
 ## Ver0.9.14-draft  (2024-02-25) 
 
 * 各リソースのidentifier要素の仕様を変更し、リソースの一意識別IDであることを明記し、その仕様の記載を各リソースの表ではなくIG本文に記載し、共通の参照仕様とした<br>
@@ -17,6 +19,17 @@
 
 * 別のリソースをReferenceで参照する要素の説明を、リソースの表ではなくIG本文に記載し、共通の参照仕様とした。
 
+* 6情報送信仕様の本文：<br>
+誤）Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/BundleResourceType"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。<br>
+正）Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
+
+* 6情報送信仕様の本文 2.1.7.2 被保険者個人識別子の格納方法 の例示：<br>
+誤）{http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID<br>
+          "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_member",<br>
+正）{<br>
+          "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",<br>
+
+          
 
 ## Ver0.9.13-draft  (2024-02-14) 
 
