@@ -30,8 +30,8 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * meta.profile 0.. MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
 
-* meta.tag 0..
-  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_AllergyIntolerance_CLINS_eCSを参照のこと。")
+//* meta.tag 0..
+//  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_AllergyIntolerance_CLINS_eCSを参照のこと。")
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
