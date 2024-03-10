@@ -33,7 +33,7 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 //* meta.tag 0..
 //  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_AllergyIntolerance_CLINS_eCSを参照のこと。")
 
-* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.type = #pattern
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
