@@ -26,14 +26,15 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 * meta.tag 0.. MS
 * meta.tag
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
-* meta.tag  from $JP_ehrshrs_indication_VS
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
 
-* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
+* meta.tag[lts] from $JP_ehrshrs_indication_VS 
+* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS (exactly)
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
+  * tag  from $JP_ehrshrs_indication_VS
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
