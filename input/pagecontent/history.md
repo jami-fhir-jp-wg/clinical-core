@@ -9,7 +9,7 @@
 
 Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
 
-## Ver0.9.14-draft  (2024-02-25) 
+## Ver0.9.14-draft  (2024-03-11) 
 
 * 各リソースのidentifier要素の仕様を変更し、リソースの一意識別IDであることを明記し、その仕様の記載を各リソースの表ではなくIG本文に記載し、共通の参照仕様とした<br>
 
