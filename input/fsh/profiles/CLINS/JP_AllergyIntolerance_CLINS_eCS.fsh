@@ -26,6 +26,7 @@ Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリ�
 * meta.tag 0.. MS
 * meta.tag
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
+* meta.tag  from $JP_ehrshrs_indication_VS
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open

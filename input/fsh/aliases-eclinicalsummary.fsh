@@ -16,6 +16,7 @@ Alias: $JP_MedicationCategoryMERIT9_CS = http://jpfhir.jp/fhir/core/CodeSystem/J
 Alias: $Icode = http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567
 
 Alias: $JP_ehrshrs_indication_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
+Alias: $JP_ehrshrs_indication_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_indication
 
 Alias: $JP_Patient_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
 Alias: $JP_Patient_CLINS_eCS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
