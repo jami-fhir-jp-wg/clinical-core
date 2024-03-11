@@ -11,5 +11,7 @@
 
 【注】プロファイル詳細における「全要素のツリー」表示において、表示系ソフトのバグのため一部に不要な重複表示がある。<br>
 
-![alt text](chouhukuNote.png)
+<img src="chouhukuNote.png" width="60%">
+
+
 {% include markdown-link-references.md %}

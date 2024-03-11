@@ -11,4 +11,6 @@
 
 ## プロファイル
 
+<img src="chouhukuNote.png" width="60%">
+
 {% include markdown-link-references.md %}
