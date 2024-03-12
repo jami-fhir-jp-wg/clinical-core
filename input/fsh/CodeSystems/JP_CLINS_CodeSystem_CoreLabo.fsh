@@ -10,16 +10,20 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
 * ^caseSensitive = true
 * ^experimental = false
 * ^copyright = "Copyright JAMI. All Rights Reserved."
+* ^hierarchyMeaning = #is-a
+
 
 * ^property[+].code = #unit
+* ^property[+].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
 * ^property[=].type = #string
 * ^property[+].code = #fullNumberOfDigits
+* ^property[+].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
 * ^property[=].type = #integer
 * ^property[+].code = #numberOfDecimalDigits
-* ^property[=].type = #integer
-* ^property[+].code = #numberOfDecimalDigits
+* ^property[+].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
 * ^property[=].type = #integer
 * ^property[+].code = #oidOfValueSet
+* ^property[+].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
 * ^property[=].type = #string
 
 // ALB
