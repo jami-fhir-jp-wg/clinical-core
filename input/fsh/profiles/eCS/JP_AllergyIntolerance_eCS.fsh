@@ -135,7 +135,7 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * code.coding  ^slicing.rules = #open
 * code.coding contains allergicReaction 0..1 MS
   and contraIndicationYJcode 0..1 MS
-  and contraIndicationGeneralDrugCode 0..1 MS
+  and contraIndicationCommonDrugCode 0..1 MS
 
 * code.text 1..1 MS
 * code.text ^short = "コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
