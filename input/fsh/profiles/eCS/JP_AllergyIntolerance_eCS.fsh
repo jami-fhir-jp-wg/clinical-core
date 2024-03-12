@@ -128,7 +128,7 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * code  1..1 MS
 * code ^short = "アレルギー・不耐反応の対象物の情報。アレルギー・不耐反応の対象物の情報。薬剤禁忌情報の場合には、医薬品情報のコード。"
 * code  ^definition = "JP-Coreで定めるallergy-substanceコード表のコードを使用を推奨する。コード化できない場合には、code.text のみで記述する。コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
-* code  ^comment = "推奨するコード表はJFAGYコード（コード化する場合）：system値は、category要素の値に対応して、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つのいずれかから選択する。\n 電子カルテ情報サービスでは、アレルギーをコード化する場合（薬剤禁忌情報の場合を除く）にはJFAGYコード表を使用することが必須。\nただしアレルギー情報はコードにより正確に表現することが困難であることが多いので、コード化の有無にかかわらず、必ず電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。\nまた、薬剤禁忌情報の場合（category="medication" かつ criticality="high"）には、医薬品情報の一般名医薬品コードまたはYJコードを用いる"
+* code  ^comment = "推奨するコード表はJFAGYコード（コード化する場合）：system値は、category要素の値に対応して、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つのいずれかから選択する。\n 電子カルテ情報サービスでは、アレルギーをコード化する場合（薬剤禁忌情報の場合を除く）にはJFAGYコード表を使用することが必須。\nただしアレルギー情報はコードにより正確に表現することが困難であることが多いので、コード化の有無にかかわらず、必ず電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。\nまた、薬剤禁忌情報の場合（category=\"medication\" かつ criticality=\"high\"）には、医薬品情報の一般名医薬品コードまたはYJコードを用いる"
 
 * code.coding  ^slicing.discriminator.type = #pattern
 * code.coding  ^slicing.discriminator.path = "$this"
