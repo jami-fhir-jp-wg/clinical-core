@@ -95,25 +95,28 @@ FHIRでは、リソースの要素（例えば患者情報を記述するsubject
 
 前項で記述したようにFHIRでは、リソースの要素（例えば患者情報を記述するsubject要素）から別のリソースをReferenceデータ型の要素を使用して参照することがある。
 
-Referenceデータ型は、以下のように
+Referenceデータ型は、以下のようになっている。
 <pre>
 {
   reference   0..1  string  // リテラル参照、相対参照、内部参照または絶対参照
   type        0..1  uri // 参照するリソースタイプ
   identifier  0..1  Identifier // 論理参照
-  display     0..1  string  // 
+  display     0..1  string  // テキスト代替表現
 }
 </pre>
 
-
-
-その方式には複数の記述方法があり、
-
+Referenceデータ型を使用して次の３通りのいずれかひとつの方法で記述する。<br>
 （１）Referenceデータ型要素のreference要素を用いるリテラル参照<br>
 （２）Referenceデータ型要素のidentifier論理参照<br>
 （３）Referenceデータ型要素のdisplay要素を用いる<br>
-ので、本仕様で用いる記述方法を説明する。本仕様ではここに記載されていない記述方法（リソースIDを）
 
+（１）
+{
+  reference: ""
+  type: "<ResourceType>"  // <ResourceType>は例えばEncounter、Practiotioner などリソースタイプ文字列。
+  identifier  0..1  Identifier // 論理参照
+  display     0..1  string  // テキスト代替表現
+}
 
 ### ６情報送信に関するFHIR仕様
 
