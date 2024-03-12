@@ -253,10 +253,8 @@
   style='display:none'><rt>ヒッス </rt></span></ruby><font class="font13">。</font></td>
   <td class=xl147 width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl296 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"
-  target="_parent"><span style='color:black;font-size:10.0pt;font-family:"ＭＳ 明朝";
-  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</span></a></td>
+  <td class=xl296 width=195 style='border-left:none;width:146pt'><span style='color:black;font-size:10.0pt;font-family:"ＭＳ 明朝";
+  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</span></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl208 width=105 style='height:30.0pt;border-top:none;
@@ -332,10 +330,8 @@
   <td class=xl147 width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl147 width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl315 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent"><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
-  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
+  <td class=xl315 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
+  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl208 width=105 style='height:31.0pt;border-top:none;
