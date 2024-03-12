@@ -11,14 +11,13 @@ Title:  "CLINS電子カルテ情報共有サービス用:JP_AllergyIntolerance_C
 Description: "CLINS 電子カルテ共有サービス用 AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル。 JP_AllergyIntolerance_eCSからの派生プロファイル。"
 
 * obeys warning-medication-allergy
+* obeys valid-allergy-contraIndication-code
 
 * ^url = $JP_AllergyIntolerance_CLINS_eCS
 * ^status = #active
 * ^date = "2024-02-25"
 * insert toplevel_short_definition("診療情報におけるアレルギー情報／薬剤禁忌の格納に使用する")
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。"
-
-
 
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知するため、本文書のプロファイルを識別するURLを必ず指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS")
