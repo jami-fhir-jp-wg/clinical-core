@@ -9,7 +9,7 @@
 
 Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
 
-## Ver0.9.14-draft  (2024-03-11) 
+## Ver0.9.14-draft  (2024-03-12) 
 
 * 各リソースのidentifier要素の仕様を変更し、リソースの一意識別IDであることを明記し、その仕様の記載を各リソースの表ではなくIG本文に記載し、共通の参照仕様とした<br>
 
@@ -29,7 +29,13 @@ Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/Cod
 正）{<br>
           "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",<br>
 
-          
+* JP_AllergyIntolerance_eCS<br>
+  電子カルテ情報共有サービスでは、薬剤禁忌の場合にcodeとして医薬品一般名コードまたはYJコードを使うこととしているので、それが可能なようにProfileを変更した。<br>
+
+* JP_AllergyIntolerance_CLINS_eCS<br>
+  電子カルテ情報共有サービスでは、薬剤禁忌の場合にcodeとして医薬品一般名コードまたはYJコードを使うことが必須であるため、それをValidatoreがチェックできるようにProfileを変更（Invariantsを記載）した。<br>
+
+
 
 ## Ver0.9.13-draft  (2024-02-14) 
 
