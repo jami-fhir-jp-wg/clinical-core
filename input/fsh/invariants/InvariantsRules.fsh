@@ -35,12 +35,17 @@ Description: "注意喚起：R2011:薬剤禁忌情報として本リソース種
 Severity: #warning
 Expression: "category.where($this='medication').exists() and criticality!='high'"
 
-// R2012-  アレルギー・薬剤禁忌でそれぞれJFAGY、「YJまたは一般名医薬品コード」を使用すること（電子カルテ情報交換サービスの場合）
-Invariant: valid-allergy-contraIndication-code
-Description: "注意喚起：R2012:薬剤禁忌情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤禁忌でない）場合にはJFAGYコードを使用すること。"
+// R2012  薬剤禁忌で「YJまたは一般名医薬品コード」を使用すること（電子カルテ情報交換サービスの場合）
+Invariant: valid-contraIndication-code
+Description: "R2012:薬剤禁忌情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤禁忌でない）場合にはJFAGYコードを使用すること。"
 Severity: #error
-Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1))
-or ((category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1 ))"
+Expression: "category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)"
+
+// R2013  アレルギーではJFAGYを使用すること（電子カルテ情報交換サービスの場合）
+Invariant: valid-allergy-code
+Description: "R2013:アレルギーの（薬剤禁忌でない）場合にはJFAGYコードを使用すること。"
+Severity: #error
+Expression: "(category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1 )"
 
 
 // R0111- BundleIDチェック
