@@ -14,16 +14,16 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
 
 
 * ^property[+].code = #unit
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_unitProperty"
 * ^property[=].type = #string
 * ^property[+].code = #fullNumberOfDigits
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_ndigitsProperty"
 * ^property[=].type = #integer
 * ^property[+].code = #numberOfDecimalDigits
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_ddigitsProperty"
 * ^property[=].type = #integer
 * ^property[+].code = #oidOfValueSet
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_conceptProperty_CS"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_oidVSProperty"
 * ^property[=].type = #string
 
 // ALB

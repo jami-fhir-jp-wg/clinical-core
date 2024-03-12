@@ -10,6 +10,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^caseSensitive = true
 * ^experimental = false
 * ^copyright = "Copyright JAMI. All Rights Reserved."
+* ^hierarchyMeaning = #is-a
 
 // descendent-of
 //----感染症項目５項目
