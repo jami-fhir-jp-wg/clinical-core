@@ -96,27 +96,87 @@ FHIRでは、リソースの要素（例えば患者情報を記述するsubject
 前項で記述したようにFHIRでは、リソースの要素（例えば患者情報を記述するsubject要素）から別のリソースをReferenceデータ型の要素を使用して参照することがある。
 
 Referenceデータ型は、以下のようになっている。
-<pre>
+```
 {
   reference   0..1  string  // リテラル参照、相対参照、内部参照または絶対参照
   type        0..1  uri // 参照するリソースタイプ
   identifier  0..1  Identifier // 論理参照
   display     0..1  string  // テキスト代替表現
 }
-</pre>
+```
+Referenceデータ型を使用して次の３通りのいずれかひとつの方法により仕様に応じて使い分ける。<br>
 
-Referenceデータ型を使用して次の３通りのいずれかひとつの方法で記述する。<br>
-（１）Referenceデータ型要素のreference要素を用いるリテラル参照<br>
-（２）Referenceデータ型要素のidentifier論理参照<br>
-（３）Referenceデータ型要素のdisplay要素を用いる<br>
+**（１）Referenceデータ型要素のreference要素を用いるリテラル参照**
+ - Bundleリソースの他のentryに参照先リソースがあってそのfullUrl要素に設定されているUUIDを記述して参照する。（例：Encounterリソースを参照）<br>
+ - 電子カルテ情報共有サービスに送信する３文書６情報では、患者リソースへの参照においてはこの方式ではなくidentifier要素を用いる **（３）** の方式を用いること。<br>
+```
+例：Reference型要素の値の例　（同じBundleリソース内に記述されている、fullUrlが "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd
+    であるようなリソースを参照する例）
+    {
+        "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+    }
+```
 
-（１）
-{
-  reference: ""
-  type: "<ResourceType>"  // <ResourceType>は例えばEncounter、Practiotioner などリソースタイプ文字列。
-  identifier  0..1  Identifier // 論理参照
-  display     0..1  string  // テキスト代替表現
-}
+**（２）同じリソース内のcontained要素に参照先のリソースが記述されている場合**
+ - その参照先リソースのリソースid（id要素）の先頭に#をつけたものをインラインリソースIDとして、reference要素に設定する。<br>
+ - contained要素のリソースのidはcontained要素を含むリソース内で一意でなければならない。
+```
+
+例1： Reference型要素の値の例
+    {
+          "reference":  "#encounter203987"
+    }
+```
+```
+例2：Observationリソースの例で、subject要素とperformer要素がそれぞれcontainedリソースを参照しているケース
+    {
+      "resourceType": "Observation",
+      "contained": [
+        {
+          "resourceType":"Patient",
+          "id": "p1",
+          "generalPractitioner": {"reference": "#p2"}
+        },
+        {
+          "resourceType":"Practitioner",
+          "id": "p2"
+        }
+      ],
+      "status": "final",
+      "subject": {"reference": "#p1"},
+      "performer": [{"reference": "#p2"}]
+    }
+```
+
+**（３）Referenceデータ型要素のidentifier要素を用いる論理参照(logical reference)**
+ - 参照先のリソースタイプをtype要素に、参照先のリソースを一意に識別できる(参照先のリソースの)identifier要素のsystemとvalueを、identifier要素に記述して参照する。
+ - 電子カルテ情報共有サービスに送信する３文書６情報では、この方式を用いること。
+
+```
+例：Reference型要素の値の例
+    {
+        "type": "Patient", 
+        "identifier":{
+            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+            "value": "00012345:あいう:１８７:05"
+        }
+    }
+```
+
+**（4）display要素だけを用いてインラインで表示情報だけを記述するdisplay参照**
+　電子カルテ情報共有サービスでは、Observationリソースにおける検体情報などの記述で、この参照方式を使用している。
+ - type要素に参照先のリソースタイプを記述
+ - display要素に参照先のリソースの内容を表す主要なテキスト表現をstring型で記述
+
+```
+例：Reference型要素の値の例
+    {
+        "type": "Specimen", 
+        "display": "血清"
+    }
+```
+
+
 
 ### ６情報送信に関するFHIR仕様
 
