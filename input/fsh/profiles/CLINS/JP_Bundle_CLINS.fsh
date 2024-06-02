@@ -108,26 +108,30 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "患者情報"
 
-
+* entry[patient].fullUrl 1.. MS
 * entry[patient].resource 1.. MS
 * entry[patient].resource only $JP_Patient_CLINS_eCS
 
 * entry[allergyIntolerance] ^short = "AllergyIntoleranceリソース"
 * entry[allergyIntolerance] ^definition = "アレルギー情報／薬剤禁忌情報"
+* entry[allergyIntolerance].fullUrl 1.. MS
 * entry[allergyIntolerance].resource 1.. MS
 * entry[allergyIntolerance].resource only $JP_AllergyIntolerance_CLINS_eCS
 
 * entry[condition] ^short = "Conditionリソース"
 * entry[condition] ^definition = "傷病名情報"
+* entry[condition].fullUrl 1.. MS
 * entry[condition].resource 1.. MS
 * entry[condition].resource only $JP_Condition_CLINS_eCS
 
 * entry[medicationRequest] ^short = "MedicationRequestリソース"
 * entry[medicationRequest] ^definition = "処方情報"
+* entry[medicationRequest].fullUrl 1.. MS
 * entry[medicationRequest].resource 1.. MS
 * entry[medicationRequest].resource only $JP_MedicationRequest_CLINS_eCS
 
 * entry[observationLaboResult] ^short = "Observationリソース"
 * entry[observationLaboResult] ^definition = "検体検査結果／感染症情報"
+* entry[observationLaboResult].fullUrl 1.. MS
 * entry[observationLaboResult].resource 1.. MS
 * entry[observationLaboResult].resource only $JP_Observation_LabResult_CLINS_eCS
