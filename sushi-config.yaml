@@ -19,8 +19,8 @@ releaseLabel: draft # ci-build | draft | qa-preview | ballot | trial-use | relea
 # https://www.hl7.org/fhir/valueset-jurisdiction.html 
 publisher:
   name: 管理：（一社）日本医療情報学会.
-  url: http://jpfhir.jp
-  email: office@hlfhir.jp
+  url: https://jami.jp
+  email: office@jami.jp
 copyright: （一社）日本医療情報学会. CC BY-ND 4.0 （クリエイティブ・コモンズ 表示-改変禁止 4.0 国際 パブリック・ライセンス）
 jurisdiction: 'urn:iso:std:iso:3166-2#JP'
 dependencies:
