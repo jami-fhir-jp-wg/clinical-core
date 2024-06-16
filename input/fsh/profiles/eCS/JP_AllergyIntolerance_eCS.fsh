@@ -2,14 +2,14 @@
 //   Profile 定義 診療情報・サマリー汎用
 //   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
 //   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
-//   アレルギー情報／薬剤禁忌 リソースタイプ:AllergyIntolerance
+//   アレルギー情報／薬剤アレルギー等 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance
 // ==================================================
 Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
 Title:  "eCS:JP_AllergyIntolerance_eCS"
-Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソース（アレルギー情報／薬剤禁忌）プロファイル"
+Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
@@ -17,8 +17,8 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * ^url = $JP_AllergyIntolerance_eCS
 * ^status = #active
 * ^date = "2024-02-25"
-* insert toplevel_short_definition("診療情報におけるアレルギー情報／薬剤禁忌の格納に使用する")
-* . ^comment = "薬剤禁忌情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。なお、このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
+* insert toplevel_short_definition("診療情報におけるアレルギー情報／薬剤アレルギー等の格納に使用する")
+* . ^comment = "薬剤アレルギー等情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。なお、このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
 
 * meta 1..1 MS
 * meta.versionId ^short = "バージョン固有の識別子"
@@ -57,11 +57,11 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 //    and patient 0..1 MS
 
 * contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("アレルギー／薬剤禁忌情報を記述（取得）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * insert relative_short_definition("アレルギー／薬剤アレルギー等情報を記述（取得）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[recorder] only  JP_Practitioner
-  * insert relative_short_definition("アレルギー／薬剤禁忌情報を記述（取得）した医療者情報をコンパクトに格納したPractitionerリソース")
+  * insert relative_short_definition("アレルギー／薬剤アレルギー等情報を記述（取得）した医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。"
 
 /*
@@ -117,18 +117,18 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 
 * category 0.. MS
 * category ^short = "特定された原因物質のカテゴリ。記述を可能な限り推奨する。"
-* category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）を選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には可能な限りコードを設定すること。電子カルテ情報サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならず、criticality要素は\"high\"を設定しなければならない。これ以外の場合には、本リソースの情報は薬剤禁忌以外のアレルギー情報として取り扱われる。"
+* category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）を選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には可能な限りコードを設定すること。電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならず、criticality要素は\"high\"を設定しなければならない。これ以外の場合には、本リソースの情報はその他のアレルギー情報として取り扱われる。"
 
 
 * criticality 0..1 MS
 * criticality ^short = "潜在的な臨床的危険性、致命度"
-* criticality ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-criticality\" から　low | high | unable-to-assess　のいずれか（低、高、評価不能）。電子カルテ情報サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、category要素の記述を参照すること。"
+* criticality ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-criticality\" から　low | high | unable-to-assess　のいずれか（低、高、評価不能）。電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、category要素の記述を参照すること。"
 
 
 * code  1..1 MS
-* code ^short = "アレルギー・不耐反応の対象物の情報。アレルギー・不耐反応の対象物の情報。薬剤禁忌情報の場合には、医薬品情報のコード。"
+* code ^short = "アレルギー・不耐反応の対象物の情報。アレルギー・不耐反応の対象物の情報。薬剤アレルギー等情報の場合には、医薬品情報のコード。"
 * code  ^definition = "JP-Coreで定めるallergy-substanceコード表のコードを使用を推奨する。コード化できない場合には、code.text のみで記述する。コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
-* code  ^comment = "推奨するコード表はJFAGYコード（コード化する場合）：system値は、category要素の値に対応して、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つのいずれかから選択する。\n 電子カルテ情報サービスでは、アレルギーをコード化する場合（薬剤禁忌情報の場合を除く）にはJFAGYコード表を使用することが必須。\nただしアレルギー情報はコードにより正確に表現することが困難であることが多いので、コード化の有無にかかわらず、必ず電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。\nまた、薬剤禁忌情報の場合（category=\"medication\" かつ criticality=\"high\"）には、医薬品情報の一般名医薬品コードまたはYJコードを用いる"
+* code  ^comment = "推奨するコード表はJFAGYコード（コード化する場合）：system値は、category要素の値に対応して、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS、http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS の3つのいずれかから選択する。\n 電子カルテ情報サービスでは、アレルギーをコード化する場合（薬剤アレルギー等情報の場合を除く）にはJFAGYコード表を使用することが必須。\nただしアレルギー情報はコードにより正確に表現することが困難であることが多いので、コード化の有無にかかわらず、必ず電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。\nまた、薬剤アレルギー等情報の場合（category=\"medication\" かつ criticality=\"high\"）には、医薬品情報の一般名医薬品コードまたはYJコードを用いる"
 
 * code.coding  ^slicing.discriminator.type = #pattern
 * code.coding  ^slicing.discriminator.path = "$this"
@@ -141,8 +141,8 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 * code.text ^short = "コード化の有無にかかわらず、電子カルテシステム等で登録され表示されている文字列をcode.textに必ず設定すること。"
 
 * code.coding[allergicReaction] from http://jpfhir.jp/fhir/core/ValueSet/JP_AllergyIntolerance_VS //アレルギーの場合JFAGYコードの使用ができる
-* code.coding[contraIndicationYJcode] from $JP_MedicationCodeYJ_VS  // 薬剤禁忌の場合、YJコードの使用ができる
-* code.coding[contraIndicationCommonDrugCode] from $JP_MedicationCodeCommon_VS  // 薬剤禁忌の場合、一般名医薬品コードの使用ができる
+* code.coding[contraIndicationYJcode] from $JP_MedicationCodeYJ_VS  // 薬剤アレルギー等の場合、YJコードの使用ができる
+* code.coding[contraIndicationCommonDrugCode] from $JP_MedicationCodeCommon_VS  // 薬剤アレルギー等の場合、一般名医薬品コードの使用ができる
 
 * patient 1..1   MS
 * patient only  Reference(JP_Patient)

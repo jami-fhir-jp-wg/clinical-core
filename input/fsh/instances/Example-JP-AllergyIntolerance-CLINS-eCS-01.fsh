@@ -120,10 +120,10 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 Instance: Example-JP-DrugContraindications-CLINS-eCS-03
 InstanceOf: JP_AllergyIntolerance_CLINS_eCS
 Usage: #example
-Description: "allergyIntoleranceExample03 必須要素で記述した薬剤禁忌情報のサンプル"
+Description: "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報のサンプル"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤禁忌情報のサンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤アレルギー等情報のサンプル</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -175,5 +175,5 @@ Description: "allergyIntoleranceExample03 必須要素で記述した薬剤禁�
 
 
 * note[+].text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
-* note[+].text = "allergyIntoleranceExample03 必須要素で記述した薬剤禁忌情報のサンプル"
+* note[+].text = "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報のサンプル"
 

@@ -113,7 +113,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * entry[patient].resource only $JP_Patient_CLINS_eCS
 
 * entry[allergyIntolerance] ^short = "AllergyIntoleranceリソース"
-* entry[allergyIntolerance] ^definition = "アレルギー情報／薬剤禁忌情報"
+* entry[allergyIntolerance] ^definition = "アレルギー情報／薬剤アレルギー等情報"
 * entry[allergyIntolerance].fullUrl 1.. MS
 * entry[allergyIntolerance].resource 1.. MS
 * entry[allergyIntolerance].resource only $JP_AllergyIntolerance_CLINS_eCS

@@ -317,7 +317,7 @@
   <td class=xl78 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl78 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
   <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>Resource(JP_Conditon_CLINS_eCS|JP_Observation_LabResult_CLINS_eCS|JP_MedicationRequest_CLINS_eCS|JP_AllergyIntorellance_CLINS_eCS)</td>
-  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>このBundleリソースが格納するリソースのprofileに準拠したリソース。検体検査結果、傷病、アレルギー・薬剤禁忌、処方のいずれか。ただし、処方は６情報送信においては送信対象となっていない。</td>
+  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'>このBundleリソースが格納するリソースのprofileに準拠したリソース。検体検査結果、傷病、アレルギー・薬剤アレルギー等、処方のいずれか。ただし、処方は６情報送信においては送信対象となっていない。</td>
   <td class=xl78 width=36 style='border-top:none;border-left:none;width:27pt'>例示</td>
   <td class=xl160 width=195 style='border-top:none;border-left:none;width:146pt'>{<br>
     <span style='mso-spacerun:yes'>        </span>&quot;resourceType&quot;:

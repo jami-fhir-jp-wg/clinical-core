@@ -36,12 +36,12 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
 #### 主要な情報種別の範囲：
 * 2024年度時点で厚生労働省が提示する「６情報」において、使用するFHIRリソースタイプ（４タイプ）
 <br>
-  * [アレルギー情報と薬剤禁忌情報　AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
-  * [傷病名情報	Conditionリソースタイプ][JP_Condition_eCS]
-  * [検査結果情報（注⁂）と感染症情報　Observationリソースタイプ][JP_Observation_LabResult_eCS] （注⁂　救急時に有用な検査、生活習慣病関連の検査）
-  * [処方依頼情報　MedicationRequestリソースタイプ][JP_MedicationRequest_eCS]
+  * [薬剤アレルギー等、その他アレルギー等　AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
+  * [傷病名	Conditionリソースタイプ][JP_Condition_eCS]
+  * [検査（注⁂）、感染症　Observationリソースタイプ][JP_Observation_LabResult_eCS] （注⁂　救急時に有用な検査、生活習慣病関連の検査。本仕様では正確を期すため「検査結果情報」という。）
+  * [処方（注⁂）　MedicationRequestリソースタイプ][JP_MedicationRequest_eCS]（注⁂　診療情報提供書及び退院時サマリーに記載された処方情報。本仕様では正確を期すため「処方依頼情報」という。）
 　<br><br>
- - アレルギー情報と薬剤禁忌情報は、別に説明するように、同じプロファイルに従うAllergyIntoleranceリソースタイプで記述され、category要素とcriticality要素に設定される値の組み合わせにもとづいて受信側で区別される。
+ - 薬剤アレルギー等、その他アレルギー等の情報は、別に説明するように、同じプロファイルに従うAllergyIntoleranceリソースタイプで記述され、category要素に設定される値にもとづいて受信側で区別される。
  - 検査結果情報と感染症情報については、同じプロファイルに従うObservationリソースタイプで記述され、コード化された項目情報の記述にもとづいて受信側で区別される。
  - 処方依頼情報には当面、注射点滴手法によるものは含まれない。ただし、処方箋によって処方されるものは含まれる（自己注射剤など）。
 <br>
@@ -99,7 +99,7 @@ Referenceデータ型とは、次のようなFHIR仕様である。
 
 **（１）containedリソースをインラインリソースIDにより参照する記述方法**
 
-親リソースの要素（例えば外来受診・入院歴情報を参照するencounter要素）が特定のcontainedリソースを参照する場合はこの方法を使用する。
+**CLINSでは、親リソースの要素（例えば外来受診・入院歴情報を参照するencounter要素）が特定のcontainedリソースを参照する場合はこの方法を使用する。**
 
 containedリソースへの参照では、このうちreference要素とdisplay要素を使用して、そのリソースが埋め込んでいるcontainedリソースを次の方法で参照するものとする。display要素はこの参照先リソースの主要な情報を簡潔に示す文字列を仕様に従い設定する（省略可能な場合もある）。
 <br>
@@ -170,8 +170,13 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 <br>
 
 **（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照）**
- - Bundleリソースの別のentryに参照先リソースの記述がある場合、そのfullUrl要素に設定されているUUIDを記述して参照する。（例：patientリソースを参照する場合など）<br>
+　<br>
 
+**CLINSでpatientリソースを参照する場合にはこの方法を使用する。**
+
+ - Bundleリソースの別のentryに参照先リソースの記述がある場合、そのfullUrl要素に設定されているUUIDを記述して参照する。
+  
+ <br>
 
 　　＜例：Reference型要素の値の例＞　（同じBundleリソース内の別のentryに記述されているfullUrlが "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
     であるリソースを参照する例）
@@ -184,16 +189,19 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 <br>
 
 **（3）Reference.identifier要素を用いる論理参照(logical reference)**
+
+**CLINSへの送信ではこの方法は用いない。**
+
+
  - type要素にtype要素に参照先のリソースタイプを記述
  - identifier要素に参照先のリソースを一意に識別できる(参照先のリソースの)identifier要素のsystemとvalueを、記述
-
-** CLINSへの送信ではこの方法は用いない。**
 
 <br>
 
 **（4）display要素だけを用いてインラインで表示情報だけを記述するdisplay参照**
-<br>
-　CLINSでは、Observationリソースにおける検体情報などの記述で、この参照方式を使用している。
+
+
+**CLINSでは、Observationリソースにおける検体情報などの記述で、この参照方式を使用している。**
  - type要素にtype要素に参照先のリソースタイプを記述
  - display要素に参照先のリソースの内容を表す主要なテキスト表現をstring型で記述
 

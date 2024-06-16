@@ -29,22 +29,22 @@ Description: "施設番号　valueIdentifier.value値は、２桁都道府県番
 Severity: #error
 Expression: "value.ofType(Identifier).value.matches('[0-4][0-9][1-3][0-9]{7}')"
 
-// R2011-  アレルギー・薬剤禁忌関係チェック
+// R2011-  アレルギー・薬剤アレルギー等関係チェック
 Invariant: warning-medication-allergy
-Description: "注意喚起：R2011:薬剤禁忌情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままcriticality要素が\"high\"以外で差し支えなければ修正不要。"
+Description: "注意喚起：R2011:薬剤アレルギー等情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままcriticality要素が\"high\"以外で差し支えなければ修正不要。"
 Severity: #warning
 Expression: "(category.where($this='medication').exists() and criticality='high') or (category.where($this='medication').exists()).not()"
 
 
-// R2012  薬剤禁忌で「YJまたは一般名医薬品コード」を使用すること（電子カルテ情報交換サービスの場合）
+// R2012  薬剤アレルギー等で「YJまたは一般名医薬品コード」を使用すること（電子カルテ情報交換サービスの場合）
 Invariant: valid-contraIndication-code
-Description: "R2012:薬剤禁忌情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤禁忌でない）場合にはJFAGYコードを使用すること。"
+Description: "R2012:薬剤アレルギー等情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤アレルギー等でない）場合にはJFAGYコードを使用すること。"
 Severity: #error
 Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) or (category.where($this='medication').count()=0 or criticality!='high')"
 
 // R2013  アレルギーではJFAGYを使用すること（電子カルテ情報交換サービスの場合）
 Invariant: valid-allergy-code
-Description: "R2013:薬剤禁忌でないアレルギーの場合にはJFAGYコードを使用すること。"
+Description: "R2013:薬剤アレルギー等でないアレルギーの場合にはJFAGYコードを使用すること。"
 Severity: #error
 Expression: "(category.where($this='medication').count()=1 and criticality='high') or ((category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1 ))"
 
@@ -171,7 +171,7 @@ Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/M
 Severity: #error
 Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
 
-// R4011 アレルギー情報と薬剤禁忌とを区別するため、電子カルテ情報サービスでは、薬剤禁忌情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はや薬剤禁忌以外のアレルギー情報として取り扱われる。
+// R4011 薬剤アレルギーとその他アレルギー等の情報とを区別するため、電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はやその他のアレルギー情報として取り扱われる。
 // Invariant: needs-anyOfStandardCode-medication
 
 // R6021 Observation CLINS ではローカルコードの記述は必須である。
@@ -267,7 +267,7 @@ JP Profile and JP Terminology
 必須ルール
 JP Profile and JP Terminology
 
-## アレルギー情報と薬剤禁忌情報の区別
+## 薬剤アレルギーとその他アレルギー等の情報の区別
 必須ルール
 JP Profile and JP Terminology
 

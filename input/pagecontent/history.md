@@ -30,10 +30,10 @@ Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/Cod
           "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",<br>
 
 * JP_AllergyIntolerance_eCS<br>
-  電子カルテ情報共有サービスでは、薬剤禁忌の場合にcodeとして医薬品一般名コードまたはYJコードを使うこととしているので、それが可能なようにProfileを変更した。<br>
+  電子カルテ情報共有サービスでは、薬剤アレルギー等の場合にcodeとして医薬品一般名コードまたはYJコードを使うこととしているので、それが可能なようにProfileを変更した。<br>
 
 * JP_AllergyIntolerance_CLINS_eCS<br>
-  電子カルテ情報共有サービスでは、薬剤禁忌の場合にcodeとして医薬品一般名コードまたはYJコードを使うことが必須であるため、それをValidatoreがチェックできるようにProfileを変更（Invariantsを記載）した。<br>
+  電子カルテ情報共有サービスでは、薬剤アレルギー等の場合にcodeとして医薬品一般名コードまたはYJコードを使うことが必須であるため、それをValidatoreがチェックできるようにProfileを変更（Invariantsを記載）した。<br>
 
 
 
