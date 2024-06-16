@@ -121,7 +121,7 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 例2：Observationリソースの例で、encounter要素、specimen要素がそれぞれcontainedリソースを参照しているケース （関係する要素以外については、記載を省略しているものがある）
 
 
-```{r, attr.source='.numberLines'}
+```
   {
     "resourceType": "Observation",
     "contained": [
@@ -164,6 +164,8 @@ contained要素のリソースのidは、任意の文字列を設定できるが
     }
   }
 ```
+
+
 ［説明］Observation.besedOn要素は、reference要素にObservation.contained[1].id (ServiceRequestリソースのリソースID)の値の先頭に#をつけて記述している。同様にObservation.encounter要素にObservation.contained[0].id (EncounterリソースのリソースID)の値の先頭に#をつけて記述している。
 
 
@@ -180,6 +182,7 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 
 　　＜例：Reference型要素の値の例＞　（同じBundleリソース内の別のentryに記述されているfullUrlが "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
     であるリソースを参照する例）
+
 ```
   {
       "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
@@ -238,12 +241,9 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 　　＜例：患者、田中太郎さんの患者基本情報をPatientリソースに従って記述したデータは、田中太郎さんのPatientリソース・インスタンスである。＞
 ```
 
-<br>
-<br>
-<br>
+
 
 ### 謝辞
-<br>
 
  <span style="color: black; font-size: 80%;">本実装ガイドは、以下の方々の支援と貢献により策定されています。</span>
 
