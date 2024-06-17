@@ -9,6 +9,7 @@ Alias: $capabilityStatement-combination = http://hl7.org/fhir/StructureDefinitio
 Alias: $encounter-associatedEncounter = http://hl7.org/fhir/StructureDefinition/encounter-associatedEncounter
 Alias: $units-of-time = http://hl7.org/fhir/ValueSet/units-of-time
 Alias: $bodySite = http://hl7.org/fhir/StructureDefinition/bodySite
+Alias: $ex-diagnosistype-vs = http://hl7.org/fhir/ValueSet/ex-diagnosistype
 
 // hl7-terminology
 Alias: $v2-0136 = http://terminology.hl7.org/ValueSet/v2-0136
@@ -17,5 +18,6 @@ Alias: $diagnostic-service-sectionid-cs = http://terminology.hl7.org/CodeSystem/
 Alias: $patient-race-cs = http://terminology.hl7.org/CodeSystem/v3-Race
 Alias: $patient-race-vs = http://terminology.hl7.org/ValueSet/v3-Race
 Alias: $media-type = http://terminology.hl7.org/CodeSystem/media-type
+Alias: $ex-diagnosistype-cs = http://terminology.hl7.org/CodeSystem/ex-diagnosistype
 
 // JPCor定義はaliases-jpcore.fshに記載すること

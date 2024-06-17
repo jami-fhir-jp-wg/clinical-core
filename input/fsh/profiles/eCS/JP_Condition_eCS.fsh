@@ -13,6 +13,7 @@ Description: "eCS 診療情報・サマリー汎用 Conditionリソース（傷�
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
+* extension contains JP_eCS_DiagnosisType named eCS_DiagnosisType ..* MS
 
 
 * ^url = $JP_Condition_eCS
