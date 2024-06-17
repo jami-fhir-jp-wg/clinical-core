@@ -40,18 +40,15 @@
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
   - category : 電子カルテ情報共有サービスで薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。
-  - criticality :  同上
 
 ### 推奨要素
   - contained (JP_Encounter) : アレルギー登録時の入院外来区分情報
-  - contained (JP_Practitioner) : アレルギー登録者の情報
   - verificationStatus : 入力された臨床的状態に対する検証状況
   - encounter : このアレルギ情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。
-  - recordedDate : この状態が記録された日時
-  - recorder : アレルギー登録者の情報を記述しているJP_Practitionerリソースへの参照。
-  - asserter : この状態があると確認（主張）した人の情報を記述しているJP_Patient、JP_Practitioner、RelatedPersonのいずれかのリソースへの参照。
+  - recordedDate : この状態が最初に（電子カルテに）登録された日時
 
 ### MustSupport要素
+　MustSupport要素では、データ作成・出力側ではその要素に相当するデータを持っている場合には出力しなければならず、受信側では要素が存在していればそのデータを（利用するかどうかに関わらず）格納しなければならない。
 　- 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
   - 該当なし。
 

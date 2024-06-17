@@ -6,6 +6,23 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+## Ver1.0.0 (2024.6.24予定)
+
+  - 実装ガイド本文
+    - リソースへの参照の記述を整理
+      - Patientリソースへの参照方法を変更：identifierを記述する方法からfullUrlを記述する方法に変更。
+
+  - AllergyIntorelance
+    - meta.profile: 電子カルテ情報共有サービスへの送信時も同じプロファイルを使用することとし、設定を変更しない。
+    - category：　薬剤アレルギー等情報の取り扱いの変更に伴い、仕様を変更。
+    - criticality:  薬剤アレルギー等情報の取り扱いの変更に伴い、仕様を変更。「条件により必須」要素から外す。
+    - code: コードを変更。これに伴いcode.coding.system値を変更。
+    - patient要素でのリソース参照方法を変更
+    - encounter要素でのリソース参照方法を変更
+    - recorderとasserterを「推奨要素」から外す。これにともない、contained (JP_Practitioner) を「推奨要素」から外す。
+    - 
+
+
 
 Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
 
