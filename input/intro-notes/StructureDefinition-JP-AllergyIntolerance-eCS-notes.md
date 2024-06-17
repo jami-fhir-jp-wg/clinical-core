@@ -12,7 +12,7 @@
 <table border="2"  style="border-collapse: collapse">
 <tr><th>識別</th><th>category要素</th><th>説明</th></tr>
 <tr><td>薬剤アレルギー等</td><td>medication</td><td>biologicは当面使用しない。</td></tr>
-</tr>
+
 <tr><td>その他アレルギー等</td><td>food, environment,または値なし（要素なし）</td><td>薬剤以外の原因物質に対する「その他アレルギー等」とみなされる。<br>「薬剤アレルギー等」としては扱われない。</td></tr>
 </table>
 </div>
