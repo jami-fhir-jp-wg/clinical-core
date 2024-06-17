@@ -15,7 +15,7 @@ Description: "傷病名情報に主たる診療対象病名か、あるいはそ
 
 * . ^short = "傷病名情報に主たる診療対象病名か、あるいはそれ以外の情報をタイプかを付与する拡張"
 * . ^definition = "主病名フラグとして傷病名一覧に表示するためにも使用される。他にも入院時病名、退院時病名、などカルテ管理的な必要性で付与したいタイプ情報を付与するために使用し、ひとつの傷病名に複数付与できる。"
-* . ^comment = "CodeSystem\(http://terminology.hl7.org/CodeSystem/ex-diagnosistype\)からのValueSet \(http://hl7.org/fhir/ValueSet/ex-diagnosistype\)を使用する。"
+* . ^comment = "CodeSystem(http://terminology.hl7.org/CodeSystem/ex-diagnosistype)からのValueSet (http://hl7.org/fhir/ValueSet/ex-diagnosistype)を使用する。"
 
 * url = $JP_eCS_DiagnosticType (exactly)
 * value[x] only CodeableConcept
