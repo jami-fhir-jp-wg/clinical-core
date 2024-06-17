@@ -97,8 +97,10 @@ Bundle.identifier.value	:  以下に記載する\[Bundle-ID\]　(旧報告単位
 次の３つの文字列を半角ハット記号（^）で連結した文字列。
   - 保険医療機関番号10桁：<br>
   　（内訳：都道府県番号２桁、点数表コード（医療機関区分）１桁、医療機関番号７桁）
-  - Bundleリソースを作成した発行年（西暦）4桁<span style="color: red; ">　要確認</span>
-  - 施設内において発行年内にCLINSに新規に送信したBundleリソースを通して一意となる（重複がない）番号<span style="color: red; ">　要確認</span><br>
+  - 発行年：<br>
+  　　Bundleリソースを作成した発行年（西暦）4桁<span style="color: red; ">　要確認</span>
+  - 施設内ID：<br>
+  　　施設内において発行年内にCLINSに新規に送信したBundleリソースを通して一意となる（重複がない）番号<span style="color: red; ">　要確認</span><br>
   　半角英数字および半角ハイフン（U+002D）、36文字以内<span style="color: red; ">（固定か以内か調整中）</span>。
 
 ##### Bundleリソース・インスタンスの例（JSON形式）：
