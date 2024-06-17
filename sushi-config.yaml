@@ -5,7 +5,6 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
-
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
 name: "電子カルテ情報共有サービスFHIR実装ガイド ドラフト版"
