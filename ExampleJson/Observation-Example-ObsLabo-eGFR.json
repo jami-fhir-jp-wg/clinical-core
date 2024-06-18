@@ -4,18 +4,9 @@
   "meta": {
     "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS"
     ]
   },
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
@@ -32,12 +23,15 @@
       ]
     }
   ],
-  "subject": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
     }
-  },
+  ],
   "note": [
     {
       "text": "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
@@ -58,6 +52,12 @@
       }
     ],
     "text": "推算GFR"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "issued": "2021-07-05T15:38:59.000+09:00",

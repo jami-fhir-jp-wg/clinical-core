@@ -4,8 +4,8 @@
 // 030 verificationStatus
 //当面中略（診療情報提供書）
 
-Instance: Example-JP-AllergyIntolerance-CLINS-eCS-01
-InstanceOf: JP_AllergyIntolerance_CLINS_eCS
+Instance: Example-JP-AllergyIntolerance-eCS-01
+InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
 Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
@@ -21,7 +21,7 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 //* contained[+] = Example-JP-Patient-eCS-01-Contained
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
+* meta.profile[+] = $JP_AllergyIntolerance_eCS
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "102934701"
@@ -56,8 +56,8 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 
 
 //------------------------------------------------------
-Instance: Example-JP-AllergyIntolerance-CLINS-eCS-02
-InstanceOf: JP_AllergyIntolerance_CLINS_eCS
+Instance: Example-JP-AllergyIntolerance-eCS-02
+InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
 Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
 
@@ -73,7 +73,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
+* meta.profile[+] = $JP_AllergyIntolerance_eCS
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
@@ -117,8 +117,8 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 
 
 //------ 医薬品禁忌-----------------
-Instance: Example-JP-DrugContraindications-CLINS-eCS-03
-InstanceOf: JP_AllergyIntolerance_CLINS_eCS
+Instance: Example-JP-DrugContraindications-eCS-03
+InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
 Description: "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報のサンプル"
 
@@ -134,7 +134,7 @@ Description: "allergyIntoleranceExample03 必須要素で記述した薬剤ア�
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_CLINS_eCS
+* meta.profile[+] = $JP_AllergyIntolerance_eCS
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier

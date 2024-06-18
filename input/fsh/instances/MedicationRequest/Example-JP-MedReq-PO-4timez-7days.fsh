@@ -1,5 +1,5 @@
 Instance: Example-JP-MedReq-PO-4timez-7days
-InstanceOf: JP_MedicationRequest_CLINS_eCS
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "入院処方　内服処方1日4回7日分　例"
 * note.text = "入院処方　内服処方1日4回7日分　例"
@@ -15,7 +15,7 @@ Description: "入院処方　内服処方1日4回7日分　例"
 * contained[+] = Example-Practitioner-minimun-D003
 
 * meta.lastUpdated = "2021-07-13T19:21:18.000+09:00"
-* meta.profile = $JP_MedicationRequest_CLINS_eCS
+* meta.profile = $JP_MedicationRequest_eCS
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

@@ -25,6 +25,7 @@
 ### 必須要素
   - resourceType : リソースタイプ "Observation"
   - meta.lastUpdated : 最終更新日時
+  - meta.profile : プロファイルURL
   - identifier : インスタンス識別ID
   - status : 検査・観察のステータス
   - code : 検査・観察の項目コード
@@ -33,7 +34,6 @@
   - specimen :　検体材料のFHIRリソースへの参照
 
 ### 条件により必須
-  - meta.profile : 電子カルテ情報共有サービスでは必須
   - meta.tag  ("LTS"): 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
   - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - value[x] : 検査結果や観察結果。検査項目がバッテリー項目（グループ項目）の場合や理由があって検査値が得られなかった場合を除き必須。

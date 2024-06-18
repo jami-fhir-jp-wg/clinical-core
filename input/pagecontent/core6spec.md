@@ -20,7 +20,7 @@ Bundleリソースのタイプ（type要素）は"collection"を使用する。
 
 Bundleリソースの概要図は下図のようになる。
 
-![Bundle概要図](Bundle-fig.png)
+![Bundle概要図](Bundle-fig.png){.center-block}
 
 
 Bundleリソースのプロファイルは以下を参照すること。[CLINS電子カルテ情報共有６情報用　Bundleリソース][JP_Bundle_CLINS]
@@ -43,6 +43,7 @@ Bundleリソースのプロファイルは以下を参照すること。[CLINS�
 ** 複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない（エラーとなる）**。
 
 <br>
+
 
 ##### Bundleリソースに格納するリソース対応の指定
 
@@ -98,9 +99,9 @@ Bundle.identifier.value	:  以下に記載する\[Bundle-ID\]　(旧報告単位
   - 保険医療機関番号10桁：<br>
   　（内訳：都道府県番号２桁、点数表コード（医療機関区分）１桁、医療機関番号７桁）
   - 発行年：<br>
-  　　Bundleリソースを作成した発行年（西暦）4桁<span style="color: red; ">　要確認</span>
+  　　Bundleリソースを作成した発行年（西暦）4桁
   - 施設内ID：<br>
-  　　施設内において発行年内にCLINSに新規に送信したBundleリソースを通して一意となる（重複がない）番号<span style="color: red; ">　要確認</span><br>
+  　　施設内において発行年内にCLINSに新規に送信したBundleリソースを通して一意となる（重複がない）番号<br>
   　半角英数字および半角ハイフン（U+002D）、36文字以内<span style="color: red; ">（固定か以内か調整中）</span>。
 
 ##### Bundleリソース・インスタンスの例（JSON形式）：

@@ -1,11 +1,11 @@
 Instance: Example-ObsLabo-eGFR
-InstanceOf: JP_Observation_LabResult_CLINS_eCS
+InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
 Description: "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
 * note.text = "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
-* meta.profile = $JP_Observation_LabResult_CLINS_eCS
+* meta.profile = $JP_Observation_LabResult_eCS
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

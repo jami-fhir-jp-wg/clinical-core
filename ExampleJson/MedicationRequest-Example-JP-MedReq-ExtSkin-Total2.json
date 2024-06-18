@@ -4,20 +4,11 @@
   "meta": {
     "lastUpdated": "2021-07-05T19:07:58.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"
     ]
   },
   "status": "completed",
   "intent": "order",
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "identifier": [
     {
       "system": "urn:oid:1.2.392.100495.20.3.81",
@@ -36,13 +27,15 @@
       "value": "1318814790-9990767-0A172C13361BBE2021070517301001-1"
     }
   ],
-  "subject": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    },
-    "type": "Patient"
-  },
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -135,6 +128,13 @@
       }
     ],
     "text": "ヒルドイドローション２５ｇ"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    },
+    "type": "Patient"
   },
   "authoredOn": "2021-07-05T17:31:48+09:00",
   "requester": {

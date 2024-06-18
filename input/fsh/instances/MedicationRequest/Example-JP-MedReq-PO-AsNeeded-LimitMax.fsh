@@ -1,5 +1,5 @@
 Instance: Example-JP-MedReq-PO-AsNeeded-LimitMax
-InstanceOf: JP_MedicationRequest_CLINS_eCS
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
 * note.text =  "入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例"
@@ -15,7 +15,7 @@ Description: "入院処方　内服処方頓用発熱時　1回量記述なし�
 * contained[+] = Example-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-07T21:34:05.000+09:00"
-* meta.profile = $JP_MedicationRequest_CLINS_eCS
+* meta.profile = $JP_MedicationRequest_eCS
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

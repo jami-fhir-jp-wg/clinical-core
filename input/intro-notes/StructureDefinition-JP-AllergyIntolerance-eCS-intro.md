@@ -30,6 +30,7 @@
 ### 必須要素
   - resourceType : リソースタイプ "AllergyIntolerance"
   - meta.lastUpdated : 最終更新日時
+  - meta.profile : プロファイルURL
   - identifier : インスタンス識別ID
   - code : アレルギー・不耐反応の対象物の情報
   - patient : このアレルギー不耐症を有する患者のFHIRリソースへの参照。
@@ -39,7 +40,7 @@
   - meta.tag ("LTS"): 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
-  - category : 電子カルテ情報共有サービスで薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。
+  - category : 電子カルテ情報共有サービスで薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならない。
 
 ### 推奨要素
   - contained (JP_Encounter) : アレルギー登録時の入院外来区分情報

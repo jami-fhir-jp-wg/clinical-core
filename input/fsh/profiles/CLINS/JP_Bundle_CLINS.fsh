@@ -115,7 +115,7 @@ Bundle.identifier.value : 実装ガイド本文 6情報送信仕様--Bundleリ�
 * entry[condition] ^definition = "傷病名情報"
 * entry[condition].fullUrl 1.. MS
 * entry[condition].resource 1.. MS
-* entry[condition].resource only $JP_Condition_CLINS_eCS
+* entry[condition].resource only $JP_Condition_eCS
 
 
 * entry[medicationRequest] ^short = "MedicationRequestリソース"

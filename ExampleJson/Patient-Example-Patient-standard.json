@@ -3,7 +3,7 @@
   "id": "Example-Patient-standard",
   "meta": {
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
     ]
   },
   "extension": [

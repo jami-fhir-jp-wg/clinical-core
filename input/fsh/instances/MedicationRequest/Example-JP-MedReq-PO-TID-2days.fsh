@@ -1,5 +1,5 @@
 Instance: Example-JP-MedReq-PO-TID-2days
-InstanceOf: JP_MedicationRequest_CLINS_eCS
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
 * note.text = "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
@@ -17,7 +17,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * id = "Example-JP-MedReq-PO-TID-2days"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
-* meta.profile = $JP_MedicationRequest_CLINS_eCS
+* meta.profile = $JP_MedicationRequest_eCS
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" //"http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "1"

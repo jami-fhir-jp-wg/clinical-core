@@ -15,7 +15,7 @@
 
 ### 必須要素
   - resourceType : リソースタイプ "Encounter"
-  - meta.profile : 電子カルテ情報共有サービスでは必須
+  - meta.profile : プロファイルURL
   - status : この情報のステータス("finished")
   - class : 入院中、外来
 

@@ -1,5 +1,5 @@
 Instance: ErrorExample-JP-MedReq-ExtSkin-Total2
-InstanceOf: JP_MedicationRequest_CLINS_eCS
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "意図的エラー例：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
 * note.text = "意図的エラー例：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
@@ -16,7 +16,7 @@ Description: "意図的エラー例：入院処方　外用（塗布）全量処
 * contained[+] = Example-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-05T19:07:58.000+09:00"
-* meta.profile = $JP_MedicationRequest_CLINS_eCS
+* meta.profile = $JP_MedicationRequest_eCS
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "1"

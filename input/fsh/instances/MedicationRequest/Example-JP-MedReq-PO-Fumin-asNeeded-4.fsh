@@ -1,5 +1,5 @@
 Instance: Example-JP-MedReq-PO-Fumin-asNeeded-4
-InstanceOf: JP_MedicationRequest_CLINS_eCS
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "入院処方　内服頓用　頓用と1回量をコードで記述する例"
 * note.text = "入院処方　内服頓用　頓用と1回量をコードで記述する例"
@@ -16,7 +16,7 @@ Description: "入院処方　内服頓用　頓用と1回量をコードで記�
 * contained[+] = Example-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-27T01:31:19.000+09:00"
-* meta.profile = $JP_MedicationRequest_CLINS_eCS
+* meta.profile = $JP_MedicationRequest_eCS
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

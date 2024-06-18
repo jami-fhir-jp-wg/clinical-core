@@ -31,25 +31,25 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 
-* meta.profile 0.. MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS　を設定する。")
+* meta.profile 1.. MS
+  * insert relative_short_definition("本プロファイルを識別するURLとバージョンを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1　を設定する。")
 
-//* meta.tag 0..
-//  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_AllergyIntolerance_CLINS_eCSを参照のこと。")
-/*
-* meta.tag  ^slicing.discriminator.type = #pattern
+* meta.tag 0.. MS
+* meta.tag
+  * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
+* meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
 
-* meta.tag[lts] 0..1 MS
-* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
+* meta.tag[lts] from $JP_ehrshrs_indication_VS 
+* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS 
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-*/
+
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile

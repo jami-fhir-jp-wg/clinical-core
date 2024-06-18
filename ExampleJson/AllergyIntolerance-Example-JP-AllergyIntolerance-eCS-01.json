@@ -1,10 +1,10 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "Example-JP-AllergyIntolerance-CLINS-eCS-01",
+  "id": "Example-JP-AllergyIntolerance-eCS-01",
   "meta": {
     "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS"
     ]
   },
   "extension": [
@@ -22,12 +22,6 @@
       "value": "102934701"
     }
   ],
-  "patient": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    }
-  },
   "clinicalStatus": {
     "coding": [
       {
@@ -46,6 +40,12 @@
       }
     ],
     "text": "さば"
+  },
+  "patient": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
   },
   "note": [
     {

@@ -30,7 +30,21 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
   * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
 
 * meta.tag 0..
-  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。詳細はJP_Observation_LabResult_CLINS_eCSを参照のこと。")
+  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。")
+
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "$this"
+* meta.tag  ^slicing.rules = #open
+* meta.tag contains lts 0..1 MS
+//  and uninformed 0..1 MS
+
+* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile

@@ -1,6 +1,6 @@
-// JP_Condition_CLINS_eCS
-Instance: Example-JP-Condition-CLINS-eCS-01
-InstanceOf: JP_Condition_CLINS_eCS
+// JP_Condition_eCS
+Instance: Example-JP-Condition-eCS-01
+InstanceOf: JP_Condition_eCS
 Usage: #example
 Description: "conditionExample01 必須要素だけのサンプル"
 * note.text = "conditionExample01 必須要素だけのサンプル"
@@ -17,7 +17,7 @@ Description: "conditionExample01 必須要素だけのサンプル"
 //* contained[+] = Example-JP-Patient-eCS-01-Contained
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_CLINS_eCS
+* meta.profile[+] = $JP_Condition_eCS
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "202934701"
@@ -44,9 +44,9 @@ Description: "conditionExample01 必須要素だけのサンプル"
 * onsetDateTime = "2020-04-10"
 
 //--------------------------
-// JP_Condition_CLINS_eCS
-Instance: Example-JP-Condition-CLINS-eCS-02
-InstanceOf: JP_Condition_CLINS_eCS
+// JP_Condition_eCS
+Instance: Example-JP-Condition-eCS-02
+InstanceOf: JP_Condition_eCS
 Usage: #example
 Description: "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 * note.text =  "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
@@ -63,7 +63,7 @@ Description: "conditionExample02 必須要素と推奨要素を記述したサ�
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_CLINS_eCS
+* meta.profile[+] = $JP_Condition_eCS
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
@@ -94,9 +94,9 @@ Description: "conditionExample02 必須要素と推奨要素を記述したサ�
 * recorder.display = "消化器内科　田中太郎"
 
 
-// JP_Condition_CLINS_eCS 疑い病名
-Instance: Example-JP-Condition-CLINS-eCS-03
-InstanceOf: JP_Condition_CLINS_eCS
+// JP_Condition_eCS 疑い病名
+Instance: Example-JP-Condition-eCS-03
+InstanceOf: JP_Condition_eCS
 Usage: #example
 Description: "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
 * note.text = "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
@@ -112,7 +112,7 @@ Description: "conditionExample03 必須要素と推奨要素を記述したサ�
 * contained[+] = Example-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_CLINS_eCS
+* meta.profile[+] = $JP_Condition_eCS
 
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier

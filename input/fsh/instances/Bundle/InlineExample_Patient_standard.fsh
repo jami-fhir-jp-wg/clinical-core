@@ -1,5 +1,5 @@
 Instance: InlineExample-Patient-standard
-InstanceOf: JP_Patient_CLINS_eCS
+InstanceOf: JP_Patient_eCS
 Usage: #inline
 Description: "患者情報　標準サンプル"
 
@@ -11,7 +11,7 @@ Description: "患者情報　標準サンプル"
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
 
-* meta.profile[+] = $JP_Patient_CLINS_eCS
+* meta.profile[+] = $JP_Patient_eCS
 
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
 * identifier[=].value = "000999739"

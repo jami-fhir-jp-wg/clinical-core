@@ -1,10 +1,10 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "Example-JP-DrugContraindications-CLINS-eCS-03",
+  "id": "Example-JP-AllergyIntolerance-eCS-02",
   "meta": {
     "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS"
     ],
     "tag": [
       {
@@ -26,15 +26,9 @@
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "102934703"
+      "value": "102934702"
     }
   ],
-  "patient": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    }
-  },
   "contained": [
     {
       "resourceType": "Encounter",
@@ -77,18 +71,23 @@
     ]
   },
   "category": [
-    "medication"
+    "food"
   ],
-  "criticality": "high",
   "code": {
     "coding": [
       {
-        "code": "2260701F1271",
-        "system": "urn:oid:1.2.392.100495.20.1.73",
-        "display": "イソジンガーグル液７％"
+        "code": "J9FC11310000",
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS",
+        "display": "さば類"
       }
     ],
-    "text": "ヨードうがい液"
+    "text": "さば"
+  },
+  "patient": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
   },
   "encounter": {
     "reference": "#Example-JP-Encounter-AMB"
@@ -102,10 +101,10 @@
   },
   "note": [
     {
-      "text": "ポビドンヨード含嗽後に嘔吐と全身に発疹"
+      "text": "さば食後３時間ほどで全身に発疹と腹痛あり"
     },
     {
-      "text": "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報のサンプル"
+      "text": "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
     }
   ]
 }

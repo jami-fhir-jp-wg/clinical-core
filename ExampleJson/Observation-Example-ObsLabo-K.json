@@ -4,9 +4,25 @@
   "meta": {
     "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "1318814790-9990767-OBSLAB13883807672021070909210705-2"
+    }
+  ],
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
   "extension": [
     {
       "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -29,28 +45,6 @@
       }
     }
   ],
-  "identifier": [
-    {
-      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "1318814790-9990767-OBSLAB13883807672021070909210705-2"
-    }
-  ],
-  "category": [
-    {
-      "coding": [
-        {
-          "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS",
-          "code": "laboratory"
-        }
-      ]
-    }
-  ],
-  "subject": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    }
-  },
   "note": [
     {
       "text": "検体検査結果　カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
@@ -76,6 +70,12 @@
       }
     ],
     "text": "カリウム"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "issued": "2021-07-05T15:38:59.000+09:00",

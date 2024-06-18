@@ -1,24 +1,18 @@
 {
   "resourceType": "Condition",
-  "id": "Example-JP-Condition-CLINS-eCS-02",
+  "id": "Example-JP-Condition-eCS-03",
   "meta": {
     "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS"
-    ],
-    "tag": [
-      {
-        "code": "LTS",
-        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
-        "display": "長期保存"
-      },
-      {
-        "code": "UNINFORMED",
-        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
-        "display": "未告知"
-      }
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "202934703"
+    }
+  ],
   "extension": [
     {
       "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -26,12 +20,6 @@
         "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
         "value": "1318814790"
       }
-    }
-  ],
-  "identifier": [
-    {
-      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "202934702"
     }
   ],
   "subject": {
@@ -42,7 +30,7 @@
   },
   "note": [
     {
-      "text": "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+      "text": "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
     }
   ],
   "contained": [
@@ -71,18 +59,18 @@
   "clinicalStatus": {
     "coding": [
       {
-        "code": "active",
+        "code": "inactive",
         "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "display": "Active"
+        "display": "Inactive"
       }
     ]
   },
   "verificationStatus": {
     "coding": [
       {
-        "code": "confirmed",
+        "code": "unconfirmed",
         "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "display": "Confirmed"
+        "display": "Unconfirmed"
       }
     ]
   },
@@ -99,17 +87,18 @@
   "code": {
     "coding": [
       {
-        "code": "C169",
-        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full",
-        "display": "胃の悪性新生物＜腫瘍＞，胃，部位不明"
+        "code": "L3RF",
+        "system": "urn:oid:1.2.392.200119.4.101.6",
+        "display": "噴門癌"
       }
     ],
-    "text": "胃癌"
+    "text": "噴門癌早期"
   },
   "encounter": {
     "reference": "#Example-JP-Encounter-AMB"
   },
   "onsetDateTime": "2020-04-10",
+  "abatementDateTime": "2020-05-01",
   "recordedDate": "2020-04-18",
   "recorder": {
     "display": "消化器内科　田中太郎"

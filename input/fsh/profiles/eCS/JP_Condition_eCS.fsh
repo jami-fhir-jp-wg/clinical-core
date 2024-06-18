@@ -1,26 +1,30 @@
 // ==================================================
 //   Profile 定義 診療情報・サマリー汎用
-//   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
-//   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
+//   電子カルテ情報共有サービス対応プロファイル
 //   傷病名情報 リソースタイプ:Condition
 //   親プロファイル:JP_Condition
 // ==================================================
 Profile:        JP_Condition_eCS
 Parent:			JP_Condition
 Id:             JP-Condition-eCS
-Title:  "eCS:JP_Condition_eCS"
-Description: "eCS 診療情報・サマリー汎用 Conditionリソース（傷病名情報）プロファイル"
+Title:  "eCS/CLINS:JP_Condition_eCS"
+Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
-* extension contains JP_eCS_DiagnosisType named eCS_DiagnosisType ..* MS
-
+* extension contains JP_eCS_DiagnosisType named eCS_DiagnosisType ..* MS  // 保険等で記載する主病名情報をコードとして付与するため
 
 * ^url = $JP_Condition_eCS
+
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-02-25"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
-* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
+* . ^comment = ""
 
 * meta 1..1 MS
 * meta.versionId ^short = "バージョン固有の識別子"
@@ -28,11 +32,40 @@ Description: "eCS 診療情報・サマリー汎用 Conditionリソース（傷�
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
-* meta.profile 0.. MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
+* meta.profile 1.. MS
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS")
 
 * meta.tag 0..
-  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグ、未告知フラグ、未提供フラグの設定する場合に使用する。詳細はJP_Condition_CLINS_eCSを参照のこと。")
+  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグ、未告知フラグ、未提供フラグの設定する場合に使用する。詳細はJP_Condition_eCSを参照のこと。")
+
+
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "$this"
+* meta.tag  ^slicing.rules = #open
+* meta.tag contains lts 0..1 MS
+  and uninformed 0..1 MS
+  and undelivered 0..1 MS
+
+* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+
+* meta.tag[uninformed] = $JP_ehrshrs_indication_CS#UNINFORMED
+  * insert relative_short_definition("６情報作成において未告知フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
+
+* meta.tag[undelivered] = $JP_ehrshrs_indication_CS#UNDELIVERED
+  * insert relative_short_definition("６情報作成において未提供フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * code 1..1 MS
+    * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
@@ -45,7 +78,7 @@ Description: "eCS 診療情報・サマリー汎用 Conditionリソース（傷�
 
 * contained[encounter] only  JP_Encounter
   * insert relative_short_definition("傷病名情報を記録（登録）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+  * ^comment = "入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービスでは必須。"
 
 * contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("傷病名情報の記録者情報をコンパクトに格納したPractitionerリソース")
@@ -66,9 +99,13 @@ Description: "eCS 診療情報・サマリー汎用 Conditionリソース（傷�
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
+* extension[eCS_DiagnosisType] 0..1 MS
+  * insert relative_short_definition("主傷病フラグのある傷病名であることを記述するための拡張「eCS_Department」。電子カルテ情報共有サービスでは主傷病には設定必須。")
+  * ^comment = "system値：http://terminology.hl7.org/CodeSystem/ex-diagnosistype、value値：principal　を設定する。"
+
 * identifier 1..* MS
   * insert relative_short_definition("このリソース情報の識別ID。")
-  * ^comment = "リソース一意識別IDの仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
+  * ^comment = "リソース一意識別IDの仕様は、を参照のこと。"
 
 * identifier ^slicing.discriminator.type = #value
 * identifier ^slicing.discriminator.path = "system"
@@ -157,9 +194,10 @@ and syobo 0..
 
 // 患者情報
 * subject 1..1   MS
-* subject only  Reference(JP_Patient)
-  * insert relative_short_definition("患者のFHIRリソース\(JP_Patient\)への参照。電子カルテ情報サービスでは、\(JP_Patient_CLINS_eCS\)への参照とする。")
-  * ^comment = "記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。"
+* subject only  Reference(JP_Patient_eCS)
+  * insert relative_short_definition("患者のFHIRリソース\(JP_Patient_eCS\)への参照。")
+  * ^comment = ""
+* subject.identifier.system = $JP_Insurance_memberID (exactly)
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)
@@ -174,6 +212,7 @@ and syobo 0..
 * onset[x] 0..1 MS
 * onset[x]  ^short = "この傷病名情報が同定された時期"
 * onset[x]  ^definition = "患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名開始日を必須でdateTime型で記述するため、onsetDateTime要素を使用する。"
+* onsetDateTime 1..1 MS
 
 * abatement[x] 0..1 MS
 * abatement[x] only dateTime

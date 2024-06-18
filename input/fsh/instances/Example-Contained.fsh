@@ -9,7 +9,7 @@ Description: "埋め込み　患者情報最小限 サンプル"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報最小限 サンプル</p> </div>"
 
-//* meta.profile[+] = $JP_Patient_CLINS_eCS
+//* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-Patient-minimun"
 
 * identifier[+].system = $JP_Hospital_PatientID
@@ -179,7 +179,7 @@ Description: "埋め込み　検体検査材料　血清"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　検体検査材料　血清</p> </div>"
 
-//* meta.profile[+] = $JP_Patient_CLINS_eCS
+//* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-LaboMaterial-Serum"
 
 * type.coding[+] = $JP_ObservationSampleMaterialCode_CS#023  "血清"
@@ -195,7 +195,7 @@ Description: "埋め込み　検体検査材料　尿(含むその他)"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　検体検査材料　尿(含むその他)</p> </div>"
 
-//* meta.profile[+] = $JP_Patient_CLINS_eCS
+//* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-LaboMaterial-Urine"
 
 * type.coding[+] = $JP_ObservationSampleMaterialCode_CS#001  "尿(含むその他)"
