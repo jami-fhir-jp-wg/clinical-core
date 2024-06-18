@@ -8,19 +8,21 @@
 Profile:        JP_AllergyIntolerance_eCS
 Parent:			JP_AllergyIntolerance
 Id:             JP-AllergyIntolerance-eCS
-Title:  "eCS:JP_AllergyIntolerance_eCS"
-Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）プロファイル"
+Title:  "eCS/CLINS:JP_AllergyIntolerance_eCS"
+Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）プロファイル"
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
 
 * ^url = $JP_AllergyIntolerance_eCS
+
 * ^version = "1"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+
 * insert toplevel_short_definition("診療情報におけるアレルギー情報の格納に使用する")
 * . ^comment = "薬剤アレルギー等情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 

@@ -7,7 +7,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <meta name=ProgId content=Excel.Sheet>
 <meta name=Generator content="Microsoft Excel 15">
-<link id=Main-File rel=Main-File href="../Core6ResourcesTable20240617.htm">
+<link id=Main-File rel=Main-File href="../Core6ResourcesTable20240619.htm">
 <link rel=File-List href=filelist.xml>
 <link rel=Stylesheet href=stylesheet.css>
 <style>
@@ -47,7 +47,7 @@ function fnUpdateTabs()
 }
 
 if (window.name!="frSheet")
- window.location.replace("../Core6ResourcesTable20240617.htm");
+ window.location.replace("../Core6ResourcesTable20240619.htm");
 else
  fnUpdateTabs();
 //-->
@@ -160,12 +160,13 @@ else
   <td class=xl199 width=35 style='border-top:none;border-left:none;width:26pt'>1..*</td>
   <td class=xl152 width=87 style='border-top:none;border-left:none;width:65pt'>canonical(StructureDefinition)</td>
   <td class=xl163 width=359 style='border-top:none;border-left:none;width:269pt'>準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。<br>
-    http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Bundle_CLINS　を設定する。<br>
+   
+  http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS　を設定する。<br>
     </td>
   <td class=xl152 width=36 style='border-top:none;border-left:none;width:27pt'>固定値</td>
   <td class=xl144 width=195 style='border-top:none;border-left:none;width:146pt'><a
   href="http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
-  target="_parent">http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Bundle_CLINS</a></td>
+  target="_parent">http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS</a></td>
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl70 width=107 style='height:45.0pt;width:80pt'>meta</td>
@@ -269,10 +270,9 @@ else
   style='display:none'><rt>ホンブン </rt></span></ruby><span
   style='mso-spacerun:yes'> </span>6情報<ruby>送信<span style='display:none'><rt>ソウシン
   </rt></span></ruby><ruby>仕様<span style='display:none'><rt>シヨウ </rt></span></ruby>--Bundleリソースを識別するIdentifier要素--
-  に<ruby>記載<span style='display:none'><rt>&#0;&#0;&#2;&#5;</rt></span></ruby><ruby>記載<span
-  style='display:none'><rt>&#5;&#2;<br>
+  に<ruby>記載<span style='display:none'><rt>&#0;&#0;&#2;&#5;&#5;&#2;<br>
     <br>
-    </rt></span></ruby>の<ruby>仕様<span style='display:none'><rt></rt></span></ruby>とする。</td>
+    </rt></span></ruby>の[Bundle-ID]の仕様とする。</td>
   <td class=xl78 align=left width=36 style='border-top:none;border-left:none;
   width:27pt'><ruby>例<span style='display:none'><rt>レイジ </rt></span></ruby>示</td>
   <td class=xl160 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1311234567^2020^00123456&quot;</td>

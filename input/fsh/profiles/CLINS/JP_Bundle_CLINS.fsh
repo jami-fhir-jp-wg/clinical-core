@@ -47,14 +47,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * identifier ^comment = "Bundleリソースのidentifier要素は以下の通りとする。\r\n
 この仕様を満たすidentifierに加えて、これとは異なるsystem値をもつidentifierは複数存在しても構わない。\r\n
 Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n
-Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設定する。\r\n[報告単位識別ID]： 次の３つの文字列を半角ハット記号（^）で連携した文字列。\r\n
-保険医療機関番号10桁：\r\n
-　（内訳：都道府県番号２桁、点数表コード（医療機関区分）１桁、医療機関番号７桁）\r\n
-被保険者個人識別子：\r\n
-　６情報送信仕様に記載の「6:被保険者個人識別子の格納」の仕様に従う。\r\n
-報告単位のデータを医療機関のシステムとして医療機関内で一意に識別できる粒度のID文字列：\r\n
-　　当該システムが当該患者データの中で一意性を保証できるよう生成した半角文字列（英大文字、数字、ハイフン記号のみ可）\r\n
-　　最大128文字とすること。"
+Bundle.identifier.value : 実装ガイド本文 6情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
 
 * identifier.system 1.. MS
 * identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
@@ -94,7 +87,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
     patient 1..1 MS  //  患者情報
  and allergyIntolerance 0..
  and condition 0..
- and medicationRequest 0..
+ and medicationRequest 0..  // 処方情報は作成して送信してもよいが処理されない。
  and observationLaboResult 0..
 
 * entry ^short = "このBundleが格納するリソースの情報。"
@@ -110,13 +103,13 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 
 * entry[patient].fullUrl 1.. MS
 * entry[patient].resource 1.. MS
-* entry[patient].resource only $JP_Patient_CLINS_eCS
+* entry[patient].resource only $JP_Patient_eCS
 
 * entry[allergyIntolerance] ^short = "AllergyIntoleranceリソース"
 * entry[allergyIntolerance] ^definition = "アレルギー情報／薬剤アレルギー等情報"
 * entry[allergyIntolerance].fullUrl 1.. MS
 * entry[allergyIntolerance].resource 1.. MS
-* entry[allergyIntolerance].resource only $JP_AllergyIntolerance_CLINS_eCS
+* entry[allergyIntolerance].resource only $JP_AllergyIntolerance_eCS
 
 * entry[condition] ^short = "Conditionリソース"
 * entry[condition] ^definition = "傷病名情報"
@@ -124,14 +117,16 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 * entry[condition].resource 1.. MS
 * entry[condition].resource only $JP_Condition_CLINS_eCS
 
+
 * entry[medicationRequest] ^short = "MedicationRequestリソース"
 * entry[medicationRequest] ^definition = "処方情報"
 * entry[medicationRequest].fullUrl 1.. MS
 * entry[medicationRequest].resource 1.. MS
-* entry[medicationRequest].resource only $JP_MedicationRequest_CLINS_eCS
+* entry[medicationRequest].resource only $JP_MedicationRequest_eCS
+
 
 * entry[observationLaboResult] ^short = "Observationリソース"
 * entry[observationLaboResult] ^definition = "検体検査結果／感染症情報"
 * entry[observationLaboResult].fullUrl 1.. MS
 * entry[observationLaboResult].resource 1.. MS
-* entry[observationLaboResult].resource only $JP_Observation_LabResult_CLINS_eCS
+* entry[observationLaboResult].resource only $JP_Observation_LabResult_eCS

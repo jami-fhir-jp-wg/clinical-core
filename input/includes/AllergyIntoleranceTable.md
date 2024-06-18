@@ -823,7 +823,7 @@
   style='display:none'><rt>カナラズ </rt></span></ruby>ード（ダミーコードを<ruby>含<span
   style='display:none'><rt>フクム </rt></span></ruby>む）を1つ<ruby>以上<span
   style='display:none'><rt>イジョウ </rt></span></ruby><ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>する。</td>
+  style='display:none'><rt>セッテイ セッテイ カカワラズ </rt></span></ruby>する。</td>
   <td class=xl80 width=36 style='width:27pt'>　</td>
   <td class=xl180 width=195 style='width:146pt'>　</td>
   <td class=xl283></td>
@@ -903,7 +903,8 @@
   <td class=xl236 width=35 style='width:26pt'>1..1</td>
   <td class=xl80 width=87 style='width:65pt'>Reference(JP_Patient )<br>
     電子カルテ情報サービスでは、Reference(JP_Patient_eCS)</td>
-  <td class=xl179 width=359 style='width:269pt'>このアレルギー不耐症を有する患者のFHIRリソースへの参照。</td>
+  <td class=xl179 width=359 style='width:269pt'><ruby>このアレルギー不耐症を有する患者のFHIRリソースへの参照。<span
+  style='display:none'><rt>ガイブ サンショウ ホウホウ </rt></span></ruby></td>
   <td class=xl80 width=36 style='width:27pt'>例示</td>
   <td class=xl180 width=195 style='width:146pt'>実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照）
   」に従う。</td>
@@ -1748,5 +1749,5 @@
   <td class=xl283></td>
   <td class=xl283></td>
  </tr>
- 
+
 </table>
