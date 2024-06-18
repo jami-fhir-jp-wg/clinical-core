@@ -136,7 +136,7 @@ Description: "eCS 診療情報・サマリー汎用 AllergyIntoleranceリソー�
 
 * patient 1..1   MS
 * patient only  Reference(JP_Patient_eCS)
-  * insert relative_short_definition("このアレルギーを有する患者のFHIRリソース\(JP_Patient_eCS\に従うPatientリソース)への参照。")
+  * insert relative_short_definition("このアレルギーを有する患者のFHIRリソース\(JP_Patient_eCSに従うPatientリソース\)への参照。")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
