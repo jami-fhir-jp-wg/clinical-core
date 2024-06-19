@@ -65,7 +65,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 
 * contained[encounter] only  JP_Encounter
   * insert relative_short_definition("検体検査を実施（検体を採取）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
+  * ^comment = "電子カルテ情報共有サービスでは必須。encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[specimen] only  JP_Specimen
   * insert relative_short_definition("検体材料情報をコンパクトに格納したSpecimenリソース")
@@ -83,7 +83,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 
 * extension[eCS_Department] 0..1 MS
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
-  * ^comment = "コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
+  * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
 * identifier 1..* MS
   * insert relative_short_definition("このリソース情報の識別ID。")
@@ -110,7 +110,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * status 1..1 MS
 
 // OUL^R22
-* category MS       
+* category 1..1 MS       
   * insert relative_short_definition("検査結果カテゴリーのコード。system=http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS code=\"laboratory\"") 
 
 // OUL^R22.OBX[*]-3 検査項目情報
@@ -253,7 +253,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding[unCoded].code = #99999999999999999 (exactly)
 * code.coding[unCoded].display = "未標準化コード項目(JLAC)" (exactly)
 
-// 基本検査項目セット　48項目
+// 基本検査項目セット　43項目
 * code.coding[coreLabo/abo-bld].system = $JP_CLINS_CodeSystem_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/abo-bld].display = "ABO-BLD" (exactly)	
 * code.coding[coreLabo/abo-bld].code from $JP_CLINS_ValueSet_CoreLabo_abo_bld_VS (required)
@@ -765,11 +765,9 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 
 // OUL^R22.SPM-4[*]
 * specimen 1.. MS
-* specimen only Reference(JP_Specimen)
 * specimen ^short = "この検査に使用された検体（標本）。"
-* specimen ^definition = "この検査に使用された検体（標本）を表すSpecimenリソース（Containedリソース）への参照。検体材料に関する情報を記述したSpecimenリソースをContainedリソースとして本リソースに埋め込んで、それを参照すること。\r\n３文書６情報の作成では、JP_Specimenタイプのリソース（Specimen.idの値が\"#specimen203987\"と仮定）が本リソースのContainedリソースとして埋め込み記述されることが必須であるため、そのcontainedリソースのid値(Specimen.id)を記述する。(例 2\r\n{\r\n  \"reference\":  \"#specimen203987\"\r\n})\r\nとなる。"
-
-* specimen ^comment = "Containedリソースに含まれるSpecimenリソースをリソース内で参照する。必須。"
+* specimen ^definition = "この検査に使用された検体（標本）情報への参照。"
+* specimen ^comment = "検体材料に関する情報を記述したSpecimenリソースをContainedリソースとして本リソースに埋め込んでそれを参照するか、またはtype子要素=\"Specimen\",display子要素で\"血清\"のように検体名称を設定することで記述する。"
 
 // OUL^R22.OBX[*]-7
 * referenceRange MS

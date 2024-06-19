@@ -1,5 +1,5 @@
 
-# eCS 診療情報・サマリー汎用：【処方依頼情報】
+# eCS/CLINS 診療情報・サマリー汎用：【処方依頼情報】
 
 ## 背景および想定シナリオ
 このプロファイルは、６情報をはじめ、診療情報提供書や退院時サマリーなどの2文書や、診療６情報・サマリー用に「処方依頼情報」を記述するためのものである。
@@ -20,7 +20,7 @@
   - meta.lastUpdated : 最終更新日時
   - meta.profile : プロファイルURL
   - identifier : インスタンス識別ID
-  - status : 調剤が完了しているかどうかは不明であるが、交付が完了した処方として、completedを設定することとする。
+  - status : 処方状態
   - intent : 投薬指示の意図。"order" を固定で設定する。
   - medicationCodeableConcept : 医薬品のコードと名称。
   - subject : 対象となる患者のFHIRリソースへの参照。
@@ -34,15 +34,14 @@
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
-  - meta.profile : 電子カルテ情報共有サービスでは必須。
   - meta.tag ("LTS") : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
-  - extension (InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
+  - contained (JP_Encounter) : 電子カルテ情報共有サービスでは必須。傷病名登録時の入院外来区分情報
+  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
+  - extension (eCS_Department) : 電子カルテ情報共有サービスでは必須。診療科名称（とコード）
+  - encounter : 電子カルテ情報共有サービスでは必須。この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
 
 ### 推奨要素
-  - contained (JP_Encounter) : 処方情報を作成したときの受診情報（入外区分など）を記述しているEncounterリソース
-  - extension (eCS_Department) : 診療科情報
   - category : 薬剤使用区分
-  - encounter : この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
   - requester : 処方者情報。この処方を作成した医療者の情報への参照。
 
 ### MustSupport要素

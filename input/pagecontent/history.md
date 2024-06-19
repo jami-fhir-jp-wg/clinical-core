@@ -11,8 +11,14 @@
   - 実装ガイド本文
     - リソースへの参照の記述を整理
       - Patientリソースへの参照方法を変更：identifierを記述する方法からfullUrlを記述する方法に変更。
+      
   - 全リソースタイプ
     - meta.profile: 1つは必須とし、多重度を1..* に変更。設定するプロファイルURLをCLINS専用URLから共用URL（eCS）に変更。バージョン番号を末尾に｜1として追加。 
+
+  - Condition,MedicationRequest,Observationの各リソースタイプ
+    - 電子カルテ情報共有サービスに送信する場合には
+      - 診療科情報を記述する拡張を必須とし、診療科名称を必須とする。
+      - 入院外来区分を記述するcontainedリソース（JP_Encounter_eCS）を必須とし、Encounter.class要素に入院か外来かをコードで記述することを必須とする。
 
   - AllergyIntorelance
     - meta.profile: 電子カルテ情報共有サービスへの送信時も同じプロファイルを使用することとし、設定を変更しない。
@@ -22,8 +28,9 @@
     - patient要素でのリソース参照方法を変更
     - encounter要素でのリソース参照方法を変更
     - recorderとasserterを「推奨要素」から外す。これにともない、contained (JP_Practitioner) を「推奨要素」から外す。
-    - 
-
+    
+  - Observation
+    - category: JP-Coreに合わせて必須に変更。
 
 
 Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
