@@ -134,7 +134,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * code  ^definition = "少なくとも1つのCoding情報では、実装ガイドで定めるアレルギー物質コーディングルールに従ったコード（ダミーコードを含む）を必ず設定する。その場合に使用するsystem値は'http://jpfhir.jp/fhir/eCS/CodeSystem/JP_Allergen_CS'"
 * code  ^comment = ""
 
-* code.coding from http://jpfhir.jp/fhir/eCS/ValueSet/JP_Allergen_CS
+* code.coding from http://jpfhir.jp/fhir/eCS/ValueSet/JP_metaAllergen_CS
 
 * patient 1..1   MS
 * patient only  Reference(JP_Patient_eCS)

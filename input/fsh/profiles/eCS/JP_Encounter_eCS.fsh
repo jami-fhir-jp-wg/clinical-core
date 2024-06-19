@@ -1,9 +1,14 @@
-
+// ==================================================
+//   Profile 定義 診療情報・サマリー汎用
+//   電子カルテ情報共有サービス対応プロファイル
+//   Encounter情報 リソースタイプ:Encounter
+//   親プロファイル:JP_Encounter
+// ==================================================
 Profile: JP_Encounter_eCS
 Parent: JP_Encounter
 Id: JP-Encounter-eCS
-Title: "eCS:JP_Encounter-eCS"
-Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
+Title: "eCS/CLINS:JP_Encounter-eCS"
+Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
 
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
 
