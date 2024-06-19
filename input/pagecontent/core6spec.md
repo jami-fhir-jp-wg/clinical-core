@@ -17,15 +17,16 @@ Bundleリソースのタイプ（type要素）は"collection"を使用する。
 <br>
 一方、３文書を送信する場合には、文書はそれぞれひとつの”document”タイプのBundleとして作成され、ひとつのBundlleに格納されるリソースデータ同士が特に制限なく相互参照できる。
 <br>
+Bundleリソースのプロファイルは以下を参照すること。
+[CLINS電子カルテ情報共有６情報用　Bundleリソース][JP_Bundle_CLINS]
+
 
 Bundleリソースの概要図は下図のようになる。
 
-![Bundle概要図](Bundle-fig.png){.center-block}
+| Bundle概要図 |
+| ---- |
+| ![Bundle概要図](Bundle-fig.png) |
 
-
-Bundleリソースのプロファイルは以下を参照すること。[CLINS電子カルテ情報共有６情報用　Bundleリソース][JP_Bundle_CLINS]
-
-<br>
 
 ##### ひとつのBundleリソースに格納できるデータ
 

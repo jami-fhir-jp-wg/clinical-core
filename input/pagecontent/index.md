@@ -222,7 +222,7 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 ### ６情報送信に関するFHIR仕様
 
 <span style="color: blue; font-size: 150%;">6情報のリソースとBundleリソースの詳細は以下のページを参照<br><A href="core6spec.html">
-☞「6情報FHIR詳細仕様」</a></spam>
+☞「6情報FHIR詳細仕様」</a></span>
 
 <p></p>
 
@@ -247,10 +247,10 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 
  <span style="color: black; font-size: 80%;">本実装ガイドは、以下の方々の支援と貢献により策定されています。</span>
 
-  - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」（代表者：大江和彦（東京大学））</span>
-  - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」（代表者：大江和彦（東京大学））</span>
-  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業「病院を家庭に、家庭で炎症コントロール」分担課題7（代表者：南學正臣（東京大学）、分担研究者：大江和彦（同））</span>
-  - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1（研究責任者：河添悦昌（東京大学）、分担研究開発者：大江和彦（同））</span>
+  - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」</span>
+  - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」</span>
+  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業「病院を家庭に、家庭で炎症コントロール」分担課題7</span>
+  - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1</span>
   - <span style="color: black; font-size: 80%;">日本医療情報学会NeXERS課題研究会「FHIR日本実装検討WG」</span>
   - <span style="color: black; font-size: 80%;">日本医療情報学会標準策定・維持管理部会</span>
   
