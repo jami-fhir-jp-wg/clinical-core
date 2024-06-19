@@ -222,7 +222,7 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 ### ６情報送信に関するFHIR仕様
 
 <span style="color: blue; font-size: 150%;">6情報のリソースとBundleリソースの詳細は以下のページを参照<br><A href="core6spec.html">
-☞「6情報FHIR詳細仕様」</a></span>
+☞「６情報送信仕様」</a></span>
 
 <p></p>
 
