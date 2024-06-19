@@ -245,14 +245,14 @@ Profile自体もひとつのリソースである（StructureDefinitionリソー
 
 ### 謝辞
 
- <span style="color: black; font-size: 80%;">本実装ガイドは、以下の方々の支援と貢献により策定されています。</span>
+ <span style="color: black; font-size: 80%;">本実装ガイドは、以下の研究班の方々の貢献と支援により策定されています。</span>
 
-  - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」</span>
-  - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」</span>
-  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業「病院を家庭に、家庭で炎症コントロール」分担課題7</span>
-  - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1</span>
-  - <span style="color: black; font-size: 80%;">日本医療情報学会NeXERS課題研究会「FHIR日本実装検討WG」</span>
-  - <span style="color: black; font-size: 80%;">日本医療情報学会標準策定・維持管理部会</span>
+  - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」<a href="https://mhlw-grants.niph.go.jp/project/145722">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」<a href="https://mhlw-grants.niph.go.jp/project/164909">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業「病院を家庭に、家庭で炎症コントロール」分担課題7<a href="https://biomse.t.u-tokyo.ac.jp/moonshot/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1<a href="https://d1www.sip3.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会NeXERS課題研究会「FHIR日本実装検討WG」<a href="https://jpfhir.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会標準策定・維持管理部会<a href="https://www.jami.jp/jamistd/standards-development/">☞</a></span>
   
  <br>
 
