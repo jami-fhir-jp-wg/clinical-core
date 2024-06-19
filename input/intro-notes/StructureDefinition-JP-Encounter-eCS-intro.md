@@ -17,7 +17,7 @@
   - resourceType : リソースタイプ "Encounter"
   - meta.profile : プロファイルURL
   - status : この情報のステータス("finished")
-  - class : 入院中、外来
+  - class : 入院、外来の区分情報
 
 ### 条件により必須
   - reasonCode : 診療情報提供書の場合に必須。入院時主訴や情報提供理由。

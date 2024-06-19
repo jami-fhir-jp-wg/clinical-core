@@ -15,8 +15,16 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * extension contains JP_eCS_Department named eCS_Department ..* MS
 
 * ^url = $JP_MedicationRequest_eCS
+
+
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-02-25"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
+
 * . ^short = "診療情報として処方オーダの１処方薬情報の格納に使用する"
 * . ^definition = "診療情報として処方オーダの１処方薬情報の格納に使用する"
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信するためにこのプロファイルから派生した別の専用プロファイルが用意されているが、電子カルテ情報共有サービスでは、処方情報の送信は想定されていない。診療情報提供書や退院時サマリーに埋め込まれる"

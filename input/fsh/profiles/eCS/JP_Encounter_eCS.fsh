@@ -6,8 +6,16 @@ Title: "eCS:JP_Encounter-eCS"
 Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
 
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
+
+
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-02-25"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
+
 * . ^short = ""
 * . ^definition = "診療情報提供では、紹介理由を記述する受診時情報. 診療サマリーではサマリー対象となる受診や入院に関する受診時または入院時情報。診療６情報において埋め込みリソースとして記述する場合にも適用できる。"
 
@@ -17,32 +25,31 @@ Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受�
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
-* meta.profile 0.. MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
+* meta.profile 1.. MS
+  * insert relative_short_definition("本プロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS　を設定する。")
 
 * identifier 0..1 MS
-* identifier ^short = "この医療機関における患者の受診番号、入院管理番号"
-* identifier ^definition = "この医療機関における患者の受診番号、入院管理番号"
+* identifier ^short = "この医療機関における患者の受診番号や入院管理番号"
+* identifier ^definition = "この医療機関における患者の受診番号や入院管理番号"
 
 * identifier.value 1..1 MS
   * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
 
+* status 1..1 MS
 * status = #finished (exactly)
 * status ^definition = "finished の固定値を設定する。"
 
-* status 1..1 MS
-
+* class 1..1 MS
 * class ^short = "受診イベントの分類"
 * class ^definition = "受診イベントの分類。外来（外来）、入院、救急、在宅医療、その他の地域差による患者Encouterの分類を表す概念。"
-* class 1..1 MS
 * class.system 1..1 MS
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
 * class.system ^definition = "コード体系v3.ActEncounterCodeを識別するURI。固定値。"
 * class.code 1..1 MS
 * class.code from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
-* class.code ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院または入院中    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
-* class.display ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院または入院中    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
+* class.code ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
 * class.display 1..1 MS
+* class.display ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
 
 * classHistory ..1 MS
 * classHistory ^short = "外来受診履歴や入院履歴の繰り返し記述。"
@@ -82,7 +89,9 @@ Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受�
 * reasonCode.coding 0..* MS
 * reasonCode.coding.system 1..1 MS
 * reasonCode.coding.code 1..1 MS
-* reasonCode.text MS
+* reasonCode.text 1..1 MS
+* reasonCode.text ^short = "入院時主訴・入院理由、情報提供理由などのテキスト記述。reasonCode要素を記述する場合には、text記述は必須。"
+
 
 * diagnosis 0..* MS
 * diagnosis ^short = "入院期間中の診断情報。診療情報提供書では不要。"
@@ -131,16 +140,16 @@ Description: "eCS 診療情報・サマリー汎用 Encounterリソース（受�
 * hospitalization.dischargeDisposition.coding.display 0..1 MS
 
 * location 0..* MS
-* location ^short = "入院中の所在場所（病棟病室など）。診療情報提供書では不要。"
-* location ^definition = "入院中の所在場所（病棟病室など）。診療情報提供書では不要。"
+* location ^short = "外来受診の場所、入院中の所在場所（病棟病室など）。診療情報提供書では不要。"
+* location ^definition = "外来受診の場所、入院中の所在場所（病棟病室など）。診療情報提供書では不要。"
 * location.location 1..1 MS
-* location.location ^short = "入院中の所在場所（病棟病室など）への参照。"
-* location.location ^definition = "入院中の所在場所（病棟病室など）への参照。"
+* location.location ^short = "外来受診の場所、入院中の所在場所（病棟病室など）への参照。"
+* location.location ^definition = "外来受診の場所、入院中の所在場所（病棟病室など）への参照。"
 * location.location only Reference(JP_Location)
 * location.status 1..1 MS   
 * location.status = #completed
 * location.physicalType 0..1 MS
-* location.physicalType ^short = "入院中の所在場所（病棟病室など）の種別"
+* location.physicalType ^short = "外来受診の場所、入院中の所在場所（病棟病室など）の種別"
 * location.physicalType ^definition = "所在場所のタイプ。bu: 建物wa: 病棟ro: 病室bd: ベッドarea: エリアなど。"
 * location.physicalType.coding 1..1 MS
 * location.physicalType.coding.system 1..1 MS

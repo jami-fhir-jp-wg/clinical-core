@@ -11,8 +11,16 @@ Title: "eCS:JP_Practitioner_eCS"
 Description: "eCS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）プロファイル"
 
 * ^url = $JP_Practitioner_eCS
+
+
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-02-25"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
+
 * . ^short = "診療情報サマリーにおける主としてオーダ等の医師情報の格納に使用する"
 * . ^definition = "診療情報サマリー・厚労省6情報などにおける主としてオーダ等の医師情報の格納に使用する"
 

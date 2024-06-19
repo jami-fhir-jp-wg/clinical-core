@@ -13,8 +13,15 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * extension contains JP_eCS_Department named eCS_Department ..* MS
 
 * ^url = $JP_Observation_LabResult_eCS
+
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-02-25"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
+
 * . ^short = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"
 * . ^definition = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"
 * . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"

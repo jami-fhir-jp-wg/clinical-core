@@ -58,7 +58,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
 function fnBuildFrameset()
 {
  var szHTML="<frameset rows=\"*,18\" border=0 width=0 frameborder=no framespacing=0>"+
-  "<frame src=\""+document.all.item("shLink")[2].href+"\" name=\"frSheet\" noresize>"+
+  "<frame src=\""+document.all.item("shLink")[5].href+"\" name=\"frSheet\" noresize>"+
   "<frameset cols=\"54,*\" border=0 width=0 frameborder=no framespacing=0>"+
   "<frame src=\"\" name=\"frScroll\" marginwidth=0 marginheight=0 scrolling=no>"+
   "<frame src=\"\" name=\"frTabs\" marginwidth=0 marginheight=0 scrolling=no>"+
@@ -92,8 +92,7 @@ frames['frScroll'].document.close();
  szHTML =
   "<html><head>"+
   "<style>A:link,A:visited,A:active {text-decoration:none;"+"color:"+c_rgszClr[3]+";}"+
-  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:8pt 
-      ;padding-left:3px;padding-right:3px;text-align:center;}"+
+  ".clTab {cursor:hand;background:"+c_rgszClr[1]+";font:8pt ＭＳ Ｐゴシック;padding-left:3px;padding-right:3px;text-align:center;}"+
   ".clBorder {background:"+c_rgszClr[2]+";font:1pt;}"+
   "</style></head><body onload=\"parent.fnInit();\" onselectstart=\"event.returnValue=false;\" ondragstart=\"event.returnValue=false;\" bgcolor="+c_rgszClr[4]+
   " topmargin=0 leftmargin=0><table id=tbTabs cellpadding=0 cellspacing=0>";
@@ -362,11 +361,11 @@ function fnSetActiveSheet(iSh)
    </x:ExcelWorksheet>
   </x:ExcelWorksheets>
   <x:Stylesheet HRef="Core6ResourcesTable20240619.fld/stylesheet.css"/>
-  <x:WindowHeight>19980</x:WindowHeight>
-  <x:WindowWidth>31180</x:WindowWidth>
+  <x:WindowHeight>18000</x:WindowHeight>
+  <x:WindowWidth>30420</x:WindowWidth>
   <x:WindowTopX>32767</x:WindowTopX>
-  <x:WindowTopY>32767</x:WindowTopY>
-  <x:ActiveSheet>2</x:ActiveSheet>
+  <x:WindowTopY>2520</x:WindowTopY>
+  <x:ActiveSheet>5</x:ActiveSheet>
   <x:ProtectStructure>False</x:ProtectStructure>
   <x:ProtectWindows>False</x:ProtectWindows>
  </x:ExcelWorkbook>
@@ -374,7 +373,7 @@ function fnSetActiveSheet(iSh)
 </head>
 
 <frameset rows="*,39" border=0 width=0 frameborder=no framespacing=0>
- <frame src="Core6ResourcesTable20240619.fld/sheet003.htm" name="frSheet">
+ <frame src="Core6ResourcesTable20240619.fld/sheet006.htm" name="frSheet">
  <frame src="Core6ResourcesTable20240619.fld/tabstrip.htm" name="frTabs" marginwidth=0 marginheight=0>
  <noframes>
   <body>
