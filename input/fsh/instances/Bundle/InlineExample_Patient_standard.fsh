@@ -5,10 +5,11 @@ Description: "患者情報　標準サンプル"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報　標準サンプル</p> </div>"
-
+/*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+*/
 
 
 * meta.profile[+] = $JP_Patient_eCS

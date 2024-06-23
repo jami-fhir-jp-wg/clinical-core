@@ -11,10 +11,16 @@ Id: JP-Patient-eCS
 Title: "eCS/CLINS:JP_Patient_eCS"
 Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
+* obeys valid-system-local-patientID
+* obeys valid-system-insurance-patientIdentifier
+* obeys valid-value-insurance-patientIdentifier
 
+//* obeys institurionNumber
+
+/*
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
-* extension[eCS_InstitutionNumber] 1..1 MS
-
+* extension[eCS_InstitutionNumber] 0..1 MS
+*/
 
 * ^url = $JP_Patient_eCS
 
@@ -36,14 +42,8 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 * meta.profile 1..1 MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS")
-* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
+//* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
 
-
-* obeys valid-system-local-patientID
-* obeys valid-system-insurance-patientIdentifier
-* obeys valid-value-insurance-patientIdentifier
-
-//* obeys institurionNumber
 
 * identifier ^short = "保険者・被保険者番号情報、自施設の患者番号など。"
 * identifier ^definition = "保険者・被保険者番号情報(system=\"http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID\")はあれば必須（電子カルテ情報共有サービスでは必須）。被保険者個人識別子の仕様は「被保険者個人識別子」の文字列仕様を参照のこと。それが取得できていない場合には、自施設の患者番号（system=\"urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]\"）やその他の識別子を記述することが可能。"

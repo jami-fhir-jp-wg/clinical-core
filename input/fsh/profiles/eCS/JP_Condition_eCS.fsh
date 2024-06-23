@@ -97,7 +97,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * extension[eCS_Department] 0..1 MS
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
-  * ^comment = "コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
+  * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
 * extension[eCS_DiagnosisType] 0..1 MS
   * insert relative_short_definition("主傷病フラグのある傷病名であることを記述するための拡張「eCS_Department」。電子カルテ情報共有サービスでは主傷病には設定必須。")

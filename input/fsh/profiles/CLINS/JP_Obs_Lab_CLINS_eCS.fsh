@@ -9,8 +9,9 @@ Id: JP-Observation-LabResult-CLINS-eCS
 Title:  "CLINS電子カルテ情報共有サービス用:JP_Observation_LabResult_CLINS_eCS"
 Description: "CLINS 電子カルテ共有サービス用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル。 JP_Observation_LabResult_eCSからの派生プロファイル。"
 
+* obeys resource-needs-extension-of-institutionNumber
 
-* extension[eCS_InstitutionNumber] 1..1 MS
+* extension[eCS_InstitutionNumber] 0..1 MS
 * ^url = $JP_Observation_LabResult_CLINS_eCS
 * ^status = #active
 * ^date = "2024-02-25"

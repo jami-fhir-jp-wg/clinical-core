@@ -1,7 +1,14 @@
 
 
-// R1011-  患者IDチェック
+// R1010-  患者IDチェック
+
 Invariant: valid-system-local-patientID
+Description: "R1010:施設患者IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]'でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,1) = '1' and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(32).matches('^[0-4][0-9][1-3][0-9]{7}$')) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
+
+
+Invariant: valid-system-local-patientID-with-institutionNumber
 Description: "R1011:施設患者IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]'であり、かつその施設番号10桁はextension[eCS_InstitutionNumber].valueIdentifier.value値と一致しなければならない。"
 Severity: #error
 Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,11) = '1' + extension('http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').value.ofType(Identifier).value) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
@@ -48,79 +55,6 @@ Description: "R2013:薬剤アレルギー等でないアレルギーの場合に
 Severity: #error
 Expression: "(category.where($this='medication').count()=1 and criticality='high') or ((category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1 ))"
 
-// R0111- BundleIDチェック
-Invariant: valid-value-bundleIdenfifier
-Description: "R0110:Bundle.identifier.value は、医療機関番号10桁^被保険者個人識別子^128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）であること。'^[0-4][0-9][1-3][0-9]{7}[\\^][0-9]{8}:[^:^\\s^　]*:[^:^\\s^　]*:[0-9]{2}[\\^][A-Z0-9\\-]{1,128}$'"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^][0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:[0-9]{2}[\\\\^][A-Z0-9\\\\-]{1,128}$'))"
-
-Invariant: valid-valuePart0-bundleIdenfifier
-Description: "R0111:構成：Bundle.identifier.value は^区切りで３つのパートから構成されなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+[\\\\^].+$'))"
-
-Invariant: valid-valuePart1-bundleIdenfifier
-Description: "R0110原因：R0112:Bundle.identifier.value の最初の^までのパートが、医療機関番号10桁として適切な数字列でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^].*$'))"
-
-/*
-Invariant: valid-valuePart2-bundleIdenfifier
-Description: "Bundle.identifier.value の最初の^から２番目の^までのパートが、被保険者個人識別子として適切な文字列でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^][0-9]{8}:[^:^\\\\s^　]*?:[^:^\\\\s^　]*?:[0-9]{2}[\\\\^].+$'))"
-*/
-//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
-
-Invariant: valid-valuePart2-0-bundleIdenfifier
-Description: "R0110原因：R0113:Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、:区切り文字が３つでなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:.+?:.+?:.+?[\\\\^].+$'))"
-//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
-
-Invariant: valid-valuePart2-1-bundleIdenfifier
-Description: "R0110原因：R0114:Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第１要素が数字8桁（保険者番号）でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^][0-9]{8}:.+?:.+?:.+[\\\\^].+$'))"
-//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
-
-Invariant: valid-valuePart2-2-bundleIdenfifier
-Description: "R0110原因：R0115:Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第2要素が空白を含まない文字列（被保険者記号等）でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:[^:^\\\\s^　]*?:.+?:.+?[\\\\^].+$'))"
-//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
-
-/*
-Invariant: valid-valuePart2-2-bundleIdenfifier
-Description: "原因：Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第2要素が空白を含まない全角文字列（被保険者記号等）または空白を含まない半角文字列でなければならない。"
-// [^:^\\\\s^　]*? 
-// 全角文字列＝　[^ -~｡-ﾟ]*　（半角でない文字からなる文字列）
-//　全角空白と半角文字以外の文字からなる文字列＝ [^ -~｡-ﾟ　]*
-// 半角だけの文字列 [ -~｡-ﾟ]*
-// 空白以外の半角だけの文字列　[ -~｡-ﾟ]*
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:[^ -~｡-ﾟ　]*?:.+?:.+?[\\\\^].+$'))"
-*/
-
-Invariant: valid-valuePart2-3-bundleIdenfifier
-Description: "R0110原因：R0116:Bundle.identifier.value の最初の^から２番目の^までの被保険者個人識別子パートは、第3要素が空白を含まない文字列（被保険者番号等）でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:.+?:[^:^\\\\s^　]*?:.+?[\\\\^].+$'))"
-//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
-
-Invariant: valid-valuePart2-4-bundleIdenfifier
-Description: "R0110原因：R0117:Bundle.identifier.value の最初の^から２番目の^被保険者個人識別子パートは、第4要素が2桁の半角数字（枝番）でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^].+?:.+?:.+?:[0-9]{2}[\\\\^].+$'))"
-//* identifier.value = "1318814790^00012345:あいう:１８７:01^1038463784937"
-
-
-Invariant: valid-valuePart3-bundleIdenfifier
-Description: "R0110原因：R0118:Bundle.identifier.value の2番目^から3番目の^までのパートが、一意識別として128文字以内の半角文字列（英大文字、数字、ハイフン記号のみ可）でなければならない。"
-Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^.+?[\\\\^]*?[\\\\^][A-Z0-9\\\\-]{1,128}$'))"
-
-
 // 医療機関番号１０桁：[0-4][0-9][1-3][0-9]{7}
 // 保険者番号８桁：[0-9]{8}
 // 被保険者記号：[^:^\\\\s^　]* 
@@ -129,21 +63,54 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 // 被保険者識別子: ^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$
 // 医療機関内Bundle識別子：[A-Z0-9\\\\-]{1,128}
 
-// R0211-  
+// R0211-   Bundle CLINSのチェック
 Invariant: first-bundle-entry-is-Patient
 Description: "R0211:最初のentryはPatientでなければならない。"
 Severity: #error
 Expression: "entry.first().resource.is(Patient)"
 
+// バージョン指定部分を除くURLを一致チェック
 Invariant: patients-profile-is-JP-Patient-CLINS-eCS
 Description: "R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。"
 Severity: #error
-Expression: "entry.first().resource.meta.profile.where($this = 'http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS').exists()"
+Expression: "entry.first().resource.meta.where(profile.substring(0,60)='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
 
 Invariant: bundle-profile-is-JP-Bundle-CLINS
 Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
 Severity: #error
-Expression: "meta.profile.where($this ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
+Expression: "meta.profile.where($this.substring(0,63) ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
+
+
+// Bundleルール meta.tag には system = 'http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS'
+// が存在し、
+// meta.tag.where(system = 'http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').extsis() 
+// その.code は 'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること
+// meta.tag.where(system = 'http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code in ('AllergyIntolerance', 'Observation', 'Condition')
+Invariant: bundle-meta-tag-resourceType-exists
+Description: "R02141:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
+Severity: #error
+Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').exists()"
+
+Invariant: bundle-meta-tag-resourceType-valid
+Description: "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
+Severity: #error
+Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='AllergyIntolerance' or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation' or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Condition'"
+
+
+// Bundle のidentifier. [\\\\^]
+// Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n
+// Bundle.identifier.value : 実装ガイド本文 6情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
+Invariant: valid-system-bundleIdenfifier
+Description: "R02151:Bundle.identifier.sysyemは、http://jpfhir.jp/fhir/clins/bundle-identifier"
+Severity: #error
+Expression: "identifier.where(system='http://jpfhir.jp/fhir/clins/bundle-identifier').exists()"
+
+// R02152- BundleIDチェック　要修正
+Invariant: valid-value-bundleIdenfifier
+Description: "R2152:Bundle.identifier.value は、医療機関番号10桁^西暦４件^36文字以内の半角文字列（英字、数字、ハイフン記号のみ可）であること。'^[0-4][0-9][1-3][0-9]{7}[\\^]20[2-3][0-9][\\^][A-Za-z0-9\\-]{1,36}$'"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^]20[2-3][0-9][\\\\^][A-Za-z0-9\\\\-]{1,36}$'))"
+
 
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
 Invariant: needs-anyOfStandardCode-medication
@@ -180,6 +147,52 @@ Description: "R6021:observation.code.codingには、ローカルコード記述�
 Severity: #error
 Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
 
+//
+
+// R9011  Bundleに含まれるリソースには、医療機関識別IDが必須である。
+Invariant: all-entries-needs-extension-of-institutionNumber
+Description: "R9011:Bundleに含まれるPatient以外のリソースには、医療機関識別IDが必須である。"
+Severity: #error
+Expression: "enrty.tail().all(resource.extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').exists())"
+
+// r901101 リソースには、医療機関識別IDが必須である。
+Invariant: resource-needs-extension-of-institutionNumber
+Description: "R901101:リソースには、医療機関識別IDが必須である。"
+Severity: #error
+Expression: "extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').exists()"
+
+
+// R9012  Bundleに含まれるリソースには、医療機関識別IDが記述され10桁数字であることが必須である。
+Invariant: all-entries-needs-valid-institutionNumber
+Description: "R9012:Bundleに含まれるPatient以外のリソースには、医療機関識別IDが記述され10桁数字であることが必須である。"
+Severity: #error
+Expression: "enrty.tail().all(resource.extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').valueIdentifier.where(system='http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no').value.matches('^[0-4][0-9][1-3][0-9]{7}$'))"
+
+
+
+// R9013C  Bundleに含まれるConditonリソースには、JP_Encounterリソースが必須である。
+Invariant: condition-needs-contained-of-Encounter
+Description: "R9013C:Bundleに含まれるConditionのリソースには、Contained JP_Encounterリソース"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(resource.contained.where(resourceType='Encounter').exists())"
+
+// R9013O Bundleに含まれるObservationリソースには、JP_Encounterリソースが必須である。
+Invariant: observation-needs-contained-of-Encounter
+Description: "R9013O:Bundleに含まれるObservationのリソースには、Contained JP_Encounterリソース"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(resource.contained.where(resourceType='Encounter').exists())"
+
+// R9014C  Bundleに含まれるConditonリソースには、診療科拡張が必須である。
+Invariant: condition-needs-extension-of-Department
+Description: "R9014C:BBundleに含まれるConditonリソースには、診療科拡張が必須である。"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(resource.extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
+
+// R9014O  Bundleに含まれるObservationリソースには、診療科拡張が必須である。
+Invariant: observation-needs-extension-of-Department
+Description: "R9014O:BBundleに含まれるObservationリソースには、診療科拡張が必須である。"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(resource.extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
 
 
 //========= 以下、未整理 =========
@@ -191,11 +204,7 @@ Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/J
 /*
 //
 
-## BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。
-必須ルール
-Invariant: bundle-profile-is-JP-Bundle-CLINS
-Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
-//
+
 
 ## Bundleリソースのタイプ（type要素）は”collection”を使用する。
 必須ルール
@@ -225,6 +234,7 @@ meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
 //
 Invariant: first-bundle-entry-is-Patient
 Description: "R0211:最初のentryはPatientでなければならない。"
+
 //
 Invariant: patients-profile-is-JP-Patient-CLINS-eCS
 Description: "R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。" d

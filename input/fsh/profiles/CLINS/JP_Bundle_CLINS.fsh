@@ -10,10 +10,16 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 
 * obeys bundle-profile-is-JP-Bundle-CLINS
+* obeys bundle-meta-tag-resourceType-exists //"R0214:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
+* obeys bundle-meta-tag-resourceType-valid // "R0214:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
+* obeys valid-system-bundleIdenfifier
+* obeys valid-value-bundleIdenfifier
 
-* obeys first-bundle-entry-is-Patient
+* obeys all-entries-needs-extension-of-institutionNumber //  R9012  Bundleに含まれるリソースには、医療機関識別IDが必須である。
+* obeys all-entries-needs-valid-institutionNumber  // R9012  Bundleに含まれるリソースには、医療機関識別IDが記述され10桁数字であることが必須である。
 * obeys patients-profile-is-JP-Patient-CLINS-eCS
 
+/*
 * obeys valid-valuePart0-bundleIdenfifier
 * obeys valid-valuePart1-bundleIdenfifier
 * obeys valid-valuePart2-0-bundleIdenfifier
@@ -22,6 +28,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * obeys valid-valuePart2-3-bundleIdenfifier
 * obeys valid-valuePart2-4-bundleIdenfifier
 * obeys valid-valuePart3-bundleIdenfifier
+*/
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS

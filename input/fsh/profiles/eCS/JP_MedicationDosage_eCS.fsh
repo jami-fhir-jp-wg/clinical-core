@@ -11,8 +11,15 @@ Title: "eCS:JP_MedicationRequest_eCS Dosageデータタイプ"
 Description: "eCS 診療情報・サマリー汎用 JP_MedicationRequest_eCS のdosageInstruction要素で使用するDosageデータタイプ"
 
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS"
+
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-02-25"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
+
 * . ^short = "診療情報における処方オーダの１処方薬情報の格納に使用する"
 * . ^definition = "退院時サマリーや診療情報提供書、その他のサマリー文書などに記述する処方オーダ・処方箋情報における１処方薬情報の格納に使用する。"
 // * extension contains

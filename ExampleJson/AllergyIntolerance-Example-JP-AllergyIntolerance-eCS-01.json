@@ -7,6 +7,12 @@
       "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "102934701"
+    }
+  ],
   "extension": [
     {
       "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -14,12 +20,6 @@
         "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
         "value": "1318814790"
       }
-    }
-  ],
-  "identifier": [
-    {
-      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "102934701"
     }
   ],
   "clinicalStatus": {
