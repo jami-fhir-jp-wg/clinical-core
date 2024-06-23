@@ -25,7 +25,7 @@ Description: "検体検査結果　尿蛋⽩(定性)　± 　　ローカルコ�
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#1A990000000190153 "尿蛋⽩(定性)"
-* code.coding[+] = $JP_CLINS_CodeSystem_CoreLabo_CS#1A990000000190153  "尿蛋⽩(定性)"
+* code.coding[+] = $JP_CLINS_CodeSystem_CoreLabo_CS#1A990000000190153  "U-TP-定性半定量"
 
 * code.text = "尿蛋⽩(定性)"
 * subject.identifier.system = $JP_Insurance_memberID

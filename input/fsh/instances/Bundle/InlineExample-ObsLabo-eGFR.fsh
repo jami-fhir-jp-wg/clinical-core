@@ -21,9 +21,9 @@ Description: "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカル�
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#0000181910 "eGFR"
-* code.coding[+] = $JP_ObservationLabResultCode_CS#8A065000002391901  "eGFR"   
+* code.coding[+] = $JP_ObservationLabResultCode_CS#8A065000002391901  "推算GFR"   
 
-* code.text = "推算GFR"
+* code.text = "eGFR"
 
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
