@@ -6,34 +6,37 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-## Ver1.0.0 (2024.6.24予定)
+## Ver1.0.0 (2024.6.24　　リリース候補v1)
 
   - 実装ガイド本文
     - リソースへの参照の記述を整理
       - Patientリソースへの参照方法を変更：identifierを記述する方法からfullUrlを記述する方法に変更。
       
   - 全リソースタイプ
-    - meta.profile: 1つは必須とし、多重度を1..* に変更。設定するプロファイルURLをCLINS専用URLから共用URL（eCS）に変更。バージョン番号を末尾に｜1として追加。 
+    - meta.profile: 1つは必須とし、多重度を1..* に変更。設定するプロファイルURLをCLINS専用URLから共用URL（eCS）に変更。バージョン番号を末尾に｜1として追加。
+  
+  - Bundleを除く全リソースタイプ  
+    - patient要素でのリソース参照方法を変更
+    - encounter要素でのリソース参照方法を変更
 
   - Condition,MedicationRequest,Observationの各リソースタイプ
     - 電子カルテ情報共有サービスに送信する場合には
       - 診療科情報を記述する拡張を必須とし、診療科名称を必須とする。
       - 入院外来区分を記述するcontainedリソース（JP_Encounter_eCS）を必須とし、Encounter.class要素に入院か外来かをコードで記述することを必須とする。
 
-  - AllergyIntorelance
+  - AllergyIntorelanceリソースタイプ 
     - meta.profile: 電子カルテ情報共有サービスへの送信時も同じプロファイルを使用することとし、設定を変更しない。
     - category：　薬剤アレルギー等情報の取り扱いの変更に伴い、仕様を変更。
     - criticality:  薬剤アレルギー等情報の取り扱いの変更に伴い、仕様を変更。「条件により必須」要素から外す。
     - code: コードを変更。これに伴いcode.coding.system値を変更。
-    - patient要素でのリソース参照方法を変更
-    - encounter要素でのリソース参照方法を変更
     - recorderとasserterを「推奨要素」から外す。これにともない、contained (JP_Practitioner) を「推奨要素」から外す。
     
-  - Observation
+  - Observationリソースタイプ 
     - category: JP-Coreに合わせて必須に変更。
 
+  - Bundleリソースタイプ 
+    - identifierの仕様を変更
 
-Bundleリソースの　meta.tag.system要素に"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"を,　meta.tag.code要素に①から④に対応して、それぞれ以下のいずれかの値を設定する。
 
 ## Ver0.9.14-draft  (2024-03-12) 
 
