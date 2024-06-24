@@ -56,8 +56,8 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
   1. <span style="color: blue;">  [患者情報	Patientリソース][JP_Patient_eCS]　　</span>
   1.  [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
   1.  [医療者情報　Practitionerリソース][JP_Practitioner_eCS]
-  1.  [オーダ情報 ServiceRequestリソース][JP_ServiceRequest]
-  1.  [検査検体情報	Sepecimenリソース][JP_Specimen]
+  1.  オーダ情報 ServiceRequestリソース  JP_ServiceRequest
+  1.  検査検体情報	Sepecimenリソース  JP_Specimen
 
   <span style="color: blue;">上記のうち、患者情報以外のリソースは、6情報では、埋め込みリソース（containedリソース）の形で記述される。患者情報のリソースはBundleリソースのひとつのentryとして記述され、６情報からは参照の形をとる。</span>
   <br>

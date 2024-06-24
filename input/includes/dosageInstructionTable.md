@@ -1146,4 +1146,5 @@
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl97 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
  </tr>
+
 </table>
