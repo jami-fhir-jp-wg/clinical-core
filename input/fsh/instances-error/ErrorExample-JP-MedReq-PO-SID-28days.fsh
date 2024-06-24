@@ -1,5 +1,5 @@
 Instance: ErrorExample-JP-MedReq-PO-SID-28days
-InstanceOf: JP_MedicationRequest_CLINS_eCS
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "意図的エラー例：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
 * note.text = "意図的エラー例（一般処方コード2124030F2ZZZが間違っている（正しくは1124030F2ZZZ））：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
@@ -16,7 +16,7 @@ Description: "意図的エラー例：退院時処方　内服1日1回１回1錠
 * contained[+] = Example-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
-* meta.profile = $JP_MedicationRequest_CLINS_eCS
+//* meta.profile = $JP_MedicationRequest_eCS
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "2"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
