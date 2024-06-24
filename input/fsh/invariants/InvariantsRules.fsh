@@ -36,6 +36,12 @@ Description: "施設番号　valueIdentifier.value値は、２桁都道府県番
 Severity: #error
 Expression: "value.ofType(Identifier).value.matches('[0-4][0-9][1-3][0-9]{7}')"
 
+
+Invariant: valid-system-local-doctorID
+Description: "R1090:施設医師IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.41.[1+施設番号10桁]'でなければならない。"
+Severity: #error
+Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.')).system.substring(31,1) = '1' and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.')).system.substring(32).matches('^[0-4][0-9][1-3][0-9]{7}$')) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.').empty())"
+
 // R2011-  アレルギー・薬剤アレルギー等関係チェック
 Invariant: warning-medication-allergy
 Description: "注意喚起：R2011:薬剤アレルギー等情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままcriticality要素が\"high\"以外で差し支えなければ修正不要。"

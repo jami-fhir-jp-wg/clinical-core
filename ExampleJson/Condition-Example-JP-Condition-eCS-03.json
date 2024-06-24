@@ -22,12 +22,6 @@
       }
     }
   ],
-  "subject": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    }
-  },
   "note": [
     {
       "text": "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
@@ -93,6 +87,12 @@
       }
     ],
     "text": "噴門癌早期"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
   },
   "encounter": {
     "reference": "#Example-JP-Encounter-AMB"

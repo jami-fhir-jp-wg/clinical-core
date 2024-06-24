@@ -1,7 +1,6 @@
 // ==================================================
 //   Profile 定義 診療情報・サマリー汎用
-//   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
-//   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
+//   このプロファイルは、電子カルテ情報共有サービスに２文書（診療情報提供書、退院時サマリー）に含める処方情報にも用いられる。
 //   処方オーダの１処方薬情報 リソースタイプ:MedicationRequest
 //   親プロファイル:JP_MedicationRequest
 // ==================================================
@@ -27,7 +26,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 
 * . ^short = "診療情報として処方オーダの１処方薬情報の格納に使用する"
 * . ^definition = "診療情報として処方オーダの１処方薬情報の格納に使用する"
-* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信するためにこのプロファイルから派生した別の専用プロファイルが用意されているが、電子カルテ情報共有サービスでは、処方情報の送信は想定されていない。診療情報提供書や退院時サマリーに埋め込まれる"
+* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに２文書（診療情報提供書、退院時サマリー）に含める処方情報にも用いられる。"
 
 * meta 1..1 MS
 * meta.versionId ^short = "バージョン固有の識別子"
@@ -37,7 +36,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 
 * meta.profile 0.. MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
+  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS　を設定する。")
 
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。")
@@ -91,7 +90,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 
 * extension[eCS_Department] 0..1 MS
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
-  * ^comment = "コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
+  * ^comment = "電子カルテ情報サービス(このリソースが２文書に含まれるケース)では、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
 * identifier MS // JP_MedicationRequestでは2..*が設定されている。 
   * insert relative_short_definition("このリソース情報の識別ID、および必要であれば処方箋における剤グループ番号、剤グループ内の順序番号などを格納する。")
@@ -110,7 +109,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * obeys needs-anyOfStandardCode-medication
 
 * medication[x] ^short = "医薬品コードと医薬品名称。ひとつの 必須のtext 要素と、複数の coding 要素を記述できる。"
-* medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことで複数のコード体系で医薬品コード並記することが可能。\r\n本Profile仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。使用できるコード体系は電子カルテ情報共有サービスに利用される場合には、個別医薬品コード（通称YJコード）または厚生労働省一般名処方用医薬品コードのどちらかを必須とする。それ以外のコード体系も記述して構わない。"
+* medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことで複数のコード体系で医薬品コード並記することが可能。\r\n本Profile仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。使用できるコード体系は電子カルテ情報共有サービスに利用される場合には、個別医薬品コード（通称YJコード）または厚生労働省一般名処方用医薬品コードのどちらかを必須とする。それ以外のコード体系も追加で記述して構わない。"
 // YJ, 一般処方用コードを必須、または未コードとするチェックはInvariant R3010 で行う。
 * medication[x] MS
 * medication[x].coding ^slicing.discriminator.type = #value
@@ -184,21 +183,20 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 
 // 患者情報
 * subject 1..1   MS
-* subject ^short = "患者のPatientリソース参照記述"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在する場合には、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。Bundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）こともできる。"
-* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。"
+* subject only  Reference(JP_Patient_eCS)
+  * insert relative_short_definition("患者のFHIRリソース\(JP_Patient_eCSに従うPatientリソース\)への参照。")
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter)
-* encounter ^short = "処方を発行した受診情報（入外区分など）"
-* encounter ^definition = "処方を発行した受診情報（入外区分など）を表すEncounterリソース（Containedリソース）への参照"
-* encounter ^comment = "Containedリソースに含まれるEncounterリソースをリソース内で参照する。"
+* encounter only  Reference(JP_Encounter_eCS)
+  * insert relative_short_definition("処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」のいずれかを使用すること。"
 
 * requester 0.. MS
 * requester only Reference(JP_Practitioner)
 * requester ^short = "処方者"
 * requester ^definition = "処方者を表すPractitionerリソース（Containedリソース）への参照"
-* requester ^comment = "Containedリソースに含まれるPractitioner（医療者）リソースをこのリソース内で参照する。"
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」のいずれかを使用すること。"
 
 * authoredOn 1..1 MS
 
@@ -206,7 +204,7 @@ Description: "eCS 診療情報・サマリー汎用 MedicationRequestリソー�
 * basedOn ^short = "処方オーダ情報"
 * basedOn only Reference(JP_ServiceRequest)
 * basedOn ^definition = "処方オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照処方オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照"
-* basedOn ^comment = "元のオーダID情報や処方依頼に関する情報（処方者の所属や診療科など）が記述されるContainedリソースに含まれるServiceRequest（処方オーダー情報）リソースをこのリソース内で参照する。"
+* basedOn ^comment = "元のオーダID情報や処方依頼に関する情報（処方者の所属や診療科など）が記述されるContainedリソースに含まれるServiceRequest（処方オーダー情報）リソースをこのリソース内で参照する。記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」のいずれかを使用すること。"
 
 * note ..1 MS
 * note ^comment = "単一の薬剤に対する調剤者に対する指示は、本要素ではなく、MedicationRequestリソースのdispenseRequest要素に対して本文書で定義した拡張「InstructionForDispense」（http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense）を使用する。\r\n患者に対する補足指示や注意や、不均等投与指示などは、 MedicationRequestリソースのdosageInstruction.additionalInstructionで記述する。\r\n本要素は、それらでは伝えられない薬剤単位の備考や指示を記述する。"

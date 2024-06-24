@@ -26,7 +26,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 
 * . ^short = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"
 * . ^definition = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"
-* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルではない。電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。"
+* . ^comment = "このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
 
 * meta 1..1 MS
@@ -36,7 +36,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 * meta.profile 0.. MS
-  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS　を設定する。電子カルテ情報共有サービスに本リソースデータを送信する場合には、別に定義されるURLを設定すること。")
+  * insert relative_short_definition("準拠しているプロファイルを受信側に通知したい場合には、本文書のプロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS　を設定する。")
 
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。")
@@ -103,7 +103,7 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * basedOn 0..1
 * basedOn only Reference(JP_ServiceRequest)
 * basedOn ^definition = "このプロファイルでは、検体検査オーダに関する情報。"
-* basedOn ^comment = "元のオーダID情報や依頼者情報は必要ならここで記述する。"
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 // OUL^R22.OBX[*]-11 結果状態
 * status ^definition = "検査結果値の状態。"
@@ -126,6 +126,10 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "display"
 * code.coding  ^slicing.rules = #open
+* code.coding.system 1..1 MS
+* code.coding.code 1..1 MS
+* code.coding.display 1..1 MS
+
 * code.coding  contains
  jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
  and unCoded 0..1 MS
@@ -701,19 +705,16 @@ Description: "eCS 診療情報・サマリー汎用 Observationリソース（�
 
 // 患者情報
 * subject 1..1   MS
-* subject ^short = "患者のPatientリソース参照記述"
-* subject ^definition = "対象となる患者のFHIRリソースへの参照。電子カルテ情報共有サービスでは、Bundleリソースで本リソースから参照可能なPatientリソースが同時に存在するので、そのPatientリソースに記述されている被保険者個人識別子や施設内患者IDなどの情報をidentifier要素でLogical Reference記述する。電子カルテ情報共有サービス以外の一般的な利用ではBundleリソースに含まれるPatientリソースのfullUrlを記述するか、またはContainedリソースをLiteral 参照する（comment参照のこと）。"
-* subject ^comment = "ContainedリソースによりPatientリソースを本リソースの要素として記述した上で、そのリソースをLiteral 参照する方法(Patient.idを#で記述する)をとっても構わない。"
+* subject only  Reference(JP_Patient_eCS)
+  * insert relative_short_definition("患者のFHIRリソース\(JP_Patient_eCSに従うPatientリソース\)への参照。")
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
-
-// OUL^R22.PV1
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)
-* encounter ^short = "この検査が行われた受診情報（入外区分など）"
-* encounter ^definition = "この検査が行われた受診情報（入外区分など）を表すEncounterリソース（Containedリソース）への参照"
-* encounter ^comment = "Containedリソースに含まれるEncounterリソースをリソース内で参照する。【JP Core仕様】入院外来の区別や所在場所、担当診療科の情報、外来での検査か入院での検査かの区別に使用する。必須ではない。"
+  * insert relative_short_definition("処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
-// OUL^R22.OBX[*]-14 検査日時
+
 * effective[x] 1..    MS   // MS 追加
 * effective[x] only dateTime // or Period or Timing 
 * effectiveDateTime ^short = "検体採取日時"

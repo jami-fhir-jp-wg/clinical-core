@@ -22,12 +22,6 @@
       }
     }
   ],
-  "subject": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    }
-  },
   "note": [
     {
       "text": "conditionExample01 必須要素だけのサンプル"
@@ -70,6 +64,12 @@
       }
     ],
     "text": "十二指腸潰瘍・H1期"
+  },
+  "subject": {
+    "identifier": {
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+      "value": "00012345:あいう:１８７:05"
+    }
   },
   "onsetDateTime": "2020-04-10"
 }

@@ -15,7 +15,7 @@ Description: "埋め込み　患者情報最小限 サンプル"
 * identifier[+].system = $JP_Hospital_PatientID
 * identifier[=].value = "000999739"
 //---
-* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberDummy"
+* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID"
 * identifier[=].value = "00012345:あいう:１８７:05"
 
 //-------- 埋め込み　患者情報01
@@ -34,7 +34,7 @@ Description: "埋め込み　患者情報01 サンプル"
 
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
 * identifier[=].value = "826739"
-* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member"
+* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID"
 * identifier[=].value = "00012345:あいう:３８７４７６:01"
 * name[+].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension[=].valueCode = #IDE
@@ -59,7 +59,7 @@ Description: "埋め込み　患者情報02 サンプル"
 * id = "Patient2"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
 * identifier[=].value = "989"
-* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_member"
+* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID"
 * identifier[=].value = "00012345:あいう:3294837:05"
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension.valueCode = #IDE

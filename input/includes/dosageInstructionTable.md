@@ -86,7 +86,7 @@
   <td class=xl93 width=359 style='border-top:none;border-left:none;width:269pt'>投与開始日を明示するために使用する拡張を識別するURL。</td>
   <td class=xl94 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl250 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_PeriodOfUse&quot;</td>
+  <td class=xl250 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
   <td height=27 class=xl262 width=105 style='height:20.0pt;border-top:none;
@@ -138,7 +138,7 @@
   <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>実投与日数を明示したい場合に使用する拡張を識別するためのURL。</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl249 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DosageInstruction_UsageDuration&quot;</td>
+  <td class=xl249 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_UsageDuration&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl262 width=105 style='height:30.0pt;border-top:none;

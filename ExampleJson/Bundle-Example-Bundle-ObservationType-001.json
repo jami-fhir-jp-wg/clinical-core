@@ -344,10 +344,10 @@
             {
               "code": "8A065000002391901",
               "system": "urn:oid:1.2.392.200119.4.504",
-              "display": "eGFR"
+              "display": "推算GFR"
             }
           ],
-          "text": "推算GFR"
+          "text": "eGFR"
         },
         "subject": {
           "identifier": {
@@ -427,7 +427,7 @@
             {
               "code": "1A990000000190153",
               "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
-              "display": "尿蛋⽩(定性)"
+              "display": "U-TP-定性半定量"
             }
           ],
           "text": "尿蛋⽩(定性)"

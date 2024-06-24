@@ -634,7 +634,7 @@
   <td class=xl105 width=65 style='width:49pt'>　</td>
   <td class=xl105 width=57 style='width:43pt'>　</td>
   <td class=xl105 width=57 style='width:43pt'>　</td>
-  <td class=xl109 width=35 style='width:26pt'>0..1<ruby><font class="font20"><rt
+  <td class=xl109 width=35 style='width:26pt'>0..*<ruby><font class="font20"><rt
   class=font20></rt></font></ruby></td>
   <td class=xl105 width=87 style='width:65pt'>CodeableConcept</td>
   <td class=xl105 width=359 style='width:269pt'><ruby>薬剤<span style='display:

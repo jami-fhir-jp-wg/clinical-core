@@ -31,16 +31,16 @@ Description: "eCS 診療情報・サマリー汎用 Practitionerリソース（�
 * meta.lastUpdated ^definition = "この情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 
 
-* identifier ^short = "医師医師ID"
-* identifier ^definition = "医師医師ID。\r\n医師医師を識別するIDや番号として、医師医師療機関における医師医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
-* identifier.system ^short = "医師医師ID（医師）のsystem値"
+* identifier ^short = "医師ID"
+* identifier ^definition = "医師ID。\r\n医師を識別するIDや番号として、医師療機関における医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。電子カルテ情報共有サービスに送信されるリソースから参照される場合には、医師IDは必須。"
+* identifier.system ^short = "医師ID（医師）のsystem値"
 * identifier.system MS
-* identifier.system ^definition = "urn:oid:1.2.392.100495.20.3.41.1[保険医療機関コード(10桁)\r\n末尾の1[保険医療機関コード(10桁)]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。"
+* identifier.system ^definition = "'urn:oid:1.2.392.100495.20.3.41.[1+施設番号10桁]\r\n末尾の1[1+施設番号10桁]とは、具体的には保険医療機関コード10桁の先頭に1をつけた必ず11桁とすることを示す。"
 * identifier.value ^short = "医療機関で発番している医師のID"
-* identifier.value ^definition = "医師医師を識別するIDや番号として、医師医師療機関における医師医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
+* identifier.value ^definition = "医師を識別するIDや番号として、医師療機関における医師ID（たとえば端末利用者アカウント、あるいは職員番号など）をPractitionerリソースのidentifier要素に記録する。"
 * identifier.value MS
 
-* name ^short = "医師医師氏名"
+* name ^short = "医師氏名"
 /* 資格の明記は不要のためチェックしない
 * obeys
     checkQualification-DoctorLicenseExists and 

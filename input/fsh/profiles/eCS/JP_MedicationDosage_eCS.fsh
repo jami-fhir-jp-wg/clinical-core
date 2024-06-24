@@ -69,11 +69,11 @@ Description: "eCS 診療情報・サマリー汎用 JP_MedicationRequest_eCS の
 
 * timing.code 0.. MS
 * timing.code ^short = "用法"
-* timing.code ^definition = "用法。できるかぎJAMI標準用法コードによりコード化をすることを推奨する。コード化の有無にかかわらず、用法の完全な文字列をtext子要素に設定する。服用タイミングなどを表す用法をJAMI標準用法コード16桁コードで記述する。"
+* timing.code ^definition = "用法。JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化する。施設固有のコード化による記述も可能であるが、できるかぎり、上記標準コードと併用することが望ましい。コード化の有無にかかわらず、用法の完全な文字列をtext子要素に設定する。"
 * timing.code.coding 0..1 MS
-* timing.code.coding ^definition = "JAMI標準用法コードによりコード化することを推奨する。詳細は処方情報HL７FHIR記述仕様も参照すること。施設固有のコード化による記述も可能であるが、できるかぎり、JAMI標準用法コードと併用することが望ましい。"
+* timing.code.coding ^definition = "JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
-* timing.code.coding.system ^definition = "JAMI標準用法の場合にはJAMI標準用法16桁コードを識別するURI（\"http://jami.jp/CodeSystem/MedicationUsage\"）。やむを得ず施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
+* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）、厚生労働省電子処方箋用法コード（\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
 
 * timing.code.coding.code ^short = "用法コード"
 * timing.code.coding.code 1..1 MS

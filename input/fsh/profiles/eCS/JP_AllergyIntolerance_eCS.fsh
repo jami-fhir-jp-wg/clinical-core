@@ -1,7 +1,6 @@
 // ==================================================
 //   Profile 定義 診療情報・サマリー汎用
-//   このプロファイルは、電子カルテ情報共有サービスに送信するためのプロファイルではない。
-//   電子カルテ情報共有サービスに送信する場合には、このプロファイルから派生した別の専用プロファイルを用いること。
+//   このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。
 //   アレルギー情報／薬剤アレルギー等 リソースタイプ:AllergyIntolerance
 //   親プロファイル:JP_AllergyIntolerance
 // ==================================================
@@ -44,7 +43,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * meta.tag[lts] from $JP_ehrshrs_indication_VS 
 * meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS 
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * code 1..1 MS
@@ -142,9 +141,9 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter)
-  * insert relative_short_definition("このアレルギ情報を記録したときの受診情報（入外区分など）を記述しているJP_Encounterに従うEncounterリソース（contained リソース）への参照")
-  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。"
+* encounter only  Reference(JP_Encounter_eCS)
+  * insert relative_short_definition("このアレルギ情報を記録したときの受診情報（入外区分など）を記述しているJP_Encounter_eCSに従うEncounterリソース（contained リソース）への参照")
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 * onset[x]  ^short = "登録日またはこの状態の存在が開始した日"
 * onset[x]  ^definition = "電子カルテ情報サービスで記述する場合には、onsetDateTime要素を使用する。"

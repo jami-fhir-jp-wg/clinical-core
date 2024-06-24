@@ -195,19 +195,13 @@ and syobo 0..
 // 患者情報
 * subject 1..1   MS
 * subject only  Reference(JP_Patient_eCS)
-  * insert relative_short_definition("患者のFHIRリソース\(JP_Patient_eCS\)への参照。")
-  * ^comment = ""
-* subject.identifier.system = $JP_Insurance_memberID (exactly)
+  * insert relative_short_definition("患者のFHIRリソース\(JP_Patient_eCSに従うPatientリソース\)への参照。")
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter)
-  * insert relative_short_definition("このアレルギ情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
-  * ^comment = "記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。"
-
-* encounter 0..1 MS
-* encounter only  Reference(JP_Encounter)
+* encounter only  Reference(JP_Encounter_eCS)
   * insert relative_short_definition("病名をつけたときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
-  * ^comment = "記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。"
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 * onset[x] 0..1 MS
 * onset[x]  ^short = "この傷病名情報が同定された時期"
@@ -223,12 +217,12 @@ and syobo 0..
   * insert relative_short_definition("この情報を記録した登録日")
 
 * recorder 0.. MS
-* recorder only Reference(JP_Practitioner)
+* recorder only Reference(JP_Practitioner_eCS)
   * insert relative_short_definition("登録者の情報を記述しているJP_Practitionerリソースへの参照")
-  * ^comment = "記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。"
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 * asserter 0..1 MS
-* asserter only Reference(JP_Patient or JP_Practitioner or RelatedPerson)
+* asserter only Reference(JP_Patient or JP_Practitioner or JP_Patient_eCS or JP_Practitioner_eCS or RelatedPerson)
   * insert relative_short_definition("この状態があると確認（主張）した人の情報を記述しているJP_Patient、JP_Practitioner、RelatedPersonのいずれかのリソースへの参照。")
   * ^comment = "本仕様ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなリソースによる追加記述を避けるため）"
 
