@@ -28,19 +28,19 @@
   - subject : 患者のFHIRリソースへの参照。
 
 ### 条件により必須
-  - meta.tag (”LTS"): 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
-  - meta.tag (”UNINFORMED"): 電子カルテ情報共有サービスで未告知フラグを設定する場合に必須。
-  - meta.tag (”UNDELIVERED"): 電子カルテ情報共有サービスで未提供フラグを設定する場合に必須。
-  - contained (JP_Encounter) : 電子カルテ情報共有サービスでは必須。傷病名登録時の入院外来区分情報
-  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
-  - extension (eCS_Department) : 電子カルテ情報共有サービスでは必須。診療科名称（とコード）
-  - extension (eCS_DiagnosisType) : 電子カルテ情報共有サービスで、主傷病名フラグのある傷病名には設定必須。
+  - meta.tag (”LTS"): 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）、長期保存フラグの設定する場合に必須。
+  - meta.tag (”UNINFORMED"): 電子カルテ情報共有サービス（同）で未告知フラグを設定する場合に必須。
+  - meta.tag (”UNDELIVERED"): 電子カルテ情報共有サービス（同）で未提供フラグを設定する場合に必須。
+  - contained (JP_Encounter) : 電子カルテ情報共有サービス（同）では必須。傷病名登録時の入院外来区分情報
+  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（同）では必須。医療機関番号１０桁
+  - extension (eCS_Department) : 電子カルテ情報共有サービス（同）では必須。診療科名称（とコード）
+  - extension (eCS_DiagnosisType) : 電子カルテ情報共有サービス（同）で、主傷病名フラグのある傷病名には設定必須。
   - clinicalStatus : 臨床的状態(傷病の状態)のコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。abatementDateTime要素に日付が設定されている場合にはその時点での状態を設定し、同要素がない場合にはactiveを設定する。
   - code.extension (JP_Condition_DiseasePrefixModifier_eCS) : 傷病名の前置修飾語
   - code.extension (JP_Condition_DiseasePostfixModifier_eCS) : 傷病名の前置修飾語
-  - encounter : 電子カルテ情報共有サービスでは必須。この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。
-  - onsetDatetime : 電子カルテ情報共有サービスでは、病名開始日をdateTime型で記述することが必須。
-  - abatementDateTime : 電子カルテ情報共有サービスでは、病名終了日や転帰日がある場合には、dateTime型で記述することが必須。
+  - encounter : 電子カルテ情報共有サービス（同）では必須。この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。ただし、２文書（診療情報提供書、退院時サマリー）で記述される場合には必須ではない。
+  - onsetDatetime : 電子カルテ情報共有サービス（同）では、病名開始日をdateTime型で記述することが必須。
+  - abatementDateTime : 電子カルテ情報共有サービス（同）では、病名終了日や転帰日がある場合には、dateTime型で記述することが必須。
 
 ### 推奨要素
   - contained (JP_Practitioner) : 傷病名登録者の情報

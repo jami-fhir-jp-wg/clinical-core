@@ -34,11 +34,11 @@
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
-  - meta.tag ("LTS") : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
-  - contained (JP_Encounter) : 電子カルテ情報共有サービスでは必須。傷病名登録時の入院外来区分情報
-  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
-  - extension (eCS_Department) : 電子カルテ情報共有サービスでは必須。診療科名称（とコード）
-  - encounter : 電子カルテ情報共有サービスでは必須。この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
+  - meta.tag ("LTS") : 電子カルテ情報共有サービス（２文書中に含まれる場合）で長期保存フラグの設定する場合に必須。
+  - contained (JP_Encounter) : 電子カルテ情報共有サービス（同）では必須。傷病名登録時の入院外来区分情報
+  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（同）では必須。医療機関番号１０桁
+  - extension (eCS_Department) : 電子カルテ情報共有サービス（同）では必須。診療科名称（とコード）
+  - encounter : 電子カルテ情報共有サービス（同）では必須。この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
 
 ### 推奨要素
   - category : 薬剤使用区分
