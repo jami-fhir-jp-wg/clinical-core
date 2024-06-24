@@ -118,6 +118,7 @@ Severity: #error
 Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-identifier').value.matches('^[0-4][0-9][1-3][0-9]{7}[\\\\^]20[2-3][0-9][\\\\^][A-Za-z0-9\\\\-]{1,36}$'))"
 
 
+
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
 Invariant: needs-anyOfStandardCode-medication
 Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、厚生労働省一般名コード、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
