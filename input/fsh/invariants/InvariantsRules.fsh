@@ -178,13 +178,19 @@ Expression: "enrty.tail().all(resource.extension.where(url='http://jpfhir.jp/fhi
 
 // R9013C  Bundleに含まれるConditonリソースには、JP_Encounterリソースが必須である。
 Invariant: condition-needs-contained-of-Encounter
-Description: "R9013C:Bundleに含まれるConditionのリソースには、Contained JP_Encounterリソース"
+Description: "R9013C:Bundleに含まれるConditionのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(resource.contained.where(resourceType='Encounter').exists())"
 
+// R9015C  Bundleに含まれるConditonリソースでは、onsetDateTimeが必須である。
+Invariant: condition-needs-contained-of-Encounter
+Description: "R9013C:Bundleに含まれるConditionのリソースでは、onsetDateTimeが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(resource.onsetDateTime).exists())"
+
 // R9013O Bundleに含まれるObservationリソースには、JP_Encounterリソースが必須である。
 Invariant: observation-needs-contained-of-Encounter
-Description: "R9013O:Bundleに含まれるObservationのリソースには、Contained JP_Encounterリソース"
+Description: "R9013O:Bundleに含まれるObservationのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
 Expression: "entry.select(resource as Observation).all(resource.contained.where(resourceType='Encounter').exists())"
 

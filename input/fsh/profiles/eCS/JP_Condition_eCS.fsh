@@ -206,7 +206,10 @@ and syobo 0..
 * onset[x] 0..1 MS
 * onset[x]  ^short = "この傷病名情報が同定された時期"
 * onset[x]  ^definition = "患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名開始日を必須でdateTime型で記述するため、onsetDateTime要素を使用する。"
-* onsetDateTime 1..1 MS
+* onsetDateTime 0..1 MS
+* onsetDateTime ^short = "病名開始日"
+* onsetDateTime ^definition = "病名開始日。電子カルテ情報共有サービスでは必須。"
+
 
 * abatement[x] 0..1 MS
 * abatement[x] only dateTime
