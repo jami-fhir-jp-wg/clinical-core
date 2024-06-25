@@ -1,5 +1,5 @@
 // JP_Encounter_eCS
-Instance: Example-JP-Encounter-AMB
+Instance: Example-JP-Encounter-eCS-01
 InstanceOf: JP_Encounter_eCS
 Usage: #example
 Description: "encounterExample01 必須要素だけの最低限の入院外来区分情報サンプル"

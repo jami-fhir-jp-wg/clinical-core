@@ -78,7 +78,7 @@ Description: "埋め込み　患者情報02 サンプル"
 
 //-------- 埋め込み　外来受診01
 Instance: Example_JP_Encounter_AMB
-InstanceOf: JP_Encounter
+InstanceOf: JP_Encounter_eCS
 Usage: #example
 Description: "埋め込み　外来受診01 サンプル"
 
@@ -96,7 +96,7 @@ Description: "埋め込み　外来受診01 サンプル"
 
 //-------- 埋め込み　入院01
 Instance: Example_JP_Encounter_IMP
-InstanceOf: JP_Encounter
+InstanceOf: JP_Encounter_eCS
 Usage: #example
 Description: "埋め込み　入院01 サンプル"
 
