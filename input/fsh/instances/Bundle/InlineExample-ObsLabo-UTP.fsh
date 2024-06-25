@@ -35,6 +35,7 @@ Description: "検体検査結果　尿蛋⽩(定性)　± 　　ローカルコ�
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
+* encounter = Reference(Example-JP-Encounter-AMB)
 * issued = "2021-07-05T15:38:59.000+09:00"
 * valueCodeableConcept.coding = urn:oid:1.2.392.200119.6.2102#2 "±"
 * valueCodeableConcept.text = "(±)"

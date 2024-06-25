@@ -177,17 +177,17 @@ Expression: "enrty.tail().all(extension.where(url='http://jpfhir.jp/fhir/clins/E
 
 
 
-// R9013C  Bundleに含まれるConditonリソースには、JP_Encounterリソースが必須である。
+// R9013C  Bundleに含まれるConditionリソースには、JP_Encounterリソースが必須である。
 Invariant: condition-needs-contained-of-Encounter
 Description: "R9013C:Bundleに含まれるConditionのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(contained.where(resourceType='Encounter').exists())"
 
-// R9015C  Bundleに含まれるConditonリソースでは、onsetDateTimeが必須である。
+// R9015C  Bundleに含まれるConditionリソースでは、onsetDateTimeが必須である。
 Invariant: condition-needs-onsetDateTime
 Description: "R9013C:Bundleに含まれるConditionのリソースでは、onsetDateTimeが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all((onsetDateTime.exists())"
+Expression: "entry.select(resource as Condition).all(onsetDateTime.exists())"
 
 // R9013O Bundleに含まれるObservationリソースには、JP_Encounterリソースが必須である。
 Invariant: observation-needs-contained-of-Encounter
@@ -195,15 +195,15 @@ Description: "R9013O:Bundleに含まれるObservationのリソースには、Con
 Severity: #error
 Expression: "entry.select(resource as Observation).all(contained.where(resourceType='Encounter').exists())"
 
-// R9014C  Bundleに含まれるConditonリソースには、診療科拡張が必須である。
+// R9014C  Bundleに含まれるConditionリソースには、診療科拡張が必須である。
 Invariant: condition-needs-extension-of-Department
-Description: "R9014C:Bundleに含まれるConditonリソースには、診療科拡張が必須である。"
+Description: "R9014C:Bundleに含まれるConditionリソースには、診療科拡張が必須である。"
 Severity: #error
-Expression: "entry.select(resource as Conditon).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
+Expression: "entry.select(resource as Condition).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
 
 // R9014O  Bundleに含まれるObservationリソースには、診療科拡張が必須である。
 Invariant: observation-needs-extension-of-Department
-Description: "R9014O:BBundleに含まれるObservationリソースには、診療科拡張が必須である。"
+Description: "R9014O:Bundleに含まれるObservationリソースには、診療科拡張が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Observation).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
 
