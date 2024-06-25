@@ -95,23 +95,19 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   no-validate:
     - '*/hl7.fhir.jp.core'
   special-url:
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_MedicationRequest_CLINS_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Observation_LabResult_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
-    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Patient_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
+    - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
     - http://jpfhir.jp/fhir/Common/CodeSystem/admit-Source
     - http://jpfhir.jp/fhir/CarePlan/CodeSystem/category
