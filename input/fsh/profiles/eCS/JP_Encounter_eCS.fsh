@@ -104,7 +104,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * diagnosis.condition 1..1 MS   
 * diagnosis.condition ^short = "患者状態（病態・疾患名・症状）への参照"
 * diagnosis.condition ^definition = "患者状態（病態・疾患名・症状）への参照"
-* diagnosis.condition only Reference(JP_Condition_eCS)
+* diagnosis.condition only Reference(JP_Condition)
 * diagnosis.use 0..1 MS
 * diagnosis.use ^short = "診断の位置付け区分"
 * diagnosis.use ^definition = "診断の位置付け区分（DiagnosisRole）。これにより、入院時診断、退院時診断、などが区別される。入院中のすべての診断病名にこのコードが必須ではないが、少なくともAD:入院時診断、DD:退院時診断、CC:主訴、についてはそれぞれ1個以上はこのコードがついている必要がある。AD:入院時診断　DD:退院時診断　FU:フォローアップ時診断 "

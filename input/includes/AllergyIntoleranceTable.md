@@ -246,10 +246,7 @@
     <font class="font13">電子カルテ情報サービスでは、この拡張による記述は必須。</font></td>
   <td class=xl146 width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl271 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"
-  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</span></a></td>
+  <td class=xl271 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</td>
   <td class=xl272></td>
   <td class=xl272></td>
   <td class=xl272></td>
@@ -341,10 +338,7 @@
   <td class=xl248 width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl146 width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl271 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
+  <td class=xl271 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</td>
   <td class=xl272></td>
   <td class=xl272></td>
   <td class=xl272></td>
@@ -509,11 +503,7 @@
   <td class=xl79 width=87 style='width:65pt'>uri</td>
   <td class=xl242 width=359 style='width:269pt'>「リソース一意識別ID」のsystem値を固定で設定する。</td>
   <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl287 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier<ruby><font
-  class="font8"><rt class=font8></rt></font></ruby></span></a></td>
+  <td class=xl287 width=195 style='width:146pt'>http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier</td>
   <td class=xl272></td>
   <td class=xl272></td>
   <td class=xl272></td>
@@ -820,9 +810,7 @@
     </td>
   <td class=xl79 width=36 style='width:27pt'>ひとつは<ruby>固定値<span
   style='display:none'><rt>コテイチ </rt></span></ruby></td>
-  <td class=xl75 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/eCS/CodeSystem/JP_metaAllergen_CS"
-  target="_parent">http://jpfhir.jp/fhir/eCS/CodeSystem/JP_metaAllergen_CS</a></td>
+  <td class=xl75 width=195 style='width:146pt'>http://jpfhir.jp/fhir/eCS/CodeSystem/JP_metaAllergen_CS</td>
   <td class=xl272></td>
   <td class=xl272></td>
   <td class=xl272></td>

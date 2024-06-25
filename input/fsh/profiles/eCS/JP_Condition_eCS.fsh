@@ -199,7 +199,7 @@ and syobo 0..
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter_eCS)
+* encounter only  Reference(JP_Encounter)
   * insert relative_short_definition("病名をつけたときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
@@ -220,12 +220,12 @@ and syobo 0..
   * insert relative_short_definition("この情報を記録した登録日")
 
 * recorder 0.. MS
-* recorder only Reference(JP_Practitioner_eCS)
+* recorder only Reference(JP_Practitioner)
   * insert relative_short_definition("登録者の情報を記述しているJP_Practitionerリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 * asserter 0..1 MS
-* asserter only Reference(JP_Patient or JP_Practitioner or JP_Patient_eCS or JP_Practitioner_eCS or RelatedPerson)
+* asserter only Reference(JP_Patient or JP_Practitioner or RelatedPerson)
   * insert relative_short_definition("この状態があると確認（主張）した人の情報を記述しているJP_Patient、JP_Practitioner、RelatedPersonのいずれかのリソースへの参照。")
   * ^comment = "本仕様ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなリソースによる追加記述を避けるため）"
 
