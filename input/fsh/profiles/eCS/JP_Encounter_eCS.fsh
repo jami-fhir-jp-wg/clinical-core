@@ -24,7 +24,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * . ^short = "ー"
 * . ^definition = "診療情報提供では、紹介理由を記述する受診時情報. 診療サマリーではサマリー対象となる受診や入院に関する受診時または入院時情報。診療６情報において埋め込みリソースとして記述する場合にも適用できる。"
 
-* meta 0..1 MS
+* meta 1..1 MS
 * meta.versionId ^short = "バージョン固有の識別子"
 * meta.versionId  ^definition = "バージョン固有の識別子"
 * meta.lastUpdated 1..1 MS
