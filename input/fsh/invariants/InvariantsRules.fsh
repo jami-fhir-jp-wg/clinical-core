@@ -160,7 +160,7 @@ Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/J
 Invariant: all-entries-needs-extension-of-institutionNumber
 Description: "R9011:Bundleに含まれるPatient以外のリソースには、医療機関識別IDが必須である。"
 Severity: #error
-Expression: "enrty.tail().all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').exists())"
+Expression: "entry.tail().all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').exists())"
 
 // r901101 リソースには、医療機関識別IDが必須である。
 Invariant: resource-needs-extension-of-institutionNumber
@@ -173,7 +173,7 @@ Expression: "extension.where(url='http://jpfhir.jp/fhir/clins/Extension/Structur
 Invariant: all-entries-needs-valid-institutionNumber
 Description: "R9012:Bundleに含まれるPatient以外のリソースには、医療機関識別IDが記述され10桁数字であることが必須である。"
 Severity: #error
-Expression: "enrty.tail().all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').valueIdentifier.where(system='http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no').value.matches('^[0-4][0-9][1-3][0-9]{7}$'))"
+Expression: "entry.tail().all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').valueIdentifier.where(system='http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no').value.matches('^[0-4][0-9][1-3][0-9]{7}$'))"
 
 
 
@@ -181,7 +181,7 @@ Expression: "enrty.tail().all(extension.where(url='http://jpfhir.jp/fhir/clins/E
 Invariant: condition-needs-contained-of-Encounter
 Description: "R9013C:Bundleに含まれるConditionのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(contained.where(resourceType='Encounter').exists())"
+Expression: "entry.select(resource as Condition).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
 
 // R9015C  Bundleに含まれるConditionリソースでは、onsetDateTimeが必須である。
 Invariant: condition-needs-onsetDateTime
@@ -193,7 +193,7 @@ Expression: "entry.select(resource as Condition).all(onsetDateTime.exists())"
 Invariant: observation-needs-contained-of-Encounter
 Description: "R9013O:Bundleに含まれるObservationのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Observation).all(contained.where(resourceType='Encounter').exists())"
+Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
 
 // R9014C  Bundleに含まれるConditionリソースには、診療科拡張が必須である。
 Invariant: condition-needs-extension-of-Department
