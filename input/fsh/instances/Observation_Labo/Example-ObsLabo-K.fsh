@@ -36,6 +36,7 @@ Description: "検体検査結果　カリウム　3.5 mEq/L 　　ローカル�
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
+* encounter = Reference(Example-JP-Encounter-AMB)
 * issued = "2021-07-05T15:38:59.000+09:00"
 * valueQuantity.value = 3.5
 * valueQuantity.unit = "mEq/L"
