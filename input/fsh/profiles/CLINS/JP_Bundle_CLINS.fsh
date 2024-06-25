@@ -10,14 +10,14 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 
 * obeys bundle-profile-is-JP-Bundle-CLINS
-* obeys bundle-meta-tag-resourceType-exists //"R0214:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
-* obeys bundle-meta-tag-resourceType-valid // "R0214:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
+* obeys bundle-meta-tag-resourceType-exists //"R02141:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
+* obeys bundle-meta-tag-resourceType-valid // "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
 
 
-* obeys all-entries-needs-extension-of-institutionNumber //  R9012  Bundleに含まれるリソースには、医療機関識別IDが必須である。
-* obeys all-entries-needs-valid-institutionNumber  // R9012  Bundleに含まれるリソースには、医療機関識別IDが記述され10桁数字であることが必須である。
+* obeys all-entries-needs-extension-of-institutionNumber //  R9011:Bundleに含まれるリソースには、医療機関識別IDが必須である。
+* obeys all-entries-needs-valid-institutionNumber  // R9012:Bundleに含まれるPatient以外のリソースには、医療機関識別IDが記述され10桁数字であることが必須である。
 * obeys condition-needs-contained-of-Encounter
 * obeys condition-needs-extension-of-Department
 * obeys condition-needs-onsetDateTime

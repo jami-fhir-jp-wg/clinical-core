@@ -100,7 +100,7 @@ Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/Bundl
 Invariant: bundle-meta-tag-resourceType-valid
 Description: "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
 Severity: #error
-Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='AllergyIntolerance' or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation' or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Condition'"
+Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='AllergyIntolerance').count()=1 or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='Observation').count()=1 or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='Condition').count()=1"
 
 
 // Bundle のidentifier. [\\\\^]
