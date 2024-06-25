@@ -58,8 +58,7 @@ menu:
     Validationガイド: validationGuide.html
   パッケージDownload:
     標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc1.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc1snap.tgz
-    
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc1snap.tgz  
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
