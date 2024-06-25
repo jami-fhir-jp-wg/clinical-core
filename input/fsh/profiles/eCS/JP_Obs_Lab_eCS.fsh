@@ -738,7 +738,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 // OUL^R22.OBX[*]-5  結果
 // OUL^R22.OBX[*]-6  単位
 * valueQuantity ^short = "検査結果が「数値」の場合、値、単位を設定する。"
-* valueQuantity ^comment = ""
+* valueQuantity ^comment = "ー"
 
 // if OUL^R22.OBX[*]-2 == "CWE":
 // OUL^R22.OBX[*]-5  結果

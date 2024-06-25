@@ -24,7 +24,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * ^fhirVersion = #4.0.1
 
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
-* . ^comment = ""
+* . ^comment = "ー"
 
 * meta 1..1 MS
 * meta.versionId ^short = "バージョン固有の識別子"
@@ -135,12 +135,12 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * category 1..1 MS
 * category ^short = "臨床的状態に割り当てられたカテゴリー。"
 * category ^definition = "臨床的状態に割り当てられたカテゴリー。設定する場合には、problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは、コード'encounter-diagnosis'とすること。コードに対応するdisplay nameは\"Encounter Diagnosis\"。"
-* category ^comment = ""
+* category ^comment = "ー"
 
 * severity 0..1
 * severity ^short = "潜在的な臨床的危険性、致命度。"
 * severity ^definition = "記述する場合は、コード表："http://jpfhir.jp/fhir/core/CodeSystem/JP_ConditionSeverity_CS"からMI：軽度、MO：中度、SE：重度、UK：不明のいずれかを設定する。"
-* severity ^comment = ""
+* severity ^comment = "ー"
 
 * code 1..1 MS
 * code ^short = "傷病名のコードと名称"

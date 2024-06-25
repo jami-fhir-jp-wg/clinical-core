@@ -98,8 +98,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * doseAndRate.type 1..1 MS
 * doseAndRate.type ^definition = "力価区分。力価区分コード。\r\n本要素は、安全性のため省略せずに必須とする。\r\n用量は製剤量で記述することを基本とするが、必要に応じて原薬量指定も可能とする。"
-* doseAndRate.type ^comment = ""
-* doseAndRate.type ^requirements = ""
+* doseAndRate.type ^comment = "ー"
+* doseAndRate.type ^requirements = "ー"
 
 * doseAndRate.type.coding 1..*
 * doseAndRate.type.coding.system 1..1 MS
@@ -111,7 +111,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * doseAndRate.dose[x] ^definition = "1回投与量。\r\n用量は、1回投与量の記録を基本とし、MedicationRequestリソースの doseAndRate.doseQuantity要素 にSimpleQuantity型で記述する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。内服、外用ともに１回投与量を指定する場合にはこの要素を使用する。"
 * doseAndRate.dose[x] 0..1 MS
-* doseAndRate.doseQuantity ^comment = ""
+* doseAndRate.doseQuantity ^comment = "ー"
 * doseAndRate.doseQuantity.value 1..1 MS
 * doseAndRate.doseQuantity.unit 1..1 MS
 * doseAndRate.doseQuantity.system 1..1 MS
