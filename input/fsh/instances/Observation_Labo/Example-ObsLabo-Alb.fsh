@@ -20,6 +20,9 @@ Description: "検体検査結果　アルブミン　3.9　mg/L　　ローカ�
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
 
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
+* contained[+] = Example-JP-Encounter-AMB
+
 // 検体材料　* contained[+] = Example_LaboMaterial_Serum
 * contained[+] = Example_LaboMaterial_Serum
 

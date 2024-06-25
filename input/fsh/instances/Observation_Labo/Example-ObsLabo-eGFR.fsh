@@ -15,6 +15,9 @@ Description: "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカル�
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
 
+//* contained[+] = Example-JP-Patient-eCS-01-Contained
+* contained[+] = Example-JP-Encounter-AMB
+
 // 検体材料　* contained[+] = Example_LaboMaterial_Serum
 //* contained[+] = Example_LaboMaterial_Serum
 

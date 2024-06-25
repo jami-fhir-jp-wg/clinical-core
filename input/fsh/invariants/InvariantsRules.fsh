@@ -187,7 +187,7 @@ Expression: "entry.select(resource as Condition).all(contained.where(resourceTyp
 Invariant: condition-needs-onsetDateTime
 Description: "R9013C:Bundleに含まれるConditionのリソースでは、onsetDateTimeが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(onsetDateTime).exists())"
+Expression: "entry.select(resource as Condition).all((onsetDateTime.exists())"
 
 // R9013O Bundleに含まれるObservationリソースには、JP_Encounterリソースが必須である。
 Invariant: observation-needs-contained-of-Encounter
@@ -197,9 +197,9 @@ Expression: "entry.select(resource as Observation).all(contained.where(resourceT
 
 // R9014C  Bundleに含まれるConditonリソースには、診療科拡張が必須である。
 Invariant: condition-needs-extension-of-Department
-Description: "R9014C:BBundleに含まれるConditonリソースには、診療科拡張が必須である。"
+Description: "R9014C:Bundleに含まれるConditonリソースには、診療科拡張が必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
+Expression: "entry.select(resource as Conditon).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
 
 // R9014O  Bundleに含まれるObservationリソースには、診療科拡張が必須である。
 Invariant: observation-needs-extension-of-Department
