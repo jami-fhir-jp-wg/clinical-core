@@ -184,7 +184,7 @@ Severity: #error
 Expression: "entry.select(resource as Condition).all(resource.contained.where(resourceType='Encounter').exists())"
 
 // R9015C  Bundleに含まれるConditonリソースでは、onsetDateTimeが必須である。
-Invariant: condition-needs-contained-of-Encounter
+Invariant: condition-needs-onsetDateTime
 Description: "R9013C:Bundleに含まれるConditionのリソースでは、onsetDateTimeが必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(resource.onsetDateTime).exists())"
