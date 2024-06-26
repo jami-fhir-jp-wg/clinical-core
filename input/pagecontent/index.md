@@ -3,7 +3,8 @@
 <span style="color: blue; font-size: 150%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
 
 ### CLINS（３文書６情報作成・送信）のためのFHIR実装ガイド
- <span style="color: red; font-size: 120%;"><<注意：このIGは協議中の暫定的な内容が含まれます。リソースのProfileも暫定版です。内容は間違いや暫定情報を含むことがあります。お気づきの点は上部に記載のGoogleフォームからお知らせをお願いします。>></span><br>
+ <span style="color: red; font-size: 120%;"><<注意：このバージョンは近日中にリリースするV1.0.0の事前公開版（リリース候補版）です。>></span> <br>
+ <br>
 
 
 #### 本実装ガイド(IG)の目的：
