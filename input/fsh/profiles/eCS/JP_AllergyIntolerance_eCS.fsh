@@ -130,9 +130,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * code  1..1 MS
 * code ^short = "アレルギー等の対象物の情報"
-* code  ^definition = "少なくとも1つのCoding情報では、実装ガイドで定めるアレルギー物質コーディングルールに従ったコード（ダミーコードを含む）を必ず設定する。その場合に使用するsystem値は以下のいずれかを選択する。\r\n食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS\r\n
-医薬品： http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS\r\n
-非医薬品・非食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS"
+* code  ^definition = "少なくとも1つのCoding情報では、実装ガイドで定めるアレルギー物質コーディングルールに従ったコード（ダミーコードを含む）を必ず設定する。その場合に使用するsystem値は以下のいずれかを選択する。 食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS　、医薬品： http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　、非医薬品・非食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS"
 
 * code  ^comment = "ー"
 

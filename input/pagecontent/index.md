@@ -24,7 +24,7 @@
 <br><br>
 この形態において、サーバが送信時に作成するリソース・インスタンスが従うべきプロファイルが本IGで説明される。<br>
 この形態では、あるひとつのリソースタイプ（たとえばObservationリソースタイプ）のデータ（リソース・インスタンス）を複数まとめて送信するために、これらをひとつのBundleリソースタイプのデータにして送信する。それに関する仕様も本実装ガイドで定める。
-なお、送信時のプロトコルや制御情報（一括登録か削除かなど）、暗号化、送信先相手先の指定方法等については、<a hreh="https://www.mhlw.go.jp/content/10808000/001262060.pdf">「電子カルテ情報共有サービスの導入に関するシステムベンダ向け技術解説書」</a>（厚生労働省医政局）に従う。
+なお、送信時のプロトコルや制御情報（一括登録か削除かなど）、暗号化、送信先相手先の指定方法等については、<a href="https://www.mhlw.go.jp/content/10808000/001262060.pdf">「電子カルテ情報共有サービスの導入に関するシステムベンダ向け技術解説書」</a>（厚生労働省医政局）に従う。
 
 1. **Pull形態**：
 FHIRに準拠した臨床情報を必要とするクライアントシステムが、FHIR REST APIに従って、あるひとつのFHIRリソースタイプのリソース・インスタンスを臨床データを保有するサーバに要求し、サーバからのレスポンスとしてFHIR規格に従ったデータを受け取る形態。<br>
@@ -56,8 +56,8 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
   1. <span style="color: blue;">  [患者情報	Patientリソース][JP_Patient_eCS]　　</span>
   1.  [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
   1.  [医療者情報　Practitionerリソース][JP_Practitioner_eCS]
-  1.  オーダ情報 ServiceRequestリソース  JP_ServiceRequest
-  1.  検査検体情報	Sepecimenリソース  JP_Specimen
+  1.  [オーダ情報 ServiceRequestリソース JP_ServiceRequest] (https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html)
+  1.  [検査検体情報	Sepecimenリソース JP_Specimen](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html)
 
   <span style="color: blue;">上記のうち、患者情報以外のリソースは、6情報では、埋め込みリソース（containedリソース）の形で記述される。患者情報のリソースはBundleリソースのひとつのentryとして記述され、６情報からは参照の形をとる。</span>
   <br>
