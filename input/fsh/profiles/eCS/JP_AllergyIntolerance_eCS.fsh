@@ -123,7 +123,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）を選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には適切なコードを設定すること。電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならない。\"biologic\"の設定はしないこととしており、設定されていた場合にはエラーとなる。それ以外が設定されている場合、及び本要素が存在しない場合には、その他アレルギー等の情報として取り扱われる。"
 
 
-* criticality 0..1
+* criticality 0..1 MS
 * criticality ^short = "潜在的な臨床的危険性、致命度"
 * criticality ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-criticality\" から　low | high | unable-to-assess　のいずれか（低、高、評価不能）。電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、category要素の記述を参照すること。"
 
@@ -164,6 +164,6 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
   * text 1..1
     * insert relative_short_definition("追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。")
 
-* reaction 0..
+* reaction 0.. M
   * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。")
 

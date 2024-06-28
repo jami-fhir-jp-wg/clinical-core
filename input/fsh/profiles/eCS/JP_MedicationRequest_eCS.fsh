@@ -104,7 +104,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 
 * status = #completed
 * intent = #order
-
+* category MS 
 // * category 薬剤使用区分（外来、院内、院外などの区分）上位Profileで定義済み
 * obeys needs-anyOfStandardCode-medication
 
