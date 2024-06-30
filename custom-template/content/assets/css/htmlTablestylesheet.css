@@ -209,6 +209,16 @@
   mso-generic-font-family: auto;
   mso-font-charset: 128;
 }
+.htmlTable .font18 {
+  color: black;
+  font-size: 10.5pt;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+}
 .htmlTable .font20 {
   color: windowtext;
   font-size: 6pt;
@@ -4238,6 +4248,18 @@
   white-space: normal;
 }
 .htmlTable .xl360 {
+  mso-style-parent: style57;
+  color: #0563C1;
+  text-decoration: underline;
+  text-underline-style: single;
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 1pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.htmlTable .xl361 {
   mso-style-parent: style58;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
@@ -4249,7 +4271,7 @@
   border-left: none;
   white-space: normal;
 }
-.htmlTable .xl361 {
+.htmlTable .xl362 {
   mso-style-parent: style0;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
@@ -4260,7 +4282,7 @@
   border-left: none;
   white-space: normal;
 }
-.htmlTable .xl362 {
+.htmlTable .xl363 {
   mso-style-parent: style0;
   color: black;
   font-size: 10pt;
@@ -4274,7 +4296,7 @@
   border-left: 1pt solid windowtext;
   white-space: normal;
 }
-.htmlTable .xl363 {
+.htmlTable .xl364 {
   mso-style-parent: style0;
   text-align: left;
   border-top: 0.5pt solid windowtext;
@@ -4283,7 +4305,7 @@
   border-left: none;
   white-space: normal;
 }
-.htmlTable .xl364 {
+.htmlTable .xl365 {
   mso-style-parent: style0;
   text-align: left;
   border-top: 0.5pt solid windowtext;
@@ -4292,7 +4314,7 @@
   border-left: none;
   white-space: normal;
 }
-.htmlTable .xl365 {
+.htmlTable .xl366 {
   mso-style-parent: style58;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
@@ -4304,27 +4326,32 @@
   border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
-.htmlTable .xl366 {
-  mso-style-parent: style0;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1pt solid windowtext;
-  border-left: none;
-  white-space: normal;
-}
 .htmlTable .xl367 {
-  mso-style-parent: style0;
+  mso-style-parent: style58;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  border-top: none;
-  border-right: none;
-  border-bottom: 1pt solid windowtext;
-  border-left: none;
+  border-top: 0.5pt solid windowtext;
+  border-right: 0.5pt solid windowtext;
+  border-bottom: none;
+  border-left: 0.5pt solid windowtext;
   white-space: normal;
 }
 .htmlTable .xl368 {
+  mso-style-parent: style58;
+  font-size: 10pt;
+  font-family: "ＭＳ 明朝";
+  mso-generic-font-family: auto;
+  mso-font-charset: 128;
+  text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: none;
+  border-left: 0.5pt solid windowtext;
+  white-space: normal;
+}
+.htmlTable .xl369 {
   mso-style-parent: style0;
   color: black;
   font-size: 10pt;
@@ -4333,28 +4360,23 @@
   mso-font-charset: 128;
   white-space: normal;
 }
-.htmlTable .xl369 {
-  mso-style-parent: style58;
-  font-size: 10pt;
-  font-family: "ＭＳ 明朝";
-  mso-generic-font-family: auto;
-  mso-font-charset: 128;
-  border-top: 0.5pt solid windowtext;
-  border-right: 0.5pt solid windowtext;
-  border-bottom: none;
-  border-left: 0.5pt solid windowtext;
+.htmlTable .xl370 {
+  mso-style-parent: style0;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1pt solid windowtext;
+  border-left: none;
   white-space: normal;
 }
-.htmlTable .xl370 {
-  mso-style-parent: style58;
+.htmlTable .xl371 {
+  mso-style-parent: style0;
   font-size: 10pt;
   font-family: "ＭＳ 明朝";
   mso-generic-font-family: auto;
   mso-font-charset: 128;
-  text-align: left;
   border-top: none;
-  border-right: 1pt solid windowtext;
-  border-bottom: none;
-  border-left: 0.5pt solid windowtext;
+  border-right: none;
+  border-bottom: 1pt solid windowtext;
+  border-left: none;
   white-space: normal;
 }/*# sourceMappingURL=htmlTablestylesheet.css.map */

@@ -31,6 +31,11 @@
   - status : 検査・観察のステータス
   - category : 検査結果カテゴリー。コード"laboratory"を設定する。
   - code : 検査・観察の項目コード
+    - .coding : コード化された情報
+    - .coding.system : コード化に用いたコードシステムURL
+    - .coding.code : コード化に用いたコード
+    - .coding.display : コード化に用いたコードの表示名
+    - .text : アレルギー・不耐反応の対象物の情報のテキスト記述
   - subject : 患者のFHIRリソースへの参照
   - effectiveDateTime : 検体採取日または検体採取日時
   - specimen :　検体材料のFHIRリソースへの参照
@@ -47,6 +52,7 @@
   - component : １回の検査・観察で同時に複数の検査結果が得られる場合には必須。
 
 ### 推奨要素
+  - code.coding.version : 使用したコードシステムのバージョン文字列
   - interpretation : 検査結果値の評価コード
   - referenceRange : 基準値範囲
 

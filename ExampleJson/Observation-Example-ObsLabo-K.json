@@ -50,6 +50,29 @@
       "text": "検体検査結果　カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
     }
   ],
+  "contained": [
+    {
+      "resourceType": "Encounter",
+      "id": "Example-JP-Encounter-AMB",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+          "value": "192844"
+        }
+      ],
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "外来"
+      }
+    }
+  ],
   "status": "final",
   "code": {
     "coding": [
@@ -78,6 +101,9 @@
     }
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
+  "encounter": {
+    "reference": "#Example-JP-Encounter-AMB"
+  },
   "issued": "2021-07-05T15:38:59.000+09:00",
   "valueQuantity": {
     "value": 3.5,

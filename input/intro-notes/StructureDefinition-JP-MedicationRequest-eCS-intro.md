@@ -23,6 +23,11 @@
   - status : 処方状態
   - intent : 投薬指示の意図。"order" を固定で設定する。
   - medicationCodeableConcept : 医薬品のコードと名称。
+    - .coding : コード化された情報
+    - .coding.system : コード化に用いたコードシステムURL
+    - .coding.code : コード化に用いたコード
+    - .coding.display : コード化に用いたコードの表示名
+    - .text : アレルギー・不耐反応の対象物の情報のテキスト記述
   - subject : 対象となる患者のFHIRリソースへの参照。
   - authoredOn : 処方指示が最初に作成された日時。
   - dosageInstruction : 用法や投与量を含む処方指示。
@@ -42,6 +47,7 @@
 
 ### 推奨要素
   - category : 薬剤使用区分
+  - code.coding.version : 使用したコードシステムのバージョン文字列
   - requester : 処方者情報。この処方を作成した医療者の情報への参照。
 
 ### MustSupport要素

@@ -6,7 +6,7 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-## Ver1.0.0 rc1 (2024.6.24 　リリース候補v1)
+## Ver1.0.0 rc1/rc2 (2024.6.24 　リリース候補v1)
   - 全般
     - これまでは、診療情報・サマリー汎用のプロファイル(..._eCS)と、それから派生した、電子カルテ情報共有サービスに送信するために特化したプロファイル(..._CLINS_eCS)とに使い分ける構成となっていた。本バージョンから、両者を区別せず、すべて診療情報・サマリー汎用のプロファイル(..._eCS) 
 
@@ -31,14 +31,27 @@
     - category：　薬剤アレルギー等情報の取り扱いの変更に伴い、仕様を変更。
     - criticality:  薬剤アレルギー等情報の取り扱いの変更に伴い、仕様を変更。「条件により必須」要素から外す。
     - code: コードを変更。これに伴いcode.coding.system値を変更。
+    - code: コーディング仕様の詳細を記載。
+    - coding.code.version を推奨要素とする。
     - recorderとasserterを「推奨要素」から外す。これにともない、contained (JP_Practitioner) を「推奨要素」から外す。
-    
+    - criticalityとreactionを「MustSupport要素」とする。
+
   - Observationリソースタイプ 
     - category: JP-Coreに合わせて必須に変更。
+    - coding.code.version を推奨要素とする。
 
   - Bundleリソースタイプ 
-    - identifierの仕様を変更
+    - identifierの仕様を変更。
 
+  - MedicationRequestリソースタイプ
+    - categoryを「推奨要素」とする。
+    - medicationCodeableConcept.code.version を推奨要素とする。
+    - dosageInstructionで使用する用法コードを電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することを必須とする。
+
+  - Conditionリソースタイプ
+    - 主病名フラグを設定するための拡張　JP_eCS_DiagnosisType　を新設。
+    - coding.code.version を推奨要素とする。
+    - 病名コードに、前置修飾語、後置修飾語を記述する拡張を追加。
 
 ## Ver0.9.14-draft  (2024-03-12) 
 

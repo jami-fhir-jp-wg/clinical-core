@@ -25,6 +25,11 @@
   - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。
   - category : 臨床的状態に割り当てられたカテゴリー。problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは'encounter-diagnosis'を設定すること(display name は"Encounter Diagnosis")。
   - code : 傷病名のコードと名称。code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。コード化は必須(電子カルテ情報共有サービスでは、ICD10対応標準病名マスタの「修飾語管理番号」だけが使用できる)。
+    - .coding : コード化された情報
+    - .coding.system : コード化に用いたコードシステムURL
+    - .coding.code : コード化に用いたコード
+    - .coding.display : コード化に用いたコードの表示名
+    - .text : アレルギー・不耐反応の対象物の情報のテキスト記述
   - subject : 患者のFHIRリソースへの参照。
 
 ### 条件により必須
@@ -47,6 +52,7 @@
   - extension (eCS_Department) : 診療科情報
   - onsetDatetime : この傷病名情報が同定された時期。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報共有サービス以外の場合でもできる限り記述する。
   - abatementDateTime : この傷病名情報による患者状態が終了したと同定された時期。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ情報共有サービス以外の場合でもできる限り記述する。
+  - code.coding.version : 使用したコードシステムのバージョン文字列
   - recordedDate : この状態が最初に記録された日時。
   - recorder : この状態を記録した人の情報を記述しているJP_Practitionerリソースへの参照。
 

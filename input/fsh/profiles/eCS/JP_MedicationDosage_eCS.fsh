@@ -73,7 +73,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code.coding 0..1 MS
 * timing.code.coding ^definition = "JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
-* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）、厚生労働省電子処方箋用法コード（\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
+* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）、厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
 
 * timing.code.coding.code ^short = "用法コード"
 * timing.code.coding.code 1..1 MS

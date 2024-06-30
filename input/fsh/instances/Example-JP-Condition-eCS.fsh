@@ -48,8 +48,8 @@ Description: "conditionExample01 必須要素だけのサンプル"
 Instance: Example-JP-Condition-eCS-02
 InstanceOf: JP_Condition_eCS
 Usage: #example
-Description: "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
-* note.text =  "conditionExample02 必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+Description: "conditionExample02 必須要素と推奨要素を記述したサンプル、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+* note.text =  "conditionExample02 必須要素と推奨要素を記述したサンプル、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
@@ -58,6 +58,10 @@ Description: "conditionExample02 必須要素と推奨要素を記述したサ�
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
+* extension[eCS_DiagnosisType].valueCodeableConcept = $ex-diagnosistype-cs#principal "主病名"
+ 
 
 //* contained[+] = Example-JP-Patient-eCS-01-Contained
 * contained[+] = Example-JP-Encounter-AMB

@@ -1,4 +1,8 @@
-
+/*
+実装必要な未実装チェック
+1）　CLINSでは、MedicationRequest.dosageInstruction.timing.code.coding は、処方箋用法コードによりコード化することが必須。
+2）　その他、CLINSでは必須という要素のチェックを別ファイルに定義して、それをすべて行うこと。
+*/
 
 // R1010-  患者IDチェック
 

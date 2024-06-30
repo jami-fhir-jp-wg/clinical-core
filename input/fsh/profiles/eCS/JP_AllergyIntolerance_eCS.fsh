@@ -164,6 +164,6 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
   * text 1..1
     * insert relative_short_definition("追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。")
 
-* reaction 0.. M
+* reaction 0.. MS
   * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。")
 
