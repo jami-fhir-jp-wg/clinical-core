@@ -288,8 +288,10 @@
     <font class="font13">電子カルテ情報サービスでは、この拡張による記述は必須。</font></td>
   <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl271 width=195 style='border-left:none;width:146pt'><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</span></td>
+  <td class=xl271 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"
+  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
+  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</span></a></td>
  </tr>
  <tr height=47 style='mso-height-source:userset;height:35.0pt'>
   <td height=47 class=xl200 align=left width=97 style='height:35.0pt;
@@ -332,8 +334,10 @@
   <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl297 align=left width=195 style='border-top:none;border-left:none;
-  width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no</span></td>
+  width:146pt'><a
+  href="http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl208 align=left width=97 style='height:31.0pt;
@@ -384,8 +388,10 @@
   <td class=xl146 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl298 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></td>
+  <td class=xl298 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl200 align=left width=97 style='height:31.0pt;
@@ -551,8 +557,10 @@
   <td class=xl146 align=left width=359 style='border-left:none;width:269pt'>主傷病であることを記述するために使用する拡張を識別するURL。</td>
   <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl298 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</span></td>
+  <td class=xl298 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl200 align=left width=97 style='height:31.0pt;
@@ -798,8 +806,10 @@
   <td class=xl79 width=87 style='width:65pt'>uri</td>
   <td class=xl79 width=359 style='width:269pt'>コードで記述が必須で、少なくともひとつのsystem値は固定値。</td>
   <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl299 width=195 style='width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://terminology.hl7.org/CodeSystem/condition-ver-status</span></td>
+  <td class=xl299 width=195 style='width:146pt'><a
+  href="http://terminology.hl7.org/CodeSystem/condition-ver-status"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://terminology.hl7.org/CodeSystem/condition-ver-status</span></a></td>
  </tr>
  <tr height=160 style='height:120.0pt'>
   <td height=160 class=xl172 width=97 style='height:120.0pt;width:73pt'>verificationStatus</td>
@@ -879,8 +889,10 @@
   <td class=xl79 width=87 style='width:65pt'>uri</td>
   <td class=xl79 width=359 style='width:269pt'>category.coding.systemは、&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;を設定する。</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl299 width=195 style='width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://terminology.hl7.org/CodeSystem/condition-category</span></td>
+  <td class=xl299 width=195 style='width:146pt'><a
+  href="http://terminology.hl7.org/CodeSystem/condition-category"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://terminology.hl7.org/CodeSystem/condition-category</span></a></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl172 width=97 style='height:30.0pt;width:73pt'>category</td>
@@ -994,8 +1006,10 @@
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語を格納するための拡張(JP_Condition_DiseasePrefixModifier_eCS)</td>
   <td class=xl79 width=36 style='width:27pt'><ruby>固定値<span style='display:
   none'><rt>コテイチ </rt></span></ruby></td>
-  <td class=xl299 width=195 style='width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier</span></td>
+  <td class=xl299 width=195 style='width:146pt'><a
+  href="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier</span></a></td>
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
@@ -1203,8 +1217,10 @@
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>病名の後置修飾語を格納するための拡張(JP_Condition_DiseasePostfixModifier_eCS)</td>
   <td class=xl79 width=36 style='width:27pt'><ruby>固定値<span style='display:
   none'><rt>コテイチ </rt></span></ruby></td>
-  <td class=xl299 width=195 style='width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier</span></td>
+  <td class=xl299 width=195 style='width:146pt'><a
+  href="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier</span></a></td>
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>

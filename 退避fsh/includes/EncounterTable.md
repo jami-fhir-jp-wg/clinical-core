@@ -928,8 +928,10 @@
     9:その他（検査入院,正常分娩及び人間ドック含む）</td>
   <td class=xl77 align=left width=36 style='border-top:none;border-left:none;
   width:27pt'><ruby>sys<span style='display:none'><rt>コテイチ </rt></span></ruby>tem値：固定値</td>
-  <td class=xl331 width=195 style='border-top:none;border-left:none;width:146pt'><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
-  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition</span></td>
+  <td class=xl331 width=195 style='border-top:none;border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition"
+  target="_parent"><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
+  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition</span></a></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl161 align=left width=117 style='height:30.0pt;

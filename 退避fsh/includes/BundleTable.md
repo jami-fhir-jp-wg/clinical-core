@@ -105,7 +105,9 @@
   は（U+007C）パイプ（縦棒文字）と数字の1でバージョン1を指定する)　を設定する。<br>
     </td>
   <td class=xl149 width=36 style='border-top:none;border-left:none;width:27pt'>固定値</td>
-  <td class=xl143 width=195 style='border-top:none;border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|1</td>
+  <td class=xl143 width=195 style='border-top:none;border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
+  target="_parent">http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|1</a></td>
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl70 width=107 style='height:45.0pt;width:80pt'>meta</td>
@@ -129,7 +131,9 @@
   <td class=xl76 width=359 style='width:269pt'>固定値
   http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。</td>
   <td class=xl71 width=36 style='width:27pt'>固定値</td>
-  <td class=xl75 width=195 style='width:146pt'>http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS</td>
+  <td class=xl75 width=195 style='width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"
+  target="_parent">http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS</a></td>
  </tr>
  <tr height=160 style='height:120.0pt'>
   <td height=160 class=xl70 width=107 style='height:120.0pt;width:80pt'>meta</td>
