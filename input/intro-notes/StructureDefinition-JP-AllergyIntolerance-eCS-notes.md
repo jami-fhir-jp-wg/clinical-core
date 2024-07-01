@@ -17,7 +17,7 @@
 <tr><td>その他アレルギー等</td><td>food, environment,または値なし（要素なし）</td><td>薬剤以外の原因物質に対する「その他アレルギー等」とみなされる。<br>「薬剤アレルギー等」としては扱われない。</td></tr>
 </table>
 </div>
-</br>
+<br>
 
 ## アレルギーのコード AllergyIntolerance.code の仕様
 AllergyIntolerance.code は以下に従うこと。<br>
@@ -29,12 +29,12 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <th rowspan="2">情報区分</th>
 <th rowspan="2">category要素</th>
 <th rowspan="2">適用条件</th>
-<th rowspan="1" colspan="2">AllergyIntolerance.code.</br>coding.code</th>
-<th  rowspan="1" colspan="1">AllergyIntolerance.code.</br>coding.system</th>
+<th rowspan="1" colspan="2">AllergyIntolerance.code.<br>coding.code</th>
+<th  rowspan="1" colspan="1">AllergyIntolerance.code.<br>coding.system</th>
 </tr>
 
 <tr>
-<th>先頭3桁</br>（メタコード）</th>
+<th>先頭3桁<br>（メタコード）</th>
 <th>後続コード</th>
 <th>コードシステム</th>
 </tr>
@@ -45,8 +45,8 @@ AllergyIntolerance.code は以下に従うこと。<br>
 
 <td>個別医薬品YJコード使用可</td>
 <td>　YCM　　 </td>
-<td>YJコード</br>12桁</td>
-<td rowspan="3">JFAGY-Medコード　(*注2）</br>[JP_JfagyMedicationAllergen_CS](JP_JfagyMedicationAllergen_CS)</td>
+<td>YJコード<br>12桁</td>
+<td rowspan="3">JFAGY-Medコード　(*注2）<br>[JP_JfagyMedicationAllergen_CS](JP_JfagyMedicationAllergen_CS)</td>
 </tr>
 
 <tr>
@@ -58,7 +58,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <tr>
 <td>コード指定不可(*注3)</td>
 <td>　D9M　　 </td>
-<td>ダミーコード</br>"000000000"</br>　9桁のゼロ</td>
+<td>ダミーコード<br>"000000000"<br>　9桁のゼロ</td>
 </tr>
 
 <tr>
@@ -66,28 +66,28 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td  rowspan="2">food（食品）</td>
 <td>JFAGY(食品)コード使用可</td>
 <td>　J9F　　 </td>
-<td>JFAGY(食品)コード</br>9桁</td>
-<td rowspan="2">JFAGY-Foodコード　(*注4）</br>[JP_JfagyFoodAllergen_CS](JP_JfagyFoodAllergen_CS)</td>
+<td>JFAGY(食品)コード<br>9桁</td>
+<td rowspan="2">JFAGY-Foodコード　(*注4）<br>[JP_JfagyFoodAllergen_CS](JP_JfagyFoodAllergen_CS)</td>
 </tr>
 
 <tr>
 <td>コード指定不可(*注3)</td>
 <td>　D9F　　 </td>
-<td>ダミーコード</br>"000000000"</br>　9桁のゼロ</td>
+<td>ダミーコード<br>"000000000"<br>　9桁のゼロ</td>
 </tr>
 
 <tr>
 <td  rowspan="2">environment（非食品・非医薬品）</td>
 <td>JFAGY（非食品・非医薬品）コード使用可</td>
 <td>　J9N　　 </td>
-<td>JFAGY（非食品・非医薬品）コード</br>9桁</td>
-<td rowspan="2">JFAGY-NonFoodNonMedコード　(*注5）</br>[JP_JfagyNonFoodNonMedicationAllergen_CS](JP_JfagyNonFoodNonMedicationAllergen_CS)</td>
+<td>JFAGY（非食品・非医薬品）コード<br>9桁</td>
+<td rowspan="2">JFAGY-NonFoodNonMedコード　(*注5）<br>[JP_JfagyNonFoodNonMedicationAllergen_CS](JP_JfagyNonFoodNonMedicationAllergen_CS)</td>
 </tr>
 
 <tr>
 <td>コード指定不可(*注3)</td>
 <td>　D9N　　 </td>
-<td>ダミーコード</br>"000000000"</br>　9桁のゼロ</td>
+<td>ダミーコード<br>"000000000"<br>　9桁のゼロ</td>
 </tr>
 
 </table>
