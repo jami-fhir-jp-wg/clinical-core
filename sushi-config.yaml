@@ -37,13 +37,13 @@ dependencies:
 
 pages:
   index.md:
-    title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様  　JP-CLINS
+    title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
   3docs-ps.md:
     title: ２文書実装ガイドと仕様
   resourceProfiles.md:
-    title: 6情報と関連プロファイル  
+    title: 6情報と関連プロファイル
   validationGuide.md:
     title: Validationガイド
   history.md:
@@ -57,9 +57,9 @@ menu:
     ６情報送信仕様: core6spec.html
     ６情報と関連プロファイル: resourceProfiles.html
     ２文書実装ガイドと仕様: 3docs-ps.html
-    その他のリソース等:artifacts.html
+    その他のリソース等: artifacts.html
     改訂履歴: history.html
-  Artifacts: 
+  Artifacts:
     Artifacts: artifacts.html
   Validationガイド:
     Validationガイド: validationGuide.html
