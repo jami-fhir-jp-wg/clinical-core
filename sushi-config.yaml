@@ -6,11 +6,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins26
-name: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド v1.0.0-rc2 (リリース候補v2)"
-title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26（CLinical Information Sharing ImplementationGuide） v1.0.0-rc2 (リリース候補v2)"
-description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26 ImplementationGuide  v1.0.0-rc2 (リリース候補v2)"
+name: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド v1.2.0-rc1 (リリース候補v2)"
+title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26（CLinical Information Sharing ImplementationGuide） v1.2.0-rc1 (リリース候補v2)"
+description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26 ImplementationGuide  v1.2.0-rc1 (リリース候補v2)"
 status: draft # draft | active | retired | unknown 
-version: 1.0.0-rc2
+version: 1.2.0-rc1
 date: 2024-07-01
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
@@ -64,8 +64,8 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.0.0-rc2.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.0.0-rc2-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.2.0-rc1.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.2.0-rc1-snap.tgz
     
 #-----------------------------------------
 # IG 外部パラメータ設定

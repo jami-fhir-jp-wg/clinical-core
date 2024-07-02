@@ -14,7 +14,7 @@ on:
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.0.0-rc2
+  release_version : 1.2.0-rc1
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -93,11 +93,11 @@ jobs:
 
     - name: apply the version of sushi-config.yaml
       run: |
-        sed 's/version: 1.0.0-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
+        sed 's/version: 1.2.0-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
         mv sushi-config-temp.yaml sushi-config.yaml
         cd forPackageRelease
-        sed 's/1.0.0-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
-        sed 's/1.0.0-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
+        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
+        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
         mv package-diff-temp.json package-diff.json
         mv package-snap-temp.json package-snap.json
         cd ..

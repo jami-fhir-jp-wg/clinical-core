@@ -12,7 +12,7 @@ mkdir ../ExampleJson
 mv package/*Example* ../ExampleJson/
 gtar czf jp-clins26.r4-1.0.0.tgz package
 rm ../packages_snapshot/jp-clins26.r4*.tgz
-rm ../pkgValidation/jp-clins.r4*.tgz
+rm ../pkgValidation/jp-clins26.r4*.tgz
 cp jp-clins26.r4-1.0.0.tgz ../packages_snapshot
 cp jp-clins26.r4-1.0.0.tgz ../pkgValidation
 cd ..
