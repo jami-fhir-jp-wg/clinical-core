@@ -40,6 +40,10 @@ pages:
     title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様  　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
+  3docs-ps.md:
+    title: ２文書実装ガイドと仕様
+  resourceProfiles.md:
+    title: 6情報と関連プロファイル  
   validationGuide.md:
     title: Validationガイド
   history.md:
@@ -51,15 +55,17 @@ menu:
   Home:
     本文: index.html
     ６情報送信仕様: core6spec.html
-    プロファイル: artifacts.html
+    ６情報と関連プロファイル: resourceProfiles.html
+    ２文書実装ガイドと仕様: 3docs-ps.html
+    その他のリソース等:artifacts.html
     改訂履歴: history.html
   Artifacts: 
     Artifacts: artifacts.html
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc2.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc2-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.0.0-rc2.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.0.0-rc2-snap.tgz
     
 #-----------------------------------------
 # IG 外部パラメータ設定
