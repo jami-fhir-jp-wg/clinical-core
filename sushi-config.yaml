@@ -5,10 +5,10 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
-canonical: http://jpfhir.jp/fhir/clins
-name: "電子カルテ情報共有サービスFHIR実装ガイド v1.0.0-rc2 (リリース候補v2)"
-title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.0.0-rc2 (リリース候補v2)"
-description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide  v1.0.0-rc2 (リリース候補v2)"
+canonical: http://jpfhir.jp/fhir/clins26
+name: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド v1.0.0-rc2 (リリース候補v2)"
+title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26（CLinical Information Sharing ImplementationGuide） v1.0.0-rc2 (リリース候補v2)"
+description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26 ImplementationGuide  v1.0.0-rc2 (リリース候補v2)"
 status: draft # draft | active | retired | unknown 
 version: 1.0.0-rc2
 date: 2024-07-01
@@ -37,7 +37,7 @@ dependencies:
 
 pages:
   index.md:
-    title: 電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
+    title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様  　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
   validationGuide.md:
