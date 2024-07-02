@@ -2,7 +2,7 @@ name: Ohe-build
 on:
   push:
     branches: 
-      - develop1.0
+      - twoDocs6resources
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
