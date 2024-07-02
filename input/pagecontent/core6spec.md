@@ -4,21 +4,23 @@
 本ページは、国が進めている医療DXのなかでのサービスが検討されている「電子カルテ情報共有サービス」（以下、「CLINS」という。）において扱われる、いわゆる「３文書６情報」のうち、以下の「６情報」を医療機関から送信する際のFHIR仕様に関係する部分を記述したものである。また、送信する各リソースタイプのデータをひとつのFHIR Bundleリソースに格納してまとめて送信するための仕様も記述する。
 <br>
 
-#### 6情報
 
-  * [(1)薬剤アレルギー等、(2)その他アレルギー等　AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
-  * [(3)傷病名	Conditionリソースタイプ][JP_Condition_eCS]
-  * [(4)検査、(5)感染症　Observationリソースタイプ][JP_Observation_LabResult_eCS]
-  * [(6)処方　MedicationRequestリソースタイプ][JP_MedicationRequest_eCS]
-　<br><br>
 
-#### 主要な情報種別の範囲：
+
+
+
+
+#### 6情報のためのFHIRリソース
 * 2024年度時点で厚生労働省が提示する「６情報」において、使用するFHIRリソースタイプ（４タイプ）
 <br>
-  * [薬剤アレルギー等、その他アレルギー等　AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
-  * [傷病名	Conditionリソースタイプ][JP_Condition_eCS]
-  * [検査（注⁂）、感染症　Observationリソースタイプ][JP_Observation_LabResult_eCS] （注⁂　救急時に有用な検査、生活習慣病関連の検査。本仕様では正確を期すため「検査結果情報」という。）
-  * [処方（注⁂）　MedicationRequestリソースタイプ][JP_MedicationRequest_eCS]（注⁂　診療情報提供書及び退院時サマリーに記載された処方情報。本仕様では正確を期すため「処方依頼情報」という。）
+  * [薬剤アレルギー等 : AllergyIntoleranceリソースタイプ](JP_AllergyIntolerance_eCS)
+  * [その他アレルギー等 : AllergyIntoleranceリソースタイプ](JP_AllergyIntolerance_eCS)
+  * [傷病名 : Conditionリソースタイプ](JP_Condition_eCS)
+  * [検査（注⁂） : Observationリソースタイプ](JP_Observation_LabResult_eCS)
+    - 注⁂　救急時に有用な検査、生活習慣病関連の検査。本仕様では正確を期すため「検査結果情報」という。
+  * [感染症　Observationリソースタイプ](JP_Observation_LabResult_eCS) 
+  * [処方（注⁂）　MedicationRequestリソースタイプ](JP_MedicationRequest_eCS)
+    - 注⁂　診療情報提供書及び退院時サマリーに記載された処方情報。本仕様では正確を期すため「処方依頼情報」という。
 　<br><br>
  - 薬剤アレルギー等、その他アレルギー等の情報は、別に説明するように、同じプロファイルに従うAllergyIntoleranceリソースタイプで記述され、category要素に設定される値にもとづいて受信側で区別される。
  - 検査結果情報と感染症情報については、同じプロファイルに従うObservationリソースタイプで記述され、コード化された項目情報の記述にもとづいて受信側で区別される。
@@ -32,13 +34,13 @@
 * 上記のリソースから参照される関連情報<br>
 　上記6情報から、その要素情報として参照されるリソースタイプを以下に示す。<span style="color: blue;"> ここに記載されないリソースタイプの情報も２文書ではそれぞれの仕様に従い使用可能である。</span>
 
-  1.  [患者情報	Patientリソース][JP_Patient_eCS]
-  1.  [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
-  1.  [医療者情報　Practitionerリソース][JP_Practitioner_eCS]
+  1.  [患者情報	Patientリソース](JP_Patient_eCS)
+  1.  [外来受診・入院歴情報	Encounterリソース](JP_Encounter_eCS)
+  1.  [医療者情報　Practitionerリソース](JP_Practitioner_eCS)
   1.  [オーダ情報 ServiceRequestリソース JP_ServiceRequest](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html)
   1.  [検査検体情報	Sepecimenリソース JP_Specimen](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html)
 
-  <span style="color: blue;">上記のうち、患者情報以外のリソースは、6情報では、埋め込みリソース（containedリソース）の形で記述される。患者情報のリソースはBundleリソースのひとつのentryとして記述され、６情報からは参照の形をとる。</span>
+  <span style="color: blue;">上記のうち、患者情報以外のリソースは、6情報では、[埋め込みリソース（containedリソース）](core6spec.html#contained-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84)の形で記述される。患者情報のリソースはBundleリソースのひとつのentryとして記述され、６情報からは参照の形をとる。</span>
   <br>
 
 - 2文書（診療情報提供書、退院時サマリー）に含まれる6情報に該当する情報の記述方法：<br>
@@ -49,6 +51,120 @@
   2文書に含まれる、6情報以外の情報種別のリソースではcontainedリソースを除き、CLINSでは取り出されて単独で利用されることはない。これらのリソースを2文書内で記述する場合にはそれぞれのFHIR仕様や、JP-Core仕様に従い記述して構わない。<br>
   
 
+#### 送信時の複数リソースデータのまとめ方
+
+
+##### Bundleリソース（collectionタイプ）の仕様
+
+CLINSに医療機関から送信する場合、１回に送信するリソースデータは、複数のリソースデータから構成されるのが普通である。FHIRではこのような送受信のまとめに、複数リソースデータをひとまりにしたひとつのリソースとしてBundleリソースタイプが用意されている。<br>
+
+| Bundleリソース概要図 |
+| ---- |
+| ![Bundle概要図](Bundle-fig.png) |
+
+Bundleリソースの記述仕様の詳細については、６情報送信用Bundleリソースを参照すること。
+
+### 　6情報をまとめて送信するためのBundleリソースのプロファイル
+
+<table>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-JP-Bundle-CLINS.html" title="StructureDefinition/JP-Bundle-CLINS">JP_Bundle_CLINS</a>
+            </td>
+            <td>
+<p>CLINS Bundleリソース（CLINS電子カルテ情報共有サービス 送信用Bundleリソース）</p>
+</td>
+         </tr>
+</table>
+
+### 　6情報に該当するリソースと患者リソースのプロファイル
+
+<table>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-JP-AllergyIntolerance-eCS.html" title="StructureDefinition/JP-AllergyIntolerance-eCS">JP_AllergyIntolerance_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html" title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS Conditionリソース（傷病名情報）</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html" title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html" title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）</p>
+</td>
+         </tr>
+<tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html" title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS Patientリソース（患者情報）</p>
+</td>
+         </tr>
+   </table>
+<br>
+
+
+### 　6情報の各リソースに埋め込まれるリソースのプロファイル
+
+
+* ２文書にも含めることができる。
+
+<table>
+<tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html" title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）</p>
+</td>
+         </tr>
+<tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html" title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
+            </td>
+            <td>
+<p>eCS/CLINS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
+</td>
+         </tr>
+                  <tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
+            </td>
+            <td>
+<p>オーダー情報　JP-ServiceRequest</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
+            </td>
+            <td>
+<p>検査検体情報　JP-Specimen</p>
+</td>
+         </tr>
+</table>
+<br>
+
 #### contained リソース（埋め込みリソースの取り扱い）
  
 FHIRでは、リソースの要素（例えば外来受診・入院歴情報を記述するencounter要素）から参照されるリソースをcontained要素に格納することで、参照される情報を包含する（埋め込む）ことができる。この方法で埋め込み記述されるリソースをcontainedリソース（正確にはContainされたリソース）と呼ぶ。containedリソースは、そのリソースタイプを通常のリソースとして記述する場合に比べて、いくつかの制限があり、例えばcontainedリソースをさらに埋め込むことはできない。
@@ -58,7 +174,7 @@ FHIRでは、リソースの要素（例えば外来受診・入院歴情報を�
 #### リソースへの参照方法
 
 
-リソース要素から、他のリソースを参照する場合、その要素はReferenceデータ型である。
+リソース要素から、他のリソースを参照する場合、その要素は[Referenceデータ型](https://hl7.org/fhir/R4/references.html#Reference)となっている。
 <br>
 Referenceデータ型とは、次のようなFHIR仕様である。
 
@@ -195,17 +311,6 @@ contained要素のリソースのidは、任意の文字列を設定できるが
       "display": "血清"
   }
 ```
-
-
-#### 送信時の複数リソースデータのまとめ方
-
-
-##### Bundleリソース（collectionタイプ）の仕様
-
-CLINSに医療機関から送信する場合、１回に送信するリソースデータは、複数のリソースデータから構成されるのが普通である。FHIRではこのような送受信のまとめに、複数リソースデータをひとまりにしたひとつのリソースとしてBundleリソースタイプが用意されている。<br>
-
-Bundleリソースの記述仕様の詳細については、６情報送信用Bundleリソースを参照すること。
-
 
 
 #### 被保険者個人識別子の格納について

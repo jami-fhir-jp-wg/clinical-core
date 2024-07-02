@@ -1,5 +1,19 @@
 ## 主要なリソースのプロファイルに関する表
 
+### 　6情報をまとめて送信するためのBundleリソースのプロファイル
+
+<table>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-JP-Bundle-CLINS.html" title="StructureDefinition/JP-Bundle-CLINS">JP_Bundle_CLINS</a>
+            </td>
+            <td>
+<p>CLINS Bundleリソース（CLINS電子カルテ情報共有サービス 送信用Bundleリソース）</p>
+</td>
+         </tr>
+</table>
+
+
 ### 診療情報提供書、退院時サマリー固有のリソースのプロファイル
 
 <table>

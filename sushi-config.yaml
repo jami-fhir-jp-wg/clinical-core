@@ -5,10 +5,10 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
-canonical: http://jpfhir.jp/fhir/clins26
+canonical: http://jpfhir.jp/fhir/clins
 name: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド v1.2.0-rc1 (リリース候補v2)"
-title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26（CLinical Information Sharing ImplementationGuide） v1.2.0-rc1 (リリース候補v2)"
-description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26 ImplementationGuide  v1.2.0-rc1 (リリース候補v2)"
+title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.2.0-rc1 (リリース候補v2)"
+description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.2.0-rc1 (リリース候補v2)"
 status: draft # draft | active | retired | unknown 
 version: 1.2.0-rc1
 date: 2024-07-01
@@ -40,10 +40,12 @@ pages:
     title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
-  3docs-ps.md:
-    title: ２文書実装ガイドと仕様
   resourceProfiles.md:
     title: 6情報と関連プロファイル
+  3docs-ps.md:
+    title: ２文書実装ガイドと仕様
+  glossary.md:
+    title: 用語説明集
   validationGuide.md:
     title: Validationガイド
   history.md:
@@ -58,14 +60,15 @@ menu:
     ６情報と関連プロファイル: resourceProfiles.html
     ２文書実装ガイドと仕様: 3docs-ps.html
     その他のリソース等: artifacts.html
+    用語説明集: glossary.html
     改訂履歴: history.html
   Artifacts:
     Artifacts: artifacts.html
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.2.0-rc1.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.2.0-rc1-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1-snap.tgz
     
 #-----------------------------------------
 # IG 外部パラメータ設定
