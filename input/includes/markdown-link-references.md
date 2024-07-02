@@ -12,6 +12,7 @@
 [JP_Observation_Common_Operation]: StructureDefinition-jp-observation-common.html#operation一覧
 [JP_DiagnosticReport_Common_interaction]: StructureDefinition-jp-diagnosticreport-common.html#interaction一覧
 
+
 <!-- ImplementationGuide -->
 [26FHIRv100rc2v2]: ImplementationGuide-clinical-information-sharing.html
 
