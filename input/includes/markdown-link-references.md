@@ -13,26 +13,62 @@
 [JP_DiagnosticReport_Common_interaction]: StructureDefinition-jp-diagnosticreport-common.html#interaction一覧
 
 <!-- ImplementationGuide -->
-[FHIR]: ImplementationGuide-clinical-information-sharing.html
+[26FHIRv100rc2v2]: ImplementationGuide-clinical-information-sharing.html
 
 <!-- StructureDefinition: Profile, DataType -->
-[JP_AllergyIntolerance_CLINS_eCS]: StructureDefinition-JP-AllergyIntolerance-CLINS-eCS.html
 [JP_AllergyIntolerance_eCS]: StructureDefinition-JP-AllergyIntolerance-eCS.html
+[JP_Binary]: StructureDefinition-JP-Binary.html
 [JP_Bundle_CLINS]: StructureDefinition-JP-Bundle-CLINS.html
-[JP_Condition_CLINS_eCS]: StructureDefinition-JP-Condition-CLINS-eCS.html
+[JP_Bundle_eDischargeSummary]: StructureDefinition-JP-Bundle-eDischargeSummary.html
+[JP_Bundle_eReferral]: StructureDefinition-JP-Bundle-eReferral.html
+[JP_Bundle]: StructureDefinition-JP-Bundle.html
+[JP_CarePlan_eCS]: StructureDefinition-JP-CarePlan-eCS.html
+[JP_CarePlan]: StructureDefinition-JP-CarePlan.html
+[JP_Composition_eDischargeSummary]: StructureDefinition-JP-Composition-eDischargeSummary.html
+[JP_Composition_eReferral]: StructureDefinition-JP-Composition-eReferral.html
 [JP_Condition_eCS]: StructureDefinition-JP-Condition-eCS.html
+[JP_Consent_eCS]: StructureDefinition-JP-Consent-eCS.html
+[JP_Consent]: StructureDefinition-JP-Consent.html
+[JP_Coverage_eCS_insurance]: StructureDefinition-JP-Coverage-eCS-insurance.html
+[JP_Coverage_eCS_publicPayment]: StructureDefinition-JP-Coverage-eCS-publicPayment.html
+[JP_Device_eCS]: StructureDefinition-JP-Device-eCS.html
+[JP_Device]: StructureDefinition-JP-Device.html
+[JP_DeviceUseStatement_eCS]: StructureDefinition-JP-DeviceUseStatement-eCS.html
+[JP_DeviceUseStatement]: StructureDefinition-JP-DeviceUseStatement.html
+[JP_DocumentReference_CDAdocument]: StructureDefinition-JP-DocumentReference-CDAdocument.html
+[JP_DocumentReference_eCS]: StructureDefinition-JP-DocumentReference-eCS.html
+[JP_DocumentReference]: StructureDefinition-JP-DocumentReference.html
 [JP_Encounter_eCS]: StructureDefinition-JP-Encounter-eCS.html
-[JP_MedicationRequest_CLINS_eCS]: StructureDefinition-JP-MedicationRequest-CLINS-eCS.html
+[JP_FamilyMemberHistory_eCS]: StructureDefinition-JP-FamilyMemberHistory-eCS.html
+[JP_Immunization_eCS]: StructureDefinition-JP-Immunization-eCS.html
+[JP_Immunization]: StructureDefinition-JP-Immunization.html
 [JP_MedicationRequest_eCS]: StructureDefinition-JP-MedicationRequest-eCS.html
-[JP_Observation_LabResult_CLINS_eCS]: StructureDefinition-JP-Observation-LabResult-CLINS-eCS.html
 [JP_Observation_LabResult_eCS]: StructureDefinition-JP-Observation-LabResult-eCS.html
-[JP_Patient_CLINS_eCS]: StructureDefinition-JP-Patient-CLINS-eCS.html
+[JP_Observation_Common_eCS]: StructureDefinition-JP-Observation-eCS.html
+[JP_Organization_eCS_coveragePayer]: StructureDefinition-JP-Organization-eCS-coveragePayer.html
+[JP_Organization_eCS_department]: StructureDefinition-JP-Organization-eCS-department.html
+[JP_Organization_eCS]: StructureDefinition-JP-Organization-eCS.html
 [JP_Patient_eCS]: StructureDefinition-JP-Patient-eCS.html
 [JP_Practitioner_eCS]: StructureDefinition-JP-Practitioner-eCS.html
+[JP_Practitioner_eCS_author]: StructureDefinition-JP-Practitioner-eCSauthor.html
+[JP_PractitionerRole_eCS_author]: StructureDefinition-JP-PractitionerRole-eCS-author.html
+[JP_Procedure_eCS]: StructureDefinition-JP-Procedure-eCS.html
+[JP_RelatedPerson_eCS]: StructureDefinition-JP-RelatedPerson-eCS.html
+[JP_RelatedPerson]: StructureDefinition-JP-RelatedPerson.html
+[JP_ResearchStudy_eCS]: StructureDefinition-JP-ResearchStudy-.html
+[JP_ResearchStudy]: StructureDefinition-JP-ResearchStudy.html
+[JP_ResearchSubject_eCS]: StructureDefinition-JP-ResearchSubject-eCS.html
+[JP_ResearchSubject]: StructureDefinition-JP-ResearchSubject.html
+[JP_ServiceRequest]: StructureDefinition-JP-ServiceRequest.html
+[JP_Specimen]: StructureDefinition-JP-Specimen.html
 [JP_MedicationDosage_eCS]: StructureDefinition-jp-medicationdosage-eCS.html
 
 <!-- StructureDefinition: Extension -->
+[JP_Communication_CommunicationContent]: StructureDefinition-JP-Communication-CommunicationContent.html
+[JP_Condition_DiseasePostfixModifier_eCS]: StructureDefinition-jp-condition-disease-postfix-modifier.html
+[JP_Condition_DiseasePrefixModifier_eCS]: StructureDefinition-jp-condition-disease-prefix-modifier.html
 [JP_eCS_Department]: StructureDefinition-jp-ecs-department.html
+[JP_eCS_DiagnosisType]: StructureDefinition-jp-ecs-diagnosisType.html
 [JP_eCS_InstitutionNumber]: StructureDefinition-jp-ecs-institution-number.html
 
 <!-- CapabilityStatement -->
@@ -40,25 +76,31 @@
 <!-- SearchParameter -->
 
 <!-- CodeSystem -->
-[JP_Specimen_JLAC10_SpecimenCode_CS]: CodeSystem-JP-Specimen-JLAC10-SpecimenCode-CS.html
-[JP_CLINS_BundleCategory_CS]: CodeSystem-jp-clins-bundlecategory-cs.html
+[JP_admit_Source_CS]: CodeSystem-jp-admit-Source-cs.html
+[JP_carePlanCategory_CS]: CodeSystem-jp-careplancategory-cs.html
+[JP_CLINS_BundleResourceType_CS]: CodeSystem-jp-clins-bundleresourcetype-cs.html
 [JP_CLINS_CodeSystem_CoreLabo_CS]: CodeSystem-jp-clins-codesystem-corelabo-cs.html
 [JP_CLINS_CodeSystem_InfectionLabo_CS]: CodeSystem-jp-clins-codesystem-infectionlabo-cs.html
 [JP_CLINS_ObsLabResult_LocalUncoded_CS]: CodeSystem-jp-clins-obslabresult-localuncoded-cs.html
 [JP_CLINS_ObsLabResult_Uncoded_CS]: CodeSystem-jp-clins-obslabresult-uncoded-cs.html
+[JP_codeSystem_dischargeDisposition]: CodeSystem-jp-codeSystem-dischargeDisposition.html
 [JP_codeSystem_documentTypeCode]: CodeSystem-jp-codeSystem-documentTypeCode.html
+[Loinc_subset_forDocumentCode]: CodeSystem-jp-codeSystem-eCS-document-code.html
+[JP_codeSystem_eDischargeSummary_document_section]: CodeSystem-jp-codeSystem-eDischargeSummary-document-section.html
 [JP_codeSystem_ePrescription_section]: CodeSystem-jp-codeSystem-ePrescription-section.html
+[JP_codeSystem_eReferral_document_section]: CodeSystem-jp-codeSystem-eReferral-document-section.html
 [JP_codeSystem_practitioner_certificate_category]: CodeSystem-jp-codeSystem-practitioner-certificate-category.html
 [JP_codeSystem_prescription_category]: CodeSystem-jp-codeSystem-prescription-category.html
-[JP_Department_SsMix_CS]: CodeSystem-jp-department-ssmix-cs.html
+[JP_eCS_MedicationCode_Nocoded_CS]: CodeSystem-jp-eCS-medicationcode-nocoded-cs.html
 [JP_ehrshrs_indication_CS]: CodeSystem-jp-ehrshrs-indication-cs.html
-[JP_MedicalLicenseCertificate_CS]: CodeSystem-jp-medicallicensecertificate-cs.html
 [JP_Observation_SubCategory_CS]: CodeSystem-jp-observation-subcategory-cs.html
 [JP_SimpleObservationCategory_CS]: CodeSystem-jp-simpleobservationcategory-cs.html
 
 <!-- ValueSet -->
 [JAMI_valueSet_ePreDispenseInstruction]: ValueSet-jami-valueSet-ePreDispenseInstruction.html
 [JAMI_valueSet_ePreOrderUsageCode_16digits]: ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html
+[JP_admit_Source_VS]: ValueSet-jp-admit-Source-Source-vs.html
+[JP_CLINS_BundleResourceType_VS]: ValueSet-jp-clins-bundleresourcetype-vs.html
 [JP_CLINS_ValueSet_CoreLabo_abo_bld_VS]: ValueSet-jp-clins-valueset-corelabo-abo-bld-vs.html
 [JP_CLINS_ValueSet_CoreLabo_alb_VS]: ValueSet-jp-clins-valueset-corelabo-alb-vs.html
 [JP_CLINS_ValueSet_CoreLabo_alp_VS]: ValueSet-jp-clins-valueset-corelabo-alp-vs.html
@@ -166,76 +208,20 @@
 [JP_CLINS_ValueSet_InfectionLabo_TPQUANTCOI_VS]: ValueSet-jp-clins-valueset-infectionlabo-tpquantcoi-vs.html
 [JP_CLINS_ValueSet_InfectionLabo_TPQUANTRESULT_VS]: ValueSet-jp-clins-valueset-infectionlabo-tpquantresult-vs.html
 [JP_CLINS_ValueSet_InfectionLabo_TPRESULT_VS]: ValueSet-jp-clins-valueset-infectionlabo-tpresult-vs.html
+[JP_codeSystem_eDischargeSummary_document_section]: ValueSet-jp-codeSystem-eDischargeSummary-document-section.html
+[JP_codeSystem_eReferral_document_section]: ValueSet-jp-codeSystem-eReferral-document-section.html
+[JP_dischargeDisposition_VS]: ValueSet-jp-dischargeDisposition-vs.html
+[JP_eCS_MedicationCode_Nocoded_VS]: ValueSet-jp-ecs-medicationcode-nocoded-vs.html
 [JP_eCS_ObservationLabResultCode_VS]: ValueSet-jp-ecs-observationlabresultcode-vs.html
+[JP_ehrshrs_indication_VS]: ValueSet-jp-ehrshrs-indication-vs.html
 [JP_valueSet_documentTypeCode]: ValueSet-jp-valueSet-documentTypeCode.html
-[JP_valueSet_drugCode_gs1_14]: ValueSet-jp-valueSet-drugCode-gs1-14.html
 [JP_valueSet_drugCode_hot9]: ValueSet-jp-valueSet-drugCode-hot9.html
 [JP_valueSet_drugCode_yj]: ValueSet-jp-valueSet-drugCode-yj.html
 [MHLW_valueSet_drugCode_generalNameCode]: ValueSet-mhlw-valueSet-drugCode-generalNameCode.html
 [MHLW_valueSet_ePreCDA_insuranceCategory_tbl11]: ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.html
 
 <!-- Example -->
-[Example-JP-AllergyIntolerance-CLINS-eCS-01]: AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.html
-[Example-JP-AllergyIntolerance-CLINS-eCS-02]: AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-02.html
-[Example-JP-DrugContraindications-CLINS-eCS-03]: AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.html
-[Example-JP-Condition-CLINS-eCS-01]: Condition-Example-JP-Condition-CLINS-eCS-01.html
-[Example-JP-Condition-CLINS-eCS-02]: Condition-Example-JP-Condition-CLINS-eCS-02.html
-[Example-JP-Condition-CLINS-eCS-03]: Condition-Example-JP-Condition-CLINS-eCS-03.html
-[Example-JP-Encounter-AMB]: Encounter-Example-JP-Encounter-AMB.html
-[Example-JP-Encounter-IMP]: Encounter-Example-JP-Encounter-IMP.html
-[Example-JP-MedReq-ExtAnus-AsNeeded-Total1]: MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.html
-[Example-JP-MedReq-ExtEye-Total1]: MedicationRequest-Example-JP-MedReq-ExtEye-Total1.html
-[Example-JP-MedReq-ExtSkin-Total2]: MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.html
-[Example-JP-MedReq-PO-4timez-7days]: MedicationRequest-Example-JP-MedReq-PO-4timez-7days.html
-[Example-JP-MedReq-PO-AsNeeded-LimitMax]: MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.html
-[Example-JP-MedReq-PO-BID-10days-AsNeeded]: MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.html
-[Example-JP-MedReq-PO-BID-2d]: MedicationRequest-Example-JP-MedReq-PO-BID-2d.html
-[Example-JP-MedReq-PO-Fumin-AsNeeded-4]: MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.html
-[Example-JP-MedReq-PO-SID-28days]: MedicationRequest-Example-JP-MedReq-PO-SID-28days.html
-[Example-JP-MedReq-PO-SID-90-AMB]: MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.html
-[Example-JP-MedReq-PO-TID-2days]: MedicationRequest-Example-JP-MedReq-PO-TID-2days.html
-[Example-ObsLabo-Alb]: Observation-Example-ObsLabo-Alb.html
-[Example-ObsLabo-K]: Observation-Example-ObsLabo-K.html
-[Example-ObsLabo-eGFR]: Observation-Example-ObsLabo-eGFR.html
-[Example-Patient-minimun]: Patient-Example-Patient-minimun.html
-[Example-Patient-standard]: Patient-Example-Patient-standard.html
-[Example-Practitioner-minimun-D001]: Practitioner-Example-Practitioner-minimun-D001.html
-[Example-Practitioner-minimun-D002]: Practitioner-Example-Practitioner-minimun-D002.html
-[Example-Practitioner-minimun-D003]: Practitioner-Example-Practitioner-minimun-D003.html
-[Example-Practitioner-minimun-R001]: Practitioner-Example-Practitioner-minimun-R001.html
-[Example-LaboMaterial-Serum]: Specimen-Example-LaboMaterial-Serum.html
-[Example-LaboMaterial-Urine]: Specimen-Example-LaboMaterial-Urine.html
 
 <!-- example -->
-[Example-JP-AllergyIntolerance-CLINS-eCS-01]: AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-01.html
-[Example-JP-AllergyIntolerance-CLINS-eCS-02]: AllergyIntolerance-Example-JP-AllergyIntolerance-CLINS-eCS-02.html
-[Example-JP-DrugContraindications-CLINS-eCS-03]: AllergyIntolerance-Example-JP-DrugContraindications-CLINS-eCS-03.html
-[Example-JP-Condition-CLINS-eCS-01]: Condition-Example-JP-Condition-CLINS-eCS-01.html
-[Example-JP-Condition-CLINS-eCS-02]: Condition-Example-JP-Condition-CLINS-eCS-02.html
-[Example-JP-Condition-CLINS-eCS-03]: Condition-Example-JP-Condition-CLINS-eCS-03.html
-[Example-JP-Encounter-AMB]: Encounter-Example-JP-Encounter-AMB.html
-[Example-JP-Encounter-IMP]: Encounter-Example-JP-Encounter-IMP.html
-[Example-JP-MedReq-ExtAnus-AsNeeded-Total1]: MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.html
-[Example-JP-MedReq-ExtEye-Total1]: MedicationRequest-Example-JP-MedReq-ExtEye-Total1.html
-[Example-JP-MedReq-ExtSkin-Total2]: MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.html
-[Example-JP-MedReq-PO-4timez-7days]: MedicationRequest-Example-JP-MedReq-PO-4timez-7days.html
-[Example-JP-MedReq-PO-AsNeeded-LimitMax]: MedicationRequest-Example-JP-MedReq-PO-AsNeeded-LimitMax.html
-[Example-JP-MedReq-PO-BID-10days-AsNeeded]: MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.html
-[Example-JP-MedReq-PO-BID-2d]: MedicationRequest-Example-JP-MedReq-PO-BID-2d.html
-[Example-JP-MedReq-PO-Fumin-AsNeeded-4]: MedicationRequest-Example-JP-MedReq-PO-Fumin-AsNeeded-4.html
-[Example-JP-MedReq-PO-SID-28days]: MedicationRequest-Example-JP-MedReq-PO-SID-28days.html
-[Example-JP-MedReq-PO-SID-90-AMB]: MedicationRequest-Example-JP-MedReq-PO-SID-90-AMB.html
-[Example-JP-MedReq-PO-TID-2days]: MedicationRequest-Example-JP-MedReq-PO-TID-2days.html
-[Example-ObsLabo-Alb]: Observation-Example-ObsLabo-Alb.html
-[Example-ObsLabo-K]: Observation-Example-ObsLabo-K.html
-[Example-ObsLabo-eGFR]: Observation-Example-ObsLabo-eGFR.html
-[Example-Patient-minimun]: Patient-Example-Patient-minimun.html
-[Example-Patient-standard]: Patient-Example-Patient-standard.html
-[Example-Practitioner-minimun-D001]: Practitioner-Example-Practitioner-minimun-D001.html
-[Example-Practitioner-minimun-D002]: Practitioner-Example-Practitioner-minimun-D002.html
-[Example-Practitioner-minimun-D003]: Practitioner-Example-Practitioner-minimun-D003.html
-[Example-Practitioner-minimun-R001]: Practitioner-Example-Practitioner-minimun-R001.html
-[Example-LaboMaterial-Serum]: Specimen-Example-LaboMaterial-Serum.html
-[Example-LaboMaterial-Urine]: Specimen-Example-LaboMaterial-Urine.html
 
 <!-- Invariant -->

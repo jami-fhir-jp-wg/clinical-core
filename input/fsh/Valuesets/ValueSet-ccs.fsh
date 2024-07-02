@@ -1,3 +1,38 @@
+
+
+// 診療情報提供書セクション区分コード
+ValueSet: JP_codeSystem_eReferral_document_section
+Id: jp-codeSystem-eReferral-document-section
+Description: "診療情報提供書セクション区分　ValueSet"
+* ^url = "http://jpfhir.jp/fhir/eReferral/ValueSet/document-section"
+* ^title = "診療情報提供書セクション区分コード　ValueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section
+
+// 退院時サマリーセクション区分コード
+ValueSet: JP_codeSystem_eDischargeSummary_document_section
+Id: jp-codeSystem-eDischargeSummary-document-section
+Description: "退院時サマリーセクション区分　ValueSet"
+* ^url = "http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section"
+* ^title = "退院時サマリーセクション区分コード　ValueSet"
+* ^status = #active
+* ^experimental = false
+* include codes from system http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
+
+
+// FHIR文書の文書区分（医療文書全般）
+ValueSet: JP_valueSet_documentTypeCode
+Id: jp-valueSet-documentTypeCode
+Title: "FHIR文書の文書区分（医療文書）"
+Description: "FHIR文書の文書区分（医療文書全般）"
+* ^url = "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes"
+* ^status = #active
+* ^experimental = false
+* include codes from system http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
+
+
+
 ValueSet: JP_ehrshrs_indication_VS
 Id: jp-ehrshrs-indication-vs
 Title: "長期保存／未告知診療情報のためのフラグコード　valueSet"

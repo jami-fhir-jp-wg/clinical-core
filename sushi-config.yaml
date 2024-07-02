@@ -5,12 +5,12 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
-canonical: http://jpfhir.jp/fhir/clins
-name: "電子カルテ情報共有サービスFHIR実装ガイド v1.0.0-rc2 (リリース候補v2)"
-title: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.0.0-rc2 (リリース候補v2)"
-description: "電子カルテ情報共有サービスFHIR実装ガイド JP-CLINS ImplementationGuide  v1.0.0-rc2 (リリース候補v2)"
+canonical: http://jpfhir.jp/fhir/clins26
+name: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド v1.2.0-rc1 (リリース候補v2)"
+title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26（CLinical Information Sharing ImplementationGuide） v1.2.0-rc1 (リリース候補v2)"
+description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS26 ImplementationGuide  v1.2.0-rc1 (リリース候補v2)"
 status: draft # draft | active | retired | unknown 
-version: 1.0.0-rc2
+version: 1.2.0-rc1
 date: 2024-07-01
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
@@ -37,9 +37,13 @@ dependencies:
 
 pages:
   index.md:
-    title: 電子カルテ情報共有サービスFHIR仕様  　JP-CLINS
+    title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
+  3docs-ps.md:
+    title: ２文書実装ガイドと仕様
+  resourceProfiles.md:
+    title: 6情報と関連プロファイル
   validationGuide.md:
     title: Validationガイド
   history.md:
@@ -51,15 +55,17 @@ menu:
   Home:
     本文: index.html
     ６情報送信仕様: core6spec.html
-    プロファイル: artifacts.html
+    ６情報と関連プロファイル: resourceProfiles.html
+    ２文書実装ガイドと仕様: 3docs-ps.html
+    その他のリソース等: artifacts.html
     改訂履歴: history.html
-  Artifacts: 
+  Artifacts:
     Artifacts: artifacts.html
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc2.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.0.0-rc2-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.2.0-rc1.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins26.r4-1.2.0-rc1-snap.tgz
     
 #-----------------------------------------
 # IG 外部パラメータ設定
@@ -97,14 +103,52 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - '*/hl7.fhir.jp.core'
   special-url:
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
+    - http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral
+    - http://jpfhir.jp/fhir/StructureDefinition/JP_Bundle
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan
+    - http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Composition_eDischargeSummary
+    - http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Consent_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Consent
+    - http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_insurance
+    - http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_publicPayment
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Device_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Device
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DeviceUseStatement_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_DeviceUseStatement
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DocumentReference_CDAdocument
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DocumentReference_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_DocumentReference
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Immunization_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Immunization
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS
+    - http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_eCS_coveragePayer
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_department
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS_author
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_PractitionerRole_eCS_author
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Procedure_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_RelatedPerson_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_RelatedPerson
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_ResearchStudy_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchStudy
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_ResearchSubject_eCS
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchSubject
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest
+    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
+    - http://jpfhir.jp/fhir/eDischargeSummary/Extension/StructureDefinition/JP_Communication_CommunicationContent
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
@@ -119,7 +163,10 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS
     - http://jpfhir.jp/fhir/Common/CodeSystem/discharge-disposition
     - http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
+    - http://loinc.org
+    - http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section
+    - http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section
     - http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
@@ -237,6 +284,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANTCOI_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANTRESULT_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_InfectionLabo_TPRESULT_VS
+    - http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
+    - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/fhir/Common/ValueSet/discharge-disposition
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
     - http://jpfhir.jp/fhir/eCS/ValueSet/JP_eCS_ObservationLabResultCode_VS

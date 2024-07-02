@@ -1,7 +1,7 @@
 {
-  "name": "jp-clins.r4",
-  "version": "1.0.0-rc2",
-  "description": "jp-clins-snapshot 1.0.0-rc2",
+  "name": "jp-clins26.r4",
+  "version": "1.2.0-rc1",
+  "description": "jp-clins-snapshot 1.2.0-rc1",
   "author": "Kazuhiko Ohe",
   "fhirVersions": [
     "4.0.1"
