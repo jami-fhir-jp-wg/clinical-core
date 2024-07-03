@@ -13,7 +13,7 @@
 #### 6情報のためのFHIRリソース
 * 2024年度時点で厚生労働省が提示する「６情報」において、使用するFHIRリソースタイプ（４タイプ）
 <br>
-  * [薬剤アレルギー等 : AllergyIntoleranceリソースタイプ](JP_AllergyIntolerance_eCS)
+  * [薬剤アレルギー等 : AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
   * [その他アレルギー等 : AllergyIntoleranceリソースタイプ](JP_AllergyIntolerance_eCS)
   * [傷病名 : Conditionリソースタイプ](JP_Condition_eCS)
   * [検査（注⁂） : Observationリソースタイプ](JP_Observation_LabResult_eCS)
