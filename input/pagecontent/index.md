@@ -4,13 +4,9 @@
 
 <span style="color: red; font-size: 100%;">注意：このバージョンは近日中にリリースするV1.2.0の事前公開版（リリース候補版）です。</span> <br>
 <br>
-
 <span style="color: blue; font-size: 100%;">本実装ガイドに関する質問やコメント（要望等を含む）は、以下のGoogleフォームから投稿してください。投稿にあたっては、Googleフォーム冒頭の説明をお読みいただき、了解された場合のみ投稿くださるようお願いします。</span>
-
 <span style="color: blue; font-size: 100%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
-
 <span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロードは上部メニューから可能です。</span><BR><BR>
-
 <span style="color: black; font-size: 120%;">本実装ガイドでは、「電子カルテ情報共有サービス」を略してCLINSと記載する。CLINSへのデータ送信のこともCLINSと記載することがある。</span><BR><BR>
 
 ### CLINSのためのFHIR実装ガイド
