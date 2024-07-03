@@ -14,12 +14,12 @@
 * 2024年度時点で厚生労働省が提示する「６情報」において、使用するFHIRリソースタイプ（４タイプ）
 <br>
   * [薬剤アレルギー等 : AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
-  * [その他アレルギー等 : AllergyIntoleranceリソースタイプ](JP_AllergyIntolerance_eCS)
-  * [傷病名 : Conditionリソースタイプ](JP_Condition_eCS)
-  * [検査（注⁂） : Observationリソースタイプ](JP_Observation_LabResult_eCS)
+  * [その他アレルギー等 : AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
+  * [傷病名 : Conditionリソースタイプ][JP_Condition_eCS]
+  * [検査（注⁂） : Observationリソースタイプ][JP_Observation_LabResult_eCS]
     - 注⁂　救急時に有用な検査、生活習慣病関連の検査。本仕様では正確を期すため「検査結果情報」という。
-  * [感染症　Observationリソースタイプ](JP_Observation_LabResult_eCS) 
-  * [処方（注⁂）　MedicationRequestリソースタイプ](JP_MedicationRequest_eCS)
+  * [感染症　Observationリソースタイプ][JP_Observation_LabResult_eCS] 
+  * [処方（注⁂）　MedicationRequestリソースタイプ][JP_MedicationRequest_eCS]
     - 注⁂　診療情報提供書及び退院時サマリーに記載された処方情報。本仕様では正確を期すため「処方依頼情報」という。
 　<br><br>
  - 薬剤アレルギー等、その他アレルギー等の情報は、別に説明するように、同じプロファイルに従うAllergyIntoleranceリソースタイプで記述され、category要素に設定される値にもとづいて受信側で区別される。
@@ -34,9 +34,9 @@
 * 上記のリソースから参照される関連情報<br>
 　上記6情報から、その要素情報として参照されるリソースタイプを以下に示す。<span style="color: blue;"> ここに記載されないリソースタイプの情報も２文書ではそれぞれの仕様に従い使用可能である。</span>
 
-  1.  [患者情報	Patientリソース](JP_Patient_eCS)
-  1.  [外来受診・入院歴情報	Encounterリソース](JP_Encounter_eCS)
-  1.  [医療者情報　Practitionerリソース](JP_Practitioner_eCS)
+  1.  [患者情報	Patientリソース][JP_Patient_eCS]
+  1.  [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
+  1.  [医療者情報　Practitionerリソース][JP_Practitioner_eCS]
   1.  [オーダ情報 ServiceRequestリソース JP_ServiceRequest](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html)
   1.  [検査検体情報	Sepecimenリソース JP_Specimen](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html)
 

@@ -46,7 +46,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>個別医薬品YJコード使用可</td>
 <td>　YCM　　 </td>
 <td>YJコード<br>12桁</td>
-<td rowspan="3">JFAGY-Medコード　(*注2）<br>[JP_JfagyMedicationAllergen_CS](JP_JfagyMedicationAllergen_CS)</td>
+<td rowspan="3">JFAGY-Medコード　(*注2）<br>[JP_JfagyMedicationAllergen_CS][JP_JfagyMedicationAllergen_CS]</td>
 </tr>
 
 <tr>
@@ -67,7 +67,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>JFAGY(食品)コード使用可</td>
 <td>　J9F　　 </td>
 <td>JFAGY(食品)コード<br>9桁</td>
-<td rowspan="2">JFAGY-Foodコード　(*注4）<br>[JP_JfagyFoodAllergen_CS](JP_JfagyFoodAllergen_CS)</td>
+<td rowspan="2">JFAGY-Foodコード　(*注4）<br>[JP_JfagyFoodAllergen_CS][JP_JfagyFoodAllergen_CS]</td>
 </tr>
 
 <tr>
@@ -81,7 +81,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>JFAGY（非食品・非医薬品）コード使用可</td>
 <td>　J9N　　 </td>
 <td>JFAGY（非食品・非医薬品）コード<br>9桁</td>
-<td rowspan="2">JFAGY-NonFoodNonMedコード　(*注5）<br>[JP_JfagyNonFoodNonMedicationAllergen_CS](JP_JfagyNonFoodNonMedicationAllergen_CS)</td>
+<td rowspan="2">JFAGY-NonFoodNonMedコード　(*注5）<br>[JP_JfagyNonFoodNonMedicationAllergen_CS][JP_JfagyNonFoodNonMedicationAllergen_CS]</td>
 </tr>
 
 <tr>
