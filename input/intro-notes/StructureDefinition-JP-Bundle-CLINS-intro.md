@@ -60,18 +60,6 @@ Bundleリソースの使い方については、本ページ後段にある、
 ## 詳細説明
 
 
-<script>
-function details_open(onoff, idname, idCloseButton){
-  var elem = document.getElementById(idname);
-  elem.open = onoff;
-  if (onoff == true){
-    document.getElementById(idCloseButton).style.display = 'none';
-  } else {
-    document.getElementById(idCloseButton).style.display = 'inline';
-  }
-}
-</script>
-
 
 <h3>表 「Bundle」</h3>
 <button id="mrc" type="button" onclick="details_open(true,'TableDetails','mrc')">表「Bundle」開く</button>

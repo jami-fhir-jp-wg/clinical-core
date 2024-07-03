@@ -44,18 +44,6 @@
 ## 詳細説明
 
 
-<script>
-function details_open(onoff, idname, idCloseButton){
-  var elem = document.getElementById(idname);
-  elem.open = onoff;
-  if (onoff == true){
-    document.getElementById(idCloseButton).style.display = 'none';
-  } else {
-    document.getElementById(idCloseButton).style.display = 'inline';
-  }
-}
-</script>
-
 
 <h3>表 「Encounter」</h3>
 <button id="mrc" type="button" onclick="details_open(true,'TableDetails','mrc')">表「Encounter」開く</button>
