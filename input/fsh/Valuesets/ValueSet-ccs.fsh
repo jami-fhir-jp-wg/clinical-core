@@ -83,3 +83,19 @@ Description: "退院時転帰コード情報　(出典：厚労省DPC導入影�
 * ^experimental = false
 * ^date = "2024-02-10"
 * include codes from system  $JP_dischargeDisposition_CS
+
+
+//
+// プランのタイプ
+// "hospital-plan"(入院中のプラン)、または"discharge-plan"(退院時のプラン)のいずれか固定値。
+//
+
+ValueSet:  JP_valueSet_carePlanCategory
+Id:   JP-valueSet-carePlanCategory
+Title: "CarePlan カテゴリー"
+Description: "CarePlan カテゴリー　hospital-plan または discharge-plan"
+* ^url = $JP_carePlanCategory_VS
+* ^status = #active
+* ^experimental = false
+* include codes from system $JP_carePlanCategory_CS
+
