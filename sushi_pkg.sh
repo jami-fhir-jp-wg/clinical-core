@@ -1,6 +1,6 @@
 #!/bin/bash
 \rm -rf ~/.fhir
-cp -r ~/.fhir_sushisVersion ~/.fhir
+cp -r ~/.fhir_sushiVersion ~/.fhir
 
 sushi -s .
 cd fsh-generated

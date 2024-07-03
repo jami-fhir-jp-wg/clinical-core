@@ -175,6 +175,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
+    - http://jpfhir.jp/fhir/CarePlan/ValueSet/category
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode
     - http://jpfhir.jp/fhir/Common/ValueSet/admit-Source
