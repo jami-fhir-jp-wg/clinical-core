@@ -33,27 +33,27 @@
 <div class="col-12">
   <!--ReleaseHeader-->
   <!-- <p id="publish-box">Publish Box goes here</p>--><!--EndReleaseHeader-->
-    <h2>{{site.data.pages[page.path].title | escape_once}}</h2>
-    {% assign path = page.path | split: '.html' %}
+  <h2>{{site.data.pages[page.path].title | escape_once}}</h2>
+  {% assign path = page.path | split: '.html' %}
 
-    {% capture toc-content %} <!-- white space is critical inside of capture -->
+  {% capture toc-content %} <!-- white space is critical inside of capture -->
 
-    {% include {{path}}.md %}
-    {% endcapture %}
+  {% include {{path}}.md %}
+  {% endcapture %}
 
-    {% if page.path == 'index.html' %}
-    {% include fragment-igTable.html %}
-    {% endif %}
-    {% include fragment-pageTable.html %}
+  {% if page.path == 'index.html' %}
+  {% include fragment-igTable.html %}
+  {% endif %}
+  {% include fragment-pageTable.html %}
 
-    {% capture no-toc-content %} <!-- white space is critical inside of capture -->
-    <div>
-      <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-    </div>
-    {% include {{path}}.md %}
-    {% endcapture %}
+  {% capture no-toc-content %} <!-- white space is critical inside of capture -->
+  <div>
+    <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+  </div>
+  {% include {{path}}.md %}
+  {% endcapture %}
 
-    {% assign teststring = no-toc-content | markdownify | remove: '###### ' | remove: '##### '| remove: '#### ' |
-    replace: "<h3", "### " | remove_first: '### ' %} {% assign h3headers="### " %} {% if teststring contains h3headers
-      %} {{ toc-content | markdownify }} {% else %} {{ no-toc-content | markdownify }} {% endif %} </div>
-      {% include fragment-pageend.html %}
+  {% assign teststring = no-toc-content | markdownify | remove: '###### ' | remove: '##### '| remove: '#### ' |
+  replace: "<h3", "### " | remove_first: '### ' %} {% assign h3headers="### " %} {% if teststring contains h3headers %}
+    {{ toc-content | markdownify }} {% else %} {{ no-toc-content | markdownify }} {% endif %} </div>
+    {% include fragment-pageend.html %}
