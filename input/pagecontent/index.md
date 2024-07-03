@@ -1,13 +1,16 @@
-<span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロードは上部メニューから可能です。</span><BR><BR>
-<span style="color: blue; font-size: 120%;">本実装ガイドに関する質問やコメント（要望等を含む）は、以下のGoogleフォームから投稿してください。投稿にあたっては、Googleフォーム冒頭の説明をお読みいただき、了解された場合のみ投稿くださるようお願いします。</span>
-<span style="color: blue; font-size: 150%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
-
-本実装ガイドでは、「電子カルテ情報共有サービス」を略してCLINSと記載する。CLINSへのデータ送信のこともCLINSと記載する。
-
-
-### CLINSのためのFHIR実装ガイド
+### 留意事項
  <span style="color: red; font-size: 120%;"><<注意：このバージョンは近日中にリリースするV1.0.0の事前公開版（リリース候補版）です。>></span> <br>
  <br>
+
+<span style="color: blue; font-size: 120%;">本実装ガイドに関する質問やコメント（要望等を含む）は、以下のGoogleフォームから投稿してください。投稿にあたっては、Googleフォーム冒頭の説明をお読みいただき、了解された場合のみ投稿くださるようお願いします。</span>
+
+<span style="color: blue; font-size: 150%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
+
+<span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロードは上部メニューから可能です。</span><BR><BR>
+
+<span style="color: black; font-size: 120%;">本実装ガイドでは、「電子カルテ情報共有サービス」を略してCLINSと記載する。CLINSへのデータ送信のこともCLINSと記載することがある。</span><BR><BR>
+
+### CLINSのためのFHIR実装ガイド
 
 
 #### 本実装ガイド(IG)の目的：
@@ -15,7 +18,7 @@
 厚生労働省が定めるいわゆる「３文書6情報」のうち健診結果報告書を除く、２文書6情報のFHIRデータ記述方法とそのプロファイル（計算機で処理するための定義ファイル）を記載した実装ガイドである。また、6情報をCLINSに送信する際のBundleリソースの仕様や、送信した情報を同定するための識別子に関する仕様もこのIGで定めている。
 また、以下の２文書（診療情報提供書、退院時サマリー）のFHIR実装ガイドも含まれる。
 
-  -  [FHIR厚生労働省標準規格の資料] (https://std.jpfhir.jp/)
+  - [FHIR厚生労働省標準規格の2文書](https://std.jpfhir.jp/)
      - HS038　診療情報提供書HL7FHIR記述仕様
      - HS039　退院時サマリーHL7FHIR記述仕様
 
@@ -54,6 +57,7 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
     - [パッケージDownload]
       - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1.tgz)
       - [snapshot版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1-snap.tgz)
+    - [JP-Core ターミノロジー(コード表)](https://jpfhir.jp/fhir/core/terminology/ig/)
 
 ### 謝辞
 
@@ -61,9 +65,9 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
 
   - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」<a href="https://mhlw-grants.niph.go.jp/project/145722">☞</a></span>
   - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」<a href="https://mhlw-grants.niph.go.jp/project/164909">☞</a></span>
-  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業「病院を家庭に、家庭で炎症コントロール」分担課題7<a href="https://biomse.t.u-tokyo.ac.jp/moonshot/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業　目標7「病院を家庭に、家庭で炎症コントロール」分担課題6<a href="https://biomse.t.u-tokyo.ac.jp/moonshot/">☞</a></span>
   - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1<a href="https://d1www.sip3.jp/">☞</a></span>
-  - <span style="color: black; font-size: 80%;">日本医療情報学会NeXERS課題研究会「FHIR日本実装検討WG」<a href="https://jpfhir.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会NeXEHRS研究会「FHIR日本実装検討WG」<a href="https://jpfhir.jp/">☞</a></span>
   - <span style="color: black; font-size: 80%;">日本医療情報学会標準策定・維持管理部会<a href="https://www.jami.jp/jamistd/standards-development/">☞</a></span>
   
  <br>

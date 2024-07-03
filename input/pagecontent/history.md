@@ -1,24 +1,24 @@
 
 
-## 変更履歴
+### 履歴の記載方針
     掲載にあたっては、内容の変更に関わらない修正（リンク切れの修正、表示体裁、表現修正、レイアウト変更、小さな説明追加、
     少数の事例追加など）の履歴は含まない。また、より正確なValidationを可能とするためのProfile記述方法の変更履歴も含まない。
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-## ２文書6情報（CLINS）  Ver1.2.0 rc1 (2024.7.1 　リリース候補v1)
-2文書のIGと6情報のIGを統合した。
+### ２文書6情報（CLINS）  Ver. 1.2.0 rc1 (2024.7.1 　リリース候補v1)
+2文書のIGと6情報のIGを統合し、Ver. 1.2.0 から開始する。
 
 
-## 診療情報提供書 IG
-### 2024.06.23	Ver. 1.2.0-rc1 (リリース候補v1)
+### 診療情報提供書 IG
+#### 2024.06.23	Ver. 1.2.0-rc1 (リリース候補v1)
   - 電子カルテ情報共有サービス用と汎用診療情報提供書を同一profileで記述するようにprofileを統一。
   - 添付情報セクション、PDFセクションでbinaryリソースへの参照を禁止し、参照はDocumentReferenceリソースへの参照だけできるように改訂。
 
-### 2024.02.29	Ver. 1.1.6
+#### 2024.02.29	Ver. 1.1.6
   - 電子カルテ情報共有サービスの6情報仕様と共通するリソースについて、プロファイル記述を共通化（仕様の変更はなし）。
 
-### 2024.02.07	Ver. 1.1.5
+#### 2024.02.07	Ver. 1.1.5
   - セクション210 添付情報セクションにBundleリソースも添付可能であることが漏れていたので追記。
   - 表３Bundleリソースに上記に関連してentry要素にBundleリソースが記述可能であることを追記。
   - Organizationの拡張要素による診療科記述を可能とした。
@@ -28,30 +28,30 @@
   - IGpackageのバージョンを仕様のバージョン1.1.5に合わせた。
   
 
-### 2023.05.17	IGpackage 0.9.7
+#### 2023.05.17	IGpackage 0.9.7
   - 添付情報セクションにBundleリソース添付が可能となった（2023.04.27	Ver.1.1.4）に対応してentryにBundleを追加格納できるように診療情報提供BundleのProfileを修正。
 
-### 2023.05.09	IGpackage 0.9.6 (version変更せず)
+#### 2023.05.09	IGpackage 0.9.6 (version変更せず)
   - Compositionリソース定義中のセクションのdisplay要素の値からexactlyを削除して、厳密一致でなくてもよいように変更した。
 
-### 2023.04.27	Ver.1.1.4
+#### 2023.04.27	Ver.1.1.4
   - セクション510 allergiesIIntoleranceSection　→ allergyIntoleranceSection　（スペルミス修正）
   - 表5-1、表5-2も同じ修正。
   - 添付情報セクションのentryにBundleリソースも格納できるように追加。
 
-### 2023.04.27	IGpackage 0.9.5 -> 0.9.6
+#### 2023.04.27	IGpackage 0.9.5 -> 0.9.6
   - 添付情報セクションのentryの多重度（max）を修正（1から*へ）
   - 臨床経過セクションのentryの多重度（mix）を修正（1から0へ）
   - サンプルインスタンスにlastUpdated要素がないものが多数あったので、lastUpdated要素を追加
   - 添付情報セクションにBundleを追加。
 
-### 2023.04.25	Ver.1.1.3	
+#### 2023.04.25	Ver.1.1.3	
   - 4.3　Compositionリソースを構成するセクションの表：　紹介目的セクション、傷病名・主訴セクション、現病歴セクションの必須記載に注意書きを追加。既往歴セクションの必須を任意に修正。
   - 表３ Bundleリソース：　Bundle.signature の説明を補足。
   - 表5.2　紹介目的セクション、傷病名・主訴セクション、現病歴セクション の多重度の最小値を1に修正（この欄は、親の構造情報セクションが存在する場合の記載であるため）。
   - 表18 Observationリソース： meta.profile の説明から固定値の記載を削除し、実際には格納する検査カテゴリに合わせた値を設定する記載を追加。
 
-### 2023.03.21	Ver.1.1.2	  
+#### 2023.03.21	Ver.1.1.2	  
 #### JP-Core V1.1/V1.1.1 対応漏れを修正
 　- Patientリソース、RelatedPersonリソース　のname.useは"official"だけではなく、"usual"も使用可能とした。
 　- Patientリソース、RelatedPersonリソースのname.text の姓と名は全角空白ではなく半角空白1文字で連結する。
@@ -59,7 +59,7 @@
 ##### 同じくmeta.profileを必須から任意に変更し説明を補足。
 　- Bundle.entry のEncounter の多重度を1..1から0..* に変更。
 
-### 2022.12.10	Ver.1.1	主な箇所に限り記載
+#### 2022.12.10	Ver.1.1	主な箇所に限り記載
 #### JP-Core V1.1対応
     1.4の各記載を参照
 #### 説明の改善、記載漏れ箇所の追記（主な箇所）
@@ -163,16 +163,16 @@
         - Procedure.bodySite STEM７のsystem値を変    （JP-Core v1.1に対応）
         - Procedure.outcome カテゴリーのsystem値　http://jpfhir.jp/fhir/core/CodeSystem/JP_ProcedureOutcome_CS　に変更し、説明を変更（JP-Core v1.1対応）
 
-### 2024.02.29	Ver. 1.1.6
+#### 2024.02.29	Ver. 1.1.6
   - BundleのプロファイルをValidation時のエラーに対応するよう記述修正（仕様の変更はなし）。
   - 電子カルテ情報共有サービスの6情報仕様と共通するリソースについて、プロファイル記述を共通化（仕様の変更はなし）。
 
-### 2024.02.12	Ver. 1.1.5
+#### 2024.02.12	Ver. 1.1.5
   - 仕様をPDF版（およびそれのHTML版）を参照する記載方式に変更。
   - 電子カルテ情報共有サービスの6情報仕様と共通するリソースについて仕様を6情報仕様を参照する方式に変更。
 
 ## 6情報CLINS IG
-### Ver1.0.0 rc1/rc2 (2024.6.24/2024.7.1 　リリース候補v1)
+#### Ver1.0.0 rc1/rc2 (2024.6.24/2024.7.1 　リリース候補v1)
   - 全般
     - これまでは、診療情報・サマリー汎用のプロファイル(..._eCS)と、それから派生した、電子カルテ情報共有サービスに送信するために特化したプロファイル(..._CLINS_eCS)とに使い分ける構成となっていた。本バージョンから、両者を区別せず、すべて診療情報・サマリー汎用のプロファイル(..._eCS) 
 
@@ -219,7 +219,7 @@
     - coding.code.version を推奨要素とする。
     - 病名コードに、前置修飾語、後置修飾語を記述する拡張を追加。
 
-### Ver0.9.14-draft  (2024-03-12) 
+#### Ver0.9.14-draft  (2024-03-12) 
 
 * 各リソースのidentifier要素の仕様を変更し、リソースの一意識別IDであることを明記し、その仕様の記載を各リソースの表ではなくIG本文に記載し、共通の参照仕様とした<br>
 
@@ -247,14 +247,14 @@
 
 
 
-### Ver0.9.13-draft  (2024-02-14) 
+#### Ver0.9.13-draft  (2024-02-14) 
 
 * 病名　Conditionリソースのmeta.tagに未提供フラグ UNDELIVEREDを追加<br>
 
 * 病名交換用コード、病名管理番号のsystem値のURLをOID系のURLに変更。<br>
 
 
-### Ver0.9.12-draft  (2024-01-28) 
+#### Ver0.9.12-draft  (2024-01-28) 
 
 JP_MedicationRequest_eCSの表で以下の２箇所のURLを修正（ePrescription→core）：<br>
 
@@ -269,14 +269,14 @@ JP_MedicationRequest_eCSの表で以下の２箇所のURLを修正（ePrescripti
 <br>
 
 
-### Ver0.9.11-draft  (2024-01-21) 
+#### Ver0.9.11-draft  (2024-01-21) 
 
 患者リソースに保険個人識別子を記述する際のidentifier.system値を次のように修正する。（eCS → clins、Idsysmem　→ Idsystem 誤記修正）
 http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Insurance_memberID <br>
 ↓ <br>
 http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID <br>
 
-### Ver0.9.10-draft  (2023-11-22) 
+#### Ver0.9.10-draft  (2023-11-22) 
 
 * 2.1.1.1 Bundleリソース（collectionタイプ）の使用
 
@@ -287,7 +287,7 @@ http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID <br>
 　　最終行の表現を修正()
 
 
-### Ver0.9.8-draft  (2023-11-18) / Ver0.9.9-draft  (2023-11-19)
+#### Ver0.9.8-draft  (2023-11-18) / Ver0.9.9-draft  (2023-11-19)
 
 * 2.1.1.2 ひとつのBundleリソースに格納できるデータ
 <span style="color: red;">【仕様変更】</span><br>
@@ -309,7 +309,7 @@ http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID <br>
 
 * 誤記修正：JP_AllergyIntolerance_eCSのcategoryの多重度max=1は、もともとFHIR基底仕様においてmax=\*のためmax=\*に修正。
 
-### Ver0.9.7-draft  (2023-11-12)
+#### Ver0.9.7-draft  (2023-11-12)
 
 * CodeSystem、 ValueSetの定義URL、および　解説文
 
@@ -329,7 +329,7 @@ http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID <br>
   処方依頼情報は、６情報として送信することはないことの説明を追加。
 
 
-### Ver0.9.6-draft  (2023-11-06)
+#### Ver0.9.6-draft  (2023-11-06)
 
 * プロファイル　JP_Observation_LabResult_eCS<br>
 
@@ -348,7 +348,7 @@ http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID <br>
     ”http://medis.or.jp/CodeSystem/master-JLAC10-17digits”　を削除し、”urn:oid:1.2.392.200119.4.504”　だけを
     認めることとした。
 
-### Ver0.9.4および5-draft  (2023-11-04)
+#### Ver0.9.4および5-draft  (2023-11-04)
 
 プロファイル　JP_Observation_LabResult_eCS<br>
 
@@ -367,7 +367,7 @@ ValueSet
   - 臨床検査項目基本コード、 感染症検査項目の表シートを差し替え。
 
 
-### Ver0.9.4-draft  (2023-11-03)
+#### Ver0.9.4-draft  (2023-11-03)
 
 ページ：「電子カルテ情報共有サービスに医療機関から送信するFHIR仕様について」<br>
 内容：「Bundleリソースの送信タイミング」の説明を追加。<br>
