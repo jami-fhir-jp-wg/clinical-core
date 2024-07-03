@@ -1,4 +1,4 @@
-<script>
+
 function details_open(onoff, idname, idCloseButton){
   var elem = document.getElementById(idname);
   elem.open = onoff;
@@ -8,4 +8,4 @@ function details_open(onoff, idname, idCloseButton){
     document.getElementById(idCloseButton).style.display = 'inline';
   }
 }
-</script>
+
