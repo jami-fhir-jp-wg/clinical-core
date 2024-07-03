@@ -13,8 +13,12 @@ Id: JP-Organization-eCS-department
 Description: "診療情報コアサマリー用　Organizationリソース（診療科情報）プロファイル　（JP_Organizationの派生プロファイル）"
 //* obeys checkPhoneNumberExists
 * ^url = $JP_Organization_eCS_department
+* ^version = "1"
 * ^status = #active
-* ^date = "2023-03-31"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 * . ^short = "診療情報コアサマリーにおける診療科情報の格納に使用する"
 * . ^definition = "診療情報コアサマリー・厚労省6情報などにおける診療科情報の格納に使用する"
 

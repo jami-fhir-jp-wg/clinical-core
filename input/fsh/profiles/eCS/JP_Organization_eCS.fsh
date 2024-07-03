@@ -6,8 +6,12 @@ Title: "JP_Organization_eCS"
 Description: "診療情報コアサマリー用　Organizationリソース（医療機関等の組織・機関情報）プロファイル　（JP_Organizationの派生プロファイル）"
 //* obeys checkPhoneNumberExists
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+* ^version = "1"
 * ^status = #active
-* ^date = "2023-03-31"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 * . ^short = "３文書６情報や診療サマリーなどで記録する医療機関(および診療科情報）の格納に使用する"
 * . ^definition = "３文書６情報や診療サマリーなどで記録する医療機関(および診療科情報）の格納に使用する"
 * . ^comment = "広義の医療機関すなわち健康医療介護等にかかわる組織（調剤薬局、健診機関などを含む）の格納に使用できる。機関の中の部署、診療科のような部分組織には、本プロファイルを使用しない。機関に所属する診療科や部署・チームの情報を含めて記述する場合には、本プロファイルではJP_eCS_Department拡張を使用して、必ず所属機関の情報の一部とすること。"

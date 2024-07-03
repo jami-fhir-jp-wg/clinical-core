@@ -50,7 +50,7 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
   - [２文書の実装ガイドと仕様](3docs-ps.html)
   - [その他のリリース等(拡張・コード表等)](artifacts.html)
   - [データの実例集](artifacts.html#example-example-instances)
-  - [用語説明集](glossary.html)
+  - [用語説明](glossary.html)
   - 補足情報
     - [改訂履歴](history.html)
     - [Validationガイド](validationGuide.html)

@@ -3,15 +3,24 @@ Parent:			CarePlan
 Id:             JP-CarePlan
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan"
-
+* ^version = "1"
+* ^status = #active
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 
 Profile:        JP_CarePlan_eCS
 Parent:			JP_CarePlan
 Id:             JP-CarePlan-eCS
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_eCS"
+* ^version = "1"
 * ^status = #active
-* ^date = "2023-03-31"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 
 * meta.lastUpdated 1.. MS
 

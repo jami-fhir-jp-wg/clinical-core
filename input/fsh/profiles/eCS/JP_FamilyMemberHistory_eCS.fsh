@@ -3,7 +3,12 @@ Parent:			JP_FamilyMemberHistory
 Id:             JP-FamilyMemberHistory-eCS
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS"
-* ^date = "2023-03-31"
+* ^version = "1"
+* ^status = #active
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 * meta.lastUpdated 1.. MS
 * status 1..1 MS
 * status = #partial

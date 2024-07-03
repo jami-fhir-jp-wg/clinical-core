@@ -6,8 +6,12 @@ Id: jp-ecs-diagnosisType
 Title: "JP eCS Disgnostic Type Extension"
 Description: "傷病名情報に主たる診療対象病名か、あるいはそれ以外の情報をタイプかを付与する拡張"
 * ^url = $JP_eCS_DiagnosisType
+* ^version = "1"
 * ^status = #active
-* ^date = "2024-06-17"
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 * ^purpose = "傷病名情報に主たる診療対象病名か、あるいはそれ以外の情報をタイプかを付与するため。主病名フラグとして傷病名一覧に表示するためにも使用される。"
 
 * ^context[+].type = #element

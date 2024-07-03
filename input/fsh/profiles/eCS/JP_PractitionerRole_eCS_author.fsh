@@ -3,7 +3,12 @@ Parent: JP_PractitionerRole
 Id: JP-PractitionerRole-eCS-author
 Description: "処方を発行した医療者の資格情報　JP_PractitionerRole の派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_PractitionerRole_eCS_author"
-* ^status = #draft
+* ^version = "1"
+* ^status = #active
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
 * meta.lastUpdated 1.. MS
 
 * text ^short = "本リソースをテキストで表現したものを入れてもよい。"

@@ -10,8 +10,11 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(ABO) JLAC10 V
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BLD-ABO
+
 
 /*
 * $JP_CLINS_CodeSystem_CoreLabo_CS#5H010000001910111  "ABO-BLD"  // 血液型(ABO)(カラム凝集法)  (空白)  全血
@@ -31,7 +34,8 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(Rh) JLAC10 Va
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BLD-Rh
 
 
@@ -48,7 +52,8 @@ Description: "CLINS 電子カルテ共有サービス用 アルブミン JLAC10 
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ALB
 
 // アルカリホスファターゼ(ALP)^^
@@ -63,7 +68,8 @@ Description: "CLINS 電子カルテ共有サービス用 アルカリホスフ�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ALP
 
 // ALT(GPT)^^
@@ -78,7 +84,8 @@ Description: "CLINS 電子カルテ共有サービス用 ALT(GPT) JLAC10 ValueSe
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ALT
 
 
@@ -95,7 +102,8 @@ Description: "CLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC10 
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #AMY
 
 
@@ -110,7 +118,8 @@ Description: "CLINS 電子カルテ共有サービス用 活性化部分トロ�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #APTT
 
 
@@ -125,7 +134,8 @@ Description: "CLINS 電子カルテ共有サービス用 AST(GOT) JLAC10 ValueSe
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #AST
 
 // ヒト脳性Na利尿ペプチド前駆体Ｎ端フラグメント(NT-proBNP)^^
@@ -140,7 +150,8 @@ Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペ
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #NT-proBNP
 
 // グルコース(血糖)^^
@@ -155,7 +166,8 @@ Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖)
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BS
 
 // 尿素窒素(BUN)^^
@@ -170,7 +182,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC1
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #BUN
 
 // カルシウム(Ca)^^
@@ -185,7 +198,8 @@ Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC10 
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Ca
 
 // カリウム(K)^^
@@ -200,7 +214,8 @@ Description: "CLINS 電子カルテ共有サービス用 カリウム JLAC10 Val
 * ^status = #active
 * ^experimental = false
 * ^date = "2022-09-26"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #K
 
 // コリンエステラーゼ(ChE)^^
@@ -215,7 +230,8 @@ Description: "CLINS 電子カルテ共有サービス用 コリンエステラ�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #ChE
 
 // クレアチンキナーゼ(CK)^^
@@ -230,7 +246,8 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチンキナ�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #CK
 
 // クロール(Cl)^^
@@ -245,7 +262,8 @@ Description: "CLINS 電子カルテ共有サービス用 クロール JLAC10 Val
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Cl
 
 // クレアチニン(Cre)^^
@@ -260,7 +278,8 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Cre
 
 // Ｃ反応性蛋白(CRP)^^
@@ -275,7 +294,8 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #CRP
 
 
@@ -290,7 +310,8 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #CRP-class
 
 // シスタチンC(Cys-C)^^
@@ -305,7 +326,8 @@ Description: "CLINS 電子カルテ共有サービス用 シスタチンC JLAC10
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Cys-C
 
 // 直接ビリルビン(D-Bil)^^
@@ -320,7 +342,8 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #D-Bil
 
 // Dダイマー
@@ -335,7 +358,8 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー JLAC10 Va
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #DD
 
 // FBS 空腹時血糖
@@ -350,7 +374,8 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #FBS
 
 // γ-GTP(GGT)^^
@@ -365,7 +390,8 @@ Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #GGT
 
 // HbA1c(NGSP)^^
@@ -380,7 +406,8 @@ Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #HbA1c-NGSP
 
 // HDL-コレステロール(HDL-C)^^
@@ -395,7 +422,8 @@ Description: "CLINS 電子カルテ共有サービス用 HDL-コレステロー�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #HDL-C
 
 // LD(LDH)^^
@@ -410,7 +438,8 @@ Description: "CLINS 電子カルテ共有サービス用 LD(LDH) ValueSet"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #LD
 
 // LDL-コレステロール(LDL-C)^^
@@ -425,7 +454,8 @@ Description: "CLINS 電子カルテ共有サービス用 LDL-コレステロー�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #LDL-C
 
 // ナトリウム(Na)^^
@@ -440,7 +470,8 @@ Description: "CLINS 電子カルテ共有サービス用 ナトリウム ValueSe
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Na
 
 // プロトロンビン時間^^
@@ -455,7 +486,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-Sec
 
 // プロトロンビンACT^^
@@ -470,7 +502,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンAC
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-Act
 
 // プロトロンビンINR^^
@@ -485,7 +518,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンIN
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-INR
 
 // プロトロンビンratio^^
@@ -500,7 +534,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PT-Ratio
 
 // 血算-ヘモグロビン^^
@@ -515,7 +550,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-ヘモグロビ�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #Hb
 
 // 血算-血小板数^^
@@ -530,7 +566,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-血小板数 Val
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #PLT
 
 // 血算-赤血球数^^
@@ -545,7 +582,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-赤血球数 Val
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #RBC
 
 // 血算-白血球数^^
@@ -560,7 +598,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-白血球数 Val
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^copyright = "JAMI"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_CoreLabo_CS where concept descendant-of #WBC
 
 // 総コレステロール(T-CHO)^^

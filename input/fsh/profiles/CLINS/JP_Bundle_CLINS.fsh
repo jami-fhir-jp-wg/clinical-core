@@ -5,6 +5,16 @@ Id: JP-Bundle-CLINS
 Title: "CLINS電子カルテ情報共有サービス用:JP_Bundle_CLINS"
 Description: "CLINS 電子カルテ情報共有サービスへの6情報送信用 Bundleリソース プロファイル"
 * ^url = $JP_Bundle_CLINS
+
+
+* ^version = "1"
+* ^status = #active
+* ^date = "2024-06-24"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+
+
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
