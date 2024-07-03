@@ -52,8 +52,8 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
     - [改訂履歴](history.html)
     - [Validationガイド](validationGuide.html)
     - [パッケージDownload]
-      - [標準(diff)版](jp-clins.r4-1.2.0-rc1.tgz)
-      - [snapshot版](jp-clins.r4-1.2.0-rc1-snap.tgz)
+      - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1.tgz)
+      - [snapshot版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1-snap.tgz)
 
 ### 謝辞
 
