@@ -133,11 +133,7 @@ jobs:
         cp resources/StructureDefinition-* package/
         cp resources/ValueSet-* package/
         cp resources/CodeSystem-* package/
-        cp resources/OperationDefinition-* package/
-        cp resources/ConceptMap-* package/
         cp resources/ImplementationGuide-* package/
-        cp resources/StructureMap-* package/
-        cp resources/Questionnaire-* package/
         cp resources/NamingSystem-* package/
         cp ../forPackageRelease/package-diff.json package/package.json
         tar czf jp-clins-package-diff.tgz package
@@ -149,15 +145,10 @@ jobs:
         sushi -s .
         mv fsh-generated fsh-generated-snap
         mkdir -p forPackageRelease/snapshot/package/
-        cp fsh-generated-snap/resources/*.json forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/StructureDefinition-* forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/ValueSet-* forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/CodeSystem-* forPackageRelease/snapshot/package/
-        cp fsh-generated-snap/resources/OperationDefinition-* forPackageRelease/snapshot/package/
-        cp fsh-generated-snap/resources/ConceptMap-* forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/ImplementationGuide-* forPackageRelease/snapshot/package/
-        cp fsh-generated-snap/resources/StructureMap-* forPackageRelease/snapshot/package/
-        cp fsh-generated-snap/resources/Questionnaire-* forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/NamingSystem-* forPackageRelease/snapshot/package/
         cp forPackageRelease/package-snap.json forPackageRelease/snapshot/package/package.json
         cd forPackageRelease/snapshot
