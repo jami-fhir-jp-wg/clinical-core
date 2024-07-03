@@ -9,7 +9,8 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
-* ^copyright = "Copyright JAMI. All Rights Reserved."
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^hierarchyMeaning = #is-a
 
 // descendent-of
