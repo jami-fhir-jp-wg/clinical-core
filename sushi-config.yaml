@@ -98,6 +98,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   excludejson: 'false'
   excludettl: 'true'
   excludemap: 'true'
+  noRootToc: 'true'
 #  excludeexample: 'false'
   generate: #what does this do - todo: remove and see
     - json
