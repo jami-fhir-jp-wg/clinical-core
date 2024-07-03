@@ -371,3 +371,6 @@ ValueSet
 
 ページ：「電子カルテ情報共有サービスに医療機関から送信するFHIR仕様について」<br>
 内容：「Bundleリソースの送信タイミング」の説明を追加。<br>
+
+
+{% include markdown-link-references.md %}

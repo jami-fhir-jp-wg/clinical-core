@@ -402,6 +402,6 @@ CLINSに医療機関からこの病名情報を送信する場合、送信する
   },
 ```
 
-ｚ
+
 {% include markdown-link-references.md %}
 

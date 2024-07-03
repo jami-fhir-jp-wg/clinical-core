@@ -17,3 +17,4 @@
 ## まとめ情報(参考)
   * 患者サマリー
   
+{% include markdown-link-references.md %}

@@ -1564,3 +1564,4 @@ Compositionリソースに出現するsection要素は以下のような構造�
 |consent | | | |0..1|Reference(Consent)||研究参加の同意情報。本文書での範囲では未使用。 |
 
 
+{% include markdown-link-references.md %}
