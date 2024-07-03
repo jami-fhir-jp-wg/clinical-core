@@ -75,7 +75,7 @@
 
 ## 詳細説明
 
-{% include details_open.js %}
+
 
 <h3>表「AllergyIntolerance」</h3>
 <button id="mrc" type="button" onclick="details_open(true,'TableDetails','mrc')">表「AllergyIntolerance」開く</button>
