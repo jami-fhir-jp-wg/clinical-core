@@ -10,7 +10,7 @@ Id: JP-Organization-eCS-department
 // * obeys checkOrganizationType1
  
 
-Description: "診療情報コアサマリー用　Organizationリソース（診療科情報）プロファイル　（JP_Organizationの派生プロファイル）"
+Description: "eCS 診療情報・サマリー汎用 　Organizationリソース（診療科情報）プロファイル　（JP_Organizationの派生プロファイル）"
 //* obeys checkPhoneNumberExists
 * ^url = $JP_Organization_eCS_department
 * ^version = "1"
@@ -19,8 +19,8 @@ Description: "診療情報コアサマリー用　Organizationリソース（診
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-* . ^short = "診療情報コアサマリーにおける診療科情報の格納に使用する"
-* . ^definition = "診療情報コアサマリー・厚労省6情報などにおける診療科情報の格納に使用する"
+* . ^short = "eCS 診療情報・サマリー汎用 診療科情報の格納に使用する"
+* . ^definition = "eCS 診療情報・サマリー汎用 診療科情報の格納に使用する"
 
 //* obeys designatedMetaProfile-eCS-department
 

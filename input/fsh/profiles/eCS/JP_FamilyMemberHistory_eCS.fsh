@@ -1,7 +1,7 @@
 Profile:        JP_FamilyMemberHistory_eCS
 Parent:			JP_FamilyMemberHistory
 Id:             JP-FamilyMemberHistory-eCS
-Description:    "Derived Profile from JP-Core"
+Description:    "eCS 診療情報・サマリー汎用 FamilyMemberHistory"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS"
 * ^version = "1"
 * ^status = #active

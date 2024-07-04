@@ -169,6 +169,7 @@ Description: "ケアプランのタイプコード"
 * ^date = "2024-01-31"
 * ^caseSensitive = true
 * ^content = #complete
-* #hospital-plan "入院中のプラン"
-* #discharge-plan "退院時のプラン"
-
+* #admission-plan "入院時プラン"
+* #hospital-plan "入院中プラン"
+* #discharge-plan "退院時プラン"
+* #followup-plan "外来診療経過中プラン"
