@@ -31,6 +31,7 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * #18842-5 "退院時サマリー"
 * #57133-1 "診療情報提供書"
 * #57833-6 "処方箋"
+* #56447-6 "計画書"
 
 // 処方箋区分コード
 CodeSystem:  JP_codeSystem_prescription_category
