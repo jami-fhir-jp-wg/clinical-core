@@ -12,20 +12,21 @@
 [JP_Observation_Common_Operation]: StructureDefinition-jp-observation-common.html#operation一覧
 [JP_DiagnosticReport_Common_interaction]: StructureDefinition-jp-diagnosticreport-common.html#interaction一覧
 
-
 <!-- ImplementationGuide -->
-[26FHIRv100rc2v2]: ImplementationGuide-clinical-information-sharing.html
+[26FHIRv130rc1v1]: ImplementationGuide-clinical-information-sharing.html
 
 <!-- StructureDefinition: Profile, DataType -->
 [JP_AllergyIntolerance_eCS]: StructureDefinition-JP-AllergyIntolerance-eCS.html
 [JP_Binary]: StructureDefinition-JP-Binary.html
 [JP_Bundle_CLINS]: StructureDefinition-JP-Bundle-CLINS.html
 [JP_Bundle_eDischargeSummary]: StructureDefinition-JP-Bundle-eDischargeSummary.html
+[JP_Bundle_ePCS]: StructureDefinition-JP-Bundle-ePCS.html
 [JP_Bundle_eReferral]: StructureDefinition-JP-Bundle-eReferral.html
 [JP_Bundle]: StructureDefinition-JP-Bundle.html
 [JP_CarePlan_eCS]: StructureDefinition-JP-CarePlan-eCS.html
-[JP_CarePlan]: StructureDefinition-JP-CarePlan.html
+[JP_CarePlan_ePCS]: StructureDefinition-JP-CarePlan-ePCS.html
 [JP_Composition_eDischargeSummary]: StructureDefinition-JP-Composition-eDischargeSummary.html
+[JP_Composition_ePCS]: StructureDefinition-JP-Composition-ePCS.html
 [JP_Composition_eReferral]: StructureDefinition-JP-Composition-eReferral.html
 [JP_Condition_eCS]: StructureDefinition-JP-Condition-eCS.html
 [JP_Consent_eCS]: StructureDefinition-JP-Consent-eCS.html
@@ -98,6 +99,7 @@
 [JP_SimpleObservationCategory_CS]: CodeSystem-jp-simpleobservationcategory-cs.html
 
 <!-- ValueSet -->
+[JP_valueSet_carePlanCategory]: ValueSet-JP-valueSet-carePlanCategory.html
 [JAMI_valueSet_ePreDispenseInstruction]: ValueSet-jami-valueSet-ePreDispenseInstruction.html
 [JAMI_valueSet_ePreOrderUsageCode_16digits]: ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html
 [JP_admit_Source_VS]: ValueSet-jp-admit-Source-Source-vs.html
