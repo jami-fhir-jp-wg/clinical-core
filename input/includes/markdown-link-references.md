@@ -66,7 +66,6 @@
 [JP_MedicationDosage_eCS]: StructureDefinition-jp-medicationdosage-eCS.html
 
 <!-- StructureDefinition: Extension -->
-[JP_Communication_CommunicationContent]: StructureDefinition-JP-Communication-CommunicationContent.html
 [JP_Condition_DiseasePostfixModifier_eCS]: StructureDefinition-jp-condition-disease-postfix-modifier.html
 [JP_Condition_DiseasePrefixModifier_eCS]: StructureDefinition-jp-condition-disease-prefix-modifier.html
 [JP_eCS_Department]: StructureDefinition-jp-ecs-department.html

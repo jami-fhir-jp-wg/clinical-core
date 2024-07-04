@@ -154,7 +154,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
-    - http://jpfhir.jp/fhir/eDischargeSummary/Extension/StructureDefinition/JP_Communication_CommunicationContent
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
