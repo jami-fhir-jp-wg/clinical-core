@@ -124,7 +124,7 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section.orderedBy ..0
 
 //
-* sectionc ^short = "計画サマリー"
+* section ^short = "計画サマリー"
 * section ^definition = "計画サマリーセクション"
 * section.title = "計画サマリー" (exactly)
 * section.code.coding.code = #10 (exactly)
@@ -133,16 +133,16 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section.entry  ^slicing.discriminator.path = "resolve()"
 * section.entry  ^slicing.rules = #closed
 * section.entry contains
-and patient 1..1 MS  //  患者情報
+patient 1..1 MS  //  患者情報
 and practitioners 1.. MS // 作成した医師情報
 and organization 2.. MS // 作成した医療機関と診療科情報
-and encounter 1..MS
+and encounter 1.. MS
 and carePlan 1..* MS // 療養上の計画／アドバイス
 and condition 1..* MS // 療養計画の対象となる傷病名（主病名とそれ以外）
 
 * section.entry[patient] only Reference(JP_Patient_eCS)
 * section.entry[patient] ^short = "対象患者"
-* section.entry[practpatientitioners] ^definition = "対象患者"
+* section.entry[patient] ^definition = "対象患者"
 * section.emptyReason ..1
 * section.section ..0
 

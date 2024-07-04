@@ -6,11 +6,11 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
-name: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド v1.2.0-rc1 (リリース候補v1)"
-title: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.2.0-rc1 (リリース候補v1)"
-description: "電子カルテ情報共有サービス2文書6情報　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.2.0-rc1 (リリース候補v1)"
+name: "電子カルテ情報共有サービス2文書6情報+　FHIR実装ガイド v1.3.0-rc1 (リリース候補v1)"
+title: "電子カルテ情報共有サービス2文書6情報+　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc1 (リリース候補v1)"
+description: "電子カルテ情報共有サービス2文書6情報+　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc1 (リリース候補v1)"
 status: active # draft | active | retired | unknown 
-version: 1.2.0-rc1
+version: 1.3.0-rc1
 date: 2024-07-01
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
@@ -37,7 +37,7 @@ dependencies:
 #----------------------------------------
 pages:
   index.md:
-    title: 電子カルテ情報共有サービス2文書6情報　FHIR仕様　JP-CLINS
+    title: 電子カルテ情報共有サービス2文書6情報+　FHIR仕様　JP-CLINS
   core6spec.md:
     title: ６情報送信仕様
   resourceProfiles.md:
@@ -68,8 +68,8 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.2.0-rc1-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc1.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc1-snap.tgz
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
@@ -110,11 +110,13 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
     - http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary
+    - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral
     - http://jpfhir.jp/fhir/StructureDefinition/JP_Bundle
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_eCS
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_ePCS
     - http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Composition_eDischargeSummary
+    - http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS
     - http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Consent_eCS

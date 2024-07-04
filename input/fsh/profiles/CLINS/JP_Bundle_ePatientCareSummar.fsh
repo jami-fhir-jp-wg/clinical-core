@@ -40,7 +40,7 @@ Description: "療養計画患者サマリー Bundle"
 and patient 1..1 MS  //  患者情報
 and practitioners 1.. MS // 作成した医師情報
 and organization 2.. MS // 作成した医療機関と診療科情報
-and encounter 1..MS
+and encounter 1.. MS
 and carePlan 1..* MS // 療養上の計画／アドバイス
 and condition 1..* MS // 療養計画の対象となる傷病名（主病名とそれ以外）
 
