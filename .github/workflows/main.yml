@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        ruby-version: ['3.3']
+        ruby-version: ['3.0']
     environment: SSH_PORT_JPFHIR  # JAMI WG アップロードサイトに関するアクセス情報の環境名
     steps:
     - uses: actions/checkout@v2
@@ -50,7 +50,7 @@ jobs:
       uses: Legion2/download-release-action@v2.1.0
       with:
         repository: HL7/fhir-ig-publisher
-        tag: 'latest'
+        tag: '1.6.11'
         path: .
         file: publisher.jar
   
