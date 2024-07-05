@@ -18,16 +18,16 @@ Description: "Bundleリソースサンプル（検体検査結果３件）６情
 
 * timestamp = "2023-11-12T10:00:00+09:00"
 
-* entry[+].fullUrl = "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
+* entry[+].fullUrl = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
 * entry[=].resource = InlineExample-Patient-standard
 
-* entry[+].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+* entry[+].fullUrl = "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91"
 * entry[=].resource = InlineExample-ObsLabo-Alb
 
-* entry[+].fullUrl = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
+* entry[+].fullUrl = "urn:uuid:fd601925-858c-2d96-f061-9de1076d419c"
 * entry[=].resource = InlineExample-ObsLabo-K
 
-* entry[+].fullUrl = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* entry[+].fullUrl = "urn:uuid:2ac56975-1610-5496-eb0e-c2a5f2f01a62"
 * entry[=].resource = InlineExample-ObsLabo-eGFR
 
 * entry[+].fullUrl = "urn:uuid:e3a7af80-ca1f-5638-dc97-00fa9458fe1c"

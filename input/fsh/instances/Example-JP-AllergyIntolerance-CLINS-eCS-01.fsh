@@ -46,7 +46,6 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 * patient.identifier.system = $JP_Insurance_memberID
 * patient.identifier.value = "00012345:あいう:１８７:05"
 
-
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
 //* onsetPeriod.start = "2020-04-10"

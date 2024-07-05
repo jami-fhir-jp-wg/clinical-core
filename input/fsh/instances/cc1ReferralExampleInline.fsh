@@ -49,7 +49,8 @@ Description: "conditionReferralExample01CC2 診療情報提供書　主訴例　
 * code[+].text = "腰痛"
 
 // * subject.reference = "jppatientExample01Inline"
-* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+* patient.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+
 
 // 2022-05 2020-08-21
 // ATGtime 12:12:20

@@ -31,8 +31,11 @@ Description: "検体検査結果　尿蛋⽩(定性)　± 　　ローカルコ�
 * code.coding[+] = $JP_CLINS_CodeSystem_CoreLabo_CS#1A990000000190153  "U-TP-定性半定量"
 
 * code.text = "尿蛋⽩(定性)"
+/*
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
+*/
+* subject.reference = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * encounter = Reference(Example-JP-Encounter-AMB)
