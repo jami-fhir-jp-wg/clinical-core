@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "psobsCommonExample01",
+  "id": "Example-JP-Obs-Common-eCS-textOnly01",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -29,7 +29,7 @@
     "text": "腹部所見"
   },
   "subject": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
   "valueString": "上腹部圧痛あり、その他特に所見なし。"
 }

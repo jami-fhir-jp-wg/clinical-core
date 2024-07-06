@@ -78,7 +78,7 @@
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-Practitioner-minimun-R001",
+      "id": "Example-JP-Practitioner-minimun-R001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -138,12 +138,12 @@
   },
   "authoredOn": "2021-07-05T17:31:48+09:00",
   "requester": {
-    "reference": "#Example-Practitioner-minimun-R001",
+    "reference": "#Example-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-Practitioner-minimun-R001",
+    "reference": "#Example-JP-Practitioner-minimun-R001",
     "type": "Practitioner"
   },
   "groupIdentifier": {

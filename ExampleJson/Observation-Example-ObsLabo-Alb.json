@@ -81,7 +81,7 @@
     },
     {
       "resourceType": "Specimen",
-      "id": "Example-LaboMaterial-Serum",
+      "id": "Example-JP-Specimen-Serum",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
@@ -136,7 +136,7 @@
     "unit": "mg/L"
   },
   "specimen": {
-    "reference": "#Example-LaboMaterial-Serum",
+    "reference": "#Example-JP-Specimen-Serum",
     "type": "Specimen"
   }
 }

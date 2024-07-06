@@ -110,7 +110,7 @@
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-Practitioner-minimun-D003",
+      "id": "Example-JP-Practitioner-minimun-D003",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -170,12 +170,12 @@
   },
   "authoredOn": "2021-07-13T15:01:29+09:00",
   "requester": {
-    "reference": "#Example-Practitioner-minimun-D003",
+    "reference": "#Example-JP-Practitioner-minimun-D003",
     "display": "診療 和子",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-Practitioner-minimun-D003",
+    "reference": "#Example-JP-Practitioner-minimun-D003",
     "type": "Practitioner"
   },
   "groupIdentifier": {

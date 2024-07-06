@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "ph2ReferralExample01",
+  "id": "Example-JP-Condition-eCS-ANGINA",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -10,7 +10,7 @@
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "192839-02"
+      "value": "192839-01"
     }
   ],
   "clinicalStatus": {
@@ -40,15 +40,15 @@
     }
   ],
   "code": {
-    "text": "左前腕骨折"
+    "text": "狭心症"
   },
   "subject": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
-  "onsetDateTime": "2019",
+  "onsetDateTime": "2018",
   "note": [
     {
-      "text": "交通事故で左前腕骨折　３ヶ月ギプス固定。"
+      "text": "2018年　狭心症　２ヶ月治療で軽快。"
     }
   ]
 }

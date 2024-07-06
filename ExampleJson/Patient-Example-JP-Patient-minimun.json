@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Example-Patient-minimun",
+  "id": "Example-JP-Patient-minimun",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"

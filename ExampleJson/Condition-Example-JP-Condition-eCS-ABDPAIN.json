@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "piReferralExample01",
+  "id": "Example-JP-Condition-eCS-ABDPAIN",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -43,7 +43,7 @@
     "text": "上腹部痛"
   },
   "subject": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
   "note": [
     {

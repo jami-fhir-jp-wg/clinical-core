@@ -136,7 +136,7 @@
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-Practitioner-minimun-D002",
+      "id": "Example-JP-Practitioner-minimun-D002",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -201,12 +201,12 @@
   },
   "authoredOn": "2023-09-14T12:50:36+09:00",
   "requester": {
-    "reference": "#Example-Practitioner-minimun-D002",
+    "reference": "#Example-JP-Practitioner-minimun-D002",
     "display": "田中　宏",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-Practitioner-minimun-D002",
+    "reference": "#Example-JP-Practitioner-minimun-D002",
     "type": "Practitioner"
   },
   "groupIdentifier": {

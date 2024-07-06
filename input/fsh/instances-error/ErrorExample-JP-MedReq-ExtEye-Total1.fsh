@@ -13,7 +13,7 @@ Description: "意図的エラー例：入院処方　外用（点眼）全量処
 * id = "ErrorExample-JP-MedReq-ExtEye-Total1"
 
 // * contained[+] = Example-Patient-minimun
-* contained[+] = Example-Practitioner-minimun-D001
+* contained[+] = Example-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-05T19:28:23.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS
@@ -33,6 +33,7 @@ Description: "意図的エラー例：入院処方　外用（点眼）全量処
 * medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#118185202 "トラバタンズ点眼液０．００４％　２"
 * medicationCodeableConcept.coding[+] = $Icode#I3198200 "トラバタンズ点眼液０．００４％　２"
 * medicationCodeableConcept.text = "トラバタンズ点眼液０．００４％　２"
+
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
@@ -40,9 +41,9 @@ Description: "意図的エラー例：入院処方　外用（点眼）全量処
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-05T13:08:22+09:00"
-* requester = Reference(Practitioner/Example-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Practitioner-minimun-D001)
+* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-AC12821012A0552021070513070302-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

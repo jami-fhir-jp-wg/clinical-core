@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "cc1ReferralExample01",
+  "id": "Example-JP-Condition-eCS-cc2-Referral01",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -10,7 +10,7 @@
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "192837-01"
+      "value": "192837-02"
     }
   ],
   "clinicalStatus": {
@@ -40,10 +40,10 @@
     }
   ],
   "code": {
-    "text": "上腹部痛"
+    "text": "腰痛"
   },
   "subject": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
-  "onsetDateTime": "2022-06-09"
+  "onsetDateTime": "2022-05"
 }

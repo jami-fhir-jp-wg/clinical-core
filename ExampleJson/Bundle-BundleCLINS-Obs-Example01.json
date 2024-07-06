@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "Example-Bundle-ObservationType-001",
+  "id": "BundleCLINS-Obs-Example01",
   "meta": {
     "lastUpdated": "2023-11-12T10:00:00+09:00",
     "profile": [
@@ -24,7 +24,7 @@
       "fullUrl": "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a",
       "resource": {
         "resourceType": "Patient",
-        "id": "InlineExample-Patient-standard",
+        "id": "InlineExample-JP-Patient-standard",
         "meta": {
           "profile": [
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
@@ -173,7 +173,7 @@
           },
           {
             "resourceType": "Specimen",
-            "id": "Example-LaboMaterial-Serum",
+            "id": "Example-JP-Specimen-Serum",
             "meta": {
               "profile": [
                 "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
@@ -225,7 +225,7 @@
           "unit": "mg/L"
         },
         "specimen": {
-          "reference": "#Example-LaboMaterial-Serum",
+          "reference": "#Example-JP-Specimen-Serum",
           "type": "Specimen"
         }
       }

@@ -32,10 +32,7 @@ Description: "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカル�
 
 * code.text = "eGFR"
 
-/*
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
-*/
+
 * subject.reference = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"

@@ -1,6 +1,6 @@
 {
   "resourceType": "AllergyIntolerance",
-  "id": "alg1ReferralExample02",
+  "id": "Example-JP-Allergy-eCS-02",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -30,10 +30,10 @@
     "text": "キーウイ"
   },
   "patient": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
   "encounter": {
-    "reference": "Encounter/encounterReferralExample01"
+    "reference": "Encounter/Example-JP-Encounter-eCS-AMB-01"
   },
   "onsetAge": {
     "system": "http://unitsofmeasure.org",

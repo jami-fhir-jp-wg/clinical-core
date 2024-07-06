@@ -1,6 +1,6 @@
 {
   "resourceType": "Organization",
-  "id": "referralFromOrganizationExample01",
+  "id": "Example-JP-Org-eCS-ReferralTo01",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -36,7 +36,7 @@
       "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
       "valueIdentifier": {
         "system": "urn:oid:1.2.392.100495.20.3.23",
-        "value": "9876543"
+        "value": "1234567"
       }
     },
     {
@@ -44,9 +44,9 @@
       "valueCodeableConcept": {
         "coding": [
           {
-            "code": "26",
+            "code": "081",
             "system": "urn:oid:1.2.392.200250.2.2.2",
-            "display": "眼科"
+            "display": "循環器内科"
           }
         ]
       }
@@ -55,20 +55,20 @@
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-      "value": "1319876543"
+      "value": "1311234567"
     }
   ],
-  "name": "港診療所",
+  "name": "東京第一テスト病院",
   "telecom": [
     {
       "system": "phone",
-      "value": "03-9876-5432"
+      "value": "03-1234-5678"
     }
   ],
   "address": [
     {
-      "text": "東京都港区新橋１−２−３",
-      "postalCode": "106-9900",
+      "text": "東京都文京区文京町１−２−３",
+      "postalCode": "113-0001",
       "country": "JP"
     }
   ]

@@ -1,6 +1,6 @@
 {
   "resourceType": "Encounter",
-  "id": "encounterReferralExample01",
+  "id": "Example-JP-Encounter-eCS-AMB-01",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [

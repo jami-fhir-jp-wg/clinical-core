@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "Example-Practitioner-minimun-R001",
+  "id": "Example-JP-Practitioner-minimun-D002",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -14,7 +14,7 @@
           "valueCode": "IDE"
         }
       ],
-      "text": "医学 一郎"
+      "text": "田中 宏"
     }
   ]
 }

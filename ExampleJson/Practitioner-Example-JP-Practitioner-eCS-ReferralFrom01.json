@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "referralToPractitionerExample01",
+  "id": "Example-JP-Practitioner-eCS-ReferralFrom01",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -16,10 +16,10 @@
         }
       ],
       "use": "official",
-      "text": "野口 英世丸",
-      "family": "野口",
+      "text": "大河内 勘三郎",
+      "family": "大河内",
       "given": [
-        "英世丸"
+        "勘三郎"
       ]
     },
     {
@@ -30,10 +30,10 @@
         }
       ],
       "use": "official",
-      "text": "ノグチ ヒデヨマル",
-      "family": "ノグチ",
+      "text": "オオコウチ カンザブロウ",
+      "family": "オオコウチ",
       "given": [
-        "ヒデヨマル"
+        "カンザブロウ"
       ]
     }
   ]

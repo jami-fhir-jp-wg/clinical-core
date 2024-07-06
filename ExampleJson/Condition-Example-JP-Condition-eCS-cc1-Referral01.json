@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "ph1ReferralExample01",
+  "id": "Example-JP-Condition-eCS-cc1-Referral01",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -10,7 +10,7 @@
   "identifier": [
     {
       "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-      "value": "192839-01"
+      "value": "192837-01"
     }
   ],
   "clinicalStatus": {
@@ -40,15 +40,10 @@
     }
   ],
   "code": {
-    "text": "狭心症"
+    "text": "上腹部痛"
   },
   "subject": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
-  "onsetDateTime": "2018",
-  "note": [
-    {
-      "text": "2018年　狭心症　２ヶ月治療で軽快。"
-    }
-  ]
+  "onsetDateTime": "2022-06-09"
 }

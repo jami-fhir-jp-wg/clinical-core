@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "JP-MedReq-ePreData-Example-fukintouByDay",
+  "id": "Example-JP-MedReq-eCS-fukintouByDay",
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
@@ -158,7 +158,7 @@
     "text": "プレドニン錠５ｍｇ・塩野義"
   },
   "subject": {
-    "reference": "Patient/jppatientExample01"
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
   "authoredOn": "2020-08-21T12:28:17+09:00",
   "dispenseRequest": {

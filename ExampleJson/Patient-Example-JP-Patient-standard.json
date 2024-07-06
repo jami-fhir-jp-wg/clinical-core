@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Example-Patient-standard",
+  "id": "Example-JP-Patient-standard",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"

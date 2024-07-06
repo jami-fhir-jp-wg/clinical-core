@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Example-LaboMaterial-Urine",
+  "id": "Example-JP-Specimen-Urine",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
