@@ -1,10 +1,10 @@
 Instance: InlineExample-JP-Patient-standard
 InstanceOf: JP_Patient_eCS
 Usage: #inline
-Description: "患者情報　標準 データ作成例"
+Description: "Patientリソース　標準的記述 データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報　標準 データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>Patientリソース　標準的記述 データ作成例</p> </div>"
 /*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

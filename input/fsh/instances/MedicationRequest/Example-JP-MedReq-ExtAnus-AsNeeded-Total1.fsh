@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-ExtAnus-AsNeeded-Total1
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: "入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
-* note.text = "入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+Description: MedicationRequestリソース　"入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+* note.text = MedicationRequestリソース　"入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
 
 //* text.status = #additional
 //* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p> </div>"

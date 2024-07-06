@@ -1,7 +1,7 @@
-Instance: InlineExample-ObsLabo-Alb
+Instance: InlineExample-JP-Obs-LabResult-eCS-Alb
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
-Description: "検体検査結果　アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
+Description: "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_Observation_LabResult_eCS

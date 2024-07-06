@@ -7,7 +7,7 @@
 Instance: Example-JP-AllergyIntolerance-eCS-01
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "allergyIntoleranceExample01 必須要素だけの データ作成例"
+Description: "AllergyIntoleranceリソース 必須要素だけの データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
@@ -50,7 +50,7 @@ Description: "allergyIntoleranceExample01 必須要素だけの データ作成�
 //100on_アレルギ時期日(ARGdate)
 //* onsetPeriod.start = "2020-04-10"
 * note[+].text = "さば食後３時間ほどで全身に発疹と腹痛あり"
-* note[+].text = "allergyIntoleranceExample01 必須要素だけの データ作成例"
+* note[+].text = "AllergyIntoleranceリソース 必須要素だけの データ作成例"
 
 
 
@@ -58,7 +58,7 @@ Description: "allergyIntoleranceExample01 必須要素だけの データ作成�
 Instance: Example-JP-AllergyIntolerance-eCS-02
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述した データ作成例"
+Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプラスアルファを記述した データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述した データ作成例</p> </div>"
@@ -112,7 +112,7 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 * asserter.display =  "本人"
 
 * note[+].text = "さば食後３時間ほどで全身に発疹と腹痛あり"
-* note[+].text = "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述した データ作成例"
+* note[+].text = "AllergyIntoleranceリソース 必須要素と推奨要素とプラスアルファを記述した データ作成例"
 
 
 //------ 医薬品禁忌-----------------

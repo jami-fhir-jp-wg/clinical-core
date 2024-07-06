@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-PO-BID-10days-AsNeeded
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: "入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
-* note.text = "入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
+Description: MedicationRequestリソース　"入院・内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
+* note.text = MedicationRequestリソース　"入院・内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例</p> </div>"

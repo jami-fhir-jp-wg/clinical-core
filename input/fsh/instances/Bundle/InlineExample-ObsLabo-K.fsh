@@ -1,7 +1,7 @@
-Instance: InlineExample-ObsLabo-K
+Instance: InlineExample-JP-Obs-LabResult-eCS-K
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
-Description: "検体検査結果　カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
+Description: "Observationリソース（検体検査結果）カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_Observation_LabResult_eCS
