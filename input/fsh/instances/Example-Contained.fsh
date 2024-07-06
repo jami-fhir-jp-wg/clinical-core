@@ -1,89 +1,12 @@
-//--------
-
-Instance: Example-Patient-minimun
-InstanceOf: JP_Patient
-Usage: #example
-Description: "埋め込み　患者情報最小限 サンプル"
-
-
-// * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報最小限 サンプル</p> </div>"
-
-//* meta.profile[+] = $JP_Patient_eCS
-* id = "Example-Patient-minimun"
-
-* identifier[+].system = $JP_Hospital_PatientID
-* identifier[=].value = "000999739"
-//---
-* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID"
-* identifier[=].value = "00012345:あいう:１８７:05"
-
-//-------- 埋め込み　患者情報01
-Instance: Example-JP-Patient-eCS-01-Contained
-InstanceOf: JP_Patient
-Usage: #example
-Description: "埋め込み　患者情報01 サンプル"
-
-
-// * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報01 サンプル</p> </div>"
-
-* meta.profile[+] = $JP_Patient
-
-* id = "Patient1"
-
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
-* identifier[=].value = "826739"
-* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID"
-* identifier[=].value = "00012345:あいう:３８７４７６:01"
-* name[+].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
-* name[=].extension[=].valueCode = #IDE
-* name[=].text = "田中 太郎"
-* name[=].family = "田中"
-* name[=].given = "太郎"
-
-* gender = #male
-* birthDate = "1955-05-04"
-
-//-------- 埋め込み　患者情報02
-Instance: Example-JP-Patient-eCS-02-Contained
-InstanceOf: JP_Patient
-Usage: #example
-Description: "埋め込み　患者情報02 サンプル"
-// * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　患者情報02 サンプル</p> </div>"
-
-
-* meta.profile[+] = $JP_Patient
-
-* id = "Patient2"
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
-* identifier[=].value = "989"
-* identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID"
-* identifier[=].value = "00012345:あいう:3294837:05"
-* name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
-* name[=].extension.valueCode = #IDE
-* name[=].text = "田中 太郎"
-* name[=].family = "田中"
-* name[=].given = "太郎"
-
-* name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
-* name[=].extension.valueCode = #SYL
-* name[=].text = "タナカ タロウ"
-* name[=].family = "タナカ"
-* name[=].given = "タロウ"
-
-* gender = #male
-* birthDate = "1955-05-04"
 
 //-------- 埋め込み　外来受診01
-Instance: Example_JP_Encounter_AMB
+Instance: Example-JP-Encounter-AMB
 InstanceOf: JP_Encounter
 Usage: #example
-Description: "埋め込み　外来受診01 サンプル"
+Description: "埋め込み　外来受診01  データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　外来受診01 サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　外来受診01  データ作成例</p> </div>"
 
 * id = "Example-JP-Encounter-AMB"
 * identifier.system = $JP_ResourceInstanceIdentifier
@@ -95,14 +18,14 @@ Description: "埋め込み　外来受診01 サンプル"
 * class.display = "外来"
 
 //-------- 埋め込み　入院01
-Instance: Example_JP_Encounter_IMP
+Instance: Example-JP-Encounter-IMP
 InstanceOf: JP_Encounter
 Usage: #example
-Description: "埋め込み　入院01 サンプル"
+Description: "埋め込み　入院01  データ作成例"
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　入院01 サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　入院01  データ作成例</p> </div>"
 
 
 * id = "Example-JP-Encounter-IMP"
@@ -111,59 +34,59 @@ Description: "埋め込み　入院01 サンプル"
 * period.start = "2021-07-05"
 
 //-------- 埋め込み　医療者R001
-Instance: Example_Practitioner_minimun_R001
+Instance: Example-JP-Practitioner-minimun-R001
 InstanceOf: JP_Practitioner
 Usage: #example
-Description: "埋め込み　医療者R001 サンプル"
+Description: "埋め込み　医療者R001  データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者R001 サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者R001  データ作成例</p> </div>"
 
 
-* id = "Example-Practitioner-minimun-R001"
+* id = "Example-JP-Practitioner-minimun-R001"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name.extension.valueCode = #IDE
 * name.text = "医学 一郎"
 
 //-------- 埋め込み　医療者D001
-Instance: Example_Practitioner_minimun_D001
+Instance: Example-JP-Practitioner-minimun-D001
 InstanceOf: JP_Practitioner
 Usage: #example
-Description: "埋め込み　医療者D001 サンプル"
+Description: "埋め込み　医療者D001  データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D001 サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D001  データ作成例</p> </div>"
 
 
-* id = "Example-Practitioner-minimun-D001"
+* id = "Example-JP-Practitioner-minimun-D001"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name.extension.valueCode = #IDE
 * name.text = "医療 太郎"
 
 //-------- 埋め込み　医療者D002
-Instance: Example_Practitioner_minimun_D002
+Instance: Example-JP-Practitioner-minimun-D002
 InstanceOf: JP_Practitioner
 Usage: #example
-Description: "埋め込み　医療者D002 サンプル"
+Description: "埋め込み　医療者D002  データ作成例"
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D002 サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D002  データ作成例</p> </div>"
 
 
-* id = "Example-Practitioner-minimun-D002"
+* id = "Example-JP-Practitioner-minimun-D002"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name.extension.valueCode = #IDE
 * name.text = "田中 宏"
 
 //-------- 埋め込み　医療者D003
-Instance: Example_Practitioner_minimun_D003
+Instance: Example-JP-Practitioner-minimun-D003
 InstanceOf: JP_Practitioner
 Usage: #example
-Description: "埋め込み　医療者D003 サンプル"
+Description: "埋め込み　医療者D003  データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D003 サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　医療者D003  データ作成例</p> </div>"
 
-* id = "Example-Practitioner-minimun-D003"
+* id = "Example-JP-Practitioner-minimun-D003"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name.extension.valueCode = #IDE
 * name.text = "診療 和子"
@@ -171,7 +94,7 @@ Description: "埋め込み　医療者D003 サンプル"
 
 
 //----  埋め込み　検体検査材料　血清
-Instance: Example_LaboMaterial_Serum
+Instance: Example-JP-Specimen-Serum
 InstanceOf: JP_Specimen
 Usage: #example
 Description: "埋め込み　検体検査材料　血清"
@@ -180,14 +103,14 @@ Description: "埋め込み　検体検査材料　血清"
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　検体検査材料　血清</p> </div>"
 
 //* meta.profile[+] = $JP_Patient_eCS
-* id = "Example-LaboMaterial-Serum"
+* id = "Example-JP-Specimen-Serum"
 
 * type.coding[+] = $JP_ObservationSampleMaterialCode_CS#023  "血清"
 * type.coding[+] = http://terminology.hl7.org/CodeSystem/v2-0487#SER "Serum"
 * type.text = "血清"
 
 //----  埋め込み　検体検査材料　尿（その他を含む）
-Instance: Example_LaboMaterial_Urine
+Instance: Example-JP-Specimen-Urine
 InstanceOf: JP_Specimen
 Usage: #example
 Description: "埋め込み　検体検査材料　尿(含むその他)"
@@ -196,7 +119,7 @@ Description: "埋め込み　検体検査材料　尿(含むその他)"
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　検体検査材料　尿(含むその他)</p> </div>"
 
 //* meta.profile[+] = $JP_Patient_eCS
-* id = "Example-LaboMaterial-Urine"
+* id = "Example-JP-Specimen-Urine"
 
 * type.coding[+] = $JP_ObservationSampleMaterialCode_CS#001  "尿(含むその他)"
 * type.coding[+] = http://terminology.hl7.org/CodeSystem/v2-0487#UR	"Urine"

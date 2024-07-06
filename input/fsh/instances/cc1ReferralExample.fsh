@@ -2,7 +2,7 @@
 // 030 verificationStatus
 //当面中略（診療情報提供書）
 
-Instance: cc1ReferralExample01
+Instance: Example-JP-Condition-eCS-cc1-Referral01
 InstanceOf: JP_Condition_eCS
 Usage: #example
   
@@ -21,14 +21,14 @@ Description: "Conditionリソース　（診療情報提供書　主訴テキス
 
 * code[+].text = "上腹部痛"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 // 2022-06-09 2020-08-21
 // ATGtime 12:12:20
 * onsetDateTime = "2022-06-09"
 
 
-Instance: cc2ReferralExample01
+Instance: Example-JP-Condition-eCS-cc2-Referral01
 InstanceOf: JP_Condition_eCS
 Usage: #example
   
@@ -46,7 +46,7 @@ Description: "Conditionリソース　（診療情報提供書　主訴テキス
 
 * code[+].text = "腰痛"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 // 2022-05 2020-08-21
 // ATGtime 12:12:20

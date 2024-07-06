@@ -2,7 +2,7 @@
 Instance: Example-JP-Encounter-eCS-01
 InstanceOf: JP_Encounter_eCS
 Usage: #example
-Description: "encounterExample01 必須要素だけの最低限の入院外来区分情報サンプル"
+Description: "encounterExample01 必須要素だけの最低限の入院外来区分情報 データ作成例"
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"

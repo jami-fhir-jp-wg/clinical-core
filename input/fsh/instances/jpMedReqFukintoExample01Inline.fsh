@@ -34,7 +34,7 @@
 //MedicationRequestリソースのインスタンス例
 //プレドニン錠５ｍｇ・塩野義１日３回　毎食後　７錠（４錠－２錠－１錠）
 
-Instance: JP-MedReq-ePreData-Example-fukintouByDayInline
+Instance: Example-JP-MedReq-eCS-fukintouByDayInline
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #inline
 
@@ -59,7 +59,7 @@ Description: "不均等投与1日用法の医薬品処方１件　MedicationRequ
 
 * medicationCodeableConcept.text = "プレドニン錠５ｍｇ・塩野義"
 
-// * subject.reference = "jppatientExample01Inline"
+// * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 

@@ -1,9 +1,9 @@
 
-Instance: Example-Bundle-ObservationType-001
+Instance: BundleCLINS-Obs-Example01
 InstanceOf: Bundle
 Usage: #example
 
-Description: "Bundleリソースサンプル（検体検査結果３件）６情報送信用"
+Description: "■ 電子カルテ情報共有サービス送信用（検体検査結果３件） Bundleリソース　データ作成例"
 
 * meta.lastUpdated = "2023-11-12T10:00:00+09:00"
 * meta.profile[+] = $JP_Bundle_CLINS
@@ -19,7 +19,7 @@ Description: "Bundleリソースサンプル（検体検査結果３件）６情
 * timestamp = "2023-11-12T10:00:00+09:00"
 
 * entry[+].fullUrl = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
-* entry[=].resource = InlineExample-Patient-standard
+* entry[=].resource = InlineExample-JP-Patient-standard
 
 * entry[+].fullUrl = "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91"
 * entry[=].resource = InlineExample-ObsLabo-Alb

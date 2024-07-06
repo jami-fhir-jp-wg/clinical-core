@@ -7,10 +7,10 @@
 Instance: Example-JP-AllergyIntolerance-eCS-01
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
+Description: "allergyIntoleranceExample01 必須要素だけの データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -50,7 +50,7 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 //100on_アレルギ時期日(ARGdate)
 //* onsetPeriod.start = "2020-04-10"
 * note[+].text = "さば食後３時間ほどで全身に発疹と腹痛あり"
-* note[+].text = "allergyIntoleranceExample01 必須要素だけのサンプル"
+* note[+].text = "allergyIntoleranceExample01 必須要素だけの データ作成例"
 
 
 
@@ -58,10 +58,10 @@ Description: "allergyIntoleranceExample01 必須要素だけのサンプル"
 Instance: Example-JP-AllergyIntolerance-eCS-02
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
+Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述した データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述したサンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述した データ作成例</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -112,17 +112,17 @@ Description: "allergyIntoleranceExample02 必須要素と推奨要素とプラ�
 * asserter.display =  "本人"
 
 * note[+].text = "さば食後３時間ほどで全身に発疹と腹痛あり"
-* note[+].text = "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述したサンプル"
+* note[+].text = "allergyIntoleranceExample02 必須要素と推奨要素とプラスアルファを記述した データ作成例"
 
 
 //------ 医薬品禁忌-----------------
 Instance: Example-JP-DrugContraindications-eCS-03
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報のサンプル"
+Description: "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報の データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤アレルギー等情報のサンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤アレルギー等情報の データ作成例</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -175,5 +175,5 @@ Description: "allergyIntoleranceExample03 必須要素で記述した薬剤ア�
 
 
 * note[+].text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
-* note[+].text = "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報のサンプル"
+* note[+].text = "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報の データ作成例"
 

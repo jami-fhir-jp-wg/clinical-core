@@ -12,8 +12,8 @@ Description: "入院処方　内服頓用　頓用と1回量をコードで記�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-Fumin-AsNeeded-4"
 
-// * contained[+] = Example-Patient-minimun
-* contained[+] = Example-Practitioner-minimun-D001
+// * contained[+] = Example-JP-Patient-minimun
+* contained[+] = Example-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-27T01:31:19.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
@@ -39,9 +39,9 @@ Description: "入院処方　内服頓用　頓用と1回量をコードで記�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-05T16:00:40+09:00"
-* requester = Reference(Practitioner/Example-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Practitioner-minimun-D001)
+* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A172AE334669A2021070515574101-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

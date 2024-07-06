@@ -17,8 +17,8 @@ Description: "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカル�
 //* contained[+] = Example-JP-Patient-eCS-01-Contained
 * contained[+] = Example-JP-Encounter-AMB
 
-// 検体材料　* contained[+] = Example_LaboMaterial_Serum
-//* contained[+] = Example_LaboMaterial_Serum
+// 検体材料　* contained[+] = Example-JP-Specimen-Serum
+//* contained[+] = Example-JP-Specimen-Serum
 
 * status = #final
 
@@ -39,6 +39,6 @@ Description: "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカル�
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
 //* interpretation.text = "範囲未定義、もしくは正常が適用されない"
-//* specimen = Reference(Specimen/Example-LaboMaterial-Serum)
+//* specimen = Reference(Specimen/Example-JP-Specimen-Serum)
 * specimen.display = "血清"
 * specimen.type = "Specimen"

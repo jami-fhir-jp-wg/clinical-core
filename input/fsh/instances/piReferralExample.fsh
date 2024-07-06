@@ -3,7 +3,7 @@
 //当面中略（診療情報提供書）
 
 
-Instance: piReferralExample01
+Instance: Example-JP-Condition-eCS-ABDPAIN
 InstanceOf: JP_Condition_eCS
 Usage: #example
   
@@ -22,7 +22,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 
 * code[+].text = "上腹部痛"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 * note.text = "２０２２年６月上旬から夜食後に時々上腹部痛があり、だんだんひどくなっている。他に目立った症状なし。"
 

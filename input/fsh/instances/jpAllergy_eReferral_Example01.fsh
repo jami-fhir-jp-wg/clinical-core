@@ -2,7 +2,7 @@
 // 030 verificationStatus
 //当面中略（診療情報提供書）
 
-Instance: alg1ReferralExample01
+Instance: Example-JP-Allergy-eCS-01
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
 
@@ -30,9 +30,9 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
 * code.text = "サバ"
 
-* patient.reference = "Patient/jppatientExample01"
+* patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
-* encounter.reference = "Encounter/encounterReferralExample01"
+* encounter.reference = "Encounter/Example-JP-Encounter-eCS-AMB-01"
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
@@ -43,7 +43,7 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 * note.text = "サバ食後３時間ほどで全身に発疹と腹痛あり"
 
 
-Instance: alg1ReferralExample02
+Instance: Example-JP-Allergy-eCS-02
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
 
@@ -71,9 +71,9 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
 * code.text = "キーウイ"
  
-* patient.reference = "Patient/jppatientExample01"
+* patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
-* encounter.reference = "Encounter/encounterReferralExample01"
+* encounter.reference = "Encounter/Example-JP-Encounter-eCS-AMB-01"
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)

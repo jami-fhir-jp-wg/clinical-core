@@ -2,7 +2,7 @@
 // JP_DocumentReference
 // JP_DocumentReference_eCS
 
-Instance: ccourseReferralExample01
+Instance: Example-JP-DocRef-eCS-clinical-ccourse-Referral01
 InstanceOf: JP_DocumentReference_eCS
 Usage: #example
   

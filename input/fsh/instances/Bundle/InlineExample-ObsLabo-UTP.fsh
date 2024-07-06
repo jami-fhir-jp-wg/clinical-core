@@ -21,8 +21,8 @@ Description: "検体検査結果　尿蛋⽩(定性)　± 　　ローカルコ�
 // 入院外来区分
 * contained[+] = Example-JP-Encounter-AMB
 
-// 検体材料　* contained[+] = Example_LaboMaterial_Serum
-//* contained[+] = Example_LaboMaterial_Serum
+// 検体材料　* contained[+] = Example-JP-Specimen-Serum
+//* contained[+] = Example-JP-Specimen-Serum
 
 * status = #final
 

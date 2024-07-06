@@ -35,7 +35,7 @@
 // 030on_医療者カナ氏名(ARGfirstnamekana,ARGgivennamekana)
 
 //--------------
-Instance: referralFromOrganizationExample01
+Instance: Example-JP-Org-eCS-Inst-Referral01
 InstanceOf: JP_Organization_eCS
 Usage: #example
 
@@ -103,11 +103,11 @@ Description: "Organizationリソース　（診療情報提供書　紹介元　
 
 * name = "眼科"
 
-* partOf.reference = "Organization/referralFromOrganizationExample01"
+* partOf.reference = "Organization/Example-JP-Org-eCS-Inst-Referral01"
 */
 
 //--------------
-Instance: referralFromPractitionerExample01
+Instance: Example-JP-Practitioner-eCS-ReferralFrom01
 InstanceOf: JP_Practitioner_eCS
 Usage: #example
 

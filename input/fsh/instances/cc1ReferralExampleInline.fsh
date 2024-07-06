@@ -2,7 +2,7 @@
 // 030 verificationStatus
 //当面中略（診療情報提供書）
 
-Instance: cc1ReferralExample01Inline
+Instance: Example-JP-Condition-eCS-cc1-Referral01Inline
 InstanceOf: JP_Condition_eCS
 Usage: #inline
 
@@ -21,7 +21,7 @@ Description: "conditionReferralExample01CC1 診療情報提供書　主訴例　
 
 * code[+].text = "上腹部痛"
 
-// * subject.reference = "jppatientExample01Inline"
+// * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 // 2022-06-09 2020-08-21
@@ -29,7 +29,7 @@ Description: "conditionReferralExample01CC1 診療情報提供書　主訴例　
 * onsetDateTime = "2022-06-09"
 
 
-Instance: cc2ReferralExample01Inline
+Instance: Example-JP-Condition-eCS-cc2-Referral01Inline
 InstanceOf: JP_Condition_eCS
 Usage: #inline
 
@@ -48,7 +48,7 @@ Description: "conditionReferralExample01CC2 診療情報提供書　主訴例　
 
 * code[+].text = "腰痛"
 
-// * subject.reference = "jppatientExample01Inline"
+// * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 

@@ -2,7 +2,7 @@
 // 030 verificationStatus
 //当面中略（診療情報提供書）
 
-Instance: ph1ReferralExample01
+Instance: Example-JP-Condition-eCS-ANGINA
 InstanceOf: JP_Condition_eCS
 Usage: #example
   
@@ -21,7 +21,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 
 * code[+].text = "狭心症"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 // 2018 2020-08-21
 // ATGtime 12:12:20
@@ -30,7 +30,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * note.text = "2018年　狭心症　２ヶ月治療で軽快。"
 
 
-Instance: ph2ReferralExample01
+Instance: Example-JP-Condition-eCS-Fx
 InstanceOf: JP_Condition_eCS
 Usage: #example
   
@@ -49,7 +49,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 
 * code[+].text = "左前腕骨折"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 // 2019 2020-08-21
 // ATGtime 12:12:20

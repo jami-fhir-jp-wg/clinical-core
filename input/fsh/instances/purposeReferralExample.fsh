@@ -1,6 +1,6 @@
 // Encounter_eCS
 //以下省略（診療情報提供書）
-Instance: purposeReferralExample01
+Instance: Example-JP-Encounter-eCS-purpose-Referral01
 InstanceOf: JP_Encounter_eCS
 Usage: #example
   
@@ -20,7 +20,7 @@ Description: "Encounterリソース　（診療情報提供書　紹介目的テ
 * reasonCode[+].text = "腹痛精査お願いします。"
 
 
-Instance: encounterReferralExample01
+Instance: Example-JP-Encounter-eCS-AMB-01
 InstanceOf: JP_Encounter_eCS
 Usage: #example
   

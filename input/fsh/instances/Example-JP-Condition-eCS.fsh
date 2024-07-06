@@ -2,12 +2,12 @@
 Instance: Example-JP-Condition-eCS-01
 InstanceOf: JP_Condition_eCS
 Usage: #example
-Description: "conditionExample01 必須要素だけのサンプル"
-* note.text = "conditionExample01 必須要素だけのサンプル"
+Description: "conditionExample01 必須要素だけの データ作成例"
+* note.text = "conditionExample01 必須要素だけの データ作成例"
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけのサンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -48,11 +48,11 @@ Description: "conditionExample01 必須要素だけのサンプル"
 Instance: Example-JP-Condition-eCS-02
 InstanceOf: JP_Condition_eCS
 Usage: #example
-Description: "conditionExample02 必須要素と推奨要素を記述したサンプル、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
-* note.text =  "conditionExample02 必須要素と推奨要素を記述したサンプル、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+Description: "conditionExample02 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+* note.text =  "conditionExample02 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述した データ作成例、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -102,10 +102,10 @@ Description: "conditionExample02 必須要素と推奨要素を記述したサ�
 Instance: Example-JP-Condition-eCS-03
 InstanceOf: JP_Condition_eCS
 Usage: #example
-Description: "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
-* note.text = "conditionExample03 必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了"
+Description: "conditionExample03 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
+* note.text = "conditionExample03 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述したサンプル、病名交換コードでコーディング、疑い病名で終了</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了</p> </div>"
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

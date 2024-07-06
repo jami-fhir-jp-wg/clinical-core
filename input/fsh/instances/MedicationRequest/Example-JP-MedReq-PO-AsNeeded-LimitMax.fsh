@@ -11,8 +11,8 @@ Description: "入院処方　内服処方頓用発熱時　1回量記述なし�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-AsNeeded-LimitMax"
 
-// * contained[+] = Example-Patient-minimun
-* contained[+] = Example-Practitioner-minimun-D001
+// * contained[+] = Example-JP-Patient-minimun
+* contained[+] = Example-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-07T21:34:05.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
@@ -39,9 +39,9 @@ Description: "入院処方　内服処方頓用発熱時　1回量記述なし�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-07T18:31:43+09:00"
-* requester = Reference(Practitioner/Example-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Practitioner-minimun-D001)
+* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A1721342FB30D2021070718303401-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

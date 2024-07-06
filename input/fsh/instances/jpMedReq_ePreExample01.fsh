@@ -1,4 +1,4 @@
-//MedicationRequestExample01
+//Example-JP-MedReq-TID-01
 
 // MedicationResourceリース
 // JP_JPMedicationRequest
@@ -32,7 +32,7 @@
 //300on_処方後発変更可()
 //300on_処方後発変更不可(ARGnote)
 
-Instance: MedicationRequestExample01
+Instance: Example-JP-MedReq-TID-01
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
   
@@ -60,7 +60,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 
 * medicationCodeableConcept.text = "カルボシステイン２５０ｍｇ錠"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 * authoredOn = "2020-08-21T12:28:17+09:00"
 

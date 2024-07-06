@@ -1,6 +1,6 @@
 // ObservationCommonリソース
 
-Instance: psobsCommonExample01
+Instance: psExample-JP-Obs-Common-eCS-textOnly01
 InstanceOf: JP_Observation_Common_eCS
 Usage: #example
   
@@ -17,12 +17,12 @@ Description: "Observationリソース　（診療情報提供書　腹部所見�
 
 * code.text = "腹部所見"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 * valueString = "上腹部圧痛あり、その他特に所見なし。"
 
 
-Instance: obsCommonExample01
+Instance: Example-JP-Obs-Common-eCS-textOnly01
 InstanceOf: JP_Observation_Common_eCS
 Usage: #example
   
@@ -40,7 +40,7 @@ Description: "Observationリソース　（診療情報提供書　現症　腹�
 
 * code.text = "腹部所見"
 
-* subject.reference = "Patient/jppatientExample01"
+* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
 * valueString = "上腹部圧痛あり、その他特に所見なし。"
 

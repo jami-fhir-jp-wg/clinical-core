@@ -1,10 +1,10 @@
-Instance: Example-Patient-standard
+Instance: Example-JP-Patient-standard
 InstanceOf: JP_Patient_eCS
 Usage: #example
-Description: "患者情報　標準サンプル"
+Description: "患者情報　標準 データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報　標準サンプル</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報　標準 データ作成例</p> </div>"
 /*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

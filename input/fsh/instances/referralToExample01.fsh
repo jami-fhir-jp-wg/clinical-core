@@ -34,7 +34,7 @@
 // 030mn_医療者漢字氏名(ARGfirstname,ARGgivenname)
 // 030on_医療者カナ氏名(ARGfirstnamekana,ARGgivennamekana)
 
-Instance: referralToOrganizationExample01
+Instance: Example-JP-Org-eCS-ReferralTo01
 InstanceOf: JP_Organization_eCS
 Usage: #example
 
@@ -102,10 +102,10 @@ Description: "Organizationリソース　（診療情報提供書　紹介先　
 
 * name = "循環器内科"
 
-* partOf.reference = "Organization/referralToOrganizationExample01"
+* partOf.reference = "Organization/Example-JP-Org-eCS-ReferralTo01"
 */
 //--------------
-Instance: referralToPractitionerExample01
+Instance: Example-JP-Practitioner-eCS-ReferralTo01
 InstanceOf: JP_Practitioner_eCS
 Usage: #example
 

@@ -12,8 +12,8 @@ Description: "入院処方　内服処方1日1回１回2錠（投与指示あり
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-BID-10days-AsNeeded"
 
-// * contained[+] = Example-Patient-minimun
-* contained[+] = Example-Practitioner-minimun-D001
+// * contained[+] = Example-JP-Patient-minimun
+* contained[+] = Example-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-13T14:24:21.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
@@ -40,9 +40,9 @@ Description: "入院処方　内服処方1日1回１回2錠（投与指示あり
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-13T14:22:09+09:00"
-* requester = Reference(Practitioner/Example-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Practitioner-minimun-D001)
+* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
