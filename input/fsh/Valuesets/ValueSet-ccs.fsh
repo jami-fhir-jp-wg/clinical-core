@@ -36,7 +36,7 @@ Id: jp-valueSet-ePCS-document-section
 Description: "患者療養計画サマリー　セクション区分　ValueSet"
 * ^url = "http://jpfhir.jp/fhir/ePCS/ValueSet/document-section"
 * ^title = "患者療養計画サマリー　セクション区分コード　ValueSet"
-* ^status = #actives
+* ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
