@@ -99,8 +99,9 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section.code ^short = "セクション区分コード"
 * section.code ^definition = "セクション区分コード"
 * section.code.coding 1..1 MS
+* section.code.coding from http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
 * section.code.coding.system 1.. MS
-* section.code.coding.system = "http://jpfhir.jp/fhir/ePCS/CodeSystem/document-section" (exactly)
+* section.code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section.code.coding.system ^short = "セクション区分コードのコード体系"
 * section.code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section.code.coding.code 1.. MS
@@ -127,7 +128,8 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section ^short = "計画サマリー"
 * section ^definition = "計画サマリーセクション"
 * section.title = "計画サマリー" (exactly)
-* section.code.coding.code = #10 (exactly)
+
+* section.code.coding.code = #422 (exactly)
 * section.entry 
 * section.entry  ^slicing.discriminator.type = #profile
 * section.entry  ^slicing.discriminator.path = "resolve()"

@@ -26,6 +26,9 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
+* ^date = "2023-04-01T00:00:00+09:00"
+* ^version = "5.11"
+
 * #JPGCHKUP01 "健診結果報告書"
 //* #JPMCHKUP01 "自治体検診結果報告書"
 * #18842-5 "退院時サマリー"
@@ -40,10 +43,15 @@ Title: "JP codeSystem prescription category"
 Description: "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"
+* ^version = "1"
 * ^status = #active
-* ^experimental = false
 * ^content = #complete
-* ^caseSensitive = false
+* ^caseSensitive = true
+* ^experimental = false
+* ^date = "2023-04-01T00:00:00+09:00"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+
 * #01 "一般処方箋"
 * #02 "麻薬処方箋"
 * #03 "分割一般処方"
@@ -55,10 +63,15 @@ Title: "JP codeSystem ePrescription section"
 Description: "処方セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"
+* ^version = "1"
 * ^status = #active
-* ^experimental = false
 * ^content = #complete
-* ^caseSensitive = false
+* ^caseSensitive = true
+* ^experimental = false
+* ^date = "2023-04-01T00:00:00+09:00"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+
 * #01 "処方情報セクション"
 * #11 "分割処方箋セクション"
 * #12 "別紙セクション"
@@ -71,10 +84,15 @@ Title: "JP codeSystem practitioner certificate category"
 Description: "医療従事者資格種別"
 * ^url = "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/practitioner-certificate-category"
+* ^version = "1"
 * ^status = #active
-* ^experimental = false
 * ^content = #complete
-* ^caseSensitive = false
+* ^caseSensitive = true
+* ^experimental = false
+* ^date = "2023-04-01T00:00:00+09:00"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+
 * #MedicalDoctorLicense "医師"
 * #NarcoticsPractitioner "麻薬施用者"
 

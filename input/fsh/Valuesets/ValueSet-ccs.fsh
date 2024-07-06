@@ -1,8 +1,8 @@
 
 
 // 診療情報提供書セクション区分コード
-ValueSet: JP_codeSystem_eReferral_document_section
-Id: jp-codeSystem-eReferral-document-section
+ValueSet: JP_valueSet_eReferral_document_section
+Id: jp-valueSet-eReferral-document-section
 Description: "診療情報提供書セクション区分　ValueSet"
 * ^url = "http://jpfhir.jp/fhir/eReferral/ValueSet/document-section"
 * ^title = "診療情報提供書セクション区分コード　ValueSet"
@@ -11,11 +11,13 @@ Description: "診療情報提供書セクション区分　ValueSet"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section
+//* include codes from system http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section
+* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #REF
+* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #COMMON
 
 // 退院時サマリーセクション区分コード
-ValueSet: JP_codeSystem_eDischargeSummary_document_section
-Id: jp-codeSystem-eDischargeSummary-document-section
+ValueSet: JP_valueSet_eDischargeSummary_document_section
+Id: jp-valueSet-eDischargeSummary-document-section
 Description: "退院時サマリーセクション区分　ValueSet"
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section"
 * ^title = "退院時サマリーセクション区分コード　ValueSet"
@@ -24,8 +26,23 @@ Description: "退院時サマリーセクション区分　ValueSet"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
+//* include codes from system http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
+* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #REF
+* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #COMMON
 
+// 患者療養計画サマリー　セクション区分コード
+ValueSet: JP_valueSet_eDischargeSummary_document_section
+Id: jp-valueSet-eDischargeSummary-document-section
+Description: "患者療養計画サマリー　セクション区分　ValueSet"
+* ^url = "http://jpfhir.jp/fhir/ePCS/ValueSet/document-section"
+* ^title = "患者療養計画サマリー　セクション区分コード　ValueSet"
+* ^status = #actives
+* ^experimental = false
+* ^date = "2024-02-25"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+//* include codes from system http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
+* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #PCS
 
 // FHIR文書の文書区分（医療文書全般）
 ValueSet: JP_valueSet_documentTypeCode

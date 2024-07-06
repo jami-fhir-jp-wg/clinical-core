@@ -1,15 +1,19 @@
 
-
+/*
 // 診療情報提供書セクション区分コード
 CodeSystem: JP_codeSystem_eReferral_document_section
 Id: jp-codeSystem-eReferral-document-section
 Description: "診療情報提供書セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section"
 * ^title = "診療情報提供書セクション区分コード"
+* ^version = "1"
 * ^status = #active
-* ^experimental = false
 * ^content = #complete
-* ^caseSensitive = false
+* ^caseSensitive = true
+* ^experimental = false
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+
 * #200	"CDA参照セクション" //  cdaSection
 * #210	"添付情報セクション"    //  attachmentSection
 * #220	"備考・連絡情報セクション"  //  remarksCommunicatonSection
@@ -37,3 +41,4 @@ Description: "診療情報提供書セクション区分コード"
 * #910	"紹介先情報セクション"  //  referralToSection
 * #920	"紹介元情報セクション"  //  referralFromSection
 * #950	"紹介目的セクション"    //  referralPurposeSection
+*/

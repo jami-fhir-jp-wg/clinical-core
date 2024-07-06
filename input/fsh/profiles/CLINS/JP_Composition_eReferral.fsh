@@ -183,8 +183,9 @@ and authorDepartment 0..1 MS
 * section.code ^short = "セクション区分コード"
 * section.code ^definition = "セクション区分コード"
 * section.code.coding 1..1 MS
+* section.code.coding from http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
 * section.code.coding.system 1.. MS
-* section.code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section.code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section.code.coding.system ^short = "セクション区分コードのコード体系"
 * section.code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section.code.coding.code 1.. MS
@@ -254,7 +255,7 @@ and authorDepartment 0..1 MS
 * section[referralFromSection].code ^definition = "セクション区分コード"
 * section[referralFromSection].code.coding 1..1 MS
 * section[referralFromSection].code.coding.system 1.. MS
-* section[referralFromSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[referralFromSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[referralFromSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[referralFromSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[referralFromSection].code.coding.code 1.. MS
@@ -311,7 +312,7 @@ and authorDepartment 0..1 MS
 * section[cdaSection].code ^definition = "セクション区分コード"
 * section[cdaSection].code.coding 1..1 MS
 * section[cdaSection].code.coding.system 1.. MS
-* section[cdaSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[cdaSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[cdaSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[cdaSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[cdaSection].code.coding.code 1.. MS
@@ -356,7 +357,7 @@ and authorDepartment 0..1 MS
 * section[attachmentSection].code ^definition = "セクション区分コード"
 * section[attachmentSection].code.coding 1..1 MS
 * section[attachmentSection].code.coding.system 1.. MS
-* section[attachmentSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[attachmentSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[attachmentSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[attachmentSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[attachmentSection].code.coding.code 1.. MS
@@ -399,7 +400,7 @@ and authorDepartment 0..1 MS
 * section[remarksCommunicationSection].code ^definition = "セクション区分コード"
 * section[remarksCommunicationSection].code.coding 1..1 MS
 * section[remarksCommunicationSection].code.coding.system 1.. MS
-* section[remarksCommunicationSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[remarksCommunicationSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[remarksCommunicationSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[remarksCommunicationSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[remarksCommunicationSection].code.coding.code 1.. MS
@@ -442,7 +443,7 @@ and authorDepartment 0..1 MS
 * section[pdfSection].code ^definition = "セクション区分コード"
 * section[pdfSection].code.coding 1..1 MS
 * section[pdfSection].code.coding.system 1.. MS
-* section[pdfSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[pdfSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[pdfSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[pdfSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[pdfSection].code.coding.code 1.. MS
@@ -476,7 +477,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].code ^definition = "セクション区分コード"
 * section[compositionSection].code.coding 1..1 MS
 * section[compositionSection].code.coding.system 1.. MS
-* section[compositionSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].code.coding.code 1.. MS
@@ -535,7 +536,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[referralPurposeSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[referralPurposeSection].code.coding 1..1 MS
 * section[compositionSection].section[referralPurposeSection].code.coding.system 1.. MS
-* section[compositionSection].section[referralPurposeSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[referralPurposeSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[referralPurposeSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[referralPurposeSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[referralPurposeSection].code.coding.code 1.. MS
@@ -579,7 +580,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[problemSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[problemSection].code.coding 1..1 MS
 * section[compositionSection].section[problemSection].code.coding.system 1.. MS
-* section[compositionSection].section[problemSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[problemSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[problemSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[problemSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[problemSection].code.coding.code 1.. MS
@@ -623,7 +624,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[presentIllnessSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[presentIllnessSection].code.coding 1..1 MS
 * section[compositionSection].section[presentIllnessSection].code.coding.system 1.. MS
-* section[compositionSection].section[presentIllnessSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[presentIllnessSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[presentIllnessSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[presentIllnessSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[presentIllnessSection].code.coding.code 1.. MS
@@ -669,7 +670,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[pastIllnessSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[pastIllnessSection].code.coding 1..1 MS
 * section[compositionSection].section[pastIllnessSection].code.coding.system 1.. MS
-* section[compositionSection].section[pastIllnessSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[pastIllnessSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[pastIllnessSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[pastIllnessSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[pastIllnessSection].code.coding.code 1.. MS
@@ -717,7 +718,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[allergiesIIntoleranceSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding 1..1 MS
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding.system 1.. MS
-* section[compositionSection].section[allergiesIIntoleranceSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[allergiesIIntoleranceSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding.code 1.. MS
@@ -765,7 +766,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[familiyHistorySection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[familiyHistorySection].code.coding 1..1 MS
 * section[compositionSection].section[familiyHistorySection].code.coding.system 1.. MS
-* section[compositionSection].section[familiyHistorySection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[familiyHistorySection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[familiyHistorySection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[familiyHistorySection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[familiyHistorySection].code.coding.code 1.. MS
@@ -813,7 +814,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[admissionPhysicalStatusSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[admissionPhysicalStatusSection].code.coding 1..1 MS
 * section[compositionSection].section[admissionPhysicalStatusSection].code.coding.system 1.. MS
-* section[compositionSection].section[admissionPhysicalStatusSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[admissionPhysicalStatusSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[admissionPhysicalStatusSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[admissionPhysicalStatusSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[admissionPhysicalStatusSection].code.coding.code 1.. MS
@@ -861,7 +862,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[infectiousDiseaseInformationSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[infectiousDiseaseInformationSection].code.coding 1..1 MS
 * section[compositionSection].section[infectiousDiseaseInformationSection].code.coding.system 1.. MS
-* section[compositionSection].section[infectiousDiseaseInformationSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[infectiousDiseaseInformationSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[infectiousDiseaseInformationSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[infectiousDiseaseInformationSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[infectiousDiseaseInformationSection].code.coding.code 1.. MS
@@ -909,7 +910,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[socialHistorySection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[socialHistorySection].code.coding 1..1 MS
 * section[compositionSection].section[socialHistorySection].code.coding.system 1.. MS
-* section[compositionSection].section[socialHistorySection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[socialHistorySection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[socialHistorySection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[socialHistorySection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[socialHistorySection].code.coding.code 1.. MS
@@ -958,7 +959,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[immunizationSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[immunizationSection].code.coding 1..1 MS
 * section[compositionSection].section[immunizationSection].code.coding.system 1.. MS
-* section[compositionSection].section[immunizationSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[immunizationSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[immunizationSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[immunizationSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[immunizationSection].code.coding.code 1.. MS
@@ -1007,7 +1008,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[surgicalProcedureSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[surgicalProcedureSection].code.coding 1..1 MS
 * section[compositionSection].section[surgicalProcedureSection].code.coding.system 1.. MS
-* section[compositionSection].section[surgicalProcedureSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[surgicalProcedureSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[surgicalProcedureSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[surgicalProcedureSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[surgicalProcedureSection].code.coding.code 1.. MS
@@ -1056,7 +1057,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[bloodInfusionProcedureSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[bloodInfusionProcedureSection].code.coding 1..1 MS
 * section[compositionSection].section[bloodInfusionProcedureSection].code.coding.system 1.. MS
-* section[compositionSection].section[bloodInfusionProcedureSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[bloodInfusionProcedureSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[bloodInfusionProcedureSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[bloodInfusionProcedureSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[bloodInfusionProcedureSection].code.coding.code 1.. MS
@@ -1105,7 +1106,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[treatmentProcedureSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[treatmentProcedureSection].code.coding 1..1 MS
 * section[compositionSection].section[treatmentProcedureSection].code.coding.system 1.. MS
-* section[compositionSection].section[treatmentProcedureSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[treatmentProcedureSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[treatmentProcedureSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[treatmentProcedureSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[treatmentProcedureSection].code.coding.code 1.. MS
@@ -1154,7 +1155,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[medicationSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[medicationSection].code.coding 1..1 MS
 * section[compositionSection].section[medicationSection].code.coding.system 1.. MS
-* section[compositionSection].section[medicationSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[medicationSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[medicationSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[medicationSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[medicationSection].code.coding.code 1.. MS
@@ -1203,7 +1204,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[examsStudySection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[examsStudySection].code.coding 1..1 MS
 * section[compositionSection].section[examsStudySection].code.coding.system 1.. MS
-* section[compositionSection].section[examsStudySection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[examsStudySection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[examsStudySection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[examsStudySection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[examsStudySection].code.coding.code 1.. MS
@@ -1252,7 +1253,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[clinicalCourseSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[clinicalCourseSection].code.coding 1..1 MS
 * section[compositionSection].section[clinicalCourseSection].code.coding.system 1.. MS
-* section[compositionSection].section[clinicalCourseSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[clinicalCourseSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[clinicalCourseSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[clinicalCourseSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[clinicalCourseSection].code.coding.code 1.. MS
@@ -1298,7 +1299,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[clinicalInstructionSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[clinicalInstructionSection].code.coding 1..1 MS
 * section[compositionSection].section[clinicalInstructionSection].code.coding.system 1.. MS
-* section[compositionSection].section[clinicalInstructionSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[clinicalInstructionSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[clinicalInstructionSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[clinicalInstructionSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[clinicalInstructionSection].code.coding.code 1.. MS
@@ -1345,7 +1346,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[medicalDeviceSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[medicalDeviceSection].code.coding 1..1 MS
 * section[compositionSection].section[medicalDeviceSection].code.coding.system 1.. MS
-* section[compositionSection].section[medicalDeviceSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[medicalDeviceSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[medicalDeviceSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[medicalDeviceSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[medicalDeviceSection].code.coding.code 1.. MS
@@ -1392,7 +1393,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[advanceDirectiveSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[advanceDirectiveSection].code.coding 1..1 MS
 * section[compositionSection].section[advanceDirectiveSection].code.coding.system 1.. MS
-* section[compositionSection].section[advanceDirectiveSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[advanceDirectiveSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[advanceDirectiveSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[advanceDirectiveSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[advanceDirectiveSection].code.coding.code 1.. MS
@@ -1439,7 +1440,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[researchParticipationSection].code ^definition = "セクション区分コード"
 * section[compositionSection].section[researchParticipationSection].code.coding 1..1 MS
 * section[compositionSection].section[researchParticipationSection].code.coding.system 1.. MS
-* section[compositionSection].section[researchParticipationSection].code.coding.system = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section" (exactly)
+* section[compositionSection].section[researchParticipationSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section[compositionSection].section[researchParticipationSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[compositionSection].section[researchParticipationSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[compositionSection].section[researchParticipationSection].code.coding.code 1.. MS
