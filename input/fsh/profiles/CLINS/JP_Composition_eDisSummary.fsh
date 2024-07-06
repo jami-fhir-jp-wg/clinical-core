@@ -192,7 +192,7 @@ and authorDepartment 0..1 MS
 * section[cdaSection] ^short = "CDA参照セクション"
 * section[cdaSection] ^definition = "CDA参照セクション"
 * section[cdaSection].title = "CDA参照" (exactly)
-* section[attachmentSection].code.coding.code = #200 (exactly)
+* section[cdaSection].code.coding.code = #200 (exactly)
 * section[cdaSection].code.coding.display = "CDA参照セクション"
 * section[cdaSection].entry 1..1
 * section[cdaSection].entry only Reference(DocumentReference)

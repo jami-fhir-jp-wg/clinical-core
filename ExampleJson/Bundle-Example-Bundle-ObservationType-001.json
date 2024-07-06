@@ -21,7 +21,7 @@
   "timestamp": "2023-11-12T10:00:00+09:00",
   "entry": [
     {
-      "fullUrl": "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb",
+      "fullUrl": "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a",
       "resource": {
         "resourceType": "Patient",
         "id": "InlineExample-Patient-standard",
@@ -101,7 +101,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd",
+      "fullUrl": "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91",
       "resource": {
         "resourceType": "Observation",
         "id": "InlineExample-ObsLabo-Alb",
@@ -213,10 +213,7 @@
           "text": "アルブミン"
         },
         "subject": {
-          "identifier": {
-            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-            "value": "00012345:あいう:１８７:05"
-          }
+          "reference": "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
@@ -234,7 +231,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e",
+      "fullUrl": "urn:uuid:fd601925-858c-2d96-f061-9de1076d419c",
       "resource": {
         "resourceType": "Observation",
         "id": "InlineExample-ObsLabo-K",
@@ -327,10 +324,7 @@
           "text": "カリウム"
         },
         "subject": {
-          "identifier": {
-            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-            "value": "00012345:あいう:１８７:05"
-          }
+          "reference": "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
@@ -348,7 +342,7 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed",
+      "fullUrl": "urn:uuid:2ac56975-1610-5496-eb0e-c2a5f2f01a62",
       "resource": {
         "resourceType": "Observation",
         "id": "InlineExample-ObsLabo-eGFR",
@@ -436,10 +430,7 @@
           "text": "eGFR"
         },
         "subject": {
-          "identifier": {
-            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-            "value": "00012345:あいう:１８７:05"
-          }
+          "reference": "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
@@ -545,10 +536,7 @@
           "text": "尿蛋⽩(定性)"
         },
         "subject": {
-          "identifier": {
-            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-            "value": "00012345:あいう:１８７:05"
-          }
+          "reference": "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {

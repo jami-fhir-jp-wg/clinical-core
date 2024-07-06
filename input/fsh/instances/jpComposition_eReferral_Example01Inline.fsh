@@ -1,7 +1,7 @@
 // Compositionリース
 // Compositionリース
 Alias: $doc-typecodes = http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
-Alias: $referral-section = http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section
+Alias: $referral-section = http://jpfhir.jp/fhir/clins/CodeSystem/document-section
 
 
 

@@ -31,8 +31,8 @@ Description: "退院時サマリーセクション区分　ValueSet"
 * include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #COMMON
 
 // 患者療養計画サマリー　セクション区分コード
-ValueSet: JP_valueSet_eDischargeSummary_document_section
-Id: jp-valueSet-eDischargeSummary-document-section
+ValueSet: JP_valueSet_ePCS_document_section
+Id: jp-valueSet-ePCS-document-section
 Description: "患者療養計画サマリー　セクション区分　ValueSet"
 * ^url = "http://jpfhir.jp/fhir/ePCS/ValueSet/document-section"
 * ^title = "患者療養計画サマリー　セクション区分コード　ValueSet"

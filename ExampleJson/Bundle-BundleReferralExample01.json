@@ -47,7 +47,7 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                   "code": "920",
                   "display": "紹介元情報セクション"
                 }
@@ -75,7 +75,7 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                   "code": "910",
                   "display": "紹介先情報セクション"
                 }
@@ -106,7 +106,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "950",
                       "display": "紹介目的セクション"
                     }
@@ -129,7 +129,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "340",
                       "display": "傷病名・主訴セクション"
                     }
@@ -157,7 +157,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "360",
                       "display": "現病歴セクション"
                     }
@@ -180,7 +180,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "370",
                       "display": "既往歴セクション"
                     }
@@ -208,7 +208,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "510",
                       "display": "アレルギー・不耐性反応セクション"
                     }
@@ -236,7 +236,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "550",
                       "display": "家族歴セクション"
                     }
@@ -252,7 +252,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "610",
                       "display": "身体所見セクション"
                     }
@@ -275,7 +275,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "520",
                       "display": "感染症情報セクション"
                     }
@@ -291,7 +291,7 @@
                 "code": {
                   "coding": [
                     {
-                      "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                       "code": "330",
                       "display": "臨床経過セクション"
                     }
@@ -309,7 +309,7 @@
             "code": {
               "coding": [
                 {
-                  "system": "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section",
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
                   "code": "300",
                   "display": "構造情報セクション"
                 }

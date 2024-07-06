@@ -1,6 +1,6 @@
 
 // 電子カルテ情報共有サービス文書共通セクション区分コード
-CodeSystem: JP_codeSystem_CLINS-_document_section
+CodeSystem: JP_codeSystem_CLINS_document_section
 Id: jp-codeSystem-clins-document-section
 Description: "電子カルテ情報共有サービス文書共通セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section"
@@ -60,9 +60,9 @@ Description: "電子カルテ情報共有サービス文書共通セクション
   * #910  "紹介先情報セクション"  //  referralToSection
   * #920  "紹介元情報セクション"  //  referralFromSection
   * #950  "紹介目的セクション"    //  referralPurposeSection
+* #PCS
+  * #422  "計画サマリーセクション"
 
-# #PCS
-  * #422計画サマリーセクション
 // * #362  "現病歴セクション"  // presentIllnessSection
 // * #372  "既往歴セクション"  // pastIllnessSection 入院時既往歴
 // * #552  "家族歴セクション"  //  familiyHistorySection 入院時情報・退院時サマリー
