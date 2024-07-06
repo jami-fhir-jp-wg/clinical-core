@@ -13,7 +13,7 @@ Description: "【意図的エラー例】：入院処方　外用（点眼）全
 * id = "ErrorExample-JP-MedReq-ExtEye-Total1"
 
 // * contained[+] = Example-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-D001
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-05T19:28:23.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS

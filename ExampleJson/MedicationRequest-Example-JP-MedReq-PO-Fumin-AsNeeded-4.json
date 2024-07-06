@@ -79,13 +79,13 @@
   ],
   "note": [
     {
-      "text": "入院処方　内服頓用　頓用と1回量をコードで記述する例"
+      "text": "MedicationRequestリソース　入院・内服頓用　頓用と1回量をコードで記述する例"
     }
   ],
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-JP-Practitioner-minimun-D001",
+      "id": "Example-Contained-JP-Practitioner-minimun-D001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -140,12 +140,12 @@
   },
   "authoredOn": "2021-07-05T16:00:40+09:00",
   "requester": {
-    "reference": "#Example-JP-Practitioner-minimun-D001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-D001",
     "display": "医療 太郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-JP-Practitioner-minimun-D001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-D001",
     "type": "Practitioner"
   },
   "groupIdentifier": {

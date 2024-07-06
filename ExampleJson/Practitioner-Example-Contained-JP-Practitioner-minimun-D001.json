@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "Example-JP-Practitioner-minimun-D001",
+  "id": "Example-Contained-JP-Practitioner-minimun-D001",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"

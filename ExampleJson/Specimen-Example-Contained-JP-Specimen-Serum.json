@@ -1,6 +1,6 @@
 {
   "resourceType": "Specimen",
-  "id": "Example-JP-Specimen-Serum",
+  "id": "Example-Contained-JP-Specimen-Serum",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"

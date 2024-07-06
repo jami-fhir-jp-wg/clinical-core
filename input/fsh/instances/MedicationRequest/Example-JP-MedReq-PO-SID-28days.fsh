@@ -12,8 +12,8 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-SID-28days"
 
-// * contained[+] = Example-JP-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-R001
+// * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS

@@ -48,13 +48,13 @@
   ],
   "note": [
     {
-      "text": "conditionExample02 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+      "text": "Conditionリソース 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
     }
   ],
   "contained": [
     {
       "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-AMB",
+      "id": "Example-Contained-JP-Encounter-AMB",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -119,7 +119,7 @@
     }
   },
   "encounter": {
-    "reference": "#Example-JP-Encounter-AMB"
+    "reference": "Example-JP-Encounter-AMB"
   },
   "onsetDateTime": "2020-04-10",
   "recordedDate": "2020-04-18",

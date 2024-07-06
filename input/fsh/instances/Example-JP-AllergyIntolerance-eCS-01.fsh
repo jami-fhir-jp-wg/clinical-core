@@ -18,7 +18,7 @@ Description: "AllergyIntoleranceリソース 必須要素だけの データ作�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
 
-//* contained[+] = Example-JP-Patient-eCS-01-Contained
+//* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
@@ -68,8 +68,8 @@ Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプ�
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
-//* contained[+] = Example-JP-Patient-eCS-01-Contained
-* contained[+] = Example-JP-Encounter-AMB
+//* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
+* contained[+] = Example-Contained-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
@@ -129,8 +129,8 @@ Description: "allergyIntoleranceExample03 必須要素で記述した薬剤ア�
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
-//* contained[+] = Example-JP-Patient-eCS-01-Contained
-* contained[+] = Example-JP-Encounter-AMB
+//* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
+* contained[+] = Example-Contained-JP-Encounter-AMB
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS

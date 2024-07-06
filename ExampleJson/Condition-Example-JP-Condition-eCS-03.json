@@ -24,13 +24,13 @@
   ],
   "note": [
     {
-      "text": "conditionExample03 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
+      "text": "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
     }
   ],
   "contained": [
     {
       "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-AMB",
+      "id": "Example-Contained-JP-Encounter-AMB",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -95,7 +95,7 @@
     }
   },
   "encounter": {
-    "reference": "#Example-JP-Encounter-AMB"
+    "reference": "Example-JP-Encounter-AMB"
   },
   "onsetDateTime": "2020-04-10",
   "abatementDateTime": "2020-05-01",

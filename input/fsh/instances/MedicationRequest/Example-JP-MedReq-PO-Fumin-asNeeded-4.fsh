@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-PO-Fumin-asNeeded-4
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: MedicationRequestリソース　"入院・内服頓用　頓用と1回量をコードで記述する例"
-* note.text = MedicationRequestリソース　"入院・内服頓用　頓用と1回量をコードで記述する例"
+Description: "MedicationRequestリソース　入院・内服頓用　頓用と1回量をコードで記述する例"
+* note.text = "MedicationRequestリソース　入院・内服頓用　頓用と1回量をコードで記述する例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服頓用　頓用と1回量をコードで記述する例</p> </div>"
@@ -12,8 +12,8 @@ Description: MedicationRequestリソース　"入院・内服頓用　頓用と1
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-Fumin-AsNeeded-4"
 
-// * contained[+] = Example-JP-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-D001
+// * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-27T01:31:19.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS

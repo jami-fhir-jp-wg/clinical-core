@@ -104,7 +104,7 @@
       "fullUrl": "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91",
       "resource": {
         "resourceType": "Observation",
-        "id": "InlineExample-ObsLabo-Alb",
+        "id": "InlineExample-JP-Obs-LabResult-eCS-Alb",
         "meta": {
           "lastUpdated": "2021-07-09T14:11:13.000+09:00",
           "profile": [
@@ -152,7 +152,7 @@
         "contained": [
           {
             "resourceType": "Encounter",
-            "id": "Example-JP-Encounter-AMB",
+            "id": "Example-Contained-JP-Encounter-AMB",
             "meta": {
               "profile": [
                 "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -173,7 +173,7 @@
           },
           {
             "resourceType": "Specimen",
-            "id": "Example-JP-Specimen-Serum",
+            "id": "Example-Contained-JP-Specimen-Serum",
             "meta": {
               "profile": [
                 "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
@@ -217,7 +217,7 @@
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
-          "reference": "#Example-JP-Encounter-AMB"
+          "reference": "Example-JP-Encounter-AMB"
         },
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueQuantity": {
@@ -225,7 +225,7 @@
           "unit": "mg/L"
         },
         "specimen": {
-          "reference": "#Example-JP-Specimen-Serum",
+          "reference": "Specimen/Example-JP-Specimen-Serum",
           "type": "Specimen"
         }
       }
@@ -234,7 +234,7 @@
       "fullUrl": "urn:uuid:fd601925-858c-2d96-f061-9de1076d419c",
       "resource": {
         "resourceType": "Observation",
-        "id": "InlineExample-ObsLabo-K",
+        "id": "InlineExample-JP-Obs-LabResult-eCS-K",
         "meta": {
           "lastUpdated": "2021-07-09T14:11:13.000+09:00",
           "profile": [
@@ -282,7 +282,7 @@
         "contained": [
           {
             "resourceType": "Encounter",
-            "id": "Example-JP-Encounter-AMB",
+            "id": "Example-Contained-JP-Encounter-AMB",
             "meta": {
               "profile": [
                 "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -328,7 +328,7 @@
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
-          "reference": "#Example-JP-Encounter-AMB"
+          "reference": "Example-JP-Encounter-AMB"
         },
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueQuantity": {
@@ -345,7 +345,7 @@
       "fullUrl": "urn:uuid:2ac56975-1610-5496-eb0e-c2a5f2f01a62",
       "resource": {
         "resourceType": "Observation",
-        "id": "InlineExample-ObsLabo-eGFR",
+        "id": "InlineExample-JP-Obs-LabResult-eCS-eGFR",
         "meta": {
           "lastUpdated": "2021-07-09T14:11:13.000+09:00",
           "profile": [
@@ -393,7 +393,7 @@
         "contained": [
           {
             "resourceType": "Encounter",
-            "id": "Example-JP-Encounter-AMB",
+            "id": "Example-Contained-JP-Encounter-AMB",
             "meta": {
               "profile": [
                 "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -434,7 +434,7 @@
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
-          "reference": "#Example-JP-Encounter-AMB"
+          "reference": "Example-JP-Encounter-AMB"
         },
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueQuantity": {
@@ -451,7 +451,7 @@
       "fullUrl": "urn:uuid:e3a7af80-ca1f-5638-dc97-00fa9458fe1c",
       "resource": {
         "resourceType": "Observation",
-        "id": "InlineExample-ObsLabo-UTP",
+        "id": "InlineExample-JP-Obs-LabResult-eCS-UTP",
         "meta": {
           "lastUpdated": "2021-07-09T14:11:13.000+09:00",
           "profile": [
@@ -499,7 +499,7 @@
         "contained": [
           {
             "resourceType": "Encounter",
-            "id": "Example-JP-Encounter-AMB",
+            "id": "Example-Contained-JP-Encounter-AMB",
             "meta": {
               "profile": [
                 "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -540,7 +540,7 @@
         },
         "effectiveDateTime": "2021-07-05T11:19:41+09:00",
         "encounter": {
-          "reference": "#Example-JP-Encounter-AMB"
+          "reference": "Example-JP-Encounter-AMB"
         },
         "issued": "2021-07-05T15:38:59.000+09:00",
         "valueCodeableConcept": {

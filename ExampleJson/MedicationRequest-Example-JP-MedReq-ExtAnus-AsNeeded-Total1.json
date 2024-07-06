@@ -84,13 +84,13 @@
   ],
   "note": [
     {
-      "text": "入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+      "text": "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
     }
   ],
   "contained": [
     {
       "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-IMP",
+      "id": "Example-Contained-JP-Encounter-IMP",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -108,7 +108,7 @@
     },
     {
       "resourceType": "Practitioner",
-      "id": "Example-JP-Practitioner-minimun-R001",
+      "id": "Example-Contained-JP-Practitioner-minimun-R001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -167,16 +167,16 @@
     "type": "Patient"
   },
   "encounter": {
-    "reference": "#Example-JP-Encounter-IMP"
+    "reference": "Example-JP-Encounter-IMP"
   },
   "authoredOn": "2021-07-14T10:52:26+09:00",
   "requester": {
-    "reference": "#Example-JP-Practitioner-minimun-R001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-JP-Practitioner-minimun-R001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },

@@ -32,7 +32,7 @@
   "contained": [
     {
       "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-AMB",
+      "id": "Example-Contained-JP-Encounter-AMB",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -91,7 +91,7 @@
     }
   },
   "encounter": {
-    "reference": "#Example-JP-Encounter-AMB"
+    "reference": "Example-JP-Encounter-AMB"
   },
   "onsetDateTime": "2020-04-10",
   "recorder": {

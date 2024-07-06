@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-ExtAnus-AsNeeded-Total1
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: MedicationRequestリソース　"入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
-* note.text = MedicationRequestリソース　"入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+* note.text = "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
 
 //* text.status = #additional
 //* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p> </div>"
@@ -17,9 +17,9 @@ Description: MedicationRequestリソース　"入院・外用(坐剤)頓用全�
 * extension[eCS_Department].valueCodeableConcept = $JP_Department_SsMix_CS#01 "内科"
 
 
-// * contained[+] = Example-JP-Patient-minimun
-* contained[+] = Example-JP-Encounter-IMP
-* contained[+] = Example-JP-Practitioner-minimun-R001
+// * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Encounter-IMP
+* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-14T16:14:35.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS

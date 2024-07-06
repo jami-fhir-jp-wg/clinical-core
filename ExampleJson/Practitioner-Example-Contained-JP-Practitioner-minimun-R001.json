@@ -1,6 +1,6 @@
 {
   "resourceType": "Practitioner",
-  "id": "Example-JP-Practitioner-minimun-D003",
+  "id": "Example-Contained-JP-Practitioner-minimun-R001",
   "meta": {
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -14,7 +14,7 @@
           "valueCode": "IDE"
         }
       ],
-      "text": "診療 和子"
+      "text": "医学 一郎"
     }
   ]
 }

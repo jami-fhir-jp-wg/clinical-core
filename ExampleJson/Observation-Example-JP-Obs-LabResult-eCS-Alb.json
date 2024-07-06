@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Example-ObsLabo-Alb",
+  "id": "Example-JP-Obs-LabResult-eCS-Alb",
   "meta": {
     "tag": [
       {
@@ -54,13 +54,13 @@
   ],
   "note": [
     {
-      "text": "検体検査結果　アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
+      "text": "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
     }
   ],
   "contained": [
     {
       "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-AMB",
+      "id": "Example-Contained-JP-Encounter-AMB",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -81,7 +81,7 @@
     },
     {
       "resourceType": "Specimen",
-      "id": "Example-JP-Specimen-Serum",
+      "id": "Example-Contained-JP-Specimen-Serum",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
@@ -128,7 +128,7 @@
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "encounter": {
-    "reference": "#Example-JP-Encounter-AMB"
+    "reference": "Example-JP-Encounter-AMB"
   },
   "issued": "2021-07-05T15:38:59.000+09:00",
   "valueQuantity": {
@@ -136,7 +136,7 @@
     "unit": "mg/L"
   },
   "specimen": {
-    "reference": "#Example-JP-Specimen-Serum",
+    "reference": "Specimen/Example-JP-Specimen-Serum",
     "type": "Specimen"
   }
 }

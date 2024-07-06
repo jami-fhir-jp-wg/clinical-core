@@ -13,7 +13,7 @@ Description: "【意図的エラー例】：退院時処方　内服1日1回１�
 * id = "ErrorExample-JP-MedReq-PO-SID-28days"
 
 // * contained[+] = Example-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-R001
+* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS

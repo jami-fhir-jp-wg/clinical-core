@@ -18,10 +18,10 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 * identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
 
 // 入院外来区分
-* contained[+] = Example-JP-Encounter-AMB
+* contained[+] = Example-Contained-JP-Encounter-AMB
 
-// 検体材料　* contained[+] = Example-JP-Specimen-Serum
-//* contained[+] = Example-JP-Specimen-Serum
+// 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
+//* contained[+] = Example-Contained-JP-Specimen-Serum
 
 * status = #final
 

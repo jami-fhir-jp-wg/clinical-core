@@ -130,13 +130,13 @@
   ],
   "note": [
     {
-      "text": "意図的エラー例（一般処方コード2124030F2ZZZが間違っている（正しくは1124030F2ZZZ））：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
+      "text": "【意図的エラー例】（一般処方コード2124030F2ZZZが間違っている（正しくは1124030F2ZZZ））：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
     }
   ],
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-JP-Practitioner-minimun-R001",
+      "id": "Example-Contained-JP-Practitioner-minimun-R001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -196,12 +196,12 @@
   },
   "authoredOn": "2021-07-12T16:19:06+09:00",
   "requester": {
-    "reference": "#Example-JP-Practitioner-minimun-R001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-JP-Practitioner-minimun-R001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
     "type": "Practitioner"
   },
   "groupIdentifier": {

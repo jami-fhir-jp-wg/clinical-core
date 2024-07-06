@@ -72,13 +72,13 @@
   ],
   "note": [
     {
-      "text": "意図的エラー例：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
+      "text": "【意図的エラー例】：入院処方　外用（塗布）全量処方　1回量をコードで記述できない例. ただし医薬品コードを「標準コード」「標準コードなし」のいずれでも記述していないためにエラーになる例。"
     }
   ],
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-JP-Practitioner-minimun-R001",
+      "id": "Example-Contained-JP-Practitioner-minimun-R001",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -138,12 +138,12 @@
   },
   "authoredOn": "2021-07-05T17:31:48+09:00",
   "requester": {
-    "reference": "#Example-JP-Practitioner-minimun-R001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-JP-Practitioner-minimun-R001",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
     "type": "Practitioner"
   },
   "groupIdentifier": {

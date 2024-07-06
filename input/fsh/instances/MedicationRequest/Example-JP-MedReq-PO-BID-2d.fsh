@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-PO-BID-2d
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: MedicationRequestリソース　"入院・内服処方1日1回１回2錠 2日分処方例"
-* note.text = MedicationRequestリソース　"入院・内服処方1日1回１回2錠 2日分処方例"
+Description: "MedicationRequestリソース　入院・内服処方1日1回１回2錠 2日分処方例"
+* note.text = "MedicationRequestリソース　入院・内服処方1日1回１回2錠 2日分処方例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方1日1回１回2錠 2日分処方例</p> </div>"
@@ -12,8 +12,8 @@ Description: MedicationRequestリソース　"入院・内服処方1日1回１�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-BID-2d"
 
-// * contained[+] = Example-JP-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-D001
+// * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-12T19:29:12.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS

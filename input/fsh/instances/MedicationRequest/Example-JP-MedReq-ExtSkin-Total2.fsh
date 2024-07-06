@@ -12,8 +12,8 @@ Description: "【意図的エラー例】：入院処方　外用（塗布）全
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-ExtSkin-Total2"
 
-// * contained[+] = Example-JP-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-R001
+// * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-05T19:07:58.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS

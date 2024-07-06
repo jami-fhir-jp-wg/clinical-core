@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "Example-ObsLabo-eGFR",
+  "id": "Example-JP-Obs-LabResult-eCS-K",
   "meta": {
     "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
@@ -30,17 +30,30 @@
         "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
         "value": "1318814790"
       }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "08",
+            "system": "urn:oid:1.2.392.200250.2.2.2",
+            "display": "循環器科"
+          }
+        ],
+        "text": "循環器診療科"
+      }
     }
   ],
   "note": [
     {
-      "text": "検体検査結果　eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
+      "text": "Observationリソース（検体検査結果）カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
     }
   ],
   "contained": [
     {
       "resourceType": "Encounter",
-      "id": "Example-JP-Encounter-AMB",
+      "id": "Example-Contained-JP-Encounter-AMB",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
@@ -64,17 +77,22 @@
   "code": {
     "coding": [
       {
-        "code": "0000181910",
+        "code": "10000181802",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
-        "display": "eGFR"
+        "display": "カリウム"
       },
       {
-        "code": "8A065000002391901",
+        "code": "3H015000002326101",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+        "display": "K"
+      },
+      {
+        "code": "3H015000002326101",
         "system": "urn:oid:1.2.392.200119.4.504",
-        "display": "eGFR"
+        "display": "K"
       }
     ],
-    "text": "推算GFR"
+    "text": "カリウム"
   },
   "subject": {
     "identifier": {
@@ -84,12 +102,12 @@
   },
   "effectiveDateTime": "2021-07-05T11:19:41+09:00",
   "encounter": {
-    "reference": "#Example-JP-Encounter-AMB"
+    "reference": "Example-JP-Encounter-AMB"
   },
   "issued": "2021-07-05T15:38:59.000+09:00",
   "valueQuantity": {
-    "value": 75,
-    "unit": "ml/min/1.73m2"
+    "value": 3.5,
+    "unit": "mEq/L"
   },
   "specimen": {
     "display": "血清",

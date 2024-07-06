@@ -104,13 +104,13 @@
   ],
   "note": [
     {
-      "text": "入院処方　内服処方1日4回7日分　例"
+      "text": "MedicationRequestリソース　入院・内服処方1日4回7日分　例"
     }
   ],
   "contained": [
     {
       "resourceType": "Practitioner",
-      "id": "Example-JP-Practitioner-minimun-D003",
+      "id": "Example-Contained-JP-Practitioner-minimun-D003",
       "meta": {
         "profile": [
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
@@ -170,12 +170,12 @@
   },
   "authoredOn": "2021-07-13T15:01:29+09:00",
   "requester": {
-    "reference": "#Example-JP-Practitioner-minimun-D003",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-D003",
     "display": "診療 和子",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "#Example-JP-Practitioner-minimun-D003",
+    "reference": "Practitioner/Example-JP-Practitioner-minimun-D003",
     "type": "Practitioner"
   },
   "groupIdentifier": {

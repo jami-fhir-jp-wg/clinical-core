@@ -12,8 +12,8 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-SID-90-AMB"
 
-// * contained[+] = Example-JP-Patient-minimun
-* contained[+] = Example-JP-Practitioner-minimun-D002
+// * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
 
 * meta.lastUpdated = "2023-09-14T14:03:37.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
