@@ -7,7 +7,7 @@
 Instance: Example-JP-AllergyIntolerance-eCS-01
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "AllergyIntoleranceリソース 必須要素だけの データ作成例"
+Description: "AllergyIntoleranceリソース 必須要素だけ データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
@@ -58,7 +58,7 @@ Description: "AllergyIntoleranceリソース 必須要素だけの データ作�
 Instance: Example-JP-AllergyIntolerance-eCS-02
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプラスアルファを記述した データ作成例"
+Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプラスアルファを記述 データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述した データ作成例</p> </div>"
@@ -119,7 +119,7 @@ Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプ�
 Instance: Example-JP-DrugContraindications-eCS-03
 InstanceOf: JP_AllergyIntolerance_eCS
 Usage: #example
-Description: "allergyIntoleranceExample03 必須要素で記述した薬剤アレルギー等情報の データ作成例"
+Description: "AllergyIntoleranceリソース　必須要素で記述した薬剤アレルギー等情報　データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤アレルギー等情報の データ作成例</p> </div>"

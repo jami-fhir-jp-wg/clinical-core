@@ -1,15 +1,16 @@
 
-Instance: BundleReferralExample01
+Instance: Bundle-CLINS-Referral-Example-01
 InstanceOf: JP_Bundle_eReferral
 Usage: #example
 
-Description: "■ 診療情報提供書　全体 Bundleリソース　データ作成例01"
+Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#01"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
 
-* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/documentInstance-identifier"
-* identifier.value = "123456"
+* identifier.system = $JP_BundleIdentifier
+* identifier.value = "1318814790^2024^0123-IDa-203949583949"    //正しい例
+
 * type = #document
 
 * timestamp = "2021-11-26T10:00:00+09:00"

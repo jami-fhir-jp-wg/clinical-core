@@ -19,7 +19,7 @@ Description: "Conditionリソース　（診療情報提供書　主訴テキス
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code[+].text = "上腹部痛"
+* code.text = "上腹部痛"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
@@ -44,7 +44,7 @@ Description: "Conditionリソース　（診療情報提供書　主訴テキス
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code[+].text = "腰痛"
+* code.text = "腰痛"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 

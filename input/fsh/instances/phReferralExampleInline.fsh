@@ -13,12 +13,12 @@ Description: "conditionReferralExample01 診療情報提供書　既往歴例1�
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-01"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved
  // active | recurrence | relapse | inactive | remission | resolved
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code[+].text = "狭心症"
+* code.text = "狭心症"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
@@ -42,22 +42,21 @@ Description: "conditionReferralExample01 診療情報提供書　既往歴例2�
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-02"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved
  // active | recurrence | relapse | inactive | remission | resolved
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code[+].text = "左前腕骨折"
+* code.text = "左前腕骨折"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 // 2019 2020-08-21
 // ATGtime 12:12:20
-* onsetDateTime = "2019"
+* onsetDateTime = "2021"
 
 * note.text = "交通事故で左前腕骨折　３ヶ月ギプス固定。"
-
 
 
 

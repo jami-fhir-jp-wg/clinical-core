@@ -20,7 +20,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code[+].text = "上腹部痛"
+* code.text = "上腹部痛"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 

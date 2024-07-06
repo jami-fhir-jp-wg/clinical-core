@@ -10,14 +10,21 @@ Description: "Conditionリソース 必須要素だけの データ作成例"
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
 
 
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_Condition_eCS
+
+//-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
-//* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
+//-- CLINSの場合に必須
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
+// 入院外来区分
+* contained[+] = Example-Contained-JP-Encounter-AMB
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "202934701"
@@ -49,27 +56,37 @@ Instance: Example-JP-Condition-eCS-02
 InstanceOf: JP_Condition_eCS
 Usage: #example
 Description: "Conditionリソース 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
-* note.text =  "Conditionリソース 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング"
+* note.text =  "Conditionリソース 必須要素と推奨要素を記述した データ作成例、主病名、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング　患者参照を被保険者番号のしている例"
+
+
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_Condition_eCS
+* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
+* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述した データ作成例、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
 
-
+//-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//-- CLINSの場合に必須
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+// 入院外来区分
+* contained[+] = Example-Contained-JP-Encounter-AMB
+
+// 主傷病
 * extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
 * extension[eCS_DiagnosisType].valueCodeableConcept = $ex-diagnosistype-cs#principal "主病名"
  
 
 //* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
 * contained[+] = Example-Contained-JP-Encounter-AMB
-
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
-* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
-* meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "202934702"
@@ -103,21 +120,26 @@ Instance: Example-JP-Condition-eCS-03
 InstanceOf: JP_Condition_eCS
 Usage: #example
 Description: "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
-* note.text = "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
+* note.text = "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了　患者参照を被保険者番号のしている例"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了</p> </div>"
 
 
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_Condition_eCS
+
+//-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
-//* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
+//-- CLINSの場合に必須
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+// 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB
-
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
-
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "202934703"
@@ -144,4 +166,50 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * abatementDateTime = "2020-05-01"
 * recordedDate = "2020-04-18"
 * recorder.display = "消化器内科　田中太郎"
+
+// ------------- 主病名 狭心症
+Instance: Example-JP-Condition-eCS-ANGINA-Principal
+InstanceOf: JP_Condition_eCS
+Usage: #inline
+
+Description: "Conditionリソース 現在の傷病名（主病名）　例1　狭心症"
+* note.text = "Conditionリソース 現在の傷病名（主病名）　例1　狭心症　患者参照を被保険者番号のしている例"
+
+* meta.lastUpdated = "2021-11-26T10:00:00+09:00"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+
+//-- CLINSの場合に必須
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+//-- CLINSの場合に必須
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+//-- 主病名　には必須
+* extension[eCS_Department].url = $JP_eCS_DiagnosisType
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
+
+// 入院外来区分
+* contained[+] = Example-Contained-JP-Encounter-AMB
+
+* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
+* identifier.value = "192839-01"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+ // active | recurrence | relapse | inactive | remission | resolved
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
+
+* code.coding.system = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
+* code.text = "狭心症"
+
+// * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+
+* encounter.reference = "Encounter/Example-Contained-JP-Encounter-AMB"
+// 2018 2020-08-21
+// ATGtime 12:12:20
+* onsetDateTime = "2018-08-21"
 

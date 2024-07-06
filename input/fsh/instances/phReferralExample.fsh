@@ -19,7 +19,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code[+].text = "狭心症"
+* code.text = "狭心症"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
@@ -47,7 +47,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code[+].text = "左前腕骨折"
+* code.text = "左前腕骨折"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 

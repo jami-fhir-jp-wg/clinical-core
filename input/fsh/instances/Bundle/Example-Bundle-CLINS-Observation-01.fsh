@@ -1,9 +1,9 @@
 
-Instance: BundleCLINS-Obs-Example01
+Instance: Bundle-CLINS-Observations-Example-01
 InstanceOf: Bundle
 Usage: #example
 
-Description: "■ 電子カルテ情報共有サービス送信用（検体検査結果３件） Bundleリソース　データ作成例01"
+Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　#01"
 
 * meta.lastUpdated = "2023-11-12T10:00:00+09:00"
 * meta.profile[+] = $JP_Bundle_CLINS
