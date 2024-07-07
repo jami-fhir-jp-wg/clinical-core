@@ -182,3 +182,5 @@ Description: "ケアプランのタイプコード"
 * #hospital-plan "入院中プラン"
 * #discharge-plan "退院時プラン"
 * #followup-plan "外来診療経過中プラン"
+
+
