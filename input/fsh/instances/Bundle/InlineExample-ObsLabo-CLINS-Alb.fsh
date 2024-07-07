@@ -35,7 +35,7 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 * subject.reference = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
-* encounter = Reference(Example-JP-Encounter-AMB)
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 * issued = "2021-07-05T15:38:59.000+09:00"
 * valueQuantity.value = 3.9
@@ -43,6 +43,6 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
 //* interpretation.text = "範囲未定義、もしくは正常が適用されない"
-* specimen = Reference(Specimen/Example-JP-Specimen-Serum)
+* specimen = Reference(Specimen/Example-Contained-JP-Specimen-Serum)
 * specimen.type = "Specimen"
 

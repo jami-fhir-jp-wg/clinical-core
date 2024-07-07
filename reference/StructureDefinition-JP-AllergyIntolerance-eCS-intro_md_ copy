@@ -2,7 +2,7 @@
 # eCS 診療情報・サマリー汎用：【薬剤アレルギー等・その他アレルギー等情報】
 
 ## 背景および想定シナリオ
-このプロファイルは、６情報をはじめ、診療情報提供書や退院時サマリーなどの2文書や、診療６情報・サマリー用に、「薬剤アレルギーとその他アレルギー等の情報」を記述するためのものである。
+このプロファイルは、５情報をはじめ、診療情報提供書や退院時サマリーなどの2文書や、診療５情報・サマリー用に、「薬剤アレルギーとその他アレルギー等の情報」を記述するためのものである。
 電子カルテ情報共有サービスに送信する情報に含まれる場合には、派生プロファイルである[CLINS電子カルテ情報共有サービス用: 【薬剤アレルギーとその他アレルギー等の情報　JP_AllergyIntolerance_CLINS_eCS][JP_AllergyIntolerance_CLINS_eCS]　を使用すること。】
 
 ## スコープ
@@ -35,7 +35,7 @@
   - identifier : インスタンス識別ID
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
   - code : アレルギー・不耐反応の対象物の情報
-  - patient : このアレルギー不耐症を有する患者のFHIRリソースへの参照。３文書６情報の作成では、 contained (JP_Patient)リソースへのリテラル参照を設定する。
+  - patient : このアレルギー不耐症を有する患者のFHIRリソースへの参照。２文書５情報の作成では、 contained (JP_Patient)リソースへのリテラル参照を設定する。
 
 ### 条件により必須
   - meta.tag : 電子カルテ情報共有サービスで長期保存フラグの設定する場合に必須。
@@ -943,7 +943,7 @@ function details_open(onoff, idname, idCloseButton){
   <td class=xl81 width=35 style='width:26pt'>　</td>
   <td class=xl73 width=87 style='width:65pt'>　</td>
   <td class=xl88 width=359 style='width:269pt'>電子カルテシステムで入院時、外来受診時のいずれにおいて本情報が登録されたか記録さている場合にはその入院・外来区分をEncounter.class要素に設定し、そのEncounterリソースをContainedリソースとして本リソースに埋め込んで、それを参照すること。<br>
-    <font class="font12">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、JP_Encounterタイプのリソース（Encounter.idの値が&quot;#encounter203987&quot;と仮定）が本リソースのContainedリソースとして埋め込み記述されることが</font><ruby><font
+    <font class="font12">電子カルテ共有サービスにおける５情報のひとつとして本リソースが記述される場合には、JP_Encounterタイプのリソース（Encounter.idの値が&quot;#encounter203987&quot;と仮定）が本リソースのContainedリソースとして埋め込み記述されることが</font><ruby><font
   class="font12">必須</font><span style='display:none'><rt>ヒッス </rt></span></ruby><font
   class="font12">であるため、そのcontainedリソースのid値(Encounter.id)を記述する例2となる。</font></td>
   <td class=xl73 width=36 style='width:27pt'>例示</td>

@@ -36,7 +36,7 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 * subject.reference = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
-* encounter = Reference(Example-JP-Encounter-AMB)
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * issued = "2021-07-05T15:38:59.000+09:00"
 * valueQuantity.value = 75.0
 * valueQuantity.unit = "ml/min/1.73m2"

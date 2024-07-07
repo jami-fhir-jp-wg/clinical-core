@@ -5,7 +5,7 @@
 Extension: JP_eCS_InstitutionNumber
 Id: jp-ecs-institution-number
 Title: "JP eCS InstitutionNumber Extension"
-Description: "診療サマリーや6情報等に記述する際に、作成発行した医療機関番号を記述する拡張"
+Description: "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述する拡張"
 * ^url = $JP_eCS_InstitutionNumber
 // http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
 * ^version = "1"
@@ -14,7 +14,7 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-* ^purpose = "診療サマリーや6情報等に記述する際に、作成発行した医療機関番号を記述するため。"
+* ^purpose = "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述するため。"
 
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"
@@ -28,7 +28,7 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 * ^context[=].expression = "Observation"
 
 * . ^short = "作成発行した医療機関番号を記述するための拡張"
-* . ^definition = "診療サマリーや6情報等に記述する際に、作成発行した医療機関番号を記述する"
+* . ^definition = "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述する"
 * url = $JP_eCS_InstitutionNumber (exactly)
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"
@@ -43,11 +43,11 @@ Description: "診療サマリーや6情報等に記述する際に、作成発�
 Extension: JP_eCS_Department
 Id: jp-ecs-department
 Title: "JP eCS Department Extension"
-Description: "診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述する拡張"
+Description: "診療サマリーや5情報等に記述する際に、発行診療科または発行者の診療科情報を記述する拡張"
 * ^url = $JP_eCS_Department
 * ^status = #active
 * ^date = "2024-02-25"
-* ^purpose = "診療サマリーや6情報等に記述する際に、発行診療科または発行者の診療科情報を記述するため。"
+* ^purpose = "診療サマリーや5情報等に記述する際に、発行診療科または発行者の診療科情報を記述するため。"
 * ^context[+].type = #element
 * ^context[=].expression = "MedicationRequest"
 * ^context[+].type = #element

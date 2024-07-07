@@ -81,7 +81,7 @@
         "date": "2024-07-07T12:12:20+09:00",
         "author": [
           {
-            "reference": "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed",
+            "reference": "22212c2d-4837-fd90-c6c5-6ee2a4b7eed2",
             "type": "Practitioner",
             "display": "患者療養計画サマリー作成者　Practitionerリソース"
           },
@@ -181,16 +181,22 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed",
+      "fullUrl": "22212c2d-4837-fd90-c6c5-6ee2a4b7eed2",
       "resource": {
         "resourceType": "Practitioner",
-        "id": "Example-JP-Practitioner-eCS-ReferralFrom01Inline",
+        "id": "Example-JP-Practitioner-eCS-PCS-Author-Inline",
         "meta": {
-          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "lastUpdated": "2024-07-07T10:00:00+09:00",
           "profile": [
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
           ]
         },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.392.100495.20.3.41.11311234567",
+            "value": "U4403020"
+          }
+        ],
         "name": [
           {
             "extension": [
@@ -200,10 +206,10 @@
               }
             ],
             "use": "official",
-            "text": "大河内 勘三郎",
-            "family": "大河内",
+            "text": "石川 さおり",
+            "family": "石川",
             "given": [
-              "勘三郎"
+              "さおり"
             ]
           },
           {
@@ -214,22 +220,22 @@
               }
             ],
             "use": "official",
-            "text": "オオコウチ カンザブロウ",
-            "family": "オオコウチ",
+            "text": "イシカワ サオリ",
+            "family": "イシカワ",
             "given": [
-              "カンザブロウ"
+              "サオリ"
             ]
           }
         ]
       }
     },
     {
-      "fullUrl": "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638",
+      "fullUrl": "urn:uuid:ee271941-92f0-07cf-7b6e-db8ce65c9543",
       "resource": {
         "resourceType": "Organization",
-        "id": "Example-JP-Org-eCS-Inst-Referral01Inline",
+        "id": "Example-JP-Org-eCS-InstWithDepartment-Inline",
         "meta": {
-          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "lastUpdated": "2024-07-07T10:00:00+09:00",
           "profile": [
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
           ]
@@ -246,112 +252,13 @@
         ],
         "extension": [
           {
-            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
-            "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.21",
-              "code": "13"
-            }
-          },
-          {
-            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
-            "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.22",
-              "code": "1"
-            }
-          },
-          {
-            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
-            "valueIdentifier": {
-              "system": "urn:oid:1.2.392.100495.20.3.23",
-              "value": "9876543"
-            }
-          },
-          {
             "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "26",
+                  "code": "08",
                   "system": "urn:oid:1.2.392.200250.2.2.2",
-                  "display": "眼科"
-                }
-              ]
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-            "value": "1319876543"
-          }
-        ],
-        "name": "港診療所",
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "03-9876-5432"
-          }
-        ],
-        "address": [
-          {
-            "text": "東京都港区新橋１−２−３",
-            "postalCode": "106-9900",
-            "country": "JP"
-          }
-        ]
-      }
-    },
-    {
-      "fullUrl": "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441",
-      "resource": {
-        "resourceType": "Organization",
-        "id": "Example-JP-Org-eCS-ReferralTo01Inline",
-        "meta": {
-          "lastUpdated": "2021-11-26T10:00:00+09:00",
-          "profile": [
-            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
-          ]
-        },
-        "type": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
-                "code": "prov"
-              }
-            ]
-          }
-        ],
-        "extension": [
-          {
-            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
-            "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.21",
-              "code": "13"
-            }
-          },
-          {
-            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
-            "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.22",
-              "code": "1"
-            }
-          },
-          {
-            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
-            "valueIdentifier": {
-              "system": "urn:oid:1.2.392.100495.20.3.23",
-              "value": "1234567"
-            }
-          },
-          {
-            "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "081",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
-                  "display": "循環器内科"
+                  "display": "循環器科"
                 }
               ]
             }
@@ -363,20 +270,7 @@
             "value": "1311234567"
           }
         ],
-        "name": "東京第一テスト病院",
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "03-1234-5678"
-          }
-        ],
-        "address": [
-          {
-            "text": "東京都文京区文京町１−２−３",
-            "postalCode": "113-0001",
-            "country": "JP"
-          }
-        ]
+        "name": "みなと診療所"
       }
     },
     {
@@ -448,7 +342,7 @@
             ]
           }
         ],
-        "description": "高血圧について内服を継続してください。\r\n1日30分でも軽い運動を継続しましょう。\r\n",
+        "description": "高血圧について内服を継続してください。\r\n1日30分でも軽い運動を継続しましょう。",
         "subject": {
           "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
         },
@@ -456,111 +350,6 @@
           "start": "2024-07-07"
         },
         "created": "2024-07-07"
-      }
-    },
-    {
-      "fullUrl": "4c604fad-f24c-da56-d777-8f233bc9f835",
-      "resource": {
-        "resourceType": "Condition",
-        "id": "Example-JP-Condition-eCS-ANGINA-NoPrincipal-Active-Inline",
-        "meta": {
-          "lastUpdated": "2021-11-26T10:00:00+09:00",
-          "profile": [
-            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
-          ]
-        },
-        "identifier": [
-          {
-            "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-            "value": "192839-01"
-          }
-        ],
-        "extension": [
-          {
-            "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-            "valueIdentifier": {
-              "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-              "value": "1318814790"
-            }
-          },
-          {
-            "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "code": "08",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
-                  "display": "循環器科"
-                }
-              ],
-              "text": "循環器診療科"
-            }
-          }
-        ],
-        "contained": [
-          {
-            "resourceType": "Encounter",
-            "id": "Example-Contained-JP-Encounter-AMB",
-            "meta": {
-              "profile": [
-                "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
-              ]
-            },
-            "identifier": [
-              {
-                "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-                "value": "192844"
-              }
-            ],
-            "status": "finished",
-            "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-              "code": "AMB",
-              "display": "外来"
-            }
-          }
-        ],
-        "clinicalStatus": {
-          "coding": [
-            {
-              "code": "active",
-              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
-            }
-          ]
-        },
-        "verificationStatus": {
-          "coding": [
-            {
-              "code": "confirmed",
-              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
-            }
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "code": "encounter-diagnosis",
-                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "20058911"
-            }
-          ],
-          "text": "狭心症"
-        },
-        "subject": {
-          "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
-        },
-        "encounter": {
-          "reference": "#Example-Contained-JP-Encounter-AMB"
-        },
-        "onsetDateTime": "2018-08-21"
       }
     },
     {
@@ -607,7 +396,8 @@
               "coding": [
                 {
                   "code": "principal",
-                  "system": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType"
+                  "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+                  "display": "主病名"
                 }
               ]
             }

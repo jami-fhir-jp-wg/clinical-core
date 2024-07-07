@@ -167,16 +167,16 @@
     "type": "Patient"
   },
   "encounter": {
-    "reference": "Example-JP-Encounter-IMP"
+    "reference": "#Example-Contained-JP-Encounter-IMP"
   },
   "authoredOn": "2021-07-14T10:52:26+09:00",
   "requester": {
-    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
+    "reference": "#Example-Contained-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "Practitioner/Example-JP-Practitioner-minimun-R001",
+    "reference": "#Example-Contained-JP-Practitioner-minimun-R001",
     "display": "医学 一郎",
     "type": "Practitioner"
   },

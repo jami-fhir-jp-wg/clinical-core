@@ -151,7 +151,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * encounter ^definition = "本計画を作成した外来受診情報、または入院情報、または退院情報"
 * encounter   only Reference(JP_Encounter_eCS)
 
-* period    1..1 MS
+* period  1..1 MS
 * period ^short = "このプランがカバーする対象期間"
 * period ^definition = "指導日など指導、計画の期間"
 * period.start 1..1 MS

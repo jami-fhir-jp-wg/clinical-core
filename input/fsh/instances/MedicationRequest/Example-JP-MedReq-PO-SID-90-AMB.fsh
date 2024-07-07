@@ -40,9 +40,9 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 
 * subject.type = "Patient"
 * authoredOn = "2023-09-14T12:50:36+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D002) "田中　宏"
+* requester = Reference(Example-Contained-JP-Practitioner-minimun-D002) "田中　宏"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D002)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-0009997023-0A172BAD00C8F82023091412502302-1"
 

@@ -138,12 +138,12 @@
   },
   "authoredOn": "2021-07-05T13:08:22+09:00",
   "requester": {
-    "reference": "Practitioner/Example-JP-Practitioner-minimun-D001",
+    "reference": "#Example-Contained-JP-Practitioner-minimun-D001",
     "display": "医療 太郎",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "Practitioner/Example-JP-Practitioner-minimun-D001",
+    "reference": "#Example-Contained-JP-Practitioner-minimun-D001",
     "type": "Practitioner"
   },
   "groupIdentifier": {

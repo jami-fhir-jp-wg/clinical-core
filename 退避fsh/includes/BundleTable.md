@@ -117,7 +117,7 @@
   <td class=xl151 width=35 style='width:26pt'>1..*</td>
   <td class=xl71 width=87 style='width:65pt'>Coding</td>
   <td class=xl76 width=359 style='width:269pt'>本リソースのメタデータ。<br>
-    CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta.tag要素に記述する。</td>
+    CLINSでのBundleリソースに含まれる５情報リソースカテゴリーをmeta.tag要素に記述する。</td>
   <td class=xl71 width=36 style='width:27pt'>　</td>
   <td class=xl150 width=195 style='width:146pt'>　</td>
  </tr>
@@ -142,7 +142,7 @@
   <td class=xl71 width=73 style='width:55pt'>　</td>
   <td class=xl151 width=35 style='width:26pt'>1..1</td>
   <td class=xl71 width=87 style='width:65pt'>code</td>
-  <td class=xl76 width=359 style='width:269pt'>Bundleリソースに含まれる６情報リソースカテゴリーのいずれかをhhttp://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VSのValuseSetから設定する。<br>
+  <td class=xl76 width=359 style='width:269pt'>Bundleリソースに含まれる５情報リソースカテゴリーのいずれかをhhttp://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VSのValuseSetから設定する。<br>
    
   具体的には、&quot;AllergyIntolerance&quot;、&quot;Condition&quot;、&quot;Observation&quot;、&quot;MedicationRequest&quot;　のいずれかの値を設定する。<br>
     </td>
@@ -209,7 +209,7 @@
   <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'><ruby>実装<span style='display:none'><rt>ジッソウ </rt></span></ruby>ガイド<ruby>本文<span
   style='display:none'><rt>ホンブン </rt></span></ruby><span
-  style='mso-spacerun:yes'> </span>6情報<ruby>送信<span style='display:none'><rt>ソウシン
+  style='mso-spacerun:yes'> </span>５情報<ruby>送信<span style='display:none'><rt>ソウシン
   </rt></span></ruby><ruby>仕様<span style='display:none'><rt>シヨウ </rt></span></ruby>--Bundleリソースを識別するIdentifier要素--
   に<ruby>記載<span style='display:none'><rt>&#0;&#0;&#2;&#5;&#5;&#2;<br>
     <br>
@@ -361,8 +361,8 @@
   <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Resource(JP_Conditon_eCS|JP_Observation_LabResult_eCS|JP_AllergyIntorellance_eCS)</td>
   <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'>このBundleリソースが格納するリソースのprofileに準拠したリソース。6情報のうち傷病<ruby>名<span
-  style='display:none'><rt>メイ </rt></span></ruby>、薬剤アレルギー、その他アレルギー、検体のいずれか。処方は６情報送信においては送信対象となっていない。</td>
+  width:269pt'>このBundleリソースが格納するリソースのprofileに準拠したリソース。５情報のうち傷病<ruby>名<span
+  style='display:none'><rt>メイ </rt></span></ruby>、薬剤アレルギー、その他アレルギー、検体のいずれか。処方は５情報送信においては送信対象となっていない。</td>
   <td class=xl77 align=left width=36 style='border-top:none;border-left:none;
   width:27pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>{<br>

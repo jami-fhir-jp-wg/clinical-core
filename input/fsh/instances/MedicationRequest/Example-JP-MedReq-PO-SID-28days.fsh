@@ -40,9 +40,9 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-12T16:19:06+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-R001) "医学 一郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-R001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimun-R001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

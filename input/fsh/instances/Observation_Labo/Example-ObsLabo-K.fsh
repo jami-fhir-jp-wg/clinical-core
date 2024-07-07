@@ -24,6 +24,9 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 // 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
 //* contained[+] = Example-Contained-JP-Specimen-Serum
 
+// 検査オーダ医師
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+
 * status = #final
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
@@ -36,8 +39,11 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
-* encounter = Reference(Example-JP-Encounter-AMB)
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * issued = "2021-07-05T15:38:59.000+09:00"
+
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+
 * valueQuantity.value = 3.5
 * valueQuantity.unit = "mEq/L"
 //* interpretation.coding.version = "4.0.1"

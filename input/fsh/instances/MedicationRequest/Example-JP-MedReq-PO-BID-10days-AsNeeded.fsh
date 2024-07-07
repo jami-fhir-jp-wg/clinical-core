@@ -40,9 +40,9 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-13T14:22:09+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

@@ -156,7 +156,7 @@ and authorDepartment 0..1 MS
 * section.code ^short = "セクション区分コード"
 * section.code ^definition = "セクション区分コード"
 * section.code.coding 1..1 MS
-* section.code.coding from http://jpfhir.jp/fhir/eDischargeSummmary/ValueSet/document-section
+* section.code.coding from http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
 * section.code.coding.system 1.. MS
 * section.code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section.code.coding.system ^short = "セクション区分コードのコード体系"

@@ -109,6 +109,24 @@
   ],
   "contained": [
     {
+      "resourceType": "Encounter",
+      "id": "Example-Contained-JP-Encounter-IMP",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
+        ]
+      },
+      "status": "finished",
+      "class": {
+        "code": "IMP",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "display": "入院中"
+      },
+      "period": {
+        "start": "2021-07-05"
+      }
+    },
+    {
       "resourceType": "Practitioner",
       "id": "Example-Contained-JP-Practitioner-minimun-D003",
       "meta": {
@@ -168,14 +186,17 @@
     },
     "type": "Patient"
   },
+  "encounter": {
+    "reference": "#Example-Contained-JP-Encounter-IMP"
+  },
   "authoredOn": "2021-07-13T15:01:29+09:00",
   "requester": {
-    "reference": "Practitioner/Example-JP-Practitioner-minimun-D003",
+    "reference": "#Example-Contained-JP-Practitioner-minimun-D003",
     "display": "診療 和子",
     "type": "Practitioner"
   },
   "recorder": {
-    "reference": "Practitioner/Example-JP-Practitioner-minimun-D003",
+    "reference": "#Example-Contained-JP-Practitioner-minimun-D003",
     "type": "Practitioner"
   },
   "groupIdentifier": {

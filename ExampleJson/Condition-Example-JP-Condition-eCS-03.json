@@ -108,7 +108,7 @@
     }
   },
   "encounter": {
-    "reference": "Example-JP-Encounter-AMB"
+    "reference": "#Example-Contained-JP-Encounter-AMB"
   },
   "onsetDateTime": "2020-04-10",
   "abatementDateTime": "2020-05-01",

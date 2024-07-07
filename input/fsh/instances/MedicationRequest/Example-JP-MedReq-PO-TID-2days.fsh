@@ -48,9 +48,9 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-09T09:47:14+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A1720D83807672021070909210705-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

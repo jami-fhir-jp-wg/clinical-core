@@ -74,10 +74,10 @@ Description: "長期保存／未告知診療情報のためのフラグコード
 
 ValueSet:  JP_CLINS_BundleResourceType_VS
 Id:   jp-clins-bundleresourcetype-vs
-Title: "６情報Bundle６情報リソースタイプ　valueSet"
-Description: "６情報Bundle６情報リソースタイプ　valueSet"
+Title: "５情報Bundle５情報リソースタイプ　valueSet"
+Description: "５情報Bundle５情報リソースタイプ　valueSet"
 * ^url = $JP_CLINS_BundleResourceType_VS
-* ^title = "６情報Bundle６情報リソースタイプ　valueSet"
+* ^title = "５情報Bundle５情報リソースタイプ　valueSet"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"

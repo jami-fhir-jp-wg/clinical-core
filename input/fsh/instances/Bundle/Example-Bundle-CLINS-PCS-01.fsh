@@ -16,38 +16,34 @@ Description: "■ 患者療養計画サマリー　Bundleリソース(CLINS送�
 * timestamp = "2024-07-07T10:00:00+09:00"
 
 // entry[composition]
-* entry[+].fullUrl = "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
-* entry[=].resource = compositionPCSExample01Inline
+* entry[composition].fullUrl = "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
+* entry[composition].resource = compositionPCSExample01Inline
 
 // entry[patient]
-* entry[+].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
-* entry[=].resource = Example-JP-Patient-eCS-MAKINOInline
+* entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
 
 // entry[practitioners]　医師IDと医師氏名
-* entry[+].fullUrl = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
-* entry[=].resource = Example-JP-Practitioner-eCS-ReferralFrom01Inline
+* entry[practitioners].fullUrl = "urn:uuid:22212c2d-4837-fd90-c6c5-6ee2a4b7eed2"
+* entry[practitioners].resource = Example-JP-Practitioner-eCS-PCS-Author-Inline
 
-// entry[organization]　医療機関
-* entry[+].fullUrl = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
-* entry[=].resource = Example-JP-Org-eCS-Inst-Referral01Inline
-
-// entry[organization] 診療科
-* entry[+].fullUrl = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
-* entry[=].resource = Example-JP-Org-eCS-ReferralTo01Inline
+// entry[organization]　医療機関と診療科
+* entry[organization].fullUrl = "urn:uuid:ee271941-92f0-07cf-7b6e-db8ce65c9543"
+* entry[organization].resource = Example-JP-Org-eCS-InstWithDepartment-Inline
 
 // entry[encounter]
-* entry[+].fullUrl = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
-* entry[=].resource = Example-JP-Encounter-eCS-AMB-01Inline
+* entry[encounter].fullUrl = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
+* entry[encounter].resource = Example-JP-Encounter-eCS-AMB-01Inline
 
 // entry[carePlan]
-* entry[+].fullUrl = "urn:uuid:6399da0f-77c7-4eb9-fd93-4559d39f1beb"
-* entry[=].resource = Example-JP-CarePlan-eCS-HT
+* entry[carePlan].fullUrl = "urn:uuid:6399da0f-77c7-4eb9-fd93-4559d39f1beb"
+* entry[carePlan].resource = Example-JP-CarePlan-eCS-HT
 
 // entry[condition]　副傷病　狭心症
-* entry[+].fullUrl = "4c604fad-f24c-da56-d777-8f233bc9f835"
-* entry[=].resource = Example-JP-Condition-eCS-ANGINA-NoPrincipal-Active-Inline
+* entry[condition].fullUrl = "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835"
+* entry[condition].resource = Example-JP-Condition-eCS-ANGINA-NoPrincipal-Active-Inline
 
 // entry[condition]　主傷病　高血圧
-* entry[+].fullUrl = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65"
-* entry[=].resource = Example-JP-Condition-eCS-HT-Principal-Active-Inline
+* entry[condition].fullUrl = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65"
+* entry[condition].resource = Example-JP-Condition-eCS-HT-Principal-Active-Inline
 

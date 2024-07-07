@@ -38,10 +38,10 @@ Description: "療養計画患者サマリー Bundle"
 * entry contains
     composition 1..1 MS  // 文書構成情報
 and patient 1..1 MS  //  患者情報
-and practitioners 1.. MS // 作成した医師情報
-and organization 2.. MS // 作成した医療機関と診療科情報
-and encounter 1.. MS
-and carePlan 1..* MS // 療養上の計画／アドバイス
+and practitioners 1..1 MS // 作成した医師情報
+and organization 1..1 MS // 作成した医療機関と診療科情報
+and encounter 1..1 MS
+and carePlan 1..1 MS // 療養上の計画／アドバイス
 and condition 1..* MS // 療養計画の対象となる傷病名（主病名とそれ以外）
 
 * entry[composition] ^short = "documentタイプのBundleリソースの先頭entryはCompositionリソース。"
@@ -60,8 +60,8 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "Patientリソースのエントリー。"
 * entry[patient].fullUrl 1.. MS
-* entry[patient].fullUrl ^short = "埋め込まれているPatientリソースを一意に識別するためのUUID"
-* entry[patient].fullUrl ^definition = "埋め込まれているPatientリソースを一意に識別するためのUUID。"
+* entry[patient].fullUrl ^short = "Patientリソースを一意に識別するためのUUID"
+* entry[patient].fullUrl ^definition = "Patientリソースを一意に識別するためのUUID。"
 * entry[patient].resource 1.. MS
 * entry[patient].resource only JP_Patient_eCS  // 患者情報エントリ Composition.subject
 * entry[patient].resource ^short = "Patientリソースのインスタンス本体"
@@ -70,11 +70,11 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[patient].request ..0
 * entry[patient].response ..0
 
-* entry[practitioners] ^short = "正当な権限があって文書を作成した個人の情報"
-* entry[practitioners] ^definition = "正当な権限があって文書を作成した個人を表すPractitionerリソースで記述する。\r\nauthorisedAuthorRole要素が参照するPractitionerRoleから参照される。"
+* entry[practitioners] ^short = "作成者の情報（医師情報）"
+* entry[practitioners] ^definition = "医師の施設固有IDと氏名をPractitionerリソースで記述する。"
 * entry[practitioners].fullUrl 1.. MS
-* entry[practitioners].fullUrl ^short = "埋め込まれているPractitionerリソースを一意に識別するためのUUID"
-* entry[practitioners].fullUrl ^definition = "埋め込まれているPractitionerリソースを一意に識別するためのUUID。"
+* entry[practitioners].fullUrl ^short = "Practitionerリソースを一意に識別するためのUUID"
+* entry[practitioners].fullUrl ^definition = "Practitionerリソースを一意に識別するためのUUID。"
 * entry[practitioners].resource 1.. MS
 * entry[practitioners].resource only JP_Practitioner_eCS
 * entry[practitioners].resource ^short = "Practitionerリソースのインスタンス本体"
@@ -83,30 +83,54 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[practitioners].request ..0
 * entry[practitioners].response ..0
 
-* entry[organization].resource only JP_Organization_eCS
 * entry[organization] ^short = "文書作成医療機関、診療科"
-* entry[organization] ^definition = "文書作成医療機関、診療科"
+* entry[organization] ^definition = "文書作成医療機関（診療科情報を拡張に含む）"
+* entry[organization].fullUrl 1.. MS
+* entry[organization].fullUrl ^short = "Organizationリソースを一意に識別するためのUUID"
+* entry[organization].fullUrl ^definition = "Organizationリソースを一意に識別するためのUUID。"
+* entry[organization].resource 1.. MS
+* entry[organization].resource only JP_Organization_eCS
+* entry[organization] ^short = "Organizationリソースのインスタンス本体"
+* entry[organization] ^definition = "Organizationリソースのインスタンス本体"
 * entry[organization].search ..0
 * entry[organization].request ..0
 * entry[organization].response ..0
 
+* entry[encounter] ^short = "文書作成時の受診時状況（外来、入院の区分）"
+* entry[encounter] ^definition = "文書作成時の診時状況（外来、入院の区分）"
+* entry[encounter].fullUrl 1.. MS
+* entry[encounter].fullUrl ^short = "Encounterリソースを一意に識別するためのUUID"
+* entry[encounter].fullUrl ^definition = "Encounterリソースを一意に識別するためのUUID。"
+* entry[encounter].resource 1.. MS
 * entry[encounter].resource only JP_Encounter_eCS
-* entry[encounter] ^short = "受診時状況のEncounterリソースを参照"
-* entry[encounter] ^definition = "受診時状況のEncounterリソースを参照。"
+* entry[encounter] ^short = "Encounterリソースのインスタンス本体"
+* entry[encounter] ^definition = "Encounterリソースのインスタンス本体"
 * entry[encounter].search ..0
 * entry[encounter].request ..0
 * entry[encounter].response ..0
 
+* entry[carePlan] ^short = "療養計画の情報"
+* entry[carePlan] ^definition = "療養計画の情報（内容はテキストで記述）"
+* entry[carePlan].fullUrl 1.. MS
+* entry[carePlan].fullUrl ^short = "CarePlanリソースを一意に識別するためのUUID"
+* entry[carePlan].fullUrl ^definition = "CarePlanリソースを一意に識別するためのUUID。"
+* entry[carePlan].resource 1.. MS
 * entry[carePlan].resource only  JP_CarePlan_ePCS
-* entry[carePlan] ^short = "療養計画を記述したCarePlanリソースを参照"
-* entry[carePlan] ^definition = "療養計画をテキストで記述する。"
+* entry[carePlan] ^short = "CarePlanリソースのインスタンス本体"
+* entry[carePlan] ^definition = "CarePlanリソースのインスタンス本体"
 * entry[carePlan].search ..0
 * entry[carePlan].request ..0
 * entry[carePlan].response ..0
 
+* entry[practitioners] ^short = "傷病名"
+* entry[practitioners] ^definition = "傷病名（主傷病名、副傷病名の別情報を含む）"
+* entry[condition].fullUrl 1.. MS
+* entry[condition].fullUrl ^short = "Conditionリソースを一意に識別するためのUUID"
+* entry[condition].fullUrl ^definition = "Conditionリソースを一意に識別するためのUUID。"
+* entry[condition].resource 1.. MS
 * entry[condition].resource only  JP_Condition_eCS
-* entry[condition] ^short = "傷病名を１個以上必ず記述する。"
-* entry[condition] ^definition = "1つにつき1つのConditionで記述されたものを参照する。主病名には拡張で主病名フラグをつける。"
+* entry[condition] ^short = "Conditionリソースのインスタンス本体"
+* entry[condition] ^definition = "Conditionリソースのインスタンス本体"
 * entry[condition].search ..0
 * entry[condition].request ..0
 * entry[condition].response ..0

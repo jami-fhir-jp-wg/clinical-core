@@ -3,7 +3,7 @@ Profile: JP_Bundle_CLINS
 Parent: Bundle
 Id: JP-Bundle-CLINS
 Title: "CLINS電子カルテ情報共有サービス用:JP_Bundle_CLINS"
-Description: "CLINS 電子カルテ情報共有サービスへの6情報送信用 Bundleリソース プロファイル"
+Description: "CLINS 電子カルテ情報共有サービスへの5情報送信用 Bundleリソース プロファイル"
 * ^url = $JP_Bundle_CLINS
 
 
@@ -16,8 +16,8 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 
 
 * ^status = #active
-* . ^short = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
-* . ^definition = "電子カルテ情報共有サービスへの6情報送信用 Bundleリソース"
+* . ^short = "電子カルテ情報共有サービスへの5情報送信用 Bundleリソース"
+* . ^definition = "電子カルテ情報共有サービスへの5情報送信用 Bundleリソース"
 
 * obeys bundle-profile-is-JP-Bundle-CLINS
 * obeys bundle-meta-tag-resourceType-exists //"R02141:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
@@ -58,11 +58,11 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains resourceType 1..1 MS
-  * insert relative_short_definition("CLINSでのBundleリソースに含まれる６情報リソースカテゴリーをmeta.tag要素に記述する。")
+  * insert relative_short_definition("CLINSでのBundleリソースに含まれる５情報リソースカテゴリーをmeta.tag要素に記述する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。" )
   * code 1..1 MS
-    * insert relative_short_definition("Bundleリソースに含まれる６情報リソースカテゴリーのいずれかを　http://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VSのValuseSetから設定する。具体的には、\"AllergyIntolerance\"、\"Condition\"、\"Observation\"、\"MedicationRequest\"　のいずれかの値を設定する。")
+    * insert relative_short_definition("Bundleリソースに含まれる５情報リソースカテゴリーのいずれかを　http://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VSのValuseSetから設定する。具体的には、\"AllergyIntolerance\"、\"Condition\"、\"Observation\"、\"MedicationRequest\"　のいずれかの値を設定する。")
 
 * meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
 * meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
@@ -73,7 +73,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの6情報送信�
 * identifier ^comment = "Bundleリソースのidentifier要素は以下の通りとする。\r\n
 この仕様を満たすidentifierに加えて、これとは異なるsystem値をもつidentifierは複数存在しても構わない。\r\n
 Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n
-Bundle.identifier.value : 実装ガイド本文 6情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
+Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
 
 * identifier.system 1.. MS
 * identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
@@ -88,7 +88,7 @@ Bundle.identifier.value : 実装ガイド本文 6情報送信仕様--Bundleリ�
 
 /*
 * link ^short = "このBundleが格納するPatientリソース以外のリソースタイプ。"
-* link ^definition = "このBundleが6情報リソース（4種類）のどれを格納するためのものかを、そのリソースのprofile　URLにより記述する。"
+* link ^definition = "このBundleが5情報リソース（4種類）のどれを格納するためのものかを、そのリソースのprofile　URLにより記述する。"
 * link.relation = #profile
 * link ^slicing.discriminator.type = #value
 * link ^slicing.discriminator.path = "url"

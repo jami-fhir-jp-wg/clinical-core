@@ -44,17 +44,18 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2359800J1035 "新レシカルボン坐剤"
 * medicationCodeableConcept.coding[+] = $Icode#I3344500 "新レシカルボン坐剤"
 * medicationCodeableConcept.text = "新レシカルボン坐剤"
+
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
 * subject.type = "Patient"
-* encounter = Reference(Example-JP-Encounter-IMP)
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-R001) "医学 一郎"
+* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
 * recorder.type = "Practitioner"
 
 * groupIdentifier.value = "1318814790-9990767-0A172220B35F172021071410514001-1"

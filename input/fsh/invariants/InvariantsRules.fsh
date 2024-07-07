@@ -109,7 +109,7 @@ Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/Bundl
 
 // Bundle のidentifier. [\\\\^]
 // Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n
-// Bundle.identifier.value : 実装ガイド本文 6情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
+// Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
 Invariant: valid-system-bundleIdenfifier
 Description: "R02151:Bundle.identifier.sysyemは、http://jpfhir.jp/fhir/clins/bundle-identifier"
 Severity: #error

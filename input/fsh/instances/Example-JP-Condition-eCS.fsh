@@ -48,6 +48,8 @@ Description: "Conditionリソース 必須要素だけの データ作成例"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
+
 * onsetDateTime = "2020-04-10"
 
 //--------------------------
@@ -77,9 +79,6 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 
-// 入院外来区分
-* contained[+] = Example-Contained-JP-Encounter-AMB
-
 // 主傷病
 * extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
 * extension[eCS_DiagnosisType].valueCodeableConcept = $ex-diagnosistype-cs#principal "主病名"
@@ -108,7 +107,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
-* encounter = Reference(Example-JP-Encounter-AMB)
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 * onsetDateTime = "2020-04-10"
 * recordedDate = "2020-04-18"
@@ -160,7 +159,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
-* encounter = Reference(Example-JP-Encounter-AMB)
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 * onsetDateTime = "2020-04-10"
 * abatementDateTime = "2020-05-01"
@@ -208,7 +207,8 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
-* encounter.reference = "Encounter/Example-Contained-JP-Encounter-AMB"
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
+
 // 2018 2020-08-21
 // ATGtime 12:12:20
 * onsetDateTime = "2018-08-21"

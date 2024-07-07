@@ -62,7 +62,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 
 //-- 主病名　には必須
 * extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
-* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
+* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $ex-diagnosistype-cs#principal "主病名"
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB
@@ -108,7 +108,7 @@ Description: "Conditionリソース 現在の傷病名（副病名）　例1　�
 
 //-- 主病名　には必須
 //* extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
-//* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
+//* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $ex-diagnosistype-cs#principal "主病名"
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB
@@ -153,7 +153,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例2　�
 
 //-- 主病名　には必須
 * extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
-* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
+* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $ex-diagnosistype-cs#principal "主病名"
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB

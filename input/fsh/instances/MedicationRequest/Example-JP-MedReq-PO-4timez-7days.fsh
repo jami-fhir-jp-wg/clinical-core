@@ -11,6 +11,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-4timez-7days"
 
+* contained[+] = Example-Contained-JP-Encounter-IMP
 // * contained[+] = Example-Contained-JP-Patient-minimun
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D003
 
@@ -37,11 +38,11 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 
 
 * subject.type = "Patient"
-
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 * authoredOn = "2021-07-13T15:01:29+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D003) "診療 和子"
+* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D003) "診療 和子"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D003)
+* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D003)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

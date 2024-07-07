@@ -12,6 +12,7 @@ Description: "【意図的エラー例】：入院処方　外用（塗布）全
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-ExtSkin-Total2"
 
+* contained[+] = Example-Contained-JP-Encounter-IMP
 // * contained[+] = Example-Contained-JP-Patient-minimun
 * contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
@@ -40,11 +41,12 @@ Description: "【意図的エラー例】：入院処方　外用（塗布）全
 
 
 * subject.type = "Patient"
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * authoredOn = "2021-07-05T17:31:48+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-R001)
+* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

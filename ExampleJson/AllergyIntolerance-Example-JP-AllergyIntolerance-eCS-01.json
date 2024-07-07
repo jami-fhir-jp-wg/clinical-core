@@ -22,6 +22,29 @@
       }
     }
   ],
+  "contained": [
+    {
+      "resourceType": "Encounter",
+      "id": "Example-Contained-JP-Encounter-AMB",
+      "meta": {
+        "profile": [
+          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+          "value": "192844"
+        }
+      ],
+      "status": "finished",
+      "class": {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code": "AMB",
+        "display": "外来"
+      }
+    }
+  ],
   "clinicalStatus": {
     "coding": [
       {
@@ -46,6 +69,9 @@
       "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
       "value": "00012345:あいう:１８７:05"
     }
+  },
+  "encounter": {
+    "reference": "#Example-Contained-JP-Encounter-AMB"
   },
   "note": [
     {

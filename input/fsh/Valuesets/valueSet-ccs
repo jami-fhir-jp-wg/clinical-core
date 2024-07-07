@@ -33,9 +33,9 @@ Description: "未コード化測定法999を含むMEDIS臨床検査項目コー�
 
 ValueSet: JP_Observation-SubCategory_VS
 Id: jp-observation-subcategory-vs
-Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
+Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
 * ^url = $observation-subcategory-vs
-* ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
+* ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
 * ^status = #active
 * ^experimental = false
 * ^content = #fragment

@@ -15,7 +15,7 @@ Description: "CarePlanリソース　データ作成例"
 * category.coding = $JP_carePlanCategory_CS#followup-plan "外来診療経過中プラン"
 
 * title = "療養計画"
-* description = "高血圧について内服を継続してください。\r\n1日30分でも軽い運動を継続しましょう。\r\n"
+* description = "高血圧について内服を継続してください。\r\n1日30分でも軽い運動を継続しましょう。"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 * period.start = "2024-07-07"
@@ -39,7 +39,7 @@ Description: "CarePlanリソース　データ作成例(Inline)"
 * category.coding = $JP_carePlanCategory_CS#followup-plan "外来診療経過中プラン"
 
 * title = "療養計画"
-* description = "高血圧について内服を継続してください。\r\n1日30分でも軽い運動を継続しましょう。\r\n"
+* description = "高血圧について内服を継続してください。\r\n1日30分でも軽い運動を継続しましょう。"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 * period.start = "2024-07-07"

@@ -2,10 +2,10 @@
 
 CodeSystem: JP_CLINS_BundleResourceType_CS
 Id: jp-clins-bundleresourcetype-cs
-Title: "CLINSでのBundleリソースに含まれる６情報リソースタイプをmeta要素に記述するためのコードセット"
-Description: "CLINSでのBundleリソースに含まれる６情報リソースタイプをmeta要素に記述するためのコードセット"
+Title: "CLINSでのBundleリソースに含まれる５情報リソースタイプをmeta要素に記述するためのコードセット"
+Description: "CLINSでのBundleリソースに含まれる５情報リソースタイプをmeta要素に記述するためのコードセット"
 * ^url = $JP_CLINS_BundleResourceType_CS
-* ^title = "Bundleリソースに含まれる６情報リソースタイプ"
+* ^title = "Bundleリソースに含まれる５情報リソースタイプ"
 
 * ^version = "1"
 * ^status = #active
@@ -92,10 +92,10 @@ Description: "長期保存／未告知診療情報のためのフラグコード
 //$observation-subcategory-cs#infectionRelated http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
 CodeSystem: JP_Observation_SubCategory_CS
 Id: jp-observation-subcategory-cs
-Title: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
-Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
+Title: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
+Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
 * ^url = $observation-subcategory-cs
-* ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで６情報で運用される"
+* ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
 * ^status = #active
 * ^experimental = false
 * ^content = #fragment

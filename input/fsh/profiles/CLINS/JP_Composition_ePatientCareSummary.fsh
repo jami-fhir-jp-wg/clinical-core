@@ -5,7 +5,6 @@ Description:  "患者療養計画サマリーのリソース構成情報と文�
 // * obeys checkValidCategoryTitle
 // * obeys checkValidCategory
 // * obeys checkValidSections
-* obeys checkExist-CDASection-or-CompositionSection
 * ^url = "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
 
 * ^version = "1"
@@ -74,18 +73,18 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 
 * encounter ^short = "この文書が作成された受診時状況情報を表すEncounterリソースへの参照"
 * encounter ^definition = "この文書が作成された受診時状況情報を表すEncounterリソースへの参照。入院外来区分を表すために記述する。"
-* encounter ..1 MS
+* encounter 1..1 MS
 
 * date ^definition = "このリソースを作成または最後に編集した日時。ISO8601に準拠し、秒の精度まで記録し、タイムゾーンも付記する。\r\n午前0時を\"24:00\"と記録することはできないため\"00:00\"と記録すること。　\r\n例：\"2020_08_21T12:28:21+09:00\""
 * date 1..1 MS
 
-* author 3..3 MS
-* author ^short = "文書作成責任者と文書作成機関、診療科への参照。"
-* author ^definition = "文書作成責任者を表すPractitionerリソースへの参照、および,文書作成機関か、または文書作成機関の診療科と文書作成機関を表すOrganizationリソースへの参照の2つのReferenceを繰り返す。"
+* author 2..2 MS
+* author ^short = "文書作成責任者、文書作成機関（診療科拡張あり）への参照。"
+* author ^definition = "文書作成責任者を表すPractitionerリソースへの参照、および文書作成機関の診療科と文書作成機関を表すOrganizationリソースへの参照の2つのReference。"
 * author only  Reference(JP_Practitioner_eCS or JP_Organization_eCS)
  
 * title 1..1 MS
-* title = "患者療養計画サマリー" (exactly)
+* title = "患者サマリー（療養計画書）" (exactly)
 
 * custodian ..0 MS
 

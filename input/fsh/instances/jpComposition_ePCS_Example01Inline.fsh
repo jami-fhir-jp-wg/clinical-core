@@ -35,26 +35,22 @@ Description: "患者療養計画サマリー　Compositionリソース データ
 * date = "2024-07-07T12:12:20+09:00"
 
 // * author[0].reference = "Example-JP-Practitioner-eCS-PCSFrom01Inline"
-* author[0].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* author[0].reference = "urn:uuid:22212c2d-4837-fd90-c6c5-6ee2a4b7eed2"
 * author[=].type = "Practitioner"
 * author[=].display = "患者療養計画サマリー作成者　Practitionerリソース"
 
 // * author[+].reference = "Example-JP-Org-eCS-Inst-PCS01Inline"
-* author[1].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* author[1].reference = "urn:uuid:ee271941-92f0-07cf-7b6e-db8ce65c9543"
 * author[=].type = "Organization"
-* author[=].display = "患者療養計画サマリー作成機関　Organizationリソース"
-
-* author[2].reference = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
-* author[=].type = "Organization"
-* author[=].display = "患者療養計画サマリー作成診療科　Organizationリソース"
+* author[=].display = "患者療養計画サマリー作成機関と診療科　Organizationリソース"
 
 
-* title = "患者療養計画サマリー"
+* title = "患者サマリー（療養計画書）"
 
 * section.title = "計画サマリー"
 * section.code.coding = http://jpfhir.jp/fhir/clins/CodeSystem/document-section#422 "計画サマリーセクション"
 
 * section.entry[carePlan].reference = "urn:uuid:6399da0f-77c7-4eb9-fd93-4559d39f1beb"
-* section.entry[condition].reference = "4c604fad-f24c-da56-d777-8f233bc9f835" // 副傷病　狭心症
+* section.entry[condition].reference = "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835" // 副傷病　狭心症
 * section.entry[condition].reference = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65" // 主傷病　高血圧
 

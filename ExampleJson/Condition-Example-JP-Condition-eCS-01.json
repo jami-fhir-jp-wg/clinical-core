@@ -107,5 +107,8 @@
       "value": "00012345:あいう:１８７:05"
     }
   },
+  "encounter": {
+    "reference": "#Example-Contained-JP-Encounter-AMB"
+  },
   "onsetDateTime": "2020-04-10"
 }

@@ -6,9 +6,9 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
-name: "電子カルテ情報共有サービス2文書6情報+　FHIR実装ガイド v1.3.0-rc1 (リリース候補v1)"
-title: "電子カルテ情報共有サービス2文書6情報+　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc1 (リリース候補v1)"
-description: "電子カルテ情報共有サービス2文書6情報+　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc1 (リリース候補v1)"
+name: "電子カルテ情報共有サービス2文書５情報+患者サマリー患者様李　FHIR実装ガイド v1.3.0-rc1 (リリース候補v1)"
+title: "電子カルテ情報共有サービス2文書５情報+患者サマリー患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc1 (リリース候補v1)"
+description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc1 (リリース候補v1)"
 status: active # draft | active | retired | unknown 
 version: 1.3.0-rc1
 date: 2024-07-01
@@ -37,13 +37,13 @@ dependencies:
 #----------------------------------------
 pages:
   index.md:
-    title: 電子カルテ情報共有サービス2文書6情報+　FHIR仕様　JP-CLINS
+    title: 電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR仕様　JP-CLINS
   core6spec.md:
-    title: ６情報送信仕様
+    title: ５情報送信仕様
   resourceProfiles.md:
-    title: 6情報と関連プロファイル
+    title: ５情報と関連プロファイル
   3docs-ps.md:
-    title: ２文書実装ガイドと仕様
+    title: ２文書実装ガイドと仕様/患者サマリー
   glossary.md:
     title: 用語説明
   validationGuide.md:
@@ -56,9 +56,10 @@ pages:
 menu:
   Home:
     本文: index.html
-    ６情報送信仕様: core6spec.html
-    ６情報と関連プロファイル: resourceProfiles.html
+    ５情報送信仕様: core6spec.html
+    ５情報と関連プロファイル: resourceProfiles.html
     ２文書実装ガイドと仕様: 3docs-ps.html
+    患者サマリー（療養計画書）: 3docs-ps.html#%E6%82%A3%E8%80%85%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E7%99%82%E9%A4%8A%E8%A8%88%E7%94%BB%E6%9B%B8
     その他のリソース等: artifacts.html
     データの実例集: artifacts.html#example-example-instances
     用語説明: glossary.html

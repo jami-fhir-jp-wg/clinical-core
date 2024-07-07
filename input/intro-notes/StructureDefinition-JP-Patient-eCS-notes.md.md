@@ -1,7 +1,7 @@
 
 ## 被保険者個人識別子の格納
 CLINSに医療機関から送信する場合には、個人識別子として、保険者情報と被保険者情報を送信することが必須である。このためFHIRリソースの患者情報であるPatientリソースのidentifier要素にこの識別子情報を設定<span style="color: red; ">しなければならない。</span><br>以下にその仕様を示す。<br>なお、生活保護受給者識別子もほぼ同じ仕様であるが、後半に別途記載する。
-なお、Patientリソースは、６情報のいずれでもBundleリソース内の先頭のentryに記述<span style="color: red; ">しなければならない。</span>またそのPatientリソースのidentifier要素にこの被保険者個人識別子を設定<span style="color: red; ">しなければならない。</span>
+なお、Patientリソースは、５情報のいずれでもBundleリソース内の先頭のentryに記述<span style="color: red; ">しなければならない。</span>またそのPatientリソースのidentifier要素にこの被保険者個人識別子を設定<span style="color: red; ">しなければならない。</span>
 
 ### 「被保険者個人識別子」の文字列仕様
 個人識別子として、保険者情報と被保険者情報とを以下の仕様で連結したひとつの文字列を使用する。<br>

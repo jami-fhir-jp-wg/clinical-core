@@ -12,6 +12,8 @@ Description: "AllergyIntoleranceリソース 必須要素だけ データ作成�
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
 
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_AllergyIntolerance_eCS
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
@@ -20,8 +22,7 @@ Description: "AllergyIntoleranceリソース 必須要素だけ データ作成�
 
 //* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
 
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_eCS
+* contained[+] = Example-Contained-JP-Encounter-AMB
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "102934701"
@@ -46,6 +47,8 @@ Description: "AllergyIntoleranceリソース 必須要素だけ データ作成�
 * patient.identifier.system = $JP_Insurance_memberID
 * patient.identifier.value = "00012345:あいう:１８７:05"
 
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
+
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
 //* onsetPeriod.start = "2020-04-10"
@@ -63,6 +66,9 @@ Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプ�
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素とプラスアルファを記述した データ作成例</p> </div>"
 
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_AllergyIntolerance_eCS
+* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
@@ -71,9 +77,6 @@ Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプ�
 //* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
 * contained[+] = Example-Contained-JP-Encounter-AMB
 
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_eCS
-* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "102934702"
@@ -102,7 +105,7 @@ Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプ�
 * patient.identifier.value = "00012345:あいう:１８７:05"
 
 
-* encounter = Reference(Example-JP-Encounter-AMB)
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)
@@ -125,6 +128,10 @@ Description: "AllergyIntoleranceリソース　必須要素で記述した薬剤
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素で記述した薬剤アレルギー等情報の データ作成例</p> </div>"
 
 
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
+* meta.profile[+] = $JP_AllergyIntolerance_eCS
+* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
+
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
@@ -132,9 +139,6 @@ Description: "AllergyIntoleranceリソース　必須要素で記述した薬剤
 //* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
 * contained[+] = Example-Contained-JP-Encounter-AMB
 
-* meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_eCS
-* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "102934703"
@@ -163,8 +167,8 @@ Description: "AllergyIntoleranceリソース　必須要素で記述した薬剤
 * patient.identifier.system = $JP_Insurance_memberID
 * patient.identifier.value = "00012345:あいう:１８７:05"
 
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
-* encounter = Reference(Example-JP-Encounter-AMB)
 
 //100on_アレルギ時期日時(ARGdate,ARGtime)
 //100on_アレルギ時期日(ARGdate)

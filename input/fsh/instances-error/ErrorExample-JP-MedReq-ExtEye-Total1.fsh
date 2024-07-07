@@ -41,9 +41,9 @@ Description: "【意図的エラー例】：入院処方　外用（点眼）全
 * subject.type = "Patient"
 
 * authoredOn = "2021-07-05T13:08:22+09:00"
-* requester = Reference(Practitioner/Example-JP-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-JP-Practitioner-minimun-D001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1318814790-9990767-AC12821012A0552021070513070302-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
