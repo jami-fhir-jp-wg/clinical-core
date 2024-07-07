@@ -35,21 +35,24 @@ Description:    "eCS 診療情報・サマリー汎用 CarePlan"
 * text.status = #generated
 * text.div MS
 * text.div ^definition = "本リソースの構造化情報から生成したテキスト表現をいれてもよい。\\\\r\\\\nXHTML形式"
+
 * identifier 0..1 MS
 * identifier.system 1..1 MS
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value 1..1 MS
+
 * status 1..1 MS
 * status ^short = "プランのステータス"
 * status ^definition = "\"http://hl7.org/fhir/request-status\" コードから　draft | active | on-hold | revoked | completed | entered-in-error | unknown　など。
 案、有効、保留、取消、完了、エラー、不明"
 * status = #active
+
 * intent 1..1 MS
 * intent ^short = "趣旨区分"
 * intent ^definition = "趣旨区分 \"http://hl7.org/fhir/request-intent\" proposal | plan | order | option 提案|計画|指示|オプション 入院時または退院時の方針では、内容によりいずれにもなりうるので、適切なコードを適宜選択して使用する。"
 * intent = #plan
 
-* category 0..1 MS
+* category 1..1 MS
 * category ^short = "プランのタイプ"
 * category ^definition = "followup-plan、admission-plan、hospital-plan、discharge-plan"
 * category.coding from $JP_carePlanCategory_VS
@@ -66,10 +69,12 @@ Description:    "eCS 診療情報・サマリー汎用 CarePlan"
 * subject ^short = "患者Patientリソースへの参照"
 * subject ^definition = "患者Patientリソースへの参照"
 * subject  only Reference(JP_Patient)
+
 * encounter  0..1    MS
 * encounter ^short = "対象となる入院情報または退院情報を含む入院詳細情報"
 * encounter ^definition = "対象となる入院情報または退院情報を含む入院詳細情報"
-* encounter   only Reference(JP_Encounter)
+* encounter  only Reference(JP_Encounter)
+
 * period    1..1 MS
 * period ^short = "このプランがカバーする期間"
 * period ^definition = "このプランがカバーする期間"
@@ -79,13 +84,16 @@ Description:    "eCS 診療情報・サマリー汎用 CarePlan"
 * period.end 0..1 MS
 * period.end ^short = "退院日または退院日以降のこのプランのカバー終了日付。通常省略されるが、ひき続き、次のプランに引き継ぐ場合には終了日付が入る。"
 * period.end ^definition = "退院日または退院日以降のこのプランのカバー終了日付。通常省略されるが、ひき続き、次のプランに引き継ぐ場合には終了日付が入る。"
+
 * created   0..1 MS
 * created ^short = "このプランが最初に作成された日付"
 * created ^definition = "このプランが最初に作成された日付"
+
 * author 0..1 MS
 * author ^short = "このプランの責任者情報への参照"
 * author ^definition = "このプランの責任者情報への参照"
 * author   only Reference(JP_Practitioner)
+
 * contributor ..0 MS
 * careTeam ..0 MS
 
@@ -127,7 +135,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * title 1..1 MS
 * title ^short = "プランの課題名称"
 * title ^definition = "\"療養計画\" \"入院時方針\"　または　\"退院時の方針\" その他の課題名称でも構わない。"
-* title = "療養計画"
+* title = "療養計画"  (exactly)
 
 * description   1..1 MS
 * description ^short = "療養計画内容サマリー"
@@ -138,7 +146,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * subject ^definition = "患者Patientリソースへの参照"
 * subject  only Reference(JP_Patient_eCS)
 
-* encounter  0..1    MS
+* encounter  ..0    MS
 * encounter ^short = "受診情報"
 * encounter ^definition = "本計画を作成した外来受診情報、または入院情報、または退院情報"
 * encounter   only Reference(JP_Encounter_eCS)
@@ -158,7 +166,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * created ^short = "この療養計画書が作成された日付"
 * created ^definition = "この療養計画書が作成された日付 dateTime型"
 
-* author 1..1 MS
+* author ..0 MS
 * author ^short = "作成者情報への参照"
 * author ^definition = "作成者情報への参照"
 * author   only Reference(JP_Practitioner_eCS)

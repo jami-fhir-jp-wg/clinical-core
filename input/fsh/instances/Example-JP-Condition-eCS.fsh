@@ -189,8 +189,8 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 
 //-- 主病名　には必須
-* extension[eCS_Department].url = $JP_eCS_DiagnosisType
-* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
+* extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
+* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB

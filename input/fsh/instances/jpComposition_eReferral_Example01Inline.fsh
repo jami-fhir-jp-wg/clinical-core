@@ -13,8 +13,7 @@ Instance: compositionReferralExample01Inline
 InstanceOf: JP_Composition_eReferral
 Usage: #inline
 
-Description: "構成情報 データ作成例　composition"
-
+Description: "診療情報提供書　Compositionリソース データ作成例　composition"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 //* meta.profile[+] = "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
@@ -45,18 +44,18 @@ Description: "構成情報 データ作成例　composition"
 // * author[0].reference = "Example-JP-Practitioner-eCS-ReferralFrom01Inline"
 * author[0].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * author[=].type = "Practitioner"
-* author[=].display = "紹介状作成者PractitionerRoleリソース"
+* author[=].display = "診療情報提供書作成者PractitionerRoleリソース"
 
 // * author[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
 * author[1].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * author[=].type = "Organization"
-* author[=].display = "紹介状作成機関Organizationリソース"
+* author[=].display = "診療情報提供書作成機関Organizationリソース"
 
 * title = "診療情報提供書"
 // * custodian.reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
 * custodian.reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * custodian.type = "Organization"
-* custodian.display = "紹介状交付責任機関Organizationリソース"
+* custodian.display = "診療情報提供書交付責任機関Organizationリソース"
 
 * event.code.text = "診療情報提供書発行"
 * event.period.start = "2020-08-21"

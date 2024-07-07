@@ -74,13 +74,13 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 
 * encounter ^short = "この文書が作成された受診時状況情報を表すEncounterリソースへの参照"
 * encounter ^definition = "この文書が作成された受診時状況情報を表すEncounterリソースへの参照。入院外来区分を表すために記述する。"
-* encounter ..0 MS
+* encounter ..1 MS
 
 * date ^definition = "このリソースを作成または最後に編集した日時。ISO8601に準拠し、秒の精度まで記録し、タイムゾーンも付記する。\r\n午前0時を\"24:00\"と記録することはできないため\"00:00\"と記録すること。　\r\n例：\"2020_08_21T12:28:21+09:00\""
 * date 1..1 MS
 
-* author 1..1 MS
-* author ^short = "文書作成責任者と文書作成機関とへの参照。"
+* author 3..3 MS
+* author ^short = "文書作成責任者と文書作成機関、診療科への参照。"
 * author ^definition = "文書作成責任者を表すPractitionerリソースへの参照、および,文書作成機関か、または文書作成機関の診療科と文書作成機関を表すOrganizationリソースへの参照の2つのReferenceを繰り返す。"
 * author only  Reference(JP_Practitioner_eCS or JP_Organization_eCS)
  
@@ -129,52 +129,22 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section ^definition = "計画サマリーセクション"
 * section.title = "計画サマリー" (exactly)
 
-* section.code.coding.code = #422 (exactly)
+* section.code.coding = http://jpfhir.jp/fhir/clins/CodeSystem/document-section#422 "計画サマリーセクション" (exactly)
+
 * section.entry 
 * section.entry  ^slicing.discriminator.type = #profile
 * section.entry  ^slicing.discriminator.path = "resolve()"
 * section.entry  ^slicing.rules = #closed
+
 * section.entry contains
-patient 1..1 MS  //  患者情報
-and practitioners 1.. MS // 作成した医師情報
-and organization 2.. MS // 作成した医療機関と診療科情報
-and encounter 1.. MS
-and carePlan 1..* MS // 療養上の計画／アドバイス
+    carePlan 1..1 MS // 療養上の計画／アドバイス
 and condition 1..* MS // 療養計画の対象となる傷病名（主病名とそれ以外）
-
-* section.entry[patient] only Reference(JP_Patient_eCS)
-* section.entry[patient] ^short = "対象患者"
-* section.entry[patient] ^definition = "対象患者"
-* section.emptyReason ..1
-* section.section ..0
-
-
-* section.entry[practitioners] only Reference(JP_Practitioner_eCS)
-* section.entry[practitioners] ^short = "作成医師情報"
-* section.entry[practitioners] ^definition = "作成医師情報"
-* section.emptyReason ..1
-* section.section ..0
-
-* section.entry[organization] only Reference(JP_Organization_eCS)
-* section.entry[organization] ^short = "医療機関情報"
-* section.entry[organization] ^definition = "医療機関情報"
-* section.emptyReason ..1
-* section.section ..0
-
-
-* section.entry[encounter] only Reference(JP_Encounter_eCS)
-* section.entry[encounter] ^short = "入院外来受診情報"
-* section.entry[encounter] ^definition = "入院外来受診情報"
-* section.emptyReason ..1
-* section.section ..0
-
 
 * section.entry[carePlan] only Reference(JP_CarePlan_ePCS)
 * section.entry[carePlan] ^short = "療養計画"
 * section.entry[carePlan] ^definition = "療養計画"
 * section.emptyReason ..1
 * section.section ..0
-
 
 * section.entry[condition] only Reference(JP_Condition_eCS)
 * section.entry[condition] ^short = "傷病名"

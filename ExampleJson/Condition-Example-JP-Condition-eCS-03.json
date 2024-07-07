@@ -20,11 +20,24 @@
         "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
         "value": "1318814790"
       }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "08",
+            "system": "urn:oid:1.2.392.200250.2.2.2",
+            "display": "循環器科"
+          }
+        ],
+        "text": "循環器診療科"
+      }
     }
   ],
   "note": [
     {
-      "text": "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
+      "text": "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了　患者参照を被保険者番号のしている例"
     }
   ],
   "contained": [

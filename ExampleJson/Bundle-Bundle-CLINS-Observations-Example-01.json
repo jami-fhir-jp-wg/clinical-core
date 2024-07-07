@@ -1,23 +1,23 @@
 {
   "resourceType": "Bundle",
-  "id": "BundleCLINS-Obs-Example01",
+  "id": "Bundle-CLINS-Observations-Example-01",
   "meta": {
-    "lastUpdated": "2023-11-12T10:00:00+09:00",
-    "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
-    ],
     "tag": [
       {
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS",
         "code": "Observation"
       }
+    ],
+    "lastUpdated": "2023-11-12T10:00:00+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
     ]
   },
+  "type": "collection",
   "identifier": {
     "system": "http://jpfhir.jp/fhir/clins/bundle-identifier",
     "value": "1318814790^2024^0123-IDa-203949583949"
   },
-  "type": "collection",
   "timestamp": "2023-11-12T10:00:00+09:00",
   "entry": [
     {

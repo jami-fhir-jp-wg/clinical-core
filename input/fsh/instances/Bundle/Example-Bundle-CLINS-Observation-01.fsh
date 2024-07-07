@@ -1,12 +1,13 @@
 
 Instance: Bundle-CLINS-Observations-Example-01
-InstanceOf: Bundle
+InstanceOf: JP_Bundle_CLINS
 Usage: #example
 
 Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　#01"
 
 * meta.lastUpdated = "2023-11-12T10:00:00+09:00"
 * meta.profile[+] = $JP_Bundle_CLINS
+
 * meta.tag.system = $JP_CLINS_BundleResourceType_CS
 * meta.tag.code = #Observation
 

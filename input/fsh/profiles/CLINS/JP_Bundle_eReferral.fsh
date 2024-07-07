@@ -22,7 +22,7 @@ Description: "診療情報提供書 Bundle"
 * identifier ^short = "この文書Bundleの固定識別番号。Bundle作成時にシステムが設定し、サーバ間で移動、コピーされても変更されないID。"
 * identifier ^definition = "この文書Bundleの固定識別番号。identifierがグローバルに一意になるように生成される必要がある。"
 * identifier.system 1.. MS
-* identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/documentInstance-identifier" (exactly)
+* identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
 * identifier.value 1.. MS
 
 * type = #document (exactly)

@@ -211,10 +211,6 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-* identifier
-  * ^example[0].label = "General"
-  * ^example[=].valueIdentifier.system = "http://jpfhir.jp/fhir/core/IdSystem/documentInstance-identifier"
-  * ^example[=].valueIdentifier.value = "123456"
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_Consent_eCS
@@ -228,10 +224,6 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-* identifier
-  * ^example[0].label = "General"
-  * ^example[=].valueIdentifier.system = "http://jpfhir.jp/fhir/core/IdSystem/documentInstance-identifier"
-  * ^example[=].valueIdentifier.value = "123456"
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_ResearchSubject
