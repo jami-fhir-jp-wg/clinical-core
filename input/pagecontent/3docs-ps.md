@@ -34,6 +34,10 @@ Bundleリソース、Compositionリソース、およびその他の各リソー
   1.  [診療計画情報	CarePlanリソース][JP_CarePlan_ePCS]
   1.  [傷病名情報	Conditionリソース][JP_Condition_eCS]
 
+### 患者サマリー（療養計画書）　DRAFT データ作成例
+
+  1. [高血圧外来での療養計画例](https://jpfhir.jp/fhir/clins/ig/Bundle-Bundle-CLINS-PCS-Example-01.html)
+
 患者サマリー（療養計画書）は、電子カルテ情報共有サービスにおいて、5情報送信で受信した検体検査結果、診療情報提供書に記述された処方情報、電子処方箋で取得した処方情報から、医療機関番号および医師ID、日付が一定の範囲の情報と紐付けされて利用（表示）される予定となっている。
 
 {% include markdown-link-references.md %}
