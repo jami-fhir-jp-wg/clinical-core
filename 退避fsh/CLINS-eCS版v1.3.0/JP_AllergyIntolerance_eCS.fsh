@@ -75,14 +75,14 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 */
 
 
-* extension[eCS_InstitutionNumber] 0..1 MS // eCS  
-//* extension[eCS_InstitutionNumber] 1..1 MS   // CLINS
+//* extension[eCS_InstitutionNumber] 0..1 MS // eCS  
+* extension[eCS_InstitutionNumber] 1..1 MS   // CLINS
   * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
 
-* extension[eCS_Department] 0..1 MS // eCS
-//* extension[eCS_Department] 0..1 MS // CLINS
+//* extension[eCS_Department] 0..1 MS // eCS
+* extension[eCS_Department] 0..1 MS // CLINS
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"の2桁コードだけを使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
@@ -100,8 +100,8 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * identifier[resourceIdentifier].value 1..1 MS
   * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
 
-* clinicalStatus   0..1 MS  // eCS  
-//* clinicalStatus   1..1 MS  // CLINS
+//* clinicalStatus   0..1 MS  // eCS  
+* clinicalStatus   1..1 MS  // CLINS
 * clinicalStatus   ^short = "臨床的状態のステータス。"
 * clinicalStatus   ^definition = "臨床的状態のステータス。コードで記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では必須。"
 * clinicalStatus   ^comment = "active | inactive | resolved のいすれか（現存、非現存、解消）system=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
@@ -121,7 +121,8 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * type ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-type\" から　allergy | intolerance のいずれか（アレルギー反応、不耐性反応）。"
 * type ^comment = "メカニズムの種類を正確に決めることは難しいので、この情報はあくまで情報登録側の判断に依存する。"
 
-* category 0.. MS
+//* category 0.. MS // eCS
+* category 1..1 MS // CLINS
 * category ^short = "特定された原因物質のカテゴリ。記述を可能な限り推奨する。"
 * category ^definition = "コード表：\"http://hl7.org/fhir/allergy-intolerance-category\" から　food | medication | environment | biologic　のいずれか　（食物、医薬品、環境、生物学的）を選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には適切なコードを設定すること。電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は\"medication\"として存在しなければならない。\"biologic\"の設定はしないこととしており、設定されていた場合にはエラーとなる。それ以外が設定されている場合、及び本要素が存在しない場合には、その他アレルギー等の情報として取り扱われる。"
 
