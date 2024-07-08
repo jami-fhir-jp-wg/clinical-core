@@ -6,12 +6,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
-name: "電子カルテ情報共有サービス2文書５情報+患者サマリー患者様李　FHIR実装ガイド v1.3.0-rc1 (リリース候補v1)"
-title: "電子カルテ情報共有サービス2文書５情報+患者サマリー患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc1 (リリース候補v1)"
+name: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド v1.3.0-rc1 (リリース候補v1)"
+title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc1 (リリース候補v1)"
 description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc1 (リリース候補v1)"
 status: active # draft | active | retired | unknown 
 version: 1.3.0-rc1
-date: 2024-07-01
+date: 2024-07-07
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -31,6 +31,7 @@ dependencies:
   jpfhir-terminology.r4:
     uri: http://jpfhir.jp/fhir//jpfhir-terminology.r4/ImplementationGuide/
     version: 1.1.1
+    
 #----------------------------------------
 # ページタイトル名称設定
 #----------------------------------------
