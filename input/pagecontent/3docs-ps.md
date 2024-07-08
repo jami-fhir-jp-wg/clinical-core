@@ -13,8 +13,9 @@
     - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.2.0-rc1](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v120rc1.pdf) 
     - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.1.5](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v120rc1.pdf)
 
-### 患者サマリー（療養計画書）
-
+### 患者サマリー（療養計画書）　DRAFT
+<span style="color: red; font-size: 100%;">注意：患者サマリー（療養計画書）FHIR実装ガイドは、v1.3.0で初めて公開されたはDRAFT版であり、暫定調整中の仕様が含まれます。</span> <br>
+<br>
 患者サマリー（療養計画書）は、下図左側の情報をひとつのBundleリソースで記述する。Bundleリソースのentry要素に格納されるリソースは、下図右側に概要を示すようように、目次に相当するCompositionリソースと、その各要素からUUIDで参照されるリソースから構成される。<br>
 
 | 患者サマリー（療養計画書）　Bundleリソース概要図 |
