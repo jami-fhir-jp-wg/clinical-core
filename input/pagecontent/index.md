@@ -47,7 +47,7 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
   - [５情報送信仕様](core6spec.html)
   - [５情報と関連リソースの定義プロファイル](resourceProfiles.html)
   - [２文書の実装ガイドと仕様](3docs-ps.html)
-  - [患者サマリー（療養計画書）](3docs-ps.html#%E6%82%A3%E8%80%85%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E7%99%82%E9%A4%8A%E8%A8%88%E7%94%BB%E6%9B%B8)
+  - [患者サマリー（療養計画書）](https://jpfhir.jp/fhir/clins/output/3docs-ps.html#%E6%82%A3%E8%80%85%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E7%99%82%E9%A4%8A%E8%A8%88%E7%94%BB%E6%9B%B8draft)
   - [その他のリリース等(拡張・コード表等)](artifacts.html)
   - [データの実例集](artifacts.html#example-example-instances)
   - [用語説明](glossary.html)
