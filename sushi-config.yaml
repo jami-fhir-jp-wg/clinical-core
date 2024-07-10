@@ -71,6 +71,7 @@ menu:
   パッケージDownload:
     標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc1.tgz 
     snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc1-snap.tgz
+
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
