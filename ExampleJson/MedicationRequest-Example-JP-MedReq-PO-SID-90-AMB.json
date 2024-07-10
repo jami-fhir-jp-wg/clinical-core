@@ -142,6 +142,12 @@
           "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
         ]
       },
+      "identifier": [
+        {
+          "system": "urn:oid:1.2.392.100495.20.3.41.11311234567",
+          "value": "D001"
+        }
+      ],
       "name": [
         {
           "extension": [

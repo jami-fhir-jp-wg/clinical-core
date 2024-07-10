@@ -11,6 +11,7 @@ Description: "療養計画患者サマリー Bundle"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
 
 * . ^short = "電子カルテ情報共有サービスに送信可能な患者療養計画サマリーのための文書 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスに送信可能な患者療養計画サマリーのための文書 Bundleリソース"

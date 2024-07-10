@@ -7,6 +7,12 @@
       "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+      "value": "1311234567"
+    }
+  ],
   "type": [
     {
       "coding": [
@@ -50,12 +56,6 @@
           }
         ]
       }
-    }
-  ],
-  "identifier": [
-    {
-      "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-      "value": "1311234567"
     }
   ],
   "name": "東京第一テスト病院",

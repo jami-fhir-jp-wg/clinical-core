@@ -30,6 +30,10 @@
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
           ]
         },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>患者ID：000999739</p><p>被保険者患者番号：00012345:あいう:１８７:05</p><p>漢字氏名：マキノ ランマン</p><p>カナ氏名：牧野 爛漫</p><p>電話：03-123-1234</p><p>性別：female</p><p>生年月日：1930-06-28</p><p>高知県高知市五台山4200-6</p></div>"
+        },
         "identifier": [
           {
             "system": "urn:oid:1.2.392.100495.20.3.51.11318814790",
@@ -166,7 +170,8 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
+              "version": "13.0",
               "code": "AMB",
               "display": "外来"
             }
@@ -296,7 +301,8 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
+              "version": "13.0",
               "code": "AMB",
               "display": "外来"
             }
@@ -407,7 +413,8 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
+              "version": "13.0",
               "code": "AMB",
               "display": "外来"
             }
@@ -513,7 +520,8 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
+              "version": "13.0",
               "code": "AMB",
               "display": "外来"
             }

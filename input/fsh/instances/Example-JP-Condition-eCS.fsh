@@ -201,7 +201,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code.coding.system = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
+* code.coding = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
 * code.text = "狭心症"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"

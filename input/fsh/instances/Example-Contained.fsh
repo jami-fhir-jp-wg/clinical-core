@@ -30,7 +30,8 @@ Description: "Encounterリソース（入院） データ作成例"
 
 * id = "Example-Contained-JP-Encounter-IMP"
 * status = #finished
-* class = $v3-ActCode#IMP "入院中"
+* class.system = $v3-ActCode
+* class.code = #IMP
 * period.start = "2021-07-05"
 
 //-------- 埋め込み　Practitionerリソース　医療者R001

@@ -7,6 +7,7 @@ Description: "■ 患者療養計画サマリー　Bundleリソース(CLINS送�
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS"
+* language = #ja
 
 * identifier.system = $JP_BundleIdentifier
 * identifier.value = "1318814790^2024^0123-PCS-203949583949"    //正しい例

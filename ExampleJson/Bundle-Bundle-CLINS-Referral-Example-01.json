@@ -595,6 +595,12 @@
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
           ]
         },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+            "value": "1319876543"
+          }
+        ],
         "type": [
           {
             "coding": [
@@ -640,12 +646,6 @@
             }
           }
         ],
-        "identifier": [
-          {
-            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-            "value": "1319876543"
-          }
-        ],
         "name": "港診療所",
         "telecom": [
           {
@@ -673,6 +673,12 @@
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
           ]
         },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+            "value": "1311234567"
+          }
+        ],
         "type": [
           {
             "coding": [
@@ -716,12 +722,6 @@
                 }
               ]
             }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-            "value": "1311234567"
           }
         ],
         "name": "東京第一テスト病院",
@@ -930,7 +930,8 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
+              "version": "13.0",
               "code": "AMB",
               "display": "外来"
             }

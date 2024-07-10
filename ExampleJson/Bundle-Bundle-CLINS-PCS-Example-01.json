@@ -12,6 +12,7 @@
     "system": "http://jpfhir.jp/fhir/clins/bundle-identifier",
     "value": "1318814790^2024^0123-PCS-203949583949"
   },
+  "language": "ja",
   "timestamp": "2024-07-07T10:00:00+09:00",
   "entry": [
     {
@@ -26,7 +27,7 @@
           ]
         },
         "status": "final",
-        "title": "患者療養計画サマリー",
+        "title": "患者サマリー（療養計画書）",
         "extension": [
           {
             "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
@@ -81,19 +82,14 @@
         "date": "2024-07-07T12:12:20+09:00",
         "author": [
           {
-            "reference": "22212c2d-4837-fd90-c6c5-6ee2a4b7eed2",
+            "reference": "urn:uuid:22212c2d-4837-fd90-c6c5-6ee2a4b7eed2",
             "type": "Practitioner",
             "display": "患者療養計画サマリー作成者　Practitionerリソース"
           },
           {
-            "reference": "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638",
+            "reference": "urn:uuid:ee271941-92f0-07cf-7b6e-db8ce65c9543",
             "type": "Organization",
-            "display": "患者療養計画サマリー作成機関　Organizationリソース"
-          },
-          {
-            "reference": "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441",
-            "type": "Organization",
-            "display": "患者療養計画サマリー作成診療科　Organizationリソース"
+            "display": "患者療養計画サマリー作成機関と診療科　Organizationリソース"
           }
         ]
       }
@@ -181,7 +177,7 @@
       }
     },
     {
-      "fullUrl": "22212c2d-4837-fd90-c6c5-6ee2a4b7eed2",
+      "fullUrl": "urn:uuid:22212c2d-4837-fd90-c6c5-6ee2a4b7eed2",
       "resource": {
         "resourceType": "Practitioner",
         "id": "Example-JP-Practitioner-eCS-PCS-Author-Inline",
@@ -240,6 +236,12 @@
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
           ]
         },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+            "value": "1311234567"
+          }
+        ],
         "type": [
           {
             "coding": [
@@ -262,12 +264,6 @@
                 }
               ]
             }
-          }
-        ],
-        "identifier": [
-          {
-            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-            "value": "1311234567"
           }
         ],
         "name": "みなと診療所"
@@ -420,7 +416,8 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
+              "version": "13.0",
               "code": "AMB",
               "display": "外来"
             }
@@ -455,7 +452,9 @@
         "code": {
           "coding": [
             {
-              "system": "20061593"
+              "code": "20061593",
+              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "display": "高血圧症"
             }
           ],
           "text": "高血圧"

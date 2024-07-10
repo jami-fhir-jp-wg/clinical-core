@@ -1,8 +1,9 @@
 #!/bin/bash
 \rm -rf ~/.fhir
 cp -r ~/.fhir_sushiVersion ~/.fhir
-
+pkgVersion="1.3.0-rc1"
 sushi -s .
+cp modified_CodeSysteJson/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCode.json
 cd fsh-generated
 mv resources package
 cp ../forPackageRelease/package-snap.json package/package.json
@@ -10,12 +11,14 @@ mkdir -p ../ExampleJson
 \rm -rf ../ExampleJson
 mkdir ../ExampleJson
 mv package/*Example* ../ExampleJson/
-gtar czf jp-clins.r4-1.0.0.tgz package
+gtar czf jp-clins.r4-${pkgVersion}-snap.tgz package
+cp ../forPackageRelease/package-diff.json package/package.json
+gtar czf jp-clins.r4-${pkgVersion}.tgz package
 rm ../packages_snapshot/jp-clins.r4*.tgz
 rm ../pkgValidation/jp-clins.r4*.tgz
-cp jp-clins.r4-1.0.0.tgz ../packages_snapshot
-cp jp-clins.r4-1.0.0.tgz ../pkgValidation
+cp jp-clins.r4-${pkgVersion}-snap.tgz ../packages_snapshot
+cp jp-clins.r4-${pkgVersion}.tgz ../pkgValidation
 cd ..
 \rm -rf ~/.fhir
 cp -r ~/.fhir.validation ~/.fhir
-#rm -rf fsh-generated
+#rm -rf fsh-generatedz1
