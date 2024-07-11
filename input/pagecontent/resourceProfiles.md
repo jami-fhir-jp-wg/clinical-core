@@ -169,7 +169,7 @@
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
             </td>
             <td>
 <p>参照ドキュメント　DocumentReference</p>
