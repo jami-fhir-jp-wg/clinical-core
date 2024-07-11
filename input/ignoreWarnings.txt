@@ -34,8 +34,8 @@ The valueSet reference http://dicom.nema.org/medical/dicom/current/output/chtml/
 ValueSet http://dicom%
 
 # Wrong Display Name
-Wrong Display Name%
-No valid Display Names found%
+# Wrong Display Name%
+# No valid Display Names found%
 
 # Country code system 'urn:iso:std:iso:3166' is unknown due to unresoloved reason
 Code System URI 'urn:iso:std:iso:3166' is unknown so the code cannot be validated

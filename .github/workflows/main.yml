@@ -28,6 +28,14 @@ jobs:
         ref: ${{ github.event.client_payload.ref }}
         submodules: true
 
+    - name: Download validator_cli_6.1.8.jar
+      uses: Legion2/download-release-action@v2.1.0
+      with:
+        repository: HL7/fhir-validator
+        tag: '6.1.8'
+        path: .
+        file: validator_cli.jar
+
     - name: Setup npm
       uses: actions/setup-node@v2
       with: 
