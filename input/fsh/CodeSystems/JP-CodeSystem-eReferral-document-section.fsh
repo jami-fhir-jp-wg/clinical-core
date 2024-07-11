@@ -6,7 +6,7 @@ Id: jp-codeSystem-eReferral-document-section
 Description: "診療情報提供書セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/eReferral/CodeSystem/document-section"
 * ^title = "診療情報提供書セクション区分コード"
-* ^version = "1"
+* ^version = "1.3.0-rc"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

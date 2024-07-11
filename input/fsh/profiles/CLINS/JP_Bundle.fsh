@@ -4,7 +4,7 @@ Id:             JP-Bundle
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/StructureDefinition/JP_Bundle"
 
-* ^version = "1"
+* ^version = "1.3.0-rc"
 * ^status = #active
 
 * ^publisher = "（一社）日本医療情報学会"

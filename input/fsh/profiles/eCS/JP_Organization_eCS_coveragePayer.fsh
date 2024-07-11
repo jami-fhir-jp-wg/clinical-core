@@ -3,7 +3,7 @@ Parent: JP_Organization
 Id: JP-Organization-eCS-coveragePayer
 Description: "処方など医療サービスに適用される保険の保険者または公費の公費受給者　JP_Organizationの派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_eCS_coveragePayer"
-* ^version = "1"
+* ^version = "1.3.0-rc"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

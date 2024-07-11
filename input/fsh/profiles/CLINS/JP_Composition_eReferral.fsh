@@ -36,7 +36,7 @@ Description:  "診療情報提供書情報のリソース構成情報と文書�
 * obeys checkExist-CDASection-or-CompositionSection
 * ^url = "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
 
-* ^version = "1"
+* ^version = "1.3.0-rc"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

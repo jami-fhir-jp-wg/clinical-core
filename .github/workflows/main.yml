@@ -155,7 +155,7 @@ jobs:
   
     - name: validate
       run: |
-        java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/Bundle-Bundle-CLINS-PCS-Example-01.json -display-issues-are-warnings -version 4.0.1 -locale ja-JP -ig jp-core.r4#1.1.2 -ig jpfhir-terminology.r4#1.1.1 -ig  fsh-generated/jp-clins-package-diff.tgz -tx n/a  -language ja
+        java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/Bundle-Bundle-CLINS-*.json -display-issues-are-warnings -version 4.0.1 -locale ja-JP -ig jp-core.r4#1.1.2 -ig jpfhir-terminology.r4#1.1.1 -ig  fsh-generated/jp-clins-package-diff.tgz -tx n/a  -language ja
 
     - name: generate snapshot package using sushi -s command       
       run: |

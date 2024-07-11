@@ -13,7 +13,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Practitionerリソー�
 * ^url = $JP_Practitioner_eCS
 
 
-* ^version = "1"
+* ^version = "1.3.0-rc"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
