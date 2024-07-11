@@ -16,7 +16,7 @@ Description: "Example-JP-Encounter-eCS-AMB-01 診療情報提供書での紹介�
 
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #AMB
-* class.display = "外来"
+* class.display = "ambulatory"
 
 * reasonCode[+].text = "腹痛精査お願いします。"
 
@@ -38,9 +38,9 @@ Description: "Example-JP-Encounter-eCS-AMB-01 外来受診歴　例"
 
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #AMB
-* class.display = "外来"
+* class.display = "ambulatory"
 
 * classHistory[+].class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * classHistory[=].class.code = #AMB
-* classHistory[=].class.display = "外来"
+* classHistory[=].class.display = "ambulatory"
 * classHistory[=].period.start = "2020-08-20"
