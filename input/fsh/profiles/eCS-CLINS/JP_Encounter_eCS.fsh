@@ -51,7 +51,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
 * class.system ^definition = "コード体系v3.ActEncounterCodeを識別するURI。固定値。"
 * class.code 1..1 MS
-* class.code from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
+* class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
 * class.code ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
 * class.display 1..1 MS
 * class.display ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
@@ -60,6 +60,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * classHistory ^short = "外来受診履歴や入院履歴の繰り返し記述。"
 * classHistory ^definition = "この入院期間までの外来受診履歴や入院履歴を記述したい場合にここに繰り返しで記述する。紹介先受診情報では不要。"
 * classHistory.class 1..1 MS
+* classHistory.class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
 * classHistory.class.system 1..1 MS
 * classHistory.class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
 * classHistory.class.code 1..1 MS
