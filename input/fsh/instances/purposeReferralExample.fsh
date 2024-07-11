@@ -15,7 +15,7 @@ Description: "Encounterリソース　（診療情報提供書　紹介目的テ
 
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #AMB
-* class.display = "ambulatory"
+* class.display = "外来"
 
 * reasonCode[+].text = "腹痛精査お願いします。"
 
@@ -35,9 +35,9 @@ Description: "Encounterリソース　（診療情報提供書　外来受診）
 
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * class.code = #AMB
-* class.display = "ambulatory"
+* class.display = "外来"
 
 * classHistory[+].class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * classHistory[=].class.code = #AMB
-* classHistory[=].class.display = "ambulatory"
+* classHistory[=].class.display = "外来"
 * classHistory[=].period.start = "2020-08-20"
