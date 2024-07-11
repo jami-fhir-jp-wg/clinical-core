@@ -131,11 +131,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_DeviceUseStatement
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DocumentReference_CDAdocument
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_DocumentReference_eCS
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_DocumentReference
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Immunization_eCS
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Immunization
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS
@@ -153,8 +151,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchStudy
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_ResearchSubject_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ResearchSubject
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest
-    - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationDosage_eCS
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier
     - http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier
@@ -179,6 +175,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
+    - http://terminology.hl7.org/CodeSystem/v3-ActCode
     - http://jpfhir.jp/fhir/CarePlan/ValueSet/category
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode

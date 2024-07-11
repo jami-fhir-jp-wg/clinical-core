@@ -170,8 +170,7 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
-              "version": "13.0",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code": "AMB",
               "display": "外来"
             }
@@ -301,8 +300,7 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
-              "version": "13.0",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code": "AMB",
               "display": "外来"
             }
@@ -413,8 +411,7 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
-              "version": "13.0",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code": "AMB",
               "display": "外来"
             }
@@ -520,8 +517,7 @@
             ],
             "status": "finished",
             "class": {
-              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode|13.0",
-              "version": "13.0",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
               "code": "AMB",
               "display": "外来"
             }
