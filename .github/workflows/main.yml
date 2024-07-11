@@ -58,7 +58,7 @@ jobs:
       uses: Legion2/download-release-action@v2.1.0
       with:
         repository: hapifhir/org.hl7.fhir.core
-        tag: 'latest'
+        tag: '6.1.8'
         path: .
         file: validator_cli.jar
 
