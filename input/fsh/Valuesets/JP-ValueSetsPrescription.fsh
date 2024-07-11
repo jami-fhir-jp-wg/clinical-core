@@ -28,18 +28,6 @@ Description: "調剤指示コード（備考欄）"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system urn:oid:1.2.392.200250.2.2.30.10
 
-ValueSet:  MHLW_valueSet_ePreCDA_insuranceCategory_tbl11
-Id:   mhlw-valueSet-ePreCDA-insuranceCategory-tbl11
-Title: "MHLW valueSet ePreCDA insuranceCategory tbl11"
-Description: "厚労省電子処方CDA規格別表11 保険種別コード"
-* ^experimental = false
-* ^url = "http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory"
-* ^status = #active
-* ^experimental = false
-* ^date = "2024-02-25"
-* ^publisher = "（一社）日本医療情報学会"
-* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system urn:oid:1.2.392.100495.20.2.61
 
 ValueSet:  JAMI_valueSet_ePreOrderUsageCode_16digits
 Id:   jami-valueSet-ePreOrderUsageCode-16digits
