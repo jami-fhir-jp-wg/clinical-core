@@ -30,8 +30,7 @@ dependencies:
     version: 1.1.2
   jpfhir-terminology.r4:
     uri: http://jpfhir.jp/fhir//jpfhir-terminology.r4/ImplementationGuide/
-    version: 1.1.1
-    
+    version: 1.2.0   
 #----------------------------------------
 # ページタイトル名称設定
 #----------------------------------------
