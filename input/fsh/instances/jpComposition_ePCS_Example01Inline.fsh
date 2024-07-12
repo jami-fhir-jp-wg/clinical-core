@@ -11,6 +11,8 @@ Description: "患者療養計画サマリー　Compositionリソース データ
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
 //* meta.profile[+] = "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
+* language = #ja
+
 
 * extension.url = "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
 * extension.valueString = "1.0"

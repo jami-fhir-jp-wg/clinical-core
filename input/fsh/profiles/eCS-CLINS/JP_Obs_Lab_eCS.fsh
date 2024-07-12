@@ -22,6 +22,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 
 * . ^short = "診療情報における検体検査結果／感染症検体検査結果の格納に使用する"

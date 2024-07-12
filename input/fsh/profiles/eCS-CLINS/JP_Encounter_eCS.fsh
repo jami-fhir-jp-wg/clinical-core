@@ -19,6 +19,8 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 
 * . ^short = "ー"

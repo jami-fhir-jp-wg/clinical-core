@@ -7,6 +7,8 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
+* language = #ja
+
 
 * identifier.system = $JP_BundleIdentifier
 * identifier.value = "1318814790^2024^0123-Referral-203949583949"    //正しい例

@@ -17,6 +17,8 @@ Description: "【意図的エラー例】：退院時処方　内服1日1回１�
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS
+* language = #ja
+
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "2"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

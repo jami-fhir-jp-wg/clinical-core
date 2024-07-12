@@ -5,6 +5,8 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_Observation_LabResult_eCS
+* language = #ja
+
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

@@ -17,6 +17,8 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 
 * meta.lastUpdated = "2021-07-12T19:29:12.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
+* language = #ja
+
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

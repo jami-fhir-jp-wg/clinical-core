@@ -42,7 +42,9 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = $JP_MedicationRequest_eCS
- 
+* language = #ja
+
+
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "9"

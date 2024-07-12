@@ -46,7 +46,9 @@ Description: "Organizationリソース　（診療情報提供書　紹介元　
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
- 
+* language = #ja
+
+
 // 
 // 機関都道府県番号：2桁数字　北海道は01
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo" (exactly)

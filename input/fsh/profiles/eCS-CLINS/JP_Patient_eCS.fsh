@@ -30,6 +30,8 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 * . ^short = "患者情報の記述に使用する。"
 * . ^definition = "患者情報の記述に使用する。電子カルテ共有サービスで使用できる。"

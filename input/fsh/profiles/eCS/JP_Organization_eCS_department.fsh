@@ -19,6 +19,8 @@ Description: "eCS 診療情報・サマリー汎用 　Organizationリソース�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * . ^short = "eCS 診療情報・サマリー汎用 診療科情報の格納に使用する"
 * . ^definition = "eCS 診療情報・サマリー汎用 診療科情報の格納に使用する"
 

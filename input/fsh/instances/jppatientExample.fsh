@@ -33,6 +33,8 @@ Description: "Patientリソース　（患者情報）"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = $JP_Patient_eCS
+* language = #ja
+
 
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
 * identifier[=].value = "000999739"

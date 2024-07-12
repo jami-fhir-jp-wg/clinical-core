@@ -17,6 +17,8 @@ Description: "MedicationRequestリソース　入院・内服頓用　頓用と1
 
 * meta.lastUpdated = "2021-07-27T01:31:19.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
+* language = #ja
+
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

@@ -22,6 +22,8 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 * insert toplevel_short_definition("診療情報における傷病名情報の格納に使用する")
 * . ^comment = "ー"

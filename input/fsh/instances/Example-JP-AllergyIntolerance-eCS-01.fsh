@@ -14,6 +14,8 @@ Description: "AllergyIntoleranceリソース 必須要素だけ データ作成�
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_AllergyIntolerance_eCS
+* language = #ja
+
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

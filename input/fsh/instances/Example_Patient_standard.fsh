@@ -12,6 +12,8 @@ Description: "Patientリソース　標準的記述 データ作成例"
 */
 
 * meta.profile[+] = $JP_Patient_eCS
+* language = #ja
+
 
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
 * identifier[=].value = "000999739"

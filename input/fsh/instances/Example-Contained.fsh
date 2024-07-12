@@ -7,6 +7,8 @@ Description: "埋め込み　Encounterリソース（外来受診）データ作
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Encounterリソース（外来受診）データ作成例</p> </div>"
+* language = #ja
+
 
 * id = "Example-Contained-JP-Encounter-AMB"
 * identifier.system = $JP_ResourceInstanceIdentifier
@@ -22,6 +24,8 @@ Instance: Example-Contained-JP-Encounter-IMP
 InstanceOf: JP_Encounter
 Usage: #example
 Description: "Encounterリソース（入院） データ作成例"
+
+* language = #ja
 
 
 // * text.status = #additional
@@ -40,6 +44,8 @@ Instance: Example-Contained-JP-Practitioner-minimun-R001
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者R001  データ作成例"
+* language = #ja
+
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者R001  データ作成例</p> </div>"
@@ -57,6 +63,8 @@ Instance: Example-Contained-JP-Practitioner-minimun-D001
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者D001  データ作成例"
+* language = #ja
+
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D001  データ作成例</p> </div>"
@@ -79,6 +87,8 @@ Description: "埋め込み　Practitionerリソース　医療者D002  データ
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D002  データ作成例</p> </div>"
 
+* language = #ja
+
 
 * id = "Example-Contained-JP-Practitioner-minimun-D002"
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
@@ -92,6 +102,8 @@ Instance: Example-Contained-JP-Practitioner-minimun-D003
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者D003  データ作成例"
+* language = #ja
+
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D003  データ作成例</p> </div>"
@@ -110,6 +122,8 @@ Instance: Example-Contained-JP-Specimen-Serum
 InstanceOf: JP_Specimen
 Usage: #example
 Description: "埋め込み　Specimemリソース　検体検査材料　血清"
+* language = #ja
+
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Specimemリソース　検体検査材料　血清</p> </div>"
@@ -126,6 +140,8 @@ Instance: Example-Contained-JP-Specimen-Urine
 InstanceOf: JP_Specimen
 Usage: #example
 Description: "埋め込み　Specimemリソース　検体検査材料　尿(含むその他)"
+* language = #ja
+
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Specimemリソース　検体検査材料　尿(含むその他)</p> </div>"

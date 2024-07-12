@@ -11,6 +11,8 @@ Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　
 * meta.tag.system = $JP_CLINS_BundleResourceType_CS
 * meta.tag.code = #Observation
 
+* language = #ja
+
 * identifier.system = $JP_BundleIdentifier
 * identifier.value = "1318814790^2024^0123-IDa-203949583949"    //正しい例
 //* identifier.value = "1318814790^2024^0123-ID^-203949583949"    //エラーの例

@@ -20,6 +20,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS

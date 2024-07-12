@@ -39,6 +39,9 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_DocumentReference_CDAdocument
@@ -52,6 +55,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 /*
@@ -80,6 +85,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 
@@ -109,6 +116,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 /*
@@ -147,6 +156,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 
@@ -161,6 +172,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_DeviceUseStatement_eCS
@@ -174,6 +187,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 
@@ -188,6 +203,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 
@@ -202,6 +219,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 
@@ -216,6 +235,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_Consent_eCS
@@ -229,6 +250,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_ResearchSubject
@@ -242,6 +265,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_ResearchSubject_eCS
@@ -255,6 +280,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_ResearchStudy
@@ -268,6 +295,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_ResearchStudy_eCS
@@ -281,6 +310,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_RelatedPerson
@@ -294,6 +325,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_RelatedPerson_eCS
@@ -307,6 +340,8 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS
 
 Profile:        JP_Binary
@@ -320,4 +355,6 @@ Description:    "Derived Profile from JP-Core"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 0.. MS

@@ -6,6 +6,8 @@ Description: "CarePlanリソース　データ作成例"
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_eCS"
+* language = #ja
+
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192838"

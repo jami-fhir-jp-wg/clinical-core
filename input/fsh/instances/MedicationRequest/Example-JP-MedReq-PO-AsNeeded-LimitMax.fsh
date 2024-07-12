@@ -6,6 +6,8 @@ Description: "MedicationRequestリソース　入院・内服処方頓用発熱�
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方頓用発熱時　1回量記述なし、4回分処方例</p> </div>"
 
+
+
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
@@ -17,6 +19,8 @@ Description: "MedicationRequestリソース　入院・内服処方頓用発熱�
 
 * meta.lastUpdated = "2021-07-07T21:34:05.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
+* language = #ja
+
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 * identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 

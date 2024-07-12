@@ -18,6 +18,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 
 * . ^short = "診療情報における処方オーダの１処方薬情報の格納に使用する"

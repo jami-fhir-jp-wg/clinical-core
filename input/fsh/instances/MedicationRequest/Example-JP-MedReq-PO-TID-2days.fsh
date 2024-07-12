@@ -18,6 +18,8 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
+* language = #ja
+
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" //"http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "1"

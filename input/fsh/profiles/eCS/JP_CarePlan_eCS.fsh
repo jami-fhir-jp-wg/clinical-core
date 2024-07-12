@@ -26,6 +26,8 @@ Description:    "eCS 診療情報・サマリー汎用 CarePlan"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 * meta.lastUpdated 1.. MS
 
@@ -110,6 +112,8 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 
 * meta.lastUpdated 1.. MS
 

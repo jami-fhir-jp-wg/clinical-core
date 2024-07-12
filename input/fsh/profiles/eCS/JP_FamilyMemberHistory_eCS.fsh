@@ -9,6 +9,8 @@ Description:    "eCS 診療情報・サマリー汎用 FamilyMemberHistory"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
+* ^language = #ja
+
 * meta.lastUpdated 1.. MS
 * status 1..1 MS
 * status = #partial

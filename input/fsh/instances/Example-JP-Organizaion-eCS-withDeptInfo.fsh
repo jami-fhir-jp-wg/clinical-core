@@ -9,6 +9,8 @@ Description: "医療機関情報　診療科情報を拡張に含む　例"
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
 //* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+* language = #ja
+
 
 //
 // 機関都道府県番号：2桁数字　北海道は01

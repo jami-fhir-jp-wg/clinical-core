@@ -44,6 +44,8 @@ Description: "紹介先医療機関情報　例"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 //* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+* language = #ja
+
 
 //
 //--------------

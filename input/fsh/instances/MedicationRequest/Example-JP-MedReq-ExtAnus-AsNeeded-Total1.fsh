@@ -23,6 +23,8 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 
 * meta.lastUpdated = "2021-07-14T16:14:35.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
+* language = #ja
+
 
 
 //* identifier[rpNumber].system = "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"

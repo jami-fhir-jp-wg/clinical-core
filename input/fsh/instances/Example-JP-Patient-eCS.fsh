@@ -4,6 +4,8 @@ Instance: Example-JP-Patient-minimun
 InstanceOf: JP_Patient
 Usage: #example
 Description: "Patientリソース　（患者情報）最小限  データ作成例"
+* language = #ja
+
 
 
 // * text.status = #additional

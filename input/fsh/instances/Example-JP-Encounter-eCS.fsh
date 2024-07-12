@@ -7,6 +7,8 @@ Description: "Encounterリソース 必須要素だけの最低限の入院外�
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = $JP_Encounter_eCS
+* language = #ja
+
 
 * status = #finished
 * class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"

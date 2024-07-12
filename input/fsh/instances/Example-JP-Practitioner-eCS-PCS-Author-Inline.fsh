@@ -7,6 +7,8 @@ Description: "医師情報　例"
 // 002or_ValidationProfile(ARGmetaprofile)
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
 //* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+* language = #ja
+
 
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
 * identifier.value = "U4403020"

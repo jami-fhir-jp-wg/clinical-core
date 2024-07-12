@@ -17,6 +17,8 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 //* meta.profile[+] = "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
+* language = #ja
+
 
 * extension.url = "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
 * extension.valueString = "1.0"
