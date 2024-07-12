@@ -10,7 +10,8 @@
 
   - 対応するjpfhir-terminology.r4パッケージを1.1.1から1.2.0に変更した。（アレルギーコードJFAGYの最新版を組み込み）
   - Exampleの表題の表記などを、ある程度統一性をもった表記に修正した。
-
+  - validation時のデフォルト言語を明確にするため、すべてのProfile、example(Instace)に　"language" = "ja"を追記した。
+  
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.3.0 rc1 (2024.7.7 　リリース候補v1)
 
   - 患者サマリー（療養計画）　の仕様記載を公開。これに必要なBundleリソースFHIR仕様、同Compositionリソース仕様を追加した。
