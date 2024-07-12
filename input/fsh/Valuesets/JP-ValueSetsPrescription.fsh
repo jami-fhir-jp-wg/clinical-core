@@ -7,10 +7,10 @@ Description: "EncounterActコード"
 * ^url = "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode"
 * ^status = #active
 * ^experimental = false
-* ^version = "10.0.0"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* version = "10.0.0"
 * include codes from system http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0
 
 
