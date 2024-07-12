@@ -15,7 +15,7 @@ Description: "Encounterリソース　（診療情報提供書　紹介目的テ
 * identifier.value = "192837"
 * status = #finished
 
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.system = $v3-ActCode
 * class.code = #AMB
 * class.display = "外来"
 
@@ -36,11 +36,11 @@ Description: "Encounterリソース　（診療情報提供書　外来受診）
 * identifier.value = "192844"
 * status = #finished
 
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.system = $v3-ActCode
 * class.code = #AMB
 * class.display = "外来"
 
-* classHistory[+].class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* classHistory[+].class.system = $v3-ActCode
 * classHistory[=].class.code = #AMB
 * classHistory[=].class.display = "外来"
 * classHistory[=].period.start = "2020-08-20"
