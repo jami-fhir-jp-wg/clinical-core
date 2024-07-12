@@ -85,7 +85,7 @@ Alias: $practitioner-certificate-category = http://jpfhir.jp/fhir/core/CodeSyste
 Alias: $prescription-category = http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category
 Alias: $prescription-section = http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section
 Alias: $route-codes = http://jpfhir.jp/fhir/core/CodeSystem/route-codes
-Alias: $v3-ActCode = "http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0"
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode|10.0.0
 
 
 Alias: $JP_PractionerRole_eCS_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_PractitionerRole_CS
