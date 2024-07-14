@@ -192,8 +192,8 @@ Description: "A code specifying the particular kind of Act that the Act-instance
 * #SS ^property[=].valueCode = #_ActEncounterCode
 
 * #VR "virtual" "A patient encounter where the patient and the practitioner(s) are not in the same physical location. Examples include telephone conference, email exchange, robotic surgery, and televideo conference."
-* #SS ^designation.language = #ja
-* #SS ^designation.value = "遠隔受診"
+* #VR ^designation.language = #ja
+* #VR ^designation.value = "遠隔受診"
 * #VR ^property[0].code = #status
 * #VR ^property[=].valueCode = #active
 * #VR ^property[+].code = #internalId
