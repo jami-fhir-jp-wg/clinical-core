@@ -76,7 +76,12 @@ Alias: $JP_MedicationUncoded_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_Medicat
 
 Alias: $composition-clinicaldocument-versionNumber = http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber
 Alias: $coverage-copay-type = http://terminology.hl7.org/CodeSystem/coverage-copay-type
-Alias: $doc-typecodes = http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
+
+Alias: $doc-typecodes_CS = http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
+Alias: $doc-subtypecodes_CS = http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes
+Alias: $doc-typecodes_VS = http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
+Alias: $doc-subtypecodes_VS = http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes
+
 Alias: $organization-type = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-religion = http://hl7.org/fhir/StructureDefinition/patient-religion

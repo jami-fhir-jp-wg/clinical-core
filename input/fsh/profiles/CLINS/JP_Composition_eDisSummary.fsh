@@ -55,11 +55,11 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * type ^definition = "documentタイプのうち文書種別"
 * type MS
 * type.coding 1..1 MS
-* type from http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes (required)
-* type.coding.system = "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes" (exactly)
+* type from $doc-typecodes_VS (required)
+* type.coding.system = $doc-typecodes_CS (exactly)
 * type.coding.system ^definition = "文書区分コードのコード体系を識別するURI。固定値"
 * type.coding.system MS
-* type.coding.version
+* type.coding.version MS
 * type.coding.code 1.. MS
 * type.coding.code = #18842-5 (exactly)
 * type.coding.code ^definition = "退院時サマリー\"18842-5\"を指定。固定値。"
@@ -70,20 +70,22 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 
 * category 1..1 MS
 * category ^short = "文書カテゴリーコード"
-* category ^definition = "文書カテゴリーコード。　退院時サマリーではtype.coding.codeに記述される文書区分コードと同一。"
+//* category ^definition = "文書カテゴリーコード。　退院時サマリーではtype.coding.codeに記述される文書区分コードと同一。"
+* category ^definition = "文書カテゴリーコード。　退院時サマリーでは文書サブ区分からDISCHARGE:退院時文書 を使用する。"
 * category.coding 1..1 MS
-* category from http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes (required)
+//* category from http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes (required)
+* category from $doc-subtypecodes_VS (required)
 * category.coding.system 1.. MS
-* category.coding.system = "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes" (exactly)
+//* category.coding.system = "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes" (exactly)
+* category.coding.system = $doc-subtypecodes_CS (exactly)
 * category.coding.system ^short = "文書カテゴリコードのコード体系"
 * category.coding.system ^definition = "文書カテゴリコードのコード体系を識別するURI。固定値。"
 * category.coding.code 1.. MS
-* category.coding.code = #18842-5 (exactly)
+* category.coding.code = #DISCHARGE (exactly)
 * category.coding.code ^short = "文書カテゴリコード"
-* category.coding.code ^definition = "文書カテゴリコード"
+* category.coding.code ^definition = "文書カテゴリコード　 退院時サマリーでは、文書サブ区分からDISCHARGE:　退院時文書　を使用する。"
 * category.coding.display ^short = "文書カテゴリコードの表示名"
-* category.coding.display ^definition = "文書カテゴリ"
-* category.coding.display MS
+* category.coding.display ^definition = "文書カテゴリ　 退院時サマリーでは、文書サブ区分からDISCHARGE:　退院時文書　を使用する。"
 
 * subject 1.. MS
 * subject ^short = "患者情報を表すPatientリソースへの参照。"

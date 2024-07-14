@@ -50,7 +50,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * class ^short = "受診イベントの分類"
 * class ^definition = "受診イベントの分類。外来（外来）、入院、救急、在宅医療、その他の地域差による患者Encouterの分類を表す概念。"
 * class.system 1..1 MS
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
+* class.system = $v3-ActCode (exactly)
 * class.system ^definition = "コード体系v3.ActEncounterCodeを識別するURI。固定値。"
 * class.code 1..1 MS
 * class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
@@ -64,7 +64,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * classHistory.class 1..1 MS
 * classHistory.class from http://terminology.hl7.org/ValueSet/v3-ActEncounterCode (extensible)
 * classHistory.class.system 1..1 MS
-* classHistory.class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode" (exactly)
+* classHistory.class.system = $v3-ActCode (exactly)
 * classHistory.class.code 1..1 MS
 * classHistory.class.display 1..1 MS
 * classHistory.period 1..1 MS

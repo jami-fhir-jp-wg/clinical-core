@@ -11,6 +11,6 @@ Description: "Encounterリソース 必須要素だけの最低限の入院外�
 
 
 * status = #finished
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class.system = $v3-ActCode
 * class.code = #AMB
 * class.display = "外来"

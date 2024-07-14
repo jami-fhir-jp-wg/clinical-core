@@ -58,6 +58,19 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * include codes from system http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
 
 
+// FHIR文書の文書サブ区分（医療文書全般）
+ValueSet: JP_valueSet_documentSubTypeCode
+Id: jp-valueSet-documentSubTypeCode
+Title: "FHIR文書の文書サブ区分（医療文書）"
+Description: "FHIR文書の文書サブ区分（医療文書全般）"
+* ^url = "http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-07-10"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes
+
 
 ValueSet: JP_ehrshrs_indication_VS
 Id: jp-ehrshrs-indication-vs

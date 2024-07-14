@@ -10,9 +10,8 @@ Description: "EncounterActコード"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
+* include codes from system $v3-ActCode( http://terminology.hl7.org/ValueSet/v3-ActEncounterCode)
 */
-
 
 
 ValueSet:  JAMI_valueSet_ePreDispenseInstruction

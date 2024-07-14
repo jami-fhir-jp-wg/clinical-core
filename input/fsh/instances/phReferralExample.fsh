@@ -41,6 +41,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+* language = #ja
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-02"

@@ -11,7 +11,6 @@ Description: "Loincコードのサブセットコード"
 * ^caseSensitive = false
 * ^date = "2023-04-01T00:00:00+09:00"
 * ^version = "5.11"
-
 * #18748-4 "Diagnostic imaging study"
 * #11506-3 "Progress note"
 
@@ -28,13 +27,33 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * ^caseSensitive = false
 * ^date = "2023-04-01T00:00:00+09:00"
 * ^version = "5.11"
-
 * #JPGCHKUP01 "健診結果報告書"
 //* #JPMCHKUP01 "自治体検診結果報告書"
 * #18842-5 "退院時サマリー"
 * #57133-1 "診療情報提供書"
 * #57833-6 "処方箋"
 * #56447-6 "計画書"
+
+// 医療文書サブ区分コード
+CodeSystem:  JP_codeSystem_documentSubTypeCode
+Id:   jp-codeSystem-documentSubTypeCode
+Description: "FHIR文書の文書サブ区分（医療文書全般）"
+* ^url = "http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes"
+// * ^valueSet = "http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes"
+* ^title = "FHIR文書の文書サブ区分（医療文書全般）"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* ^date = "2024-07-10T00:00:00+09:00"
+* ^version = "1.0"
+* #ADMISSION "入院時文書" "入院時の作成文書"
+* #SECONDOP "セカンドオピニオン文書" "セカンドオピニオン目的の作成文書"
+* #EXAMIN  "要精査依頼文書" "健診・検診後の精密検査依頼の文書"
+* #CONSULT "他科コンサルト" "入院中の同一医療機関内の他科への依頼文書"
+* #DISCHARGE "退院時文書" "退院時の作成文書"
+* #INPATIENT "入院中文書" "退院時以外の入院中作成文書"
+* #OUTPATIENT "外来文書" "外来診療中の作成文書"
 
 // 処方箋区分コード
 CodeSystem:  JP_codeSystem_prescription_category

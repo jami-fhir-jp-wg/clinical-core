@@ -1,0 +1,47 @@
+
+Only in fsh/CodeSystems: v3_ActCode_ActEncounterCode.FSH
+
+-rw-r--r--  1 kohe  staff  3603  7 12 05:23 clinical-core_1.3.0-rc2/input/fsh/CodeSystems/JP-CodeSystems-ClinicalDoc.fsh
+-rw-r--r--  1 kohe  staff  4691  7 12 01:41 clinical-core_20240711-1.3.0-rc3/input/fsh/CodeSystems/JP-CodeSystems-ClinicalDoc.fsh
+
+-rw-r--r--  1 kohe  staff  3636  7 12 16:22 clinical-core_1.3.0-rc2/input/fsh/Valuesets/JP-ValueSetsPrescription.fsh
+-rw-r--r--  1 kohe  staff  3658  7 11 16:49 clinical-core_20240711-1.3.0-rc3/input/fsh/Valuesets/JP-ValueSetsPrescription.fsh
+
+-rw-r--r--  1 kohe  staff  10892  7 12 16:22 clinical-core_1.3.0-rc2/input/fsh/aliases-eclinicalsummary.fsh
+-rw-r--r--  1 kohe  staff  11146  7 12 00:57 clinical-core_20240711-1.3.0-rc3/input/fsh/aliases-eclinicalsummary.fsh
+
+-rw-r--r--  1 kohe  staff  422  7 12 19:31 clinical-core_1.3.0-rc2/input/fsh/instances/Example-JP-Encounter-eCS.fsh
+-rw-r--r--  1 kohe  staff  461  7 12 00:00 clinical-core_20240711-1.3.0-rc3/input/fsh/instances/Example-JP-Encounter-eCS.fsh
+
+-rw-r--r--  1 kohe  staff  14627  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/instances/jpComposition_eReferral_Example01Inline.fsh
+-rw-r--r--  1 kohe  staff  14639  7 12 00:53 clinical-core_20240711-1.3.0-rc3/input/fsh/instances/jpComposition_eReferral_Example01Inline.fsh
+
+-rw-r--r--  1 kohe  staff  2473  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/instances/jpComposition_ePCS_Example01Inline.fsh
+-rw-r--r--  1 kohe  staff  2619  7 12 00:53 clinical-core_20240711-1.3.0-rc3/input/fsh/instances/jpComposition_ePCS_Example01Inline.fsh
+
+-rw-r--r--  1 kohe  staff  1399  7 12 19:31 clinical-core_1.3.0-rc2/input/fsh/instances/purposeReferralExample.fsh
+-rw-r--r--  1 kohe  staff  1516  7 12 01:53 clinical-core_20240711-1.3.0-rc3/input/fsh/instances/purposeReferralExample.fsh
+
+-rw-r--r--  1 kohe  staff  1418  7 12 19:31 clinical-core_1.3.0-rc2/input/fsh/instances/purposeReferralExampleInline.fsh
+-rw-r--r--  1 kohe  staff  1535  7 12 01:53 clinical-core_20240711-1.3.0-rc3/input/fsh/instances/purposeReferralExampleInline.fsh
+
+-rwxr-xr-x  1 kohe  staff  159267  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/profiles/CLINS/JP_Composition_eDisSummary.fsh
+-rwxr-xr-x  1 kohe  staff  159653  7 12 01:12 clinical-core_20240711-1.3.0-rc3/input/fsh/profiles/CLINS/JP_Composition_eDisSummary.fsh
+
+-rw-r--r--  1 kohe  staff   9058  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/profiles/CLINS/JP_Composition_ePatientCareSummary.fsh
+-rw-r--r--  1 kohe  staff  10322  7 12 01:12 clinical-core_20240711-1.3.0-rc3/input/fsh/profiles/CLINS/JP_Composition_ePatientCareSummary.fsh
+
+-rw-r--r--  1 kohe  staff  169541  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/profiles/CLINS/JP_Composition_eReferral.fsh
+-rw-r--r--  1 kohe  staff  169758  7 12 01:12 clinical-core_20240711-1.3.0-rc3/input/fsh/profiles/CLINS/JP_Composition_eReferral.fsh
+
+-rwxr-xr-x  1 kohe  staff  11561  7 12 17:38 clinical-core_1.3.0-rc2/input/fsh/profiles/eCS-CLINS/JP_Encounter_eCS.fsh
+-rwxr-xr-x  1 kohe  staff  11639  7 11 23:57 clinical-core_20240711-1.3.0-rc3/input/fsh/profiles/eCS-CLINS/JP_Encounter_eCS.fsh
+
+//----
+
+-rw-r--r--  1 kohe  staff  7409  7 12 01:41 clinical-core_20240711-1.3.0-rc3/input/fsh/Valuesets/ValueSet-ccs.fsh
+-rw-r--r--  1 kohe  staff  6801  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/Valuesets/ValueSet-ccs.fsh
+
+-rw-r--r--  1 kohe  staff  1623  7 12 01:55 clinical-core_20240711-1.3.0-rc3/input/fsh/instances/jpObsCommonExample01Inline.fsh
+-rw-r--r--  1 kohe  staff  1606  7 12 01:17 clinical-core_1.3.0-rc2/input/fsh/instances/jpObsCommonExample01Inline.fsh
+

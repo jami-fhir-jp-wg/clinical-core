@@ -22,6 +22,7 @@
   - identifier : インスタンス識別子
   - status : この文書のステータス "final"
   - type : 文書区分コード。"56447-6" (計画書)
+  - category : 文書カテゴリー。退院時文書か外来文書かを区別する。
   - timestamp : このリソースを生成した日時
   - subject : 患者情報を表すPatientリソースへの参照
   - encounter : この文書を作成した入院外来区分を表すEncounterリソースへの参照

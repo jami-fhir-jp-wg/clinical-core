@@ -116,7 +116,8 @@ Description: "Organizationリソース　（診療情報提供書　紹介先　
 // 002or_ValidationProfile(ARGmetaprofile) 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
- 
+* language = #ja
+
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension.valueCode = #IDE
 * name[=].use = #official
