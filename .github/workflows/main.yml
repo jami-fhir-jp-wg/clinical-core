@@ -120,7 +120,7 @@ jobs:
       run: |
         sushi .
         rm fsh-generated/resources//CodeSystem-v3-ActCode.json
-        cp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCodeFrom.R5_5.5.0.json
+        cp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCode.json
 
     - name: Run IG Publisher
       run: | 
