@@ -218,7 +218,7 @@ contained要素のリソースのidは、任意の文字列を設定できるが
         "id": "Encounter20240601001234101",
         "status": "finished",
         "class": {
-          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "system": $v3-ActCode,
           "code": "IMP",
           "display": "入院"
         }
