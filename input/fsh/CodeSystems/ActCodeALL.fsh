@@ -1,3 +1,6 @@
+Alias: $v3-ActClass = http://terminology.hl7.org/CodeSystem/v3-ActClass
+Alias: $sct = http://snomed.info/sct
+
 CodeSystem: ActCode
 Id: v3-ActCode
 Title: "ActCode"
