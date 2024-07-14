@@ -22,7 +22,7 @@ Description: "患者療養計画サマリー　Compositionリソース データ
 * identifier.value = "1311234567-2021-12345678"
 * status = #final
 * type = $doc-typecodes_CS#56447-6 "計画書"
-* category = $doc-subtypecodes_CS#OUTPATIENT "外来"
+* category = $doc-subtypecodes_CS#OUTPATIENT "外来文書"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"

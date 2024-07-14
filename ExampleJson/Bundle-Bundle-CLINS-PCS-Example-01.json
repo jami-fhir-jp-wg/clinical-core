@@ -53,7 +53,7 @@
               {
                 "system": "http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes",
                 "code": "OUTPATIENT",
-                "display": "外来"
+                "display": "外来文書"
               }
             ]
           }

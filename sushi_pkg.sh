@@ -3,7 +3,7 @@
 cp -r ~/.fhir_sushiVersion ~/.fhir
 pkgVersion="1.3.0-rc3"
 sushi -s .
-#cp modified_CodeSysteJson/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCode.json
+cp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCodeFrom.R5_5.5.0.json
 cd fsh-generated
 mv resources package
 cp ../forPackageRelease/package-snap.json package/package.json
