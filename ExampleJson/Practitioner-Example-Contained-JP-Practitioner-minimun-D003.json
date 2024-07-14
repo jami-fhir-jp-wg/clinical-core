@@ -1,0 +1,27 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Example-Contained-JP-Practitioner-minimun-D003",
+  "meta": {
+    "profile": [
+      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
+    ]
+  },
+  "language": "ja",
+  "identifier": [
+    {
+      "system": "urn:oid:1.2.392.100495.20.3.41.11311234567",
+      "value": "D003"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+          "valueCode": "IDE"
+        }
+      ],
+      "text": "診療 和子"
+    }
+  ]
+}

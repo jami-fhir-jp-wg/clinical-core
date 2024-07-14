@@ -1,0 +1,25 @@
+{
+  "resourceType": "Specimen",
+  "id": "Example-Contained-JP-Specimen-Urine",
+  "meta": {
+    "profile": [
+      "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Specimen"
+    ]
+  },
+  "language": "ja",
+  "type": {
+    "coding": [
+      {
+        "code": "001",
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCode_CS",
+        "display": "尿(含むその他)"
+      },
+      {
+        "code": "UR",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+        "display": "Urine"
+      }
+    ],
+    "text": "尿"
+  }
+}
