@@ -298,3 +298,4 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
     - http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
+    - http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes

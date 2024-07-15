@@ -122,7 +122,7 @@ jobs:
         mv ./publisher.jar ./input-cache
         unset DISPLAY
         sushi .
-        rm fsh-generated/resources/CodeSystem-v3-ActCode.json
+        : # CodeSystem-v3-ActCode.jsonはFSHから変換するのではなくJSONを直接コピーする。
         cp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCode.json
         java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -no-sushi -ig ig.ini  -tx n/a -language "ja" 
 

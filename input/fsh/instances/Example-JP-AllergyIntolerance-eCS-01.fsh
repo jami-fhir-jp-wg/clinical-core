@@ -42,7 +42,7 @@ Description: "AllergyIntoleranceリソース 必須要素だけ データ作成�
 //* criticality = #unable-to-assess
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば類"
+* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば"
 * code.text = "さば"
 
 //* patient 
@@ -98,7 +98,7 @@ Description: "AllergyIntoleranceリソース 必須要素と推奨要素とプ�
 //* criticality = #unable-to-assess
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば類"
+* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば"
 * code.text = "さば"
 
 //* patient = Reference(Example-JP-Patient-eCS-01-Contained)

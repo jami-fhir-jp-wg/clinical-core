@@ -5503,7 +5503,12 @@
             "code": "IMP",
             "display": "inpatient encounter",
             "definition": "A patient encounter where a patient is admitted by a hospital or equivalent facility, assigned to a location where patients generally stay at least overnight and provided with room, board, and continuous nursing service.",
-            "property": [
+            "designation": [
+                {
+                  "language": "ja",
+                  "value": "入院"
+                }
+            ],            "property": [
                 {
                     "code": "status",
                     "valueCode": "active"
