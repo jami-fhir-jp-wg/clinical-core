@@ -26,8 +26,8 @@
     - 処方依頼情報 MedicationRequest
       - conrained(JP_Practitioner) とrequester要素を電子カルテ情報共有サービスでは必須に変更。
     - 検体検査結果 Observation
-      - conrained(JP_Practitioner) とperformer要素を電子カルテ情報共有サービスでは必須に変更。。
-　 - 上記に対応するためサンプルInstance　（データ作成例）のMedicationRequest、Observationの各リソースに、requester要素、performer要素医療者情報を追加。
+      - conrained(JP_Practitioner) とperformer要素を電子カルテ情報共有サービスでは必須に変更。
+      - 上記に対応するためサンプルInstance　（データ作成例）のMedicationRequest、Observationの各リソースに、requester要素、performer要素(医療者情報)を追加。
 
 ### ２文書５情報（CLINS）  Ver. 1.2.0 rc1 (2024.7.1 　リリース候補v1)
 2文書のIGと５情報のIGを統合し、Ver. 1.2.0 から開始する。
