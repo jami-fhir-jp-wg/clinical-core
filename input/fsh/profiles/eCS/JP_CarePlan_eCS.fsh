@@ -7,7 +7,7 @@ Parent:			CarePlan
 Id:             JP-CarePlan
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_CarePlan"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
@@ -20,7 +20,7 @@ Parent:			JP_CarePlan
 Id:             JP-CarePlan-eCS
 Description:    "eCS 診療情報・サマリー汎用 CarePlan"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_eCS"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
@@ -106,7 +106,7 @@ Parent:			JP_CarePlan
 Id:             JP-CarePlan-ePCS
 Description:    "療養計画患者サマリー専用のCarePlan"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_ePCS"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^date = "2024-07-04"
 * ^publisher = "（一社）日本医療情報学会"

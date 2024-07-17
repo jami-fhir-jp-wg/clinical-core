@@ -62,7 +62,7 @@ Title: "JP codeSystem prescription category"
 Description: "処方箋区分コード　（01:一般処方箋、02:麻薬処方箋、03:分割一般処方）"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -82,7 +82,7 @@ Title: "JP codeSystem ePrescription section"
 Description: "処方セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/prescription-category"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -103,7 +103,7 @@ Title: "JP codeSystem practitioner certificate category"
 Description: "医療従事者資格種別"
 * ^url = "http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category"
 // * ^valueSet = "http://jpfhir.jp/fhir/ePrescription/ValueSet/practitioner-certificate-category"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

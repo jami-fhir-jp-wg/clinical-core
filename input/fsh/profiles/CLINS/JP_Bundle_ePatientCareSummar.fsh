@@ -5,7 +5,7 @@ Id: JP-Bundle-ePCS
 Description: "療養計画患者サマリー Bundle"
 * ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS"
 
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^date = "2024-07-05"
 * ^publisher = "（一社）日本医療情報学会"

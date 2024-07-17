@@ -24,7 +24,7 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
 * ^url = $JP_Patient_eCS
 
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

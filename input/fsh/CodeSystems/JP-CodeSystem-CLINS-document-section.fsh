@@ -5,7 +5,7 @@ Id: jp-codeSystem-clins-document-section
 Description: "電子カルテ情報共有サービス文書共通セクション区分コード"
 * ^url = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section"
 * ^title = "電子カルテ情報共有サービス文書共通セクション区分コード"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

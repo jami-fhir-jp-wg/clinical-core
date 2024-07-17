@@ -3,7 +3,7 @@ Parent: JP_Coverage
 Id: JP-Coverage-eCS-insurance
 Description: "保険情報　Coverageリソースプロファイル　JP_Coverageの派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_insurance"
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

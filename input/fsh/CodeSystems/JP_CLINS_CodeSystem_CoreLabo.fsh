@@ -5,7 +5,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-04T00:45:56.836+09:00"
 * ^url = $JP_CLINS_CodeSystem_CoreLabo_CS
-* ^version = "1.3.0-rc"
+* ^version = "1.3.0-rc3"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
