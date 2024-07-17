@@ -30,6 +30,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
 ├── hl7.fhir.xver-extensions#0.0.12
 ├── hl7.terminology#5.3.0
 ├── hl7.terminology.r5#5.0.0
+├── hl7.terminology.r4#6.0.0
 └── packages.ini
 
  ```
@@ -49,7 +50,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
     ├── hl7.fhir.xver-extensions#0.0.12
     ├── hl7.terminology#5.3.0
     ├── hl7.terminology.r5#5.0.0
-    └── packages.ini
+    ├── hl7.terminology.r4#6.0.0    └── packages.ini
 
 ```
     
@@ -211,7 +212,7 @@ Loading
   Load pkgClins/jp-core.r4-1.1.2.tgz - 159 resources (00:00.197)
   Load pkgClins/jpfhir-terminology.r4-1.2.0.tgz - 175 resources (00:03.988)
   Load pkgClins/jp-clins.r4-1.3.0-rc3.tgz - 148 resources (00:00.081)
-  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.0.12, hl7.fhir.uv.extensions.r4#1.0.0, hl7.terminology#5.3.0, hl7.terminology.r5#5.0.0, hl7.fhir.uv.extensions#1.0.0]
+  Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.0.12, hl7.fhir.uv.extensions.r4#1.0.0, hl7.terminology#5.3.0, hl7.terminology.r4#6.0.0, hl7.fhir.uv.extensions#1.0.0]
   Get set...  go (00:01.131)
 ```
 
