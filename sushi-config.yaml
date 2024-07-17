@@ -25,13 +25,12 @@ copyright: （一社）日本医療情報学会. CC BY-ND 4.0 （クリエイテ
 jurisdiction: 'urn:iso:std:iso:3166-2#JP'
 dependencies:
   jp-core.r4:
-# to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
     uri: http://jpfhir.jp/fhir/core/1.1.2/ImplementationGuide/
     version: 1.1.2
   jpfhir-terminology.r4:
-    uri: http://jpfhir.jp/fhir//jpfhir-terminology.r4/ImplementationGuide/
+    uri: http://jpfhir.jp/fhir/jpfhir-terminology.r4/ImplementationGuide/
     version: 1.2.0
-    
+# to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
 #----------------------------------------
 # ページタイトル名称設定
 #----------------------------------------
