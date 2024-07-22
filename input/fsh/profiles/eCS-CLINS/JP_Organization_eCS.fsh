@@ -6,7 +6,7 @@ Title: "JP_Organization_eCS"
 Description: "eCS 診療情報・サマリー汎用　Organizationリソース（医療機関等の組織・機関情報）プロファイル　（JP_Organizationの派生プロファイル）"
 //* obeys checkPhoneNumberExists
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
-* ^version = "1.3.0-rc3"
+* ^version = "1.3.0-rc4"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

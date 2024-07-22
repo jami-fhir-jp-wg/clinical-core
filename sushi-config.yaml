@@ -7,10 +7,10 @@
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
 name: "JP_CLINS_FHIR_IG"
-title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc3 (リリース候補v3)"
-description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc3 (リリース候補v3)"
+title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc4 (リリース候補v3)"
+description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc4 (リリース候補v3)"
 status: active # draft | active | retired | unknown 
-version: "1.3.0-rc3"
+version: "1.3.0-rc4"
 date: 2024-07-12
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
@@ -69,8 +69,8 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc3.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc3-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc4.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc4-snap.tgz
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------

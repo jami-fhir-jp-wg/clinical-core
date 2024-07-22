@@ -3,7 +3,7 @@ Parent:			JP_FamilyMemberHistory
 Id:             JP-FamilyMemberHistory-eCS
 Description:    "eCS 診療情報・サマリー汎用 FamilyMemberHistory"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS"
-* ^version = "1.3.0-rc3"
+* ^version = "1.3.0-rc4"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

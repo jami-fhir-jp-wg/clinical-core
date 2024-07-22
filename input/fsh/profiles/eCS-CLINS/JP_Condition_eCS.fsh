@@ -16,7 +16,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * ^url = $JP_Condition_eCS
 
-* ^version = "1.3.0-rc3"
+* ^version = "1.3.0-rc4"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

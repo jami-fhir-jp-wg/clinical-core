@@ -8,7 +8,7 @@ Title: "JP eCS InstitutionNumber Extension"
 Description: "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述する拡張"
 * ^url = $JP_eCS_InstitutionNumber
 // http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
-* ^version = "1.3.0-rc3"
+* ^version = "1.3.0-rc4"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
