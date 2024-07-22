@@ -65,10 +65,13 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[=].resource = Example-JP-Condition-eCS-FxInline
 
 * entry[+].fullUrl = "urn:uuid:711b07ae-d20b-40b0-9aa9-c7f1981409e6"
-* entry[=].resource = Example-JP-Allergy-eCS-01Inline
+* entry[=].resource = Example-JP-AllergyIntolerance-eCS-01Inline
 
 * entry[+].fullUrl = "urn:uuid:5a1aae74-f720-415a-ba15-a6c8b5d4c5a1"
-* entry[=].resource = Example-JP-Allergy-eCS-02Inline
+* entry[=].resource = Example-JP-AllergyIntolerance-eCS-02Inline
+
+* entry[+].fullUrl = "urn:uuid:0d51bf2a-4863-b36f-2ad3-cb5ea0df1023"
+* entry[=].resource = Example-JP-AllergyIntolerance-eCS-03Inline
 
 * entry[+].fullUrl = "urn:uuid:481835ef-0891-45de-a006-087954ab6b7c"
 * entry[=].resource = psExample-JP-Obs-Common-eCS-textOnly01Inline

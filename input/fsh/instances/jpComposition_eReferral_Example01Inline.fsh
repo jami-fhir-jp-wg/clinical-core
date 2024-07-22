@@ -3,12 +3,6 @@
 Alias: $doc-typecodes_CS = http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
 Alias: $referral-section = http://jpfhir.jp/fhir/clins/CodeSystem/document-section
 
-
-
-
-
-
-
 Instance: compositionReferralExample01Inline
 InstanceOf: JP_Composition_eReferral
 Usage: #inline
@@ -162,7 +156,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[allergiesIIntoleranceSection].title = "アレルギー・不耐性反応"
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding = $referral-section#510 "アレルギー・不耐性反応セクション"
 * section[compositionSection].section[allergiesIIntoleranceSection].text.status = #additional
-* section[compositionSection].section[allergiesIIntoleranceSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">サバ　キーウイ</div>"
+* section[compositionSection].section[allergiesIIntoleranceSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">サバ　キーウイ　ヨード禁</div>"
 //  Reference(JP_Condition) アレルギー
 // * section[compositionSection].section[allergiesIIntoleranceSection].entry[+].reference = "Example-JP-Allergy-eCS-01Inline"
 * section[compositionSection].section[allergiesIIntoleranceSection].entry[+].reference = "urn:uuid:711b07ae-d20b-40b0-9aa9-c7f1981409e6"
@@ -172,7 +166,10 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[allergiesIIntoleranceSection].entry[+].reference = "urn:uuid:5a1aae74-f720-415a-ba15-a6c8b5d4c5a1"
 * section[compositionSection].section[allergiesIIntoleranceSection].entry[=].type = "AllergyIntolerance"
 * section[compositionSection].section[allergiesIIntoleranceSection].entry[=].display = "アレルギー・不耐性反応"
-
+//"urn:uuid:0d51bf2a-4863-b36f-2ad3-cb5ea0df1023"
+* section[compositionSection].section[allergiesIIntoleranceSection].entry[+].reference = "urn:uuid:0d51bf2a-4863-b36f-2ad3-cb5ea0df1023"
+* section[compositionSection].section[allergiesIIntoleranceSection].entry[=].type = "AllergyIntolerance"
+* section[compositionSection].section[allergiesIIntoleranceSection].entry[=].display = "アレルギー・不耐性反応"
 
 * section[compositionSection].section[familiyHistorySection].title = "家族歴"
 * section[compositionSection].section[familiyHistorySection].code.coding = $referral-section#550 "家族歴セクション"
