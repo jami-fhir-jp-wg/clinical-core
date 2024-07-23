@@ -35,12 +35,10 @@ Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素と
 //* criticality = #unable-to-assess
 
 * code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FA32540000 "キウイフルーツ"
-+ code.version = "20240709" //推奨
+* code.version = "20240709" //推奨
 * code.text = "キーウイ"
 
 * patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"   //必須
-
-
 * encounter.reference = "Encounter/Example-JP-Encounter-eCS-AMB-01"  //推奨
 
 
@@ -92,7 +90,7 @@ Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素と
 //* criticality = #unable-to-assess
 
 * code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FA32540000 "キウイフルーツ"
-+ code.version = "20240709" //推奨
+* code.version = "20240709" //推奨
 * code.text = "キーウイ"
 
 //* patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"   //必須
