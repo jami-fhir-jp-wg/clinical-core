@@ -161,7 +161,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * code.coding contains
     mediskanri 1..1 MS
 * code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS  (exactly)
-* code.coding[mediskanri].code from $JP_Disease_MEDIS_ManagementID_VS
+//* code.coding[mediskanri].code from $JP_Disease_MEDIS_ManagementID_VS
 
 * code.extension ^slicing.discriminator.type = #value
 * code.extension ^slicing.discriminator.path = "url"
