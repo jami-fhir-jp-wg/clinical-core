@@ -156,7 +156,7 @@ Description: "CarePlan カテゴリー　hospital-plan または discharge-plan"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_carePlanCategory_CS
 
-//
+//　暫定
 // 厚労省電子処方箋用法コードマスターValueSet
 // $JP_MedicationUsageMHLW_Prscription_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
 ValueSet:  JP_valueSet_MedicationUsageMHLW_Prscription
@@ -171,7 +171,7 @@ Description: "厚労省電子処方箋用法コードマスターValueSet"
 * ^copyright = "　"
 * include codes from system $JP_MedicationUsageMHLW_Prscription_CS
 
-//
+// 暫定
 // MEDIS標準病名マスター病名管理番号ValueSet
 // $JP_Disease_MEDIS_ManagementID_VS = http://medis.or.jp/ValueSet/master-disease-keyNumber 
 ValueSet:  JP_valueSet_Disease_MEDIS_ManagementID

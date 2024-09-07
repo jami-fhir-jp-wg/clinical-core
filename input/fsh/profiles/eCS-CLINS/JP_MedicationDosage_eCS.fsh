@@ -93,7 +93,8 @@ and mhw_prescription_yoho 1..1 MS
 * timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
 
 * timing.code.coding[mhw_prescription_yoho].system = $JP_MedicationUsageMHLW_Prscription_CS (exactly) 
-* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS
+//* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS
+// VSの実態が展開できない状況で上記があるとpublisherエラーになる。
 
 * timing.code.text 1..1 MS
 * timing.code.text ^short = "用法のコード化の有無にかかわらず、用法の完全な文字列を設定する。"
