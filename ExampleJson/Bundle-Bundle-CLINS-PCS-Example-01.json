@@ -364,6 +364,114 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Example-JP-Condition-eCS-ANGINA-NoPrincipal-Active-Inline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+            "value": "192839-01"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "code": "20058911",
+              "display": "狭心症"
+            }
+          ],
+          "text": "狭心症"
+        },
+        "extension": [
+          {
+            "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+            "valueIdentifier": {
+              "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+              "value": "1318814790"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "08",
+                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "display": "循環器科"
+                }
+              ],
+              "text": "循環器診療科"
+            }
+          }
+        ],
+        "contained": [
+          {
+            "resourceType": "Encounter",
+            "id": "Example-Contained-JP-Encounter-AMB",
+            "meta": {
+              "profile": [
+                "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
+              ]
+            },
+            "language": "ja",
+            "identifier": [
+              {
+                "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+                "value": "192844"
+              }
+            ],
+            "status": "finished",
+            "class": {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+              "code": "AMB",
+              "display": "外来"
+            }
+          }
+        ],
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "encounter-diagnosis",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+        },
+        "encounter": {
+          "reference": "#Example-Contained-JP-Encounter-AMB"
+        },
+        "onsetDateTime": "2018-08-21"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65",
       "resource": {
         "resourceType": "Condition",
@@ -380,6 +488,16 @@
             "value": "192839-01"
           }
         ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "code": "20061593",
+              "display": "高血圧症"
+            }
+          ],
+          "text": "高血圧"
+        },
         "extension": [
           {
             "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -464,16 +582,6 @@
             ]
           }
         ],
-        "code": {
-          "coding": [
-            {
-              "code": "20061593",
-              "system": "urn:oid:1.2.392.200119.4.101.2",
-              "display": "高血圧症"
-            }
-          ],
-          "text": "高血圧"
-        },
         "subject": {
           "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
         },

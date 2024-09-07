@@ -127,6 +127,9 @@ Alias: $JP_MedicationSubstitutionNotAllowedReason_CS = urn:oid:1.2.392.100495.20
 Alias: $JP_MedicationUnitMERIT9_CS = urn:oid:1.2.392.100495.20.2.101
 Alias: $JP_MedicationUsageJAMIAdditional_CS = urn:oid:1.2.392.200250.2.2.20.22
 Alias: $JP_MedicationUsageJAMI_CS = urn:oid:1.2.392.200250.2.2.20
+
+Alias: $JP_MedicationUsageMHLW_Prscription_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription
+
 Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
 Alias: $JP_MedicationCodeHOT13_CS = urn:oid:1.2.392.200119.4.402.1
 Alias: $JP_MedicationCodeHOT7_CS = urn:oid:1.2.392.200119.4.403.2
@@ -200,6 +203,9 @@ Alias: $JP_MedicationUnitMERIT9_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_Medi
 Alias: $JP_MedicationUsageInjection_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUsageInjection_VS
 Alias: $JP_MedicationUsageJAMIAdditional_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUsageJAMIAdditional_VS
 Alias: $JP_MedicationUsageJAMI_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationUsageJAMI_VS
+
+Alias: $JP_MedicationUsageMHLW_Prscription_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
+
 Alias: $JP_MedicationCodeCommon_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeCommon_VS
 Alias: $JP_MedicationCodeHOT7_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeHOT7_VS
 Alias: $JP_MedicationCode_Immunization_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCode_Immunization_VS

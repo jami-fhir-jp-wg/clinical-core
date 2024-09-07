@@ -41,7 +41,6 @@
   - patient : このアレルギー不耐症を有する患者のFHIRリソースへの参照。
 
 ### 条件により必須
-  - meta.profile : 電子カルテ情報共有サービスでは必須。
   - meta.tag ("LTS"): 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）で長期保存フラグの設定する場合に必須。
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（同）では必須。医療機関番号１０桁
   - clinicalStatus : 臨床的状態のステータスのコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。
@@ -57,6 +56,7 @@
 ### MustSupport要素
 　MustSupport要素では、データ作成・出力側ではその要素に相当するデータを持っている場合には出力しなければならず、受信側では要素が存在していればそのデータを（利用するかどうかに関わらず）格納しなければならない。
   - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
+  - extension (eCS_Department) : 診療科情報
   - ciriticality : 臨床的危険性、致命度。
   - reaction : 有害反応履歴情報。
 

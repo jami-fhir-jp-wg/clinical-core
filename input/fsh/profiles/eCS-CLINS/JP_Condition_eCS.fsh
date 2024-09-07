@@ -146,9 +146,22 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * code 1..1 MS
 * code ^short = "傷病名のコードと名称"
-* code ^definition = "傷病名のコードと名称。MEDIS 病名交換コード、病名管理番号、ICD10分類コード、レセプト電算処理用傷病名コード、またはレセプト電算処理用傷病名コードの未コード化コード(7桁all 9)のいずれかまたは複数の組み合わせで表現することを推奨する。
-電子カルテ情報共有サービスでは、病名管理番号（system値は\"urn:oid:1.2.392.200119.4.101.2\"）を必ず使用し、それ以外にICD10分類コードを追加することを推奨する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する。"
+* code ^definition = "傷病名のコードと名称。MEDIS 病名管理番号（system値は\"urn:oid:1.2.392.200119.4.101.2\"）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する。なお、MEDIS 病名管理番号以外のコード記述を併用しても構わない。(参考：MEDIS 病名交換コード：urn:oid:1.2.392.200119.4.101.6、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）"
 * code ^comment = "code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。なお、修飾語は前置修飾語と後置修飾語にわけて、それぞれの拡張を使用して記述する。"
+
+* code.coding 1..* MS
+* code.coding.system 1..1 MS
+* code.coding.version 0..1 MS
+* code.coding.display 1..1 MS
+* code.text 1..1 MS
+
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    mediskanri 1..1 MS
+* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS  (exactly)
+* code.coding[mediskanri].code from $JP_Disease_MEDIS_ManagementID_VS
 
 * code.extension ^slicing.discriminator.type = #value
 * code.extension ^slicing.discriminator.path = "url"
@@ -157,22 +170,22 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
     JP_Condition_DiseasePrefixModifier_eCS named diseasePrefixModifier ..* and
     JP_Condition_DiseasePostfixModifier_eCS named diseasePostfixModifier ..*
 
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
-* code.coding ^slicing.rules = #open
-* code.coding contains
-    mediskoukan 0.. MS
-and mediskanri 0.. MS
-and syobo 0.. MS
-and icd10 0.. MS
+//* code.coding ^slicing.discriminator.type = #value
+//* code.coding ^slicing.discriminator.path = "system"
+//* code.coding ^slicing.rules = #open
+//* code.coding contains
+// mediskanri 0.. MS
+//and mediskoukan 0.. MS
+//and syobo 0.. MS
+//and icd10 0.. MS
 
-* code.coding[mediskoukan].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
+//* code.coding[mediskoukan].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
 // * code.coding[mediskoukan].code from $JP_Disease_MEDIS_Concept_VS
-* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
+//* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
 // * code.coding[mediskoukan].code from $JP_Disease_MEDIS_ManagementID_VS
-* code.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
+//* code.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
 // * code.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
-* code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
+//* code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
 // * code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
 
 * bodySite 0..*
@@ -226,7 +239,7 @@ and syobo 0..
   * insert relative_short_definition("登録者の情報を記述しているJP_Practitionerリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
-* asserter 0..1 MS
+* asserter 0..1
 * asserter only Reference(JP_Patient or JP_Practitioner or RelatedPerson)
   * insert relative_short_definition("この状態があると確認（主張）した人の情報を記述しているJP_Patient、JP_Practitioner、RelatedPersonのいずれかのリソースへの参照。")
   * ^comment = "本仕様ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。（新たなリソースによる追加記述を避けるため）"

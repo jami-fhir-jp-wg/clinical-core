@@ -46,15 +46,22 @@
           }
         }
       ],
-      "text": "1日数回 塗布",
       "timing": {
+        "code": {
+          "coding": [
+            {
+              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "code": "2B7N000000000000",
+              "display": "１日数回　塗布"
+            }
+          ],
+          "text": "1日数回 塗布"
+        },
         "event": [
           "2021-07-05T08:00:00+09:00"
-        ],
-        "code": {
-          "text": "1日数回 塗布"
-        }
+        ]
       },
+      "text": "1日数回 塗布",
       "doseAndRate": [
         {
           "type": {

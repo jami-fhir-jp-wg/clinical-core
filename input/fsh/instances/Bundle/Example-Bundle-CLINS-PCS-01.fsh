@@ -41,10 +41,10 @@ Description: "■ 患者療養計画サマリー　Bundleリソース(CLINS送�
 * entry[carePlan].resource = Example-JP-CarePlan-eCS-HT
 
 // entry[condition]　副傷病　狭心症
-* entry[condition].fullUrl = "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835"
-* entry[condition].resource = Example-JP-Condition-eCS-ANGINA-NoPrincipal-Active-Inline
+* entry[condition][+].fullUrl = "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835"
+* entry[condition][=].resource = Example-JP-Condition-eCS-ANGINA-NoPrincipal-Active-Inline
 
 // entry[condition]　主傷病　高血圧
-* entry[condition].fullUrl = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65"
-* entry[condition].resource = Example-JP-Condition-eCS-HT-Principal-Active-Inline
+* entry[condition][+].fullUrl = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65"
+* entry[condition][=].resource = Example-JP-Condition-eCS-HT-Principal-Active-Inline
 

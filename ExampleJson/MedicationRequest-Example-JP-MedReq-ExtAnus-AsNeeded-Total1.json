@@ -58,15 +58,22 @@
           }
         }
       ],
-      "text": "坐薬 便秘時 1回1個 肛門へ挿入",
       "timing": {
+        "code": {
+          "coding": [
+            {
+              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "code": "2R50410000000000",
+              "display": "便秘時　肛門挿入"
+            }
+          ],
+          "text": "便秘時 1回1個 肛門へ挿入"
+        },
         "event": [
           "2021-07-14T08:00:00+09:00"
-        ],
-        "code": {
-          "text": "坐薬 便秘時 1回1個 肛門へ挿入"
-        }
+        ]
       },
+      "text": "坐薬 便秘時 1回1個 肛門へ挿入",
       "doseAndRate": [
         {
           "type": {

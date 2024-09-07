@@ -13,6 +13,16 @@
       "value": "192838"
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "code": "20065011",
+        "display": "上腹部痛"
+      }
+    ],
+    "text": "上腹部痛"
+  },
   "language": "ja",
   "clinicalStatus": {
     "coding": [
@@ -40,9 +50,6 @@
       ]
     }
   ],
-  "code": {
-    "text": "上腹部痛"
-  },
   "subject": {
     "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },

@@ -1,0 +1,66 @@
+{
+  "resourceType": "AllergyIntolerance",
+  "id": "Example-JP-AllergyIntolerance-eCS-03",
+  "meta": {
+    "lastUpdated": "2023-04-01T10:00:00+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS"
+    ],
+    "tag": [
+      {
+        "code": "LTS",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
+        "display": "長期保存"
+      }
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+      "value": "102934703"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CLINS必須要素で記述した薬剤アレルギー等情報　長期保存の データ作成例</p></div>"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "display": "Active"
+      }
+    ]
+  },
+  "category": [
+    "medication"
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "GCM2260701F1ZZZ",
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS",
+        "display": "イソジンガーグル液７％"
+      }
+    ],
+    "text": "ヨードうがい液"
+  },
+  "patient": {
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
+  },
+  "note": [
+    {
+      "text": "ポビドンヨード含嗽後に嘔吐と全身に発疹"
+    }
+  ]
+}

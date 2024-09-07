@@ -15,8 +15,8 @@ Description: "患者療養計画サマリー　Compositionリソース データ
 * language = #ja
 
 
-* extension.url = "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
-* extension.valueString = "1.0"
+* extension[version].url = "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber"
+* extension[version].valueString = "1.0"
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "1311234567-2021-12345678"

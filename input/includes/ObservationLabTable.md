@@ -17,7 +17,7 @@
  <col class=xl271 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=65 style='mso-height-source:userset;height:49.0pt'>
-  <td colspan=9 height=65 class=xl379 align=left width=1067 style='height:49.0pt;
+  <td colspan=9 height=65 class=xl397 align=left width=1067 style='height:49.0pt;
   width:800pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
   style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -190,7 +190,7 @@
   <td class=xl71 width=92 style='width:69pt'>　</td>
   <td class=xl71 width=73 style='width:55pt'>　</td>
   <td class=xl71 width=73 style='width:55pt'>　</td>
-  <td class=xl390 width=47 style='width:35pt'>0..1*</td>
+  <td class=xl379 width=47 style='width:35pt'>0..1*</td>
   <td class=xl71 width=87 style='width:65pt'>Resource(JP_Practitioner )</td>
   <td class=xl71 width=359 style='width:269pt'>performer要素から参照されるJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。<ruby>検査<span
   style='display:none'><rt>ケンサ </rt></span></ruby>オーダ<ruby>医師<span
@@ -354,8 +354,10 @@
   <td class=xl145 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl145 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl294 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
-  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></td>
+  <td class=xl294 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
+  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl199 align=left width=105 style='height:30.0pt;
@@ -529,24 +531,16 @@
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;http://sample.jp/fhir/1311234567/ehr2020/observationLabo/0008363939-2021082603948-0006001&quot;</td>
  </tr>
- <tr height=180 style='height:135.0pt'>
-  <td height=180 class=xl334 width=105 style='height:135.0pt;width:79pt'>basedOn</td>
+ <tr height=100 style='height:75.0pt'>
+  <td height=100 class=xl334 width=105 style='height:75.0pt;width:79pt'>basedOn</td>
   <td class=xl187 width=92 style='width:69pt'>　</td>
   <td class=xl187 width=73 style='width:55pt'>　</td>
   <td class=xl187 width=73 style='width:55pt'>　</td>
   <td class=xl187 width=47 style='width:35pt'>0..1</td>
   <td class=xl187 width=87 style='width:65pt'>Reference(JP_ServiceRequest)</td>
   <td class=xl187 width=359 style='border-top:none;width:269pt'>元の<ruby>検査<span
-  style='display:none'><rt>ケンサ </rt></span></ruby>オーダ情報。オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照。<ruby>検査<span
-  style='display:none'><rt>ケンサ </rt></span></ruby>オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照。<br>
-    元のオーダID情報や依頼に関する情報（検査依頼者の所属や診療科など）が記述<ruby>され<span style='display:none'><rt>ケンサ
-  </rt></span></ruby>るContainedリソースに含まれるServiceReq<ruby>ue<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>st<span
-  style='display:none'><rt>キカｎ </rt></span></ruby><ruby>（検<span
-  style='display:none'><rt>バンゴウ </rt></span></ruby>査<ruby>オーダ<span
-  style='display:none'><rt>シンリョウカ </rt></span></ruby><ruby>ー情<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby>報）リソースをこのリソース<ruby>内で<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>参照する。ただし、医療機関番号と診療科情報は、extensionでも記述することになっている。</td>
+  style='display:none'><rt>ケンサ </rt></span></ruby>オーダ情報。オーダ番号等の一意識別子を含む<ruby>検査<span
+  style='display:none'><rt>ケンサ </rt></span></ruby>オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照。</td>
   <td class=xl187 width=36 style='border-top:none;width:27pt'>　</td>
   <td class=xl188 width=195 style='border-top:none;width:146pt'>実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
  </tr>
@@ -680,7 +674,7 @@
   <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl196 width=47 style='border-top:none;border-left:none;width:35pt'>1..*</td>
   <td class=xl335 style='border-top:none;border-left:none'>　</td>
-  <td rowspan=7 class=xl385 align=left width=359 style='border-bottom:.5pt solid black;
+  <td rowspan=7 class=xl404 align=left width=359 style='border-bottom:.5pt solid black;
   border-top:none;width:269pt'>「医療機関から送信するFHIR仕様について」の「検体検査結果情報における検査項目のコーディング規則」を適用すること。<ruby>電子<span
   style='display:none'><rt>デンシ </rt></span></ruby>カルテ<ruby>情報<span
   style='display:none'><rt>ジョウホウ </rt></span></ruby><ruby>共有<span
@@ -693,10 +687,8 @@
   style='display:none'><rt>リユウ </rt></span></ruby>がない<ruby>限<span
   style='display:none'><rt>カギリ </rt></span></ruby>り、この<ruby>規則<span
   style='display:none'><rt>キソク </rt></span></ruby>を<ruby>適用<span
-  style='display:none'><rt>&#0;:&#2;&#4;?</rt></span></ruby>すること。なお、versionについては、電子カルテ情報共有サービスに送信する場合には、コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス<ruby>運用<span
-  style='display:none'><rt>&#2;<br>
-    A&#2;&#16;</rt></span></ruby><ruby>者<span style='display:none'><rt>G&#1;&#19;</rt></span></ruby>から<ruby>公開<span
-  style='display:none'><rt></rt></span></ruby>される）を設定することを原則とする。設定していない場合には、送信時の最新版を使用しているとみなされて検証される。</td>
+  style='display:none'><rt>&#0;:&#2;&#4;?</rt></span></ruby>すること。また、versionを設定することを<ruby>推奨<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
   <td rowspan=7 class=xl182 width=36 style='border-bottom:.5pt solid black;
   border-top:none;width:27pt'>　</td>
   <td rowspan=7 class=xl327 width=195 style='border-bottom:.5pt solid black;
@@ -1623,7 +1615,8 @@
   <td class=xl88 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>code</td>
   <td class=xl88 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'>医薬品単位略号。値は例示。</td>
+  width:269pt'><ruby>検査<span style='display:none'><rt>ケンサ </rt></span></ruby><ruby>結果<span
+  style='display:none'><rt>ケッカ </rt></span></ruby>単位略号。値は例示。</td>
   <td class=xl88 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl289 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;mg/L&quot;</td>
  </tr>

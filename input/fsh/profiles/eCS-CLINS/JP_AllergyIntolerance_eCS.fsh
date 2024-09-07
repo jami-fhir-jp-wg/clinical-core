@@ -138,8 +138,13 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * code  ^definition = "少なくとも1つのCoding情報では、実装ガイドで定めるアレルギー物質コーディングルールに従ったコード（ダミーコードを含む）を必ず設定する。その場合に使用するsystem値は以下のいずれかを選択する。 食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS　、医薬品： http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　、非医薬品・非食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS"
 
 * code  ^comment = "ー"
-
+* code.coding 1.. MS
 * code.coding from $JP_AllergyIntolerance_VS
+* code.coding.system  1..1 MS
+* code.coding.version 0..1 MS
+* code.coding.code 1..1 MS 
+* code.coding.display 1..1 MS
+* code.text 1..1 MS
 
 * patient 1..1   MS
 * patient only  Reference(JP_Patient_eCS)
@@ -155,8 +160,8 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * onset[x]  ^definition = "電子カルテ情報サービスで記述する場合には、onsetDateTime要素を使用する。"
 
 * recordedDate 0..1 MS
-* recordedDate ^short = "この情報が記録された登録日"
-* recordedDate ^definition = "この情報が記録された登録日"
+* recordedDate ^short = "この情報が最初に（電子カルテに）登録された日または日時"
+* recordedDate ^definition = "この情報最初に（電子カルテに）登録された日または日時"
 
 * lastOccurrence  0..1 
   * insert relative_short_definition("最後（直近）に知られている発生日時")
@@ -171,4 +176,5 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * reaction 0.. MS
   * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。")
-
+  * manifestation.text 1..1 
+    * insert relative_short_definition("アレルギー反応に関連する症状や所見症状のテキスト表現。")

@@ -28,6 +28,13 @@
   ],
   "criticality": "unable-to-assess",
   "code": {
+    "coding": [
+      {
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS",
+        "code": "J9FC11310000",
+        "display": "さば"
+      }
+    ],
     "text": "サバ"
   },
   "patient": {

@@ -100,8 +100,8 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 //病名情報
-* code.coding = $JP_Disease_MEDIS_ManagementID_CS#20054178 "胃癌"
-* code.coding = $JP_DiseaseCategory_WHO_ICD10_CS#C169 "胃の悪性新生物＜腫瘍＞，胃，部位不明"
+* code.coding[+] = $JP_Disease_MEDIS_ManagementID_CS#20054178 "胃癌"
+* code.coding[+] = $JP_DiseaseCategory_WHO_ICD10_CS#C169 "胃の悪性新生物＜腫瘍＞，胃，部位不明"
 * code.text = "胃癌"
 
 //* subject = Reference(Example-JP-Patient-eCS-01-Contained)
@@ -153,7 +153,8 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 //病名情報
-* code.coding = $JP_Disease_MEDIS_Concept_CS#L3RF "噴門癌"
+* code.coding[+] = $JP_Disease_MEDIS_Concept_CS#L3RF "噴門癌"
+* code.coding[+] = $JP_Disease_MEDIS_ManagementID_CS#20075639 "噴門癌"
 * code.text = "噴門癌早期"
 
 //* subject = Reference(Example-JP-Patient-eCS-01-Contained)

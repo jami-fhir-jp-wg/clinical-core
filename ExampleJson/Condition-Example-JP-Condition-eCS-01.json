@@ -13,6 +13,16 @@
       "value": "202934701"
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "code": "20064049",
+        "display": "十二指腸潰瘍"
+      }
+    ],
+    "text": "十二指腸潰瘍・H1期"
+  },
   "extension": [
     {
       "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -93,16 +103,6 @@
       ]
     }
   ],
-  "code": {
-    "coding": [
-      {
-        "code": "20064049",
-        "system": "urn:oid:1.2.392.200119.4.101.2",
-        "display": "十二指腸潰瘍"
-      }
-    ],
-    "text": "十二指腸潰瘍・H1期"
-  },
   "subject": {
     "identifier": {
       "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",

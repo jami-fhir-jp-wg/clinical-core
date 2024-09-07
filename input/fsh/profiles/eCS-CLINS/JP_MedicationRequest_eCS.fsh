@@ -114,6 +114,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことで複数のコード体系で医薬品コード並記することが可能。\r\n本Profile仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。使用できるコード体系は電子カルテ情報共有サービスに利用される場合には、個別医薬品コード（通称YJコード）または厚生労働省一般名処方用医薬品コードのどちらかを必須とする。それ以外のコード体系も追加で記述して構わない。"
 // YJ, 一般処方用コードを必須、または未コードとするチェックはInvariant R3010 で行う。
 * medication[x] MS
+* medication[x].coding 1..* MS
 * medication[x].coding ^slicing.discriminator.type = #value
 * medication[x].coding ^slicing.discriminator.path = "system"
 * medication[x].coding ^slicing.rules = #open
@@ -236,15 +237,5 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * dispenseRequest.performer 
   * ^comment = "当面、診療５情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
 
-* substitution.allowedCodeableConcept MS
-* substitution.allowedCodeableConcept.coding.system ^definition = "後発品変更不可コードを識別するURI。固定値。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　OID: 1.2.392.100495.20.2.41"
-* substitution.allowedCodeableConcept.coding.system MS
-* substitution.allowedCodeableConcept.coding.code ^definition = "後発品変更不可コード。\r\n不可の場合には1を設定する。\r\n厚生労働省電子処方箋CDA規格第１版　別表８ 後発品変更不可コード 　\r\n0 変更可　（省略可）\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"
-* substitution.allowedCodeableConcept.coding.code MS
-* substitution.allowedCodeableConcept.coding.display ^definition = "後発品変更不可コード表示名。\r\n0 変更可\r\n1 後発品変更不可\r\n2 剤形変更不可\r\n3 含量規格変更不可"
-* substitution.allowedCodeableConcept.coding.display MS
-* substitution.reason ^definition = "オーダー情報では、後発品変更不可の理由。"
-* substitution.reason MS
-* substitution.reason.text ^definition = "理由を表す文字列。\r\n例）　\"患者からの強い要望により\""
-* substitution.reason.text MS
+
 

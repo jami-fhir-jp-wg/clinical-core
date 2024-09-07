@@ -13,6 +13,30 @@
       "value": "192839-02"
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "code": "20080427",
+        "display": "前腕骨折"
+      }
+    ],
+    "extension": [
+      {
+        "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.392.200119.4.201.2",
+              "code": "27000358",
+              "display": "左"
+            }
+          ]
+        }
+      }
+    ],
+    "text": "左前腕骨折"
+  },
   "language": "ja",
   "clinicalStatus": {
     "coding": [
@@ -40,9 +64,6 @@
       ]
     }
   ],
-  "code": {
-    "text": "左前腕骨折"
-  },
   "subject": {
     "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },

@@ -15,7 +15,7 @@
  <col class=xl193 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=68 style='mso-height-source:userset;height:51.0pt'>
-  <td colspan=9 height=68 class=xl380 align=left width=1079 style='height:51.0pt;
+  <td colspan=9 height=68 class=xl398 align=left width=1079 style='height:51.0pt;
   width:809pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
   </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -383,7 +383,7 @@
     &lt;以降省略&gt;</td>
  </tr>
  <tr height=43 style='mso-height-source:userset;height:32.0pt'>
-  <td colspan=9 height=43 class=xl381 width=1079 style='border-right:1.0pt solid black;
+  <td colspan=9 height=43 class=xl399 width=1079 style='border-right:1.0pt solid black;
   height:32.0pt;width:809pt'>　　　：：：　（<ruby>リ<span style='display:none'><rt>クリカエシ
   </rt></span></ruby>ソースインスタンスの数だけ繰り<ruby>返<span style='display:none'><rt>カズ </rt></span></ruby>し（）</td>
  </tr>

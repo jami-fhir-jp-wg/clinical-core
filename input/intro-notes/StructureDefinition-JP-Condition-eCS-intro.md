@@ -57,8 +57,7 @@
   - recorder : この状態を記録した人の情報を記述しているJP_Practitionerリソースへの参照。
 
 ### MustSupport要素
-　- 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
-　- 該当なし。
+  - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
 
 
 ## 要素の説明とプロファイル

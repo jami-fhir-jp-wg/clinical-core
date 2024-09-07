@@ -13,6 +13,21 @@
       "value": "202934703"
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.101.6",
+        "code": "L3RF",
+        "display": "噴門癌"
+      },
+      {
+        "code": "20075639",
+        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "display": "噴門癌"
+      }
+    ],
+    "text": "噴門癌早期"
+  },
   "extension": [
     {
       "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -92,16 +107,6 @@
       ]
     }
   ],
-  "code": {
-    "coding": [
-      {
-        "code": "L3RF",
-        "system": "urn:oid:1.2.392.200119.4.101.6",
-        "display": "噴門癌"
-      }
-    ],
-    "text": "噴門癌早期"
-  },
   "subject": {
     "identifier": {
       "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",

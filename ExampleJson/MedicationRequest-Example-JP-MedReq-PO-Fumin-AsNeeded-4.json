@@ -46,15 +46,22 @@
           }
         }
       ],
-      "text": "不眠時  4　回分",
       "timing": {
+        "code": {
+          "coding": [
+            {
+              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "code": "10121050610000000000010100000000",
+              "display": "不眠時　服用"
+            }
+          ],
+          "text": "不眠時"
+        },
         "event": [
           "2021-07-05T08:00:00+09:00"
-        ],
-        "code": {
-          "text": "不眠時"
-        }
+        ]
       },
+      "text": "不眠時  4　回分",
       "asNeededBoolean": true,
       "doseAndRate": [
         {

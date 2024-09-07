@@ -60,8 +60,11 @@
 
 ### MustSupport要素
 　- 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
+  - contained (JP_Specimen) : 検体材料情報
+  - contained (JP_ServiceRequest) : 検査オーダ情報
   - note : 結果に対するコメントテキスト記述。
   - method : 検査手法の記述。
+  - issued : 検査結果報告日時（システムへの結果登録日時）
 
 ## 要素の説明とプロファイル
   - 多重度欄の背景色：

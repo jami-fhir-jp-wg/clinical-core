@@ -19,7 +19,7 @@
  <col class=xl345 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=53 style='mso-height-source:userset;height:40.0pt'>
-  <td colspan=9 height=53 class=xl389 align=left width=1074 style='height:40.0pt;
+  <td colspan=9 height=53 class=xl407 align=left width=1074 style='height:40.0pt;
   width:805pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
   </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span

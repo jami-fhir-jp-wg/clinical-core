@@ -54,6 +54,9 @@ Description: "MedicationRequestリソース　入院・内服処方頓用発熱�
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-07"
 * dosageInstruction.text = "発熱時  4　回分,37.5度以上で本人希望時　4時間あけて1日3回まで"
 * dosageInstruction.timing.event = "2021-07-07T08:00:00+09:00"
+* dosageInstruction.timing.code.coding[+].system = "$JP_MedicationUsageMHLW_Prscription_CS"
+* dosageInstruction.timing.code.coding[=].code = #1050710000000000
+* dosageInstruction.timing.code.coding[=].display = "発熱時　服用"
 * dosageInstruction.timing.code.text = "発熱時"
 * dosageInstruction.asNeededBoolean = true
 * dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"

@@ -19,7 +19,7 @@
  <col class=xl315 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=28 style='height:21.0pt'>
-  <td colspan=10 height=28 class=xl387 align=left width=1065 style='height:
+  <td colspan=10 height=28 class=xl406 align=left width=1065 style='height:
   21.0pt;width:798pt'>多重度は、親要素が出現した場合の多重度。たとえばある子要素の多重度が1..1であっても親要素が出現しない場合にはその子要素は出現しない。逆に親要素が出現する場合には、この子要素は出現しなければならない。</td>
  </tr>
  <tr height=101 style='height:76.0pt'>
@@ -164,7 +164,7 @@
   <td class=xl71 width=65 style='width:49pt'>　</td>
   <td class=xl71 width=57 style='width:43pt'>　</td>
   <td class=xl71 width=57 style='width:43pt'>　</td>
-  <td class=xl390 width=35 style='width:26pt'>0..1*</td>
+  <td class=xl379 width=35 style='width:26pt'>0..1*</td>
   <td class=xl71 width=87 style='width:65pt'>Resource(JP_Practitioner<span
   style='mso-spacerun:yes'>  </span>)</td>
   <td class=xl71 width=359 style='width:269pt'>requester要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。<ruby>処方<span
@@ -182,7 +182,7 @@
   <td class=xl71 width=65 style='width:49pt'>　</td>
   <td class=xl71 width=57 style='width:43pt'>　</td>
   <td class=xl71 width=57 style='width:43pt'>　</td>
-  <td class=xl391 width=35 style='width:26pt'>0..1*</td>
+  <td class=xl380 width=35 style='width:26pt'>0..1*</td>
   <td class=xl71 width=87 style='width:65pt'>Resource(JP_ServiceRequest<span
   style='mso-spacerun:yes'>  </span>)</td>
   <td class=xl71 width=359 style='width:269pt'>basedOn要素から参照される<ruby>元<span
@@ -363,8 +363,10 @@
   <td class=xl145 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl145 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl297 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></td>
+  <td class=xl297 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl160 align=left width=91 style='height:31.0pt;
@@ -822,8 +824,8 @@
   <td class=xl353 width=195 style='width:146pt'><a
   href="http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ" target="_parent">http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ</a></td>
  </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl171 width=91 style='height:75.0pt;width:68pt'>medicationCodeableConcept</td>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl171 width=91 style='height:45.0pt;width:68pt'>medicationCodeableConcept</td>
   <td class=xl78 width=83 style='width:62pt'>coding[=]<ruby><font class="font20"><rt
   class=font20></rt></font></ruby></td>
   <td class=xl78 width=65 style='width:49pt'>version</td>
@@ -831,7 +833,8 @@
   <td class=xl78 width=57 style='width:43pt'>　</td>
   <td class=xl85 width=35 style='width:26pt'>0..1</td>
   <td class=xl78 width=87 style='width:65pt'>string</td>
-  <td class=xl78 width=359 style='width:269pt'>電子カルテ情報共有サービスに送信する場合には、コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス運用者から公開される）を設定することを原則とする。設定していない場合には、送信時の最新版を使用しているとみなされて検証される。</td>
+  <td class=xl78 width=359 style='width:269pt'>コーディングに使用したコードシステムのバージョン文字列を設定することを<ruby>推奨<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>とする。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;20240601&quot;</td>
  </tr>
@@ -913,7 +916,7 @@
   <td class=xl71 width=65 style='width:49pt'>　</td>
   <td class=xl71 width=57 style='width:43pt'>　</td>
   <td class=xl71 width=57 style='width:43pt'>　</td>
-  <td class=xl390 width=35 style='width:26pt'>0..1</td>
+  <td class=xl379 width=35 style='width:26pt'>0..1</td>
   <td class=xl71 width=87 style='width:65pt'>Reference(JP_Practitioner )</td>
   <td class=xl71 width=359 style='width:269pt'>処方者<ruby>情報<span
   style='display:none'><rt>ジョウホウ </rt></span></ruby>。この<ruby>処方<span

@@ -61,7 +61,7 @@ Description: "AllergyIntoleranceリソース CLINS必須要素のみ 長期保�
 
 // * criticality = #unable-to-assess   //任意
 
-* code.coding = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば"
+* code.coding[+] = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS#J9FC11310000 "さば"
 * code.text = "さば"
 
 // * patient.reference = "Example-JP-Patient-eCS-MAKINOInline"

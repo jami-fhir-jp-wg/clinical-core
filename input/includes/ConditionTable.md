@@ -17,7 +17,7 @@
  <col class=xl271 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=61 style='mso-height-source:userset;height:46.0pt'>
-  <td colspan=10 height=61 class=xl379 align=left width=1111 style='height:
+  <td colspan=10 height=61 class=xl397 align=left width=1111 style='height:
   46.0pt;width:833pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
   style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -388,8 +388,10 @@
   <td class=xl145 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl145 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl297 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></td>
+  <td class=xl297 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl199 align=left width=97 style='height:31.0pt;
@@ -555,8 +557,10 @@
   <td class=xl145 align=left width=359 style='border-left:none;width:269pt'>主傷病であることを記述するために使用する拡張を識別するURL。</td>
   <td class=xl145 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl297 width=195 style='border-left:none;width:146pt'><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</span></td>
+  <td class=xl297 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl199 align=left width=97 style='height:31.0pt;
@@ -1045,8 +1049,8 @@
   <td class=xl78 width=36 style='width:27pt'>　</td>
   <td class=xl181 width=195 style='width:146pt'>　</td>
  </tr>
- <tr height=260 style='height:195.0pt'>
-  <td height=260 class=xl171 width=97 style='height:195.0pt;width:73pt'>code</td>
+ <tr height=200 style='height:150.0pt'>
+  <td height=200 class=xl171 width=97 style='height:150.0pt;width:73pt'>code</td>
   <td class=xl88 align=left width=83 style='border-top:none;border-left:none;
   width:62pt'>extension[=]</td>
   <td class=xl88 align=left width=73 style='border-top:none;border-left:none;
@@ -1062,26 +1066,26 @@
   <td class=xl148 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>前<span
   style='display:none'><rt>ゼンチ </rt></span></ruby>置<ruby>修<span
   style='display:none'><rt>シュウ&#0;&#0;&#1;&#4;&#2;</rt></span></ruby>飾語のコードsystem<ruby>値<span
-  style='display:none'><rt>&#1;&#12;</rt></span></ruby><br>
-    ICD10<ruby><br>
-    対応<span style='display:none'><rt>&#15;&#1;&#14;&#22;&#3;&#22;&#25;&#2;</rt></span></ruby><ruby>標準<span
-  style='display:none'><rt>&#27;&#27;&#1;&#30;%</rt></span></ruby><ruby>病<span
-  style='display:none'><rt>&#2;#'</rt></span></ruby>名マスタの「修飾語<ruby>交換<span
-  style='display:none'><rt>&#1;&amp;F&#3;.</rt></span></ruby><ruby>用<span
-  style='display:none'><rt>I&#2;2</rt></span></ruby>コード」：urn:oid:1.2.392.200119.4.<ruby>201<span
-  style='display:none'><rt>K&#2;7r&#2;&lt;t&#1;</rt></span></ruby><ruby>.5<span
-  style='display:none'><rt>?u&#3;&#20;</rt></span></ruby><ruby><br>
-    I<span style='display:none'><rt>ç&#2;&#25;í&#2;</rt></span></ruby>CD10<br>
-    対応標準病名マスタの「修飾語管理番号」: urn:oid:1.2<ruby>.3<span style='display:none'><rt>&#0;&#0;&#0;&#0;	</rt></span></ruby><ruby>9<span
-  style='display:none'><rt>&#0;	前</rt></span></ruby><ruby>2.2<span
-  style='display:none'><rt></rt></span></ruby>00119.4.201.2<br>
-    レセプト電算用修飾語コード:
-  http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterZ-disease-modifier<br>
-    <font class="font13">電子カルテ情報共有サービスで</font><ruby><font class="font13">は、</font><span
-  style='display:none'><rt>&#25;&#2;&#27;&#27;&#1;</rt></span></ruby><font
-  class="font13">ICD1</font><ruby><font class="font13">0<br>
-    </font><span style='display:none'><rt></rt></span></ruby><font
-  class="font13">対応標準病名マスタの「修飾語管理番号」だけが使用できる。</font></td>
+  style='display:none'><rt>&#1;&#12;</rt></span></ruby>。ME<ruby>DI<span
+  style='display:none'><rt>&#1;&amp;F&#3;.</rt></span></ruby><ruby>S<span
+  style='display:none'><rt>I&#2;2</rt></span></ruby>標準病名マスタの「修飾語管理番号」を<ruby>必ず<span
+  style='display:none'><rt>シヨウ </rt></span></ruby>使用する。<ruby>これ<span
+  style='display:none'><rt>イガイ </rt></span></ruby>以<ruby>外<span
+  style='display:none'><rt>ホカ </rt></span></ruby>に他のコー<ruby>ドを<span
+  style='display:none'><rt>ヘイヨウ </rt></span></ruby>併用し<ruby>て<span
+  style='display:none'><rt>カマワナイ </rt></span></ruby>も構わない<ruby>。（<span
+  style='display:none'><rt>サンコウ </rt></span></ruby>参考：M<ruby>EDI<span
+  style='display:none'><rt>K&#2;7r&#2;&lt;t&#1;</rt></span></ruby><ruby>S標<span
+  style='display:none'><rt>?u&#3;&#20;</rt></span></ruby><ruby>準<span
+  style='display:none'><rt>ç&#2;&#25;í&#2;</rt></span></ruby><ruby>病<span
+  style='display:none'><rt>ドウ </rt></span></ruby>名マスタの「修飾語交換用コード」：urn:o<ruby>id<span
+  style='display:none'><rt>&#0;&#0;&#0;&#0;	</rt></span></ruby><ruby>:<span
+  style='display:none'><rt>&#0;	前</rt></span></ruby><ruby>1.2<span
+  style='display:none'><rt></rt></span></ruby>.392.200119.4.201.5<br>
+    同「修飾語管理番号」: urn:oid:1.2.392.200119.4.201.2<br>
+    レセプト電算用修飾語コード: http://jpfhir.jp/fhir/core/mhlw/Co<ruby>de<span
+  style='display:none'><rt>&#25;&#2;&#27;&#27;&#1;</rt></span></ruby>System/masterZ-disease-modifier）<br>
+    </td>
   <td class=xl78 width=36 style='width:27pt'><ruby>例<span style='display:none'><rt>レイジ
   </rt></span></ruby>示</td>
   <td class=xl181 width=195 style='width:146pt'>urn:oid:1.2.392.200119.4.201.2</td>
@@ -1097,22 +1101,10 @@
   <td class=xl78 width=73 style='width:55pt'>version</td>
   <td class=xl219 width=35 style='width:26pt'>0..1</td>
   <td class=xl78 width=87 style='width:65pt'>string</td>
-  <td class=xl172 width=359 style='width:269pt'><ruby>電子<span style='display:
-  none'><rt>デンシ </rt></span></ruby>カルテ<ruby>情報<span style='display:none'><rt>ジョウホウ
-  </rt></span></ruby><ruby>共有<span style='display:none'><rt>キョウユウ </rt></span></ruby>サービスに<ruby>送信<span
-  style='display:none'><rt>ソウシン </rt></span></ruby>する<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、コーディングに<ruby>使用<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>したコードシステムのバージョン<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>（<ruby>電子<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>カルテ情報<ruby>共有<span
-  style='display:none'><rt>ゲンソク </rt></span></ruby>サービス<ruby>運用<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>者から公開<ruby>され<span
-  style='display:none'><rt>バアイ </rt></span></ruby>る）を<ruby>設定<span
-  style='display:none'><rt>ソウシン </rt></span></ruby><ruby>す<span
-  style='display:none'><rt>ジ </rt></span></ruby>る<ruby>ことを<span
-  style='display:none'><rt>サイシンバン </rt></span></ruby>原<ruby>則と<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>する。設定していない<ruby>場合<span
-  style='display:none'><rt>ケンショウ </rt></span></ruby>には、送信時の最新版を使用しているとみなされて検証される。</td>
+  <td class=xl172 width=359 style='width:269pt'>コードマスターのバージョン<ruby>文字列<span
+  style='display:none'><rt>モジレツ </rt></span></ruby>。<ruby>設定<span
+  style='display:none'><rt>セッテイ </rt></span></ruby>することを<ruby>推奨<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;20240601&quot;</td>
  </tr>
@@ -1277,8 +1269,8 @@
   </rt></span></ruby>示</td>
   <td class=xl181 width=195 style='width:146pt'>urn:oid:1.2.392.200119.4.201.2</td>
  </tr>
- <tr height=100 style='mso-height-source:userset;height:75.0pt'>
-  <td height=100 class=xl171 width=97 style='height:75.0pt;width:73pt'>code</td>
+ <tr height=59 style='mso-height-source:userset;height:44.0pt'>
+  <td height=59 class=xl171 width=97 style='height:44.0pt;width:73pt'>code</td>
   <td class=xl88 align=left width=83 style='border-top:none;border-left:none;
   width:62pt'>extension[=]</td>
   <td class=xl88 align=left width=73 style='border-top:none;border-left:none;
@@ -1288,22 +1280,10 @@
   <td class=xl78 width=73 style='width:55pt'>version</td>
   <td class=xl219 width=35 style='width:26pt'>0..1</td>
   <td class=xl78 width=87 style='width:65pt'>string</td>
-  <td class=xl172 width=359 style='width:269pt'><ruby>電子<span style='display:
-  none'><rt>デンシ </rt></span></ruby>カルテ<ruby>情報<span style='display:none'><rt>ジョウホウ
-  </rt></span></ruby><ruby>共有<span style='display:none'><rt>キョウユウ </rt></span></ruby>サービスに<ruby>送信<span
-  style='display:none'><rt>ソウシン </rt></span></ruby>する<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、コーディングに<ruby>使用<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>したコードシステムのバージョン<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>（<ruby>電子<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>カルテ情報<ruby>共有<span
-  style='display:none'><rt>ゲンソク </rt></span></ruby>サービス<ruby>運用<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>者から公開<ruby>され<span
-  style='display:none'><rt>バアイ </rt></span></ruby>る）を<ruby>設定<span
-  style='display:none'><rt>ソウシン </rt></span></ruby><ruby>す<span
-  style='display:none'><rt>ジ </rt></span></ruby>る<ruby>ことを<span
-  style='display:none'><rt>サイシンバン </rt></span></ruby>原<ruby>則と<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>する。設定していない<ruby>場合<span
-  style='display:none'><rt>ケンショウ </rt></span></ruby>には、送信時の最新版を使用しているとみなされて検証される。</td>
+  <td class=xl172 width=359 style='width:269pt'>コードマスターのバージョン<ruby>文字列<span
+  style='display:none'><rt>モジレツ </rt></span></ruby>。<ruby>設定<span
+  style='display:none'><rt>セッテイ </rt></span></ruby>することを<ruby>推奨<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;20240601&quot;</td>
  </tr>
@@ -1365,24 +1345,24 @@
   <td class=xl78 width=36 style='width:27pt'>　</td>
   <td class=xl181 width=195 style='width:146pt'>　</td>
  </tr>
- <tr height=207 style='mso-height-source:userset;height:155.0pt'>
-  <td height=207 class=xl171 width=97 style='height:155.0pt;width:73pt'>code</td>
+ <tr height=85 style='mso-height-source:userset;height:64.0pt'>
+  <td height=85 class=xl171 width=97 style='height:64.0pt;width:73pt'>code</td>
   <td class=xl78 width=83 style='width:62pt'>coding[*]</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl214 width=35 style='width:26pt'>1..*</td>
   <td class=xl78 width=87 style='width:65pt'>Coding</td>
-  <td class=xl78 width=359 style='width:269pt'>MEDIS
-  病名交換コード、病名管理番号、ICD10分類コード、レセプト電算処理用傷病名コード、またはレセプト電算処理用傷病名コードの未コード化コード(7桁all
-  9)のいずれかまたは複数の組み合わせで表現することを<ruby>推奨<span style='display:none'><rt>スイショウ </rt></span></ruby>する。<br>
-    <font class="font13">電子カルテ情報サービスでは、コード</font><ruby><font class="font13">化</font><span
-  style='display:none'><rt>カ </rt></span></ruby><font class="font13">は</font><ruby><font
-  class="font13">必須</font><span style='display:none'><rt>ヒッス </rt></span></ruby><font
-  class="font13">で、病名管理番号を必ず使用</font>した<ruby>上<span style='display:none'><rt>ウエ
-  </rt></span></ruby>で、それ以外にICD10分類コードを<ruby>追加<span style='display:none'><rt>ツイカ
-  </rt></span></ruby>することを<ruby>推奨<span style='display:none'><rt>スイショウ シンシュツゲｎ
-  ビョウタイ カ レイガイテキ バアイ </rt></span></ruby>する。</td>
+  <td class=xl78 width=359 style='width:269pt'><ruby>病名<span style='display:
+  none'><rt>ビョウメイ </rt></span></ruby>本体部分（extens<ruby>io<span style='display:
+  none'><rt>シヨウ </rt></span></ruby>nを<ruby>使用<span style='display:none'><rt>キジュツ
+  </rt></span></ruby>して<ruby>記述<span style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>した前<span
+  style='display:none'><rt>シュウショクゴ </rt></span></ruby>置<ruby>修飾<span
+  style='display:none'><rt>コウチ </rt></span></ruby><ruby>語、後<span
+  style='display:none'><rt>シュウショクゴ </rt></span></ruby>置<ruby>修<span
+  style='display:none'><rt>ノゾク </rt></span></ruby>飾<ruby>語を<span
+  style='display:none'><rt>ブブン </rt></span></ruby>除く部分）<ruby>のコ<span
+  style='display:none'><rt>キジュツ </rt></span></ruby>ード記述。</td>
   <td class=xl78 width=36 style='width:27pt'>　</td>
   <td class=xl181 width=195 style='width:146pt'>　</td>
  </tr>
@@ -1394,15 +1374,15 @@
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl214 width=35 style='width:26pt'>1..1</td>
   <td class=xl78 width=87 style='width:65pt'>uri</td>
-  <td class=xl78 width=359 style='width:269pt'><font class="font16">MEDIS
-  病名交換コード：urn:oid:1.2.392.200119.4.101.6<br>
-    病名管理番号：urn:oid:1.2.392.200119.4.101.2<br>
-    </font><font class="font11">ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full<br>
-   
-  レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease<br>
-    </font><font class="font13">電子カルテ情報共有サービスでは、病名管理番号：urn:oid:1.2.392.200119.4.101.2
-  は必須。</font><font class="font11"><br>
-    </font></td>
+  <td class=xl78 width=359 style='width:269pt'>MEDIS<ruby>標準<span
+  style='display:none'><rt>ヒョウジュン </rt></span></ruby><ruby>病名<span
+  style='display:none'><rt>ビョウメイ </rt></span></ruby>マスター「病名管理番号」（system値は&quot;urn:oid:1.2.392.200119.4.101.2&quot;）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する<ruby>。<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>これに加えて、病名管理番号以外のコード記<ruby>述<span
+  style='display:none'><rt>カ </rt></span></ruby>を<ruby>併用<span
+  style='display:none'><rt>ヒッス </rt></span></ruby>しても構わない。(参考：MED<ruby>I<span
+  style='display:none'><rt>ウエ </rt></span></ruby>S 標準病名マスター「病名交換コード」：<ruby>ur<span
+  style='display:none'><rt>ツイカ </rt></span></ruby>n:oid<ruby>:1<span
+  style='display:none'><rt>スイショウ シンシュツゲｎ ビョウタイ カ レイガイテキ バアイ </rt></span></ruby>.2.392.200119.4.101.6、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl181 width=195 style='width:146pt'>urn:oid:1.2.392.200119.4.101.2</td>
  </tr>
@@ -1483,8 +1463,8 @@
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl181 width=195 style='width:146pt'>&quot;十二指腸潰瘍&quot;</td>
  </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl171 width=97 style='height:30.0pt;width:73pt'>code</td>
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl171 width=97 style='height:45.0pt;width:73pt'>code</td>
   <td class=xl78 width=83 style='width:62pt'>text</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
@@ -1494,7 +1474,19 @@
   <td class=xl78 width=359 style='width:269pt'><ruby>傷病名<span style='display:
   none'><rt>ショウビョウメイ </rt></span></ruby>の<ruby>元<span style='display:none'><rt>モト
   </rt></span></ruby>の<ruby>入力<span style='display:none'><rt>ニュウリョク </rt></span></ruby><ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby><br>
+  style='display:none'><rt>モジレツ </rt></span></ruby>。<ruby>前置<span
+  style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
+  style='display:none'><rt>シュウショクゴ </rt></span></ruby>、<ruby>後置<span
+  style='display:none'><rt>コウチ </rt></span></ruby><ruby>修飾語<span
+  style='display:none'><rt>シュウショクゴ </rt></span></ruby>も<ruby>含<span
+  style='display:none'><rt>フクメテ </rt></span></ruby>めて<ruby>電子<span
+  style='display:none'><rt>デンシ </rt></span></ruby>カルテ<ruby>上<span
+  style='display:none'><rt>ジョウ </rt></span></ruby>での<ruby>表示<span
+  style='display:none'><rt>ヒョウジ </rt></span></ruby>（<ruby>入力<span
+  style='display:none'><rt>ニュウリョク </rt></span></ruby>）<ruby>文字列<span
+  style='display:none'><rt>モジレツ </rt></span></ruby><ruby>全体<span
+  style='display:none'><rt>ゼンタイ </rt></span></ruby>を<ruby>設定<span
+  style='display:none'><rt>セッテイ </rt></span></ruby>する。<br>
     </td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl181 width=195 style='width:146pt'>&quot;十二指腸潰瘍・<ruby>H1<span
@@ -1557,16 +1549,17 @@
   <td class=xl78 width=359 style='width:269pt'>この傷病名情報が同定された時期。患者にこの<ruby>傷病<span
   style='display:none'><rt>ショウビョウ </rt></span></ruby>が出現した時期、あるいはなんらかのエビデンスによりこの<ruby>傷病<span
   style='display:none'><rt>ショウビョウ </rt></span></ruby>が患者にあると確認できた時期を記述する。<ruby><font
-  class="font13">電子</font><span style='display:none'><rt>デンシ </rt></span></ruby><font
-  class="font13">カルテシステムの</font><ruby><font class="font13">病名</font><span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby><ruby><font class="font13">開始日</font><span
-  style='display:none'><rt>カイシビ </rt></span></ruby><font class="font13">をdateTime</font><ruby><font
-  class="font13">型</font><span style='display:none'><rt>ガタ </rt></span></ruby><font
-  class="font13">で</font><ruby><font class="font13">記述</font><span
-  style='display:none'><rt>キジュツ </rt></span></ruby><font class="font13">するのが</font><ruby><font
-  class="font13">一般的</font><span style='display:none'><rt>イッパンテキ </rt></span></ruby><font
-  class="font13">な</font><ruby><font class="font13">方法</font><span
-  style='display:none'><rt>ホウホウ </rt></span></ruby><font class="font13">である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述する。</font><br>
+  class="font16">電子</font><span style='display:none'><rt>デンシ </rt></span></ruby><font
+  class="font16">カルテシステムの</font><ruby><font class="font16">病名</font><span
+  style='display:none'><rt>ビョウメイ </rt></span></ruby><ruby><font class="font16">開始日</font><span
+  style='display:none'><rt>カイシビ </rt></span></ruby><font class="font16">をdateTime</font><ruby><font
+  class="font16">型</font><span style='display:none'><rt>ガタ </rt></span></ruby><font
+  class="font16">で</font><ruby><font class="font16">記述</font><span
+  style='display:none'><rt>キジュツ </rt></span></ruby><font class="font16">するのが</font><ruby><font
+  class="font16">一般的</font><span style='display:none'><rt>イッパンテキ </rt></span></ruby><font
+  class="font16">な</font><ruby><font class="font16">方法</font><span
+  style='display:none'><rt>ホウホウ </rt></span></ruby><font class="font16">である。</font><font
+  class="font13">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述する。</font><br>
    
   記録を登録した日時は、別途recordedDateに記述する。記述方法として、1時点の日時、患者の年齢（曖昧な年齢時期の記述も可能）、開始時期と終了時期による期間、年齢の区間、（なんらかの出来事を引用して記述するような）文字列で時期を記述、の5通りのいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRange、onsetString）からひとつの記述方法を選択して、それにより記述する。複数を選択はできない。onset要素は記述しないで、直接onsetDateTime要素などonsetXXXXの要素により記述する。</td>
   <td class=xl78 width=36 style='width:27pt'>　</td>

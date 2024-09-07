@@ -128,7 +128,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
-
+* code.coding 1.. MS
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "system"
 * code.coding  ^slicing.discriminator[+].type = #value

@@ -14,7 +14,7 @@
  <col class=xl256 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=61 style='mso-height-source:userset;height:46.0pt'>
-  <td colspan=9 height=61 class=xl388 align=left width=1067 style='height:46.0pt;
+  <td colspan=9 height=61 class=xl402 align=left width=1067 style='height:46.0pt;
   width:800pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
   style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -406,7 +406,7 @@
   width:69pt'>event[*]</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl324 align=left width=47 style='border-top:none;border-left:none;
+  <td class=xl409 align=left width=47 style='border-top:none;border-left:none;
   width:35pt'>0..*</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>dateTime</td>
@@ -422,7 +422,7 @@
   width:69pt'>repeat</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl324 align=left width=47 style='border-top:none;border-left:none;
+  <td class=xl409 align=left width=47 style='border-top:none;border-left:none;
   width:35pt'>0..1</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Element</td>
@@ -451,7 +451,7 @@
   <td class=xl257 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>boundsDuration</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl324 align=left width=47 style='border-top:none;border-left:none;
+  <td class=xl409 align=left width=47 style='border-top:none;border-left:none;
   width:35pt'>0..1</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Duration</td>
@@ -546,21 +546,29 @@
   width:27pt'><ruby>固定<span style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl248 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;d&quot;</td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl261 align=left width=105 style='height:45.0pt;
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl261 align=left width=105 style='height:60.0pt;
   border-top:none;width:79pt'>timing</td>
   <td class=xl257 align=left width=92 style='border-top:none;border-left:none;
   width:69pt'>code</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl263 align=left width=47 style='border-top:none;border-left:none;
+  <td class=xl409 align=left width=47 style='border-top:none;border-left:none;
   width:35pt'>0..1</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>CodeableConcept</td>
   <td class=xl86 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>用法。できるかぎりコード<ruby>化<span style='display:none'><rt>カ </rt></span></ruby>をすることを<ruby>推奨<span
   style='display:none'><rt>スイショウ カ スイショウ </rt></span></ruby>する。コード化の有無にかかわらず、用法の完全な文字列をtext<ruby>子要素<span
-  style='display:none'><rt>コヨウソ </rt></span></ruby>に設定する。</td>
+  style='display:none'><rt>コヨウソ </rt></span></ruby>に設定する。<ruby>用法<span
+  style='display:none'><rt>ヨウホウ </rt></span></ruby><ruby>記載<span
+  style='display:none'><rt>キサイ </rt></span></ruby>を<ruby>不要<span
+  style='display:none'><rt>フヨウ </rt></span></ruby>とする<ruby>処方<span
+  style='display:none'><rt>ショホウ </rt></span></ruby>の<ruby>場合<span
+  style='display:none'><rt>バアイ </rt></span></ruby>は<ruby>本<span
+  style='display:none'><rt>ホン </rt></span></ruby><ruby>要素<span
+  style='display:none'><rt>ヨウソ </rt></span></ruby>は<ruby>出現<span
+  style='display:none'><rt>シュツゲン </rt></span></ruby>しない。</td>
   <td class=xl251 style='border-top:none;border-left:none'>　</td>
   <td class=xl248 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
@@ -572,8 +580,8 @@
   <td class=xl257 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>coding[*]</td>
   <td class=xl257 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl263 align=left width=47 style='border-top:none;border-left:none;
-  width:35pt'>0..1*</td>
+  <td class=xl409 align=left width=47 style='border-top:none;border-left:none;
+  width:35pt'>0..*</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Coding</td>
   <td class=xl86 align=left width=359 style='border-top:none;border-left:none;
@@ -595,8 +603,8 @@
   <td class=xl251 style='border-top:none;border-left:none'>　</td>
   <td class=xl248 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=160 style='height:120.0pt'>
-  <td height=160 class=xl261 align=left width=105 style='height:120.0pt;
+ <tr height=180 style='height:135.0pt'>
+  <td height=180 class=xl261 align=left width=105 style='height:135.0pt;
   border-top:none;width:79pt'>timing</td>
   <td class=xl257 align=left width=92 style='border-top:none;border-left:none;
   width:69pt'>code</td>
@@ -609,38 +617,37 @@
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>uri</td>
   <td class=xl86 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'>JAMI標準用法コ<ruby>ード<span style='display:none'><rt>バアイ </rt></span></ruby>、または厚生労働省電子処方箋用法コードを識別するU<ruby>RI（<span
-  style='display:none'><rt>コテイチ </rt></span></ruby><ruby>固定<span
-  style='display:none'><rt>サンショウ </rt></span></ruby>値参照）。<ruby><font
-  class="font34">電</font><span style='display:none'><rt>エズ </rt></span></ruby><font
-  class="font34">子</font><ruby><font class="font34">カル</font><span
-  style='display:none'><rt>シセツ </rt></span></ruby><ruby><font class="font34">テ情</font><span
-  style='display:none'><rt>コユウ </rt></span></ruby><font class="font34">報共有サ</font><ruby><font
-  class="font34">ービ</font><span style='display:none'><rt>シヨウ </rt></span></ruby><font
-  class="font34">スで</font><ruby><font class="font34">は、</font><span
-  style='display:none'><rt>バアイ </rt></span></ruby><font class="font34">厚生労働省電子処方箋用法コードを</font><ruby><font
-  class="font34">表</font><span style='display:none'><rt>アラワス </rt></span></ruby><font
-  class="font34">すsystem</font><ruby><font class="font34">値</font><span
-  style='display:none'><rt>チ </rt></span></ruby><font class="font34">を</font><ruby><font
-  class="font34">設定</font><span style='display:none'><rt>セッテイ </rt></span></ruby><font
-  class="font34">する。</font><br>
-    <ruby>内部<span style='display:none'><rt>ナイブ </rt></span></ruby><ruby>利用<span
-  style='display:none'><rt>リヨウ </rt></span></ruby>などで<font class="font25">施設固有コードを使用する場</font><ruby><font
-  class="font25">合に</font><span style='display:none'><rt>キカン </rt></span></ruby><font
-  class="font25">は、&quot;http:/</font><ruby><font class="font25">/j</font><span
-  style='display:none'><rt>セッテイ </rt></span></ruby><font class="font25">pfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード&quot;を設定する。</font></td>
+  width:269pt'>JAMI標準用法コ<ruby>ード<span style='display:none'><rt>バアイ </rt></span></ruby>(urn:oid:1.2.392.200250.2.2<ruby>.20<span
+  style='display:none'><rt>コテイチ </rt></span></ruby><ruby>)、<span
+  style='display:none'><rt>サンショウ </rt></span></ruby>または厚生<ruby>労<span
+  style='display:none'><rt>エズ </rt></span></ruby>働<ruby>省電<span
+  style='display:none'><rt>シセツ </rt></span></ruby><ruby>子処<span
+  style='display:none'><rt>コユウ </rt></span></ruby>方箋用法<ruby>コー<span
+  style='display:none'><rt>シヨウ </rt></span></ruby>ドを<ruby>識別<span
+  style='display:none'><rt>バアイ </rt></span></ruby>するURI（固定値参照）。<font
+  class="font34">電子カ</font><ruby><font class="font34">ル</font><span
+  style='display:none'><rt>アラワス </rt></span></ruby><font class="font34">テ情報共有サー</font><ruby><font
+  class="font34">ビ</font><span style='display:none'><rt>チ </rt></span></ruby><font
+  class="font34">ス</font><ruby><font class="font34">では</font><span
+  style='display:none'><rt>セッテイ </rt></span></ruby><font class="font34">、厚生労</font><ruby><font
+  class="font34">働省</font><span style='display:none'><rt>ナイブ </rt></span></ruby><ruby><font
+  class="font34">電子</font><span style='display:none'><rt>リヨウ </rt></span></ruby><font
+  class="font34">処方箋用法コードを表すsyste</font><ruby><font class="font34">m値</font><span
+  style='display:none'><rt>キカン </rt></span></ruby><font class="font34">を設定する。</font><br>
+    内部<ruby>利用<span style='display:none'><rt>セッテイ </rt></span></ruby>などで<font
+  class="font25">施設固有コードを使用する場合には、&quot;http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード&quot;を設定する。</font></td>
   <td class=xl88 align=left width=36 style='border-top:none;border-left:none;
   width:27pt'><ruby>固定<span style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl248 width=195 style='border-top:none;border-left:none;width:146pt'>JAMI表<ruby>標準<span
   style='display:none'><rt>ヒョウジュｎ </rt></span></ruby><ruby>用法<span
-  style='display:none'><rt>ヨウホウ </rt></span></ruby>コード：&quot;http://jami.jp/CodeSystem/MedicationUsage&quot;<br>
-    厚生労働省電子処方箋用法コード: <font class="font33">&quot;（仮</font><ruby><font
-  class="font33">設定</font><span style='display:none'><rt>セッテイ </rt></span></ruby><ruby><font
-  class="font33">値</font><span style='display:none'><rt>チ </rt></span></ruby><font
-  class="font33">）：　http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage&quot;</font></td>
+  style='display:none'><rt>ヨウホウ </rt></span></ruby>コード：&quot;urn:oid:1.2.392.200250.2.2.20&quot;<br>
+    厚生労働省電子処方箋用法コード: <font class="font33">&quot;（仮設定値）：　http:/</font><ruby><font
+  class="font33">/j</font><span style='display:none'><rt>セッテイ </rt></span></ruby><ruby><font
+  class="font33">p</font><span style='display:none'><rt>チ </rt></span></ruby><font
+  class="font33">fhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription&quot;</font></td>
  </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl261 align=left width=105 style='height:90.0pt;
+ <tr height=60 style='height:45.0pt'>
+  <td height=60 class=xl261 align=left width=105 style='height:45.0pt;
   border-top:none;width:79pt'>timing</td>
   <td class=xl257 align=left width=92 style='border-top:none;border-left:none;
   width:69pt'>code</td>
@@ -648,12 +655,13 @@
   width:55pt'>coding[=]</td>
   <td class=xl257 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>version</td>
-  <td class=xl324 align=left width=47 style='border-top:none;border-left:none;
-  width:35pt'>1..1</td>
+  <td class=xl408 align=left width=47 style='border-top:none;border-left:none;
+  width:35pt'>0..1</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>code</td>
   <td class=xl86 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'><ruby>電<span style='display:none'><rt>ヨウホウ </rt></span></ruby>子カルテ情報共有サービスに送信する場合には、コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス運用者から公開される）を設定することを原則とする。設定していない場合には、送信時の最新版を使用しているとみなされて検証される。</td>
+  width:269pt'>コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス運用者から公開される）を設定することを<ruby>推奨<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;20240601&quot;</td>
  </tr>
@@ -685,8 +693,8 @@
   width:55pt'>coding[=]</td>
   <td class=xl257 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>display</td>
-  <td class=xl86 align=left width=47 style='border-top:none;border-left:none;
-  width:35pt'>0..1</td>
+  <td class=xl263 align=left width=47 style='border-top:none;border-left:none;
+  width:35pt'>1..1</td>
   <td class=xl86 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>string</td>
   <td class=xl86 align=left width=359 style='border-top:none;border-left:none;
@@ -970,8 +978,8 @@
   <td class=xl250 style='border-top:none;border-left:none'>　</td>
   <td class=xl249 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl261 align=left width=105 style='height:30.0pt;
+ <tr height=120 style='height:90.0pt'>
+  <td height=120 class=xl261 align=left width=105 style='height:90.0pt;
   border-top:none;width:79pt'>method</td>
   <td class=xl257 align=left width=92 style='border-top:none;border-left:none;
   width:69pt'>coding[*]</td>
@@ -987,7 +995,9 @@
   style='display:none'><rt>クブン </rt></span></ruby>をコード<ruby>化<span
   style='display:none'><rt>カ </rt></span></ruby>するか、text<ruby>子要素<span
   style='display:none'><rt>コヨウソ </rt></span></ruby>で<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
+  style='display:none'><rt>キジュツ </rt></span></ruby>する。2桁で出せる場合には必ず2桁粒度で出力すること。<br>
+    1桁出力しかできない場合には、必ず詳細投与方法をmethod.textに記載すること。<br>
+    </td>
   <td class=xl251 style='border-top:none;border-left:none'>　</td>
   <td class=xl248 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
@@ -1046,19 +1056,29 @@
   <td class=xl81 width=36 style='width:27pt'>例示</td>
   <td class=xl248 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;内服&quot;</td>
  </tr>
- <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl262 align=left width=105 style='height:31.0pt;
+ <tr height=101 style='height:76.0pt'>
+  <td height=101 class=xl262 align=left width=105 style='height:76.0pt;
   border-top:none;width:79pt'>method</td>
   <td class=xl258 align=left width=92 style='border-top:none;border-left:none;
   width:69pt'>text</td>
   <td class=xl258 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl258 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl90 align=left width=47 style='border-top:none;border-left:none;
+  <td class=xl410 align=left width=47 style='border-top:none;border-left:none;
   width:35pt'>0..1</td>
   <td class=xl90 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>string</td>
   <td class=xl90 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'>投与方法のテキスト表現。コードで指定できない場合、本要素で文字列として指定してもよい。</td>
+  width:269pt'>投与方法のテキスト表現。コードで指定できない場合、本要素で文字列として指定してもよい。<ruby>記法<span
+  style='display:none'><rt>キホウ </rt></span></ruby><ruby>用法<span
+  style='display:none'><rt>ヨウホウ </rt></span></ruby>コードを1桁コードでしか<ruby>出力<span
+  style='display:none'><rt>シュツリョク </rt></span></ruby>できない場合で、詳細投与<ruby>方法<span
+  style='display:none'><rt>ホウホウ </rt></span></ruby>の<ruby>指示<span
+  style='display:none'><rt>シジ </rt></span></ruby>がある<ruby>場合<span
+  style='display:none'><rt>バアイ </rt></span></ruby>には、それを<ruby>含<span
+  style='display:none'><rt>フクメタ </rt></span></ruby>めた<ruby>投与<span
+  style='display:none'><rt>トウヨ </rt></span></ruby><ruby>方法<span
+  style='display:none'><rt>ホウホウ </rt></span></ruby><ruby>文字列<span
+  style='display:none'><rt>モジレツ </rt></span></ruby>をmethod.textに記載すること。</td>
   <td class=xl94 width=36 style='width:27pt'>例示</td>
   <td class=xl96 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;内服&quot;</td>
  </tr>

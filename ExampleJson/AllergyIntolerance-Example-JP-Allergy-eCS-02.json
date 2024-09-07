@@ -27,6 +27,13 @@
   ],
   "criticality": "unable-to-assess",
   "code": {
+    "coding": [
+      {
+        "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS",
+        "code": "J9FA32540000",
+        "display": "キウイフルーツ"
+      }
+    ],
     "text": "キーウイ"
   },
   "patient": {

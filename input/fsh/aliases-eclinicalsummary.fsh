@@ -125,8 +125,10 @@ Alias: $observation-category-cs = http://terminology.hl7.org/CodeSystem/v3-Obser
 Alias: $JP_CLINS_ObsLabResultCode_VS = JP_CLINS_ObsLabResult_UnknownCode_CS#99999999999999999
 
 Alias: $JP_Disease_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.101.6    // MEDIS病名交換用コード
-//Alias: $JP_Disease_MEDIS_ManagementID_CS_url = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号
+//Alias: $JP_Disease_MEDIS_ManagementID_CS_url = http://medis.or.jp/CodeSystem/master-disease-keyNumber    // MEDIS病名管理番号
 Alias: $JP_Disease_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.101.2    // MEDIS病名管理番号
+Alias: $JP_Disease_MEDIS_ManagementID_VS = http://medis.or.jp/ValueSet/master-disease-keyNumber    // MEDIS病名管理番号
+
 Alias: $JP_Disease_Claim_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease    // 支払基金	傷病名コード
 
 Alias: $JP_BodySite_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.201.5   // MEDIS修飾語交換用コード

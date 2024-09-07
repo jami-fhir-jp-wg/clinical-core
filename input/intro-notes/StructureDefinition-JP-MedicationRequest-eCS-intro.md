@@ -33,7 +33,7 @@
   - dosageInstruction : 用法や投与量を含む処方指示。
   - dispenseRequest : 調剤（薬局での払い出し指示）情報
 
-### 必須要素　（MedicationRequest.DosageInstructionの直下の必須要素）
+### 必須要素　（MedicationRequest.dosageInstructionの直下の必須要素）
   - DosageInstruction[].extension[] : 投与開始日を明示するために使用する拡張「PeriodOfUse」
   - DosageInstruction[].text : dosageInstructionが表す処方指示の文字列表現。
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
@@ -55,8 +55,11 @@
   - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
   - basedOn : 元の処方オーダ情報。処方オーダ番号等の一意識別子を含むServiceRequestリソース（Containedリソース）への参照。
   - note :  薬剤単位の備考。
-  - substitution : 後発医薬品への変更可否情報。
-  
+  - DosageInstruction[].site : 外用薬の部位
+  - DosageInstruction[].route : 投与経路
+  - DosageInstruction[].method : 投与方法の基本用法区分
+  - DosageInstruction[].doseAndRate : 投与量
+
 ## 要素の説明とプロファイル
   - 多重度欄の背景色：
     - 濃い黄色＝「必須要素」に対応する。

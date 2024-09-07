@@ -46,6 +46,33 @@
           }
         }
       ],
+      "timing": {
+        "code": {
+          "coding": [
+            {
+              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "code": "1014144400000000",
+              "display": "１日４回朝昼夕食後と就寝前　服用"
+            }
+          ],
+          "text": "1日4回 毎食後と就寝前"
+        },
+        "event": [
+          "2021-07-13T08:00:00+09:00"
+        ],
+        "repeat": {
+          "boundsDuration": {
+            "value": 8,
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "日"
+          },
+          "count": 28,
+          "frequency": 4,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
       "doseAndRate": [
         {
           "rateRatio": {
@@ -79,27 +106,7 @@
           }
         }
       ],
-      "text": "1日4回 毎食後と就寝前 １回 1錠  (１日  4錠) 7　日分",
-      "timing": {
-        "event": [
-          "2021-07-13T08:00:00+09:00"
-        ],
-        "repeat": {
-          "boundsDuration": {
-            "value": 8,
-            "code": "d",
-            "system": "http://unitsofmeasure.org",
-            "unit": "日"
-          },
-          "count": 28,
-          "frequency": 4,
-          "period": 1,
-          "periodUnit": "d"
-        },
-        "code": {
-          "text": "1日4回 毎食後と就寝前"
-        }
-      }
+      "text": "1日4回 毎食後と就寝前 １回 1錠  (１日  4錠) 7　日分"
     }
   ],
   "note": [

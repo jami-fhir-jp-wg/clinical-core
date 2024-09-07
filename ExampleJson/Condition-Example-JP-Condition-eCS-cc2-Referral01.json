@@ -13,6 +13,16 @@
       "value": "192837-02"
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "code": "20075383",
+        "display": "腹痛症"
+      }
+    ],
+    "text": "腰痛"
+  },
   "clinicalStatus": {
     "coding": [
       {
@@ -39,9 +49,6 @@
       ]
     }
   ],
-  "code": {
-    "text": "腰痛"
-  },
   "subject": {
     "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },

@@ -5,6 +5,13 @@
     "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
       "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS"
+    ],
+    "tag": [
+      {
+        "code": "LTS",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
+        "display": "長期保存"
+      }
     ]
   },
   "identifier": [
@@ -22,31 +29,10 @@
       }
     }
   ],
-  "language": "ja",
-  "contained": [
-    {
-      "resourceType": "Encounter",
-      "id": "Example-Contained-JP-Encounter-AMB",
-      "meta": {
-        "profile": [
-          "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter"
-        ]
-      },
-      "language": "ja",
-      "identifier": [
-        {
-          "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
-          "value": "192844"
-        }
-      ],
-      "status": "finished",
-      "class": {
-        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "code": "AMB",
-        "display": "外来"
-      }
-    }
-  ],
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CLINS必須要素のみ+長期保存フラグ データ作成例</p></div>"
+  },
   "clinicalStatus": {
     "coding": [
       {
@@ -61,26 +47,12 @@
       {
         "code": "J9FC11310000",
         "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS",
-        "display": "さば類"
+        "display": "さば"
       }
     ],
     "text": "さば"
   },
   "patient": {
-    "identifier": {
-      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
-      "value": "00012345:あいう:１８７:05"
-    }
-  },
-  "encounter": {
-    "reference": "#Example-Contained-JP-Encounter-AMB"
-  },
-  "note": [
-    {
-      "text": "さば食後３時間ほどで全身に発疹と腹痛あり"
-    },
-    {
-      "text": "AllergyIntoleranceリソース 必須要素だけの データ作成例"
-    }
-  ]
+    "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
+  }
 }

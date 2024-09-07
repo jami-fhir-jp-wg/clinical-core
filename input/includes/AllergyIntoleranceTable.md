@@ -16,7 +16,7 @@
  width:146pt'>
  <col class=xl271 width=100 span=3 style='width:75pt'>
  <tr height=61 style='mso-height-source:userset;height:46.0pt'>
-  <td colspan=9 height=61 class=xl379 align=left width=1038 style='height:46.0pt;
+  <td colspan=9 height=61 class=xl397 align=left width=1038 style='height:46.0pt;
   width:778pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
   </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -358,8 +358,10 @@
   <td class=xl247 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl145 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl270 width=195 style='border-left:none;width:146pt'><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></td>
+  <td class=xl270 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
+  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
   <td class=xl271></td>
   <td class=xl271></td>
   <td class=xl271></td>
@@ -763,8 +765,8 @@
   <td class=xl271></td>
   <td class=xl271></td>
  </tr>
- <tr height=280 style='height:210.0pt'>
-  <td height=280 class=xl171 width=107 style='height:210.0pt;width:80pt'>category</td>
+ <tr height=240 style='height:180.0pt'>
+  <td height=240 class=xl171 width=107 style='height:180.0pt;width:80pt'>category</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
@@ -773,23 +775,10 @@
   <td class=xl172 width=359 style='width:269pt'>特定された原因物質のカテゴリ。記述を可能な限り推奨する。コード表：&quot;http://hl7.org/fhir/allergy-intolerance-category&quot;からfood|medication|environment|biologic（食物、医薬品、環境、バイオロジー物質）のいずれかを選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には<ruby>適切<span
   style='display:none'><rt>テキセツ </rt></span></ruby>なコードを設定すること。<br>
     <font class="font13">電子カルテ情報サービスでは、薬剤アレルギー</font><ruby><font class="font13">等</font><span
-  style='display:none'><rt>トウ </rt></span></ruby><font class="font13">の情報として本リソース種別を使用する場合には、必ず本要素は&quot;medication&quot;として存在しなければならない。&quot;biologic&quot;の</font><ruby><font
-  class="font13">設定</font><span style='display:none'><rt>セッテイ </rt></span></ruby><font
-  class="font13">はしないこととしており、</font><ruby><font class="font13">設定</font><span
-  style='display:none'><rt>セッテイ </rt></span></ruby><font class="font13">されていた</font><ruby><font
-  class="font13">場合</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
-  class="font13">にはエラーとなる。それ以外が</font><ruby><font class="font13">設定</font><span
-  style='display:none'><rt>セッテイ </rt></span></ruby><font class="font13">されている</font><ruby><font
-  class="font13">場合</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
-  class="font13">、</font><ruby><font class="font13">及</font><span
-  style='display:none'><rt>オヨビ </rt></span></ruby><font class="font13">び</font><ruby><font
-  class="font13">本</font><span style='display:none'><rt>ホン </rt></span></ruby><ruby><font
-  class="font13">要素</font><span style='display:none'><rt>ヨウソ </rt></span></ruby><font
-  class="font13">が</font><ruby><font class="font13">存在</font><span
-  style='display:none'><rt>ソンザイ </rt></span></ruby><font class="font13">しない</font><ruby><font
-  class="font13">場合</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
-  class="font13">には、その他アレルギー</font><ruby><font class="font13">等</font><span
-  style='display:none'><rt>トウ </rt></span></ruby><font class="font13">の情報として取り扱われる。</font></td>
+  style='display:none'><rt>トウ </rt></span></ruby><font class="font13">の情報として本リソース種別を使用する場合には、必ず本要素は&quot;medication&quot;として存在しなければならない。そ</font><ruby><font
+  class="font13">れ以</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
+  class="font13">外が設定されている場合</font><ruby><font class="font13">、</font><span
+  style='display:none'><rt>トウ </rt></span></ruby><font class="font13">及び本要素が存在しない場合には、その他アレルギー等の情報として取り扱われる。</font></td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;food&quot;</td>
   <td class=xl271></td>
@@ -871,8 +860,8 @@
   <td class=xl271></td>
   <td class=xl271></td>
  </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl171 width=107 style='height:75.0pt;width:80pt'>code</td>
+ <tr height=80 style='height:60.0pt'>
+  <td height=80 class=xl171 width=107 style='height:60.0pt;width:80pt'>code</td>
   <td class=xl78 width=73 style='width:55pt'>coding[=]</td>
   <td class=xl78 width=73 style='width:55pt'>version</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
@@ -891,9 +880,8 @@
   style='display:none'><rt>バアイ </rt></span></ruby>る）を<ruby>設定<span
   style='display:none'><rt>ソウシン </rt></span></ruby><ruby>す<span
   style='display:none'><rt>ジ </rt></span></ruby>る<ruby>ことを<span
-  style='display:none'><rt>サイシンバン </rt></span></ruby>原<ruby>則と<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>する。設定していない<ruby>場合<span
-  style='display:none'><rt>ケンショウ </rt></span></ruby>には、送信時の最新版を使用しているとみなされて検証される。</td>
+  style='display:none'><rt>サイシンバン </rt></span></ruby><ruby>推奨<span
+  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;20240601&quot;</td>
   <td class=xl271></td>
@@ -1557,15 +1545,24 @@
   <td class=xl271></td>
   <td class=xl271></td>
  </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl171 width=107 style='height:45.0pt;width:80pt'>reaction[=]</td>
+ <tr height=120 style='height:90.0pt'>
+  <td height=120 class=xl171 width=107 style='height:90.0pt;width:80pt'>reaction[=]</td>
   <td class=xl78 width=73 style='width:55pt'>manifestation<span
   style='mso-spacerun:yes'> </span></td>
   <td class=xl78 width=73 style='width:55pt'>coding[+]</td>
   <td class=xl78 width=73 style='width:55pt'>system</td>
   <td class=xl79 width=35 style='width:26pt'>0..1</td>
   <td class=xl78 width=87 style='width:65pt'>uri</td>
-  <td class=xl229 width=359 style='width:269pt'>system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード</td>
+  <td class=xl229 width=359 style='width:269pt'>system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード。コード<ruby>体系<span
+  style='display:none'><rt>タイケイ </rt></span></ruby>としては、<ruby>ME<span
+  style='display:none'><rt>ビョウメイ </rt></span></ruby><ruby>DI<span
+  style='display:none'><rt>カンリ </rt></span></ruby><ruby>S標<span
+  style='display:none'><rt>バンゴウイ </rt></span></ruby>準病名マスター病名管理番号(urn:<ruby>oi<span
+  style='display:none'><rt>シヨウ </rt></span></ruby>d:1.<ruby>2<span
+  style='display:none'><rt>ホカ </rt></span></ruby>.392<ruby>.2<span
+  style='display:none'><rt>タイケイ </rt></span></ruby>0<ruby>01<span
+  style='display:none'><rt>シヨウ </rt></span></ruby>1<ruby>9.<span
+  style='display:none'><rt>カノウ </rt></span></ruby>4.101.2)なども使用できる。他のコード体系の使用も可能。</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>
   <td class=xl173 width=195 style='width:146pt'>&quot;urn:oid:1.2.392.200119.4.101.6&quot;</td>
   <td class=xl271></td>
@@ -1605,7 +1602,7 @@
   <td class=xl78 width=73 style='width:55pt'>manifestation[=]</td>
   <td class=xl78 width=73 style='width:55pt'>text</td>
   <td class=xl78 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=35 style='width:26pt'>0..1</td>
+  <td class=xl79 width=35 style='width:26pt'>1..1</td>
   <td class=xl78 width=87 style='width:65pt'>string</td>
   <td class=xl229 width=359 style='width:269pt'>アレルギー反応に関連する症状や所見症状のテキスト表現</td>
   <td class=xl78 width=36 style='width:27pt'>例示</td>

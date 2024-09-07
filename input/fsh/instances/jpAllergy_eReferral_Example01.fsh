@@ -30,6 +30,10 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 * criticality = #unable-to-assess
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
+
+* code.coding[+].system = "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS"
+* code.coding[=].code = #J9FC11310000
+* code.coding[=].display = "さば"
 * code.text = "サバ"
 
 * patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
@@ -71,6 +75,9 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 * criticality = #unable-to-assess
 
 //070on_アレルギ物質コード名称JFAGY(ARGcode,ARGname)
+* code.coding[+].system = "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS"
+* code.coding[=].code = #J9FA32540000
+* code.coding[=].display = "キウイフルーツ"
 * code.text = "キーウイ"
  
 * patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"

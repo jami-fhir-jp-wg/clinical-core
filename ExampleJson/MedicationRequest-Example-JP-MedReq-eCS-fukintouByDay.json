@@ -42,6 +42,31 @@
           }
         }
       ],
+      "timing": {
+        "code": {
+          "coding": [
+            {
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
+              "code": "1013044400000000",
+              "display": "１日３回朝昼夕食後　服用"
+            },
+            {
+              "system": "urn:oid:1.2.392.200250.2.2.20",
+              "code": "1013044400000000",
+              "display": "内服・経口・１日３回毎食後"
+            }
+          ],
+          "text": "１日３回　毎食後　７錠（４錠－２錠－１錠）"
+        },
+        "repeat": {
+          "boundsDuration": {
+            "value": 7,
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "日"
+          }
+        }
+      },
       "doseAndRate": [
         {
           "rateRatio": {
@@ -102,26 +127,6 @@
           "text": "不均等・３回目・１錠"
         }
       ],
-      "timing": {
-        "repeat": {
-          "boundsDuration": {
-            "value": 7,
-            "code": "d",
-            "system": "http://unitsofmeasure.org",
-            "unit": "日"
-          }
-        },
-        "code": {
-          "coding": [
-            {
-              "code": "1013044400000000",
-              "system": "urn:oid:1.2.392.200250.2.2.20",
-              "display": "内服・経口・１日３回毎食後"
-            }
-          ],
-          "text": "１日３回　毎食後　７錠（４錠－２錠－１錠）"
-        }
-      },
       "route": {
         "coding": [
           {

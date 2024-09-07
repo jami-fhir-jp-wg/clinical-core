@@ -16,9 +16,9 @@
  width:146pt'>
  <col class=xl159 width=100 span=2 style='width:75pt'>
  <tr height=68 style='mso-height-source:userset;height:51.0pt'>
-  <td colspan=7 height=68 class=xl380 align=left width=1067 style='height:51.0pt;
-  width:800pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
-  style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
+  <td colspan=7 height=68 class=xl398 align=left width=1067 style='height:51.0pt;
+  width:800pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
+  </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
   style='display:none'><rt>シュツゲン </rt></span></ruby>した<ruby>場合<span
   style='display:none'><rt>バアイ </rt></span></ruby>の<ruby>多重度<span
@@ -35,22 +35,22 @@
   style='display:none'><rt>シュツゲン </rt></span></ruby>する<ruby>場合<span
   style='display:none'><rt>バアイ </rt></span></ruby>には、この<ruby>子要素<span
   style='display:none'><rt>コヨウソ </rt></span></ruby>は<ruby>出現<span
-  style='display:none'><rt>シュツゲン </rt></span></ruby>しなければならない。</td>
+  style='display:none'><rt>シュツゲン </rt></span></ruby>しなければならない。</a></td>
   <td class=xl359 width=100 style='width:75pt'></td>
   <td class=xl359 width=100 style='width:75pt'></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl396 width=149 style='height:30.0pt;border-top:none;
-  width:112pt'><a name="Print_Area">要素Lv1</a></td>
-  <td class=xl397 width=137 style='border-top:none;border-left:none;width:103pt'>要素Lv2</td>
-  <td class=xl398 width=57 style='border-top:none;border-left:none;width:43pt'>多重度</td>
-  <td class=xl397 width=119 style='border-top:none;border-left:none;width:89pt'>型</td>
-  <td class=xl397 width=359 style='border-top:none;border-left:none;width:269pt'>説明</td>
-  <td class=xl397 width=51 style='border-top:none;border-left:none;width:38pt'><ruby>固定値<span
+  <td height=40 class=xl385 width=149 style='height:30.0pt;border-top:none;
+  width:112pt'>要素Lv1</td>
+  <td class=xl386 width=137 style='border-top:none;border-left:none;width:103pt'>要素Lv2</td>
+  <td class=xl387 width=57 style='border-top:none;border-left:none;width:43pt'>多重度</td>
+  <td class=xl386 width=119 style='border-top:none;border-left:none;width:89pt'>型</td>
+  <td class=xl386 width=359 style='border-top:none;border-left:none;width:269pt'>説明</td>
+  <td class=xl386 width=51 style='border-top:none;border-left:none;width:38pt'><ruby>固定値<span
   style='display:none'><rt class=font8>コテイチ</rt></span></ruby><br>
     <ruby>／<span style='display:none'><rt class=font8>レイジ</rt></span></ruby><ruby>例<span
   style='display:none'><rt class=font8>ジ</rt></span></ruby>示</td>
-  <td class=xl399 width=195 style='border-top:none;border-left:none;width:146pt'><ruby>固定値<span
+  <td class=xl388 width=195 style='border-top:none;border-left:none;width:146pt'><ruby>固定値<span
   style='display:none'><rt class=font8>コテイチ</rt></span></ruby> または<ruby>例示<span
   style='display:none'><rt class=font8>レイジ</rt></span></ruby></td>
   <td class=xl159></td>

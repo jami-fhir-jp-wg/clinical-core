@@ -25,6 +25,21 @@
       "value": "202934702"
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "code": "20054178",
+        "display": "胃癌"
+      },
+      {
+        "code": "C169",
+        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full",
+        "display": "胃の悪性新生物＜腫瘍＞，胃，部位不明"
+      }
+    ],
+    "text": "胃癌"
+  },
   "extension": [
     {
       "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
@@ -116,16 +131,6 @@
       ]
     }
   ],
-  "code": {
-    "coding": [
-      {
-        "code": "C169",
-        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full",
-        "display": "胃の悪性新生物＜腫瘍＞，胃，部位不明"
-      }
-    ],
-    "text": "胃癌"
-  },
   "subject": {
     "identifier": {
       "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",

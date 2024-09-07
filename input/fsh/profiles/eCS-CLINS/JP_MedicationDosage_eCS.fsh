@@ -72,17 +72,28 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code 0.. MS
 * timing.code ^short = "用法"
 * timing.code ^definition = "用法。JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化する。施設固有のコード化による記述も可能であるが、できるかぎり、上記標準コードと併用することが望ましい。コード化の有無にかかわらず、用法の完全な文字列をtext子要素に設定する。"
-* timing.code.coding 0..1 MS
+* timing.code.coding 1..* MS
 * timing.code.coding ^definition = "JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
-* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）、厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
-
+* timing.code.coding.system ^definition = "JAMI標準用法16桁コード（\"urn:oid:1.2.392.200250.2.2.20\"）、厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage\"）。施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
 * timing.code.coding.code ^short = "用法コード"
 * timing.code.coding.code 1..1 MS
 * timing.code.coding.code ^definition = "用法コード。\r\n例）\"1013044400000000\""
 * timing.code.coding.display ^short = "用法コードに対応する表示名。"
 * timing.code.coding.display 0..1 MS
 * timing.code.coding.display ^definition = "用法コードに対応する表示名。\r\n例）\"内服・経口・１日３回朝昼夕食後\""
+
+* timing.code.coding ^slicing.discriminator.type = #value
+* timing.code.coding ^slicing.discriminator.path = "system"
+* timing.code.coding ^slicing.rules = #open
+* timing.code.coding contains
+    jami_yoho 0..1 MS
+and mhw_prescription_yoho 1..1 MS 
+* timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20" 
+* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
+
+* timing.code.coding[mhw_prescription_yoho].system = $JP_MedicationUsageMHLW_Prscription_CS (exactly) 
+* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS
 
 * timing.code.text 1..1 MS
 * timing.code.text ^short = "用法のコード化の有無にかかわらず、用法の完全な文字列を設定する。"

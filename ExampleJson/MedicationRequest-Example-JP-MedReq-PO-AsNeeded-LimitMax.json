@@ -46,15 +46,22 @@
           }
         }
       ],
-      "text": "発熱時  4　回分,37.5度以上で本人希望時　4時間あけて1日3回まで",
       "timing": {
+        "code": {
+          "coding": [
+            {
+              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "code": "1050710000000000",
+              "display": "発熱時　服用"
+            }
+          ],
+          "text": "発熱時"
+        },
         "event": [
           "2021-07-07T08:00:00+09:00"
-        ],
-        "code": {
-          "text": "発熱時"
-        }
+        ]
       },
+      "text": "発熱時  4　回分,37.5度以上で本人希望時　4時間あけて1日3回まで",
       "asNeededBoolean": true,
       "doseAndRate": [
         {
