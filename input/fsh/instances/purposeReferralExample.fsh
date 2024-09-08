@@ -17,6 +17,8 @@ Description: "Encounterリソース　（診療情報提供書　紹介目的テ
 
 * class.system = $v3-ActCode
 * class.code = #AMB
+
+
 * class.display = "外来"
 
 * reasonCode[+].text = "腹痛精査お願いします。"
@@ -38,6 +40,8 @@ Description: "Encounterリソース　（診療情報提供書　外来受診）
 
 * class.system = $v3-ActCode
 * class.code = #AMB
+
+
 * class.display = "外来"
 
 * classHistory[+].class.system = $v3-ActCode

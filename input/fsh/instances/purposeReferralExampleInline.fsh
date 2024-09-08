@@ -17,6 +17,8 @@ Description: "Example-JP-Encounter-eCS-AMB-01 診療情報提供書での紹介�
 
 * class.system = $v3-ActCode
 * class.code = #AMB
+
+
 * class.display = "外来"
 
 * reasonCode[+].text = "腹痛精査お願いします。"
@@ -41,6 +43,7 @@ Description: "Example-JP-Encounter-eCS-AMB-01 外来受診歴　例"
 
 * class.system = $v3-ActCode
 * class.code = #AMB
+
 * class.display = "外来"
 
 * classHistory[+].class.system = $v3-ActCode

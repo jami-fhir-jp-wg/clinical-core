@@ -61,3 +61,6 @@ Code System URI 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/%
 
 #Ignore Best Practice Recommendation messages
 Best Practice Recommendation:%
+
+#Ignore HTMLタグ
+markdownには%

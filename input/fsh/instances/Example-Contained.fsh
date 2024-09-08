@@ -17,6 +17,8 @@ Description: "埋め込み　Encounterリソース（外来受診）データ作
 
 * class.system = $v3-ActCode
 * class.code = #AMB
+
+
 * class.display = "外来"
 
 //-------- 埋め込み　入院01
