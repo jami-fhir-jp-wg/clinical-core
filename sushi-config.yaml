@@ -108,6 +108,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   no-validate:
     - '*/hl7.fhir.jp.core'
   special-url:
+    - http://terminology.hl7.org/CodeSystem/v3-ActCode
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
