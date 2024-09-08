@@ -2,7 +2,6 @@
 
 ### 留意事項
 
-<span style="color: red; font-size: 100%;">注意：このバージョンは近日中にリリースするV1.3.0の事前公開版（リリース候補版）です。</span> <br>
 <br>
 <span style="color: blue; font-size: 100%;">本実装ガイドに関する質問やコメント（要望等を含む）は、以下のGoogleフォームから投稿してください。投稿にあたっては、Googleフォーム冒頭の説明をお読みいただき、了解された場合のみ投稿くださるようお願いします。</span>
 <span style="color: blue; font-size: 100%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
@@ -55,8 +54,8 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
     - [改訂履歴](history.html)
     - [Validationガイド](validationGuide.html)
     - [パッケージDownload]
-      - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc4.tgz)
-      - [snapshot版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc4-snap.tgz)
+      - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.4.0.tgz)
+      - [snapshot版](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.4.0-snap.tgz)
     - [JP-Core ターミノロジー(コード表)](https://jpfhir.jp/fhir/core/terminology/ig/)
 
 ### 謝辞

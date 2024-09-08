@@ -16,7 +16,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * ^url = $JP_Condition_eCS
 
-* ^version = "1.3.0-rc4"
+* ^version = "1.4.0"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
@@ -159,9 +159,19 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
 * code.coding contains
-    mediskanri 1..1 MS
-* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS  (exactly)
-//* code.coding[mediskanri].code from $JP_Disease_MEDIS_ManagementID_VS
+ medisRecordNo 1.. MS
+and medisExchange 0.. MS
+and receipt 0.. MS
+and icd10 0.. MS
+
+* code.coding[medisExchange].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
+* code.coding[medisExchange].code from $JP_Disease_MEDIS_Concept_VS
+* code.coding[medisRecordNo].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
+* code.coding[medisExchange].code from $JP_Disease_MEDIS_ManagementID_VS
+* code.coding[receipt].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
+* code.coding[receipt].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
+* code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
+* code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
 
 * code.extension ^slicing.discriminator.type = #value
 * code.extension ^slicing.discriminator.path = "url"
@@ -169,24 +179,6 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * code.extension contains
     JP_Condition_DiseasePrefixModifier_eCS named diseasePrefixModifier ..* and
     JP_Condition_DiseasePostfixModifier_eCS named diseasePostfixModifier ..*
-
-//* code.coding ^slicing.discriminator.type = #value
-//* code.coding ^slicing.discriminator.path = "system"
-//* code.coding ^slicing.rules = #open
-//* code.coding contains
-// mediskanri 0.. MS
-//and mediskoukan 0.. MS
-//and syobo 0.. MS
-//and icd10 0.. MS
-
-//* code.coding[mediskoukan].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
-// * code.coding[mediskoukan].code from $JP_Disease_MEDIS_Concept_VS
-//* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
-// * code.coding[mediskoukan].code from $JP_Disease_MEDIS_ManagementID_VS
-//* code.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
-// * code.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
-//* code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
-// * code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
 
 * bodySite 0..*
 * bodySite ^short = "該当する状態が現れている解剖学的な場所を示す。"
@@ -196,16 +188,16 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * bodySite.coding ^slicing.discriminator.path = "system"
 * bodySite.coding ^slicing.rules = #open
 * bodySite.coding contains
-    mediskoukan 0.. 
-and mediskanri 0.. 
-and syobo 0.. 
+    medisExchange 0.. 
+and medisRecordNo 0.. 
+and receipt 0.. 
 
-* bodySite.coding[mediskoukan].system = $JP_Modifier_MEDIS_Concept_CS (exactly)    // MEDIS 病名修飾語交換コード
-//* bodySite.coding[mediskoukan].code from $JP_BodySite_MEDIS_Concept_VS    // MEDIS 病名修飾語交換コード
-* bodySite.coding[mediskanri].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly) // MEDIS 病名修飾語番号
-//* bodySite.coding[mediskanri].code from $JP_BodySite_MEDIS_ManagementID_VS  // MEDIS 病名修飾語番号
-* bodySite.coding[syobo].system =  $JP_Modifier_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名修飾語コード
-//* bodySite.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名修飾語コード
+* bodySite.coding[medisExchange].system = $JP_Modifier_MEDIS_Concept_CS (exactly)    // MEDIS 病名修飾語交換コード
+//* bodySite.coding[medisExchange].code from $JP_BodySite_MEDIS_Concept_VS    // MEDIS 病名修飾語交換コード
+* bodySite.coding[medisRecordNo].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly) // MEDIS 病名修飾語番号
+//* bodySite.coding[medisRecordNo].code from $JP_BodySite_MEDIS_ManagementID_VS  // MEDIS 病名修飾語番号
+* bodySite.coding[receipt].system =  $JP_Modifier_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名修飾語コード
+//* bodySite.coding[receipt].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名修飾語コード
 
 // 患者情報
 * subject 1..1   MS
@@ -267,6 +259,7 @@ Id: jp-condition-disease-prefix-modifier
 Title: "JP Core Disease Prefix Modifier Extension"
 Description: "病名の前置修飾語を格納するための拡張"
 * ^url = $JP_Condition_DiseasePrefixModifier
+* ^version = "2.0.1"
 * ^status = #active
 * ^date = "2024-02-25"
 * ^context.type = #element
@@ -282,7 +275,7 @@ Description: "病名の前置修飾語を格納するための拡張"
 * valueCodeableConcept.coding ^slicing.ordered = false
 * valueCodeableConcept.coding contains
     medisExchange 0..1 and
-    medisRecordNo 0..1 and
+    medisRecordNo 1..1 and
     receipt 0..1
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
 * valueCodeableConcept.coding[medisExchange].system = $JP_BodySite_MEDIS_Concept_CS (exactly)
@@ -313,6 +306,7 @@ Id: jp-condition-disease-postfix-modifier
 Title: "JP Core Disease Postfix Modifier Extension"
 Description: "病名の後置修飾語を格納するための拡張"
 * ^url = $JP_Condition_DiseasePostfixModifier
+* ^version = "2.0.1"
 * ^status = #active
 * ^date = "2024-02-25"
 * ^context.type = #element
@@ -328,7 +322,7 @@ Description: "病名の後置修飾語を格納するための拡張"
 * valueCodeableConcept.coding ^slicing.ordered = false
 * valueCodeableConcept.coding contains
     medisExchange 0..1 and
-    medisRecordNo 0..1 and
+    medisRecordNo 1..1 and
     receipt 0..1
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
 * valueCodeableConcept.coding[medisExchange].system = $JP_Modifier_MEDIS_Concept_CS (exactly)

@@ -3,7 +3,7 @@ Parent: JP_Practitioner_eCS
 Id: JP-Practitioner-eCSauthor
 Description: "処方を作成した医師情報　JP_Practitionerの派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS_author"
-* ^version = "1.3.0-rc4"
+* ^version = "1.4.0"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

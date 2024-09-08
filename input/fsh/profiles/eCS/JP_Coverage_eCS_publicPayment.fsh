@@ -3,7 +3,7 @@ Parent: JP_Coverage
 Id: JP-Coverage-eCS-publicPayment
 Description: "公費負担情報　JP_Coverageの派生プロファイル"
 * ^url = "http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Coverage_eCS_publicPayment"
-* ^version = "1.3.0-rc4"
+* ^version = "1.4.0"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

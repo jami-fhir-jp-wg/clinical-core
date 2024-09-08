@@ -13,7 +13,7 @@ Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncou
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
 
 
-* ^version = "1.3.0-rc4"
+* ^version = "1.4.0"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

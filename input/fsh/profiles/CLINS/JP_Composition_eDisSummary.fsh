@@ -14,7 +14,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 * obeys checkExist-CDASection-or-structuredSection
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Composition_eDischargeSummary"
 
-* ^version = "1.3.0-rc4"
+* ^version = "1.4.0"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

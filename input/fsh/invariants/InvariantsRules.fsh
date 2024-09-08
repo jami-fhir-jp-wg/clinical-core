@@ -191,7 +191,7 @@ Expression: "entry.select(resource as Condition).all(contained.meta.where(profil
 Invariant: condition-needs-onsetDateTime
 Description: "R9013C:Bundleに含まれるConditionのリソースでは、onsetDateTimeが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(onset.ofType(DateTime).exists())"
+Expression: "entry.select(resource as Condition).all(onset.ofType(dateTime).exists())"
 
 // R9013O Bundleに含まれるObservationリソースには、JP_Encounterリソースが必須である。
 Invariant: observation-needs-contained-of-Encounter

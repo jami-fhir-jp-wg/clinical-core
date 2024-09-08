@@ -8,11 +8,11 @@
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
 name: "JP_CLINS_FHIR_IG"
-title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.3.0-rc4 (リリース候補v3)"
-description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.3.0-rc4 (リリース候補v3)"
+title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.4.0"
+description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.4.0"
 status: active # draft | active | retired | unknown 
-version: "1.3.0-rc4"
-date: 2024-07-24
+version: "1.4.0"
+date: 2024-09-07
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -70,8 +70,8 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc4.tgz 
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.3.0-rc4-snap.tgz
+    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.4.0.tgz 
+    snapshot版: https://jpfhir.jp/fhir/clins/jp-clins.r4-1.4.0-snap.tgz
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
@@ -176,7 +176,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
-    - http://jpfhir.jp/fhir/clins/CodeSystem/v3-ActCode
     - http://medis.or.jp/ValueSet/master-disease-keyNumber
     - http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
     - http://jpfhir.jp/fhir/CarePlan/ValueSet/category

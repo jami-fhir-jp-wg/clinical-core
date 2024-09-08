@@ -101,7 +101,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 
 //病名情報
 * code.coding[+] = $JP_Disease_MEDIS_ManagementID_CS#20054178 "胃癌"
-* code.coding[+] = $JP_DiseaseCategory_WHO_ICD10_CS#C169 "胃の悪性新生物＜腫瘍＞，胃，部位不明"
+* code.coding[+] = $JP_DiseaseCategory_WHO_ICD10_CS#C169 "胃，部位不明"
 * code.text = "胃癌"
 
 //* subject = Reference(Example-JP-Patient-eCS-01-Contained)
