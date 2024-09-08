@@ -166,7 +166,7 @@ and icd10 0.. MS
 
 * code.coding[mediskoukan].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
 // * code.coding[mediskoukan].code from $JP_Disease_MEDIS_Concept_VS
-* code.coding[mediskanri].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
+* code.coding[medisRecordNo].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
 // * code.coding[mediskoukan].code from $JP_Disease_MEDIS_ManagementID_VS
 * code.coding[syobo].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
 // * code.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
@@ -187,8 +187,8 @@ and syobo 0..
 
 * bodySite.coding[mediskoukan].system = $JP_Modifier_MEDIS_Concept_CS (exactly)    // MEDIS 病名修飾語交換コード
 //* bodySite.coding[mediskoukan].code from $JP_BodySite_MEDIS_Concept_VS    // MEDIS 病名修飾語交換コード
-* bodySite.coding[mediskanri].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly) // MEDIS 病名修飾語番号
-//* bodySite.coding[mediskanri].code from $JP_BodySite_MEDIS_ManagementID_VS  // MEDIS 病名修飾語番号
+* bodySite.coding[medisRecordNo].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly) // MEDIS 病名修飾語番号
+//* bodySite.coding[medisRecordNo].code from $JP_BodySite_MEDIS_ManagementID_VS  // MEDIS 病名修飾語番号
 * bodySite.coding[syobo].system =  $JP_Modifier_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名修飾語コード
 //* bodySite.coding[syobo].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名修飾語コード
 

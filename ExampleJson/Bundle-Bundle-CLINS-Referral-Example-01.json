@@ -845,7 +845,63 @@
       }
     },
     {
-      "fullUrl": "urn:uuid:a9358f3e-c743-4998-aa89-1be54c31b432"
+      "fullUrl": "urn:uuid:a9358f3e-c743-4998-aa89-1be54c31b432",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "Example-JP-Condition-eCS-cc2-Referral01Inline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+            "value": "192837-02"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "code": "20075383",
+              "display": "腹痛症"
+            }
+          ],
+          "text": "腰痛"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "code": "confirmed",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "code": "problem-list-item",
+                "system": "http://terminology.hl7.org/CodeSystem/condition-category"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+        },
+        "onsetDateTime": "2022-05"
+      }
     },
     {
       "fullUrl": "urn:uuid:5eab50b2-6741-467c-a2fd-a4adab1f835f",
@@ -1309,7 +1365,7 @@
             {
               "code": "GCM2260701F1ZZZ",
               "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS",
-              "display": "イソジンガーグル液７％"
+              "display": "ポビドンヨード含嗽用液７％"
             }
           ],
           "text": "ヨードうがい液"
@@ -1339,6 +1395,35 @@
           ]
         },
         "language": "ja",
+        "contained": [
+          {
+            "resourceType": "Practitioner",
+            "id": "Example-Contained-JP-Practitioner-minimun-D002",
+            "meta": {
+              "profile": [
+                "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
+              ]
+            },
+            "language": "ja",
+            "identifier": [
+              {
+                "system": "urn:oid:1.2.392.100495.20.3.41.11311234567",
+                "value": "D001"
+              }
+            ],
+            "name": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+                    "valueCode": "IDE"
+                  }
+                ],
+                "text": "田中 宏"
+              }
+            ]
+          }
+        ],
         "identifier": [
           {
             "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
@@ -1363,6 +1448,12 @@
         "subject": {
           "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
         },
+        "effectiveDateTime": "2021-07-05T11:19:41+09:00",
+        "performer": [
+          {
+            "reference": "#Example-Contained-JP-Practitioner-minimun-D002"
+          }
+        ],
         "valueString": "上腹部圧痛あり、その他特に所見なし。"
       }
     },

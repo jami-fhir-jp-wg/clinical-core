@@ -33,7 +33,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>患者ID：000999739</p><p>被保険者患者番号：00012345:あいう:１８７:05</p><p>漢字氏名：マキノ ランマン</p><p>カナ氏名：牧野 爛漫</p><p>電話：03-123-1234</p><p>性別：female</p><p>生年月日：1930-06-28</p><p>高知県高知市五台山4200-6</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\"><p>患者ID：000999739</p><p>被保険者患者番号：00012345:あいう:１８７:05</p><p>漢字氏名：マキノ ランマン</p><p>カナ氏名：牧野 爛漫</p><p>電話：03-123-1234</p><p>性別：female</p><p>生年月日：1930-06-28</p><p>高知県高知市五台山4200-6</p></div>"
         },
         "language": "ja",
         "identifier": [
@@ -178,6 +178,33 @@
               "code": "AMB",
               "display": "外来"
             }
+          },
+          {
+            "resourceType": "Practitioner",
+            "id": "Example-Contained-JP-Practitioner-minimun-D002",
+            "meta": {
+              "profile": [
+                "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner"
+              ]
+            },
+            "language": "ja",
+            "identifier": [
+              {
+                "system": "urn:oid:1.2.392.100495.20.3.41.11311234567",
+                "value": "D001"
+              }
+            ],
+            "name": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+                    "valueCode": "IDE"
+                  }
+                ],
+                "text": "田中 宏"
+              }
+            ]
           }
         ],
         "status": "final",
@@ -204,6 +231,11 @@
           "reference": "#Example-Contained-JP-Encounter-AMB"
         },
         "issued": "2021-07-05T15:38:59.000+09:00",
+        "performer": [
+          {
+            "reference": "#Example-Contained-JP-Practitioner-minimun-D002"
+          }
+        ],
         "valueCodeableConcept": {
           "coding": [
             {

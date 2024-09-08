@@ -50,7 +50,7 @@
         "code": {
           "coding": [
             {
-              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
               "code": "1014144400000000",
               "display": "１日４回朝昼夕食後と就寝前　服用"
             }

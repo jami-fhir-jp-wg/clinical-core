@@ -165,13 +165,13 @@ and receipt 0.. MS
 and icd10 0.. MS
 
 * code.coding[medisExchange].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
-* code.coding[medisExchange].code from $JP_Disease_MEDIS_Concept_VS
+//* code.coding[medisExchange].code from $JP_Disease_MEDIS_Concept_VS
 * code.coding[medisRecordNo].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
-* code.coding[medisExchange].code from $JP_Disease_MEDIS_ManagementID_VS
+//* code.coding[medisExchange].code from $JP_Disease_MEDIS_ManagementID_VS
 * code.coding[receipt].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
-* code.coding[receipt].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
+//* code.coding[receipt].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
 * code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
-* code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
+//* code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
 
 * code.extension ^slicing.discriminator.type = #value
 * code.extension ^slicing.discriminator.path = "url"

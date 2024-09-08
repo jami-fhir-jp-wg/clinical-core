@@ -62,7 +62,7 @@
         "code": {
           "coding": [
             {
-              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
               "code": "2R50410000000000",
               "display": "便秘時　肛門挿入"
             }
@@ -160,7 +160,7 @@
       {
         "code": "104937401",
         "system": "urn:oid:1.2.392.200119.4.403.1",
-        "display": "新レシカルボン坐剤"
+        "display": "新レシカルボン坐剤・ゼリア新薬"
       },
       {
         "code": "2359800J1035",

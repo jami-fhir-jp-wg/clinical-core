@@ -34,9 +34,9 @@ Description: "conditionReferralExample01 診療情報提供書　現病歴例　
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code.coding[mediskanri].system = "urn:oid:1.2.392.200119.4.101.2"
-* code.coding[mediskanri].code = #20065011
-* code.coding[mediskanri].display = "上腹部痛"   
+* code.coding[medisRecordNo].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[medisRecordNo].code = #20065011
+* code.coding[medisRecordNo].display = "上腹部痛"   
 * code.text = "上腹部痛"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
@@ -80,7 +80,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code.coding[mediskanri] = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
+* code.coding[medisRecordNo] = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
 * code.text = "狭心症"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
@@ -126,7 +126,7 @@ Description: "Conditionリソース 現在の傷病名（副病名）　例1　�
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code.coding[mediskanri] = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
+* code.coding[medisRecordNo] = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
 * code.text = "狭心症"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
@@ -171,7 +171,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例2　�
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code.coding[mediskanri] = $JP_Disease_MEDIS_ManagementID_CS#20061593 "高血圧症"
+* code.coding[medisRecordNo] = $JP_Disease_MEDIS_ManagementID_CS#20061593 "高血圧症"
 * code.text = "高血圧"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"

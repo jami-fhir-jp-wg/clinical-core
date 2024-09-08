@@ -50,7 +50,7 @@
         "code": {
           "coding": [
             {
-              "system": "$JP_MedicationUsageMHLW_Prscription_CS",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
               "code": "10121050610000000000010100000000",
               "display": "不眠時　服用"
             }

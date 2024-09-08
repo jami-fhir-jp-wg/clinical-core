@@ -35,7 +35,7 @@
       {
         "code": "C169",
         "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full",
-        "display": "胃の悪性新生物＜腫瘍＞，胃，部位不明"
+        "display": "胃，部位不明"
       }
     ],
     "text": "胃癌"
