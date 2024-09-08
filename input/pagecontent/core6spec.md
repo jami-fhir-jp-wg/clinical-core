@@ -4,18 +4,25 @@
 本ページは、国が進めている医療DXのなかでのサービスが検討されている「電子カルテ情報共有サービス」（以下、「CLINS」という。）において扱われる、いわゆる「２文書５情報」のうち、以下の「５情報」を医療機関から送信する際のFHIR仕様に関係する部分を記述したものである。また、送信する各リソースタイプのデータをひとつのFHIR Bundleリソースに格納してまとめて送信するための仕様も記述する。
 <br>
 
-#### ５情報のためのFHIRリソース
-* 2024年度時点で厚生労働省が提示する「５情報」において、使用するFHIRリソースタイプ（４タイプ）
-<br>
-  * [薬剤アレルギー等 : AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
-  * [その他アレルギー等 : AllergyIntoleranceリソースタイプ][JP_AllergyIntolerance_eCS]
-  * [傷病名 : Conditionリソースタイプ][JP_Condition_eCS]
-  * [検査（注⁂） : Observationリソースタイプ][JP_Observation_LabResult_eCS]
-    - 注⁂　救急時に有用な検査、生活習慣病関連の検査。本仕様では正確を期すため「検査結果情報」という。
-  * [感染症　Observationリソースタイプ][JP_Observation_LabResult_eCS] 
-  * [処方（注⁂）　MedicationRequestリソースタイプ][JP_MedicationRequest_eCS]
-    - 注⁂　診療情報提供書及び退院時サマリーに記載された処方情報。本仕様では正確を期すため「処方依頼情報」という。
-　<br><br>
+#### 5情報、6情報のためのFHIRリソース
+
+##### 使用するFHIRリソースとその仕様の対応
+<br><div>
+<table border="1">
+<tr><td>区分</td><td>情報種別</td><td>使用するFHIRリソースと仕様名</td><td>備考</td></tr>
+<tr><td rowspan="6">5情報</td>
+<tr><td>薬剤アレルギー等</td><td rowspan="2">AllergyIntoleranceリソース<br><a href="StructureDefinition-JP-AllergyIntolerance-eCS.html">JP_AllergyIntolerance_eCS</a></td><td>要素category="medication"、"biologic"(当面使用しない)とする。</td></tr>
+<tr><td>その他アレルギー等</td><td>要素categoryを"food","environment"または要素なしとする。</td></tr>
+<tr><td>傷病名</td><td>Conditionリソース<br><a href="StructureDefinition-JP-Condition-eCS.html">JP_Condition_eCS</a></td><td></td></tr>
+<tr><td>検査</td><td rowspan="2">Observationリソース<br><a href="StructureDefinition-JP-Observation-LabResult-eCS.html">JP-Observation-LabResult-eCS</a></td><td rowspan="2">本仕様では「検査結果情報」という。<br>検査項目コードで検査と感染症は区別される。</td></tr>
+<tr><td>感染症</td></tr>
+<tr><td></td><td>処方</td><td>MedicationRequestリソースbr><a href="StructureDefinition-JP-MedicationRequest-eCS.html">JP-MedicationRequest-eCS</a></td><td>本仕様では「処方依頼情報」という。</td></tr>
+</table>
+</div>
+
+##### 補足説明
+
+
  - 薬剤アレルギー等、その他アレルギー等の情報は、別に説明するように、同じプロファイルに従うAllergyIntoleranceリソースタイプで記述され、category要素に設定される値にもとづいて受信側で区別される。
  - 検査結果情報と感染症情報については、同じプロファイルに従うObservationリソースタイプで記述され、コード化された項目情報の記述にもとづいて受信側で区別される。
  - 処方依頼情報には、注射点滴手法によるものは含まれない。ただし、処方箋によって処方されるものは含まれる（自己注射剤など）。
