@@ -96,6 +96,7 @@ Title: "感染症関連検査結果として検体検査結果を報告する場
 Description: "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
 * ^url = $observation-subcategory-cs
 * ^title = "感染症関連検査結果として検体検査結果を報告する場合のサブカテゴリで５情報で運用される"
+* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^content = #fragment
@@ -108,6 +109,7 @@ Id: jp-simpleobservationcategory-cs
 Title: "JP Core Simple Observation Category CodeSystem"
 Description: "JP Coreにて定義したObservationリソースに関する分類コード"
 * ^url = $JP_SimpleObservationCategory_CS
+* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-04-18"
@@ -134,6 +136,7 @@ Id: jp-admit-Source-cs
 Title: "入院経路を表すコード (出典：厚労省DPC導入影響評価調査) CodeSystem"
 Description: "入院経路を表すコード (出典：厚労省DPC導入影響評価調査)  CodeSystem"
 * ^url = $JP_admit_Source_CS
+* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-04-18"
@@ -152,6 +155,7 @@ Id: jp-codeSystem-dischargeDisposition
 Description: "退院時転帰コード情報（出典：厚労省DPC導入影響評価調査）CodeSystem"
 * ^url = $JP_dischargeDisposition_CS
 * ^title = "退院時転帰コード情報（出典：厚労省DPC導入影響評価調査） CodeSystem"
+* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^content = #complete
@@ -173,6 +177,7 @@ Id: jp-careplancategory-cs
 Title: "ケアプランのタイプコード"
 Description: "ケアプランのタイプコード"
 * ^url = $JP_carePlanCategory_CS
+* ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-01-31"

@@ -62,9 +62,9 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * contained ^slicing.discriminator.path = "$this"
 * contained ^slicing.rules = #open
 * contained contains
-    encounter 0..1  MS
+    encounter 0..1  MS  // CLINSでは必須
     and specimen 0..1 MS
-    and performer 0..1 MS
+    and performer 0..1 MS //　CLINSでは必須
     and order 0..1 MS
 //    and patient 0..1 MS
 
@@ -77,7 +77,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
   * ^comment = "specimen要素から参照される場合には、そのJP_Organizationリソースの実体。JP_Organizationリソースにおける必要最小限の要素だけが含まれればよい。specimen要素ではContainedリソースを参照する方法ではなくspecimen要素に検体材料名だけを記述することもできるので、その場合にはこのContainedリソースは不要。
   "
 
-* contained[performer] only  JP_Practitioner
+* contained[performer] only  JP_Practitioner  //　CLINSでは必須
   * insert relative_short_definition("検査オーダを作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "performer要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素、医療者識別情報だけが含まれればよい。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
 
@@ -717,10 +717,10 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
   * insert relative_short_definition("患者のFHIRリソース\(JP_Patient_eCSに従うPatientリソース\)への参照。")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
-* encounter 0..1 MS
+* encounter 0..1 MS //　CLINSでは必須
 * encounter only  Reference(JP_Encounter)
   * insert relative_short_definition("処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
-  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
+  * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。電子カルテ情報サービスでは必須。"
 
 
 * effective[x] 1..    MS   // MS 追加
@@ -734,10 +734,10 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * issued ^definition = "検査結果がシステムに格納された日時、システム的な結果報告（登録）日時。"
 * issued ^comment = "instance型であるため、2015-02-07T13:28:17+09:00 のように時刻までの精度が必要である。"
 
-* performer 0..1 MS
+* performer 0..1 MS //　CLINSでは必須
 * performer only  Reference(JP_Practitioner)
 * performer ^short = "検査結果を責任を持つ医療者、検査実施者（検査オーダ医師）への参照。"
-* performer ^definition = "検査結果を責任を持つ医療者への参照。電子カルテ情報サービスでは必須とし、オーダした医師（結果を確認した医師に相当）のPractitionerリソースへの参照を設定する。"
+* performer ^definition = "検査結果を責任を持つ医療者への参照。電子カルテ情報サービスでは必須とし、オーダした医師（結果を確認した医師に相当）のPractitionerリソースへの参照を設定する。電子カルテ情報サービスでは必須。"
 * performer ^comment = "実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。"
 
 // OUL^R22.OBX[*]-5  結果

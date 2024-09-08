@@ -55,6 +55,6 @@ Description: "患者療養計画サマリー　Compositionリソース データ
 * section.code.coding = http://jpfhir.jp/fhir/clins/CodeSystem/document-section#422 "計画サマリーセクション"
 
 * section.entry[carePlan].reference = "urn:uuid:6399da0f-77c7-4eb9-fd93-4559d39f1beb"
-* section.entry[condition].reference = "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835" // 副傷病　狭心症
-* section.entry[condition].reference = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65" // 主傷病　高血圧
+* section.entry[condition][0].reference = "urn:uuid:4c604fad-f24c-da56-d777-8f233bc9f835" // 副傷病　狭心症
+* section.entry[condition][1].reference = "urn:uuid:54b73122-69e7-6864-d6b2-eb8dbf372e65" // 主傷病　高血圧
 

@@ -166,6 +166,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/document-section
     - http://jpfhir.jp/fhir/Common/CodeSystem/discharge-disposition
+    - http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes
     - http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
     - http://loinc.org
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section
@@ -175,7 +176,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
-    - http://terminology.hl7.org/CodeSystem/v3-ActCode
+    - http://jpfhir.jp/fhir/clins/CodeSystem/v3-ActCode
+    - http://medis.or.jp/ValueSet/master-disease-keyNumber
+    - http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
     - http://jpfhir.jp/fhir/CarePlan/ValueSet/category
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreDispenseInstruction
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jami-ePreOrderUsageCode
@@ -292,6 +295,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
     - http://jpfhir.jp/fhir/eCS/ValueSet/JP_eCS_ObservationLabResultCode_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_indication
+    - http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-hot9
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj
@@ -299,6 +303,3 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode
-    - http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
-    - http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes
-    - http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes

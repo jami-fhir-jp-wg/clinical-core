@@ -90,7 +90,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
     jami_yoho 0..1 MS
 and mhw_prescription_yoho 1..1 MS 
 * timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20" 
-* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
+//* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
 
 * timing.code.coding[mhw_prescription_yoho].system = $JP_MedicationUsageMHLW_Prscription_CS (exactly) 
 //* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS

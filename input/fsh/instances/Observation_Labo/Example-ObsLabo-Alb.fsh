@@ -29,6 +29,7 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 // 検査オーダ医師
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
 * status = #final
 

@@ -25,6 +25,11 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 // 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
 //* contained[+] = Example-Contained-JP-Specimen-Serum
 
+// 検査オーダ医師
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+
+
 * status = #final
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory

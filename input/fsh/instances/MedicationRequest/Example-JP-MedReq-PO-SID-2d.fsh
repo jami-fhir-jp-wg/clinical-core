@@ -55,7 +55,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
-* dosageInstruction.timing.code.coding[+].system = "$JP_MedicationUsageMHLW_Prscription_CS"
+* dosageInstruction.timing.code.coding[+].system = $JP_MedicationUsageMHLW_Prscription_CS
 * dosageInstruction.timing.code.coding[=].code = #1011040000000000
 * dosageInstruction.timing.code.coding[=].display = "１日１回夕食後　服用"
 * dosageInstruction.timing.code.text = "1日1回 夕食後"

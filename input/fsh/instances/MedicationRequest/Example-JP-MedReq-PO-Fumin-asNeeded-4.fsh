@@ -50,7 +50,7 @@ Description: "MedicationRequestリソース　入院・内服頓用　頓用と1
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-05"
 * dosageInstruction.text = "不眠時  4　回分"
 * dosageInstruction.timing.event = "2021-07-05T08:00:00+09:00"
-* dosageInstruction.timing.code.coding[+].system = "$JP_MedicationUsageMHLW_Prscription_CS"
+* dosageInstruction.timing.code.coding[+].system = $JP_MedicationUsageMHLW_Prscription_CS
 * dosageInstruction.timing.code.coding[=].code = #10121050610000000000010100000000
 * dosageInstruction.timing.code.coding[=].display = "不眠時　服用"
 * dosageInstruction.timing.code.text = "不眠時"

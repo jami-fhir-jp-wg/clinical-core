@@ -25,6 +25,9 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 // 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
 * contained[+] = Example-Contained-JP-Specimen-Serum
 
+// 検査オーダ医師
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+
 * status = #final
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
@@ -40,6 +43,8 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 * issued = "2021-07-05T15:38:59.000+09:00"
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+
 * valueQuantity.value = 3.9
 * valueQuantity.unit = "mg/L"
 //* interpretation.coding.version = "4.0.1"
