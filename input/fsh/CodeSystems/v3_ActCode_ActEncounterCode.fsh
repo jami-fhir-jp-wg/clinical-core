@@ -8,7 +8,7 @@ Description: "A code specifying the particular kind of Act that the Act-instance
 * ^language = #en
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.5.4"
-* ^version = "9.0.0"
+* ^version = "9.0.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2023-05-30"
