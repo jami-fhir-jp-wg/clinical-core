@@ -7,9 +7,12 @@
 #### 5情報、6情報のためのFHIRリソース
 
 ##### 使用するFHIRリソースとその仕様の対応
-<br><div>
-<table border="1">
-<tr><td>区分</td><td>情報種別</td><td>使用するFHIRリソースと仕様名</td><td>備考</td></tr>
+
+以下の表に5情報、6情報の記述に使用するFHIRリソースとその仕様の対応を示す。
+
+<div>
+<table border="1"  style="border-collapse: collapse">
+<tr><th>区分</th><th>情報種別</th><th>使用するFHIRリソースと仕様名</th><th>備考</th></tr>
 <tr><td rowspan="6">5情報</td>
 <tr><td>薬剤アレルギー等</td><td rowspan="2">AllergyIntoleranceリソース<br><a href="StructureDefinition-JP-AllergyIntolerance-eCS.html">JP_AllergyIntolerance_eCS</a></td><td>要素category="medication"、"biologic"(当面使用しない)とする。</td></tr>
 <tr><td>その他アレルギー等</td><td>要素categoryを"food","environment"または要素なしとする。</td></tr>
@@ -19,6 +22,7 @@
 <tr><td></td><td>処方</td><td>MedicationRequestリソースbr><a href="StructureDefinition-JP-MedicationRequest-eCS.html">JP-MedicationRequest-eCS</a></td><td>本仕様では「処方依頼情報」という。</td></tr>
 </table>
 </div>
+<br>
 
 ##### 補足説明
 
