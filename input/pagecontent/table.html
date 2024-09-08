@@ -1,0 +1,42 @@
+<table border="1"  style="border-collapse: collapse">
+<tr>
+    <th>区分</th>
+    <th>情報種別</th>
+    <th>使用するFHIRリソースと仕様名</th>
+    <th>備考</th>
+</tr>
+
+<tr><td rowspan="5">5情報</td>
+    <td>薬剤アレルギー等</td>
+    <td rowspan="2">AllergyIntoleranceリソース<br><a href="StructureDefinition-JP-AllergyIntolerance-eCS.html">JP_AllergyIntolerance_eCS</a></td>
+    <td>要素category="medication"、"biologic"(当面使用しない)とする。</td>
+</tr>
+
+<tr>
+    <td>その他アレルギー等</td>
+    <td>要素categoryを"food","environment"または要素なしとする。</td>
+</tr>
+
+<tr>
+    <td>傷病名</td>
+    <td>Conditionリソース<br><a href="StructureDefinition-JP-Condition-eCS.html">JP_Condition_eCS</a></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td>検査</td>
+    <td rowspan="2">Observationリソース<br><a href="StructureDefinition-JP-Observation-LabResult-eCS.html">JP-Observation-LabResult-eCS</a></td>
+    <td rowspan="2">本仕様では「検査結果情報」という。<br>検査項目コードで検査と感染症は区別される。</td>
+</tr>
+
+<tr>
+    <td>感染症</td>
+</tr>
+
+<tr>
+    <td></td>
+    <td>処方</td>
+    <td>MedicationRequestリソース<br><a href="StructureDefinition-JP-MedicationRequest-eCS.html">JP-MedicationRequest-eCS</a></td>
+    <td>本仕様では「処方依頼情報」という。</td>
+</tr>
+</table>
