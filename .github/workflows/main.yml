@@ -193,9 +193,9 @@ jobs:
       run: |
         rm -rf input/fsh/profiles/eCS-noCLINS
         cd input/fsh/profiles
-        while read -d $'\0' file; do
+        for file in eCS-forCLINS/*; do
           mv ${file} ${file}.fsh
-        done <<(find eCS-forCLINS -mindepth 1 -maxdepth 1 -print0)
+        done
 
     - name: generate CLINS differential package using sushi  command      
       run: |

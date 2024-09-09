@@ -6,18 +6,17 @@
 
 CLINS Validationの具体的手順と、出力の解釈方法について説明する。ただし、対象となるデータにあるさまざまなエラーや多様な記述方法によって、出力されるメッセージは多岐にわたるため、ここではその一部の例を示すに過ぎない。今後、順次説明を追加している予定である。
 
-ここでのValidation手順は、手順（準備編）を完了すれば、
+Validation手順としては、I:手順（準備編）を完了したあと、Ⅱ：手順（Validation編）を実施する。
 
-#### 手順（準備編）
+#### I:手順（準備編）
 
-##### CLINS検証用FHIRコアパッケージ　を 以下のサイトからどちらかの圧縮形式のファイルをダウンロードする。解凍後の内容は同一である。
+##### FHIRコアパッケージ　を 以下のサイトからどちらかの圧縮形式のファイルをダウンロードする。解凍後の内容は同一である。
 
 
     - zip形式 : https://jpfhir.jp/fhir/clins/pkgValidation/fhir-core-pkg.zip （42MB）
     - tgz形式 : https://jpfhir.jp/fhir/clins/pkgValidation/fhir-core-pkg.tgz （28MB）
 
-#####  ダウンロードしたCLINS検証用FHIRコアパッケージを、適当なフォルダ内で解凍する。
-
+#####  ダウンロードしたFHIRコアパッケージを、適当なフォルダ内で解凍する。
 
   　 - fhir-core-pkgs-<span style="color: blue;">20231111-forV6.1.8-20230921</span> のような名前のフォルダが作成される。青字の部分はダウンロード時期により異なる。その中にpackagesフォルダが作成され、packagesフォルダ配下は以下のようなフォルダ構成になっていることを確認する。各フォルダ内にはさらにフォルダやファイルが存在するがここでは省略する。packageフォルダ内のフォルダ名や数は、ダウンロード時期による異なることがあるので、下図は一例である。
 
@@ -50,7 +49,8 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
     ├── hl7.fhir.xver-extensions#0.0.12
     ├── hl7.terminology#5.3.0
     ├── hl7.terminology.r5#5.0.0
-    ├── hl7.terminology.r4#6.0.0    └── packages.ini
+    ├── hl7.terminology.r4#6.0.0
+    └── packages.ini
 
 ```
     
@@ -74,9 +74,9 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
       
     - tgz形式 : [https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.0.tgz](https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.0.tgz)
  　 
-  - jp-clins.r4　パッケージ
+  - jp-eCSCLINS.r4　パッケージ
       
-    - tgz形式 : [https://jpfhir.jp/fhir/clins/jp-clins.r4-1.4.0.tgz](https://jpfhir.jp/fhir/clins/jp-clins.r4-1.4.0.tgz)
+    - tgz形式 : [https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.4.0.tgz](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.4.0.tgz)
 
 #####  検証対象となる json形式のファイルをひとつ以上、[targets] 直下に配置する。
 
@@ -107,7 +107,7 @@ CLINS Validationの具体的手順と、出力の解釈方法について説明�
         Java(TM) SE Runtime Environment (build 17.0.5+9-LTS-191)
 
 
-#### 手順（Validation編）
+#### Ⅱ：手順（Validation編）
 
 以降では、Validationの手順を説明する。
 
@@ -132,7 +132,7 @@ Validation の実行
       -tx n/a  \
       -ig [pkgClins]/jp-core.r4-1.1.2.tgz  \
       -ig [pkgClins]/jpfhir-terminology.r4-1.2.0.tgz  \
-      -ig [pkgClins]/jp-clins.r4-1.4.0.tgz  
+      -ig [pkgClins]/jp-eCSCLINS.r4-1.4.0.tgz  
         
 ```
 
@@ -158,7 +158,7 @@ Validationコマンドのパラメータ説明
   - -tx n/a ：　外部のTerminologyServer を参照しないよう設定するオプション。ここでの手順では、パッケージ [jpfhir-terminology.r4-1.2.0]をロードしてローカルに配置しているので、外部のTerminologyServerへの参照は必要がない。
   - -ig [pkgClins]/jp-core.r4-1.1.2.tgz : jp-core.r4 v1.1.2 のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
   - -ig [pkgClins]/jpfhir-terminology.r4-1.2.0.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
-  - -ig [pkgClins]/jp-clins.r4-1.4.0.tgz : 電子カルテ情報共有サービスで送信される５情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、２文書のパッケージは別にある。
+  - -ig [pkgClins]/jp-eCSCLINS.r4-1.4.0.tgz : 電子カルテ情報共有サービスで送信される５情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、２文書のパッケージは別にある。
 
 ####  Validationの出力例の解説
 
@@ -181,7 +181,7 @@ Validationコマンドのパラメータ説明
 ``` {.copy} 
 java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -language ja  \
  -ig pkgValidation/jp-core.r4#1.1.2.tgz -ig pkgValidation/jpfhir-terminology.r4#1.2.0.tgz \
- -ig pkgValidation/jp-clins.r4-1.4.0.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  \
+ -ig pkgValidation/jp-eCSCLINS.r4-1.4.0.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  \
  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings  \
  -best-practice ignore
 ```
@@ -199,7 +199,7 @@ java -jar ../work/validator_cli_6.1.8.jar ExampleJson/*.json -version 4.0.1  -la
 FHIR Validation tool Version 6.1.8 (Git# 8413995d8bcf). Built 2023-09-21T19:52:22.833Z (54 days old)
   Java:   17.0.5 from /Library/Java/JavaVirtualMachines/jdk-17.0.5.jdk/Contents/Home on aarch64 (64bit). 4096MB available
   Paths:  Current = /Users/kohe/clinsVTest, Package Cache = /Users/kohe/.fhir/packages
-  Params: Targets/Condition-Example-JP-Condition-CLINS-eCS-01.json Targets/Condition-Example-JP-Condition-CLINS-eCS-02.json Targets/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json Targets/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json Targets/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json Targets/Observation-ErrorExample-ObsLabo-eGFR.json Targets/Observation-Example-ObsLabo-Alb.json Targets/Observation-Example-ObsLabo-K.json Targets/Patient-Example-Patient-standard-ErrorInsuranceNo.json Targets/Patient-Example-Patient-standard.json -version 4.0.1 -language ja -locale ja-JP -want-invariants-in-messages -no-extensible-binding-warnings -display-issues-are-warnings -level warnings -best-practice ignore -tx n/a -ig pkgClins/jp-core.r4-1.1.2.tgz -ig pkgClins/jpfhir-terminology.r4-1.2.0.tgz -ig pkgClins/jp-clins.r4-1.4.0.tgz
+  Params: Targets/Condition-Example-JP-Condition-CLINS-eCS-01.json Targets/Condition-Example-JP-Condition-CLINS-eCS-02.json Targets/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json Targets/MedicationRequest-Example-JP-MedReq-ExtSkin-Total2.json Targets/MedicationRequest-Example-JP-MedReq-PO-BID-10days-AsNeeded.json Targets/Observation-ErrorExample-ObsLabo-eGFR.json Targets/Observation-Example-ObsLabo-Alb.json Targets/Observation-Example-ObsLabo-K.json Targets/Patient-Example-Patient-standard-ErrorInsuranceNo.json Targets/Patient-Example-Patient-standard.json -version 4.0.1 -language ja -locale ja-JP -want-invariants-in-messages -no-extensible-binding-warnings -display-issues-are-warnings -level warnings -best-practice ignore -tx n/a -ig pkgClins/jp-core.r4-1.1.2.tgz -ig pkgClins/jpfhir-terminology.r4-1.2.0.tgz -ig pkgClins/jp-eCSCLINS.r4-1.4.0.tgz
   Locale: 日本/JP
   Jurisdiction: Japan
 Loading
@@ -211,7 +211,7 @@ Loading
   Terminology server null - Version n/a: No Terminology Server (00:00.000)
   Load pkgClins/jp-core.r4-1.1.2.tgz - 159 resources (00:00.197)
   Load pkgClins/jpfhir-terminology.r4-1.2.0.tgz - 175 resources (00:03.988)
-  Load pkgClins/jp-clins.r4-1.4.0.tgz - 148 resources (00:00.081)
+  Load pkgClins/jp-eCSCLINS.r4-1.4.0.tgz - 148 resources (00:00.081)
   Package Summary: [hl7.fhir.r4.core#4.0.1, hl7.fhir.xver-extensions#0.0.12, hl7.fhir.uv.extensions.r4#1.0.0, hl7.terminology#5.3.0, hl7.terminology.r4#6.0.0, hl7.fhir.uv.extensions#1.0.0]
   Get set...  go (00:01.131)
 ```
