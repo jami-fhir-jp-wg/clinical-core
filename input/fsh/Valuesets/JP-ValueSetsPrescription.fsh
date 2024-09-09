@@ -42,7 +42,7 @@ Description: "JAMI16桁用法コード"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system urn:oid:1.2.392.200250.2.2.20
+* include codes from system $JP_MedicationUsageJAMI_CS
 
 
 ValueSet:  JP_valueSet_drugCode_yj

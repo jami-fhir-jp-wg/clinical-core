@@ -126,7 +126,8 @@ Alias: $JP_MedicationRouteHL70162_CS = http://jpfhir.jp/fhir/core/CodeSystem/rou
 Alias: $JP_MedicationSubstitutionNotAllowedReason_CS = urn:oid:1.2.392.100495.20.2.41
 Alias: $JP_MedicationUnitMERIT9_CS = urn:oid:1.2.392.100495.20.2.101
 Alias: $JP_MedicationUsageJAMIAdditional_CS = urn:oid:1.2.392.200250.2.2.20.22
-Alias: $JP_MedicationUsageJAMI_CS = urn:oid:1.2.392.200250.2.2.20
+Alias: $JP_MedicationUsageJAMI_CS = urn:oid:1.2.392.200250.2.2.20.1
+Alias: $JP_MedicationUsageJAMI20_CS = urn:oid:1.2.392.200250.2.2.20
 
 Alias: $JP_MedicationUsageMHLW_Prscription_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription
 

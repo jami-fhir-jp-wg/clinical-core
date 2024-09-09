@@ -224,7 +224,7 @@ Usage: #definition
 * uniqueId[+].type = #oid
 * uniqueId[=].value = "1.2.392.200250.2.2.20"
 * uniqueId[+].type = #uri
-* uniqueId[=].value = "urn:oid:1.2.392.200250.2.2.20"
+* uniqueId[=].value = $JP_MedicationUsageJAMI_CS
 * uniqueId[=].preferred = true
 * uniqueId[+].type = #uri
 * uniqueId[=].value =  "http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationUsageJAMI_CS"
