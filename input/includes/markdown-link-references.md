@@ -13,7 +13,7 @@
 [JP_DiagnosticReport_Common_interaction]: StructureDefinition-jp-diagnosticreport-common.html#interaction一覧
 
 <!-- ImplementationGuide -->
-[2FHIRv130rc1v1]: ImplementationGuide-clinical-information-sharing.html
+[JP_CLINS_FHIR_IG]: ImplementationGuide-clinical-information-sharing.html
 
 <!-- StructureDefinition: Profile, DataType -->
 [JP_AllergyIntolerance_eCS]: StructureDefinition-JP-AllergyIntolerance-eCS.html
@@ -73,6 +73,9 @@
 <!-- SearchParameter -->
 
 <!-- CodeSystem -->
+[JP_SpecialCheckup_LaboResult_2100_CS]: CodeSystem-jp-SpecialCheckup-LaboResult-2100-CS.html
+[JP_SpecialCheckup_LaboResult_2101_CS]: CodeSystem-jp-SpecialCheckup-LaboResult-2101-CS.html
+[JP_SpecialCheckup_LaboResult_2102_CS]: CodeSystem-jp-SpecialCheckup-LaboResult-2102-CS.html
 [JP_admit_Source_CS]: CodeSystem-jp-admit-Source-cs.html
 [JP_carePlanCategory_CS]: CodeSystem-jp-careplancategory-cs.html
 [JP_CLINS_BundleResourceType_CS]: CodeSystem-jp-clins-bundleresourcetype-cs.html
@@ -82,6 +85,7 @@
 [JP_CLINS_ObsLabResult_Uncoded_CS]: CodeSystem-jp-clins-obslabresult-uncoded-cs.html
 [JP_codeSystem_CLINS_document_section]: CodeSystem-jp-codeSystem-clins-document-section.html
 [JP_codeSystem_dischargeDisposition]: CodeSystem-jp-codeSystem-dischargeDisposition.html
+[JP_codeSystem_documentSubTypeCode]: CodeSystem-jp-codeSystem-documentSubTypeCode.html
 [JP_codeSystem_documentTypeCode]: CodeSystem-jp-codeSystem-documentTypeCode.html
 [Loinc_subset_forDocumentCode]: CodeSystem-jp-codeSystem-eCS-document-code.html
 [JP_codeSystem_ePrescription_section]: CodeSystem-jp-codeSystem-ePrescription-section.html
@@ -91,9 +95,11 @@
 [JP_ehrshrs_indication_CS]: CodeSystem-jp-ehrshrs-indication-cs.html
 [JP_Observation_SubCategory_CS]: CodeSystem-jp-observation-subcategory-cs.html
 [JP_SimpleObservationCategory_CS]: CodeSystem-jp-simpleobservationcategory-cs.html
-[ActCode]: CodeSystem-v3-ActCode.html
+[ActCode]: CodeSystem-v3-ActCodeFrom.R5_5.5.0.html
 
 <!-- ValueSet -->
+[JP_valueSet_Disease_MEDIS_ManagementID]: ValueSet-JP-valueSet-Disease-MEDIS-ManagementID.html
+[JP_valueSet_MedicationUsageMHLW_Prscription]: ValueSet-JP-valueSet-MedicationUsageMHLW-Prscription.html
 [JP_valueSet_carePlanCategory]: ValueSet-JP-valueSet-carePlanCategory.html
 [JAMI_valueSet_ePreDispenseInstruction]: ValueSet-jami-valueSet-ePreDispenseInstruction.html
 [JAMI_valueSet_ePreOrderUsageCode_16digits]: ValueSet-jami-valueSet-ePreOrderUsageCode-16digits.html
@@ -210,6 +216,7 @@
 [JP_eCS_MedicationCode_Nocoded_VS]: ValueSet-jp-ecs-medicationcode-nocoded-vs.html
 [JP_eCS_ObservationLabResultCode_VS]: ValueSet-jp-ecs-observationlabresultcode-vs.html
 [JP_ehrshrs_indication_VS]: ValueSet-jp-ehrshrs-indication-vs.html
+[JP_valueSet_documentSubTypeCode]: ValueSet-jp-valueSet-documentSubTypeCode.html
 [JP_valueSet_documentTypeCode]: ValueSet-jp-valueSet-documentTypeCode.html
 [JP_valueSet_drugCode_hot9]: ValueSet-jp-valueSet-drugCode-hot9.html
 [JP_valueSet_drugCode_yj]: ValueSet-jp-valueSet-drugCode-yj.html
@@ -217,7 +224,6 @@
 [JP_valueSet_ePCS_document_section]: ValueSet-jp-valueSet-ePCS-document-section.html
 [JP_valueSet_eReferral_document_section]: ValueSet-jp-valueSet-eReferral-document-section.html
 [MHLW_valueSet_drugCode_generalNameCode]: ValueSet-mhlw-valueSet-drugCode-generalNameCode.html
-[MHLW_valueSet_ePreCDA_insuranceCategory_tbl11]: ValueSet-mhlw-valueSet-ePreCDA-insuranceCategory-tbl11.html
 
 <!-- Example -->
 

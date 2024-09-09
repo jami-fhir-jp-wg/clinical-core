@@ -44,7 +44,7 @@ Id: jp-SpecialCheckup-LaboResult-2102-CS
 Title: "特定検診検査結果　定性検査結果　2102"
 Description: "特定検診検査結果　健診定性検査結果コード "
 * ^url = $JP_SpecialCheckup_LaboResult_2102_CS
-* ^title = "特定検診検査結果　健診定性検査結果コード "
+* ^title = "特定検診検査結果　健診定性検査結果コード"
 
 * ^version = "4.0.0"
 * ^status = #active

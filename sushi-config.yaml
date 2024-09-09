@@ -108,7 +108,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   no-validate:
     - '*/hl7.fhir.jp.core'
   special-url:
-    - http://terminology.hl7.org/CodeSystem/v3-ActCode
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS
     - http://jpfhir.jp/fhir/core/StructureDefinition/JP_Binary
     - http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
@@ -158,6 +157,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
     - http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType
     - http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
+    - urn:oid:1.2.392.200119.6.2100
+    - urn:oid:1.2.392.200119.6.2101
+    - urn:oid:1.2.392.200119.6.2102
     - http://jpfhir.jp/fhir/Common/CodeSystem/admit-Source
     - http://jpfhir.jp/fhir/CarePlan/CodeSystem/category
     - http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS
@@ -177,6 +179,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
+    - http://terminology.hl7.org/CodeSystem/v3-ActCode
     - http://medis.or.jp/ValueSet/master-disease-keyNumber
     - http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
     - http://jpfhir.jp/fhir/CarePlan/ValueSet/category
