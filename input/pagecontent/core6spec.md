@@ -10,7 +10,7 @@
 
 以下の表に5情報、6情報の記述に使用するFHIRリソースとその仕様の対応を示す。
 
-<div>
+
 <table border="1"  style="border-collapse: collapse">
 <tr>
     <th>区分</th>
@@ -53,7 +53,7 @@
     <td>本仕様では「処方依頼情報」という。</td>
 </tr>
 </table>
-</div>
+
 <br>
 
 ##### 補足説明
