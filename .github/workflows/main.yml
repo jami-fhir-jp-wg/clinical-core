@@ -212,7 +212,7 @@ jobs:
         cd forPackageRelease/CLINSdiff
         tar czf jp-CLINS-package-diff.tgz package
         cd ..
-        cp CLINSdiff/jp-CLINS-package-diff.tgz jp-CLINS.r4-${{ env.release_version }}-diff.tgz
+        cp CLINSdiff/jp-CLINS-package-diff.tgz jp-CLINS.r4-${{ env.release_version }}.tgz
         cd ..
 
     - name: generate CLINS snapshot package using sushi -s command      
@@ -230,7 +230,7 @@ jobs:
         cd forPackageRelease/CLINSsnap
         tar czf jp-CLINS-package-snap.tgz package
         cd ..
-        cp CLINSdiff/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap.tgz
+        cp CLINSsnap/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap.tgz
         cd ..
 
     - name: rsync remote-site-deploy
