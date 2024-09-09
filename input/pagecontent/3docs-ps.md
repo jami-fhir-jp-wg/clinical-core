@@ -6,12 +6,12 @@
 
 ### 診療情報提供書
 
-  - [診療情報提供書 HL7FHIR 記述仕様(PDF版) v1.3.0](https://std.jpfhir.jp/stddoc/eReferralFHIR_v130r.pdf)
+  - [診療情報提供書 HL7FHIR 記述仕様(PDF版) v1.3.1](https://std.jpfhir.jp/stddoc/eReferralFHIR_v131.pdf)
   - <a href="StructureDefinition-JP-Bundle-eReferral.html" title="StructureDefinition/JP-Bundle-eReferral">診療情報提供書Bundleプロファイル　JP_Bundle_eReferral</a>
 
 ### 退院時サマリー
 
-  - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.2.0-rc1](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v120rc1.pdf) 
+  - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.3.1](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v131.pdf) 
   - <a href="StructureDefinition-JP-Bundle-eDischargeSummary.html" title="StructureDefinition/JP-Bundle-eDischargeSummary">退院時サマリーBundleプロファイル　JP_Bundle_eDischargeSummary</a>
 
 ### 患者サマリー（療養計画書）　DRAFT
