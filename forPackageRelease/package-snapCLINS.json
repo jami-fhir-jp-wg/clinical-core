@@ -1,0 +1,14 @@
+{
+  "name": "jp-CLINS.r4",
+  "version": "1.4.0",
+  "description": "jp-CLINS-snapshot 1.4.0",
+  "author": "Kazuhiko Ohe",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "url": "http://jpfhir.jp/fhir/CLINS",
+  "canonical": "http://jpfhir.jp/fhir/CLINS"
+}

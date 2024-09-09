@@ -153,12 +153,12 @@ jobs:
         cp resources/ImplementationGuide-* package/
         cp resources/NamingSystem-* package/
         cp ../forPackageRelease/package-diff.json package/package.json
-        tar czf jp-clins-package-diff.tgz package
-        cp jp-clins-package-diff.tgz ../forPackageRelease/jp-clins.r4-${{ env.release_version }}.tgz
+        tar czf jp-eCS-CLINS-package-diff.tgz package
+        cp jp-eCS-CLINS-package-diff.tgz ../forPackageRelease/jp-eCS-CLINS.r4-${{ env.release_version }}.tgz
   
     - name: validate
       run: |
-        java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/Bundle-Bundle-CLINS-*.json -display-issues-are-warnings -version 4.0.1 -locale ja-JP -ig jp-core.r4#1.1.2 -ig jpfhir-terminology.r4#1.2.1 -ig fsh-generated/jp-clins-package-diff.tgz -tx n/a  -language ja
+        java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/Bundle-Bundle-CLINS-*.json -display-issues-are-warnings -version 4.0.1 -locale ja-JP -ig jp-core.r4#1.1.2 -ig jpfhir-terminology.r4#1.2.1 -ig fsh-generated/jp-eCS-CLINS-package-diff.tgz -tx n/a  -language ja
 
     - name: generate snapshot package using sushi -s command       
       run: |
@@ -173,9 +173,9 @@ jobs:
         cp fsh-generated-snap/resources/NamingSystem-* forPackageRelease/snapshot/package/
         cp forPackageRelease/package-snap.json forPackageRelease/snapshot/package/package.json
         cd forPackageRelease/snapshot
-        tar czf jp-clins-package-snap.tgz package
+        tar czf jp-eCS-CLINS-package-snap.tgz package
         cd ..
-        cp snapshot/jp-clins-package-snap.tgz jp-clins.r4-${{ env.release_version }}-snap.tgz
+        cp snapshot/jp-eCS-CLINS-package-snap.tgz jp-eCS-CLINS.r4-${{ env.release_version }}-snap.tgz
         cd ..
 
     - name: ssh key generate
@@ -185,5 +185,56 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-clins.r4-${{ env.release_version }}.tgz forPackageRelease/jp-clins.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCS-CLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-eCS-CLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output.tgz'
+
+
+    - name: copy CLINS Profiles to the target      
+      run: |
+        rm -rf input/fsh/profiles/eCS-noCLINS
+        cd input/fsh/profiles
+        while read -d $'\0' file; do
+          mv ${file} ${file}.fsh
+        done <<(find eCS-forCLINS -mindepth 1 -maxdepth 1 -print0)
+
+    - name: generate CLINS differential package using sushi  command      
+      run: |
+        rm -rf fsh-generated
+        sushi .
+        mv fsh-generated fsh-generated-CLINSdiff
+        mkdir -p forPackageRelease/CLINSdiff/package/
+        cp fsh-generated-CLINSdiff/resources/StructureDefinition-* forPackageRelease/CLINSdiff/package/
+        cp fsh-generated-CLINSdiff/resources/ValueSet-* forPackageRelease/CLINSdiff/package/
+        cp fsh-generated-CLINSdiff/resources/CodeSystem-* forPackageRelease/CLINSdiff/package/
+        cp fsh-generated-CLINSdiff/resources/ImplementationGuide-* forPackageRelease/CLINSdiff/package/
+        cp fsh-generated-CLINSdiff/resources/NamingSystem-* forPackageRelease/CLINSdiff/package/
+        cp forPackageRelease/package-diffCLINS.json forPackageRelease/CLINSdiff/package/package.json
+        cd forPackageRelease/CLINSdiff
+        tar czf jp-CLINS-package-diff.tgz package
+        cd ..
+        cp CLINSdiff/jp-CLINS-package-diff.tgz jp-CLINS.r4-${{ env.release_version }}-diff.tgz
+        cd ..
+
+    - name: generate CLINS snapshot package using sushi -s command      
+      run: |
+        rm -rf fsh-generated
+        sushi -s .
+        mv fsh-generated fsh-generated-CLINSsnap
+        mkdir -p forPackageRelease/CLINSsnap/package/
+        cp fsh-generated-CLINSsnap/resources/StructureDefinition-* forPackageRelease/CLINSsnap/package/
+        cp fsh-generated-CLINSsnap/resources/ValueSet-* forPackageRelease/CLINSsnap/package/
+        cp fsh-generated-CLINSsnap/resources/CodeSystem-* forPackageRelease/CLINSsnap/package/
+        cp fsh-generated-CLINSsnap/resources/ImplementationGuide-* forPackageRelease/CLINSsnap/package/
+        cp fsh-generated-CLINSsnap/resources/NamingSystem-* forPackageRelease/CLINSsnap/package/
+        cp forPackageRelease/package-snapCLINS.json forPackageRelease/CLINSsnap/package/package.json
+        cd forPackageRelease/CLINSsnap
+        tar czf jp-CLINS-package-snap.tgz package
+        cd ..
+        cp CLINSdiff/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap.tgz
+        cd ..
+
+    - name: rsync remote-site-deploy
+      run: |
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
+  
+          

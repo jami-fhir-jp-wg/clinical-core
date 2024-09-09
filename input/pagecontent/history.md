@@ -42,14 +42,17 @@
         - DosageInstruction[].route : 投与経路
         - DosageInstruction[].method : 投与方法の基本用法区分
         - DosageInstruction[].doseAndRate : 投与量
-    - 6.1 「OMedicationRequest_」表：
+    - 6.1 「MedicationRequest」表：
       - code.coding.versionの説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。
     - 7.1 プロファイル詳細： substitution のMustSupportを外す。
       - DosageInstruction[].timing.code.coding　で複数の用法コードを併用記載を可能となるように多重度を0..1から0..*に変更（施設固有コードの併用などを可能としていたため）。
+      - DosageInstruction[].timing.code.coding.system 厚生労働省電子処方箋用法コードのシステムURLの仮設定値を変更：　"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription"
       - DosageInstruction.timing.code.coding.version  の説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。多重度を1..1から0..1に変更。
       - DosageInstruction[].timing.code.coding.text : 多重度を0..1から1..1に変更。
       - DosageInstruction[].method.coding の説明：2桁コードで出せる場合には2桁コードとすることを追記。
       - DosageInstruction[].method.text の説明：コード化が1桁の場合には、詳細投与方法を含めた文字列を記載することを追記。
+  - terminologyパッケージの対応バージョンを1.2.1にアップデート
+
 
   ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.3.0 rc3 (2024.7.12 　リリース候補v3)
 
