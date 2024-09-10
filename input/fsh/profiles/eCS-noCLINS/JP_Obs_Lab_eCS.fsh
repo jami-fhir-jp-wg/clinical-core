@@ -45,7 +45,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "$this"
-* meta.tag  ^slicing.rules = #open
+* meta.tag  ^slicing.rules = #closed
 * meta.tag contains lts 0..1 MS
 //  and uninformed 0..1 MS
 

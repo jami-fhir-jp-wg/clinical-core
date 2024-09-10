@@ -47,8 +47,9 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[=].resource = referralFromOrganizationDeptExample01Inline
 */
 
-* entry[referralEncounter][+].fullUrl = "urn:uuid:3acc3dc7-c79b-41f1-8eea-ac4de9b664b8"
-* entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-purpose-Referral01Inline
+// 紹介目的をsectionのテキストで書くバージョン
+//* entry[referralEncounter][+].fullUrl = "urn:uuid:3acc3dc7-c79b-41f1-8eea-ac4de9b664b8"
+//* entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-purpose-Referral01Inline
 
 * entry[problem][+].fullUrl = "urn:uuid:6a31db8e-109d-4349-b0cf-095131c3307a"
 * entry[problem][=].resource = Example-JP-Condition-eCS-cc1-Referral01Inline

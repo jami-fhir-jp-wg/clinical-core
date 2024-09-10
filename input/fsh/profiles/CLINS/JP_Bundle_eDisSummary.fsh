@@ -4,7 +4,7 @@ Id: JP-Bundle-eDischargeSummary
 Description: "退院時サマリー Bundle"
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary"
 
-* ^version = "1.4.0"
+* ^version = "1"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"

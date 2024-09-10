@@ -4,8 +4,8 @@ Parent: Bundle
 Id: JP-Bundle-CLINS
 Title: "CLINS電子カルテ情報共有サービス用:JP_Bundle_CLINS"
 Description: "CLINS 電子カルテ情報共有サービスへの5情報送信用 Bundleリソース プロファイル"
-* ^url = $JP_Bundle_CLINS
-
+//* ^url = $JP_Bundle_CLINS
+* ^url = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
 
 * ^version = "1"
 * ^status = #active
