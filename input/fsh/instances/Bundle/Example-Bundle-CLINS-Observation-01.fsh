@@ -1,6 +1,6 @@
 
 Instance: Bundle-CLINS-Observations-Example-01
-InstanceOf: JP_Bundle_CLINS
+InstanceOf: JP_Bundle_CLINS|1
 Usage: #example
 
 Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　#01"
