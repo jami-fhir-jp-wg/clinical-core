@@ -5,7 +5,7 @@ Usage: #example
 Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素とプラスアルファを記述 長期保存 データ作成例"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>CLINS必須要素と推奨要素とプラスアルファ 長期保存 を記述した データ作成例</p> </div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = $JP_AllergyIntolerance_eCS    //必須
@@ -60,7 +60,7 @@ Usage: #inline
 Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素とプラスアルファを記述 長期保存 データ作成例"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>CLINS必須要素と推奨要素とプラスアルファ 長期保存 を記述した データ作成例</p> </div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = $JP_AllergyIntolerance_eCS    //必須

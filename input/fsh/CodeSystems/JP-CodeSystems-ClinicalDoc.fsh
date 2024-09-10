@@ -19,7 +19,7 @@ CodeSystem:  JP_codeSystem_documentTypeCode
 Id:   jp-codeSystem-documentTypeCode
 Description: "FHIR文書の文書区分（医療文書全般）"
 * ^url = "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes"
-// * ^valueSet = "http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes"
+// * ^valueSet = "http://jpfhir.jp/fhir/Common/ValueSet/"
 * ^title = "FHIR文書の文書区分（医療文書全般）"
 * ^status = #active
 * ^experimental = false

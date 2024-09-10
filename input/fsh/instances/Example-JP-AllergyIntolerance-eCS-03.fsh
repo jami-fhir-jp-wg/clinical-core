@@ -5,7 +5,7 @@ Usage: #example
 Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した薬剤アレルギー等情報　長期保存 データ作成例"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>CLINS必須要素で記述した薬剤アレルギー等情報　長期保存の データ作成例</p> </div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>ポビドンヨード含嗽後に嘔吐と全身に発疹</p> </div>"
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
@@ -47,7 +47,7 @@ Usage: #inline
 Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した薬剤アレルギー等情報　長期保存 データ作成例"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>CLINS必須要素で記述した薬剤アレルギー等情報　長期保存の データ作成例</p> </div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>ポビドンヨード含嗽後に嘔吐と全身に発疹</p> </div>"
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
