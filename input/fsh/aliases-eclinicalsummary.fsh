@@ -7,7 +7,7 @@ Alias: $JP_Hospital_PatientID_Pseudonymized = http://jpfhir.jp/fhir/eCS/Idsysmem
 Alias: $JP_Insurance_memberID_Pseudonymized = http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID_Pseudonymized
 
 Alias: $JP_Bundle_CLINS = http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS
-
+Alias: $JP_Bundle_CLINSV = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|1"
 Alias: $JP_MedicationDosage_eCS  = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationDosage_eCS
 Alias: $JP_Encounter_eCS = http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS
 
