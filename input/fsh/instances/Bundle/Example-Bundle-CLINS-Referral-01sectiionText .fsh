@@ -1,5 +1,5 @@
 
-Instance: Bundle-CLINS-Referral-Example-01
+Instance: Bundle-CLINS-ReferralSectionText-Example-01
 InstanceOf: JP_Bundle_eReferral
 Usage: #example
 
@@ -19,7 +19,7 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * timestamp = "2021-11-26T10:00:00+09:00"
 
 * entry[composition].fullUrl = "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
-* entry[composition].resource = compositionReferralExample01Inline
+* entry[composition].resource = compositionReferralExample01InlineNoPurpose
 
 * entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
@@ -47,7 +47,7 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[=].resource = referralFromOrganizationDeptExample01Inline
 */
 
-// 紹介目的をsectionのテキストで書くバージョン
+// 紹介目的をsectionのテキストでかかないバージョン
 //* entry[referralEncounter][+].fullUrl = "urn:uuid:3acc3dc7-c79b-41f1-8eea-ac4de9b664b8"
 //* entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-purpose-Referral01Inline
 

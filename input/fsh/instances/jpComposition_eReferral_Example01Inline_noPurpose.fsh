@@ -3,7 +3,7 @@
 Alias: $doc-typecodes_CS = http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
 Alias: $referral-section = http://jpfhir.jp/fhir/clins/CodeSystem/document-section
 
-Instance: compositionReferralExample01Inline
+Instance: compositionReferralExample01InlineNoPurpose
 InstanceOf: JP_Composition_eReferral
 Usage: #inline
 
