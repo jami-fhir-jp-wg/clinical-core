@@ -42,11 +42,11 @@ pages:
     title: ５情報送信仕様
   resourceProfiles.md:
     title: ５情報と関連プロファイル
-  referral.md:
+  referral-doc.md:
     title: 診療情報提供書
-  discharge.md:
+  discharge-doc.md:
     title: 退院時サマリー
-  ptsummary.md:
+  ptsummary-doc.md:
     title: 患者サマリー(療養計画書)
   glossary.md:
     title: 用語説明
@@ -62,9 +62,9 @@ menu:
     本文: index.html
     ５情報送信仕様: core6spec.html
     ５情報と関連プロファイル: resourceProfiles.html
-    診療情報提供書: referral.html
-    退院時サマリー: discharge.html
-    患者サマリー（療養計画書）: ptsummary.html
+    診療情報提供書: referral-doc.html
+    退院時サマリー: discharge-doc.html
+    患者サマリー（療養計画書）: ptsummary-doc.html
     生成されたプロファイル集: artifacts.html
     FHIRデータ作例集: artifacts.html#example-example-instances
     用語説明: glossary.html
