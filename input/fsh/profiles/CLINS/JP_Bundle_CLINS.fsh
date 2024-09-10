@@ -7,7 +7,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * ^url = $JP_Bundle_CLINS
 
 
-* ^version = "2.4.0"
+* ^version = "1"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
