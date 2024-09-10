@@ -59,11 +59,12 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralToSection].title = "紹介先情報"
 * section[referralToSection].code.coding = $referral-section#910 "紹介先情報セクション"
 * section[referralToSection].text.status = #additional
-* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">紹介先医療機関名：東京第一テスト病院<br>内科<br>紹介先医師：野口 英世丸先生</div>"
+* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">紹介先医療機関名：東京第一テスト病院<br />内科<br />紹介先医師：野口 英世丸先生</div>"
+
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-ReferralTo01Inline"
-//* section[referralToSection].entry[referralToOrganization].reference = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
-//* section[referralToSection].entry[referralToOrganization].type = "Organization"
-//* section[referralToSection].entry[referralToOrganization].display = "紹介先医療機関"
+* section[referralToSection].entry[referralToOrganization].reference = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
+* section[referralToSection].entry[referralToOrganization].type = "Organization"
+* section[referralToSection].entry[referralToOrganization].display = "紹介先医療機関"
 
 
 // * section[=].entry[+].reference = "referralToOrganizationDeptExample01Inline"
@@ -74,20 +75,20 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 */
 
 // * section[=].entry[+].reference = "Example-JP-Practitioner-eCS-ReferralTo01Inline"
-//* section[referralToSection].entry[referralToDoctor].reference = "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
-//* section[referralToSection].entry[referralToDoctor].type = "Practitioner"
-//* section[referralToSection].entry[referralToDoctor].display = "紹介先医師"
+* section[referralToSection].entry[referralToDoctor].reference = "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
+* section[referralToSection].entry[referralToDoctor].type = "Practitioner"
+* section[referralToSection].entry[referralToDoctor].display = "紹介先医師"
 
 
 * section[referralFromSection].title = "紹介元情報"
 * section[referralFromSection].code.coding = $referral-section#920 "紹介元情報セクション"
 * section[referralFromSection].text.status = #additional
 * section[referralFromSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">東京都港区新橋１−２−３
-<br電話:03-9876-5432><br>港診療所<br>眼科<br>野口 英世丸</div>"
+<br />電話:03-9876-5432><br />港診療所<br />眼科<br />大河内 勘三郎</div>"
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-//* section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
-//* section[referralFromSection].entry[referralFromOrganization].type = "Organization"
-//* section[referralFromSection].entry[referralFromOrganization].display = "紹介元医療機関"
+* section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* section[referralFromSection].entry[referralFromOrganization].type = "Organization"
+* section[referralFromSection].entry[referralFromOrganization].display = "紹介元医療機関"
 
 
 // * section[=].entry[+].reference = "referralFromOrganizationDeptExample01Inline"
@@ -98,9 +99,9 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 */
 
 // * section[=].entry[+].reference = "Example-JP-Practitioner-eCS-ReferralFrom01Inline"
-//* section[referralFromSection].entry[referralFromDoctor].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
-//* section[referralFromSection].entry[referralFromDoctor].type = "Practitioner"
-//* section[referralFromSection].entry[referralFromDoctor].display = "紹介元医師"
+* section[referralFromSection].entry[referralFromDoctor].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* section[referralFromSection].entry[referralFromDoctor].type = "Practitioner"
+* section[referralFromSection].entry[referralFromDoctor].display = "紹介元医師"
 
 
 * section[compositionSection].title = "構造情報"
@@ -200,7 +201,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[clinicalCourseSection].title = "臨床経過"
 * section[compositionSection].section[clinicalCourseSection].code.coding = $referral-section#330 "臨床経過セクション"
 * section[compositionSection].section[clinicalCourseSection].text.status = #additional
-* section[compositionSection].section[clinicalCourseSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">⾷欲不振と⼼窩部痛を認めた．悪⼼嘔吐がみられ，吐物に新鮮⾎が混⼊していたため救急外来を受診し，緊急⼊院となった．<br>⼊院時現症:⾝⻑162.5cm，体重45.2kg，⾎圧80/60mmHg，脈拍80/分，整，体温36.4．眼瞼結膜に貧⾎を認めた．<br>腹部は平坦，軟で腫瘤や圧痛なし．腸蠕動⾳正常．<br>⼊院時検査成績(Table1):末梢⾎液検査で，Hb5.0g/dl，Ht15.5%と著明な貧⾎を認めた．<br>上部消化管内視鏡検査:⼊院翌⽇の検査では，残胃吻合部後壁に約2.5cmの潰瘍形成を認め，潰瘍底に凝⾎塊の付着した露出⾎管と思われる隆起がみられたが，新鮮出⾎はなく，抗潰瘍薬投与による経過観察となった．<br></div>"
+* section[compositionSection].section[clinicalCourseSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">⾷欲不振と⼼窩部痛を認めた．悪⼼嘔吐がみられ，吐物に新鮮⾎が混⼊していたため救急外来を受診し，緊急⼊院となった．<br />⼊院時現症:⾝⻑162.5cm，体重45.2kg，⾎圧80/60mmHg，脈拍80/分，整，体温36.4．眼瞼結膜に貧⾎を認めた．<br />腹部は平坦，軟で腫瘤や圧痛なし．腸蠕動⾳正常．<br />⼊院時検査成績(Table1):末梢⾎液検査で，Hb5.0g/dl，Ht15.5%と著明な貧⾎を認めた．<br />上部消化管内視鏡検査:⼊院翌⽇の検査では，残胃吻合部後壁に約2.5cmの潰瘍形成を認め，潰瘍底に凝⾎塊の付着した露出⾎管と思われる隆起がみられたが，新鮮出⾎はなく，抗潰瘍薬投与による経過観察となった．<br /></div>"
 //  Reference(JP_DocumentReference) 臨床経過
 // * section[compositionSection].section[clinicalCourseSection].entry[+].reference = "Example-JP-DocRef-eCS-clinical-ccourse-Referral01Inline"
 //* section[compositionSection].section[clinicalCourseSection].entry[+].reference = "urn:uuid:a6e4fc73-a749-4583-94a7-18e4241b4c75"

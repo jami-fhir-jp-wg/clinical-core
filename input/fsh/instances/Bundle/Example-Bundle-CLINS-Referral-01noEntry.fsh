@@ -21,23 +21,23 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[composition].fullUrl = "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
 * entry[composition].resource = compositionReferralExample01InlineNoEntry
 
-//* entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
-//* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
+* entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
 
 //* entry[referralEncounter][+].fullUrl = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
 //* entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-AMB-01Inline
 
-//* entry[practitioners][+].fullUrl = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
-//* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralFrom01Inline
+* entry[practitioners][+].fullUrl = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralFrom01Inline
 
-//* entry[practitioners][+].fullUrl = "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
-//* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralTo01Inline
+* entry[practitioners][+].fullUrl = "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
+* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralTo01Inline
 
-//* entry[organization][+].fullUrl = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
-//* entry[organization][=].resource = Example-JP-Org-eCS-Inst-Referral01Inline
+* entry[organization][+].fullUrl = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* entry[organization][=].resource = Example-JP-Org-eCS-Inst-Referral01Inline
 
-//* entry[organization][+].fullUrl = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
-//* entry[organization][=].resource = Example-JP-Org-eCS-ReferralTo01Inline
+* entry[organization][+].fullUrl = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
+* entry[organization][=].resource = Example-JP-Org-eCS-ReferralTo01Inline
 
 //* entry[problem][+].fullUrl = "urn:uuid:6a31db8e-109d-4349-b0cf-095131c3307a"
 //* entry[problem][=].resource = Example-JP-Condition-eCS-cc1-Referral01Inline
