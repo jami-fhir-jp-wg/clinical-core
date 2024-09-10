@@ -108,7 +108,8 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[referralPurposeSection].code.coding = $referral-section#950 "紹介目的セクション"
 * section[compositionSection].section[referralPurposeSection].text.status = #additional
 * section[compositionSection].section[referralPurposeSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">腹痛精査お願いします。</div>"
-// * section[compositionSection].section[=].entry[+].reference = "Example-JP-Encounter-eCS-purpose-Referral01Inline"
+// Encounterへのエントリーを省略しないケース
+* section[compositionSection].section[=].entry[+].reference = "Example-JP-Encounter-eCS-purpose-Referral01Inline"
 * section[compositionSection].section[referralPurposeSection].entry[+].reference = "urn:uuid:3acc3dc7-c79b-41f1-8eea-ac4de9b664b8"
 * section[compositionSection].section[referralPurposeSection].entry[=].type = "Encounter"
 * section[compositionSection].section[referralPurposeSection].entry[=].display = "紹介目的"
