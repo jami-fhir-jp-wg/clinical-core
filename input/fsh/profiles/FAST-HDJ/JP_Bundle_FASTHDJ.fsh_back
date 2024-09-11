@@ -37,9 +37,9 @@ Description: "FASTHDJ データ送信用 Bundleリソース プロファイル"
 
 //* obeys bundle-profile-is-JP-Bundle-FASTHDJ
 
-* obeys first-bundle-entry-is-Patient
+//* obeys first-bundle-entry-is-Patient
 //* obeys patients-profile-is-JP-Patient-FASTHDJ-eCS
-
+/*
 * obeys valid-valuePart0-bundleIdenfifier
 * obeys valid-valuePart1-bundleIdenfifier
 * obeys valid-valuePart2-0-bundleIdenfifier
@@ -48,7 +48,7 @@ Description: "FASTHDJ データ送信用 Bundleリソース プロファイル"
 * obeys valid-valuePart2-3-bundleIdenfifier
 * obeys valid-valuePart2-4-bundleIdenfifier
 * obeys valid-valuePart3-bundleIdenfifier
-
+*/
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/FASTHDJ/StructureDefinition/JP_Bundle_FASTHDJ")
