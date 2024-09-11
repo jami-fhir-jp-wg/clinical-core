@@ -23,131 +23,156 @@
 </td>
          </tr>
          <tr>
-            <td border="1"  style="border-collapse: collapse column-width:30%">
+            <td border="1"  style="border-collapse: collapse; column-width:30%">
                <a href="StructureDefinition-JP-Composition-eReferral.html" title="StructureDefinition/JP-Composition-eReferral">JP_Composition_eReferral</a>
             </td>
             <td>
 <p>診療情報提供書情報　Composition</p>
 </td>
+</tr>
 </table>
 <br>
 
 #### 診療情報提供書に使用されるその他の主なリソースのプロファイル
 
-<table border="1"  style="border-collapse: collapse">
-<tr><th>Bundleリソースでの使用箇所(*のつく項目は必須情報)</th><th>プロファイル名</th><th>リソース種別</th></tr>
+<table border="1" style="border-collapse: collapse">
+    <tr>
+        <th>Bundleリソースでの使用箇所(*のつく項目は必須情報)</th>
+        <th>プロファイル名</th>
+        <th>リソース種別</th>
+    </tr>
 
-<tr><td border="1"   style="border-collapse: collapse column-width:30%">患者情報エントリ*</td>
-<td  border="1"  style="border-collapse: collapse column-width:30%">
-               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html" title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
-            </td>
-            <td  border="1"  style="border-collapse: collapse column-width:30%">
-<p>eCS/CLINS Patientリソース（患者情報）</p>
-</td>
-</tr>
+    <tr>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">患者情報エントリ*</td>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html"
+                title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
+        </td>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">
+            <p>eCS/CLINS Patientリソース（患者情報）</p>
+        </td>
+    </tr>
 
-<tr><td   border="1"  style="border-collapse: collapse column-width:30%">文書作成責任者*、紹介元医師*、紹介先医師を記述するエントリー</td>
-            <td  border="1"  style="border-collapse: collapse column-width:30%">
-               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html" title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
-            </td>
-            <td>
-<p>eCS/CLINS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
-</td>
-</tr>
-<tr><td   border="1"  style="border-collapse: collapse column-width:30%">文書作成機関*、文書管理責任機関*、紹介先医療機関*、紹介先診療科、紹介元医療機関*、紹介元診療科、入院前や退院先の所在施設などを記述するエントリー</td>
-            <td   border="1"  style="border-collapse: collapse column-width:30%">
-               <a href="StructureDefinition-JP-Organization-eCS.html" title="StructureDefinition/JP-Organization-eCS">JP_Organization_eCS</a>
-            </td>
-            <td>
-<p>医療機関等の組織・機関情報　Organization</p>
-</td>
-</tr>
-
-
-<tr><td   border="1"  style="border-collapse: collapse column-width:30%">紹介目的セクションから参照されるエントリー
-（別紙様式１１の「紹介目的」）</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html" title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
-            </td>
-            <td>
-<p>eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）</p>
-</td>
-</tr>
-
-<tr><td   border="1"  style="border-collapse: collapse column-width:30%">傷病名・主訴セクション,現病歴セクション,既往歴セクションから参照されるエントリー
-（別紙様式１１の「傷病名」）</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html" title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
-            </td>
-            <td>
-<p>eCS/CLINS Conditionリソース（傷病名情報）</p>
-</td>
-</tr>
+    <tr>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">文書作成責任者*、紹介元医師*、紹介先医師を記述するエントリー</td>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html"
+                title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
+        </td>
+        <td>
+            <p>eCS/CLINS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
+        </td>
+    </tr>
+    <tr>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">
+            文書作成機関*、文書管理責任機関*、紹介先医療機関*、紹介先診療科、紹介元医療機関*、紹介元診療科、入院前や退院先の所在施設などを記述するエントリー</td>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">
+            <a href="StructureDefinition-JP-Organization-eCS.html"
+                title="StructureDefinition/JP-Organization-eCS">JP_Organization_eCS</a>
+        </td>
+        <td>
+            <p>医療機関等の組織・機関情報　Organization</p>
+        </td>
+    </tr>
 
 
-<tr><td   border="1"  style="border-collapse: collapse column-width:30%">アレルギー・不耐性反応情報エントリ</td>
-<td style="column-width:30%">
-               <a href="StructureDefinition-JP-AllergyIntolerance-eCS.html" title="StructureDefinition/JP-AllergyIntolerance-eCS">JP_AllergyIntolerance_eCS</a>
-            </td>
-            <td>
-<p>eCS/CLINS AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）</p>
-</td>
-</tr>
+    <tr>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">紹介目的セクションから参照されるエントリー
+            （別紙様式１１の「紹介目的」）</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+                title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
+        </td>
+        <td>
+            <p>eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">傷病名・主訴セクション,現病歴セクション,既往歴セクションから参照されるエントリー
+            （別紙様式１１の「傷病名」）</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html"
+                title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
+        </td>
+        <td>
+            <p>eCS/CLINS Conditionリソース（傷病名情報）</p>
+        </td>
+    </tr>
 
 
-<tr><td style="column-width:30%">身体所見、社会歴・生活習慣、検査結果を記述するエントリー</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html" title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a>
-            </td>
-            <td>
-<p>eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）</p>
-</td>
-</tr>
-
-<tr><td style="column-width:30%">投薬指示セクションから参照されるエントリ（別紙様式１１の「現在の処方」）</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html" title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
-            </td>
-            <td>
-<p>eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）</p>
-</td>
-</tr>
+    <tr>
+        <td border="1" style="border-collapse: collapse;  column-width:30%">アレルギー・不耐性反応情報エントリ</td>
+        <td style="column-width:30%">
+            <a href="StructureDefinition-JP-AllergyIntolerance-eCS.html"
+                title="StructureDefinition/JP-AllergyIntolerance-eCS">JP_AllergyIntolerance_eCS</a>
+        </td>
+        <td>
+            <p>eCS/CLINS AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）</p>
+        </td>
+    </tr>
 
 
-<tr><td style="column-width:30%">“臨床経過セクション"（別紙様式１１の「治療経過」）</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
-            </td>
-            <td>
-<p>臨床経過ドキュメント　DocumentReferenceリソース</p>
-</td>
-</tr>
+    <tr>
+        <td style="column-width:30%">身体所見、社会歴・生活習慣、検査結果を記述するエントリー</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html"
+                title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a>
+        </td>
+        <td>
+            <p>eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）</p>
+        </td>
+    </tr>
 
-<tr><td style="column-width:30%">“添付文書情報、PDF情報エントリ</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
-            </td>
-            <td>
-<p>添付文書情報、PDF情報　DocumentReferenceリソース</p>
-</td>
-</tr>
+    <tr>
+        <td style="column-width:30%">投薬指示セクションから参照されるエントリ（別紙様式１１の「現在の処方」）</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html"
+                title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
+        </td>
+        <td>
+            <p>eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）</p>
+        </td>
+    </tr>
 
-<tr><td style="column-width:30%">退院時サマリー文書エントリ</td>
-</tr><tr><td style="column-width:30%">退院時サマリーの添付</td>
-<td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-Bundle-eDischargeSummary">JP-Bundle-eDischargeSummary</a>
-            </td>
-            <td>
-<p>退院時サマリードキュメント　Bundleリソース</p>
-</td>
-</tr>
 
-   </table>
+    <tr>
+        <td style="column-width:30%">“臨床経過セクション"（別紙様式１１の「治療経過」）</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+                title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
+        </td>
+        <td>
+            <p>臨床経過ドキュメント　DocumentReferenceリソース</p>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="column-width:30%">“添付文書情報、PDF情報エントリ</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+                title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
+        </td>
+        <td>
+            <p>添付文書情報、PDF情報　DocumentReferenceリソース</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="column-width:30%">退院時サマリーの添付</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+                title="StructureDefinition/JP-Bundle-eDischargeSummary">JP-Bundle-eDischargeSummary</a>
+        </td>
+        <td>
+            <p>退院時サマリードキュメント　Bundleリソース</p>
+        </td>
+    </tr>
+
+</table>
 <br>
+
 
 上の表のリソース以外にも必要であれば、「５情報と関連プロファイル」ページの「５情報の各リソースに埋め込まれるリソースのプロファイル」「２文書に含めることのできるその他のリソースのプロファイル」は適宜使用できる。
 
-####　参考：別紙様式11記載の診療情報提供書FHIRデータ作成例
-別紙様式11の各欄のテキストデータだけをそのまま格納し、それ以上の構造化ができない場合には、以下のような作成例となる。
 
 {% include markdown-link-references.md %}

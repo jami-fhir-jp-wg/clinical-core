@@ -113,7 +113,7 @@ Instance: Example-JP-Practitioner-eCS-ReferralTo01Inline
 InstanceOf: JP_Practitioner_eCS
 Usage: #inline
 
-Description: "紹介先医療機関の医師情報　例"
+Description: "Practitionerリソース　（診療情報提供書　紹介先　医師情報）"
 
 // 002or_ValidationProfile(ARGmetaprofile)
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
@@ -137,3 +137,21 @@ Description: "紹介先医療機関の医師情報　例"
 //--------------
 
 
+//--------------
+Instance: Example-JP-Practitioner-eCS-ReferralTo02Inline
+InstanceOf: JP_Practitioner_eCS
+Usage: #inline
+
+Description: "Practitionerリソース　（診療情報提供書　紹介先　医師情報）氏名テキストのみ。"
+
+// 002or_ValidationProfile(ARGmetaprofile) 
+* meta.lastUpdated = "2021-11-26T10:00:00+09:00"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+* language = #ja
+
+* name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
+* name[=].extension.valueCode = #IDE
+* name[=].use = #official
+* name[=].text = "野口 英世丸"
+
+//--------------
