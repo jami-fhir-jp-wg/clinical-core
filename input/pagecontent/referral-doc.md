@@ -4,6 +4,7 @@
 
 実装ガイドとは、HL7FHIR（以下、単に「FHIR」という）に準拠して記述するための仕様と、注意点や使用するコードなど、システムを実装するために必要な技術的情報をまとめたもので、FHIRリソースの構造的な情報や、仕様の元となっているFHIR R4.0.1(https://hl7.org/fhir/R4/)、JP-Core（https://jpfhir.jp/fhir/core/）からの異なっている点などを、人が理解するとともに、計算機が記述されたデータの仕様適合性を検証（バリデーション）する目的などで利用される。
 
+このページでは、「別紙様式11」とは、厚生労働省の診療情報提供書様式（https://www.mhlw.go.jp/bunya/iryouhoken/iryouhoken15/dl/h24_02-07-30.pdf）を指している。
 
 #### 診療情報提供書 仕様書
 
@@ -12,7 +13,7 @@
 #### 診療情報提供書固有のリソースのプロファイル
 
 <table border="1"  style="border-collapse: collapse">
-      <col style="width:20%"/>
+<tr><th>プロファイル名</th><th>リソース種別</th></tr>
          <tr>
             <td style="column-width:30%" border="1"  style="border-collapse: collapse">
                <a href="StructureDefinition-JP-Bundle-eReferral.html" title="StructureDefinition/JP-Bundle-eReferral">JP_Bundle_eReferral</a>
@@ -34,7 +35,7 @@
 #### 診療情報提供書に使用されるその他の主なリソースのプロファイル
 
 <table border="1"  style="border-collapse: collapse">
-<tr><th>Bundleリソースでの使用箇所(*のつく項目は必須情報)</th><th>プロファイル</th><th><リソース種別/th></tr>
+<tr><th>Bundleリソースでの使用箇所(*のつく項目は必須情報)</th><th>プロファイル名</th><th>リソース種別</th></tr>
 
 <tr><td border="1"   style="border-collapse: collapse column-width:30%">患者情報エントリ*</td>
 <td  border="1"  style="border-collapse: collapse column-width:30%">
@@ -144,6 +145,9 @@
    </table>
 <br>
 
+上の表のリソース以外にも必要であれば、「５情報と関連プロファイル」ページの「５情報の各リソースに埋め込まれるリソースのプロファイル」「２文書に含めることのできるその他のリソースのプロファイル」は適宜使用できる。
 
+####　参考：別紙様式11記載の診療情報提供書FHIRデータ作成例
+別紙様式11の各欄のテキストデータだけをそのまま格納し、それ以上の構造化ができない場合には、以下のような作成例となる。
 
 {% include markdown-link-references.md %}

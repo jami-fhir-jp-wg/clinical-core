@@ -109,7 +109,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="StructureDefinition-JP-Bundle-CLINS.html" title="StructureDefinition/JP-Bundle-CLINS">JP_Bundle_CLINS</a>
             </td>
             <td>
-<p>CLINS Bundleリソース（CLINS電子カルテ情報共有サービス 送信用Bundleリソース）</p>
+<p>CLINS Bundleリソース（CLINS電子カルテ情報共有サービス ５情報送信用Bundleリソース）</p>
 </td>
          </tr>
 </table>
