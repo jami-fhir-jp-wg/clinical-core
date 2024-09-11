@@ -209,7 +209,16 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 //* section[compositionSection].section[clinicalCourseSection].entry[=].display = "臨床経過"
 
 
+* section[compositionSection].section[medicationSection].title = "投薬指示"
+* section[compositionSection].section[medicationSection].code.coding = $referral-section#430 "投薬指示セクション"
+* section[compositionSection].section[medicationSection].text.status = #additional
+* section[compositionSection].section[medicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> タケキャブ錠10mg1錠　１日2回　朝食後、就寝時<br />レバミピド錠100mg1錠　　１日3回毎食後</div>"
 
+
+* section[remarksCommunicationSection].title = "備考・連絡情報"
+* section[remarksCommunicationSection].code.coding = $referral-section#220 "備考・連絡情報セクション"
+* section[remarksCommunicationSection].text.status = #additional
+* section[remarksCommunicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> よろしくお願いします。</div>"
 
 
 

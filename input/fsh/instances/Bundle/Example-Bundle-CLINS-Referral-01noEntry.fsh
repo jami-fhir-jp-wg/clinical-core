@@ -1,5 +1,5 @@
 
-Instance: Bundle-CLINS-ReferralNoEmtry-Example-01
+Instance: Bundle-CLINS-Referral-NoEntry-Example-01
 InstanceOf: JP_Bundle_eReferral
 Usage: #example
 
