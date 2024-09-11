@@ -11,10 +11,10 @@
 
 #### 診療情報提供書固有のリソースのプロファイル
 
-<table>
+<table border="1"  style="border-collapse: collapse">
       <col style="width:20%"/>
          <tr>
-            <td style="column-width:30%">
+            <td style="column-width:30%" border="1"  style="border-collapse: collapse">
                <a href="StructureDefinition-JP-Bundle-eReferral.html" title="StructureDefinition/JP-Bundle-eReferral">JP_Bundle_eReferral</a>
             </td>
             <td>
@@ -22,7 +22,7 @@
 </td>
          </tr>
          <tr>
-            <td style="column-width:30%">
+            <td border="1"  style="border-collapse: collapse column-width:30%">
                <a href="StructureDefinition-JP-Composition-eReferral.html" title="StructureDefinition/JP-Composition-eReferral">JP_Composition_eReferral</a>
             </td>
             <td>
@@ -31,30 +31,30 @@
 </table>
 <br>
 
-#### 診療情報提供書に使用されるその他のリソースのプロファイル
+#### 診療情報提供書に使用されるその他の主なリソースのプロファイル
 
-<table>
-<tr><th>使用箇所</th><th>プロファイル</th><th><リソース種別/th></tr>
+<table border="1"  style="border-collapse: collapse">
+<tr><th>Bundleリソースでの使用箇所(*のつく項目は必須情報)</th><th>プロファイル</th><th><リソース種別/th></tr>
 
-<tr><td style="column-width:30%">患者情報エントリ</td>
-<td style="column-width:30%">
+<tr><td border="1"   style="border-collapse: collapse column-width:30%">患者情報エントリ*</td>
+<td  border="1"  style="border-collapse: collapse column-width:30%">
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html" title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
             </td>
-            <td>
+            <td  border="1"  style="border-collapse: collapse column-width:30%">
 <p>eCS/CLINS Patientリソース（患者情報）</p>
 </td>
 </tr>
 
-<tr><td style="column-width:30%">文書作成責任者、文書法的責任者、紹介元医師、紹介先医師を記述するエントリー。</td>
-            <td style="column-width:30%">
+<tr><td   border="1"  style="border-collapse: collapse column-width:30%">文書作成責任者*、紹介元医師*、紹介先医師を記述するエントリー</td>
+            <td  border="1"  style="border-collapse: collapse column-width:30%">
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html" title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
             </td>
             <td>
 <p>eCS/CLINS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
 </td>
 </tr>
-<tr><td style="column-width:30%">文書作成機関、文書管理責任機関、紹介先医療機関、紹介先診療科、紹介元医療機関、紹介元診療科、入院前や退院先の所在施設などを記述するエントリー</td>
-            <td style="column-width:30%">
+<tr><td   border="1"  style="border-collapse: collapse column-width:30%">文書作成機関*、文書管理責任機関*、紹介先医療機関*、紹介先診療科、紹介元医療機関*、紹介元診療科、入院前や退院先の所在施設などを記述するエントリー</td>
+            <td   border="1"  style="border-collapse: collapse column-width:30%">
                <a href="StructureDefinition-JP-Organization-eCS.html" title="StructureDefinition/JP-Organization-eCS">JP_Organization_eCS</a>
             </td>
             <td>
@@ -63,7 +63,7 @@
 </tr>
 
 
-<tr><td style="column-width:30%">紹介目的セクションから参照されるエントリー
+<tr><td   border="1"  style="border-collapse: collapse column-width:30%">紹介目的セクションから参照されるエントリー
 （別紙様式１１の「紹介目的」）</td>
 <td style="column-width:30%">
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html" title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
@@ -73,7 +73,7 @@
 </td>
 </tr>
 
-<tr><td style="column-width:30%">傷病名・主訴セクション,現病歴セクション,既往歴セクションから参照されるエントリー
+<tr><td   border="1"  style="border-collapse: collapse column-width:30%">傷病名・主訴セクション,現病歴セクション,既往歴セクションから参照されるエントリー
 （別紙様式１１の「傷病名」）</td>
 <td style="column-width:30%">
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html" title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
@@ -84,7 +84,7 @@
 </tr>
 
 
-<tr><td style="column-width:30%">アレルギー・不耐性反応情報エントリ</td>
+<tr><td   border="1"  style="border-collapse: collapse column-width:30%">アレルギー・不耐性反応情報エントリ</td>
 <td style="column-width:30%">
                <a href="StructureDefinition-JP-AllergyIntolerance-eCS.html" title="StructureDefinition/JP-AllergyIntolerance-eCS">JP_AllergyIntolerance_eCS</a>
             </td>
