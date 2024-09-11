@@ -29,9 +29,9 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * subject.display = "患者リソースPatient"
 
 // * encounter.reference = "Example-JP-Encounter-eCS-AMB-01Inline"
-* encounter.reference = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
-* encounter.type = "Encounter"
-* encounter.display = "受診Encounterリソース"
+//* encounter.reference = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
+//* encounter.type = "Encounter"
+//* encounter.display = "受診Encounterリソース"
 
 // 2020-08-21 2020-08-21
 // ATGtime 12:12:20
@@ -40,7 +40,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 // * author[0].reference = "Example-JP-Practitioner-eCS-ReferralFrom01Inline"
 * author[0].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * author[=].type = "Practitioner"
-* author[=].display = "診療情報提供書作成者PractitionerRoleリソース"
+* author[=].display = "診療情報提供書作成者Practitionerリソース"
 
 // * author[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
 * author[1].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
