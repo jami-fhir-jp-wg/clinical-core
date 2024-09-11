@@ -3,7 +3,7 @@ Instance: Bundle-CLINS-ReferralNoEmtry-Example-01
 InstanceOf: JP_Bundle_eReferral
 Usage: #example
 
-Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#01"
+Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#02 必須のヘッダ情報以外はentry記述をせず、テキストだけを各セクションに記述した例。"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1"
@@ -28,10 +28,10 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 //* entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-AMB-01Inline
 
 * entry[practitioners][+].fullUrl = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
-* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralFrom01Inline
+* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralFrom02Inline
 
 * entry[practitioners][+].fullUrl = "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
-* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralTo01Inline
+* entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralTo02Inline
 
 * entry[organization][+].fullUrl = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * entry[organization][=].resource = Example-JP-Org-eCS-Inst-Referral01Inline
