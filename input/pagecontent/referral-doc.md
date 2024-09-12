@@ -4,7 +4,7 @@
 
 実装ガイドとは、HL7FHIR（以下、単に「FHIR」という）に準拠して記述するための仕様と、注意点や使用するコードなど、システムを実装するために必要な技術的情報をまとめたもので、FHIRリソースの構造的な情報や、仕様の元となっているFHIR R4.0.1(https://hl7.org/fhir/R4/)、JP-Core（https://jpfhir.jp/fhir/core/）からの異なっている点などを、人が理解するとともに、計算機が記述されたデータの仕様適合性を検証（バリデーション）する目的などで利用される。
 
-このページでは、「別紙様式11」とは、(厚生労働省の診療情報提供書様式)(https://www.mhlw.go.jp/bunya/iryouhoken/iryouhoken15/dl/h24_02-07-30.pdf)を指している。
+このページでは、「別紙様式11」とは、[厚生労働省の診療情報提供書様式](https://www.mhlw.go.jp/bunya/iryouhoken/iryouhoken15/dl/h24_02-07-30.pdf) を指している。
 
 #### 診療情報提供書 仕様書
 
@@ -73,7 +73,7 @@
         </td>
     </tr>
     <tr>
-        <td border="1" style="border-collapse: collapse;  column-width:30%">傷病名・主訴セクション,現病歴セクション,既往歴セクションから参照されるエントリー
+        <td border="1" style="border-collapse: collapse;  column-width:30%">傷病名・主訴セクションから参照されるエントリー
             （別紙様式１１の「傷病名」の欄に対応）</td>
         <td style="column-width:30%">
             <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html"
@@ -211,7 +211,7 @@
        - 現在の処方：Composition.section.section セクションコード = 430 "投薬指示セクション"
      - 備考：Composition.section セクションコード = 220 "備考・連絡情報セクション"
 
-2) 上記以外については、メインメニューから[FHIRデータ作例集][artifacts.html#example-example-instances]の診療情報提供書を参照のこと。
+2) 上記以外については、メインメニューから[FHIRデータ作例集](artifacts.html#example-example-instances)の診療情報提供書を参照のこと。
 
 
 {% include markdown-link-references.md %}
