@@ -92,7 +92,7 @@
         <td>
             <p>Encounterリソース（入院時、退院時等のEncounter情報）</p>
         </td>
-   </tr>
+    </tr>
       <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">家族歴セクションから参照されるエントリー</td>
         <td style="column-width:30%">
@@ -146,7 +146,7 @@
             <p>DocumentReferenceリソース（入院中経過ドキュメント参照情報）</p>
         </td>
     </tr>
-        <tr>
+    <tr>
         <td style="column-width:30%">入院中治療セクションから参照されるエントリ</td>
         <td style="column-width:30%">
             <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Procedure.html"
@@ -156,7 +156,7 @@
             <p>Procedureリソース（入院中治療情報）</p>
         </td>
     </tr>
-        <tr>
+    <tr>
         <td style="column-width:30%">退院時方針指示セクションから参照されるエントリ</td>
         <td style="column-width:30%">
             <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP_CarePlan_eCS.html"
@@ -187,6 +187,7 @@
         </td>
     </tr>
 </table>
+
 <br>
 
 
