@@ -1,40 +1,3 @@
-
-
-### 実装ガイドと仕様書
-
-実装ガイドとは、HL7FHIR（以下、単に「FHIR」という）に準拠して記述するための仕様と、注意点や使用するコードなど、システムを実装するために必要な技術的情報をまとめたもので、FHIRリソースの構造的な情報や、仕様の元となっているFHIR R4.0.1(https://hl7.org/fhir/R4/)、JP-Core（https://jpfhir.jp/fhir/core/）からの異なっている点などを、人が理解するとともに、計算機が記述されたデータの仕様適合性を検証（バリデーション）する目的などで利用される。
-
-
-### 退院時サマリー
-
-  - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.3.1](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v131.pdf) 
-
-#### 退院時サマリー固有のリソースのプロファイル
-
-
-<table border="1"  style="border-collapse: collapse">
-<tr><th>プロファイル名</th><th>リソース種別</th></tr>
-         <tr>
-            <td style="column-width:30%" border="1"  style="border-collapse: collapse">
-               <a href="StructureDefinition-JP-Bundle-eDischargeSummary.html" title="StructureDefinition/JP-Bundle-eDischargeSummary">JP_Bundle_eDischargeSummary</a>
-            </td>
-            <td>
-<p>退院時サマリー Bundle</p>
-</td>
-         </tr>
-         <tr>
-            <td border="1"  style="border-collapse: collapse; column-width:30%">
-               <a href="StructureDefinition-JP-Composition-eDischargeSummary.html" title="StructureDefinition/JP-Composition-eDischargeSummary">JP_Composition_eReferral</a>
-            </td>
-            <td>
-<p>退院時サマリー　Composition</p>
-</td>
-</tr>
-</table>
-<br>
-
-#### 退院時サマリーに使用されるその他の主なリソースのプロファイル
-
 <table border="1" style="border-collapse: collapse">
     <tr>
         <th>Bundleリソースでの使用箇所</th>
@@ -166,6 +129,7 @@
             <p>CarePlanリソース（ケア計画情報）</p>
         </td>
     </tr>
+  
     <tr>
         <td style="column-width:30%">添付情報セクション、PDFセクションから参照されるエントリ/td>
         <td style="column-width:30%">
@@ -187,10 +151,3 @@
         </td>
     </tr>
 </table>
-<br>
-
-
-上の表のリソース以外にも必要であれば、「５情報と関連プロファイル」ページの「５情報の各リソースに埋め込まれるリソースのプロファイル」「２文書に含めることのできるその他のリソースのプロファイル」は適宜使用できる。
-
-
-{% include markdown-link-references.md %}
