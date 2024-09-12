@@ -35,6 +35,7 @@
 
 #### 退院時サマリーに使用されるその他の主なリソースのプロファイル
 
+
 <table border="1" style="border-collapse: collapse">
     <tr>
         <th>Bundleリソースでの使用箇所</th>
