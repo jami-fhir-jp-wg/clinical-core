@@ -45,7 +45,7 @@
     <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">患者情報エントリ</td>
         <td border="1" style="border-collapse: collapse;  column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html"
+            <a href="StructureDefinition-JP-Patient-eCS.html"
                 title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
         </td>
         <td border="1" style="border-collapse: collapse;  column-width:30%">
@@ -55,7 +55,7 @@
     <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">文書作成責任者を記述するエントリー</td>
         <td border="1" style="border-collapse: collapse;  column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html"
+            <a href="StructureDefinition-JP-Practitioner-eCS.html"
                 title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
         </td>
         <td>
@@ -76,7 +76,7 @@
     <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">入院時診断セクション,主訴セクション,現病歴セクション,既往歴セクション、退院時診断セクションから参照されるエントリー</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html"
+            <a href="StructureDefinition-JP-Condition-eCS.html"
                 title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
         </td>
         <td>
@@ -87,7 +87,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">入院時詳細セクション、入院理由セクション、退院時詳細セクションから参照されるエントリー
             </td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Encounter-eCS.html"
                 title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
         </td>
         <td>
@@ -97,7 +97,7 @@
       <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">家族歴セクションから参照されるエントリー</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Encounter-eCS.html"
                 title="StructureDefinition/JP_FamilyMemberHistory_eCS">JP_FamilyMemberHistory_eCS</a>
         </td>
         <td>
@@ -117,9 +117,9 @@
     <tr>
         <td  border="1" style="border-collapse: collapse;  column-width:30%">入院時身体所見セクション、社会歴・生活習慣セクション、退院時の身体所見セクション、入院中検査結果セクションから参照されるエントリー</td>
         <td style="column-width:30%">
-           <p> <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html"
+           <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html"
+           <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP_Observation_Common">JP_Observation_Common</a></p>
         </td>
         <td>
@@ -130,7 +130,7 @@
     <tr>
         <td  border="1" style="border-collapse: collapse;  column-width:30%">退院時投薬指示セクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html"
+            <a href="StructureDefinition-JP-MedicationRequest-eCS.html"
                 title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
         </td>
         <td>
@@ -160,7 +160,7 @@
     <tr>
         <td style="column-width:30%">退院時方針指示セクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP_CarePlan_eCS.html"
+            <a href="StructureDefinition-JP_CarePlan_eCS.html"
                 title="StructureDefinition/JP_CarePlan_eCS">JP_CarePlan_eCS</a>
         </td>
         <td>
@@ -177,16 +177,7 @@
             <p>DocumentReferenceリソース（添付文書情報・PDF情報参照情報）</p>
         </td>
     </tr>
-    <tr>
-        <td style="column-width:30%">退院時サマリーの添付</td>
-        <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
-                title="StructureDefinition/JP-Bundle-eDischargeSummary">JP-Bundle-eDischargeSummary</a>
-        </td>
-        <td>
-            <p>Bundleリソース（退院時サマリードキュメント）</p>
-        </td>
-    </tr>
+
 </table>
 
 <br>

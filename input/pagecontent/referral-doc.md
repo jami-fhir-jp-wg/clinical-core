@@ -44,7 +44,7 @@
     <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">患者情報エントリ</td>
         <td border="1" style="border-collapse: collapse;  column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html"
+            <a href="StructureDefinition-JP-Patient-eCS.html"
                 title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
         </td>
         <td border="1" style="border-collapse: collapse;  column-width:30%">
@@ -54,7 +54,7 @@
     <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">文書作成責任者、紹介元医師、紹介先医師を記述するエントリー</td>
         <td border="1" style="border-collapse: collapse;  column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html"
+            <a href="StructureDefinition-JP-Practitioner-eCS.html"
                 title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
         </td>
         <td>
@@ -76,7 +76,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">傷病名・主訴セクションから参照されるエントリー
             （別紙様式１１の「傷病名」の欄に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html"
+            <a href="StructureDefinition-JP-Condition-eCS.html"
                 title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
         </td>
         <td>
@@ -87,7 +87,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">紹介目的セクションから参照されるエントリー
             （別紙様式１１の「紹介目的」の欄に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Encounter-eCS.html"
                 title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
         </td>
         <td>
@@ -98,7 +98,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">既往歴セクションから参照されるエントリー
             （別紙様式１１の「既往歴及び家族歴」の既往歴に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Encounter-eCS.html"
                 title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
         </td>
         <td>
@@ -109,7 +109,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">家族歴セクションから参照されるエントリー
             （別紙様式１１の「既往歴及び家族歴」の家族歴に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Encounter-eCS.html"
                 title="StructureDefinition/JP_FamilyMemberHistory_eCS">JP_FamilyMemberHistory_eCS</a>
         </td>
         <td>
@@ -120,7 +120,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%" >現病歴セクションから参照されるエントリー
             （別紙様式１１の「症状経過及び検査結果」の症状経過に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Encounter-eCS.html"
                 title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
         </td>
         <td>
@@ -141,9 +141,9 @@
     <tr>
         <td style="column-width:30%">身体所見、社会歴・生活習慣、検査結果を記述するエントリー（別紙様式１１の「症状経過及び検査結果」の検査結果に一部対応）</td>
         <td style="column-width:30%">
-           <p> <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html"
+           <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html"
+           <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP_Observation_Common">JP_Observation_Common</a></p>
         </td>
         <td>
@@ -154,7 +154,7 @@
     <tr>
         <td style="column-width:30%">投薬指示セクションから参照されるエントリ（別紙様式１１の「現在の処方」に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html"
+            <a href="StructureDefinition-JP-MedicationRequest-eCS.html"
                 title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
         </td>
         <td>
@@ -184,7 +184,7 @@
     <tr>
         <td style="column-width:30%">退院時サマリーの添付</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+            <a href="StructureDefinition-JP-Bundle-eDischargeSummary.html"
                 title="StructureDefinition/JP-Bundle-eDischargeSummary">JP-Bundle-eDischargeSummary</a>
         </td>
         <td>
