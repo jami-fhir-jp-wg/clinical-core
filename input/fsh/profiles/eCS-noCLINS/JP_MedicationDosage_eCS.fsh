@@ -69,9 +69,9 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.repeat.boundsDuration ^short = "投薬期間（投与開始日から投与終了日まで）の全日数。"
 * timing.repeat.boundsDuration ^definition = "投薬期間（投与開始日から投与終了日まで）の全日数。実投与（投与）日数ではないことに注意する。すなわち、実際に投与しない日も１日と数える。詳細は処方情報HL７FHIR記述仕様も参照。なお、この実投与（投与）日数を別に記述したい場合には、実投与日数を明示したい場合に使用する拡張を使用して記述すること。"
 
-* timing.code 0.. MS
+* timing.code 1.. MS
 * timing.code ^short = "用法"
-* timing.code ^definition = "用法。厚生労働省電子処方箋用法コード、またはJAMI標準用法コードによりコード化する。施設固有のコード化による記述も可能であるが、できるかぎり、上記標準コードと併用することが望ましいが、用法をいずれのコード体系でもコード化できない場合には、ダミーコードとして16桁の文字'9'（数字9）からなるコードを使用する。なお、コード化の有無にかかわらず、用法の完全な文字列をtext子要素に設定する。"
+* timing.code ^definition = "用法。厚生労働省電子処方箋用法コード、またはJAMI標準用法コードによりコード化する。施設固有のコード化による記述も可能であるが、できるかぎり、上記標準コードと併用することが望ましいが、用法をいずれのコード体系でもコード化できない場合には、ダミーコードとして16桁の'0X0XXXXXXXXX0000'を使用する。なお、いずれの場合にも、用法の完全な文字列をtext子要素に設定する。"
 * timing.code.coding 1..* MS
 * timing.code.coding ^definition = "厚生労働省電子処方箋用法コード、またはJAMI標準用法コード、またはダミーコードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コード、またはダミーコードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
@@ -90,7 +90,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code.coding ^slicing.rules = #open
 * timing.code.coding contains
     jami_yoho 0..1 MS
-and mhw_prescription_yoho 1..1 MS 
+and mhw_prescription_yoho 0..1 MS 
 and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS）
 
 * timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20" 
@@ -101,11 +101,11 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 // VSの実態が展開できない状況で上記があるとpublisherエラーになる。
 
 * timing.code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS" (exactly) 
-* timing.code.coding[unCoded].code = #9999999999999999
+* timing.code.coding[unCoded].code = #0X0XXXXXXXXX0000
 
 * timing.code.text 1..1 MS
-* timing.code.text ^short = "用法のコード化の有無にかかわらず、用法の完全な文字列を設定する。"
-* timing.code.text ^definition = "用法のコード化の有無にかかわらず、用法の完全な文字列を設定する。"
+* timing.code.text ^short = "用法のコード化の方法にかかわらず、用法の完全な文字列を設定する。"
+* timing.code.text ^definition = "用法のコード化の方法にかかわらず、用法の完全な文字列を設定する。"
 
 * asNeededBoolean MS
 * site MS

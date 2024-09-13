@@ -49,7 +49,7 @@
       - DosageInstruction[].timing.code.coding.system 厚生労働省電子処方箋用法コードのシステムURLの仮設定値を変更：　"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription"
       - DosageInstruction.timing.code.coding.version  の説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。多重度を1..1から0..1に変更。
       - DosageInstruction[].timing.code.coding.text : 多重度を0..1から1..1に変更。
-      - DosageInstruction[].timing.code : 用法をコード化できない場合にはダミーコード(16桁の9)を使用することを追記。あわせて、ダミーコードのシステムURLをhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CSとして設定することを記載。
+      - DosageInstruction[].timing.code : 用法をコード化できない場合にはダミーコード(16桁の'0X0XXXXXXXXX0000')を使用することを追記。あわせて、ダミーコードのシステムURLをhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CSとして設定することを記載。
       - DosageInstruction[].method.coding の説明：2桁コードで出せる場合には2桁コードとすることを追記。
       - DosageInstruction[].method.text の説明：コード化が1桁の場合には、詳細投与方法を含めた文字列を記載することを追記。
   - terminologyパッケージの対応バージョンを1.2.1にアップデート
