@@ -81,6 +81,7 @@
 [JP_CLINS_BundleResourceType_CS]: CodeSystem-jp-clins-bundleresourcetype-cs.html
 [JP_CLINS_CodeSystem_CoreLabo_CS]: CodeSystem-jp-clins-codesystem-corelabo-cs.html
 [JP_CLINS_CodeSystem_InfectionLabo_CS]: CodeSystem-jp-clins-codesystem-infectionlabo-cs.html
+[JP_CLINS_MedicationUsage_Uncoded_CS]: CodeSystem-jp-clins-medicationusage-uncoded-cs.html
 [JP_CLINS_ObsLabResult_LocalUncoded_CS]: CodeSystem-jp-clins-obslabresult-localuncoded-cs.html
 [JP_CLINS_ObsLabResult_Uncoded_CS]: CodeSystem-jp-clins-obslabresult-uncoded-cs.html
 [JP_codeSystem_CLINS_document_section]: CodeSystem-jp-codeSystem-clins-document-section.html
@@ -343,5 +344,3 @@
 [Example-Contained-JP-Specimen-Urine]: Specimen-Example-Contained-JP-Specimen-Urine.html
 
 <!-- Invariant -->
-
-<!-- Artifacts -->

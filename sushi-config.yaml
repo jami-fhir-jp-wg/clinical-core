@@ -169,6 +169,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS
+    - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_ObservationLabResultLocalUncoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/document-section
@@ -183,7 +184,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
-    - http://terminology.hl7.org/CodeSystem/v3-ActCode
     - http://medis.or.jp/ValueSet/master-disease-keyNumber
     - http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
     - http://jpfhir.jp/fhir/CarePlan/ValueSet/category
