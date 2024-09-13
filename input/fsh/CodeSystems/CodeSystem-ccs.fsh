@@ -60,7 +60,7 @@ Description: "医薬品コードで標準コードが割り当てられない場
 * #NOCODED  "標準コードなし"
 
 CodeSystem: JP_CLINS_MedicationUsage_Uncoded_CS
-Id: jp-clins-medicationusage_uncoded_cs
+Id: jp-clins-medicationusage-uncoded-cs
 Title: "処方用法で標準コードが割り当てられない場合に使用するダミーコード"
 Description: "処方用法で標準コードが割り当てられない場合に使用するダミーコード"
 * ^url = $JP_CLINS_MedicationUsage_Uncoded_CS

@@ -101,7 +101,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 // VSの実態が展開できない状況で上記があるとpublisherエラーになる。
 
 * timing.code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS" (exactly) 
-* timing.code.coding[unCoded].code = "9999999999999999"
+* timing.code.coding[unCoded].code = #9999999999999999
 
 * timing.code.text 1..1 MS
 * timing.code.text ^short = "用法のコード化の有無にかかわらず、用法の完全な文字列を設定する。"
