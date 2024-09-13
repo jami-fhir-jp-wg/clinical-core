@@ -70,7 +70,7 @@ Description: "処方用法で標準コードが割り当てられない場合に
 * ^experimental = false
 * ^content = #complete
 * ^caseSensitive = false
-* #0X0XXXXXXXXX0000
+* #0X0XXXXXXXXX0000 "ダミー用法コード"
 
 /*
 CodeSystem: JP_CLINS_ObsLabResult_LocalCode_CS
