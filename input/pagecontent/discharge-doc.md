@@ -168,7 +168,7 @@
         </td>
     </tr>
     <tr>
-        <td style="column-width:30%">添付情報セクション、PDFセクションから参照されるエントリ/td>
+        <td style="column-width:30%">添付情報セクション、PDFセクションから参照されるエントリ</td>
         <td style="column-width:30%">
             <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
                 title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
