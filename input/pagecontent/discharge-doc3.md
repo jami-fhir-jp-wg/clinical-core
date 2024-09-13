@@ -127,7 +127,36 @@
             <p>Observationリソース（身体所見、社会歴・生活習慣など）</p>
         </td>
     </tr>
-
+    <tr>
+        <td  border="1" style="border-collapse: collapse;  column-width:30%">退院時投薬指示セクションから参照されるエントリ</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html"
+                title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
+        </td>
+        <td>
+            <p>MedicationRequestリソース（処方オーダの１処方薬情報）</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="column-width:30%">入院中経過セクションから参照されるエントリ</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+                title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
+        </td>
+        <td>
+            <p>DocumentReferenceリソース（入院中経過ドキュメント参照情報）</p>
+        </td>
+    </tr>
+    <tr>
+        <td style="column-width:30%">入院中治療セクションから参照されるエントリ</td>
+        <td style="column-width:30%">
+            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Procedure.html"
+                title="StructureDefinition/JP-Procedure">JP-Procedure</a>
+        </td>
+        <td>
+            <p>Procedureリソース（入院中治療情報）</p>
+        </td>
+    </tr>
 </table>
 
 <br>
