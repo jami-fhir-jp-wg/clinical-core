@@ -63,19 +63,21 @@ Expression: "(category.where($this='medication').exists() and criticality='high'
 Invariant: valid-allergy-code
 Description: "R2013:薬剤アレルギー等でないアレルギーの場合にはJFAGYコードを使用すること。"
 Severity: #error
-Expression: "(category.where($this='medication').count()=1 and criticality='high') or ((category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1 ))"
+Expression: "(category.where($this='medication').count()=1 and criticality='high') or ((category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1))"
 
 // 
 Invariant: validUsage-MedicationUsage-codesystem
 Description: "R5020:厚労省用法コード（電子処方箋）かまたはダミー用法コードのどちらか一方だけが必ず使われている。"
 Severity: #error
-Expression: "timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' xor timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists() "
+Expression: "timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' xor timing.code.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()"
 
 Invariant: invalidUsage-MedicationUsage-codesystem
 Description: "R5021:厚労省用法コード（電子処方箋）とダミー用法コードの両方が同時に使用されていることはない。"
 Severity: #error
 Expression: "(timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' and timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
 
+
+(timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' and timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()
 
 // 医療機関番号１０桁：[0-4][0-9][1-3][0-9]{7}
 // 保険者番号８桁：[0-9]{8}
@@ -136,8 +138,6 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 
 
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
-Invariant: needs-anyOfStandardCode-medication
-Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、YJコード末尾ZZZ、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 /*
 Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
 Alias: $JP_MedicationCodeHOT7_CS = urn:oid:1.2.392.200119.4.403.2
@@ -146,8 +146,10 @@ Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
 Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
 派生コード（YJの末尾3桁をZZZで潰すコード）http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ
 */
+Invariant: needs-anyOfStandardCode-medication
+Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、YJコード末尾ZZZ、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 Severity: #error
-Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ').count()=1"
+Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ').count()=1)"
 
 // R3011 医薬品コードの妥当性チェックYJか一般のみ（標準コードなしはX）
 Invariant: needs-anyOfYJorGeneral-medication
