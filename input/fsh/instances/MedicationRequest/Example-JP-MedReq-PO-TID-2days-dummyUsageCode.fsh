@@ -65,7 +65,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
 
-* dosageInstruction.timing.code.coding[unCoded] =  $JP_CLINS_MedicationUsage_Uncoded_CS#0X0XXXXXXXXX0000
+* dosageInstruction.timing.code[unCoded] =  $JP_CLINS_MedicationUsage_Uncoded_CS#0X0XXXXXXXXX0000
 * dosageInstruction.timing.code.text = "1日3回 毎食後"
 
 * dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
