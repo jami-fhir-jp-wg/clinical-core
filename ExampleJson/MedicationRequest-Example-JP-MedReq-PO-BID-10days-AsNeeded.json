@@ -46,33 +46,6 @@
           }
         }
       ],
-      "timing": {
-        "code": {
-          "coding": [
-            {
-              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
-              "code": "1012010100000000",
-              "display": "１日２回朝夕食前　服用"
-            }
-          ],
-          "text": "1日2回 朝夕食後"
-        },
-        "event": [
-          "2021-07-12T00:00:00+09:00"
-        ],
-        "repeat": {
-          "boundsDuration": {
-            "value": 10,
-            "code": "d",
-            "system": "http://unitsofmeasure.org",
-            "unit": "日"
-          },
-          "count": 20,
-          "frequency": 2,
-          "period": 1,
-          "periodUnit": "d"
-        }
-      },
       "doseAndRate": [
         {
           "rateRatio": {
@@ -106,7 +79,34 @@
           }
         }
       ],
-      "text": "1日2回 朝夕食後 １回 15ｍＬ  (１日  30ｍＬ) 10　日分,指示あればお飲みください"
+      "text": "1日2回 朝夕食後 １回 15ｍＬ  (１日  30ｍＬ) 10　日分,指示あればお飲みください",
+      "timing": {
+        "event": [
+          "2021-07-12T00:00:00+09:00"
+        ],
+        "repeat": {
+          "boundsDuration": {
+            "value": 10,
+            "code": "d",
+            "system": "http://unitsofmeasure.org",
+            "unit": "日"
+          },
+          "count": 20,
+          "frequency": 2,
+          "period": 1,
+          "periodUnit": "d"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
+              "code": "1012010100000000",
+              "display": "１日２回朝夕食前　服用"
+            }
+          ],
+          "text": "1日2回 朝夕食後"
+        }
+      }
     }
   ],
   "note": [

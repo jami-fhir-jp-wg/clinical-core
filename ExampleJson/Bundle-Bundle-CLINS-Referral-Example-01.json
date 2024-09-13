@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1"
     ]
   },
   "type": "document",
@@ -1195,7 +1195,7 @@
         ],
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CLINS必須要素のみ+長期保存フラグ データ作成例</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>アレルギー: さば</p></div>"
         },
         "clinicalStatus": {
           "coding": [
@@ -1256,7 +1256,7 @@
         ],
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CLINS必須要素と推奨要素とプラスアルファ 長期保存 を記述した データ作成例</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>アレルギー:キーウイ</p>発症:2020-04-10 情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
         },
         "clinicalStatus": {
           "coding": [
@@ -1346,7 +1346,7 @@
         ],
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CLINS必須要素で記述した薬剤アレルギー等情報　長期保存の データ作成例</p></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>ポビドンヨード含嗽後に嘔吐と全身に発疹</p></div>"
         },
         "clinicalStatus": {
           "coding": [

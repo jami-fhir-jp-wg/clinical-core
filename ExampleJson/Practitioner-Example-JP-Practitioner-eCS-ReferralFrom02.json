@@ -1,0 +1,23 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Example-JP-Practitioner-eCS-ReferralFrom02",
+  "meta": {
+    "lastUpdated": "2021-11-26T10:00:00+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+    ]
+  },
+  "language": "ja",
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+          "valueCode": "IDE"
+        }
+      ],
+      "use": "official",
+      "text": "大河内 勘三郎"
+    }
+  ]
+}

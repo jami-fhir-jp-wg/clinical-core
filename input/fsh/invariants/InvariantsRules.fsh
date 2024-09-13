@@ -69,16 +69,12 @@ Expression: "(category.where($this='medication').count()=1 and criticality='high
 Invariant: validUsage-MedicationUsage-codesystem
 Description: "R5020:厚労省用法コード（電子処方箋）かまたはダミー用法コードのどちらか一方だけが必ず使われている。"
 Severity: #error
-Expression: "timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' \
-xor \
-timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists() "
+Expression: "timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' xor timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists() "
 
 Invariant: invalidUsage-MedicationUsage-codesystem
 Description: "R5021:厚労省用法コード（電子処方箋）とダミー用法コードの両方が同時に使用されていることはない。"
 Severity: #error
-Expression: "(timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' \
-and \
-timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
+Expression: "(timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' and timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
 
 
 // 医療機関番号１０桁：[0-4][0-9][1-3][0-9]{7}

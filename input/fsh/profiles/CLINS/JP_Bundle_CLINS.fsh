@@ -19,7 +19,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * . ^short = "電子カルテ情報共有サービスへの5情報送信用 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスへの5情報送信用 Bundleリソース"
 
-* s bundle-profile-is-JP-Bundle-CLINS
+* obeys bundle-profile-is-JP-Bundle-CLINS
 * obeys bundle-meta-tag-resourceType-exists //"R02141:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
 * obeys bundle-meta-tag-resourceType-valid // "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
 * obeys valid-system-bundleIdenfifier

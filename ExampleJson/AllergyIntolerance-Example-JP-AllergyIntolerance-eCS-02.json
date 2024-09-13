@@ -31,7 +31,7 @@
   ],
   "text": {
     "status": "additional",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>CLINS必須要素と推奨要素とプラスアルファ 長期保存 を記述した データ作成例</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>アレルギー:キーウイ</p>発症:2020-04-10 情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
   },
   "clinicalStatus": {
     "coding": [

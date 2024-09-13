@@ -1,0 +1,641 @@
+{
+  "resourceType": "Bundle",
+  "id": "Bundle-CLINS-Referral-NoEntry-Example-01",
+  "meta": {
+    "lastUpdated": "2021-11-26T10:00:00+09:00",
+    "profile": [
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1"
+    ]
+  },
+  "type": "document",
+  "identifier": {
+    "system": "http://jpfhir.jp/fhir/clins/bundle-identifier",
+    "value": "1318814790^2024^0123-Referral-203949583949"
+  },
+  "language": "ja",
+  "timestamp": "2021-11-26T10:00:00+09:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "compositionReferralExample01InlineNoEntry",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
+          ]
+        },
+        "status": "final",
+        "title": "診療情報提供書",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber",
+            "valueString": "1.0"
+          }
+        ],
+        "identifier": {
+          "system": "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier",
+          "value": "1311234567-2021-12345678"
+        },
+        "section": [
+          {
+            "title": "紹介元情報",
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">東京都港区新橋１−２−３<br/>電話:03-9876-5432><br/>港診療所<br/>眼科<br/>大河内 勘三郎</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                  "code": "920",
+                  "display": "紹介元情報セクション"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638",
+                "type": "Organization",
+                "display": "紹介元医療機関"
+              },
+              {
+                "reference": "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed",
+                "type": "Practitioner",
+                "display": "紹介元医師"
+              }
+            ]
+          },
+          {
+            "title": "紹介先情報",
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">紹介先医療機関名：東京第一テスト病院<br/>内科<br/>紹介先医師：野口 英世丸先生</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                  "code": "910",
+                  "display": "紹介先情報セクション"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441",
+                "type": "Organization",
+                "display": "紹介先医療機関"
+              },
+              {
+                "reference": "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946",
+                "type": "Practitioner",
+                "display": "紹介先医師"
+              }
+            ]
+          },
+          {
+            "title": "構造情報",
+            "section": [
+              {
+                "title": "紹介目的",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">腹痛精査お願いします。</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "950",
+                      "display": "紹介目的セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "傷病名・主訴",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2022-06-09 上腹部痛、2022-05 腰痛</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "340",
+                      "display": "傷病名・主訴セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "現病歴",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">２０２２年６月上旬から夜食後に時々上腹部痛があり、だんだんひどくなっている。他に目立った症状なし。</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "360",
+                      "display": "現病歴セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "既往歴",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">2018年　狭心症　２ヶ月治療で軽快。2019年　交通事故で左前腕骨折　３ヶ月ギプス固定。</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "370",
+                      "display": "既往歴セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "アレルギー・不耐性反応",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">サバ、キーウイ（発症:2020-04-10 情報源：本人　記録：2024-07-10　記録者：看護師A）、ヨード禁（ポビドンヨード含嗽後に嘔吐と全身に発疹）</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "510",
+                      "display": "アレルギー・不耐性反応セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "家族歴",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">母　胃がん</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "550",
+                      "display": "家族歴セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "身体所見",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">腹部所見：上腹部圧痛あり、その他特に所見なし。</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "610",
+                      "display": "身体所見セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "感染症情報",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">特になし</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "520",
+                      "display": "感染症情報セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "臨床経過",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">⾷欲不振と⼼窩部痛を認めた．悪⼼嘔吐がみられ，吐物に新鮮⾎が混⼊していたため救急外来を受診し，緊急⼊院となった．<br/>⼊院時現症:⾝⻑162.5cm，体重45.2kg，⾎圧80/60mmHg，脈拍80/分，整，体温36.4．眼瞼結膜に貧⾎を認めた．<br/>腹部は平坦，軟で腫瘤や圧痛なし．腸蠕動⾳正常．<br/>⼊院時検査成績(Table1):末梢⾎液検査で，Hb5.0g/dl，Ht15.5%と著明な貧⾎を認めた．<br/>上部消化管内視鏡検査:⼊院翌⽇の検査では，残胃吻合部後壁に約2.5cmの潰瘍形成を認め，潰瘍底に凝⾎塊の付着した露出⾎管と思われる隆起がみられたが，新鮮出⾎はなく，抗潰瘍薬投与による経過観察となった．<br/></div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "330",
+                      "display": "臨床経過セクション"
+                    }
+                  ]
+                }
+              },
+              {
+                "title": "投薬指示",
+                "text": {
+                  "status": "additional",
+                  "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">タケキャブ錠10mg1錠　１日2回　朝食後、就寝時<br/>レバミピド錠100mg1錠　　１日3回毎食後</div>"
+                },
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                      "code": "430",
+                      "display": "投薬指示セクション"
+                    }
+                  ]
+                }
+              }
+            ],
+            "code": {
+              "coding": [
+                {
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                  "code": "300",
+                  "display": "構造情報セクション"
+                }
+              ]
+            }
+          },
+          {
+            "title": "備考・連絡情報",
+            "text": {
+              "status": "additional",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">よろしくお願いします。</div>"
+            },
+            "code": {
+              "coding": [
+                {
+                  "system": "http://jpfhir.jp/fhir/clins/CodeSystem/document-section",
+                  "code": "220",
+                  "display": "備考・連絡情報セクション"
+                }
+              ]
+            }
+          }
+        ],
+        "type": {
+          "coding": [
+            {
+              "code": "57133-1",
+              "system": "http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes",
+              "display": "診療情報提供書"
+            }
+          ]
+        },
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes",
+                "code": "OUTPATIENT",
+                "display": "外来文書"
+              }
+            ]
+          }
+        ],
+        "event": [
+          {
+            "code": [
+              {
+                "text": "診療情報提供書発行"
+              }
+            ],
+            "period": {
+              "start": "2020-08-21"
+            }
+          }
+        ],
+        "language": "ja",
+        "subject": {
+          "reference": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd",
+          "type": "Patient",
+          "display": "患者リソースPatient"
+        },
+        "date": "2020-08-21T12:12:20+09:00",
+        "author": [
+          {
+            "reference": "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed",
+            "type": "Practitioner",
+            "display": "診療情報提供書作成者Practitionerリソース"
+          },
+          {
+            "reference": "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638",
+            "type": "Organization",
+            "display": "診療情報提供書作成機関Organizationリソース"
+          }
+        ],
+        "custodian": {
+          "reference": "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638",
+          "type": "Organization",
+          "display": "診療情報提供書交付責任機関Organizationリソース"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "Example-JP-Patient-eCS-MAKINOInline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
+          ]
+        },
+        "language": "ja",
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.392.100495.20.3.51.11318814790",
+            "value": "000999739"
+          },
+          {
+            "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
+            "value": "00012345:あいう:１８７:05"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+                "valueCode": "IDE"
+              }
+            ],
+            "text": "牧野 爛漫",
+            "family": "牧野",
+            "given": [
+              "爛漫"
+            ]
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+                "valueCode": "SYL"
+              }
+            ],
+            "text": "マキノ ランマン",
+            "family": "マキノ",
+            "given": [
+              "ランマン"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "03-123-1234",
+            "use": "home",
+            "rank": 1
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1930-06-28",
+        "address": [
+          {
+            "text": "高知県高知市五台山4200-6",
+            "postalCode": "781-8125",
+            "city": "高知市",
+            "state": "高知県"
+          }
+        ],
+        "contact": [
+          {
+            "telecom": [
+              {
+                "system": "phone",
+                "value": "03-0123-4545   99991",
+                "use": "work",
+                "rank": 2
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "Example-JP-Practitioner-eCS-ReferralFrom02Inline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+          ]
+        },
+        "language": "ja",
+        "name": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+                "valueCode": "IDE"
+              }
+            ],
+            "use": "official",
+            "text": "大河内 勘三郎"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "Example-JP-Practitioner-eCS-ReferralTo02Inline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+          ]
+        },
+        "language": "ja",
+        "name": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation",
+                "valueCode": "IDE"
+              }
+            ],
+            "use": "official",
+            "text": "野口 英世丸"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "Example-JP-Org-eCS-Inst-Referral01Inline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+            "value": "1319876543"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov"
+              }
+            ]
+          }
+        ],
+        "language": "ja",
+        "extension": [
+          {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
+            "valueCoding": {
+              "system": "urn:oid:1.2.392.100495.20.3.21",
+              "code": "13"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
+            "valueCoding": {
+              "system": "urn:oid:1.2.392.100495.20.3.22",
+              "code": "1"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
+            "valueIdentifier": {
+              "system": "urn:oid:1.2.392.100495.20.3.23",
+              "value": "9876543"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "26",
+                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "display": "眼科"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "港診療所",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "03-9876-5432"
+          }
+        ],
+        "address": [
+          {
+            "text": "東京都港区新橋１−２−３",
+            "postalCode": "106-9900",
+            "country": "JP"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "Example-JP-Org-eCS-ReferralTo01Inline",
+        "meta": {
+          "lastUpdated": "2021-11-26T10:00:00+09:00",
+          "profile": [
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+          ]
+        },
+        "identifier": [
+          {
+            "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+            "value": "1311234567"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/organization-type",
+                "code": "prov"
+              }
+            ]
+          }
+        ],
+        "language": "ja",
+        "extension": [
+          {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
+            "valueCoding": {
+              "system": "urn:oid:1.2.392.100495.20.3.21",
+              "code": "13"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
+            "valueCoding": {
+              "system": "urn:oid:1.2.392.100495.20.3.22",
+              "code": "1"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
+            "valueIdentifier": {
+              "system": "urn:oid:1.2.392.100495.20.3.23",
+              "value": "1234567"
+            }
+          },
+          {
+            "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "081",
+                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "display": "循環器内科"
+                }
+              ]
+            }
+          }
+        ],
+        "name": "東京第一テスト病院",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "03-1234-5678"
+          }
+        ],
+        "address": [
+          {
+            "text": "東京都文京区文京町１−２−３",
+            "postalCode": "113-0001",
+            "country": "JP"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 Instance: Example-JP-MedReq-PO-TID-2days-dummyUsageCode
-InstanceOf: JP_MedicationRequest_eCS_dummyUsageCode
+InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
 Description: "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり） 用法をダミーコード"
 * note.text = "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）用法をダミーコード"
@@ -14,7 +14,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 
-* id = "Example-JP-MedReq-PO-TID-2days"
+* id = "Example-JP-MedReq-PO-TID-2days-dummyUsageCode"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS

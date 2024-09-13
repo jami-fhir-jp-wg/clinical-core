@@ -10,7 +10,7 @@
     ],
     "lastUpdated": "2023-11-12T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
+      "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|1"
     ]
   },
   "type": "collection",

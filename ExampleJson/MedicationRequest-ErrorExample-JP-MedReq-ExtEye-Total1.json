@@ -46,22 +46,22 @@
           }
         }
       ],
+      "text": "両眼点眼 1日1回",
       "timing": {
+        "event": [
+          "2021-07-05T12:00:00+09:00"
+        ],
         "code": {
           "coding": [
             {
-              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
               "code": "2H71000000000000",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
               "display": "１日１回　点眼"
             }
           ],
           "text": "両眼点眼 1日1回"
-        },
-        "event": [
-          "2021-07-05T12:00:00+09:00"
-        ]
+        }
       },
-      "text": "両眼点眼 1日1回",
       "doseAndRate": [
         {
           "type": {
