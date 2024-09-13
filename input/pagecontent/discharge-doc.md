@@ -150,7 +150,7 @@
     <tr>
         <td style="column-width:30%">入院中治療セクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Procedure.html"
+            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-jp-procedure.html"
                 title="StructureDefinition/JP-Procedure">JP-Procedure</a>
         </td>
         <td>
@@ -160,7 +160,7 @@
     <tr>
         <td style="column-width:30%">退院時方針指示セクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="StructureDefinition-JP_CarePlan_eCS.html"
+            <a href="StructureDefinition-JP-CarePlan-eCS.html"
                 title="StructureDefinition/JP_CarePlan_eCS">JP_CarePlan_eCS</a>
         </td>
         <td>
