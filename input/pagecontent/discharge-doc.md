@@ -24,7 +24,7 @@
          </tr>
          <tr>
             <td border="1"  style="border-collapse: collapse; column-width:30%">
-               <a href="StructureDefinition-JP-Composition-eDischargeSummary.html" title="StructureDefinition/JP-Composition-eDischargeSummary">JP_Composition_eReferral</a>
+               <a href="StructureDefinition-JP-Composition-eDischargeSummary.html" title="StructureDefinition/JP-Composition-eDischargeSummary">JP_Composition_eDischargeSummary</a>
             </td>
             <td>
 <p>退院時サマリー　Composition</p>

@@ -13,6 +13,8 @@ Alias: $JP_CLINS_BundleResourceType_VS = http://jpfhir.jp/fhir/clins/ValueSet/Bu
 Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
 Alias: $JP_eCS_MedicationCodeNocoded_VS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
 
+Alias: $JP_CLINS_MedicationUsage_Uncoded_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS
+
 //
 Alias: $JP_CLINS_CodeSystem_CoreLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS
 Alias: $JP_CLINS_CodeSystem_InfectionLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_InfectionLabo_CS

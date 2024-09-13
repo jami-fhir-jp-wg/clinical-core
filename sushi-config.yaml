@@ -46,10 +46,6 @@ pages:
     title: 診療情報提供書
   discharge-doc.md:
     title: 退院時サマリー
-  discharge-doc2.md:
-    title: 退院時サマリー2
-  discharge-doc3.md:
-    title: 退院時サマリー3
   ptsummary-doc.md:
     title: 患者サマリー(療養計画書)
   glossary.md:
@@ -68,8 +64,6 @@ menu:
     ５情報と関連プロファイル: resourceProfiles.html
     診療情報提供書: referral-doc.html
     退院時サマリー: discharge-doc.html
-    退院時サマリー2: discharge-doc2.html
-    退院時サマリー3: discharge-doc3.html
     患者サマリー（療養計画書）: ptsummary-doc.html
     生成されたプロファイル集: artifacts.html
     FHIRデータ作例集: artifacts.html#example-example-instances

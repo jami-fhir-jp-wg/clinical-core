@@ -59,6 +59,19 @@ Description: "医薬品コードで標準コードが割り当てられない場
 * ^caseSensitive = false
 * #NOCODED  "標準コードなし"
 
+CodeSystem: JP_CLINS_MedicationUsage_Uncoded_CS
+Id: jp-clins-medicationusage_uncoded_cs
+Title: "処方用法で標準コードが割り当てられない場合に使用するダミーコード"
+Description: "処方用法で標準コードが割り当てられない場合に使用するダミーコード"
+* ^url = $JP_CLINS_MedicationUsage_Uncoded_CS
+* ^title = "処方用法ダミーコード用法"
+* ^version = "1.4.0"
+* ^status = #active
+* ^experimental = false
+* ^content = #complete
+* ^caseSensitive = false
+* #9999999999999999  "ダミー用法コード"
+
 /*
 CodeSystem: JP_CLINS_ObsLabResult_LocalCode_CS
 Id: jp-clins-obslabresult-localcode-cs
