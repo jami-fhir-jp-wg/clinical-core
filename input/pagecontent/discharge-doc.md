@@ -161,7 +161,7 @@
         <td style="column-width:30%">退院時方針指示セクションから参照されるエントリ</td>
         <td style="column-width:30%">
             <a href="StructureDefinition-JP-CarePlan-eCS.html"
-                title="StructureDefinition/JP_CarePlan_eCS">JP_CarePlan_eCS</a>
+                title="StructureDefinition/JP-CarePlan-eCS">JP_CarePlan_eCS</a>
         </td>
         <td>
             <p>CarePlanリソース（ケア計画情報）</p>
