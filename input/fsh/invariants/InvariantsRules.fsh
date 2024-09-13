@@ -77,8 +77,6 @@ Severity: #error
 Expression: "(timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' and timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
 
 
-(timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' and timing.code.where(system=' http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()
-
 // 医療機関番号１０桁：[0-4][0-9][1-3][0-9]{7}
 // 保険者番号８桁：[0-9]{8}
 // 被保険者記号：[^:^\\\\s^　]* 
