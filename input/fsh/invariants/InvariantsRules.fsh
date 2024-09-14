@@ -69,12 +69,13 @@ Expression: "(category.where($this='medication').count()=1 and criticality='high
 Invariant: validUsage-MedicationUsage-codesystem
 Description: "R5020:厚労省用法コード（電子処方箋）かまたはダミー用法コードのどちらか一方だけが必ず使われている。"
 Severity: #error
-Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' xor timing.code.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()"
+Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists() xor timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()"
 
 Invariant: invalidUsage-MedicationUsage-codesystem
 Description: "R5021:厚労省用法コード（電子処方箋）とダミー用法コードの両方が同時に使用されていることはない。"
 Severity: #error
-Expression: "(timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000' and timing.code.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
+Expression: "(timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists() and timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
+
 
 Invariant: mhlw-check
 Description: "厚労省用法コード（電子処方箋）がつかわれている"
@@ -89,12 +90,12 @@ Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/Co
 Invariant: dummy-check
 Description: "ダミー用用コードがつかわれている"
 Severity: #error
-Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000'"
+Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists()"
 
 Invariant: dummy-not-check
 Description: "ダミー用用コードがつかわれていない"
 Severity: #error
-Expression: "(timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000').not()"
+Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists().not()"
 
 
 
