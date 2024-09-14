@@ -15,7 +15,6 @@
 
 ### 必須要素
   - resourceType : リソースタイプ "Encounter"
-  - meta.profile : プロファイルURL
   - status : この情報のステータス("finished")
   - class : 入院、外来の区分情報
 

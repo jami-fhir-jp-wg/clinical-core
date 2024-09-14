@@ -16,7 +16,8 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
-* meta.profile = $JP_MedicationRequest_eCS
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
 * language = #ja
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 

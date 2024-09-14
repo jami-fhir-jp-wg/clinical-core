@@ -11,7 +11,8 @@ Description: "Conditionリソース 必須要素だけの データ作成例"
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|1"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|1"
 * language = #ja
 
 

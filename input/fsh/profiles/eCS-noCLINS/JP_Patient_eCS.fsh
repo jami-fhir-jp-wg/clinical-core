@@ -24,7 +24,7 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
 * ^url = $JP_Patient_eCS
 
-* ^version = "1.4.0"
+* ^version = "1"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
@@ -39,11 +39,11 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
 * meta.versionId ^short = "バージョン固有の識別子"
 * meta.versionId ^definition = "バージョン固有の識別子"
-* meta.lastUpdated 0.. MS
+* meta.lastUpdated 1.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
 * meta.profile 1..1 MS
-  * insert relative_short_definition("準拠しているプロファイルとして次のURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS")
+  * insert relative_short_definition("本プロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS")
 //* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
 
 

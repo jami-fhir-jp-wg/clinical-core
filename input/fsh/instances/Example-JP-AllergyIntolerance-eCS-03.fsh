@@ -9,7 +9,8 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_AllergyIntolerance_eCS
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1"
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

@@ -8,7 +8,7 @@ Description: "AllergyIntoleranceリソース CLINS必須要素のみ 長期保�
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー: さば</p> </div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
-* meta.profile[+] = $JP_AllergyIntolerance_eCS    //必須
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1"
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意
 

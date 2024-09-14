@@ -18,7 +18,7 @@
 ### 必須要素
   - resourceType : リソースタイプ "Bundle"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : 準拠プロファイル　"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS"
+  - meta.profile : 準拠プロファイル　"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS"、バージョン併記必須。
   - identifier : インスタンス識別子
   - type : Bundleリソースのタイプ "document"
   - timestamp : このリソースを生成した日時

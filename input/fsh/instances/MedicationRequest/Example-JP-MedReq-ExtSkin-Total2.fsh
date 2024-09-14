@@ -17,7 +17,8 @@ Description: "【意図的エラー例】：入院処方　外用（塗布）全
 * contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-05T19:07:58.000+09:00"
-* meta.profile = $JP_MedicationRequest_eCS
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
 * language = #ja
 
 

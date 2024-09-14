@@ -26,7 +26,7 @@
 ### 必須要素
   - resourceType : リソースタイプ "Observation"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : プロファイルURL
+  - meta.profile : プロファイルURL、バージョン併記必須。
   - identifier : インスタンス識別ID
   - status : 検査・観察のステータス
   - category : 検査結果カテゴリー。コード"laboratory"を設定する。

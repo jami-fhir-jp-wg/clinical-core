@@ -18,7 +18,7 @@
 ### 必須要素　（MedicationRequestの直下の必須要素）
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : プロファイルURL
+  - meta.profile : プロファイルURL、バージョン併記必須。
   - identifier : インスタンス識別ID
   - status : 処方状態
   - intent : 投薬指示の意図。"order" を固定で設定する。

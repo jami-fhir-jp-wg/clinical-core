@@ -17,7 +17,8 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * id = "Example-JP-MedReq-PO-TID-2days-dummyUsageCode"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
-* meta.profile = $JP_MedicationRequest_eCS
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
 * language = #ja
 
 

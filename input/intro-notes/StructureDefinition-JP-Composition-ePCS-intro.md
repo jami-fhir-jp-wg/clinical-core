@@ -17,7 +17,7 @@
 ### 必須要素
   - resourceType : リソースタイプ "Composition"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : 準拠プロファイル　"http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
+  - meta.profile : 準拠プロファイル　"http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"、バージョン併記必須。
   - extension : 文書バージョンを表す拡張「composition-clinicaldocument-versionNumber」。
   - identifier : インスタンス識別子
   - status : この文書のステータス "final"

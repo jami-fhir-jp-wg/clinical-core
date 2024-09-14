@@ -8,7 +8,8 @@ Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素と
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
-* meta.profile[+] = $JP_AllergyIntolerance_eCS    //必須
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1"
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber  //CLINS必須

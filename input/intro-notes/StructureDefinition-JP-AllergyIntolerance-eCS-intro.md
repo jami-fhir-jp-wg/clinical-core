@@ -30,7 +30,7 @@
 ### 必須要素
   - resourceType : リソースタイプ "AllergyIntolerance"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : プロファイルURL
+  - meta.profile : プロファイルURL、バージョン併記必須。
   - identifier : インスタンス識別ID
   - code : アレルギー・不耐反応の対象物の情報
     - .coding : コード化された情報

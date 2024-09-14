@@ -97,7 +97,7 @@
       <tr>
         <td border="1" style="border-collapse: collapse;  column-width:30%">家族歴セクションから参照されるエントリー</td>
         <td style="column-width:30%">
-            <a href="StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-FamilyMemberHistory-eCS.html"
                 title="StructureDefinition/JP_FamilyMemberHistory_eCS">JP_FamilyMemberHistory_eCS</a>
         </td>
         <td>

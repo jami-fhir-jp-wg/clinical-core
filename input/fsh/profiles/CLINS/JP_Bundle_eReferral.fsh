@@ -17,6 +17,8 @@ Description: "診療情報提供書 Bundle"
 * . ^definition = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1")
+
 //* meta.profile = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
 
 * identifier 1.. MS

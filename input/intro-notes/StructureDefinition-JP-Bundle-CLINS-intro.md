@@ -26,7 +26,7 @@ Bundleリソースの使い方については、本ページ後段にある、
 ### 必須要素
   - resourceType : リソースタイプ "Bundle"
   - meta.lastUpdated : 最終更新日時
-  - meta.profile : 準拠プロファイル　"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
+  - meta.profile : 準拠プロファイル　"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"、バージョン併記必須。
   - meta.tag[n].system : このBundleが格納するリソースタイプを識別するcodeのsystem値　"http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"
   - meta.tag[n].code : このBundleが格納するリソースタイプを識別するcode
   - identifier : インスタンス識別子

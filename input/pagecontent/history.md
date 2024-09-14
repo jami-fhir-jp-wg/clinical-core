@@ -9,6 +9,7 @@
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.0 (2024.9.7)
   - eCS/CLINS:JP_AllergyIntolerance_eCS
+    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 4.2 条件により必須　の欄からmeta.profileを削除（必須要素として挙げられているため）。
     - 4.4 MustSupport要素　に「extension (eCS_Department) : 診療科情報」を追加（ProfileではMustSupport要素となっているのに合わせた）。
     - 6.1 「AllergyIntolerance」表：
@@ -18,6 +19,7 @@
       - reaction.manifestation.text: reaction.manifestationが出現する場合にはtextを必須とする。
     - 7.1 プロファイル詳細：　code.codingとその子要素の多重度を「AllergyIntolerance」表に合わせて修正。
   - eCS/CLINS:JP_Consition_eCS
+    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 6.1 「Condition」表：
       - code とその子要素の説明において、病名管理番号によるコード化が必須であることを記載。
       - code.coding.versionの説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。
@@ -25,7 +27,10 @@
       - asserterのMustSupportを外す。
       - code.codingとその子要素の多重度を「Condition」表に合わせて修正。
       - code とその子要素の説明において、病名管理番号によるコード化が必須であることを記載。
+  - eCS/CLINS:JP_Encounter_eCS
+    - 4.1 必須要素からmeta.profileを外す。
   - eCS/CLINS:JP_Observation_LabResult_eCS
+    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 4.4 MustSupport要素
        - 以下の要素を追加（ProfileではMustSupport要素となっているのに合わせた）。
          - contained (JP_Specimen) : 検体材料情報
@@ -35,6 +40,7 @@
       - code.coding.versionの説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。
     - 「検体検査結果情報における検査項目のコーディング方法について」において、JLAC10コードとJLAC11コードを併記。
   - eCS/CLINS:JP_MedicationRequest_eCS
+    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 4.4 MustSupport要素
       - substitution を削除
       - 以下の要素を追加（ProfileではMustSupport要素となっているのに合わせた）。
@@ -44,7 +50,8 @@
         - DosageInstruction[].doseAndRate : 投与量
     - 6.1 「MedicationRequest」表：
       - code.coding.versionの説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。
-    - 7.1 プロファイル詳細： substitution のMustSupportを外す。
+    - 7.1 プロファイル詳細： 
+      - substitution のMustSupportを外す。
       - DosageInstruction[].timing.code.coding　で複数の用法コードを併用記載を可能となるように多重度を0..1から0..*に変更（施設固有コードの併用などを可能としていたため）。
       - DosageInstruction[].timing.code.coding.system 厚生労働省電子処方箋用法コードのシステムURLの仮設定値を変更：　"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription"
       - DosageInstruction.timing.code.coding.version  の説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。多重度を1..1から0..1に変更。

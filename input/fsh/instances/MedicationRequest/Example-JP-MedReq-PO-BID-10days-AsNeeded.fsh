@@ -16,7 +16,8 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-13T14:24:21.000+09:00"
-* meta.profile = $JP_MedicationRequest_eCS
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
 * language = #ja
 
 * identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 

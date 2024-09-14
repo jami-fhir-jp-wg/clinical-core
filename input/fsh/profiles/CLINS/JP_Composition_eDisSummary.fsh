@@ -14,7 +14,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 * obeys checkExist-CDASection-or-structuredSection
 * ^url = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Composition_eDischargeSummary"
 
-* ^version = "1.4.0"
+* ^version = "1"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
@@ -24,6 +24,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_eDischargeSummary|1")
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

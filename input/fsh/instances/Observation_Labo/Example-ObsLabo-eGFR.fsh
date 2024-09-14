@@ -5,7 +5,9 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 * note.text = "Observationリソース（検体検査結果）eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
-* meta.profile = $JP_Observation_LabResult_eCS
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|1"
+* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|1"
+
 * language = #ja
 
 

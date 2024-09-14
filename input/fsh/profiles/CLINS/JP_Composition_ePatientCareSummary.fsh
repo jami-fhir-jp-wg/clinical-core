@@ -7,7 +7,7 @@ Description:  "患者療養計画サマリーのリソース構成情報と文�
 // * obeys checkValidSections
 * ^url = "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
 
-* ^version = "1.4.0"
+* ^version = "1"
 * ^status = #active
 * ^date = "2024-06-24"
 * ^publisher = "（一社）日本医療情報学会"
@@ -18,6 +18,7 @@ Description:  "患者療養計画サマリーのリソース構成情報と文�
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS|1")
 //* meta.profile = "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
 
 * extension ^slicing.discriminator.type = #value
