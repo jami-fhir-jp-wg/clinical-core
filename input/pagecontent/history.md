@@ -15,11 +15,13 @@
     - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
   - eCS/CLINS:JP_Encounter_eCS
     - 4.1 必須要素からmeta.profileを外す。
+  - eCS/CLINS:JP_Patient_eCS
+    - 4.1 lastUpdatedを必須要素に追加。
   - eCS/CLINS:JP_MedicationRequest_eCS
     - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 7.1 プロファイル詳細： 
       - DosageInstruction[].timing.code : 用法をコード化できない場合にはダミーコード(16桁の'0X0XXXXXXXXX0000')を使用することを追記。あわせて、ダミーコードのシステムURLをhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CSとして設定することを記載。
-  - 2文書6情報の作成データ（インスタンス）のmeta.profileにバージョンを併記。
+  - 2文書6情報の作成データ（インスタンス）のmeta.profileにバージョンを併記。PatientデータにlastUpdatedを追加。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.0 (2024.9.7)
 
