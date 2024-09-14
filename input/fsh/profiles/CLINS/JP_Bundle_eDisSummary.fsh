@@ -39,7 +39,7 @@ Description: "退院時サマリー Bundle"
     composition 1..1 MS  // 文書構成情報
 and patient 1..1 MS  //  患者情報
 and practitioners 1.. MS
-and organization 2.. MS // 文書作成機関1..1、文書管理責任機関1..1、入院前の所在施設0..*、退院後の所在施設0..*
+and organization 1.. MS // 文書作成機関1..1、文書管理責任機関1..1、入院前の所在施設0..*、退院後の所在施設0..*
 
 and encounter 1..1 MS   // 入院詳細情報エントリ(退院時詳細情報、入院理由、入院時診断、退院時診断を含む)
 and location 0..* MS    // 入院前の所在場所0..*、退院後の所在場所0..*、入院中の所在場所0..*

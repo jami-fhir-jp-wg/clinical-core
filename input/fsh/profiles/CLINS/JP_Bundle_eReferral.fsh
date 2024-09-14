@@ -40,7 +40,7 @@ Description: "診療情報提供書 Bundle"
     composition 1..1 MS  // 文書構成情報
 and patient 1..1 MS  //  患者情報
 and practitioners 1.. MS
-and organization 2.. MS // 文書作成機関*、文書管理責任機関*、紹介先医療機関*、紹介元医療機関*
+and organization 2..4 MS // 文書作成機関*、文書管理責任機関*、紹介先医療機関*、紹介元医療機関*
 //and organizationFrom 1..* MS
 //and department 0.. MS
 //and departmentOfissuer  0..* MS
