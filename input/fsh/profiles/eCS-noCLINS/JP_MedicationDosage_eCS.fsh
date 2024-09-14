@@ -31,10 +31,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * obeys validUsage-MedicationUsage-codesystem // R5020:厚労省用法コード（電子処方箋）かまたはダミー用法コードのどちらか一方だけが必ず使われている。
 * obeys invalidUsage-MedicationUsage-codesystem // R5021:厚労省用法コード（電子処方箋）とダミー用法コードの両方が同時に使用されていることはない。
-* obeys mhlw-check
-* obeys mhlw-not-check
-* obeys dummy-check
-* obeys dummy-not-check
+
+
 
 //----
 * extension[periodOfUse] 1..1 MS
