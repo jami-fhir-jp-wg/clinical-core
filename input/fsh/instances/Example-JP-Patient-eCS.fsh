@@ -10,6 +10,7 @@ Description: "Patientリソース　（患者情報）最小限  データ作成
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報最小限  データ作成例</p> </div>"
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
 //* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-JP-Patient-minimun"
@@ -29,6 +30,7 @@ Description: "Patientリソース　（患者情報）01  データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報01  データ作成例</p> </div>"
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
 * meta.profile[+] = $JP_Patient
 
@@ -55,6 +57,7 @@ Description: "Patientリソース　（患者情報）02  データ作成例"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報02  データ作成例</p> </div>"
 
+* meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
 * meta.profile[+] = $JP_Patient
 

@@ -11,7 +11,7 @@ Description: "Patientリソース　標準的記述 データ作成例"
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 */
 
-
+* meta.lastUpdated = "2023-11-12T10:00:00+09:00"
 * meta.profile[+] = $JP_Patient_eCS
 * language = #ja
 
