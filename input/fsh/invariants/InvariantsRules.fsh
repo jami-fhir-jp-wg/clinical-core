@@ -91,7 +91,7 @@ Description: "ダミー用用コードがつかわれている"
 Severity: #error
 Expression: "timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000'"
 
-Invariant: dummy-Notcheck
+Invariant: dummy-not-check
 Description: "ダミー用用コードがつかわれていない"
 Severity: #error
 Expression: "timing.code.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').coding.code='0X0XXXXXXXXX0000'.not()"
