@@ -14,7 +14,7 @@ on:
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.4.0
+  release_version : 1.4.1
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -63,14 +63,14 @@ jobs:
         file: validator_cli.jar
 
     - name: Download the file
-      uses: suisei-cn/actions-download-file@v1.4.0
+      uses: suisei-cn/actions-download-file@v1.4.1
       id: downloadfile1
       with:
         url: "https://jpfhir.jp/fhir/fhir_dotFHIR_packages.tgz"
         target: .
   
     - name: Download the file
-      uses: suisei-cn/actions-download-file@v1.4.0
+      uses: suisei-cn/actions-download-file@v1.4.1
       id: downloadfile2
       with:
         url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.1.tgz"

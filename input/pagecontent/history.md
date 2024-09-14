@@ -7,9 +7,24 @@
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.0 (2024.9.7)
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.0 (2024.9.14)
+
   - eCS/CLINS:JP_AllergyIntolerance_eCS
     - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
+  - eCS/CLINS:JP_Consition_eCS
+    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
+  - eCS/CLINS:JP_Encounter_eCS
+    - 4.1 必須要素からmeta.profileを外す。
+  - eCS/CLINS:JP_MedicationRequest_eCS
+    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
+    - 7.1 プロファイル詳細： 
+      - DosageInstruction[].timing.code : 用法をコード化できない場合にはダミーコード(16桁の'0X0XXXXXXXXX0000')を使用することを追記。あわせて、ダミーコードのシステムURLをhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CSとして設定することを記載。
+  - 2文書6情報の作成データ（インスタンス）のmeta.profileにバージョンを併記。
+
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.0 (2024.9.7)
+
+
+  - eCS/CLINS:JP_AllergyIntolerance_eCS
     - 4.2 条件により必須　の欄からmeta.profileを削除（必須要素として挙げられているため）。
     - 4.4 MustSupport要素　に「extension (eCS_Department) : 診療科情報」を追加（ProfileではMustSupport要素となっているのに合わせた）。
     - 6.1 「AllergyIntolerance」表：
@@ -19,7 +34,6 @@
       - reaction.manifestation.text: reaction.manifestationが出現する場合にはtextを必須とする。
     - 7.1 プロファイル詳細：　code.codingとその子要素の多重度を「AllergyIntolerance」表に合わせて修正。
   - eCS/CLINS:JP_Consition_eCS
-    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 6.1 「Condition」表：
       - code とその子要素の説明において、病名管理番号によるコード化が必須であることを記載。
       - code.coding.versionの説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。
@@ -30,7 +44,6 @@
   - eCS/CLINS:JP_Encounter_eCS
     - 4.1 必須要素からmeta.profileを外す。
   - eCS/CLINS:JP_Observation_LabResult_eCS
-    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 4.4 MustSupport要素
        - 以下の要素を追加（ProfileではMustSupport要素となっているのに合わせた）。
          - contained (JP_Specimen) : 検体材料情報
@@ -40,7 +53,6 @@
       - code.coding.versionの説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。
     - 「検体検査結果情報における検査項目のコーディング方法について」において、JLAC10コードとJLAC11コードを併記。
   - eCS/CLINS:JP_MedicationRequest_eCS
-    - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
     - 4.4 MustSupport要素
       - substitution を削除
       - 以下の要素を追加（ProfileではMustSupport要素となっているのに合わせた）。
@@ -56,7 +68,6 @@
       - DosageInstruction[].timing.code.coding.system 厚生労働省電子処方箋用法コードのシステムURLの仮設定値を変更：　"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription"
       - DosageInstruction.timing.code.coding.version  の説明: 「設定することを原則とする。設定していない場合には送信時の最新版を使用しているとみなされる」を削除し、単に推奨とする。多重度を1..1から0..1に変更。
       - DosageInstruction[].timing.code.coding.text : 多重度を0..1から1..1に変更。
-      - DosageInstruction[].timing.code : 用法をコード化できない場合にはダミーコード(16桁の'0X0XXXXXXXXX0000')を使用することを追記。あわせて、ダミーコードのシステムURLをhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CSとして設定することを記載。
       - DosageInstruction[].method.coding の説明：2桁コードで出せる場合には2桁コードとすることを追記。
       - DosageInstruction[].method.text の説明：コード化が1桁の場合には、詳細投与方法を含めた文字列を記載することを追記。
   - terminologyパッケージの対応バージョンを1.2.1にアップデート

@@ -7,6 +7,8 @@
 <span style="color: blue; font-size: 100%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
 <span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロードは上部メニューから可能です。</span><BR><BR>
 <span style="color: black; font-size: 120%;">本実装ガイドでは、「電子カルテ情報共有サービス」を略してCLINSと記載する。CLINSへのデータ送信のこともCLINSと記載することがある。</span><BR><BR>
+<span style="color: black; font-size: 120%;">本実装ガイドのバージョンと、対応する内容の２文書のPDF版仕様書のバージョン番号とは必ずしも一致しない。</span><BR><BR>
+
 
 ### CLINSのためのFHIR実装ガイド
 
@@ -55,8 +57,8 @@ FHIRに準拠した臨床情報を必要とするクライアントシステム�
     - [改訂履歴](history.html)
     - [Validationガイド](validationGuide.html)
     - [パッケージDownload]
-      - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.4.0.tgz)
-      - [snapshot版](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.4.0-snap.tgz)
+      - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.4.1.tgz)
+      - [snapshot版](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.4.1-snap.tgz)
     - [JP-Core ターミノロジー(コード表)](https://jpfhir.jp/fhir/core/terminology/ig/)
 
 ### 謝辞

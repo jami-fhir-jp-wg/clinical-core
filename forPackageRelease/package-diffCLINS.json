@@ -1,7 +1,7 @@
 {
   "name": "jp-CLINS.r4",
-  "version": "1.4.0",
-  "description": "jp-CLINS 1.4.0",
+  "version": "1.4.1",
+  "description": "jp-CLINS 1.4.1",
   "author": "Kazuhiko Ohe",
   "fhirVersions": [
     "4.0.1"
