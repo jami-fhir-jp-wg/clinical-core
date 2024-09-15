@@ -112,10 +112,18 @@ jobs:
         cd forPackageRelease
         sed 's/1.2.0-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
         sed 's/1.2.0-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
-        mv package-diff-temp.json package-diff.json
-        mv package-snap-temp.json package-snap.json
+        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diff-temp.json > package-diff-temp2.json
+        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snap-temp.json > package-snap-temp2.json
+        mv package-diff-temp2.json package-diff.json
+        mv package-snap-temp2.json package-snap.json
+        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-diffCLINS.json >package-diffCLINS-temp.json
+        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-snapCLINS.json >package-snapCLINS-temp.json
+        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diffCLINS-temp.json > package-diffCLINS-temp2.json
+        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snapCLINS-temp.json > package-snapCLINS-temp2.json
+        mv package-diffCLINS-temp2.json package-diffCLINS.json
+        mv package-snapCLINS-temp2.json package-snapCLINS.json
         cd ..
-
+        
     - name: ssh key generate
       run: echo "$SSH_PRIVATE_KEY" > key && chmod 600 key; ls -l key
       env:
