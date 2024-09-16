@@ -15,7 +15,7 @@ Description: "eCS 診療情報・サマリー汎用 　Organizationリソース�
 * ^url = $JP_Organization_eCS_department
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-06-24"
+* ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1

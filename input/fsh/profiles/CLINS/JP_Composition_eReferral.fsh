@@ -38,7 +38,7 @@ Description:  "診療情報提供書情報のリソース構成情報と文書�
 
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-06-24"
+* ^date = "2024-09-16"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -568,7 +568,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[referralPurposeSection].orderedBy ..0
 * section[compositionSection].section[referralPurposeSection].entry 0..1 MS
 * section[compositionSection].section[referralPurposeSection].entry only Reference(JP_Encounter_eCS)
-* section[compositionSection].section[referralPurposeSection].entry ^short = "必須。紹介先で予定している受診を記述したEncounterリソースを参照"
+* section[compositionSection].section[referralPurposeSection].entry ^short = "紹介先で予定している受診を記述したEncounterリソースを参照"
 * section[compositionSection].section[referralPurposeSection].entry ^definition = "紹介先で予定している受診を記述したEncounterリソースを参照。Encounter.reasonCodeに紹介する理由を記述するが、疾患や症状にもとづく診療紹介の場合には、その症状や疾患のコードあるいはテキストを記述する。そうでない場合には、コード化にかかわらずEncounter.reasonCode.textに紹介理由もtext形式で記述する。"
 * section[compositionSection].section[referralPurposeSection].emptyReason ..1 MS
 * section[compositionSection].section[referralPurposeSection].section ..0
@@ -612,7 +612,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[problemSection].orderedBy ..0
 * section[compositionSection].section[problemSection].entry 0..* MS
 * section[compositionSection].section[problemSection].entry only Reference(JP_Condition_eCS)
-* section[compositionSection].section[problemSection].entry ^short = "必須。傷病名・主訴を１個以上必ず記述する。"
+* section[compositionSection].section[problemSection].entry ^short = "傷病名・主訴を１個以上必ず記述する。"
 * section[compositionSection].section[problemSection].entry ^definition = "傷病名・主訴を１個以上必ず記述する。1つにつき1つのConditionで記述されたものを参照する。フリーテキストでしか記述できない場合には、Condition.code.text に記述する。"
 * section[compositionSection].section[problemSection].emptyReason ..1 MS
 * section[compositionSection].section[problemSection].section ..0
@@ -656,7 +656,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[presentIllnessSection].orderedBy ..0
 * section[compositionSection].section[presentIllnessSection].entry 0..* MS
 * section[compositionSection].section[presentIllnessSection].entry only Reference(JP_Condition_eCS)
-* section[compositionSection].section[presentIllnessSection].entry ^short = "必須。現病歴として記述すべき疾患に関する現在にいたる経過歴を１個以上必ず記述したConditionリソースを参照する。"
+* section[compositionSection].section[presentIllnessSection].entry ^short = "現病歴として記述すべき疾患に関する現在にいたる経過歴を１個以上必ず記述したConditionリソースを参照する。"
 * section[compositionSection].section[presentIllnessSection].entry ^definition = "フリーテキストでしか記述できない場合には、それをCondition.code.text 
                                                                             およびCodition.noteに記述したConditionリソースを参照する。
                                                                             疾患ごとに分けて現病歴を記述できる場合には、それぞれをひとつのConditionリソースで記述して参照する。
@@ -1285,7 +1285,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[clinicalCourseSection].orderedBy ..0
 * section[compositionSection].section[clinicalCourseSection].entry 0..* MS
 * section[compositionSection].section[clinicalCourseSection].entry only Reference(JP_DocumentReference)
-* section[compositionSection].section[clinicalCourseSection].entry ^short = "必須。臨床経過を記述したDocumentReferenceリソースを参照"
+* section[compositionSection].section[clinicalCourseSection].entry ^short = "臨床経過を記述したDocumentReferenceリソースを参照"
 * section[compositionSection].section[clinicalCourseSection].entry ^definition = "臨床経過を記述して参照する。
                                                                 1つ以上のDocumentReferenceリソースで記述されたものを参照する。
                                                                 診療情報提供書では臨床経過の記述は常に必要である。

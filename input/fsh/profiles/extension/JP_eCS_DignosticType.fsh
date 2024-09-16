@@ -8,7 +8,7 @@ Description: "傷病名情報に主たる診療対象病名か、あるいはそ
 * ^url = $JP_eCS_DiagnosisType
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-06-24"
+* ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1

@@ -11,7 +11,7 @@ title: "電子カルテ情報共有サービス2文書５情報+患者サマリ�
 description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.4.1"
 status: active # draft | active | retired | unknown 
 version: "1.4.1"
-date: 2024-09-14
+date: 2024-09-16
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
