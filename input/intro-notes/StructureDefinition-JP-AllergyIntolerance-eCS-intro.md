@@ -98,4 +98,9 @@
 
 ## プロファイル
 
+【注】プロファイル詳細における「全要素のツリー」表示において、表示系ソフトのバグのため　meta.tag部分の一部で不要な重複表示が発生していることがある。<br>
+
+<img src="chouhukuNote.png" width="60%">
+
+
 {% include markdown-link-references.md %}

@@ -14,6 +14,7 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 * obeys valid-system-local-patientID
 * obeys valid-system-insurance-patientIdentifier
 * obeys valid-value-insurance-patientIdentifier
+* obeys kanjiName-kanaName-donot-contain-ZenkakuKuuhaku
 
 //* obeys institurionNumber
 
@@ -53,6 +54,7 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
 
 * name 1.. MS
+* name.text 1.. MS  
 * name.family 1.. MS
 * name.given 1.. MS
 

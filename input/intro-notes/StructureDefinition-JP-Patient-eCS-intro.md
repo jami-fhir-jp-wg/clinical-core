@@ -23,6 +23,7 @@
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
   - identifier : インスタンス識別ID。電子カルテ情報共有サービスでは、被保険者個人識別子の記述が必須。
   - name : 姓と名、それぞれname.family、name.givenが必須。
+  - name : name.text　が必須。
   - gender : 性別　必須。
   - birthDate : 生年月日　必須。
   - address : address.text に住所全体の文字列、address.cityに市町村名（例：文京区）、address.stateに都道府県名（例：東京都）が必須。

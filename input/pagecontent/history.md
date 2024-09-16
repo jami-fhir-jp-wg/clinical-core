@@ -6,8 +6,11 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.1 (2024.9.16) version番号変更せず
+  - eCS/CLINS:JP_Patient_eCS
+    - name : name.text　が必須。
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.0 (2024.9.14)
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.1 (2024.9.14)
 
   - eCS/CLINS:JP_AllergyIntolerance_eCS
     - 4.1 必須要素のmeta.profileにバージョン併記必須であることを追記。
