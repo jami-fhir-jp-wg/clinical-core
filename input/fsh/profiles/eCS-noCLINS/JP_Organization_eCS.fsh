@@ -41,7 +41,7 @@ Description: "eCS 診療情報・サマリー汎用　Organizationリソース�
 * identifier[medicalInstitutionCode] 1..1 MS
 * identifier[medicalInstitutionCode].value 1..1 MS  //http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no 10桁　保険医用期間番号
 
-* type 0..1 MS
+* type 0..* MS
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/organization-type" (exactly)
 * type.coding.system MS
 * type.coding.system ^short = "施設種別を表すコード体系を識別するURI"
