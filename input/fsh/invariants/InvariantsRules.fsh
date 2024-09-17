@@ -8,7 +8,7 @@
 Invariant: either-KanjiName-KanaName-exist
 Description: "R1012- 患者氏名に漢字、カナのどちらかが存在している。"
 Severity: #error
-Expression: "name.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation' and value.ofType(Code)='IDE').exists() or name.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation' and value.ofType(Code)='SYL').exists()"
+Expression: "name.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation' and value.ofType(code)='IDE').exists() or name.extension.where(url='http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation' and value.ofType(code)='SYL').exists()"
 
 // R1113- 患者氏名テキストに全角空白が含まれるのはエラーとする。（半角空白はOK）
 Invariant: kanjiName-kanaName-donot-contain-ZenkakuKuuhaku
