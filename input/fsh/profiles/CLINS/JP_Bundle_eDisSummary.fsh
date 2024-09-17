@@ -2,7 +2,7 @@ Profile: JP_Bundle_eDischargeSummary
 Parent: Bundle
 Id: JP-Bundle-eDischargeSummary
 Description: "退院時サマリー Bundle"
-* ^url = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary"
+* ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eDischargeSummary"
 
 * ^version = "1"
 * ^status = #active
@@ -18,7 +18,6 @@ Description: "退院時サマリー Bundle"
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eDischargeSummary|1")
 
-//* meta.profile = "http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Bundle_eDischargeSummary"
 
 * identifier 1..1 MS
 * identifier ^short = "この文書Bundleの固定識別子。"
