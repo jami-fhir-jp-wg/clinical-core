@@ -60,9 +60,7 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[composition].resource only  JP_Composition_ePCS
 * entry[composition].resource ^short = "Compositionリソースのインスタンス本体"
 * entry[composition].resource ^definition = "Compositionリソースのインスタンス本体。"
-* entry[composition].search ..0
-* entry[composition].request ..0
-* entry[composition].response ..0
+
 
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "Patientリソースのエントリー。"
@@ -73,9 +71,7 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[patient].resource only JP_Patient_eCS  // 患者情報エントリ Composition.subject
 * entry[patient].resource ^short = "Patientリソースのインスタンス本体"
 * entry[patient].resource ^definition = "Patientリソースのインスタンス本体。"
-* entry[patient].search ..0
-* entry[patient].request ..0
-* entry[patient].response ..0
+
 
 * entry[practitioners] ^short = "作成者の情報（医師情報）"
 * entry[practitioners] ^definition = "医師の施設固有IDと氏名をPractitionerリソースで記述する。"
@@ -86,9 +82,7 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[practitioners].resource only JP_Practitioner_eCS
 * entry[practitioners].resource ^short = "Practitionerリソースのインスタンス本体"
 * entry[practitioners].resource ^definition = "Practitionerリソースのインスタンス本体。"
-* entry[practitioners].search ..0
-* entry[practitioners].request ..0
-* entry[practitioners].response ..0
+
 
 * entry[organization] ^short = "文書作成医療機関、診療科"
 * entry[organization] ^definition = "文書作成医療機関（診療科情報を拡張に含む）"
@@ -99,9 +93,7 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[organization].resource only JP_Organization_eCS
 * entry[organization] ^short = "Organizationリソースのインスタンス本体"
 * entry[organization] ^definition = "Organizationリソースのインスタンス本体"
-* entry[organization].search ..0
-* entry[organization].request ..0
-* entry[organization].response ..0
+
 
 * entry[encounter] ^short = "文書作成時の受診時状況（外来、入院の区分）"
 * entry[encounter] ^definition = "文書作成時の診時状況（外来、入院の区分）"
@@ -112,9 +104,7 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[encounter].resource only JP_Encounter_eCS
 * entry[encounter] ^short = "Encounterリソースのインスタンス本体"
 * entry[encounter] ^definition = "Encounterリソースのインスタンス本体"
-* entry[encounter].search ..0
-* entry[encounter].request ..0
-* entry[encounter].response ..0
+
 
 * entry[carePlan] ^short = "療養計画の情報"
 * entry[carePlan] ^definition = "療養計画の情報（内容はテキストで記述）"
@@ -125,9 +115,7 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[carePlan].resource only  JP_CarePlan_ePCS
 * entry[carePlan] ^short = "CarePlanリソースのインスタンス本体"
 * entry[carePlan] ^definition = "CarePlanリソースのインスタンス本体"
-* entry[carePlan].search ..0
-* entry[carePlan].request ..0
-* entry[carePlan].response ..0
+
 
 * entry[practitioners] ^short = "傷病名"
 * entry[practitioners] ^definition = "傷病名（主傷病名、副傷病名の別情報を含む）"
@@ -138,6 +126,3 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * entry[condition].resource only  JP_Condition_eCS
 * entry[condition] ^short = "Conditionリソースのインスタンス本体"
 * entry[condition] ^definition = "Conditionリソースのインスタンス本体"
-* entry[condition].search ..0
-* entry[condition].request ..0
-* entry[condition].response ..0

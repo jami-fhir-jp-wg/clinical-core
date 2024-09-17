@@ -80,9 +80,7 @@ and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時�
 * entry[composition].resource only  JP_Composition_eDischargeSummary
 * entry[composition].resource ^short = "Compositionリソースのインスタンス本体"
 * entry[composition].resource ^definition = "Compositionリソースのインスタンス本体。"
-* entry[composition].search ..0
-* entry[composition].request ..0
-* entry[composition].response ..0
+
 
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "Patientリソースのエントリー。"
@@ -93,9 +91,7 @@ and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時�
 * entry[patient].resource only JP_Patient_eCS  // 患者情報エントリ Composition.subject
 * entry[patient].resource ^short = "Patientリソースのインスタンス本体"
 * entry[patient].resource ^definition = "Patientリソースのインスタンス本体。"
-* entry[patient].search ..0
-* entry[patient].request ..0
-* entry[patient].response ..0
+
 
 * entry[practitioners] ^short = "正当な権限があって文書を作成した個人の情報"
 * entry[practitioners] ^definition = "正当な権限があって文書を作成した個人を表すPractitionerリソースで記述する。\r\nauthorisedAuthorRole要素が参照するPractitionerRoleから参照される。"
@@ -106,16 +102,12 @@ and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時�
 * entry[practitioners].resource only JP_Practitioner_eCS
 * entry[practitioners].resource ^short = "Practitionerリソースのインスタンス本体"
 * entry[practitioners].resource ^definition = "Practitionerリソースのインスタンス本体。"
-* entry[practitioners].search ..0
-* entry[practitioners].request ..0
-* entry[practitioners].response ..0
+
 
 * entry[organization].resource only JP_Organization_eCS
 * entry[organization] ^short = "文書作成機関／文書管理機関"
 * entry[organization] ^definition = "文書作成機関／文書管理機関"
-* entry[organization].search ..0
-* entry[organization].request ..0
-* entry[organization].response ..0
+
 
 
 
