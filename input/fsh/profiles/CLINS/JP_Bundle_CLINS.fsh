@@ -67,17 +67,16 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
 * meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
 
-* identifier 1.. MS
-* identifier ^short = "この文書Bundleの固定識別子。Bundle作成時にシステムが設定する。"
+* identifier 1..1 MS
+* identifier ^short = "この文書Bundleの固定識別子。"
 * identifier ^definition = "Bundleリソースのidentifier要素は、電子カルテ情報共有サービス側で保存される。送信側は、後続の送信においてこのidentifierを指定することで、受信側は過去に受信したBundleリソースを特定し、それに含まれていた全データについて削除、更新などの処理を行うためにこれを使用する。"
 * identifier ^comment = "Bundleリソースのidentifier要素は以下の通りとする。\r\n
-この仕様を満たすidentifierに加えて、これとは異なるsystem値をもつidentifierは複数存在しても構わない。\r\n
 Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n
 Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリソースを識別するIdentifier要素-- に記載の[Bundle-ID]の仕様とする。"
 
-* identifier.system 1.. MS
+* identifier.system 1..1 MS
 * identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
-* identifier.value 1.. MS
+* identifier.value 1..1 MS
 
 * type = #collection (exactly)
 * type ^definition = "このバンドルの目的コード。本プロファイルでは collection 固定とする。\r\n（document | message | transaction | transaction_response | batch | batch_response | history | searchset | collection）"
