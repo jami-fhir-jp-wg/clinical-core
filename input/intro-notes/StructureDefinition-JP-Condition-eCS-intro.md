@@ -19,8 +19,8 @@
 
 ### 必須要素
   - resourceType : リソースタイプ "Condition"
-  - meta.lastUpdated : 最終更新日時、バージョン併記必須。
-  - meta.profile : プロファイルURL
+  - meta.lastUpdated : 最終更新日時
+  - meta.profile : プロファイルURL、バージョン併記必須。
   - identifier : インスタンス識別ID
   - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。
   - category : 臨床的状態に割り当てられたカテゴリー。problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは'encounter-diagnosis'を設定すること(display name は"Encounter Diagnosis")。
