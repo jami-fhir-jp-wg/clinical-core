@@ -33,7 +33,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
 //* identifier[orderInRp].system = "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // "urn:oid:1.2.392.100495.20.3.82"
-* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
+* identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
 * identifier[orderInRp].value = "1"
 //* identifier[requestIdentifierCommon].system = "http://jpfhir.jp/fhir/core/mhlw/IdSystem/PrescriptionDocumentID" // "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11" // 
