@@ -46,9 +46,9 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 
 
 
-* identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81"
+* identifier[rpNumber].system = $JP_Medication_RPGroupNumber
 * identifier[rpNumber].value = "1"
-* identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82"
+* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex"
 * identifier[orderInRp].value = "1"
 
 * identifier[requestIdentifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"

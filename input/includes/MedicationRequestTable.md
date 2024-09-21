@@ -571,7 +571,7 @@
   <td class=xl105 width=359 style='width:269pt'>剤グループ内連番。剤グループ内番号の名前空間を識別するURI。固定値。<ruby><font
   class="font21"><rt class=font21></rt></font></ruby></td>
   <td class=xl107 width=36 style='width:27pt'>固定値</td>
-  <td class=xl125 width=195 style='width:146pt'>&quot;urn:oid:1.2.392.100495.20.3.82&quot;</td>
+  <td class=xl125 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex&quot;</td>
  </tr>
  <tr height=81 style='height:61.0pt'>
   <td height=81 class=xl313 width=91 style='height:61.0pt;width:68pt'>identifier[=]</td>

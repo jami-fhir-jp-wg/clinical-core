@@ -48,9 +48,9 @@ Description: "不均等投与1日用法の医薬品処方１件　MedicationRequ
 
 
 
-* identifier[rpNumber].system = "urn:oid:1.2.392.100495.20.3.81"
+* identifier[rpNumber].system = $JP_Medication_RPGroupNumber
 * identifier[rpNumber].value = "9"
-* identifier[orderInRp].system = "urn:oid:1.2.392.100495.20.3.82"
+* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex"
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier[requestIdentifier].value = "1311234567-2020-00123456"
