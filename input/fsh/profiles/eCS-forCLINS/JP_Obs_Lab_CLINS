@@ -259,7 +259,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
 
 // 一般JLAC10コード
-* code.coding[jlac10LaboCode].system = "urn:oid:1.2.392.200119.4.504" (exactly)
+* code.coding[jlac10LaboCode].system = $JP_ObservationLabResultCode_CS (exactly)
 * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
 
 // 未標準化コード

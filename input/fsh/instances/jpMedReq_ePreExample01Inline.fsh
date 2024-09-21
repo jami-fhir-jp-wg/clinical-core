@@ -55,7 +55,7 @@ Description: "内服　処方例１件　MedicationRequestリソースのイン�
 
 * intent = #order
 
-* medicationCodeableConcept.coding[+] = urn:oid:1.2.392.200119.4.403.1#103831601 "カルボシステイン錠２５０ｍｇ「サワイ」・沢井製薬"
+* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#103831601 "カルボシステイン錠２５０ｍｇ「サワイ」・沢井製薬"
 
 * medicationCodeableConcept.coding[+] = urn:oid:1.2.392.100495.20.1.73#2233002F1280 "カルボシステイン錠２５０ｍｇ「サワイ」"
 
@@ -84,22 +84,22 @@ Description: "内服　処方例１件　MedicationRequestリソースのイン�
 
 //130on_処方用法部位(ARGsitecode,ARGsite)
 * dosageInstruction[=].route = http://jpfhir.jp/fhir/core/CodeSystem/route-codes#PO "口"
-* dosageInstruction[=].method = urn:oid:1.2.392.200250.2.2.20.30#1 "内服"
+* dosageInstruction[=].method = $JP_MedicationMethodJAMIBasicUsage_CS#1 "内服"
 
 //150on_処方外用用法(ARGmethodcode,ARGmethodname)
-* dosageInstruction[=].doseAndRate.type = urn:oid:1.2.392.100495.20.2.22#1 "製剤量"
+* dosageInstruction[=].doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
 
-* dosageInstruction[=].doseAndRate.doseQuantity = 1 urn:oid:1.2.392.100495.20.2.101#TAB "錠"
+* dosageInstruction[=].doseAndRate.doseQuantity = 1 $JP_MedicationUnitMERIT9_CSTAB "錠"
 
-* dosageInstruction[=].doseAndRate.rateRatio.numerator = 3 urn:oid:1.2.392.100495.20.2.101#TAB "錠"
+* dosageInstruction[=].doseAndRate.rateRatio.numerator = 3 $JP_MedicationUnitMERIT9_CSTAB "錠"
 * dosageInstruction[=].doseAndRate.rateRatio.denominator = 1 'd' "日"
 
-* dispenseRequest.quantity = 21 urn:oid:1.2.392.100495.20.2.101#21code "21name"
+* dispenseRequest.quantity = 21 $JP_MedicationUnitMERIT9_CS21code "21name"
 
 * dispenseRequest.expectedSupplyDuration = 7 'd' "日"
 
 //300on_処方後発変更可()
-* substitution.allowedCodeableConcept = urn:oid:1.2.392.100495.20.2.41#1 "後発品変更不可"
+* substitution.allowedCodeableConcept = $JP_MedicationSubstitutionNotAllowedReason_CS#1 "後発品変更不可"
 * substitution.reason.text = ""
 
 

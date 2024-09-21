@@ -35,7 +35,7 @@ Description: "conditionReferralExample01 診療情報提供書　現病歴例　
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
-* code.coding[medisRecordNo].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[medisRecordNo].system = $JP_Disease_MEDIS_ManagementID_CS
 * code.coding[medisRecordNo].code = #20065011
 * code.coding[medisRecordNo].display = "上腹部痛"   
 * code.text = "上腹部痛"

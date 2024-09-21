@@ -22,7 +22,7 @@ Description: "conditionReferralExample01CC1 診療情報提供書　主訴例　
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code.coding[+].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS
 * code.coding[=].code = #20065011
 * code.coding[=].display = "上腹部痛"
 * code.text = "上腹部痛"
@@ -52,7 +52,7 @@ Description: "conditionReferralExample01CC2 診療情報提供書　主訴例　
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code.coding[+].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS
 * code.coding[=].code = #20075383
 * code.coding[=].display = "腹痛症"
 * code.text = "腰痛"

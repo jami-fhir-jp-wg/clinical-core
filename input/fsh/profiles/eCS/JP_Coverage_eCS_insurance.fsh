@@ -44,7 +44,7 @@ Description: "保険情報　Coverageリソースプロファイル　JP_Coverag
 * type from http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
 * type.coding 1..1 MS
 * type.coding.system 1.. MS
-* type.coding.system = "urn:oid:1.2.392.100495.20.2.61" (exactly)
+* type.coding.system = $JAMI_InsuranceMajorCategory_CS (exactly)
 * type.coding.system ^short = "保険種別コード体系を識別するURI"
 * type.coding.system ^definition = "保険種別コード　厚生労働省電子処方箋等の CDA 記述仕様第１版　別表１１のOID"
 * type.coding.code ^short = "保険種別コード"
@@ -66,7 +66,7 @@ Description: "保険情報　Coverageリソースプロファイル　JP_Coverag
 * dependent MS
 * relationship 1.. MS
 * relationship.coding 1..1 MS
-* relationship.coding.system = "urn:oid:1.2.392.100495.20.2.62" (exactly)
+* relationship.coding.system = $JAMI_InsuredPersonCategory_CS (exactly)
 * relationship.coding.system ^short = "コード体系を識別するURI"
 * relationship.coding.system ^definition = "被保険者区分コードのコード体系を識別するURI。厚生労働省電子処方箋等の医療文書 CDA 記述仕様第１版　別表１２のOID"
 * relationship.coding.system MS

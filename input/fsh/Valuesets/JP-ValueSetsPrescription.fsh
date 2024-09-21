@@ -27,7 +27,7 @@ Description: "調剤指示コード（備考欄）"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system urn:oid:1.2.392.200250.2.2.30.10
+* include codes from system $JAMI_DrugDispensePreparationMethod_CS
 
 
 ValueSet:  JAMI_valueSet_ePreOrderUsageCode_16digits
@@ -71,7 +71,7 @@ Description: "MEDIS 医薬品コードHOTコード（9桁）"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system   urn:oid:1.2.392.200119.4.403.1
+* include codes from system   $JP_MedicationCodeHOT9_CS
 
 /*
 ValueSet:  JP_valueSet_drugCode_gs1_14

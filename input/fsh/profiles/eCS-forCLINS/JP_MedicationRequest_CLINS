@@ -226,7 +226,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * dispenseRequest.extension[expectedRepeatCount] MS
 * dispenseRequest.quantity.value ^definition = "調剤量。精度を含めた値が暗示される。\r\n例）１日３錠で７日分の場合、この要素には21 が設定される。"
 * dispenseRequest.quantity.value MS
-* dispenseRequest.quantity.system ^definition = "医薬品単位略号を識別するURL。urn:oid:1.2.392.200119.4.403.1で固定される。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
+* dispenseRequest.quantity.system ^definition = "医薬品単位略号を識別するURL。http://medis.or.jp/CodeSystem/master-HOT9で固定される。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
 * dispenseRequest.quantity.system ^comment = "医薬品単位略号はひとつのリソース記述のなかで１種類のコード体系に統一すること。"
 * dispenseRequest.quantity.system MS
 * dispenseRequest.quantity.code ^comment = "厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"

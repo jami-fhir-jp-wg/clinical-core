@@ -5,9 +5,9 @@ Severity: #error
 Expression: "(type[0].coding.where(system='http://terminology.hl7.org/CodeSystem/organization-type' and code='dept')).exists()"
 
 Invariant: checkOrganizationType1
-Description: "【診療科コード(type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51'))が存在する】"
+Description: "【診療科コード(type[1].coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationRequestDepartment'))が存在する】"
 Severity: #error
-Expression: "(type[1].exists().not()) or ((type[1].coding.where(system='urn:oid:1.2.392.100495.20.2.51' )).exists())"
+Expression: "(type[1].exists().not()) or ((type[1].coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationRequestDepartment' )).exists())"
 
 Invariant: checkPhoneNumberExists
 Description: "【telecomに電話番号が最低ひとつ記述されている】"
@@ -15,9 +15,9 @@ Severity: #error
 Expression: "(telecom.where(value.exists())).exists()"
 
 Invariant: checkQualification-DoctorLicenseExists
-Description: "【医師または歯科医師免許番号が存在し、system=urn:oid:1.2.392.100495.20.3.31で記述されている】"
+Description: "【医師または歯科医師免許番号が存在し、system=http://jpfhir.jp/fhir/core/mhlw/IdSystem/medicalRegistrationNumberで記述されている】"
 Severity: #error
-Expression: "(qualification[0].identifier.where(system='urn:oid:1.2.392.100495.20.3.31').exists()
+Expression: "(qualification[0].identifier.where(system='http://jpfhir.jp/fhir/core/mhlw/IdSystem/medicalRegistrationNumber').exists()
     and (qualification[0].code.coding.where(system='http://jpfhir.jp/fhir/core/CodeSystem/practitioner_certificate_category'
       and (code='MedicalDoctorLicense' or code='DentalDoctorLicense'))).exists())"
 

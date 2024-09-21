@@ -33,7 +33,7 @@ Description: "公費負担情報　JP_Coverageの派生プロファイル"
 * type from http://jpfhir.jp/fhir/Common/ValueSet/mhlw-ePreCDA-insuranceCategory
 * type.coding 1..1 MS
 * type.coding.system 1.. MS
-* type.coding.system = "urn:oid:1.2.392.100495.20.2.61" (exactly)
+* type.coding.system = $JAMI_InsuranceMajorCategory_CS (exactly)
 * type.coding.system ^short = "保険種別コード体系を識別するURI"
 * type.coding.system ^definition = "保険種別コード　厚生労働省電子処方箋 CDA 記述仕様第１版　別表１１のOID"
 * type.coding.code = #8 (exactly)

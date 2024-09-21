@@ -24,7 +24,7 @@ Description: "【意図的エラー例】：入院処方　外用（塗布）全
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "1"
-* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" 
+* identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"

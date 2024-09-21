@@ -56,7 +56,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * status = #completed
 * intent = #order
 
-* medicationCodeableConcept.coding[+] = urn:oid:1.2.392.200119.4.403.1#105271807 "プレドニン錠５ｍｇ・塩野義"
+* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#105271807 "プレドニン錠５ｍｇ・塩野義"
 * medicationCodeableConcept.coding[+] = urn:oid:1.2.392.100495.20.1.73#2456001F1310 "プレドニン錠５ｍｇ"
 
 * medicationCodeableConcept.text = "プレドニン錠５ｍｇ・塩野義"
@@ -77,13 +77,13 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * dosageInstruction[=].extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_UsageDuration"
 * dosageInstruction[=].extension[=].valueDuration = 7 'd' "日"
  // extension
-* dosageInstruction[=].additionalInstruction[+] = urn:oid:1.2.392.200250.2.2.20.22#V14NNNNN "不均等・１回目・４単位量"
+* dosageInstruction[=].additionalInstruction[+] = $JP_MedicationUsageJAMIAdditional_CS#V14NNNNN "不均等・１回目・４単位量"
 * dosageInstruction[=].additionalInstruction[=].text = "不均等・１回目・４錠"
 
-* dosageInstruction[=].additionalInstruction[+] = urn:oid:1.2.392.200250.2.2.20.22#V22NNNNN "不均等・２回目・２単位量"
+* dosageInstruction[=].additionalInstruction[+] = $JP_MedicationUsageJAMIAdditional_CS#V22NNNNN "不均等・２回目・２単位量"
 * dosageInstruction[=].additionalInstruction[=].text = "不均等・２回目・２錠"
 
-* dosageInstruction[=].additionalInstruction[+] = urn:oid:1.2.392.200250.2.2.20.22#V31NNNNN "不均等・３回目・１単位量"
+* dosageInstruction[=].additionalInstruction[+] = $JP_MedicationUsageJAMIAdditional_CS#V31NNNNN "不均等・３回目・１単位量"
 * dosageInstruction[=].additionalInstruction[=].text = "不均等・３回目・１錠"
 
 * dosageInstruction[=].timing.repeat.boundsDuration = 7 'd' "日"
@@ -95,24 +95,24 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 
 //130on_処方用法部位(ARGsitecode,ARGsite)
 * dosageInstruction[=].route = http://jpfhir.jp/fhir/core/CodeSystem/route-codes#PO "口"
-* dosageInstruction[=].method = urn:oid:1.2.392.200250.2.2.20.30#1 "内服"
+* dosageInstruction[=].method = $JP_MedicationMethodJAMIBasicUsage_CS#1 "内服"
 
 
 //150on_処方外用用法(ARGmethodcode,ARGmethodname)
 
-* dosageInstruction[=].doseAndRate.type = urn:oid:1.2.392.100495.20.2.22#1 "製剤量"
+* dosageInstruction[=].doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
 
 //160mn_処方原薬量指定()
 //170on_処方用法1回量(ARGdoseqty,ARGdoseunitcode,ARGdoseunitname)
 
-* dosageInstruction[=].doseAndRate.rateRatio.numerator = 7 urn:oid:1.2.392.100495.20.2.101#TAB "錠"
+* dosageInstruction[=].doseAndRate.rateRatio.numerator = 7 $JP_MedicationUnitMERIT9_CSTAB "錠"
 * dosageInstruction[=].doseAndRate.rateRatio.denominator = 1 'd' "日"
 
-* dispenseRequest.quantity = 49 urn:oid:1.2.392.100495.20.2.101#TAB "錠"
+* dispenseRequest.quantity = 49 $JP_MedicationUnitMERIT9_CSTAB "錠"
 
 * dispenseRequest.expectedSupplyDuration = 7 'd' "日"
 
-* substitution.allowedCodeableConcept = urn:oid:1.2.392.100495.20.2.41#0 "変更可"
+* substitution.allowedCodeableConcept = $JP_MedicationSubstitutionNotAllowedReason_CS#0 "変更可"
 
 //300on_処方後発変更不可(患者からの強い要望により)
 

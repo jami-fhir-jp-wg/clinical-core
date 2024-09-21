@@ -22,7 +22,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code.coding[+].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS
 * code.coding[=].code = #20058911
 * code.coding[=].display = "狭心症"
 * code.text = "狭心症"
@@ -55,10 +55,10 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
 * code.extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"
-* code.extension[=].valueCodeableConcept.coding[+].system = "urn:oid:1.2.392.200119.4.201.2"
+* code.extension[=].valueCodeableConcept.coding[+].system = $JP_BodySite_MEDIS_ManagementID_CS
 * code.extension[=].valueCodeableConcept.coding[=].code = #27000358
 * code.extension[=].valueCodeableConcept.coding[=].display = "左"
-* code.coding[+].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS
 * code.coding[=].code = #20080427
 * code.coding[=].display = "前腕骨折"
 * code.text = "左前腕骨折"

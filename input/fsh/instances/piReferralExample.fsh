@@ -23,7 +23,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
-* code.coding[+].system = "urn:oid:1.2.392.200119.4.101.2"
+* code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS
 * code.coding[=].code = #20065011
 * code.coding[=].display = "上腹部痛"
 * code.text = "上腹部痛"

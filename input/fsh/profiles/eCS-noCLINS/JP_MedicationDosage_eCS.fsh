@@ -80,7 +80,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code.coding 1..* MS
 * timing.code.coding ^definition = "厚生労働省電子処方箋用法コード、またはJAMI標準用法コード、またはダミーコードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コード、またはダミーコードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
-* timing.code.coding.system ^definition = "厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage_ePrescription\"）、またはJAMI標準用法16桁コード（\"urn:oid:1.2.392.200250.2.2.20\"）。ダミーコードを使用する場合にはhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS　を使用する。”
+* timing.code.coding.system ^definition = "厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage_ePrescription\"）、またはJAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）。ダミーコードを使用する場合にはhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS　を使用する。”
 
 施設固有コードを使用する場合には、\"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード\"を設定する。"
 * timing.code.coding.code ^short = "用法コード"
@@ -98,7 +98,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 and mhw_prescription_yoho 0..1 MS 
 and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS）
 
-* timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20" 
+* timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20"  http://jami.jp/CodeSystem/MedicationUsage
 //* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
 
 * timing.code.coding[mhw_prescription_yoho].system = $JP_MedicationUsageMHLW_Prscription_CS (exactly) 
@@ -135,20 +135,20 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 * doseAndRate.type.coding.display 1..1 MS
 * doseAndRate.type.coding.display ^definition = "力価区分コードの表示名（1：製剤量　2：原薬量）"
 
-* doseAndRate.dose[x] ^definition = "1回投与量。\r\n用量は、1回投与量の記録を基本とし、MedicationRequestリソースの doseAndRate.doseQuantity要素 にSimpleQuantity型で記述する。単位コードには、医薬品単位略号（urn:oid:1.2.392.100495.20.2.101）を使用する。内服、外用ともに１回投与量を指定する場合にはこの要素を使用する。"
+* doseAndRate.dose[x] ^definition = "1回投与量。\r\n用量は、1回投与量の記録を基本とし、MedicationRequestリソースの doseAndRate.doseQuantity要素 にSimpleQuantity型で記述する。単位コードには、医薬品単位略号（http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code）を使用する。内服、外用ともに１回投与量を指定する場合にはこの要素を使用する。"
 * doseAndRate.dose[x] 0..1 MS
 * doseAndRate.doseQuantity ^comment = "ー"
 * doseAndRate.doseQuantity.value 1..1 MS
 * doseAndRate.doseQuantity.unit 1..1 MS
 * doseAndRate.doseQuantity.system 1..1 MS
-* doseAndRate.doseQuantity.system ^definition = "医薬品単位略号を識別するOID。固定値\"urn:oid:1.2.392.100495.20.2.101\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。"
+* doseAndRate.doseQuantity.system ^definition = "医薬品単位略号を識別するOID。固定値\"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。"
 * doseAndRate.doseQuantity.code 1..1 MS
 * doseAndRate.doseQuantity.code ^definition = "医薬品単位略号。\r\n例）"
 
 * doseAndRate.rateRatio 0..1 MS
 * doseAndRate.rateRatio ^short = "1日投与量を表す"
 * doseAndRate.rateRatio ^definition = "1日投与量を表す。処方期間の中で 1 日量が常に一定となる場合には、1 回量に加えて 1 日量の記録も可能とし、rateRatio 要素に Ratio 型で記録す
-る。Ratio 型は比を扱うデータ型で、分母にあたるrateRatio.denominator 要素には、投与量の基準となる期間、つまり、1 日量の場合は「1 日」を Quantity 型で指定する。単位には、単位コードUCUM（http://unitsofmeasure.org）で定義されている「日」を表す単位コード「d」を使用する。分子にあたる rateRatio.numerator 要素には、1 回量と同様の記法で、1 日投与量を Quantity 型で指定する。内服、外用ともに１日量を指定する場合にはこの要素を使用する。doseAndRate.typeで指定される力価区分に対応した量であることが必須である。\r\n例）１日３錠　の場合、 rateRatio.numerator.value=3  、 rateRatio.numerator.unit=\"錠\" 、　、 rateRatio.numerator.system=\"urn:oid:1.2.392.100495.20.2.101\" 、rateRatio.numerator.code=\"TAB\""
+る。Ratio 型は比を扱うデータ型で、分母にあたるrateRatio.denominator 要素には、投与量の基準となる期間、つまり、1 日量の場合は「1 日」を Quantity 型で指定する。単位には、単位コードUCUM（http://unitsofmeasure.org）で定義されている「日」を表す単位コード「d」を使用する。分子にあたる rateRatio.numerator 要素には、1 回量と同様の記法で、1 日投与量を Quantity 型で指定する。内服、外用ともに１日量を指定する場合にはこの要素を使用する。doseAndRate.typeで指定される力価区分に対応した量であることが必須である。\r\n例）１日３錠　の場合、 rateRatio.numerator.value=3  、 rateRatio.numerator.unit=\"錠\" 、　、 rateRatio.numerator.system=\"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code\" 、rateRatio.numerator.code=\"TAB\""
 
 * doseAndRate.rateRatio.numerator 1..1 MS
   * insert relative_short_definition("1日投与量の分子の情報を表す。")
@@ -158,7 +158,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
   * insert relative_short_definition("投与量の単位。")
 * doseAndRate.rateRatio.numerator.system 1..1 MS
 * doseAndRate.rateRatio.numerator.system ^short = "投与量の単位。"
-* doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値 \"urn:oid:1.2.392.100495.20.2.101\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
+* doseAndRate.rateRatio.numerator.system ^definition = "医薬品単位略号を識別するOID。固定値 \"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code\"。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
 * doseAndRate.rateRatio.numerator.code 1..1 MS
   * insert relative_short_definition("医薬品単位略号。")
 

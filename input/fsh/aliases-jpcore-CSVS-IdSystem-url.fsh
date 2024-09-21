@@ -73,7 +73,7 @@ Alias: $JP_IdSystem_MedicationDispenseDocumentID  = $http://jpfhir.jp/fhir/core/
 Alias: $JP_IdSystem_pharmacistRegistrationNumber  = $http://jpfhir.jp/fhir/core/mhlw/IdSystem/pharmacistRegistrationNumber
 Alias: $JP_IdSystem_InsuredPersonNumber  = $http://jpfhir.jp/fhir/core/mhlw/IdSystem/InsuredPersonNumber
 Alias: $JP_IdSystem_InsuredPersonSubnumber  = $http://jpfhir.jp/fhir/core/mhlw/IdSystem/InsuredPersonSubnumber
-Alias: $JP_IdSystem_PublicPayerNumber  = $http://jpfhir.jp/fhir/core/mhlw/IdSystem/PublicPayerNumber
+Alias: $JP_IdSystem_PublicPayerNumber  = $http://jpfhir.jp/fhir/core/mhlw/IdSystem/PublicPayerNumber // urn:oid:1.2.392.100495.20.3.71
 Alias: $JP_IdSystem_PublicInsuredPersonNumber  = $http://jpfhir.jp/fhir/core/mhlw/IdSystem/PublicInsuredPersonNumber
 
 // CodeSystem from jp-Core 1.1.2 oid->url

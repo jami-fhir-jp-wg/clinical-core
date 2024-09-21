@@ -172,7 +172,7 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
 /*
 Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
-Alias: $JP_MedicationCodeHOT7_CS = urn:oid:1.2.392.200119.4.403.2
+Alias: $JP_MedicationCodeHOT7_CS = http://medis.or.jp/CodeSystem/master-HOT7
 Alias: $JP_MedicationCodeHOT9_CS = urn:oid:1.2.392.200119.4.403.1
 Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
 Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
@@ -188,7 +188,7 @@ Invariant: needs-anyOfYJorGeneral-medication
 Description: "R3011:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、厚生労働省一般名コードのいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 /*
 Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
-Alias: $JP_MedicationCodeHOT7_CS = urn:oid:1.2.392.200119.4.403.2
+Alias: $JP_MedicationCodeHOT7_CS = http://medis.or.jp/CodeSystem/master-HOT7
 Alias: $JP_MedicationCodeHOT9_CS = urn:oid:1.2.392.200119.4.403.1
 Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
 Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS

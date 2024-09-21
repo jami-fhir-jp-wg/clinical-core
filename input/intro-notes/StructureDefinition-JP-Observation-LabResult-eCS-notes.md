@@ -102,7 +102,7 @@
 12:      },
 13:      {
 14:        "code": "3H015000002326101",
-15:        "system": "urn:oid:1.2.392.200119.4.504",
+15:        "system": "http://medis.or.jp/CodeSystem/master-JLAC10-17digits",
 16:        "display": "カリウム_血清_電位差測定_定量値"
 17:      }
 18:    ],

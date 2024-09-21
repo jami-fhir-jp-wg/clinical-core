@@ -26,7 +26,7 @@ Description: "処方など医療サービスに適用される保険の保険者
 * identifier[insurerNumber].system ^short = "保険者番号の名前空間を示すURIを指定"
 * identifier[insurerNumber].system ^definition = "保険者番号の名前空間を示すURIを指定。固定値"
 * identifier[insurerNumber].system MS
-* identifier[insurerNumber].system = "urn:oid:1.2.392.100495.20.3.61" (exactly)
+* identifier[insurerNumber].system = $JP_IdSystemInsurerNumber (exactly)
 * identifier[insurerNumber].value ^short = "保険者番号"
 * identifier[insurerNumber].value ^definition = "保険者番号を半角数字で８ケタ以内の文字列で記述する。"
 * identifier[insurerNumber].value MS
@@ -36,7 +36,7 @@ Description: "処方など医療サービスに適用される保険の保険者
 * identifier[publicPayer].id ..0
 * identifier[publicPayer].use ..0
 * identifier[publicPayer].type ..0
-* identifier[publicPayer].system = "urn:oid:1.2.392.100495.20.3.71" (exactly)
+* identifier[publicPayer].system = $JP_IdSystem_PublicPayerNumber  (exactly)
 * identifier[publicPayer].system ^short = "公費負担者番号"
 * identifier[publicPayer].system ^definition = "保険種別が「8：公費」の場合は、公費負担者番号を記録する。それ以外の場合は、本要素は出現しない"
 * identifier[publicPayer].system MS

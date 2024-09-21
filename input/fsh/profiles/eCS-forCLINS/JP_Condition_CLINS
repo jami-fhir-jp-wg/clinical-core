@@ -146,7 +146,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * code 1..1 MS
 * code ^short = "傷病名のコードと名称"
-* code ^definition = "傷病名のコードと名称。MEDIS 病名管理番号（system値は\"urn:oid:1.2.392.200119.4.101.2\"）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する。なお、MEDIS 病名管理番号以外のコード記述を併用しても構わない。(参考：MEDIS 病名交換コード：urn:oid:1.2.392.200119.4.101.6、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）"
+* code ^definition = "傷病名のコードと名称。MEDIS 病名管理番号（system値は\"http://medis.or.jp/CodeSystem/master-disease-keyNumber\"）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する。なお、MEDIS 病名管理番号以外のコード記述を併用しても構わない。(参考：MEDIS 病名交換コード：http://medis.or.jp/CodeSystem/master-disease-exCode、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）"
 * code ^comment = "code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。なお、修飾語は前置修飾語と後置修飾語にわけて、それぞれの拡張を使用して記述する。"
 
 * code.coding 1..* MS

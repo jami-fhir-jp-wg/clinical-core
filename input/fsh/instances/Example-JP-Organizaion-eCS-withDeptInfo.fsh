@@ -17,17 +17,17 @@ Description: "医療機関情報　診療科情報を拡張に含む　例"
 /*
 
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo" (exactly)
-* extension[=].valueCoding.system = "urn:oid:1.2.392.100495.20.3.21"
+* extension[=].valueCoding.system = $JP_PrefectureNumber_CS
 * extension[=].valueCoding.code = #13
 
 // 点数表コード１桁「1：医科」、「3：歯科」
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory" (exactly)
-* extension[=].valueCoding.system = "urn:oid:1.2.392.100495.20.3.22"
+* extension[=].valueCoding.system = $JP_MedicalFeeScoreType_CS 
 * extension[=].valueCoding.code = #1
 
 // 保険医療機関番号７桁
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo" (exactly)
-* extension[=].valueIdentifier.system = "urn:oid:1.2.392.100495.20.3.23"
+* extension[=].valueIdentifier.system = $JP_IdSystemMedicalOrganizationID
 * extension[=].valueIdentifier.value = "9876543"
 */
 
@@ -62,17 +62,17 @@ Description: "医療機関情報　診療科情報を拡張に含む　例"
 /*
 
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo" (exactly)
-* extension[=].valueCoding.system = "urn:oid:1.2.392.100495.20.3.21"
+* extension[=].valueCoding.system = $JP_PrefectureNumber_CS
 * extension[=].valueCoding.code = #13
 
 // 点数表コード１桁「1：医科」、「3：歯科」
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory" (exactly)
-* extension[=].valueCoding.system = "urn:oid:1.2.392.100495.20.3.22"
+* extension[=].valueCoding.system = $JP_MedicalFeeScoreType_CS 
 * extension[=].valueCoding.code = #1
 
 // 保険医療機関番号７桁
 * extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo" (exactly)
-* extension[=].valueIdentifier.system = "urn:oid:1.2.392.100495.20.3.23"
+* extension[=].valueIdentifier.system = $JP_IdSystemMedicalOrganizationID
 * extension[=].valueIdentifier.value = "9876543"
 */
 

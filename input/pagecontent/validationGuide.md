@@ -259,9 +259,9 @@ Success: 0 errors, 2 warnings, 0 notes
 
 -- ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json ------------------------------------------------------------------------------------
 Success: 0 errors, 4 warnings, 0 notes
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.403.1#104937401'
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept) (line 156, col4): urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): urn:oid:1.2.392.200119.4.403.1#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため) for 'http://medis.or.jp/CodeSystem/master-HOT9#104937401'
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept) (line 156, col4): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
   Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[1].system (line 165, col80): URL値 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567' は解決できません
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -287,10 +287,10 @@ Success: 0 errors, 1 warnings, 0 notes
 
 -- ExampleJson/Observation-Example-ObsLabo-K.json ------------------------------------------------------
 Success: 0 errors, 4 warnings, 0 notes
-  Warning @ Observation.code.coding[2] (line 60, col8): urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため) for 'urn:oid:1.2.392.200119.4.504#3H015000002326101'
-  Warning @ Observation.code (line 48, col4): urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)
+  Warning @ Observation.code.coding[2] (line 60, col8): $JP_ObservationLabResultCode_CS#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため) for '$JP_ObservationLabResultCode_CS#3H015000002326101'
+  Warning @ Observation.code (line 48, col4): $JP_ObservationLabResultCode_CS#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)
   Warning @ Observation.code.coding[0].system (line 51, col94): URL値 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' は解決できません
-  Warning @ Observation.code.coding[2] (line 60, col8): urn:oid:1.2.392.200119.4.504#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)
+  Warning @ Observation.code.coding[2] (line 60, col8): $JP_ObservationLabResultCode_CS#3H015000002326101 の誤ったdisplay 'K' - 1 の選択肢のうちの一つであるべきです: 'カリウム_血清_電位差測定_定量値' (言語 'ja' のため)
 --------------------------------------------------------------------------------------------------------
 
 -- ExampleJson/Patient-Example-Patient-standard-ErrorInsuranceNo.json --------------------------------------------------------------------------
