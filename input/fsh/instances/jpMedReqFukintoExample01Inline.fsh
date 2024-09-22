@@ -50,7 +50,7 @@ Description: "不均等投与1日用法の医薬品処方１件　MedicationRequ
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber
 * identifier[rpNumber].value = "9"
-* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex"
+* identifier[orderInRp].system = $JP_MedicationAdministrationIndex
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier[requestIdentifier].value = "1311234567-2020-00123456"
@@ -91,7 +91,7 @@ Description: "不均等投与1日用法の医薬品処方１件　MedicationRequ
 * dosageInstruction[=].timing.repeat.boundsDuration = 7 'd' "日"
 
 * dosageInstruction[=].timing.code.coding[jami_yoho]  = $JP_MedicationUsageJAMI_CS#1013044400000000 "内服 １日３回 朝昼夕食後"
-* dosageInstruction[=].timing.code.coding[mhw_prescription_yoho] =  $JP_MedicationUsageMHLW_Prscription_CS#1013044400000000 "１日３回朝昼夕食後　服用"
+* dosageInstruction[=].timing.code.coding[mhw_prescription_yoho] =  $JAMI_MedicationUsage_ePrescription_CS#1013044400000000 "１日３回朝昼夕食後　服用"
 * dosageInstruction[=].timing.code.text = "１日３回　毎食後　７錠（４錠－２錠－１錠）"
 
 //130on_処方用法部位(ARGsitecode,ARGsite)
@@ -106,10 +106,10 @@ Description: "不均等投与1日用法の医薬品処方１件　MedicationRequ
 //160mn_処方原薬量指定()
 //170on_処方用法1回量(ARGdoseqty,ARGdoseunitcode,ARGdoseunitname)
 
-* dosageInstruction[=].doseAndRate.rateRatio.numerator = 7 $JP_MedicationUnitMERIT9_CSTAB "錠"
+* dosageInstruction[=].doseAndRate.rateRatio.numerator = 7 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 * dosageInstruction[=].doseAndRate.rateRatio.denominator = 1 'd' "日"
 
-* dispenseRequest.quantity = 49 $JP_MedicationUnitMERIT9_CS49code "49name"
+* dispenseRequest.quantity = 49 $JP_MedicationUnitMERIT9_CS#49code "49name"
 
 * dispenseRequest.expectedSupplyDuration = 7 'd' "日"
 

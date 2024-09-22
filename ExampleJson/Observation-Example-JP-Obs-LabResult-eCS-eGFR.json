@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|1"
     ]
   },
   "identifier": [
@@ -99,7 +99,7 @@
       },
       {
         "code": "8A065000002391901",
-        "system": "urn:oid:1.2.392.200119.4.504",
+        "system": "http://medis.or.jp/CodeSystem/master-JLAC10-17digits",
         "display": "eGFR"
       }
     ],

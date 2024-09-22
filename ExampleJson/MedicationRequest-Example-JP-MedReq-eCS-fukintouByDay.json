@@ -4,18 +4,18 @@
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
     ]
   },
   "status": "completed",
   "intent": "order",
   "identifier": [
     {
-      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber",
       "value": "9"
     },
     {
-      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex",
       "value": "1"
     },
     {
@@ -46,7 +46,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200250.2.2.20",
+              "system": "http://jami.jp/CodeSystem/MedicationUsage",
               "code": "1013044400000000",
               "display": "内服 １日３回 朝昼夕食後"
             },
@@ -79,7 +79,7 @@
             "numerator": {
               "value": 7,
               "code": "TAB",
-              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
               "unit": "錠"
             }
           },
@@ -87,7 +87,7 @@
             "coding": [
               {
                 "code": "1",
-                "system": "urn:oid:1.2.392.100495.20.2.22",
+                "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType",
                 "display": "製剤量"
               }
             ]
@@ -100,7 +100,7 @@
           "coding": [
             {
               "code": "V14NNNNN",
-              "system": "urn:oid:1.2.392.200250.2.2.20.22",
+              "system": "http://jami.jp/CodeSystem/MedicationUsageAdditional",
               "display": "不均等・１回目・４単位量"
             }
           ],
@@ -110,7 +110,7 @@
           "coding": [
             {
               "code": "V22NNNNN",
-              "system": "urn:oid:1.2.392.200250.2.2.20.22",
+              "system": "http://jami.jp/CodeSystem/MedicationUsageAdditional",
               "display": "不均等・２回目・２単位量"
             }
           ],
@@ -120,7 +120,7 @@
           "coding": [
             {
               "code": "V31NNNNN",
-              "system": "urn:oid:1.2.392.200250.2.2.20.22",
+              "system": "http://jami.jp/CodeSystem/MedicationUsageAdditional",
               "display": "不均等・３回目・１単位量"
             }
           ],
@@ -140,7 +140,7 @@
         "coding": [
           {
             "code": "1",
-            "system": "urn:oid:1.2.392.200250.2.2.20.30",
+            "system": "http://jami.jp/CodeSystem/MedicationMethodBasicUsage",
             "display": "内服"
           }
         ]
@@ -152,7 +152,7 @@
     "coding": [
       {
         "code": "105271807",
-        "system": "urn:oid:1.2.392.200119.4.403.1",
+        "system": "http://medis.or.jp/CodeSystem/master-HOT9",
         "display": "プレドニン錠５ｍｇ・塩野義"
       },
       {
@@ -171,7 +171,7 @@
     "quantity": {
       "value": 49,
       "code": "TAB",
-      "system": "urn:oid:1.2.392.100495.20.2.101",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
       "unit": "錠"
     },
     "expectedSupplyDuration": {
@@ -186,7 +186,7 @@
       "coding": [
         {
           "code": "0",
-          "system": "urn:oid:1.2.392.100495.20.2.41",
+          "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationSubstitutionProhibittedCategory",
           "display": "変更可"
         }
       ]

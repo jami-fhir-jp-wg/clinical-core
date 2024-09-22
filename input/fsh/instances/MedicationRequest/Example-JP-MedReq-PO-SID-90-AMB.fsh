@@ -60,7 +60,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * dosageInstruction.timing.repeat.periodUnit = #d
 
 * dosageInstruction.timing.code.coding[jami_yoho] =  $JP_MedicationUsageJAMI_CS#1011000400000000 "内服 １日１回 朝食後"
-* dosageInstruction.timing.code.coding[mhw_prescription_yoho] =  $JP_MedicationUsageMHLW_Prscription_CS#1011000400000000 "１日１回朝食後　服用"
+* dosageInstruction.timing.code.coding[mhw_prescription_yoho] =  $JAMI_MedicationUsage_ePrescription_CS#1011000400000000 "１日１回朝食後　服用"
 * dosageInstruction.timing.code.text = "1日1回 朝食後"
 * dosageInstruction.route = $JP_MedicationRouteHL70162_CS#PO "口"
 * dosageInstruction.route.text = "経口"

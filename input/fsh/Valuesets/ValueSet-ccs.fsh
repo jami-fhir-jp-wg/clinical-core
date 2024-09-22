@@ -167,21 +167,20 @@ Description: "CarePlan カテゴリー　hospital-plan または discharge-plan"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_carePlanCategory_CS
 
-//　暫定
+
 // 厚労省電子処方箋用法コードマスターValueSet
-// $JP_MedicationUsageMHLW_Prscription_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
 ValueSet:  JP_valueSet_MedicationUsageMHLW_Prscription
 Id:   JP-valueSet-MedicationUsageMHLW-Prscription
 Title: "厚労省電子処方箋用法コードマスターValueSet"
 Description: "厚労省電子処方箋用法コードマスターValueSet"
-* ^url = $JP_MedicationUsageMHLW_Prscription_VS
+* ^url = $JAMI_MedicationUsage_ePrescription_VS
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-09-07"
 * ^publisher = "厚生労働省"
 * ^copyright = "　"
-* include codes from system $JP_MedicationUsageMHLW_Prscription_CS
+* include codes from system $JAMI_MedicationUsage_ePrescription_CS
 
 // 暫定
 // MEDIS標準病名マスター病名管理番号ValueSet

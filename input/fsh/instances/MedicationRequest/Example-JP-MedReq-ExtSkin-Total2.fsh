@@ -56,7 +56,7 @@ Description: "【意図的エラー例】：入院処方　外用（塗布）全
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-05"
 * dosageInstruction.text = "1日数回 塗布"
 * dosageInstruction.timing.event = "2021-07-05T08:00:00+09:00"
-* dosageInstruction.timing.code.coding[+].system = $JP_MedicationUsageMHLW_Prscription_CS
+* dosageInstruction.timing.code.coding[+].system = $JAMI_MedicationUsage_ePrescription_CS
 * dosageInstruction.timing.code.coding[=].code = #2B7N000000000000
 * dosageInstruction.timing.code.coding[=].display = "１日数回　塗布"
 * dosageInstruction.timing.code.text = "1日数回 塗布"

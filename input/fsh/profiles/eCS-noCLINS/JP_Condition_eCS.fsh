@@ -278,14 +278,14 @@ Description: "病名の前置修飾語を格納するための拡張"
     medisRecordNo 1..1 and
     receipt 0..1
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
-* valueCodeableConcept.coding[medisExchange].system = $JP_BodySite_MEDIS_Concept_CS (exactly)
+* valueCodeableConcept.coding[medisExchange].system = $JP_Modifier_MEDIS_Concept_CS (exactly)
 * valueCodeableConcept.coding[medisExchange].code 1..
 * valueCodeableConcept.coding[medisExchange] ^short = "MEDIS ICD10対応標準病名マスター(修飾語交換用コード) 。"
 * valueCodeableConcept.coding[medisExchange] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語交換用コード "
 //* valueCodeableConcept.coding[medisExchange] ^comment = "JP_ConditionDiseaseModifierMEDISExchange_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[medisRecordNo] from $JP_ConditionDiseaseModifierMEDISRecordNo_VS (required)
-* valueCodeableConcept.coding[medisRecordNo].system = $JP_BodySite_MEDIS_ManagementID_CS (exactly)
+* valueCodeableConcept.coding[medisRecordNo].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly)
 * valueCodeableConcept.coding[medisRecordNo].code 1..
 * valueCodeableConcept.coding[medisRecordNo] ^short = "MEDIS ICD10対応標準病名マスター(修飾語管理番号) 。"
 * valueCodeableConcept.coding[medisRecordNo] ^definition = "MEDIS ICD10対応標準病名マスターの修飾語管理番号。電子カルテ情報共有サービスでは修飾語管理番号を使用することが必須。"

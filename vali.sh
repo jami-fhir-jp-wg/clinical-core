@@ -7,5 +7,5 @@
 cd ../work/forValidation-clinical-core
 target=Bundle-Bundle-CLINS-PCS-Example-01.json
 echo ${target}
-java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar  ${target} -display-issues-are-warnings  -version 4.0.1 -locale ja-JP -ig jp-core.r4-1.1.2.tgz -ig jpfhir-terminology.r4-1.2.1.tgz -ig  jp-clins.r4-1.4.1.tgz -tx n/a  -language ja
+java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar  ${target} -display-issues-are-warnings  -version 4.0.1 -locale ja-JP -ig jp-core.r4-1.1.2.tgz -ig jpfhir-terminology.r4-1.2.1.tgz -ig  jp-clins.r4-1.5.0.tgz -tx n/a  -language ja
 

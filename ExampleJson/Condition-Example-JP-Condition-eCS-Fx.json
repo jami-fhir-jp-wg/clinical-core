@@ -16,7 +16,7 @@
   "code": {
     "coding": [
       {
-        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
         "code": "20080427",
         "display": "前腕骨折"
       }
@@ -27,7 +27,7 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.201.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-modKeyNumber",
               "code": "27000358",
               "display": "左"
             }

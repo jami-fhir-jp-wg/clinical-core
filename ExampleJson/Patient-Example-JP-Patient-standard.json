@@ -2,6 +2,7 @@
   "resourceType": "Patient",
   "id": "Example-JP-Patient-standard",
   "meta": {
+    "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
       "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
     ]

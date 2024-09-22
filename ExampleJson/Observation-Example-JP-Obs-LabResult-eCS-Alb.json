@@ -11,7 +11,7 @@
     ],
     "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|1"
     ]
   },
   "identifier": [
@@ -44,7 +44,7 @@
         "coding": [
           {
             "code": "08",
-            "system": "urn:oid:1.2.392.200250.2.2.2",
+            "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
             "display": "循環器科"
           }
         ],

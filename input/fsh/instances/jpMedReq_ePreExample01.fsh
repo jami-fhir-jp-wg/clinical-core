@@ -48,7 +48,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber
 * identifier[rpNumber].value = "1"
-* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex"
+* identifier[orderInRp].system = $JP_MedicationAdministrationIndex
 * identifier[orderInRp].value = "1"
 
 * identifier[requestIdentifier].system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
@@ -78,7 +78,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * dosageInstruction[=].timing.repeat.boundsDuration = 7 'd' "日"
 
 * dosageInstruction[=].timing.code.coding[jami_yoho] = $JP_MedicationUsageJAMI_CS#1013044400000000 "内服 １日３回 朝昼夕食後"
-* dosageInstruction[=].timing.code.coding[mhw_prescription_yoho] =  $JP_MedicationUsageMHLW_Prscription_CS#1013044400000000 "１日３回朝昼夕食後　服用"
+* dosageInstruction[=].timing.code.coding[mhw_prescription_yoho] =  $JAMI_MedicationUsage_ePrescription_CS#1013044400000000 "１日３回朝昼夕食後　服用"
 
 * dosageInstruction[=].timing.code.text = "内服・経口・１日３回朝昼夕食後"
 
@@ -89,12 +89,12 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 //150on_処方外用用法(ARGmethodcode,ARGmethodname)
 * dosageInstruction[=].doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
 
-* dosageInstruction[=].doseAndRate.doseQuantity = 1 $JP_MedicationUnitMERIT9_CSTAB "錠"
+* dosageInstruction[=].doseAndRate.doseQuantity = 1 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 
-* dosageInstruction[=].doseAndRate.rateRatio.numerator = 3 $JP_MedicationUnitMERIT9_CSTAB "錠"
+* dosageInstruction[=].doseAndRate.rateRatio.numerator = 3 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 * dosageInstruction[=].doseAndRate.rateRatio.denominator = 1 'd' "日"
 
-* dispenseRequest.quantity = 21 $JP_MedicationUnitMERIT9_CSTAB "錠"
+* dispenseRequest.quantity = 21 $JP_MedicationUnitMERIT9_CS#TAB "錠"
 
 * dispenseRequest.expectedSupplyDuration = 7 'd' "日"
 

@@ -16,6 +16,7 @@ Alias: $JAMI_MedicationMethodDetailPouring_CS = http://jami.jp/CodeSystem/Medica
 Alias: $JAMI_MedicationUsage_12digits_CS = http://jami.jp/CodeSystem/MedicationUsage-12digits  // urn:oid:1.2.392.200250.2.2.21
 Alias: $JAMI_MasterNursingAction_16digits_CS = http://medis.or.jp/CodeSystem/master-nursingAction-16digits // urn:oid:1.2.392.200119.4.704
 Alias: $JAMI_MedicationUsage_ePrescription_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription
+Alias: $JAMI_MedicationUsage_ePrescription_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
 Alias: $JAMI_MedicationForm_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationForm   // urn:oid:1.2.392.100495.20.2.21
 Alias: $JAMI_RequestCheckRemainingMedicine_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/RequestCheckRemainingMedicine    // urn:oid:1.2.392.100495.20.2.42
 Alias: $JAMI_MedicationRequestDepartment_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationRequestDepartment  // urn:oid:1.2.392.100495.20.2.51
@@ -34,19 +35,16 @@ Alias: $JP_Disease_MEDIS_Concept_VS = http://medis.or.jp/ValueSet/master-disease
 Alias: $JP_Disease_MEDIS_ManagementID_CS = http://medis.or.jp/CodeSystem/master-disease-keyNumber    // MEDIS病名管理番号
 Alias: $JP_Disease_MEDIS_ManagementID_VS = http://medis.or.jp/ValueSet/master-disease-keyNumber    // MEDIS病名管理番号
 
-Alias: $JP_Disease_Claim_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease    // 支払基金	傷病名コード
-Alias: $JP_Disease_Claim_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/masterB-disease    // 支払基金	傷病名コード
-
 //Alias: $JP_BodySite_MEDIS_Concept_CS = urn:oid:1.2.392.200119.4.201.5   // MEDIS修飾語交換用コード
-Alias: $JP_BodySite_MEDIS_Concept_CS = http://medis.or.jp/CodeSystem/master-disease-modExCode
-Alias: $JP_BodySite_MEDIS_Concept_VS = http://medis.or.jp/ValueSet/master-disease-modExCode
+Alias: $JP_Modifier_MEDIS_Concept_CS = http://medis.or.jp/CodeSystem/master-disease-modExCode
+Alias: $JP_Modifier_MEDIS_Concept_VS = http://medis.or.jp/ValueSet/master-disease-modExCode
 
 //Alias: $JP_BodySite_MEDIS_ManagementID_CS = urn:oid:1.2.392.200119.4.201.2 // MEDIS修飾語管理番号
-Alias: $JP_BodySite_MEDIS_ManagementID_CS = http://medis.or.jp/CodeSystem/master-disease-modKeyNumber
-Alias: $JP_BodySite_MEDIS_ManagementID_VS = http://medis.or.jp/ValueSet/master-disease-modKeyNumber
+Alias: $JP_Modifier_MEDIS_ManagementID_CS = http://medis.or.jp/CodeSystem/master-disease-modKeyNumber
+Alias: $JP_Modifier_MEDIS_ManagementID_VS = http://medis.or.jp/ValueSet/master-disease-modKeyNumber
 
-Alias: $JP_BodySite_Disease_Claim_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterZ-disease-modifier //  支払基金	修飾語コード
-Alias: $JP_BodySite_Disease_Claim_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/masterZ-disease-modifier //  支払基金	修飾語コード
+Alias: $JP_Disease_Claim_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease    // 支払基金	傷病名コード
+Alias: $JP_Disease_Claim_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/masterB-disease    // 支払基金	傷病名コード
 
 Alias: $JP_Modifier_Disease_Claim_CS = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterZ-disease-modifier //  支払基金	修飾語コード
 Alias: $JP_Modifier_Disease_Claim_VS = http://jpfhir.jp/fhir/core/mhlw/ValueSet/masterZ-disease-modifier //  支払基金	修飾語コード

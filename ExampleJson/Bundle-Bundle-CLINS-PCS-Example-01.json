@@ -23,7 +23,7 @@
         "meta": {
           "lastUpdated": "2024-07-07T10:00:00+09:00",
           "profile": [
-            "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
+            "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS|1"
           ]
         },
         "status": "final",
@@ -275,7 +275,7 @@
               "coding": [
                 {
                   "code": "08",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "循環器科"
                 }
               ]
@@ -386,7 +386,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20058911",
               "display": "狭心症"
             }
@@ -407,7 +407,7 @@
               "coding": [
                 {
                   "code": "08",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "循環器科"
                 }
               ],
@@ -494,7 +494,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20061593",
               "display": "高血圧症"
             }
@@ -515,7 +515,7 @@
               "coding": [
                 {
                   "code": "08",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "循環器科"
                 }
               ],

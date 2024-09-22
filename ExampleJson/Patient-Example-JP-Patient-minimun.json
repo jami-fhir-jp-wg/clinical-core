@@ -2,6 +2,7 @@
   "resourceType": "Patient",
   "id": "Example-JP-Patient-minimun",
   "meta": {
+    "lastUpdated": "2023-04-01T10:00:00+09:00",
     "profile": [
       "http://jpfhir.jp/fhir/core/StructureDefinition/JP_Patient"
     ]
@@ -9,11 +10,11 @@
   "language": "ja",
   "identifier": [
     {
-      "system": "http://jpfhir.jp/fhir/eCS/Idsysmem/JP_Hospital_PatientID",
+      "system": "http://jpfhir.jp/fhir/eCS/Idsystem/JP_Hospital_PatientID",
       "value": "000999739"
     },
     {
-      "system": "http://jpfhir.jp/fhir/clins/Idsysmem/JP_Insurance_memberID",
+      "system": "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID",
       "value": "00012345:あいう:１８７:05"
     }
   ]

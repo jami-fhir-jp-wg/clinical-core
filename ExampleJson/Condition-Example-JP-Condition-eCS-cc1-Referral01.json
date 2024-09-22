@@ -4,7 +4,7 @@
   "meta": {
     "lastUpdated": "2021-11-26T10:00:00+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|1"
     ]
   },
   "identifier": [
@@ -16,7 +16,7 @@
   "code": {
     "coding": [
       {
-        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
         "code": "20065011",
         "display": "上腹部痛"
       }

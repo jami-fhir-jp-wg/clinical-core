@@ -27,6 +27,7 @@
         "resourceType": "Patient",
         "id": "InlineExample-JP-Patient-standard",
         "meta": {
+          "lastUpdated": "2023-11-12T10:00:00+09:00",
           "profile": [
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
           ]
@@ -147,7 +148,7 @@
               "coding": [
                 {
                   "code": "08",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "循環器科"
                 }
               ],

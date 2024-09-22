@@ -53,7 +53,7 @@ Description: "【意図的エラー例】：入院処方　外用（点眼）全
 
 * dosageInstruction.text = "両眼点眼 1日1回"
 * dosageInstruction.timing.event = "2021-07-05T12:00:00+09:00"
-* dosageInstruction.timing.code.coding[+] =  $JP_MedicationUsageMHLW_Prscription_CS#2H71000000000000 "１日１回　点眼"
+* dosageInstruction.timing.code.coding[+] =  $JAMI_MedicationUsage_ePrescription_CS#2H71000000000000 "１日１回　点眼"
 * dosageInstruction.timing.code.text = "両眼点眼 1日1回"
 * dosageInstruction.doseAndRate.type = $JP_MedicationIngredientStrengthStrengthType_CS#1 "製剤量"
 * dispenseRequest.quantity = 1 $JP_MedicationUnitMERIT9_CS#BTL "瓶"

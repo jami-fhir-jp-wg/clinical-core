@@ -28,21 +28,21 @@
     {
       "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
       "valueCoding": {
-        "system": "urn:oid:1.2.392.100495.20.3.21",
+        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/PrefectureNo-2digits",
         "code": "13"
       }
     },
     {
       "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
       "valueCoding": {
-        "system": "urn:oid:1.2.392.100495.20.3.22",
+        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationFeeScoreType",
         "code": "1"
       }
     },
     {
       "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
       "valueIdentifier": {
-        "system": "urn:oid:1.2.392.100495.20.3.23",
+        "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicalOrganizationID",
         "value": "9876543"
       }
     },
@@ -52,7 +52,7 @@
         "coding": [
           {
             "code": "26",
-            "system": "urn:oid:1.2.392.200250.2.2.2",
+            "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
             "display": "眼科"
           }
         ]

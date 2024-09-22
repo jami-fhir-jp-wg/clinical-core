@@ -4,18 +4,18 @@
   "meta": {
     "lastUpdated": "2023-09-14T14:03:37.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
     ]
   },
   "status": "completed",
   "intent": "order",
   "identifier": [
     {
-      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber",
       "value": "1"
     },
     {
-      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex",
       "value": "1"
     },
     {
@@ -50,7 +50,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200250.2.2.20",
+              "system": "http://jami.jp/CodeSystem/MedicationUsage",
               "code": "1011000400000000",
               "display": "内服 １日１回 朝食後"
             },
@@ -90,7 +90,7 @@
             "numerator": {
               "value": 1,
               "code": "TAB",
-              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
               "unit": "錠"
             }
           },
@@ -98,7 +98,7 @@
             "coding": [
               {
                 "code": "1",
-                "system": "urn:oid:1.2.392.100495.20.2.22",
+                "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType",
                 "display": "製剤量"
               }
             ]
@@ -106,7 +106,7 @@
           "doseQuantity": {
             "value": 1,
             "code": "TAB",
-            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
             "unit": "錠"
           }
         }
@@ -126,7 +126,7 @@
         "coding": [
           {
             "code": "1",
-            "system": "urn:oid:1.2.392.200250.2.2.20.30",
+            "system": "http://jami.jp/CodeSystem/MedicationMethodBasicUsage",
             "display": "内服"
           }
         ]
@@ -189,12 +189,12 @@
     "coding": [
       {
         "code": "121431401",
-        "system": "urn:oid:1.2.392.200119.4.403.1",
+        "system": "http://medis.or.jp/CodeSystem/master-HOT9",
         "display": "アムロジピンＯＤ錠１０ｍｇ"
       },
       {
         "code": "2171022F6276",
-        "system": "urn:oid:1.2.392.100495.20.1.73",
+        "system": "http://capstandard.jp/CodeSystem/YJ-code",
         "display": "アムロジピンＯＤ錠１０ｍｇ"
       },
       {
@@ -229,7 +229,7 @@
     "quantity": {
       "value": 90,
       "code": "TAB",
-      "system": "urn:oid:1.2.392.100495.20.2.101",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
       "unit": "錠"
     },
     "expectedSupplyDuration": {

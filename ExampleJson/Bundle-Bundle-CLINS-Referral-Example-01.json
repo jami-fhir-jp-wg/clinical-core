@@ -23,7 +23,7 @@
         "meta": {
           "lastUpdated": "2021-11-26T10:00:00+09:00",
           "profile": [
-            "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral"
+            "http://jpfhir.jp/fhir/eReferral/StructureDefinition/JP_Composition_eReferral|1"
           ]
         },
         "status": "final",
@@ -627,21 +627,21 @@
           {
             "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
             "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.21",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/PrefectureNo-2digits",
               "code": "13"
             }
           },
           {
             "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
             "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.22",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationFeeScoreType",
               "code": "1"
             }
           },
           {
             "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
             "valueIdentifier": {
-              "system": "urn:oid:1.2.392.100495.20.3.23",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicalOrganizationID",
               "value": "9876543"
             }
           },
@@ -651,7 +651,7 @@
               "coding": [
                 {
                   "code": "26",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "眼科"
                 }
               ]
@@ -706,21 +706,21 @@
           {
             "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo",
             "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.21",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/PrefectureNo-2digits",
               "code": "13"
             }
           },
           {
             "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory",
             "valueCoding": {
-              "system": "urn:oid:1.2.392.100495.20.3.22",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationFeeScoreType",
               "code": "1"
             }
           },
           {
             "url": "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationNo",
             "valueIdentifier": {
-              "system": "urn:oid:1.2.392.100495.20.3.23",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicalOrganizationID",
               "value": "1234567"
             }
           },
@@ -730,7 +730,7 @@
               "coding": [
                 {
                   "code": "081",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "循環器内科"
                 }
               ]
@@ -792,7 +792,7 @@
         "meta": {
           "lastUpdated": "2021-11-26T10:00:00+09:00",
           "profile": [
-            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|1"
           ]
         },
         "identifier": [
@@ -804,7 +804,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20065011",
               "display": "上腹部痛"
             }
@@ -864,7 +864,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20075383",
               "display": "腹痛症"
             }
@@ -911,7 +911,7 @@
         "meta": {
           "lastUpdated": "2021-11-26T10:00:00+09:00",
           "profile": [
-            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|1"
           ]
         },
         "identifier": [
@@ -923,7 +923,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20065011",
               "display": "上腹部痛"
             }
@@ -944,7 +944,7 @@
               "coding": [
                 {
                   "code": "08",
-                  "system": "urn:oid:1.2.392.200250.2.2.2",
+                  "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
                   "display": "循環器科"
                 }
               ],
@@ -1024,7 +1024,7 @@
         "meta": {
           "lastUpdated": "2021-11-26T10:00:00+09:00",
           "profile": [
-            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+            "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|1"
           ]
         },
         "identifier": [
@@ -1036,7 +1036,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20058911",
               "display": "狭心症"
             }
@@ -1101,7 +1101,7 @@
         "code": {
           "coding": [
             {
-              "system": "urn:oid:1.2.392.200119.4.101.2",
+              "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
               "code": "20080427",
               "display": "前腕骨折"
             }
@@ -1112,7 +1112,7 @@
               "valueCodeableConcept": {
                 "coding": [
                   {
-                    "system": "urn:oid:1.2.392.200119.4.201.2",
+                    "system": "http://medis.or.jp/CodeSystem/master-disease-modKeyNumber",
                     "code": "27000358",
                     "display": "左"
                   }

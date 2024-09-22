@@ -16,7 +16,7 @@
   "code": {
     "coding": [
       {
-        "system": "urn:oid:1.2.392.200119.4.101.2",
+        "system": "http://medis.or.jp/CodeSystem/master-disease-keyNumber",
         "code": "20075383",
         "display": "腹痛症"
       }

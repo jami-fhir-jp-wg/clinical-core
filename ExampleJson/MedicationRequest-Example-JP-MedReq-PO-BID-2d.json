@@ -4,18 +4,18 @@
   "meta": {
     "lastUpdated": "2021-07-12T19:29:12.000+09:00",
     "profile": [
-      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS"
+      "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1"
     ]
   },
   "status": "completed",
   "intent": "order",
   "identifier": [
     {
-      "system": "urn:oid:1.2.392.100495.20.3.81",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber",
       "value": "1"
     },
     {
-      "system": "urn:oid:1.2.392.100495.20.3.82",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex",
       "value": "1"
     },
     {
@@ -58,7 +58,7 @@
             "numerator": {
               "value": 2,
               "code": "TAB",
-              "system": "urn:oid:1.2.392.100495.20.2.101",
+              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
               "unit": "錠"
             }
           },
@@ -66,7 +66,7 @@
             "coding": [
               {
                 "code": "1",
-                "system": "urn:oid:1.2.392.100495.20.2.22",
+                "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType",
                 "display": "製剤量"
               }
             ]
@@ -74,7 +74,7 @@
           "doseQuantity": {
             "value": 2,
             "code": "TAB",
-            "system": "urn:oid:1.2.392.100495.20.2.101",
+            "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
             "unit": "錠"
           }
         }
@@ -160,7 +160,7 @@
     "coding": [
       {
         "code": "3219100F1020",
-        "system": "urn:oid:1.2.392.100495.20.1.73",
+        "system": "http://capstandard.jp/CodeSystem/YJ-code",
         "display": "デノタスチュアブル配合錠"
       },
       {
@@ -195,7 +195,7 @@
     "quantity": {
       "value": 4,
       "code": "TAB",
-      "system": "urn:oid:1.2.392.100495.20.2.101",
+      "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code",
       "unit": "錠"
     },
     "expectedSupplyDuration": {

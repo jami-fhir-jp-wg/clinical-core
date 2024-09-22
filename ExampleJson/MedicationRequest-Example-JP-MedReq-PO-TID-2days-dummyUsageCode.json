@@ -1,6 +1,6 @@
 {
   "resourceType": "MedicationRequest",
-  "id": "Example-JP-MedReq-PO-TID-2days",
+  "id": "Example-JP-MedReq-PO-TID-2days-dummyUsageCode",
   "meta": {
     "lastUpdated": "2021-07-09T14:11:13.000+09:00",
     "profile": [
@@ -63,14 +63,8 @@
         "code": {
           "coding": [
             {
-              "system": "http://jami.jp/CodeSystem/MedicationUsage",
-              "code": "1013044400000000",
-              "display": "内服 １日３回 朝昼夕食後"
-            },
-            {
-              "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
-              "code": "1013044400000000",
-              "display": "１日３回朝昼夕食後　服用"
+              "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS",
+              "code": "0X0XXXXXXXXX0000"
             }
           ],
           "text": "1日3回 毎食後"
@@ -129,7 +123,7 @@
   ],
   "note": [
     {
-      "text": "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）"
+      "text": "外来院外処方　内服1日1回１回1錠 標準用法コード化90日分処方例　（発行診療科、オーダ番号記載あり）用法をダミーコード"
     }
   ],
   "language": "ja",

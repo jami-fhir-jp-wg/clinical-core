@@ -21,7 +21,7 @@ Description: "【意図的エラー例】：退院時処方　内服1日1回１�
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "2"
-* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
+* identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
@@ -57,7 +57,7 @@ Description: "【意図的エラー例】：退院時処方　内服1日1回１�
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.timing.code.coding[jami_yoho] =  $JP_MedicationUsageJAMI_CS#1011100000000000 "内服 １日１回 就寝前"
-* dosageInstruction.timing.code.coding[mhw_prescription_yoho] =  $JP_MedicationUsageMHLW_Prscription_CS#1011100000000000 "１日１回就寝前　服用"
+* dosageInstruction.timing.code.coding[mhw_prescription_yoho] =  $JAMI_MedicationUsage_ePrescription_CS#1011100000000000 "１日１回就寝前　服用"
 * dosageInstruction.timing.code.text = "1日1回 就寝前"
 * dosageInstruction.route = $JP_MedicationRouteHL70162_CS#PO "口"
 * dosageInstruction.route.text = "経口"

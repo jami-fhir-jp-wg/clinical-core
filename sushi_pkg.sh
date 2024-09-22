@@ -1,7 +1,7 @@
 #!/bin/bash
 \rm -rf ~/.fhir
 cp -r ~/.fhir_sushiVersion ~/.fhir
-pkgVersion="1.4.1"
+pkgVersion="1.5.0"
 sushi -s .
 cp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCodeFrom.R5_5.5.0.json
 cd fsh-generated

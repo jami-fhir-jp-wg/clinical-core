@@ -22,7 +22,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
 * identifier[rpNumber].value = "1"
-* identifier[orderInRp].system = "$JP_MedicationAdministrationIndex" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
+* identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].value = "1318814790-9990767-0A17296D729AE72021071219211801-2"
@@ -57,7 +57,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * dosageInstruction.timing.repeat.frequency = 2
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
-* dosageInstruction.timing.code.coding[+].system = $JP_MedicationUsageMHLW_Prscription_CS
+* dosageInstruction.timing.code.coding[+].system = $JAMI_MedicationUsage_ePrescription_CS
 * dosageInstruction.timing.code.coding[=].code = #1012010100000000
 * dosageInstruction.timing.code.coding[=].display = "１日２回朝夕食前　服用"
 * dosageInstruction.timing.code.text = "1日2回 朝夕食後"

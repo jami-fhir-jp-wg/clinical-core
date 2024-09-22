@@ -43,7 +43,7 @@
     "coding": [
       {
         "code": "8A065000002391901",
-        "system": "urn:oid:1.2.392.200119.4.504",
+        "system": "http://medis.or.jp/CodeSystem/master-JLAC10-17digits",
         "display": "eGFR"
       }
     ],
