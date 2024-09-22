@@ -31,6 +31,8 @@ dependencies:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology.r4/ImplementationGuide/
     version: 1.2.1-url
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
+#
+#
 #----------------------------------------
 # ページタイトル名称設定
 #----------------------------------------
@@ -105,6 +107,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
   excludettl: 'true'
   excludemap: 'true'
   noRootToc: 'true'
+
 #  excludeexample: 'false'
   generate: #what does this do - todo: remove and see
     - json
