@@ -99,7 +99,7 @@ Description: "厚労省一般処方名マスター(厚労省保険局コード)"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* ^publisher = "（一社）日本医療情報学会"
-* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system  urn:oid:1.2.392.100495.20.1.81
+* ^publisher = "厚生労働省"
+* ^copyright = "厚生労働省"
+* include codes from system  $JP_MedicationCodeCommon_CS
 

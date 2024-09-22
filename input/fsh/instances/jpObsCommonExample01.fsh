@@ -20,6 +20,7 @@ Description: "Observationリソース　（診療情報提供書　腹部所見�
 * code.text = "腹部所見"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
 * valueString = "上腹部圧痛あり、その他特に所見なし。"
 

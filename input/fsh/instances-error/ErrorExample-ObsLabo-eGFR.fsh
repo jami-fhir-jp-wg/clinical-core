@@ -33,6 +33,7 @@ Description: "【意図的エラー例】：検体検査結果　eGFR　75.0 ml/
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * issued = "2021-07-05T15:38:59.000+09:00"
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 * valueQuantity.value = 75.0
 * valueQuantity.unit = "ml/min/1.73m2"
 //* interpretation.coding.version = "4.0.1"
