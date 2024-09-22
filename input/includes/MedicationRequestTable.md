@@ -755,7 +755,7 @@
   <td class=xl79 width=87 style='width:65pt'>uri</td>
   <td class=xl190 width=359 style='border-top:none;border-left:none;width:269pt'>医薬品コードを識別するURI。<br>
     <font class="font16">YJ（個別医薬品）コード:
-  &quot;urn:oid:1.2.392.100495.20.1.73&quot;<br>
+  &quot;http://capstandard.jp/CodeSystem/YJ-code&quot;<br>
     派生コード（YJコードの末尾3桁をZZZに置き換えたコード表）:
   &quot;http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ&quot;</font><font
   class="font12"><br>

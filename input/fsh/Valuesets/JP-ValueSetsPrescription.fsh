@@ -57,7 +57,7 @@ Description: "医薬品コード（YJコード）"
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system  urn:oid:1.2.392.100495.20.1.73
+* include codes from system  $JP_MedicationCodeYJ_CS
 
 ValueSet:  JP_valueSet_drugCode_hot9
 Id:   jp-valueSet-drugCode-hot9

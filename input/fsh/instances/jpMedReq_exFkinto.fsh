@@ -57,7 +57,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * intent = #order
 
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#105271807 "プレドニン錠５ｍｇ・塩野義"
-* medicationCodeableConcept.coding[+] = urn:oid:1.2.392.100495.20.1.73#2456001F1310 "プレドニン錠５ｍｇ"
+* medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2456001F1310 "プレドニン錠５ｍｇ"
 
 * medicationCodeableConcept.text = "プレドニン錠５ｍｇ・塩野義"
 

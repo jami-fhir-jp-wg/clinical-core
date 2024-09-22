@@ -69,7 +69,7 @@ Expression: "(category.where($this='medication').exists() and criticality='high'
 Invariant: valid-contraIndication-code
 Description: "R2012:薬剤アレルギー等情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤アレルギー等でない）場合にはJFAGYコードを使用すること。"
 Severity: #error
-Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) or (category.where($this='medication').count()=0 or criticality!='high')"
+Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'http://capstandard.jp/CodeSystem/YJ-code').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) or (category.where($this='medication').count()=0 or criticality!='high')"
 
 // R2013  アレルギーではJFAGYを使用すること（電子カルテ情報交換サービスの場合）
 Invariant: valid-allergy-code
@@ -181,7 +181,7 @@ Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/M
 Invariant: needs-anyOfStandardCode-medication
 Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、YJコード末尾ZZZ、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 Severity: #error
-Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ').count()=1)"
+Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ').count()=1)"
 
 // R3011 医薬品コードの妥当性チェックYJか一般のみ（標準コードなしはX）
 Invariant: needs-anyOfYJorGeneral-medication
@@ -194,7 +194,7 @@ Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
 Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
 */
 Severity: #error
-Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.73').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
+Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
 
 // R4011 薬剤アレルギーとその他アレルギー等の情報とを区別するため、電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はやその他のアレルギー情報として取り扱われる。
 // Invariant: needs-anyOfStandardCode-medication
