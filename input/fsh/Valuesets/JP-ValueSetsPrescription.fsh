@@ -50,7 +50,7 @@ Id:   jp-valueSet-drugCode-yj
 Title: "JP valueSet drugCode yj"
 Description: "医薬品コード（YJコード）"
 * ^experimental = false
-* ^url = "http://jpfhir.jp/fhir/ePrescription/ValueSet/jp-drugCode-yj"
+* ^url = $JP_MedicationCodeYJ_VS
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
@@ -94,7 +94,7 @@ Id:   mhlw-valueSet-drugCode-generalNameCode
 Title: "MHLW valueSet drugCode generalNameCode"
 Description: "厚労省一般処方名マスター(厚労省保険局コード)"
 * ^experimental = false
-* ^url = "http://jpfhir.jp/fhir/ePrescription/ValueSet/mhlw-drugCode-generalNameCode"
+* ^url = $JP_MedicationCodeCommon_VS
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
