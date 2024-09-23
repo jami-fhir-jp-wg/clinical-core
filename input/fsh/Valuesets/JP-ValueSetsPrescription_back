@@ -44,7 +44,7 @@ Description: "JAMI16桁用法コード"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_MedicationUsageJAMI_CS
 
-
+/*
 ValueSet:  JP_valueSet_drugCode_yj
 Id:   jp-valueSet-drugCode-yj
 Title: "JP valueSet drugCode yj"
@@ -58,6 +58,7 @@ Description: "医薬品コード（YJコード）"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system  $JP_MedicationCodeYJ_CS
+*/
 
 ValueSet:  JP_valueSet_drugCode_hot9
 Id:   jp-valueSet-drugCode-hot9
