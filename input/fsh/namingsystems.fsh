@@ -119,7 +119,7 @@ Usage: #definition
 * kind = #codesystem
 * description = "JP Core MedicationCode YJ NamingSystem"
 * uniqueId[+].type = #oid
-* uniqueId[=].value = "1.2.392.100495.20.1.73"
+* uniqueId[=].value = "1.2.392.100495.20.2.73"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = $JP_MedicationCodeYJ_CS
 * uniqueId[=].preferred = true

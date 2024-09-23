@@ -170,14 +170,7 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 
 
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
-/*
-Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
-Alias: $JP_MedicationCodeHOT7_CS = http://medis.or.jp/CodeSystem/master-HOT7
-Alias: $JP_MedicationCodeHOT9_CS = urn:oid:1.2.392.200119.4.403.1
-Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
-Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
-派生コード（YJの末尾3桁をZZZで潰すコード）http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ
-*/
+
 Invariant: needs-anyOfStandardCode-medication
 Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、YJコード末尾ZZZ、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 Severity: #error
@@ -186,13 +179,7 @@ Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://c
 // R3011 医薬品コードの妥当性チェックYJか一般のみ（標準コードなしはX）
 Invariant: needs-anyOfYJorGeneral-medication
 Description: "R3011:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、厚生労働省一般名コードのいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
-/*
-Alias: $JP_MedicationCodeYJ_CS = urn:oid:1.2.392.100495.20.1.73
-Alias: $JP_MedicationCodeHOT7_CS = http://medis.or.jp/CodeSystem/master-HOT7
-Alias: $JP_MedicationCodeHOT9_CS = urn:oid:1.2.392.200119.4.403.1
-Alias: $JP_MedicationCodeCommon_CS = urn:oid:1.2.392.100495.20.1.81
-Alias: $JP_eCS_MedicationCodeNocoded_CS = http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
-*/
+
 Severity: #error
 Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
 
