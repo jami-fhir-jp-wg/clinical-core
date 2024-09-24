@@ -15,7 +15,7 @@
  <col class=xl194 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=68 style='mso-height-source:userset;height:51.0pt'>
-  <td colspan=9 height=68 class=xl436 width=1079 style='height:51.0pt;
+  <td colspan=9 height=68 class=xl439 align=left width=1079 style='height:51.0pt;
   width:809pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
   </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -151,15 +151,17 @@
   <td class=xl150 width=195 style='width:146pt'>&quot;Observation&quot;</td>
  </tr>
  <tr height=175 style='mso-height-source:userset;height:131.0pt'>
-  <td height=175 class=xl161 width=107 style='height:131.0pt;border-top:none;
-  width:80pt'>identifier[*]</td>
+  <td height=175 class=xl161 align=left width=107 style='height:131.0pt;
+  border-top:none;width:80pt'>identifier[*]</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..*</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Identifier</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>この文書Bundleの<ruby>一意<span
-  style='display:none'><rt>&#129351;</rt></span></ruby>の識別子。Bund<ruby>le<span
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..*</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Identifier</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この文書Bundleの<ruby>一意<span style='display:none'><rt>&#129351;</rt></span></ruby>の識別子。Bund<ruby>le<span
   style='display:none'><rt>ジュシｎ </rt></span></ruby><ruby>作<span
   style='display:none'><rt>レキ </rt></span></ruby><ruby>成時<span
   style='display:none'><rt>カンリ </rt></span></ruby><ruby>にシ<span
@@ -175,110 +177,137 @@
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=56 style='height:42.0pt'>
-  <td height=56 class=xl161 width=107 style='height:42.0pt;border-top:none;
-  width:80pt'>identifier[+]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td height=56 class=xl161 align=left width=107 style='height:42.0pt;
+  border-top:none;width:80pt'>identifier[+]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>system</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>固<span
-  style='display:none'><rt>コテイチ </rt></span></ruby>定値　&quot;http://jpfhir.jp/fhir/clins/bundle-identifier&quot;を<ruby>設定<span
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>固<span style='display:none'><rt>コテイチ </rt></span></ruby>定値　&quot;http://jpfhir.jp/fhir/clins/bundle-identifier&quot;を<ruby>設定<span
   style='display:none'><rt>セッテイ </rt></span></ruby>する。 </td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>固定値</td>
-  <td class=xl195 width=195 style='border-top:none;border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/bundle-identifier</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>固定値</td>
+  <td class=xl195 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'>http://jpfhir.jp/fhir/clins/bundle-identifier</td>
  </tr>
  <tr height=281 style='mso-height-source:userset;height:211.0pt'>
-  <td height=281 class=xl161 width=107 style='height:211.0pt;border-top:none;
-  width:80pt'>identifier[=]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td height=281 class=xl161 align=left width=107 style='height:211.0pt;
+  border-top:none;width:80pt'>identifier[=]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>value</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>実装<span
-  style='display:none'><rt>ジッソウ </rt></span></ruby>ガイド<ruby>本文<span
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>実装<span style='display:none'><rt>ジッソウ </rt></span></ruby>ガイド<ruby>本文<span
   style='display:none'><rt>ホンブン </rt></span></ruby><span
   style='mso-spacerun:yes'> </span>6情報<ruby>送信<span style='display:none'><rt>ソウシン
   </rt></span></ruby><ruby>仕様<span style='display:none'><rt>シヨウ </rt></span></ruby>--Bundleリソースを識別するIdentifier要素--
   に<ruby>記載<span style='display:none'><rt>&#0;&#0;&#2;&#5;&#5;&#2;<br>
     <br>
     </rt></span></ruby>の[Bundle-ID]の仕様とする。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'><ruby>例<span
-  style='display:none'><rt>レイジ </rt></span></ruby>示</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'><ruby>例<span style='display:none'><rt>レイジ </rt></span></ruby>示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1311234567^2020^00123456&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl161 width=107 style='height:30.0pt;border-top:none;
-  width:80pt'>type</td>
+  <td height=40 class=xl161 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>type</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>code</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>Bundleリソースのタイプ。<ruby>本<span
-  style='display:none'><rt>ホン </rt></span></ruby><ruby>仕様<span
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>code</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>Bundleリソースのタイプ。<ruby>本<span style='display:none'><rt>ホン </rt></span></ruby><ruby>仕様<span
   style='display:none'><rt>シヨウ </rt></span></ruby>では&quot;collection&quot;<ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby>とする。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>固定値</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>固定値</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;collection&quot;</td>
  </tr>
  <tr height=83 style='mso-height-source:userset;height:62.0pt'>
-  <td height=83 class=xl161 width=107 style='height:62.0pt;border-top:none;
-  width:80pt'>timestamp</td>
+  <td height=83 class=xl161 align=left width=107 style='height:62.0pt;
+  border-top:none;width:80pt'>timestamp</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>instant</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>instant</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>このリソースを生成した日時。時刻の精度はミリ秒とし、タイムゾーンを含めること。</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2021-02-01T13:28:17.239+09:00&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl161 width=107 style='height:30.0pt;border-top:none;
-  width:80pt'>entry[*]</td>
+  <td height=40 class=xl161 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>entry[*]</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..*</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>BackboneElement</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>Bundleに含まれる全リソースエントリを<ruby>格納<span
-  style='display:none'><rt>カクノウ </rt></span></ruby>する。</td>
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..*</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>BackboneElement</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>Bundleに含まれる全リソースエントリを<ruby>格納<span style='display:none'><rt>カクノウ
+  </rt></span></ruby>する。</td>
   <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>　</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=125 style='mso-height-source:userset;height:94.0pt'>
-  <td height=125 class=xl161 width=107 style='height:94.0pt;border-top:none;
-  width:80pt'>entry[+]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>fullUrl</td>
+  <td height=125 class=xl161 align=left width=107 style='height:94.0pt;
+  border-top:none;width:80pt'>entry[+]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>fullUrl</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>エントリリスト内の<ruby>各<span
-  style='display:none'><rt>カクコジン サイショ ヒツオユヒッス ヒッス<span
-  style='mso-spacerun:yes'>  </span></rt></span></ruby>リソースを一意に識別するためのUUID。この要素は、<ruby>第<span
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>エントリリスト内の<ruby>各<span style='display:none'><rt>カクコジン サイショ
+  ヒツオユヒッス ヒッス<span style='mso-spacerun:yes'>  </span></rt></span></ruby>リソースを一意に識別するためのUUID。この要素は、<ruby>第<span
   style='display:none'><rt>ダイ1 </rt></span></ruby>1リソースであるPatientリソースのentryのUUIDで、<ruby>他<span
   style='display:none'><rt>ホカ </rt></span></ruby>のentryに<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>されるリソースからこのPatientリソースを<ruby>参照<span
   style='display:none'><rt>サンショウ </rt></span></ruby>するときに、このUUIDを<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>することで<ruby>参照<span
   style='display:none'><rt>サンショウ </rt></span></ruby>する。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720&quot;</td>
  </tr>
  <tr height=300 style='height:225.0pt'>
-  <td height=300 class=xl161 width=107 style='height:225.0pt;border-top:none;
-  width:80pt'>entry[=]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>resource</td>
+  <td height=300 class=xl161 align=left width=107 style='height:225.0pt;
+  border-top:none;width:80pt'>entry[=]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>resource</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl162 width=63 style='border-top:none;border-left:none;width:47pt'>1..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Resource(JP_Patient_eCS)</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>JP_Patient_eCS
-  profileに準拠したPatient<ruby>リソ<span style='display:none'><rt>ジュンキョ </rt></span></ruby>ース。最初のリソースentryはこのPatientリソースであることが必須。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl162 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>1..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Resource(JP_Patient_eCS)</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>JP_Patient_eCS profileに準拠したPatient<ruby>リソ<span
+  style='display:none'><rt>ジュンキョ </rt></span></ruby>ース。最初のリソースentryはこのPatientリソースであることが必須。</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>{<br>
     <span style='mso-spacerun:yes'>        </span>&quot;resourceType&quot;:
   &quot;Patient&quot;,<br>
@@ -295,15 +324,18 @@
   style='display:none'><rt>ショウリャク </rt></span></ruby>略&gt;</td>
  </tr>
  <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl161 width=107 style='height:75.0pt;border-top:none;
-  width:80pt'>entry[+]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>fullUrl</td>
+  <td height=100 class=xl161 align=left width=107 style='height:75.0pt;
+  border-top:none;width:80pt'>entry[+]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>fullUrl</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=63 style='border-top:none;border-left:none;width:47pt'>0..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>エントリリスト内の<ruby>各<span
-  style='display:none'><rt>カクコジン </rt></span></ruby>リソースを一意に識別するためのUUID。すでに<ruby>送信<span
+  <td class=xl77 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>0..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>エントリリスト内の<ruby>各<span style='display:none'><rt>カクコジン </rt></span></ruby>リソースを一意に識別するためのUUID。すでに<ruby>送信<span
   style='display:none'><rt>ソウシン </rt></span></ruby><ruby>済<span
   style='display:none'><rt>ズミ </rt></span></ruby>みのBundleリソースを<ruby>削除<span
   style='display:none'><rt>サクジョ </rt></span></ruby>するためにこのBundleリソースを<ruby>送信<span
@@ -313,20 +345,26 @@
   style='display:none'><rt>セッテイ </rt></span></ruby>し、これ<ruby>以降<span
   style='display:none'><rt>イコウ </rt></span></ruby>のリソースは<ruby>不要<span
   style='display:none'><rt>フヨウ </rt></span></ruby>である。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:uuid:1304f64f-4e45-be12-ddd6-fab7895db0c3&quot;</td>
  </tr>
  <tr height=300 style='height:225.0pt'>
-  <td height=300 class=xl161 width=107 style='height:225.0pt;border-top:none;
-  width:80pt'>entry[=]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>resource</td>
+  <td height=300 class=xl161 align=left width=107 style='height:225.0pt;
+  border-top:none;width:80pt'>entry[=]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>resource</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=63 style='border-top:none;border-left:none;width:47pt'>0..*</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Resource(JP_Conditon_eCS|JP_Observation_LabResult_eCS|JP_AllergyIntorellance_eCS)</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>このBundleリソースが格納するリソースのprofileに準拠したリソース。6情報のうち傷病<ruby>名<span
+  <td class=xl77 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>0..*</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Resource(JP_Conditon_eCS|JP_Observation_LabResult_eCS|JP_AllergyIntorellance_eCS)</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>このBundleリソースが格納するリソースのprofileに準拠したリソース。6情報のうち傷病<ruby>名<span
   style='display:none'><rt>メイ </rt></span></ruby>、薬剤アレルギー、その他アレルギー、検体のいずれか。処方は６情報送信においては送信対象となっていない。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>{<br>
     <span style='mso-spacerun:yes'>        </span>&quot;resourceType&quot;:
   &quot;Observation&quot;,<br>
@@ -345,35 +383,41 @@
     &lt;以降省略&gt;</td>
  </tr>
  <tr height=43 style='mso-height-source:userset;height:32.0pt'>
-  <td colspan=9 height=43 class=xl437 width=1079 style='border-right:1.0pt solid black;
+  <td colspan=9 height=43 class=xl440 width=1079 style='border-right:1.0pt solid black;
   height:32.0pt;width:809pt'>　　　：：：　（<ruby>リ<span style='display:none'><rt>クリカエシ
   </rt></span></ruby>ソースインスタンスの数だけ繰り<ruby>返<span style='display:none'><rt>カズ </rt></span></ruby>し（）</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl161 width=107 style='height:30.0pt;border-top:none;
-  width:80pt'>entry[+]</td>
-  <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>fullUrl</td>
+  <td height=40 class=xl161 align=left width=107 style='height:30.0pt;
+  border-top:none;width:80pt'>entry[+]</td>
+  <td class=xl77 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>fullUrl</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=63 style='border-top:none;border-left:none;width:47pt'>0..1</td>
-  <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>エントリリスト内の<ruby>各<span
-  style='display:none'><rt>カクコジン </rt></span></ruby>リソースを一意に識別するためのUUID。</td>
-  <td class=xl77 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl77 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>0..1</td>
+  <td class=xl77 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
+  <td class=xl77 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>エントリリスト内の<ruby>各<span style='display:none'><rt>カクコジン </rt></span></ruby>リソースを一意に識別するためのUUID。</td>
+  <td class=xl77 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl157 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed&quot;</td>
  </tr>
  <tr height=301 style='height:226.0pt'>
-  <td height=301 class=xl193 width=107 style='height:226.0pt;border-top:none;
-  width:80pt'>entry[=]</td>
-  <td class=xl78 width=73 style='border-top:none;border-left:none;width:55pt'>resource</td>
+  <td height=301 class=xl193 align=left width=107 style='height:226.0pt;
+  border-top:none;width:80pt'>entry[=]</td>
+  <td class=xl78 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>resource</td>
   <td class=xl78 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl78 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl78 width=63 style='border-top:none;border-left:none;width:47pt'>0..*</td>
-  <td class=xl78 width=87 style='border-top:none;border-left:none;width:65pt'>entry[1]<ruby>以降<span
-  style='display:none'><rt>イコウ </rt></span></ruby>と<ruby>同一<span
+  <td class=xl78 align=left width=63 style='border-top:none;border-left:none;
+  width:47pt'>0..*</td>
+  <td class=xl78 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>entry[1]<ruby>以降<span style='display:none'><rt>イコウ </rt></span></ruby>と<ruby>同一<span
   style='display:none'><rt>ドウイツ </rt></span></ruby>。</td>
-  <td class=xl78 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>上記<span
-  style='display:none'><rt>ジョウキ </rt></span></ruby>と<ruby>同<span
+  <td class=xl78 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>上記<span style='display:none'><rt>ジョウキ </rt></span></ruby>と<ruby>同<span
   style='display:none'><rt>オナジ </rt></span></ruby>じ。<ruby>同一<span
   style='display:none'><rt>ドウイツ </rt></span></ruby>のBundleリソースに<ruby>格納<span
   style='display:none'><rt>カクノウ </rt></span></ruby>されるすべてのentryは、Patientリソースを<ruby>除<span
@@ -382,7 +426,8 @@
   style='display:none'><rt>シュベツ </rt></span></ruby>、<ruby>同一<span
   style='display:none'><rt>ドウイツ </rt></span></ruby>のプロファイルに<ruby>準拠<span
   style='display:none'><rt>ジュンキョ </rt></span></ruby>していなければならない。</td>
-  <td class=xl78 width=49 style='border-top:none;border-left:none;width:37pt'>例示</td>
+  <td class=xl78 align=left width=49 style='border-top:none;border-left:none;
+  width:37pt'>例示</td>
   <td class=xl165 width=195 style='border-top:none;border-left:none;width:146pt'>{<br>
     <span style='mso-spacerun:yes'>        </span>&quot;resourceType&quot;:
   &quot;Observation&quot;,<br>

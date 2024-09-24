@@ -17,8 +17,8 @@
  <col class=xl272 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=61 style='mso-height-source:userset;height:46.0pt'>
-  <td colspan=10 height=61 class=xl435 width=1111 style='height:46.0pt;
-  width:833pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
+  <td colspan=10 height=61 class=xl438 align=left width=1111 style='height:
+  46.0pt;width:833pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
   style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
   style='display:none'><rt>シュツゲン </rt></span></ruby>した<ruby>場合<span
@@ -238,16 +238,17 @@
   <td class=xl182 width=195 style='width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl288 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[*]</td>
+  <td height=40 class=xl288 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>extension[*]</td>
   <td class=xl238 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
   <td class=xl238 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl273 width=359 style='border-top:none;border-left:none;width:269pt'>電子カルテ情報サービスでは、<ruby>作成<span
-  style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
+  <td class=xl273 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>電子カルテ情報サービスでは、<ruby>作成<span style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
   style='display:none'><rt>ハッコウ </rt></span></ruby>した<ruby>医療<span
   style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
   style='display:none'><rt>キカｎ </rt></span></ruby><ruby>番号<span
@@ -260,30 +261,32 @@
   <td class=xl274 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl201 width=97 style='height:20.0pt;width:73pt'>extension[+]</td>
+  <td height=27 class=xl201 align=left width=97 style='height:20.0pt;
+  width:73pt'>extension[+]</td>
   <td class=xl289 width=83 style='border-left:none;width:62pt'>　</td>
   <td class=xl289 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl289 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl289 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl275 width=35 style='border-left:none;width:26pt'>0..1</td>
-  <td class=xl289 width=87 style='border-left:none;width:65pt'>Extension</td>
+  <td class=xl275 align=left width=35 style='border-left:none;width:26pt'>0..1</td>
+  <td class=xl289 align=left width=87 style='border-left:none;width:65pt'>Extension</td>
   <td class=xl248 width=359 style='border-left:none;width:269pt'>　</td>
   <td class=xl222 width=36 style='border-left:none;width:27pt'>　</td>
   <td class=xl277 width=195 style='border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=177 style='mso-height-source:userset;height:133.0pt'>
-  <td height=177 class=xl201 width=97 style='height:133.0pt;width:73pt'>extension[=]</td>
-  <td class=xl146 width=83 style='border-left:none;width:62pt'>url</td>
+  <td height=177 class=xl201 align=left width=97 style='height:133.0pt;
+  width:73pt'>extension[=]</td>
+  <td class=xl146 align=left width=83 style='border-left:none;width:62pt'>url</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl275 width=35 style='border-left:none;width:26pt'>1..1</td>
-  <td class=xl146 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl248 width=359 style='border-left:none;width:269pt'>本情報を作成発行した診療科または<ruby>作成<span
+  <td class=xl275 align=left width=35 style='border-left:none;width:26pt'>1..1</td>
+  <td class=xl146 align=left width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl248 align=left width=359 style='border-left:none;width:269pt'>本情報を作成発行した診療科または<ruby>作成<span
   style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
   style='display:none'><rt>ハッコウ </rt></span></ruby>者の診療科情報を記述するために使用する拡張「eCS_InstitutionNumber」。<br>
     <font class="font14">電子カルテ情報サービスでは、この拡張による記述は必須。</font></td>
-  <td class=xl146 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl271 width=195 style='border-left:none;width:146pt'><a
   href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"
@@ -291,16 +294,19 @@
   none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</span></a></td>
  </tr>
  <tr height=47 style='mso-height-source:userset;height:35.0pt'>
-  <td height=47 class=xl200 width=97 style='height:35.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueIdentifier</td>
+  <td height=47 class=xl200 align=left width=97 style='height:35.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueIdentifier</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Identifier</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>医療<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Identifier</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>医療<span style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
   style='display:none'><rt>キカｎ </rt></span></ruby><ruby>識別<span
   style='display:none'><rt>シキベツ </rt></span></ruby><ruby>情報<span
   style='display:none'><rt>ジョウホウ </rt></span></ruby>。</td>
@@ -308,52 +314,62 @@
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl200 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueIdentifier</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
+  <td height=60 class=xl200 align=left width=97 style='height:45.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueIdentifier</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>system</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl146 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>医療<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl146 align=left width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>医療<span style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
   style='display:none'><rt>キカｎ </rt></span></ruby>１０<ruby>桁<span
   style='display:none'><rt>ケタ </rt></span></ruby><ruby>番号<span
   style='display:none'><rt>バンゴウ </rt></span></ruby>を<ruby>示<span
   style='display:none'><rt>シメス </rt></span></ruby>すURL。</td>
-  <td class=xl146 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl297 width=195 style='border-top:none;border-left:none;width:146pt'><a
+  <td class=xl297 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'><a
   href="http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no"
   target="_parent"><span style='font-size:10.0pt;text-decoration:none;
   font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl208 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl90 width=83 style='border-top:none;border-left:none;width:62pt'>valueIdentifier</td>
-  <td class=xl90 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
+  <td height=41 class=xl208 align=left width=97 style='height:31.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl90 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueIdentifier</td>
+  <td class=xl90 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>value</td>
   <td class=xl90 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl90 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl279 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl90 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl90 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>医療機関１０桁番号。<span
-  style='display:none'><rt>ケタ </rt></span></ruby></td>
-  <td class=xl223 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
+  <td class=xl279 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl90 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl90 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>医療機関１０桁番号。<span style='display:none'><rt>ケタ </rt></span></ruby></td>
+  <td class=xl223 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例示<span style='display:none'><rt>&#128347;</rt></span></ruby></td>
   <td class=xl292 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1318814790&quot;</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl282 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>extension[+]</td>
+  <td height=60 class=xl282 align=left width=97 style='height:45.0pt;
+  border-top:none;width:73pt'>extension[+]</td>
   <td class=xl293 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
   <td class=xl293 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl293 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl293 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl347 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl293 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl248 width=359 style='border-left:none;width:269pt'>本情報を作成発行した診療科または<ruby>作成<span
+  <td class=xl347 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl293 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Extension</td>
+  <td class=xl248 align=left width=359 style='border-left:none;width:269pt'>本情報を作成発行した診療科または<ruby>作成<span
   style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
   style='display:none'><rt>ハッコウ </rt></span></ruby>者の診療科情報を記述するために使用する拡張「eCS_Department」。<font
   class="font14">電子カルテ情報サービスでは、この拡張による記述は必須。</font></td>
@@ -361,101 +377,132 @@
   <td class=xl294 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl201 width=97 style='height:45.0pt;width:73pt'>extension[=]</td>
-  <td class=xl146 width=83 style='border-left:none;width:62pt'>url</td>
+  <td height=60 class=xl201 align=left width=97 style='height:45.0pt;
+  width:73pt'>extension[=]</td>
+  <td class=xl146 align=left width=83 style='border-left:none;width:62pt'>url</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl275 width=35 style='border-left:none;width:26pt'>1..1</td>
-  <td class=xl146 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl146 width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
-  <td class=xl146 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl275 align=left width=35 style='border-left:none;width:26pt'>1..1</td>
+  <td class=xl146 align=left width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl146 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
+  <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl298 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</td>
+  <td class=xl298 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl200 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
+  <td height=41 class=xl200 align=left width=97 style='height:31.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>診療科情報。</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>CodeableConcept</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>診療科情報。</td>
   <td class=xl221 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl200 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=41 class=xl200 align=left width=97 style='height:31.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1*</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>診療科のコード化記述。</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1*</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Coding</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>診療科のコード化記述。</td>
   <td class=xl94 width=36 style='border-left:none;width:27pt'>　</td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl200 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=60 class=xl200 align=left width=97 style='height:45.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl146 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI
-  診療科コード表のURI。</td>
-  <td class=xl94 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>system</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl146 align=left width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>JAMI 診療科コード表のURI。</td>
+  <td class=xl94 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl200 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=40 class=xl200 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI
-  診療科コード。2<ruby>桁<span style='display:none'><rt>ケタ </rt></span></ruby>コード。</td>
-  <td class=xl221 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>code</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>JAMI 診療科コード。2<ruby>桁<span style='display:none'><rt>ケタ </rt></span></ruby>コード。</td>
+  <td class=xl221 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例示<span style='display:none'><rt>&#128347;</rt></span></ruby></td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;08&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl200 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=40 class=xl200 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI
-  診療科コードでのコードに対応する表示名。</td>
-  <td class=xl221 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>display</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>JAMI 診療科コードでのコードに対応する表示名。</td>
+  <td class=xl221 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例示<span style='display:none'><rt>&#128347;</rt></span></ruby></td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<ruby>循環器科<span
   style='display:none'><rt>ジュンカンキカ </rt></span></ruby>&quot;</td>
  </tr>
  <tr height=95 style='mso-height-source:userset;height:71.0pt'>
-  <td height=95 class=xl200 width=97 style='height:71.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
+  <td height=95 class=xl200 align=left width=97 style='height:71.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>text</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>コード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby>の<ruby>有無<span
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>コード<ruby>化<span style='display:none'><rt>カ </rt></span></ruby>の<ruby>有無<span
   style='display:none'><rt>ウム </rt></span></ruby>に<ruby>関<span
   style='display:none'><rt>カカワラズ </rt></span></ruby>わらず、<ruby>当該<span
   style='display:none'><rt>トウガイ </rt></span></ruby><ruby>医療<span
@@ -476,21 +523,22 @@
   style='display:none'><rt>ミジカイ </rt></span></ruby>い<ruby>文字列<span
   style='display:none'><rt>モジレツ </rt></span></ruby>）。<ruby><font class="font14">電子カ</font><span
   style='display:none'><rt>モジレツ </rt></span></ruby><font class="font14">ルテ情報サービスでは、この拡張による記述は必須。</font></td>
-  <td class=xl221 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
+  <td class=xl221 align=left width=36 style='border-top:none;border-left:none;
+  width:27pt'><ruby>例示<span style='display:none'><rt>&#128347;</rt></span></ruby></td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<ruby>循<span
   style='display:none'><rt>ジュンカンキ </rt></span></ruby><ruby>内<span
   style='display:none'><rt>ナイ </rt></span></ruby>&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl282 width=97 style='height:30.0pt;width:73pt'>extension[+]</td>
+  <td height=40 class=xl282 align=left width=97 style='height:30.0pt;
+  width:73pt'>extension[+]</td>
   <td class=xl293 width=83 style='border-left:none;width:62pt'>　</td>
   <td class=xl293 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl293 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl293 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl347 width=35 style='border-left:none;width:26pt'>0..1</td>
-  <td class=xl293 width=87 style='border-left:none;width:65pt'>Extension</td>
-  <td class=xl283 width=359 style='border-left:none;width:269pt'><ruby>主傷病<span
+  <td class=xl347 align=left width=35 style='border-left:none;width:26pt'>0..1</td>
+  <td class=xl293 align=left width=87 style='border-left:none;width:65pt'>Extension</td>
+  <td class=xl283 align=left width=359 style='border-left:none;width:269pt'><ruby>主傷病<span
   style='display:none'><rt>シュショウビョウメイ </rt></span></ruby>フラグのある<ruby>傷病名<span
   style='display:none'><rt>ショウビョウメイ </rt></span></ruby>であることを<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>するための拡張「eCS_DiagnosisType」。</td>
@@ -498,76 +546,97 @@
   <td class=xl294 width=195 style='border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl201 width=97 style='height:45.0pt;width:73pt'>extension[=]</td>
-  <td class=xl146 width=83 style='border-left:none;width:62pt'>url</td>
+  <td height=60 class=xl201 align=left width=97 style='height:45.0pt;
+  width:73pt'>extension[=]</td>
+  <td class=xl146 align=left width=83 style='border-left:none;width:62pt'>url</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl146 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl275 width=35 style='border-left:none;width:26pt'>1..1</td>
-  <td class=xl146 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl146 width=359 style='border-left:none;width:269pt'>主傷病であることを記述するために使用する拡張を識別するURL。</td>
-  <td class=xl146 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl275 align=left width=35 style='border-left:none;width:26pt'>1..1</td>
+  <td class=xl146 align=left width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl146 align=left width=359 style='border-left:none;width:269pt'>主傷病であることを記述するために使用する拡張を識別するURL。</td>
+  <td class=xl146 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl298 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType</td>
+  <td class=xl298 width=195 style='border-left:none;width:146pt'><a
+  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
+  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
+  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</span></a></td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl200 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
+  <td height=41 class=xl200 align=left width=97 style='height:31.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>診断<span
-  style='display:none'><rt>シンダン </rt></span></ruby>タイプ<ruby>情報<span
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>CodeableConcept</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>診断<span style='display:none'><rt>シンダン </rt></span></ruby>タイプ<ruby>情報<span
   style='display:none'><rt>ジョウホウ </rt></span></ruby>。</td>
   <td class=xl221 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl200 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=41 class=xl200 align=left width=97 style='height:31.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1*</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>診断タイプのコード化記述。</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1*</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Coding</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>診断タイプのコード化記述。</td>
   <td class=xl94 width=36 style='border-left:none;width:27pt'>　</td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=68 style='mso-height-source:userset;height:51.0pt'>
-  <td height=68 class=xl200 width=97 style='height:51.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=68 class=xl200 align=left width=97 style='height:51.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl146 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>HL7
-  FHIR Claimリソースで<ruby>用<span style='display:none'><rt>モチイラレル </rt></span></ruby>いられる<ruby>診断<span
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>system</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl146 align=left width=87 style='border-left:none;width:65pt'>uri</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>HL7 FHIR Claimリソースで<ruby>用<span style='display:none'><rt>モチイラレル </rt></span></ruby>いられる<ruby>診断<span
   style='display:none'><rt>シンダン </rt></span></ruby>タイプコードのURLを<ruby>使用<span
   style='display:none'><rt>シヨウ </rt></span></ruby>する。</td>
-  <td class=xl94 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl94 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://terminology.hl7.org/CodeSystem/ex-diagnosistype&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl200 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td height=40 class=xl200 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>extension[=]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>主傷病<span
-  style='display:none'><rt>シュショウビョウ </rt></span></ruby>コードとして、principal　を<ruby>設定<span
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>code</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'><ruby>主傷病<span style='display:none'><rt>シュショウビョウ </rt></span></ruby>コードとして、principal　を<ruby>設定<span
   style='display:none'><rt>セッテイ ケタ </rt></span></ruby>する。</td>
-  <td class=xl94 width=36 style='border-left:none;width:27pt'><ruby>固定<span
+  <td class=xl94 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
   <td class=xl290 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;principal&quot;</td>
  </tr>
@@ -885,28 +954,33 @@
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl172 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[*]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[*]</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
   <td class=xl238 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl240 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語または後置修飾語をあれば、それぞれ<ruby>用<span
-  style='display:none'><rt>ヨウ </rt></span></ruby>の拡張を用いて<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
+  <td class=xl240 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>病名の前置修飾語または後置修飾語をあれば、それぞれ<ruby>用<span style='display:none'><rt>ヨウ
+  </rt></span></ruby>の拡張を用いて<ruby>記述<span style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
   <td class=xl221 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl274 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl172 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[+]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[+]</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl240 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語があればその<ruby>数<span
-  style='display:none'><rt>カズ </rt></span></ruby>だけ<ruby>繰<span
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Extension</td>
+  <td class=xl240 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>病名の前置修飾語があればその<ruby>数<span style='display:none'><rt>カズ </rt></span></ruby>だけ<ruby>繰<span
   style='display:none'><rt>クリカエシ </rt></span></ruby>り返しで<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>する。<ruby>登録<span
   style='display:none'><rt>トウロク </rt></span></ruby><ruby>順序<span
@@ -919,12 +993,16 @@
  </tr>
  <tr height=80 style='height:60.0pt'>
   <td height=80 class=xl172 width=97 style='height:60.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>url</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>url</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語を格納するための拡張(JP_Condition_DiseasePrefixModifier_eCS)</td>
   <td class=xl79 width=36 style='width:27pt'><ruby>固定値<span style='display:
   none'><rt>コテイチ </rt></span></ruby></td>
@@ -935,12 +1013,16 @@
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>CodeableConcept</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>前置修飾語のコード記述。コード<ruby>化<span
   style='display:none'><rt>カ </rt></span></ruby>できない<ruby>修飾語<span
   style='display:none'><rt>シュウショクゴ </rt></span></ruby>の<ruby>場合<span
@@ -952,24 +1034,35 @@
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Coding</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>前置修飾語のコード記述</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
   <td class=xl182 width=195 style='width:146pt'>　</td>
  </tr>
- <tr height=200 style='height:150.0pt'>
-  <td height=200 class=xl172 width=97 style='height:150.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
+ <tr height=235 style='mso-height-source:userset;height:176.0pt'>
+  <td height=235 class=xl172 width=97 style='height:176.0pt;width:73pt'>code</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>system</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>前<span
   style='display:none'><rt>ゼンチ </rt></span></ruby>置<ruby>修<span
   style='display:none'><rt>シュウ&#0;&#0;&#1;&#4;&#2;</rt></span></ruby>飾語のコードsystem<ruby>値<span
@@ -985,23 +1078,23 @@
   style='display:none'><rt>K&#2;7r&#2;&lt;t&#1;</rt></span></ruby><ruby>S標<span
   style='display:none'><rt>?u&#3;&#20;</rt></span></ruby><ruby>準<span
   style='display:none'><rt>ç&#2;&#25;í&#2;</rt></span></ruby><ruby>病<span
-  style='display:none'><rt>ドウ </rt></span></ruby>名マスタの「修飾語交換用コード」：urn:o<ruby>id<span
-  style='display:none'><rt>&#0;&#0;&#0;&#0;	</rt></span></ruby><ruby>:<span
-  style='display:none'><rt>&#0;	前</rt></span></ruby><ruby>1.2<span
-  style='display:none'><rt></rt></span></ruby>.392.200119.4.201.5<br>
-    同「修飾語管理番号」: urn:oid:1.2.392.200119.4.201.2<br>
+  style='display:none'><rt>ドウ </rt></span></ruby>名マスタの「修飾語交換用コード」：http://medis.or.jp/CodeSystem/master-disease-modExCode<br>
+    同「修飾語管理番号」: http://medis.or.jp/CodeSystem/master-disease-modKeyNumber<br>
     レセプト電算用修飾語コード: http://jpfhir.jp/fhir/core/mhlw/Co<ruby>de<span
   style='display:none'><rt>&#25;&#2;&#27;&#27;&#1;</rt></span></ruby>System/masterZ-disease-modifier）<br>
     </td>
   <td class=xl79 width=36 style='width:27pt'><ruby>例<span style='display:none'><rt>レイジ
   </rt></span></ruby>示</td>
-  <td class=xl182 width=195 style='width:146pt'>urn:oid:1.2.392.200119.4.201.2</td>
+  <td class=xl182 width=195 style='width:146pt'>http://medis.or.jp/CodeSystem/master-disease-modKeyNumber</td>
  </tr>
  <tr height=100 style='mso-height-source:userset;height:75.0pt'>
   <td height=100 class=xl172 width=97 style='height:75.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl79 width=73 style='width:55pt'>version</td>
   <td class=xl220 width=35 style='width:26pt'>0..1</td>
   <td class=xl79 width=87 style='width:65pt'>string</td>
@@ -1014,12 +1107,18 @@
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>code</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>前置<span
   style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
   style='display:none'><rt>シュウショクゴ </rt></span></ruby>のコード</td>
@@ -1028,9 +1127,12 @@
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl190 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
   <td class=xl241 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
   <td class=xl190 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
@@ -1041,9 +1143,12 @@
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>text</td>
   <td class=xl190 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl241 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
   <td class=xl190 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
@@ -1060,14 +1165,17 @@
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl172 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[+]</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[+]</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl238 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl240 width=359 style='border-top:none;border-left:none;width:269pt'>病名の<ruby>後置<span
-  style='display:none'><rt>コウチ </rt></span></ruby>修飾語があればその<ruby>数<span
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Extension</td>
+  <td class=xl240 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>病名の<ruby>後置<span style='display:none'><rt>コウチ </rt></span></ruby>修飾語があればその<ruby>数<span
   style='display:none'><rt>カズ </rt></span></ruby>だけ<ruby>繰<span
   style='display:none'><rt>クリカエシ </rt></span></ruby>り返しで<ruby>記述<span
   style='display:none'><rt>キジュツ </rt></span></ruby>する。<ruby>登録<span
@@ -1081,12 +1189,16 @@
  </tr>
  <tr height=80 style='height:60.0pt'>
   <td height=80 class=xl172 width=97 style='height:60.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>url</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>url</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>病名の後置修飾語を格納するための拡張(JP_Condition_DiseasePostfixModifier_eCS)</td>
   <td class=xl79 width=36 style='width:27pt'><ruby>固定値<span style='display:
   none'><rt>コテイチ </rt></span></ruby></td>
@@ -1097,12 +1209,16 @@
  </tr>
  <tr height=63 style='mso-height-source:userset;height:47.0pt'>
   <td height=63 class=xl172 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>CodeableConcept</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>後<span
   style='display:none'><rt>ゴ </rt></span></ruby>置修飾語のコード記述。コード化できない修飾語の場合にはtext要素だけで記述してもよい。</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
@@ -1110,24 +1226,35 @@
  </tr>
  <tr height=55 style='mso-height-source:userset;height:41.0pt'>
   <td height=55 class=xl172 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Coding</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'>後置修飾語のコード記述</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
   <td class=xl182 width=195 style='width:146pt'>　</td>
  </tr>
  <tr height=55 style='mso-height-source:userset;height:41.0pt'>
   <td height=55 class=xl172 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>system</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>uri</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>後<span
   style='display:none'><rt>ゼンチ </rt></span></ruby>置<ruby>修<span
   style='display:none'><rt>シュウ&#0;&#0;&#1;&#4;&#2;</rt></span></ruby>飾語のコードsystem<ruby>値<span
@@ -1137,13 +1264,16 @@
   style='display:none'><rt></rt></span></ruby>じ。</td>
   <td class=xl79 width=36 style='width:27pt'><ruby>例<span style='display:none'><rt>レイジ
   </rt></span></ruby>示</td>
-  <td class=xl182 width=195 style='width:146pt'>urn:oid:1.2.392.200119.4.201.2</td>
+  <td class=xl182 width=195 style='width:146pt'>http://medis.or.jp/CodeSystem/master-disease-modKeyNumber</td>
  </tr>
  <tr height=59 style='mso-height-source:userset;height:44.0pt'>
   <td height=59 class=xl172 width=97 style='height:44.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl79 width=73 style='width:55pt'>version</td>
   <td class=xl220 width=35 style='width:26pt'>0..1</td>
   <td class=xl79 width=87 style='width:65pt'>string</td>
@@ -1156,12 +1286,18 @@
  </tr>
  <tr height=55 style='mso-height-source:userset;height:41.0pt'>
   <td height=55 class=xl172 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl239 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>code</td>
+  <td class=xl239 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
   <td class=xl149 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>後置<span
   style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
   style='display:none'><rt>シュウショクゴ </rt></span></ruby>のコード</td>
@@ -1170,9 +1306,12 @@
  </tr>
  <tr height=55 style='mso-height-source:userset;height:41.0pt'>
   <td height=55 class=xl172 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>coding</td>
   <td class=xl190 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
   <td class=xl241 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
   <td class=xl190 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
@@ -1183,9 +1322,12 @@
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl172 width=97 style='height:45.0pt;width:73pt'>code</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>extension[=]</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>valueCodeableConcept</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>text</td>
   <td class=xl79 width=73 style='width:55pt'>　</td>
   <td class=xl218 width=35 style='width:26pt'>0..1</td>
   <td class=xl190 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
@@ -1231,15 +1373,14 @@
   <td class=xl79 width=87 style='width:65pt'>uri</td>
   <td class=xl79 width=359 style='width:269pt'>MEDIS<ruby>標準<span
   style='display:none'><rt>ヒョウジュン </rt></span></ruby><ruby>病名<span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby>マスター「病名管理番号」（system値は&quot;urn:oid:1.2.392.200119.4.101.2&quot;）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する<ruby>。<span
+  style='display:none'><rt>ビョウメイ </rt></span></ruby>マスター「病名管理番号」（system値は&quot;http://medis.or.jp/CodeSystem/master-disease-keyNumber&quot;）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する<ruby>。<span
   style='display:none'><rt>スイショウ </rt></span></ruby>これに加えて、病名管理番号以外のコード記<ruby>述<span
   style='display:none'><rt>カ </rt></span></ruby>を<ruby>併用<span
   style='display:none'><rt>ヒッス </rt></span></ruby>しても構わない。(参考：MED<ruby>I<span
-  style='display:none'><rt>ウエ </rt></span></ruby>S 標準病名マスター「病名交換コード」：<ruby>ur<span
-  style='display:none'><rt>ツイカ </rt></span></ruby>n:oid<ruby>:1<span
-  style='display:none'><rt>スイショウ シンシュツゲｎ ビョウタイ カ レイガイテキ バアイ </rt></span></ruby>.2.392.200119.4.101.6、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）</td>
+  style='display:none'><rt>ウエ </rt></span></ruby>S
+  標準病名マスター「病名交換コード」：http://medis.or.jp/CodeSystem/master-disease-exCode、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）</td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl182 width=195 style='width:146pt'>urn:oid:1.2.392.200119.4.101.2</td>
+  <td class=xl182 width=195 style='width:146pt'>http://medis.or.jp/CodeSystem/master-disease-keyNumber</td>
  </tr>
  <tr height=100 style='mso-height-source:userset;height:75.0pt'>
   <td height=100 class=xl172 width=97 style='height:75.0pt;width:73pt'>code</td>
@@ -1348,8 +1489,8 @@
   style='display:none'><rt>カツドウ </rt></span></ruby><ruby>期<span
   style='display:none'><rt>キ </rt></span></ruby>&quot;</td>
  </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl172 width=97 style='height:90.0pt;width:73pt'>bodySite</td>
+ <tr height=140 style='height:105.0pt'>
+  <td height=140 class=xl172 width=97 style='height:105.0pt;width:73pt'>bodySite</td>
   <td class=xl79 width=83 style='width:62pt'>　</td>
   <td class=xl79 width=73 style='width:55pt'>　</td>
   <td class=xl79 width=73 style='width:55pt'>　</td>
@@ -1361,7 +1502,7 @@
   system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。&quot;1244&quot;は、MEDIS標準病名マスター修飾語交換用コードで&quot;腹部&quot;のコード。&quot;腹部&quot;はそのテキスト記述の例。</td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
   <td class=xl182 width=195 style='width:146pt'>.coding[+].system =
-  .coding[=].&quot;urn:oid:1.2.392.200119.4.201.5&quot;<br>
+  .coding[=].&quot;http://medis.or.jp/CodeSystem/master-disease-modExCode&quot;<br>
     .coding[=].code = &quot;1244&quot;<br>
     .coding[=].display =&quot;腹部&quot;<br>
     .text&quot;腹部&quot;</td>
@@ -1814,161 +1955,201 @@
     }</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl200 width=97 style='height:20.0pt;width:73pt'>stage</td>
+  <td height=27 class=xl200 align=left width=97 style='height:20.0pt;
+  width:73pt'>stage</td>
   <td class=xl89 width=83 style='border-left:none;width:62pt'>　</td>
   <td class=xl89 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-left:none;width:26pt'>0..*</td>
+  <td class=xl89 align=left width=35 style='border-left:none;width:26pt'>0..*</td>
   <td class=xl89 width=87 style='border-left:none;width:65pt'>　</td>
-  <td class=xl89 width=359 style='border-left:none;width:269pt'>この状態の臨床的ステージやグレード表現。</td>
+  <td class=xl89 align=left width=359 style='border-left:none;width:269pt'>この状態の臨床的ステージやグレード表現。</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl200 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td rowspan=3 class=xl89 width=83 style='border-top:none;width:62pt'>summary</td>
+  <td height=40 class=xl200 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>stage</td>
+  <td rowspan=3 class=xl89 align=left width=83 style='border-top:none;
+  width:62pt'>summary</td>
   <td rowspan=3 class=xl89 width=73 style='border-top:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td rowspan=3 class=xl89 width=73 style='border-top:none;width:55pt'>　</td>
-  <td rowspan=3 class=xl89 width=35 style='border-top:none;width:26pt'>0..1</td>
-  <td rowspan=3 class=xl89 width=87 style='border-top:none;width:65pt'>CodeableConcept</td>
-  <td rowspan=3 class=xl89 width=359 style='border-top:none;width:269pt'>system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。&quot;1244&quot;は、MEDIS標準病名マスター修飾語交換用コードで&quot;第１期&quot;のコード。&quot;第１期&quot;はそのテキスト記述の例。</td>
-  <td rowspan=3 class=xl183 width=36 style='border-bottom:.5pt solid black;
+  <td rowspan=3 class=xl89 align=left width=35 style='border-top:none;
+  width:26pt'>0..1</td>
+  <td rowspan=3 class=xl89 align=left width=87 style='border-top:none;
+  width:65pt'>CodeableConcept</td>
+  <td rowspan=3 class=xl89 align=left width=359 style='border-top:none;
+  width:269pt'>system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。&quot;1244&quot;は、MEDIS標準病名マスター修飾語交換用コードで&quot;第１期&quot;のコード。&quot;第１期&quot;はそのテキスト記述の例。</td>
+  <td rowspan=3 class=xl183 align=left width=36 style='border-bottom:.5pt solid black;
   border-top:none;width:27pt'>例示</td>
-  <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.200119.4.201.5&quot;</td>
+  <td class=xl244 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-modExCode&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl200 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>stage</td>
+  <td height=27 class=xl200 align=left width=97 style='height:20.0pt;
+  border-top:none;width:73pt'>stage</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;32GR&quot;</td>
+  <td class=xl244 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'>&quot;32GR&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl200 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>stage</td>
+  <td height=27 class=xl200 align=left width=97 style='height:20.0pt;
+  border-top:none;width:73pt'>stage</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;第１期&quot;</td>
+  <td class=xl244 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'>&quot;第１期&quot;</td>
  </tr>
  <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl200 width=97 style='height:90.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>assessment</td>
+  <td height=120 class=xl200 align=left width=97 style='height:90.0pt;
+  border-top:none;width:73pt'>stage</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>assessment</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>Reference(ClinicalImpression
-  | DiagnosticReport | Observation)</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>ステージ情報の根拠となる診断レポートや検査結果、または臨床評価情報への参照する。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>Reference(ClinicalImpression | DiagnosticReport | Observation)</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>ステージ情報の根拠となる診断レポートや検査結果、または臨床評価情報への参照する。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
   <td class=xl174 width=195 style='width:146pt'>「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl200 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>type</td>
+  <td height=60 class=xl200 align=left width=97 style='height:45.0pt;
+  border-top:none;width:73pt'>stage</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>type</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>ステージ分類の種類。病理学的分類、臨床分類、TNM肺癌分類、など。当面コーディングをせず、text記述だけ必要に応じて行う。</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>CodeableConcept</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>ステージ分類の種類。病理学的分類、臨床分類、TNM肺癌分類、など。当面コーディングをせず、text記述だけ必要に応じて行う。</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl200 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>evidence</td>
+  <td height=40 class=xl200 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>evidence</td>
   <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
   <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>状態を確認または反駁した証拠など、状態の検証ステータスの基礎となる裏付けとなる証拠/兆候。</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>状態を確認または反駁した証拠など、状態の検証ステータスの基礎となる裏付けとなる証拠/兆候。</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl200 width=97 style='height:75.0pt;border-top:none;
-  width:73pt'>evidence</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>code</td>
+  <td height=100 class=xl200 align=left width=97 style='height:75.0pt;
+  border-top:none;width:73pt'>evidence</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>code</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>状態を裏付ける症状や所見。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード。&quot;持続腹痛&quot;はそのテキスト記述の例。</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>CodeableConcept</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>状態を裏付ける症状や所見。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード。&quot;持続腹痛&quot;はそのテキスト記述の例。</td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;urn:oid:1.2.392.200119.4.101.6&quot;<br>
+  <td class=xl244 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-exCode&quot;<br>
     &quot;B0EF&quot;<br>
     &quot;持続腹痛&quot;<br>
     &quot;長く続く腹部の痛み&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl200 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>note</td>
+  <td height=27 class=xl200 align=left width=97 style='height:20.0pt;
+  border-top:none;width:73pt'>note</td>
   <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..*</td>
   <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>患者状態に関する追加的な情報</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>患者状態に関する追加的な情報</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl200 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>author</td>
+  <td height=27 class=xl200 align=left width=97 style='height:20.0pt;
+  border-top:none;width:73pt'>note</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>author</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
   <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl200 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>author</td>
-  <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>authorString</td>
+  <td height=40 class=xl200 align=left width=97 style='height:30.0pt;
+  border-top:none;width:73pt'>note</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>author</td>
+  <td class=xl89 align=left width=73 style='border-top:none;border-left:none;
+  width:55pt'>authorString</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>string</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;病理検査担当者&quot;</td>
+  <td class=xl244 align=left width=195 style='border-top:none;border-left:none;
+  width:146pt'>&quot;病理検査担当者&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl200 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl89 width=83 style='border-top:none;border-left:none;width:62pt'>time</td>
+  <td height=27 class=xl200 align=left width=97 style='height:20.0pt;
+  border-top:none;width:73pt'>note</td>
+  <td class=xl89 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>time</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl89 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl89 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl89 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
-  <td class=xl89 width=359 style='border-top:none;border-left:none;width:269pt'>この追加的な情報が作成された日時。</td>
+  <td class=xl89 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>0..1</td>
+  <td class=xl89 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>dateTime</td>
+  <td class=xl89 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>この追加的な情報が作成された日時。</td>
   <td class=xl89 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl244 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl208 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl90 width=83 style='border-top:none;border-left:none;width:62pt'>text</td>
+  <td height=41 class=xl208 align=left width=97 style='height:31.0pt;
+  border-top:none;width:73pt'>note</td>
+  <td class=xl90 align=left width=83 style='border-top:none;border-left:none;
+  width:62pt'>text</td>
   <td class=xl90 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl90 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl90 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl90 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl90 width=87 style='border-top:none;border-left:none;width:65pt'>markdown</td>
-  <td class=xl90 width=359 style='border-top:none;border-left:none;width:269pt'>追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。</td>
+  <td class=xl90 align=left width=35 style='border-top:none;border-left:none;
+  width:26pt'>1..1</td>
+  <td class=xl90 align=left width=87 style='border-top:none;border-left:none;
+  width:65pt'>markdown</td>
+  <td class=xl90 align=left width=359 style='border-top:none;border-left:none;
+  width:269pt'>追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。</td>
   <td class=xl90 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl245 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
