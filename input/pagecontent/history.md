@@ -12,7 +12,7 @@
   
   - 全リソース
     - コード表をsystem値（coding.systemなど）をOID形式（"urn:oid:1.2.392....の形式）からほとんどを"http:"ではじまるURL形式("http://....")に変更することとなったため、それに合わせてプロファイル、表などの記載をすべて改訂。改訂一覧表は本履歴ページの末尾に掲載。この表に記載があるものはすべて本IGでの改訂漏れがあった場合にも、URL表記に変更すること。
-    - 上記変更に併せ、Validationで使用するjp-coreパッケージ、JpFhirTerminologyパッケージをそれぞれ対応バージョンに変更（）
+    - 上記変更に併せ、Validationで使用するjp-coreパッケージ、JpFhirTerminologyパッケージをそれぞれ対応バージョンに変更（jp-core.r4-1.1.2-url、jpfhir-terminology.r4-1.2.1-url）
 
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.4.1 (2024.9.16) version番号変更せず
