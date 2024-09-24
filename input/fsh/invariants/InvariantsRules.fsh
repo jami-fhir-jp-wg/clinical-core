@@ -69,7 +69,7 @@ Expression: "(category.where($this='medication').exists() and criticality='high'
 Invariant: valid-contraIndication-code
 Description: "R2012:薬剤アレルギー等情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤アレルギー等でない）場合にはJFAGYコードを使用すること。"
 Severity: #error
-Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'http://capstandard.jp/CodeSystem/YJ-code').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) or (category.where($this='medication').count()=0 or criticality!='high')"
+Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'http://tandard.jp/CodeSystem/YJ-code').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) or (category.where($this='medication').count()=0 or criticality!='high')"
 
 // R2013  アレルギーではJFAGYを使用すること（電子カルテ情報交換サービスの場合）
 Invariant: valid-allergy-code
