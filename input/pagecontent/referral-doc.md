@@ -8,7 +8,7 @@
 
 #### 診療情報提供書 仕様書
 
-  - [診療情報提供書 HL7FHIR 記述仕様(PDF版) v1.3.1](https://std.jpfhir.jp/stddoc/eReferralFHIR_v131.pdf)
+  - [診療情報提供書 HL7FHIR 記述仕様(PDF版) v1.5.0](https://std.jpfhir.jp/stddoc/eReferralFHIR_v150.pdf)
 
 #### 診療情報提供書固有のリソースのプロファイル
 

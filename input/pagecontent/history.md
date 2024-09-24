@@ -94,7 +94,7 @@
 使用欄に＊がある行は、本IGで使用されるコード表
 
 |使用|コード名称|OID形式（旧）|URL形式（新）|
-|--|--|--|--|
+|----|----|----|----|
 |	＊	|	JAMI SSMIX2診療科コード表	|	urn:oid:1.2.392.200250.2.2.2	|	http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment	|
 |	＊	|	JAMI用法コード表ー１６桁バージョン	|	urn:oid:1.2.392.200250.2.2.20	|	http://jami.jp/CodeSystem/MedicationUsage	|
 |	＊	|	JAMI用法コード表ー８桁補足用法コード	|	urn:oid:1.2.392.200250.2.2.20.22	|	http://jami.jp/CodeSystem/MedicationUsageAdditional	|
@@ -135,7 +135,7 @@
 |		|	レセプト種別コード	|	urn:oid:1.2.392.100495.20.2.64	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/	|
 | |	医薬品コード（医薬品マスター）	|	(urn:oid:1.2.392.100495.20.2.71)	|	関係者調整中	|
 |		|	薬価基準収載医薬品コード	|	(urn:oid:1.2.392.100495.20.2.72)	|	関係者調整中	|
-|＊	|	個別医薬品コード（YJ コード）	|	(urn:oid:1.2.392.100495.20.2.73)	|	関係者調整中	|
+|＊	|	個別医薬品コード（YJ コード）	|	(urn:oid:1.2.392.100495.20.2.73)	|	http://capstandard.jp/CodeSystem/YJ-code (関係者調整中)	|
 |		|	HOT コード（9 桁）	|	(urn:oid:1.2.392.100495.20.2.74)	|	MEDISー医薬品基準番号（ＨＯＴ９）を参照	|
 |		|	一般名処方マスタ	|	urn:oid:1.2.392.100495.20.2.81	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode	|
 |	＊	|	医薬品単位略号	|	urn:oid:1.2.392.100495.20.2.101	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code	|

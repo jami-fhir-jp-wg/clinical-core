@@ -7,7 +7,7 @@
 
 ### 退院時サマリー
 
-  - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.3.1](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v131.pdf) 
+  - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.5.0](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v150.pdf) 
 
 #### 退院時サマリー固有のリソースのプロファイル
 
