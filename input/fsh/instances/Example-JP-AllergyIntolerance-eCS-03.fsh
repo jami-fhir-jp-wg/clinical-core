@@ -29,7 +29,7 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 * category = #medication
 
 //* criticality = #high   //任意
-* code.coding[+] = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#GCM2260701F1ZZZ  "ポビドンヨード含嗽用液７％"
+* code.coding[+] = $JP_JfagyMedicationAllergenGCM_CS#GCM2260701F1ZZZ  "ポビドンヨード含嗽用液７％"
 * code.text = "ヨードうがい液"
 
 
@@ -71,7 +71,7 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 * category = #medication
 
 //* criticality = #high   //任意
-* code.coding[+] = http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS#GCM2260701F1ZZZ  "ポビドンヨード含嗽用液７％"
+* code.coding[+] = $JP_JfagyMedicationAllergenGCM_CS#GCM2260701F1ZZZ  "ポビドンヨード含嗽用液７％"
 * code.text = "ヨードうがい液"
 
 
