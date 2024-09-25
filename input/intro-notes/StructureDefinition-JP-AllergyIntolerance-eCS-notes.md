@@ -46,22 +46,25 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>個別医薬品YJコード使用可</td>
 <td>　YCM　　 </td>
 <td>YJコード<br>12桁</td>
-<td rowspan="3">JFAGY-Medコード<br>
-<a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS</a>
+<td rowspan="2">JFAGY-YCMMedコード<br>
+<a href="http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS</a>
 </td>
 </tr>
 
-<tr>
-<td>販社不明の医薬品一般名派生コード<br>(*注1）で指定可</td>
-<td>　GCM　　 </td>
-<td>YJコードの最後の3桁を"ZZZ"に置き換えた12桁<br>(*注1）</td>
-</tr>
 
 <tr>
 <td>コード指定不可<br>(*注2)</td>
 <td>　D9M　　 </td>
 <td>ダミーコード<br>"000000000"<br>　9桁のゼロ</td>
 </tr>
+
+<tr>
+<td>販社不明の医薬品一般名派生コード<br>(*注1）で指定可</td>
+<td>　GCM　　 </td>
+<td>YJコードの最後の3桁を"ZZZ"に置き換えた12桁<br>(*注1）</td>
+<td>JFAGY-GCMMedコード<br>
+<a href="http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS</a>
+</td></tr>
 
 <tr>
 <td  rowspan="4">その他アレルギー等</td>
@@ -95,7 +98,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 </table>
 </div>
 
-  - 注1:　派生コード（仮称）とは、YJコードの最後の3桁を"ZZZ"に置き換えた12桁をいう。個別医薬品（YJ)コードの細かさでは記述できないが、販社等の情報を区別するYJコードの最後の3桁を無視して一般名医薬品を指定するレベルであれば記述可能な場合に使用することができる。
+  - 注1:　派生コード（仮称）とは、YJコードの最後の3桁を"ZZZ"に置き換えた12桁をいう。個別医薬品（YJ)コードの細かさでは記述できないが、販社等の情報を区別するYJコードの最後の3桁を無視して一般名医薬品を指定するレベルであれば記述可能な場合に使用することができる。今後名称変更が予定されている。
   - 注2:　コード指定ができない場合には、ダミーコード（"000000000"
 　9桁のゼロ）をコードとして必ず設定する。この場合には、AllergyIntolerance.code.textに必ずアレルゲンの情報を電子カルテに登録されているテキストで記述する。ダミーコードに対応する表示名(AllergyIntolerance.code.coding.display)は不要。
 

@@ -1,3 +1,4 @@
+
 <table border=0 cellpadding=0 cellspacing=0 width=1338 style='border-collapse:
  collapse;table-layout:fixed;width:1003pt'>
  <col class=xl272 width=107 style='mso-width-source:userset;mso-width-alt:2925;
@@ -848,8 +849,7 @@
   style='display:none'><rt>バアイ </rt></span></ruby>質コーディングルー<ruby>ル<span
   style='display:none'><rt>チ </rt></span></ruby>に従ったコード（ダミーコードを含む）を必ず設定する。<br>
     その場合に使用するsystem<ruby>値<span style='display:none'><rt>チ </rt></span></ruby>は以下のいずれかを選択する。
-  食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS　、医薬品：
-  http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　、非医薬品・非食品:
+  食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS　、医薬品（YJコードベース）： http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS　、医薬品（派生（成分）グループコードベース）：http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS　、非医薬品・非食品:
   http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS</td>
   <td class=xl79 width=36 style='width:27pt'>ひとつは<ruby>固定値<span
   style='display:none'><rt>コテイチ </rt></span></ruby></td>

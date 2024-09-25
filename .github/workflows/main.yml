@@ -73,14 +73,14 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile2
       with:
-        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.1-url.tgz"
+        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.2-url.tgz"
         target: .    
     
     - name: Prepare for using all dependent packages including Jp modified version of hl7.fhir.r4.core Package 
       env:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
-        JPTerminologyCOREdir: jpfhir-terminology.r4#1.2.1-url
-        JPTerminologyCOREPtgz: jpfhir-terminology.r4-1.2.1-url.tgz
+        JPTerminologyCOREdir: jpfhir-terminology.r4#1.2.2-url
+        JPTerminologyCOREPtgz: jpfhir-terminology.r4-1.2.2-url.tgz
         JPCOREtgzjp: jp-core.r4-1.1.2-url.tgz
         JPCOREdir: jp-core.r4#1.1.2-url
       run: |
@@ -172,7 +172,7 @@ jobs:
   
     - name: validate
       run: |
-        java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/Bundle-Bundle-CLINS-*.json -display-issues-are-warnings -version 4.0.1 -locale ja-JP -ig jp-core.r4#1.1.2-url -ig jpfhir-terminology.r4#1.2.1-url -ig fsh-generated/jp-eCSCLINS-package-diff.tgz -tx n/a  -language ja
+        java -Xmx4G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/Bundle-Bundle-CLINS-*.json -display-issues-are-warnings -version 4.0.1 -locale ja-JP -ig jp-core.r4#1.1.2-url -ig jpfhir-terminology.r4#1.2.2-url -ig fsh-generated/jp-eCSCLINS-package-diff.tgz -tx n/a  -language ja
 
     - name: generate snapshot package using sushi -s command       
       run: |
