@@ -5,7 +5,7 @@
 //   親プロファイル:JP_Condition
 // ==================================================
 Profile:        JP_Condition_eCS
-Parent:			JP_Condition
+Parent:			Condition
 Id:             JP-Condition-eCS
 Title:  "eCS/CLINS:JP_Condition_eCS"
 Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファイル"
