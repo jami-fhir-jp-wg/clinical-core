@@ -6,6 +6,11 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.2 (2024.9.28) 
+
+    - 個別医薬品コード（YJコード）リスト、規格別薬剤成分コード（YJコードの末尾3桁をZZZとしたコード）のコード名称、識別子URLを改訂（決定）。
+    - 上記に合わせて、Validationで使用するjp-coreパッケージ、JpFhirTerminologyパッケージをそれぞれ対応バージョンに変更（jp-core.r4-1.1.3-url、jpfhir-terminology.r4-1.2.3-url）
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.1 (2024.9.26) 
 
     - v1.5.0でのURL形式への変更に併せて、Validationで使用するjp-coreパッケージ、JpFhirTerminologyパッケージをそれぞれ対応バージョンに変更（jp-core.r4-1.1.2-url、jpfhir-terminology.r4-1.2.2-url）
@@ -140,7 +145,8 @@
 |		|	レセプト種別コード	|	urn:oid:1.2.392.100495.20.2.64	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/	|
 | |	医薬品コード（医薬品マスター）	|	(urn:oid:1.2.392.100495.20.2.71)	|	関係者調整中	|
 |		|	薬価基準収載医薬品コード	|	(urn:oid:1.2.392.100495.20.2.72)	|	関係者調整中	|
-|＊	|	個別医薬品コード（YJ コード）	|	(urn:oid:1.2.392.100495.20.2.73)	|	http://capstandard.jp/CodeSystem/YJ-code (関係者調整中)	|
+|＊	|	個別医薬品コード（YJ コード）リスト	|	(urn:oid:1.2.392.100495.20.2.73)	|	http://www.capstandard.jp/iyaku.info/CodeSystem/YJ_code	|
+|＊	|	規格別薬剤成分コード（注：YJコードの末尾3桁をZZZとした）|	なし	|	http://www.capstandard.jp/CodeSystem/KikakubetsuYakuzaiSeibun	|
 |		|	HOT コード（9 桁）	|	(urn:oid:1.2.392.100495.20.2.74)	|	MEDISー医薬品基準番号（ＨＯＴ９）を参照	|
 |		|	一般名処方マスタ	|	urn:oid:1.2.392.100495.20.2.81	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode	|
 |	＊	|	医薬品単位略号	|	urn:oid:1.2.392.100495.20.2.101	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code	|
