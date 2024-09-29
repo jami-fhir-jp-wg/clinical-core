@@ -21,7 +21,7 @@
   - meta.lastUpdated : 最終更新日時
   - meta.profile : プロファイルURL
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
-  - identifier : インスタンス識別ID。電子カルテ情報共有サービスでは、被保険者個人識別子の記述が必須。
+  - identifier : インスタンス識別ID。電子カルテ情報共有サービスでは、被保険者個人識別子の記述が必須。本ページ　セクション6で解説。
   - name : 姓と名、それぞれname.family、name.givenが必須。
   - name : name.text　が必須。
   - gender : 性別　必須。

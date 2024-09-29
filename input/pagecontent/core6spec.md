@@ -352,7 +352,7 @@ contained要素のリソースのidは、任意の文字列を設定できるが
 
 #### 被保険者個人識別子の格納について
 
-CLINSに医療機関から送信する場合には、個人識別子として、保険者情報と被保険者情報を、一定のルールで記述したPatientリソースを送信することが必須である。この仕様については、Patientリソースの仕様（[患者情報　JP_Patient_eCS][JP_Patient_eCS]）を参照すること。
+CLINSに医療機関から送信する場合には、個人識別子として、保険者情報と被保険者情報を、一定のルールで記述したPatientリソースを送信することが必須である。この仕様については、Patientリソースの仕様（[患者情報　JP_Patient_eCS][JP_Patient_eCS]）の[セクション6][https://jpfhir.jp/fhir/clins/igv1/StructureDefinition-JP-Patient-eCS.html#%E8%A2%AB%E4%BF%9D%E9%99%BA%E8%80%85%E5%80%8B%E4%BA%BA%E8%AD%98%E5%88%A5%E5%AD%90%E3%81%AE%E6%A0%BC%E7%B4%8D]を参照すること。
 
 #### 長期保存の対象であることのフラグ情報の格納
 CLINSに医療機関から送信する場合、送信するFHIRリソースが長期保存対象の情報である場合には、そのことを明示的に示すため、>それぞれのリソース識別子情報を設定<span style="color: red; ">しなければならない</span>。<br>以下にその仕様を示す。<br>
