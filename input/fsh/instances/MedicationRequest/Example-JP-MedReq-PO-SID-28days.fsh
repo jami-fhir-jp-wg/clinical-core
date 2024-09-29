@@ -33,7 +33,7 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#DCG "退院処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "退院時処方"
-* medicationCodeableConcept.coding[0] = http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ#1124030F2ZZZ "クアゼパム錠２０ｍｇ"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeCommon_CS#1124030F2ZZZ "【般】クアゼパム錠２０ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1379700 "クアゼパム錠２０ｍｇ"
 * medicationCodeableConcept.text = "クアゼパム錠２０ｍｇ"
 * subject.identifier.system = $JP_Insurance_memberID

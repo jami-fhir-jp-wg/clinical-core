@@ -172,16 +172,17 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
 
 Invariant: needs-anyOfStandardCode-medication
-Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、YJコード末尾ZZZ、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
+Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、厚労省一般医薬品コード、標準コードなし、のいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 Severity: #error
-Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://www.capstandard.jp/iyaku.info/CodeSystem/YJ_code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ').count()=1)"
+Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode').count()=1)"
+//http://capstandard.jp/CodeSystem/KikakubetsuYakuzaiSeibun
 
 // R3011 医薬品コードの妥当性チェックYJか一般のみ（標準コードなしはX）
 Invariant: needs-anyOfYJorGeneral-medication
 Description: "R3011:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、厚生労働省一般名コードのいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 
 Severity: #error
-Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://www.capstandard.jp/iyaku.info/CodeSystem/YJ_code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
+Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
 
 // R4011 薬剤アレルギーとその他アレルギー等の情報とを区別するため、電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はやその他のアレルギー情報として取り扱われる。
 // Invariant: needs-anyOfStandardCode-medication
@@ -279,7 +280,7 @@ Bundle.meta.tag  ^slicing.discriminator.type = #value
 Bundle.meta.tag  ^slicing.discriminator.path = "system"
 Bundle.meta.tag  ^slicing.rules = #open
 Bundle.meta.tag contains resourceType 1..1
-meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
+meta.tag[resourceType].system = _CLINS_BundleResourceType_CS
 meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
 
 //

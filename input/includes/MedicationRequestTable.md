@@ -799,23 +799,20 @@
   <td class=xl81 width=35 style='width:26pt'>1..1</td>
   <td class=xl79 width=87 style='width:65pt'>uri</td>
   <td class=xl190 width=359 style='border-top:none;border-left:none;width:269pt'>医薬品コードを識別するURI。<br>
-    YJ（個別医薬品）コード: &quot;urn:oid:1.2.392.100495.20.1.73&quot;<br>
-    派生コード（YJコードの末尾3桁をZZZに置き換えたコード表）:
-  &quot;http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ&quot;<br>
+    個別医薬品コード（YJコード）リスト: &quot;http://capstandard.jp/iyaku.info/CodeSystem/YJ-code&quot;<br>
     HOT9:<span style='mso-spacerun:yes'>  </span>&quot;http://medis.or.jp/CodeSystem/master-HOT9&quot;<br>
     HOT7:<span style='mso-spacerun:yes'> 
   </span>&quot;http://medis.or.jp/CodeSystem/master-HOT7&quot;　(HOT9の末尾２桁である販社コードが不明の場合に限る)<br>
-    厚労省一般名処方マスタコード: &quot;urn:oid:1.2.392.100495.20.1.81&quot;<br>
+    厚労省一般名処方マスタコード: &quot;http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode&quot;<br>
     標準コードなしコード：<br>
    
   &quot;http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS&quot;<br>
     <br>
-    電子カルテ共有サービスで使用する場合には、YJコード、または派生コードのいずれかのsystem値を必須とする。<br>
+    電子カルテ共有サービスで使用する場合には、個別医薬品コード（YJコード）、または厚労省一般名処方マスタコードのいずれかのsystem値を必須とする。<br>
    
   これ以外に施設固有コードを追加する場合には、施設固有コード体系のsystem値は、&quot;http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/医療機関10桁コード&quot;を使用すること。</td>
   <td class=xl82 width=36 style='width:27pt'>例示</td>
-  <td class=xl353 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ" target="_parent">http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ</a></td>
+  <td class=xl353 width=195 style='width:146pt'>http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl172 width=91 style='height:45.0pt;width:68pt'>medicationCodeableConcept</td>
