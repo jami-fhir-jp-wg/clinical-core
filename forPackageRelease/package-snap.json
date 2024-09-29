@@ -1,7 +1,7 @@
 {
   "name": "jp-eCSCLINS.r4",
-  "version": "1.5.1",
-  "description": "jp-eCSCLINS-snapshot 1.5.1",
+  "version": "1.5.2",
+  "description": "jp-eCSCLINS-snapshot 1.5.2",
   "author": "Kazuhiko Ohe",
   "fhirVersions": [
     "4.0.1"
