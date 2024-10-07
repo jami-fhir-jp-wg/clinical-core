@@ -41,23 +41,27 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
   * insert relative_short_definition("本プロファイルを識別するURLとバージョンを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1　を設定する。")
 
 * meta.tag 0..
-  * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグの設定する場合に使用する。")
-
-* meta.tag 0.. MS
-* meta.tag
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
+* meta.tag from $JP_ehrshrs_indication_VS 
+
 * meta.tag  ^slicing.discriminator.type = #value
-* meta.tag  ^slicing.discriminator.path = "$this"
+// * meta.tag  ^slicing.discriminator.path = "$this"
+* meta.tag  ^slicing.discriminator.path = "code"
 * meta.tag  ^slicing.rules = #closed
 * meta.tag contains lts 0..1 MS
 
-* meta.tag[lts] from $JP_ehrshrs_indication_VS 
-* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS 
+* meta.tag[lts] 0..1 MS
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+  * code = #LTS (exactly)
+* meta.tag[lts] from $JP_ehrshrs_indication_VS 
+
+
+
 
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
