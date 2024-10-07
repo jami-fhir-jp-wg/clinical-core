@@ -37,6 +37,10 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 //* patient 
 * patient.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 
+* manifestation.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
+* manifestation.extension.valueCode = #NI
+* severity = #severe
+
 //* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * note[+].text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
 
@@ -83,6 +87,9 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 //* encounter.reference = "Encounter/Example-JP-Encounter-eCS-AMB-01"  //推奨
 * encounter.reference = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
 
+* manifestation.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
+* manifestation.extension.valueCode = #NI
+* severity = #severe
 
 * note[+].text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
 
