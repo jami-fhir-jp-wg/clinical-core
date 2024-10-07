@@ -14,9 +14,9 @@ Alias: $JP_eCS_MedicationCodeNocoded_VS = http://jpfhir.jp/fhir/eCS/CodeSystem/M
 Alias: $JP_CLINS_MedicationUsage_Uncoded_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS
 
 //　CodeSystem for CoreLabo & InfectionLabo
-Alias: $JP_CLINS_CodeSystem_CoreLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS
-Alias: $JP_CLINS_CodeSystem_InfectionLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS
-Alias: $JP_CLINS_CodeSystem_CoreLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS
+Alias: $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS
+Alias: $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS
+Alias: $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS = http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS
 
 //　ValueSet for CoreLabo & InfectionLabo
 Alias: $JP_CLINS_ValueSet_CoreLabo_VS =   http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_VS

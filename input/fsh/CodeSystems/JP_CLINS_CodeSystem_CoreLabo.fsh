@@ -4,7 +4,7 @@ Title: "CLINS 電子カルテ共有サービス用:検体検査項目セット"
 Description: "CLINS 電子カルテ共有サービス用 検体検査項目セット"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-04T00:45:56.836+09:00"
-* ^url = $JP_CLINS_CodeSystem_CoreLabo_CS
+* ^url = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
 * ^version = "1.4.0"
 * ^status = #active
 * ^content = #complete

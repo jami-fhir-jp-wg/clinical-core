@@ -11,7 +11,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-CHECK
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-CHECK
 
 // HBs抗原(S/CO)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBSAGSCO_VS
@@ -27,7 +27,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBS-AG-SCO
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBS-AG-SCO
 
 // HBs抗原(コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsAGCOI_VS
@@ -43,7 +43,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AG-COI
 
 // HBs抗原(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsAGDIL_VS
@@ -59,7 +59,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-DIL
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AG-DIL
 
 // HBs抗原(吸光度)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HbsAGOD_VS
@@ -75,7 +75,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #Hbs-AG-OD
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #Hbs-AG-OD
 
 // HBs抗原(定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsAGQUANT_VS
@@ -91,7 +91,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AG-QUANT
 
 // HBs抗原(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsAGRESULT_VS
@@ -107,7 +107,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AG-RESULT
 
 // HBs抗原(陽性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsAGPOSCOI_VS
@@ -123,7 +123,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AG-POS-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AG-POS-COI
 
 // HBs抗体(コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsABCOI_VS
@@ -139,7 +139,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AB-COI
 
 // HBs抗体(陰性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsABNEGCOI_VS
@@ -155,7 +155,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-NEG-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AB-NEG-COI
 
 // HBs抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsABDIL_VS
@@ -171,7 +171,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-DIL
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AB-DIL
 
 // HBs抗体(定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsABQUANT_VS
@@ -187,7 +187,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AB-QUANT
 
 // HBs抗体(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HBsABRESULT_VS
@@ -203,7 +203,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HBs-AB-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HBs-AB-RESULT
 
 // HCV核酸増幅検査(定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVQUANT_VS
@@ -219,7 +219,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-QUANT
 
 // HCV核酸増幅検査(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVRESULT_VS
@@ -235,7 +235,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-RESULT
 
 // HCV抗原検査(定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVAGQUANT_VS
@@ -251,7 +251,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AG-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-AG-QUANT
 
 // HCV抗原検査(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVAGRESULT_VS
@@ -267,7 +267,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AG-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-AG-RESULT
 
 // HCV抗体(コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVABCOI_VS
@@ -283,7 +283,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-AB-COI
 
 // HCV抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVABDIL_VS
@@ -299,7 +299,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-DIL
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-AB-DIL
 
 // HCV抗体(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVABRESULT_VS
@@ -315,7 +315,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-AB-RESULT
 
 // HCV抗体(陽性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HCVABPOSCOI_VS
@@ -331,7 +331,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HCV-AB-POS-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HCV-AB-POS-COI
 
 // HIV-1(ウイルスRNA定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1QUANT_VS
@@ -347,7 +347,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1-QUANT
 
 // HIV-1(ウイルスRNA定量判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1RESULT_VS
@@ -363,7 +363,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1-RESULT
 
 // HIV-1+2抗体・p24抗原(コントロール値)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24COIV_VS
@@ -379,7 +379,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COIV
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COIV
 
 // HIV-1+2抗体・p24抗原(コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24COI_VS
@@ -395,7 +395,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COI
 
 // HIV-1+2抗体・p24抗原(陰性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24NEGCOI_VS
@@ -411,7 +411,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-NEG-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-NEG-COI
 
 // HIV-1+2抗体・p24抗原(吸光度)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABOD_VS
@@ -427,7 +427,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-OD
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-OD
 
 // HIV-1+2抗体・p24抗原(定性、HIV p24抗原)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2P24ABRESULT_VS
@@ -443,7 +443,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-P24-AB-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-P24-AB-RESULT
 
 // HIV-1+2抗体・p24抗原(定性、HIV-1+2抗体)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24QLRESULT_VS
@@ -459,7 +459,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-QLRESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-QLRESULT
 
 // HIV-1+2抗体・p24抗原(定量、HIV p24抗原)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2P24ABQUANT_VS
@@ -475,7 +475,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-P24-AB-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-P24-AB-QUANT
 
 // HIV-1+2抗体・p24抗原(定量、HIV-1+2抗体)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABQUANT_VS
@@ -491,7 +491,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-QUANT
 
 // HIV-1+2抗体・p24抗原(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24RESULT_VS
@@ -507,7 +507,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-RESULT
 
 // HIV-1+2抗体・p24抗原(陽性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABP24POSCOI_VS
@@ -523,7 +523,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-POS-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-POS-COI
 
 // HIV-1+2抗体(コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABCOI_VS
@@ -539,7 +539,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-COI
 
 // HIV-1+2抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABDIL_VS
@@ -555,7 +555,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-DIL
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-DIL
 
 // HIV-1+2抗体(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABRESULT_VS
@@ -571,7 +571,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-RESULT
 
 // HIV-1+2抗体(陽性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1P2ABPOSCOI_VS
@@ -587,7 +587,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-POS-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-POS-COI
 
 // HIV-1抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1ABDIL_VS
@@ -603,7 +603,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-AB-DIL
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1-AB-DIL
 
 // HIV-1抗体(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV1ABRESULT_VS
@@ -619,7 +619,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-1-AB-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-1-AB-RESULT
 
 // HIV-2抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV2ABDIL_VS
@@ -635,7 +635,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-2-AB-DIL
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-2-AB-DIL
 
 // HIV-2抗体(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_HIV2ABRESULT_VS
@@ -651,7 +651,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #HIV-2-AB-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #HIV-2-AB-RESULT
 
 // 梅毒STS(定性)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_STSQLRESULT_VS
@@ -667,7 +667,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-QLRESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #STS-QLRESULT
 
 // 梅毒STS(定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_STSQUANT_VS
@@ -683,7 +683,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #STS-QUANT
 
 // 梅毒STS(判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_STSRESULT_VS
@@ -699,7 +699,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #STS-RESULT
 
 // 梅毒STS(半定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_STSHQUANT_VS
@@ -715,7 +715,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS-HQUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #STS-HQUANT
 
 // 梅毒TP抗体(定性)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPRESULT_VS
@@ -731,7 +731,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-RESULT
 
 // 梅毒TP抗体(定量、コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPQUANTCOI_VS
@@ -747,7 +747,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-QUANT-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-QUANT-COI
 
 // 梅毒TP抗体(定量、陰性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPNEGCOI_VS
@@ -763,7 +763,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-NEG-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-NEG-COI
 
 // 梅毒TP抗体(定量、判定)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPQUANTRESULT_VS
@@ -779,7 +779,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-QUANT-RESULT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-QUANT-RESULT
 
 // 梅毒TP抗体(定量、陽性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPPOSCOI_VS
@@ -795,7 +795,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-POS-COI
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-POS-COI
 
 // 梅毒TP抗体(定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPQUANT_VS
@@ -811,7 +811,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-QUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-QUANT
 
 // 梅毒TP抗体(半定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_TPHQUANT_VS
@@ -827,7 +827,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #TP-HQUANT
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #TP-HQUANT
 
 // 梅毒反応
 ValueSet: JP_CLINS_ValueSet_InfectionLabo_STS_VS
@@ -843,7 +843,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_InfectionLabo_CS where concept descendant-of #STS
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #STS
 
 
 
