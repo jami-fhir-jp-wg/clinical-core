@@ -73,11 +73,11 @@ Alias: $JP_CLINS_ValueSet_CoreLabo_u_glu_QLHalfQty_VS = http://jpfhir.jp/fhir/cl
 Alias: $JP_CLINS_ValueSet_CoreLabo_u_glu_HalfQty_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_u_glu_HalfQty_VS
 
 Alias: $JP_CLINS_ValueSet_CoreLabo_u_pc_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_u_pc_VS
-       
+
 Alias: $JP_CLINS_ValueSet_CoreLabo_utp_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_utp_VS
 Alias: $JP_CLINS_ValueSet_CoreLabo_utp_QLHalfQty_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_utp_QLHalfQty_VS
 Alias: $JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_utp_HalfQty_VS
-       
+
 Alias: $JP_CLINS_ValueSet_CoreLabo_ua_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_ua_VS
 Alias: $JP_CLINS_ValueSet_CoreLabo_wbc_VS = http://jpfhir.jp/fhir/clins/ValueSet/JP_CLINS_ObsLabResult_CoreLabo_wbc_VS
 

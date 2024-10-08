@@ -746,7 +746,7 @@ Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-TP-QLHalfQty
 
 
-// 尿蛋⽩(半定量) 
+// 尿蛋⽩(半定量)
 ValueSet: JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS
 Id: jp-clins-valueset-corelabo-utp-halfqty-vs
 Title: "CLINS: U-TP-半定量 ValueSet"
