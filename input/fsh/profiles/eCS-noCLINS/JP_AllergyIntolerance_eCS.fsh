@@ -46,7 +46,10 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * meta.tag contains lts 0..1 MS
 
 * meta.tag[lts] 0..1 MS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用する。")
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
+* meta.tag[lts] from $JP_ehrshrs_indication_VS
+  * id ..0
+  * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * system = $JP_ehrshrs_indication_CS

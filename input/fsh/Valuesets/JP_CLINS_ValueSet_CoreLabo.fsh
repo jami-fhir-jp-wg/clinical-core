@@ -361,6 +361,8 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー JLAC10 Va
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #DD
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #DD-class
+
 
 // FBS 空腹時血糖
 ValueSet: JP_CLINS_ValueSet_CoreLabo_fbs_VS
