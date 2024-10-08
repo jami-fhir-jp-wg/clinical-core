@@ -378,7 +378,7 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #FBS
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #BS
 
 // γ-GTP(GGT)^^
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ggt_VS
@@ -689,6 +689,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(定性) Value
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-Bld
 
 // 尿潜血(半定量、判定) ^^
+/*
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_bld_QLHalfQty_VS
 Id: jp-clins-valueset-corelabo-u-bld-qlhalfqty-vs
 Title: "CLINS: U-Bld-定性半定量 ValueSet"
@@ -701,6 +702,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(半定量、�
 * ^experimental = false
 * ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-Bld-QLHalfQty
+*/
 
 //  尿潜血(半定量、希釈倍率) ^^
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_bld_HalfQty_VS
@@ -732,6 +734,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) Value
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-TP
 
 //  尿蛋⽩(半定量、判定) 
+/*
 ValueSet: JP_CLINS_ValueSet_CoreLabo_utp_QLHalfQty_VS
 Id: jp-clins-valueset-corelabo-utp-qlhalfqty-vs
 Title: "CLINS: U-TP-定性半定量 ValueSet"
@@ -744,7 +747,7 @@ Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定
 * ^experimental = false
 * ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-TP-QLHalfQty
-
+*/
 
 // 尿蛋⽩(半定量)
 ValueSet: JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS
@@ -773,7 +776,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿中アルブミン/�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-AperC
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-A/C
 
 // 尿中蛋白/クレアチニン比(P/C比)^^
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_pc_VS
@@ -787,7 +790,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿中蛋白/クレア�
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
-* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-PperC
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-P/C
 
 // 尿糖(定性) ^^
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_glu_VS
@@ -804,6 +807,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-Glu
 
 // U-Glu-定性半定量 ^^
+/*
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_glu_QLHalfQty_VS
 Id: jp-clins-valueset-corelabo-u-glu-qlhalfqty-vs
 Title: "CLINS: U-Glu-QLHalfQty 尿糖(半定量、判定)　ValueSet"
@@ -816,7 +820,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量、判�
 * ^experimental = false
 * ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-Glu-QLHalfQty
-
+*/
 
 // U-Glu-半定量 ^^
 ValueSet: JP_CLINS_ValueSet_CoreLabo_u_glu_HalfQty_VS
