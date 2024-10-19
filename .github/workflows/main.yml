@@ -113,7 +113,7 @@ jobs:
 
     - name: apply the version of sushi-config.yaml
       run: |
-        sed 's/version: 1.x.x-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
+        sed 's/1.x.x-temp/${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
         mv sushi-config-temp.yaml sushi-config.yaml
 
         sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/validationGuide.md > input/pagecontent/validationGuide-temp.md
