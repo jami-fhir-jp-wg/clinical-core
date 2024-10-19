@@ -14,7 +14,7 @@ on:
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.5.2
+  release_version : 1.5.3
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -105,19 +105,26 @@ jobs:
         ls -l /home/runner/.fhir/packages/
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPCOREdir/
 
-    - name: apply the version of sushi-config.yaml
+    - name: apply the version of sushi-config.yaml and other files
       run: |
-        sed 's/version: 1.2.0-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
+        sed 's/version: 1.x.x-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
         mv sushi-config-temp.yaml sushi-config.yaml
+
+        sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/validationGuide.md > input/pagecontent/validationGuide-temp.md
+        mv input/pagecontent/validationGuide-temp.md input/pagecontent/validationGuide.md
+
+        sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/index.md > input/pagecontent/index-temp.md
+        mv input/pagecontent/index-temp.md input/pagecontent/index.md
+
         cd forPackageRelease
-        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
-        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
+        sed 's/1.x.x-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
+        sed 's/1.x.x-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
         sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diff-temp.json > package-diff-temp2.json
         sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snap-temp.json > package-snap-temp2.json
         mv package-diff-temp2.json package-diff.json
         mv package-snap-temp2.json package-snap.json
-        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-diffCLINS.json >package-diffCLINS-temp.json
-        sed 's/1.2.0-temp/${{ env.release_version }}/g' package-snapCLINS.json >package-snapCLINS-temp.json
+        sed 's/1.x.x-temp/${{ env.release_version }}/g' package-diffCLINS.json >package-diffCLINS-temp.json
+        sed 's/1.x.x-temp/${{ env.release_version }}/g' package-snapCLINS.json >package-snapCLINS-temp.json
         sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diffCLINS-temp.json > package-diffCLINS-temp2.json
         sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snapCLINS-temp.json > package-snapCLINS-temp2.json
         mv package-diffCLINS-temp2.json package-diffCLINS.json

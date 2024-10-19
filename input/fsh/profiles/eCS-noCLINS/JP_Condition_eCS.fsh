@@ -18,7 +18,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-09-14"
+* ^date = "2024-10-19"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -76,7 +76,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
   * system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
-  * code = #UNDELIVEREDを設定する。 (exactly)
+  * code = #UNDELIVERED (exactly)
 * meta.tag[undelivered] from $JP_ehrshrs_indication_VS 
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
