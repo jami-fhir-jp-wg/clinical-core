@@ -45,6 +45,10 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys validEntryProfile-MedicationRequest
 * obeys validEntryProfile-ObservationLabResult
 
+* obeys observationExist
+* obeys observationTypeCS
+* obeys observationExist-and-observationTypeCS
+
 /*
 * obeys valid-valuePart0-bundleIdenfifier
 * obeys valid-valuePart1-bundleIdenfifier
