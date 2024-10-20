@@ -126,33 +126,17 @@ Severity: #error
 Expression: "entry.first().resource.is(Patient)"
 
 // バージョン指定部分を除くURLを一致チェック
-Invariant: 01patients-profile-is-JP-Patient-eCS
-Description: "01R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。"
-Severity: #error
-Expression: "entry.first().resource.meta.profile.where($this.substring(0,$this.indexOf('|')) ='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
-
-Invariant: 02patients-profile-is-JP-Patient-eCS
-Description: "02R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。"
-Severity: #error
-Expression: "entry.first().resource.meta.profile.where($this='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
-
-Invariant: 03patients-profile-is-JP-Patient-eCS
-Description: "03R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。"
-Severity: #error
-Expression: "entry.first().resource.meta.where(profile='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
-
-
 Invariant: patients-profile-is-JP-Patient-eCS
 Description: "R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。"
 Severity: #error
-Expression: "(entry.first().resource.meta.profile.where($this.substring(0,$this.indexOf('|')) ='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()) or (entry.first().resource.meta.profile.where($this='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists())"
+Expression: "entry.first().resource.meta.profile.where($this.indexOf('|')>0 and ($this.indexOf('|')>0 implies ($this.substring(0,$this.indexOf('|'))='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS'))).exists() or entry.first().resource.meta.profile.where($this='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
 
 Invariant: bundle-profile-is-JP-Bundle-CLINS
 Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
 Severity: #error
 //Expression: "meta.profile.where($this.substring(0,63) ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
 // バージョン記述記号の'|'の位置までの部分文字列、またはmeta.profile全体が指定したURLであるかを調べる。
-Expression: "meta.profile.where($this.substring(0,$this.indexOf('|')) ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists() or meta.profile.where($this='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
+Expression: "meta.profile.where($this.indexOf('|')>0 and ($this.indexOf('|')>0 implies ($this.substring(0,$this.indexOf('|'))='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS'))).exists()  or meta.profile.where($this='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
 
 
 // Bundleルール meta.tag には system = 'http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS'
