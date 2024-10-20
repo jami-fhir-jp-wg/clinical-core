@@ -14,6 +14,9 @@ Description: "退院時サマリー Bundle"
 
 * . ^short = "退院時サマリーのための文書 Bundleリソース"
 * . ^definition = "退院時サマリーのための文書 Bundleリソース"
+
+* obeys validEntryProfile_JP_MedicationRequest_eCS
+
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eDischargeSummary|1")

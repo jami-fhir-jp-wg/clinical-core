@@ -129,12 +129,14 @@ Expression: "entry.first().resource.is(Patient)"
 Invariant: patients-profile-is-JP-Patient-CLINS-eCS
 Description: "R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。"
 Severity: #error
-Expression: "entry.first().resource.meta.where(profile.substring(0,60)='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
+Expression: "entry.first().resource.meta.profile.where($this.substring(0,$this.indexOf('|')) ='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists() or  entry.first().resource.meta.profile.where($this='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS').exists()"
 
 Invariant: bundle-profile-is-JP-Bundle-CLINS
 Description: "R0213:BundleはJP-Bundle-CLINSプロファイルに準拠していなければならない。"
 Severity: #error
-Expression: "meta.profile.where($this.substring(0,63) ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
+//Expression: "meta.profile.where($this.substring(0,63) ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
+// バージョン記述記号の'|'の位置までの部分文字列、またはmeta.profile全体が指定したURLであるかを調べる。
+Expression: "meta.profile.where($this.substring(0,$this.indexOf('|')) ='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists() or meta.profile.where($this='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS').exists()"
 
 
 // Bundleルール meta.tag には system = 'http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS'
@@ -151,6 +153,11 @@ Invariant: bundle-meta-tag-resourceType-valid
 Description: "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='AllergyIntolerance').count()=1 or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='Observation').count()=1 or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='Condition').count()=1"
+
+Invariant: bundle-mustHasOneMoreValidResourceType
+Description: "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
+Severity: #error
+(entry.resource.where(resourceType='Observation').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation') or (entry.resource.where(resourceType='Condition').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Condition') or (entry.resource.where(resourceType='AllergyIntolerance').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='AllergyIntolerance')
 
 
 // Bundle のidentifier. [\\\\^]
