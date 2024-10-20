@@ -39,6 +39,9 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 
 * obeys first-bundle-entry-is-Patient // "R0211:最初のentryはPatientでなければならない。"
 * obeys patients-profile-is-JP-Patient-CLINS-eCS  // R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。
+* obeys 01patients-profile-is-JP-Patient-CLINS-eCS
+* obeys 02patients-profile-is-JP-Patient-CLINS-eCS
+* obeys 03patients-profile-is-JP-Patient-CLINS-eCS
 
 * obeys validEntryProfile-AllergyIntolerance
 * obeys validEntryProfile-Condition
