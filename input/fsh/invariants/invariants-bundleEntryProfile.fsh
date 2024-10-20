@@ -30,7 +30,7 @@ Invariant: mustNotHaveOtherResources-than-designatedResourceType
 Invariant: observationExist
 * human = "R02144:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソース以外のリソースがPatientリソース以外に存在してはいけない。"
 * severity = #error
-* expression = "entry.where(resource.resourceType='Observation').exists()"
+* expression = "entry.resource.ofType(Observation).exists()"
 
 Invariant: observationTypeCS
 * human = "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation'"
@@ -41,4 +41,4 @@ Invariant: observationTypeCS
 Invariant: observationExist-and-observationTypeCS
 * human = "observationExist-and-observationTypeCS"
 * severity = #error
-* expression = "entry.where(resource.resourceType='Observation').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation'"
+* expression = "entry.resource.ofType(Observation).exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation'"
