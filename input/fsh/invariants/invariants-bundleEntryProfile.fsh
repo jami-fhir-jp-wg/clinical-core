@@ -17,7 +17,7 @@ Invariant: validEntryProfile-ObservationLabResult
 RuleSet: validEntryProfile(par1,par2,par3)
 * human = "Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
 * severity = #error
-* expression = "(meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='{par1}'.exists().not()) or (entry.resource.where(resourceType='{par1}').meta.profile.where($this.substring(0,$this.indexOf('|')) ='{par3}').exists() or  entry.resource.where(resourceType='{par1}').meta.profile.where($this='{par3}').exists())"
+* expression = "(entry.resource.where(resourceType='{par1}').exists().not()) or ((entry.resource.where(resourceType='{par1}').meta.profile.where($this.substring(0,$this.indexOf('|'))!='{par3}').exists()).not() or (entry.resource.where(resourceType='{par1}').meta.profile.where($this!='{par3}').exists()).not())"
 
 RuleSet: mustHasOneMoreResources(par1,par2,par3)
 * human = "Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"

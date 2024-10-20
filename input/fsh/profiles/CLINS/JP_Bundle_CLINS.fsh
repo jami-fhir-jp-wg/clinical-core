@@ -22,7 +22,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys bundle-profile-is-JP-Bundle-CLINS
 * obeys bundle-meta-tag-resourceType-exists //"R02141:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
 * obeys bundle-meta-tag-resourceType-valid // "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
-* obeys bundle-mustHasOneMoreValidResourceType  // "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
+//* obeys bundle-mustHasOneMoreValidResourceType  // "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
 
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
