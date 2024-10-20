@@ -1,16 +1,16 @@
-Invariant: validEntryProfile_JP_AllergyIntolerance_eCS
+Invariant: validEntryProfile-AllergyIntolerance
 * insert validEntryProfile(AllergyIntolerance,JP_AllergyIntolerance_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS)
 
-Invariant: validEntryProfile_JP_Patient_eCS
+Invariant: validEntryProfile_Patient
 * insert validEntryProfile(Patient,JP_Patient_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS)
 
-Invariant: validEntryProfileJP_Condition_eCS
+Invariant: validEntryProfile-Condition
 * insert validEntryProfile(Condition,JP_Condition_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS)
 
-Invariant: validEntryProfile_JP_MedicationRequest_eCS
+Invariant: validEntryProfile-MedicationRequest
 * insert validEntryProfile(MedicationRequest,JP_MedicationRequest_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS)
 
-Invariant: validEntryProfile_JP_Observation_LabResult_eCS
+Invariant: validEntryProfile-ObservationLabResult
 * insert validEntryProfile(Observation,JP_Observation_LabResult_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS)
 
 

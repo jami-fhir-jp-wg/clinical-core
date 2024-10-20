@@ -154,11 +154,11 @@ Description: "R02142:Bundle.meta.tagに記述されたresourceTypeは、'Allergy
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='AllergyIntolerance').count()=1 or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='Observation').count()=1 or meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').where(code='Condition').count()=1"
 
-Invariant: bundle-mustHasOneMoreValidResourceType
+/*Invariant: bundle-mustHasOneMoreValidResourceType
 Description: "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
 Severity: #error
 (entry.resource.where(resourceType='Observation').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation') or (entry.resource.where(resourceType='Condition').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Condition') or (entry.resource.where(resourceType='AllergyIntolerance').exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='AllergyIntolerance')
-
+*/
 
 // Bundle のidentifier. [\\\\^]
 // Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。\r\n

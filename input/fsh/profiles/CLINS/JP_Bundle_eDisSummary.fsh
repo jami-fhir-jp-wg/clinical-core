@@ -15,7 +15,7 @@ Description: "退院時サマリー Bundle"
 * . ^short = "退院時サマリーのための文書 Bundleリソース"
 * . ^definition = "退院時サマリーのための文書 Bundleリソース"
 
-* obeys validEntryProfile_JP_MedicationRequest_eCS
+* obeys validEntryProfile-MedicationRequest
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
