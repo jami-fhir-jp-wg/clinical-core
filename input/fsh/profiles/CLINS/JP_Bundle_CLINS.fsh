@@ -23,7 +23,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys bundle-meta-tag-resourceType-exists //"R02141:Bundle.meta.tagに、収納するresourceTypeを記述しなければならない。"
 * obeys bundle-meta-tag-resourceType-valid // "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
 * obeys mustHaveOneMoreResources-with-designatedResourceType  // "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
-* obeys mustNotHaveOtherResources-than-designatedResourceType // "R02144:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソース以外のリソースがPatientリソース以外に存在してはいけない。"
+
 
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
@@ -38,10 +38,10 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys observation-needs-extension-of-Department
 
 * obeys first-bundle-entry-is-Patient // "R0211:最初のentryはPatientでなければならない。"
-* obeys patients-profile-is-JP-Patient-CLINS-eCS  // R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。
-* obeys 01patients-profile-is-JP-Patient-CLINS-eCS
-* obeys 02patients-profile-is-JP-Patient-CLINS-eCS
-* obeys 03patients-profile-is-JP-Patient-CLINS-eCS
+* obeys patients-profile-is-JP-Patient-eCS  // R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。
+* obeys 01patients-profile-is-JP-Patient-eCS
+* obeys 02patients-profile-is-JP-Patient-eCS
+* obeys 03patients-profile-is-JP-Patient-eCS
 
 * obeys validEntryProfile-AllergyIntolerance
 * obeys validEntryProfile-Condition
