@@ -191,14 +191,14 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
  and coreLabo/u-ac 0..1 MS
  and coreLabo/u-bld 0..1 MS
  and coreLabo/u-bld-HalfQty 0..1 MS
- and coreLabo/u-bld-QLHalfQty 0..1 MS
+// and coreLabo/u-bld-QLHalfQty 0..1 MS
  and coreLabo/u-glu 0..1 MS
  and coreLabo/u-glu-HalfQty 0..1 MS
- and coreLabo/u-glu-QLHalfQty 0..1 MS
+// and coreLabo/u-glu-QLHalfQty 0..1 MS
  and coreLabo/u-pc 0..1 MS
  and coreLabo/ua 0..1 MS
  and coreLabo/utp 0..1 MS
- and coreLabo/utp-QLHalfQty 0..1 MS
+// and coreLabo/utp-QLHalfQty 0..1 MS
  and coreLabo/utp-HalfQty 0..1 MS
  and coreLabo/wbc 0..1 MS
 //
@@ -449,9 +449,11 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * code.coding[coreLabo/u-bld-HalfQty].display = "U-Bld-半定量" (exactly)	
 * code.coding[coreLabo/u-bld-HalfQty].code from $JP_CLINS_ValueSet_CoreLabo_u_bld_HalfQty_VS (required)
 
+/*
 * code.coding[coreLabo/u-bld-QLHalfQty].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/u-bld-QLHalfQty].display = "U-Bld-定性半定量" (exactly)	
 * code.coding[coreLabo/u-bld-QLHalfQty].code from $JP_CLINS_ValueSet_CoreLabo_u_bld_QLHalfQty_VS (required)
+*/
 
 * code.coding[coreLabo/u-glu].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/u-glu].display = "U-Glu" (exactly)	
@@ -461,10 +463,11 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * code.coding[coreLabo/u-glu-HalfQty].display = "U-Glu-定性半定量" (exactly)	
 * code.coding[coreLabo/u-glu-HalfQty].code from $JP_CLINS_ValueSet_CoreLabo_u_glu_HalfQty_VS (required)
 
+/*
 * code.coding[coreLabo/u-glu-QLHalfQty].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/u-glu-QLHalfQty].display = "U-Glu-半定量" (exactly)	
 * code.coding[coreLabo/u-glu-QLHalfQty].code from $JP_CLINS_ValueSet_CoreLabo_u_glu_QLHalfQty_VS (required)
-
+*/
 * code.coding[coreLabo/u-pc].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/u-pc].display = "U-pc" (exactly)	
 * code.coding[coreLabo/u-pc].code from $JP_CLINS_ValueSet_CoreLabo_u_pc_VS (required)
@@ -476,11 +479,11 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * code.coding[coreLabo/utp-HalfQty].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/utp-HalfQty].display = "U-TP-半定量" (exactly)	
 * code.coding[coreLabo/utp-HalfQty].code from $JP_CLINS_ValueSet_CoreLabo_utp_HalfQty_VS (required)
-
+/*
 * code.coding[coreLabo/utp-QLHalfQty].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/utp-QLHalfQty].display = "U-TP-定性半定量" (exactly)	
 * code.coding[coreLabo/utp-QLHalfQty].code from $JP_CLINS_ValueSet_CoreLabo_utp_QLHalfQty_VS (required)
-
+*/
 * code.coding[coreLabo/ua].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/ua].display = "UA" (exactly)	
 * code.coding[coreLabo/ua].code from $JP_CLINS_ValueSet_CoreLabo_ua_VS (required)
