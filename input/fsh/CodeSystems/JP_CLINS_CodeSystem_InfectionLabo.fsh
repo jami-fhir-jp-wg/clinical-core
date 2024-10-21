@@ -1,12 +1,12 @@
-CodeSystem: JP_CLINS_CodeSystem_InfectionLabo_CS
-Id: jp-clins-codesystem-infectionlabo-cs
+CodeSystem: JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
+Id: jp-clins-codesystem-JLAC10-infectionlabo-cs
 Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セット"
 Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セット"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-11-03T00:45:56.836+09:00"
 * ^url = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
 * ^status = #active
-* ^version = "1.4.0"
+* ^version = "1.5.0"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true

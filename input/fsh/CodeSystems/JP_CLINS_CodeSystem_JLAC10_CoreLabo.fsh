@@ -1,5 +1,5 @@
-CodeSystem: JP_CLINS_CodeSystem_CoreLabo_CS
-Id: jp-clins-codesystem-corelabo-cs
+CodeSystem: JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
+Id: jp-clins-codesystem-JLAC10-corelabo-cs
 Title: "CLINS 電子カルテ共有サービス用:検体検査項目セット"
 Description: "CLINS 電子カルテ共有サービス用 検体検査項目セット"
 * ^meta.versionId = "1"
@@ -19,11 +19,11 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
 * ^property[=].type = #string
 
 * ^property[+].code = #specimen
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_unitProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_specimenProperty"
 * ^property[=].type = #string
 
 * ^property[+].code = #method
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_unitProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_methodProperty"
 * ^property[=].type = #string
 
 * ^property[+].code = #fullNumberOfDigits
