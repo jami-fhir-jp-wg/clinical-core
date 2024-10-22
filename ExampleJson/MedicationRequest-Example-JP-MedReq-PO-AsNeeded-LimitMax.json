@@ -27,15 +27,6 @@
       "value": "1318814790-9990767-0A1721342FB30D2021070718303401-1"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -76,6 +67,15 @@
           }
         }
       ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
     }
   ],
   "note": [
@@ -153,7 +153,7 @@
     "coding": [
       {
         "code": "1141007F1063",
-        "system": "http://capstandard.jp/CodeSystem/YJ-code",
+        "system": "http://capstandard.jp/iyaku.info/CodeSystem/YJ-code",
         "display": "カロナール錠３００"
       },
       {

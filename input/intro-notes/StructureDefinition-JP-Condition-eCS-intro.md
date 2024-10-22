@@ -58,7 +58,8 @@
 
 ### MustSupport要素
   - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
-
+  - 病名情報のcode.coding.system、同.code、同.display
+  - 修飾語情報のvalueCodeableConcept.coding.system、同.code、同.display
 
 ## 要素の説明とプロファイル
   - 多重度欄の背景色：

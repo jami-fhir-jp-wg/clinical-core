@@ -180,7 +180,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
   * insert relative_short_definition("厚生労働省保険局が定める一般処方名マスターコードを識別するcsystem値")
 * medication[x].coding[codingGeneralName].system MS
 * medication[x].coding[codingGeneralName].code ^definition = "厚生労働省保険局が定める一般処方名マスターコード"
-* medication[x].coding[codingGeneralName].code MS
+* medication[x].coding[codingGeneralName].code 1.. MS
 * medication[x].coding[codingGeneralName].code from $JP_MedicationCodeCommon_VS
 * medication[x].coding[codingGeneralName].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
@@ -220,6 +220,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * note.text ^comment = "例）”4月1日から4日間服用。2週間休薬後、4月19日から4日間服用。患者に書面にて説明済み。”"
 * note.text MS
 
+* dosageInstruction 1..* MS
 * dosageInstruction only JP_MedicationDosage_eCS
 
 * dispenseRequest 0..1 MS

@@ -31,7 +31,6 @@
   - subject : 対象となる患者のFHIRリソースへの参照。
   - authoredOn : 処方指示が最初に作成された日時。
   - dosageInstruction : 用法や投与量を含む処方指示。
-  - dispenseRequest : 調剤（薬局での払い出し指示）情報
 
 ### 必須要素　（MedicationRequest.dosageInstructionの直下の必須要素）
   - DosageInstruction[].extension[] : 投与開始日を明示するために使用する拡張「PeriodOfUse」

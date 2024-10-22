@@ -27,15 +27,6 @@
       "value": "1318814790-9990767-0A172B1DB7EF2B2021071211420001-1"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -109,6 +100,15 @@
       }
     }
   ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
   "note": [
     {
       "text": "MedicationRequestリソース　入院・内服処方1日1回１回2錠 2日分処方例"
@@ -160,7 +160,7 @@
     "coding": [
       {
         "code": "3219100F1020",
-        "system": "http://capstandard.jp/CodeSystem/YJ-code",
+        "system": "http://capstandard.jp/iyaku.info/CodeSystem/YJ-code",
         "display": "デノタスチュアブル配合錠"
       },
       {

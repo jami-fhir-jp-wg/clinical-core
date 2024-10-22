@@ -32,5 +32,10 @@
   "subject": {
     "reference": "Patient/Example-JP-Patient-eCS-MAKINO"
   },
+  "performer": [
+    {
+      "reference": "Practitioner/Example-Contained-JP-Practitioner-minimun-D002"
+    }
+  ],
   "valueString": "上腹部圧痛あり、その他特に所見なし。"
 }

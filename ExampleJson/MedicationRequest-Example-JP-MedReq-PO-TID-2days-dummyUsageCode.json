@@ -27,28 +27,6 @@
       "value": "1318814790-9990767-0A1720D83807672021070909210705-2"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    },
-    {
-      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "08",
-            "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
-            "display": "循環器科"
-          }
-        ],
-        "text": "循環器診療科"
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -64,7 +42,8 @@
           "coding": [
             {
               "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS",
-              "code": "0X0XXXXXXXXX0000"
+              "code": "0X0XXXXXXXXX0000",
+              "display": "ダミー用法コード"
             }
           ],
           "text": "1日3回 毎食後"
@@ -119,6 +98,28 @@
         }
       ],
       "text": "1日3回 毎食後 １回 2錠  (１日  6錠) 2　日分"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "08",
+            "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
+            "display": "循環器科"
+          }
+        ],
+        "text": "循環器診療科"
+      }
     }
   ],
   "note": [
@@ -182,7 +183,7 @@
       },
       {
         "code": "2316009F1022",
-        "system": "http://capstandard.jp/CodeSystem/YJ-code",
+        "system": "http://capstandard.jp/iyaku.info/CodeSystem/YJ-code",
         "display": "ミヤＢＭ錠"
       }
     ],

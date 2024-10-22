@@ -27,15 +27,6 @@
       "value": "1318814790-9990767-0A17296D729AE72021071219211801-2"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -106,6 +97,15 @@
           ],
           "text": "1日2回 朝夕食後"
         }
+      }
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
       }
     }
   ],

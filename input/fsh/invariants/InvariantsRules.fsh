@@ -221,37 +221,65 @@ Description: "R9012:Bundleに含まれるPatient以外のリソースには、�
 Severity: #error
 Expression: "entry.tail().resource.all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').value.ofType(Identifier).value.matches('^[0-4][0-9][1-3][0-9]{7}$'))"
 
-
-
-// R9013C  Bundleに含まれるConditionリソースには、JP_Encounterリソースが必須である。
-Invariant: condition-needs-contained-of-Encounter
-Description: "R9013C:Bundleに含まれるConditionのリソースには、Contained JP_Encounterリソースが必須である。"
-Severity: #error
-Expression: "entry.select(resource as Condition).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
-
-// R9015C  Bundleに含まれるConditionリソースでは、onsetDateTimeが必須である。
-Invariant: condition-needs-onsetDateTime
-Description: "R9013C:Bundleに含まれるConditionのリソースでは、onsetDateTimeが必須である。"
-Severity: #error
-Expression: "entry.select(resource as Condition).all(onset.ofType(dateTime).exists())"
-
-// R9013O Bundleに含まれるObservationリソースには、JP_Encounterリソースが必須である。
+// R9013O Bundleに含まれるObservationリソースには、Contained JP_Encounterリソースが必須である。
 Invariant: observation-needs-contained-of-Encounter
-Description: "R9013O:Bundleに含まれるObservationのリソースには、Contained JP_Encounterリソースが必須である。"
+Description: "R9013O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
 Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
 
+// R9013C  Bundleに含まれるConditionリソースには、Contained JP_Encounterリソースが必須である。
+Invariant: condition-needs-contained-of-Encounter
+Description: "R9013C:Bundleに含まれるすべてのConditionのリソースには、Contained JP_Encounterリソースが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
+
 // R9014C  Bundleに含まれるConditionリソースには、診療科拡張が必須である。
 Invariant: condition-needs-extension-of-Department
-Description: "R9014C:Bundleに含まれるConditionリソースには、診療科拡張が必須である。"
+Description: "R9014C:Bundleに含まれるすべてのConditionリソースには、診療科拡張が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
 
 // R9014O  Bundleに含まれるObservationリソースには、診療科拡張が必須である。
 Invariant: observation-needs-extension-of-Department
-Description: "R9014O:Bundleに含まれるObservationリソースには、診療科拡張が必須である。"
+Description: "R9014O:Bundleに含まれるすべてのObservationリソースには、診療科拡張が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Observation).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
+
+// R9015C  Bundleに含まれるConditionリソースでは、onsetDateTimeが必須である。
+Invariant: condition-needs-onsetDateTime
+Description: "R9013C:Bundleに含まれるすべてのConditionのリソースでは、onsetDateTimeが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(onset.ofType(dateTime).exists())"
+
+// R9016C  Bundleに含まれるConditionリソースには、encounterが必須である。
+Invariant: condition-needs-encounter
+Description: "R9016C:Bundleに含まれるすべてのConditionのリソースには、encounterが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(encounter.exists())"
+
+// R9016O  Bundleに含まれるObservationリソースには、encounterが必須である。
+Invariant: observation-needs-encounter
+Description: "R9016O:Bundleに含まれるすべてのObservationのリソースには、encounterが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(encounter.exists())"
+
+// R9017O  Bundleに含まれるObservationリソースには、performerが必須である。
+Invariant: observation-needs-performer
+Description: "R9017O:Bundleに含まれるすべてのObservationのリソースには、performerが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(performer.exists())"
+
+// R9018C  Bundleに含まれるCoditionリソースには、abatementDateTimeが必須である。
+Invariant: condition-needs-abatementDateTime
+Description: "R9018C:Bundleに含まれるすべてのConditionのリソースには、abatementDateTimeが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Condition).all(abatement.ofType(dateTime).exists())"
+
+// R9019O Bundleに含まれるObservationリソースには、Contained JP_Practitionerが必須である。
+Invariant: observation-needs-contained-of-Practitioner
+Description: "R9019O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Practitionerリソースが必須である。"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner').exists())"
 
 
 //========= 以下、未整理 =========

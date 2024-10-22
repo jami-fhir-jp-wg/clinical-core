@@ -27,27 +27,6 @@
       "value": "1318814790-9990767-0A172220B35F172021071410514001-1"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    },
-    {
-      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "01",
-            "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
-            "display": "内科"
-          }
-        ]
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -87,6 +66,27 @@
           }
         }
       ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    },
+    {
+      "url": "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "01",
+            "system": "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment",
+            "display": "内科"
+          }
+        ]
+      }
     }
   ],
   "note": [
@@ -164,7 +164,7 @@
       },
       {
         "code": "2359800J1035",
-        "system": "http://capstandard.jp/CodeSystem/YJ-code",
+        "system": "http://capstandard.jp/iyaku.info/CodeSystem/YJ-code",
         "display": "新レシカルボン坐剤"
       },
       {

@@ -1364,7 +1364,7 @@
           "coding": [
             {
               "code": "GCM2260701F1ZZZ",
-              "system": "http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS",
+              "system": "http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS",
               "display": "ポビドンヨード含嗽用液７％"
             }
           ],
@@ -1376,6 +1376,21 @@
         "encounter": {
           "reference": "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
         },
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+                    "valueCode": "NI"
+                  }
+                ]
+              }
+            ],
+            "severity": "severe"
+          }
+        ],
         "note": [
           {
             "text": "ポビドンヨード含嗽後に嘔吐と全身に発疹"

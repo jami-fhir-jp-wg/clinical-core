@@ -21,19 +21,19 @@ Invariant: mustHaveOneMoreResources-with-designatedResourceType
 * severity = #error
 * expression = "(entry.resource.ofType(Observation).exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation') or (entry.resource.ofType(Condition).exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Condition') or (entry.resource.ofType(AllergyIntolerance).exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='AllergyIntolerance')"
 
+RuleSet: requireElementWhenCLINS(resouceType,element)
+* human = "{resouceType} has to have an element {element}: Bundleのentryとして含まれる{resouceType}リソースは、電子カルテ情報共有サービスでは{element}要素が必須である。"
+* severity = #error 
+* expression = "(entry.resource.ofType({resouceType}).exists().not()) or ((entry.resource.ofType({resouceType}).{element}.exists()"
 
-Invariant: observationExist
-* human = "R02144:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソース以外のリソースがPatientリソース以外に存在してはいけない。"
-* severity = #error
-* expression = "entry.resource.ofType(Observation).exists()"
+Invariant: requireElementWhenCLINS-Condition-encounter
+* insert requireElementWhenCLINS(Condition,encounter)
 
-Invariant: observationTypeCS
-* human = "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation'"
-* severity = #error
-* expression = "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation'"
+Invariant: requireElementWhenCLINS-Observation-encounter
+* insert requireElementWhenCLINS(Observation,encounter)
 
+Invariant: requireElementWhenCLINS-Observation-performer
+* insert requireElementWhenCLINS(Observation,performer)
 
-Invariant: observationExist-and-observationTypeCS
-* human = "observationExist-and-observationTypeCS"
-* severity = #error
-* expression = "entry.resource.ofType(Observation).exists() and meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS').code='Observation'"
+Invariant: requireElementWhenCLINS-Condition-abatementDateTime
+* insert requireElementWhenCLINS(Condition,abatementDateTime)

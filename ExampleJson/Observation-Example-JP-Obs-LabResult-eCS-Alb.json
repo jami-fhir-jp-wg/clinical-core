@@ -4,8 +4,8 @@
   "meta": {
     "tag": [
       {
-        "code": "LTS",
         "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication",
+        "code": "LTS",
         "display": "長期保存"
       }
     ],
@@ -144,7 +144,7 @@
       },
       {
         "code": "3A015000001827101",
-        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_CoreLabo_CS",
+        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS",
         "display": "ALB"
       }
     ],

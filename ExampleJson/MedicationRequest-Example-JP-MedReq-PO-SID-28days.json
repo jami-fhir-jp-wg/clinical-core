@@ -27,15 +27,6 @@
       "value": "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -133,6 +124,15 @@
       }
     }
   ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
+    }
+  ],
   "note": [
     {
       "text": "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
@@ -189,8 +189,8 @@
     "coding": [
       {
         "code": "1124030F2ZZZ",
-        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/YJ9ZZZ",
-        "display": "クアゼパム錠２０ｍｇ"
+        "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode",
+        "display": "【般】クアゼパム錠２０ｍｇ"
       },
       {
         "code": "I1379700",

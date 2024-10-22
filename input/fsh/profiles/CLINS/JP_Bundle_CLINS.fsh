@@ -24,7 +24,6 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys bundle-meta-tag-resourceType-valid // "R02142:Bundle.meta.tagに記述されたresourceTypeは、'AllergyIntolerance', 'Observation', 'Condition'のいずれかであること。"
 * obeys mustHaveOneMoreResources-with-designatedResourceType  // "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
 
-
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
 
@@ -44,10 +43,6 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys validEntryProfile-Condition
 * obeys validEntryProfile-MedicationRequest
 * obeys validEntryProfile-ObservationLabResult
-
-* obeys observationExist
-* obeys observationTypeCS
-* obeys observationExist-and-observationTypeCS
 
 /*
 * obeys valid-valuePart0-bundleIdenfifier

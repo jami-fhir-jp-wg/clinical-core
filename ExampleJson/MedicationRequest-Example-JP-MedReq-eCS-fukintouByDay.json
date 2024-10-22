@@ -157,7 +157,7 @@
       },
       {
         "code": "2456001F1310",
-        "system": "urn:oid:1.2.392.100495.20.1.73",
+        "system": "http://capstandard.jp/iyaku.info/CodeSystem/YJ-code",
         "display": "プレドニン錠５ｍｇ"
       }
     ],

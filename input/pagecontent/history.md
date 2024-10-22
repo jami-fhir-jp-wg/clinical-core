@@ -6,6 +6,27 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3 (2024.10.19) 
+    - eCS/CLINS:JP_MedicationRequest_eCS
+      - 4.1 必須要素から、dispenseRequestを外す（プロファイルとの整合性をとった）。
+      - 6.1 「MedicationRequest」表
+        - 多重度を1..1から0..1に修正し、黄色背景色を削除。
+      - 7.1 プロファイル詳細
+        - medicationCodeableConcept.coding[codingGeneralName].code 多重度を0..1から1..1に修正。
+    - eCS/CLINS:JP_Condition_eCS
+      - 7.1 プロファイル詳細
+        - 病名情報のcode.coding.system、同.code、同.displayの多重度を1..1と明示。これらにMustSupportフラグを追加設定。
+        - 修飾語情報のvalueCodeableConcept.coding.system、同.code、同.displayの多重度を1..1と明示。これらにMustSupportフラグを追加設定。
+    - eCS/CLINS:JP_MedicationDosage_eCS
+      - 6.1 「MedicationDosage」表
+        - timing の多重度を0..1から1..1 に修正（コード化できない場合でもダミーコードによるコード化を行うことになったため）　説明文もこれにあわせて修正。
+        - timing.code.coding の多重度を0..* から1..* に修正（同上）説明文もこれにあわせて修正。
+      - 7.1 プロファイル詳細
+        - timing.code.coding.system、同.code、同.displayの多重度を1..1と明示。これらにMustSupportフラグを追加設定。
+
+    - 電子カルテ情報共有サービス用の検査項目、感染症項目のCodeSystem、ValueSetをJLAC10、JLAC11対応に更新。
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.2 (2024.9.29) 
 
     - 個別医薬品コード（YJコード）リスト、規格別薬剤成分コード（YJコードの末尾3桁をZZZとしたコード）のコード名称、識別子URLを改訂（決定）。

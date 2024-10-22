@@ -27,15 +27,6 @@
       "value": "1318814790-9990767-0A172AE334669A2021070515574101-1"
     }
   ],
-  "extension": [
-    {
-      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
-      "valueIdentifier": {
-        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
-        "value": "1318814790"
-      }
-    }
-  ],
   "dosageInstruction": [
     {
       "extension": [
@@ -55,7 +46,7 @@
           "coding": [
             {
               "system": "http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription",
-              "code": "10121050610000000000010100000000",
+              "code": "1050610000000000",
               "display": "不眠時　服用"
             }
           ],
@@ -82,6 +73,15 @@
           }
         }
       ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber",
+      "valueIdentifier": {
+        "system": "http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no",
+        "value": "1318814790"
+      }
     }
   ],
   "note": [
@@ -135,7 +135,7 @@
     "coding": [
       {
         "code": "1190027F1022",
-        "system": "http://capstandard.jp/CodeSystem/YJ-code",
+        "system": "http://capstandard.jp/iyaku.info/CodeSystem/YJ-code",
         "display": "デエビゴ錠２．５ｍｇ"
       },
       {
