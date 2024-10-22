@@ -1427,4 +1427,4 @@
   <td class=xl128 width=195 style='width:146pt'>&quot;後発品変更不可&quot;</td>
  </tr>
 
-</table
+</table>

@@ -64,3 +64,6 @@ Best Practice Recommendation:%
 
 #Ignore HTMLタグ
 markdownには%
+
+#Ignore experimental messages
+%but this structure is not labeled as experimental%
