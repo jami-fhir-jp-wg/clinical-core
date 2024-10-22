@@ -1,10 +1,10 @@
-CodeSystem: JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
-Id: jp-clins-codesystem-JLAC10-infectionlabo-cs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セット"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セット"
+CodeSystem: JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS
+Id: jp-clins-codesystem-JLAC11-infectionlabo-cs
+Title: "CLINS 電子カルテ共有サービス用: JLAC11 感染症検査項目セット"
+Description: "CLINS 電子カルテ共有サービス用 JLAC11 感染症検査項目セット"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-11-03T00:45:56.836+09:00"
-* ^url = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
+* ^url = $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS
 * ^status = #active
 * ^version = "1.5.0"
 * ^status = #active
@@ -250,11 +250,11 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
   * #5F560155002399804  "HIV-1+2抗体・p24抗原(吸光度)"   // HIV 方法問わず 血清 吸光度
   * #5F560155002399904  "HIV-1+2抗体・p24抗原(吸光度)"   // HIV その他 血清 吸光度
 
-// HIV-1+2抗体・p24抗原(定性、HIV p24抗原)
-* #HIV-1P2-P24-AB-RESULT    "HIV-1+2抗体・p24抗原(定性、HIV p24抗原)"
-  * #5F560155002319052  "HIV-1+2抗体・p24抗原(定性、HIV p24抗原)"   // HIV イムノクロマトグラフィ法 血清 
-//----* #5F560155002399852  "HIV-1+2抗体・p24抗原(定性、HIV p24抗原)"   // HIV 方法問わず 血清 
-//----* #5F560155002399952  "HIV-1+2抗体・p24抗原(定性、HIV p24抗原)"   // HIV その他 血清 
+// HIV-1+2抗体・p24抗原(定性、HIV-p24抗原)
+* #HIV-1P2-P24-AB-RESULT    "HIV-1+2抗体・p24抗原(定性、HIV-p24抗原)"
+  * #5F560155002319052  "HIV-1+2抗体・p24抗原(定性、HIV-p24抗原)"   // HIV イムノクロマトグラフィ法 血清 
+//----* #5F560155002399852  "HIV-1+2抗体・p24抗原(定性、HIV-p24抗原)"   // HIV 方法問わず 血清 
+//----* #5F560155002399952  "HIV-1+2抗体・p24抗原(定性、HIV-p24抗原)"   // HIV その他 血清 
 
 // HIV-1+2抗体・p24抗原(定性、HIV-1+2抗体)
 * #HIV-1P2-AB-P24-QLRESULT  "HIV-1+2抗体・p24抗原(定性、HIV-1+2抗体)"
@@ -262,11 +262,11 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 //* #5F560155002399853  "HIV-1+2抗体・p24抗原(定性、HIV-1+2抗体)"   // HIV 方法問わず 血清 
 //* #5F560155002399953  "HIV-1+2抗体・p24抗原(定性、HIV-1+2抗体)"   // HIV その他 血清 
 
-// HIV-1+2抗体・p24抗原(定量、HIV p24抗原)
-* #HIV-1P2-P24-AB-QUANT "HIV-1+2抗体・p24抗原(定量、HIV p24抗原)"
-  * #5F560155002305352  "HIV-1+2抗体・p24抗原(定量、HIV p24抗原)"   // HIV 化学・生物発光イムノアッセイ(ＣＬＥＩＡ) 血清 COI
-  * #5F560155002399852  "HIV-1+2抗体・p24抗原(定量、HIV p24抗原)"   // HIV 方法問わず 血清 COI
-  * #5F560155002399952  "HIV-1+2抗体・p24抗原(定量、HIV p24抗原)"   // HIV その他 血清 COI
+// HIV-1+2抗体・p24抗原(定量、HIV-p24抗原)
+* #HIV-1P2-P24-AB-QUANT "HIV-1+2抗体・p24抗原(定量、HIV-p24抗原)"
+  * #5F560155002305352  "HIV-1+2抗体・p24抗原(定量、HIV-p24抗原)"   // HIV 化学・生物発光イムノアッセイ(ＣＬＥＩＡ) 血清 COI
+  * #5F560155002399852  "HIV-1+2抗体・p24抗原(定量、HIV-p24抗原)"   // HIV 方法問わず 血清 COI
+  * #5F560155002399952  "HIV-1+2抗体・p24抗原(定量、HIV-p24抗原)"   // HIV その他 血清 COI
 
 // HIV-1+2抗体・p24抗原(定量、HIV-1+2抗体)
 * #HIV-1P2-AB-QUANT "HIV-1+2抗体・p24抗原(定量、HIV-1+2抗体)"

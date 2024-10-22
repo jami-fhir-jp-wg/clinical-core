@@ -384,9 +384,7 @@
   <td class=xl139 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl139 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl237 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent">http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</a></td>
+  <td class=xl237 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</td>
  </tr>
  <tr height=77 style='height:58.0pt'>
   <td height=77 class=xl184 align=left width=97 style='height:58.0pt;
@@ -552,9 +550,7 @@
   <td class=xl139 align=left width=359 style='border-left:none;width:269pt'>主傷病であることを記述するために使用する拡張を識別するURL。</td>
   <td class=xl139 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl237 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent">&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</a></td>
+  <td class=xl237 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot</td>
  </tr>
  <tr height=77 style='height:58.0pt'>
   <td height=77 class=xl184 align=left width=97 style='height:58.0pt;
