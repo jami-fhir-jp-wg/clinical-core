@@ -263,9 +263,7 @@
   style='display:none'><rt>ヒッス </rt></span></ruby><font class="font14">。</font></td>
   <td class=xl139 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl237 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"
-  target="_parent">http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</a></td>
+  <td class=xl237 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber</td>
  </tr>
  <tr height=51 style='height:38.0pt'>
   <td height=51 class=xl150 align=left width=112 style='height:38.0pt;
@@ -361,9 +359,7 @@
   <td class=xl139 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl139 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl237 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent">http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</a></td>
+  <td class=xl237 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</td>
  </tr>
  <tr height=77 style='height:58.0pt'>
   <td height=77 class=xl150 align=left width=112 style='height:58.0pt;
@@ -1431,4 +1427,4 @@
   <td class=xl128 width=195 style='width:146pt'>&quot;後発品変更不可&quot;</td>
  </tr>
 
-</table>
+</table
