@@ -18,7 +18,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-06-24"
+* ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -40,7 +40,6 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * meta.profile 1.. MS
   * insert relative_short_definition("本プロファイルを識別するURLとバージョンを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|1　を設定する。")
 
-
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
 * meta.tag from $JP_ehrshrs_indication_VS 
@@ -60,6 +59,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
   * code = #LTS (exactly)
 * meta.tag[lts] from $JP_ehrshrs_indication_VS 
+
+
 
 
 
@@ -179,7 +180,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
   * insert relative_short_definition("厚生労働省保険局が定める一般処方名マスターコードを識別するcsystem値")
 * medication[x].coding[codingGeneralName].system MS
 * medication[x].coding[codingGeneralName].code ^definition = "厚生労働省保険局が定める一般処方名マスターコード"
-* medication[x].coding[codingGeneralName].code MS
+* medication[x].coding[codingGeneralName].code 1.. MS
 * medication[x].coding[codingGeneralName].code from $JP_MedicationCodeCommon_VS
 * medication[x].coding[codingGeneralName].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
@@ -219,6 +220,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * note.text ^comment = "例）”4月1日から4日間服用。2週間休薬後、4月19日から4日間服用。患者に書面にて説明済み。”"
 * note.text MS
 
+* dosageInstruction 1..* MS
 * dosageInstruction only JP_MedicationDosage_eCS
 
 * dispenseRequest 0..1 MS

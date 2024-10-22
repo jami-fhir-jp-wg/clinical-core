@@ -14,7 +14,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-06-24"
+* ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -31,6 +31,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * obeys validUsage-MedicationUsage-codesystem // R5020:厚労省用法コード（電子処方箋）かまたはダミー用法コードのどちらか一方だけが必ず使われている。
 * obeys invalidUsage-MedicationUsage-codesystem // R5021:厚労省用法コード（電子処方箋）とダミー用法コードの両方が同時に使用されていることはない。
+
+
 
 //----
 * extension[periodOfUse] 1..1 MS
@@ -97,14 +99,24 @@ and mhw_prescription_yoho 0..1 MS
 and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS）
 
 * timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20"  http://jami.jp/CodeSystem/MedicationUsage
+* timing.code.coding[jami_yoho].system 1..1 MS
+* timing.code.coding[jami_yoho].code 1..1 MS
 //* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
+* timing.code.coding[jami_yoho].display 1..1 MS
 
 * timing.code.coding[mhw_prescription_yoho].system = $JAMI_MedicationUsage_ePrescription_CS (exactly) 
+* timing.code.coding[mhw_prescription_yoho].system 1..1 MS
+* timing.code.coding[mhw_prescription_yoho].code 1..1 MS
 //* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS
+* timing.code.coding[mhw_prescription_yoho].display 1..1 MS
 // VSの実態が展開できない状況で上記があるとpublisherエラーになる。
 
 * timing.code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS" (exactly) 
+* timing.code.coding[unCoded].system 1..1 MS
 * timing.code.coding[unCoded].code = #0X0XXXXXXXXX0000
+* timing.code.coding[unCoded].code 1..1 MS
+* timing.code.coding[unCoded].display = "ダミー用法コード"  (exactly) 
+* timing.code.coding[unCoded].display 1..1 MS
 
 * timing.code.text 1..1 MS
 * timing.code.text ^short = "用法のコード化の方法にかかわらず、用法の完全な文字列を設定する。"

@@ -17,7 +17,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-06-24"
+* ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -33,7 +33,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
   * ^comment = "この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。"
 
 * meta.profile 1.. MS
-  * insert relative_short_definition("本プロファイルを識別するURLとバージョンを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1　を設定する。")
+  * insert relative_short_definition("本プロファイルを識別するURLとバージョンを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|1 を設定する。")
 
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
@@ -47,15 +47,16 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * meta.tag[lts] 0..1 MS
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
+  * id ..0
+  * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+  * code from $JP_ehrshrs_indication_VS 
   * code = #LTS (exactly)
-* meta.tag[lts] from $JP_ehrshrs_indication_VS 
-
-
+  * userSelected ..0
 
 
 
@@ -142,7 +143,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * code  1..1 MS
 * code ^short = "アレルギー等の対象物の情報"
-* code  ^definition = "少なくとも1つのCoding情報では、実装ガイドで定めるアレルギー物質コーディングルールに従ったコード（ダミーコードを含む）を必ず設定する。その場合に使用するsystem値は以下のいずれかを選択する。 食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS　、医薬品： http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS　、非医薬品・非食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS"
+* code  ^definition = "少なくとも1つのCoding情報では、実装ガイドで定めるアレルギー物質コーディングルールに従ったコード（ダミーコードを含む）を必ず設定する。その場合に使用するsystem値は以下のいずれかを選択する。 食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS　、医薬品： http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS　またはhttp://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS、非医薬品・非食品: http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS"
 
 * code  ^comment = "ー"
 * code.coding 1.. MS
@@ -184,7 +185,6 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 * reaction 0.. MS
   * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。mabifestationには、アレルギー反応に関連する症状や所見を、可能ならMEDIS病名管理番号で記述する。コード化しにくい場合にはmanifestaiton.textで記述する。")
   * manifestation from $JP_Disease_MEDIS_ManagementID_VS (preferred)
-  * manifestation.extension 0..*
     * insert relative_short_definition("アレルギー反応に関連する症状や所見症状がテキスト表現も記述できない（情報を持っていない）場合には、http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor 拡張を使用して、コード'NI'を記述することで、manifestationが記述できないことを記述できる。記述例はComment参照のこと。")
     * ^comment = "NullFlaverの記述する場合の記述例：manifestation: { \"extension\":[ {\"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor\", \"valueCode\": \"NI\"}]}"
   * manifestation.text 0..1 

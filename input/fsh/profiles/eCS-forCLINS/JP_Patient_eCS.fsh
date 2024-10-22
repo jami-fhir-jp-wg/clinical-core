@@ -17,17 +17,15 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 * obeys kanjiName-kanaName-donot-contain-ZenkakuKuuhaku
 
 //* obeys institurionNumber
-
-/*
+// 患者リソースには医療機関ID情報があってもなくてもよい。自施設の患者IDを記述したい場合にはidentifierに記述でき、そのsystem値のURLに医療機関番号を含めることができるため。
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
-* extension[eCS_InstitutionNumber] 0..1 MS
-*/
+* extension[eCS_InstitutionNumber] 0..1 
 
 * ^url = $JP_Patient_eCS
 
 * ^version = "1"
 * ^status = #active
-* ^date = "2024-09-16"
+* ^date = "2024-10-19"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
