@@ -1,3 +1,22 @@
+// 43項目全体
+Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_VS =   http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_VS 
+Id: jp-clins-valueset-corelaboJLAC10-vs
+Title: "CLINS: CoreLabo43items ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC10 ValueSet"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2023-10-26T00:00:00.000+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_VS
+* ^version = "1.1.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-10-26"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
+
+
 // ⾎液型-ABO^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_abo_bld_VS
 Id: jp-clins-valueset-corelaboJLAC10-abo-bld-vs

@@ -1,3 +1,17 @@
+//* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#3H015000002326101  "K"
+//* code.coding[+] = $JP_ObservationLabResultCode_CS#3H015000002326101  "K"   
+// * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
+Invariant: test-MemberOf-MEDIS-JLAC10
+Description: "Observation.codeにはJLAC10 MEDISコードに所属している検査コードがなくてはならない"
+Severity: #warning
+Expression: "code.coding.memberOf('http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationLabResultCode_VS')"
+
+Invariant: test-MemberOf-CoreLabo-JLAC10
+Description: "Observation.codeには43項目コードに所属しているJLAC10検査コードがなくてはならない"
+Severity: #warning
+Expression: "code.coding.memberOf('http://jpfhir.jp/fhir/clins/CodeValueSetSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS')"
+
+
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
 //   検体検査結果／感染症検体検査結果 リソースタイプ:Observation
@@ -10,6 +24,8 @@ Title:  "eCS/CLINS:JP_Observation_LabResult_eCS"
 Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 
 * obeys resource-needs-extension-of-institutionNumber
+* obeys test-MemberOf-MEDIS-JLAC10
+* obeys test-MemberOf-CoreLabo-JLAC10
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
