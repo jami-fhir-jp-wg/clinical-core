@@ -9,8 +9,7 @@ Expression: "code.coding.memberOf('http://jpfhir.jp/fhir/core/ValueSet/JP_Observ
 Invariant: test-MemberOf-CoreLabo-JLAC10
 Description: "Observation.codeには43項目コードに所属しているJLAC10検査コードがなくてはならない"
 Severity: #warning
-Expression: "code.coding.memberOf('http://jpfhir.jp/fhir/clins/CodeValueSetSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS')"
-
+Expression: "code.coding.memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS')"
 
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用

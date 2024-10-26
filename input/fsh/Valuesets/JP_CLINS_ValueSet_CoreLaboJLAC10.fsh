@@ -1,5 +1,4 @@
 // 43項目全体
-Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_VS =   http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_VS 
 Id: jp-clins-valueset-corelaboJLAC10-vs
 Title: "CLINS: CoreLabo43items ValueSet"
