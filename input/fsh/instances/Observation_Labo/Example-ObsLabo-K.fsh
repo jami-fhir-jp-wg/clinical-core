@@ -36,7 +36,7 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#10000181802 "カリウム"
 * code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#3H015000002326101  "K"
 * code.coding[+] = $JP_ObservationLabResultCode_CS#3H015000002326101  "K"
-http://medis.or.jp/CodeSystem/master-JLAC10-17digits
+
 * code.text = "カリウム"
 
 * subject.identifier.system = $JP_Insurance_memberID
