@@ -97,7 +97,7 @@ if __name__ == '__main__':
     for fhir_id in jlac_dict.keys():
         if fhir_id == "" :
             continue
-        jlac_code_key = ""
+        jlac_code_dict = {}
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
@@ -108,15 +108,15 @@ if __name__ == '__main__':
             item_method = item['検査方法(JLAC10-測定法)']
             item_unit = item['単位']
             #
-            if jlac_code_key != jlac_code:
+            if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
-                jlac_code_key = jlac_code
                 fout.write('    * ^designation.language = #ja' + '\n')
                 fout.write('    * ^designation.value = "' + item_value + '"' + '\n')
                 fout.write('    * ^property[+].code = #specimen' + '\n')
                 fout.write('    * ^property[=].valueString = "' + item_specimen + '"' + '\n')
                 fout.write('    * ^property[+].code = #method' + '\n')
                 fout.write('    * ^property[=].valueString = "' + item_method + '"' + '\n')
+                jlac_code_dict[jlac_code] = jlac_code
     fout.close()
 
     # 検査区分　JLAC11
@@ -125,7 +125,7 @@ if __name__ == '__main__':
     for fhir_id in jlac_dict.keys():
         if fhir_id == "" :
             continue
-        jlac_code_key = ""
+        jlac_code_dict = {}
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
@@ -136,9 +136,9 @@ if __name__ == '__main__':
             item_method = item['測定法(JLAC11)']
             item_unit = item['単位']
             #
-            if jlac_code_key != jlac_code:
+            if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
-                jlac_code_key = jlac_code
+                jlac_code_dict[jlac_code] = jlac_code
                 fout.write('    * ^designation.language = #ja' + '\n')
                 fout.write('    * ^designation.value = "' + item_value + '"' + '\n')
                 fout.write('    * ^property[+].code = #specimen' + '\n')
@@ -170,7 +170,7 @@ if __name__ == '__main__':
     for fhir_id in jlac_dict.keys():
         if fhir_id == "" :
             continue
-        jlac_code_key = ""
+        jlac_code_dict = {}
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
@@ -181,9 +181,9 @@ if __name__ == '__main__':
             item_method = item['検査方法(JLAC10-測定法)']
             item_unit = item['単位']
             #
-            if jlac_code_key != jlac_code:
+            if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
-                jlac_code_key = jlac_code
+                jlac_code_dict[jlac_code] = jlac_code
                 fout.write('    * ^designation.language = #ja' + '\n')
                 fout.write('    * ^designation.value = "' + item_value + '"' + '\n')
                 fout.write('    * ^property[+].code = #specimen' + '\n')
@@ -198,7 +198,7 @@ if __name__ == '__main__':
     for fhir_id in jlac_dict.keys():
         if fhir_id == "" :
             continue
-        jlac_code_key = ""
+        jlac_code_dict = {}
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
@@ -209,9 +209,9 @@ if __name__ == '__main__':
             item_method = item['測定法(JLAC11)']
             item_unit = item['単位']
             #
-            if jlac_code_key != jlac_code:
+            if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
-                jlac_code_key = jlac_code
+                jlac_code_dict[jlac_code] = jlac_code
                 fout.write('    * ^designation.language = #ja' + '\n')
                 fout.write('    * ^designation.value = "' + item_value + '"' + '\n')
                 fout.write('    * ^property[+].code = #specimen' + '\n')

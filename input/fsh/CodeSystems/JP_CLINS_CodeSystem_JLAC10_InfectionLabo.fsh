@@ -47,41 +47,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002306211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002206211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002306211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002206211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002306211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E074000002306311  "梅毒STS(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定性)"
@@ -110,13 +75,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応"
-  * #5E074000002311711  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "粒子凝集反応"
   * #5E074000002211711  "梅毒STS(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定性)"
@@ -124,20 +82,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応"
-  * #5E074000002306211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002206211  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E074000002399911  "梅毒STS(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定性)"
@@ -167,41 +111,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002306201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002206201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002306201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002206201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002306201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E074000002306301  "梅毒STS(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定量)"
@@ -223,20 +132,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応"
-  * #5E074000002306201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E074000002206201  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E074000002399901  "梅毒STS(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定量)"
@@ -301,76 +196,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "蛍光イムノアッセイ(FIA)"
-  * #5E075000002305111  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5E075000002205111  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5E075000002305211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002305211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002305211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002305211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5E075000002310311  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -399,48 +224,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002306211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002306211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002306211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E075000002311711  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -455,20 +238,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応"
-  * #5E075000002306211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E075000002306311  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -490,13 +259,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5E075000002306211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E075000002219011  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -504,13 +266,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075000002306211  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E075000001806211  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -525,62 +280,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "毛細管血"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075135102319011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102219011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102319011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102219011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102319011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102219011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102319011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5E075135102219011  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
   * #5E075135102319011  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -680,76 +379,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "蛍光イムノアッセイ(FIA)"
-  * #5E075000002305133  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5E075000002205133  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5E075000002305233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002305233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002305233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002305233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5E075000002205233  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5E075000002306233  "梅毒TP抗体(定量、陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定量、陽性コントロール比)"
@@ -885,48 +514,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002306201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002306201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002306201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
-  * #5E075000002206201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E075000002306301  "梅毒TP抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定量)"
@@ -941,13 +528,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
-  * #5E075000002306201  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "ラテックス凝集比濁法"
   * #5E075000002399901  "梅毒TP抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定量)"
@@ -984,13 +564,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
-  * #5F016141002305101  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
   * #5F016141002205101  "HBs抗原(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定量)"
@@ -1026,20 +599,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002302301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002202301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
   * #5F016141002305201  "HBs抗原(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定量)"
@@ -1052,125 +611,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^designation.value = "HBs抗原(定量)"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002302301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002202301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002305201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002205301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002305301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002205301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002305301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002205301  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002305201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305201  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F016141002399901  "HBs抗原(定量)"
@@ -1230,20 +670,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F016141002305111  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F016141002205111  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
   * #5F016141002305311  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
@@ -1258,48 +684,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016141002302311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002202311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002302311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002202311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002302311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002202311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
   * #5F016141002305211  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
@@ -1314,132 +698,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002302311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002202311  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305111  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F016141002205111  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
   * #5F016141002311711  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
@@ -1489,62 +747,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016141002319011  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016141002219011  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016141002319011  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016141002219011  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016141002319011  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305211  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F016141002399911  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
@@ -1609,48 +811,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305233  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205233  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305233  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002205233  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016141002305133  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F016141002205133  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
   * #5F016143002302333  "HBs抗原(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(陽性コントロール比)"
@@ -1809,13 +969,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F016143002319011  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
   * #5F016143002302311  "HBs抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定性)"
@@ -1872,20 +1025,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305111  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F016143002205111  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
   * #5F016143002306311  "HBs抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定性)"
@@ -1907,146 +1046,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002302311  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016143002202311  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205211  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F016143002399911  "HBs抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定性)"
@@ -2119,20 +1118,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305101  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F016143002205101  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
   * #5F016143002306301  "HBs抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定量)"
@@ -2154,34 +1139,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F016143002302301  "HBs抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定量)"
@@ -2196,104 +1153,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002305201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F016143002205201  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F016143002399901  "HBs抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定量)"
@@ -2356,13 +1215,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^designation.value = "HCV抗体(定性)"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "全血(添加物入り)"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
-  * #5F360151602206311  "HCV抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
   * #5F360151202302311  "HCV抗体(定性)"
@@ -2617,20 +1469,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F360148702305211  "HCV抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F360148702205211  "HCV抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F360148802305211  "HCV抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(定性)"
@@ -2652,13 +1490,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F360148802305211  "HCV抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F360148802399911  "HCV抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(定性)"
@@ -2678,13 +1509,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^designation.value = "HCV抗体(定性)"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "全血(添加物入り)"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "その他"
-  * #5F360148802299911  "HCV抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
 * #HCV-AB-POS-COI
@@ -2913,13 +1737,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
-  * #5F360151602206331  "HCV抗体(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
   * #5F360151202302331  "HCV抗体(コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(コントロール比)"
@@ -3046,13 +1863,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-  * #5F360151302299931  "HCV抗体(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "その他"
 * #HCV-DIL
   * #5F360151402311705  "HCV抗体(希釈倍率)"
     * ^designation.language = #ja
@@ -3097,48 +1907,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302387511  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302287511  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302387511  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302287511  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302387511  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302287511  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
   * #5F360145302399911  "HCV核酸増幅検査(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV核酸増幅検査(定性)"
@@ -3154,48 +1922,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
 * #HCV-NQUANT
-  * #5F360145302387501  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302287501  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302387501  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302287501  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302387501  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
-  * #5F360145302287501  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
   * #5F360145302387501  "HCV核酸増幅検査(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HCV核酸増幅検査(定量)"
@@ -3310,13 +2036,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F360150102305352  "HCV抗原検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗原検査(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "その他"
   * #5F360150102299952  "HCV抗原検査(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定性)"
@@ -3353,76 +2072,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002305133  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F560155002205133  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F560155002302333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002202333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002302333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002202333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002305233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002305233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F560155002305233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
@@ -3508,76 +2157,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002305111  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F560155002205111  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-  * #5F560155002302311  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002202311  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002302311  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002202311  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)"
-  * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
@@ -3627,27 +2206,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F560155002319052  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F560155002219052  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F560155002319053  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
   * #5F560155002305351  "HIV-1+2抗体・p24抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
@@ -3655,48 +2213,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205211  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F512141002305211  "HIV-1+2抗体・p24抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
@@ -3747,34 +2263,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F560155002305231  "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205231  "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002305231  "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560155002205231  "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F560155002305231  "HIV-1+2抗体・p24抗原(コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(コントロール比)"
@@ -3927,13 +2415,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "TMA法"
-  * #5F500145302287501  "HIV-1(ウイルスRNA定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1(ウイルスRNA定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "リアルタイムRT-PCR法"
   * #5F500145302299901  "HIV-1(ウイルスRNA定量)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1(ウイルスRNA定量)"
@@ -4057,20 +2538,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
-  * #5F560143002305231  "HIV-1+2抗体(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002205231  "HIV-1+2抗体(コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F560143002399931  "HIV-1+2抗体(コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(コントロール比)"
@@ -4142,13 +2609,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法"
-  * #5F560143002219011  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "イムノクロマトグラフィ法"
   * #5F560143002305211  "HIV-1+2抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(定性)"
@@ -4184,48 +2644,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
-  * #5F560143002305211  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002205211  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002305211  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002205211  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002305211  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002205211  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F560143002399911  "HIV-1+2抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(定性)"
@@ -4245,13 +2663,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^designation.value = "HIV-1+2抗体(定性)"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "全血(添加物入り)"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "その他"
-  * #5F560143002299911  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
 * #HIV-1P2-AB-DIL
@@ -4284,20 +2695,6 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
 * #HIV-1P2-AB-POS-COI
-  * #5F560143002305233  "HIV-1+2抗体(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-  * #5F560143002205233  "HIV-1+2抗体(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
   * #5F560143002305233  "HIV-1+2抗体(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
