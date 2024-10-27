@@ -73,16 +73,16 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile2
       with:
-        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.2-url.tgz"
+        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.2.4-url.tgz"
         target: .    
     
     - name: Prepare for using all dependent packages including Jp modified version of hl7.fhir.r4.core Package 
       env:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
-        JPTerminologyCOREdir: jpfhir-terminology.r4#1.2.2-url
-        JPTerminologyCOREPtgz: jpfhir-terminology.r4-1.2.2-url.tgz
-        JPCOREtgzjp: jp-core.r4-1.1.2-url.tgz
-        JPCOREdir: jp-core.r4#1.1.2-url
+        JPTerminologyCOREdir: jpfhir-terminology.r4#1.2.4-url
+        JPTerminologyCOREPtgz: jpfhir-terminology.r4-1.2.4-url.tgz
+        JPCOREtgzjp: jp-core.r4-1.2.2-clins.tgz
+        JPCOREdir: jp-core.r4#1.2.2-clins
       run: |
         ls -l .
         pwd
@@ -107,6 +107,9 @@ jobs:
 
     - name: apply the version of sushi-config.yaml and other files
       run: |
+        find input/fsh/profiles -type f -name "*.fsh" | grep -rl 'x.x.x-profile' | xargs sed -i 's/x.x.x-profile/${{ env.release_version }}/g'
+        find input/fsh/instances -type f -name "*.fsh" | grep -rl 'x.x.x-instance' | xargs sed -i 's/x.x.x-instance/${{ env.release_version }}/g'
+
         sed 's/version: 1.x.x-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
         mv sushi-config-temp.yaml sushi-config.yaml
 
