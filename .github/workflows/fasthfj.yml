@@ -81,7 +81,7 @@ jobs:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
         JPTerminologyCOREdir: jpfhir-terminology.r4#1.2.4-url
         JPTerminologyCOREPtgz: jpfhir-terminology.r4-1.2.4-url.tgz
-        JPCOREtgzjp: jp-core.r4-1.2.2-clins.tgz
+        JPCOREtgzjp: jp-core.r4-1.1.2-clins.tgz
         JPCOREdir: jp-core.r4#1.2.2-clins
       run: |
         ls -l .
