@@ -188,7 +188,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * insert  core43LaboItemProfile(aptt,APTT,aptt)
 * insert  core43LaboItemProfile(ast,AST,ast)
 * insert  core43LaboItemProfile(bnp,BNP,bnp)
-* insert  core43LaboItemProfile(bs,BS,bs)
+* insert  core43LaboItemProfile(bg,BG,bg)
 * insert  core43LaboItemProfile(bun,BUN,bun)
 * insert  core43LaboItemProfile(ca,Ca,ca)
 * insert  core43LaboItemProfile(che,ChE,che)
