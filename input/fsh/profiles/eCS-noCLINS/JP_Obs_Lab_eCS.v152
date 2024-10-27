@@ -167,7 +167,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
  and coreLabo/cys-c 0..1 MS
  and coreLabo/d-bil 0..1 MS
  and coreLabo/dd 0..1 MS
- and coreLabo/fbs 0..1 MS
+ and coreLabo/fbg 0..1 MS
  and coreLabo/ggt 0..1 MS
  and coreLabo/hb 0..1 MS
  and coreLabo/hba1c-ngsp 0..1 MS
@@ -353,9 +353,9 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * code.coding[coreLabo/dd].display = "DD" (exactly)	
 * code.coding[coreLabo/dd].code from $JP_CLINS_ValueSet_CoreLabo_dd_VS (required)
 
-* code.coding[coreLabo/fbs].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-* code.coding[coreLabo/fbs].display = "FBS" (exactly)	
-* code.coding[coreLabo/fbs].code from $JP_CLINS_ValueSet_CoreLabo_fbs_VS (required)
+* code.coding[coreLabo/fbg].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
+* code.coding[coreLabo/fbg].display = "FBG" (exactly)	
+* code.coding[coreLabo/fbg].code from $JP_CLINS_ValueSet_CoreLabo_fbg_VS (required)
 
 * code.coding[coreLabo/ggt].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 * code.coding[coreLabo/ggt].display = "GGT" (exactly)	

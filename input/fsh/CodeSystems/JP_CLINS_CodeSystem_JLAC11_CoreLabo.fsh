@@ -16699,7 +16699,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "可視吸光光度法_GLUネオ "シノテスト""
+    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト"
   * #C4001000025002985  "BG"
     * ^designation.language = #ja
     * ^designation.value = "血糖(定量)"
@@ -19612,7 +19612,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "可視吸光光度法_GLUネオ "シノテスト""
+    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト"
   * #C4001133725002985  "FBG"
     * ^designation.language = #ja
     * ^designation.value = "空腹時血糖"
@@ -22525,7 +22525,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "可視吸光光度法_GLUネオ "シノテスト""
+    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト"
   * #C4001133625002985  "CBG"
     * ^designation.language = #ja
     * ^designation.value = "随時血糖"

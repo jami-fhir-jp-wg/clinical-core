@@ -157,7 +157,7 @@ Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペ
 // グルコース(血糖)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_bs_VS
 Id: jp-clins-valueset-corelaboJLAC11-bs-vs
-Title: "CLINS: BS ValueSet"
+Title: "CLINS: BG ValueSet"
 Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖) JLAC11 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
@@ -168,7 +168,7 @@ Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖)
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #BS
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #BG
 
 // 尿素窒素(BUN)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_bun_VS
@@ -364,21 +364,21 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー JLAC11 Va
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #DD-class
 
 
-// FBS 空腹時血糖
-ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_fbs_VS
-Id: jp-clins-valueset-corelaboJLAC11-fbs-vs
-Title: "CLINS: FBS ValueSet"
+// FBG 空腹時血糖
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_fbg_VS
+Id: jp-clins-valueset-corelaboJLAC11-fbg-vs
+Title: "CLINS: FBG ValueSet"
 Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC11 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_fbs_VS
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_fbg_VS
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #BS
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #BG
 
 // γ-GTP(GGT)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_ggt_VS

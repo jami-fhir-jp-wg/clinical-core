@@ -18,7 +18,7 @@ ValueSet: JP_CLINS_ValueSet_CoreLabo_crp_class_VS
 ValueSet: JP_CLINS_ValueSet_CoreLabo_cys_c_VS
 ValueSet: JP_CLINS_ValueSet_CoreLabo_d_bil_VS
 ValueSet: JP_CLINS_ValueSet_CoreLabo_dd_VS
-ValueSet: JP_CLINS_ValueSet_CoreLabo_fbs_VS
+ValueSet: JP_CLINS_ValueSet_CoreLabo_fbg_VS
 ValueSet: JP_CLINS_ValueSet_CoreLabo_ggt_VS
 ValueSet: JP_CLINS_ValueSet_CoreLabo_hb_VS
 ValueSet: JP_CLINS_ValueSet_CoreLabo_hba1cngsp_VS

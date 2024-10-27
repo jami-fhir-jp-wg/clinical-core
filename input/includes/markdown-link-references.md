@@ -125,7 +125,7 @@
 [JP_CLINS_ValueSet_CoreLabo_cys_c_VS]: ValueSet-jp-clins-valueset-corelabo-cys-c-vs.html
 [JP_CLINS_ValueSet_CoreLabo_d_bil_VS]: ValueSet-jp-clins-valueset-corelabo-d-bil-vs.html
 [JP_CLINS_ValueSet_CoreLabo_dd_VS]: ValueSet-jp-clins-valueset-corelabo-dd-vs.html
-[JP_CLINS_ValueSet_CoreLabo_fbs_VS]: ValueSet-jp-clins-valueset-corelabo-fbs-vs.html
+[JP_CLINS_ValueSet_CoreLabo_fbg_VS]: ValueSet-jp-clins-valueset-corelabo-fbg-vs.html
 [JP_CLINS_ValueSet_CoreLabo_ggt_VS]: ValueSet-jp-clins-valueset-corelabo-ggt-vs.html
 [JP_CLINS_ValueSet_CoreLabo_hb_VS]: ValueSet-jp-clins-valueset-corelabo-hb-vs.html
 [JP_CLINS_ValueSet_CoreLabo_hba1cngsp_VS]: ValueSet-jp-clins-valueset-corelabo-hba1cngsp-vs.html

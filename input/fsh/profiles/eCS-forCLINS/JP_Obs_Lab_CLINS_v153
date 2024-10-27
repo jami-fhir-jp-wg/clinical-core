@@ -173,7 +173,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 * insert  core43LaboItemProfile(aptt,APTT,aptt)
 * insert  core43LaboItemProfile(ast,AST,ast)
 * insert  core43LaboItemProfile(bnp,BNP,bnp)
-* insert  core43LaboItemProfile(bs,BS,bs)
+* insert  core43LaboItemProfile(bg,BG,bs)
 * insert  core43LaboItemProfile(bun,BUN,bun)
 * insert  core43LaboItemProfile(ca,Ca,ca)
 * insert  core43LaboItemProfile(che,ChE,che)
@@ -198,10 +198,10 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 //* code.coding[coreLaboJLAC10/dd].display = "DD" (exactly)	
 //* code.coding[coreLaboJLAC10/dd].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS (required)
 
-* insert  core43LaboItemProfile(fbs,FBS,fbs)
-//* code.coding[coreLaboJLAC10/fbs].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-//* code.coding[coreLaboJLAC10/fbs].display = "FBS" (exactly)	
-//* code.coding[coreLaboJLAC10/fbs].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_fbs_VS (required)
+* insert  core43LaboItemProfile(fbg,FBG,fbg)
+//* code.coding[coreLaboJLAC10/fbg].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
+//* code.coding[coreLaboJLAC10/fbg].display = "FBG" (exactly)	
+//* code.coding[coreLaboJLAC10/fbg].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_fbg_VS (required)
 
 * insert  core43LaboItemProfile(ggt,GGT,ggt)
 //* code.coding[coreLaboJLAC10/ggt].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	

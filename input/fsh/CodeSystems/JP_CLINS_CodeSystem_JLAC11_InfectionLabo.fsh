@@ -165,7 +165,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "粒子凝集反応_RPRテスト"三光""
+    * ^property[=].valueString = "粒子凝集反応_RPRテスト三光"
   * #V1055000025000802  "梅毒STS(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定性)"
@@ -418,7 +418,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "粒子凝集反応_RPRテスト"三光""
+    * ^property[=].valueString = "粒子凝集反応_RPRテスト三光"
   * #V10550002250009F2  "梅毒STS(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定量)"
