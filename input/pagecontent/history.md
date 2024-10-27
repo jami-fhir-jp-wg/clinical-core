@@ -7,11 +7,19 @@
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3 (2024.10.19) 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3 (2024.10.27) 
+    - パッケージ内のすべてのプロファイル
+      - version要素を1から1.5.3に設定。今後、実装ガイドのバージョンに一致させる。
+      - meta.profileに記述するprofileに"|x.y.z"を付与することで、準拠するプロファイルのバージョンを明示する仕様とした。ただし、バージョン付与は省略可能であり、省略した場合には、そのデータが受信された時点での最新バージョンに準拠しているとみなされる仕様とした。
     - eCS/CLINS:JP_MedicationRequest_eCS
       - 4.1 必須要素から、dispenseRequestを外す（プロファイルとの整合性をとった）。
+      - 4.3 条件により必須の要素から、meta.tag ("LTS") 長期保存フラグを削除。（処方では長期保存フラグを使用しないこととなったため）。
+      - 4.3 条件により必須の要素から、以下の2要素を4.4 推奨要素に移動。
+        -「contained (JP_Practitioner) : 処方作成者の医療者情報
+        - requester : 処方者情報。
       - 6.1 「MedicationRequest」表
         - 多重度を1..1から0..1に修正し、黄色背景色を削除。
+        - 上記の4.1から4.3に対応して修正、及び背景色を変更。
       - 7.1 プロファイル詳細
         - medicationCodeableConcept.coding[codingGeneralName].code 多重度を0..1から1..1に修正。
     - eCS/CLINS:JP_Condition_eCS
@@ -24,8 +32,20 @@
         - timing.code.coding の多重度を0..* から1..* に修正（同上）説明文もこれにあわせて修正。
       - 7.1 プロファイル詳細
         - timing.code.coding.system、同.code、同.displayの多重度を1..1と明示。これらにMustSupportフラグを追加設定。
-
+    - eCS/CLINS:JP_Patient_eCS
+      - 4.1 必須要素から、extension (eCS_InstitutionNumber) を外す。
+      - 4.1 必須要素から、address.city、address.stateを外す。
+      - 7.1 プロファイル詳細
+        - 拡張にeCS_InstitutionNumber	を記述してもよいように0..1で記述を追加。
+    - eCS/CLINS:JP_AllergyIntolerance_eCS
+      - 3.1 対象の記載で「また、本人の状態や条件...例）...」の記載を削除。
+      - 6.1 表「AllergyIntolerance」のcategoryの説明で"biologic"の解釈を追加。
     - 電子カルテ情報共有サービス用の検査項目、感染症項目のCodeSystem、ValueSetをJLAC10、JLAC11対応に更新。
+    - eCS/CLINS:JP_Observation_LaboResult_eCS
+      - 7.1 プロファイル詳細
+        - JLAC10,JLAC11のコード表が整備されたことに伴い、code:slice nameを整合性をとるために一部変更。
+    - Validationで使用するjp-coreパッケージをjp-core.r4-1.1.2-clinsに変更（整合性をとるためJP_ServiceRequest-dummy版を削除）
+    - Validationで使用するJpFhirTerminologyパッケージをjpfhir-terminology.r4-1.2.4-urlに変更（医薬品関係、アレルギー関係のTerminologyを更新）
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.2 (2024.9.29) 
 

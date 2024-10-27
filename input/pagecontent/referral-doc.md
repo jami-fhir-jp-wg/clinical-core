@@ -98,7 +98,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">既往歴セクションから参照されるエントリー
             （別紙様式１１の「既往歴及び家族歴」の既往歴に対応）</td>
         <td style="column-width:30%">
-            <a href="StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Condition-eCS.html"
                 title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
         </td>
         <td>
@@ -109,7 +109,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%">家族歴セクションから参照されるエントリー
             （別紙様式１１の「既往歴及び家族歴」の家族歴に対応）</td>
         <td style="column-width:30%">
-            <a href="StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-FamilyMemberHistory-eCS.html"
                 title="StructureDefinition/JP_FamilyMemberHistory_eCS">JP_FamilyMemberHistory_eCS</a>
         </td>
         <td>
@@ -120,7 +120,7 @@
         <td border="1" style="border-collapse: collapse;  column-width:30%" >現病歴セクションから参照されるエントリー
             （別紙様式１１の「症状経過及び検査結果」の症状経過に対応）</td>
         <td style="column-width:30%">
-            <a href="StructureDefinition-JP-Encounter-eCS.html"
+            <a href="StructureDefinition-JP-Condition-eCS.html"
                 title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
         </td>
         <td>
@@ -143,7 +143,7 @@
         <td style="column-width:30%">
            <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
+           <p> <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Observation-Common.html"
                 title="StructureDefinition/JP_Observation_Common">JP_Observation_Common</a></p>
         </td>
         <td>

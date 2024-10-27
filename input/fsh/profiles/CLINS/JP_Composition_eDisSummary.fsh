@@ -24,7 +24,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
-  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_eDischargeSummary|1")
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_eDischargeSummary|x.y.z")
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

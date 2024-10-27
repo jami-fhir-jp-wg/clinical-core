@@ -18,7 +18,7 @@ Description:  "患者療養計画サマリーのリソース構成情報と文�
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
-  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS|1")
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS|x.y.z")
 //* meta.profile = "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
 
 * extension ^slicing.discriminator.type = #value

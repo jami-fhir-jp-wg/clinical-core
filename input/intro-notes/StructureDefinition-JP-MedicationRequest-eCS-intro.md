@@ -38,17 +38,16 @@
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
-  - meta.tag ("LTS") : 電子カルテ情報共有サービス（２文書中に含まれる場合）で長期保存フラグの設定する場合に必須。
   - contained (JP_Encounter) : 電子カルテ情報共有サービス（同）では必須。処方登録時の入院外来区分情報
-  - contained (JP_Practitioner) : 電子カルテ情報共有サービス（同）では必須。処方作成者の医療者情報
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（同）では必須。医療機関番号１０桁
   - extension (eCS_Department) : 電子カルテ情報共有サービス（同）では必須。診療科名称（とコード）
   - encounter : 電子カルテ情報共有サービス（同）では必須。この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
-  - requester : 電子カルテ情報共有サービス（同）では必須。処方者情報。この処方を作成した医療者の情報を記述しているcontainedリソース(JP_Practitioner) への参照。
 
 ### 推奨要素
   - category : 薬剤使用区分
   - code.coding.version : 使用したコードシステムのバージョン文字列
+  - contained (JP_Practitioner) : 処方作成者の医療者情報
+  - requester : 処方者情報。この処方を作成した医療者の情報を記述しているcontainedリソース(JP_Practitioner) への参照。
 
 ### MustSupport要素
   - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。

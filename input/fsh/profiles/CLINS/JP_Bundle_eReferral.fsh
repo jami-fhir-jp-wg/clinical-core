@@ -19,7 +19,7 @@ Description: "診療情報提供書 Bundle"
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
-  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1")
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|x.y.z")
 
 //* meta.profile = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
 
