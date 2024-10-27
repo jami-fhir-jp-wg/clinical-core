@@ -7,7 +7,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 //* ^url = $JP_Bundle_CLINS
 * ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
 
-* ^version = "1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"

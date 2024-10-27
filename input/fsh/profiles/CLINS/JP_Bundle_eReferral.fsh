@@ -5,7 +5,7 @@ Id: JP-Bundle-eReferral
 Description: "診療情報提供書 Bundle"
 * ^url = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral"
 
-* ^version = "1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"

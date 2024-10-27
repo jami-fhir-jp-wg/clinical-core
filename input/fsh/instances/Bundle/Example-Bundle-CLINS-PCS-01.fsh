@@ -6,8 +6,8 @@ Usage: #example
 Description: "■ 患者療養計画サマリー　Bundleリソース(CLINS送信用)　#01"
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|1"
-* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|1"
+* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|x.x.x-instance"
+* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|x.x.x-instance"
 * language = #ja
 
 * identifier.system = $JP_BundleIdentifier

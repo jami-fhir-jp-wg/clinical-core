@@ -13,7 +13,7 @@ Id: JP-Organization-eCS-department
 Description: "eCS 診療情報・サマリー汎用 　Organizationリソース（診療科情報）プロファイル　（JP_Organizationの派生プロファイル）"
 //* obeys checkPhoneNumberExists
 * ^url = $JP_Organization_eCS_department
-* ^version = "1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"

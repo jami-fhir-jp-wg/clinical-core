@@ -6,7 +6,8 @@ Description: "Encounterリソース 必須要素だけの最低限の入院外�
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Encounter_eCS
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.x.x-instance"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.x.x-instance"
 * language = #ja
 
 

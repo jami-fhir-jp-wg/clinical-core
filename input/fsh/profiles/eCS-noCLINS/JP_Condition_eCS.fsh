@@ -16,7 +16,7 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 
 * ^url = $JP_Condition_eCS
 
-* ^version = "1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-10-19"
 * ^publisher = "（一社）日本医療情報学会"
@@ -271,7 +271,7 @@ Id: jp-condition-disease-prefix-modifier
 Title: "JP Core Disease Prefix Modifier Extension"
 Description: "病名の前置修飾語を格納するための拡張"
 * ^url = $JP_Condition_DiseasePrefixModifier
-* ^version = "2.0.1"
+* ^version = "x.x.x-profile".0.1"
 * ^status = #active
 * ^date = "2024-02-25"
 * ^context.type = #element
@@ -324,7 +324,7 @@ Id: jp-condition-disease-postfix-modifier
 Title: "JP Core Disease Postfix Modifier Extension"
 Description: "病名の後置修飾語を格納するための拡張"
 * ^url = $JP_Condition_DiseasePostfixModifier
-* ^version = "2.0.1"
+* ^version = "x.x.x-profile".0.1"
 * ^status = #active
 * ^date = "2024-02-25"
 * ^context.type = #element

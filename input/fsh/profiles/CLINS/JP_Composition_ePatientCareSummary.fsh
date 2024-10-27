@@ -7,7 +7,7 @@ Description:  "患者療養計画サマリーのリソース構成情報と文�
 // * obeys checkValidSections
 * ^url = "http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS"
 
-* ^version = "1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"

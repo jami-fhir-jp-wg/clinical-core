@@ -155,13 +155,13 @@ Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペ
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #NT-proBNP
 
 // グルコース(血糖)^^
-ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_bs_VS
-Id: jp-clins-valueset-corelaboJLAC11-bs-vs
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_bg_VS
+Id: jp-clins-valueset-corelaboJLAC11-bg-vs
 Title: "CLINS: BG ValueSet"
 Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖) JLAC11 ValueSet"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_bs_VS
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_bg_VS
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false

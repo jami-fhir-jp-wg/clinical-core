@@ -6,8 +6,8 @@ Usage: #example
 Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#02 必須のヘッダ情報以外はentry記述をせず、テキストだけを各セクションに記述した例。"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1"
-* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|1"
+* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|x.x.x-instance"
+* meta.profile[+] = "http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_eReferral|x.x.x-instance"
 * language = #ja
 
 

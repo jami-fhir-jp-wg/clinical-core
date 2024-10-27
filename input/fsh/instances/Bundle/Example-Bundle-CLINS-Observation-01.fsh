@@ -6,8 +6,8 @@ Usage: #example
 Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　#01"
 
 * meta.lastUpdated = "2023-11-12T10:00:00+09:00"
-* meta.profile[+] = Canonical(http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|1)
-* meta.profile[+] = Canonical(http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|1)
+* meta.profile[+] = Canonical(http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|x.x.x-instance)
+* meta.profile[+] = Canonical(http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|x.x.x-instance)
 
 
 * meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
