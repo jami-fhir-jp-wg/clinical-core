@@ -15,7 +15,6 @@ Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC10 V
 
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
 
-
 // ⾎液型-ABO^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_abo_bld_VS
 Id: jp-clins-valueset-corelaboJLAC10-abo-bld-vs
