@@ -15,6 +15,9 @@ on:
     types: [update]
 env:
   release_version : 1.5.3
+defaults:
+  run:
+    shell: bash # ワークフローで使うシェルをまとめて指定
 jobs:
   turn:
     runs-on: ubuntu-latest
