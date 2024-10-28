@@ -4,7 +4,6 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
 name: "JP_CLINS_FHIR_IG"
