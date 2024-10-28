@@ -15,7 +15,7 @@ Description: "eCS/CLINS AllergyIntoleranceリソース（アレルギー情報�
 
 * ^url = $JP_AllergyIntolerance_eCS
 
-* ^version = "1.x.x-temp"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-09-14"
 * ^publisher = "（一社）日本医療情報学会"
