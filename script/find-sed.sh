@@ -4,9 +4,12 @@
 sed 's/x.x.x-profile/${{ env.release_version }}/g' input/fsh/profiles/extension/JP_eCS_OrgDept.fsh  > input/fsh/profiles/extension/JP_eCS_OrgDept.fsh_tmp
 mv input/fsh/profiles/extension/JP_eCS_OrgDept.fsh_tmp input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
 grep "profile" input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
-grep '${{ env.release_version }}' input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
+grep '1.5.3' input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
 echo '---1'
 sed -ibak 's/x.x.x-profile/${{ env.release_version }}/g' input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
 grep "profile" input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
-grep '${{ env.release_version }}' input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
+grep '1.5.3' input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
+ls -l nput/fsh/profiles/extension/JP_eCS_DignosticType.fsh*
+grep "profile" input/fsh/profiles/extension/JP_eCS_DignosticType.fshbak
+grep '1.5.3' input/fsh/profiles/extension/JP_eCS_DignosticType.fshbak
 echo '---2'
