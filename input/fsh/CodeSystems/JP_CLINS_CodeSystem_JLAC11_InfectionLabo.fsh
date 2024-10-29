@@ -5,7 +5,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^url = $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"
-* ^version = 1.5.3
+* ^version = "1.5.3"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
