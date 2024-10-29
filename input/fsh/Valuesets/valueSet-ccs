@@ -43,33 +43,6 @@ Description: "感染症関連検査結果として検体検査結果を報告す
 * include codes from system $observation-subcategory-cs
 
 
-ValueSet: JP_ObservationLabResultCode_InfectionRelated_VS
-Id: jp-observationlabresultcode-infectionrelated-vs
-Description: "感染症関連検査結果として検体検査結果を報告する場合のJLAC10"
-* ^url = $JP_ObservationLabResultCode_InfectionRelated_VS
-* ^title = "感染症関連検査結果として検体検査結果を報告する場合のJLAC10"
-* ^status = #active
-* ^experimental = false
-* ^content = #fragment
-* ^caseSensitive = false
-* $JP_ObservationLabResultCode_CS#12345123451227112  "JLAC10 sample code1"
-* $JP_ObservationLabResultCode_CS#12345123451227113  "JLAC10 sample code2"
-* $JP_ObservationLabResultCode_CS#12345123451227114  "JLAC10 sample code"
-
-
-ValueSet: JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
-Id: jp-clins-obslabresult-jlac10unmethod-infectionrelated-vs
-Description: "感染症関連検査結果として検体検査結果を報告する場合のJLAC10（測定法998）"
-* ^url = $JP_CLINS_ObsLabResult_JLAC10Unmethod_InfectionRelated_VS
-* ^title = "感染症関連検査結果として検体検査結果を報告する場合のJLAC10（測定法998）"
-* ^status = #active
-* ^experimental = false
-* ^content = #fragment
-* ^caseSensitive = false
-* $JP_ObservationLabResultCode_CS#12345123451299812  "JLAC10 sample code1"
-* $JP_ObservationLabResultCode_CS#12345123451299813  "JLAC10 sample code2"
-* $JP_ObservationLabResultCode_CS#12345123451299814  "JLAC10 sample code"
-
 ValueSet: JP_SimpleObservationCategory_VS
 Id: jp-simpleobservationcategory-vs
 Title: "JP Core Simple Observation Category ValueSet"

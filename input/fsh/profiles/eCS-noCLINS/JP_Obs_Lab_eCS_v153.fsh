@@ -373,7 +373,193 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 //---------- ここから感染症検査のスライス定義
 //* insert infectionLaboItemProfile(itemID,itemDisplay,aliasID)
 
- 
+* insert infectionLaboItemProfile(hbsagcoi,HBs抗原(コントロール比\),HBsAGCOI)
+//* code.coding[infectionLaboJLAC10/hbsagcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagcoi].display = "HBs抗原(コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hbsagdil,HBs抗原(希釈倍率\),HBsAGDIL)
+//* code.coding[infectionLaboJLAC10/hbsagdil].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagdil].display = "HBs抗原(希釈倍率)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGDIL_VS  (required)
+
+* insert infectionLaboItemProfile(hbsagod,HBs抗原(吸光度\),HbsAGOD)
+//* code.coding[infectionLaboJLAC10/hbsagod].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagod].display = "HBs抗原(吸光度)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagod].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HbsAGOD_VS  (required)
+
+* insert infectionLaboItemProfile(hbsagquant,HBs抗原(定量\),HBsAGQUANT)
+//* code.coding[infectionLaboJLAC10/hbsagquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagquant].display = "HBs抗原(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGQUANT_VS  (required)
+
+* insert infectionLaboItemProfile(hbsagresult,HBs抗原(判定\),HBsAGRESULT)
+//* code.coding[infectionLaboJLAC10/hbsagresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagresult].display = "HBs抗原(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hbsagposcoi,HBs抗原(陽性コントロール比\),HBsAGPOSCOI)
+// code.coding[infectionLaboJLAC10/hbsagposcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagposcoi].display = "HBs抗原(陽性コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagposcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGPOSCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hbsabdil,HBs抗体(希釈倍率\),HBsABDIL)
+//* code.coding[infectionLaboJLAC10/hbsabdil].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabdil].display = "HBs抗体(希釈倍率)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABDIL_VS  (required)
+
+* insert infectionLaboItemProfile(hbsabquant,HBs抗体(定量\),HBsABQUANT)
+//* code.coding[infectionLaboJLAC10/hbsabquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabquant].display = "HBs抗体(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABQUANT_VS  (required)
+
+* insert infectionLaboItemProfile(hbsabresult,HBs抗体(判定\),HBsABRESULT)
+//* code.coding[infectionLaboJLAC10/hbsabresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabresult].display = "HBs抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hcvnquant,HCV核酸増幅検査(定量\),HCVNQUANT)
+//* code.coding[infectionLaboJLAC10/hcvnquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnquant].display = "HCV核酸増幅検査(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVNQUANT_VS  (required)
+
+* insert infectionLaboItemProfile(hcvnresult,HCV核酸増幅検査(判定\),HCVNRESULT)
+//* code.coding[infectionLaboJLAC10/hcvnresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnresult].display = "HCV核酸増幅検査(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVNRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hcvagquant,HCV抗原検査(定量\),HCVAGQUANT)
+//* code.coding[infectionLaboJLAC10/hcvagquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvagquant].display = "HCV抗原検査(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvagquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVAGQUANT_VS  (required)
+
+* insert infectionLaboItemProfile(hcvagresult,HCV抗原検査(判定\),HCVAGRESULT)
+//* code.coding[infectionLaboJLAC10/hcvagresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvagresult].display = "HCV抗原検査(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvagresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVAGRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hcvabcoi,HCV抗体(コントロール比\),HCVABCOI)
+//* code.coding[infectionLaboJLAC10/hcvabcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabcoi].display = "HCV抗体(コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVABCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hcvabdil,HCV抗体(希釈倍率\),HCVABDIL)
+//* code.coding[infectionLaboJLAC10/hcvabdil].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabdil].display = "HCV抗体(希釈倍率)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVABDIL_VS  (required)
+
+* insert infectionLaboItemProfile(hcvabresult,HCV抗体(判定\),HCVABRESULT)
+//* code.coding[infectionLaboJLAC10/hcvabresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabresult].display = "HCV抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVABRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hcvabposcoi,HCV抗体(陽性コントロール比\),HCVABPOSCOI)
+//* code.coding[infectionLaboJLAC10/hcvabposcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabposcoi].display = "HCV抗体(陽性コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabposcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVABPOSCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1quant,HIV-1(ウイルスRNA定量\),HIV1QUANT)
+//* code.coding[infectionLaboJLAC10/hiv1quant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1quant].display = "HIV-1(ウイルスRNA定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1quant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1QUANT_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1result,HIV-1(ウイルスRNA定量判定\),HIV1RESULT)
+//* code.coding[infectionLaboJLAC10/hiv1result].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1result].display = "HIV-1(ウイルスRNA定量判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1result].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1RESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abp24coi,HIV-1+2抗体・p24抗原(コントロール比\),HIV1P2ABP24COI)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24coi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24coi].display = "HIV-1+2抗体・p24抗原(コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24coi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABP24COI_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abod,HIV-1+2抗体・p24抗原(吸光度\),HIV1P2ABOD)
+//* code.coding[infectionLaboJLAC10/hiv1p2abod].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abod].display = "HIV-1+2抗体・p24抗原(吸光度)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abod].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABOD_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abp24quant,HIV-1+2抗体・p24抗原(定量、HIV-p24抗原\),HIV1P2ABP24QUANT)
+
+* insert infectionLaboItemProfile(hiv1p2abp24result,HIV-1+2抗体・p24抗原(判定\),HIV1P2ABP24RESULT)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24result].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24result].display = "HIV-1+2抗体・p24抗原(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24result].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABP24RESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abp24poscoi,HIV-1+2抗体・p24抗原(陽性コントロール比\),HIV1P2ABP24POSCOI)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24poscoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24poscoi].display = "HIV-1+2抗体・p24抗原(陽性コントロール比)"  (exactly)
+// code.coding[infectionLaboJLAC10/hiv1p2abp24poscoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABP24POSCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abcoi,HIV-1+2抗体(コントロール比\),HIV1P2ABCOI)
+//* code.coding[infectionLaboJLAC10/hiv1p2abcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abcoi].display = "HIV-1+2抗体(コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abdil,HIV-1+2抗体(希釈倍率\),HIV1P2ABDIL)
+//* code.coding[infectionLaboJLAC10/hiv1p2abdil].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abdil].display = "HIV-1+2抗体(希釈倍率)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABDIL_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abresult,HIV-1+2抗体(判定\),HIV1P2ABRESULT)
+//* code.coding[infectionLaboJLAC10/hiv1p2abresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abresult].display = "HIV-1+2抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1p2abposcoi,HIV-1+2抗体(陽性コントロール比\),HIV1P2ABPOSCOI)
+//* code.coding[infectionLaboJLAC10/hiv1p2abposcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abposcoi].display = "HIV-1+2抗体(陽性コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abposcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABPOSCOI_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1abdil,HIV-1抗体(希釈倍率\),HIV1ABDIL)
+//* code.coding[infectionLaboJLAC10/hiv1abdil].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1abdil].display = "HIV-1抗体(希釈倍率)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1abdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1ABDIL_VS  (required)
+
+* insert infectionLaboItemProfile(hiv1abresult,HIV-1抗体(判定\),HIV1ABRESULT)
+//* code.coding[infectionLaboJLAC10/hiv1abresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1abresult].display = "HIV-1抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1abresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1ABRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(hiv2abdil,HIV-2抗体(希釈倍率\),HIV2ABDIL)
+//* code.coding[infectionLaboJLAC10/hiv2abdil].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv2abdil].display = "HIV-2抗体(希釈倍率)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv2abdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV2ABDIL_VS  (required)
+
+* insert infectionLaboItemProfile(hiv2abresult,HIV-2抗体(判定\),HIV2ABRESULT)
+//* code.coding[infectionLaboJLAC10/hiv2abresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv2abresult].display = "HIV-2抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv2abresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV2ABRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(stsqlresult,梅毒STS(定性\),STSQLRESULT)
+//* code.coding[infectionLaboJLAC10/stsqlresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/stsqlresult].display = "梅毒STS(定性)"  (exactly)
+//* code.coding[infectionLaboJLAC10/stsqlresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSQLRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(stsquant,梅毒STS(定量\),STSQUANT)
+//* code.coding[infectionLaboJLAC10/stsquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/stsquant].display = "梅毒STS(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/stsquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSQUANT_VS  (required)
+
+* insert infectionLaboItemProfile(tpresult,梅毒TP抗体(定性\),TPRESULT)
+//* code.coding[infectionLaboJLAC10/tpresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/tpresult].display = "梅毒TP抗体(定性)"  (exactly)
+//* code.coding[infectionLaboJLAC10/tpresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPRESULT_VS  (required)
+
+* insert infectionLaboItemProfile(tpposcoi,梅毒TP抗体(定量、陽性コントロール比\),TPPOSCOI)
+//* code.coding[infectionLaboJLAC10/tpposcoi].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/tpposcoi].display = "梅毒TP抗体(定量、陽性コントロール比)"  (exactly)
+//* code.coding[infectionLaboJLAC10/tpposcoi].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPPOSCOI_VS  (required)
+
+* insert infectionLaboItemProfile(tpquant,梅毒TP抗体(定量\),TPQUANT)
+//* code.coding[infectionLaboJLAC10/tpquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/tpquant].display = "梅毒TP抗体(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/tpquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPQUANT_VS  (required)
+
+* insert infectionLaboItemProfile(tphquant,梅毒TP抗体(半定量\),TPHQUANT)
+//* code.coding[infectionLaboJLAC10/tphquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/tphquant].display = "梅毒TP抗体(半定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/tphquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPHQUANT_VS  (required)
+
 // OUL^R22.OBX[*]-3[*]-1    コード　
 // OUL^R22.OBX[*]-3[*]-1のコードが &TCM　で終了する場合には、&TCMの直前までの文字列をコメントコードとみなして、同じ
 
