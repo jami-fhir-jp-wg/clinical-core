@@ -100,12 +100,18 @@ if __name__ == '__main__':
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
-            jlac_code = item['JLAC10コード']
+            jlac_code = item['JLAC10コード'].strip()
             item_name = fhir_id
-            item_value = item['FHIR項目名称'].replace('"','')
-            item_specimen = item['材料(JLAC10)'].replace('"','')
-            item_method = item['検査方法(JLAC10-測定法)'].replace('"','')
+            item_value = item['FHIR項目名称'].replace('"','').strip()
+            item_specimen = item['材料(JLAC10)'].replace('"','').strip()
+            if item_specimen == "":
+                item_specimen = "-"
+            item_method = item['検査方法(JLAC10-測定法)'].replace('"','').strip()
+            if item_method == "":
+                item_method = "-"
             item_unit = item['単位'].replace('"','')
+            if item_unit == "":
+                item_unit = "-"
             #
             if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
@@ -128,12 +134,18 @@ if __name__ == '__main__':
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
-            jlac_code = item['JLAC11コード']
+            jlac_code = item['JLAC10コード'].strip()
             item_name = fhir_id
-            item_value = item['FHIR項目名称'].replace('"','')
-            item_specimen = item['材料(JLAC11)'].replace('"','')
-            item_method = item['測定法(JLAC11)'].replace('"','')
+            item_value = item['FHIR項目名称'].replace('"','').strip()
+            item_specimen = item['材料(JLAC10)'].replace('"','').strip()
+            if item_specimen == "":
+                item_specimen = "-"
+            item_method = item['検査方法(JLAC10-測定法)'].replace('"','').strip()
+            if item_method == "":
+                item_method = "-"
             item_unit = item['単位'].replace('"','')
+            if item_specimen == "":
+                item_specimen = "-"
             #
             if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
@@ -173,12 +185,18 @@ if __name__ == '__main__':
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
-            jlac_code = item['JLAC10コード']
+            jlac_code = item['JLAC10コード'].strip()
             item_name = fhir_id
-            item_value = item['FHIR項目名称'].replace('"','')
-            item_specimen = item['材料(JLAC10)'].replace('"','')
-            item_method = item['検査方法(JLAC10-測定法)'].replace('"','')
+            item_value = item['FHIR項目名称'].replace('"','').strip()
+            item_specimen = item['材料(JLAC10)'].replace('"','').strip()
+            if item_specimen == "":
+                item_specimen = "-"
+            item_method = item['検査方法(JLAC10-測定法)'].replace('"','').strip()
+            if item_method == "":
+                item_method = "-"
             item_unit = item['単位'].replace('"','')
+            if item_unit == "":
+                item_unit = "-"
             #
             if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
@@ -203,10 +221,16 @@ if __name__ == '__main__':
         for item in jlac_dict[fhir_id]:
             jlac_code = item['JLAC11コード']
             item_name = fhir_id
-            item_value = item['FHIR項目名称'].replace('"','')
-            item_specimen = item['材料(JLAC11)'].replace('"','')
-            item_method = item['測定法(JLAC11)'].replace('"','')
-            item_unit = item['単位'].replace('"','')
+            item_value = item['FHIR項目名称'].replace('"','').strip()
+            item_specimen = item['材料(JLAC11)'].replace('"','').strip()
+            if item_specimen == "":
+                item_specimen = "-"
+            item_method = item['測定法(JLAC11)'].replace('"','').strip()
+            if item_method == "":
+                item_method = "-"
+            item_unit = item['単位'].replace('"','').strip()
+            if item_unit == "":
+                itemitem_unit_specimen = "-"
             #
             if jlac_code not in jlac_code_dict:
                 fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
