@@ -1773,11 +1773,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法_エルピアエース TP抗体"
-  * #V10610002240019F8  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血漿"
+  * #V10610002240019F8  "梅毒by = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法_エルピアエース TP抗体"
   * #V10610002250021F8  "梅毒TP抗体(定量)"
@@ -2369,7 +2365,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #Hbs-AG-RESULT
+* #HBs-AG-RESULT
   * #V2010000125000202  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
@@ -3435,7 +3431,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #Hbs-AG-OD 
+* #HBs-AG-OD 
   * #V2010000225000310  "HBs抗原(吸光度)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(吸光度)"
