@@ -626,7 +626,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #Hbs-AG-RESULT
+* #HBs-AG-RESULT
   * #5F016141002306311  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
