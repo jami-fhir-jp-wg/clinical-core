@@ -4,8 +4,8 @@ Title: "CLINS 電子カルテ共有サービス用:検体検査項目セット"
 Description: "CLINS 電子カルテ共有サービス用 検体検査項目セット"
 * ^url = $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2024-10-27T00:45:56.836+09:00"
-* ^version = "1.5.3"
+* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"
+* ^version = 1.5.3
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -16698,7 +16698,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト"
+    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト "
   * #C4001000025002985  "BG"
     * ^designation.language = #ja
     * ^designation.value = "血糖(定量)"
@@ -19611,7 +19611,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト"
+    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト "
   * #C4001133725002985  "FBG"
     * ^designation.language = #ja
     * ^designation.value = "空腹時血糖"
@@ -22524,7 +22524,7 @@ Description: "CLINS 電子カルテ共有サービス用 検体検査項目セ�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト"
+    * ^property[=].valueString = "可視吸光光度法_GLUネオ シノテスト "
   * #C4001133625002985  "CBG"
     * ^designation.language = #ja
     * ^designation.value = "随時血糖"

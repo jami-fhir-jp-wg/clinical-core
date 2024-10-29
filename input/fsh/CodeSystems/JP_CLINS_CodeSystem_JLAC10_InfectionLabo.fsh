@@ -4,8 +4,8 @@ Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セッ�
 Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セット"
 * ^url = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2024-10-27T00:45:56.836+09:00"
-* ^version = "1.5.3"
+* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"
+* ^version = 1.5.3
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -1714,7 +1714,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-COI
+* #HCV-AB-COI
   * #5F360151602306331  "HCV抗体(コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(コントロール比)"
@@ -1862,7 +1862,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-DIL
+* #HCV-AB-DIL
   * #5F360151402311705  "HCV抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(希釈倍率)"
@@ -2006,7 +2006,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-RESULT
+* #HCV-AG-RESULT
   * #5F360150002305111  "HCV抗原検査(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定性)"

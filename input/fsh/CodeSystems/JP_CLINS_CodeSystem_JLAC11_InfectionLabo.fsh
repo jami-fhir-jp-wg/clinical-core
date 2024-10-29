@@ -4,8 +4,8 @@ Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セッ�
 Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セット"
 * ^url = $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2024-10-27T00:45:56.836+09:00"
-* ^version = "1.5.3"
+* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"
+* ^version = 1.5.3
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -164,7 +164,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "粒子凝集反応_RPRテスト三光"
+    * ^property[=].valueString = "粒子凝集反応_RPRテスト 三光"
   * #V1055000025000802  "梅毒STS(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定性)"
@@ -417,7 +417,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "粒子凝集反応_RPRテスト三光"
+    * ^property[=].valueString = "粒子凝集反応_RPRテスト 三光"
   * #V10550002250009F2  "梅毒STS(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定量)"
@@ -5921,7 +5921,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿(シュウ酸塩入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-COI
+* #HCV-AB-COI
   * #V2168000225000334  "HCV抗体(コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(コントロール比)"
@@ -6237,7 +6237,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-DIL
+* #HCV-AB-DIL
   * #V2168000225002106  "HCV抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(希釈倍率)"
@@ -6562,7 +6562,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-QUANT
+* #HCV-AG-QUANT
   * #V2171000225000148  "HCV抗原検査(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定量)"
@@ -6654,7 +6654,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-RESULT
+* #HCV-AG-RESULT
   * #V2171000125000102  "HCV抗原検査(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定性)"
