@@ -26,7 +26,7 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
     fout.write(url + '\n')
     fout.write('* ^meta.versionId = "1"' + '\n')
     fout.write('* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"' + '\n')
-    fout.write('* ^version = '+ versionString + '\n')
+    fout.write('* ^version = "'+ versionString + '"\n')
     fout.write('* ^status = #active' + '\n')
     fout.write('* ^content = #complete' + '\n')
     fout.write('* ^caseSensitive = true' + '\n')

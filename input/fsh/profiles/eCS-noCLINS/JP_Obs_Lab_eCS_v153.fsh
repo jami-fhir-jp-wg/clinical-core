@@ -438,15 +438,15 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 //* code.coding[infectionLaboJLAC10/hbsabresult].display = "HBs抗体(判定)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hbsabresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABRESULT_VS  (required)
 
-* insert infectionLaboItemProfile(hcvquant,HCV核酸増幅検査(定量\),HCVQUANT)
-//* code.coding[infectionLaboJLAC10/hcvquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hcvquant].display = "HCV核酸増幅検査(定量)"  (exactly)
-//* code.coding[infectionLaboJLAC10/hcvquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVQUANT_VS  (required)
+* insert infectionLaboItemProfile(hcvnquant,HCV核酸増幅検査(定量\),HCVNQUANT)
+//* code.coding[infectionLaboJLAC10/hcvnquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnquant].display = "HCV核酸増幅検査(定量)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVNQUANT_VS  (required)
 
-* insert infectionLaboItemProfile(hcvresult,HCV核酸増幅検査(判定\),HCVRESULT)
-//* code.coding[infectionLaboJLAC10/hcvresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hcvresult].display = "HCV核酸増幅検査(判定)"  (exactly)
-//* code.coding[infectionLaboJLAC10/hcvresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVRESULT_VS  (required)
+* insert infectionLaboItemProfile(hcvnresult,HCV核酸増幅検査(判定\),HCVNRESULT)
+//* code.coding[infectionLaboJLAC10/hcvnresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnresult].display = "HCV核酸増幅検査(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvnresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVNRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hcvagquant,HCV抗原検査(定量\),HCVAGQUANT)
 //* code.coding[infectionLaboJLAC10/hcvagquant].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
