@@ -3,7 +3,7 @@ import sys
 import csv
 
 # JLAC10検査と感染、JLAC11検査と感染の4つのFSHファイルを作成する
-# python3  本コマンド　　JLAC10-11_CSVファイル　sliceFile.csv codeSystem_output_path文字列（/で終わること）(= /input/fsh/CodeSystems )
+# python3  本コマンド　　JLAC10-11_CSVファイル　sliceFile.csv codeSystem_output_path文字列（/で終わること）(= input/fsh/CodeSystems/ )
 # 出力ファイル名は固定
 
 def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
@@ -25,7 +25,7 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
     fout.write(description + '\n')
     fout.write(url + '\n')
     fout.write('* ^meta.versionId = "1"' + '\n')
-    fout.write('* ^meta.lastUpdated = "2024-10-27T00:45:56.836+09:00"' + '\n')
+    fout.write('* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"' + '\n')
     fout.write('* ^version = '+ versionString + '\n')
     fout.write('* ^status = #active' + '\n')
     fout.write('* ^content = #complete' + '\n')
