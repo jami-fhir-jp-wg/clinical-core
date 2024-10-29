@@ -6,7 +6,7 @@ import csv
 # python3  本コマンド　　JLAC10-11_CSVファイル　sliceFile.csv codeSystem_output_path文字列（/で終わること）(= /input/fsh/CodeSystems )
 # 出力ファイル名は固定
 
-def writeCommonHeader(jlacMode,kubun,fout):
+def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
     if kubun == '感染症':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-infectionlabo-cs'
@@ -26,8 +26,7 @@ def writeCommonHeader(jlacMode,kubun,fout):
     fout.write(url + '\n')
     fout.write('* ^meta.versionId = "1"' + '\n')
     fout.write('* ^meta.lastUpdated = "2024-10-27T00:45:56.836+09:00"' + '\n')
-    fout.write('* ^url = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS' + '\n')
-    fout.write('* ^version = "1.5.3"' + '\n')
+    fout.write('* ^version = '+ versionString + '\n')
     fout.write('* ^status = #active' + '\n')
     fout.write('* ^content = #complete' + '\n')
     fout.write('* ^caseSensitive = true' + '\n')
