@@ -1963,7 +1963,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
     * ^property[=].valueString = "その他"
-* #HCV-QUANT
+* #HCV-AG-QUANT
   * #5F360150002305101  "HCV抗原検査(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定量)"

@@ -163,6 +163,7 @@ Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABNEGCOI_VS  = http://jpfhir.jp
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HBsABDIL_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HBsABQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HBsABRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVNQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HCVNQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HCVQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HCVRESULT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVAGQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HCVAGQUANT_VS
