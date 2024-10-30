@@ -129,7 +129,7 @@
          </tr>
                   <tr>
             <td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
+               <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
             </td>
             <td>
 <p>オーダー情報　JP-ServiceRequest</p>
