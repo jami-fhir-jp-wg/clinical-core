@@ -25,7 +25,7 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 
 * ^version = "x.x.x-profile"
 * ^status = #active
-* ^date = "2024-10-19"
+* ^date = "2024-10-27"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
