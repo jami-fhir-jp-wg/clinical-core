@@ -192,7 +192,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * medication[x].coding[codingKYS].system MS
 * medication[x].coding[codingKYS].code ^definition = "電子カルテ情報共有サービス用　規格別薬剤成分コード"
 * medication[x].coding[codingKYS].code 1.. MS
-* medication[x].coding[codingKYS].code from $JP_MedicationCodeKYS_VSS //規格別薬剤成分コード
+* medication[x].coding[codingKYS].code from $JP_MedicationCodeKYS_VS //規格別薬剤成分コード
 * medication[x].coding[codingKYS].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
