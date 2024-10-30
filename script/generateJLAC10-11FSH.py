@@ -3,7 +3,8 @@ import sys
 import csv
 
 # JLAC10検査と感染、JLAC11検査と感染の4つのFSHファイルを作成する
-# python3  本コマンド　　JLAC10-11_CSVファイル　sliceFile.csv codeSystem_output_path文字列（/で終わること）(= input/fsh/CodeSystems/ )
+# python3  本コマンド　　JLAC10-11_CSVファイル　FSHslice.csv codeSystem_output_path文字列（/で終わること）(= input/fsh/CodeSystems/ )
+# 例）python3  script/generateJLAC10-11FSH.py reference/JLAC10-11_CodeTable_20241030.csv reference/FSHslice.csv input/fsh/CodeSystems/generated/
 # 出力ファイル名は固定
 
 def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):

@@ -1,44 +1,63 @@
-# clinical-core
-# 名称：FHIRコアリソース取得基本仕様（仮称）
-## 目的：
-厚労省が掲げる５情報（傷病名、薬剤アレルギー等、その他アレルギー情報、検査（救急時に有用な検査、 生活習慣病関連の検査）、感染症、処方）および患者基本情報、外来受診情報、入退院歴情報などについて、医療機関に設置されるFHIR対応システムに対して、FHIR　REST-API仕様にもとづき、①対応するFHIRリソースの要求、②要求に対するFHIRリソースによる応答、のそれぞれで満たすべき必須要件を定めた仕様を策定し、実装ガイドを作成する。
- 
-## コアリソースの範囲：
-### 区分	情報名称	FHIRリソース名称
-#### - ５情報	傷病名	Condition
-  - アレルギー情報	AllergyIntolerance
-  - 感染症情報	Observation
-  - 薬剤アレルギー等情報	AllergyIntolerance
-	- 検査情報	Observation
-	- 処方情報	MedicationRequest
+### CLINSのためのFHIR実装ガイド
 
-#### 追加情報
-	- 患者基本情報	Patient
-	- 外来受診歴情報	Encounter
-	- 入退院歴情報	Encounter
-	- 注射点滴情報	MedicationResuest
 
-##基本方針：
-1.　各リソースの仕様はJP-Core V1.1に準拠する。必要な場合には、制約を緩める方向の仕様修正をJP-Coreに依頼する。
-1.　対応する各リソースのエレメント仕様について、①SS-MIX2標準化ストレージの仕様における対応メッセージの必須項目のデータが確実に格納でき、かつ②同ストレージで任意となっている項目のデータが必須エレメントとならないように、JP-Core V1.1に必要な制約と説明を追加する。ただし、HL7メッセージ管理目的の項目やSS-MIX2標準化ストレージ管理目的の項目はこの限りではない。
-1.　外部からのFHIR REST API仕様にもとづく要求に対して結果を応答する方式（Pull型）を基本とし、応答をファイル仕様にして外部になんらかのトリガーにより送信（Push型）する場合のファイル仕様を策定する。Push型では送信手順等は策定しない。
-1.　Pull型における１回の要求応答では、患者IDを1つだけ指定して一人の患者にもとづく情報のやりとりだけを行うものとする。
-1.　Pull型における要求は対応する特定のリソースを指定し、情報の絞り込み（特定）は、FHIR仕様にもとづいたパラメータ指定の組み合わせのみにより行う。
-1.　Pull型における応答およびPush型のがいる仕様では対応するリソースの1インスタンス以上の集合をBundleリソースでFHIR仕様にもとづいた形式で返すものとする。
-1.　認証の取り決めは本仕様のスコープ外とする。
-1.　実装ガイド（IG）を作成し、名称をClinical-Core IGとする。
+#### 本実装ガイド(IG)の目的：
 
-## 詳細仕様
-### リソース参照仕様
+厚生労働省が定めるいわゆる「２文書５情報」のうち健診結果報告書を除く、２文書５情報のFHIRデータ記述方法とそのプロファイル（計算機で処理するための定義ファイル）を記載した実装ガイドである。また、５情報をCLINSに送信する際のBundleリソースの仕様や、送信した情報を同定するための識別子に関する仕様もこのIGで定めている。
+また、以下の２文書（診療情報提供書、退院時サマリー）のFHIR実装ガイドも含まれる。
 
-### FHIRリソース要求仕様
-＜エクセルも参照＞
+  - [FHIR厚生労働省標準規格の2文書](https://std.jpfhir.jp/)
+	 - HS038　診療情報提供書HL7FHIR記述仕様
+	 - HS039　退院時サマリーHL7FHIR記述仕様
 
-# SS-MIX2標準化ストレージ-マッピングガイドラインon Clinical-Core IG 
-## 目的：
-SS-MIX2標準化ストレージのデータ項目を確実にClinical-Core IG の対応リソースへ対応づけて変換するためにルールを作成し、ガイドラインとして公表する。
-SS-MIX2標準化ストレージからFHIRリソースデータを作成する際に、実装者はこれに準拠することを期待するものとする。
+本実装ガイド（IG）は、[HL7 FHIR R4.0.1](https://hl7.org/fhir/R4/index.html)に従い、[JP-Core V1.1.x](https://jpfhir.jp/fhir/core/)からの派生プロファイルの実装ガイドとして作成されている。従って、本IGに記述されていないことについては、[JP-Core V1.1.x](https://jpfhir.jp/fhir/core/)を参照していただきたい。
 
-# 参考
-https://build.fhir.org/ig/HL7/v2-to-fhir/mappings.html
-![image](https://user-images.githubusercontent.com/57020949/207955925-7ccbeb8b-5514-456a-a757-03ff5df12aac.png)
+####  本実装ガイド(IG)が想定する運用形態
+1. **Push形態**：
+臨床情報を格納しているサーバが、あらかじめ決められた期間や条件を満たす臨床情報について、あらかじめ決められたタイミンで、定められたデータ種別のデータを、別のシステムに送信する（Push方式）形態。**２文書５情報を医療機関からCLINSに送信するのはこの形態である。**
+<br><br>
+この形態において、サーバが送信時に作成するリソース・インスタンスが従うべきプロファイルが本IGで説明される。<br>
+この形態では、あるひとつのリソースタイプ（たとえばObservationリソースタイプ）のデータ（リソース・インスタンス）を複数まとめて送信するために、これらをひとつのBundleリソースタイプのデータにして送信する。それに関する仕様も本実装ガイドで定める。
+なお、送信時のプロトコルや制御情報（一括登録か削除かなど）、暗号化、送信先相手先の指定方法等については、<a href="https://www.mhlw.go.jp/content/10808000/001262060.pdf">「電子カルテ情報共有サービスの導入に関するシステムベンダ向け技術解説書」</a>（厚生労働省医政局）に従う。
+
+1. **Pull形態**：
+FHIRに準拠した臨床情報を必要とするクライアントシステムが、FHIR REST APIに従って、あるひとつのFHIRリソースタイプのリソース・インスタンスを臨床データを保有するサーバに要求し、サーバからのレスポンスとしてFHIR規格に従ったデータを受け取る形態。<br>
+この形態において、クライアントが受け取るリソースが従うべきプロファイルが本IGで説明される。<br>
+この形態では、FHIR REST APIでの仕様にもとづき、複数のリソース・インスタンスを格納したひとつのBundleリソースタイプのデータとして返される。
+<br>なお、**この形態は、CLINSでは当面運用されない。**
+
+<p></p>
+
+####  本実装ガイドの構成
+
+  - [CLINS送信のためのFHIR実装ガイド](index.html#)
+	- [本実装ガイド(IG)の目的](index.html#%E6%9C%AC%E5%AE%9F%E8%A3%85%E3%82%AC%E3%82%A4%E3%83%89ig%E3%81%AE%E7%9B%AE%E7%9A%84)
+	- [本実装ガイド(IG)が想定する運用形態](index.html#%E6%9C%AC%E5%AE%9F%E8%A3%85%E3%82%AC%E3%82%A4%E3%83%89ig%E3%81%8C%E6%83%B3%E5%AE%9A%E3%81%99%E3%82%8B%E9%81%8B%E7%94%A8%E5%BD%A2%E6%85%8B)
+  - [５情報送信仕様](core6spec.html)
+  - [５情報と関連リソースの定義プロファイル](resourceProfiles.html)
+  - [診療情報提供書](referral-doc.html)
+  - [退院時サマリー](discharge-doc.html)
+  - [患者サマリー（療養計画書）](ptsummary-doc.html)
+  - [その他のリリース等(拡張・コード表等)](artifacts.html)
+  - [データの実例集](artifacts.html#example-example-instances)
+  - [用語説明](glossary.html)
+  - 補足情報
+	- [改訂履歴](history.html)
+	- [Validationガイド](validationGuide.html)
+	- [パッケージDownload]
+	  - [標準(diff)版](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.x.x-temp.tgz)
+	  - [snapshot版](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.x.x-temp-snap.tgz)
+	- [JP-Core ターミノロジー(コード表)](https://jpfhir.jp/fhir/core/terminology/ig/)
+
+### 謝辞
+
+ <span style="color: black; font-size: 80%;">本実装ガイドは、以下の研究班の方々の貢献と支援により策定されています。</span>
+
+  - <span style="color: black; font-size: 80%;">令和２年度厚⽣労働科学特別研究事業「診療情報提供書、電⼦処⽅箋等の電⼦化医療⽂書の相互運⽤性確保のための標準規格の開発研究」<a href="https://mhlw-grants.niph.go.jp/project/145722">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和３−４年度同「次世代の医療情報の標準規格への改定等に関する研究」<a href="https://mhlw-grants.niph.go.jp/project/164909">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和4年度〜ムーンショット型研究開発事業　目標7「病院を家庭に、家庭で炎症コントロール」分担課題6<a href="https://biomse.t.u-tokyo.ac.jp/moonshot/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">令和５年度〜戦略的イノベーション創造プログラム「統合型ヘルスケアシステムの構築」サブテーマD1<a href="https://d1www.sip3.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会NeXEHRS研究会「FHIR日本実装検討WG」<a href="https://jpfhir.jp/">☞</a></span>
+  - <span style="color: black; font-size: 80%;">日本医療情報学会標準策定・維持管理部会<a href="https://www.jami.jp/jamistd/standards-development/">☞</a></span>
+  
+ <br>
