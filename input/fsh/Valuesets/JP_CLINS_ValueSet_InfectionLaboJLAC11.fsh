@@ -44,7 +44,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #Hbs-AG-OD
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HBs-AG-OD
 
 // HBs抗原(定性)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGRESULT_VS
