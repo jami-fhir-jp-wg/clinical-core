@@ -7,8 +7,8 @@
 id: clinical-information-sharing
 canonical: http://jpfhir.jp/fhir/clins
 name: "JP_CLINS_FHIR_IG"
-title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.5.2"
-description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.5.2"
+title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.5.3"
+description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide  v1.5.3"
 status: active # draft | active | retired | unknown 
 version: "1.x.x-temp"
 date: 2024-10-27
