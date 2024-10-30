@@ -1773,7 +1773,11 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法_エルピアエース TP抗体"
-  * #V10610002240019F8  "梅毒by = "血漿"
+  * #V10610002240019F8  "梅毒"
+    * ^designation.language = #ja
+    * ^designation.value = "血漿"
+    * ^property[+].code = #specimen
+    * ^property[=].valueString = "血清" 
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法_エルピアエース TP抗体"
   * #V10610002250021F8  "梅毒TP抗体(定量)"
