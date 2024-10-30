@@ -42,10 +42,10 @@ Usage: #example
 Description: "Organizationリソース　（診療情報提供書　紹介元　医療機関情報）"
 
 // 002r_ValidationProfile(ARGmetaprofile)
-//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS|x.x.x-instance"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS|x.x.x-instance"
 * language = #ja
 
 
@@ -117,7 +117,7 @@ Description: "Practitionerリソース　（診療情報提供書　紹介元　
 
 // 002or_ValidationProfile(ARGmetaprofile) 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS|x.x.x-instance"
 * language = #ja
 
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
@@ -145,7 +145,7 @@ Description: "Practitionerリソース　（診療情報提供書　紹介元　
 
 // 002or_ValidationProfile(ARGmetaprofile) 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS|x.x.x-instance"
 * language = #ja
 
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"

@@ -54,7 +54,7 @@ Usage: #inline
 Description: "Conditionリソース 現在の傷病名（主病名）　例1　狭心症"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 * language = #ja
 
 //-- CLINSの場合に必須
@@ -101,7 +101,7 @@ Usage: #inline
 Description: "Conditionリソース 現在の傷病名（副病名）　例1　狭心症"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -146,7 +146,7 @@ Usage: #inline
 Description: "Conditionリソース 現在の傷病名（主病名）　例2　高血圧"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

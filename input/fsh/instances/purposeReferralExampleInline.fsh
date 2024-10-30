@@ -8,7 +8,7 @@ Description: "Example-JP-Encounter-eCS-AMB-01 診療情報提供書での紹介�
 
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.x.x-instance"
 * language = #ja
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
@@ -33,7 +33,7 @@ Usage: #inline
 Description: "Example-JP-Encounter-eCS-AMB-01 外来受診歴　例"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.x.x-instance"
 * language = #ja
 
 

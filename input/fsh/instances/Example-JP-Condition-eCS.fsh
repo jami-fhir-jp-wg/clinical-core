@@ -65,7 +65,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
+* meta.profile[+] = $JP_Condition_eCS|x.x.x-instance
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#LTS "長期保存"
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 
@@ -128,7 +128,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
-* meta.profile[+] = $JP_Condition_eCS
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -179,7 +179,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 * note.text = "Conditionリソース 現在の傷病名（主病名）　例1　狭心症　患者参照を被保険者番号のしている例"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 

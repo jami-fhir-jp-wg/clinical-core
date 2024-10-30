@@ -12,7 +12,7 @@ Description: "Patientリソース　標準的記述 データ作成例"
 */
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
-* meta.profile[+] = $JP_Patient_eCS
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS|x.x.x-instance"
 * language = #ja
 
 

@@ -33,7 +33,7 @@ Description: "JPPatient患者　例"
 
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = $JP_Patient_eCS
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS|x.x.x-instance"
 * language = #ja
 
 

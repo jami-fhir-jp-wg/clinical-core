@@ -5,7 +5,7 @@ Usage: #example
 Description: "医療機関情報　診療科情報を拡張に含む　例"
 
 // 002r_ValidationProfile(ARGmetaprofile)
-//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS|x.x.x-instance"
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
 
@@ -52,10 +52,10 @@ Usage: #inline
 Description: "医療機関情報　診療科情報を拡張に含む　例"
 
 // 002r_ValidationProfile(ARGmetaprofile)
-//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS|x.x.x-instance"
 
 * meta.lastUpdated = "2024-07-07T10:00:00+09:00"
-//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS"
+//* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS|x.x.x-instance"
 
 //
 // 機関都道府県番号：2桁数字　北海道は01

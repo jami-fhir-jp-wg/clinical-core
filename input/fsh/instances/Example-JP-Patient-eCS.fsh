@@ -12,7 +12,7 @@ Description: "Patientリソース　（患者情報）最小限  データ作成
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報最小限  データ作成例</p> </div>"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
-//* meta.profile[+] = $JP_Patient_eCS
+//* meta.profile[+] = $JP_Patient_eCS|x.x.x-instance
 * id = "Example-JP-Patient-minimun"
 
 * identifier[+].system = $JP_Hospital_PatientID
@@ -59,7 +59,7 @@ Description: "Patientリソース　（患者情報）02  データ作成例"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
-* meta.profile[+] = $JP_Patient
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS|x.x.x-instance"
 
 * id = "Patient2"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
