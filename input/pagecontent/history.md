@@ -8,8 +8,9 @@
 
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3 (2024.10.27) 
+
     - パッケージ内のすべてのプロファイル
-      - version要素を1から1.5.3に設定。今後、実装ガイドのバージョンに一致させる。
+      - version要素を1から1.5.3に設定。今後、実装ガイド(PDF版）のバージョンに一致させる。
       - meta.profileに記述するprofileに"|x.y.z"を付与することで、準拠するプロファイルのバージョンを明示する仕様とした。ただし、バージョン付与は省略可能であり、省略した場合には、そのデータが受信された時点での最新バージョンに準拠しているとみなされる仕様とした。
     - eCS/CLINS:JP_MedicationRequest_eCS
       - 4.1 必須要素から、dispenseRequestを外す（プロファイルとの整合性をとった）。
@@ -46,6 +47,7 @@
         - JLAC10,JLAC11のコード表が整備されたことに伴い、code:slice nameを整合性をとるために一部変更。
     - Validationで使用するjp-coreパッケージをjp-core.r4-1.1.2-clinsに変更（整合性をとるためJP_ServiceRequest-dummy版を削除）
     - Validationで使用するJpFhirTerminologyパッケージをjpfhir-terminology.r4-1.2.4-urlに変更（医薬品関係、アレルギー関係のTerminologyを更新）
+      - 規格別薬剤成分コード　http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeKYS_VS を新規追加。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.2 (2024.9.29) 
 

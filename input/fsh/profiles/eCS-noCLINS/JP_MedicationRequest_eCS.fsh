@@ -116,7 +116,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * obeys needs-anyOfStandardCode-medication
 
 * medication[x] ^short = "医薬品コードと医薬品名称。ひとつの 必須のtext 要素と、複数の coding 要素を記述できる。"
-* medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことで複数のコード体系で医薬品コード並記することが可能。\r\n本Profile仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。使用できるコード体系は電子カルテ情報共有サービスに利用される場合には、個別医薬品コード（通称YJコード）または厚生労働省一般名処方用医薬品コードのどちらかを必須とする。それ以外のコード体系も追加で記述して構わない。"
+* medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことで複数のコード体系で医薬品コード並記することが可能。\r\n本Profile仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。使用できるコード体系は電子カルテ情報共有サービスに利用される場合には、個別医薬品コード（通称YJコード）または規格別薬剤成分コードのどちらかを必須とする。それ以外のコード体系も追加で記述して構わない。"
 // YJ, 一般処方用コードを必須、または未コードとするチェックはInvariant R3010 で行う。
 * medication[x] MS
 * medication[x].coding 1..* MS
@@ -129,6 +129,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
     codingYJ 0..1 MS and
 //    codingGS1 0..1 MS and
     codingGeneralName 0..1 MS and
+    codingKYS 0..1 MS and // 規格別薬剤成分コード
     nocoded 0..1
 
 * medication[x].coding[nocoded].system 1.. MS
@@ -184,6 +185,15 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリ�
 * medication[x].coding[codingGeneralName].code 1.. MS
 * medication[x].coding[codingGeneralName].code from $JP_MedicationCodeCommon_VS
 * medication[x].coding[codingGeneralName].display 1.. MS
+  * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
+
+* medication[x].coding[codingKYS].system = $JP_MedicationCodeKYS_CS // 規格別薬剤成分コード
+  * insert relative_short_definition("電子カルテ情報共有サービス用　規格別薬剤成分コードを識別するcsystem値")
+* medication[x].coding[codingKYS].system MS
+* medication[x].coding[codingKYS].code ^definition = "電子カルテ情報共有サービス用　規格別薬剤成分コード"
+* medication[x].coding[codingKYS].code 1.. MS
+* medication[x].coding[codingKYS].code from $JP_MedicationCodeKYS_VSS //規格別薬剤成分コード
+* medication[x].coding[codingKYS].display 1.. MS
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
 * medication[x].text 1..1 MS
