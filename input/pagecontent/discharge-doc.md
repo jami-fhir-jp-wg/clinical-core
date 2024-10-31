@@ -7,7 +7,7 @@
 
 ### 退院時サマリー
 
-  - [退院時サマリー HL7FHIR 記述仕様(PDF版) v1.5.0](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v150.pdf) 
+  - [退院時サマリー HL7FHIR 記述仕様(PDF版) ](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v1x.pdf) 
 
 #### 退院時サマリー固有のリソースのプロファイル
 
@@ -119,8 +119,8 @@
         <td style="column-width:30%">
            <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
-                title="StructureDefinition/JP_Observation_Common">JP_Observation_Common</a></p>
+           <p> <a href="StructureDefinition/JP_Observation_Common_eCS.html"
+                title="StructureDefinition/JP_Observation_Common_eCS">JP_Observation_Common_eCS</a></p>
         </td>
         <td>
             <p>Observationリソース（検体検査結果／感染症検体検査結果）</p>
