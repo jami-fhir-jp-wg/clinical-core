@@ -1,10 +1,10 @@
 CodeSystem: JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
 Id: jp-clins-codesystem-JLAC10-corelabo-cs
-Title: "CLINS 電子カルテ共有サービス用:検体検査項目セット"
-Description: "CLINS 電子カルテ共有サービス用 検体検査項目セット"
+Title: "CLINS 電子カルテ共有サービス用:JLAC10検体検査項目セット"
+Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項目セット"
 * ^url = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"
+* ^meta.lastUpdated = "2024-11-01T00:00:00.000+09:00"
 * ^version = "1.5.3"
 * ^status = #active
 * ^content = #complete

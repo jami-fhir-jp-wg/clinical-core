@@ -11,14 +11,14 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
     if kubun == '感染症':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-infectionlabo-cs'
-        title = 'Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セット"'
-        description = 'Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セット"'
+        title = 'Title: "CLINS 電子カルテ共有サービス用:'+jlacMode+'感染症検査項目セット"'
+        description = 'Description: "CLINS 電子カルテ共有サービス用 '+jlacMode+'感染症検査項目セット"'
         url = '* ^url = $JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
     if kubun == '検査':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_CoreLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-corelabo-cs'
-        title = 'Title: "CLINS 電子カルテ共有サービス用:検体検査項目セット"'
-        description = 'Description: "CLINS 電子カルテ共有サービス用 検体検査項目セット"'
+        title = 'Title: "CLINS 電子カルテ共有サービス用:'+jlacMode+'検体検査項目セット"'
+        description = 'Description: "CLINS 電子カルテ共有サービス用 '+jlacMode+'検体検査項目セット"'
         url = '* ^url = $JP_CLINS_CodeSystem_' + jlacMode + '_CoreLabo_CS'
     fout.write(codeSystem + '\n')
     fout.write(id + '\n')
@@ -26,7 +26,7 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
     fout.write(description + '\n')
     fout.write(url + '\n')
     fout.write('* ^meta.versionId = "1"' + '\n')
-    fout.write('* ^meta.lastUpdated = "2024-10-29T00:45:56.836+09:00"' + '\n')
+    fout.write('* ^meta.lastUpdated = "2024-11-01T00:00:00.000+09:00"' + '\n')
     fout.write('* ^version = "'+ versionString + '"\n')
     fout.write('* ^status = #active' + '\n')
     fout.write('* ^content = #complete' + '\n')
@@ -135,13 +135,13 @@ if __name__ == '__main__':
         print("fhir_id",fhir_id)
         fout.write('* #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
-            jlac_code = item['JLAC10コード'].strip()
+            jlac_code = item['JLAC11コード']
             item_name = fhir_id
             item_value = item['FHIR項目名称'].replace('"','').strip()
-            item_specimen = item['材料(JLAC10)'].replace('"','').strip()
+            item_specimen = item['材料(JLAC11)'].replace('"','').strip()
             if item_specimen == "":
                 item_specimen = "-"
-            item_method = item['検査方法(JLAC10-測定法)'].replace('"','').strip()
+            item_method = item['測定法(JLAC11)'].replace('"','').strip()
             if item_method == "":
                 item_method = "-"
             item_unit = item['単位'].replace('"','')
