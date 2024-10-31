@@ -179,7 +179,7 @@ Description:    "JP-Specimen　プロファイル"
 
 Profile:        JP_Observation_Common_eCS
 Parent:			JP_Observation_Common
-Id:             JP-Observation-eCS
+Id:             JP-Observation-Common-eCS
 Description:    "Derived Profile from JP-Core"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS"
 * ^version = "x.x.x-profile"
