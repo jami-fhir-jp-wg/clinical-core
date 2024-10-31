@@ -175,7 +175,7 @@ Description:    "JP-Specimen　プロファイル"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
 * meta.lastUpdated 0.. MS
-*/
+*/  
 
 Profile:        JP_Observation_Common_eCS
 Parent:			JP_Observation_Common
