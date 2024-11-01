@@ -7,7 +7,7 @@ import csv
 # 例）python3  script/generateJLAC10-11FSH.py reference/JLAC10-11_CodeTable_20241030.csv reference/FSHslice.csv input/fsh/CodeSystems/generated/
 # 出力ファイル名は固定
 
-def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
+def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3', updateDate = '2024-11-01'):
     if kubun == '感染症':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-infectionlabo-cs'
@@ -26,12 +26,13 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3'):
     fout.write(description + '\n')
     fout.write(url + '\n')
     fout.write('* ^meta.versionId = "1"' + '\n')
-    fout.write('* ^meta.lastUpdated = "2024-11-01T00:00:00.000+09:00"' + '\n')
+    fout.write('* ^meta.lastUpdated = "' + updateDate + 'T00:00:00.000+09:00"' + '\n')
     fout.write('* ^version = "'+ versionString + '"\n')
     fout.write('* ^status = #active' + '\n')
     fout.write('* ^content = #complete' + '\n')
     fout.write('* ^caseSensitive = true' + '\n')
     fout.write('* ^experimental = false' + '\n')
+    fout.write('* ^date = "'+ updateDate + '"\n')
     fout.write('* ^publisher = "（一社）日本医療情報学会"' + '\n')
     fout.write('* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"' + '\n')
     fout.write('* ^hierarchyMeaning = #is-a' + '\n')

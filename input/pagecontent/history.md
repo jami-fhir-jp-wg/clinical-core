@@ -8,8 +8,8 @@
 
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3  (2024.10.27) 
-  - 以下をバージョン、日付を変えずに修正しました。
-    - JLAC11コードを修正。（http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS）
+  - 以下をバージョン、日付を変えずに修正。
+    - JLAC11コードを修正。（http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS）。CodeSystem.date要素に2024-11-01を設定することで識別できるようにした。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3 (2024.10.27) 
 

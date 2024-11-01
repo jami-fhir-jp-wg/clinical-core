@@ -10,6 +10,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
+* ^date = "2024-11-01"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^hierarchyMeaning = #is-a
