@@ -15,5 +15,5 @@ Description: "ex-diagnosistypeに日本語displayを追加"
 
 * ^supplements = "http://terminology.hl7.org/CodeSystem/ex-diagnosistype"
 * ^concept.code = #principal
-* ^concept.designation.language = "ja"
+* ^concept.designation.language = #ja
 * ^concept.designation.value = "主病名"
