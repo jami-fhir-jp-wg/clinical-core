@@ -25,7 +25,7 @@ Description: "Patientリソース　（患者情報）最小限  データ作成
 Instance: Example-JP-Patient-eCS-01-Contained
 InstanceOf: JP_Patient_eCS
 Usage: #example
-Description: "Patientリソース　（患者情報）01  データ作成例　(CLINS要件を満たさないバージョン)"
+Description: "Patientリソース　（患者情報）01  データ作成例"
 
 
 // * text.status = #additional
@@ -48,12 +48,13 @@ Description: "Patientリソース　（患者情報）01  データ作成例　(
 
 * gender = #male
 * birthDate = "1955-05-04"
+* address.text = "東京都文京区白山１−２−３"
 
 //-------- 患者情報02
 Instance: Example-JP-Patient-eCS-02-Contained
 InstanceOf: JP_Patient_eCS
 Usage: #example
-Description: "Patientリソース　（患者情報）02　(CLINS要件を満たすバージョン)"
+Description: "Patientリソース　（患者情報）02"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報02  データ作成例</p> </div>"
 
