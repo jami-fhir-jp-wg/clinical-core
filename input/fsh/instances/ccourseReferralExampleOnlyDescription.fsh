@@ -21,6 +21,9 @@ Description: "DocumentReferenceリソース　（診療情報提供書　臨床�
 
 * description = "臨床経過：入院後経過観察をしていたが、特に症状悪化することもなく、3日目に軽快退院した。"
 
-* content[0].attachment.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
-* content[0].attachment.extension[=].valueCode = #NI
+* content[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
+* content[0].extension[0]valueCode = #NI
+
+//* content[0].attachment.extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
+//* content[0].attachment.extension[=].valueCode = #NI
 

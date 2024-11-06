@@ -41,7 +41,7 @@ Description: "eCS/CLINS Patientリソース（患者情報）プロファイル"
 * meta.lastUpdated 1.. MS
 * meta.lastUpdated ^short = "最終更新日"
 * meta.lastUpdated ^definition = "この患者情報の内容がサーバ上で最後に格納または更新された日時、またはこのFHIRリソースが生成された日時"
-* meta.profile 1..1 MS
+* meta.profile 1.. MS
   * insert relative_short_definition("本プロファイルを識別するURLを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS")
 //* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
 

@@ -3,7 +3,7 @@
 Instance: Example-JP-Patient-minimun
 InstanceOf: JP_Patient
 Usage: #example
-Description: "Patientリソース　（患者情報）最小限  データ作成例"
+Description: "Patientリソース　（患者情報）最小限  データ作成例 (CLINS要件を満たさないバージョン)"
 * language = #ja
 
 
@@ -12,7 +12,6 @@ Description: "Patientリソース　（患者情報）最小限  データ作成
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報最小限  データ作成例</p> </div>"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
-//* meta.profile[+] = $JP_Patient_eCS|x.x.x-instance
 * id = "Example-JP-Patient-minimun"
 
 * identifier[+].system = $JP_Hospital_PatientID
@@ -21,11 +20,12 @@ Description: "Patientリソース　（患者情報）最小限  データ作成
 * identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID"
 * identifier[=].value = "00012345:あいう:１８７:05"
 
+
 //-------- 患者情報01
 Instance: Example-JP-Patient-eCS-01-Contained
-InstanceOf: JP_Patient
+InstanceOf: JP_Patient_eCS
 Usage: #example
-Description: "Patientリソース　（患者情報）01  データ作成例"
+Description: "Patientリソース　（患者情報）01  データ作成例　(CLINS要件を満たさないバージョン)"
 
 
 // * text.status = #additional
@@ -53,7 +53,7 @@ Description: "Patientリソース　（患者情報）01  データ作成例"
 Instance: Example-JP-Patient-eCS-02-Contained
 InstanceOf: JP_Patient
 Usage: #example
-Description: "Patientリソース　（患者情報）02  データ作成例"
+Description: "Patientリソース　（患者情報）02　(CLINS要件を満たすバージョン)"
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報02  データ作成例</p> </div>"
 
@@ -80,3 +80,4 @@ Description: "Patientリソース　（患者情報）02  データ作成例"
 
 * gender = #male
 * birthDate = "1955-05-04"
+* address.text "東京都文京区白山１−２−３"
