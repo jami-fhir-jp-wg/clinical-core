@@ -51,7 +51,7 @@ Description: "Patientリソース　（患者情報）01  データ作成例　(
 
 //-------- 患者情報02
 Instance: Example-JP-Patient-eCS-02-Contained
-InstanceOf: JP_Patient
+InstanceOf: JP_Patient_eCS
 Usage: #example
 Description: "Patientリソース　（患者情報）02　(CLINS要件を満たすバージョン)"
 // * text.status = #additional
@@ -80,4 +80,4 @@ Description: "Patientリソース　（患者情報）02　(CLINS要件を満た
 
 * gender = #male
 * birthDate = "1955-05-04"
-* address.text "東京都文京区白山１−２−３"
+* address.text = "東京都文京区白山１−２−３"
