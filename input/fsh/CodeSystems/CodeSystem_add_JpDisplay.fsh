@@ -7,8 +7,8 @@ Description: "ex-diagnosistypeに日本語displayを追加"
 
 * ^version = "1.4.0"
 * ^status = #active
-* ^content = #complete
-* ^caseSensitive = true
+* ^content = #supplement
+// * ^caseSensitive = true
 * ^experimental = false
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
