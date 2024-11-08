@@ -6,6 +6,15 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.4  (2024.11.10)
+  - eCS/CLINS:JP_MedicationRequest_eCS
+    - 6.1 「MedicationRequest」表
+      - category.coding 多重度の欄が空欄であったところに、1..*　を記載（仕様の変更なし、記載のみ追加）     
+    - 6.2 「MedicationDosage」表
+    　- 以下の要素はtextだけの記述が可能で、profileは複数のコード体系でコード化してもよいため、多重度を1..1*から0..*に記載を修正する。
+      - site.coding
+      - route.coding
+      - method.coding
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.3  (2024.10.27) 
   - 以下をバージョン、日付を変えずに修正。
@@ -23,7 +32,7 @@
         -「contained (JP_Practitioner) : 処方作成者の医療者情報
         - requester : 処方者情報。
       - 6.1 「MedicationRequest」表
-        - 多重度を1..1から0..1に修正し、黄色背景色を削除。
+        - 必須要素から必須でなくなっら要素については、多重度を1..から0..に修正し、黄色背景色を削除。
         - 上記の4.1から4.3に対応して修正、及び背景色を変更。
       - 7.1 プロファイル詳細
         - medicationCodeableConcept.coding[codingGeneralName].code 多重度を0..1から1..1に修正。

@@ -14,7 +14,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 
 * ^version = "x.x.x-profile"
 * ^status = #active
-* ^date = "2024-09-14"
+* ^date = "2024-11-10"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -124,8 +124,11 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 
 * asNeededBoolean MS
 * site MS
+* site.coding 0..1    // 2024.11.10 この行を追加。これにより site.coding 0..* から　0..1に制約が強くなるため1.5.xから1.6.0にする。
 * route MS
+* roure.coding 0..1  // 2024.11.10 この行を追加。これにより site.coding 0..* から　0..1に制約が強くなるため1.5.xから1.6.0にする。
 * method MS
+* method.coding 0..1   // 2024.11.10 この行を追加。これにより site.coding 0..* から　0..1に制約が強くなるため1.5.xから1.6.0にする。
 
 * doseAndRate MS
 * doseAndRate ^definition = "投与量を記録する。

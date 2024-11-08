@@ -5,15 +5,15 @@ sed "s/x.x.x-profile/$1/g" input/fsh/profiles/extension/JP_eCS_OrgDept.fsh  > in
 mv input/fsh/profiles/extension/JP_eCS_OrgDept.fsh_tmp input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
 echo '---0'
 grep "profile" input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
-grep '1.5.3' input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
-grep "1.5.3" input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
+grep '1.5.4' input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
+grep "1.5.4" input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
 cat input/fsh/profiles/extension/JP_eCS_OrgDept.fsh
 echo '---1'
 sed -ibak "s/x.x.x-profile/$1/g" input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
 cat input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
 grep "profile" input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
-grep '1.5.3' input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
+grep '1.5.4' input/fsh/profiles/extension/JP_eCS_DignosticType.fsh
 ls -l input/fsh/profiles/extension/JP_eCS_DignosticType.fsh*
 grep "profile" input/fsh/profiles/extension/JP_eCS_DignosticType.fshbak
-grep '1.5.3' input/fsh/profiles/extension/JP_eCS_DignosticType.fshbak
+grep '1.5.4' input/fsh/profiles/extension/JP_eCS_DignosticType.fshbak
 echo '---2'

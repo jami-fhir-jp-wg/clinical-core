@@ -7,7 +7,7 @@ import csv
 # 例）python3  script/generateJLAC10-11FSH.py reference/JLAC10-11_CodeTable_20241030.csv reference/FSHslice.csv input/fsh/CodeSystems/generated/
 # 出力ファイル名は固定
 
-def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.3', updateDate = '2024-11-01'):
+def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.4', updateDate = '2024-11-01'):
     if kubun == '感染症':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-infectionlabo-cs'

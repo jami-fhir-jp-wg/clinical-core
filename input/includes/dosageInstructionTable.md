@@ -757,7 +757,7 @@
   <td class=xl254 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl254 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl85 align=left width=47 style='border-top:none;border-left:none;
-  width:35pt'>0..1*</td>
+  width:35pt'>0..*</td>
   <td class=xl85 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Coding</td>
   <td class=xl85 align=left width=359 style='border-top:none;border-left:none;
@@ -860,7 +860,7 @@
   <td class=xl254 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl254 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl85 align=left width=47 style='border-top:none;border-left:none;
-  width:35pt'>0..1*</td>
+  width:35pt'>0..*</td>
   <td class=xl85 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Coding</td>
   <td class=xl85 align=left width=359 style='border-top:none;border-left:none;
@@ -979,7 +979,7 @@
   <td class=xl254 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl254 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl85 align=left width=47 style='border-top:none;border-left:none;
-  width:35pt'>0..1*</td>
+  width:35pt'>0..*</td>
   <td class=xl85 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>Coding</td>
   <td class=xl85 align=left width=359 style='border-top:none;border-left:none;
