@@ -58,7 +58,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * event.code.text = "診療情報提供書発行"
 * event.period.start = "2020-08-21"
 
-//* section[referralToSection].title = "紹介先情報" // --cardinalityテスト
+* section[referralToSection].title = "紹介先情報"
 * section[referralToSection].code.coding = $referral-section#910 "紹介先情報セクション"
 * section[referralToSection].text.status = #additional
 * section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">東京第一テスト病院</div>"

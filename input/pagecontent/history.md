@@ -11,7 +11,8 @@
     - 6.1 「MedicationRequest」表
       - category.coding 多重度の欄が空欄であったところに、1..*　を記載（仕様の変更なし、記載のみ追加）     
     - 6.2 「MedicationDosage」表
-    　- 以下の要素はtextだけの記述が可能で、profileは複数のコード体系でコード化してもよいため、多重度を1..1*から0..*に記載を修正する。
+    　- 以下の要素はtextだけの記述が可能で、profileは複数のコード体系でコード化できるよう0..*としているため,
+    これに合わせて0..*に記載を修正する。
       - site.coding
       - route.coding
       - method.coding
