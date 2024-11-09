@@ -101,7 +101,7 @@ and mhw_prescription_yoho 0..1 MS
 and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS）
 
 * timing.code.coding[jami_yoho] ^definition = "JAMI標準用法コードによりコード化する場合のコード化。"
-* timing.code.coding[jami_yoho]　0..1 MS
+* timing.code.coding[jami_yoho] 0..1 MS
 * timing.code.coding[jami_yoho].system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）を使用する場合のコードシステム（\"http://jami.jp/CodeSystem/MedicationUsage\"）"
 * timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) 
 * timing.code.coding[jami_yoho].system 1..1 MS
