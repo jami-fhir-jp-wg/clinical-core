@@ -77,7 +77,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code 1.. MS
 * timing.code ^short = "用法"
 * timing.code ^definition = "用法。厚生労働省電子処方箋用法コード、またはJAMI標準用法コードによりコード化する。施設固有のコード化による記述も可能であるが、できるかぎり、上記標準コードと併用することが望ましいが、用法をいずれのコード体系でもコード化できない場合には、ダミーコードとして16桁の'0X0XXXXXXXXX0000'を使用する。なお、いずれの場合にも、用法の完全な文字列をtext子要素に設定する。"
-* timing.code.coding 1..* MS
+
+/*
 * timing.code.coding ^definition = "厚生労働省電子処方箋用法コード、またはJAMI標準用法コード、またはダミーコードによりコード化する。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コード、またはダミーコードによりコード化することが必須。"
 * timing.code.coding.system 1..1 MS
 * timing.code.coding.system ^definition = "厚生労働省電子処方箋用法コード（仮設定値：\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage_ePrescription\"）、またはJAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）。ダミーコードを使用する場合にはhttp://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS　を使用する。”
@@ -89,7 +90,8 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 * timing.code.coding.display ^short = "用法コードに対応する表示名。"
 * timing.code.coding.display 0..1 MS
 * timing.code.coding.display ^definition = "用法コードに対応する表示名。\r\n例）\"内服・経口・１日３回朝昼夕食後\""
-
+*/
+* timing.code.coding 1..* MS
 * timing.code.coding ^slicing.discriminator.type = #value
 * timing.code.coding ^slicing.discriminator.path = "system"
 * timing.code.coding ^slicing.rules = #open
@@ -98,19 +100,33 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 JP_MedicationRequest_e
 and mhw_prescription_yoho 0..1 MS 
 and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS）
 
-* timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) //"urn:oid:1.2.392.200250.2.2.20"  http://jami.jp/CodeSystem/MedicationUsage
+* timing.code.coding[jami_yoho] ^definition = "JAMI標準用法コードによりコード化する場合のコード化。"
+* timing.code.coding[jami_yoho]　0..1 MS
+* timing.code.coding[jami_yoho].system ^definition = "JAMI標準用法16桁コード（\"http://jami.jp/CodeSystem/MedicationUsage\"）を使用する場合のコードシステム（\"http://jami.jp/CodeSystem/MedicationUsage\"）"
+* timing.code.coding[jami_yoho].system = $JP_MedicationUsageJAMI_CS (exactly) 
 * timing.code.coding[jami_yoho].system 1..1 MS
+* timing.code.coding[jami_yoho].code ^short = "JAMI標準用法コード"
+* timing.code.coding[jami_yoho].code ^definition = "JAMI標準用法コード。\r\n例）\"1013044400000000\""
 * timing.code.coding[jami_yoho].code 1..1 MS
-//* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
+* timing.code.coding[jami_yoho].display ^short = "JAMI標準用法コードに対応する表示名。"
+* timing.code.coding[jami_yoho].display ^definition = "JAMI標準用法コードに対応する表示名。\r\n例）\"内服・経口・１日３回朝昼夕食後\""
 * timing.code.coding[jami_yoho].display 1..1 MS
 
+* timing.code.coding[mhw_prescription_yoho] ^definition = "厚生労働省電子処方箋用法コードを使用する場合のコード化。"
+* timing.code.coding[mhw_prescription_yoho].system ^definition = "厚生労働省電子処方箋用法コードを使用する場合のコードシステム（\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage_ePrescription\"）"
 * timing.code.coding[mhw_prescription_yoho].system = $JAMI_MedicationUsage_ePrescription_CS (exactly) 
 * timing.code.coding[mhw_prescription_yoho].system 1..1 MS
+* timing.code.coding[mhw_prescription_yoho].code ^short = "厚生労働省電子処方箋用法コード"
+* timing.code.coding[mhw_prescription_yoho].code ^definition = "厚生労働省電子処方箋用法コード。\r\n例）\"1013044400000000\""
 * timing.code.coding[mhw_prescription_yoho].code 1..1 MS
-//* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS
+* timing.code.coding[mhw_prescription_yoho].display ^short = "厚生労働省電子処方箋用法コードに対応する表示名。"
+* timing.code.coding[mhw_prescription_yoho].display ^definition = "厚生労働省電子処方箋用法コードに対応する表示名。\r\n例）\"１日３回朝昼夕食後　服用\""
 * timing.code.coding[mhw_prescription_yoho].display 1..1 MS
+//* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS
 // VSの実態が展開できない状況で上記があるとpublisherエラーになる。
 
+* timing.code.coding[unCoded] ^definition = "コード化できない場合にダミーコードを使用する場合のコード化。"
+* timing.code.coding[unCoded].system ^definition = "ダミーコードを使用する場合のコードシステム（\"http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS\"）"
 * timing.code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS" (exactly) 
 * timing.code.coding[unCoded].system 1..1 MS
 * timing.code.coding[unCoded].code = #0X0XXXXXXXXX0000

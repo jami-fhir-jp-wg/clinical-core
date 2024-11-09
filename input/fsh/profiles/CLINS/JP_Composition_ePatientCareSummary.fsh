@@ -162,11 +162,10 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * section.entry[carePlan] only Reference(JP_CarePlan_ePCS)
 * section.entry[carePlan] ^short = "療養計画"
 * section.entry[carePlan] ^definition = "療養計画"
-* section.emptyReason ..1
-* section.section ..0
 
 * section.entry[condition] only Reference(JP_Condition_eCS)
 * section.entry[condition] ^short = "傷病名"
 * section.entry[condition] ^definition = "傷病名"
+
 * section.emptyReason ..1
 * section.section ..0

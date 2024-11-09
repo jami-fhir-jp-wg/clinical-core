@@ -64,12 +64,13 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains resourceType 1..1 MS
+
+* meta.tag[resourceType]
   * insert relative_short_definition("CLINSでのBundleリソースに含まれる５情報リソースカテゴリーをmeta.tag要素に記述する。")
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。" )
   * code 1..1 MS
     * insert relative_short_definition("Bundleリソースに含まれる５情報リソースカテゴリーのいずれかを　http://jpfhir.jp/fhir/clins/ValueSet/BundleResourceType_VSのValuseSetから設定する。具体的には、\"AllergyIntolerance\"、\"Condition\"、\"Observation\"、\"MedicationRequest\"　のいずれかの値を設定する。")
-
 * meta.tag[resourceType].system = $JP_CLINS_BundleResourceType_CS
 * meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
 
@@ -121,16 +122,14 @@ Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリ�
  and medicationRequest 0..  // 処方情報は作成して送信してもよいが処理されない。
  and observationLaboResult 0..
 
-* entry ^short = "このBundleが格納するリソースの情報。"
-* entry.extension ..0
-* entry.modifierExtension ..0
-* entry.link ..0 MS
-* entry.search ..0
-* entry.request ..0
-* entry.response ..0
-
 * entry[patient] ^short = "Patientリソース"
 * entry[patient] ^definition = "患者情報"
+* entry[patient].extension ..0
+* entry[patient].modifierExtension ..0
+* entry[patient].link ..0 MS
+* entry[patient].search ..0
+* entry[patient].request ..0
+* entry[patient].response ..0
 
 * entry[patient].fullUrl 1.. MS
 * entry[patient].resource 1.. MS
@@ -138,12 +137,24 @@ Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリ�
 
 * entry[allergyIntolerance] ^short = "AllergyIntoleranceリソース"
 * entry[allergyIntolerance] ^definition = "アレルギー情報／薬剤アレルギー等情報"
+* entry[allergyIntolerance].extension ..0
+* entry[allergyIntolerance].modifierExtension ..0
+* entry[allergyIntolerance].link ..0 MS
+* entry[allergyIntolerance].search ..0
+* entry[allergyIntolerance].request ..0
+* entry[allergyIntolerance].response ..0
 * entry[allergyIntolerance].fullUrl 1.. MS
 * entry[allergyIntolerance].resource 1.. MS
 * entry[allergyIntolerance].resource only $JP_AllergyIntolerance_eCS
 
 * entry[condition] ^short = "Conditionリソース"
 * entry[condition] ^definition = "傷病名情報"
+* entry[condition].extension ..0
+* entry[condition].modifierExtension ..0
+* entry[condition].link ..0 MS
+* entry[condition].search ..0
+* entry[condition].request ..0
+* entry[condition].response ..0
 * entry[condition].fullUrl 1.. MS
 * entry[condition].resource 1.. MS
 * entry[condition].resource only $JP_Condition_eCS
@@ -151,6 +162,12 @@ Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリ�
 
 * entry[medicationRequest] ^short = "MedicationRequestリソース"
 * entry[medicationRequest] ^definition = "処方情報"
+* entry[medicationRequest].extension ..0
+* entry[medicationRequest].modifierExtension ..0
+* entry[medicationRequest].link ..0 MS
+* entry[medicationRequest].search ..0
+* entry[medicationRequest].request ..0
+* entry[medicationRequest].response ..0
 * entry[medicationRequest].fullUrl 1.. MS
 * entry[medicationRequest].resource 1.. MS
 * entry[medicationRequest].resource only $JP_MedicationRequest_eCS
@@ -158,6 +175,12 @@ Bundle.identifier.value : 実装ガイド本文 5情報送信仕様--Bundleリ�
 
 * entry[observationLaboResult] ^short = "Observationリソース"
 * entry[observationLaboResult] ^definition = "検体検査結果／感染症情報"
+* entry[observationLaboResult].extension ..0
+* entry[observationLaboResult].modifierExtension ..0
+* entry[observationLaboResult].link ..0 MS
+* entry[observationLaboResult].search ..0
+* entry[observationLaboResult].request ..0
+* entry[observationLaboResult].response ..0
 * entry[observationLaboResult].fullUrl 1.. MS
 * entry[observationLaboResult].resource 1.. MS
 * entry[observationLaboResult].resource only $JP_Observation_LabResult_eCS

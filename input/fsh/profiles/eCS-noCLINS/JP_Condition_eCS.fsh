@@ -159,12 +159,13 @@ Description: "eCS/CLINS Conditionリソース（傷病名情報）プロファ�
 * code ^definition = "傷病名のコードと名称。MEDIS 病名管理番号（system値は\"http://medis.or.jp/CodeSystem/master-disease-keyNumber\"）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する。なお、MEDIS 病名管理番号以外のコード記述を併用しても構わない。(参考：MEDIS 病名交換コード：http://medis.or.jp/CodeSystem/master-disease-exCode、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）"
 * code ^comment = "code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。なお、修飾語は前置修飾語と後置修飾語にわけて、それぞれの拡張を使用して記述する。"
 
+/*
 * code.coding 1..* MS
 * code.coding.system 1..1 MS
 * code.coding.version 0..1 MS
 * code.coding.display 1..1 MS
 * code.text 1..1 MS
-
+*/
 * code.coding ^slicing.discriminator.type = #value
 * code.coding ^slicing.discriminator.path = "system"
 * code.coding ^slicing.rules = #open
@@ -174,16 +175,41 @@ and medisExchange 0.. MS
 and receipt 0.. MS
 and icd10 0.. MS
 
+
+* code.coding[medisRecordNo] 1..* MS
+* code.coding[medisRecordNo].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
+* code.coding[medisRecordNo].system 1..1 MS    // MEDIS 病名管理番号
+// MEDIS 病名管理番号　のコードは必須
+* code.coding[medisRecordNo].code 1..1 MS    // MEDIS 病名管理番号
+* code.coding[medisRecordNo].version 0..1 MS
+* code.coding[medisRecordNo].display 1..1 MS    // MEDIS 病名管理番号//* code.coding[medisExchange].code from $JP_Disease_MEDIS_ManagementID_VS
+
+
+* code.coding[medisExchange] 0..* MS
+* code.coding[medisExchange].system 1..1 MS
+* code.coding[medisExchange].version 0..1 MS
+* code.coding[medisRecordNo].code 1..1 MS 
+* code.coding[medisExchange].display 1..1 MS
 * code.coding[medisExchange].system = $JP_Disease_MEDIS_Concept_CS (exactly)    // MEDIS 病名交換コード
 //* code.coding[medisExchange].code from $JP_Disease_MEDIS_Concept_VS
-* code.coding[medisRecordNo].system = $JP_Disease_MEDIS_ManagementID_CS (exactly) // MEDIS 病名管理番号
-* code.coding[medisRecordNo].system 1..1 MS    // MEDIS 病名交換コード
-* code.coding[medisRecordNo].code 1..1 MS    // MEDIS 病名交換コード
-* code.coding[medisRecordNo].display 1..1 MS    // MEDIS 病名交換コード//* code.coding[medisExchange].code from $JP_Disease_MEDIS_ManagementID_VS
+
+* code.coding[receipt] 0..* MS
+* code.coding[receipt].system 1..1 MS
 * code.coding[receipt].system = $JP_Disease_Claim_CS (exactly)    // レセプト電算処理用傷病名コード
+* code.coding[receipt].version 0..1 MS
+* code.coding[receipt].code 1..1 MS 
+* code.coding[receipt].display 1..1 MS
 //* code.coding[receipt].code from $JP_Disease_Claim_VS    // レセプト電算処理用傷病名コード
+
+* code.coding[icd10] 0..* MS
+* code.coding[icd10].system 1..1 MS
 * code.coding[icd10].system = $JP_DiseaseCategory_WHO_ICD10_CS   (exactly)  // ICD10分類コード
+* code.coding[icd10].version 0..1 MS
+* code.coding[icd10].code 1..1 MS 
+* code.coding[icd10].display 1..1 MS
 //* code.coding[icd10].code from $JP_DiseaseCategory_WHO_ICD10_VS   // ICD10分類コード
+
+* code.text 1..1 MS
 
 * code.extension ^slicing.discriminator.type = #value
 * code.extension ^slicing.discriminator.path = "url"
@@ -290,6 +316,7 @@ Description: "病名の前置修飾語を格納するための拡張"
     medisRecordNo 1..1 and
     receipt 0..1
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
+* valueCodeableConcept.coding[medisExchange] 0..1 MS
 * valueCodeableConcept.coding[medisExchange].system = $JP_Modifier_MEDIS_Concept_CS (exactly)
 * valueCodeableConcept.coding[medisExchange].system 1.. MS
 * valueCodeableConcept.coding[medisExchange].code 1.. MS
@@ -299,6 +326,7 @@ Description: "病名の前置修飾語を格納するための拡張"
 //* valueCodeableConcept.coding[medisExchange] ^comment = "JP_ConditionDiseaseModifierMEDISExchange_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[medisRecordNo] from $JP_ConditionDiseaseModifierMEDISRecordNo_VS (required)
+* valueCodeableConcept.coding[medisRecordNo] 1..1 MS
 * valueCodeableConcept.coding[medisRecordNo].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly)
 * valueCodeableConcept.coding[medisRecordNo].system 1.. MS
 * valueCodeableConcept.coding[medisRecordNo].code 1.. MS
@@ -308,6 +336,7 @@ Description: "病名の前置修飾語を格納するための拡張"
 //* valueCodeableConcept.coding[medisRecordNo] ^comment = "JP_ConditionDiseaseModifierMEDISRercordNo_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[receipt] from $JP_ConditionDiseaseModifierReceipt_VS (required)
+* valueCodeableConcept.coding[receipt] 0..1 MS
 * valueCodeableConcept.coding[receipt].system = $JP_Modifier_Disease_Claim_CS (exactly)
 * valueCodeableConcept.coding[receipt].system 1.. MS
 * valueCodeableConcept.coding[receipt].code 1.. MS
@@ -343,6 +372,7 @@ Description: "病名の後置修飾語を格納するための拡張"
     medisRecordNo 1..1 and
     receipt 0..1
 //* valueCodeableConcept.coding[medisExchange] from $JP_ConditionDiseaseModifierMEDISExchange_VS (required)
+* valueCodeableConcept.coding[medisExchange] 0..1 MS
 * valueCodeableConcept.coding[medisExchange].system = $JP_Modifier_MEDIS_Concept_CS (exactly)
 * valueCodeableConcept.coding[medisExchange].system 1.. MS
 * valueCodeableConcept.coding[medisExchange].code 1.. MS
@@ -352,6 +382,7 @@ Description: "病名の後置修飾語を格納するための拡張"
 //* valueCodeableConcept.coding[medisExchange] ^comment = "JP_ConditionDiseaseModifierMEDISExchange_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[medisRecordNo] from $JP_ConditionDiseaseModifierMEDISRecordNo_VS (required)
+* valueCodeableConcept.coding[medisRecordNo] 1..1 MS
 * valueCodeableConcept.coding[medisRecordNo].system = $JP_Modifier_MEDIS_ManagementID_CS (exactly)
 * valueCodeableConcept.coding[medisRecordNo].system 1.. MS
 * valueCodeableConcept.coding[medisRecordNo].code 1.. MS
@@ -361,6 +392,7 @@ Description: "病名の後置修飾語を格納するための拡張"
 //* valueCodeableConcept.coding[medisRecordNo] ^comment = "JP_ConditionDiseaseModifierMEDISRercordNo_VSの中から適切なコードを指定する。"
 
 //* valueCodeableConcept.coding[receipt] from $JP_ConditionDiseaseModifierReceipt_VS (required)
+* valueCodeableConcept.coding[receipt] 0..1 MS
 * valueCodeableConcept.coding[receipt].system = $JP_Modifier_Disease_Claim_CS (exactly)
 * valueCodeableConcept.coding[receipt].system 1.. MS
 * valueCodeableConcept.coding[receipt].code 1.. MS
