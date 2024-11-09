@@ -227,7 +227,7 @@ and authorDepartment 0..1 MS
 //
 * section[referralToSection] ^short = "紹介先情報セクション"
 * section[referralToSection] ^definition = "紹介先情報セクション"
-* section[referralToSection].title = "紹介先情報" (exactly)
+//* section[referralToSection].title = "紹介先情報" (exactly)
 * section[referralToSection].code.coding.code = #910 (exactly)
 * section[referralToSection].entry 1..3
 * section[referralToSection].entry  ^slicing.discriminator.type = #profile
