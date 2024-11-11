@@ -17,6 +17,7 @@ Id:   jp-servicerequest-common
 Description:    "JP-ServiceRequest　Commonプロファイル(JP-Core V1.2系)"
 * ^url = "http://jpfhir.jp/fhir/core/StructureDefinition/JP_ServiceRequest_Common"
 * ^status = #active
+* ^version = "x.x.x-profile"
 * ^date = "2024-09-18"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
