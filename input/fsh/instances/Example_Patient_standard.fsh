@@ -4,7 +4,7 @@ Usage: #example
 Description: "Patientリソース　標準的記述 データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>Patientリソース　標準的記述 データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>Patientリソース　標準的記述 データ作成例</p> </div>"
 /*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

@@ -5,7 +5,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * note.text = "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
 
 //* text.status = #additional
-//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p> </div>"
+//* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p> </div>"
 
 
 * id = "Example-JP-MedReq-ExtAnus-AsNeeded-Total1"
