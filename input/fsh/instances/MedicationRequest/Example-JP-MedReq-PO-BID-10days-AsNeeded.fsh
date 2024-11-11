@@ -5,7 +5,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * note.text = "MedicationRequestリソース　入院・内服処方1日1回１回2錠（投与指示あり） 2日分処方例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>入院処方　内服処方1日1回１回2錠（投与指示あり） 2日分処方例</p> </div>"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

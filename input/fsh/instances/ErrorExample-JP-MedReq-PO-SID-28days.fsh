@@ -5,7 +5,7 @@ Description: "【意図的エラー例】：退院時処方　内服1日1回１�
 * note.text = "【意図的エラー例】（一般処方コード2124030F2ZZZが間違っている（正しくは1124030F2ZZZ））：退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例</p> </div>"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber

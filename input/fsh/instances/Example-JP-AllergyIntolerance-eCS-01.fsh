@@ -5,7 +5,7 @@ Usage: #example
 Description: "AllergyIntoleranceリソース CLINS必須要素のみ 長期保存 データ作成例(サバアレルギー)"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー: さば</p> </div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>アレルギー: さば</p> </div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
@@ -41,7 +41,7 @@ Usage: #inline
 Description: "AllergyIntoleranceリソース CLINS必須要素のみ 長期保存 データ作成例(サバアレルギー)"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー: さば</p> </div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>アレルギー: さば</p> </div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"   //必須

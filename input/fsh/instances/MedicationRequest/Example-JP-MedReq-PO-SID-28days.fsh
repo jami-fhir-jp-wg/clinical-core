@@ -5,7 +5,7 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * note.text = "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　lang=\"ja\"  xml:lang=\"ja\"> <p>退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例</p> </div>"
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
