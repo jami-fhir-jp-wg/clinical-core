@@ -195,7 +195,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 
 //-- 主病名　には必須
 * extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
-* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal #principal "主病名"
+* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal "主病名"
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB

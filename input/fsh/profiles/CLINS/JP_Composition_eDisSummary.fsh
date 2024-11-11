@@ -340,7 +340,7 @@ and authorDepartment 0..1 MS
     and presentIllnessSection     1..1    MS  // 現病歴セクション
     and pastIllnessSection    0..1    MS  // 既往歴セクション
     and medicationsOnAdmissionSection   0..1    MS  //  入院時服薬セクション
-    and socialHistorySection      0..1    MS  //  入院時社会歴セクション
+    and socialHistorySection      0..1    MS  //  社会歴・生活習慣セクション
 	and physicalStatusOnAdmissionSection   0..1    MS  //  入院時身体所見セクション
 	and familiyHistorySection      0..1    MS  //  家族歴セクション
 	and hospitalCourseSection     1..1    MS  //  入院中経過セクション
@@ -599,7 +599,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[presentIllnessSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[structuredSection].section[presentIllnessSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[structuredSection].section[presentIllnessSection].code.coding.code 1.. MS
-* section[structuredSection].section[presentIllnessSection].code.coding.code = #362 (exactly)
+* section[structuredSection].section[presentIllnessSection].code.coding.code = #360 (exactly)
 * section[structuredSection].section[presentIllnessSection].code.coding.code ^short = "セクション区分のコード値"
 * section[structuredSection].section[presentIllnessSection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
 * section[structuredSection].section[presentIllnessSection].code.coding.display = "現病歴セクション"
@@ -644,7 +644,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[pastIllnessSection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[structuredSection].section[pastIllnessSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[structuredSection].section[pastIllnessSection].code.coding.code 1.. MS
-* section[structuredSection].section[pastIllnessSection].code.coding.code = #372 (exactly)
+* section[structuredSection].section[pastIllnessSection].code.coding.code = #370 (exactly)
 * section[structuredSection].section[pastIllnessSection].code.coding.code ^short = "セクション区分のコード値"
 * section[structuredSection].section[pastIllnessSection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
 * section[structuredSection].section[pastIllnessSection].code.coding.display = "既往歴セクション"
@@ -737,7 +737,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[socialHistorySection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[structuredSection].section[socialHistorySection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[structuredSection].section[socialHistorySection].code.coding.code 1.. MS
-* section[structuredSection].section[socialHistorySection].code.coding.code = #642 (exactly)
+* section[structuredSection].section[socialHistorySection].code.coding.code = #640 (exactly)
 * section[structuredSection].section[socialHistorySection].code.coding.code ^short = "セクション区分のコード値"
 * section[structuredSection].section[socialHistorySection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
 * section[structuredSection].section[socialHistorySection].code.coding.display = "社会歴・生活習慣セクション"
@@ -833,7 +833,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[familiyHistorySection].code.coding.system ^short = "セクション区分コードのコード体系"
 * section[structuredSection].section[familiyHistorySection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section[structuredSection].section[familiyHistorySection].code.coding.code 1.. MS
-* section[structuredSection].section[familiyHistorySection].code.coding.code = #552 (exactly)
+* section[structuredSection].section[familiyHistorySection].code.coding.code = #550 (exactly)
 * section[structuredSection].section[familiyHistorySection].code.coding.code ^short = "セクション区分のコード値"
 * section[structuredSection].section[familiyHistorySection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
 * section[structuredSection].section[familiyHistorySection].code.coding.display = "家族歴セクション"
