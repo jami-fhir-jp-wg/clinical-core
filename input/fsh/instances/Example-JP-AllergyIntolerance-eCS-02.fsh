@@ -5,12 +5,13 @@ Usage: #example
 Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素とプラスアルファを記述 長期保存 データ作成例"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意
+* language = #ja
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber  //CLINS必須
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber  //CLINS必須
@@ -61,11 +62,12 @@ Usage: #inline
 Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素とプラスアルファを記述 長期保存 データ作成例"
 
 * text.status = #additional
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\"> <p>アレルギー:キーウイ</p>発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A</div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"    //必須
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意
+* language = #ja
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber  //CLINS必須
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber  //CLINS必須

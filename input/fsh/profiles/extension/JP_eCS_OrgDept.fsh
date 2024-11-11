@@ -29,6 +29,9 @@ Description: "診療サマリーや5情報等に記述する際に、作成発�
 
 * . ^short = "作成発行した医療機関番号を記述するための拡張"
 * . ^definition = "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述する"
+* ^language = #ja
+
+
 * url = $JP_eCS_InstitutionNumber (exactly)
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"

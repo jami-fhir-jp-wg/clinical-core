@@ -33,8 +33,8 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#OHO "院外処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#OHP "外来処方"
 * category.text = "院外処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#121431401 "アムロジピンＯＤ錠１０ｍｇ"
-* medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2171022F6276 "アムロジピンＯＤ錠１０ｍｇ"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#121431401 "アムロジピンＯＤ錠１０ｍｇ「トーワ」・東和薬品"
+* medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2171022F6276 "アムロジピンＯＤ錠１０ｍｇ「あすか」"
 * medicationCodeableConcept.coding[+] = $Icode#I1042350 "アムロジピンＯＤ錠１０ｍｇ"
 * medicationCodeableConcept.text = "アムロジピンＯＤ錠１０ｍｇ"
 * subject.identifier.system = $JP_Insurance_memberID

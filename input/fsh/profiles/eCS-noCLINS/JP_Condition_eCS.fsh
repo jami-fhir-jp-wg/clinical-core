@@ -304,6 +304,8 @@ Description: "病名の前置修飾語を格納するための拡張"
 * ^context.expression = "Condition.code"
 * . ^short = "前置修飾語"
 * . ^definition = "前置修飾語を格納するための拡張。\r\n前置修飾語をCodeableConcept型で記述する。"
+* ^language = #ja
+
 * url = $JP_Condition_DiseasePrefixModifier (exactly)
 * value[x] only CodeableConcept
 * value[x] ^short = "前置修飾語"
@@ -360,6 +362,8 @@ Description: "病名の後置修飾語を格納するための拡張"
 * ^context.expression = "Condition.code"
 * . ^short = "後置修飾語"
 * . ^definition = "後置修飾語を格納するための拡張。\r\n後置修飾語をCodeableConcept型で記述する。"
+* ^language = #ja
+
 * url = $JP_Condition_DiseasePostfixModifier (exactly)
 * value[x] only CodeableConcept
 * value[x] ^short = "後置修飾語"

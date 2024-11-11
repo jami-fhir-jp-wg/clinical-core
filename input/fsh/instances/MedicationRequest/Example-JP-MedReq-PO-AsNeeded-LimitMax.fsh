@@ -35,9 +35,9 @@ Description: "MedicationRequestリソース　入院・内服処方頓用発熱�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#ORD "定期処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院定期処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeYJ_CS#1141007F1063 "カロナール錠３００"
-* medicationCodeableConcept.coding[+] = $Icode#I1187710 "カロナール錠３００"
-* medicationCodeableConcept.text = "カロナール錠３００"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeYJ_CS#1141007F1063 "カロナール錠２００"
+* medicationCodeableConcept.coding[+] = $Icode#I1187710 "カロナール錠２００"
+* medicationCodeableConcept.text = "カロナール錠２００"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 

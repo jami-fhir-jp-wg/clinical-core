@@ -61,7 +61,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralToSection].title = "紹介先情報"
 * section[referralToSection].code.coding = $referral-section#910 "紹介先情報セクション"
 * section[referralToSection].text.status = #additional
-* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">紹介先医療機関名：東京第一テスト病院<br />内科<br />紹介先医師：野口 英世丸先生</div>"
+* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\">紹介先医療機関名：東京第一テスト病院<br />内科<br />紹介先医師：野口 英世丸先生</div>"
 
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-ReferralTo01Inline"
 * section[referralToSection].entry[referralToOrganization].reference = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
@@ -85,7 +85,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralFromSection].title = "紹介元情報"
 * section[referralFromSection].code.coding = $referral-section#920 "紹介元情報セクション"
 * section[referralFromSection].text.status = #additional
-* section[referralFromSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">東京都港区新橋１−２−３
+* section[referralFromSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\">東京都港区新橋１−２−３
 <br />電話:03-9876-5432><br />港診療所<br />眼科<br />大河内 勘三郎</div>"
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
 * section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"

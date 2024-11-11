@@ -1,5 +1,5 @@
 //* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#3H015000002326101  "K"
-//* code.coding[+] = $JP_ObservationLabResultCode_CS#3H015000002326101  "K"   
+//* code.coding[+] = $JP_ObservationLabResultCode_CS#3H015000002326101  "カリウム_血清_電位差測定_定量値"   
 // * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
 Invariant: test-MemberOf-MEDIS-JLAC10
 Description: "Observation.codeにはJLAC10 MEDISコードに所属している検査コードがなくてはならない"

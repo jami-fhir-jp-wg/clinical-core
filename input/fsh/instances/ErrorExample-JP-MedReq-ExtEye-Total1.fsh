@@ -32,7 +32,7 @@ Description: "【意図的エラー例】：入院処方　外用（点眼）全
 * category.coding[0] = $JP_MedicationCategoryJHSP0007_CS#BDP "持参薬処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "持参薬処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#118185202 "トラバタンズ点眼液０．００４％　２"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#118185202 "トラバタンズ点眼液０．００４％・ノバルティスＰ"
 * medicationCodeableConcept.coding[+] = $Icode#I3198200 "トラバタンズ点眼液０．００４％　２"
 * medicationCodeableConcept.text = "トラバタンズ点眼液０．００４％　２"
 
