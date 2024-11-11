@@ -61,7 +61,9 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralToSection].title = "紹介先情報"
 * section[referralToSection].code.coding = $referral-section#910 "紹介先情報セクション"
 * section[referralToSection].text.status = #additional
-* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" 　 xml:lang=\"ja\">東京第一テスト病院</div>"
+* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">東京第一テスト病院</div>"
+* section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">東京第一テスト病院</div>"
+
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-ReferralTo01Inline"
 * section[referralToSection].entry[referralToOrganization].reference = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
 * section[referralToSection].entry[referralToOrganization].type = "Organization"
