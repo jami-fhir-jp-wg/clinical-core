@@ -71,7 +71,7 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[allergy][+].fullUrl = "urn:uuid:5a1aae74-f720-415a-ba15-a6c8b5d4c5a1"
 * entry[allergy][=].resource = Example-JP-AllergyIntolerance-eCS-02Inline
 
-* entry[allergy][+].fullUrl = "urn:uuid:0d51bf2a-4863-b36f-2ad3-cb5ea0df1023"
+* entry[allergy][+].fullUrl = "urn:uuid:0d51bf2a-4863-b36f-2ad3-cb5ea0df1023" //<--
 * entry[allergy][=].resource = Example-JP-AllergyIntolerance-eCS-03Inline
 
 * entry[observation][+].fullUrl = "urn:uuid:481835ef-0891-45de-a006-087954ab6b7c"
