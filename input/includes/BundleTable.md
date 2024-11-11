@@ -117,9 +117,7 @@
     </td>
   <td class=xl79 width=49 style='width:37pt'>固定値(x.y.zは<ruby>置<span
   style='display:none'><rt>オキカエル </rt></span></ruby>き換える)</td>
-  <td class=xl139 width=195 style='border-top:none;border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS"
-  target="_parent">http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|x.y.z</a></td>
+  <td class=xl139 width=195 style='border-top:none;border-left:none;width:146pt'>>http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|x.y.z</td>
  </tr>
  <tr height=60 style='height:45.0pt'>
   <td height=60 class=xl71 width=107 style='height:45.0pt;width:80pt'>meta</td>

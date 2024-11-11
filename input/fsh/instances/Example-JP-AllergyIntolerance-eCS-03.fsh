@@ -30,7 +30,7 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 * category = #medication
 
 //* criticality = #high   //任意
-* code.coding[+] = $JP_JfagyMedicationAllergenGCM_CS#GCM2260701F1ZZZ  "ポビドンヨード"
+* code.coding[+] = $JP_JfagyMedicationAllergenGCM_CS#GCM2260701F1ZZZ  "【成分名】ポビドンヨード"
 * code.text = "ヨードうがい液"
 
 
