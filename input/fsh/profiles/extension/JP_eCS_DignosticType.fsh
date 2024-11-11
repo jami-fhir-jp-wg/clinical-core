@@ -13,7 +13,7 @@ Description: "傷病名情報に主たる診療対象病名か、あるいはそ
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
 * ^purpose = "傷病名情報に主たる診療対象病名か、あるいはそれ以外の情報をタイプかを付与するため。主病名フラグとして傷病名一覧に表示するためにも使用される。"
-//* ^language = #ja   //since 1.5.4
+* ^language = #ja   //since 1.5.4
 * ^context[+].type = #element
 * ^context[=].expression = "Condition"
 

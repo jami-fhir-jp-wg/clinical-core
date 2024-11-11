@@ -129,6 +129,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
+* language = #ja
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -180,6 +181,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
+* language = #ja
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -193,7 +195,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 
 //-- 主病名　には必須
 * extension[eCS_DiagnosisType].url = $JP_eCS_DiagnosisType
-* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal
+* extension[eCS_DiagnosisType].valueCodeableConcept.coding[+] = $JP_eCS_DiagnosisType#principal #principal "主病名"
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB
