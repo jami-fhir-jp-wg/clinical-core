@@ -6,7 +6,7 @@ Usage: #example
 Description: "埋め込み　Encounterリソース（外来受診）データ作成例"
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Encounterリソース（外来受診）データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Encounterリソース（外来受診）データ作成例</p> </div>"
 * language = #ja
 
 
@@ -31,7 +31,7 @@ Description: "Encounterリソース（入院） データ作成例"
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>Encounterリソース（入院） データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>Encounterリソース（入院） データ作成例</p> </div>"
 
 
 * id = "Example-Contained-JP-Encounter-IMP"
@@ -50,7 +50,7 @@ Description: "埋め込み　Practitionerリソース　医療者R001  データ
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Practitionerリソース　医療者R001  データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者R001  データ作成例</p> </div>"
 
 
 * id = "Example-Contained-JP-Practitioner-minimun-R001"
@@ -69,7 +69,7 @@ Description: "埋め込み　Practitionerリソース　医療者D001  データ
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Practitionerリソース　医療者D001  データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D001  データ作成例</p> </div>"
 
 
 * id = "Example-Contained-JP-Practitioner-minimun-D001"
@@ -87,7 +87,7 @@ InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者D002  データ作成例"
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Practitionerリソース　医療者D002  データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D002  データ作成例</p> </div>"
 
 * language = #ja
 
@@ -108,7 +108,7 @@ Description: "埋め込み　Practitionerリソース　医療者D003  データ
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Practitionerリソース　医療者D003  データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D003  データ作成例</p> </div>"
 
 * id = "Example-Contained-JP-Practitioner-minimun-D003"
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
@@ -128,7 +128,7 @@ Description: "埋め込み　Specimemリソース　検体検査材料　血清"
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Specimemリソース　検体検査材料　血清</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Specimemリソース　検体検査材料　血清</p> </div>"
 
 //* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-Contained-JP-Specimen-Serum"
@@ -146,7 +146,7 @@ Description: "埋め込み　Specimemリソース　検体検査材料　尿(含
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>埋め込み　Specimemリソース　検体検査材料　尿(含むその他)</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Specimemリソース　検体検査材料　尿(含むその他)</p> </div>"
 
 //* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-Contained-JP-Specimen-Urine"

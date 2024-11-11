@@ -7,7 +7,7 @@ Description: "Conditionリソース 必須要素だけの データ作成例"
 
 
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>必須要素だけの データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素だけの データ作成例</p> </div>"
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
@@ -70,7 +70,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * meta.tag[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication#UNINFORMED "未告知"
 * language = #ja
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>必須要素と推奨要素を記述した データ作成例、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述した データ作成例、未告知、長期保存、病名管理コードとICD10分類の両方でコーディング</p> </div>"
 
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -124,7 +124,7 @@ Usage: #example
 Description: "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了"
 * note.text = "Conditionリソース 必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了　患者参照を被保険者番号のしている例"
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"　 xml:lang=\"ja\"> <p>必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>必須要素と推奨要素を記述した データ作成例、病名交換コードでコーディング、疑い病名で終了</p> </div>"
 
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"
