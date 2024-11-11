@@ -10,7 +10,7 @@ Description: "退院時サマリー Bundle"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-
+* ^language = #ja
 
 * . ^short = "退院時サマリーのための文書 Bundleリソース"
 * . ^definition = "退院時サマリーのための文書 Bundleリソース"

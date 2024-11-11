@@ -11,7 +11,7 @@ Description: "診療情報提供書 Bundle"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-
+* ^language = #ja
 * . ^short = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
 

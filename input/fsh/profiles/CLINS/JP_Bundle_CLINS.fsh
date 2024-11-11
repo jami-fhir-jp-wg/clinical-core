@@ -13,7 +13,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-
+* ^language = #ja
 
 * ^status = #active
 * . ^short = "電子カルテ情報共有サービスへの5情報送信用 Bundleリソース"
