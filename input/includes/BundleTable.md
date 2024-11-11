@@ -143,9 +143,7 @@
   <td class=xl76 width=359 style='width:269pt'>固定値
   http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。</td>
   <td class=xl72 width=49 style='width:37pt'>固定値</td>
-  <td class=xl75 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS"
-  target="_parent">http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS</a></td>
+  <td class=xl75 width=195 style='width:146pt'>http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS</td>
  </tr>
  <tr height=160 style='height:120.0pt'>
   <td height=160 class=xl71 width=107 style='height:120.0pt;width:80pt'>meta</td>
