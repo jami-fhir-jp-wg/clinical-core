@@ -1,3 +1,4 @@
+// terminology urlTestにもある
 CodeSystem: JP_v3ActCode_display
 Id: jp-v3ActCod-display
 Title: "Japanese supplement for CodeSystem v3-ActCode"
