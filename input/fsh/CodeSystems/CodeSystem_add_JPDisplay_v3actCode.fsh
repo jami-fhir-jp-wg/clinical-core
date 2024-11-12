@@ -14,38 +14,38 @@ Description: "http://terminology.hl7.org/CodeSystem/v3-ActCodeに日本語displa
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^supplements = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 
-* ^concept.code = #AMB
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "外来"
+* ^concept[+].code = #AMB
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "外来"
 
-* ^concept.code = #EMER
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "救急"
+* ^concept[+].code = #EMER
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "救急"
 
-* ^concept.code = #FLD
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "現地"
+* ^concept[+].code = #FLD
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "現地"
 
-* ^concept.code = #HH
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "在宅"
+* ^concept[+].code = #HH
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "在宅"
 
-* ^concept.code = #IMP
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "入院"
+* ^concept[+].code = #IMP
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "入院"
 
-* ^concept.code = #OBSENC
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "検査受診"
+* ^concept[+].code = #OBSENC
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "検査受診"
 
-* ^concept.code = #PRENC
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "入院前受診"
+* ^concept[+].code = #PRENC
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "入院前受診"
 
-* ^concept.code = #SS
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "ショートステイ"
+* ^concept[+].code = #SS
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "ショートステイ"
 
-* ^concept.code = #VR
-* ^concept.designation[+].language = #ja
-* ^concept.designation[=].value = "遠隔受診"
+* ^concept[+].code = #VR
+* ^concept[=].designation[+].language = #ja
+* ^concept[=].designation[=].value = "遠隔受診"
