@@ -6,6 +6,12 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.5  (2024.11.17)
+  - 以下のProfileにidentifier.systemとidentifier.valueの仕様準拠の制約チェックをConstraintsに追加した。
+    - JP_Bundle_eReferral
+    - JP_Bundle_eDischargeSummary
+    - JP_Bundle_ePCS
+    
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.4  (2024.11.10)
   - JP_Composition_eDischargeSummary
     - 7.1 プロファイル詳細
