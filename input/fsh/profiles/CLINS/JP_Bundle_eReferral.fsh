@@ -15,6 +15,8 @@ Description: "診療情報提供書 Bundle"
 * . ^short = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
 * . ^definition = "電子カルテ情報共有サービスに送信可能な診療情報提供書のための文書 Bundleリソース"
 
+* obeys valid-system-bundleIdenfifier
+* obeys valid-value-bundleIdenfifier
 * obeys validEntryProfile-MedicationRequest
 
 * meta.lastUpdated 1.. MS
