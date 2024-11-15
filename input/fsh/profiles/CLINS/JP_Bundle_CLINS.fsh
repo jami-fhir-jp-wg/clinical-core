@@ -41,11 +41,11 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 
 * obeys validEntryProfile-AllergyIntoleranceOriginal
 * obeys validEntryProfile-ConditionOriginal
-* obeys validEntryProfile-MedicationRequest
+* obeys validEntryProfile-MedicationRequestOriginal
 * obeys validEntryProfile-ObservationLabResultOriginal
 
 * obeys validEntryProfile-AllergyIntoleranceCorrected
-* obeys validEntryProfile-ConditionCorrectd
+* obeys validEntryProfile-ConditionCorrected
 * obeys validEntryProfile-MedicationRequestCorrected
 * obeys validEntryProfile-ObservationLabResultCorrected
 /*
