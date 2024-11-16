@@ -384,3 +384,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/ex-diagnosistype
+    - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/v3-ActCode
+    
