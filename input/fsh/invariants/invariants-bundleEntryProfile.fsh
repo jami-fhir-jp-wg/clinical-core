@@ -1,31 +1,13 @@
-Invariant: validEntryProfile-AllergyIntoleranceOriginal
-* insert validEntryProfileOriginal(AllergyIntolerance,JP_AllergyIntolerance_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS)
-
-Invariant: validEntryProfile-ConditionOriginal
-* insert validEntryProfileOriginal(Condition,JP_Condition_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS)
-
-Invariant: validEntryProfile-MedicationRequestOriginal
-* insert validEntryProfileOriginal(MedicationRequest,JP_MedicationRequest_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS)
-
-Invariant: validEntryProfile-ObservationLabResultOriginal
-* insert validEntryProfileOriginal(Observation,JP_Observation_LabResult_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS)
-
-
-RuleSet: validEntryProfileOriginal(par1,par2,par3)
-* human = "Original-Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
-* severity = #error 
-* expression = "(entry.resource.ofType({par1}).exists().not()) or ((entry.resource.ofType({par1}).meta.profile.where($this.indexOf('|')>0 and ($this.indexOf('|')>0 implies ($this.substring(0,$this.indexOf('|'))='{par3}'))).exists()).not()) or ((entry.resource.ofType({par1}).meta.profile.where($this!='{par3}').exists()).not())"
-
-Invariant: validEntryProfile-AllergyIntoleranceCorrected
-* insert validEntryProfileCorrected(AllergyIntolerance,JP_AllergyIntolerance_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS)
-Invariant: validEntryProfile-ConditionCorrected
-* insert validEntryProfileCorrected(Condition,JP_Condition_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS)
-Invariant: validEntryProfile-MedicationRequestCorrected
-* insert validEntryProfileCorrected(MedicationRequest,JP_MedicationRequest_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS)
-Invariant: validEntryProfile-ObservationLabResultCorrected
-* insert validEntryProfileCorrected(Observation,JP_Observation_LabResult_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS)
-RuleSet: validEntryProfileCorrected(par1,par2,par3)
-* human = "Corrected-Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
+Invariant: validEntryProfile-AllergyIntolerance
+* insert validEntryProfile(AllergyIntolerance,JP_AllergyIntolerance_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS)
+Invariant: validEntryProfile-Condition
+* insert validEntryProfile(Condition,JP_Condition_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS)
+Invariant: validEntryProfile-MedicationRequest
+* insert validEntryProfile(MedicationRequest,JP_MedicationRequest_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS)
+Invariant: validEntryProfile-ObservationLabResult
+* insert validEntryProfile(Observation,JP_Observation_LabResult_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS)
+RuleSet: validEntryProfile(par1,par2,par3)
+* human = "Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
 * severity = #error 
 * expression = "(entry.resource.ofType({par1}).exists().not()) or ((entry.resource.ofType({par1}).meta.profile.where($this.indexOf('|')>0 and ($this.indexOf('|')>0 implies ($this.substring(0,$this.indexOf('|'))!='{par3}'))).exists()).not()) or ((entry.resource.ofType({par1}).meta.profile.where($this!='{par3}').exists()).not())"
 
