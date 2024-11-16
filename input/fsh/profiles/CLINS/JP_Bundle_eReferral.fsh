@@ -17,7 +17,7 @@ Description: "診療情報提供書 Bundle"
 
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
-* obeys validEntryProfile-MedicationRequestOriginal
+* obeys validEntryProfile-MedicationRequest
 
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
