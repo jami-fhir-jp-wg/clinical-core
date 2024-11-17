@@ -19,7 +19,7 @@ Expression: "code.coding.where(memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JL
 Profile: JP_Observation_LabResult_eCS
 Parent: JP_Observation_LabResult
 Id: JP-Observation-LabResult-eCS
-Title:  "eCS/CLINS:JP_Observation_LabResult_eCS"
+Title:  "JP_Observation_LabResult_eCS"
 Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 
 * obeys resource-needs-extension-of-institutionNumber
@@ -99,7 +99,7 @@ Description: "eCS/CLINS 診療情報・サマリー汎用 Observationリソー�
 
 * contained[performer] only  JP_Practitioner  //　CLINSでは必須
   * insert relative_short_definition("検査オーダを作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
-  * ^comment = "performer要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素、医療者識別情報だけが含まれればよい。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
+  * ^comment = "performer要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素、医療者識別情報だけが含まれればよい。電子カルテ情報サービスでは必須。"
 
 * contained[order] only  JP_ServiceRequest
   * insert relative_short_definition("診療情報におけるオーダ識別番号情報などをコンパクトに格納したServiceRequestリソース")
