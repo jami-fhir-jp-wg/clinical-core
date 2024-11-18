@@ -1,5 +1,5 @@
 
-# eCS/CLINS 診療情報・サマリー汎用：【処方依頼情報】
+# 診療情報・サマリー汎用：【処方依頼情報】
 
 ## 背景および想定シナリオ
 このプロファイルは、５情報をはじめ、診療情報提供書や退院時サマリーなどの2文書に「処方依頼情報」を記述するためのものである。
@@ -38,10 +38,10 @@
   - DosageInstruction[].timing : 服用タイミング。timing.codeにコード化された用法、timing.textに用法のテキストを記述。
 
 ### 条件により必須
-  - contained (JP_Encounter) : 電子カルテ情報共有サービス（同）では必須。処方登録時の入院外来区分情報
-  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（同）では必須。医療機関番号１０桁
-  - extension (eCS_Department) : 電子カルテ情報共有サービス（同）では必須。診療科名称（とコード）
-  - encounter : 電子カルテ情報共有サービス（同）では必須。この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
+  - contained (JP_Encounter) : 電子カルテ情報共有サービスでは必須。処方登録時の入院外来区分情報
+  - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービスでは必須。医療機関番号１０桁
+  - extension (eCS_Department) : 電子カルテ情報共有サービスでは必須。診療科名称（とコード）
+  - encounter : 電子カルテ情報共有サービスでは必須。この情報を記録したときの受診情報（入外区分など）を記述しているcontainedリソース(JP_Encounter) への参照
 
 ### 推奨要素
   - category : 薬剤使用区分

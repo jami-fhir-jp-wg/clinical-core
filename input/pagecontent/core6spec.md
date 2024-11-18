@@ -122,7 +122,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="StructureDefinition-JP-AllergyIntolerance-eCS.html" title="StructureDefinition/JP-AllergyIntolerance-eCS">JP_AllergyIntolerance_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）</p>
+<p>AllergyIntoleranceリソース（アレルギー情報／薬剤アレルギー等）</p>
 </td>
          </tr>
          <tr>
@@ -130,7 +130,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Condition-eCS.html" title="StructureDefinition/JP-Condition-eCS">JP_Condition_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS Conditionリソース（傷病名情報）</p>
+<p>Conditionリソース（傷病名情報）</p>
 </td>
          </tr>
          <tr>
@@ -138,7 +138,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-MedicationRequest-eCS.html" title="StructureDefinition/JP-MedicationRequest-eCS">JP_MedicationRequest_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS 診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）</p>
+<p>診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）</p>
 </td>
          </tr>
          <tr>
@@ -146,7 +146,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Observation-LabResult-eCS.html" title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS 診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）</p>
+<p>診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）</p>
 </td>
          </tr>
 <tr>
@@ -154,7 +154,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Patient-eCS.html" title="StructureDefinition/JP-Patient-eCS">JP_Patient_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS Patientリソース（患者情報）</p>
+<p>Patientリソース（患者情報）</p>
 </td>
          </tr>
    </table>
@@ -172,7 +172,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Encounter-eCS.html" title="StructureDefinition/JP-Encounter-eCS">JP_Encounter_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）</p>
+<p>Encounterリソース（受診時・入院時等のEncounter情報）</p>
 </td>
          </tr>
 <tr>
@@ -180,7 +180,7 @@ Bundleリソースの記述仕様の詳細については、５情報送信用Bu
                <a href="https://jpfhir.jp/fhir/eCS/ig/StructureDefinition-JP-Practitioner-eCS.html" title="StructureDefinition/JP-Practitioner-eCS">JP_Practitioner_eCS</a>
             </td>
             <td>
-<p>eCS/CLINS 診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
+<p>診療情報・サマリー汎用 Practitionerリソース（医療者情報）</p>
 </td>
          </tr>
                   <tr>

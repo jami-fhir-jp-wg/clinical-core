@@ -8,7 +8,7 @@ Profile: JP_Encounter_eCS
 Parent: JP_Encounter
 Id: JP-Encounter-eCS
 Title: "JP_Encounter-eCS"
-Description: "eCS/CLINS Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
+Description: "Encounterリソース（受診時・入院時等のEncounter情報）プロファイル"
 
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS"
 
