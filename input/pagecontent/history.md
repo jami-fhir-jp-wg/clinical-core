@@ -11,6 +11,7 @@
     - JP_Bundle_eReferral
     - JP_Bundle_eDischargeSummary
     - JP_Bundle_ePCS
+  - JP_Bundle_CLINS に設定された制約チェックで、AllergyIntolerance、Condition、MedicationRequest、ObservationLabResultに関するプロファイル（meta.profile設定値）にバージョンが記述されている場合には常にエラーになっていたのを修正した。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.4  (2024.11.10)
   - JP_Composition_eDischargeSummary
