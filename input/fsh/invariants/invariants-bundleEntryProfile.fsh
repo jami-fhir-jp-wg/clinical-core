@@ -6,6 +6,7 @@ Invariant: validEntryProfile-MedicationRequest
 * insert validEntryProfile(MedicationRequest,JP_MedicationRequest_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS)
 Invariant: validEntryProfile-ObservationLabResult
 * insert validEntryProfile(Observation,JP_Observation_LabResult_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS)
+
 RuleSet: validEntryProfile(par1,par2,par3)
 * human = "Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
 * severity = #error 
