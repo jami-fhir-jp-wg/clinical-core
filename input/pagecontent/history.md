@@ -12,6 +12,10 @@
     - JP_Bundle_eDischargeSummary
     - JP_Bundle_ePCS
   - JP_Bundle_CLINS に設定された制約チェックで、AllergyIntolerance、Condition、MedicationRequest、ObservationLabResultに関するプロファイル（meta.profile設定値）にバージョンが記述されている場合には常にエラーになっていたのを修正した。
+  - 以下のProfileの4.3 「条件により必須」の記載で、電子カルテ情報共有サービスで必須の場合に、5情報のひとつとして送信される場合と２文書に埋め込まれて送信される場合とで必須かどうかを明確にわかるように記載を修正した。
+    - JP_AllergyIntolerance_eCS
+    - JP_Condition_eCS
+    - JP_Observation_LaboResult_eCS
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.4  (2024.11.10)
   - JP_Composition_eDischargeSummary
