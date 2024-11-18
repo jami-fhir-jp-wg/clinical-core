@@ -2,7 +2,7 @@ name: Ohe-build
 on:
   push:
     branches: 
-      - ePCS-integrated
+      - 1.5.5
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,7 +10,7 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ ePCS-integrated ]
+    branches: [ 1.5.5 ]
   repository_dispatch:
     types: [update]
 env:
