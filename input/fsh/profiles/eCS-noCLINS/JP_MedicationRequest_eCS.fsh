@@ -179,7 +179,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
 * medication[x].coding[codingGeneralName].system = $JP_MedicationCodeCommon_CS (exactly) // urn:oid:1.2.392.100495.20.1.81
-  * insert relative_short_definition("厚生労働省保険局が定める一般処方名マスターコードを識別するcsystem値")
+  * insert relative_short_definition("厚生労働省保険局が定める一般処方名マスターコードを識別するsystem値")
 * medication[x].coding[codingGeneralName].system MS
 * medication[x].coding[codingGeneralName].code ^definition = "厚生労働省保険局が定める一般処方名マスターコード"
 * medication[x].coding[codingGeneralName].code 1.. MS
@@ -188,7 +188,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * insert relative_short_definition("医薬品名称。この名称は使用するコード表において選択したコードに対応する文字列とする。")
 
 * medication[x].coding[codingKYS].system = $JP_MedicationCodeKYS_CS // 規格別薬剤成分コード
-  * insert relative_short_definition("電子カルテ情報共有サービス用　規格別薬剤成分コードを識別するcsystem値")
+  * insert relative_short_definition("電子カルテ情報共有サービス用　規格別薬剤成分コードを識別するsystem値")
 * medication[x].coding[codingKYS].system MS
 * medication[x].coding[codingKYS].code ^definition = "電子カルテ情報共有サービス用　規格別薬剤成分コード"
 * medication[x].coding[codingKYS].code 1.. MS
