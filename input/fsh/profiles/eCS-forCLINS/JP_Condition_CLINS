@@ -39,45 +39,53 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、長期保存フラグ、未告知フラグ、未提供フラグの設定する場合に使用する。詳細はJP_Condition_eCSを参照のこと。")
-* meta.tag from $JP_ehrshrs_indication_VS 
+//* meta.tag from $JP_ehrshrs_indication_VS 
 
-* meta.tag  ^slicing.discriminator.type = #value
-// * meta.tag  ^slicing.discriminator.path = "$this"
+* meta.tag  ^slicing.discriminator.type = #pattern
 * meta.tag  ^slicing.discriminator.path = "code"
-* meta.tag  ^slicing.rules = #closed
+* meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
   and uninformed 0..1 MS
   and undelivered 0..1 MS
 
 * meta.tag[lts] 0..1 MS
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
+  * id ..0
+  * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS
+  //* system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  * code = #LTS (exactly)
-* meta.tag[lts] from $JP_ehrshrs_indication_VS 
+  //* meta.tag[lts] from $JP_ehrshrs_indication_VS 
+  * code = $JP_ehrshrs_indication_CS#LTS (exactly)
+ * userSelected ..0
 
 * meta.tag[uninformed] 0..1 MS
   * insert relative_short_definition("５情報作成において未告知フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
+  * id ..0
+  * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS
+  //* system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
-  * code = #UNINFORMED (exactly)
-* meta.tag[uninformed] from $JP_ehrshrs_indication_VS 
+  * code = $JP_ehrshrs_indication_CS#UNINFORMED (exactly)
+  //* meta.tag[uninformed] from $JP_ehrshrs_indication_VS 
+   * userSelected ..0
 
 * meta.tag[undelivered] 0..1 MS
   * insert relative_short_definition("５情報作成において未提供フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
+  * id ..0
+  * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS
+  //* system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
-  * code = #UNDELIVERED (exactly)
-* meta.tag[undelivered] from $JP_ehrshrs_indication_VS 
+  * code = $JP_ehrshrs_indication_CS#UNDELIVERED (exactly)
+  * userSelected ..0
+//* meta.tag[undelivered] from $JP_ehrshrs_indication_VS 
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile

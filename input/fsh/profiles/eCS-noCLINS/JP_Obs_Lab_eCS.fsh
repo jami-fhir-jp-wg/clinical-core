@@ -57,24 +57,25 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
-* meta.tag from $JP_ehrshrs_indication_VS 
-
-* meta.tag  ^slicing.discriminator.type = #value
-// * meta.tag  ^slicing.discriminator.path = "$this"
+//* meta.tag from $JP_ehrshrs_indication_VS 
+1
+* meta.tag  ^slicing.discriminator.type = #pattern
 * meta.tag  ^slicing.discriminator.path = "code"
-* meta.tag  ^slicing.rules = #closed
+* meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
 
 * meta.tag[lts] 0..1 MS
   * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
+  * id ..0
+  * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS
+  //* system = $JP_ehrshrs_indication_CS
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  * code = #LTS (exactly)
-* meta.tag[lts] from $JP_ehrshrs_indication_VS 
-
+  //* code from $JP_ehrshrs_indication_VS 
+  * code = $JP_ehrshrs_indication_CS#LTS (exactly)
+  * userSelected ..0
 
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
