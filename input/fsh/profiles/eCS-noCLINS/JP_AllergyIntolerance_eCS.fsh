@@ -74,10 +74,12 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * meta.tag[clinsTag] ^slicing.discriminator.path = "code"
 * meta.tag[clinsTag] ^slicing.rules = #closed
 * meta.tag[clinsTag] contains lts 1..1
-* meta.tag[clinsTag] code 1..1 MS
+* meta.tag[clinsTag].id 1..1 MS
+* meta.tag[clinsTag].extension 1..1 MS
+* meta.tag[clinsTag].code 1..1 MS
   * insert relative_short_definition("長期保存フラグを設定する場合には、固定値 LTSを設定する。")
-* meta.tag[clinsTag] code = $JP_ehrshrs_indication_CS#LTS (exactly)
-* meta.tag[clinsTag] userSelected ..0
+* meta.tag[clinsTag].code = $JP_ehrshrs_indication_CS#LTS (exactly)
+* meta.tag[clinsTag].userSelected ..0
 
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
