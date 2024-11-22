@@ -38,7 +38,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
 //* meta.tag from $JP_ehrshrs_indication_VS 
-
+/*
 * meta.tag  ^slicing.discriminator.type = #pattern
 * meta.tag  ^slicing.discriminator.path = "code"
 * meta.tag  ^slicing.rules = #open
@@ -56,7 +56,28 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   //* code from $JP_ehrshrs_indication_VS 
   * code = $JP_ehrshrs_indication_CS#LTS (exactly)
   * userSelected ..0
+*/
 
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "system"
+* meta.tag  ^slicing.rules = #open
+* mata.tag contains clinsTag 0..1
+
+* meta.tag[clinsTag] 0..1 MS
+  * insert relative_short_definition("電子カルテ情報共有サービスに必要なフラグを設定する場合に使用する。")
+  * id ..0
+  * extension ..0
+  * system 1..1 MS
+    * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
+  * system = $JP_ehrshrs_indication_CS (exactly)
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "code"
+  * ^slicing.rules = #closed
+  * contains lts 1..1
+  * code 1..1 MS
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+  * code = $JP_ehrshrs_indication_CS#LTS (exactly)
+  * userSelected ..0
 
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
