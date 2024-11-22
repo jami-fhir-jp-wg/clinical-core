@@ -58,7 +58,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * meta.tag 0..
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
 //* meta.tag from $JP_ehrshrs_indication_VS 
-1
+
 * meta.tag  ^slicing.discriminator.type = #pattern
 * meta.tag  ^slicing.discriminator.path = "code"
 * meta.tag  ^slicing.rules = #open

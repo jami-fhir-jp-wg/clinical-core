@@ -59,7 +59,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
   //* meta.tag[lts] from $JP_ehrshrs_indication_VS 
   * code = $JP_ehrshrs_indication_CS#LTS (exactly)
- * userSelected ..0
+  * userSelected ..0
 
 * meta.tag[uninformed] 0..1 MS
   * insert relative_short_definition("５情報作成において未告知フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
@@ -72,7 +72,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
     * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
   * code = $JP_ehrshrs_indication_CS#UNINFORMED (exactly)
   //* meta.tag[uninformed] from $JP_ehrshrs_indication_VS 
-   * userSelected ..0
+  * userSelected ..0
 
 * meta.tag[undelivered] 0..1 MS
   * insert relative_short_definition("５情報作成において未提供フラグを設定する場合に使用（本リソース種別で使用することが許可されているか、あるいは設定した情報が利用されるかどうかについては、電子カルテ情報共有サービスの運用仕様によって確認することが必要）。" )
