@@ -70,14 +70,14 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * system = $JP_ehrshrs_indication_CS (exactly)
-  * ^slicing.discriminator.type = #pattern
-  * ^slicing.discriminator.path = "code"
-  * ^slicing.rules = #closed
-  * contains lts 1..1
-  * code 1..1 MS
-    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  * code = $JP_ehrshrs_indication_CS#LTS (exactly)
-  * userSelected ..0
+* meta.tag[clinsTag] ^slicing.discriminator.type = #pattern
+* meta.tag[clinsTag] ^slicing.discriminator.path = "code"
+* meta.tag[clinsTag] ^slicing.rules = #closed
+* meta.tag[clinsTag] contains lts 1..1
+* meta.tag[clinsTag] code 1..1 MS
+  * insert relative_short_definition("長期保存フラグを設定する場合には、固定値 LTSを設定する。")
+* meta.tag[clinsTag] code = $JP_ehrshrs_indication_CS#LTS (exactly)
+* meta.tag[clinsTag] userSelected ..0
 
 
 // encounter、recorder、は最低限の情報をContainedリソースとして記述する
