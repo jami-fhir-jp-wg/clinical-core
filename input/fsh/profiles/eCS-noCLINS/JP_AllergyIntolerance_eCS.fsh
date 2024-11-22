@@ -58,10 +58,10 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * userSelected ..0
 */
 
-* meta.tag  ^slicing.discriminator.type = #value
-* meta.tag  ^slicing.discriminator.path = "system"
-* meta.tag  ^slicing.rules = #open
-* mata.tag contains clinsTag 0..1
+* meta.tag ^slicing.discriminator.type = #value
+* meta.tag ^slicing.discriminator.path = "system"
+* meta.tag ^slicing.rules = #open
+* meta.tag contains clinsTag 0..1
 
 * meta.tag[clinsTag] 0..1 MS
   * insert relative_short_definition("電子カルテ情報共有サービスに必要なフラグを設定する場合に使用する。")
