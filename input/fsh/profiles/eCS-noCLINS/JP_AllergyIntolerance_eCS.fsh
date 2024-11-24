@@ -68,6 +68,9 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * id ..0
   * extension ..0
   * system 1..1 MS
+  * version ..0 
+  * code 1..1 from $JP_ehrshrs_indication_VS
+  * userSelected ..0
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * system = $JP_ehrshrs_indication_CS (exactly)
 * meta.tag[clinsTag] ^slicing.discriminator.type = #pattern
@@ -76,6 +79,8 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * meta.tag[clinsTag] contains lts 1..1
 * meta.tag[clinsTag][lts].id ..0
 * meta.tag[clinsTag][lts].extension ..0
+* meta.tag[clinsTag][lts].system 1..1
+* meta.tag[clinsTag][lts].version ..0 
 * meta.tag[clinsTag][lts].code 1..1 MS
   * insert relative_short_definition("長期保存フラグを設定する場合には、固定値 LTSを設定する。")
 * meta.tag[clinsTag][lts].code = $JP_ehrshrs_indication_CS#LTS (exactly)
