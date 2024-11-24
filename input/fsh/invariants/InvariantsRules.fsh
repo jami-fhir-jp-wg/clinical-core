@@ -283,7 +283,7 @@ Expression: "entry.select(resource as Observation).all(contained.meta.where(prof
 Invariant: meta-tag-code-restriction
 Description: "AllergyIntoleranceには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
 Severity: #error
-Expression: meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!="LTS").exists()
+Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!="LTS").exists()"
 
 //========= 以下、未整理 =========
 // 
