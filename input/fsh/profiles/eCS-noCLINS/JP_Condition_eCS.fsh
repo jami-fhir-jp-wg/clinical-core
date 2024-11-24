@@ -54,10 +54,11 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  //* system = $JP_ehrshrs_indication_CS
+  * system = $JP_ehrshrs_indication_CS
+  * version ..0
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  //* meta.tag[lts] from $JP_ehrshrs_indication_VS 
+  * code from $JP_ehrshrs_indication_VS 
   * code = $JP_ehrshrs_indication_CS#LTS (exactly)
   * userSelected ..0
 
