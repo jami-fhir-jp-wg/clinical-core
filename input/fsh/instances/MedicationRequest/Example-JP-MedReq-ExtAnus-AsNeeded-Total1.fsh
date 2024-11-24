@@ -27,7 +27,8 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
 * language = #ja
 
-
+* meta.tag[0].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"
+* meta.tag[0].code = #LTS
 
 //* identifier[rpNumber].system = "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 

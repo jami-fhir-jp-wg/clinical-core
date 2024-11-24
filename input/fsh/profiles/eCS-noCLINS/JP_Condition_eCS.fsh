@@ -68,11 +68,12 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  //* system = $JP_ehrshrs_indication_CS
+  * system = $JP_ehrshrs_indication_CS
+  * version ..0
   * code 1..1 MS
     * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
+  * code from $JP_ehrshrs_indication_VS 
   * code = $JP_ehrshrs_indication_CS#UNINFORMED (exactly)
-  //* meta.tag[uninformed] from $JP_ehrshrs_indication_VS 
   * userSelected ..0
 
 * meta.tag[undelivered] 0..1 MS
@@ -81,9 +82,11 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  //* system = $JP_ehrshrs_indication_CS
+  * system = $JP_ehrshrs_indication_CS
+  * version ..0
   * code 1..1 MS
     * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
+  * code from $JP_ehrshrs_indication_VS 
   * code = $JP_ehrshrs_indication_CS#UNDELIVERED (exactly)
   * userSelected ..0
 //* meta.tag[undelivered] from $JP_ehrshrs_indication_VS 

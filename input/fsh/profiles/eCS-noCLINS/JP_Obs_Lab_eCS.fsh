@@ -65,15 +65,16 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * meta.tag contains lts 0..1 MS
 
 * meta.tag[lts] 0..1 MS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
+  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。指定感染症情報の場合だけ設定できる。")
   * id ..0
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  //* system = $JP_ehrshrs_indication_CS
+  * system = $JP_ehrshrs_indication_CS
+  * version ..0
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  //* code from $JP_ehrshrs_indication_VS 
+  * code from $JP_ehrshrs_indication_VS 
   * code = $JP_ehrshrs_indication_CS#LTS (exactly)
   * userSelected ..0
 
