@@ -69,7 +69,8 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * extension ..0
   * system 1..1 MS
   * version ..0 
-  * code 1..1 from $JP_ehrshrs_indication_VS
+  * code 1..1 MS
+  * code from $JP_ehrshrs_indication_VS
   * userSelected ..0
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
   * system = $JP_ehrshrs_indication_CS (exactly)
