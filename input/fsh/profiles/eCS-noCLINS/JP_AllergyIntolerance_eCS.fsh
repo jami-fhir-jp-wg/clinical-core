@@ -23,6 +23,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
+* obeys meta-tag-code-restriction
 
 * insert toplevel_short_definition("診療情報におけるアレルギー情報の格納に使用する")
 * . ^comment = "薬剤アレルギー等情報かアレルギー情報かの区別はcategory要素がmedicationかそれ以外かによる。このプロファイルは、電子カルテ情報共有サービスに送信するために適合したプロファイルである。"

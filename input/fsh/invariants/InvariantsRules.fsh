@@ -206,7 +206,7 @@ Description: "R9011:Bundleに含まれるPatient以外のリソースには、�
 Severity: #error
 Expression: "entry.tail().resource.all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').exists())"
 
-// r901101 リソースには、医療機関識別IDが必須である。
+// R901101 リソースには、医療機関識別IDが必須である。
 Invariant: resource-needs-extension-of-institutionNumber
 Description: "R901101:リソースには、医療機関識別IDが必須である。"
 Severity: #error
@@ -279,6 +279,11 @@ Description: "R9019O:Bundleに含まれるすべてのObservationのリソース
 Severity: #error
 Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner').exists())"
 
+// R70010 AllergyIntoleranceには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
+Invariant: meta-tag-code-restriction
+Description: "AllergyIntoleranceには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
+Severity: #error
+Expression: meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!="LTS").exists()
 
 //========= 以下、未整理 =========
 // 
