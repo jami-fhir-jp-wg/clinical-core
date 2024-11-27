@@ -185,7 +185,7 @@ jobs:
   
     - name: validate
       run: |
-        : # java -Xmx12G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/*Example*.json -version 4.0.1  -language ja  -ig jp-core.r4#1.1.2-clins -ig jpfhir-terminology.r4#1.2.4-url -ig fsh-generated/jp-eCSCLINS-package-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings -best-practice ignore
+        java -Xmx12G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/*Example*.json -version 4.0.1  -language ja  -ig jp-core.r4#1.1.2-clins -ig jpfhir-terminology.r4#1.2.4-url -ig fsh-generated/jp-eCSCLINS-package-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings -best-practice ignore
 
     - name: generate snapshot package using sushi -s command       
       run: |
