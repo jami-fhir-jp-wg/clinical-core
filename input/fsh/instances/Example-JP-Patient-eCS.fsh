@@ -33,7 +33,6 @@ Description: "Patientリソース　（患者情報）01  データ作成例"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = $JP_Patient
 * language = #ja
-* id = "Patient1"
 
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
 * identifier[=].value = "826739"
@@ -61,7 +60,7 @@ Description: "Patientリソース　（患者情報）02"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS|x.x.x-instance"
 * language = #ja
 
-* id = "Patient2"
+* id = "Example-Patient2"
 * identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11234567890"
 * identifier[=].value = "989"
 * identifier[+].system = "http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID"
