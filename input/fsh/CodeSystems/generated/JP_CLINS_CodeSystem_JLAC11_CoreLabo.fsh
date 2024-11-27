@@ -5,7 +5,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
 * ^url = $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2024-11-01T00:00:00.000+09:00"
-* ^version = "1.5.5"
+* ^version = "1.6.0"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
