@@ -379,6 +379,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
     - http://jpfhir.jp/fhir/eCS/ValueSet/JP_eCS_ObservationLabResultCode_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_indication
+    - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_lts_indication
+    - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_forCondition_indication
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
     - http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
@@ -386,4 +388,3 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/ex-diagnosistype
     - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/v3-ActCode
-    
