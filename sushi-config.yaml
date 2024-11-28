@@ -388,3 +388,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/ex-diagnosistype
     - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/v3-ActCode
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS
