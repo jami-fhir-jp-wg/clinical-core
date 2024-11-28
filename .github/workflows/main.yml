@@ -183,9 +183,9 @@ jobs:
         tar czf jp-eCSCLINS-package-diff.tgz package
         cp jp-eCSCLINS-package-diff.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}.tgz
   
-    - name: validate
+    - name: backup the generated files
       run: |
-        java -Xmx12G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated/resources/*Example*.json -version 4.0.1  -language ja  -ig jp-core.r4#1.1.2-clins -ig jpfhir-terminology.r4#1.2.4-url -ig fsh-generated/jp-eCSCLINS-package-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings -best-practice ignore
+        cp -r fsh-generated fsh-generated-backup
 
     - name: generate snapshot package using sushi -s command       
       run: |
@@ -264,3 +264,7 @@ jobs:
       run: |
         : # rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
   
+    - name: validate
+      run: |
+        java -Xmx12G -Djava.awt.headless=true -jar validator_cli.jar fsh-generated-backup/resources/*Example*.json -version 4.0.1  -language ja  -ig jp-core.r4#1.1.2-clins -ig jpfhir-terminology.r4#1.2.4-url -ig fsh-generated-backup/jp-eCSCLINS-package-diff.tgz -locale ja-JP -tx n/a  -want-invariants-in-messages  -no-extensible-binding-warnings  -display-issues-are-warnings   -level warnings -best-practice ignore
+

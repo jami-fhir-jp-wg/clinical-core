@@ -1,3 +1,20 @@
+//　全ての指定感染症コード
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC10
+Id: jp-clins-valueset-infectionlaboJLAC10-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC10"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC10"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC10_VS
+* ^version = "1.1.0a"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-02-25"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS where concept descendant-of #CORE-INFECTIONS
+
+
 // HBs抗原(コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGCOI_VS
 Id: jp-clins-valueset-infectionlaboJLAC10-hbsagcoi-vs

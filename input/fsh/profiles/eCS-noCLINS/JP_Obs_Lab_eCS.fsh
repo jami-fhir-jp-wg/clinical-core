@@ -11,6 +11,12 @@ Description: "Observation.codeには43項目コードに所属しているJLAC10
 Severity: #warning
 Expression: "code.coding.where(memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS')).exists()"
 
+Invariant: test-not-MemberOf-infectionLabo
+Description: "Observation.codeはinfectionLaboに属しているわけではない"
+Severity: #warning
+Expression: "(code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists()).not()"
+
+
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
 //   検体検査結果／感染症検体検査結果 リソースタイプ:Observation
@@ -24,7 +30,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 * obeys resource-needs-extension-of-institutionNumber
 //* obeys test-MemberOf-MEDIS-JLAC10
-//* obeys test-MemberOf-CoreLabo-JLAC10
+* obeys test-not-MemberOf-infectionLabo
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
