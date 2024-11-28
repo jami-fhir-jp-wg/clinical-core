@@ -54,7 +54,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * system = $JP_ehrshrs_indication_CS (exactly)
   * version ..0
   * code  ^slicing.discriminator.type = #value
-  * code  ^slicing.discriminator.path = "$thiw"
+  * code  ^slicing.discriminator.path = "$this"
   * code  ^slicing.rules = #open
   * code contains lts 1..1 MS
   * code 1..1 MS
