@@ -11,9 +11,10 @@ Description: "AllergyIntoleranceリソース CLINS必須要素のみ 長期保�
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意
-* meta.tag[+] = $JP_ehrshrs_indication_CS#UNDELIVERED  "未提供"    //任意 テスト用
+//* meta.tag[+] = $JP_ehrshrs_indication_CS#UNDELIVERED  "未提供"    //任意 テスト用
 * meta.tag[+] = http://test##LTS "test長期保存"    //任意 テスト用
 * meta.tag[+] = http://test##123 "123TEST"    //任意 テスト用
+
 * language = #ja
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber  //CLINS必須
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber  //CLINS必須

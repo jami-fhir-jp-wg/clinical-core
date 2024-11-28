@@ -1,8 +1,8 @@
-Instance: ErrorExample-JP-MedReq-ExtEye-Total1
+Instance: Example-JP-MedReq-ExtEye-Total1
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: "【意図的エラー例】：薬剤を標準コードで記述していない、入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
-* note.text = "【意図的エラー例】（薬剤コードがYJ、規格別成分コードのいずれも存在しない）：入院処方　外用（点眼）全量処方　1回量をコードで記述できない例. "
+Description: "【注意喚起例】：薬剤を標準コードで記述していない、入院処方　外用（点眼）全量処方　1回量をコードで記述できない例"
+* note.text = "【注意喚起例】（薬剤コードがYJ、規格別成分コードのいずれも存在しない）：入院処方　外用（点眼）全量処方　1回量をコードで記述できない例. "
 
 //* text.status = #additional
 //* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（点眼）全量処方　1回量をコードで記述できない例</p> </div>"
@@ -10,7 +10,7 @@ Description: "【意図的エラー例】：薬剤を標準コードで記述し
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
-* id = "ErrorExample-JP-MedReq-ExtEye-Total1"
+* id = "Example-JP-MedReq-ExtEye-Total1"
 
 // * contained[+] = Example-Patient-minimun
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D001
