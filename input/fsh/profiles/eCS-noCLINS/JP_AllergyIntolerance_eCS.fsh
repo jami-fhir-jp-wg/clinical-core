@@ -43,20 +43,24 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * meta.tag  ^slicing.discriminator.type = #value
 * meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
-* meta.tag contains lts 0..1 MS
+* meta.tag contains clinsTag 0..1 MS
 
-* meta.tag[lts] 0..1 MS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。")
+* meta.tag[clinsTag] 0..1 MS
+  * insert relative_short_definition("電子カルテ情報共有サービスでフラグを設定する場合に使用する。")
   * id ..0
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS  (exactly)
+  * system = $JP_ehrshrs_indication_CS (exactly)
   * version ..0
+  * code  ^slicing.discriminator.type = #value
+  * code  ^slicing.discriminator.path = "$thiw"
+  * code  ^slicing.rules = #open
+  * code contains lts 1..1 MS
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
   * code from $JP_ehrshrs_indication_lts_VS 
-  //* code = $JP_ehrshrs_indication_CS#LTS
+  * code = $JP_ehrshrs_indication_CS#LTS
   * userSelected ..0
 
 /*
