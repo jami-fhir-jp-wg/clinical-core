@@ -40,8 +40,8 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
 //* meta.tag from $JP_ehrshrs_indication_VS 
 
-* meta.tag  ^slicing.discriminator.type = #pattern
-* meta.tag  ^slicing.discriminator.path = "code"
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
 
@@ -51,12 +51,12 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS
+  * system = $JP_ehrshrs_indication_CS  (exactly)
   * version ..0
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
   * code from $JP_ehrshrs_indication_lts_VS 
-  * code = $JP_ehrshrs_indication_CS#LTS (exactly)
+  //* code = $JP_ehrshrs_indication_CS#LTS
   * userSelected ..0
 
 /*
