@@ -279,9 +279,15 @@ Description: "R9019O:Bundleに含まれるすべてのObservationのリソース
 Severity: #error
 Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner').exists())"
 
-// R70010 AllergyIntoleranceには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
-Invariant: meta-tag-code-restriction
-Description: "AllergyIntoleranceには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
+// R70010 このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
+Invariant: meta-tag-code-LTS-restriction
+Description: "このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
+Severity: #error
+Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
+
+// R70010 このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
+Invariant: meta-tag-code-LTS-restriction
+Description: "このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
 

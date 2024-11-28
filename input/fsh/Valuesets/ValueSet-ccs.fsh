@@ -89,7 +89,43 @@ Description: "長期保存／未告知診療情報のためのフラグコード
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system JP_ehrshrs_indication_CS
+//* include codes from system $JP_ehrshrs_indication_CS
+* $JP_ehrshrs_indication_CS#LTS  "長期保存"
+* $JP_ehrshrs_indication_CS#UNINFORMED  "未告知"
+* $JP_ehrshrs_indication_CS#UNDELIVERED  "未提供"
+
+ValueSet: JP_ehrshrs_indication_forCondition_VS
+Id: jp-ehrshrs-indication-forCondition-vs
+Title: "病名情報のための長期保存／未告知診療情報等のフラグコード　valueSet"
+Description: "病名情報のための長期保存／未告知診療情報等のフラグコード　valueSet"
+* ^url = $JP_ehrshrs_indication_forCondition_VS
+* ^title = "病名情報のための長期保存／未告知診療情報等のフラグコード　valueSet"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-02-25"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+//* include codes from system $JP_ehrshrs_indication_CS
+* $JP_ehrshrs_indication_CS#LTS  "長期保存"
+* $JP_ehrshrs_indication_CS#UNINFORMED  "未告知"
+* $JP_ehrshrs_indication_CS#UNDELIVERED  "未提供"
+
+ValueSet: JP_ehrshrs_indication_LTS_VS
+Id: jp-ehrshrs-indication-lts-vs
+Title: "長期保存のためのフラグコード　valueSet"
+Description: "長期保存のためのフラグコード　valueSet"
+* ^url = $JP_ehrshrs_indication_lts_VS
+* ^title = "長期保存のためのフラグコード　valueSet"
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-02-25"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+//* include codes from system $JP_ehrshrs_indication_CS
+* $JP_ehrshrs_indication_CS#LTS  "長期保存"
+
 
 ValueSet:  JP_CLINS_BundleResourceType_VS
 Id:   jp-clins-bundleresourcetype-vs
