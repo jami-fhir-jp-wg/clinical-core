@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-PO-SID-28days
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
-* note.text = "退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
+Description: "退院時処方　薬剤コード＝YJコード　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
+* note.text = "退院時処方　退院時処方　薬剤コード＝YJコード　内服1日1回１回1錠 標準用法フルコード化28日分処方例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>退院時処方　内服1日1回１回1錠 標準用法フルコード化28日分処方例</p> </div>"
@@ -12,12 +12,11 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-PO-SID-28days"
 
-// * contained[+] = Example-Contained-JP-Patient-minimun
+// * contained[+] = Example-Patient-minimun
 * contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
-* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
-* meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
+//* meta.profile = $JP_MedicationRequest_eCS
 * language = #ja
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // 
@@ -33,12 +32,11 @@ Description: "退院時処方　内服1日1回１回1錠 標準用法フルコ�
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#DCG "退院処方"
 * category.coding[+] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "退院時処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeCommon_CS#1124030F2ZZZ "【般】クアゼパム錠２０ｍｇ"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeYJ_CS#1124030F2017 "クアゼパム２０ｍｇ錠"
 * medicationCodeableConcept.coding[+] = $Icode#I1379700 "クアゼパム錠２０ｍｇ"
 * medicationCodeableConcept.text = "クアゼパム錠２０ｍｇ"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
-
 
 * subject.type = "Patient"
 
