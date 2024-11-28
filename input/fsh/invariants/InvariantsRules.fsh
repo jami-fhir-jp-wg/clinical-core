@@ -285,11 +285,6 @@ Description: "このリソースには、電子カルテ情報共有サービス
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
 
-// R70010 このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
-Invariant: meta-tag-code-LTS-restriction
-Description: "このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
-Severity: #error
-Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
 
 //========= 以下、未整理 =========
 // 
