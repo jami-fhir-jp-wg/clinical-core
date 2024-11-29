@@ -665,7 +665,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * hasMember MS
 * hasMember ^short = "この検査に含まれる個々の検査結果項目を示す。"
 * hasMember ^definition = "この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。commentも参照のこと。"
-* hasMember ^comment = "この検査が複数の検査項目をグループ化したパネル検査もしくはバッテリー検査の場合に、このグループに含まれる個々の検査の参照へのリストである。この場合には、本Observationリソースのvalueは存在しない。Bundleリソースなどで本リソースから参照可能なObservationリソースが同時に存在する場合には、そのリソースの識別URIを参照する。個々の子検査の結果Observationリソースを、このリソースにContainedリソースとして埋め込むのではなく、別の検査結果Observationリソースとして作成し、Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照）をとる。ただし、実際にこの方式で記述するか、または別々のObservationリソースで記述するかについては、記述方針が別途定められている場合にはそれに従う。"
+* hasMember ^comment = "この検査が複数の検査項目をグループ化したパネル検査もしくはバッテリー検査の場合に、このグループに含まれる個々の検査の参照へのリストである。この場合には、本Observationリソースのvalueは存在しない。Bundleリソースなどで本リソースから参照可能なObservationリソースが同時に存在する場合には、そのリソースの識別URIを参照する。個々の子検査の結果Observationリソースを、このリソースにContainedリソースとして埋め込むのではなく、別の検査結果Observationリソースとして作成し、Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照）をとる。ただし、実際にこの方式で記述するか、または別々のObservationリソースで記述するかについては、記述方針が別途定められている場合にはそれに従う。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
 * hasMember only Reference(JP_Observation_LabResult)
 * derivedFrom only Reference(JP_Observation_LabResult)
 * derivedFrom ^short = "派生元（素材元）の検査結果への参照のリスト。"
