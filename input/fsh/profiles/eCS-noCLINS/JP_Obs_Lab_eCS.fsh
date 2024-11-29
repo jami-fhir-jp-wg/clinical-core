@@ -18,7 +18,7 @@ Expression: "(code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/
 
 Invariant: check-MemberOf-infectionLabo
 Description: "指定感染症検査の場合だけ長期保存フラグが設定できる。それ以外の検査やフラグは設定できない。"
-Severity: #warning
+Severity: #error
 Expression: "(meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication').exists().not()) or  ((meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code='LTS').exists()) and (code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists()))"
 
 // ==================================================
