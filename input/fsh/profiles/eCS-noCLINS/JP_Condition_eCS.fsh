@@ -58,7 +58,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * version ..0
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  * code from $JP_ehrshrs_indication_VS 
+  * code from $JP_ehrshrs_indication_forCondition_VS 
   * code = $JP_ehrshrs_indication_CS#LTS (exactly)
   * userSelected ..0
 
@@ -72,7 +72,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * version ..0
   * code 1..1 MS
     * insert relative_short_definition("未告知フラグ　固定値 UNINFORMEDを設定する。")
-  * code from $JP_ehrshrs_indication_VS 
+  * code from $JP_ehrshrs_indication_forCondition_VS 
   * code = $JP_ehrshrs_indication_CS#UNINFORMED (exactly)
   * userSelected ..0
 
@@ -86,7 +86,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * version ..0
   * code 1..1 MS
     * insert relative_short_definition("未提供フラグ　固定値 UNDELIVEREDを設定する。")
-  * code from $JP_ehrshrs_indication_VS 
+  * code from $JP_ehrshrs_indication_forCondition_VS 
   * code = $JP_ehrshrs_indication_CS#UNDELIVERED (exactly)
   * userSelected ..0
 //* meta.tag[undelivered] from $JP_ehrshrs_indication_VS 

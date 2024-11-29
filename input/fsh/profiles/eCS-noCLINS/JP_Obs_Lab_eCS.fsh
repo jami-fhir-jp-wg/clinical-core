@@ -14,8 +14,12 @@ Expression: "code.coding.where(memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JL
 Invariant: test-not-MemberOf-infectionLabo
 Description: "Observation.codeはinfectionLaboに属しているわけではない"
 Severity: #warning
-Expression: "(code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists()).not()"
+Expression: "(code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists())"
 
+Invariant: check-MemberOf-infectionLabo
+Description: "指定感染症検査の場合だけ長期保存フラグが設定できる。それ以外の検査やフラグは設定できない。"
+Severity: #warning
+Expression: "(meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication').exist().not())  OR  ((meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code='LTS').exist()) AND (code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists()))"
 
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
@@ -31,6 +35,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * obeys resource-needs-extension-of-institutionNumber
 //* obeys test-MemberOf-MEDIS-JLAC10
 * obeys test-not-MemberOf-infectionLabo
+* obeys check-MemberOf-infectionLabo
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
@@ -65,25 +70,24 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * insert relative_short_definition("電子カルテ情報共有サービスでは、サービス側でのデータ取扱いを各種フラグで指定するために使用する。")
 //* meta.tag from $JP_ehrshrs_indication_VS 
 
-* meta.tag  ^slicing.discriminator.type = #pattern
-* meta.tag  ^slicing.discriminator.path = "code"
+* meta.tag  ^slicing.discriminator.type = #value
+* meta.tag  ^slicing.discriminator.path = "system"
 * meta.tag  ^slicing.rules = #open
 * meta.tag contains lts 0..1 MS
 
 * meta.tag[lts] 0..1 MS
-  * insert relative_short_definition("電子カルテ情報共有サービスで長期保存フラグを設定する場合に使用する。指定感染症情報の場合だけ設定できる。")
+  * insert relative_short_definition("電子カルテ情報共有サービスでフラグを設定する場合に使用する。指定感染症検査の場合のみ設定できる。")
   * id ..0
   * extension ..0
   * system 1..1 MS
     * insert relative_short_definition("固定値 http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication　を設定する。" )
-  * system = $JP_ehrshrs_indication_CS
+  * system = $JP_ehrshrs_indication_CS (exactly)
   * version ..0
   * code 1..1 MS
     * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
-  * code from $JP_ehrshrs_indication_VS 
-  * code = $JP_ehrshrs_indication_CS#LTS (exactly)
+  * code from $JP_ehrshrs_indication_lts_VS 
+  * code = $JP_ehrshrs_indication_CS#LTS
   * userSelected ..0
-
 
 // Patinet、Specimen、オーダ医療機関、は最低限の情報をContainedリソースとして記述する
 * contained ^slicing.discriminator.type = #profile
