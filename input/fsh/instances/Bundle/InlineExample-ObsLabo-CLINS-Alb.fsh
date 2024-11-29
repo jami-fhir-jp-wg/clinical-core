@@ -2,12 +2,13 @@ Instance: InlineExample-JP-Obs-LabResult-eCS-Alb
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
 Description: "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
+* note.text = "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
-* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS "長期保存"
-* language = #ja
+//* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS "長期保存"
+//* language = #ja
 
 
 
@@ -46,7 +47,9 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 * issued = "2021-07-05T15:38:59.000+09:00"
+
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+
 * valueQuantity.value = 3.9
 * valueQuantity.unit = "mg/L"
 //* interpretation.coding.version = "4.0.1"

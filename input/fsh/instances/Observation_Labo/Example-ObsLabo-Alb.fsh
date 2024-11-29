@@ -1,14 +1,15 @@
 Instance: Example-JP-Obs-LabResult-eCS-Alb
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
-Description: "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
-* note.text = "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
+Description: "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
+* note.text = "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
-* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS "長期保存"
-* language = #ja
+//* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS "長期保存"
+//* language = #ja
+
 
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
@@ -22,7 +23,7 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
 
-//* contained[+] = Example-Contained-JP-Patient-eCS-01-Contained
+// 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB
 
 // 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
@@ -44,6 +45,7 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
+
 * issued = "2021-07-05T15:38:59.000+09:00"
 
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)

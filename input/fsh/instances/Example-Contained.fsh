@@ -1,7 +1,7 @@
 
 //-------- 埋め込み　Encounterリソース（外来受診）受診01
 Instance: Example-Contained-JP-Encounter-AMB
-InstanceOf: JP_Encounter
+InstanceOf: JP_Encounter_eCS
 Usage: #example
 Description: "埋め込み　Encounterリソース（外来受診）データ作成例"
 
@@ -23,7 +23,7 @@ Description: "埋め込み　Encounterリソース（外来受診）データ作
 
 //-------- 埋め込み　入院01
 Instance: Example-Contained-JP-Encounter-IMP
-InstanceOf: JP_Encounter
+InstanceOf: JP_Encounter_eCS
 Usage: #example
 Description: "Encounterリソース（入院） データ作成例"
 

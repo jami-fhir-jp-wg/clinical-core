@@ -33,8 +33,13 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys condition-needs-extension-of-Department
 * obeys condition-needs-onsetDateTime
 
-* obeys observation-needs-contained-of-Encounter
-* obeys observation-needs-extension-of-Department
+* obeys observation-needs-contained-of-Encounter //contained (JP_Encounter) :電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-needs-extension-of-Department  //extension (eCS_Department) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-needs-performer //performer : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-needs-contained-of-Practitioner //contained (JP_Practitioner) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-needs-extension-of-InstitutionNumber //extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-needs-encounter //encounter : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-has-no-hasMember //hasMember : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない
 
 * obeys first-bundle-entry-is-Patient // "R0211:最初のentryはPatientでなければならない。"
 * obeys patients-profile-is-JP-Patient-eCS  // R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。
