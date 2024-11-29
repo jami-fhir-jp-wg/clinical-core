@@ -10,7 +10,7 @@ Description: "AllergyIntoleranceリソース CLINS必須要素のみ 長期保�
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.x.x-instance"
-* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意
+//* meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"    //任意  これは感染症ではないのでエラーになる
 //* meta.tag[+] = $JP_ehrshrs_indication_CS#UNDELIVERED  "未提供"    //任意 テスト用
 //* meta.tag[+] = http://test##LTS "test長期保存"    //任意 テスト用
 //* meta.tag[+] = http://test##123 "123TEST"    //任意 テスト用
