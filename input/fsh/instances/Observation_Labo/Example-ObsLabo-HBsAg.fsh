@@ -36,7 +36,7 @@ Description: "Observationリソース（検体検査結果）HBs抗原(定性)�
 
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#5F016141002306311 "HBs抗原(定性)"
-* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#5F016141002306311  "HBs抗原(定性)"
+* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS#5F016141002306311  "HBs抗原(定性)"
 //* code.coding[+] = $LocalExamHistoryItemCode#0000181800 "HBs抗原(定性)"
 
 * code.text = "HBs抗原(定性)"
