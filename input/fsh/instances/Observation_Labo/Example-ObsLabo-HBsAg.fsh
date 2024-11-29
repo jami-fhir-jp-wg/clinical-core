@@ -49,7 +49,7 @@ Description: "Observationリソース（検体検査結果）HBs抗原(定性)�
 
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
-* valueString.value = "1"
+* valueString = "1"
 * specimen = Reference(Specimen/Example-Contained-JP-Specimen-Serum)
 * specimen.type = "Specimen"
 

@@ -12,8 +12,11 @@
     - component要素を「4.2 条件により必須」の記載に合わせてMustSupportフラグを追加。definitionの記述を「6.1　Obsetvation表」での記載に合わせ、その上で、「ただし、実際にこの方式で記述するか、または別々のObservationリソースで記述するかについては、記述方針が別途定められている場合にはそれに従う。」との但し書きを追記。
   - JP_Condition_eCS　の「4.1 必須要素」
     - code の説明で「病名管理番号だけが仕様できる」の記載を「6.1　Condition表」の趣旨に合わせ、「病名管理番号を必須とする。」と記載を修正。
-  - 以下のリソースのmeta.tagに電子カルテ情報共有サービスで定義されるフラグ（長期保存フラグ、
-
+  - 以下のリソースのmeta.tagに電子カルテ情報共有サービスで定義されるフラグ（長期保存フラグなど)以外のシステム独自フラグを別のsystem値と組み合わせて設定することを可能にした（スライスをopenに変更）。また電子カルテ情報共有サービスで使うフラグにおいて、仕様で記載されたフラグ以外の値を設定すると制約チェック時でエラーになるようにした。
+    - JP_AllergyIntolerance_eCS（LTSのみ可）
+    - JP_Condition_eCS（LTS、UNINFORMED、UNDELIVEREDのいずれかのみ可）
+    - JP_Observation_LaboResult_eCS（指定感染症の検査結果でのみLTSのみ可、その他の検査結果ではLTSは制約チェック時にエラーとなる）
+    
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.5  (2024.11.18)
   - 以下のProfileにidentifier.systemとidentifier.valueの仕様準拠の制約チェックをConstraintsに追加した。
     - JP_Bundle_eReferral
