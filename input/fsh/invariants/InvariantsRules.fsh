@@ -285,11 +285,6 @@ Description: "R9020O:Bundleに含まれるすべてのObservationリソースに
 Severity: #error
 Expression: "entry.select(resource as Observation).all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').exists())"
 
-// R9021O Bundleに含まれるObservationリソースには、Contained JP_Practitionerリソースが必須である。
-Invariant: observation-needs-contained-of-Practitioner
-Description: "R9013O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Practitionerリソースが必須である。"
-Severity: #error
-Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner').exists())"
 
 // R70010 このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
 Invariant: meta-tag-code-LTS-restriction
