@@ -264,7 +264,7 @@ jobs:
       run: |
         : # rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
   
-    - name: rsync remote-site-deploy
+    - name: validate and rsync the log to remote-site
       run: |
         ./script/validateInstances.sh ${{ env.release_version }} ${{ env.CURRENT_DATETIME }}
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  validateLog ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/output/ --exclude .htaccess
