@@ -196,9 +196,20 @@ Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://
 Invariant: needs-localCode-observation-laboresult
 Description: "R6021:observation.code.codingには、ローカルコード記述が必須である。（system=\"http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS\")"
 Severity: #error
-Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
+Expression: "entry.select(resource as Observation).all(code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists())"
 
-//
+// R6081: hasMember要素は、電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない
+Invariant: observation-has-no-hasMember
+Description: "R6081: hasMember要素は、電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(hasMember.exists().not())"
+
+// R6031 Observation CLINS ではLTS長期保存フラグが指定感染症でのみ記述可能である。
+Invariant: check-LTS-MemberOf-infectionLabo
+Description: "R6031 Observation CLINS ではLTS長期保存フラグが指定感染症でのみ記述可能である。"
+Severity: #error
+Expression: "entry.select(resource as Observation).all((meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication').exists().not()) or  ((meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code='LTS').exists()) and (code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists())))"
+
 
 // R9011  Bundleに含まれるリソースには、医療機関識別IDが必須である。
 Invariant: all-entries-needs-extension-of-institutionNumber
