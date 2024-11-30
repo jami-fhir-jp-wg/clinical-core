@@ -1,9 +1,8 @@
 #!/bin/bash
 \rm -rf ~/.fhir
 cp -r ~/.fhir_sushiVersion ~/.fhir
-pkgVersion="1.5.2"
+pkgVersion="1.5.5"
 sushi -s .
-cp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCodeFrom.R5_5.5.0.json
 cd fsh-generated
 mv resources package
 cp ../forPackageRelease/package-snap.json package/package.json
@@ -19,6 +18,6 @@ rm ../pkgValidation/jp-clins.r4*.tgz
 cp jp-clins.r4-${pkgVersion}-snap.tgz ../packages_snapshot
 cp jp-clins.r4-${pkgVersion}.tgz ../pkgValidation
 cd ..
-\rm -rf ~/.fhir
-cp -r ~/.fhir.validation ~/.fhir
+#\rm -rf ~/.fhir
+#cp -r ~/.fhir.validation ~/.fhir
 #rm -rf fsh-generatedz1
