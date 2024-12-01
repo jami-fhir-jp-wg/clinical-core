@@ -4,7 +4,7 @@
 2）　その他、CLINSでは必須という要素のチェックを別ファイルに定義して、それをすべて行うこと。
 */
 
-// R1112- 患者氏名に漢字、カナのどちらかが存在している
+// R1112- 患者氏名に漢字、カナのどちらかが存在している　未使用
 Invariant: either-KanjiName-KanaName-exist
 Description: "R1112- 患者氏名に漢字、カナのどちらかが存在している。"
 Severity: #error
@@ -24,7 +24,7 @@ Severity: #error
 Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,1) = '1' and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(32).matches('^[0-4][0-9][1-3][0-9]{7}$')) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
 
 
-Invariant: valid-system-local-patientID-with-institutionNumber
+Invariant: valid-system-local-patientID-with-institutionNumber　//未使用
 Description: "R1011:施設患者IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.51.[1+施設番号10桁]'であり、かつその施設番号10桁はextension[eCS_InstitutionNumber].valueIdentifier.value値と一致しなければならない。"
 Severity: #error
 Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,11) = '1' + extension('http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').value.ofType(Identifier).value) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
@@ -53,26 +53,26 @@ Severity: #error
 Expression: "value.ofType(Identifier).value.matches('[0-4][0-9][1-3][0-9]{7}')"
 
 
-Invariant: valid-system-local-doctorID
+Invariant: valid-system-local-doctorID //未使用
 Description: "R1090:施設医師IDを記述する場合には、identifier.systemは、'urn:oid:1.2.392.100495.20.3.41.[1+施設番号10桁]'でなければならない。"
 Severity: #error
 Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.')).system.substring(31,1) = '1' and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.')).system.substring(32).matches('^[0-4][0-9][1-3][0-9]{7}$')) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.41.').empty())"
 
 // R2011-  アレルギー・薬剤アレルギー等関係チェック
-Invariant: warning-medication-allergy
+Invariant: warning-medication-allergy　//未使用
 Description: "注意喚起：R2011:薬剤アレルギー等情報として本リソース種別を使用するのであれば、category要素は\"medication\"で、criticality要素は\"high\"を設定しなければならない。このままcriticality要素が\"high\"以外で差し支えなければ修正不要。"
 Severity: #warning
 Expression: "(category.where($this='medication').exists() and criticality='high') or (category.where($this='medication').exists()).not()"
 
 
 // R2012  薬剤アレルギー等で「YJまたは一般名医薬品コード」を使用すること（電子カルテ情報交換サービスの場合）
-Invariant: valid-contraIndication-code
+Invariant: valid-contraIndication-code　//未使用
 Description: "R2012:薬剤アレルギー等情報としてcategory要素は\"medication\"で、criticality要素は\"high\"の場合には、code要素はYJまたは一般名医薬品コードでなければならない。それ以外の（薬剤アレルギー等でない）場合にはJFAGYコードを使用すること。"
 Severity: #error
 Expression: "(category.where($this='medication').exists() and criticality='high' and (code.coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1 or code.coding.where(system = 'urn:oid:1.2.392.100495.20.1.81').count()=1)) or (category.where($this='medication').count()=0 or criticality!='high')"
 
 // R2013  アレルギーではJFAGYを使用すること（電子カルテ情報交換サービスの場合）
-Invariant: valid-allergy-code
+Invariant: valid-allergy-code　//未使用
 Description: "R2013:薬剤アレルギー等でないアレルギーの場合にはJFAGYコードを使用すること。"
 Severity: #error
 Expression: "(category.where($this='medication').count()=1 and criticality='high') or ((category.where($this='medication').count()=0 or criticality!='high') and (code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS').count()=1 or  code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS').count()=1 or code.coding.where(system = 'http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyMedicationAllergen_CS').count()=1))"
@@ -89,22 +89,22 @@ Severity: #error
 Expression: "(timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists() and timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()).not()"
 
 
-Invariant: mhlw-check
+Invariant: mhlw-check　//未使用
 Description: "厚労省用法コード（電子処方箋）がつかわれている"
 Severity: #error
 Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists()"
 
-Invariant: mhlw-not-check
+Invariant: mhlw-not-check　//未使用
 Description: "厚労省用法コード（電子処方箋）がつかわれていない"
 Severity: #error
 Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists().not()"
 
-Invariant: dummy-check
+Invariant: dummy-check　//未使用
 Description: "ダミー用用コードがつかわれている"
 Severity: #error
 Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists()"
 
-Invariant: dummy-not-check
+Invariant: dummy-not-check  //未使用
 Description: "ダミー用用コードがつかわれていない"
 Severity: #error
 Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists().not()"
@@ -168,7 +168,7 @@ Description: "R02151:Bundle.identifier.sysyemは、http://jpfhir.jp/fhir/clins/b
 Severity: #error
 Expression: "identifier.where(system='http://jpfhir.jp/fhir/clins/bundle-identifier').exists()"
 
-// R02152- BundleIDチェック　要修正
+// R02152- BundleIDチェック
 Invariant: valid-value-bundleIdenfifier
 Description: "R2152:Bundle.identifier.value は、医療機関番号10桁^西暦４件^36文字以内の半角文字列（英字、数字、ハイフン記号のみ可）であること。'^[0-4][0-9][1-3][0-9]{7}[\\^]20[2-3][0-9][\\^][A-Za-z0-9\\-]{1,36}$'"
 Severity: #error
@@ -234,13 +234,13 @@ Expression: "entry.tail().resource.all(extension.where(url='http://jpfhir.jp/fhi
 Invariant: observation-needs-contained-of-Encounter
 Description: "R9013O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
-
+Expression: "entry.select(resource as Observation).all(contained.meta.where((profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter') or (profile='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS')).exists())"
+                
 // R9013C  Bundleに含まれるConditionリソースには、Contained JP_Encounterリソースが必須である。
 Invariant: condition-needs-contained-of-Encounter
 Description: "R9013C:Bundleに含まれるすべてのConditionのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter').exists())"
+Expression: "entry.select(resource as Condition).all(contained.meta.where((profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter') or (profile='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS')).exists())"
 
 // R9014C  Bundleに含まれるConditionリソースには、診療科拡張が必須である。
 Invariant: condition-needs-extension-of-Department
@@ -254,33 +254,33 @@ Description: "R9014O:Bundleに含まれるすべてのObservationリソースに
 Severity: #error
 Expression: "entry.select(resource as Observation).all(extension.where(url='http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department').exists())"
 
-// R9015C  Bundleに含まれるConditionリソースでは、onsetDateTimeが必須である。
+// R9015C  Bundleに含まれるConditionリソースでは、onsetDateTime要素が必須である。
 Invariant: condition-needs-onsetDateTime
-Description: "R9013C:Bundleに含まれるすべてのConditionのリソースでは、onsetDateTimeが必須である。"
+Description: "R9013C:Bundleに含まれるすべてのConditionのリソースでは、onsetDateTime要素が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(onset.ofType(dateTime).exists())"
 
-// R9016C  Bundleに含まれるConditionリソースには、encounterが必須である。
+// R9016C  Bundleに含まれるConditionリソースには、encounter要素が必須である。
 Invariant: condition-needs-encounter
-Description: "R9016C:Bundleに含まれるすべてのConditionのリソースには、encounterが必須である。"
+Description: "R9016C:Bundleに含まれるすべてのConditionのリソースには、encounter要素が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(encounter.exists())"
 
-// R9016O  Bundleに含まれるObservationリソースには、encounterが必須である。
+// R9016O  Bundleに含まれるObservationリソースには、encounter要素が必須である。
 Invariant: observation-needs-encounter
-Description: "R9016O:Bundleに含まれるすべてのObservationのリソースには、encounterが必須である。"
+Description: "R9016O:Bundleに含まれるすべてのObservationのリソースには、encounter要素が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Observation).all(encounter.exists())"
 
-// R9017O  Bundleに含まれるObservationリソースには、performerが必須である。
+// R9017O  Bundleに含まれるObservationリソースには、performer要素が必須である。
 Invariant: observation-needs-performer
-Description: "R9017O:Bundleに含まれるすべてのObservationのリソースには、performerが必須である。"
+Description: "R9017O:Bundleに含まれるすべてのObservationのリソースには、performer要素が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Observation).all(performer.exists())"
 
-// R9018C  Bundleに含まれるCoditionリソースには、abatementDateTimeが必須である。
+// R9018C  Bundleに含まれるCoditionリソースには、abatementDateTime要素が必須である。
 Invariant: condition-needs-abatementDateTime
-Description: "R9018C:Bundleに含まれるすべてのConditionのリソースには、abatementDateTimeが必須である。"
+Description: "R9018C:Bundleに含まれるすべてのConditionのリソースには、abatementDateTime要素が必須である。"
 Severity: #error
 Expression: "entry.select(resource as Condition).all(abatement.ofType(dateTime).exists())"
 
@@ -288,7 +288,7 @@ Expression: "entry.select(resource as Condition).all(abatement.ofType(dateTime).
 Invariant: observation-needs-contained-of-Practitioner
 Description: "R9019O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Practitionerリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Observation).all(contained.meta.where(profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner').exists())"
+Expression: "entry.select(resource as Observation).all(contained.meta.where((profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Practitioner') or (profile='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Practitioner_eCS')).exists())"
 
 // R9020O  Bundleに含まれるObservationリソースには、医療機関番号拡張が必須である。
 Invariant: observation-needs-extension-of-InstitutionNumber
@@ -303,114 +303,9 @@ Description: "このリソースには、電子カルテ情報共有サービス
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
 
-
-//========= 以下、未整理 =========
-// 
-// Bundleルール
-// Profileで書けるものはProfileで書く
-//
-//
-/*
-//
-
-
-
-## Bundleリソースのタイプ（type要素）は”collection”を使用する。
-必須ルール
-JP_FHIR Profile
-Bundle.type = "collection"
-
-//
-## 1回で送信するひとつのBundleリソースには、4タイプのいずれかひとつのリソースタイプのデータと、患者を識別するためのPatientリソース1個だけを格納する。
-複数のリソースタイプのデータをひとつのBundleリソースに混在させて送信することはできない。
-必須ルール
-JP_FHIR Profile
-entry contains... で closed slicing で記述されている。
-
-//
-
-## どのリソースタイプを格納しているかの情報を明示的に設定するため、Bundleリソースの　meta.tagにリソースタイプを設定する。
-必須ルール
-JP_FHIR Profile
-Bundle.meta.tag 
-Bundle.meta.tag  ^slicing.discriminator.type = #value
-Bundle.meta.tag  ^slicing.discriminator.path = "system"
-Bundle.meta.tag  ^slicing.rules = #open
-Bundle.meta.tag contains resourceType 1..1
-meta.tag[resourceType].system = _CLINS_BundleResourceType_CS
-meta.tag[resourceType].code from $JP_CLINS_BundleResourceType_VS
-
-//
-Invariant: first-bundle-entry-is-Patient
-Description: "R0211:最初のentryはPatientでなければならない。"
-
-//
-Invariant: patients-profile-is-JP-Patient-CLINS-eCS
-Description: "R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。" d
-
-## ひとつのBundleリソースには、ひとりの患者の、同時に１回で報告される一連のデータ（１報告単位のデータ）だけを、すべて漏れなく格納する。
-必須ルール
-運用ルール
-
-
-## Bundle.identifier.system : system値として、”http://jpfhir.jp/fhir/clins/bundle-identifier” を設定する。
-必須ルール
-JP_FHIR Profile
-* identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
-
-## Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設定する。
-必須ルール
-Invariant: valid-value-bundleIdenfifier
-
-## Bundle.entry[] に繰り返しで格納される個々のリソース・インスタンスは、必ずBundle.entry[].fullUrl要素に、uuidをその都度毎回生成して設定しなければならない。
-必須ルール
-Bundle Profile
-
-## 同じリソースインスタンスを別のBundleリソースにより再送する場合でも、前回使用したuuidを使用してはならない（エラーにはならない）。 
-必須ルール
-運用ルール　and 受信側チェック
-
-## 1回で送信するひとつのBundleインスタンスの中に同一のuuidが存在してはならない（エラーとなる）。
-必須ルール
-Bundle Profile
-
-## このuuidによるBundle内のentryの識別子を、前回送信時の特定のentryの内容を受信側に指し示すための識別子として利用することはできない。
-必須ルール
-運用ルール　and 受信側チェック
-
-## FHIR検査項目情報」の設定パターン、「FHIR検査項目情報」の設定パターン適用規則
-必須ルール
-JP Profile and JP Terminology
-
-## 感染症情報とそれ以外の検体検査結果情報の区別
-必須ルール
-JP Profile and JP Terminology
-
-## 薬剤アレルギーとその他アレルギー等の情報の区別
-必須ルール
-JP Profile and JP Terminology
-
-## 「被保険者個人識別子」の文字列仕様
-必須ルール
-Invariant: valid-value-insurance-patientIdentifier
-Invariant: valid-system-insurance-patientIdentifier
-
-## 「被保険者個人識別子」の指定system
-必須ルール
-Invariant: valid-system-insurance-patientIdentifier
-
-## 被保険者個人識別子は、Patientリソースのidentifier要素のvalueに記述する。
-必須ルール
-JP Patinet Profile 
-
-## 長期保存対象とする場合には、そのリソースのデータにおけるmeta要素のtag要素に以下の形式で記述しなければならない。
-###　meta.tag.system = “http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication”　(この固定値とする)
-###　meta.tag.code = “LTS”　(この固定値とする)
-必須ルール
-JP CLINS Profile 
-
-## 未告知病名】情報の仕様:病名リソース（Conditionリソース）におけるmeta要素のtag要素に以下の形式で記述しなければならない。
-
-
-*/
+// INFO このリソースでは、CLINS送信の場合にperformerが必要である。
+Invariant: needs-performer-on-CLINS
+Description: "注意喚起：このリソースでは、CLINS送信の場合にはperformerが必要であるが存在しません。CLINS送信でなければ問題ありません。"
+Severity: #warning
+Expression: "performer.exists()"
 

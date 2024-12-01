@@ -37,7 +37,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys observation-needs-extension-of-Department  //extension (eCS_Department) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-needs-performer //performer : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-needs-contained-of-Practitioner //contained (JP_Practitioner) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
-* obeys observation-needs-extension-of-InstitutionNumber //extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+//* obeys observation-needs-extension-of-InstitutionNumber //extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須 -> R9011:9012が設定済み
 * obeys observation-needs-encounter //encounter : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-has-no-hasMember //hasMember : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない
 //今後実装　* obeys  needs-localCode-observation-laboresult // R6021 Observation CLINS ではローカルコードの記述は必須である。
