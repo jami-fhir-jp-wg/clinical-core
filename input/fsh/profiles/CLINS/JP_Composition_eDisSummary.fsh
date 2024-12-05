@@ -179,9 +179,9 @@ and authorDepartment 0..1 MS
 * section.text.status MS
 * section.text.status = #additional (exactly)
 * section.text.status ^short = "セクションの内容作成状態コード"
-* section.text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section.text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section.text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section.text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section.text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section.mode ..0
 * section.orderedBy ..0
 */
@@ -228,9 +228,9 @@ and authorDepartment 0..1 MS
 * section[cdaSection].text.status MS
 * section[cdaSection].text.status = #additional (exactly)
 * section[cdaSection].text.status ^short = "セクションの内容作成状態コード"
-* section[cdaSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[cdaSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[cdaSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[cdaSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[cdaSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[cdaSection].mode ..0
 * section[cdaSection].orderedBy ..0
 //
@@ -269,9 +269,9 @@ and authorDepartment 0..1 MS
 * section[attachmentSection].text.status MS
 * section[attachmentSection].text.status = #additional (exactly)
 * section[attachmentSection].text.status ^short = "セクションの内容作成状態コード"
-* section[attachmentSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[attachmentSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[attachmentSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[attachmentSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[attachmentSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[attachmentSection].mode ..0
 * section[attachmentSection].orderedBy ..0
 
@@ -311,9 +311,9 @@ and authorDepartment 0..1 MS
 * section[pdfSection].text.status MS
 * section[pdfSection].text.status = #additional (exactly)
 * section[pdfSection].text.status ^short = "セクションの内容作成状態コード"
-* section[pdfSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[pdfSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[pdfSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[pdfSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[pdfSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[pdfSection].mode ..0
 * section[pdfSection].orderedBy ..0
 
@@ -395,9 +395,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[detailsOnAdmissionSection].text.status MS
 * section[structuredSection].section[detailsOnAdmissionSection].text.status = #additional (exactly)
 * section[structuredSection].section[detailsOnAdmissionSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[detailsOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[detailsOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[detailsOnAdmissionSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[detailsOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[detailsOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[detailsOnAdmissionSection].mode ..0
 * section[structuredSection].section[detailsOnAdmissionSection].orderedBy ..0
 * section[structuredSection].section[detailsOnAdmissionSection].entry 1..1 MS
@@ -438,9 +438,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[diagnosesOnAdmissionSection].text.status MS
 * section[structuredSection].section[diagnosesOnAdmissionSection].text.status = #additional (exactly)
 * section[structuredSection].section[diagnosesOnAdmissionSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[diagnosesOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[diagnosesOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[diagnosesOnAdmissionSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[diagnosesOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[diagnosesOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[diagnosesOnAdmissionSection].mode ..0
 * section[structuredSection].section[diagnosesOnAdmissionSection].orderedBy ..0
 * section[structuredSection].section[diagnosesOnAdmissionSection].entry 0..* MS
@@ -481,9 +481,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[allergyIntoleranceSection].text.status MS
 * section[structuredSection].section[allergyIntoleranceSection].text.status = #additional (exactly)
 * section[structuredSection].section[allergyIntoleranceSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[allergyIntoleranceSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[allergyIntoleranceSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[allergyIntoleranceSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[allergyIntoleranceSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[allergyIntoleranceSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[allergyIntoleranceSection].mode ..0
 * section[structuredSection].section[allergyIntoleranceSection].orderedBy ..0
 * section[structuredSection].section[allergyIntoleranceSection].entry 0..* MS
@@ -529,9 +529,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[chiefComplaintsSection].text.status MS
 * section[structuredSection].section[chiefComplaintsSection].text.status = #additional (exactly)
 * section[structuredSection].section[chiefComplaintsSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[chiefComplaintsSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[chiefComplaintsSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[chiefComplaintsSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[chiefComplaintsSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[chiefComplaintsSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[chiefComplaintsSection].mode ..0
 * section[structuredSection].section[chiefComplaintsSection].orderedBy ..0
 * section[structuredSection].section[chiefComplaintsSection].entry 0..* MS
@@ -571,9 +571,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[reasonForAdmissionSection].text.status MS
 * section[structuredSection].section[reasonForAdmissionSection].text.status = #additional (exactly)
 * section[structuredSection].section[reasonForAdmissionSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[reasonForAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[reasonForAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[reasonForAdmissionSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[reasonForAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[reasonForAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[reasonForAdmissionSection].mode ..0
 * section[structuredSection].section[reasonForAdmissionSection].orderedBy ..0
 * section[structuredSection].section[reasonForAdmissionSection].entry 0..1 MS
@@ -614,9 +614,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[presentIllnessSection].text.status MS
 * section[structuredSection].section[presentIllnessSection].text.status = #additional (exactly)
 * section[structuredSection].section[presentIllnessSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[presentIllnessSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[presentIllnessSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[presentIllnessSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[presentIllnessSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[presentIllnessSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[presentIllnessSection].mode ..0
 * section[structuredSection].section[presentIllnessSection].orderedBy ..0
 * section[structuredSection].section[presentIllnessSection].entry 0..* MS
@@ -659,9 +659,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[pastIllnessSection].text.status MS
 * section[structuredSection].section[pastIllnessSection].text.status = #additional (exactly)
 * section[structuredSection].section[pastIllnessSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[pastIllnessSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[pastIllnessSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[pastIllnessSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[pastIllnessSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[pastIllnessSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[pastIllnessSection].mode ..0
 * section[structuredSection].section[pastIllnessSection].orderedBy ..0
 * section[structuredSection].section[pastIllnessSection].entry 0..* MS
@@ -707,9 +707,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[medicationsOnAdmissionSection].text.status MS
 * section[structuredSection].section[medicationsOnAdmissionSection].text.status = #additional (exactly)
 * section[structuredSection].section[medicationsOnAdmissionSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[medicationsOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[medicationsOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[medicationsOnAdmissionSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[medicationsOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[medicationsOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[medicationsOnAdmissionSection].mode ..0
 * section[structuredSection].section[medicationsOnAdmissionSection].orderedBy ..0
 * section[structuredSection].section[medicationsOnAdmissionSection].entry 0..* MS
@@ -752,9 +752,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[socialHistorySection].text.status MS
 * section[structuredSection].section[socialHistorySection].text.status = #additional (exactly)
 * section[structuredSection].section[socialHistorySection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[socialHistorySection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[socialHistorySection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[socialHistorySection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[socialHistorySection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[socialHistorySection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[socialHistorySection].mode ..0
 * section[structuredSection].section[socialHistorySection].orderedBy ..0
 * section[structuredSection].section[socialHistorySection].entry 0..* MS
@@ -801,9 +801,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[physicalStatusOnAdmissionSection].text.status MS
 * section[structuredSection].section[physicalStatusOnAdmissionSection].text.status = #additional (exactly)
 * section[structuredSection].section[physicalStatusOnAdmissionSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[physicalStatusOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[physicalStatusOnAdmissionSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[physicalStatusOnAdmissionSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[physicalStatusOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[physicalStatusOnAdmissionSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[physicalStatusOnAdmissionSection].mode ..0
 * section[structuredSection].section[physicalStatusOnAdmissionSection].orderedBy ..0
 * section[structuredSection].section[physicalStatusOnAdmissionSection].entry 0..* MS
@@ -848,9 +848,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[familiyHistorySection].text.status MS
 * section[structuredSection].section[familiyHistorySection].text.status = #additional (exactly)
 * section[structuredSection].section[familiyHistorySection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[familiyHistorySection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[familiyHistorySection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[familiyHistorySection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[familiyHistorySection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[familiyHistorySection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[familiyHistorySection].mode ..0
 * section[structuredSection].section[familiyHistorySection].orderedBy ..0
 * section[structuredSection].section[familiyHistorySection].entry 0..* MS
@@ -897,9 +897,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[hospitalCourseSection].text.status MS
 * section[structuredSection].section[hospitalCourseSection].text.status = #additional (exactly)
 * section[structuredSection].section[hospitalCourseSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[hospitalCourseSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[hospitalCourseSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[hospitalCourseSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[hospitalCourseSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[hospitalCourseSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[hospitalCourseSection].mode ..0
 * section[structuredSection].section[hospitalCourseSection].orderedBy ..0
 * section[structuredSection].section[hospitalCourseSection].entry 1..* MS
@@ -943,9 +943,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[detailsOnDischargeSection].text.status MS
 * section[structuredSection].section[detailsOnDischargeSection].text.status = #additional (exactly)
 * section[structuredSection].section[detailsOnDischargeSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[detailsOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[detailsOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[detailsOnDischargeSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[detailsOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[detailsOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[detailsOnDischargeSection].mode ..0
 * section[structuredSection].section[detailsOnDischargeSection].orderedBy ..0
 * section[structuredSection].section[detailsOnDischargeSection].entry 1..1 MS
@@ -986,9 +986,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[diagnosesOnDischargeSection].text.status MS
 * section[structuredSection].section[diagnosesOnDischargeSection].text.status = #additional (exactly)
 * section[structuredSection].section[diagnosesOnDischargeSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[diagnosesOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[diagnosesOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[diagnosesOnDischargeSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[diagnosesOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[diagnosesOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[diagnosesOnDischargeSection].mode ..0
 * section[structuredSection].section[diagnosesOnDischargeSection].orderedBy ..0
 * section[structuredSection].section[diagnosesOnDischargeSection].entry 1..* MS
@@ -1032,9 +1032,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[medicationOnDischargeSection].text.status MS
 * section[structuredSection].section[medicationOnDischargeSection].text.status = #additional (exactly)
 * section[structuredSection].section[medicationOnDischargeSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[medicationOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[medicationOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[medicationOnDischargeSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[medicationOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[medicationOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[medicationOnDischargeSection].mode ..0
 * section[structuredSection].section[medicationOnDischargeSection].orderedBy ..0
 * section[structuredSection].section[medicationOnDischargeSection].entry 0..* MS
@@ -1080,9 +1080,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[instructionOnDischargeSection].text.status MS
 * section[structuredSection].section[instructionOnDischargeSection].text.status = #additional (exactly)
 * section[structuredSection].section[instructionOnDischargeSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[instructionOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[instructionOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[instructionOnDischargeSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[instructionOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[instructionOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[instructionOnDischargeSection].mode ..0
 * section[structuredSection].section[instructionOnDischargeSection].orderedBy ..0
 * section[structuredSection].section[instructionOnDischargeSection].entry 0..* MS
@@ -1127,9 +1127,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[physicalStatusOnDischargeSection].text.status MS
 * section[structuredSection].section[physicalStatusOnDischargeSection].text.status = #additional (exactly)
 * section[structuredSection].section[physicalStatusOnDischargeSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[physicalStatusOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[physicalStatusOnDischargeSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[physicalStatusOnDischargeSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[physicalStatusOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[physicalStatusOnDischargeSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[physicalStatusOnDischargeSection].mode ..0
 * section[structuredSection].section[physicalStatusOnDischargeSection].orderedBy ..0
 * section[structuredSection].section[physicalStatusOnDischargeSection].entry 0..* MS
@@ -1175,9 +1175,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[hospitalProcedureSection].text.status MS
 * section[structuredSection].section[hospitalProcedureSection].text.status = #additional (exactly)
 * section[structuredSection].section[hospitalProcedureSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[hospitalProcedureSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[hospitalProcedureSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[hospitalProcedureSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[hospitalProcedureSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[hospitalProcedureSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[hospitalProcedureSection].mode ..0
 * section[structuredSection].section[hospitalProcedureSection].orderedBy ..0
 * section[structuredSection].section[hospitalProcedureSection].entry 0..* MS
@@ -1224,9 +1224,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[hospitalStudySection].text.status MS
 * section[structuredSection].section[hospitalStudySection].text.status = #additional (exactly)
 * section[structuredSection].section[hospitalStudySection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[hospitalStudySection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[hospitalStudySection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[hospitalStudySection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[hospitalStudySection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[hospitalStudySection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[hospitalStudySection].mode ..0
 * section[structuredSection].section[hospitalStudySection].orderedBy ..0
 * section[structuredSection].section[hospitalStudySection].entry 0..* MS
@@ -1272,9 +1272,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[medicalDeviceSection].text.status MS
 * section[structuredSection].section[medicalDeviceSection].text.status = #additional (exactly)
 * section[structuredSection].section[medicalDeviceSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[medicalDeviceSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[medicalDeviceSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[medicalDeviceSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[medicalDeviceSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[medicalDeviceSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[medicalDeviceSection].mode ..0
 * section[structuredSection].section[medicalDeviceSection].orderedBy ..0
 * section[structuredSection].section[medicalDeviceSection].entry 0..* MS
@@ -1319,9 +1319,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[immunizationSection].text.status MS
 * section[structuredSection].section[immunizationSection].text.status = #additional (exactly)
 * section[structuredSection].section[immunizationSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[immunizationSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[immunizationSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[immunizationSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[immunizationSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[immunizationSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[immunizationSection].mode ..0
 * section[structuredSection].section[immunizationSection].orderedBy ..0
 * section[structuredSection].section[immunizationSection].entry 0..* MS
@@ -1367,9 +1367,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[advanceDirectiveSection].text.status MS
 * section[structuredSection].section[advanceDirectiveSection].text.status = #additional (exactly)
 * section[structuredSection].section[advanceDirectiveSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[advanceDirectiveSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[advanceDirectiveSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[advanceDirectiveSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[advanceDirectiveSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[advanceDirectiveSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[advanceDirectiveSection].mode ..0
 * section[structuredSection].section[advanceDirectiveSection].orderedBy ..0
 * section[structuredSection].section[advanceDirectiveSection].entry 0..* MS
@@ -1413,9 +1413,9 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[researchParticipationSection].text.status MS
 * section[structuredSection].section[researchParticipationSection].text.status = #additional (exactly)
 * section[structuredSection].section[researchParticipationSection].text.status ^short = "セクションの内容作成状態コード"
-* section[structuredSection].section[researchParticipationSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section[structuredSection].section[researchParticipationSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section[structuredSection].section[researchParticipationSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[structuredSection].section[researchParticipationSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section[structuredSection].section[researchParticipationSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[structuredSection].section[researchParticipationSection].mode ..0
 * section[structuredSection].section[researchParticipationSection].orderedBy ..0
 * section[structuredSection].section[researchParticipationSection].entry 0..* MS

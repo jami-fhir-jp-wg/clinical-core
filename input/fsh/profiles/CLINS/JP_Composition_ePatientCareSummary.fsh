@@ -137,9 +137,9 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section.text.status MS
 * section.text.status = #additional (exactly)
 * section.text.status ^short = "セクションの内容作成状態コード"
-* section.text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報も含めた完全な叙述表現であることを示す。"
+* section.text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section.text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section.text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。内容を省略しても構わない。 \r\nこのデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。\r\nテキストは構造化された情報から自動的にシステムが生成したものとし、それ以上に情報を追加してはならない。"
+* section.text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section.mode ..0
 * section.orderedBy ..0
 
