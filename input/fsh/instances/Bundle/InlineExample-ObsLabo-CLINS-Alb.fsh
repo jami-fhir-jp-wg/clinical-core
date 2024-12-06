@@ -48,7 +48,7 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 * issued = "2021-07-05T15:38:59.000+09:00"
 
-//* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
 * valueQuantity.value = 3.9
 * valueQuantity.unit = "mg/L"

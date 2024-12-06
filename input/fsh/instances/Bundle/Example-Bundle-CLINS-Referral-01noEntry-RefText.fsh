@@ -18,7 +18,7 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 
 * timestamp = "2021-11-26T10:00:00+09:00"
 
-* entry[composition].fullUrl = "0ff7bf42-0413-bbef-7def-90c5efa47757" // "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
+* entry[composition].fullUrl = "urn:uuid:0ff7bf42-0413-bbef-7def-90c5efa47757" // "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
 * entry[composition].resource = compositionReferralExample01InlineNoEntryExceptClinicalCourse //compositionReferralExample01InlineNoEntry
 
 * entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
