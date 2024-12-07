@@ -28,12 +28,12 @@ dependencies:
   jp-core.r4:
     uri: http://jpfhir.jp/fhir/core/1.1.2/ImplementationGuide/
     version: 1.1.2-clins
-#  jpfhir-terminology.r4:
-#    uri: http://jpfhir.jp/fhir/jpfhir-terminology.r4/ImplementationGuide/
-#    version: 1.2.4-url
-  jpfhir-terminologyPackages.r4:
-    uri: http://jpfhir.jp/fhir/jpcore-terminology.r4/ImplementationGuide/
-    version: 2.0.0
+  jpfhir-terminology.r4:
+    uri: http://jpfhir.jp/fhir/jpfhir-terminology.r4/ImplementationGuide/
+    version: 1.2.4-url
+#  jpfhir-terminologyPackages.r4:
+#    uri: http://jpfhir.jp/fhir/jpcore-terminology.r4/ImplementationGuide/
+#    version: 2.0.0
 
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
 #----------------------------------------
