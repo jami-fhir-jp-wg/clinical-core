@@ -44,17 +44,17 @@ RuleSet: sectionTextDefinition(sectionSlice01)
 * section[{sectionSlice01}].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
 * section[{sectionSlice01}].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 
-RuleSet: compositionSectionTextDefinition(sectionSlice02)
-* section[compositionSection].section[{sectionSlice02}].text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列"
-* section[compositionSection].section[{sectionSlice02}].text ^definition = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を参照すること。"
-* section[compositionSection].section[{sectionSlice02}].text  ^comment = "entryが空（存在しない）場合には、このセクションが表す完全なテキスト記述をこの要素に記述しなければならない。受信側はこのテキスト記述を必要に応じて利用することができる。構造情報（FHIRリソース）を参照するentryが存在する場合には、この要素は省略して構わないが、entryが持つ情報の概要とそれだけでは記述しきれない追加情報を記述してもよい。受信側はこの要素はentryが持つ完全な情報を伝えていないことがあるため、正確な情報を利用するにはentryの構造情報を使用しなければならず、この要素の情報だけを利用することは適切でない。この要素の情報は、entryの構造情報へのあくまで追加的な補足情報として利用する。"
-* section[compositionSection].section[{sectionSlice02}].text MS
-* section[compositionSection].section[{sectionSlice02}].text.status MS
-* section[compositionSection].section[{sectionSlice02}].text.status = #additional (exactly)
-* section[compositionSection].section[{sectionSlice02}].text.status ^short = "セクションの内容作成状態コード"
-* section[compositionSection].section[{sectionSlice02}].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。"
-* section[compositionSection].section[{sectionSlice02}].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[compositionSection].section[{sectionSlice02}].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
+RuleSet: compositionSectionTextDefinition(compositionSection,sectionSlice02)
+* section[{compositionSection}].section[{sectionSlice02}].text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列"
+* section[{compositionSection}].section[{sectionSlice02}].text ^definition = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を参照すること。"
+* section[{compositionSection}].section[{sectionSlice02}].text  ^comment = "entryが空（存在しない）場合には、このセクションが表す完全なテキスト記述をこの要素に記述しなければならない。受信側はこのテキスト記述を必要に応じて利用することができる。構造情報（FHIRリソース）を参照するentryが存在する場合には、この要素は省略して構わないが、entryが持つ情報の概要とそれだけでは記述しきれない追加情報を記述してもよい。受信側はこの要素はentryが持つ完全な情報を伝えていないことがあるため、正確な情報を利用するにはentryの構造情報を使用しなければならず、この要素の情報だけを利用することは適切でない。この要素の情報は、entryの構造情報へのあくまで追加的な補足情報として利用する。"
+* section[{compositionSection}].section[{sectionSlice02}].text MS
+* section[{compositionSection}].section[{sectionSlice02}].text.status MS
+* section[{compositionSection}].section[{sectionSlice02}].text.status = #additional (exactly)
+* section[{compositionSection}].section[{sectionSlice02}].text.status ^short = "セクションの内容作成状態コード"
+* section[{compositionSection}].section[{sectionSlice02}].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。"
+* section[{compositionSection}].section[{sectionSlice02}].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
+* section[{compositionSection}].section[{sectionSlice02}].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 
 
 /*
@@ -445,7 +445,7 @@ and authorDepartment 0..1 MS
 	and researchParticipationSection      0..1    MS  //  臨床研究参加セクション	researchParticipationSection
 //
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,referralPurposeSection,紹介目的,950)
-* insert compositionSectionTextDefinition(referralPurposeSection)
+* insert compositionSectionTextDefinition(compositionSection,referralPurposeSection)
 * section[compositionSection].section[referralPurposeSection].mode ..0
 * section[compositionSection].section[referralPurposeSection].orderedBy ..0
 * section[compositionSection].section[referralPurposeSection].entry 0..1 MS
@@ -457,7 +457,7 @@ and authorDepartment 0..1 MS
 //
 //
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,problemSection,傷病名・主訴,340)
-* insert compositionSectionTextDefinition(problemSection)
+* insert compositionSectionTextDefinition(compositionSection,problemSection)
 * section[compositionSection].section[problemSection].mode ..0
 * section[compositionSection].section[problemSection].orderedBy ..0
 * section[compositionSection].section[problemSection].entry 0..* MS
@@ -469,7 +469,7 @@ and authorDepartment 0..1 MS
 //
 //
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,presentIllnessSection,現病歴,360)
-* insert compositionSectionTextDefinition(presentIllnessSection)
+* insert compositionSectionTextDefinition(compositionSection,presentIllnessSection)
 * section[compositionSection].section[presentIllnessSection].mode ..0
 * section[compositionSection].section[presentIllnessSection].orderedBy ..0
 * section[compositionSection].section[presentIllnessSection].entry 0..* MS
@@ -483,7 +483,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[presentIllnessSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,pastIllnessSection,既往歴,370)
-* insert compositionSectionTextDefinition(pastIllnessSection)
+* insert compositionSectionTextDefinition(compositionSection,pastIllnessSection)
 * section[compositionSection].section[pastIllnessSection].mode ..0
 * section[compositionSection].section[pastIllnessSection].orderedBy ..0
 * section[compositionSection].section[pastIllnessSection].entry 0..* MS
@@ -499,7 +499,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[pastIllnessSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,allergiesIIntoleranceSection,アレルギー・不耐性反応,510)
-* insert compositionSectionTextDefinition(allergiesIIntoleranceSection)
+* insert compositionSectionTextDefinition(compositionSection,allergiesIIntoleranceSection)
 * section[compositionSection].section[allergiesIIntoleranceSection].mode ..0
 * section[compositionSection].section[allergiesIIntoleranceSection].orderedBy ..0
 * section[compositionSection].section[allergiesIIntoleranceSection].entry 0..* MS
@@ -515,7 +515,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[allergiesIIntoleranceSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,familiyHistorySection,家族歴,550)
-* insert compositionSectionTextDefinition(familiyHistorySection)
+* insert compositionSectionTextDefinition(compositionSection,familiyHistorySection)
 * section[compositionSection].section[familiyHistorySection].mode ..0
 * section[compositionSection].section[familiyHistorySection].orderedBy ..0
 * section[compositionSection].section[familiyHistorySection].entry 0..* MS
@@ -531,7 +531,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[familiyHistorySection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,admissionPhysicalStatusSection,身体所見,610)
-* insert compositionSectionTextDefinition(admissionPhysicalStatusSection)
+* insert compositionSectionTextDefinition(compositionSection,admissionPhysicalStatusSection)
 * section[compositionSection].section[admissionPhysicalStatusSection].mode ..0
 * section[compositionSection].section[admissionPhysicalStatusSection].orderedBy ..0
 * section[compositionSection].section[admissionPhysicalStatusSection].entry 0..* MS
@@ -547,7 +547,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[admissionPhysicalStatusSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,infectiousDiseaseInformationSection,感染症情報,520)
-* insert compositionSectionTextDefinition(infectiousDiseaseInformationSection)
+* insert compositionSectionTextDefinition(compositionSection,infectiousDiseaseInformationSection)
 * section[compositionSection].section[infectiousDiseaseInformationSection].mode ..0
 * section[compositionSection].section[infectiousDiseaseInformationSection].orderedBy ..0
 * section[compositionSection].section[infectiousDiseaseInformationSection].entry 0..* MS
@@ -563,7 +563,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[infectiousDiseaseInformationSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,socialHistorySection,社会歴・生活習慣,640)
-* insert compositionSectionTextDefinition(socialHistorySection)
+* insert compositionSectionTextDefinition(compositionSection,socialHistorySection)
 * section[compositionSection].section[socialHistorySection].mode ..0
 * section[compositionSection].section[socialHistorySection].orderedBy ..0
 * section[compositionSection].section[socialHistorySection].entry 0..* MS
@@ -580,7 +580,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[socialHistorySection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,immunizationSection,予防接種歴,530)
-* insert compositionSectionTextDefinition(immunizationSection)
+* insert compositionSectionTextDefinition(compositionSection,immunizationSection)
 * section[compositionSection].section[immunizationSection].mode ..0
 * section[compositionSection].section[immunizationSection].orderedBy ..0
 * section[compositionSection].section[immunizationSection].entry 0..* MS
@@ -597,7 +597,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[immunizationSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,surgicalProcedureSection,手術,730)
-* insert compositionSectionTextDefinition(surgicalProcedureSection)
+* insert compositionSectionTextDefinition(compositionSection,surgicalProcedureSection)
 * section[compositionSection].section[surgicalProcedureSection].mode ..0
 * section[compositionSection].section[surgicalProcedureSection].orderedBy ..0
 * section[compositionSection].section[surgicalProcedureSection].entry 0..* MS
@@ -614,7 +614,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[surgicalProcedureSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,bloodInfusionProcedureSection,輸血歴,740)
-* insert compositionSectionTextDefinition(bloodInfusionProcedureSection)
+* insert compositionSectionTextDefinition(compositionSection,bloodInfusionProcedureSection)
 * section[compositionSection].section[bloodInfusionProcedureSection].mode ..0
 * section[compositionSection].section[bloodInfusionProcedureSection].orderedBy ..0
 * section[compositionSection].section[bloodInfusionProcedureSection].entry 0..* MS
@@ -631,7 +631,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[bloodInfusionProcedureSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,treatmentProcedureSection,処置,720)
-* insert compositionSectionTextDefinition(treatmentProcedureSection)
+* insert compositionSectionTextDefinition(compositionSection,treatmentProcedureSection)
 * section[compositionSection].section[treatmentProcedureSection].mode ..0
 * section[compositionSection].section[treatmentProcedureSection].orderedBy ..0
 * section[compositionSection].section[treatmentProcedureSection].entry 0..* MS
@@ -648,7 +648,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[treatmentProcedureSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,medicationSection,投薬指示,430)
-* insert compositionSectionTextDefinition(medicationSection)
+* insert compositionSectionTextDefinition(compositionSection,medicationSection)
 * section[compositionSection].section[medicationSection].mode ..0
 * section[compositionSection].section[medicationSection].orderedBy ..0
 * section[compositionSection].section[medicationSection].entry 0..* MS
@@ -665,7 +665,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[medicationSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,examsStudySection,検査結果,620)
-* insert compositionSectionTextDefinition(examsStudySection)
+* insert compositionSectionTextDefinition(compositionSection,examsStudySection)
 * section[compositionSection].section[examsStudySection].mode ..0
 * section[compositionSection].section[examsStudySection].orderedBy ..0
 * section[compositionSection].section[examsStudySection].entry 0..* MS
@@ -682,7 +682,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[examsStudySection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,clinicalCourseSection,臨床経過,330)
-* insert compositionSectionTextDefinition(clinicalCourseSection)
+* insert compositionSectionTextDefinition(compositionSection,clinicalCourseSection)
 * section[compositionSection].section[clinicalCourseSection].mode ..0
 * section[compositionSection].section[clinicalCourseSection].orderedBy ..0
 * section[compositionSection].section[clinicalCourseSection].entry 0..* MS
@@ -696,7 +696,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[clinicalCourseSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,clinicalInstructionSection,診療方針指示,420)
-* insert compositionSectionTextDefinition(clinicalInstructionSection)
+* insert compositionSectionTextDefinition(compositionSection,clinicalInstructionSection)
 * section[compositionSection].section[clinicalInstructionSection].mode ..0
 * section[compositionSection].section[clinicalInstructionSection].orderedBy ..0
 * section[compositionSection].section[clinicalInstructionSection].entry 0..* MS
@@ -711,7 +711,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[clinicalInstructionSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,medicalDeviceSection,医療機器,810)
-* insert compositionSectionTextDefinition(medicalDeviceSection)
+* insert compositionSectionTextDefinition(compositionSection,medicalDeviceSection)
 * section[compositionSection].section[medicalDeviceSection].mode ..0
 * section[compositionSection].section[medicalDeviceSection].orderedBy ..0
 * section[compositionSection].section[medicalDeviceSection].entry 0..* MS
@@ -726,7 +726,7 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[medicalDeviceSection].section ..0
 ////
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,advanceDirectiveSection,事前指示,410)
-* insert compositionSectionTextDefinition(advanceDirectiveSection)
+* insert compositionSectionTextDefinition(compositionSection,advanceDirectiveSection)
 * section[compositionSection].section[advanceDirectiveSection].mode ..0
 * section[compositionSection].section[advanceDirectiveSection].orderedBy ..0
 * section[compositionSection].section[advanceDirectiveSection].entry 0..* MS
@@ -743,7 +743,7 @@ and authorDepartment 0..1 MS
 //* section[compositionSection].section[researchParticipationSection]
 //* section[compositionSection].section[researchParticipationSection] ^short = "臨床研究参加セクション"
 * insert compositionSectionTitleCodeDefinition(compositionSection,eReferral,researchParticipationSection,臨床研究参加,830)
-* insert compositionSectionTextDefinition(researchParticipationSection)
+* insert compositionSectionTextDefinition(compositionSection,researchParticipationSection)
 * section[compositionSection].section[researchParticipationSection].mode ..0
 * section[compositionSection].section[researchParticipationSection].orderedBy ..0
 * section[compositionSection].section[researchParticipationSection].entry 0..* MS
