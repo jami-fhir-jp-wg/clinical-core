@@ -16,7 +16,10 @@
     - JP_AllergyIntolerance_eCS（LTSのみ可）
     - JP_Condition_eCS（LTS、UNINFORMED、UNDELIVEREDのいずれかのみ可）
     - JP_Observation_LaboResult_eCS（指定感染症の検査結果でのみLTSのみ可、その他の検査結果ではLTSは制約チェック時にエラーとなる）
-    
+  - contained (JP_Encounter)が電子カルテ情報サービスでは必須となっている場合の制約チェックで、JP_EncounterだけでなくJP_Encounter_eCSに準拠しているリソースでも許容されるよう修正した。
+  - contained (JP_Practitioner)が電子カルテ情報サービスでは必須となっている場合の制約チェックで、JP_PractitionerだけでなくJP_Practitioner_eCSに準拠しているリソースでも許容されるよう修正した。
+  - JP_Observation_LabResult_eCSのperformer要素が電子カルテ情報サービスでは必須となっている場合の制約チェックで、performer要素がなければerrorとなるように制約をJP_Bundle_CLINSに追加した。またどのObservationリソースにperformer要素が足りないかがわかるようにするため、performer要素がないObservationリソースでは注意喚起がValidation時に出力されるよう制約をJP_Observation_LabResult_eCSに追加した。
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.5  (2024.11.18)
   - 以下のProfileにidentifier.systemとidentifier.valueの仕様準拠の制約チェックをConstraintsに追加した。
     - JP_Bundle_eReferral

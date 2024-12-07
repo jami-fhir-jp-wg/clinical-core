@@ -2,7 +2,7 @@ name: Ohe-build
 on:
   push:
     branches: 
-      - devlop1.5
+      - devlop1.6
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,7 +10,7 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ devlop1.5 ]
+    branches: [ devlop1.6 ]
   repository_dispatch:
     types: [update]
 env:

@@ -193,137 +193,46 @@ and authorDepartment 0..1 MS
 // CDA参照セクションと構造情報セクションは、どちらか一方だけが出現する。制約条件の記述が必要。
 //
 //
-* section[cdaSection] ^short = "CDA参照セクション"
-* section[cdaSection] ^definition = "CDA参照セクション"
-* section[cdaSection].title = "CDA参照" (exactly)
-* section[cdaSection].code.coding.code = #200 (exactly)
-* section[cdaSection].code.coding.display = "CDA参照セクション"
+* insert sectionTitleCodeDefinition(eDischargeSummary,cdaSection,CDA参照,200)
+* insert sectionTextDefinition(cdaSection)
+* section[cdaSection].mode ..0
+* section[cdaSection].orderedBy ..0
 * section[cdaSection].entry 1..1
 * section[cdaSection].entry only Reference(DocumentReference)
 * section[cdaSection].entry ^short = "CDA規約文書ファイルへの参照"
 * section[cdaSection].entry ^definition = "CDA規約文書ファイルへの参照"
 * section[cdaSection].emptyReason ..1
 * section[cdaSection].section ..0
-* section[cdaSection].title 1.. MS
-* section[cdaSection].code 1.. MS
-* section[cdaSection].code ^short = "セクション区分コード"
-* section[cdaSection].code ^definition = "セクション区分コード"
-* section[cdaSection].code.coding 1..1 MS
-* section[cdaSection].code.coding from http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
-* section[cdaSection].code.coding.system 1.. MS
-* section[cdaSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
-* section[cdaSection].code.coding.system ^short = "セクション区分コードのコード体系"
-* section[cdaSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
-* section[cdaSection].code.coding.code 1.. MS
-* section[cdaSection].code.coding.code ^short = "セクション区分のコード値"
-* section[cdaSection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
-* section[cdaSection].code.coding.display ^short = "セクション区分コードの表示名"
-* section[cdaSection].code.coding.display ^definition = "セクション区分コードの表示名。"
-* section[cdaSection].code.coding.display MS
-* section[cdaSection].code.coding.userSelected ..0
-* section[cdaSection].code.text ..0
-* section[cdaSection].text ^short = "このセクションに含められるすべてのテキスト（叙述的記述）表現"
-* section[cdaSection].text ^definition = "本セクションの内容をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。"
-* section[cdaSection].text MS
-* section[cdaSection].text.status MS
-* section[cdaSection].text.status = #additional (exactly)
-* section[cdaSection].text.status ^short = "セクションの内容作成状態コード"
-* section[cdaSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
-* section[cdaSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[cdaSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
-* section[cdaSection].mode ..0
-* section[cdaSection].orderedBy ..0
+
 //
-* section[attachmentSection] ^short = "添付情報セクション"
-* section[attachmentSection] ^definition = "添付情報セクション"
-* section[attachmentSection].title = "添付情報" (exactly)
-* section[attachmentSection].code.coding.code = #210 (exactly)
-* section[attachmentSection].code.coding.display = "添付情報セクション"
+* insert sectionTitleCodeDefinition(eDischargeSummary,attachmentSection,添付情報,210)
+* insert sectionTextDefinition(attachmentSection)
+
 * section[attachmentSection].entry 1..*
 * section[attachmentSection].entry only Reference(DocumentReference or Bundle) 
 * section[attachmentSection].entry ^short = "添付情報ファイルへの参照"
 * section[attachmentSection].entry ^definition = "添付情報ファイルへの参照"
 * section[attachmentSection].emptyReason ..1
 * section[attachmentSection].section ..0
-* section[attachmentSection].title 1.. MS
-* section[attachmentSection].code 1.. MS
-* section[attachmentSection].code ^short = "セクション区分コード"
-* section[attachmentSection].code ^definition = "セクション区分コード"
-* section[attachmentSection].code.coding 1..1 MS
-* section[attachmentSection].code.coding from http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
-* section[attachmentSection].code.coding.system 1.. MS
-* section[attachmentSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
-* section[attachmentSection].code.coding.system ^short = "セクション区分コードのコード体系"
-* section[attachmentSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
-* section[attachmentSection].code.coding.code 1.. MS
-* section[attachmentSection].code.coding.code ^short = "セクション区分のコード値"
-* section[attachmentSection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
-* section[attachmentSection].code.coding.display ^short = "セクション区分コードの表示名"
-* section[attachmentSection].code.coding.display ^definition = "セクション区分コードの表示名。"
-* section[attachmentSection].code.coding.display MS
-* section[attachmentSection].code.coding.userSelected ..0
-* section[attachmentSection].code.text ..0
-* section[attachmentSection].text ^short = "このセクションに含められるすべてのテキスト（叙述的記述）表現"
-* section[attachmentSection].text ^definition = "本セクションの内容をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。"
-* section[attachmentSection].text MS
-* section[attachmentSection].text.status MS
-* section[attachmentSection].text.status = #additional (exactly)
-* section[attachmentSection].text.status ^short = "セクションの内容作成状態コード"
-* section[attachmentSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
-* section[attachmentSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[attachmentSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[attachmentSection].mode ..0
 * section[attachmentSection].orderedBy ..0
 
 //
-* section[pdfSection] ^short = "PDFセクション"
-* section[pdfSection] ^definition = "PDFセクション"
-* section[pdfSection].title = "PDF" (exactly)
-* section[pdfSection].code.coding.code = #230 (exactly)
-* section[pdfSection].code.coding.display = "PDFセクション"
+* insert sectionTitleCodeDefinition(eDischargeSummary,pdfSection,PDF,230)
+* insert sectionTextDefinition(pdfSection)
+
 * section[pdfSection].entry 1..*
 * section[pdfSection].entry only Reference(DocumentReference)
 * section[pdfSection].entry ^short = "PDFファイルへの参照"
 * section[pdfSection].entry ^definition = "PDFファイルへの参照"
 * section[pdfSection].emptyReason ..1
 * section[pdfSection].section ..0
-* section[pdfSection].title 1.. MS
-* section[pdfSection].code 1.. MS
-* section[pdfSection].code ^short = "セクション区分コード"
-* section[pdfSection].code ^definition = "セクション区分コード"
-* section[pdfSection].code.coding 1..1 MS
-* section[pdfSection].code.coding from http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
-* section[pdfSection].code.coding.system 1.. MS
-* section[pdfSection].code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
-* section[pdfSection].code.coding.system ^short = "セクション区分コードのコード体系"
-* section[pdfSection].code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
-* section[pdfSection].code.coding.code 1.. MS
-* section[pdfSection].code.coding.code ^short = "セクション区分のコード値"
-* section[pdfSection].code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
-* section[pdfSection].code.coding.display ^short = "セクション区分コードの表示名"
-* section[pdfSection].code.coding.display ^definition = "セクション区分コードの表示名。"
-* section[pdfSection].code.coding.display MS
-* section[pdfSection].code.coding.userSelected ..0
-* section[pdfSection].code.text ..0
-* section[pdfSection].text ^short = "このセクションに含められるすべてのテキスト（叙述的記述）表現"
-* section[pdfSection].text ^definition = "本セクションの内容をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであり、データ処理対象としてはならない。"
-* section[pdfSection].text MS
-* section[pdfSection].text.status MS
-* section[pdfSection].text.status = #additional (exactly)
-* section[pdfSection].text.status ^short = "セクションの内容作成状態コード"
-* section[pdfSection].text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
-* section[pdfSection].text.div ^short = "xhtml簡略形式に従った叙述記述データ"
-* section[pdfSection].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 * section[pdfSection].mode ..0
 * section[pdfSection].orderedBy ..0
 
 //
-* section[structuredSection] ^short = "構造情報セクション"
-* section[structuredSection] ^definition = "構造情報セクション"
-* section[structuredSection].title = "構造情報" (exactly)
-* section[structuredSection].code.coding.code = #300 (exactly)
-* section[structuredSection].code.coding.display = "構造情報セクション"
-* section[structuredSection].code.text ..0
+* insert sectionTitleCodeDefinition(eDischargeSummary,structuredSection,構造情報,300)
+* insert sectionTextDefinition(structuredSection)
 * section[structuredSection].text ..0 
 * section[structuredSection].emptyReason ..1  MS
 
@@ -356,15 +265,6 @@ and authorDepartment 0..1 MS
 	and advanceDirectiveSection   0..1    MS  //  事前指示セクション
 	and researchParticipationSection      0..1    MS  //  臨床研究参加セクション
 //
-* section[structuredSection] ^short = "構造情報セクション"
-* section[structuredSection] ^definition = "構造情報セクション"
-* section[structuredSection].title = "構造情報" (exactly)
-* section[structuredSection].code.coding.code = #300 (exactly)
-* section[structuredSection].code.coding.display = "構造情報セクション"
-* section[structuredSection].code.text ..0
-* section[structuredSection].text ..0 
-* section[structuredSection].emptyReason ..1  MS
-
 * section[structuredSection].section[detailsOnAdmissionSection] ^short = "入院時詳細セクション"
 * section[structuredSection].section[detailsOnAdmissionSection] ^definition = "入院時詳細セクション"
 * section[structuredSection].section[detailsOnAdmissionSection].title 1.. MS
