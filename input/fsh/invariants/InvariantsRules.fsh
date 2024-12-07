@@ -240,7 +240,7 @@ Expression: "entry.select(resource as Observation).all(contained.meta.where((pro
 Invariant: condition-needs-contained-of-Encounter
 Description: "R9013C:Bundleに含まれるすべてのConditionのリソースには、Contained JP_Encounterリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(contained.meta.where((profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter') or (profile='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS')).exists())"
+Expression: "entry.select(resource as Condition).all(contained.meta.where(profile.exists() and ((profile.exists() implies profile='http://jpfhir.jp/fhir/core/StructureDefinition/JP_Encounter') or ((profile.exists() implies profile='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS'))).exists())"
 
 // R9014C  Bundleに含まれるConditionリソースには、診療科拡張が必須である。
 Invariant: condition-needs-extension-of-Department
