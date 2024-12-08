@@ -204,11 +204,10 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[clinicalCourseSection].code.coding = $referral-section#330 "臨床経過セクション"
 * section[compositionSection].section[clinicalCourseSection].text.status = #additional
 * section[compositionSection].section[clinicalCourseSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">⾷欲不振と⼼窩部痛を認めた．悪⼼嘔吐がみられ，吐物に新鮮⾎が混⼊していたため救急外来を受診し，緊急⼊院となった．<br />⼊院時現症:⾝⻑162.5cm，体重45.2kg，⾎圧80/60mmHg，脈拍80/分，整，体温36.4．眼瞼結膜に貧⾎を認めた．<br />腹部は平坦，軟で腫瘤や圧痛なし．腸蠕動⾳正常．<br />⼊院時検査成績(Table1):末梢⾎液検査で，Hb5.0g/dl，Ht15.5%と著明な貧⾎を認めた．<br />上部消化管内視鏡検査:⼊院翌⽇の検査では，残胃吻合部後壁に約2.5cmの潰瘍形成を認め，潰瘍底に凝⾎塊の付着した露出⾎管と思われる隆起がみられたが，新鮮出⾎はなく，抗潰瘍薬投与による経過観察となった．<br /></div>"
-//  Reference(JP_DocumentReference) 臨床経過
-// * section[compositionSection].section[clinicalCourseSection].entry[+].reference = "Example-JP-DocRef-eCS-clinical-ccourse-Referral01Inline"
-//* section[compositionSection].section[clinicalCourseSection].entry[+].reference = "urn:uuid:a6e4fc73-a749-4583-94a7-18e4241b4c75"
-//* section[compositionSection].section[clinicalCourseSection].entry[=].type = "DocumentReference"
-//* section[compositionSection].section[clinicalCourseSection].entry[=].display = "臨床経過"
+* section[compositionSection].section[clinicalCourseSection].entry[+].reference = "urn:uuid:6daccba0-543b-bff3-ce81-03c15d531503"
+* section[compositionSection].section[clinicalCourseSection].entry[=].type = "DocumentReference"
+* section[compositionSection].section[clinicalCourseSection].entry[=].display = "臨床経過"
+
 
 
 * section[compositionSection].section[medicationSection].title = "投薬指示"

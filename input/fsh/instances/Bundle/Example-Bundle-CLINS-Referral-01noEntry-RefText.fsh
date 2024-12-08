@@ -66,6 +66,6 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 //* entry[observation][+].fullUrl = "urn:uuid:481835ef-0891-45de-a006-087954ab6b7c"
 //* entry[observation][=].resource = psExample-JP-Obs-Common-eCS-textOnly01Inline
 
-//* entry[documentReference][+].fullUrl = "urn:uuid:a6e4fc73-a749-4583-94a7-18e4241b4c75"
-//* entry[documentReference][=].resource = Example-JP-DocRef-eCS-clinical-ccourse-Referral01Inline
+* entry[documentReference][+].fullUrl = "urn:uuid:6daccba0-543b-bff3-ce81-03c15d531503"
+* entry[documentReference][=].resource = Example-JP-DocRef-eCS-cccourseRef01-onlyDescriptionInline
 

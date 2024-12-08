@@ -19,6 +19,7 @@
   - contained (JP_Encounter)が電子カルテ情報サービスでは必須となっている場合の制約チェックで、JP_EncounterだけでなくJP_Encounter_eCSに準拠しているリソースでも許容されるよう修正した。
   - contained (JP_Practitioner)が電子カルテ情報サービスでは必須となっている場合の制約チェックで、JP_PractitionerだけでなくJP_Practitioner_eCSに準拠しているリソースでも許容されるよう修正した。
   - JP_Observation_LabResult_eCSのperformer要素が電子カルテ情報サービスでは必須となっている場合の制約チェックで、performer要素がなければerrorとなるように制約をJP_Bundle_CLINSに追加した。またどのObservationリソースにperformer要素が足りないかがわかるようにするため、performer要素がないObservationリソースでは注意喚起がValidation時に出力されるよう制約をJP_Observation_LabResult_eCSに追加した。
+  - 診療情報提供書の作例データで、臨床経過セクションでの記述をtext要素ではなく、DocumentReferenceリソースのdescription要素に記述して参照する作例データを追加した（Bundle-CLINS-Referral-NoEntry-Example-01-RefText）
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.5  (2024.11.18)
   - 以下のProfileにidentifier.systemとidentifier.valueの仕様準拠の制約チェックをConstraintsに追加した。
