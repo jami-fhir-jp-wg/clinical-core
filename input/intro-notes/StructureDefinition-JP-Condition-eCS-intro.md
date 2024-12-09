@@ -24,7 +24,7 @@
   - identifier : インスタンス識別ID
   - verificationStatus : 入力された臨床的状態に対する検証状況。コード化必須。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には通常confirmedを設定する。
   - category : 臨床的状態に割り当てられたカテゴリー。problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。電子カルテ情報共有サービスでは'encounter-diagnosis'を設定すること(display name は"Encounter Diagnosis")。
-  - code : 傷病名のコードと名称。code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。コード化は必須(電子カルテ情報共有サービスでは、ICD10対応標準病名マスタの「病名管理番号」だけが使用できる)。
+  - code : 傷病名のコードと名称。code.texはコード化の有無にかかわらず病名入力文字列を必ずそのまま設定する。コード化は必須。電子カルテ情報共有サービスでは、ICD10対応標準病名マスタの「病名管理番号」を必須とする。その上で病名管理番号以外のコード記述を併用しても構わない。
     - .coding : コード化された情報
     - .coding.system : コード化に用いたコードシステムURL
     - .coding.code : コード化に用いたコード
