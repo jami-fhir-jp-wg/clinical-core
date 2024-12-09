@@ -33,7 +33,7 @@ or (category.coding.code='03' and (section.code.coding.where(code = '11')).exist
 */
 
 RuleSet: sectionTextDefinition(sectionSlice01)
-* section[{sectionSlice01}].text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列"
+* section[{sectionSlice01}].text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を必ず参照すること。"
 * section[{sectionSlice01}].text ^definition = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を必ず参照すること。"
 * section[{sectionSlice01}].text ^comment = "entryが空（存在しない）場合には、このセクションが表す完全なテキスト記述をこの要素に記述しなければならない。受信側はこのテキスト記述を必要に応じて利用することができる。構造情報（FHIRリソース）を参照するentryが存在する場合には、この要素は省略して構わないが、entryが持つ情報の概要とそれだけでは記述しきれない追加情報を記述してもよい。受信側はこの要素はentryが持つ完全な情報を伝えていないことがあるため、正確な情報を利用するにはentryの構造情報を使用しなければならず、この要素の情報だけを利用することは適切でない。この要素の情報は、entryの構造情報へのあくまで追加的な補足情報として利用する。"
 * section[{sectionSlice01}].text MS
@@ -45,7 +45,7 @@ RuleSet: sectionTextDefinition(sectionSlice01)
 * section[{sectionSlice01}].text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
 
 RuleSet: compositionSectionTextDefinition(compositionSection,sectionSlice02)
-* section[{compositionSection}].section[{sectionSlice02}].text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列"
+* section[{compositionSection}].section[{sectionSlice02}].text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を必ず参照すること。"
 * section[{compositionSection}].section[{sectionSlice02}].text ^definition = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を参照すること。"
 * section[{compositionSection}].section[{sectionSlice02}].text  ^comment = "entryが空（存在しない）場合には、このセクションが表す完全なテキスト記述をこの要素に記述しなければならない。受信側はこのテキスト記述を必要に応じて利用することができる。構造情報（FHIRリソース）を参照するentryが存在する場合には、この要素は省略して構わないが、entryが持つ情報の概要とそれだけでは記述しきれない追加情報を記述してもよい。受信側はこの要素はentryが持つ完全な情報を伝えていないことがあるため、正確な情報を利用するにはentryの構造情報を使用しなければならず、この要素の情報だけを利用することは適切でない。この要素の情報は、entryの構造情報へのあくまで追加的な補足情報として利用する。"
 * section[{compositionSection}].section[{sectionSlice02}].text MS
