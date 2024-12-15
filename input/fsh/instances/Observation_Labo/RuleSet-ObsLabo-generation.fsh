@@ -1,5 +1,5 @@
 
-RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
+RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac,JLACkubun)
 * note.text = "Observationリソース（検体検査結果）{laboItemFHIRcode}　{valueString}　{unitString}　ローカルコード={local}} 臨床検査項目基本コードJLAC={jlac} 検体：(埋込みリソース無し）　診療科：循環器診療科"
 * meta.lastUpdated = "2024-12-15T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
@@ -23,7 +23,7 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
 * status = #final
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#{local} "{itemName}"
-* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#{jlac}  "{laboItemFHIRcode}"
+* code.coding[+] = $JP_CLINS_CodeSystem_{JLACkubun}_CoreLabo_CS#{jlac}  "{laboItemFHIRcode}"
 * code.text = "itemName"
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
@@ -32,27 +32,33 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
 * issued = "2024-12-15T14:11:13.000+09:00"
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
-RuleSet: laboItemValueStringWithUnit(valueNum,unitString,unitCode)
+RuleSet: laboItemValueStringWithUnit(specimen,valueNum,unitString,unitCode)
 // valueString は引用なしの数値文字列
 // unitStringは引用符なしの文字列
 * valueQuantity.value = {valueNum}
 * valueQuantity.unit = "{unitString}"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = {unitCode}`
+* valueQuantity.code = #{unitCode}`
 
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
 //* interpretation.text = "範囲未定義、もしくは正常が適用されない"
 //* specimen = Reference(Specimen/Example-Contained-JP-Specimen-Serum)
 //* specimen.type = "Specimen"
+* specimen.display = "{specimen}"
+* specimen.type = "Specimen"
 
-RuleSet: laboItemValueString(valueString)
+RuleSet: laboItemValueString(specimen,valueString)
 // valueString は引用なしの文字列
 * valueString = "{valueString}"
+* specimen.display = "{specimen}"
+* specimen.type = "Specimen"
 
-RuleSet: laboItemValueCodeableConcept(system,code,display)
+RuleSet: laboItemValueCodeableConcept(specimen,system,code,display)
 // valueString は引用なしの数値文字列
 // unitStringは引用符なしの文字列
 * valueCodeableConcept.coding.system = "{system}"
 * valueCodeableConcept.coding.code = #{code}
 * valueCodeableConcept.coding.display = "{display}"
+* specimen.display = "{specimen}"
+* specimen.type = "Specimen"
