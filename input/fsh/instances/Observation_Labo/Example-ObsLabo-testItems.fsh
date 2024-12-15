@@ -57,15 +57,15 @@ Description: "Observationリソース（検体検査結果）Dダイマー(定�
 Instance: Example-JP-Obs-LabResult-eCS-JLAC10-DD-class
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
-Description: "Observationリソース（検体検査結果）Dダイマー(定性)　2B140000002205201　1:陽性"
-* insert core43LaboItemInstanceCodeUnit(DD-定性,Dダイマー(定量\),90050,2B140000002205201,JLAC10)
+Description: "Observationリソース（検体検査結果）Dダイマー(定性)　2B140000002211711　1:陽性"
+* insert core43LaboItemInstanceCodeUnit(DD-定性,Dダイマー(定量\),90050,2B140000002211711,JLAC10)
 * insert laboItemValueCodeableConcept(血漿,http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS,1,陽性)
 
 Instance: Example-JP-Obs-LabResult-eCS-JLAC11-DD-class
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
-Description: "Observationリソース（検体検査結果）Dダイマー(定性)　B20190000240001H6　1:陽性"
-* insert core43LaboItemInstanceCodeUnit(DD-定性,Dダイマー(定量\),90050,B20190000240001H6,JLAC11)
+Description: "Observationリソース（検体検査結果）Dダイマー(定性)　B2019000024003102　1:陽性"
+* insert core43LaboItemInstanceCodeUnit(DD-定性,Dダイマー(定量\),90050,B2019000024003102,JLAC11)
 * insert laboItemValueCodeableConcept(血漿,http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS,1,陽性)
 
 Instance: Example-JP-Obs-LabResult-eCS-JLAC10-PTAct
@@ -73,12 +73,12 @@ InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
 Description: "Observationリソース（検体検査結果）プロトロンビン時間(PT-活性)　2B030000002231153　98%"
 * insert core43LaboItemInstanceCodeUnit(PT-活性%,プロトロンビン時間(PT-活性\),90060,2B030000002231153,JLAC10)
-* insert laboItemValueCodeableConcept(血漿,98,%,%)
+* insert laboItemValueStringWithUnit(血漿,98,%,%)
 
 Instance: Example-JP-Obs-LabResult-eCS-JLAC11-PTAct
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
 Description: "Observationリソース（検体検査結果）プロトロンビン時間(PT-活性)　B2006000324000112　98%"
 * insert core43LaboItemInstanceCodeUnit(PT-活性%,プロトロンビン時間(PT-活性\),90060,B2006000324000112,JLAC11)
-* insert laboItemValueCodeableConcept(血漿,98,%,%)
+* insert laboItemValueStringWithUnit(血漿,98,%,%)
 
