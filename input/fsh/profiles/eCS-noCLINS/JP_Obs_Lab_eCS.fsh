@@ -226,6 +226,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/dd].display = "DD" (exactly)	
 //* code.coding[coreLaboJLAC10/dd].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS (required)
 
+* insert  core43LaboItemProfile(dd-class,DD-定性,dd_class)
+//* code.coding[coreLaboJLAC10/dd].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
+//* code.coding[coreLaboJLAC10/dd].display = "DD" (exactly)	
+//* code.coding[coreLaboJLAC10/dd].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS (required)
+
 * insert  core43LaboItemProfile(fbg,FBG,fbg)
 //* code.coding[coreLaboJLAC10/fbg].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 //* code.coding[coreLaboJLAC10/fbg].display = "FBG" (exactly)	
@@ -281,7 +286,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/plt].display = "PLT" (exactly)	
 //* code.coding[coreLaboJLAC10/plt].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_plt_VS (required)
 
-* insert  core43LaboItemProfile(pt-act,PT-act,pt_act)
+* insert  core43LaboItemProfile(pt-act,PT-活性%,pt_act)
 //* code.coding[coreLaboJLAC10/pt-act].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 //* code.coding[coreLaboJLAC10/pt-act].display = "PT-act" (exactly)	
 //* code.coding[coreLaboJLAC10/pt-act].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_act_VS (required)
@@ -291,12 +296,12 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/pt-inr].display = "PT-INR" (exactly)	
 //* code.coding[coreLaboJLAC10/pt-inr].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_inr_VS (required)
 
-* insert  core43LaboItemProfile(pt-ratio,PT-ratio,pt_ratio)
+* insert  core43LaboItemProfile(pt-ratio,PT比,pt_ratio)
 //* code.coding[coreLaboJLAC10/pt-ratio].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 //* code.coding[coreLaboJLAC10/pt-ratio].display = "PT-ratio" (exactly)	
 //* code.coding[coreLaboJLAC10/pt-ratio].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_ratio_VS (required)
 
-* insert  core43LaboItemProfile(pt-sec,PT-sec,pt_sec)
+* insert  core43LaboItemProfile(pt-sec,PT-秒,pt_sec)
 //* code.coding[coreLaboJLAC10/pt-sec].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
 //* code.coding[coreLaboJLAC10/pt-sec].display = "PT-sec" (exactly)	
 //* code.coding[coreLaboJLAC10/pt-sec].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_sec_VS (required)
@@ -306,9 +311,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/rbc].display = "RBC" (exactly)	
 //* code.coding[coreLaboJLAC10/rbc].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_rbc_VS (required)
 
-* insert  core43LaboItemProfile(rh-bld,Rh-BLD,rh_bld)
+* insert  core43LaboItemProfile(rh-bld,血液型-Rh,rh_bld)
 //* code.coding[coreLaboJLAC10/rh-bld].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-//* code.coding[coreLaboJLAC10/rh-bld].display = "Rh-BLD" (exactly)	
+//* code.coding[coreLaboJLAC10/rh-bld].display = "血液型-Rh" (exactly)	
 //* code.coding[coreLaboJLAC10/rh-bld].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_rh_bld_VS (required)
 
 * insert  core43LaboItemProfile(t-bil,T-Bil,t_bil)
@@ -331,9 +336,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/tp].display = "TP" (exactly)	
 //* code.coding[coreLaboJLAC10/tp].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_tp_VS (required)
 
-* insert  core43LaboItemProfile(u-ac,U-ac,u_ac)
+* insert  core43LaboItemProfile(u-ac,U-A/C,u_ac)
 //* code.coding[coreLaboJLAC10/u-ac].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-//* code.coding[coreLaboJLAC10/u-ac].display = "U-ac" (exactly)	
+//* code.coding[coreLaboJLAC10/u-ac].display = "U-A/C" (exactly)	
 //* code.coding[coreLaboJLAC10/u-ac].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_u_ac_VS (required)
 
 * insert  core43LaboItemProfile(u-bld,U-Bld,u_bld)
@@ -352,14 +357,14 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/u-glu].display = "U-Glu" (exactly)	
 //* code.coding[coreLaboJLAC10/u-glu].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_VS (required)
 
-* insert  core43LaboItemProfile(u-glu-HalfQty,U-Glu-定性半定量,u_glu_HalfQty)
+* insert  core43LaboItemProfile(u-glu-HalfQty,U-Glu-半定量,u_glu_HalfQty)
 //* code.coding[coreLaboJLAC10/u-glu-HalfQty].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-//* code.coding[coreLaboJLAC10/u-glu-HalfQty].display = "U-Glu-定性半定量" (exactly)	
+//* code.coding[coreLaboJLAC10/u-glu-HalfQty].display = "U-Glu-定量" (exactly)	
 //* code.coding[coreLaboJLAC10/u-glu-HalfQty].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_HalfQty_VS (required)
 
-* insert  core43LaboItemProfile(u-pc,U-pc,u_pc)
+* insert  core43LaboItemProfile(u-pc,U-P/C,u_pc)
 //* code.coding[coreLaboJLAC10/u-pc].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-//* code.coding[coreLaboJLAC10/u-pc].display = "U-pc" (exactly)	
+//* code.coding[coreLaboJLAC10/u-pc].display = "U-P/C" (exactly)	
 //* code.coding[coreLaboJLAC10/u-pc].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_u_pc_VS (required)
 
 * insert  core43LaboItemProfile(utp,U-TP,utp)
@@ -406,9 +411,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hbsagquant].display = "HBs抗原(定量)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hbsagquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGQUANT_VS  (required)
 
-* insert infectionLaboItemProfile(hbsagresult,HBs抗原(判定\),HBsAGRESULT)
+* insert infectionLaboItemProfile(hbsagresult,HBs抗原(定性\),HBsAGRESULT)
 //* code.coding[infectionLaboJLAC10/hbsagresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hbsagresult].display = "HBs抗原(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsagresult].display = "HBs抗原(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hbsagresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsAGRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hbsagposcoi,HBs抗原(陽性コントロール比\),HBsAGPOSCOI)
@@ -426,9 +431,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hbsabquant].display = "HBs抗体(定量)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hbsabquant].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABQUANT_VS  (required)
 
-* insert infectionLaboItemProfile(hbsabresult,HBs抗体(判定\),HBsABRESULT)
+* insert infectionLaboItemProfile(hbsabresult,HBs抗体(定性\),HBsABRESULT)
 //* code.coding[infectionLaboJLAC10/hbsabresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hbsabresult].display = "HBs抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hbsabresult].display = "HBs抗体(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hbsabresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HBsABRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hcvnquant,HCV核酸増幅検査(定量\),HCVNQUANT)
@@ -461,9 +466,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hcvabdil].display = "HCV抗体(希釈倍率)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hcvabdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVABDIL_VS  (required)
 
-* insert infectionLaboItemProfile(hcvabresult,HCV抗体(判定\),HCVABRESULT)
+* insert infectionLaboItemProfile(hcvabresult,HCV抗体(定性\),HCVABRESULT)
 //* code.coding[infectionLaboJLAC10/hcvabresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hcvabresult].display = "HCV抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hcvabresult].display = "HCV抗体(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hcvabresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HCVABRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hcvabposcoi,HCV抗体(陽性コントロール比\),HCVABPOSCOI)
@@ -491,11 +496,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hiv1p2abod].display = "HIV-1+2抗体・p24抗原(吸光度)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv1p2abod].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABOD_VS  (required)
 
-* insert infectionLaboItemProfile(hiv1p2abp24quant,HIV-1+2抗体・p24抗原(定量、HIV-p24抗原\),HIV1P2ABP24QUANT)
+* insert infectionLaboItemProfile(hiv1p2abp24quant,HIV-1+2抗体・p24抗原(定量\),HIV1P2ABP24QUANT)
 
-* insert infectionLaboItemProfile(hiv1p2abp24result,HIV-1+2抗体・p24抗原(判定\),HIV1P2ABP24RESULT)
+* insert infectionLaboItemProfile(hiv1p2abp24result,HIV-1+2抗体・p24抗原(定性\),HIV1P2ABP24RESULT)
 //* code.coding[infectionLaboJLAC10/hiv1p2abp24result].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hiv1p2abp24result].display = "HIV-1+2抗体・p24抗原(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abp24result].display = "HIV-1+2抗体・p24抗原(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv1p2abp24result].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABP24RESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hiv1p2abp24poscoi,HIV-1+2抗体・p24抗原(陽性コントロール比\),HIV1P2ABP24POSCOI)
@@ -513,9 +518,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hiv1p2abdil].display = "HIV-1+2抗体(希釈倍率)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv1p2abdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABDIL_VS  (required)
 
-* insert infectionLaboItemProfile(hiv1p2abresult,HIV-1+2抗体(判定\),HIV1P2ABRESULT)
+* insert infectionLaboItemProfile(hiv1p2abresult,HIV-1+2抗体(定性\),HIV1P2ABRESULT)
 //* code.coding[infectionLaboJLAC10/hiv1p2abresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hiv1p2abresult].display = "HIV-1+2抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1p2abresult].display = "HIV-1+2抗体(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv1p2abresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1P2ABRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hiv1p2abposcoi,HIV-1+2抗体(陽性コントロール比\),HIV1P2ABPOSCOI)
@@ -528,9 +533,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hiv1abdil].display = "HIV-1抗体(希釈倍率)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv1abdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1ABDIL_VS  (required)
 
-* insert infectionLaboItemProfile(hiv1abresult,HIV-1抗体(判定\),HIV1ABRESULT)
+* insert infectionLaboItemProfile(hiv1abresult,HIV-1抗体(定性\),HIV1ABRESULT)
 //* code.coding[infectionLaboJLAC10/hiv1abresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hiv1abresult].display = "HIV-1抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv1abresult].display = "HIV-1抗体(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv1abresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV1ABRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(hiv2abdil,HIV-2抗体(希釈倍率\),HIV2ABDIL)
@@ -538,9 +543,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[infectionLaboJLAC10/hiv2abdil].display = "HIV-2抗体(希釈倍率)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv2abdil].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV2ABDIL_VS  (required)
 
-* insert infectionLaboItemProfile(hiv2abresult,HIV-2抗体(判定\),HIV2ABRESULT)
+* insert infectionLaboItemProfile(hiv2abresult,HIV-2抗体(定性\),HIV2ABRESULT)
 //* code.coding[infectionLaboJLAC10/hiv2abresult].system = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS  (exactly)
-//* code.coding[infectionLaboJLAC10/hiv2abresult].display = "HIV-2抗体(判定)"  (exactly)
+//* code.coding[infectionLaboJLAC10/hiv2abresult].display = "HIV-2抗体(定性)"  (exactly)
 //* code.coding[infectionLaboJLAC10/hiv2abresult].code from  $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV2ABRESULT_VS  (required)
 
 * insert infectionLaboItemProfile(stsqlresult,梅毒STS(定性\),STSQLRESULT)

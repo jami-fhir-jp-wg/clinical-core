@@ -363,22 +363,38 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #D-Bil
 
-// Dダイマー
+// Dダイマー（定量）
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS
 Id: jp-clins-valueset-corelaboJLAC10-dd-vs
 Title: "CLINS: DD ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 Dダイマー JLAC10 ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 Dダイマー定量 JLAC10 ValueSet"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
+* ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2024-12-15"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #DD
+
+
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_dd_class_VS
+Id: jp-clins-valueset-corelaboJLAC10-dd-class-vs
+Title: "CLINS: DD-class ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 Dダイマー定性 JLAC10 ValueSet"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_class_VS
+* ^version = "1.1.0a"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-12-15"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #DD-class
+
 
 
 // FBG 空腹時血糖
@@ -823,7 +839,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet"
 * ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #U-Glu
 
-// U-Glu-定性半定量 ^^
+// U-Glu-半定量 ^^
 /*
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_QLHalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-glu-qlhalfqty-vs

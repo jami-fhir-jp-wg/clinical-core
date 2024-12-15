@@ -324,9 +324,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* code.coding[coreLaboJLAC10/u-glu].display = "U-Glu" (exactly)	
 //* code.coding[coreLaboJLAC10/u-glu].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_VS (required)
 
-* insert  core43LaboItemProfile(u-glu-HalfQty,U-Glu-定性半定量,u_glu_HalfQty)
+* insert  core43LaboItemProfile(u-glu-HalfQty,U-Glu-半定量,u_glu_HalfQty)
 //* code.coding[coreLaboJLAC10/u-glu-HalfQty].system = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS (exactly)	
-//* code.coding[coreLaboJLAC10/u-glu-HalfQty].display = "U-Glu-定性半定量" (exactly)	
+//* code.coding[coreLaboJLAC10/u-glu-HalfQty].display = "U-Glu-半定量" (exactly)	
 //* code.coding[coreLaboJLAC10/u-glu-HalfQty].code from $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_HalfQty_VS (required)
 
 * insert  core43LaboItemProfile(u-pc,U-pc,u_pc)

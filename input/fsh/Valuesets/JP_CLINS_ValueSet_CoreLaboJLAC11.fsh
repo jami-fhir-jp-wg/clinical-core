@@ -346,21 +346,36 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #D-Bil
 
-// Dダイマー
+// Dダイマー定量
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_dd_VS
 Id: jp-clins-valueset-corelaboJLAC11-dd-vs
 Title: "CLINS: DD ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 Dダイマー JLAC11 ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 Dダイマー定量 JLAC11 ValueSet"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
+* ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_dd_VS
 * ^version = "1.1.0a"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2024-12-15"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #DD
+
+// Dダイマー定性
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_dd_class_VS
+Id: jp-clins-valueset-corelaboJLAC11-dd-class-vs
+Title: "CLINS: DD ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 Dダイマー定性 JLAC11 ValueSet"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_dd_class_VS
+* ^version = "1.1.0a"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-12-15"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #DD-class
 
 
@@ -378,7 +393,7 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC11 
 * ^date = "2024-02-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #BG
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #FBG
 
 // γ-GTP(GGT)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_ggt_VS
@@ -806,7 +821,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet"
 * ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS where concept descendant-of #U-Glu
 
-// U-Glu-定性半定量 ^^
+// U-Glu-定量 ^^
 /*
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_u_glu_QLHalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC11-u-glu-qlhalfqty-vs
