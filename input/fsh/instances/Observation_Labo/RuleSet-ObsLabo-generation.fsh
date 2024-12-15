@@ -13,7 +13,7 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
 * extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-{orderSetSeq}"
+* identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-099"
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB
 // 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
@@ -32,11 +32,13 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
 * issued = "2024-12-15T14:11:13.000+09:00"
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
-RuleSet: laboItemValueStringWithUnit(valueNum, unitString)
+RuleSet: laboItemValueStringWithUnit(valueNum, unitString,unitCode)
 // valueString は引用なしの数値文字列
 // unitStringは引用符なしの文字列
 * valueQuantity.value = {valueNum}
 * valueQuantity.unit = "{unitString}"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = unitCode
 
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
@@ -47,3 +49,10 @@ RuleSet: laboItemValueStringWithUnit(valueNum, unitString)
 RuleSet: laboItemValueString(valueString)
 // valueString は引用なしの文字列
 * valueString = "{valueString}"
+
+RuleSet: laboItemValueCodeableConcept(system,code,display)
+// valueString は引用なしの数値文字列
+// unitStringは引用符なしの文字列
+* valueCodeableConcept.coding.system = "{system}"
+* valueCodeableConcept.coding.code = #{code}
+* valueCodeableConcept.coding.display = "{display}"
