@@ -1,6 +1,6 @@
 
 RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
-* note.text = "Observationリソース（検体検査結果）{orderSetSeq,laboItemFHIRcode}　{valueString}　{unitString}　ローカルコード={local}} 臨床検査項目基本コードJLAC={jlac} 検体：(埋込みリソース無し）　診療科：循環器診療科"
+* note.text = "Observationリソース（検体検査結果）{laboItemFHIRcode}　{valueString}　{unitString}　ローカルコード={local}} 臨床検査項目基本コードJLAC={jlac} 検体：(埋込みリソース無し）　診療科：循環器診療科"
 * meta.lastUpdated = "2024-12-15T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
@@ -32,7 +32,7 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac)
 * issued = "2024-12-15T14:11:13.000+09:00"
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
-RuleSet: laboItemValueStringWithUnit(valueNum, unitString,unitCode)
+RuleSet: laboItemValueStringWithUnit(valueNum,unitString,unitCode)
 // valueString は引用なしの数値文字列
 // unitStringは引用符なしの文字列
 * valueQuantity.value = {valueNum}
