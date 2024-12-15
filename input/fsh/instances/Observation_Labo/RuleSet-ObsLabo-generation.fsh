@@ -38,7 +38,7 @@ RuleSet: laboItemValueStringWithUnit(valueNum,unitString,unitCode)
 * valueQuantity.value = {valueNum}
 * valueQuantity.unit = "{unitString}"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = unitCode
+* valueQuantity.code = {unitCode}`
 
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
