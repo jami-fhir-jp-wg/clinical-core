@@ -2,15 +2,15 @@ name: for-FAST-HDJ
 on:
   push:
     branches: 
-      - devlop1.7
+      - develop1.7
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
       - 'custom-template/**'
-      - '.github/workflows/main.yml'
+      - '.github/workflows/fasthdj.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ devlop1.7 ]
+    branches: [ develop1.7 ]
   repository_dispatch:
     types: [update]
 env:
