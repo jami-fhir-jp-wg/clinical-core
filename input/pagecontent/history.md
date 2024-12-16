@@ -9,9 +9,11 @@
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.7.0  (2024.12.16)
   - ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_fbg_VS
     CodeSystemからのコードセット抽出条件が空腹時血糖（FBG）ではなく血糖（定量）(BG)となっていたのを修正。
+  - ObservationLabResultの7.1 プロファイル詳細において、下記の検査項目であることを指定するdisplay文字列（FHIR 識別文字列）を、「電子カルテ情報共有サービスの導入に関するシステムベンダ向け技術解説書」V1.2.0に合わせて修正した。空腹時血糖、プロトロンビン時間(PT-秒)、プロトロンビン時間(PT比)、プロトロンビン時間(PT-活性)、Dダイマー、尿糖(半定量)、尿中蛋白/クレアチニン比(P/C比)、尿中アルブミン/クレアチニン比(A/C比)、血液型(Rh)、HBs抗原(定性)、HBs抗体(定性)、HCV抗体(定性)、HIV-1+2抗体・p24抗原(定性)、HIV-1+2抗体・p24抗原(定量)、HIV-1抗体(定性)、HIV-2抗体(定性)、HIV-1+2抗体(定性)
   - Ver.1.6.0(2024.12.07)の改訂履歴説明（本ページ）のcontained (JP_Encounter)、contained (JP_Practitioner)の説明を補足するため、対象となるリソースの記載を追加した。
   - AllergyIntolerance、Condition、MedicationRequest、ObservationLabResultにおける　6.1の各表で、診療科情報を記述するために使用する拡張を識別するURLが、 7.1 プロファイル詳細の記載や拡張の定義URLと一致していなかったので、6.1の各表での記載を修正した。（誤：http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department　→ 正: http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department）　（clinsの部分をeCSに修正）
   - MedicationRequestの　6.1の表「MedicationRequest」で、	dispenseRequestの拡張として使用するための「頓用回数を表現する拡張」を識別するURLが、7.1 プロファイル詳細の記載や拡張の定義URLと一致していなかったので、6.1の表での記載を修正した。（誤：http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount　→ 正: http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount）
+
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.6.0  (2024.12.07)
   - JP_Observation_LabResult_eCS　の「7.1 プロファイル詳細」
