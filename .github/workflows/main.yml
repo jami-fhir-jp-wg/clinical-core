@@ -14,7 +14,7 @@ on:
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.7.0-rc
+  release_version : 1.7.0
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
