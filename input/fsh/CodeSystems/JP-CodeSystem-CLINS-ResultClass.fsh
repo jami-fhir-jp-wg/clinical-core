@@ -1,5 +1,5 @@
 CodeSystem: JP_CLINS_CodeSystem_ResultClass_PosNegHold_CS
-Id: jp-clins-codesystem-resultclass-posneghold_cs
+Id: jp-clins-codesystem-resultclass-posneghold-cs
 Title: "JP_CLINS 判定定性検査結果コード表"
 Description: "JP_CLINS 判定定性検査結果　1:陽性、2:陰性、3:判定保留 コードは半角、コード表示名は全角文字"
 * ^url = "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS"
@@ -12,9 +12,7 @@ Description: "JP_CLINS 判定定性検査結果　1:陽性、2:陰性、3:判定
 * ^content = #complete
 * ^caseSensitive = false
 * ^date = "2024-12-16T00:00:00+09:00"
-* ^author.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^editor.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^endorser.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
+* ^contact.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
 
 * #1 "陽性"
 * #2 "陰性"
@@ -22,7 +20,7 @@ Description: "JP_CLINS 判定定性検査結果　1:陽性、2:陰性、3:判定
 
 
 CodeSystem: JP_CLINS_CodeSystem_ResultClass_UrineCode_CS
-Id: jp-clins-codesystem-resultclass-urincode_cs
+Id: jp-clins-codesystem-resultclass-urincode-cs
 Title: "JP_CLINS 尿関係の定性検査結果コード表"
 Description: "JP_CLINS 尿関係の定性検査結果　1：－、2：±、3：＋、4：２＋、5：３＋、6：４＋、7：５＋ コードは半角、コード表示名は全角文字"
 * ^url = "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS"
@@ -35,9 +33,7 @@ Description: "JP_CLINS 尿関係の定性検査結果　1：－、2：±、3：�
 * ^content = #complete
 * ^caseSensitive = false
 * ^date = "2024-12-16T00:00:00+09:00"
-* ^author.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^editor.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^endorser.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
+* ^contact.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
 * #1 "－"
   * ^designation[+].language = #ja
   * ^designation[=].value = "-"
@@ -85,7 +81,7 @@ Description: "JP_CLINS 尿関係の定性検査結果　1：－、2：±、3：�
   * ^designation[=].value = "(+++++)"
 
 CodeSystem: JP_CLINS_CodeSystem_ResultClass_BldABO_CS
-Id: jp-clins-codesystem-resultclass-bldABO_cs
+Id: jp-clins-codesystem-resultclass-bldABO-cs
 Title: "JP_CLINS ABO血液型の検査結果コード表"
 Description: "JP_CLINS ABO血液型の検査結果コード表　1：A、2：B、3：AB、4：O コードは半角、コード表示名は全角文字または半角文字"
 * ^url = "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldABO_CS"
@@ -98,9 +94,7 @@ Description: "JP_CLINS ABO血液型の検査結果コード表　1：A、2：B�
 * ^content = #complete
 * ^caseSensitive = false
 * ^date = "2024-12-16T00:00:00+09:00"
-* ^author.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^editor.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^endorser.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
+* ^contact.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
 * #1 "Ａ"
   * ^designation[+].language = #ja
   * ^designation[=].value = "A"
@@ -115,7 +109,7 @@ Description: "JP_CLINS ABO血液型の検査結果コード表　1：A、2：B�
   * ^designation[=].value = "O"
 
 CodeSystem: JP_CLINS_CodeSystem_ResultClass_BldRh_CS
-Id: jp-clins-codesystem-resultclass-bldRh_cs
+Id: jp-clins-codesystem-resultclass-bldRh-cs
 Title: "JP_CLINS Rh血液型の検査結果コード表"
 Description: "JP_CLINS Rh血液型の検査結果コード表　1：＋、2：－ コードは半角、コード表示名は全角文字または半角文字"
 * ^url = "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldRh_CS"
@@ -128,9 +122,7 @@ Description: "JP_CLINS Rh血液型の検査結果コード表　1：＋、2：�
 * ^content = #complete
 * ^caseSensitive = false
 * ^date = "2024-12-16T00:00:00+09:00"
-* ^author.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^editor.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
-* ^endorser.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
+* ^contact.name = "Kazuhiko Ohe, The Univerisity of Tokyo"
 * #1 "＋"
   * ^designation[+].language = #ja
   * ^designation[=].value = "+"
