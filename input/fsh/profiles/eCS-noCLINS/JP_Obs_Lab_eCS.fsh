@@ -202,6 +202,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert  core43LaboItemProfile(ast,AST,ast)
 * insert  core43LaboItemProfile(bnp,BNP,bnp)
 * insert  core43LaboItemProfile(bg,BG,bg)
+* insert  core43LaboItemProfile(cbg,CBG,cbg)
 * insert  core43LaboItemProfile(bun,BUN,bun)
 * insert  core43LaboItemProfile(ca,Ca,ca)
 * insert  core43LaboItemProfile(che,ChE,che)

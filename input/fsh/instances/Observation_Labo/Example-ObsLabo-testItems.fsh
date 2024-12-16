@@ -16,7 +16,7 @@ Instance: Example-JP-Obs-LabResult-eCS-JLAC10-FBG
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
 Description: "Observationリソース（検体検査結果）FBG 空腹時血糖　3D010130002327101　88 mg/dL"
-* insert core43LaboItemInstanceCodeUnit(FG,空腹時血糖,90020,3D010130002327101,JLAC10)
+* insert core43LaboItemInstanceCodeUnit(FBG,空腹時血糖,90020,3D010130002327101,JLAC10)
 * insert laboItemValueStringWithUnit(血清,88,mg/dL,mg/dL)
 
 Instance: Example-JP-Obs-LabResult-eCS-JLAC11-FBG
