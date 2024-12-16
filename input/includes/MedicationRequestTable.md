@@ -323,7 +323,7 @@
   <td class=xl142 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl142 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl294 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</td>
+  <td class=xl294 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department</td>
  </tr>
  <tr height=41 style='height:31.0pt'>
   <td height=41 class=xl157 align=left width=112 style='height:31.0pt;
@@ -1145,9 +1145,9 @@
   <td class=xl82 width=36 style='width:27pt'>固定<ruby><font class="font21"><rt
   class=font21></rt></font></ruby></td>
   <td class=xl310 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount"
+  href="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount"
   target="_parent"><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
-  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount</span></a></td>
+  mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount</span></a></td>
  </tr>
  <tr height=40 style='height:30.0pt'>
   <td height=40 class=xl176 width=112 style='height:30.0pt;border-top:none;

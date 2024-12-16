@@ -6,10 +6,12 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.7.0  (2024.12.16)
   - ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_fbg_VS
     CodeSystemからのコードセット抽出条件が空腹時血糖（FBG）ではなく血糖（定量）(BG)となっていたのを修正。
+  - Ver.1.6.0(2024.12.07)の改訂履歴説明（本ページ）のcontained (JP_Encounter)、contained (JP_Practitioner)の説明を補足するため、対象となるリソースの記載を追加した。
+  - AllergyIntolerance、Condition、MedicationRequest、ObservationLabResultにおける　6.1の各表で、診療科情報を記述するために使用する拡張を識別するURLが、 7.1 プロファイル詳細の記載や拡張の定義URLと一致していなかったので、6.1の各表での記載を修正した。（誤：http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department　→ 正: http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department）　（clinsの部分をeCSに修正）
+  - MedicationRequestの　6.1の表「MedicationRequest」で、	dispenseRequestの拡張として使用するための「頓用回数を表現する拡張」を識別するURLが、7.1 プロファイル詳細の記載や拡張の定義URLと一致していなかったので、6.1の表での記載を修正した。（誤：http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount　→ 正: http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount）
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.6.0  (2024.12.07)
   - JP_Observation_LabResult_eCS　の「7.1 プロファイル詳細」
@@ -21,8 +23,8 @@
     - JP_AllergyIntolerance_eCS（LTSのみ可）
     - JP_Condition_eCS（LTS、UNINFORMED、UNDELIVEREDのいずれかのみ可）
     - JP_Observation_LaboResult_eCS（指定感染症の検査結果でのみLTSのみ可、その他の検査結果ではLTSは制約チェック時にエラーとなる）
-  - contained (JP_Encounter)が電子カルテ情報サービスでは必須となっている場合の制約チェックで、JP_EncounterだけでなくJP_Encounter_eCSに準拠しているリソースでも許容されるよう修正した。
-  - contained (JP_Practitioner)が電子カルテ情報サービスでは必須となっている場合の制約チェックで、JP_PractitionerだけでなくJP_Practitioner_eCSに準拠しているリソースでも許容されるよう修正した。
+  - contained (JP_Encounter)が電子カルテ情報サービスでは必須となっている場合（ObservationリソースおよびConditionリソース）の制約チェックで、JP_EncounterだけでなくJP_Encounter_eCSに準拠しているリソースでも許容されるよう修正した。
+  - contained (JP_Practitioner)が電子カルテ情報サービスでは必須となっている場合（Observationリソース）の制約チェックで、JP_PractitionerだけでなくJP_Practitioner_eCSに準拠しているリソースでも許容されるよう修正した。
   - JP_Observation_LabResult_eCSのperformer要素が電子カルテ情報サービスでは必須となっている場合の制約チェックで、performer要素がなければerrorとなるように制約をJP_Bundle_CLINSに追加した。またどのObservationリソースにperformer要素が足りないかがわかるようにするため、performer要素がないObservationリソースでは注意喚起がValidation時に出力されるよう制約をJP_Observation_LabResult_eCSに追加した。
   - 診療情報提供書の作例データで、臨床経過セクションでの記述をtext要素ではなく、DocumentReferenceリソースのdescription要素に記述して参照する作例データを追加した（Bundle-CLINS-Referral-NoEntry-Example-01-RefText）
   - 診療情報提供書、退院時サマリーの各セクションにおいて、section.textとsection.entryによる構造情報との両方に意味のある内容があった場合の取扱いについて曖昧さがあったため、説明をcomment記載として追加した。
@@ -545,7 +547,7 @@ JP_MedicationRequest_eCSの表で以下の２箇所のURLを修正（ePrescripti
 
 
 * dispenseRequest.extension.url	頓用回数を表現する拡張を識別するURL。<br>
-   http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount<br>
+   http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount<br>
 <br>
 
 

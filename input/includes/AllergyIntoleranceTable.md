@@ -366,7 +366,7 @@
   <td class=xl244 align=left width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
   <td class=xl142 align=left width=36 style='border-left:none;width:27pt'><ruby>固定<span
   style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl267 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department</td>
+  <td class=xl267 width=195 style='border-left:none;width:146pt'>http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department</td>
   <td class=xl268></td>
   <td class=xl268></td>
   <td class=xl268></td>
