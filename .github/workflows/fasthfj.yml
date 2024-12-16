@@ -2,7 +2,7 @@ name: for-FAST-HDJ
 on:
   push:
     branches: 
-      - devlop1.6
+      - devlop1.7
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,11 +10,14 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ devlop1.6 ]
+    branches: [ devlop1.7 ]
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.6.0
+  release_version : 1.7.0-FAST
+defaults:
+  run:
+    shell: bash # ワークフローで使うシェルをまとめて指定
 jobs:
   turn:
     runs-on: ubuntu-latest
@@ -46,7 +49,7 @@ jobs:
         source ~/.bashrc
         sudo gem install jekyll bundler
 
-    - name: Download IG Publisher latest( not 1.6.11 )
+    - name: Download IG Publisher latest (not 1.6.11)
       uses: Legion2/download-release-action@v2.1.0
       with:
         repository: HL7/fhir-ig-publisher
@@ -105,12 +108,18 @@ jobs:
         ls -l /home/runner/.fhir/packages/
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPCOREdir/
 
-    - name: apply the version of sushi-config.yaml and other files
+    - name: Set current datetime
+      run: echo "CURRENT_DATETIME=$(date '+%Y-%m-%dT%H:%M')" >> $GITHUB_ENV
+
+    - name: Use datetime in a script
+      run: echo "The current datetime is ${{ env.CURRENT_DATETIME }}"
+
+    - name: apply the version of sushi-config.yaml
       run: |
         find input/fsh/profiles -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-profile/${{ env.release_version }}/g" {} \;        
         find input/fsh/instances -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-instance/${{ env.release_version }}/g" {} \;
 
-        sed 's/version: 1.x.x-temp/version: ${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
+        sed 's/1.x.x-temp/${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
         mv sushi-config-temp.yaml sushi-config.yaml
 
         sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/validationGuide.md > input/pagecontent/validationGuide-temp.md
