@@ -45,7 +45,7 @@ InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
 Description: "Observationリソース（検体検査結果）Dダイマー(定量)　2B140000002205201　112 μg/mL"
 * insert core43LaboItemInstanceCodeUnit(DD,Dダイマー(定量\),90040,2B140000002205201,JLAC10)
-* insert laboItemValueStringWithUnit(血漿,112,μg/mL,μg/mL)
+* insert laboItemValueStringWithUnit(血漿,112,μg/mL,ug/mL)
 
 Instance: Example-JP-Obs-LabResult-eCS-JLAC11-DD
 InstanceOf: JP_Observation_LabResult_eCS

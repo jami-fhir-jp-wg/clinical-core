@@ -396,3 +396,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldRh_CS
     - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS
     - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
