@@ -733,9 +733,7 @@
   <td class=xl79 width=73 style='width:55pt'>　</td>
   <td class=xl214 width=35 style='width:26pt'>1..1</td>
   <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）,
-  remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) 、unknown（<ruby>不明<span
-  style='display:none'><rt>フメイ </rt></span></ruby>）のいずれかを選ぶ。</td>
+  <td class=xl79 width=359 style='width:269pt'>コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）、remission(寛解)、resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。</td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
   <td class=xl178 width=195 style='width:146pt'>&quot;active&quot;</td>
  </tr>
