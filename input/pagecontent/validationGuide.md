@@ -159,7 +159,7 @@ Validationコマンドのパラメータ説明
   - -tx n/a ：　外部のTerminologyServer を参照しないよう設定するオプション。ここでの手順では、パッケージ [jpfhir-terminology.r4-1.2.4-url]をロードしてローカルに配置しているので、外部のTerminologyServerへの参照は必要がない。
   - -ig [pkgClins]/jp-core.r4-1.1.2-clins.tgz : jp-core.r4 v1.1.2-url のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
   - -ig [pkgClins]/jpfhir-terminology.r4-1.2.4-url.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
-  - -ig [pkgClins]/jp-eCSCLINS.r4-1.x.x-temp.tgz : 電子カルテ情報共有サービスで送信される５情報と、BundleリソースのValidationのためのプロファイル等を格納したパッケージ。必須。なお、２文書のパッケージは別にある。
+  - -ig [pkgClins]/jp-eCSCLINS.r4-1.x.x-temp.tgz : 電子カルテ情報共有サービスで送信される５情報送信用Bundleリソース、２文書（診療情報提供書、退院時サマリー）及び患者サマリー（寮寮計画書）のBundleリソースなどのValidationのためのプロファイル等を格納したパッケージ。必須。
 
 ####  Validationの出力例の解説
 
