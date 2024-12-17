@@ -143,9 +143,11 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 
 * clinicalStatus   0..1 MS
 * clinicalStatus ^short = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。"
-* clinicalStatus ^definition = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では、必須。"
-* clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) 、unknown（不明）のいずれかを選ぶ。"
+* clinicalStatus ^definition = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では、必須。使用できるコードは詳細コメントを参照。"
+* clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）、remission(寛解)、resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。"
 * clinicalStatus.coding 1..* MS
+* clinicalStatus.coding ^short = "臨床的状態コード。使用するコードは詳細定義を参照のこと。"
+* clinicalStatus.coding ^definition = "臨床的状態コード。code要素はコード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）、remission(寛解)、resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。display要素は、code値に対応して　Active、Remission、Resolved、Unknown　のいずれかの文字列を設定する。"
 * clinicalStatus.text 0..1 MS
   * insert relative_short_definition("コードだけでは記述できない情報がある場合にコードと併用してもよい。値が使用されない可能性はある")
 
