@@ -10,8 +10,8 @@
   - ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_fbg_VS
     CodeSystemからのコードセット抽出条件が空腹時血糖（FBG）ではなく血糖（定量）(BG)となっていたのを修正。
   - ValueSet:Dダイマー（DD-定性）のJLAC10,JLAC11に対応するValueSetが不足したため追加。
-  　　- http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
-  　　- http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
   - CodeSystem: 定性検査結果をコードで記述するためのCodeSystemを追加。
     - JP_CLINS_CodeSystem_ResultClass_PosNegHold_CS
     - JP_CLINS_CodeSystem_ResultClass_UrineCode_CS
