@@ -32,7 +32,7 @@ Description: "Conditionリソース 必須要素だけの データ作成例"
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "202934701"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#unknown "Unknown"
  // active | recurrence | relapse | inactive | remission | resolved
 
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
