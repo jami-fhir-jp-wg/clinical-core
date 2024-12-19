@@ -12,7 +12,7 @@ title: "電子カルテ情報共有サービス2文書５情報+患者サマリ�
 description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide v1.x.x-temp"
 status: active # draft | active | retired | unknown 
 version: "1.x.x-temp"
-date: 2024-12-17
+date: 2024-12-19
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
@@ -75,6 +75,7 @@ menu:
     FHIRデータ作例集: artifacts.html#example-example-instances
     用語説明: glossary.html
     改訂履歴: history.html
+    全バージョン一覧 : all-igs.html
   Artifacts:
     Artifacts: artifacts.html
   Validationガイド:
