@@ -1,4 +1,15 @@
 
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 2px solid black;
+    padding: 4px;
+    text-align: center;
+  }
+</style>
 
 ### 実装ガイドとパッケージの全バージョンリスト
  
