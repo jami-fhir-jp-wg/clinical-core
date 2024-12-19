@@ -58,7 +58,8 @@ pages:
     title: Validationガイド
   history.md:
     title: 改訂履歴
-    
+  all-igs.md:
+    title: 全バージョン一覧    
 #-------------------------------------
 # メニュー設定
 #-------------------------------------
@@ -79,8 +80,9 @@ menu:
   Validationガイド:
     Validationガイド: validationGuide.html
   パッケージDownload:
-    標準(diff)版: https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.x.x-temp.tgz
-    snapshot版: https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.x.x-temp-snap.tgz
+    最新の標準(diff)版: https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.x.x-temp.tgz
+    最新のsnapshot版: https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.x.x-temp-snap.tgz
+    全バージョン一覧: all-igs.html
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------

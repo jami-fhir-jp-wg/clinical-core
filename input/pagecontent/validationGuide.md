@@ -77,8 +77,9 @@ Validation手順としては、I:手順（準備編）を完了したあと、�
  　 
   - jp-eCSCLINS.r4　パッケージ
       
-    - tgz形式 : [https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.x.x-temp.tgz](https://jpfhir.jp/fhir/clins/jp-eCSCLINS.r4-1.x.x-temp.tgz)
-
+  - tgz形式 : [https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.x.x-temp.tgz](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.x.x-temp.tgz)
+  - もし複数のバージョンが混在しているデータに対してValidationを行いたい場合には、メニュー：パッケージDownloadの全バージョン一覧から、対象となるすべてのバージョンのdiffパッケージをダウンロードして、同じフォルダに格納してください。
+  
 #####  検証対象となる json形式のファイルをひとつ以上、[targets] 直下に配置する。
 
 直下ではなく、さらにサブフォルダを作成して配置してもよい。その場合には、以降では　[targets]　はそのサブフォルダを含めたパスであるとして読むこと。
@@ -160,6 +161,7 @@ Validationコマンドのパラメータ説明
   - -ig [pkgClins]/jp-core.r4-1.1.2-clins.tgz : jp-core.r4 v1.1.2-url のパッケージ。必須。これがないとjp-coreを参照する際にエラーになる。
   - -ig [pkgClins]/jpfhir-terminology.r4-1.2.4-url.tgz ： jp-core.r4、jp-clinsから参照されるterminologyのパッケージ。必須。これがないと日本版CodeSystemやValueSetを参照する際にエラーになる。このパッケージには、JLAC10、医薬品マスター、標準病名マスター、ICD10分類コード表なども含まれるので、定期的に適切なバージョンへのアプデートが必要である。
   - -ig [pkgClins]/jp-eCSCLINS.r4-1.x.x-temp.tgz : 電子カルテ情報共有サービスで送信される５情報送信用Bundleリソース、２文書（診療情報提供書、退院時サマリー）及び患者サマリー（寮寮計画書）のBundleリソースなどのValidationのためのプロファイル等を格納したパッケージ。必須。
+
 
 ####  Validationの出力例の解説
 
