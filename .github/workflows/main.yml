@@ -2,7 +2,7 @@ name: Ohe-build
 on:
   push:
     branches: 
-      - develop1.7
+      - 1.7-test
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,7 +10,7 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ develop1.7 ]
+    branches: [ 1.7-test ]
   repository_dispatch:
     types: [update]
 env:
