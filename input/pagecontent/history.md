@@ -6,6 +6,17 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.7.1  (2024.12.20) 
+  - ObservationLabResultの7.1 プロファイル詳細において、下記の検査項目であることを指定するdisplay文字列（FHIR 識別文字列）を、「電子カルテ情報共有サービスの導入に関するシステムベンダ向け技術解説書」V1.2.0に合わせて修正.
+    - 血液型(ABO)
+    - HCV核酸増幅検査(定性)
+    - HCV抗原検査(定性)
+  - ObservationLabResultの7.1 プロファイル詳細で、空腹時中性脂肪 FTG、随時中性脂肪　CTGに対応する定義が漏れていたので追加。合わせて、JLAC10,JLAC11に対応するValueSetが不足したため以下の4つを追加。
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.7.0  (2024.12.19) バージョン番号変更せず
   - ダウンロードパッケージが格納されているフォルダを移動(ダウンロード用URLの変更)。
   - 過去バージョンのIGとダウンロードパッケージも全バージョン一覧メニューに掲載。

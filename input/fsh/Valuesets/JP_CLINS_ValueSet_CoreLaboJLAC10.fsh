@@ -1,8 +1,8 @@
 // 43項目全体
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_VS 
 Id: jp-clins-valueset-corelaboJLAC10-vs
-Title: "CLINS: CoreLabo43items ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC10 ValueSet"
+Title: "CLINS: CoreLabo43items ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2023-10-26T00:00:00.000+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_VS
@@ -18,8 +18,8 @@ Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC10 V
 // ⾎液型-ABO^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_abo_bld_VS
 Id: jp-clins-valueset-corelaboJLAC10-abo-bld-vs
-Title: "CLINS: ABO-BLD ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 血液型(ABO) JLAC10 ValueSet"
+Title: "CLINS: ABO-BLD ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 血液型(ABO) JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_abo_bld_VS
@@ -42,8 +42,8 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(ABO) JLAC10 V
 // ⾎液型-Rh^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_rh_bld_VS
 Id: jp-clins-valueset-corelaboJLAC10-rh-bld-vs
-Title: "CLINS: Rh-BLD ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 血液型(Rh) JLAC10 ValueSet"
+Title: "CLINS: Rh-BLD ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 血液型(Rh) JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_rh_bld_VS
@@ -60,8 +60,8 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(Rh) JLAC10 Va
 // アルブミン^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_alb_VS
 Id: jp-clins-valueset-corelaboJLAC10-alb-vs
-Title: "CLINS: ALB ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 アルブミン JLAC10 ValueSet"
+Title: "CLINS: ALB ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 アルブミン JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_alb_VS
@@ -76,8 +76,8 @@ Description: "CLINS 電子カルテ共有サービス用 アルブミン JLAC10 
 // アルカリホスファターゼ(ALP)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_alp_VS
 Id: jp-clins-valueset-corelaboJLAC10-alp-vs
-Title: "CLINS: ALP ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 アルカリホスファターゼ JLAC10 ValueSet"
+Title: "CLINS: ALP ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 アルカリホスファターゼ JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_alp_VS
@@ -92,8 +92,8 @@ Description: "CLINS 電子カルテ共有サービス用 アルカリホスフ�
 // ALT(GPT)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_alt_VS
 Id: jp-clins-valueset-corelaboJLAC10-alt-vs
-Title: "CLINS: ALT ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 ALT(GPT) JLAC10 ValueSet"
+Title: "CLINS: ALT ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 ALT(GPT) JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_alt_VS
@@ -108,8 +108,8 @@ Description: "CLINS 電子カルテ共有サービス用 ALT(GPT) JLAC10 ValueSe
 
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_amy_VS
 Id: jp-clins-valueset-corelaboJLAC10-amy-vs
-Title: "CLINS: AMY ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC10 ValueSet"
+Title: "CLINS: AMY ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC10 ValueSet (JLAC10)"
 
 // アミラ－ゼ(AMY)^^
 * ^meta.versionId = "1"
@@ -126,8 +126,8 @@ Description: "CLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC10 
 
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_aptt_VS
 Id: jp-clins-valueset-corelaboJLAC10-aptt-vs
-Title: "CLINS: APTT ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 活性化部分トロンボプラスチン時間 JLAC10 ValueSet"
+Title: "CLINS: APTT ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 活性化部分トロンボプラスチン時間 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_aptt_VS
@@ -142,8 +142,8 @@ Description: "CLINS 電子カルテ共有サービス用 活性化部分トロ�
 
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ast_VS
 Id: jp-clins-valueset-corelaboJLAC10-ast-vs
-Title: "CLINS: AST ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 AST(GOT) JLAC10 ValueSet"
+Title: "CLINS: AST ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 AST(GOT) JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ast_VS
@@ -158,8 +158,8 @@ Description: "CLINS 電子カルテ共有サービス用 AST(GOT) JLAC10 ValueSe
 // ヒト脳性Na利尿ペプチド前駆体Ｎ端フラグメント(NT-proBNP)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_nt_probnp_VS
 Id: jp-clins-valueset-corelaboJLAC10-nt-probnp-vs
-Title: "CLINS: NT-proBNP ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペプチド前駆体Ｎ端フラグメント JLAC10 ValueSet"
+Title: "CLINS: NT-proBNP ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペプチド前駆体Ｎ端フラグメント JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_nt_probnp_VS
@@ -174,8 +174,8 @@ Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペ
 // グルコース(血糖)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_bg_VS
 Id: jp-clins-valueset-corelaboJLAC10-bg-vs
-Title: "CLINS: BG ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖) JLAC10 ValueSet"
+Title: "CLINS: BG ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖) JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_bg_VS
@@ -190,8 +190,8 @@ Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖)
 // グルコース(血糖)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_cbg_VS
 Id: jp-clins-valueset-corelaboJLAC10-cbg-vs
-Title: "CLINS: CBG ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 随時血糖 JLAC10 ValueSet"
+Title: "CLINS: CBG ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 随時血糖 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_cbg_VS
@@ -207,8 +207,8 @@ Description: "CLINS 電子カルテ共有サービス用 随時血糖 JLAC10 Val
 // 尿素窒素(BUN)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_bun_VS
 Id: jp-clins-valueset-corelaboJLAC10-bun-vs
-Title: "CLINS: BUN ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC10 ValueSet"
+Title: "CLINS: BUN ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_bun_VS
@@ -223,8 +223,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC1
 // カルシウム(Ca)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ca_VS
 Id: jp-clins-valueset-corelaboJLAC10-ca-vs
-Title: "CLINS: Ca ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC10 ValueSet"
+Title: "CLINS: Ca ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ca_VS
@@ -239,8 +239,8 @@ Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC10 
 // カリウム(K)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_k_VS
 Id: jp-clins-valueset-corelaboJLAC10-k-vs
-Title: "CLINS: K ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 カリウム JLAC10 ValueSet"
+Title: "CLINS: K ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 カリウム JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_k_VS 
@@ -255,8 +255,8 @@ Description: "CLINS 電子カルテ共有サービス用 カリウム JLAC10 Val
 // コリンエステラーゼ(ChE)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_che_VS
 Id: jp-clins-valueset-corelaboJLAC10-che-vs
-Title: "CLINS: ChE ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 コリンエステラーゼ JLAC10 ValueSet"
+Title: "CLINS: ChE ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 コリンエステラーゼ JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_che_VS
@@ -271,8 +271,8 @@ Description: "CLINS 電子カルテ共有サービス用 コリンエステラ�
 // クレアチンキナーゼ(CK)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ck_VS
 Id: jp-clins-valueset-corelaboJLAC10-ck-vs
-Title: "CLINS: CK ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 クレアチンキナーゼ JLAC10 ValueSet"
+Title: "CLINS: CK ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 クレアチンキナーゼ JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ck_VS
@@ -287,8 +287,8 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチンキナ�
 // クロール(Cl)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_cl_VS
 Id: jp-clins-valueset-corelaboJLAC10-cl-vs
-Title: "CLINS: Cl ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 クロール JLAC10 ValueSet"
+Title: "CLINS: Cl ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 クロール JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_cl_VS
@@ -303,8 +303,8 @@ Description: "CLINS 電子カルテ共有サービス用 クロール JLAC10 Val
 // クレアチニン(Cre)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_cre_VS
 Id: jp-clins-valueset-corelaboJLAC10-cre-vs
-Title: "CLINS: Cre ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC10 ValueSet"
+Title: "CLINS: Cre ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_cre_VS
@@ -319,8 +319,8 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC
 // Ｃ反応性蛋白(CRP)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_crp_VS
 Id: jp-clins-valueset-corelaboJLAC10-crp-vs
-Title: "CLINS: CRP ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC10 ValueSet"
+Title: "CLINS: CRP ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_crp_VS
@@ -335,8 +335,8 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC
 
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_crp_class_VS
 Id: jp-clins-valueset-corelaboJLAC10-crp-class-vs
-Title: "CLINS: CRP-class ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判定 JLAC10 ValueSet"
+Title: "CLINS: CRP-class ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判定 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_crp_class_VS
@@ -351,8 +351,8 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判�
 // シスタチンC(Cys-C)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_cys_c_VS
 Id: jp-clins-valueset-corelaboJLAC10-cys-c-vs
-Title: "CLINS: Cys-C ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 シスタチンC JLAC10 ValueSet"
+Title: "CLINS: Cys-C ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 シスタチンC JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_cys_c_VS
@@ -367,8 +367,8 @@ Description: "CLINS 電子カルテ共有サービス用 シスタチンC JLAC10
 // 直接ビリルビン(D-Bil)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_d_bil_VS
 Id: jp-clins-valueset-corelaboJLAC10-d-bil-vs
-Title: "CLINS: D-Bil ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン JLAC10 ValueSet"
+Title: "CLINS: D-Bil ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_d_bil_VS
@@ -383,8 +383,8 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 // Dダイマー（定量）
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS
 Id: jp-clins-valueset-corelaboJLAC10-dd-vs
-Title: "CLINS: DD ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 Dダイマー定量 JLAC10 ValueSet"
+Title: "CLINS: DD ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 Dダイマー定量 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_VS
@@ -399,8 +399,8 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー定量 JLA
 
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_dd_class_VS
 Id: jp-clins-valueset-corelaboJLAC10-dd-class-vs
-Title: "CLINS: DD-class ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 Dダイマー定性 JLAC10 ValueSet"
+Title: "CLINS: DD-class ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 Dダイマー定性 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_dd_class_VS
@@ -417,8 +417,8 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー定性 JLA
 // FBG 空腹時血糖
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_fbg_VS
 Id: jp-clins-valueset-corelaboJLAC10-fbg-vs
-Title: "CLINS: FBG ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 ValueSet"
+Title: "CLINS: FBG ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_fbg_VS
@@ -433,8 +433,8 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC10 
 // γ-GTP(GGT)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ggt_VS
 Id: jp-clins-valueset-corelaboJLAC10-ggt-vs
-Title: "CLINS: GGT ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet"
+Title: "CLINS: GGT ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ggt_VS
@@ -449,8 +449,8 @@ Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC10 ValueSet"
 // HbA1c(NGSP)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_hba1cngsp_VS
 Id: jp-clins-valueset-corelaboJLAC10-hba1cngsp-vs
-Title: "CLINS: HbA1c-NGSP ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet"
+Title: "CLINS: HbA1c-NGSP ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_hba1c_ngsp_VS
@@ -465,8 +465,8 @@ Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet"
 // HDL-コレステロール(HDL-C)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_hdl_c_VS
 Id: jp-clins-valueset-corelaboJLAC10-hdl-c-vs
-Title: "CLINS: HDL-C ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 HDL-コレステロール ValueSet"
+Title: "CLINS: HDL-C ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 HDL-コレステロール ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_hdl_c_VS
@@ -481,8 +481,8 @@ Description: "CLINS 電子カルテ共有サービス用 HDL-コレステロー�
 // LD(LDH)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ld_VS
 Id: jp-clins-valueset-corelaboJLAC10-ld-vs
-Title: "CLINS: LD ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 LD(LDH) ValueSet"
+Title: "CLINS: LD ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 LD(LDH) ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ld_VS
@@ -497,8 +497,8 @@ Description: "CLINS 電子カルテ共有サービス用 LD(LDH) ValueSet"
 // LDL-コレステロール(LDL-C)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ldl_c_VS
 Id: jp-clins-valueset-corelaboJLAC10-ldl-c-vs
-Title: "CLINS: LDL-C ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 LDL-コレステロール ValueSet"
+Title: "CLINS: LDL-C ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 LDL-コレステロール ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ldl_c_VS
@@ -513,8 +513,8 @@ Description: "CLINS 電子カルテ共有サービス用 LDL-コレステロー�
 // ナトリウム(Na)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_na_VS
 Id: jp-clins-valueset-corelaboJLAC10-na-vs
-Title: "CLINS: Na ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 ナトリウム ValueSet"
+Title: "CLINS: Na ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 ナトリウム ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_na_VS
@@ -529,8 +529,8 @@ Description: "CLINS 電子カルテ共有サービス用 ナトリウム ValueSe
 // プロトロンビン時間^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_pt_sec_VS
 Id: jp-clins-valueset-corelaboJLAC10-pt-sec-vs
-Title: "CLINS: PT-sec ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 プロトロンビン時間 ValueSet"
+Title: "CLINS: PT-sec ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 プロトロンビン時間 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_sec_VS
@@ -545,8 +545,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 // プロトロンビンACT^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_pt_act_VS
 Id: jp-clins-valueset-corelaboJLAC10-pt-act-vs
-Title: "CLINS: PT-act ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 プロトロンビンACT ValueSet"
+Title: "CLINS: PT-act ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 プロトロンビンACT ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_act_VS
@@ -561,8 +561,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンAC
 // プロトロンビンINR^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_pt_inr_VS
 Id: jp-clins-valueset-corelaboJLAC10-pt-inr-vs
-Title: "CLINS: PT-INR ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 プロトロンビンINR ValueSet"
+Title: "CLINS: PT-INR ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 プロトロンビンINR ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_inr_VS
@@ -577,8 +577,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンIN
 // プロトロンビンratio^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_pt_ratio_VS
 Id: jp-clins-valueset-corelaboJLAC10-pt-ratio-vs
-Title: "CLINS: PT-ratio ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 プロトロンビン比 ValueSet"
+Title: "CLINS: PT-ratio ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 プロトロンビン比 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_pt_ratio_VS
@@ -593,8 +593,8 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 // 血算-ヘモグロビン^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_hb_VS
 Id: jp-clins-valueset-corelaboJLAC10-hb-vs
-Title: "CLINS: Hb ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 血算-ヘモグロビン ValueSet"
+Title: "CLINS: Hb ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 血算-ヘモグロビン ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_hb_VS
@@ -609,8 +609,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-ヘモグロビ�
 // 血算-血小板数^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_plt_VS
 Id: jp-clins-valueset-corelaboJLAC10-hplt-vs
-Title: "CLINS: PLT ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 血算-血小板数 ValueSet"
+Title: "CLINS: PLT ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 血算-血小板数 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_plt_VS
@@ -625,8 +625,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-血小板数 Val
 // 血算-赤血球数^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_rbc_VS
 Id: jp-clins-valueset-corelaboJLAC10-rbc-vs
-Title: "CLINS: RBC ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 血算-赤血球数 ValueSet"
+Title: "CLINS: RBC ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 血算-赤血球数 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_rbc_VS
@@ -641,8 +641,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-赤血球数 Val
 // 血算-白血球数^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_wbc_VS
 Id: jp-clins-valueset-corelaboJLAC10-wbc-vs
-Title: "CLINS: WBC ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 血算-白血球数 ValueSet"
+Title: "CLINS: WBC ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 血算-白血球数 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_wbc_VS
@@ -657,8 +657,8 @@ Description: "CLINS 電子カルテ共有サービス用 血算-白血球数 Val
 // 総コレステロール(T-CHO)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_t_cho_VS
 Id: jp-clins-valueset-corelaboJLAC10-t-cho-vs
-Title: "CLINS: T-CHO ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 総コレステロール ValueSet"
+Title: "CLINS: T-CHO ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 総コレステロール ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_t_cho_VS
@@ -671,8 +671,8 @@ Description: "CLINS 電子カルテ共有サービス用 総コレステロー�
 // 総ビリルビン(T-Bil)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_t_bil_VS
 Id: jp-clins-valueset-corelaboJLAC10-t-bil-vs
-Title: "CLINS: T-Bil ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 総ビリルビン ValueSet"
+Title: "CLINS: T-Bil ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 総ビリルビン ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_t_bil_VS
@@ -685,8 +685,8 @@ Description: "CLINS 電子カルテ共有サービス用 総ビリルビン Valu
 // 総蛋白(TP)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_tp_VS
 Id: jp-clins-valueset-corelaboJLAC10-tp-vs
-Title: "CLINS: TP ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 総蛋白 ValueSet"
+Title: "CLINS: TP ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 総蛋白 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_tp_VS
@@ -699,8 +699,8 @@ Description: "CLINS 電子カルテ共有サービス用 総蛋白 ValueSet"
 // 中性脂肪(TG)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_tg_VS
 Id: jp-clins-valueset-corelaboJLAC10-tg-vs
-Title: "CLINS: TG ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 中性脂肪 ValueSet"
+Title: "CLINS: TG ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 中性脂肪 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_tg_VS
@@ -713,8 +713,8 @@ Description: "CLINS 電子カルテ共有サービス用 中性脂肪 ValueSet"
 // 空腹時中性脂肪(FTG)^^　FTG
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ftg_VS
 Id: jp-clins-valueset-corelaboJLAC10-ftg-vs
-Title: "CLINS:　空腹時中性脂肪FTG ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 空腹時中性脂肪FTG ValueSet"
+Title: "CLINS:　空腹時中性脂肪FTG ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 空腹時中性脂肪FTG ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ftg_VS
@@ -727,8 +727,8 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時中性脂肪FT
 // 随時中性脂肪(CTG)^^　CTG
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ctg_VS
 Id: jp-clins-valueset-corelaboJLAC10-ctg-vs
-Title: "CLINS: 随時中性脂肪CTG ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 随時中性脂肪CTG ValueSet"
+Title: "CLINS: 随時中性脂肪CTG ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 随時中性脂肪CTG ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ctg_VS
@@ -741,8 +741,8 @@ Description: "CLINS 電子カルテ共有サービス用 随時中性脂肪CTG V
 // 尿酸(UA)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ua_VS
 Id: jp-clins-valueset-corelaboJLAC10-ua-vs
-Title: "CLINS: UA ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿酸 ValueSet"
+Title: "CLINS: UA ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿酸 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ua_VS
@@ -755,8 +755,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿酸 ValueSet"
 // 尿潜血(定性)
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_bld_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-bld-vs
-Title: "CLINS: U-Bld ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿潜血(定性) ValueSet"
+Title: "CLINS: U-Bld ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿潜血(定性) ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_bld_VS
@@ -770,8 +770,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(定性) Value
 /*
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_bld_QLHalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-bld-qlhalfqty-vs
-Title: "CLINS: U-Bld-定性半定量 ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿潜血(半定量、判定)  ValueSet"
+Title: "CLINS: U-Bld-定性半定量 ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿潜血(半定量、判定)  ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_bld_QLHalfQty_VS
@@ -785,8 +785,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(半定量、�
 //  尿潜血(半定量、希釈倍率) ^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_bld_HalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-bld-halfqty-vs
-Title: "CLINS: U-Bld-半定量 ValueSet"
-Description: "CLINS 電子カルテ共有サービス用  尿潜血(半定量、希釈倍率)  ValueSet"
+Title: "CLINS: U-Bld-半定量 ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用  尿潜血(半定量、希釈倍率)  ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_bld_HalfQty_VS
@@ -800,8 +800,8 @@ Description: "CLINS 電子カルテ共有サービス用  尿潜血(半定量、
 // 尿蛋⽩(定性)
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_utp_VS
 Id: jp-clins-valueset-corelaboJLAC10-utp-vs
-Title: "CLINS: U-TP 尿蛋⽩(定性)ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) ValueSet"
+Title: "CLINS: U-TP 尿蛋⽩(定性)ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_utp_VS
@@ -815,8 +815,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) Value
 /*
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_utp_QLHalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-utp-qlhalfqty-vs
-Title: "CLINS: U-TP-定性半定量 ValueSet"
-Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定量) ValueSet"
+Title: "CLINS: U-TP-定性半定量 ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定量) ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_utp_QLHalfQty_VS
@@ -830,8 +830,8 @@ Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定
 // 尿蛋⽩(半定量)
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_utp_HalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-utp-halfqty-vs
-Title: "CLINS: U-TP-半定量 ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(半定量) ValueSet"
+Title: "CLINS: U-TP-半定量 ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(半定量) ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_utp_HalfQty_VS
@@ -845,8 +845,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(半定量) Va
 // 尿中アルブミン/クレアチニン比(A/C比)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_ac_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-ac-vs
-Title: "CLINS: U-A/C ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿中アルブミン/クレアチニン比 ValueSet"
+Title: "CLINS: U-A/C ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿中アルブミン/クレアチニン比 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_ac_VS
@@ -859,8 +859,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿中アルブミン/�
 // 尿中蛋白/クレアチニン比(P/C比)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_pc_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-pc-vs
-Title: "CLINS: U-P/C ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿中蛋白/クレアチニン比 ValueSet"
+Title: "CLINS: U-P/C ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿中蛋白/クレアチニン比 ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_pc_VS
@@ -873,8 +873,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿中蛋白/クレア�
 // 尿糖(定性) ^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-glu-vs
-Title: "CLINS: U-Glu 尿糖(定性)ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet"
+Title: "CLINS: U-Glu 尿糖(定性)ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_VS
@@ -888,8 +888,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet"
 /*
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_QLHalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-glu-qlhalfqty-vs
-Title: "CLINS: U-Glu-QLHalfQty 尿糖(半定量、判定)　ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量、判定)　ValueSet"
+Title: "CLINS: U-Glu-QLHalfQty 尿糖(半定量、判定)　ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量、判定)　ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_QLHalfQty_VS
@@ -903,8 +903,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量、判�
 // U-Glu-半定量 ^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_HalfQty_VS
 Id: jp-clins-valueset-corelaboJLAC10-u-glu-halfqty-vs
-Title: "CLINS: U-Glu-HalfQty 尿糖(半定量) 　ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量) 　ValueSet"
+Title: "CLINS: U-Glu-HalfQty 尿糖(半定量) 　ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量) 　ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_u_glu_HalfQty_VS
@@ -917,8 +917,8 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量) 　Va
 // 脳性Na利尿ペプチド(BNP)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_bnp_VS
 Id: jp-clins-valueset-corelaboJLAC10-bnp-vs
-Title: "CLINS: BNP ValueSet"
-Description: "CLINS 電子カルテ共有サービス用 脳性Na利尿ペプチド ValueSet"
+Title: "CLINS: BNP ValueSet (JLAC10)"
+Description: "CLINS 電子カルテ共有サービス用 脳性Na利尿ペプチド ValueSet (JLAC10)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_bnp_VS
