@@ -2,7 +2,7 @@ name: for-FAST-HDJ
 on:
   push:
     branches: 
-      - develop1.7
+      - develop1.7.x
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,11 +10,11 @@ on:
       - '.github/workflows/fasthdj.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ develop1.7 ]
+    branches: [ develop1.7.x ]
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.7.0-FAST
+  release_version : 1.7.1-FAST
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定

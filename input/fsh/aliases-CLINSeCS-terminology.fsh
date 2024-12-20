@@ -66,6 +66,8 @@ Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_rh_bld_VS = http://jpfhir.jp/fhir/clins
 Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_t_bil_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_t_bil_VS
 Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_t_cho_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_t_cho_VS
 Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_tg_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_tg_VS
+Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_ftg_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
+Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_ctg_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
 Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_tp_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_tp_VS
 Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_u_ac_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_u_ac_VS
 

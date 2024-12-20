@@ -710,6 +710,34 @@ Description: "CLINS 電子カルテ共有サービス用 中性脂肪 ValueSet"
 * ^date = "2024-02-25"
 * include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #TG
 
+// 空腹時中性脂肪(FTG)^^　FTG
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ftg_VS
+Id: jp-clins-valueset-corelaboJLAC10-ftg-vs
+Title: "CLINS:　空腹時中性脂肪FTG ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 空腹時中性脂肪FTG ValueSet"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ftg_VS
+* ^version = "1.1.0a"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-12-20"
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #FTG
+
+// 随時中性脂肪(CTG)^^　CTG
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ctg_VS
+Id: jp-clins-valueset-corelaboJLAC10-ctg-vs
+Title: "CLINS: 随時中性脂肪CTG ValueSet"
+Description: "CLINS 電子カルテ共有サービス用 随時中性脂肪CTG ValueSet"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC10_ctg_VS
+* ^version = "1.1.0a"
+* ^status = #active
+* ^experimental = false
+* ^date = "2024-12-20"
+* include codes from system $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS where concept descendant-of #CTG
+
 // 尿酸(UA)^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC10_ua_VS
 Id: jp-clins-valueset-corelaboJLAC10-ua-vs
