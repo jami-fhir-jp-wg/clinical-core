@@ -82,3 +82,10 @@ Description: "Observationリソース（検体検査結果）プロトロンビ�
 * insert core43LaboItemInstanceCodeUnit(PT-活性%,プロトロンビン時間(PT-活性\),90060,B2006000324000112,JLAC11)
 * insert laboItemValueStringWithUnit(血漿,98,%,%)
 
+Instance: Example-JP-Obs-LabResult-eCS-JLAC10-BLDABO
+InstanceOf: JP_Observation_LabResult_eCS
+Usage: #example
+Description: "Observationリソース（検体検査結果）血液型-ABO　5H010000001910114　3：AB"
+* insert core43LaboItemInstanceCodeUnit(血液型-ABO,血液型(ABO\),90090,5H010000001910114,JLAC10)
+* insert laboItemValueCodeableConcept(全血(添加物入り\),http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldABO_CS,3,AB)
+

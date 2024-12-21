@@ -405,3 +405,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_cbg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_cbg_VS
     - http://jpfhir.jp/fhir/FASTHDJ/CodeSystem/BundleTransactionType_CS
+    - http://jpfhir.jp/fhir/FASTHDJ/StructureDefinition/JP_Bundle_FASTHDJ
+    
