@@ -148,8 +148,8 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Immunization_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
-    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS
+    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
     - http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_eCS_coveragePayer
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_department
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS
@@ -182,6 +182,10 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_CS
+    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldABO_CS
+    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldRh_CS
+    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS
+    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_ObservationLabResultLocalUncoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS
@@ -189,14 +193,15 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/Common/CodeSystem/discharge-disposition
     - http://jpfhir.jp/fhir/Common/CodeSystem/doc-subtypecodes
     - http://jpfhir.jp/fhir/Common/CodeSystem/doc-typecodes
-    - http://loinc.org
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-section
     - http://jpfhir.jp/fhir/core/CodeSystem/practitioner-certificate-category
     - http://jpfhir.jp/fhir/ePrescription/CodeSystem/prescription-category
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS
     - http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication
+    - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/ex-diagnosistype
     - http://jpfhir.jp/fhir/eCS/CodeSystem/observation-subcategory-cs
     - http://jpfhir.jp/fhir/core/CodeSystem/JP_SimpleObservationCategory_CS
+    - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/v3-ActCode
     - http://medis.or.jp/ValueSet/master-disease-keyNumber
     - http://jpfhir.jp/fhir/core/mhlw/ValueSet/MedicationUsage_ePrescription
     - http://jpfhir.jp/fhir/CarePlan/ValueSet/category
@@ -213,16 +218,20 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_bnp_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_bun_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ca_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_cbg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_che_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ck_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_cl_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_cre_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_crp_class_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_crp_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_cys_c_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_d_bil_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_dd_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_fbg_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ggt_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_hb_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_hba1c_ngsp_VS
@@ -265,16 +274,20 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_bnp_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_bun_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ca_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_cbg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_che_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ck_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_cl_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_cre_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_crp_class_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_crp_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_cys_c_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_d_bil_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_dd_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_fbg_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ggt_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_hb_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_hba1c_ngsp_VS
@@ -343,6 +356,7 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPPOSCOI_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANT_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPRESULT_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P2ABP24POSCOI_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P2ABP24RESULT_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HBsABDIL_VS
@@ -381,32 +395,15 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_TPPOSCOI_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANT_VS
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_TPRESULT_VS
+    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS
     - http://jpfhir.jp/fhir/Common/ValueSet/discharge-disposition
     - http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_VS
     - http://jpfhir.jp/fhir/eCS/ValueSet/JP_eCS_ObservationLabResultCode_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_indication
-    - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_lts_indication
     - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_forCondition_indication
+    - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_lts_indication
+    - http://jpfhir.jp/fhir/clins/ValueSet/JP_ehrshrs_indication
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-subtypecodes
     - http://jpfhir.jp/fhir/Common/ValueSet/doc-typecodes
     - http://jpfhir.jp/fhir/eDischargeSummary/ValueSet/document-section
     - http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
-    - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/ex-diagnosistype
-    - http://jpfhir.jp/core/terminology/CodeSystemJPDisplay/v3-ActCode
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS
-    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldABO_CS
-    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_BldRh_CS
-    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS
-    - http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_dd_class_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_cbg_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_cbg_VS
-    - http://jpfhir.jp/fhir/FASTHDJ/CodeSystem/BundleTransactionType_CS
-    - http://jpfhir.jp/fhir/FASTHDJ/StructureDefinition/JP_Bundle_FASTHDJ
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ftg_VS
-    - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_ctg_VS
