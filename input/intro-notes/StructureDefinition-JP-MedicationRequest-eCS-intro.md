@@ -19,7 +19,7 @@
   - resourceType : リソースタイプ "MedicationRequest"
   - meta.lastUpdated : 最終更新日時
   - meta.profile : プロファイルURL、バージョン併記必須。
-  - identifier : インスタンス識別ID
+  - identifier : リソース一意識別ID、剤グループ（Rp）番号、剤グループ内連番
   - status : 処方状態
   - intent : 投薬指示の意図。"order" を固定で設定する。
   - medicationCodeableConcept : 医薬品のコードと名称。
