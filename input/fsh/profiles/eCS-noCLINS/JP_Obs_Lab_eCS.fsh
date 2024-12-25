@@ -212,7 +212,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert  core43LaboItemProfile(cbg,CBG,cbg) // 15-3
 * insert  core43LaboItemProfile(hba1c-ngsp,HbA1c-NGSP,hba1c_ngsp) // 16
 * insert  core43LaboItemProfile(tg,TG,tg) // 17-1
-* insert  core43LaboItemProfile(ftg,DTG,ftg) // FTG // 17-2
+* insert  core43LaboItemProfile(ftg,FTG,ftg) // FTG // 17-2
 * insert  core43LaboItemProfile(ctg,CTG,ctg) // CTG // 17-3
 * insert  core43LaboItemProfile(t-cho,T-CHO,t_cho) // 18
 * insert  core43LaboItemProfile(hdl-c,HDL-C,hdl_c) // 19
@@ -267,9 +267,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hbsabdil,HBs抗体(希釈倍率\),HBsABDIL)  // 3-8
 * insert infectionLaboItemProfile(hbsabquant,HBs抗体(定量\),HBsABQUANT) // 3-9
 
-* insert infectionLaboItemProfile(hcvnresult,HCV核酸増幅検査(判定\),HCVNRESULT) // * 4-1
 * insert infectionLaboItemProfile(hcvnquant,HCV核酸増幅検査(定量\),HCVNQUANT) // 4-2
-* insert infectionLaboItemProfile(hcvagresult,HCV抗原検査(判定\),HCVAGRESULT) // *4-3
+* insert infectionLaboItemProfile(hcvnresult,HCV核酸増幅検査(定性\),HCVNRESULT) // * 4-1
+* insert infectionLaboItemProfile(hcvagresult,HCV抗原検査(定性\),HCVAGRESULT) // *4-3
 * insert infectionLaboItemProfile(hcvagquant,HCV抗原検査(定量\),HCVAGQUANT) // 4-4
 * insert infectionLaboItemProfile(hcvabcoi,HCV抗体(コントロール比\),HCVABCOI) // 4-5
 * insert infectionLaboItemProfile(hcvabdil,HCV抗体(希釈倍率\),HCVABDIL) // 4-6
