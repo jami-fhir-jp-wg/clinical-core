@@ -1,8 +1,8 @@
 Instance: Example-JP-MedReq-ExtAnus-AsNeeded-Total1
 InstanceOf: JP_MedicationRequest_eCS
 Usage: #example
-Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
-* note.text = "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例"
+Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例 患者参照URLはダミー"
+* note.text = "MedicationRequestリソース　入院・外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例　患者参照URLはダミー"
 
 //* text.status = #additional
 //* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用(坐剤)頓用全量処方　頓用と1回量をコードで記述できない例</p> </div>"
@@ -50,10 +50,10 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * medicationCodeableConcept.coding[+] = $Icode#I3344500 "新レシカルボン坐剤"
 * medicationCodeableConcept.text = "新レシカルボン坐剤"
 
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
-
-* subject.type = "Patient"
+//* subject.identifier.system = $JP_Insurance_memberID
+//* subject.identifier.value = "00012345:あいう:１８７:05"
+// * subject.type = "Patient"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * authoredOn = "2021-07-14T10:52:26+09:00"

@@ -21,6 +21,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
 * language = #ja
 
+* contained[+] = Example-Contained-JP-Encounter-IMP
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber //"http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber" // "urn:oid:1.2.392.100495.20.3.81"
 * identifier[rpNumber].value = "1"
@@ -47,6 +48,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * subject.type = "Patient"
 

@@ -118,8 +118,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 
 * extension[eCS_InstitutionNumber] 0..1 MS // eCS  
 //* extension[eCS_InstitutionNumber] 1..1 MS   // CLINS
-  * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
-本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
+  * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
 
 * extension[eCS_Department] 0..1 MS // eCS

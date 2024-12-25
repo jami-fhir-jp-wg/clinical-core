@@ -102,7 +102,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //    and patient 0..1 MS
 
 * contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("検体検査を実施（検体を採取）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】検体検査を実施（検体を採取）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "電子カルテ情報共有サービスでは必須。encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
 * contained[specimen] only  JP_Specimen
@@ -111,7 +111,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   "
 
 * contained[performer] only  JP_Practitioner  //　CLINSでは必須
-  * insert relative_short_definition("検査オーダを作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】検査オーダを作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
   * ^comment = "performer要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素、医療者識別情報だけが含まれればよい。電子カルテ情報サービスでは必須。"
 
 * contained[order] only  JP_ServiceRequest
@@ -120,12 +120,12 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 
 * extension[eCS_InstitutionNumber] 0..1 MS
-  * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
 
 * extension[eCS_Department] 0..1 MS
-  * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
 * identifier 1..* MS
@@ -314,7 +314,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 * encounter 0..1 MS //　CLINSでは必須
 * encounter only  Reference(JP_Encounter)
-  * insert relative_short_definition("処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。電子カルテ情報サービスでは必須。"
 
 
@@ -331,8 +331,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 * performer 0..1 MS //　CLINSでは必須
 * performer only  Reference(JP_Practitioner)
-* performer ^short = "検査結果を責任を持つ医療者、検査実施者（検査オーダ医師）への参照。"
-* performer ^definition = "検査結果を責任を持つ医療者への参照。電子カルテ情報サービスでは必須とし、オーダした医師（結果を確認した医師に相当）のPractitionerリソースへの参照を設定する。電子カルテ情報サービスでは必須。"
+* performer ^short = "【電子カルテ情報共有サービス（5情報送信）では必須】検査結果を責任を持つ医療者、検査実施者（検査オーダ医師）への参照。"
+* performer ^definition = "【電子カルテ情報共有サービス（5情報送信）では必須】検査結果を責任を持つ医療者への参照。電子カルテ情報サービスでは必須とし、オーダした医師（結果を確認した医師に相当）のPractitionerリソースへの参照を設定する。電子カルテ情報サービスでは必須。"
 * performer ^comment = "実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。"
 
 // OUL^R22.OBX[*]-5  結果
@@ -385,8 +385,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange MS
 
 * hasMember MS
-* hasMember ^short = "この検査に含まれる個々の検査結果項目を示す。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
-* hasMember ^definition = "この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。commentも参照のこと。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
+* hasMember ^short = "【電子カルテ情報共有サービス（5情報送信）では使用しない】この検査に含まれる個々の検査結果項目を示す。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
+* hasMember ^definition = "【電子カルテ情報共有サービス（5情報送信）では使用しない】この検査（パネルやバッテリ）が結果を持たない親項目（グループ項目に相当）の場合に、この検査に含まれる個々の検査結果への参照を示す。commentも参照のこと。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
 * hasMember ^comment = "この検査が複数の検査項目をグループ化したパネル検査もしくはバッテリー検査の場合に、このグループに含まれる個々の検査の参照へのリストである。この場合には、本Observationリソースのvalueは存在しない。Bundleリソースなどで本リソースから参照可能なObservationリソースが同時に存在する場合には、そのリソースの識別URIを参照する。個々の子検査の結果Observationリソースを、このリソースにContainedリソースとして埋め込むのではなく、別の検査結果Observationリソースとして作成し、Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照）をとる。ただし、実際にこの方式で記述するか、または別々のObservationリソースで記述するかについては、記述方針が別途定められている場合にはそれに従う。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
 * hasMember only Reference(JP_Observation_LabResult)
 

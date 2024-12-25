@@ -10,6 +10,8 @@ Description: "ObservationCommon検査結果　現症例"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS"
 * language = #ja
 
+* contained[+] = Example-Contained-JP-Encounter-IMP
+
 // 検査オーダ医師
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D002
 
@@ -25,6 +27,7 @@ Description: "ObservationCommon検査結果　現症例"
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
 * valueString = "上腹部圧痛あり、その他特に所見なし。"
