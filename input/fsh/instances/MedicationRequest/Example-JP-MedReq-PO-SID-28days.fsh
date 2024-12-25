@@ -13,6 +13,7 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 * id = "Example-JP-MedReq-PO-SID-28days"
 
 // * contained[+] = Example-Patient-minimun
+* contained[+] = Example-Contained-JP-Encounter-IMP
 * contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
@@ -39,7 +40,7 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 * subject.identifier.value = "00012345:あいう:１８７:05"
 
 * subject.type = "Patient"
-
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 * authoredOn = "2021-07-12T16:19:06+09:00"
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
 * requester.type = "Practitioner"

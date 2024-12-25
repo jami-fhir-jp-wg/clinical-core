@@ -13,6 +13,7 @@ Description: "MedicationRequestリソース　入院・内服頓用　頓用と1
 * id = "Example-JP-MedReq-PO-Fumin-AsNeeded-4"
 
 // * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Encounter-IMP
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-27T01:31:19.000+09:00"
@@ -41,6 +42,7 @@ Description: "MedicationRequestリソース　入院・内服頓用　頓用と1
 
 * subject.type = "Patient"
 
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 * authoredOn = "2021-07-05T16:00:40+09:00"
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"

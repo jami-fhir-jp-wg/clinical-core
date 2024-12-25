@@ -13,7 +13,9 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 * id = "Example-JP-MedReq-ExtEye-Total1"
 
 // * contained[+] = Example-Patient-minimun
+* contained[+] = Example-Contained-JP-Encounter-IMP
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D001
+
 
 * meta.lastUpdated = "2021-07-05T19:28:23.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS
@@ -38,10 +40,8 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 
 * subject.identifier.system = $JP_Insurance_memberID
 * subject.identifier.value = "00012345:あいう:１８７:05"
-
-
 * subject.type = "Patient"
-
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 * authoredOn = "2021-07-05T13:08:22+09:00"
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"

@@ -78,7 +78,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 //    and patient 0..1 MS
 
 * contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("処方情報を作成したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】処方情報を作成したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
 
 * contained[requester] only  JP_Practitioner
@@ -91,12 +91,11 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 
 
 * extension[eCS_InstitutionNumber] 0..1 MS
-  * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
-本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
+  * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービス(このリソースが２文書に含まれるケース)では、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
 
 * extension[eCS_Department] 0..1 MS
-  * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
+  * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "電子カルテ情報サービス(このリソースが２文書に含まれるケース)では、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
 * identifier MS // JP_MedicationRequestでは2..*が設定されている。 
@@ -207,7 +206,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)
-  * insert relative_short_definition("処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
+  * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」のいずれかを使用すること。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
 
 * requester 0.. MS
