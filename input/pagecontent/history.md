@@ -10,6 +10,8 @@
   - MedicationRequestの4.1 必須要素
     - identifier : リソース一意識別ID　に、剤グループ（Rp）番号、剤グループ内連番　を追加（プロファイル、仕様表には変更なjく、本記載の漏れ）
     - 6.1表「MedicationRequest」identidier[+].system 剤グループ内連番のsystem値が旧OID表記のままになっていたのを、url表記に修正。(プロファイルに変更なし)
+  - Validationでリンクするjpfhir-terminology.r4　パッケージのバージョンを更新した。これにより、傷病名マスター・修飾語マスター（レセ電算用マスターおよびMEDIS ICD10対応病名マスター）が2025年1月1日リリース版に更新されます。また未コード化傷病名に対応するコードが追加掲載されています。YJコードに関連するコード表は未更新です。
+    - jpfhir-terminology.r4-1.2.4-url.tgz → jpfhir-terminology.r4-1.2.5.tgz
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.7.1  (2024.12.20) 
   - ObservationLabResultの7.1 プロファイル詳細において、下記の検査項目であることを指定するdisplay文字列（FHIR 識別文字列）を、「電子カルテ情報共有サービスの導入に関するシステムベンダ向け技術解説書」V1.2.0に合わせて修正.
