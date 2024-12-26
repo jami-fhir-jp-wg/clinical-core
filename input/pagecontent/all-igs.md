@@ -17,6 +17,7 @@
 
 |バージョン|日付|実装ガイド|パッケージ(diff版)*|パッケージ(snapshot版)|
 |:---:|:---:|:---:|:---:|
+|1.8.0|2024-12-20|[IG](https://jpfhir.jp/fhir/clins/ighistory/igv1.8.0/)|[diff](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.8.0.tgz)|[snap](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.8.0-snap.tgz)|
 |1.7.1|2024-12-20|[IG](https://jpfhir.jp/fhir/clins/ighistory/igv1.7.1/)|[diff](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.7.1.tgz)|[snap](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.7.1-snap.tgz)|
 |1.7.0|2024-12-17|[IG](https://jpfhir.jp/fhir/clins/ighistory/igv1.7.0/)|[diff](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.7.0.tgz)|[snap](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.7.0-snap.tgz)|
 |1.6.0|2024-12-07|[IG](https://jpfhir.jp/fhir/clins/ighistory/igv1.6.0/)|[diff](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.6.0.tgz)|[snap](https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.6.0-snap.tgz)|
