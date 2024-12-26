@@ -25,8 +25,9 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac,JLA
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#{local} "{itemName}"
 * code.coding[+] = $JP_CLINS_CodeSystem_{JLACkubun}_CoreLabo_CS#{jlac}  "{laboItemFHIRcode}"
 * code.text = "itemName"
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
+//* subject.identifier.system = $JP_Insurance_memberID
+//* subject.identifier.value = "00012345:あいう:１８７:05"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * effectiveDateTime = "2024-12-14T14:11:13.000+09:00"
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * issued = "2024-12-15T14:11:13.000+09:00"

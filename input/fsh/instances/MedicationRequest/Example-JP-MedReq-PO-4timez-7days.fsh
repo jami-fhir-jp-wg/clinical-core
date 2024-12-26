@@ -36,13 +36,11 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#1141007F3023 "カロナール錠５００"
 * medicationCodeableConcept.coding[+] = $Icode#I1187300 "カロナール錠５００"
 * medicationCodeableConcept.text = "カロナール錠５００mg"
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
-
-
-* subject.type = "Patient"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
-* authoredOn = "2021-07-13T15:01:29+09:00"
+
+* authoredOn = "2021-07-14T10:52:26+09:00"
+
 * requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D003) "診療 和子"
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D003)

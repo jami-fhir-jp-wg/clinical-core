@@ -64,10 +64,11 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 
 * medicationCodeableConcept.text = "カルボシステイン２５０ｍｇ錠"
 
-* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
-* authoredOn = "2020-08-21T12:28:17+09:00"
+* authoredOn = "2021-07-14T10:52:26+09:00"
+
 
 //060on_処方薬剤メモ(ARGtext)
 * dosageInstruction[+].text = "内服・経口・１日３回朝昼夕食後"

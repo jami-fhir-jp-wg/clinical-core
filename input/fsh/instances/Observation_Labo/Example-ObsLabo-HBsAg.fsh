@@ -40,9 +40,9 @@ Description: "Observationリソース（検体検査結果）HBs抗原(定性)�
 //* code.coding[+] = $LocalExamHistoryItemCode#0000181800 "HBs抗原(定性)"
 
 * code.text = "HBs抗原(定性)"
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
-
+//* subject.identifier.system = $JP_Insurance_memberID
+//* subject.identifier.value = "00012345:あいう:１８７:05"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * issued = "2021-07-05T15:38:59.000+09:00"

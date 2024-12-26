@@ -36,12 +36,11 @@ Description: "MedicationRequestリソース　入院・内服頓用　頓用と1
 * medicationCodeableConcept.coding[0] = $JP_MedicationCodeYJ_CS#1190027F1022 "デエビゴ錠２．５ｍｇ"
 * medicationCodeableConcept.coding[+] = $Icode#I1379700 "デエビゴ錠２．５ｍｇ"
 * medicationCodeableConcept.text = "デエビゴ錠２．５ｍｇ"
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
-
-
-* subject.type = "Patient"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
+
+* authoredOn = "2021-07-14T10:52:26+09:00"
+
 
 * authoredOn = "2021-07-05T16:00:40+09:00"
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"

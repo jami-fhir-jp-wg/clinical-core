@@ -21,7 +21,9 @@ Description: "Observationリソース　（診療情報提供書　腹部所見�
 
 * code.text = "腹部所見"
 
-* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
+//* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)

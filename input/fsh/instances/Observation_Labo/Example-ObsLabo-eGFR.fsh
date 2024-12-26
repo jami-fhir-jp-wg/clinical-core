@@ -36,8 +36,9 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 
 * code.text = "推算GFR"
 
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
+//* subject.identifier.system = $JP_Insurance_memberID
+//* subject.identifier.value = "00012345:あいう:１８７:05"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)

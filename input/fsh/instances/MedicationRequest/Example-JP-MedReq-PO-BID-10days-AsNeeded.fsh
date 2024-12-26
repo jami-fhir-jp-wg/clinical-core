@@ -37,14 +37,11 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * medicationCodeableConcept.coding[0] = $JP_eCS_MedicationCodeNocoded_CS#NOCODED "標準コードなし"
 * medicationCodeableConcept.coding[+] = $Icode#I1692880 "炭酸水素ナトリウム水"
 * medicationCodeableConcept.text = "炭酸水素ナトリウム水"
-* subject.identifier.system = $JP_Insurance_memberID
-* subject.identifier.value = "00012345:あいう:１８７:05"
-
-
-* subject.type = "Patient"
+* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
-* authoredOn = "2021-07-13T14:22:09+09:00"
+* authoredOn = "2021-07-14T10:52:26+09:00"
+
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
 * requester.type = "Practitioner"
 * recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
