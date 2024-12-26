@@ -13,6 +13,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * id = "Example-JP-MedReq-PO-BID-10days-AsNeeded"
 
 // * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Encounter-IMP
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D001
 
 * meta.lastUpdated = "2021-07-13T14:24:21.000+09:00"
@@ -41,6 +42,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 
 
 * subject.type = "Patient"
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * authoredOn = "2021-07-13T14:22:09+09:00"
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"

@@ -44,6 +44,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
 * language = #ja
 
+* contained[+] = Example-Contained-JP-Encounter-IMP
 
 
 * identifier[rpNumber].system = $JP_Medication_RPGroupNumber
@@ -64,6 +65,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * medicationCodeableConcept.text = "カルボシステイン２５０ｍｇ錠"
 
 * subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
 * authoredOn = "2020-08-21T12:28:17+09:00"
 

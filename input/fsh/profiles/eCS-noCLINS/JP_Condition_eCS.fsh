@@ -101,7 +101,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 //    and patient 0..1 MS
 
 * contained[encounter] only  JP_Encounter
-  * insert relative_short_definition("傷病名情報を記録（登録）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】傷病名情報を記録（登録）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービスでは必須。"
 
 * contained[recorder] only  JP_Practitioner
@@ -115,12 +115,12 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 */
 
 * extension[eCS_InstitutionNumber] 0..1 MS
-  * insert relative_short_definition("本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
 
 * extension[eCS_Department] 0..1 MS
-  * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
 
 * extension[eCS_DiagnosisType] 0..1 MS
@@ -259,21 +259,21 @@ and receipt 0..
 
 * encounter 0..1 MS
 * encounter only  Reference(JP_Encounter)
-  * insert relative_short_definition("病名をつけたときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】病名をつけたときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 
 * onset[x] 0..1 MS
-* onset[x]  ^short = "この傷病名情報が同定された時期"
-* onset[x]  ^definition = "患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名開始日を必須でdateTime型で記述するため、onsetDateTime要素を使用する。"
+* onset[x]  ^short = "【電子カルテ情報共有サービス（5情報送信）では必須】この傷病名情報が同定された時期"
+* onset[x]  ^definition = "【電子カルテ情報共有サービス（5情報送信）では必須】患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名開始日を必須でdateTime型で記述するため、onsetDateTime要素を使用する。"
 * onsetDateTime 0..1 MS
-* onsetDateTime ^short = "病名開始日"
-* onsetDateTime ^definition = "病名開始日。電子カルテ情報共有サービスで5情報のひとつとして送信される場合には必須。"
+* onsetDateTime ^short = "【電子カルテ情報共有サービス（5情報送信）では必須】病名開始日"
+* onsetDateTime ^definition = "【電子カルテ情報共有サービス（5情報送信）では必須】病名開始日。電子カルテ情報共有サービスで5情報のひとつとして送信される場合には必須。"
 
 
 * abatement[x] 0..1 MS
 * abatement[x] only dateTime
-* abatementDateTime ^short = "この傷病名情報による患者状態が終了したと同定された時期。"
-* abatementDateTime ^short = "患者にこの傷病のある状態が終了または確認できた時期、なんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日（すなわち転帰日）をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名終了日（転帰日）をdateTime型で記述する。この終了日（転帰日）における転帰情報をclinicalStatus要素に記述すること。通常は、この日付がある場合のclinicalStatus要素は\"active\"以外の値となるが、例外的に\"active\"でもよい。"
+* abatementDateTime ^short = "【電子カルテ情報共有サービス（5情報送信）では必須】この傷病名情報による患者状態が終了したと同定された時期。"
+* abatementDateTime ^short = "【電子カルテ情報共有サービス（5情報送信）では必須】患者にこの傷病のある状態が終了または確認できた時期、なんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日（すなわち転帰日）をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名終了日（転帰日）をdateTime型で記述する。この終了日（転帰日）における転帰情報をclinicalStatus要素に記述すること。通常は、この日付がある場合のclinicalStatus要素は\"active\"以外の値となるが、例外的に\"active\"でもよい。"
 
 * recordedDate 0..1 MS
   * insert relative_short_definition("この情報を記録した登録日")

@@ -13,6 +13,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 * id = "Example-JP-MedReq-PO-SID-90-AMB"
 
 // * contained[+] = Example-Contained-JP-Patient-minimun
+* contained[+] = Example-Contained-JP-Encounter-IMP
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D002
 
 * meta.lastUpdated = "2023-09-14T14:03:37.000+09:00"
@@ -42,6 +43,8 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法フル�
 
 
 * subject.type = "Patient"
+* encounter = Reference(Example-Contained-JP-Encounter-IMP)
+
 * authoredOn = "2023-09-14T12:50:36+09:00"
 * requester = Reference(Example-Contained-JP-Practitioner-minimun-D002) "田中　宏"
 * requester.type = "Practitioner"
