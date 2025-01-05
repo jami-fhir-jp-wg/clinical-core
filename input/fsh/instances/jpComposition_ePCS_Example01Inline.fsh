@@ -20,7 +20,7 @@ Description: "患者療養計画サマリー　Compositionリソース データ
 * extension[version].valueString = "1.0"
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier.value = "1311234567-2021-12345678"
+* identifier.value = "1311234567^2021^12345678"
 * status = #final
 * type = $doc-typecodes_CS#56447-6 "計画書"
 * category = $doc-subtypecodes_CS#OUTPATIENT "外来文書"

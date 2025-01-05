@@ -20,7 +20,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * extension.valueString = "1.0"
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-* identifier.value = "1311234567-2021-12345678"
+* identifier.value = "1311234567^2021^12345678"
 * status = #final
 * type = $doc-typecodes_CS#57133-1 "診療情報提供書"
 * category = $doc-subtypecodes_CS#OUTPATIENT "外来文書"
