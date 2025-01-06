@@ -55,7 +55,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 * dosageInstruction.timing.repeat.frequency = 4
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
-* dosageInstruction.timing.code.coding[+].system = $JAMI_MedicationUsage_ePrescription_CS
+* dosageInstruction.timing.code.coding[+].system = $MHLW_MedicationUsage_ePrescription_CS
 * dosageInstruction.timing.code.coding[=].code = #1014144400000000
 * dosageInstruction.timing.code.coding[=].display = "１日４回朝昼夕食後と就寝前　服用"
 * dosageInstruction.timing.code.text = "1日4回 毎食後と就寝前"

@@ -81,7 +81,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * dosageInstruction[=].timing.repeat.boundsDuration = 7 'd' "日"
 
 * dosageInstruction[=].timing.code.coding[jami_yoho] = $JP_MedicationUsageJAMI_CS#1013044400000000 "内服 １日３回 朝昼夕食後"
-* dosageInstruction[=].timing.code.coding[mhw_prescription_yoho] =  $JAMI_MedicationUsage_ePrescription_CS#1013044400000000 "１日３回朝昼夕食後　服用"
+* dosageInstruction[=].timing.code.coding[mhw_prescription_yoho] =  $MHLW_MedicationUsage_ePrescription_CS#1013044400000000 "１日３回朝昼夕食後　服用"
 
 * dosageInstruction[=].timing.code.text = "内服・経口・１日３回朝昼夕食後"
 

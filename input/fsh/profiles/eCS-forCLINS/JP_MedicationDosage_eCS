@@ -104,7 +104,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 //* timing.code.coding[jami_yoho].code from $JP_MedicationUsageJAMI_VS
 * timing.code.coding[jami_yoho].display 1..1 MS
 
-* timing.code.coding[mhw_prescription_yoho].system = $JAMI_MedicationUsage_ePrescription_CS (exactly) 
+* timing.code.coding[mhw_prescription_yoho].system = $MHLW_MedicationUsage_ePrescription_CS (exactly) 
 * timing.code.coding[mhw_prescription_yoho].system 1..1 MS
 * timing.code.coding[mhw_prescription_yoho].code 1..1 MS
 //* timing.code.coding[mhw_prescription_yoho].code from $JP_MedicationUsageMHLW_Prscription_VS

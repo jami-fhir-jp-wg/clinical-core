@@ -56,7 +56,7 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 * dosageInstruction.timing.repeat.period = 1
 * dosageInstruction.timing.repeat.periodUnit = #d
 * dosageInstruction.timing.code.coding[jami_yoho] =  $JP_MedicationUsageJAMI_CS#1011100000000000 "内服 １日１回 就寝前"
-* dosageInstruction.timing.code.coding[mhw_prescription_yoho] =  $JAMI_MedicationUsage_ePrescription_CS#1011100000000000 "１日１回就寝前　服用"
+* dosageInstruction.timing.code.coding[mhw_prescription_yoho] =  $MHLW_MedicationUsage_ePrescription_CS#1011100000000000 "１日１回就寝前　服用"
 * dosageInstruction.timing.code.text = "1日1回 就寝前"
 * dosageInstruction.route = $JP_MedicationRouteHL70162_CS#PO "口"
 * dosageInstruction.route.text = "経口"

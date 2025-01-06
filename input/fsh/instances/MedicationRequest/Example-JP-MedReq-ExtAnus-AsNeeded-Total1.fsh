@@ -68,7 +68,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-14"
 * dosageInstruction.text = "坐薬 便秘時 1回1個 肛門へ挿入"
 * dosageInstruction.timing.event = "2021-07-14T08:00:00+09:00"
-* dosageInstruction.timing.code.coding[+].system = $JAMI_MedicationUsage_ePrescription_CS
+* dosageInstruction.timing.code.coding[+].system = $MHLW_MedicationUsage_ePrescription_CS
 * dosageInstruction.timing.code.coding[=].code = #2R50410000000000
 * dosageInstruction.timing.code.coding[=].display = "便秘時　肛門挿入"
 * dosageInstruction.timing.code.text = "便秘時 1回1個 肛門へ挿入"

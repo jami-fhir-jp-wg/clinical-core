@@ -114,7 +114,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 
 * timing.code.coding[mhw_prescription_yoho] ^definition = "厚生労働省電子処方箋用法コードを使用する場合のコード化。"
 * timing.code.coding[mhw_prescription_yoho].system ^definition = "厚生労働省電子処方箋用法コードを使用する場合のコードシステム（\"http://jpfhir.jp/core/mhlw/CodeSystem/MedicationUsage_ePrescription\"）"
-* timing.code.coding[mhw_prescription_yoho].system = $JAMI_MedicationUsage_ePrescription_CS (exactly) 
+* timing.code.coding[mhw_prescription_yoho].system = $MHLW_MedicationUsage_ePrescription_CS (exactly) 
 * timing.code.coding[mhw_prescription_yoho].system 1..1 MS
 * timing.code.coding[mhw_prescription_yoho].code ^short = "厚生労働省電子処方箋用法コード"
 * timing.code.coding[mhw_prescription_yoho].code ^definition = "厚生労働省電子処方箋用法コード。\r\n例）\"1013044400000000\""
