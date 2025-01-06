@@ -92,7 +92,7 @@ Bundle.identifier.value : 以下に記載する[報告単位識別ID]　を設�
 　　最大128文字とすること。"
 
 * identifier.system 1.. MS
-* identifier.system = "http://jpfhir.jp/fhir/JP_CLINS_BundleResourceType_VS/bundle-identifier" (exactly)
+* identifier.system = "http://jpfhir.jp/fhir/clins/bundle-identifier" (exactly)
 * identifier.value 1.. MS
 
 * type = #collection (exactly)
