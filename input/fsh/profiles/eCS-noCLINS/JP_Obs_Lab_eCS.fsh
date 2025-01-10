@@ -383,6 +383,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 // OUL^R22.OBX[*]-7
 * referenceRange MS
+* referenceRange.low.value 1..1  MS
+* referenceRange.high.value 1..1 MS 
 
 * hasMember MS
 * hasMember ^short = "【電子カルテ情報共有サービス（5情報送信）では使用しない】この検査に含まれる個々の検査結果項目を示す。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
