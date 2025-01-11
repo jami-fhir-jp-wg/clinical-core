@@ -283,9 +283,6 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hiv1p2abresult,HIV-1+2抗体(定性\),HIV1P2ABRESULT) // 5-5
 * insert infectionLaboItemProfile(hiv1p2abposcoi,HIV-1+2抗体(陽性コントロール比\),HIV1P2ABPOSCOI) // 5-6
 
-
-
-
 * insert infectionLaboItemProfile(hiv1p2abod,HIV-1+2抗体・p24抗原(吸光度\),HIV1P2ABOD) // 5-7
 * insert infectionLaboItemProfile(hiv1p2abp24coi,HIV-1+2抗体・p24抗原(コントロール比\),HIV1P2ABP24COI)  // 5-8
 * insert infectionLaboItemProfile(hiv1p2abp24result,HIV-1+2抗体・p24抗原(定性\),HIV1P2ABP24RESULT)  // 5-9
@@ -296,7 +293,6 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hiv1abresult,HIV-1抗体(定性\),HIV1ABRESULT)  // 5-13
 * insert infectionLaboItemProfile(hiv2abdil,HIV-2抗体(希釈倍率\),HIV2ABDIL)  // 5-14
 * insert infectionLaboItemProfile(hiv2abresult,HIV-2抗体(定性\),HIV2ABRESULT)  // 5-15
-
 
 * code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
 * code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
@@ -383,8 +379,33 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 // OUL^R22.OBX[*]-7
 * referenceRange MS
+* referenceRange.id ..0
+* referenceRange.extension ..0
+* referenceRange.modifierExtension ..0
+
+* referenceRange.low.extension ..0
+* referenceRange.low.odifierExtension ..0
 * referenceRange.low.value 1..1  MS
-* referenceRange.high.value 1..1 MS 
+  * insert relative_short_definition("基準値の小さいほうの値")
+* referenceRange.low.unit 0..1 MS
+  * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+* referenceRange.low.system 0..1 MS
+  * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+* referenceRange.low.code 0..1 MS
+  * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+
+* referenceRange.high.extension ..0
+* referenceRange.high.odifierExtension ..0
+* referenceRange.high.value 1..1  MS
+  * insert relative_short_definition("基準値の大きいほうの値")
+* referenceRange.high.unit 0..1 MS
+  * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+* referenceRange.high.system 0..1 MS
+  * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+* referenceRange.high.code 0..1 MS
+  * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+
+* referenceRange.text 0..1 MS
 
 * hasMember MS
 * hasMember ^short = "【電子カルテ情報共有サービス（5情報送信）では使用しない】この検査に含まれる個々の検査結果項目を示す。電子カルテ情報共有サービスで5情報を送信する場合にはこの要素は使用しない。"
@@ -396,7 +417,34 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * derivedFrom ^short = "派生元（素材元）の検査結果への参照のリスト。"
 * derivedFrom ^definition = "この検査が他の1つ以上の検査値から派生している（BMIが体重と身長から派生して算出される場合など）場合に、その派生元の検査への参照のリスト。記述方法としては、hasMember要素と同様に記述する。"
 
-* component MS
 * hasMember ^short = "1回の検査・観察で同時に複数の検査結果が得られる場合には必須"
 * hasMember ^definition = "同じ検査・観察において、メソッドが1つ、観察が1つ、実行者が1つ、デバイスが1つ、時間が1つしかない１回の検査・観察で同時に複数の検査結果が得られる場合に、その各検査をcomponentをみなしてcomponent要素に記述する。たとえばこのObservationリソースが血圧である場合に、収縮期血圧値と拡張期血圧値の2つは、Observationリソース：血圧の2つのcomponentとして記述される。ただし、実際にこの方式で記述するか、または別々のObservationリソースで記述するかについては、記述方針が別途定められている場合にはそれに従う。"
 
+* component MS
+  * referenceRange MS
+  * referenceRange.id ..0
+  * referenceRange.extension ..0
+  * referenceRange.modifierExtension ..0
+
+  * referenceRange.low.extension ..0
+  * referenceRange.low.odifierExtension ..0
+  * referenceRange.low.value 1..1  MS
+    * insert relative_short_definition("基準値の小さいほうの値")
+  * referenceRange.low.unit 0..1 MS
+    * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+  * referenceRange.low.system 0..1 MS
+    * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+  * referenceRange.low.system = "http://unitsofmeasure.org"
+  * referenceRange.low.code 0..1 MS
+    * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+
+  * referenceRange.high.extension ..0
+  * referenceRange.high.odifierExtension ..0
+  * referenceRange.high.value 1..1  MS
+    * insert relative_short_definition("基準値の大きいほうの値")
+  * referenceRange.high.unit 0..1 MS
+    * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+  * referenceRange.high.system 0..1 MS
+    * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+  * referenceRange.high.code 0..1 MS
+    * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")

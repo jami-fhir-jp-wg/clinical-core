@@ -25,11 +25,11 @@ Description: "退院時サマリーセクション区分　ValueSet"
 * ^version = "1.0.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2025-01-11"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 //* include codes from system http://jpfhir.jp/fhir/eDischargeSummary/CodeSystem/document-section
-* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #REF
+* include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #DIS
 * include codes from system http://jpfhir.jp/fhir/clins/CodeSystem/document-section where concept descendant-of #COMMON
 
 // 患者療養計画サマリー　セクション区分コード

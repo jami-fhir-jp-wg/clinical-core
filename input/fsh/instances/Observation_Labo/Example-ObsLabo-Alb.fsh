@@ -53,6 +53,8 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 * valueQuantity.value = 3.9
 * valueQuantity.unit = "mg/L"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = "mg/L"
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
 //* interpretation.text = "範囲未定義、もしくは正常が適用されない"
@@ -61,6 +63,11 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 * referenceRange.low.value = 3.5
 * referenceRange.low.unit = "mg/L"
+* referenceRange.low.system = "http://unitsofmeasure.org"
+* referenceRange.low.code = "mg/L"
 
-//* referenceRange.high.value = 4.5
+* referenceRange.high.value = 4.5
 * referenceRange.high.unit = "mg/L"
+* referenceRange.high.unit = "mg/L"
+* referenceRange.high.system = "http://unitsofmeasure.org"
+* referenceRange.high.code = "mg/L"
