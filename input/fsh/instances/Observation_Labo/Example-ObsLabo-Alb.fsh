@@ -69,5 +69,5 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 * referenceRange.high.value = 4.5
 * referenceRange.high.unit = "mg/L"
 * referenceRange.high.unit = "mg/L"
-* referenceRange.high.system = "http://unitsofmeasure.org"
+* referenceRange.high.system = "http://unitsofmeasure.org2"
 * referenceRange.high.code = #mg/L
