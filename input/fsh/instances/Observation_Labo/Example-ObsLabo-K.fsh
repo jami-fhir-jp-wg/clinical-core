@@ -56,3 +56,13 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 //* specimen = Reference(Specimen/Example-JP-Specimen-Serum)
 * specimen.display = "血清"
 * specimen.type = "Specimen"
+
+* referenceRange.low.value = 3.5
+* referenceRange.low.unit = "g/L"
+* referenceRange.low.system = "http://unitsofmeasure.org"
+* referenceRange.low.code = #mg/L
+
+* referenceRange.high.value = 5.3
+* referenceRange.high.unit = "mg/L"
+* referenceRange.high.system = "http://unitsofmeasure.org"
+* referenceRange.high.code = #mg/L

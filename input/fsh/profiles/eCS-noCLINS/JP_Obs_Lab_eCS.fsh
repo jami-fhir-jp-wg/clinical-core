@@ -21,6 +21,17 @@ Description: "指定感染症検査の場合だけ長期保存フラグが設定
 Severity: #error
 Expression: "(meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication').exists().not()) or  ((meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code='LTS').exists()) and (code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists()))"
 
+Invariant: referenceRangeLowUnits-isSameAs-resultValueUnits
+Description: "基準値lowの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
+Severity: #error
+Expression: "((referenceRange.low.unit.exists() implies (valueQuantity.unit.exists() and (valueQuantity.unit = referenceRange.low.unit)))  and (referenceRange.low.code.exists() implies (valueQuantity.code.exists() and (valueQuantity.code = referenceRange.low.code))))" 
+
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits
+Description: "基準値highの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
+Severity: #error
+Expression: "((referenceRange.high.unit.exists() implies (valueQuantity.unit.exists() and (valueQuantity.unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (valueQuantity.code.exists() and (valueQuantity.code = referenceRange.high.code))))" 
+
+
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
 //   検体検査結果／感染症検体検査結果 リソースタイプ:Observation
@@ -37,6 +48,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* obeys test-not-MemberOf-infectionLabo
 //* obeys check-MemberOf-infectionLabo
 * obeys needs-performer-on-CLINS
+* obeys referenceRangeLowUnits-isSameAs-resultValueUnits
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
@@ -423,24 +436,26 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.id ..0
   * referenceRange.extension ..0
   * referenceRange.modifierExtension ..0
-
+  * referenceRange.low.id ..0
   * referenceRange.low.extension ..0
   * referenceRange.low.value 1..1  MS
     * insert relative_short_definition("基準値の小さいほうの値")
   * referenceRange.low.unit 0..1 MS
-    * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+    * insert relative_short_definition("基準値の単位。設定する場合には検査結果の単位と同じであること。設定されない場合には検査結果の単位と同じとみなす。")
   * referenceRange.low.system 0..1 MS
-    * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+    * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば\"http://unitsofmeasure.org\"を記述する。")
   * referenceRange.low.system = "http://unitsofmeasure.org"
   * referenceRange.low.code 0..1 MS
-    * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+    * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば記述する。")
 
+  * referenceRange.high.id ..0
   * referenceRange.high.extension ..0
   * referenceRange.high.value 1..1  MS
     * insert relative_short_definition("基準値の大きいほうの値")
-  * referenceRange.high.unit 0..1 MS
-    * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
-  * referenceRange.high.system 0..1 MS
-    * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
-  * referenceRange.high.code 0..1 MS
-    * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+  * referenceRange.low.unit 0..1 MS
+    * insert relative_short_definition("基準値の単位。設定する場合には検査結果の単位と同じであること。設定されない場合には検査結果の単位と同じとみなす。")
+  * referenceRange.low.system 0..1 MS
+    * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば\"http://unitsofmeasure.org\"を記述する。")
+  * referenceRange.low.system = "http://unitsofmeasure.org"
+  * referenceRange.low.code 0..1 MS
+    * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば記述する。")
