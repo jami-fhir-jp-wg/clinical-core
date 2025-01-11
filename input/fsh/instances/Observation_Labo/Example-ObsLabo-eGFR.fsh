@@ -54,3 +54,10 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 //* specimen = Reference(Specimen/Example-JP-Specimen-Serum)
 * specimen.display = "血清"
 * specimen.type = "Specimen"
+
+
+* referenceRange.low.value = 68.0
+* referenceRange.low.unit = "ml/min/1.73m2"
+
+* referenceRange.high.value = 110.0
+* referenceRange.high.unit = "ml/min/1.73m2"

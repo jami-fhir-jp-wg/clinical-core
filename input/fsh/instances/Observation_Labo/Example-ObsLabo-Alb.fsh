@@ -59,3 +59,8 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 * specimen = Reference(Specimen/Example-Contained-JP-Specimen-Serum)
 * specimen.type = "Specimen"
 
+* referenceRange.low.value = 3.5
+* referenceRange.low.unit = "mg/L"
+
+//* referenceRange.high.value = 4.5
+* referenceRange.high.unit = "mg/L"
