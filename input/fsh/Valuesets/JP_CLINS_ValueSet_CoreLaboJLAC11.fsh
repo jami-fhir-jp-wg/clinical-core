@@ -1,3 +1,20 @@
+// 43項目全体
+ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_VS 
+Id: jp-clins-valueset-corelaboJLAC11-vs
+Title: "CLINS: CoreLabo43items ValueSet (JLAC11)"
+Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC11 ValueSet (JLAC11)"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2025-01-11T00:00:00.000+09:00"
+* ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_VS
+* ^version = "1.1.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2025-01-11"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_CoreLabo_CS
+
+
 // ⾎液型-ABO^^
 ValueSet: JP_CLINS_ValueSet_CoreLaboJLAC11_abo_bld_VS
 Id: jp-clins-valueset-corelaboJLAC11-abo-bld-vs
