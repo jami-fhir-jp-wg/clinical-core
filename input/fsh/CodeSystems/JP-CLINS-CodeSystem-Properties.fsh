@@ -1,4 +1,4 @@
-CodeSystem: JP_CLINS_CodeSystem_Propertirs-CS
+CodeSystem: JP_CLINS_CodeSystem_Propertirs_CS
 Id: jp-clins-codesystem-properties-cs
 Title: "CLINS 検体検査コードシステム属性コードシステム"
 Description: "CLINS 検体検査コードシステム属性コードシステム"
