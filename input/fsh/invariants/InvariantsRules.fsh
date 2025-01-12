@@ -198,6 +198,13 @@ Description: "R6021:observation.code.codingには、ローカルコード記述�
 Severity: #error
 Expression: "entry.select(resource as Observation).all(code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists())"
 
+// R6022 Observation CLINS ではローカルコードの記述は必須であることに注意喚起
+Invariant: warn-localCode-observation-laboresult
+Description: "注意喚起：このリソースでは、CLINS送信の場合にはobservation.code.codingにローカルコード記述が必要であるが存在しません。CLINS送信でなければ問題ありません。"
+Severity: #error
+Expression: "entry.select(resource as Observation).all(code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists())"
+
+
 // R6081: hasMember要素は、電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない
 Invariant: observation-has-no-hasMember
 Description: "R6081: hasMember要素は、電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない"

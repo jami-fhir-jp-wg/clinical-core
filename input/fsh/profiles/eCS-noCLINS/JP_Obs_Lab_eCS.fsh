@@ -31,6 +31,35 @@ Description: "基準値highの単位情報は検査結果値の単位情報と�
 Severity: #error
 Expression: "((referenceRange.high.unit.exists() implies (valueQuantity.unit.exists() and (valueQuantity.unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (valueQuantity.code.exists() and (valueQuantity.code = referenceRange.high.code))))" 
 
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-01
+Description: "referenceRange.high.unit.exists()"
+Severity: #error
+Expression: "referenceRange.high.unit.exists()" 
+
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-02
+Description: "valueQuantity.unit.exists()"
+Severity: #error
+Expression: "valueQuantity.unit.exists()" 
+
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-03
+Description: "valueQuantity.unit = referenceRange.high.unit"
+Severity: #error
+Expression: "valueQuantity.unit = referenceRange.high.unit" 
+
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-04
+Description: "referenceRange.high.code.exists()"
+Severity: #error
+Expression: "referenceRange.high.code.exists()" 
+
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-05
+Description: "valueQuantity.code.exists()"
+Severity: #error
+Expression: "valueQuantity.code.exists()" 
+
+Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-06
+Description: "valueQuantity.code = referenceRange.high.code"
+Severity: #error
+Expression: "valueQuantity.code = referenceRange.high.code" 
 
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
@@ -50,6 +79,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * obeys needs-performer-on-CLINS
 * obeys referenceRangeLowUnits-isSameAs-resultValueUnits
 * obeys referenceRangeHighUnits-isSameAs-resultValueUnits
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-01
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-02
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-03
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-04
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-05
+* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-06
+* obeys warn-localCode-observation-laboresult // R6022 Observation CLINS ではローカルコードの記述は必須である。注意喚起
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS

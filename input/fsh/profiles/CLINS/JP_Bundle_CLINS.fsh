@@ -40,7 +40,9 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 //* obeys observation-needs-extension-of-InstitutionNumber //extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須 -> R9011:9012が設定済み
 * obeys observation-needs-encounter //encounter : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-has-no-hasMember //hasMember : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では使用できない
+
 * obeys needs-localCode-observation-laboresult // R6021 Observation CLINS ではローカルコードの記述は必須である。
+
 * obeys check-LTS-MemberOf-infectionLabo // R6031 Observation CLINS ではLTS長期保存フラグが指定感染症でのみ記述可能である。
 * obeys first-bundle-entry-is-Patient // "R0211:最初のentryはPatientでなければならない。"
 * obeys patients-profile-is-JP-Patient-eCS  // R0212:最初のentryであるPatientは、JP_Patient_eCSプロファイルに準拠していなければならない。
