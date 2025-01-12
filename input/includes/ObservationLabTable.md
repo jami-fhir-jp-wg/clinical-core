@@ -1414,7 +1414,7 @@
   width:65pt'>string</td>
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>例示</td>
   <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<ruby>検査室<span
   style='display:none'><rt>ケンサシツ </rt></span></ruby>&quot;</td>
  </tr>
@@ -1584,7 +1584,7 @@
   width:65pt'>string</td>
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>検査下限値の単位。設定する場合には検査結果の単位と同じであること。設定されない場合には検査結果の単位と同じとみなす。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>例示</td>
   <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;mg/L&quot;</td>
  </tr>
  <tr height=44 style='mso-height-source:userset;height:33.0pt'>
@@ -1599,7 +1599,7 @@
   width:65pt'>uri</td>
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'>単位体系 UCUMコード体系。固定値。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>固定値</td>
   <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
  </tr>
  <tr height=27 style='height:20.0pt'>
@@ -1615,7 +1615,7 @@
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'><ruby>検査<span style='display:none'><rt>ケンサ </rt></span></ruby><ruby>結果<span
   style='display:none'><rt>ケッカ </rt></span></ruby>単位略号。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば記述する。値は例示。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
+  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>例示</td>
   <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;mg/L&quot;</td>
  </tr>
  <tr height=40 style='height:30.0pt'>
