@@ -50,8 +50,8 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 
 * valueQuantity.value = 3.5
 * valueQuantity.unit = "mEq/L"
-* referenceRange.system = "http://unitsofmeasure.org"
-* referenceRange.code = #mEq/L
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mEq/L
 
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
