@@ -107,52 +107,13 @@ and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時�
 * entry[practitioners].resource ^short = "Practitionerリソースのインスタンス本体"
 * entry[practitioners].resource ^definition = "Practitionerリソースのインスタンス本体。"
 
-
 * entry[organization].resource only JP_Organization_eCS
 * entry[organization] ^short = "文書作成機関／文書管理機関"
 * entry[organization] ^definition = "文書作成機関／文書管理機関"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * entry[condition].resource only  JP_Condition_eCS
 * entry[condition] ^short = "患者状態(入院時、退院時など）診断病名、主訴など。"
-* entry[condition] ^definition = "必須。"患者状態(入院時、退院時など）診断病名、主訴などを記述する。1つにつき1つのConditionで記述されたものを参照する。"
+* entry[condition] ^definition = "必須。患者状態(入院時、退院時など）診断病名、主訴などを記述する。1つにつき1つのConditionで記述されたものを参照する。"
 
 * entry[allergy].resource only  JP_AllergyIntolerance_eCS
 * entry[allergy] ^short = "アレルギー・不耐性反応情報を記述したAllergyIntoleranceリソースを参照"
