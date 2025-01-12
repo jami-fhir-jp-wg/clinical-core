@@ -14,7 +14,7 @@ on:
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.8.0-FAST
+  release_version : 1.9.0-FAST
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定

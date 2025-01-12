@@ -6,7 +6,7 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.8.1  (2025.1.11) 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の基準値範囲要素（referenceRange、component.referenceRange）のvalue子要素の多重度を仕様に合わせて1..1として明記、unit、system、code について、これらを記述する場合の説明、制約に関する説明を追加。
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）で、基準値の単位情報と検査結果の単位情報が同じであることを制約チェックするようにした。

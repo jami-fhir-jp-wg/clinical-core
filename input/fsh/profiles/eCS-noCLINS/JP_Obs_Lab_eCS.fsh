@@ -70,7 +70,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 * ^version = "x.x.x-profile"
 * ^status = #active
-* ^date = "2024-09-14"
+* ^date = "2025-01-11"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
