@@ -24,12 +24,12 @@ Expression: "(meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_e
 Invariant: referenceRangeLowUnits-isSameAs-resultValueUnits
 Description: "基準値lowの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
 Severity: #error
-Expression: "((referenceRange.low.unit.exists() implies (valueQuantity.unit.exists() and (valueQuantity.unit = referenceRange.low.unit)))  and (referenceRange.low.code.exists() implies (valueQuantity.code.exists() and (valueQuantity.code = referenceRange.low.code))))" 
+Expression: "((referenceRange.low.unit.exists() implies (value.ofType(Quatity).unit.exists() and (value.ofType(Quatity).unit = referenceRange.low.unit)))  and (referenceRange.low.code.exists() implies (value.ofType(Quatity).code.exists() and (value.ofType(Quatity).code = referenceRange.low.code))))" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits
 Description: "基準値highの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
 Severity: #error
-Expression: "((referenceRange.high.unit.exists() implies (valueQuantity.unit.exists() and (valueQuantity.unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (valueQuantity.code.exists() and (valueQuantity.code = referenceRange.high.code))))" 
+Expression: "((referenceRange.high.unit.exists() implies (value.ofType(Quatity).unit.exists() and (value.ofType(Quatity).unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (value.ofType(Quatity).code.exists() and (value.ofType(Quatity).code = referenceRange.high.code))))" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-01
 Description: "referenceRange.high.unit.exists()"
@@ -37,14 +37,14 @@ Severity: #error
 Expression: "referenceRange.high.unit.exists()" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-02
-Description: "valueQuantity.unit.exists()"
+Description: "value.ofType(Quatity).unit.exists()"
 Severity: #error
-Expression: "valueQuantity.unit.exists()" 
+Expression: "value.ofType(Quatity).unit.exists()" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-03
-Description: "valueQuantity.unit = referenceRange.high.unit"
+Description: "value.ofType(Quatity).unit = referenceRange.high.unit"
 Severity: #error
-Expression: "valueQuantity.unit = referenceRange.high.unit" 
+Expression: "value.ofType(Quatity).unit = referenceRange.high.unit" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-04
 Description: "referenceRange.high.code.exists()"
@@ -52,14 +52,21 @@ Severity: #error
 Expression: "referenceRange.high.code.exists()" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-05
-Description: "valueQuantity.code.exists()"
+Description: "value.ofType(Quatity).code.exists()"
 Severity: #error
-Expression: "valueQuantity.code.exists()" 
+Expression: "value.ofType(Quatity).code.exists()" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-06
-Description: "valueQuantity.code = referenceRange.high.code"
+Description: "value.ofType(Quatity).code = referenceRange.high.code"
 Severity: #error
-Expression: "valueQuantity.code = referenceRange.high.code" 
+Expression: "value.ofType(Quantity).code = referenceRange.high.code" 
+
+// R6021とセット Observation CLINS ではローカルコードの記述は必須であることに注意喚起
+Invariant: warn-localCode-observation-laboresult
+Description: "注意喚起：このリソースでは、CLINS送信の場合にはObservation.code.codingにローカルコード記述が必要であるが存在していません。CLINS送信でなければ問題ありません。"
+Severity: #error
+Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
+
 
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
