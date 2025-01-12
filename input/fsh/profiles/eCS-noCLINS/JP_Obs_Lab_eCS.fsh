@@ -31,42 +31,11 @@ Description: "基準値highの単位情報は検査結果値の単位情報と�
 Severity: #error
 Expression: "((referenceRange.high.unit.exists() implies (value.ofType(Quantity).unit.exists() and (value.ofType(Quantity).unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (value.ofType(Quantity).code.exists() and (value.ofType(Quantity).code = referenceRange.high.code))))" 
 
-Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-01
-Description: "referenceRange.high.unit.exists()"
-Severity: #error
-Expression: "referenceRange.high.unit.exists()" 
-
-Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-02
-Description: "value.ofType(Quantity).unit.exists()"
-Severity: #error
-Expression: "value.ofType(Quantity).unit.exists()" 
-
-Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-03
-Description: "value.ofType(Quantity).unit = referenceRange.high.unit"
-Severity: #error
-Expression: "value.ofType(Quantity).unit = referenceRange.high.unit" 
-
-Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-04
-Description: "referenceRange.high.code.exists()"
-Severity: #error
-Expression: "referenceRange.high.code.exists()" 
-
-Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-05
-Description: "value.ofType(Quantity).code.exists()"
-Severity: #error
-Expression: "value.ofType(Quantity).code.exists()" 
-
-Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits-06
-Description: "value.ofType(Quantity).code = referenceRange.high.code"
-Severity: #error
-Expression: "value.ofType(Quantity).code = referenceRange.high.code" 
-
 // R6021とセット Observation CLINS ではローカルコードの記述は必須であることに注意喚起
 Invariant: warn-localCode-observation-laboresult
 Description: "注意喚起：このリソースでは、CLINS送信の場合にはObservation.code.codingにローカルコード記述が必要であるが存在していません。CLINS送信でなければ問題ありません。"
-Severity: #error
+Severity: #warning
 Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
-
 
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
