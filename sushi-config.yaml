@@ -406,3 +406,5 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
     - http://jpfhir.jp/fhir/eReferral/ValueSet/document-section
     - http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_VS
+    - http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property
+    
