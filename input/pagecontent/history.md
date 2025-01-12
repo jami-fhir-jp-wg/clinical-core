@@ -8,6 +8,7 @@
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。
+  - Observationの6.1 表　基準値範囲要素（referenceRange)のunit、system、code の各子要素の多重度を1..1から0..1について変更（単位がない検査結果値への対応を考慮）、単位情報を記述する場合には検査結果値の単位情報と同一にすることを明記。
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の基準値範囲要素（referenceRange、component.referenceRange）のvalue子要素の多重度を仕様に合わせて1..1として明記、unit、system、code について、これらを記述する場合の説明、制約に関する説明を追加。
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）で、基準値の単位情報と検査結果の単位情報が同じであることを制約チェックするようにした。
   - Bundle CLINS に含まれるObservetionでは、検査項目のローカルコードの記述が必須であることを、Bundle CLINSで制約チェックするようにした。また、検体検査結果プロファイル（JP_Observation_LabResult_eCS）で同様の注意喚起を表示するようにした。

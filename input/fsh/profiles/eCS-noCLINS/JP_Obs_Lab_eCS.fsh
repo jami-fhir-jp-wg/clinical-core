@@ -55,12 +55,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * obeys needs-performer-on-CLINS
 * obeys referenceRangeLowUnits-isSameAs-resultValueUnits
 * obeys referenceRangeHighUnits-isSameAs-resultValueUnits
-* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-01
-* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-02
-* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-03
-* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-04
-* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-05
-* obeys referenceRangeHighUnits-isSameAs-resultValueUnits-06
+
 * obeys warn-localCode-observation-laboresult // R6022 Observation CLINS ではローカルコードの記述は必須である。注意喚起
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS

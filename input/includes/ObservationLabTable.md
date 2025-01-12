@@ -1579,11 +1579,11 @@
   <td class=xl87 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>unit</td>
   <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl203 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl203 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl87 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>string</td>
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
-  width:269pt'>検査下限値の単位</td>
+  width:269pt'>検査下限値の単位。設定する場合には検査結果の単位と同じであること。設定されない場合には検査結果の単位と同じとみなす。</td>
   <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;mg/L&quot;</td>
  </tr>
@@ -1594,7 +1594,7 @@
   <td class=xl87 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>system</td>
   <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl203 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl203 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl87 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>uri</td>
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
@@ -1609,12 +1609,12 @@
   <td class=xl87 align=left width=73 style='border-top:none;border-left:none;
   width:55pt'>code</td>
   <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl203 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
+  <td class=xl203 width=47 style='border-top:none;border-left:none;width:35pt'>0..1</td>
   <td class=xl87 align=left width=87 style='border-top:none;border-left:none;
   width:65pt'>code</td>
   <td class=xl87 align=left width=359 style='border-top:none;border-left:none;
   width:269pt'><ruby>検査<span style='display:none'><rt>ケンサ </rt></span></ruby><ruby>結果<span
-  style='display:none'><rt>ケッカ </rt></span></ruby>単位略号。値は例示。</td>
+  style='display:none'><rt>ケッカ </rt></span></ruby>単位略号。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば記述する。値は例示。</td>
   <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;mg/L&quot;</td>
  </tr>
