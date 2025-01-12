@@ -15,22 +15,22 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^hierarchyMeaning = #is-a
 * ^property[+].code = #unit
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_unitProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #string
 * ^property[+].code = #specimen
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_specimenProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #string
 * ^property[+].code = #method
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_methodProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #string
 * ^property[+].code = #fullNumberOfDigits
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_ndigitsProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #integer
 * ^property[+].code = #numberOfDecimalDigits
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_ddigitsProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #integer
 * ^property[+].code = #oidOfValueSet
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_oidVSProperty"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #string
 * #TP
   * #3A010000002329101  "TP"

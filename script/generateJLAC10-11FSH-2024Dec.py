@@ -38,27 +38,27 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.4', updateDate =
     fout.write('* ^hierarchyMeaning = #is-a' + '\n')
 
     fout.write('* ^property[+].code = #unit' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_unitProperty"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #specimen' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_specimenProperty"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #method' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_methodProperty"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #fullNumberOfDigits' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_ndigitsProperty"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #integer' + '\n')
 
     fout.write('* ^property[+].code = #numberOfDecimalDigits' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_ddigitsProperty"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #integer' + '\n')
 
     fout.write('* ^property[+].code = #oidOfValueSet' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_oidVSProperty"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
 
