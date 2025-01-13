@@ -459,10 +459,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.high.extension ..0
   * referenceRange.high.value 1..1  MS
     * insert relative_short_definition("基準値の大きいほうの値")
-  * referenceRange.low.unit 0..1 MS
+  * referenceRange.high.unit 0..1 MS
     * insert relative_short_definition("基準値の単位。設定する場合には検査結果の単位と同じであること。設定されない場合には検査結果の単位と同じとみなす。")
-  * referenceRange.low.system 0..1 MS
+  * referenceRange.high.system 0..1 MS
     * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば\"http://unitsofmeasure.org\"を記述する。")
-  * referenceRange.low.system = "http://unitsofmeasure.org"
-  * referenceRange.low.code 0..1 MS
+  * referenceRange.high.system = "http://unitsofmeasure.org"
+  * referenceRange.high.code 0..1 MS
     * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位コードがあれば記述する。")
+  * referenceRange.text 0..1 MS
