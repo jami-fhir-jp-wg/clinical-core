@@ -23,7 +23,7 @@ CodeSystem: JP_CLINS_CodeSystem_ResultClass_UrineCode_CS
 Id: jp-clins-codesystem-resultclass-urincode-cs
 Title: "JP_CLINS 尿関係の定性検査結果コード表"
 Description: "JP_CLINS 尿関係の定性検査結果　1：－、2：±、3：＋、4：２＋、5：３＋、6：４＋、7：５＋ コードは半角、コード表示名は全角文字"
-* ^url = "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS"
+* ^url = $JP_LaboResult_Urine_Code_CS　//"http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS"
 * ^title = "JP_CLINS 尿関係の定性検査結果コード表 1：－、2：±、3：＋、4：2＋、5：3＋、6：4＋、7：5＋"
 * ^version = "1.0.0"
 * ^status = #active
