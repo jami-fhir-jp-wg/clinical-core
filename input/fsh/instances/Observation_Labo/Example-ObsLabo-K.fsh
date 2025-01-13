@@ -1,8 +1,8 @@
 Instance: Example-JP-Obs-LabResult-eCS-K
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
-Description: "Observationリソース（検体検査結果）カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
-* note.text = "Observationリソース（検体検査結果）カリウム　3.5 mEq/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
+Description: "Observationリソース（検体検査結果）カリウム　5.5 mmol/L (High)　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
+* note.text = "Observationリソース（検体検査結果）カリウム　5.5 mmol/L (High) 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
@@ -48,24 +48,24 @@ Description: "Observationリソース（検体検査結果）カリウム　3.5 
 
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
-* valueQuantity.value = 3.5
-* valueQuantity.unit = "mEq/L"
+* valueQuantity.value = 5.5
+* valueQuantity.unit = "mmol/L"
 * valueQuantity.system = "http://unitsofmeasure.org"
-* valueQuantity.code = #mEq/L
+* valueQuantity.code = #mmol/L
 
-//* interpretation.coding.version = "4.0.1"
-//* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
-//* interpretation.text = "範囲未定義、もしくは正常が適用されない"
-//* specimen = Reference(Specimen/Example-JP-Specimen-Serum)
+* interpretation.coding = $v3-ObservationInterpretation#H "High"
+* interpretation.text = "高"
+
 * specimen.display = "血清"
 * specimen.type = "Specimen"
 
 * referenceRange.low.value = 3.5
-* referenceRange.low.unit = "mEq/L"
+* referenceRange.low.unit = "mmol/L"
 * referenceRange.low.system = "http://unitsofmeasure.org"
-* referenceRange.low.code = #mEq/L
+* referenceRange.low.code = #mmol/L
 
 * referenceRange.high.value = 5.3
-* referenceRange.high.unit = "mEq/L"
+* referenceRange.high.unit = "mmol/L"
 * referenceRange.high.system = "http://unitsofmeasure.org"
-* referenceRange.high.code = #mEq/L
+* referenceRange.high.code = #mmol/L
+

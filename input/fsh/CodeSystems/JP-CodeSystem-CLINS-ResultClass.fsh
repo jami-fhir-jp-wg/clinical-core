@@ -2,7 +2,7 @@ CodeSystem: JP_CLINS_CodeSystem_ResultClass_PosNegHold_CS
 Id: jp-clins-codesystem-resultclass-posneghold-cs
 Title: "JP_CLINS 判定定性検査結果コード表"
 Description: "JP_CLINS 判定定性検査結果　1:陽性、2:陰性、3:判定保留 コードは半角、コード表示名は全角文字"
-* ^url = "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS"
+* ^url = $JP_LaboResult_PosNegHold_CS // "http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS"
 * ^title = "JP_CLINS 判定定性検査結果コード表 1：陽性、2：陰性"
 * ^version = "1.0.0"
 * ^status = #active
@@ -16,7 +16,7 @@ Description: "JP_CLINS 判定定性検査結果　1:陽性、2:陰性、3:判定
 
 * #1 "陽性"
 * #2 "陰性"
-* #3 "判定保留"
+* #3 "判定保留" // 使わない検査もある
 
 
 CodeSystem: JP_CLINS_CodeSystem_ResultClass_UrineCode_CS

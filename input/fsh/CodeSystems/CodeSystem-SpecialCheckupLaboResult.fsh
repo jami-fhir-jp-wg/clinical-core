@@ -45,8 +45,8 @@ Title: "特定検診検査結果　定性検査結果　2102"
 Description: "特定検診検査結果　健診定性検査結果コード "
 * ^url = $JP_SpecialCheckup_LaboResult_2102_CS
 * ^title = "特定検診検査結果　健診定性検査結果コード"
-
-* ^version = "4.0.0"
+// http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS と共用
+* ^version = "4.0.1"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = false
@@ -59,3 +59,5 @@ Description: "特定検診検査結果　健診定性検査結果コード "
 * #3 "1+"
 * #4 "2+"
 * #5 "3+"
+* #6 "4+"  // 特定健診では使用しない // http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS　で使用
+* #7 "5+"  // 特定健診では使用しない // http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_Urine_Code_CS　で使用

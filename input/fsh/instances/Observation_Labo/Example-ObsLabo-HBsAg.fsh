@@ -1,9 +1,9 @@
 Instance: Example-JP-Obs-LabResult-eCS-HbsAg
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
-Description: "Observationリソース（検体検査結果）HBs抗原(定性)　臨床検査項目基本コードJLAC10=5F016141002306311 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
-* note.text = "Observationリソース（検体検査結果）HBs抗原(定性)　臨床検査項目基本コードJLAC10=5F016141002306311 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定"
-//* #5F016141002306311  "HBs抗原(定性) 1：陽性、2：陰性"
+Description: "Observationリソース（検体検査結果）HBs抗原(定性)　臨床検査項目基本コードJLAC10=5F016141002306311 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定（感染症検査には有効）"
+* note.text = "Observationリソース（検体検査結果）HBs抗原(定性)　臨床検査項目基本コードJLAC10=5F016141002306311 検体：血清(埋込みリソース）　診療科：循環器診療科　長期保存フラグ設定（感染症検査には有効）"
+//* #5F016141002306311  "HBs抗原(定性) 1：陽性、2：陰性 (http://jpfhir.jp/fhir/LaboResult/CodeSystem/JP_PosNegHold_CS)"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
@@ -48,7 +48,10 @@ Description: "Observationリソース（検体検査結果）HBs抗原(定性)�
 
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
 
-* valueString = "1"
+//* valueString = "1"
+* valueCodeableConcept.coding = $JP_LaboResult_PosNegHold_CS#1 "陽性"
+* valueCodeableConcept.text = "陽性"
+
 * specimen = Reference(Specimen/Example-Contained-JP-Specimen-Serum)
 * specimen.type = "Specimen"
 

@@ -105,7 +105,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * system = $JP_ehrshrs_indication_CS (exactly)
   * version ..0
   * code 1..1 MS
-    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。")
+    * insert relative_short_definition("長期保存フラグ　固定値 LTSを設定する。（電子カルテ情報共有サービスでは設定しても、感染症以外の検査結果では利用されない。）")
   * code from $JP_ehrshrs_indication_lts_VS 
   * code = $JP_ehrshrs_indication_CS#LTS
   * userSelected ..0

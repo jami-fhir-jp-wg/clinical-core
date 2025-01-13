@@ -218,18 +218,3 @@ Description: "厚労省電子処方箋用法コードマスターValueSet"
 * ^copyright = "　"
 * include codes from system $MHLW_MedicationUsage_ePrescription_CS
 
-// 暫定
-// MEDIS標準病名マスター病名管理番号ValueSet
-// $JP_Disease_MEDIS_ManagementID_VS = http://medis.or.jp/ValueSet/master-disease-keyNumber 
-ValueSet:  JP_valueSet_Disease_MEDIS_ManagementID
-Id:   JP-valueSet-Disease-MEDIS-ManagementID
-Title: "MEDIS標準病名マスター病名管理番号ValueSet"
-Description: "MEDIS標準病名マスター病名管理番号ValueSet"
-* ^url = $JP_Disease_MEDIS_ManagementID_VS
-* ^version = "1.0.0"
-* ^status = #active
-* ^experimental = false
-* ^date = "2024-09-07"
-* ^publisher = "（財）医療情報システム開発センター"
-* ^copyright = "（財）医療情報システム開発センター"
-* include codes from system $JP_Disease_MEDIS_ManagementID_CS

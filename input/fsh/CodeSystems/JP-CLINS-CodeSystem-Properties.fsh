@@ -1,5 +1,5 @@
 CodeSystem: JP_CLINS_CodeSystem_Propertirs_unit_CS
-Id: jp-clins-codesystem-properties-cunit-s
+Id: jp-clins-codesystem-properties-cunit-cs
 Title: "CLINS 検体検査コードシステム属性コードシステム UNIT"
 Description: "CLINS 検体検査コードシステム属性コードシステム UNIT"
 * ^url = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_unit_property"
