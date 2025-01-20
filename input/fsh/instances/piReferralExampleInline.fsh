@@ -30,7 +30,7 @@ Description: "conditionReferralExample01 診療情報提供書　現病歴例　
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192838"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
@@ -76,7 +76,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-01"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
@@ -123,7 +123,7 @@ Description: "Conditionリソース 現在の傷病名（副病名）　例1　�
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-01"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
@@ -169,7 +169,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例2　�
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-01"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis

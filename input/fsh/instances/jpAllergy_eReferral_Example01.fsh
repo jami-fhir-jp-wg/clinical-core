@@ -16,8 +16,8 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "102934701"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
- // active | recurrence | relapse | inactive | remission | resolved
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
+ // active|inactive|resolved
 
 * type = #allergy
 
@@ -61,7 +61,7 @@ Description: "AllergyIntoleranceリソース　（診療情報提供書　アレ
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "102934701"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
 
 * type = #allergy

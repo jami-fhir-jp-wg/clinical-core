@@ -146,6 +146,9 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * clinicalStatus   ^definition = "臨床的状態のステータス。コードで記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では必須。"
 * clinicalStatus   ^comment = "active | inactive | resolved のいすれか（現存、非現存、解消）system=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
 * clinicalStatus.coding 1..* MS
+* clinicalStatus.coding.system 1.. MS
+* clinicalStatus.coding.code 1.. MS
+* clinicalStatus.coding.display 1.. MS
 * clinicalStatus.text 0..1 MS
   * insert relative_short_definition("コードだけでは記述できない情報がある場合にコードと併用してもよい。値が使用されない可能性はある。")
 
@@ -153,6 +156,9 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 * verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。記述する場合にはコード化記述が必須。clinicalStatusとの制約条件を参照のこと。"
 * verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）　system=http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
 * verificationStatus.coding 1..* MS
+* verificationStatus.coding.system 1.. MS
+* verificationStatus.coding.code 1.. MS
+* verificationStatus.coding.display 1.. MS
 * verificationStatus.text 0..1 MS
   * insert relative_short_definition("コードだけでは記述できない情報がある場合にはtext記述を併用してもよい。")
 

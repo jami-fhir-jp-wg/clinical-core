@@ -6,6 +6,14 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.1  (2025.1.20)
+
+  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の説明レイアウトを変更し、プロファイルツリー表示を最後に移動した。
+  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）に、定性検査結果のコード記述方法、結果が得られない場合の記述方法について詳述した。
+  - 傷病名情報プロファイル（JP_Condition_eCS）のプロファイル表およびプロファイル説明で、clinicalStatusにinactiveは使用しないことを補足した。
+  - 傷病名情報プロファイル（JP_Condition_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
+  - アレルギー情報プロファイル（JP_AllergyIntolerance_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。
   - Observationの6.1 表　基準値範囲要素（referenceRange)のunit、system、code の各子要素の多重度を1..1から0..1について変更（単位がない検査結果値への対応を考慮）、単位情報を記述する場合には検査結果値の単位情報と同一にすることを明記。

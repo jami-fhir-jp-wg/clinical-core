@@ -143,18 +143,23 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 
 * clinicalStatus   0..1 MS
 * clinicalStatus ^short = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。"
-* clinicalStatus ^definition = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では、必須。使用できるコードは詳細コメントを参照。"
-* clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）、remission(寛解)、resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。"
+* clinicalStatus ^definition = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では、必須。"
+* clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）→CLINSでは使用しない, resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。"
 * clinicalStatus.coding 1..* MS
-* clinicalStatus.coding ^short = "臨床的状態コード。使用するコードは詳細定義を参照のこと。"
-* clinicalStatus.coding ^definition = "臨床的状態コード。code要素はコード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）、remission(寛解)、resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。display要素は、code値に対応して　Active、Remission、Resolved、Unknown　のいずれかの文字列を設定する。"
+* clinicalStatus.coding.system 1.. MS
+* clinicalStatus.coding.code 1.. MS
+* clinicalStatus.coding.display 1.. MS
 * clinicalStatus.text 0..1 MS
   * insert relative_short_definition("コードだけでは記述できない情報がある場合にコードと併用してもよい。値が使用されない可能性はある")
+
 
 * verificationStatus    1..1 MS
 * verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須 。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には必ずconfirmedを設定する。"
 * verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）　system=http://terminology.hl7.org/CodeSystem/condition-ver-status"
 * verificationStatus.coding 0..* MS
+* verificationStatus.coding.system 1.. MS
+* verificationStatus.coding.code 1.. MS
+* verificationStatus.coding.display 1.. MS
 * verificationStatus.text 0..1 MS
   * insert relative_short_definition("コードだけでは記述できない情報がある場合や、コード化できない場合には本要素だけで記述してもよい。コードと併用してもよい")
 

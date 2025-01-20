@@ -147,7 +147,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
 * identifier[resourceIdentifier].value = "202934703"
 
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#inactive "Inactive"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved "Resolved"
  // active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）, resolved (治癒) 、unknown（不明）
 
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed "Unconfirmed"
@@ -202,7 +202,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-01"
-* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
