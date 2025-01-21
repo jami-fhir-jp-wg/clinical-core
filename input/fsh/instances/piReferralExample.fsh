@@ -20,7 +20,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * identifier.value = "192838"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active  "Active"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
 * code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS

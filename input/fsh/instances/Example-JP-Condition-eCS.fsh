@@ -204,7 +204,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 * identifier.value = "192839-01"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 * code.coding = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"

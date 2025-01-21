@@ -31,7 +31,7 @@ Description: "conditionReferralExample01 診療情報提供書　現病歴例　
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192838"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
@@ -78,7 +78,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 * identifier.value = "192839-01"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 * code.coding[medisRecordNo] = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
@@ -125,7 +125,7 @@ Description: "Conditionリソース 現在の傷病名（副病名）　例1　�
 * identifier.value = "192839-01"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 * code.coding[medisRecordNo] = $JP_Disease_MEDIS_ManagementID_CS#20058911 "狭心症"
@@ -171,7 +171,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例2　�
 * identifier.value = "192839-01"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 * code.coding[medisRecordNo] = $JP_Disease_MEDIS_ManagementID_CS#20061593 "高血圧症"

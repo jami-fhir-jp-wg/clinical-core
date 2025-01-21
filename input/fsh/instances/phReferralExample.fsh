@@ -18,7 +18,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192839-01"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
  // active | recurrence | relapse | inactive | remission | resolved
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
@@ -51,7 +51,7 @@ Description: "Conditionリソース　（診療情報提供書　既往歴テキ
 * identifier.value = "192839-02"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 
 * code.extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"

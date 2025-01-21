@@ -18,7 +18,7 @@ Description: "conditionReferralExample01 診療情報提供書　既往歴例1�
 * identifier.value = "192839-01"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved "Resolved"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 * code.coding[+].system = $JP_Disease_MEDIS_ManagementID_CS
@@ -51,7 +51,7 @@ Description: "conditionReferralExample01 診療情報提供書　既往歴例2�
 * identifier.value = "192839-02"
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#resolved "Resolved"
  // active | recurrence | relapse | inactive | remission | resolved
-* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 
 * code.extension[+].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"
