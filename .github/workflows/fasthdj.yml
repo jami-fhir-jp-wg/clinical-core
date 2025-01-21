@@ -121,9 +121,8 @@ jobs:
 
         sed 's/1.x.x-temp/${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
         sed 's/https:\/\/jpfhir.jp\/fhir\/clins\/pkghistory\//https:\/\/jpfhir.jp\/fhir\/clins-fasthdj\//g' sushi-config-temp.yaml > sushi-config-temp2.yaml
-        
-        mv sushi-config-temp2.yaml sushi-config.yaml
 
+        mv sushi-config-temp2.yaml sushi-config.yaml
 
         sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/validationGuide.md > input/pagecontent/validationGuide-temp.md
         mv input/pagecontent/validationGuide-temp.md input/pagecontent/validationGuide.md
@@ -190,11 +189,11 @@ jobs:
         cp resources/NamingSystem-* package/
         cp ../forPackageRelease/package-diff.json package/package.json
         tar czf jp-eCSCLINS-FASTHDJ-package-diff.tgz package
-        cp jp-eCSCLINS-FASTHDJ-package-diff.tgz ../forPackageRelease/jp-eCSCLINS-FASTHDJ.r4-${{ env.release_version }}.tgz
+        cp jp-eCSCLINS-FASTHDJ-package-diff.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}.tgz
 
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS-FASTHDJ.r4-${{ env.release_version }}.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-fasthdj/ --exclude .htaccess
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-fasthdj/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-fasthdj/ ; tar xzf output.tgz'
 
