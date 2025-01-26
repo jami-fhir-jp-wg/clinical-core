@@ -1757,14 +1757,17 @@
   class="font14">をclinicalStatus</font><ruby><font class="font14">要素</font><span
   style='display:none'><rt>ヨウソ </rt></span></ruby><font class="font14">に</font><ruby><font
   class="font14">記述</font><span style='display:none'><rt>キジュツ </rt></span></ruby><font
-  class="font14">すること。この</font><ruby><font class="font14">日付</font><span
-  style='display:none'><rt>ヒヅケ </rt></span></ruby><font class="font14">がある</font><ruby><font
-  class="font14">場合</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
-  class="font14">のclinicalStatus</font><ruby><font class="font14">要素</font><span
-  style='display:none'><rt>ヨウソ </rt></span></ruby><font class="font14">は&quot;active&quot;,&quot;unknown&quot;</font><ruby><font
-  class="font14">以外</font><span style='display:none'><rt>イガイ </rt></span></ruby><font
-  class="font14">の</font><ruby><font class="font14">値</font><span
-  style='display:none'><rt>アタイ </rt></span></ruby><font class="font14">でなければならない。</font><br>
+  class="font14">すること。</font><ruby><font class="font14">通常</font><span
+  style='display:none'><rt>ツウジョウ </rt></span></ruby><font class="font14">は、この</font><ruby><font
+  class="font14">日付</font><span style='display:none'><rt>ヒヅケ </rt></span></ruby><font
+  class="font14">がある</font><ruby><font class="font14">場合</font><span
+  style='display:none'><rt>バアイ </rt></span></ruby><font class="font14">のclinicalStatus</font><ruby><font
+  class="font14">要素</font><span style='display:none'><rt>ヨウソ </rt></span></ruby><font
+  class="font14">は&quot;active&quot;</font><ruby><font class="font14">以外</font><span
+  style='display:none'><rt>イガイ </rt></span></ruby><font class="font14">の</font><ruby><font
+  class="font14">値</font><span style='display:none'><rt>アタイ </rt></span></ruby><font
+  class="font14">となるが、</font><ruby><font class="font14">例外的</font><span
+  style='display:none'><rt>レイガイテキ </rt></span></ruby><font class="font14">に&quot;active&quot;でもよい。</font><br>
     abatement要素は記述しないで、直接abatementDateTime要素などabatementXXXXの要素により記述する。</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
   <td class=xl178 width=195 style='width:146pt'>　</td>

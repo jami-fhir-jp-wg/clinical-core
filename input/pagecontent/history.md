@@ -15,6 +15,7 @@
     - プロファイル表およびプロファイル説明で、clinicalStatusにrecurrence、relapse、inactiveは使用しないことを補足した。
     - clinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
     - verificationStatus.codeの使用方法で、refutedやentered-in-errorを使用した場合の電子カルテ情報共有サービスでの処理について補足した。
+    - abatementDateTime要素（傷病のある状態の終了日）に日付を設定する場合には、clinicalStatusはactive、unknown以外（すなわちremissionまたはresolvedのいずれか）でなければならないことに修正。（例外的にactiveでもよいとしていたがそれを削除）。(仕様表での記載も同様に修正)。なお、この制約はもともとFHIR基底仕様である。
   - アレルギー情報プロファイル（JP_AllergyIntolerance_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 

@@ -244,7 +244,7 @@ and receipt 0..
 * abatement[x] 0..1 MS
 * abatement[x] only dateTime
 * abatementDateTime ^short = "この傷病名情報による患者状態が終了したと同定された時期。"
-* abatementDateTime ^short = "患者にこの傷病のある状態が終了または確認できた時期、なんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日（すなわち転帰日）をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名終了日（転帰日）をdateTime型で記述する。この終了日（転帰日）における転帰情報をclinicalStatus要素に記述すること。通常は、この日付がある場合のclinicalStatus要素は\"active\"以外の値となるが、例外的に\"active\"でもよい。"
+* abatementDateTime ^short = "患者にこの傷病のある状態が終了または確認できた時期、なんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日（すなわち転帰日）をdateTime型で記述するのが一般的な方法である。電子カルテ情報サービスでは、病名終了日（転帰日）をdateTime型で記述する。この終了日（転帰日）における転帰情報をclinicalStatus要素に記述すること。この日付がある場合のclinicalStatus要素は\"active\",\"unknown\"以外の値でなければならない。"
 
 * recordedDate 0..1 MS
   * insert relative_short_definition("この情報を記録した登録日")
