@@ -6,12 +6,15 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.1  (2025.1.20)
-
-  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の説明レイアウトを変更し、プロファイルツリー表示を最後に移動した。
-  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）に、定性検査結果のコード記述方法、結果が得られない場合の記述方法について詳述した。
-  - 傷病名情報プロファイル（JP_Condition_eCS）のプロファイル表およびプロファイル説明で、clinicalStatusにinactiveは使用しないことを補足した。
-  - 傷病名情報プロファイル（JP_Condition_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.1  (2025.1.25)
+  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の以下を修正した。
+    - 説明レイアウトを変更し、プロファイルツリー表示を最後に移動した。
+    - 定性検査結果のコード記述方法、結果が得られない場合の記述方法について詳述した。その場合のdataAbsentReasonの使い方とそのtext子要素が必須であることも含めて明示した。
+    - status要素の取りうる値に曖昧さがあったので、明記した（ammended、entered-in-error、unknownは使用しない）。
+  - 傷病名情報プロファイル（JP_Condition_eCS）の以下を修正した。
+    - プロファイル表およびプロファイル説明で、clinicalStatusにrecurrence、relapse、inactiveは使用しないことを補足した。
+    - clinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
+    - verificationStatus.codeの使用方法で、refutedやentered-in-errorを使用した場合の電子カルテ情報共有サービスでの処理について補足した。
   - アレルギー情報プロファイル（JP_AllergyIntolerance_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 

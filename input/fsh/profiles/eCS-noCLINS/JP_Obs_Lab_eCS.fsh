@@ -169,7 +169,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 // OUL^R22.OBX[*]-11 結果状態
 * status ^definition = "検査結果値の状態。"
 * status ^definition = "検査結果値の状態。"
-* status ^comment = "preliminary:暫定報告（このあとで本報告が予定される場合）、final:確定報告（このあと修正されることはもちろん事情によってはありうるが、この報告段階では確定結果として報告されている、corrected:final報告を修正した（新しい結果が有効である）のどちらかを使用する。cancelled: 検体不良や検査機器エラーなどなんらなの原因で検査を実施しなかった、またはこの結果や検査実施が取り消されたので報告は取り消された（報告済みの以前の結果は無効である、間違っていたかもしれない）、修正報告他にも　http://hl7.org/fhir/observation-status　から選択可能であるが、意味的に紛らわしいので使わない。"
+* status ^comment = "検査結果がある場合には、preliminary:暫定結果報告（このあとで本報告が予定される場合）、final:最終結果報告（このあと修正されることはもちろん事情によってはありうるが、この報告段階では確定結果として報告されている、corrected:定性報告（final報告を修正した、新しい結果が有効である）、のいずれかを使用する。検査結果がない場合には、registered : 結果未着、またはcancelled:検査中止（検体不良や検査機器エラーなどなんらかの原因で検査を実施しなかった、またはこの結果や検査実施が取り消されたので報告は取り消された、報告済みの以前の結果は無効である、間違っていたかもしれない）のどちらかを使用する。これら以外の状態コードは　http://hl7.org/fhir/observation-status　には定義されているが、意味的に紛らわしいので使わない。"
 * status 1..1 MS
 
 // OUL^R22
@@ -356,8 +356,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * value[x] MS
 * value[x] only Quantity or CodeableConcept or string
 * value[x] ^short = "検体検査の結果"
-* value[x] ^definition = "検体検査の結果"
-* value[x] ^comment = "valueQuantity,valueCodeableConcept,valueStringのいずれかを使用する。"
+* value[x] ^definition = "検体検査の結果。コメントを参照のこと。"
+* value[x] ^comment = "valueQuantity,valueCodeableConcept,valueStringのいずれかを使用する。この項目自体は子項目をまとめるセット名（バッテリー名、例：血球算定など）の場合にはこの要素は出現しない。また、結果値が何らかの理由により得られなかった場合や、検査結果が未着（検査中または実施前）の場合にはこの要素は出現せず、dataAbsentReasonにその理由を記述する。それ以外では必ず出現する。"
 
 // if OUL^R22.OBX[*]-2 == "NM":
 // OUL^R22.OBX[*]-5  結果
@@ -376,8 +376,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 // Valueが欠落する場合には必ずその理由コードを記述する
 * dataAbsentReason MS
-* dataAbsentReason ^definition = "検査結果値が欠落している理由。"
-* dataAbsentReason ^comment = "【JP Core仕様】SS-MIX2で未使用だが、valueの欠落時に使用する必要があり、重要な項目である。\r\n\r\n制約「obs-6」に示す通り、valueが存在する場合、この要素は存在してはならない。\r\n\r\ntextのみでの使用は基本的に不可とし、必ずcodingを以下から設定すること。適切な理由を選べないシステムの場合には、unknownを使用するものとする。\r\n\r\n(unknown：値が存在するかしないか不明 |  masked：結果非開示 | not-applicable：適用外（システム適用外など、生体にありえない項目（男性患者における女性固有検査値など）） | as-text ：テキスト表現で別途記述| error ：システムエラー|   not-a-number：結果が数値でない、数値化エラー |   negative-infinity：数値が小さすぎて表現できない |   positive-infinity：数値が大きすぎて表現 | not-performed：未実施| not-permitted：結果取得が許可されていない"
+* dataAbsentReason ^short = "検査結果値が欠落している理由。詳細、コメントを参照のこと。"
+* dataAbsentReason ^definition = "検査結果値が欠落している理由。コメントを参照のこと。"
+* dataAbsentReason ^comment = "value要素に結果を記述しない場合で検査結果値が欠落している場合には、その理由。コード化して設定することは一般に難しいのでcoding子要素は記述しなくてもよいが、text子要素は必須である。検査値が得られるはずの検査項目であるにもかかわらずvalue[x]要素に値がない場合には、この項目は必須。"
+* dataAbsentReason.text 1..1 MS
+* dataAbsentReason.text ^short = "検査結果値が欠落している理由の文字列。詳細、コメントを参照のこと。"
+* dataAbsentReason.text ^definition = "検査結果値が欠落している理由の文字列。例としてはコメントを参照のこと。"
+* dataAbsentReason.text ^comment = "\"検査中\"、\"未実施\"、\"検体凝固\"、\"検体量不足\"、\"溶血で実施できず\"、\"採血できず\"、\"検査機器エラー\"などが想定される。"
 
 // OUL^R22.OBX[*]-8 （基準値範囲はOUL^R22.OBX[*]-7) 
 * interpretation MS
@@ -387,9 +392,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * interpretation ^requirements = "特に数値結果については、結果の重要性を完全に理解するために解釈を必要。"
 
 * note MS
-* note ^short = "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。"
-* note ^definition = "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。"
-
+* note ^short = "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。詳細を参照のこと。"
+* note ^definition = "検査、あるいは結果に関するコメント。フリーテキストの追加情報として使用可能。\"溶血\"、\"視算値\"、\"概算\"、\"参考値\"などもこの要素で記述することができる。"
 
 // OUL^R22.SPM-4[*]
 * specimen 1.. MS

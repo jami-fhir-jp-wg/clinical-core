@@ -152,16 +152,17 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 * clinicalStatus.text 0..1 MS
   * insert relative_short_definition("コードだけでは記述できない情報がある場合にコードと併用してもよい。値が使用されない可能性はある")
 
-
 * verificationStatus    1..1 MS
-* verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須 。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。疑い病名の場合には、unconfirmedを設定し、それ以外の場合には必ずconfirmedを設定する。"
-* verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）　system=http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus    ^short = "入力された臨床的状態に対する検証状況を示す。詳細、コメントを参照のこと。"
+* verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）。コメントを参照のこと。コード化の場合のsystem=http://terminology.hl7.org/CodeSystem/condition-ver-status"
+* verificationStatus ^comment = "コード化記述が必須。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。\r\n疑い病名フラグがない病名には、confirmed を設定するが、一度登録された病名を取り消した場合やそれが入力エラーであったことを明示したい場合には、refuted（取り消された病名）、entered-in-error（誤って登録された病名）のいずれかを設定することもできる。\r\n疑い病名フラグのある病名には、unconfirmed を必ず設定する。\r\nなお、電子カルテ情報共有サービスでは、confirmed、unconfirmed以外の病名に対してはその情報は受信データとして保存されるが、利用されたり表示されたりすることはない。過去の登録病名情報に対して削除や取り消しなどの処理を行うために使われることもないため、refutedやentered-in-errorをつけて送信しても過去に送信した病名を取り消すことはできない。"
+
 * verificationStatus.coding 0..* MS
 * verificationStatus.coding.system 1.. MS
 * verificationStatus.coding.code 1.. MS
 * verificationStatus.coding.display 1.. MS
 * verificationStatus.text 0..1 MS
-  * insert relative_short_definition("コードだけでは記述できない情報がある場合や、コード化できない場合には本要素だけで記述してもよい。コードと併用してもよい")
+  * insert relative_short_definition("コードだけでは記述できない情報がある場合や、コード化できない場合には本要素で記述する。コードと併用してもよい")
 
 * category 1..1 MS
 * category ^short = "臨床的状態に割り当てられたカテゴリー。"
