@@ -1,25 +1,25 @@
 <table border=0 cellpadding=0 cellspacing=0 width=1074 style='border-collapse:
  collapse;table-layout:fixed;width:805pt'>
- <col class=xl337 width=117 style='mso-width-source:userset;mso-width-alt:3218;
+ <col class=xl336 width=117 style='mso-width-source:userset;mso-width-alt:3218;
  width:88pt'>
- <col class=xl337 width=85 style='mso-width-source:userset;mso-width-alt:2340;
+ <col class=xl336 width=85 style='mso-width-source:userset;mso-width-alt:2340;
  width:64pt'>
- <col class=xl337 width=87 style='mso-width-source:userset;mso-width-alt:2377;
+ <col class=xl336 width=87 style='mso-width-source:userset;mso-width-alt:2377;
  width:65pt'>
- <col class=xl337 width=73 style='mso-width-source:userset;mso-width-alt:2011;
+ <col class=xl336 width=73 style='mso-width-source:userset;mso-width-alt:2011;
  width:55pt'>
- <col class=xl337 width=35 style='mso-width-source:userset;mso-width-alt:950;
+ <col class=xl336 width=35 style='mso-width-source:userset;mso-width-alt:950;
  width:26pt'>
- <col class=xl337 width=87 style='mso-width-source:userset;mso-width-alt:2377;
+ <col class=xl336 width=87 style='mso-width-source:userset;mso-width-alt:2377;
  width:65pt'>
- <col class=xl337 width=359 style='mso-width-source:userset;mso-width-alt:9837;
+ <col class=xl336 width=359 style='mso-width-source:userset;mso-width-alt:9837;
  width:269pt'>
- <col class=xl337 width=36 style='mso-width-source:userset;mso-width-alt:987;
+ <col class=xl336 width=36 style='mso-width-source:userset;mso-width-alt:987;
  width:27pt'>
- <col class=xl338 width=195 style='mso-width-source:userset;mso-width-alt:5339;
+ <col class=xl337 width=195 style='mso-width-source:userset;mso-width-alt:5339;
  width:146pt'>
  <tr height=53 style='mso-height-source:userset;height:40.0pt'>
-  <td colspan=9 height=53 class=xl446 width=1074 style='height:40.0pt;
+  <td colspan=9 height=53 class=xl442 width=1074 style='height:40.0pt;
   width:805pt'><a name="Print_Area"><ruby>多重度<span style='display:none'><rt>タジュウド
   </rt></span></ruby>は、<ruby>親<span style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
   style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
@@ -87,7 +87,7 @@
   <td class=xl145 width=85 style='border-top:none;border-left:none;width:64pt'>lastUpdated</td>
   <td class=xl145 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl145 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl420 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl417 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
   <td class=xl145 width=87 style='border-top:none;border-left:none;width:65pt'>instant</td>
   <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz<br>
    
@@ -102,7 +102,7 @@
   <td class=xl145 width=85 style='border-top:none;border-left:none;width:64pt'>profile[+]</td>
   <td class=xl145 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl145 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl420 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
+  <td class=xl417 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
   <td class=xl145 width=87 style='border-top:none;border-left:none;width:65pt'>canonical(StructureDefinition)</td>
   <td class=xl72 width=359 style='width:269pt'>本プロファイルを識別するURLとバージョンを指定する。<br>
    
@@ -121,18 +121,18 @@
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1*</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Identifier</td>
-  <td class=xl315 width=359 style='border-top:none;border-left:none;width:269pt'>リソース一意識別ID。</td>
+  <td class=xl314 width=359 style='border-top:none;border-left:none;width:269pt'>リソース一意識別ID。</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl153 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
- <tr class=xl267 height=47 style='mso-height-source:userset;height:35.0pt'>
+ <tr class=xl266 height=47 style='mso-height-source:userset;height:35.0pt'>
   <td height=47 class=xl168 width=117 style='height:35.0pt;width:88pt'>identifier[+]</td>
   <td class=xl79 width=85 style='width:64pt'>　</td>
   <td class=xl79 width=87 style='width:65pt'>　</td>
   <td class=xl79 width=73 style='width:55pt'>　</td>
   <td class=xl79 width=35 style='width:26pt'>1..1</td>
   <td class=xl79 width=87 style='width:65pt'>Identifier</td>
-  <td class=xl237 width=359 style='width:269pt'>「リソース一意識別ID」のsystem値を固定で設定する。</td>
+  <td class=xl236 width=359 style='width:269pt'>「リソース一意識別ID」のsystem値を固定で設定する。</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
   <td class=xl170 width=195 style='width:146pt'>　</td>
  </tr>
@@ -144,10 +144,10 @@
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl334 width=359 style='border-top:none;border-left:none;width:269pt'>「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。<ruby><font
+  <td class=xl333 width=359 style='border-top:none;border-left:none;width:269pt'>「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。<ruby><font
   class="font21"><rt class=font21></rt></font></ruby></td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl282 width=195 style='width:146pt'><a
+  <td class=xl281 width=195 style='width:146pt'><a
   href="http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
   target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
   none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier<ruby><font
@@ -161,7 +161,7 @@
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl334 width=359 style='border-top:none;border-left:none;width:269pt'>「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。<ruby><font
+  <td class=xl333 width=359 style='border-top:none;border-left:none;width:269pt'>「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。<ruby><font
   class="font21"><rt class=font21></rt></font></ruby></td>
   <td class=xl79 width=36 style='width:27pt'>例示</td>
   <td class=xl170 width=195 style='width:146pt'>&quot;http://sample.jp/fhir/1311234567/ehr2020/encounterImp/0008363939-20210822020301-0203&quot;</td>
@@ -450,7 +450,7 @@
     <font class="font14">診療情報提供書の場合、text要素で情報提供の理由を自由記述することが必須。</font></td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例<span
   style='display:none'><rt>レイジ </rt></span></ruby>示</td>
-  <td class=xl336 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl335 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
  <tr height=20 style='height:15.0pt'>
   <td height=20 class=xl157 width=117 style='height:15.0pt;border-top:none;
@@ -476,7 +476,7 @@
   style='display:none'><rt>キジュツ </rt></span></ruby>のコードシステムURL</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例<span
   style='display:none'><rt>レイジ </rt></span></ruby>示</td>
-  <td class=xl336 width=195 style='border-top:none;border-left:none;width:146pt'>MEDIS標準病名マスター病名交換用コードを<ruby>使<span
+  <td class=xl335 width=195 style='border-top:none;border-left:none;width:146pt'>MEDIS標準病名マスター病名交換用コードを<ruby>使<span
   style='display:none'><rt>ツカウ </rt></span></ruby>う<ruby>場合<span
   style='display:none'><rt>バアイ </rt></span></ruby>のsystem<ruby>値<span
   style='display:none'><rt>チ </rt></span></ruby>：&quot;持続腹痛&quot;のコード。&quot;http://medis.or.jp/CodeSystem/master-disease-exCode&quot;</td>
@@ -680,7 +680,7 @@
     9 その他</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>sys<span
   style='display:none'><rt>コテイチ </rt></span></ruby>tem値：固定値</td>
-  <td class=xl322 width=195 style='border-top:none;border-left:none;width:146pt'><a
+  <td class=xl321 width=195 style='border-top:none;border-left:none;width:146pt'><a
   href="http://jpfhir.jp/fhir/eCS/CodeSystem/admit-Source" target="_parent"><span
   style='font-size:10.0pt;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;
   mso-font-charset:128'>http://jpfhir.jp/fhir/eCS/CodeSystem/admit-Source</span></a></td>
@@ -756,7 +756,7 @@
     9:その他（検査入院,正常分娩及び人間ドック含む）</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>sys<span
   style='display:none'><rt>コテイチ </rt></span></ruby>tem値：固定値</td>
-  <td class=xl322 width=195 style='border-top:none;border-left:none;width:146pt'><a
+  <td class=xl321 width=195 style='border-top:none;border-left:none;width:146pt'><a
   href="http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition"
   target="_parent"><span style='font-size:10.0pt;font-family:"ＭＳ 明朝";
   mso-generic-font-family:auto;mso-font-charset:128'>http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition</span></a></td>
@@ -856,5 +856,17 @@
   <td class=xl78 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl161 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
-
+ <![if supportMisalignedColumns]>
+ <tr height=0 style='display:none'>
+  <td width=117 style='width:88pt'></td>
+  <td width=85 style='width:64pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=73 style='width:55pt'></td>
+  <td width=35 style='width:26pt'></td>
+  <td width=87 style='width:65pt'></td>
+  <td width=359 style='width:269pt'></td>
+  <td width=36 style='width:27pt'></td>
+  <td width=195 style='width:146pt'></td>
+ </tr>
+ <![endif]>
 </table>
