@@ -5,7 +5,8 @@
 <br>
 <span style="color: blue; font-size: 100%;">本実装ガイドに関する質問やコメント（要望等を含む）は、以下のGoogleフォームから投稿してください。投稿にあたっては、Googleフォーム冒頭の説明をお読みいただき、了解された場合のみ投稿くださるようお願いします。</span>
 <span style="color: blue; font-size: 100%;">[質問・コメント投稿フォームへ](https://forms.gle/7xVxoPWvk1fV7Sdu8)</span>
-<span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロードは上部メニューから可能です。</span><BR><BR>
+<span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロードは上部メニューから可能です。</span><BR>
+<span style="color: black; font-size: 120%;">パッケージ（tgzファイル）のダウンロード後にtarファイルになってしまう場合にはQ&Aページを参照のこと。</span><BR><BR>
 
 <span style="color: red; font-size: 100%;">V1.4以降のバージョンを参照、ダウンロードできるようにしました。上部メニューの全バージョン一覧から入ってください。2024-12-19</span><BR>
 
