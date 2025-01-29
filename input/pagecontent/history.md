@@ -6,7 +6,7 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.1  (2025.1.25)
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の以下を修正した。
     - 説明レイアウトを変更し、プロファイルツリー表示を最後に移動した。
     - 定性検査結果のコード記述方法、結果が得られない場合の記述方法について詳述した。その場合のdataAbsentReasonの使い方とそのtext子要素が必須であることも含めて明示した。
@@ -17,6 +17,7 @@
     - verificationStatus.codeの使用方法で、refutedやentered-in-errorを使用した場合の電子カルテ情報共有サービスでの処理について補足した。
     - abatementDateTime要素（傷病のある状態の終了日）に日付を設定する場合には、clinicalStatusはactive、unknown以外（すなわちremissionまたはresolvedのいずれか）でなければならないことに修正。（例外的にactiveでもよいとしていたがそれを削除）。(仕様表での記載も同様に修正)。なお、この制約はもともとFHIR基底仕様である。
   - アレルギー情報プロファイル（JP_AllergyIntolerance_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
+  - Encounterリソースのプロファイル（JP-Encounter-eCS）で、diagnosis.use.Codingの多重度が6.1 仕様表では、1..*となっているのに対して、7.1プロファイル詳細のツリーでは1..1 となっていたので、6.1 仕様表に合わせて 1..*に修正。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。

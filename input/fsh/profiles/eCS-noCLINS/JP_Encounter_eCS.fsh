@@ -111,7 +111,7 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * diagnosis.use 0..1 MS
 * diagnosis.use ^short = "診断の位置付け区分"
 * diagnosis.use ^definition = "診断の位置付け区分（DiagnosisRole）。これにより、入院時診断、退院時診断、などが区別される。入院中のすべての診断病名にこのコードが必須ではないが、少なくともAD:入院時診断、DD:退院時診断、CC:主訴、についてはそれぞれ1個以上はこのコードがついている必要がある。AD:入院時診断　DD:退院時診断　FU:フォローアップ時診断 "
-* diagnosis.use.coding 1..1 MS
+* diagnosis.use.coding 1..* MS
 * diagnosis.use.coding.system 1..1 MS
 * diagnosis.use.coding.system = "http://terminology.hl7.org/CodeSystem/diagnosis-role" (exactly)
 * diagnosis.use.coding.code 1..1 MS  // AD:入院時診断、DD:退院時診断、CC:主訴
