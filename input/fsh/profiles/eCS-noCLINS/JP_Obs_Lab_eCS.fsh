@@ -201,16 +201,24 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 //ローカルコード
 * code.coding[localLaboCode].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS" (exactly)
-
+* code.coding[localLaboCode].system 1..1 MS
+* code.coding[localLaboCode].code  1..1 MS 
+* code.coding[localLaboCode].display 1..1 MS 
 // 一般JLAC10コード
 * code.coding[jlac10LaboCode].system = $JP_ObservationLabResultCode_CS (exactly)
+* code.coding[jlac10LaboCode].system 1..1 MS
 * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)
+* code.coding[jlac10LaboCode].code 1..1 MS
+* code.coding[jlac10LaboCode].display 1..1 MS
+
 
 // 未標準化コード
 * code.coding[unCoded].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_Uncoded_CS" (exactly)
+* code.coding[unCoded].system 1..1 MS
 * code.coding[unCoded].code = #99999999999999999 (exactly)
+* code.coding[unCoded].code 1..1 MS
 * code.coding[unCoded].display = "未標準化コード項目(JLAC)" (exactly)
-
+* code.coding[unCoded].display 1..1 MS
 
 // 基本検査項目セット　43項目
 * insert  core43LaboItemProfile(tp,TP,tp) // 1
