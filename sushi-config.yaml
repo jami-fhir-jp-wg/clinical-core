@@ -59,6 +59,8 @@ pages:
     title: 改訂履歴
   all-igs.md:
     title: 全バージョン一覧
+  qanda.md:
+    title: Q＆Aよくある質問  
 #-------------------------------------
 # メニュー設定
 #-------------------------------------
@@ -74,7 +76,8 @@ menu:
     FHIRデータ作例集: artifacts.html#example-example-instances
     用語説明: glossary.html
     改訂履歴: history.html
-    全バージョン一覧 : all-igs.html
+    全バージョン一覧: all-igs.html
+    Q＆Aよくある質問: qanda.html
   Artifacts:
     Artifacts: artifacts.html
   Validationガイド:
