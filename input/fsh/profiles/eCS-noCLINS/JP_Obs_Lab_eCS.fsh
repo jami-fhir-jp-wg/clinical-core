@@ -33,7 +33,7 @@ Expression: "((referenceRange.high.unit.exists() implies (value.ofType(Quantity)
 
 // R6021とセット Observation CLINS ではローカルコードの記述は必須であることに注意喚起
 Invariant: warn-localCode-observation-laboresult
-Description: "注意喚起：このリソースでは、CLINS送信の場合にはObservation.code.codingにローカルコード記述が必要であるが存在していません。CLINS送信でなければ問題ありません。"
+Description: "注意喚起：このリソースでは、電子カルテ情報共有サービスの5情報送信の場合にはObservation.code.codingにローカルコード記述が必要であるが存在していません。CLINS送信でなければ問題ありません。"
 Severity: #warning
 Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
 
@@ -330,7 +330,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 * encounter 0..1 MS //　CLINSでは必須
 * encounter only  Reference(JP_Encounter)
-  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
+  * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】検査依頼を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。電子カルテ情報サービスでは必須。"
 
 

@@ -171,7 +171,7 @@
 
 ### 「FHIR検査項目情報」の設定パターン適用規則
 
-　すべての検体検査結果（感染症情報を含む）で、常に（１）施設固有コード設定パターンを適用したcode.coding[m]を記述する。<span style="color: red; ">（必須）</span><br>
+　すべての検体検査結果（感染症情報を含む）で、常に（１）施設固有コード設定パターンを適用したcode.coding[n]を記述する。<span style="color: red; ">（必須）</span><br>
 　その上で、さらに追加として<br>
 
   1. 　臨床検査項目指定検査43項目、または指定感染症5項目リストの検査項目の場合：<br>
@@ -183,9 +183,9 @@
 
 #### 記述例
 
-  1. 臨床検査項目指定検査43項目に収載される血清カリウム（FHIR識別名 K）の結果報告の例：<br>
+  1. 　臨床検査項目指定検査43項目に収載される血清カリウム（FHIR識別名 K）の結果報告の例：<br>
     説明<br>
-    　3ー 5行　施設固有コードと名称による記述。　0198394は施設固有検査項目コード、082は材料コード。<br>
+    　4ー 6行　施設固有コードと名称による記述。　0198394は施設固有検査項目コード、082は材料コード。<br>
     　9ー12行　臨床検査項目基本コード（JLAC10）による記述。<br>
     　14ー16行　MEDIS JLAC10コードによる記述。ここでは、9行目と同一コード。<br>
     　19行　コード化に依存しない検査項目名称。<br>
@@ -197,11 +197,11 @@
  3:      {
  4:        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
  5:        "code": "0198394_082",
- 6:        "display": "血清K"
+ 6:        "display": "血清カリウム"
  7:      },
  8:      {
- 9:        "code": "3H015000001826101",
-10:        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS",
+ 9:        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS",
+10:        "code": "3H015000001826101",
 11:        "display": "K"
 12:      },
 13:      {
@@ -216,7 +216,7 @@
 ```
 
 
-  1. 臨床検査項目指定検査43項目にはない別の結果報告の例：<br>
+  2. 　臨床検査項目指定検査43項目にはない別の結果報告の例：<br>
     説明<br>
     　3ー 5行　施設固有コードと名称による記述(本仕様に従ったsystem値との組み合わせ記述)。　0180500は施設固有検査項目コード、023は材料コード。<br>
     　9ー12行　その施設で取り決めたコード体系system値と対応する施設固有コード、名称による記述（施設固有system値による記述。なくてもよい）。<br>
@@ -230,7 +230,7 @@
  3:      {
  4:        "system": "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS",
  5:        "code": "0180500_023",
- 6:        "display": "ケトン体_尿"
+ 6:        "display": "尿ケトン体"
  7:      },
  8:      {
  9:        "system": "http://jpfhir.jp/fhir/local/hospitalABC.or.jp/laboratory/CodeSystem/loboratory-items",

@@ -305,9 +305,9 @@ Description: "このリソースには、電子カルテ情報共有サービス
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
 
-// INFO このリソースでは、CLINS送信の場合にperformerが必要である。
+// INFO このリソースでは、電子カルテ情報共有サービスの5情報送信の場合にperformerが必要である。
 Invariant: needs-performer-on-CLINS
-Description: "注意喚起：このリソースでは、CLINS送信の場合にはperformerが必要であるが存在しません。CLINS送信でなければ問題ありません。"
+Description: "注意喚起：このリソースでは、電子カルテ情報共有サービスの5情報送信の場合にはperformerが必要であるが存在しません。CLINS送信でなければ問題ありません。"
 Severity: #warning
 Expression: "performer.exists()"
 
