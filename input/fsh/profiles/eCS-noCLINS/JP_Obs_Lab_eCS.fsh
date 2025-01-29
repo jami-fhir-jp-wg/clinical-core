@@ -187,9 +187,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "display"
 * code.coding  ^slicing.rules = #open
-* code.coding.system 1..1 MS
-* code.coding.code 1..1 MS
-* code.coding.display 1..1 MS
+//* code.coding.system 1..1 MS
+//* code.coding.code 1..1 MS
+//* code.coding.display 1..1 MS
 
 * code.coding  contains
  jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
