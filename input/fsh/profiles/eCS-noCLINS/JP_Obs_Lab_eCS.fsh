@@ -183,7 +183,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
 
 * code.coding 1.. MS
-  * insert relative_short_definition("検査項目のコード情報。All Slicesの多重度表示に関わらず、coding.system, coding.code, coding.displayはの正しい多重度は1..1である。（本ガイド生成過程の問題によりAll Slicesのこれらの多重度は0..1と表示されている）") 
+  * insert relative_short_definition("検査項目のコード情報。All Slicesの多重度表示に関わらず、coding.system、coding.code、coding.displayはの正しい多重度は1..1である。（本ガイド生成過程の問題によりAll Slicesのこれらの多重度は0..1と表示されている）") 
 
 //* code.coding.system 1..1 MS
 //* code.coding.code 1..1 MS
