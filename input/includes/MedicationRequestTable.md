@@ -873,10 +873,10 @@
   <td class=xl103 width=65 style='width:49pt'>　</td>
   <td class=xl103 width=57 style='width:43pt'>　</td>
   <td class=xl103 width=57 style='width:43pt'>　</td>
-  <td class=xl137 width=35 style='width:26pt'>0..1*<ruby><font class="font21"><rt
+  <td class=xl137 width=35 style='width:26pt'>0..*<ruby><font class="font21"><rt
   class=font21></rt></font></ruby></td>
   <td class=xl103 width=87 style='width:65pt'>Annotation</td>
-  <td class=xl103 width=359 style='width:269pt'>薬剤単位の備考。単一の薬剤に対する調剤者に対する指示は、本要素ではなく、MedicationRequestリソースのdispenseRequest要素に対して本文書で定義した拡張「InstructionForDispense」（http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense）を使用する。<br>
+  <td class=xl103 width=359 style='width:269pt'>薬剤ごとの備考。単一の薬剤に対する調剤者に対する指示は、本要素ではなく、MedicationRequestリソースのdispenseRequest要素に対して本文書で定義した拡張「InstructionForDispense」（http://jpfhir.jp/fhir/core/StructureDefinition/JP_MedicationRequest_DispenseRequest_InstructionForDispense）を使用する。<br>
     患者に対する補足指示や注意や、不均等投与指示などは、
   MedicationRequestリソースのdosageInstruction.additionalInstructionで記述する。<br>
     本要素は、それらでは伝えられない薬剤単位の備考や指示を記述する。このよ<ruby>うな<span style='display:none'><rt
