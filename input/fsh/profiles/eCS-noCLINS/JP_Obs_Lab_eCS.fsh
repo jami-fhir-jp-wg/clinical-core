@@ -181,15 +181,23 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * code 1..1 MS
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
+* code.coding.system 1..1 MS
+* code.coding.code 1..1 MS
+* code.coding.display 1..1 MS
+* code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
+* code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
+* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。ただし、２文書5情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
+
 * code.coding 1.. MS
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "system"
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "display"
 * code.coding  ^slicing.rules = #open
-* code.coding.system 1..1 MS
-* code.coding.code 1..1 MS
-* code.coding.display 1..1 MS
+de.text 1..1 MS   
+* code.text ^definition = "項目名。報告書などに記載する場合に使用する表示名。"
+* code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。ただし、２文書5情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
+
 
 * code.coding  contains
  jlac10LaboCode 0..1 MS // jlac10LaboCode　unCoded　coreLaboSet　のいずれかひとつは必須
@@ -321,14 +329,6 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hiv1abresult,HIV-1抗体(定性\),HIV1ABRESULT)  // 5-13
 * insert infectionLaboItemProfile(hiv2abdil,HIV-2抗体(希釈倍率\),HIV2ABDIL)  // 5-14
 * insert infectionLaboItemProfile(hiv2abresult,HIV-2抗体(定性\),HIV2ABRESULT)  // 5-15
-
-* code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
-* code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
-* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。ただし、２文書5情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
-
-* code.text 1..1 MS   
-* code.text ^definition = "項目名。報告書などに記載する場合に使用する表示名。"
-* code.text ^comment = "【JP Core仕様】このプロファイルでは、表示名として必須とする。\r\n\r\n多くの場合、coding.display と同一になるが、coding.display に異なる複数の表現が格納される場合を想定し、code間で共通の表現として必須とする。受信側はこの文字列を項目表示文字列として使用できる。ただし、２文書5情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
 
 // 患者情報
 * subject 1..1   MS
