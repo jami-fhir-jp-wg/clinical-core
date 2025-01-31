@@ -156,8 +156,14 @@ jobs:
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
         unset DISPLAY
-        cp ./input/fsh/profiles/FAST-HDJ/*.fsh_back ./input/fsh/profiles/FAST-HDJ/*.fsh
-        mv ./input/fsh/profiles/FAST-HDJ/JP_Medication*.fsh  ./input/fsh/profiles/eCS_noCLINS/    
+        mv ./input/fsh/profiles/FAST-HDJ/JP_Bundle_FASTHDJ.fsh_back ./input/fsh/profiles/FAST-HDJ/JP_Bundle_FASTHDJ.fsh
+        
+        rm ./input/fsh/profiles/eCS_noCLINS/JP_MedicationDosage_eCS.fsh
+        mv ./input/fsh/profiles/FAST-HDJ/JP_MedicationDosage_eCS.fsh_back  ./input/fsh/profiles/eCS_noCLINS/JP_MedicationDosage_eCS.fsh
+        
+        rm ./input/fsh/profiles/eCS_noCLINS/JP_MedicationRequest_eCS.fsh
+        mv ./input/fsh/profiles/FAST-HDJ/JP_MedicationRequest_eCS.fsh_back  ./input/fsh/profiles/eCS_noCLINS/JP_MedicationRequest_eCS.fsh
+        
         unset DISPLAY
         java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx n/a
 
