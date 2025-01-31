@@ -232,7 +232,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 * note.text MS
 
 * dosageInstruction 1..* MS
-* dosageInstruction only JP_MedicationDosage_eCS
+* dosageInstruction only JP_FASTHDJ_MedicationDosage_eCS
 
 * dispenseRequest 0..1 MS
 * dispenseRequest ^definition = "調剤情報。\r\n薬剤オーダー(MedicationRequest, Medication Prescription, Medication Orderなどとしても表現される）や薬剤オーダーとの一部としての薬剤の払い出しあるいは提供。この情報はオーダーとしてかならず伝えられるというわけではないことに注意。薬剤部門で調剤・払い出しを完了するための施設（たとえば病院）やシステムでのサポートに関する設定をしてもよい。"
