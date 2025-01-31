@@ -156,7 +156,8 @@ jobs:
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
         unset DISPLAY
-        cp ./input/fsh/profiles/FAST-HDJ/*.fsh_back ./input/fsh/profiles/FAST-HDJ/*.fsh        
+        cp ./input/fsh/profiles/FAST-HDJ/*.fsh_back ./input/fsh/profiles/FAST-HDJ/*.fsh
+        mv ./input/fsh/profiles/FAST-HDJ/JP_Medication*.fsh  ./input/fsh/profiles/eCS_noCLINS/    
         unset DISPLAY
         java -Xmx4G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx n/a
 
