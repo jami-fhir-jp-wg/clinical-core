@@ -108,10 +108,12 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 
 * section[compositionSection].title = "構造情報"
 * section[compositionSection].code.coding = $referral-section#300 "構造情報セクション"
+* section[compositionSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 * section[compositionSection].section[referralPurposeSection].title = "紹介目的"
 * section[compositionSection].section[referralPurposeSection].code.coding = $referral-section#950 "紹介目的セクション"
 * section[compositionSection].section[referralPurposeSection].text.status = #additional
 * section[compositionSection].section[referralPurposeSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">腹痛精査お願いします。</div>"
+* section[compositionSection].section[referralPurposeSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 // Encounterへのエントリーを省略するケース
 // * section[compositionSection].section[=].entry[+].reference = "Example-JP-Encounter-eCS-purpose-Referral01Inline"
 //* section[compositionSection].section[referralPurposeSection].entry[+].reference = "urn:uuid:3acc3dc7-c79b-41f1-8eea-ac4de9b664b8"
@@ -221,6 +223,6 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[remarksCommunicationSection].code.coding = $referral-section#220 "備考・連絡情報セクション"
 * section[remarksCommunicationSection].text.status = #additional
 * section[remarksCommunicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> よろしくお願いします。</div>"
-
+* section[remarksCommunicationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 
 
