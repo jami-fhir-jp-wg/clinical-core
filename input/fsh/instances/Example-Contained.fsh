@@ -42,7 +42,7 @@ Description: "Encounterリソース（入院） データ作成例"
 * class.display = "入院"
 * period.start = "2021-07-05"
 
-//-------- 埋め込み　入院01
+//-------- 埋め込み　入院01 テスト用
 Instance: Example-Contained-JP-Encounter-IMP-extanus
 InstanceOf: JP_Encounter_eCS
 Usage: #example
