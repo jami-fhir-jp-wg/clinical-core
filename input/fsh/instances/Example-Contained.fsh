@@ -42,25 +42,7 @@ Description: "Encounterリソース（入院） データ作成例"
 * class.display = "入院"
 * period.start = "2021-07-05"
 
-//-------- 埋め込み　入院01 テスト用
-Instance: Example-Contained-JP-Encounter-IMP-extanus
-InstanceOf: JP_Encounter_eCS
-Usage: #inline
-Description: "Encounterリソース（入院） データ作成例"
 
-* language = #ja
-
-
-// * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>Encounterリソース（入院） データ作成例</p> </div>"
-
-
-* id = "Example-Contained-JP-Encounter-000001"
-* status = #finished
-* class.system = $v3-ActCode
-* class.code = #IMP
-* class.display = "入院"
-* period.start = "2021-07-05"
 
 
 //-------- 埋め込み　Practitionerリソース　医療者R001

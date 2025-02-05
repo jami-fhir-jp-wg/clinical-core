@@ -6,6 +6,10 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)　変更せず
+  - データ作例のBundle-CLINS-Referral-Example-01、Bundle-CLINS-Referral-NoEntry-Example-01-RefText、Bundle-CLINS-Referral-NoEntry-Example-01 において、entryのないsectionにsection.emptyReasonの記述を仕様どおり追加した。
+  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）のcode.codingの全スライスに適用されるall slicesで表示されていたcode.coding.system、code.coding.code、code.coding.displayの多重度（1..1）を、各スライスのところに表示されるように表示を移動した。これにともない、all slicesでのこれらの表示が0..0になってしまう（実装ガイド生成過程の問題と思われる）ため、これが表示上の問題であって多重度は仕様通り1..1のままであることを記載追加した。
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の以下を修正した。
     - 説明レイアウトを変更し、プロファイルツリー表示を最後に移動した。

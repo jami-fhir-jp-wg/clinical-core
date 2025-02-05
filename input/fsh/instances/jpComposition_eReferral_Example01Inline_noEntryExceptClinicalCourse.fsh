@@ -108,10 +108,13 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 
 * section[compositionSection].title = "構造情報"
 * section[compositionSection].code.coding = $referral-section#300 "構造情報セクション"
+* section[compositionSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 * section[compositionSection].section[referralPurposeSection].title = "紹介目的"
 * section[compositionSection].section[referralPurposeSection].code.coding = $referral-section#950 "紹介目的セクション"
 * section[compositionSection].section[referralPurposeSection].text.status = #additional
 * section[compositionSection].section[referralPurposeSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">腹痛精査お願いします。</div>"
+* section[compositionSection].section[referralPurposeSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
+
 // Encounterへのエントリーを省略するケース
 // * section[compositionSection].section[=].entry[+].reference = "Example-JP-Encounter-eCS-purpose-Referral01Inline"
 //* section[compositionSection].section[referralPurposeSection].entry[+].reference = "urn:uuid:3acc3dc7-c79b-41f1-8eea-ac4de9b664b8"
@@ -122,6 +125,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[problemSection].code.coding = $referral-section#340 "傷病名・主訴セクション"
 * section[compositionSection].section[problemSection].text.status = #additional
 * section[compositionSection].section[problemSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">2022-06-09 上腹部痛、2022-05 腰痛</div>"
+* section[compositionSection].section[referralPurposeSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 // * section[compositionSection].section[=].entry[+].reference = "Example-JP-Condition-eCS-cc1-Referral01Inline"
 //* section[compositionSection].section[problemSection].entry[+].reference = "urn:uuid:6a31db8e-109d-4349-b0cf-095131c3307a"
 //* section[compositionSection].section[problemSection].entry[=].type = "Condition"
@@ -136,6 +140,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[presentIllnessSection].code.coding = $referral-section#360 "現病歴セクション"
 * section[compositionSection].section[presentIllnessSection].text.status = #additional
 * section[compositionSection].section[presentIllnessSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">２０２２年６月上旬から夜食後に時々上腹部痛があり、だんだんひどくなっている。他に目立った症状なし。</div>"
+* section[compositionSection].section[presentIllnessSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 // * section[compositionSection].section[presentIllnessSection].entry[+].reference = "Example-JP-Condition-eCS-ABDPAINInline"
 //* section[compositionSection].section[presentIllnessSection].entry[+].reference = "urn:uuid:5eab50b2-6741-467c-a2fd-a4adab1f835f"
 //* section[compositionSection].section[presentIllnessSection].entry[=].type = "Condition"
@@ -146,6 +151,8 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[pastIllnessSection].code.coding = $referral-section#370 "既往歴セクション"
 * section[compositionSection].section[pastIllnessSection].text.status = #additional
 * section[compositionSection].section[pastIllnessSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">2018年　狭心症　２ヶ月治療で軽快。2019年　交通事故で左前腕骨折　３ヶ月ギプス固定。</div>"
+* section[compositionSection].section[pastIllnessSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
+
 //  Reference(JP_Condition) 既往歴
 // * section[compositionSection].section[pastIllnessSection].entry[+].reference = "Example-JP-Condition-eCS-ANGINAInline"
 //* section[compositionSection].section[pastIllnessSection].entry[+].reference = "urn:uuid:5c650562-f4e4-40b3-87c6-e9a0376be7a8"
@@ -161,6 +168,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[allergiesIIntoleranceSection].code.coding = $referral-section#510 "アレルギー・不耐性反応セクション"
 * section[compositionSection].section[allergiesIIntoleranceSection].text.status = #additional
 * section[compositionSection].section[allergiesIIntoleranceSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">サバ、キーウイ（発症:2020-04-10  情報源：本人　記録：2024-07-10　記録者：看護師A）、ヨード禁（ポビドンヨード含嗽後に嘔吐と全身に発疹）</div>"
+* section[compositionSection].section[allergiesIIntoleranceSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 //  Reference(JP_Condition) アレルギー
 // * section[compositionSection].section[allergiesIIntoleranceSection].entry[+].reference = "Example-JP-Allergy-eCS-01Inline"
 //* section[compositionSection].section[allergiesIIntoleranceSection].entry[+].reference = "urn:uuid:711b07ae-d20b-40b0-9aa9-c7f1981409e6"
@@ -179,6 +187,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[familiyHistorySection].code.coding = $referral-section#550 "家族歴セクション"
 * section[compositionSection].section[familiyHistorySection].text.status = #additional
 * section[compositionSection].section[familiyHistorySection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">母　胃がん</div>"
+* section[compositionSection].section[familiyHistorySection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 //  Reference(JP_FamilyMemberHistory) 家族歴
 
 
@@ -186,6 +195,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[admissionPhysicalStatusSection].code.coding = $referral-section#610 "身体所見セクション"
 * section[compositionSection].section[admissionPhysicalStatusSection].text.status = #additional
 * section[compositionSection].section[admissionPhysicalStatusSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">腹部所見：上腹部圧痛あり、その他特に所見なし。</div>"
+* section[compositionSection].section[admissionPhysicalStatusSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 //  Reference(JP_Observation_Common) 身体所見
 // * section[compositionSection].section[admissionPhysicalStatusSection].entry[+].reference = "psExample-JP-Obs-Common-eCS-textOnly01Inline"
 //* section[compositionSection].section[admissionPhysicalStatusSection].entry[+].reference = "urn:uuid:481835ef-0891-45de-a006-087954ab6b7c"
@@ -197,6 +207,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[infectiousDiseaseInformationSection].code.coding = $referral-section#520 "感染症情報セクション"
 * section[compositionSection].section[infectiousDiseaseInformationSection].text.status = #additional
 * section[compositionSection].section[infectiousDiseaseInformationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">特になし</div>"
+* section[compositionSection].section[infectiousDiseaseInformationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 //  Reference(JP_Observation_Common) 感染症情報
 
 
@@ -214,12 +225,14 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[medicationSection].code.coding = $referral-section#430 "投薬指示セクション"
 * section[compositionSection].section[medicationSection].text.status = #additional
 * section[compositionSection].section[medicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> タケキャブ錠10mg1錠　１日2回　朝食後、就寝時<br />レバミピド錠100mg1錠　　１日3回毎食後</div>"
-
+* section[compositionSection].section[medicationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
+/
 
 * section[remarksCommunicationSection].title = "備考・連絡情報"
 * section[remarksCommunicationSection].code.coding = $referral-section#220 "備考・連絡情報セクション"
 * section[remarksCommunicationSection].text.status = #additional
 * section[remarksCommunicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> よろしくお願いします。</div>"
+* section[remarksCommunicationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 
 
 
