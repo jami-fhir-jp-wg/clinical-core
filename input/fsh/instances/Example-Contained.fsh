@@ -45,7 +45,7 @@ Description: "Encounterリソース（入院） データ作成例"
 //-------- 埋め込み　入院01 テスト用
 Instance: Example-Contained-JP-Encounter-IMP-extanus
 InstanceOf: JP_Encounter_eCS
-Usage: #example
+Usage: #inline
 Description: "Encounterリソース（入院） データ作成例"
 
 * language = #ja
@@ -55,7 +55,7 @@ Description: "Encounterリソース（入院） データ作成例"
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>Encounterリソース（入院） データ作成例</p> </div>"
 
 
-//* id = "Example-Contained-JP-Encounter-IMP-extanus"
+* id = "Example-Contained-JP-Encounter-IMP-extanus"
 * status = #finished
 * class.system = $v3-ActCode
 * class.code = #IMP
