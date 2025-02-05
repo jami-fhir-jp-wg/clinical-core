@@ -182,15 +182,15 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * code ^definition = "検査項目のコードと名称"
 * code ^comment = "JLAC10必須の項目と任意の項目がある。"
 
-* code.coding 1.. MS
-  * insert relative_short_definition("検査項目のコード情報。All Slicesの多重度表示に関わらず、coding.system、coding.code、coding.displayはの正しい多重度は1..1である。（本ガイド生成過程の問題によりAll Slicesのこれらの多重度は0..1と表示されている）") 
+//* code.coding 1.. MS
+//  * insert relative_short_definition("検査項目のコード情報。All Slicesの多重度表示に関わらず、coding.system、coding.code、coding.displayはの正しい多重度は1..1である。（本ガイド生成過程の問題によりAll Slicesのこれらの多重度は0..1と表示されている）") 
 
 //* code.coding.system 1..1 MS
 //* code.coding.code 1..1 MS
 //* code.coding.display 1..1 MS
-* code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
-* code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
-* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。ただし、２文書5情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
+//* code.coding.display ^short = "コード化された場合に、そのコード表におけるコードに対応する文字列"
+//* code.coding.display ^definition = "コード化された場合に、そのコード表におけるコードに対応する文字列"
+//* code.coding.display ^comment = "標準コードに対応する標準名称文字列が規定されていないことも多いため、この要素は省略できる。値が存在する場合に受信側がこの文字列をどのように使用するかについては特に定めない。ただし、２文書5情報を電子カルテ共有サービスに送信する場合には、「検体検査結果情報における検査項目のコーディング規則」を厳守する必要がある。"
 
 * code.coding  ^slicing.discriminator[+].type = #value
 * code.coding  ^slicing.discriminator[=].path = "system"

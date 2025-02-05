@@ -18,7 +18,8 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 
 
 // * contained[+] = Example-Contained-JP-Patient-minimun
-* contained[+] = Example-Contained-JP-Encounter-IMP
+//* contained[+] = Example-Contained-JP-Encounter-IMP　// 
+* contained[+] = Example-Contained-JP-Encounter-IMP-extanus
 * contained[+] = Example-Contained-JP-Practitioner-minimun-R001
 
 * meta.lastUpdated = "2021-07-14T16:14:35.000+09:00"

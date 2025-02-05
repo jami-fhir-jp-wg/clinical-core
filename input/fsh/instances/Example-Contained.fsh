@@ -21,6 +21,7 @@ Description: "埋め込み　Encounterリソース（外来受診）データ作
 
 * class.display = "外来"
 
+
 //-------- 埋め込み　入院01
 Instance: Example-Contained-JP-Encounter-IMP
 InstanceOf: JP_Encounter_eCS
@@ -40,6 +41,27 @@ Description: "Encounterリソース（入院） データ作成例"
 * class.code = #IMP
 * class.display = "入院"
 * period.start = "2021-07-05"
+
+//-------- 埋め込み　入院01
+Instance: Example-Contained-JP-Encounter-IMP-extanus
+InstanceOf: JP_Encounter_eCS
+Usage: #example
+Description: "Encounterリソース（入院） データ作成例"
+
+* language = #ja
+
+
+// * text.status = #additional
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>Encounterリソース（入院） データ作成例</p> </div>"
+
+
+* id = "Example-Contained-JP-Encounter-IMP-extanus"
+* status = #finished
+* class.system = $v3-ActCode
+* class.code = #IMP
+* class.display = "入院"
+* period.start = "2021-07-05"
+
 
 //-------- 埋め込み　Practitionerリソース　医療者R001
 Instance: Example-Contained-JP-Practitioner-minimun-R001
