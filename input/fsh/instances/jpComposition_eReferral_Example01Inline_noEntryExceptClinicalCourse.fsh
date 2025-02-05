@@ -226,7 +226,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[compositionSection].section[medicationSection].text.status = #additional
 * section[compositionSection].section[medicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> タケキャブ錠10mg1錠　１日2回　朝食後、就寝時<br />レバミピド錠100mg1錠　　１日3回毎食後</div>"
 * section[compositionSection].section[medicationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
-/
+
 
 * section[remarksCommunicationSection].title = "備考・連絡情報"
 * section[remarksCommunicationSection].code.coding = $referral-section#220 "備考・連絡情報セクション"
