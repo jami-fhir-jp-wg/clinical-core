@@ -47,7 +47,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>　YCM　　 </td>
 <td>YJコード<br>12桁</td>
 <td rowspan="2">JFAGY-YCMMedコード<br>
-<a href="http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS</a>
+<a href="https://jpfhir.jp/fhir/core/terminology/igv1/CodeSystem-jp-jfagymedicationallergenycm-cs.html">http://jpfhir.jp/fhir/core/CodeSystem/YCM/JP_JfagyMedicationAllergen_CS</a>
 </td>
 </tr>
 
@@ -63,7 +63,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>　GCM　　 </td>
 <td>YJコードの最後の3桁を"ZZZ"に置き換えた12桁<br>(*注1）</td>
 <td>JFAGY-GCMMedコード<br>
-<a href="http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS</a>
+<a href="https://jpfhir.jp/fhir/core/terminology/igv1/CodeSystem-jp-jfagymedicationallergengcm-cs.html">http://jpfhir.jp/fhir/core/CodeSystem/GCM/JP_JfagyMedicationAllergen_CS</a>
 </td></tr>
 
 <tr>
@@ -72,7 +72,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>JFAGY(食品)コード使用可</td>
 <td>　J9F　　 </td>
 <td>JFAGY(食品)コード<br>9桁</td>
-<td rowspan="2">JFAGY-Foodコード<br><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS</a></td>
+<td rowspan="2">JFAGY-Foodコード<br><a href="https://jpfhir.jp/fhir/core/terminology/igv1/CodeSystem-jp-jfagyfoodallergen-cs.html">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyFoodAllergen_CS</a></td>
 </tr>
 
 <tr>
@@ -86,7 +86,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 <td>JFAGY（非食品・非医薬品）コード使用可</td>
 <td>　J9N　　 </td>
 <td>JFAGY（非食品・非医薬品）コード<br>9桁</td>
-<td rowspan="2">JFAGY-NonFoodNonMedコード<br><a href="http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CS">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CSS</a></td>
+<td rowspan="2">JFAGY-NonFoodNonMedコード<br><a href="https://jpfhir.jp/fhir/core/terminology/igv1/CodeSystem-jp-jfagynonfoodnonmedicationallergen-cs.html">http://jpfhir.jp/fhir/core/CodeSystem/JP_JfagyNonFoodNonMedicationAllergen_CSS</a></td>
 </tr>
 
 <tr>
@@ -100,7 +100,7 @@ AllergyIntolerance.code は以下に従うこと。<br>
 
   - 注1:　派生コード（仮称）とは、YJコードの最後の3桁を"ZZZ"に置き換えた12桁をいう。個別医薬品（YJ)コードの細かさでは記述できないが、販社等の情報を区別するYJコードの最後の3桁を無視して一般名医薬品を指定するレベルであれば記述可能な場合に使用することができる。今後名称変更が予定されている。
   - 注2:　コード指定ができない場合には、ダミーコード（"000000000"
-　9桁のゼロ）をコードとして必ず設定する。この場合には、AllergyIntolerance.code.textに必ずアレルゲンの情報を電子カルテに登録されているテキストで記述する。ダミーコードに対応する表示名(AllergyIntolerance.code.coding.display)は不要。
+　9桁のゼロ）をそれぞれのメタコード3桁に続けた、12桁のコードとして必ず設定する。この場合には、AllergyIntolerance.code.textに必ずアレルゲンの情報を電子カルテに登録されているテキストで記述する。ダミーコードに対応する表示名(AllergyIntolerance.code.coding.display)にはその文字列を設定するのではなく、それぞれのダミーコードに割り当てられている固定の文字列（D9F000000000："食品ダミーコード"、D9N00000000："非食品・非医薬品ダミーコード"、D9M000000000："医薬品ダミーコード"）を設定する。
 
 
 
