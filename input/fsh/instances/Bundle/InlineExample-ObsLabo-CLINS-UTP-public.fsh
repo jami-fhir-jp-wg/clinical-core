@@ -1,0 +1,51 @@
+Instance: InlineExample-JP-Obs-LabResult-eCS-UTP
+InstanceOf: JP_Observation_LabResult_eCS
+Usage: #inline
+Description: "Observationリソース（検体検査結果）尿蛋⽩(定性)　± 　　ローカルコード=1A990000000190153 臨床検査項目基本コードJLAC10=1A990000000190153 検体：尿　診療科：循環器診療科"
+
+* meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
+* meta.profile = $JP_Observation_LabResult_eCS
+* language = #ja
+
+
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+
+* identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
+
+// 入院外来区分
+* contained[+] = Example-Contained-JP-Encounter-AMB
+
+// 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
+//* contained[+] = Example-Contained-JP-Specimen-Serum
+
+// 検査オーダ医師
+* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+
+* status = #final
+
+* category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
+* code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#1A990000000190153 "尿蛋白(定性)"
+* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#1A990000000190153  "尿蛋白(定性)"
+
+* code.text = "尿蛋⽩(定性)"
+
+* subject.reference = "urn:uuid:0c435575-2544-d879-3b41-8babddd4cee0"
+
+* effectiveDateTime = "2021-07-05T11:19:41+09:00"
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
+* issued = "2021-07-05T15:38:59.000+09:00"
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+
+* valueCodeableConcept.coding = urn:oid:1.2.392.200119.6.2102#2 "±"
+* valueCodeableConcept.text = "(±)"
+
+* specimen.display = "尿"
+* specimen.type = "Specimen"

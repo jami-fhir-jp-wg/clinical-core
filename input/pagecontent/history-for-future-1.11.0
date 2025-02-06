@@ -6,6 +6,10 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)　変更せず
+  - データ作例のBundle-CLINS-Referral-Example-01、Bundle-CLINS-Referral-NoEntry-Example-01-RefText、Bundle-CLINS-Referral-NoEntry-Example-01 において、entryのないsectionにsection.emptyReasonの記述を仕様どおり追加した。
+  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）のcode.codingの全スライスに適用されるall slicesで表示されていたcode.coding.system、code.coding.code、code.coding.displayの多重度（1..1）を、各スライスのところに表示されるように表示を移動した。これにともない、all slicesでのこれらの表示が0..0になってしまう（実装ガイド生成過程の問題と思われる）ため、これが表示上の問題であって多重度は仕様通り1..1のままであることを記載追加した。
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の以下を修正した。
     - 説明レイアウトを変更し、プロファイルツリー表示を最後に移動した。
@@ -18,8 +22,6 @@
     - abatementDateTime要素（傷病のある状態の終了日）に日付を設定する場合には、clinicalStatusはactive、unknown以外（すなわちremissionまたはresolvedのいずれか）でなければならないことに修正。（例外的にactiveでもよいとしていたがそれを削除）。(仕様表での記載も同様に修正)。なお、この制約はもともとFHIR基底仕様である。
   - アレルギー情報プロファイル（JP_AllergyIntolerance_eCS）のclinicalStatus.coding要素、verificationStatus.coding要素においてsystem,code,displayの各子要素の多重度を仕様の表に合わせて1..1となるよう追記した。
   - Encounterリソースのプロファイル（JP-Encounter-eCS）で、diagnosis.use.Codingの多重度が6.1 仕様表では、1..*となっているのに対して、7.1プロファイル詳細のツリーでは1..1 となっていたので、6.1 仕様表に合わせて 1..*に修正。
-  - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）のcode.codingの全スライスに適用されるall slicesで表示されていたcode.coding.system、code.coding.code、code.coding.displayの多重度（1..1）を、各スライスのところに表示されるように表示を移動した。これにともない、all slicesでのこれらの表示が0..0になってしまう（実装ガイド生成過程の問題と思われる）ため、これが表示上の問題であって多重度は仕様通り1..1のままであることを記載追加した。
-  - 処方情報リソース　MedicationRequestの　6.1の表「MedicationRequest」および　7.1詳細プロファイルにおいて、note要素の多重度を0..1から0..*（規定仕様およびJP-Coreの仕様）に戻した。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。
