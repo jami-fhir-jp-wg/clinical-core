@@ -1,4 +1,4 @@
-Instance: InlineExample-JP-Obs-LabResult-eCS-Alb
+Instance: InlineExample-JP-Obs-LabResult-eCS-Alb-public
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
 Description: "Observationリソース（検体検査結果）アルブミン　3.9　mg/L　　ローカルコード=0000181800 臨床検査項目基本コードJLAC10=3A015000001827101 検体：血清(埋込みリソース）　診療科：循環器診療科"

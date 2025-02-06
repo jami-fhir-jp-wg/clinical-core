@@ -1,4 +1,4 @@
-Instance: InlineExample-JP-Obs-LabResult-eCS-eGFR
+Instance: InlineExample-JP-Obs-LabResult-eCS-eGFR-public
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
 Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"

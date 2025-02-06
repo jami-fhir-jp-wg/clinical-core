@@ -1,4 +1,4 @@
-Instance: InlineExample-JP-Obs-LabResult-eCS-UTP
+Instance: InlineExample-JP-Obs-LabResult-eCS-UTP-public
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
 Description: "Observationリソース（検体検査結果）尿蛋⽩(定性)　± 　　ローカルコード=1A990000000190153 臨床検査項目基本コードJLAC10=1A990000000190153 検体：尿　診療科：循環器診療科"

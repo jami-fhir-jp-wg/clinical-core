@@ -35,9 +35,10 @@ Severity: #error
 Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID' or system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1)"
 
 Invariant: valid-value-insurance-patientIdentifier
-Description: "R1013:identifier.value 被保険者識別子情報の形式は、\"保険者等番号:被保険者記号:被保険者番号:被保険者証等枝番\"で、それぞれ半角英数字8桁固定、半角または全角文字列(空白を含まない)、半角または全角文字列(同)、空文字列または半角数字2桁固定(00-99)であり、それぞれ存在しない場合には、空文字列とする。生活保護受給者識別子の場合には、8桁公費負担者番号、なし、受給者番号7桁固定、なし　とする。
+Description: "R1013:identifier.value 被保険者識別子情報の形式は、\"保険者等番号:被保険者記号:被保険者番号:被保険者証等枝番\"で、それぞれ半角英数字8桁固定、半角または全角文字列(空白を含まない)、半角または全角文字列(同)、空文字列または半角数字2桁固定(00-99)であり、それぞれ存在しない場合には、空文字列とする。生活保護受給者識別子の場合には、8桁公費負担者番号、なし、受給者番号7桁固定、なし　とする。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:(.{0}|[0-9][0-9])$')) or (identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JJP_PublicPayer_memberID').value.matches('^[0-9]{8}::[^:^\\\\s^　]{7}:$'))"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:(.{0}|[0-9][0-9])$')) or (identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').value.matches('^[0-9]{8}::[^:^\\\\s^　]{7}:$'))"
+
 // '^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$''
 // '^[0-9]{8}:[^:]*:[^:]*:[0-9]{2}$'
 //　被保険者識別子または生活保護受給者識別子をチェック

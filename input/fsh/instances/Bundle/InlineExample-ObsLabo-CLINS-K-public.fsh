@@ -1,4 +1,4 @@
-Instance: InlineExample-JP-Obs-LabResult-eCS-K
+Instance: InlineExample-JP-Obs-LabResult-eCS-K-public
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
 Description: "Observationリソース（検体検査結果）カリウム　3.5 mmol/L 　　ローカルコード=0000181802 臨床検査項目基本コードJLAC10=3H015000002326101 検体：血清　診療科：循環器診療科"
