@@ -1,7 +1,7 @@
 Instance: InlineExample-JP-Obs-LabResult-eCS-eGFR-public
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
-Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
+Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清 生活保護受給者識別子の例"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_Observation_LabResult_eCS

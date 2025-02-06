@@ -1,7 +1,7 @@
 Instance: InlineExample-JP-Obs-LabResult-eCS-UTP-public
 InstanceOf: JP_Observation_LabResult_eCS
 Usage: #inline
-Description: "Observationリソース（検体検査結果）尿蛋⽩(定性)　± 　　ローカルコード=1A990000000190153 臨床検査項目基本コードJLAC10=1A990000000190153 検体：尿　診療科：循環器診療科"
+Description: "Observationリソース（検体検査結果）尿蛋⽩(定性)　± 　　ローカルコード=1A990000000190153 臨床検査項目基本コードJLAC10=1A990000000190153 検体：尿　診療科：循環器診療科 生活保護受給者識別子の例"
 
 * meta.lastUpdated = "2021-07-09T14:11:13.000+09:00"
 * meta.profile = $JP_Observation_LabResult_eCS

@@ -26,15 +26,15 @@ Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　
 * entry[patient].fullUrl = "urn:uuid:0c435575-2544-d879-3b41-8babddd4cee0"
 * entry[patient].resource = InlineExample-JP-Patient-standard-public
     
-* entry[observationLaboResult][+].fullUrl = "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91"
+* entry[observationLaboResult][+].fullUrl = "urn:uuid:e75a46dd-1122-6676-b560-3035a8403942"
 * entry[observationLaboResult][=].resource = InlineExample-JP-Obs-LabResult-eCS-Alb-public
 
-* entry[observationLaboResult][+].fullUrl = "urn:uuid:fd601925-858c-2d96-f061-9de1076d419c"
+* entry[observationLaboResult][+].fullUrl = "urn:uuid:b71697e5-d100-d930-8fc4-7bf63812c384"
 * entry[observationLaboResult][=].resource = InlineExample-JP-Obs-LabResult-eCS-K-public
 
-* entry[observationLaboResult][+].fullUrl = "urn:uuid:2ac56975-1610-5496-eb0e-c2a5f2f01a62"
+* entry[observationLaboResult][+].fullUrl = "urn:uuid:003ec795-472c-31c7-5a50-8c4b4ab06f9e"
 * entry[observationLaboResult][=].resource = InlineExample-JP-Obs-LabResult-eCS-eGFR-public
 
-* entry[observationLaboResult][+].fullUrl = "urn:uuid:e3a7af80-ca1f-5638-dc97-00fa9458fe1c"
+* entry[observationLaboResult][+].fullUrl = "urn:uuid:6c3a18c2-2388-88c1-0b87-9f966af14702"
 * entry[observationLaboResult][=].resource = InlineExample-JP-Obs-LabResult-eCS-UTP-public
 

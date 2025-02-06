@@ -14,6 +14,7 @@ Description: "Patientリソース（患者情報）プロファイル"
 * obeys valid-system-local-patientID
 * obeys valid-system-insurance-patientIdentifier
 * obeys valid-value-insurance-patientIdentifier
+* obeys valid-value-publicPayer-patientIdentifier
 * obeys kanjiName-kanaName-donot-contain-ZenkakuKuuhaku
 
 //* obeys institurionNumber

@@ -30,18 +30,20 @@ Severity: #error
 Expression: "(identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').count()=1 and (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.')).system.substring(31,11) = '1' + extension('http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').value.ofType(Identifier).value) or (identifier.where(system.substring(0,31) = 'urn:oid:1.2.392.100495.20.3.51.').empty())"
 
 Invariant: valid-system-insurance-patientIdentifier
-Description: "R1012:被保険者識別子情報(identifier.system=\"http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID\"、または\"http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID\")は１つだけ必須。"
+Description: "R1012:被保険者識別子情報(identifier.system=\"http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID\"、または\"http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID\")は１つだけ必須。両方存在はエラー。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID' or system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1)"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID' xor system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1)"
 
 Invariant: valid-value-insurance-patientIdentifier
-Description: "R1013:identifier.value 被保険者識別子情報の形式は、\"保険者等番号:被保険者記号:被保険者番号:被保険者証等枝番\"で、それぞれ半角英数字8桁固定、半角または全角文字列(空白を含まない)、半角または全角文字列(同)、空文字列または半角数字2桁固定(00-99)であり、それぞれ存在しない場合には、空文字列とする。生活保護受給者識別子の場合には、8桁公費負担者番号、なし、受給者番号7桁固定、なし　とする。"
+Description: "R1013:identifier.value 被保険者識別子の形式は、\"保険者等番号:被保険者記号:被保険者番号:被保険者証等枝番\"で、それぞれ半角英数字8桁固定、半角または全角文字列(空白を含まない)、半角または全角文字列(同)、空文字列または半角数字2桁固定(00-99)であり、それぞれ存在しない場合には、空文字列とする。"
 Severity: #error
-Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:(.{0}|[0-9][0-9])$')) or (identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1 and identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').value.matches('^[0-9]{8}::[^:^\\\\s^　]{7}:$'))"
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').count()=1 implies identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_Insurance_memberID').value.matches('^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:(.{0}|[0-9][0-9])$'))"
 
-// '^[0-9]{8}:[^:^\\\\s^　]*:[^:^\\\\s^　]*:0[0-9]$''
-// '^[0-9]{8}:[^:]*:[^:]*:[0-9]{2}$'
-//　被保険者識別子または生活保護受給者識別子をチェック
+Invariant: valid-value-publicPayer-patientIdentifier
+Description: "R1013:identifier.value 生活保護受給者識別子の形式は、\"8桁公費負担者番号::受給者番号:\"で、それぞれ半角英数字8桁固定、空文字列、半角または全角文字列(同)7桁、空文字列とする。"
+Severity: #error
+Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').count()=1 implies identifier.where(system = 'http://jpfhir.jp/fhir/clins/Idsystem/JP_PublicPayer_memberID').value.matches('^[0-9]{8}::[^:^\\\\s^　]{7}:$'))"
+// [^:^\\\\s^　]{7}　の意味は、半角コロンでない文字、または半角空白でない文字、または全角空白でない文字、のいずれかが７文字　という意味。
 
 // R1021-  施設IDチェック
 Invariant: valid-value-institutionNumber
