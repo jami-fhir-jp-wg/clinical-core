@@ -20,6 +20,7 @@
   - Encounterリソースのプロファイル（JP-Encounter-eCS）で、diagnosis.use.Codingの多重度が6.1 仕様表では、1..*となっているのに対して、7.1プロファイル詳細のツリーでは1..1 となっていたので、6.1 仕様表に合わせて 1..*に修正。
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）のcode.codingの全スライスに適用されるall slicesで表示されていたcode.coding.system、code.coding.code、code.coding.displayの多重度（1..1）を、各スライスのところに表示されるように表示を移動した。これにともない、all slicesでのこれらの表示が0..0になってしまう（実装ガイド生成過程の問題と思われる）ため、これが表示上の問題であって多重度は仕様通り1..1のままであることを記載追加した。
   - 処方情報リソース　MedicationRequestの　6.1の表「MedicationRequest」および　7.1詳細プロファイルにおいて、note要素の多重度を0..1から0..*（規定仕様およびJP-Coreの仕様）に戻した。
+  - 患者情報プロファイル　JP_Patient_eCSで、生活保護受給者識別子の制約チェックに関する修正を追加した。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。
