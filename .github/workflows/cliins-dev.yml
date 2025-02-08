@@ -115,6 +115,9 @@ jobs:
     - name: Use datetime in a script
       run: echo "The current datetime is ${{ env.CURRENT_DATETIME }}"
 
+    - name: replace sushi-config.yaml
+      run: |
+        cp sushi-config.yaml_dev sushi-config.yaml
     - name: apply the version of sushi-config.yaml
       run: |
         find input/fsh/profiles -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-profile/${{ env.release_version }}/g" {} \;
@@ -182,7 +185,7 @@ jobs:
         cp resources/NamingSystem-* package/
         cp ../forPackageRelease/package-diff.json package/package.json
         tar czf jp-eCSCLINS-package-diff.tgz package
-        cp jp-eCSCLINS-package-diff.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}_rc.tgz
+        cp jp-eCSCLINS-package-diff.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}.tgz
   
     - name: backup the generated files
       run: |
@@ -203,7 +206,7 @@ jobs:
         cd forPackageRelease/snapshot
         tar czf jp-eCSCLINS-package-snap.tgz package
         cd ..
-        cp snapshot/jp-eCSCLINS-package-snap.tgz jp-eCSCLINS.r4-${{ env.release_version }}-snap_rc.tgz
+        cp snapshot/jp-eCSCLINS-package-snap.tgz jp-eCSCLINS.r4-${{ env.release_version }}-snap.tgz
         cd ..
 
     - name: ssh key generate
@@ -213,7 +216,7 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}_rc.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}-snap_rc.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ ; tar xzf output.tgz; mv output igv${{ env.release_version }}'
 
 
@@ -240,7 +243,7 @@ jobs:
         : # cd forPackageRelease/CLINSdiff
         : # tar czf jp-CLINS-package-diff.tgz package
         : # cd ..
-        : # cp CLINSdiff/jp-CLINS-package-diff.tgz jp-CLINS.r4-${{ env.release_version }}_rc.tgz
+        : # cp CLINSdiff/jp-CLINS-package-diff.tgz jp-CLINS.r4-${{ env.release_version }}.tgz
         : # cd ..
 
     - name: generate CLINS snapshot package using sushi -s command      
@@ -258,16 +261,16 @@ jobs:
         : # cd forPackageRelease/CLINSsnap
         : # tar czf jp-CLINS-package-snap.tgz package
         : # cd ..
-        : # cp CLINSsnap/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap_rc.tgz
+        : # cp CLINSsnap/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap.tgz
         : # cd ..
     - name: rsync remote-site-deploy
       run: |
-        : # rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}_rc.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap_rc.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
+        : # rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
     - name: validate and rsync the log to remote-site
       run: |
         ./script/validateInstances.sh ${{ env.release_version }} ${{ env.CURRENT_DATETIME }}
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  validateLog ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/igv${{ env.release_version }}/ --exclude .htaccess
     - name: copy IG and Pkg to history folders
       run: |
-        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ ; mkdir -p ighistory/igv${{ env.release_version }}_rc; rm -rf ighistory/igv${{ env.release_version }}_rc; cp -r igv${{ env.release_version }} ighistory/igv${{ env.release_version }}_rc; cp jp-eCSCLINS.r4-${{ env.release_version }}_rc.tgz pkghistory/jp-eCSCLINS.r4-${{ env.release_version }}_rc.tgz; cp jp-eCSCLINS.r4-${{ env.release_version }}-snap_rc.tgz pkghistory/jp-eCSCLINS.r4-${{ env.release_version }}-snap_rc.tgz;'
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ ; mkdir -p ighistory/igv${{ env.release_version }}; rm -rf ighistory/igv${{ env.release_version }}; cp -r igv${{ env.release_version }} ighistory/igv${{ env.release_version }}; cp jp-eCSCLINS.r4-${{ env.release_version }}.tgz pkghistory/jp-eCSCLINS.r4-${{ env.release_version }}.tgz; cp jp-eCSCLINS.r4-${{ env.release_version }}-snap.tgz pkghistory/jp-eCSCLINS.r4-${{ env.release_version }}-snap.tgz;'
 
