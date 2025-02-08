@@ -7,7 +7,7 @@ on:
       - 'sushi-config.yaml'
       - 'input/**'
       - 'custom-template/**'
-      - '.github/workflows/main.yml'
+      - '.github/workflows/clins-dev.yml'
       - 'script/*.py'
   pull_request:
     branches: [ update-20250208 ]
