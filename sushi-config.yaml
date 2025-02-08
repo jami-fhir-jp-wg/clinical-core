@@ -11,10 +11,10 @@ title: "電子カルテ情報共有サービス2文書５情報+患者サマリ�
 description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide v1.x.x-temp"
 status: active # draft | active | retired | unknown 
 version: "1.x.x-temp"
-date: 2025-01-29  ##### input/pagecontent/all-igs.mdもアップデートしてください。
+date: 2025-02-08  ##### input/pagecontent/all-igs.mdもアップデートしてください。
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
-releaseLabel: release # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
+releaseLabel: update # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC BY-ND  #  https://www.hl7.org/fhir/valueset-spdx-license.html
 # https://www.hl7.org/fhir/valueset-jurisdiction.html 
 publisher:
@@ -61,7 +61,9 @@ pages:
   all-igs.md:
     title: 全バージョン一覧
   qanda.md:
-    title: Q＆Aよくある質問  
+    title: Q＆Aよくある質問
+  clins-develop.md:
+    title: 開発者向け情報  
 #-------------------------------------
 # メニュー設定
 #-------------------------------------
