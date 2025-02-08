@@ -45,8 +45,7 @@
   {% include fragment-igTable.html %}
   {% endif %}
   {% include fragment-pageTable.html %}
-  
-  {% include head-caution-dev.html %}
+
 
   {% capture no-toc-content %} <!-- white space is critical inside of capture -->
   <div>

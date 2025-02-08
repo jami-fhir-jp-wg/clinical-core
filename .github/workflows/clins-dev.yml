@@ -4,7 +4,7 @@ on:
     branches: 
       - update-20250208
     paths:
-      - 'sushi-config.yaml'
+      - 'sushi-config.yaml_dev'
       - 'input/**'
       - 'custom-template/**'
       - '.github/workflows/clins-dev.yml'
