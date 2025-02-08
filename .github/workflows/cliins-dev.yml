@@ -118,6 +118,7 @@ jobs:
     - name: replace sushi-config.yaml
       run: |
         cp sushi-config.yaml_dev sushi-config.yaml
+        cp custom-template/includes/head-caution-dev custom-template/includes/head-caution-dev.html
     - name: apply the version of sushi-config.yaml
       run: |
         find input/fsh/profiles -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-profile/${{ env.release_version }}/g" {} \;
