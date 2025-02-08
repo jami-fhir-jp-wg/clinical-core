@@ -62,10 +62,10 @@
   </tr>
 
   <tr>
-    <td colspan="2"  class="left">
-    <ul>
+    <td colspan="2"  style="text-align: left;">
+    <ul　style="margin: 0; padding-left: 0;">
     <li>未記載の履歴情報
-    <ul><li>
+    <ul　style="margin: 0; padding-left: 0;"><li>
   検体検査結果プロファイル（JP_Observation_LabResult_eCS）のcode.codingの全スライスに適用されるall slicesで表示されていたcode.coding.system、code.coding.code、code.coding.displayの多重度（1..1）を、各スライスのところに表示されるように表示を移動した。これにともない、all slicesでのこれらの表示が0..0になってしまう（実装ガイド生成過程の問題と思われる）ため、これが表示上の問題であって多重度は仕様通り1..1のままであることを記載追加した。
     </li>
     <li>
@@ -73,11 +73,11 @@
     </li>
     </ul>
     <li>今後リリースする可能性のある修正
-    <ul>
+    <ul　style="margin: 0; padding-left: 0;">
   患者情報プロファイル　JP_Patient_eCSで、生活保護受給者識別子の制約チェックに関する修正。
   <li>
   診療情報提供書のデータ作例（以下の２件：Composition.sectionにentryが無く、text要素にだけ内容を記述する例）において、仕様書に従い section[compositionSection].emptyReason　および　section[compositionSection].section[xxx].emptyReason にunavailableを記述するよう修正。（ただしValidationではemptyReasonが無くてもエラーにならない）
-  <ul>
+  <ul　style="margin: 0; padding-left: 0;">
   <li>Bundle-CLINS-Referral-NoEntry-Example-01</li>
   <li>Bundle-CLINS-Referral-NoEntry-Example-01-RefText</li>
   </ul>
