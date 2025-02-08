@@ -260,7 +260,6 @@ jobs:
         : # cd ..
         : # cp CLINSsnap/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap_rc.tgz
         : # cd ..
-
     - name: rsync remote-site-deploy
       run: |
         : # rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}_rc.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap_rc.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
