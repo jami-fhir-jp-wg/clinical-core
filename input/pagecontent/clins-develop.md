@@ -15,7 +15,29 @@
   .top {
     vertical-align: top;
   }
-
+  .ul_flush {
+    list-style: none;
+    padding-left: 0;
+    display: table;
+  }
+  .ul_flush li:after {
+    content: "";
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  .ul_flush li {
+    display: table-row;
+  }
+  .ul_flush li:before {
+    content: "•";
+    display: table-cell;
+    padding-right: 0.4em;
+  }
+  
+  li {
+    margin-bottom: 0.5em;
+  }
 </style>
 
 ### リリース版に対する開発者向け参考情報
@@ -24,16 +46,16 @@
 
 <table>
   <tr>
-    <th>対象仕様の</br>バージョン</th>
-    <th>開発者向け参考情報</br>提供日付</th>
-    <th>IGページ</th>
+    <th>対象仕様の<br>バージョン</th>
+    <th>開発者向け参考情報<br>提供日付</th>
+    <th>IGページへのリンク</th>
     <th>パッケージVersion</th>
   </tr>
 
   <tr>
     <td rowspan=2 class="top">1.10.0</td>
     <td rowspan=2 class="top">2025-02-08</td>
-    <td><a href="https//jpfhir.jp/fhir/clins/ig1.10.0-20250208">IG</a></td>
+    <td><a href="https//jpfhir.jp/fhir/clins/ig1.10.0-20250208">ig1.10.0-20250208</a></td>
     <td><a href="https//jpfhir.jp/fhir/clins/ig1.10.0-20250208/p-eCSCLINS.r4-1.10.0-20250208.tgz">jp-eCSCLINS.r4-1.10.0-20250208.tgz</a></td>
   </tr>
 
@@ -68,6 +90,3 @@
   
 </table>
 
-
-
-{% include markdown-link-references.md %}
