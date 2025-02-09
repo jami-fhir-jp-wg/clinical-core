@@ -116,8 +116,8 @@ jobs:
       run: echo "The current datetime is ${{ env.CURRENT_DATETIME }}"
 
     - name: replace sushi-config.yaml
-    run: |
-      cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
+      run: |
+        cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
 
     - name: apply the version of sushi-config.yaml
       run: |
