@@ -39,8 +39,8 @@
   <tr>
     <td rowspan=2 class="top">1.10.0</td>
     <td rowspan=2 class="top">2025-02-08</td>
-    <td><a href="https://jpfhir.jp/fhir/clins-dev/latest/">ig1.10.0-20250208</a></td>
-    <td><a href="https://jpfhir.jp/fhir/clins-dev/jp-eCSCLINS.r4-1.10.0-20250208.tgz">jp-eCSCLINS.r4-1.10.0-20250208.tgz</a></td>
+    <td><a href="https://jpfhir.jp/fhir/clins-dev/latest/output/">ig1.10.0-20250208dev</a></td>
+    <td><a href="https://jpfhir.jp/fhir/clins-dev/jp-eCSCLINS.r4-1.10.0-20250208dev.tgz">jp-eCSCLINS.r4-1.10.0-20250208-dev.tgz</a></td>
   </tr>
 
   <tr>
