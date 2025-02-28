@@ -26,9 +26,9 @@ Description: "■ 傷病名2件　Bundleリソース(CLINS送信用)　#01"
 * entry[patient].fullUrl = "urn:uuid:b76ef6f6-f6e3-c110-5039-eee64ef6ab6a"
 * entry[patient].resource = InlineExample-JP-Patient-standard
 
-* entry[observationLaboResult][+].fullUrl = "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91"
-* entry[observationLaboResult][=].resource = Example-JP-Condition-eCS-cc1-Referral01Inline
+* entry[condition][+].fullUrl = "urn:uuid:f2c5a40b-c7ea-1d52-7e81-7440b1f26f91"
+* entry[condition][=].resource = Example-JP-Condition-eCS-cc1-Referral01Inline
 
-* entry[observationLaboResult][+].fullUrl = "urn:uuid:fd601925-858c-2d96-f061-9de1076d419c"
-* entry[observationLaboResult][=].resource = Example-JP-Condition-eCS-cc2-Referral01Inline
+* entry[condition][+].fullUrl = "urn:uuid:fd601925-858c-2d96-f061-9de1076d419c"
+* entry[condition][=].resource = Example-JP-Condition-eCS-cc2-Referral01Inline
 
