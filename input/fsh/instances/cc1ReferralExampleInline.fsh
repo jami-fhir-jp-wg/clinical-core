@@ -11,6 +11,10 @@ Description: "conditionReferralExample01CC1 診療情報提供書　主訴例　
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
+
+* meta.tag[0].system = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"
+* meta.tag[0].code = #LTS
+
 * language = #ja
 
 
