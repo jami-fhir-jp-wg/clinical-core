@@ -14,8 +14,20 @@ Description: "conditionReferralExample01CC1 診療情報提供書　主訴例　
 * language = #ja
 
 
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192837-01"
+
+* contained[+] = Example-Contained-JP-Encounter-AMB
+
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed "Confirmed"
 
@@ -44,8 +56,21 @@ Description: "conditionReferralExample01CC2 診療情報提供書　主訴例　
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.x.x-instance"
 
+
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+
+* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
+* extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
+
+
 * identifier.system = "http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
 * identifier.value = "192837-02"
+
+* contained[+] = Example-Contained-JP-Encounter-AMB
+
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed  "Confirmed"
 
