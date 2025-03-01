@@ -42,6 +42,8 @@ Description: "conditionReferralExample01CC1 診療情報提供書　主訴例　
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
+
 // 2022-06-09 2020-08-21
 // ATGtime 12:12:20
 * onsetDateTime = "2022-06-09"
@@ -85,6 +87,7 @@ Description: "conditionReferralExample01CC2 診療情報提供書　主訴例　
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
+* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 
 // 2022-05 2020-08-21
 // ATGtime 12:12:20
