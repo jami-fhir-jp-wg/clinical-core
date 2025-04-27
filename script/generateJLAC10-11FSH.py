@@ -6,15 +6,19 @@ import csv
 # python3  本コマンド　　JLAC10-11_CSVファイル　FSHslice.csv codeSystem_output_path文字列（/で終わること）(= input/fsh/CodeSystems/ )
 # 例）python3  script/generateJLAC10-11FSH.py reference/JLAC10-11_CodeTable_20241030.csv reference/FSHslice.csv input/fsh/CodeSystems/generated/
 # 出力ファイル名は固定
-
+# 修正履歴
+# 2025.4.28
+#  元ファイルでのカラム名が'単位'から'XML用単位'に変更されたため、item['単位']　を　item['XML用単位']に変更。
+#  新たに'表示用単位'カラムが導入されたことに対応が必要か調査。
+#          
 def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.4', updateDate = '2024-11-01'):
-    if kubun == '感染症':
+    if kubun == '2':    // 感染症
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-infectionlabo-cs'
         title = 'Title: "CLINS 電子カルテ共有サービス用:'+jlacMode+'感染症検査項目セット"'
         description = 'Description: "CLINS 電子カルテ共有サービス用 '+jlacMode+'感染症検査項目セット"'
         url = '* ^url = $JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
-    if kubun == '検査':
+    if kubun == '1':    // 検査
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_CoreLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-corelabo-cs'
         title = 'Title: "CLINS 電子カルテ共有サービス用:'+jlacMode+'検体検査項目セット"'
@@ -84,7 +88,7 @@ if __name__ == '__main__':
         for row in dict_reader:
             fhir_kubun = row['データ区分']
             fhir_id = row['FHIR識別文字列']
-            if fhir_kubun[0:2] == '検査':
+            if fhir_kubun[0:1] == '1':  // 検査
                 if fhir_id in jlac_dict:
                     rowlist = jlac_dict[fhir_id]
                 else:
@@ -111,7 +115,7 @@ if __name__ == '__main__':
             item_method = item['検査方法(JLAC10-測定法)'].replace('"','').strip()
             if item_method == "":
                 item_method = "-"
-            item_unit = item['単位'].replace('"','')
+            item_unit = item['XML用単位'].replace('"','')
             if item_unit == "":
                 item_unit = "-"
             #
@@ -145,7 +149,7 @@ if __name__ == '__main__':
             item_method = item['測定法(JLAC11)'].replace('"','').strip()
             if item_method == "":
                 item_method = "-"
-            item_unit = item['単位'].replace('"','')
+            item_unit = item['XML用単位'].replace('"','')
             if item_specimen == "":
                 item_specimen = "-"
             #
@@ -158,6 +162,8 @@ if __name__ == '__main__':
                 fout.write('    * ^property[=].valueString = "' + item_specimen + '"' + '\n')
                 fout.write('    * ^property[+].code = #method' + '\n')
                 fout.write('    * ^property[=].valueString = "' + item_method + '"' + '\n')
+                fout.write('    * ^property[+].code = #unitcode' + '\n')
+                fout.write('    * ^property[=].valueString = "' + item_unit + '"' + '\n')
     fout.close()
 
 
@@ -169,7 +175,7 @@ if __name__ == '__main__':
         for row in dict_reader:
             fhir_kubun = row['データ区分']
             fhir_id = row['FHIR識別文字列']
-            if fhir_kubun[0:3] == '感染症':
+            if fhir_kubun[0:1] == '2': // 感染症
                 if fhir_id in jlac_dict:
                     rowlist = jlac_dict[fhir_id]
                 else:
@@ -196,7 +202,7 @@ if __name__ == '__main__':
             item_method = item['検査方法(JLAC10-測定法)'].replace('"','').strip()
             if item_method == "":
                 item_method = "-"
-            item_unit = item['単位'].replace('"','')
+            item_unit = item['XML用単位'].replace('"','')
             if item_unit == "":
                 item_unit = "-"
             #
@@ -230,7 +236,7 @@ if __name__ == '__main__':
             item_method = item['測定法(JLAC11)'].replace('"','').strip()
             if item_method == "":
                 item_method = "-"
-            item_unit = item['単位'].replace('"','').strip()
+            item_unit = item['XML用単位'].replace('"','').strip()
             if item_unit == "":
                 itemitem_unit_specimen = "-"
             #

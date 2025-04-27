@@ -8,13 +8,13 @@ import csv
 # 出力ファイル名は固定
 
 def writeCommonHeader(jlacMode,kubun,fout, versionString = '1.5.4', updateDate = '2024-11-01'):
-    if kubun == '2':    // 感染症
+    if kubun == '感染症':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-infectionlabo-cs'
         title = 'Title: "CLINS 電子カルテ共有サービス用:'+jlacMode+'感染症検査項目セット"'
         description = 'Description: "CLINS 電子カルテ共有サービス用 '+jlacMode+'感染症検査項目セット"'
         url = '* ^url = $JP_CLINS_CodeSystem_' + jlacMode + '_InfectionLabo_CS'
-    if kubun == '1':    // 検査
+    if kubun == '検査':
         codeSystem = 'CodeSystem: JP_CLINS_CodeSystem_' + jlacMode + '_CoreLabo_CS'
         id = 'Id: jp-clins-codesystem-' + jlacMode + '-corelabo-cs'
         title = 'Title: "CLINS 電子カルテ共有サービス用:'+jlacMode+'検体検査項目セット"'
@@ -84,7 +84,7 @@ if __name__ == '__main__':
         for row in dict_reader:
             fhir_kubun = row['データ区分']
             fhir_id = row['FHIR識別文字列']
-            if fhir_kubun[0:1] == '1':  // 検査
+            if fhir_kubun[0:2] == '検査':
                 if fhir_id in jlac_dict:
                     rowlist = jlac_dict[fhir_id]
                 else:
@@ -158,8 +158,6 @@ if __name__ == '__main__':
                 fout.write('    * ^property[=].valueString = "' + item_specimen + '"' + '\n')
                 fout.write('    * ^property[+].code = #method' + '\n')
                 fout.write('    * ^property[=].valueString = "' + item_method + '"' + '\n')
-                fout.write('    * ^property[+].code = #unitcode' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_unit + '"' + '\n')
     fout.close()
 
 
@@ -171,7 +169,7 @@ if __name__ == '__main__':
         for row in dict_reader:
             fhir_kubun = row['データ区分']
             fhir_id = row['FHIR識別文字列']
-            if fhir_kubun[0:1] == '2': // 感染症
+            if fhir_kubun[0:3] == '感染症':
                 if fhir_id in jlac_dict:
                     rowlist = jlac_dict[fhir_id]
                 else:
