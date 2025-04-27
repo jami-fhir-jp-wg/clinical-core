@@ -2,7 +2,7 @@ name: Ohe-build
 on:
   push:
     branches: 
-      - develop1.10.x
+      - develop-v1.11.x
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,11 +10,11 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ develop1.10.x ]
+    branches: [ develop-1.11.x ]
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.10.0
+  release_version : 1.11.0-dev
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
