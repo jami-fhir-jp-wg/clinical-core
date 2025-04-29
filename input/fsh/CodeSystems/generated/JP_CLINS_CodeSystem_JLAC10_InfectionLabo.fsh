@@ -5421,18 +5421,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-  * #5F560155002399952  "HIV-1+2抗体・p24抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{COI}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "COI"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "血清"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "その他の測定法"
-  * #5F560155002399953  "HIV-1+2抗体・p24抗原(定量)"
+  * #5F560155002399959  "HIV-1+2抗体・p24抗原(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(定量)"
     * ^property[+].code = #unitCode
