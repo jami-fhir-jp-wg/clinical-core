@@ -15,6 +15,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #CORE-INFECTIONS
 
 // HBs抗原(コントロール比)
+/*
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGCOI_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hbsagcoi-vs
 Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11  HBs抗原(コントロール比)"
@@ -29,7 +30,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HBs-AG-COI
-
+*/
 // HBs抗原(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGDIL_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hbsagdil-vs
@@ -227,6 +228,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 
 
 // HCV抗体(コントロール比)
+/*
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVABCOI_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hcvabcoi-vs
 Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HCV抗体(コントロール比)"
@@ -241,7 +243,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HCV-AB-COI
-
+*/
 // HCV抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVABDIL_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hcvabdil-vs
@@ -323,6 +325,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1-RESULT
 
 // HIV-1+2抗体・p24抗原(コントロール比)
+/*
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24COI_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abp24coi-vs
 Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(コントロール比)"
@@ -337,7 +340,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COI
-
+*/
 // HIV-1+2抗体・p24抗原(吸光度)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABOD_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abod-vs
@@ -403,9 +406,8 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-POS-COI
 
-
-
 // HIV-1+2抗体(コントロール比)
+/*
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABCOI_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abcoi-vs
 Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体(コントロール比)"
@@ -420,7 +422,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-COI
-
+*/
 // HIV-1+2抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABDIL_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abdil-vs
