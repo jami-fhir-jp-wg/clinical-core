@@ -194,9 +194,7 @@ if __name__ == '__main__':
                 fout.write('    * ^property[=].valueString = "' + item_specimen + '"' + '\n')
                 fout.write('    * ^property[+].code = #method' + '\n')
                 fout.write('    * ^property[=].valueString = "' + item_method + '"' + '\n')
-                fout.write('    * ^property[+].code = #unitcode' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_unit + '"' + '\n')
-    fout.close()
+        fout.close()
 
 
     # 感染症区分の処理
