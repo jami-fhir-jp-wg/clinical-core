@@ -1,4 +1,4 @@
-HBs抗原(コントロール比),HBs-AG-COI,
+
 HBs抗原(希釈倍率),HBs-AG-DIL,
 HBs抗原(吸光度),HBs-AG-OD ,
 HBs抗原(定性),HBs-AG-RESULT,
@@ -11,18 +11,15 @@ HCV核酸増幅検査(定性),HCV-NRESULT,
 HCV核酸増幅検査(定量),HCV-NQUANT,
 HCV抗原検査(定性),HCV-AG-RESULT,
 HCV抗原検査(定量),HCV-AG-QUANT,
-HCV抗体(コントロール比),HCV-AB-COI,
 HCV抗体(希釈倍率),HCV-AB-DIL,
 HCV抗体(定性),HCV-AB-RESULT,
 HCV抗体(陽性コントロール比),HCV-AB-POS-COI,
 HIV-1(ウイルスRNA定量),HIV-1-QUANT,
 HIV-1(ウイルスRNA定量判定),HIV-1-RESULT,
-HIV-1+2抗体・p24抗原(コントロール比),HIV-1P2-AB-P24-COI,
 HIV-1+2抗体・p24抗原(吸光度),HIV-1P2-AB-OD,
 HIV-1+2抗体・p24抗原(定性),HIV-1P2-AB-P24-RESULT,1
 HIV-1+2抗体・p24抗原(定量),HIV-1P2-AB-P24-QUANT,HIV1P2ABP24QUANT
 HIV-1+2抗体・p24抗原(陽性コントロール比),HIV-1P2-AB-P24-POS-COI,HIV1P2ABP24POSCOI
-HIV-1+2抗体(コントロール比),HIV-1P2-AB-COI,
 HIV-1+2抗体(希釈倍率),HIV-1P2-AB-DIL,
 HIV-1+2抗体(定性),HIV-1P2-AB-RESULT,
 HIV-1+2抗体(陽性コントロール比),HIV-1P2-AB-POS-COI,
