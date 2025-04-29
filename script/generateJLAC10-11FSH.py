@@ -223,7 +223,7 @@ if __name__ == '__main__':
             continue
         jlac_code_dict = {}
         print("fhir_id",fhir_id)
-        fout.write('* #' + slice[fhir_id] + '\n')
+        fout.write('  * #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
             jlac_code = item['JLAC10コード'].strip()
             item_name = fhir_id
@@ -245,18 +245,18 @@ if __name__ == '__main__':
                 item_unit = "-"
             #
             if jlac_code not in jlac_code_dict and jlac_code != "":
-                fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
+                fout.write('    * #' + jlac_code + '  "' + item_name + '"' + '\n')
                 jlac_code_dict[jlac_code] = jlac_code
-                fout.write('    * ^designation.language = #ja' + '\n')
-                fout.write('    * ^designation.value = "' + item_value + '"' + '\n')
-                fout.write('    * ^property[+].code = #unitCode' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_unitCode + '"' + '\n')
-                fout.write('    * ^property[+].code = #unitDisplay' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_unitDisplay + '"' + '\n')
-                fout.write('    * ^property[+].code = #specimen' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_specimen + '"' + '\n')
-                fout.write('    * ^property[+].code = #method' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_method + '"' + '\n')
+                fout.write('      * ^designation.language = #ja' + '\n')
+                fout.write('      * ^designation.value = "' + item_value + '"' + '\n')
+                fout.write('      * ^property[+].code = #unitCode' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_unitCode + '"' + '\n')
+                fout.write('      * ^property[+].code = #unitDisplay' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_unitDisplay + '"' + '\n')
+                fout.write('      * ^property[+].code = #specimen' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_specimen + '"' + '\n')
+                fout.write('      * ^property[+].code = #method' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_method + '"' + '\n')
     fout.close()
 
     # 感染症区分　JLAC11
@@ -267,7 +267,7 @@ if __name__ == '__main__':
             continue
         jlac_code_dict = {}
         print("fhir_id",fhir_id)
-        fout.write('* #' + slice[fhir_id] + '\n')
+        fout.write('  * #' + slice[fhir_id] + '\n')
         for item in jlac_dict[fhir_id]:
             jlac_code = item['JLAC11コード']
             item_name = fhir_id
@@ -289,18 +289,18 @@ if __name__ == '__main__':
                 itemitem_unit_specimen = "-"
             #
             if jlac_code not in jlac_code_dict and jlac_code != "":
-                fout.write('  * #' + jlac_code + '  "' + item_name + '"' + '\n')
+                fout.write('    * #' + jlac_code + '  "' + item_name + '"' + '\n')
                 jlac_code_dict[jlac_code] = jlac_code
-                fout.write('    * ^designation.language = #ja' + '\n')
-                fout.write('    * ^designation.value = "' + item_value + '"' + '\n')
-                fout.write('    * ^property[+].code = #unitCode' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_unitCode + '"' + '\n')
-                fout.write('    * ^property[+].code = #unitDisplay' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_unitDisplay + '"' + '\n')
-                fout.write('    * ^property[+].code = #specimen' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_specimen + '"' + '\n')
-                fout.write('    * ^property[+].code = #method' + '\n')
-                fout.write('    * ^property[=].valueString = "' + item_method + '"' + '\n')
+                fout.write('      * ^designation.language = #ja' + '\n')
+                fout.write('      * ^designation.value = "' + item_value + '"' + '\n')
+                fout.write('      * ^property[+].code = #unitCode' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_unitCode + '"' + '\n')
+                fout.write('      * ^property[+].code = #unitDisplay' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_unitDisplay + '"' + '\n')
+                fout.write('      * ^property[+].code = #specimen' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_specimen + '"' + '\n')
+                fout.write('      * ^property[+].code = #method' + '\n')
+                fout.write('      * ^property[=].valueString = "' + item_method + '"' + '\n')
     fout.close()
 '''
 * #ALB
