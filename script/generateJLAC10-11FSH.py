@@ -71,7 +71,7 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString, updateDate ):
     fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
     if kubun == '2':    ## 感染症
-        fout.write('# CORE-INFECTIONS' + '\n')    
+        fout.write('* #CORE-INFECTIONS' + '\n')    
 
 
 if __name__ == '__main__':

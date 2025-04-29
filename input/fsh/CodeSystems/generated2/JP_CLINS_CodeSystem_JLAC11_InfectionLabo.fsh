@@ -35,7 +35,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
 * ^property[+].code = #oidOfValueSet
 * ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^property[=].type = #string
-# CORE-INFECTIONS
+* #CORE-INFECTIONS
   * #STS-QLRESULT
     * #V1055000124000102  "梅毒STS(定性)"
       * ^designation.language = #ja
