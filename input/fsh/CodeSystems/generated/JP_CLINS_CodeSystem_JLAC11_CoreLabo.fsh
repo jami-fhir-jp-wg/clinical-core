@@ -1440,19 +1440,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "ドライケミストリー法_ビトロス XTスライドALB-TP"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "g/dL"
-  * #  "TP"
-    * ^designation.language = #ja
-    * ^designation.value = "総蛋白(TP)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "g/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "g/dL"
   * #C1002000024000055  "TP"
     * ^designation.language = #ja
     * ^designation.value = "総蛋白(TP)"
@@ -2154,19 +2141,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法_BBx パック"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "g/dL"
-  * #  "ALB"
-    * ^designation.language = #ja
-    * ^designation.value = "アルブミン"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "g/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "g/dL"
   * #C1003000021000055  "ALB"
@@ -4393,19 +4367,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_レフロトロン CKII"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
-  * #  "CK"
-    * ^designation.language = #ja
-    * ^designation.value = "クレアチンキナーゼ(CK)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
   * #C20010000213000F7  "CK"
     * ^designation.language = #ja
     * ^designation.value = "クレアチンキナーゼ(CK)"
@@ -6329,19 +6290,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法(JSCC標準化対応法以外)_BBx パック"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
-  * #  "AST"
-    * ^designation.language = #ja
-    * ^designation.value = "AST(GOT)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
   * #C20080000210000F7  "AST"
@@ -8566,19 +8514,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法(JSCC標準化対応法以外)_BBx パック"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
-  * #  "ALT"
-    * ^designation.language = #ja
-    * ^designation.value = "ALT(GPT)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
   * #C20110000210000F7  "ALT"
@@ -12287,19 +12222,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_富士ドライケムスライド LDH-PIII"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
-  * #  "LD"
-    * ^designation.language = #ja
-    * ^designation.value = "LD(LDH)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
   * #C20120000240000F7  "LD"
     * ^designation.language = #ja
     * ^designation.value = "LD(LDH)"
@@ -13079,19 +13001,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_レフロトロン ALPII"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
-  * #  "ALP"
-    * ^designation.language = #ja
-    * ^designation.value = "アルカリホスファターゼ(ALP)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
   * #C20170000213000F7  "ALP"
@@ -15056,19 +14965,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法(JSCC標準化対応法以外)_BBx パック"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
-  * #  "GGT"
-    * ^designation.language = #ja
-    * ^designation.value = "γ-GT(γ-GTP)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
   * #C20240000210000F7  "GGT"
@@ -18049,19 +17945,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_富士ドライケムスライド CHE-P"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
-  * #  "ChE"
-    * ^designation.language = #ja
-    * ^designation.value = "コリンエステラーゼ(ChE)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
   * #C20280000240000F7  "ChE"
     * ^designation.language = #ja
     * ^designation.value = "コリンエステラーゼ(ChE)"
@@ -18542,19 +18425,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法(JSCC標準化対応法以外)_BBx パック"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "U/L"
-  * #  "AMY"
-    * ^designation.language = #ja
-    * ^designation.value = "アミラーゼ(AMY)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "U/L"
   * #C20420000210000F7  "AMY"
@@ -20805,19 +20675,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_レフロトロン クレアチニンIII"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "Cre"
-    * ^designation.language = #ja
-    * ^designation.value = "血清クレアチニン(Cre)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C3002000021000085  "Cre"
@@ -23629,19 +23486,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "ラテックス凝集比濁法_バナリスト CysC"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/L"
-  * #  "Cys-C"
-    * ^designation.language = #ja
-    * ^designation.value = "シスタチンC(Cys-C)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/L"
   * #C3003000021100088  "Cys-C"
     * ^designation.language = #ja
     * ^designation.value = "シスタチンC(Cys-C)"
@@ -24824,19 +24668,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_レフロトロン 尿酸II(UA)"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "UA"
-    * ^designation.language = #ja
-    * ^designation.value = "血清尿酸(UA)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C3004000021300085  "UA"
@@ -26931,19 +26762,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_アゾスティックス"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "BUN"
-    * ^designation.language = #ja
-    * ^designation.value = "尿素窒素(BUN)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C3005000021000085  "BUN"
@@ -30039,19 +29857,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "酵素電極法(自己測定)_グルコカード Xセンサー"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "BG"
-    * ^designation.language = #ja
-    * ^designation.value = "血糖(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C4001000021000085  "BG"
@@ -35463,19 +35268,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "酵素電極法(自己測定)_グルコカード Xセンサー"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "FBG"
-    * ^designation.language = #ja
-    * ^designation.value = "空腹時血糖"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C4001133721000085  "FBG"
     * ^designation.language = #ja
     * ^designation.value = "空腹時血糖"
@@ -40885,19 +40677,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "酵素電極法(自己測定)_グルコカード Xセンサー"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "CBG"
-    * ^designation.language = #ja
-    * ^designation.value = "随時血糖"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C4001133621000085  "CBG"
     * ^designation.language = #ja
     * ^designation.value = "随時血糖"
@@ -46151,19 +45930,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_チェッカート リーダー"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "%"
-  * #  "HbA1c-NGSP"
-    * ^designation.language = #ja
-    * ^designation.value = "HbA1c(NGSP)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "%"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "%"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "%"
   * #B3009000021000012  "HbA1c-NGSP"
     * ^designation.language = #ja
     * ^designation.value = "HbA1c(NGSP)"
@@ -47736,19 +47502,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法･酵素法(遊離グリセロール未消去法)_PTSパネル"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "TG"
-    * ^designation.language = #ja
-    * ^designation.value = "中性脂肪(TG)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C6002000021000085  "TG"
@@ -49806,19 +49559,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "可視吸光光度法･酵素法(遊離グリセロール未消去法)_PTSパネル"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "FTG"
-    * ^designation.language = #ja
-    * ^designation.value = "空腹時中性脂肪(TG)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C6002133721000085  "FTG"
     * ^designation.language = #ja
     * ^designation.value = "空腹時中性脂肪(TG)"
@@ -51874,19 +51614,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "可視吸光光度法･酵素法(遊離グリセロール未消去法)_PTSパネル"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "CTG"
-    * ^designation.language = #ja
-    * ^designation.value = "随時中性脂肪(TG)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C6002133621000085  "CTG"
     * ^designation.language = #ja
     * ^designation.value = "随時中性脂肪(TG)"
@@ -53927,19 +53654,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー_PTSパネル"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "T-CHO"
-    * ^designation.language = #ja
-    * ^designation.value = "総コレステロール(T-CHO)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C6005000021000085  "T-CHO"
@@ -56049,19 +55763,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_PTSパネル"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "HDL-C"
-    * ^designation.language = #ja
-    * ^designation.value = "HDL-コレステロール(HDL-C)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C6008000021000085  "HDL-C"
     * ^designation.language = #ja
     * ^designation.value = "HDL-コレステロール(HDL-C)"
@@ -58039,19 +57740,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "F式による計算法"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "LDL-C"
-    * ^designation.language = #ja
-    * ^designation.value = "LDL-コレステロール(LDL-C)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C6011000024000085  "LDL-C"
     * ^designation.language = #ja
     * ^designation.value = "LDL-コレステロール(LDL-C)"
@@ -58441,19 +58129,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "電位差測定_電解質測定器 STAX-5 inspire"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mmol/L"
-  * #  "Na"
-    * ^designation.language = #ja
-    * ^designation.value = "ナトリウム(Na)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mmol/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mmol/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mmol/L"
   * #C70020000210000B1  "Na"
@@ -59406,19 +59081,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "電位差測定_電解質測定器 STAX-5 inspire"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mmol/L"
-  * #  "K"
-    * ^designation.language = #ja
-    * ^designation.value = "カリウム(K)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mmol/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mmol/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mmol/L"
   * #C70030000210000B1  "K"
     * ^designation.language = #ja
     * ^designation.value = "カリウム(K)"
@@ -60367,19 +60029,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "電位差測定_電解質測定器 STAX-5 inspire"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mmol/L"
-  * #  "Cl"
-    * ^designation.language = #ja
-    * ^designation.value = "クロール(Cl)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mmol/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mmol/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mmol/L"
   * #C70040000210000B1  "Cl"
@@ -62216,19 +61865,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "ドライケミストリー法_スポットケムII カルシウム2"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "Ca"
-    * ^designation.language = #ja
-    * ^designation.value = "カルシウム(Ca)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C7006000024000085  "Ca"
     * ^designation.language = #ja
     * ^designation.value = "カルシウム(Ca)"
@@ -62878,19 +62514,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "可視吸光光度法_レフロトロン ビリルビンII(BIL)"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "T-Bil"
-    * ^designation.language = #ja
-    * ^designation.value = "総ビリルビン(T-Bil)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #C8011000021200085  "T-Bil"
@@ -65637,19 +65260,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_富士ドライケムスライド DBIL-PII"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "D-Bil"
-    * ^designation.language = #ja
-    * ^designation.value = "直接ビリルビン(D-Bil)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #C8012000024000085  "D-Bil"
     * ^designation.language = #ja
     * ^designation.value = "直接ビリルビン(D-Bil)"
@@ -66873,19 +66483,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "自動機械法_多項目自動血球分析装置 XR シリーズ"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "10*3/uL"
-  * #  "WBC"
-    * ^designation.language = #ja
-    * ^designation.value = "白血球数"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "10*3/uL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "X10*3/μL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "10*3/uL"
   * #B10020000211000G1  "WBC"
     * ^designation.language = #ja
     * ^designation.value = "白血球数"
@@ -67706,19 +67303,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "自動機械法_多項目自動血球分析装置 XR シリーズ"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "10*4/uL"
-  * #  "RBC"
-    * ^designation.language = #ja
-    * ^designation.value = "赤血球数"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "10*4/uL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "X10*4/μL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "10*4/uL"
   * #B10010000211000G3  "RBC"
     * ^designation.language = #ja
     * ^designation.value = "赤血球数"
@@ -67848,19 +67432,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "自動機械法_シアンメトヘモグロビン法_ミノライズ3D"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "g/dL"
-  * #  "Hb"
-    * ^designation.language = #ja
-    * ^designation.value = "血色素量(ヘモグロビン値)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "g/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "g/dL"
   * #B1004000021000055  "Hb"
@@ -69151,19 +68722,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "自動機械法_セルダイン 免疫学的血小板測定試薬(CD61)"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "10*4/uL"
-  * #  "PLT"
-    * ^designation.language = #ja
-    * ^designation.value = "血小板数"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "10*4/uL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "X10*4/μL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "10*4/uL"
   * #B10030000212000G3  "PLT"
     * ^designation.language = #ja
     * ^designation.value = "血小板数"
@@ -70021,19 +69579,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "ドライヘマトロジー法_ドライヘマト APTT-2"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "s"
-  * #  "APTT"
-    * ^designation.language = #ja
-    * ^designation.value = "活性化部分トロンボプラスチン時間(APTT)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "s"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "s"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "s"
   * #B20030000211000F0  "APTT"
@@ -70932,19 +70477,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "凝固時間測定_INRatio テストストリップ PLUS"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "s"
-  * #  "PT-秒"
-    * ^designation.language = #ja
-    * ^designation.value = "プロトロンビン時間(PT-秒)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "s"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "s"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "s"
   * #B20060001210000F0  "PT-秒"
@@ -72131,19 +71663,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "凝固時間測定_STA試薬シリ-ズ PTネオプチマル"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "{ratio}"
-  * #  "PT比"
-    * ^designation.language = #ja
-    * ^designation.value = "プロトロンビン時間(PT比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{ratio}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "比"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "{ratio}"
   * #B2006000224000005  "PT比"
     * ^designation.language = #ja
     * ^designation.value = "プロトロンビン時間(PT比)"
@@ -72182,19 +71701,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "凝固時間測定_ロシュ PT テストストリップ"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "%"
-  * #  "PT-活性%"
-    * ^designation.language = #ja
-    * ^designation.value = "プロトロンビン時間(PT-活性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "%"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "%"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "%"
   * #B2006000221000012  "PT-活性%"
@@ -72807,19 +72313,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "凝固時間測定_ロシュ PT テストストリップ"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "{INR}"
-  * #  "PT-INR"
-    * ^designation.language = #ja
-    * ^designation.value = "プロトロンビン時間(PT-INR)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{INR}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "INR"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "{INR}"
   * #B2006000221000061  "PT-INR"
@@ -73575,19 +73068,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_AFIAS D-DIMeR  テストカートリッジ"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "ug/mL"
-  * #  "DD"
-    * ^designation.language = #ja
-    * ^designation.value = "Dダイマー(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "ug/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "μg/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "ug/mL"
   * #B20190000211000H6  "DD"
@@ -75021,19 +74501,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "粒子凝集反応_ラピディア-DdimerⅡ"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
-  * #  "DD-定性"
-    * ^designation.language = #ja
-    * ^designation.value = "Dダイマー(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
   * #B2019000024000002  "DD-定性"
     * ^designation.language = #ja
     * ^designation.value = "Dダイマー(定性)"
@@ -75477,19 +74944,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "化学発色法(機械読み取り)_エームス尿検査試験紙(機器判定)"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
-  * #  "U-TP"
-    * ^designation.language = #ja
-    * ^designation.value = "尿蛋白(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
   * #A1006000110000002  "U-TP"
     * ^designation.language = #ja
     * ^designation.value = "尿蛋白(定性)"
@@ -75658,19 +75112,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "尿"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_ビトロス スライドUPRO"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "U-TP-半定量"
-    * ^designation.language = #ja
-    * ^designation.value = "尿蛋白(半定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #A1021000010000085  "U-TP-半定量"
@@ -76584,19 +76025,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "化学発色法(機械読み取り)_エームス尿検査試験紙(機器判定)"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
-  * #  "U-Glu"
-    * ^designation.language = #ja
-    * ^designation.value = "尿糖(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
   * #A1008000110000002  "U-Glu"
     * ^designation.language = #ja
     * ^designation.value = "尿糖(定性)"
@@ -76960,19 +76388,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "尿"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学発色法(機械読み取り)_エームス尿検査試験紙(機器判定)"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "U-Glu-半定量"
-    * ^designation.language = #ja
-    * ^designation.value = "尿糖(半定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #A1008000210000085  "U-Glu-半定量"
@@ -77366,19 +76781,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "化学発色法(機械読み取り)_エームス尿検査試験紙"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
-  * #  "U-Bld"
-    * ^designation.language = #ja
-    * ^designation.value = "尿潜血(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
   * #A1009000110000002  "U-Bld"
     * ^designation.language = #ja
     * ^designation.value = "尿潜血(定性)"
@@ -77718,19 +77120,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "化学発色法(機械読み取り)_ZDテストワコー"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
-  * #  "U-Bld-半定量"
-    * ^designation.language = #ja
-    * ^designation.value = "尿潜血(半定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
   * #A1009000210000085  "U-Bld-半定量"
     * ^designation.language = #ja
     * ^designation.value = "尿潜血(半定量)"
@@ -77912,19 +77301,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "尿"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_ビトロス スライドUPRO"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "g/g{creat}"
-  * #  "U-P/C"
-    * ^designation.language = #ja
-    * ^designation.value = "尿中蛋白/クレアチニン比(P/C比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "g/g{creat}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "g/g{creat}"
   * #A10210000100000J6  "U-P/C"
@@ -78123,19 +77499,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "ラテックス凝集比濁法_アイギアプロ ACR(S)"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/g{creat}"
-  * #  "U-A/C"
-    * ^designation.language = #ja
-    * ^designation.value = "尿中アルブミン/クレアチニン比(A/C比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/g{creat}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/g{creat}"
   * #A1020000010000087  "U-A/C"
     * ^designation.language = #ja
     * ^designation.value = "尿中アルブミン/クレアチニン比(A/C比)"
@@ -78187,19 +77550,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_ラピッドチップ BNP-Ⅱ"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "pg/mL"
-  * #  "BNP"
-    * ^designation.language = #ja
-    * ^designation.value = "脳性Na利尿ペプチド(BNP)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "pg/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "pg/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "pg/mL"
   * #H80390000210000E3  "BNP"
@@ -78747,19 +78097,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_カーディアック試薬 NT-proBNP"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "pg/mL"
-  * #  "NT-proBNP"
-    * ^designation.language = #ja
-    * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "pg/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "pg/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "pg/mL"
   * #H80400000211000E3  "NT-proBNP"
@@ -80152,19 +79489,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "反射測光法(レフラクトメトリー)_i-ステップCRP"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = "mg/dL"
-  * #  "CRP"
-    * ^designation.language = #ja
-    * ^designation.value = "CRP(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/dL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = "mg/dL"
   * #E3019000021000085  "CRP"
@@ -84224,19 +83548,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "イムノクロマトグラフィ法_スポットケム i-Line CRP"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
-  * #  "CRP-class"
-    * ^designation.language = #ja
-    * ^designation.value = "CRP(スコア)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "スコア"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
   * #E3019000021000008  "CRP-class"
     * ^designation.language = #ja
     * ^designation.value = "CRP(スコア)"
@@ -84290,19 +83601,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "赤血球凝集反応[定性]"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
-  * #  "血液型-ABO"
-    * ^designation.language = #ja
-    * ^designation.value = "血液型(ABO)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "型"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
   * #K1001000021100004  "血液型-ABO"
     * ^designation.language = #ja
     * ^designation.value = "血液型(ABO)"
@@ -84328,19 +83626,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11検体検査項�
     * ^property[=].valueString = "全血(静脈血、添加物入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "赤血球凝集反応[定性]"
-    * ^property[+].code = #unitcode
-    * ^property[=].valueString = ""
-  * #  "血液型-Rh"
-    * ^designation.language = #ja
-    * ^designation.value = "血液型(Rh)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "型"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
     * ^property[+].code = #unitcode
     * ^property[=].valueString = ""
   * #K1006000021100004  "血液型-Rh"

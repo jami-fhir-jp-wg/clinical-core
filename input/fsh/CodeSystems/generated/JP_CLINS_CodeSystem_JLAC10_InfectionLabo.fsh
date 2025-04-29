@@ -2075,17 +2075,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
     * ^property[+].code = #method
     * ^property[=].valueString = "その他の測定法"
 * #HCV-NRESULT
-  * #  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
 * #HCV-AG-RESULT
   * #5F360150002302311  "HCV抗原検査(定性)"
     * ^designation.language = #ja

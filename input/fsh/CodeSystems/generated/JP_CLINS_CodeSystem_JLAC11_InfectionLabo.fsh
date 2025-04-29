@@ -267,17 +267,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_RPRテスト｢コクサイ｣"
-  * #  "梅毒STS(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V1055000024000002  "梅毒STS(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定性)"
@@ -653,17 +642,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法_ラピディアオート RPR"
-  * #  "梅毒STS(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒STS(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V10550002240000F2  "梅毒STS(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒STS(定量)"
@@ -808,17 +786,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_TPAbイムノクロマト｢トキワ｣"
-  * #  "梅毒TP抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V1061000021000002  "梅毒TP抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定性)"
@@ -2261,17 +2228,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "ラテックス凝集比濁法_アキュラスオート TP抗体"
-  * #  "梅毒TP抗体(定量、陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{COI}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "COI"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V1061000224000034  "梅毒TP抗体(定量、陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -2460,17 +2416,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_セロディア-TP･PA"
-  * #  "梅毒TP抗体(半定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(半定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V1061000224000006  "梅毒TP抗体(半定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(半定量)"
@@ -2681,17 +2626,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)_ランリームTP"
-  * #  "梅毒TP抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "梅毒TP抗体(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V10610002240000F8  "梅毒TP抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "梅毒TP抗体(定量)"
@@ -2836,17 +2770,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "全血(静脈血)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_ダイナスクリーン･HBsAg Ⅱ"
-  * #  "HBs抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2010000021000002  "HBs抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定性)"
@@ -4234,17 +4157,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_クイックビーズ HBs抗原"
-  * #  "HBs抗原(希釈倍率)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(希釈倍率)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2010000224000006  "HBs抗原(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(希釈倍率)"
@@ -4367,17 +4279,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_エンザイグノスト HBsAg 6.0"
-  * #  "HBs抗原(吸光度)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(吸光度)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{absorbance}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "吸光度"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2010000224000010  "HBs抗原(吸光度)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(吸光度)"
@@ -4918,17 +4819,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)_ランリームHBsAg"
-  * #  "HBs抗原(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "U/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "U/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V20100001240000F8  "HBs抗原(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(定量)"
@@ -5524,17 +5414,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)_エクルーシス試薬 HBsAgⅡ"
-  * #  "HBs抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗原(陽性コントロール比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{COI}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "COI"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2010000224000034  "HBs抗原(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗原(陽性コントロール比)"
@@ -6361,17 +6240,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_クイックチェイサーHBSAB"
-  * #  "HBs抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2011000024000002  "HBs抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定性)"
@@ -6725,17 +6593,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "受身赤血球凝集反応(PHA法)_マイセルⅡANTI-HBS"
-  * #  "HBs抗体(希釈倍率)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(希釈倍率)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2011000224000006  "HBs抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(希釈倍率)"
@@ -7243,17 +7100,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(EDTA入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)_エクルーシス試薬 ANTI-HBS Ⅱ"
-  * #  "HBs抗体(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HBs抗体(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "mU/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mU/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V20110000240000B9  "HBs抗体(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HBs抗体(定量)"
@@ -7629,17 +7475,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "TMA法_アプティマ HCV"
-  * #  "HCV核酸増幅検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{Log_IU}/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "LogU/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2184000024000080  "HCV核酸増幅検査(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HCV核酸増幅検査(定量)"
@@ -7883,17 +7718,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "リアルタイムRT-PCR法_ALINITY M システム HCV"
-  * #  "HCV核酸増幅検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV核酸増幅検査(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2184000124000002  "HCV核酸増幅検査(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV核酸増幅検査(定性)"
@@ -8005,17 +7829,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)_HCV Ag･アボット"
-  * #  "HCV抗原検査(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗原検査(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2171000125000002  "HCV抗原検査(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定性)"
@@ -8072,17 +7885,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)_HCV Ag･アボット"
-  * #  "HCV抗原検査(定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗原検査(定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "fmol/L"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "fmol/L"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2171000025000048  "HCV抗原検査(定量)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗原検査(定量)"
@@ -8139,17 +7941,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_オーソHCV Ab PAテストⅡ"
-  * #  "HCV抗体(希釈倍率)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(希釈倍率)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2168000224000006  "HCV抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(希釈倍率)"
@@ -8250,17 +8041,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_Eテスト｢TOSOH｣Ⅱ(HCVAb)"
-  * #  "HCV抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2168000124000002  "HCV抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(定性)"
@@ -9538,17 +9318,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)_ルミパルスプレスト オーソHCV"
-  * #  "HCV抗体(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HCV抗体(陽性コントロール比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{COI}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "COI"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2168000224000034  "HCV抗体(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -10650,17 +10419,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "TMA法_アプティマ HIV-1"
-  * #  "HIV-1(ウイルスRNA定量)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1(ウイルスRNA定量)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{copies}/mL"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "copies/mL"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2256000024000041  "HIV-1(ウイルスRNA定量)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1(ウイルスRNA定量)"
@@ -10783,17 +10541,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(EDTA入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "リアルタイムRT-PCR法_コバス TaqMan HIV-1 ｢オート｣ v2．0"
-  * #  "HIV-1(ウイルスRNA定量判定)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1(ウイルスRNA定量判定)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2256000124000002  "HIV-1(ウイルスRNA定量判定)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1(ウイルスRNA定量判定)"
@@ -10850,17 +10597,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_ジェネディアHIV-1/2ミックスPA"
-  * #  "HIV-1+2抗体(希釈倍率)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(希釈倍率)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2259000224000006  "HIV-1+2抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(希釈倍率)"
@@ -10950,17 +10686,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "全血(静脈血、EDTA入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "イムノクロマトグラフィ法_ダイナスクリーン･HIV-1/2"
-  * #  "HIV-1+2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2259000021200002  "HIV-1+2抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(定性)"
@@ -11468,17 +11193,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "全血(静脈血、ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)_ランリームHIV-1/2"
-  * #  "HIV-1+2抗体(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{COI}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "COI"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2259000221200034  "HIV-1+2抗体(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
@@ -11843,17 +11557,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_エンザイグノスト HIV インテグラルⅣ"
-  * #  "HIV-1+2抗体・p24抗原(吸光度)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{absorbance}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "吸光度"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2263000224000010  "HIV-1+2抗体・p24抗原(吸光度)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
@@ -11976,17 +11679,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)_ルミパルスⅠ HIV-1P24"
-  * #  "HIV-1+2抗体・p24抗原(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2252000124000002  "HIV-1+2抗体・p24抗原(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
@@ -12979,17 +12671,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(クエン酸入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)_ルミパルスⅠ HIV-1P24"
-  * #  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{COI}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "COI"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2252000224000034  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
@@ -13629,17 +13310,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_セロディア･HIV-1/2"
-  * #  "HIV-1抗体(希釈倍率)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1抗体(希釈倍率)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2253000224000006  "HIV-1抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1抗体(希釈倍率)"
@@ -13729,17 +13399,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_セロディア･HIV-1/2"
-  * #  "HIV-1抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-1抗体(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2253000124000002  "HIV-1抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-1抗体(定性)"
@@ -13829,17 +13488,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_セロディア･HIV-1/2"
-  * #  "HIV-2抗体(希釈倍率)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-2抗体(希釈倍率)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "{dilution}"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "倍"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2257000224000006  "HIV-2抗体(希釈倍率)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-2抗体(希釈倍率)"
@@ -13929,17 +13577,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC11感染症検査�
     * ^property[=].valueString = "血漿(ヘパリン入り)"
     * ^property[+].code = #method
     * ^property[=].valueString = "粒子凝集反応_セロディア･HIV-1/2"
-  * #  "HIV-2抗体(定性)"
-    * ^designation.language = #ja
-    * ^designation.value = "HIV-2抗体(定性)"
-    * ^property[+].code = #unitCode
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
-    * ^property[+].code = #specimen
-    * ^property[=].valueString = "-"
-    * ^property[+].code = #method
-    * ^property[=].valueString = "-"
   * #V2257000124000002  "HIV-2抗体(定性)"
     * ^designation.language = #ja
     * ^designation.value = "HIV-2抗体(定性)"
