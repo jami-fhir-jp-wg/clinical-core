@@ -300,7 +300,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(tpposcoi,梅毒TP抗体(定量、陽性コントロール比\),TPPOSCOI) // 2-2
 * insert infectionLaboItemProfile(tphquant,梅毒TP抗体(半定量\),TPHQUANT) // 2-3
 * insert infectionLaboItemProfile(tpquant,梅毒TP抗体(定量\),TPQUANT) // 2-4
-* insert infectionLaboItemProfile(hbsagcoi,HBs抗原(コントロール比\),HBsAGCOI) // 3-1
+//* insert infectionLaboItemProfile(hbsagcoi,HBs抗原(コントロール比\),HBsAGCOI) // 3-1
 * insert infectionLaboItemProfile(hbsagresult,HBs抗原(定性\),HBsAGRESULT) // 3-2
 * insert infectionLaboItemProfile(hbsagdil,HBs抗原(希釈倍率\),HBsAGDIL)   // 3-3
 * insert infectionLaboItemProfile(hbsagod,HBs抗原(吸光度\),HbsAGOD) // 3-4
@@ -314,7 +314,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hcvnresult,HCV核酸増幅検査(定性\),HCVNRESULT) // * 4-1
 * insert infectionLaboItemProfile(hcvagresult,HCV抗原検査(定性\),HCVAGRESULT) // *4-3
 * insert infectionLaboItemProfile(hcvagquant,HCV抗原検査(定量\),HCVAGQUANT) // 4-4
-* insert infectionLaboItemProfile(hcvabcoi,HCV抗体(コントロール比\),HCVABCOI) // 4-5
+//* insert infectionLaboItemProfile(hcvabcoi,HCV抗体(コントロール比\),HCVABCOI) // 4-5
 * insert infectionLaboItemProfile(hcvabdil,HCV抗体(希釈倍率\),HCVABDIL) // 4-6
 * insert infectionLaboItemProfile(hcvabresult,HCV抗体(定性\),HCVABRESULT) // 4-7
 * insert infectionLaboItemProfile(hcvabposcoi,HCV抗体(陽性コントロール比\),HCVABPOSCOI) //4-8
@@ -322,12 +322,12 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hiv1quant,HIV-1(ウイルスRNA定量\),HIV1QUANT) // 5-1
 * insert infectionLaboItemProfile(hiv1result,HIV-1(ウイルスRNA定量判定\),HIV1RESULT)  // 5-2
 * insert infectionLaboItemProfile(hiv1p2abdil,HIV-1+2抗体(希釈倍率\),HIV1P2ABDIL) // 5-3
-* insert infectionLaboItemProfile(hiv1p2abcoi,HIV-1+2抗体(コントロール比\),HIV1P2ABCOI) // 5-4
+//* insert infectionLaboItemProfile(hiv1p2abcoi,HIV-1+2抗体(コントロール比\),HIV1P2ABCOI) // 5-4
 * insert infectionLaboItemProfile(hiv1p2abresult,HIV-1+2抗体(定性\),HIV1P2ABRESULT) // 5-5
 * insert infectionLaboItemProfile(hiv1p2abposcoi,HIV-1+2抗体(陽性コントロール比\),HIV1P2ABPOSCOI) // 5-6
 
 * insert infectionLaboItemProfile(hiv1p2abod,HIV-1+2抗体・p24抗原(吸光度\),HIV1P2ABOD) // 5-7
-* insert infectionLaboItemProfile(hiv1p2abp24coi,HIV-1+2抗体・p24抗原(コントロール比\),HIV1P2ABP24COI)  // 5-8
+//* insert infectionLaboItemProfile(hiv1p2abp24coi,HIV-1+2抗体・p24抗原(コントロール比\),HIV1P2ABP24COI)  // 5-8
 * insert infectionLaboItemProfile(hiv1p2abp24result,HIV-1+2抗体・p24抗原(定性\),HIV1P2ABP24RESULT)  // 5-9
 * insert infectionLaboItemProfile(hiv1p2abp24quant,HIV-1+2抗体・p24抗原(定量\),HIV1P2ABP24QUANT)  // 5-10
 * insert infectionLaboItemProfile(hiv1p2abp24poscoi,HIV-1+2抗体・p24抗原(陽性コントロール比\),HIV1P2ABP24POSCOI)  // 5-11
