@@ -4,13 +4,13 @@ Title: "CLINS 電子カルテ共有サービス用:JLAC10検体検査項目セ�
 Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項目セット"
 * ^url = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2025-03-21T00:00:00.000+09:00"
-* ^version = "2025.02"
+* ^meta.lastUpdated = "2025-05-01T00:00:00.000+09:00"
+* ^version = "2025.02rev"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
-* ^date = "2025-03-21"
+* ^date = "2025-05-01"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^hierarchyMeaning = #is-a
@@ -533,7 +533,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B035000002229101  "AST"
     * ^designation.language = #ja
     * ^designation.value = "AST(GOT)"
@@ -621,7 +621,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B035000002329101  "AST"
     * ^designation.language = #ja
     * ^designation.value = "AST(GOT)"
@@ -776,7 +776,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B045000002229101  "ALT"
     * ^designation.language = #ja
     * ^designation.value = "ALT(GPT)"
@@ -864,7 +864,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B045000002329101  "ALT"
     * ^designation.language = #ja
     * ^designation.value = "ALT(GPT)"
@@ -942,7 +942,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B050000002229101  "LD"
     * ^designation.language = #ja
     * ^designation.value = "LD(LDH)"
@@ -1019,7 +1019,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B050000002329101  "LD"
     * ^designation.language = #ja
     * ^designation.value = "LD(LDH)"
@@ -1130,7 +1130,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B070000002229101  "ALP"
     * ^designation.language = #ja
     * ^designation.value = "アルカリホスファターゼ(ALP)"
@@ -1207,7 +1207,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "反射測光法(レフラクトメトリー･IFCC)"
+    * ^property[=].valueString = "反射測光法(レフラクトメトリー・IFCC)"
   * #3B070000002329101  "ALP"
     * ^designation.language = #ja
     * ^designation.value = "アルカリホスファターゼ(ALP)"
@@ -6817,7 +6817,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #2B140000001919001  "DD"
     * ^designation.language = #ja
     * ^designation.value = "Dダイマー(定量)"
@@ -6894,7 +6894,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #2B140000002206201  "DD"
     * ^designation.language = #ja
     * ^designation.value = "Dダイマー(定量)"
@@ -7012,7 +7012,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
@@ -7023,7 +7023,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
@@ -7034,7 +7034,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
@@ -7045,7 +7045,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
@@ -7056,7 +7056,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
@@ -7067,7 +7067,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
@@ -7079,7 +7079,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7090,7 +7090,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7101,7 +7101,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7112,7 +7112,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7257,7 +7257,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7268,7 +7268,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7279,7 +7279,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7290,7 +7290,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7347,7 +7347,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7358,7 +7358,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7369,7 +7369,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7380,7 +7380,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "-"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "定性･判定"
+    * ^property[=].valueString = "定性・判定"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7437,7 +7437,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7448,7 +7448,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7459,7 +7459,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7470,7 +7470,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7481,7 +7481,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7492,7 +7492,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7503,7 +7503,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7514,7 +7514,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "g/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "g/g･Cr"
+    * ^property[=].valueString = "g/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7526,7 +7526,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7537,7 +7537,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7548,7 +7548,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7559,7 +7559,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "尿(含むその他)"
     * ^property[+].code = #method
@@ -7570,7 +7570,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "蓄尿"
     * ^property[+].code = #method
@@ -7581,7 +7581,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "蓄尿"
     * ^property[+].code = #method
@@ -7592,7 +7592,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #unitCode
     * ^property[=].valueString = "mg/g{creat}"
     * ^property[+].code = #unitDisplay
-    * ^property[=].valueString = "mg/g･Cr"
+    * ^property[=].valueString = "mg/g・Cr"
     * ^property[+].code = #specimen
     * ^property[=].valueString = "蓄尿"
     * ^property[+].code = #method
@@ -7641,7 +7641,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #4Z271000001919001  "BNP"
     * ^designation.language = #ja
     * ^designation.value = "脳性Na利尿ペプチド(BNP)"
@@ -7696,7 +7696,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
   * #4Z271000002205201  "BNP"
     * ^designation.language = #ja
     * ^designation.value = "脳性Na利尿ペプチド(BNP)"
@@ -7707,7 +7707,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #4Z271000002206201  "BNP"
     * ^designation.language = #ja
     * ^designation.value = "脳性Na利尿ペプチド(BNP)"
@@ -7785,7 +7785,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "全血(添加物入り)"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #4Z272000001919001  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
@@ -7906,7 +7906,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
   * #4Z272000002205201  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
@@ -7917,7 +7917,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #4Z272000002205301  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
@@ -7928,7 +7928,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血漿"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
   * #4Z272000002219001  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
@@ -7994,7 +7994,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
   * #4Z272000002305201  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
@@ -8005,7 +8005,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
   * #4Z272000002305301  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"
@@ -8016,7 +8016,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
     * ^property[+].code = #specimen
     * ^property[=].valueString = "血清"
     * ^property[+].code = #method
-    * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
   * #4Z272000002399801  "NT-proBNP"
     * ^designation.language = #ja
     * ^designation.value = "ヒト脳性Na利尿ペプチド前駆体N端フラグメント(NT-proBNP)"

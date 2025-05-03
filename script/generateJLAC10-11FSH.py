@@ -4,7 +4,7 @@ import csv
 
 # JLAC10検査と感染、JLAC11検査と感染の4つのFSHファイルを作成する
 # python3  本コマンド　　JLAC10-11_CSVファイル　FSHslice.csv codeSystem_output_path文字列（/で終わること）(= input/fsh/CodeSystems/ ) version文字列（yyyy.mm)  公開日(yyyy-mm-dd)
-# 例）python3  script/generateJLAC10-11FSH.py reference/JLAC10-11_CodeTable_20241030.csv FSHslice.csv reference/FSHslice.csv input/fsh/CodeSystems/generated/ 2025.02　　2025-03-21
+# 例）python3  script/generateJLAC10-11FSH.py reference/JLAC10-11_CodeTable_20241030.csv reference/FSHslice.csv input/fsh/CodeSystems/generated/ 2025.02　　2025-03-21
 # 出力ファイル名は固定
 # 修正履歴
 # 2025.4.28

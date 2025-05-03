@@ -4,13 +4,13 @@ Title: "CLINS 電子カルテ共有サービス用:JLAC10感染症検査項目�
 Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査項目セット"
 * ^url = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2025-03-21T00:00:00.000+09:00"
-* ^version = "2025.02"
+* ^meta.lastUpdated = "2025-05-01T00:00:00.000+09:00"
+* ^version = "2025.02rev"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
-* ^date = "2025-03-21"
+* ^date = "2025-05-01"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^hierarchyMeaning = #is-a
@@ -43,7 +43,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -54,7 +54,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -65,7 +65,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -76,7 +76,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -87,7 +87,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -98,7 +98,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -109,7 +109,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -120,7 +120,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -131,7 +131,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -210,7 +210,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -221,7 +221,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -232,7 +232,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -243,7 +243,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -254,7 +254,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "毛細管血"
       * ^property[+].code = #method
@@ -265,7 +265,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "毛細管血"
       * ^property[+].code = #method
@@ -276,7 +276,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "毛細管血"
       * ^property[+].code = #method
@@ -287,40 +287,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5E075000002205211  "梅毒TP抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5E075000002205311  "梅毒TP抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5E075000002206211  "梅毒TP抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -331,7 +331,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -342,7 +342,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -353,7 +353,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -364,7 +364,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -375,7 +375,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -386,7 +386,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -397,7 +397,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -408,40 +408,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5E075000002305211  "梅毒TP抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5E075000002305311  "梅毒TP抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5E075000002306211  "梅毒TP抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -452,7 +452,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -463,7 +463,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -474,7 +474,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -485,7 +485,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -496,7 +496,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -507,7 +507,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -518,7 +518,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -534,7 +534,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5E075000002205233  "梅毒TP抗体(定量、陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -545,7 +545,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5E075000002205333  "梅毒TP抗体(定量、陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -556,7 +556,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5E075000002206233  "梅毒TP抗体(定量、陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -611,7 +611,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5E075000002305233  "梅毒TP抗体(定量、陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -622,7 +622,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5E075000002305333  "梅毒TP抗体(定量、陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -633,7 +633,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5E075000002306233  "梅毒TP抗体(定量、陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
@@ -852,7 +852,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -863,7 +863,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -874,7 +874,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血"
       * ^property[+].code = #method
@@ -885,7 +885,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -896,40 +896,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016141002205211  "HBs抗原(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016141002205311  "HBs抗原(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016141002206311  "HBs抗原(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -940,7 +940,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -951,7 +951,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -962,7 +962,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -973,7 +973,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -984,7 +984,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -995,7 +995,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1006,40 +1006,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016141002305211  "HBs抗原(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016141002305311  "HBs抗原(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016141002306311  "HBs抗原(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1050,7 +1050,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1061,7 +1061,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1072,7 +1072,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1083,7 +1083,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1094,7 +1094,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1277,7 +1277,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016141002205201  "HBs抗原(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定量)"
@@ -1288,7 +1288,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016141002205301  "HBs抗原(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定量)"
@@ -1299,7 +1299,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016141002206301  "HBs抗原(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定量)"
@@ -1354,7 +1354,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016141002305201  "HBs抗原(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定量)"
@@ -1365,7 +1365,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016141002305301  "HBs抗原(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定量)"
@@ -1376,7 +1376,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016141002306301  "HBs抗原(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(定量)"
@@ -1432,7 +1432,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016141002205333  "HBs抗原(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(陽性コントロール比)"
@@ -1443,7 +1443,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016141002299833  "HBs抗原(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(陽性コントロール比)"
@@ -1487,7 +1487,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016141002305333  "HBs抗原(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(陽性コントロール比)"
@@ -1498,7 +1498,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016141002399833  "HBs抗原(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗原(陽性コントロール比)"
@@ -1594,7 +1594,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -1605,40 +1605,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016143002205211  "HBs抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016143002205311  "HBs抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016143002210311  "HBs抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -1649,7 +1649,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -1660,7 +1660,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -1671,7 +1671,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -1682,7 +1682,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1693,40 +1693,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016143002305211  "HBs抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016143002305311  "HBs抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016143002306311  "HBs抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1737,7 +1737,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1748,7 +1748,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1759,7 +1759,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1770,7 +1770,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -1864,7 +1864,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016143002205201  "HBs抗体(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定量)"
@@ -1875,7 +1875,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016143002205301  "HBs抗体(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定量)"
@@ -1886,7 +1886,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016143002299801  "HBs抗体(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定量)"
@@ -1930,7 +1930,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F016143002305201  "HBs抗体(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定量)"
@@ -1941,7 +1941,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F016143002305301  "HBs抗体(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定量)"
@@ -1952,7 +1952,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F016143002306301  "HBs抗体(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HBs抗体(定量)"
@@ -2083,7 +2083,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2094,18 +2094,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360150002399811  "HCV抗原検査(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗原検査(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2116,7 +2116,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2127,18 +2127,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360150102399852  "HCV抗原検査(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗原検査(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2149,7 +2149,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2176,7 +2176,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360150002399801  "HCV抗原検査(定量)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗原検査(定量)"
@@ -2273,7 +2273,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2284,7 +2284,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2295,7 +2295,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2306,7 +2306,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2317,7 +2317,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2328,7 +2328,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2339,18 +2339,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148502299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2361,7 +2361,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2372,18 +2372,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148502399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2394,7 +2394,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2405,7 +2405,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2416,18 +2416,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148702206211  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2438,7 +2438,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2449,7 +2449,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2460,7 +2460,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2471,18 +2471,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148702306211  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2493,7 +2493,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2504,7 +2504,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2515,7 +2515,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2526,29 +2526,29 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360148802205311  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360148802299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2559,7 +2559,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2570,7 +2570,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2581,40 +2581,40 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360148802305211  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148802305311  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360148802399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2625,7 +2625,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2636,18 +2636,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151002219011  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2658,7 +2658,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2669,7 +2669,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2680,18 +2680,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151002319011  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2702,7 +2702,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2713,7 +2713,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2724,18 +2724,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360151102299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2746,7 +2746,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2757,18 +2757,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360151102399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2779,7 +2779,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2790,7 +2790,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2801,7 +2801,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2812,7 +2812,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2823,7 +2823,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2834,7 +2834,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2845,7 +2845,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2856,7 +2856,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2867,18 +2867,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151302299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2889,7 +2889,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2900,7 +2900,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2911,18 +2911,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151302399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2933,7 +2933,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2944,7 +2944,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2955,7 +2955,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2966,7 +2966,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -2977,7 +2977,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2988,7 +2988,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -2999,7 +2999,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3010,18 +3010,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360151502299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3032,7 +3032,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3043,18 +3043,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360151502399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3065,7 +3065,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3076,7 +3076,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -3087,7 +3087,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -3098,7 +3098,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -3109,7 +3109,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3120,7 +3120,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3131,7 +3131,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3142,7 +3142,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3153,7 +3153,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3164,7 +3164,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3175,18 +3175,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151702299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3197,7 +3197,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3208,18 +3208,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151702399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3230,7 +3230,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3241,18 +3241,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151802299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3263,7 +3263,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3274,18 +3274,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151802399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3296,7 +3296,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3307,18 +3307,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151902299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3329,7 +3329,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3340,18 +3340,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151902399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3362,7 +3362,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3373,18 +3373,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360152002299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3395,7 +3395,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3406,18 +3406,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360152002399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3428,7 +3428,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3439,18 +3439,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360152102299811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3461,7 +3461,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -3472,18 +3472,18 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360152102399811  "HCV抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3494,7 +3494,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -3510,7 +3510,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148502299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3543,7 +3543,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148502399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3587,7 +3587,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148702206233  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3642,7 +3642,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148702306233  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3686,7 +3686,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360148802205333  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3697,7 +3697,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360148802299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3730,7 +3730,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360148802305233  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3741,7 +3741,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360148802305333  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3752,7 +3752,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360148802399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3785,7 +3785,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151002299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3818,7 +3818,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151002399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3851,7 +3851,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360151102299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3884,7 +3884,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F360151102399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -3994,7 +3994,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151302299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4038,7 +4038,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151302399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4170,7 +4170,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151702299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4203,7 +4203,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151702399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4236,7 +4236,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151802299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4269,7 +4269,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151802399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4302,7 +4302,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151902299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4335,7 +4335,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360151902399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4368,7 +4368,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360152002299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4401,7 +4401,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F360152002399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4434,7 +4434,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360152102299833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4467,7 +4467,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(ECLIA)"
     * #5F360152102399833  "HCV抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HCV抗体(陽性コントロール比)"
@@ -4542,7 +4542,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4553,7 +4553,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4564,7 +4564,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4643,7 +4643,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -4654,7 +4654,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -4665,7 +4665,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -4676,7 +4676,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "全血(添加物入り)"
       * ^property[+].code = #method
@@ -4687,29 +4687,29 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F560143002205211  "HIV-1+2抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F560143002206311  "HIV-1+2抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4720,7 +4720,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4731,7 +4731,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4742,7 +4742,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4753,7 +4753,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -4764,29 +4764,29 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLIA)"
     * #5F560143002305211  "HIV-1+2抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F560143002306311  "HIV-1+2抗体(定性)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(定性)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -4797,7 +4797,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -4808,7 +4808,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -4819,7 +4819,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -4830,7 +4830,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -4879,7 +4879,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F560143002206333  "HIV-1+2抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
@@ -4912,7 +4912,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+      * ^property[=].valueString = "化学・生物発光イムノアッセイ(CLEIA)"
     * #5F560143002306333  "HIV-1+2抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
@@ -4927,703 +4927,6 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
     * #5F560143002399933  "HIV-1+2抗体(陽性コントロール比)"
       * ^designation.language = #ja
       * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-  * #HIV-1P2-AB-OD
-    * #5F560155002202304  "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{absorbance}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "吸光度"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
-    * #5F560155002299804  "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{absorbance}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "吸光度"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002299904  "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{absorbance}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "吸光度"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002302304  "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{absorbance}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "吸光度"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
-    * #5F560155002399804  "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{absorbance}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "吸光度"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002399904  "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(吸光度)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{absorbance}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "吸光度"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-  * #HIV-1P2-AB-P24-RESULT
-    * #5F512141002205211  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F512141002299811  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F512141002299911  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F512141002305211  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F512141002399811  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F512141002399911  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155001919052  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "全血(添加物入り)"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "イムノクロマトグラフィ法"
-    * #5F560155001919053  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "全血(添加物入り)"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "イムノクロマトグラフィ法"
-    * #5F560155001999852  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "全血(添加物入り)"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155001999853  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "全血(添加物入り)"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155001999952  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "全血(添加物入り)"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155001999953  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "全血(添加物入り)"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002202311  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
-    * #5F560155002205111  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-    * #5F560155002205211  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F560155002205311  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002219052  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "イムノクロマトグラフィ法"
-    * #5F560155002299811  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002299852  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002299911  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002299952  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002302311  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
-    * #5F560155002305111  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-    * #5F560155002305211  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F560155002305311  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002305351  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002319052  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "イムノクロマトグラフィ法"
-    * #5F560155002319053  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "イムノクロマトグラフィ法"
-    * #5F560155002399811  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002399851  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002399852  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002399853  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002399911  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002399951  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002399952  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002399953  "HIV-1+2抗体・p24抗原(定性)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定性)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "-"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-  * #HIV-1P2-AB-P24-QUANT
-    * #5F560155002305352  "HIV-1+2抗体・p24抗原(定量)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定量)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002305353  "HIV-1+2抗体・p24抗原(定量)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定量)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002399959  "HIV-1+2抗体・p24抗原(定量)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(定量)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-  * #HIV-1P2-AB-P24-POS-COI
-    * #5F512141002205233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F512141002299833  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F512141002299933  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F512141002305233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F512141002399833  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F512141002399933  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002202333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
-    * #5F560155002205133  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-    * #5F560155002205233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F560155002205333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002299833  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002299933  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血漿"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "その他の測定法"
-    * #5F560155002302333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
-    * #5F560155002305133  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
-    * #5F560155002305233  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
-    * #5F560155002305333  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
-    * #5F560155002399833  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^property[+].code = #unitCode
-      * ^property[=].valueString = "{COI}"
-      * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "COI"
-      * ^property[+].code = #specimen
-      * ^property[=].valueString = "血清"
-      * ^property[+].code = #method
-      * ^property[=].valueString = "測定法を問わず"
-    * #5F560155002399933  "HIV-1+2抗体・p24抗原(陽性コントロール比)"
-      * ^designation.language = #ja
-      * ^designation.value = "HIV-1+2抗体・p24抗原(陽性コントロール比)"
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "{COI}"
       * ^property[+].code = #unitDisplay
@@ -5706,7 +5009,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -5717,7 +5020,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -5728,7 +5031,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -5739,7 +5042,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -5750,7 +5053,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -5761,7 +5064,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -5840,7 +5143,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -5851,7 +5154,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -5862,7 +5165,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血漿"
       * ^property[+].code = #method
@@ -5873,7 +5176,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -5884,7 +5187,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
@@ -5895,7 +5198,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査�
       * ^property[+].code = #unitCode
       * ^property[=].valueString = "-"
       * ^property[+].code = #unitDisplay
-      * ^property[=].valueString = "定性･判定"
+      * ^property[=].valueString = "定性・判定"
       * ^property[+].code = #specimen
       * ^property[=].valueString = "血清"
       * ^property[+].code = #method
