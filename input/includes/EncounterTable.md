@@ -306,9 +306,9 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>period</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>入院期間を表す必要がある場合には必須。外来では必要な場合を除き省略可。</td>
+  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>入院期間、外来受診日を記述する。</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl153 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>
@@ -320,7 +320,7 @@
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
-  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>上記イベントの開始日時。入院の場合には入院日、外来受診の場合には診療情報提供書の記載基準となった外来受診日に相当するが、period要素自体は省略できる。</td>
+  <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>上記イベントの開始日時。入院の場合には入院日、外来受診の場合には外来受診日。</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
   <td class=xl153 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;2020-08-21&quot;</td>
  </tr>
