@@ -262,7 +262,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 
 * dispenseRequest.expectedSupplyDuration.value ^definition = "調剤日数。\r\n例）１日３錠で７日分の場合、この要素には 7が設定される。"
 * dispenseRequest.expectedSupplyDuration.value 1..1 MS
-* dispenseRequest.expectedSupplyDurationcomparator 0..0
+* dispenseRequest.expectedSupplyDuration.comparator 0..0
 * dispenseRequest.expectedSupplyDuration.unit ^definition = "調剤日数の単位。\"日\""
 * dispenseRequest.expectedSupplyDuration.unit 1..1 MS
 * dispenseRequest.expectedSupplyDuration.system ^definition = "UCUM単位コードを識別するURI。 	\"http://unitsofmeasure.org\""
