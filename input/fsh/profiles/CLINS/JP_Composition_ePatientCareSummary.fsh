@@ -2,6 +2,10 @@ Profile: JP_Composition_ePCS
 Parent: Composition
 Id: JP-Composition-ePCS
 Description:  "患者療養計画サマリーのリソース構成情報と文書日付に関するCompositionの派生プロファイル"
+// 履歴from 2025.4.1
+// * meta 1..1 MS  行新規追加
+
+
 // * obeys checkValidCategoryTitle
 // * obeys checkValidCategory
 // * obeys checkValidSections
@@ -15,7 +19,7 @@ Description:  "患者療養計画サマリーのリソース構成情報と文�
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
-
+* meta 1..1 MS
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_ePCS|x.y.z")
@@ -104,7 +108,7 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * author only  Reference(JP_Practitioner_eCS or JP_Organization_eCS)
  
 * title 1..1 MS
-* title = "患者サマリー（療養計画書）" (exactly)
+* title = "患者サマリー（療養計画書）" (exactly)  // 長音はU+E383BC　SJIS:815B
 
 * custodian ..0 MS
 

@@ -40,8 +40,17 @@ Description: "診療情報・サマリー汎用 JP_MedicationRequest_eCS のdosa
 * extension[periodOfUse].valuePeriod ^definition = "投与開始日を明示するために使用する拡張「PeriodOfUse」。投与開始日を明示しない処方の場合には、処方箋発行日を投与開始日として設定する。２文書５情報の作成においては、本要素を必須とする。\r\n投与期間の終了日は記述しない。これは例えば隔日投与の場合に、終了日が服用しない日となり紛らわしいためである。"
 * extension[periodOfUse].valuePeriod.start 1..1 MS
 
+* extension[usageDuration] ^definition = "投与期間とは別に実投与日数を表現したい場合にこの拡張を使用し、Duration 型で実投与日数を記載する。隔日投与などで実投与日数と処方期間が異なる場合に用いられる。"
 * extension[usageDuration] 0..1 MS
-* extension[usageDuration] ^definition = "隔日投与などで実投与日数と処方期間が異なる場合に用いられる。\r\n実際に服用する日数を記述する。"
+* extension[usageDuration].valueDuration 1..1 MS
+* extension[usageDuration].valueDuration.value ^definition = "実投与日数"
+* extension[usageDuration].valueDuration.value 1..1 MS
+* extension[usageDuration].valueDuration.unit ^definition = "日数の単位。\"日\""
+* extension[usageDuration].valueDuration.unit 1..1 MS
+* extension[usageDuration].valueDuration.system ^definition = "UCUM単位コードを識別するURI。 	\"http://unitsofmeasure.org\""
+* extension[usageDuration].valueDuration.system 1..1 MS
+* extension[usageDuration].valueDuration.code ^definition = "\"日\"を表すUCUM単位コード\"d\"を設定する。"
+* extension[usageDuration].valueDuration.code 1..1 MS
 
 * text 1..1 MS
 * text ^definition = "JP Coreでは必須。フリーテキストの用法指示。"
@@ -73,6 +82,13 @@ Description: "診療情報・サマリー汎用 JP_MedicationRequest_eCS のdosa
 * timing.repeat.boundsDuration MS
 * timing.repeat.boundsDuration ^short = "投薬期間（投与開始日から投与終了日まで）の全日数。"
 * timing.repeat.boundsDuration ^definition = "投薬期間（投与開始日から投与終了日まで）の全日数。実投与（投与）日数ではないことに注意する。すなわち、実際に投与しない日も１日と数える。詳細は処方情報HL７FHIR記述仕様も参照。なお、この実投与（投与）日数を別に記述したい場合には、実投与日数を明示したい場合に使用する拡張を使用して記述すること。"
+* timing.repeat.boundsDuration.value 1..1 MS
+* timing.repeat.boundsDuration.unit ^definition = "投与期間の日数の単位。\"日\""
+* timing.repeat.boundsDuration.unit 1..1 MS
+* timing.repeat.boundsDuration.system ^definition = "UCUM単位コードを識別するURI。 	\"http://unitsofmeasure.org\""
+* timing.repeat.boundsDuration.system 1..1 MS
+* timing.repeat.boundsDuration.code ^definition = "\"日\"を表すUCUM単位コード\"d\"を設定する。"
+* timing.repeat.boundsDuration.code 1..1 MS
 
 * timing.code 1.. MS
 * timing.code ^short = "用法"
@@ -140,8 +156,38 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 
 * asNeededBoolean MS
 * site MS
+  * insert relative_short_definition("外用薬で部位を指定する場合に使用する。詳細は処方情報HL７FHIR記述仕様も参照。")
+  * coding 0..1 MS
+    ^short = "外用部位をコード化するか、text子要素で記述する。"
+    * system 1..1 MS
+      ^short = "JAMI外用部位３桁コードを識別するURI。	\"http://jami.jp/CodeSystem/MedicationBodySiteExternal\"" 
+    * code 1..1 MS
+      ^short = "JAMI外用部位コード。" 
+    * display 0..1 MS 
+      ^short = "JAMI外用部位コードの表示名" 
+
 * route MS
+  * insert relative_short_definition("投与経路")
+  * coding 0..1 MS
+    ^short = "投与経路をコード化するか、text子要素で記述する。"
+    * system 1..1 MS
+      ^short = "投与経路コード表のsystemを設定する。\"http://jpfhir.jp/fhir/core/CodeSystem/route-codes\"" 
+    * code 1..1 MS
+      ^short = "投与経路コード表で規定するコード。" 
+    * display 0..1 MS 
+      ^short = "投与経路コード表で規定するコードの表示名。" 
+
 * method MS
+  * insert relative_short_definition("投与方法の基本用法区分（1 : 内服、2 : 外用、3 : 注射、4 : 注入の区分）、またはさらに1段階詳しい用法区分（10：経口、11：舌下、…など）を記述する。")
+  * coding 0..1 MS
+    ^short = "投与方法区分をコード化するか、text子要素で記述する。2桁で出せる場合には必ず2桁粒度で出力すること。1桁出力しかできない場合には、必ず詳細投与方法をmethod.textに記載すること。"
+    * system 1..1 MS
+      ^short = "投与方法の区分に対応するJAMI用法コード表基本用法１桁コードを識別するURI（\"http://jami.jp/CodeSystem/MedicationMethodBasicUsage\"）。同2桁コード（\"http://jami.jp/CodeSystem/MedicationMethodDetailUsage\"）を使用してもよい。" 
+    * code 1..1 MS
+      ^short = "JAMI用法コード表基本用法１桁コード。同2桁コードを使用してもよい。" 
+    * display 0..1 MS 
+      ^short = "JAMI用法コード表基本用法１桁コードの表示名または同2桁コードの表示名。" 
+
 
 * doseAndRate MS
 * doseAndRate ^definition = "投与量を記録する。
@@ -153,7 +199,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 * doseAndRate.type ^comment = "ー"
 * doseAndRate.type ^requirements = "ー"
 
-* doseAndRate.type.coding 1..*
+* doseAndRate.type.coding 1..1  //2025.5.4　1..* を1..1に修正
 * doseAndRate.type.coding.system 1..1 MS
 * doseAndRate.type.coding.system ^definition = "力価区分コードのコード体系を識別するURI。固定値。\r\n厚生労働省電子処方箋 CDA 記述仕様　第１版別表４を準用。"
 * doseAndRate.type.coding.code 1..1 MS

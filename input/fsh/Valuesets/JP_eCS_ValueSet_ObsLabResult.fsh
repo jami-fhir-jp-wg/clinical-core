@@ -1,8 +1,8 @@
 // eCS 検体検査結果で使用することが可能な ValueSet
 ValueSet: JP_eCS_ObservationLabResultCode_VS
 Id: jp-ecs-observationlabresultcode-vs
-Title: "eCS Observation Lab Result Code Value Set"
-Description: "eCS 検体検査結果で使用することが可能な ValueSet"
+Title: "Observation Lab Result Code Value Set"
+Description: "検体検査結果で使用することが可能な ValueSet"
 * ^url = $JP_eCS_ObservationLabResultCode_VS
 * ^version = "1.0.0"
 * ^status = #active

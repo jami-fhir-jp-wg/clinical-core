@@ -9,6 +9,7 @@ Parent:			JP_Condition
 Id:             JP-Condition-eCS
 Title:  "JP_Condition_eCS"
 Description: "Conditionリソース（傷病名情報）プロファイル"
+// 2025.5.4 * verificationStatus.coding 1..* MS // 2025.5.4  0..1 --> 1..1 に修正
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..*
@@ -157,7 +158,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 * verificationStatus    ^definition = "unconfirmed | confirmed | refuted | entered-in-error  のいずれか（未確認、確認ずみ、否定、エラー）。コメントを参照のこと。コード化の場合のsystem=http://terminology.hl7.org/CodeSystem/condition-ver-status"
 * verificationStatus ^comment = "コード化記述が必須。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。\r\n疑い病名フラグがない病名には、confirmed を設定するが、一度登録された病名を取り消した場合やそれが入力エラーであったことを明示したい場合には、refuted（取り消された病名）、entered-in-error（誤って登録された病名）のいずれかを設定することもできる。\r\n疑い病名フラグのある病名には、unconfirmed を必ず設定する。\r\nなお、電子カルテ情報共有サービスでは、confirmed、unconfirmed以外の病名に対してはその情報は受信データとして保存されるが、利用されたり表示されたりすることはない。過去の登録病名情報に対して削除や取り消しなどの処理を行うために使われることもないため、refutedやentered-in-errorをつけて送信しても過去に送信した病名を取り消すことはできない。"
 
-* verificationStatus.coding 0..* MS
+* verificationStatus.coding 1..* MS // 2025.5.4  0..1 --> 1..1 に修正
 * verificationStatus.coding.system 1.. MS
 * verificationStatus.coding.code 1.. MS
 * verificationStatus.coding.display 1.. MS

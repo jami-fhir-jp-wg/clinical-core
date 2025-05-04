@@ -9,7 +9,13 @@ Parent: JP_MedicationRequest
 Id: JP-MedicationRequest-eCS
 Title:  "JP_MedicationRequest_eCS"
 Description: "診療情報・サマリー汎用 MedicationRequestリソース（処方オーダの１処方薬情報）プロファイル"
-
+/* 2025.5.4
+* dispenseRequest.quantity.unit 1..1 MS // 2025.5.4　追加
+* dispenseRequest.quantity.system ^definition = "医薬品単位略号を識別するURL。http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Codeを使用する。\r\n（厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用）。拡張可能性あり。"
+* dispenseRequest.quantity.system 1..1 MS // 2025.5.4  追加
+* dispenseRequest.quantity.code 1..1 MS // 2025.5.4  1..1 を追加
+* dispenseRequest.expectedSupplyDuration のvalue, unit, system, code の説明と1..1を追加。
+*/
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
 
@@ -242,14 +248,27 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 * dispenseRequest.extension[expectedRepeatCount] MS
 * dispenseRequest.quantity.value ^definition = "調剤量。精度を含めた値が暗示される。\r\n例）１日３錠で７日分の場合、この要素には21 が設定される。"
 * dispenseRequest.quantity.value MS
-* dispenseRequest.quantity.system ^definition = "医薬品単位略号を識別するURL。http://medis.or.jp/CodeSystem/master-HOT9で固定される。\r\n厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
+* dispenseRequest.quantity.unit 1..1 MS // 2025.5.4　追加
+
+* dispenseRequest.quantity.system ^definition = "医薬品単位略号を識別するURL。\"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code\"を使用する。\r\n（厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用）。拡張可能性あり。"
 * dispenseRequest.quantity.system ^comment = "医薬品単位略号はひとつのリソース記述のなかで１種類のコード体系に統一すること。"
-* dispenseRequest.quantity.system MS
+* dispenseRequest.quantity.system 1..1 MS // 2025.5.4  追加
+
 * dispenseRequest.quantity.code ^comment = "厚生労働省電子処方箋 CDA 記述仕様　別表２０ 医薬品単位略号　コード表を準用。拡張可能性あり。"
 * dispenseRequest.quantity.code ^requirements = "どのような形式であっても医薬品単位略号はひとつのリソース記述のなかで１種類のコード体系に統一すること。"
-* dispenseRequest.quantity.code MS
+* dispenseRequest.quantity.code 1..1 MS // 2025.5.4  1..1 を追加
+// 2025.5.4  以下のvalue, unit, system, code の説明と1..1を追加。
+* dispenseRequest.expectedSupplyDuration 0..1
+* dispenseRequest.comparator 0..0
 * dispenseRequest.expectedSupplyDuration.value ^definition = "調剤日数。\r\n例）１日３錠で７日分の場合、この要素には 7が設定される。"
-* dispenseRequest.expectedSupplyDuration.value MS
+* dispenseRequest.expectedSupplyDuration.value 1..1 MS
+* dispenseRequest.expectedSupplyDuration.unit ^definition = "調剤日数の単位。\"日\""
+* dispenseRequest.expectedSupplyDuration.unit 1..1 MS
+* dispenseRequest.expectedSupplyDuration.system ^definition = "UCUM単位コードを識別するURI。 	\"http://unitsofmeasure.org\""
+* dispenseRequest.expectedSupplyDuration.system 1..1 MS
+* dispenseRequest.expectedSupplyDuration.code ^definition = "\"日\"を表すUCUM単位コード\"d\"を設定する。"
+* dispenseRequest.expectedSupplyDuration.code 1..1 MS
+
 * dispenseRequest.performer 
   * ^comment = "当面、診療５情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
 

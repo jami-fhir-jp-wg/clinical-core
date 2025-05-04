@@ -144,6 +144,7 @@ Profile: JP_Composition_eReferral
 Parent: Composition
 Id: JP-Composition-eReferral
 Description:  "診療情報提供書情報のリソース構成情報と文書日付に関するCompositionの派生プロファイル"
+// 2025.5.4 * author 2..3 MS    //2025.5.4　実装ガイド表5-2に合わせて2..3として追加
 // * obeys checkValidCategoryTitle
 // * obeys checkValidCategory
 // * obeys checkValidSections
@@ -260,6 +261,7 @@ and authorDepartment 0..1 MS
 * author[authorDepartment] only  Reference(JP_Organization_eCS_department)
 */
 
+* author 2..3 MS //2025.5.4　実装ガイド表5-2に合わせて2..3として追加
 * author ^short = "文書作成責任者と文書作成機関とへの参照。"
 * author ^definition = "文書作成責任者を表すPractitionerリソースへの参照、および,文書作成機関か、または文書作成機関の診療科と文書作成機関を表すOrganizationリソースへの参照の2つのReferenceを繰り返す。"
 * author only  Reference(JP_Practitioner_eCS or JP_Organization_eCS)

@@ -429,7 +429,7 @@
   <td class=xl104 width=65 style='border-top:none;width:49pt'>　</td>
   <td class=xl104 width=57 style='border-top:none;width:43pt'>　</td>
   <td class=xl104 width=57 style='border-top:none;width:43pt'>　</td>
-  <td class=xl105 width=35 style='width:26pt'>1..*</td>
+  <td class=xl105 width=35 style='width:26pt'>2..*</td> <!--  1..* から 2..*に修正　Excel20250504修正済み -->
   <td class=xl104 width=87 style='width:65pt'>Identifier</td>
   <td class=xl93 width=359 style='width:269pt'><br>
     このリソース<ruby>情報<span style='display:none'><rt>ジョウホウ </rt></span></ruby>の<ruby>識別<span

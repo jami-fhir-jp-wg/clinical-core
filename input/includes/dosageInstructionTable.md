@@ -152,8 +152,8 @@
   <td class=xl252 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
   <td class=xl85 width=47 style='border-top:none;border-left:none;width:35pt'>1..1</td>
   <td class=xl85 width=87 style='border-top:none;border-left:none;width:65pt'>Duration</td>
-  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'>投与期間とは別に投与実日数を表現したい場合にこの拡張を使用し、Duration
-  型で開始日を記載する。</td>
+  <td class=xl85 width=359 style='border-top:none;border-left:none;width:269pt'>投与期間とは別に実投与日数を表現したい場合にこの拡張を使用し、Duration
+  型で実投与日数を記載する。隔日投与などで実投与日数と処方期間が異なる場合に用いられる。</td> <!-- 2025.5.4 開始日→実投与日数 Excel20250504修正済み-->
   <td class=xl246 style='border-top:none;border-left:none'>　</td>
   <td class=xl243 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
  </tr>

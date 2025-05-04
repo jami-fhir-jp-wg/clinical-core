@@ -1,3 +1,6 @@
+<!--
+2025.5.4 title要素の固定値として””を"患者サマリー（療養計画書）"に修正　Excel20250504を修正済み
+-->
 <table border=0 cellpadding=0 cellspacing=0 width=1235 style='border-collapse:
  collapse;table-layout:fixed;width:925pt'>
  <col class=xl349 width=107 style='mso-width-source:userset;mso-width-alt:2925;
@@ -436,7 +439,7 @@
   <td class=xl350 width=155 style='border-top:none;border-left:none;width:116pt'>string</td>
   <td class=xl350 width=359 style='border-top:none;border-left:none;width:269pt'>この文書の（人が読める）タイトル。固定値。</td>
   <td class=xl350 width=60 style='border-top:none;border-left:none;width:45pt'>固定値</td>
-  <td class=xl353 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;&quot;</td>
+  <td class=xl353 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;患者サマリー（療養計画書）&quot;</td>
  </tr>
  <tr height=32 style='mso-height-source:userset;height:24.0pt'>
   <td height=32 class=xl352 width=107 style='height:24.0pt;border-top:none;

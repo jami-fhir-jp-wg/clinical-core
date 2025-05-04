@@ -8,6 +8,7 @@ Profile: JP_Composition_eDischargeSummary
 Parent: Composition
 Id: JP-Composition-eDischargeSummary
 Description:  "退院時サマリーのリソース構成情報と文書日付に関するCompositionの派生プロファイル"
+// 2025.5.4 * author 2..2 MS    //2025.5.4　実装ガイド表5-1に合わせて2..2として追加
 // * obeys checkValidCategoryTitle
 // * obeys checkValidCategory
 // * obeys checkValidSections
@@ -118,6 +119,8 @@ and authorDepartment 0..1 MS
 * author[authorPractitioner] only  Reference(JP_Practitioner_eCS)
 * author[authorOrganization] only  Reference(JP_Organization_eCS)
 * author[authorDepartment] only  Reference(JP_Organization_eCS_department) */
+
+* author 2..2 MS    //2025.5.4　実装ガイド表5-1に合わせて2..2として追加
 * author ^short = "文書作成責任者と文書作成機関とへの参照。"
 * author ^definition = "文書作成責任者を表すPractitionerリソースへの参照、および,文書作成機関か、または文書作成機関の診療科と文書作成機関を表すOrganizationリソースへの参照の2つのReferenceを繰り返す。"
 

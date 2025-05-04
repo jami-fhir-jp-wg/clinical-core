@@ -18,7 +18,7 @@ Description:    "Derived Profile from JP-Core"
 Profile:        JP_CarePlan_eCS
 Parent:			JP_CarePlan
 Id:             JP-CarePlan-eCS
-Description:    "eCS 診療情報・サマリー汎用 CarePlan"
+Description:    "診療情報・サマリー汎用 CarePlan"
 * ^url = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_CarePlan_eCS"
 * ^version = "x.x.x-profile"
 * ^status = #active
