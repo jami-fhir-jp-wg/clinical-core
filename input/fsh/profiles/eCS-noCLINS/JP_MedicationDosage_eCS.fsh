@@ -158,7 +158,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 * site MS
   * insert relative_short_definition("外用薬で部位を指定する場合に使用する。詳細は処方情報HL７FHIR記述仕様も参照。")
   * coding 0..1 MS
-    ^short = "外用部位をコード化するか、text子要素で記述する。"
+  * coding  ^short = "外用部位をコード化するか、text子要素で記述する。"
     * system 1..1 MS
       ^short = "JAMI外用部位３桁コードを識別するURI。	\"http://jami.jp/CodeSystem/MedicationBodySiteExternal\"" 
     * code 1..1 MS
@@ -169,7 +169,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 * route MS
   * insert relative_short_definition("投与経路")
   * coding 0..1 MS
-    ^short = "投与経路をコード化するか、text子要素で記述する。"
+   * coding    ^short = "投与経路をコード化するか、text子要素で記述する。"
     * system 1..1 MS
       ^short = "投与経路コード表のsystemを設定する。\"http://jpfhir.jp/fhir/core/CodeSystem/route-codes\"" 
     * code 1..1 MS
@@ -180,7 +180,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 * method MS
   * insert relative_short_definition("投与方法の基本用法区分（1 : 内服、2 : 外用、3 : 注射、4 : 注入の区分）、またはさらに1段階詳しい用法区分（10：経口、11：舌下、…など）を記述する。")
   * coding 0..1 MS
-    ^short = "投与方法区分をコード化するか、text子要素で記述する。2桁で出せる場合には必ず2桁粒度で出力すること。1桁出力しかできない場合には、必ず詳細投与方法をmethod.textに記載すること。"
+   * coding    ^short = "投与方法区分をコード化するか、text子要素で記述する。2桁で出せる場合には必ず2桁粒度で出力すること。1桁出力しかできない場合には、必ず詳細投与方法をmethod.textに記載すること。"
     * system 1..1 MS
       ^short = "投与方法の区分に対応するJAMI用法コード表基本用法１桁コードを識別するURI（\"http://jami.jp/CodeSystem/MedicationMethodBasicUsage\"）。同2桁コード（\"http://jami.jp/CodeSystem/MedicationMethodDetailUsage\"）を使用してもよい。" 
     * code 1..1 MS
