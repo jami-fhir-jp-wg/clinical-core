@@ -19,7 +19,7 @@ Description: "療養計画患者サマリー Bundle"
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
 
-* meta　1..1 MS
+* meta 1..1 MS
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|x.y.z")

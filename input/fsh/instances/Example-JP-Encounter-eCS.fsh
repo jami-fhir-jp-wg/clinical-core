@@ -17,3 +17,8 @@ Description: "Encounterリソース 必須要素だけの最低限の入院外�
 
 
 * class.display = "外来"
+
+// 以下はテスト的
+* classHistory.class = $v3-ActCode#AMB "ambulatory"
+
+

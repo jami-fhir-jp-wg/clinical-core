@@ -67,7 +67,7 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * classHistory.class.system = $v3-ActCode (exactly)
 * classHistory.class.code 1..1 MS
 * classHistory.class.display 1..1 MS
-* classHistory.period 0..1 MS
+* classHistory.period 1..1 MS
 * classHistory.period ^short = "入院期間を表す必要がある場合には必須。外来では必要な場合を除き省略可。"
 * classHistory.period ^definition = "入院期間を表す必要がある場合には必須。外来では必要な場合を除き省略可。"
 * classHistory.period.start 1..1 MS
