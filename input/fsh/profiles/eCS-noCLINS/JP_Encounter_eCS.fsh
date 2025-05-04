@@ -35,10 +35,10 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * meta.profile 0.. MS
   * insert relative_short_definition("本プロファイルを識別するURLとバージョンを指定する。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.zを設定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。")
 
-* identifier 0..1 MS
+* identifier 0..* MS
 * identifier ^short = "この医療機関における患者の受診番号や入院管理番号"
 * identifier ^definition = "この医療機関における患者の受診番号や入院管理番号"
-
+* identifier.system 1..1 MS
 * identifier.value 1..1 MS
   * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
 
@@ -58,7 +58,7 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * class.display 1..1 MS
 * class.display ^definition = "AMB:外来　EMER:救急　HH:在宅ケア    IMP:入院    ACUTE: 入院中臨時     NONAC:入院中定時   PRENC:予定入院時    VR:リモート診療"
 
-* classHistory ..1 MS
+* classHistory ..* MS
 * classHistory ^short = "外来受診履歴や入院履歴の繰り返し記述。"
 * classHistory ^definition = "この入院期間までの外来受診履歴や入院履歴を記述したい場合にここに繰り返しで記述する。紹介先受診情報では不要。"
 * classHistory.class 1..1 MS
@@ -67,7 +67,7 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * classHistory.class.system = $v3-ActCode (exactly)
 * classHistory.class.code 1..1 MS
 * classHistory.class.display 1..1 MS
-* classHistory.period 1..1 MS
+* classHistory.period 0..1 MS
 * classHistory.period ^short = "入院期間を表す必要がある場合には必須。外来では必要な場合を除き省略可。"
 * classHistory.period ^definition = "入院期間を表す必要がある場合には必須。外来では必要な場合を除き省略可。"
 * classHistory.period.start 1..1 MS

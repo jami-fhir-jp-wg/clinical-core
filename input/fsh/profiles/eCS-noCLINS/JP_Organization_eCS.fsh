@@ -18,6 +18,12 @@ Description: "診療情報・サマリー汎用　Organizationリソース（医
 * . ^definition = "２文書５情報や診療サマリーなどで記録する医療機関(および診療科情報）の格納に使用する"
 * . ^comment = "広義の医療機関すなわち健康医療介護等にかかわる組織（調剤薬局、健診機関などを含む）の格納に使用できる。機関の中の部署、診療科のような部分組織には、本プロファイルを使用しない。機関に所属する診療科や部署・チームの情報を含めて記述する場合には、本プロファイルではJP_eCS_Department拡張を使用して、必ず所属機関の情報の一部とすること。"
 
+* meta 1..1 MS
+* meta.lastUpdated 1.. MS
+* meta.profile 1.. MS
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS|x.y.z")
+
+
 //* obeys designatedMetaProfile-eCS-organization
 
 * text ^short = "本リソースをテキストで表現したものを入れてもよい。"
@@ -55,6 +61,12 @@ Description: "診療情報・サマリー汎用　Organizationリソース（医
 * name ^short = "医療機関名"
 * name ^definition = "医療機関名。"
 
+* telecom 0..* MS
+  * ^short = "医療機関電話番号。紹介元医療機関では必須。電話番号に加えて、fax や emailなどを追加してもよい。"
+  * system 0..1 MS
+    * ^short = "電話では\"phone\"を使用する。fax や emailなどを追加してもよい。https://hl7.org/fhir/R4/valueset-contact-point-system.htmlを参照。"
+  * value 1..1 MS
+    * ^short = "電話番号など。"
 * address 0..1 MS
 * address ^short = "医療機関住所"
 * address ^definition = "医療機関住所"

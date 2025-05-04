@@ -58,15 +58,15 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * type from $doc-typecodes_VS (required)
 * type.coding.system = $doc-typecodes_CS (exactly)
 * type.coding.system ^definition = "文書区分コードのコード体系を識別するURI。固定値"
-* type.coding.system MS
-* type.coding.version
-* type.coding.code 1.. MS
+* type.coding.system 1..1 MS
+//* type.coding.version
+* type.coding.code 1..1 MS
 * type.coding.code = #56447-6 (exactly)
 * type.coding.code ^definition = "計画書\"56447-6\"を指定。固定値。"
 * type.coding.display = "計画書" (exactly)
 * type.coding.display ^short = "文書区分コードの表示名。"
 * type.coding.display ^definition = "文書区分コードの表示名。"
-* type.coding.display
+
 
 * category 1..1 MS
 * category ^short = "文書カテゴリーコード"
@@ -114,7 +114,7 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 
 * event ..0 MS
 
-* section ..1 MS
+* section 1..1 MS 
 * section.title 1.. MS
 * section.title ^short = "セクションタイトル"
 * section.title ^definition = "セクションタイトル。固定値。"

@@ -78,9 +78,9 @@ RuleSet: compositionSectionTextDefinition(compositionSection,sectionSlice02)
 * section[compositionSection].section[researchParticipationSection].code.text ..0
 */
 
-RuleSet: sectionTitleCodeDefinition(documentCategory,sectionSlice01,sectionName,sectionCode)
-* section[{sectionSlice01}] ^short = "{sectionName}セクション"
-* section[{sectionSlice01}] ^definition = "{sectionName}セクション"
+RuleSet: sectionTitleCodeDefinition(documentCategory,sectionSlice01,sectionName,sectionCode,appexNote)
+* section[{sectionSlice01}] ^short = "{sectionName}セクション {appexNote}"
+* section[{sectionSlice01}] ^definition = "{sectionName}セクション {appexNote}"
 * section[{sectionSlice01}].title 1.. MS
 * section[{sectionSlice01}].title = "{sectionName}" (exactly)
 * section[{sectionSlice01}].title ^short = "セクションタイトル"
@@ -159,7 +159,7 @@ Description:  "診療情報提供書情報のリソース構成情報と文書�
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
-
+* meta 1..1 MS
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_eReferral|x.y.z")
@@ -308,7 +308,7 @@ and authorDepartment 0..1 MS
     and pdfSection    0..*    MS  //  PDFセクション	pdfSection
 // CDA参照セクションと構造情報セクションは、どちらか一方だけが出現する。制約条件の記述が必要。
 //
-* insert sectionTitleCodeDefinition(eReferral,referralToSection,紹介先情報,910)
+* insert sectionTitleCodeDefinition(eReferral,referralToSection,紹介先情報,910,)
 * insert sectionTextDefinition(referralToSection)
 * section[referralToSection].mode ..0
 * section[referralToSection].orderedBy ..0
@@ -334,7 +334,7 @@ and authorDepartment 0..1 MS
 
 //
 //
-* insert sectionTitleCodeDefinition(eReferral,referralFromSection,紹介元情報,920)
+* insert sectionTitleCodeDefinition(eReferral,referralFromSection,紹介元情報,920,)
 * insert sectionTextDefinition(referralFromSection)
 * section[referralFromSection].mode ..0
 * section[referralFromSection].orderedBy ..0
@@ -361,7 +361,7 @@ and authorDepartment 0..1 MS
 
 //
 //
-* insert sectionTitleCodeDefinition(eReferral,cdaSection,CDA参照,200)
+* insert sectionTitleCodeDefinition(eReferral,cdaSection,CDA参照,200,本セクションは電子カルテ情報共有サービスでは使用しない。)
 * insert sectionTextDefinition(cdaSection)
 * section[cdaSection].mode ..0
 * section[cdaSection].orderedBy ..0
@@ -375,7 +375,7 @@ and authorDepartment 0..1 MS
 //
 //	and attachmentSection    0..*    MS  //  添付情報セクション	attachmentSection
 //    and remarksCommunicationSection    0..*    MS  //  備考・連絡情報セクション	remarksCommunicationSection
-* insert sectionTitleCodeDefinition(eReferral,attachmentSection,添付情報,210)
+* insert sectionTitleCodeDefinition(eReferral,attachmentSection,添付情報,210,)
 * insert sectionTextDefinition(attachmentSection)
 * section[attachmentSection].mode ..0
 * section[attachmentSection].orderedBy ..0
@@ -387,7 +387,7 @@ and authorDepartment 0..1 MS
 * section[attachmentSection].section ..0
 //
 //
-* insert sectionTitleCodeDefinition(eReferral,remarksCommunicationSection,備考・連絡情報,220)
+* insert sectionTitleCodeDefinition(eReferral,remarksCommunicationSection,備考・連絡情報,220,)
 * insert sectionTextDefinition(remarksCommunicationSection)
 * section[remarksCommunicationSection].mode ..0
 * section[remarksCommunicationSection].orderedBy ..0
@@ -399,7 +399,7 @@ and authorDepartment 0..1 MS
 * section[remarksCommunicationSection].section ..0
 //
 //
-* insert sectionTitleCodeDefinition(eReferral,pdfSection,PDF,230)
+* insert sectionTitleCodeDefinition(eReferral,pdfSection,PDF,230,)
 * insert sectionTextDefinition(pdfSection)
 * section[pdfSection].mode ..0
 * section[pdfSection].orderedBy ..0
@@ -410,7 +410,7 @@ and authorDepartment 0..1 MS
 * section[pdfSection].emptyReason ..1
 * section[pdfSection].section ..0
 ////////
-* insert sectionTitleCodeDefinition(eReferral,compositionSection,構造情報,300)
+* insert sectionTitleCodeDefinition(eReferral,compositionSection,構造情報,300,)
 * insert sectionTextDefinition(compositionSection)
 * section[compositionSection].text ..0
 * section[compositionSection].mode ..0

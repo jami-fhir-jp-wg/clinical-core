@@ -417,7 +417,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * specimen ^comment = "検体材料に関する情報を記述したSpecimenリソースをContainedリソースとして本リソースに埋め込んでそれを参照するか、またはtype子要素=\"Specimen\",display子要素で\"血清\"のように検体名称を設定することで記述する。"
 
 // OUL^R22.OBX[*]-7
-* referenceRange MS
+* referenceRange 0..* MS
 * referenceRange.id ..0
 * referenceRange.extension ..0
 * referenceRange.modifierExtension ..0

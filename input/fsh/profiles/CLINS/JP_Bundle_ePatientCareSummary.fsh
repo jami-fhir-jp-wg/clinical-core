@@ -19,6 +19,7 @@ Description: "療養計画患者サマリー Bundle"
 * obeys valid-system-bundleIdenfifier
 * obeys valid-value-bundleIdenfifier
 
+* meta　1..1 MS
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|x.y.z")
@@ -54,7 +55,6 @@ and organization 1..1 MS // 作成した医療機関と診療科情報
 and encounter 1..1 MS
 and carePlan 1..1 MS // 療養上の計画／アドバイス
 and condition 1..* MS // 療養計画の対象となる傷病名（主病名とそれ以外）
-
 * entry[composition] ^short = "documentタイプのBundleリソースの先頭entryはCompositionリソース。"
 * entry[composition] ^definition = "compositionリソースのエントリー。"
 * entry[composition].fullUrl 1.. MS

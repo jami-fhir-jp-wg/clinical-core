@@ -119,20 +119,20 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>　</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1*</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td> 
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Identifier</td>
-  <td class=xl314 width=359 style='border-top:none;border-left:none;width:269pt'>リソース一意識別ID。</td>
+  <td class=xl314 width=359 style='border-top:none;border-left:none;width:269pt'>リソース一意識別ID。この医療機関における患者の受診番号や入院管理番号など。</td>　<>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl153 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
+  <td class=xl153 width=195 style='border-top:none;border-left:none;width:146pt'>　</td> <!-- 0..1*を0..*に修正 　2025.5.4 Excel20250504修正済み-->
  </tr>
  <tr class=xl266 height=47 style='mso-height-source:userset;height:35.0pt'>
-  <td height=47 class=xl168 width=117 style='height:35.0pt;width:88pt'>identifier[+]</td>
+  <td height=47 class=xl168 width=117 style='height:35.0pt;width:88pt'>identifier[=]</td> <!-- [+]を[=]に修正 　2025.5.4 Excel20250504修正済み-->
   <td class=xl79 width=85 style='width:64pt'>　</td>
   <td class=xl79 width=87 style='width:65pt'>　</td>
   <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=35 style='width:26pt'>1..1</td>
+  <td class=xl79 width=35 style='width:26pt'>0..1</td> <!-- 1..1を0..1に修正 　2025.5.4 Excel20250504修正済み-->
   <td class=xl79 width=87 style='width:65pt'>Identifier</td>
-  <td class=xl236 width=359 style='width:269pt'>「リソース一意識別ID」のsystem値を固定で設定する。</td>
+  <td class=xl236 width=359 style='width:269pt'>「リソース一意識別ID」のsystem値を設定する。</td>
   <td class=xl79 width=36 style='width:27pt'>　</td>
   <td class=xl170 width=195 style='width:146pt'>　</td>
  </tr>
@@ -252,7 +252,7 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>class</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td> <!-- 1..1 -> 0..1 -->
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
   <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>受診イベントの分類</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -368,7 +368,7 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>end</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td> <!-- 1..1 -> 0..1 -->
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
   <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>この入院の退院日時</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -544,7 +544,7 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>condition</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>  <!-- 1..1->0..1  -->
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Reference(Condition)</td>
   <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>患者状態（病態・疾患名・症状）への参照。</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -703,7 +703,7 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>specialCourtesy</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>  <!-- 0..1->0..*  -->
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
   <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>特別配慮を要する入院。VIP、職員、医療専門職といった区分。当面未使用</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -715,7 +715,7 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>SpecialArrangement</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>  <!-- 0..1->0..*  -->
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
   <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>特別調整を要する入院。車椅子、増設ベッド、通訳、付き添い、盲導犬等の必要性。当面未使用</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
@@ -779,7 +779,7 @@
   <td class=xl77 width=85 style='border-top:none;border-left:none;width:64pt'>location</td>
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
   <td class=xl77 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
+  <td class=xl77 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>  <!-- 1..1->0..1  -->
   <td class=xl77 width=87 style='border-top:none;border-left:none;width:65pt'>Reference(Location)</td>
   <td class=xl77 width=359 style='border-top:none;border-left:none;width:269pt'>入院中の所在場所（病棟病室など）への参照。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
   <td class=xl77 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>

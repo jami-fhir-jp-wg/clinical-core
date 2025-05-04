@@ -23,6 +23,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
+* meta 1..1 MS
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
   * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_eDischargeSummary|x.y.z")
@@ -196,7 +197,7 @@ and authorDepartment 0..1 MS
 // CDA参照セクションと構造情報セクションは、どちらか一方だけが出現する。制約条件の記述が必要。
 //
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,cdaSection,CDA参照,200)
+* insert sectionTitleCodeDefinition(eDischargeSummary,cdaSection,CDA参照,200,本セクションは電子カルテ情報共有サービスでは使用しない。)
 * insert sectionTextDefinition(cdaSection)
 * section[cdaSection].mode ..0
 * section[cdaSection].orderedBy ..0
@@ -208,7 +209,7 @@ and authorDepartment 0..1 MS
 * section[cdaSection].section ..0
 
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,attachmentSection,添付情報,210)
+* insert sectionTitleCodeDefinition(eDischargeSummary,attachmentSection,添付情報,210, )
 * insert sectionTextDefinition(attachmentSection)
 
 * section[attachmentSection].entry 1..*
@@ -221,7 +222,7 @@ and authorDepartment 0..1 MS
 * section[attachmentSection].orderedBy ..0
 
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,pdfSection,PDF,230)
+* insert sectionTitleCodeDefinition(eDischargeSummary,pdfSection,PDF,230, )
 * insert sectionTextDefinition(pdfSection)
 
 * section[pdfSection].entry 1..*
@@ -234,7 +235,7 @@ and authorDepartment 0..1 MS
 * section[pdfSection].orderedBy ..0
 
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,structuredSection,構造情報,300)
+* insert sectionTitleCodeDefinition(eDischargeSummary,structuredSection,構造情報,300, )
 * insert sectionTextDefinition(structuredSection)
 * section[structuredSection].text ..0 
 * section[structuredSection].emptyReason ..1  MS
