@@ -67,7 +67,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 //    and recorder 0..1 MS
 //    and patient 0..1 MS
 
-* contained[encounter] only  JP_Encounter
+* contained[encounter] only  JP_Encounter or JP_Encounter_eCS
   * insert relative_short_definition("アレルギー／薬剤アレルギー等情報を記述（取得）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 

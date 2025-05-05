@@ -121,7 +121,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
     and order 0..1 MS
 //    and patient 0..1 MS
 
-* contained[encounter] only  JP_Encounter
+* contained[encounter] only  JP_Encounter  or JP_Encounter_eCS
   * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】検体検査を実施（検体を採取）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "電子カルテ情報共有サービスでは必須。encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
