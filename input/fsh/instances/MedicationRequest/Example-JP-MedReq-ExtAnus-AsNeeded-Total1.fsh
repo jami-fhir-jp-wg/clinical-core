@@ -15,7 +15,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * extension[eCS_Department].url = $JP_eCS_Department
 * extension[eCS_Department].valueCodeableConcept = $JP_Department_SsMix_CS#01 "内科"
-
+* extension[eCS_Department].valueCodeableConcept.text = "内科"
 
 // * contained[+] = Example-Contained-JP-Patient-minimun
 * contained[+] = Example-Contained-JP-Encounter-IMP
