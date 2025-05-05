@@ -115,26 +115,35 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * event ..0 MS
 
 * section 1..1 MS 
+* section ^short = "計画サマリー"
+* section ^definition = "計画サマリーセクション"
 * section.title 1.. MS
 * section.title ^short = "セクションタイトル"
 * section.title ^definition = "セクションタイトル。固定値。"
+* section.title = "計画サマリー" (exactly)
+
 * section.code 1.. MS
 * section.code ^short = "セクション区分コード"
 * section.code ^definition = "セクション区分コード"
 * section.code.coding 1..1 MS
-* section.code.coding from http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
+//* section.code.coding from http://jpfhir.jp/fhir/ePCS/ValueSet/document-section
 * section.code.coding.system 1.. MS
 * section.code.coding.system = "http://jpfhir.jp/fhir/clins/CodeSystem/document-section" (exactly)
 * section.code.coding.system ^short = "セクション区分コードのコード体系"
 * section.code.coding.system ^definition = "セクション区分コードのコード体系を識別するURI。固定値。"
 * section.code.coding.code 1.. MS
 * section.code.coding.code ^short = "セクション区分のコード値"
-* section.code.coding.code ^definition = "セクション区分のコード値。\r\n固定値。"
+* section.code.coding.code ^definition = "計画サマリーセクションを表すセクションコード"
+* section.code.coding.code = #422 (exactly)
 * section.code.coding.display ^short = "セクション区分コードの表示名"
 * section.code.coding.display ^definition = "セクション区分コードの表示名。"
-* section.code.coding.display MS
+* section.code.coding.display 0..1 MS
 * section.code.coding.userSelected ..0
 * section.code.text ..0
+* section.author ..0
+* section.focus ..0
+* section.text ..0
+/* 
 * section.text ^short = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を必ず参照すること。"
 * section.text ^definition = "本セクションの内容の全部または一部をテキストで表現した文字列。内容を省略しても構わない。 このデータは人がこのセクションの内容の概略をひと目で把握するためだけに使われるものであるが、この情報の取り扱いはcommentの詳細を必ず参照すること。"
 * section.text ^comment = "entryが空（存在しない）場合には、このセクションが表す完全なテキスト記述をこの要素に記述しなければならない。受信側はこのテキスト記述を必要に応じて利用することができる。構造情報（FHIRリソース）を参照するentryが存在する場合には、この要素は省略して構わないが、entryが持つ情報の概要とそれだけでは記述しきれない追加情報を記述してもよい。受信側はこの要素はentryが持つ完全な情報を伝えていないことがあるため、正確な情報を利用するにはentryの構造情報を使用しなければならず、この要素の情報だけを利用することは適切でない。この要素の情報は、entryの構造情報へのあくまで追加的な補足情報として利用する。"
@@ -145,16 +154,11 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section.text.status ^definition = "generated | extensions | additional | empty　から　\"additional\" の固定値。このセクションに含められるすべてのentry要素による情報に加えて、それらで表現し尽くせていない情報に追加すべき叙述表現であることを示す。"
 * section.text.div ^short = "xhtml簡略形式に従った叙述記述データ"
 * section.text.div ^definition = "本セクションの内容を xhtml 形式のテキストで表現した文字列。"
+*/
 * section.mode ..0
 * section.orderedBy ..0
 
 //
-* section ^short = "計画サマリー"
-* section ^definition = "計画サマリーセクション"
-* section.title = "計画サマリー" (exactly)
-
-* section.code.coding = http://jpfhir.jp/fhir/clins/CodeSystem/document-section#422 "計画サマリーセクション" (exactly)
-
 * section.entry 
 * section.entry  ^slicing.discriminator.type = #profile
 * section.entry  ^slicing.discriminator.path = "resolve()"
@@ -172,5 +176,5 @@ and condition 1..* MS // 療養計画の対象となる傷病名（主病名と�
 * section.entry[condition] ^short = "傷病名"
 * section.entry[condition] ^definition = "傷病名"
 
-* section.emptyReason ..1
+* section.emptyReason ..0
 * section.section ..0

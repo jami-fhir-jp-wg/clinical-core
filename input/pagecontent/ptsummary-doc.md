@@ -4,7 +4,7 @@
 
 実装ガイドとは、HL7FHIR（以下、単に「FHIR」という）に準拠して記述するための仕様と、注意点や使用するコードなど、システムを実装するために必要な技術的情報をまとめたもので、FHIRリソースの構造的な情報や、仕様の元となっているFHIR R4.0.1(https://hl7.org/fhir/R4/)、JP-Core（https://jpfhir.jp/fhir/core/）からの異なっている点などを、人が理解するとともに、計算機が記述されたデータの仕様適合性を検証（バリデーション）する目的などで利用される。
 
-### 患者サマリー（療養計画書）　DRAFT
+### 患者サマリー（療養計画書）　
 
 <br>
 患者サマリー（療養計画書）は、下図左側の情報をひとつのBundleリソースで記述する。Bundleリソースのentry要素に格納されるリソースは、下図右側に概要を示すようように、目次に相当するCompositionリソースと、その各要素からUUIDで参照されるリソースから構成される。<br>
@@ -25,7 +25,7 @@ Bundleリソース、Compositionリソース、およびその他の各リソー
   1.  [診療計画情報	CarePlanリソース][JP_CarePlan_ePCS]
   1.  [傷病名情報	Conditionリソース][JP_Condition_eCS]
 
-#### 患者サマリー（療養計画書）　DRAFT データ作成例
+#### 患者サマリー（療養計画書）　 データ作成例
 
   1. [高血圧外来での療養計画例](https://jpfhir.jp/fhir/clins/ig/Bundle-Bundle-CLINS-PCS-Example-01.html)
 
