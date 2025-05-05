@@ -100,7 +100,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 //    and recorder 0..1 MS
 //    and patient 0..1 MS
 
-* contained[encounter] only  JP_Encounter or JP_Encounter_eCS
+｀  JP_Encounter or JP_Encounter_eCS
   * insert relative_short_definition("アレルギー／薬剤アレルギー等情報を記述（取得）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。"
 
@@ -120,11 +120,15 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 //* extension[eCS_InstitutionNumber] 1..1 MS   // CLINS
   * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
-
+  * valueIdentifier 1..1 MS
+  * valueIdentifier.system 1..1 MS
+  * valueIdentifier.value 1..1 MS
+  
 * extension[eCS_Department] 0..1 MS // eCS
 //* extension[eCS_Department] 0..1 MS // CLINS
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"の2桁コードだけを使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
+  * valueCodeableConcept 1..
 
 * identifier 1..* MS
   * insert relative_short_definition("このリソース情報の識別ID。")
