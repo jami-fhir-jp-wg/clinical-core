@@ -344,7 +344,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS //　CLINSでは必須
-* encounter only  Reference(JP_Encounter)
+* encounter only  Reference(JP_Encounter or JP_Encounter_eCS)
   * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】検査依頼を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。電子カルテ情報サービスでは必須。"
 
