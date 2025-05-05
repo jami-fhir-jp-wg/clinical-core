@@ -125,8 +125,9 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * valueIdentifier 1..1 MS
   * valueIdentifier.system 1..1
   * valueIdentifier.value 1..1 MS  
-    * insert relative_short_definition("医療機関１０桁番号(都道府県コード2桁、保険医療機関区分1桁、保険医療機関番号7桁)"
+    * insert relativeLevel2_short_definition("医療機関１０桁番号\(都道府県コード2桁、保険医療機関区分1桁、保険医療機関番号7桁\)")
 
+    
 * extension[eCS_Department] 0..1 MS // eCS
 //* extension[eCS_Department] 0..1 MS // CLINS
   * insert relative_short_definition("本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
