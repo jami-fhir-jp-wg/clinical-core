@@ -62,7 +62,6 @@ Description: "診療サマリーや5情報等に記述する際に、発行診�
 * ^context[=].expression = "Observation"
 * ^context[+].type = #element
 * ^context[=].expression = "Organization"
-
 * . ^short = "診療科情報を記述するための拡張"
 * . ^definition = "発行診療科または発行者の診療科情報を記述する"
 * url 1..1
