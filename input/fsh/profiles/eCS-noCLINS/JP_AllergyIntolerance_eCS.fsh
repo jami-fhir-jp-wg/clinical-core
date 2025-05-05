@@ -125,7 +125,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * valueIdentifier 1..1 MS
   * valueIdentifier.system 1..1
   * valueIdentifier.value 1..1 MS  
-    * insert relativeLevel2_short_definition("医療機関１０桁番号\(都道府県コード2桁、保険医療機関区分1桁、保険医療機関番号7桁\)")
+* insert eCS_InstitutionNumber_value
 
     
 * extension[eCS_Department] 0..1 MS // eCS

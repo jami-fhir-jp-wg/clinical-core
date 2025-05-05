@@ -148,7 +148,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * valueIdentifier 1..1 MS
   * valueIdentifier.system 1..1 MS
   * valueIdentifier.value 1..1 MS  
-    * insert relativeLevel2_short_definition("医療機関１０桁番号\(都道府県コード2桁、保険医療機関区分1桁、保険医療機関番号7桁\)")
+* insert eCS_InstitutionNumber_value("医療機関１０桁番号(都道府県コード2桁、保険医療機関区分1桁、保険医療機関番号7桁)")
 
 * extension[eCS_Department] 0..1 MS
   * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
