@@ -209,7 +209,7 @@ and authorDepartment 0..1 MS
 * section[cdaSection].section ..0
 
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,attachmentSection,添付情報,210, )
+* insert sectionTitleCodeDefinition(eDischargeSummary,attachmentSection,添付情報,210,)
 * insert sectionTextDefinition(attachmentSection)
 
 * section[attachmentSection].entry 1..*
@@ -222,7 +222,7 @@ and authorDepartment 0..1 MS
 * section[attachmentSection].orderedBy ..0
 
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,pdfSection,PDF,230, )
+* insert sectionTitleCodeDefinition(eDischargeSummary,pdfSection,PDF,230,)
 * insert sectionTextDefinition(pdfSection)
 
 * section[pdfSection].entry 1..*
@@ -235,7 +235,7 @@ and authorDepartment 0..1 MS
 * section[pdfSection].orderedBy ..0
 
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,structuredSection,構造情報,300, )
+* insert sectionTitleCodeDefinition(eDischargeSummary,structuredSection,構造情報,300,)
 * insert sectionTextDefinition(structuredSection)
 * section[structuredSection].text ..0 
 * section[structuredSection].emptyReason ..1  MS

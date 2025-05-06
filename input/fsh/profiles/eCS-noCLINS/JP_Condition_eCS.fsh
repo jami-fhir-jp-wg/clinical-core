@@ -141,7 +141,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
   * valueCodeableConcept.text 1..1
   
 * extension[eCS_DiagnosisType] 0..1 MS
-  * insert relative_short_definition("主傷病フラグのある傷病名であることを記述するための拡張「eCS_Department」。電子カルテ情報共有サービスでは主傷病には設定必須。")
+  * insert relative_short_definition("主傷病フラグのある傷病名であることを記述するための拡張「eCS_DiagnosisType」。電子カルテ情報共有サービスでは主傷病には設定必須。")
   * ^comment = "system値：http://terminology.hl7.org/CodeSystem/ex-diagnosistype、value値：principal　を設定する。"
 
 * identifier 1..* MS

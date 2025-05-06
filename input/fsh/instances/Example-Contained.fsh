@@ -7,6 +7,8 @@ Description: "埋め込み　Encounterリソース（外来受診）データ作
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Encounterリソース（外来受診）データ作成例</p> </div>"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Ecounter_eCS|x.x.x-instance"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Ecounter_eCS|x.x.x-instance"
 * language = #ja
 
 
@@ -27,6 +29,9 @@ Instance: Example-Contained-JP-Encounter-IMP
 InstanceOf: JP_Encounter_eCS
 Usage: #example
 Description: "Encounterリソース（入院） データ作成例"
+
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Ecounter_eCS|x.x.x-instance"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Ecounter_eCS|x.x.x-instance"
 
 * language = #ja
 

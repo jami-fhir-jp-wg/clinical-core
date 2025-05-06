@@ -36,7 +36,7 @@ Description: "診療サマリーや5情報等に記述する際に、作成発�
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"
 * value[x] ^definition = "作成発行した医療機関番号を設定する。"
-* valueIdentifier.system = $JP_InstitutionNumber
+//* valueIdentifier.system = $JP_InstitutionNumber
 
 * obeys valid-value-institutionNumberExtension
 
