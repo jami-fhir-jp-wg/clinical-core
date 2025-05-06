@@ -342,12 +342,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * insert infectionLaboItemProfile(hiv1p2abresult,HIV-1+2抗体(定性\),HIV1P2ABRESULT) // 5-5
 * insert infectionLaboItemProfile(hiv1p2abposcoi,HIV-1+2抗体(陽性コントロール比\),HIV1P2ABPOSCOI) // 5-6
 
+/*
 * insert infectionLaboItemProfile(hiv1p2abod,HIV-1+2抗体・p24抗原(吸光度\),HIV1P2ABOD) // 5-7
 //* insert infectionLaboItemProfile(hiv1p2abp24coi,HIV-1+2抗体・p24抗原(コントロール比\),HIV1P2ABP24COI)  // 5-8
 * insert infectionLaboItemProfile(hiv1p2abp24result,HIV-1+2抗体・p24抗原(定性\),HIV1P2ABP24RESULT)  // 5-9
 * insert infectionLaboItemProfile(hiv1p2abp24quant,HIV-1+2抗体・p24抗原(定量\),HIV1P2ABP24QUANT)  // 5-10
 * insert infectionLaboItemProfile(hiv1p2abp24poscoi,HIV-1+2抗体・p24抗原(陽性コントロール比\),HIV1P2ABP24POSCOI)  // 5-11
-
+*/
 * insert infectionLaboItemProfile(hiv1abdil,HIV-1抗体(希釈倍率\),HIV1ABDIL) // 5-12
 * insert infectionLaboItemProfile(hiv1abresult,HIV-1抗体(定性\),HIV1ABRESULT)  // 5-13
 * insert infectionLaboItemProfile(hiv2abdil,HIV-2抗体(希釈倍率\),HIV2ABDIL)  // 5-14
