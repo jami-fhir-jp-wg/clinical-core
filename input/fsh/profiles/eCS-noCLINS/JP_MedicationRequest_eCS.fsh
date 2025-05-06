@@ -116,7 +116,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * valueCodeableConcept 1..1
   * valueCodeableConcept.coding 0..*
   * valueCodeableConcept.coding.system 0..1
-  * valueCodeableConcept.coding.value 0..1
+  * valueCodeableConcept.coding.code 0..1
   * valueCodeableConcept.coding.display 0..1 
   * valueCodeableConcept from $JP_Department_SsMix_VS (preferred)
   * valueCodeableConcept.text 1..1
