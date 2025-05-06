@@ -5,7 +5,7 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
 * ^url = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2025-05-01T00:00:00.000+09:00"
-* ^version = "2025.02rev"
+* ^version = "2025.02"
 * ^status = #active
 * ^content = #complete
 * ^caseSensitive = true
@@ -15,25 +15,25 @@ Description: "CLINS 電子カルテ共有サービス用 JLAC10検体検査項�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^hierarchyMeaning = #is-a
 * ^property[+].code = #unitCode
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#unitCode"
 * ^property[=].type = #string
 * ^property[+].code = #unitDisplay
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#unitDisplay"
 * ^property[=].type = #string
 * ^property[+].code = #specimen
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#specimen"
 * ^property[=].type = #string
 * ^property[+].code = #method
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#method"
 * ^property[=].type = #string
 * ^property[+].code = #fullNumberOfDigits
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#fullNumberOfDigits"
 * ^property[=].type = #integer
 * ^property[+].code = #numberOfDecimalDigits
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#numberOfDecimalDigits"
 * ^property[=].type = #integer
 * ^property[+].code = #oidOfValueSet
-* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#oidOfValueSet"
 * ^property[=].type = #string
 * #TP
   * #3A010000002227101  "TP"

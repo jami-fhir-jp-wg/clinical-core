@@ -44,31 +44,31 @@ def writeCommonHeader(jlacMode,kubun,fout, versionString, updateDate ):
     fout.write('* ^hierarchyMeaning = #is-a' + '\n')
 
     fout.write('* ^property[+].code = #unitCode' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#unitCode"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #unitDisplay' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#unitDisplay"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #specimen' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#specimen"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #method' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#method"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
 
     fout.write('* ^property[+].code = #fullNumberOfDigits' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#fullNumberOfDigits"' + '\n')
     fout.write('* ^property[=].type = #integer' + '\n')
 
     fout.write('* ^property[+].code = #numberOfDecimalDigits' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#numberOfDecimalDigits"' + '\n')
     fout.write('* ^property[=].type = #integer' + '\n')
 
     fout.write('* ^property[+].code = #oidOfValueSet' + '\n')
-    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"' + '\n')
+    fout.write('* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#oidOfValueSet"' + '\n')
     fout.write('* ^property[=].type = #string' + '\n')
     if kubun == '2':    ## 感染症
         fout.write('* #CORE-INFECTIONS' + '\n')    
