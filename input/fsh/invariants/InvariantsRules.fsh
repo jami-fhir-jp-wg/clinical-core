@@ -104,7 +104,7 @@ Severity: #error
 Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription').exists().not()"
 
 Invariant: dummy-check　//未使用
-Description: "ダミー用用コードがつかわれている"
+Description: "ダミー用用法コードがつかわれている"
 Severity: #error
 Expression: "timing.code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS').where(code='0X0XXXXXXXXX0000').exists()"
 

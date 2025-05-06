@@ -1,8 +1,8 @@
-CodeSystem: JP_CLINS_CodeSystem_Propertirs_CS
+CodeSystem: JP_CLINS_CodeSystem_Properties_CS
 Id: jp-clins-codesystem-properties-cs
 Title: "CLINS 検体検査コードシステム属性コードシステム プロパティ"
 Description: "CLINS 検体検査コードシステム属性コードシステム プロパティ"
-* ^url = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property'"
+* ^url = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2025-05-01T00:00:00.000+09:00"
 * ^version = "1.0.0"
