@@ -136,7 +136,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 * category 0..* 
 // * category 薬剤使用区分（外来、院内、院外などの区分）上位Profileで定義済み
 * obeys warning-anyOf-YJ-or-KikakubetsuYakuzaiSeibun-medicationCode
-* category.coding 1..1
+* category.coding 1..
 * category.coding.system 1..1 
   * ^short = "薬剤使用区分のコード体系のコード"
   * ^definition = "JP Core Medication Oral/External Category ValueSetとして、MERIT9コード：http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS、またはJHSP0007コード　http://jpfhir.jp/fhir/core/CodeSystem/JHSP0007　のいずれかを使用する。"
