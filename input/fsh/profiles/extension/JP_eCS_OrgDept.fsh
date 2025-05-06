@@ -31,12 +31,12 @@ Description: "診療サマリーや5情報等に記述する際に、作成発�
 * . ^definition = "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述する"
 * ^language = #ja
 
-
+* url 1..1
 * url = $JP_eCS_InstitutionNumber_Extension (exactly)
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"
 * value[x] ^definition = "作成発行した医療機関番号を設定する。"
-* valueIdentifier.system = $JP_eCS_InstitutionNumber_Extension
+* valueIdentifier.system = $JP_InstitutionNumber
 
 * obeys valid-value-institutionNumberExtension
 
