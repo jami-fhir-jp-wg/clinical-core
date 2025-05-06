@@ -71,6 +71,6 @@ Description: "診療サマリーや5情報等に記述する際に、発行診�
 * value[x] ^definition = "診療科コードと名称等を設定する。"
 * valueCodeableConcept from $JP_Department_SsMix_VS (preferred)
 * valueCodeableConcept 1..1 
-* valueCodeableConcept.text 1..1 MS 
+* valueCodeableConcept.text 0..1 MS 
 
 
