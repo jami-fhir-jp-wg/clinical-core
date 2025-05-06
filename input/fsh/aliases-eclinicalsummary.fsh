@@ -150,8 +150,9 @@ Alias: $JP_Medication_RPGroupNumber = http://jpfhir.jp/fhir/core/mhlw/IdSystem/M
 Alias: $JP_MedicationAdministrationIndex = http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex //urn:oid:1.2.392.100495.20.3.82 RP内番号
 
 // 拡張
-Alias: $JP_eCS_Department = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
-Alias: $JP_eCS_InstitutionNumber = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
+Alias: $JP_eCS_Department_Extension = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department
+Alias: $JP_eCS_InstitutionNumber_Extension = http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
+// 拡張で使うコードシステム
 Alias: $JP_InstitutionNumber = http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no
 Alias: $JP_eCS_DiagnosisType = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType
 

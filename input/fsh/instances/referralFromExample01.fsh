@@ -66,7 +66,7 @@ Description: "Organizationリソース　（診療情報提供書　紹介元　
 * extension[=].valueIdentifier.value = "9876543"
 
 // 診療科情報（眼科）
-* extension[+].url = $JP_eCS_Department (exactly)
+* extension[+].url = $JP_eCS_Department_Extension (exactly)
 * extension[=].valueCodeableConcept = $JP_Department_SsMix_CS#26 "眼科"
 
 //

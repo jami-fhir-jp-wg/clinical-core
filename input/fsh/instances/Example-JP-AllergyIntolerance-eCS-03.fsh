@@ -14,7 +14,7 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 * language = #ja
 
-* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 
@@ -61,7 +61,7 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 * meta.tag[+] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 * language = #ja
 
-* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 

@@ -6,10 +6,10 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac,JLA
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.x.x-instance"
 //* meta.tag[lts] = $JP_ehrshrs_indication_CS#LTS "長期保存"
 //* language = #ja
-* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
-* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].url = $JP_eCS_Department_Extension
 * extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier

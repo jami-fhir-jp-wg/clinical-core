@@ -32,7 +32,7 @@ Description: "医療機関情報　診療科情報を拡張に含む　例"
 */
 
 // 診療科情報（循環器科）
-* extension[+].url = $JP_eCS_Department (exactly)
+* extension[+].url = $JP_eCS_Department_Extension (exactly)
 * extension[=].valueCodeableConcept = $JP_Department_SsMix_CS#08 "循環器科"
 
 //
@@ -77,7 +77,7 @@ Description: "医療機関情報　診療科情報を拡張に含む　例"
 */
 
 // 診療科情報（循環器科）
-* extension[+].url = $JP_eCS_Department (exactly)
+* extension[+].url = $JP_eCS_Department_Extension (exactly)
 * extension[=].valueCodeableConcept = $JP_Department_SsMix_CS#08 "循環器科"
 
 //

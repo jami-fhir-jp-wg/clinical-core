@@ -7,7 +7,7 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 //* text.status = #additional
 //* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>入院処方　外用（点眼）全量処方　1回量をコードで記述できない例</p> </div>"
 
-* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
 * id = "Example-JP-MedReq-ExtEye-Total1"

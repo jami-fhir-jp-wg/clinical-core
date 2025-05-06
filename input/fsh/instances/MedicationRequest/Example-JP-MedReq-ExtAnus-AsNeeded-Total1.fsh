@@ -10,10 +10,10 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 
 * id = "Example-JP-MedReq-ExtAnus-AsNeeded-Total1"
 
-* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber 
+* extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
-* extension[eCS_Department].url = $JP_eCS_Department
+* extension[eCS_Department].url = $JP_eCS_Department_Extension
 * extension[eCS_Department].valueCodeableConcept = $JP_Department_SsMix_CS#01 "内科"
 * extension[eCS_Department].valueCodeableConcept.text = "内科"
 

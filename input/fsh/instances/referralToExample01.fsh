@@ -65,7 +65,7 @@ Description: "Organizationリソース　（診療情報提供書　紹介先　
 * extension[=].valueIdentifier.value = "1234567"
 
 // 診療科情報（循環器内科）
-* extension[+].url = $JP_eCS_Department (exactly)
+* extension[+].url = $JP_eCS_Department_Extension (exactly)
 * extension[=].valueCodeableConcept = $JP_Department_SsMix_CS#081 "循環器内科"
 
 //

@@ -66,7 +66,7 @@ Description: "紹介元医療機関情報　例"
 * extension[=].valueIdentifier.value = "9876543"
 
 // 診療科情報（眼科）
-* extension[+].url = $JP_eCS_Department (exactly)
+* extension[+].url = $JP_eCS_Department_Extension (exactly)
 * extension[=].valueCodeableConcept = $JP_Department_SsMix_CS#26 "眼科"
 
 //

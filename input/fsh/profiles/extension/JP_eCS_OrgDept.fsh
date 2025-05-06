@@ -6,7 +6,7 @@ Extension: JP_eCS_InstitutionNumber
 Id: jp-ecs-institution-number
 Title: "JP eCS InstitutionNumber Extension"
 Description: "診療サマリーや5情報等に記述する際に、作成発行した医療機関番号を記述する拡張"
-* ^url = $JP_eCS_InstitutionNumber
+* ^url = $JP_eCS_InstitutionNumber_Extension
 // http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber
 * ^version = "x.x.x-profile"
 * ^status = #active
@@ -32,11 +32,11 @@ Description: "診療サマリーや5情報等に記述する際に、作成発�
 * ^language = #ja
 
 
-* url = $JP_eCS_InstitutionNumber (exactly)
+* url = $JP_eCS_InstitutionNumber_Extension (exactly)
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"
 * value[x] ^definition = "作成発行した医療機関番号を設定する。"
-* valueIdentifier.system = $JP_InstitutionNumber (exactly)
+* valueIdentifier.system = $JP_eCS_InstitutionNumber_Extension
 
 * obeys valid-value-institutionNumberExtension
 
@@ -47,7 +47,7 @@ Extension: JP_eCS_Department
 Id: jp-ecs-department
 Title: "JP eCS Department Extension"
 Description: "診療サマリーや5情報等に記述する際に、発行診療科または発行者の診療科情報を記述する拡張"
-* ^url = $JP_eCS_Department
+* ^url = $JP_eCS_Department_Extension
 * ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-02-25"
@@ -65,7 +65,7 @@ Description: "診療サマリーや5情報等に記述する際に、発行診�
 * . ^short = "診療科情報を記述するための拡張"
 * . ^definition = "発行診療科または発行者の診療科情報を記述する"
 * url 1..1
-* url = $JP_eCS_Department (exactly)
+* url = $JP_eCS_Department_Extension (exactly)
 * value[x] only CodeableConcept
 * value[x] ^short = "診療科コードと名称等を設定する。"
 * value[x] ^definition = "診療科コードと名称等を設定する。"

@@ -144,11 +144,12 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
   * url 1..1 
-  * url = $JP_InstitutionNumber (exactly)
+  * url = $JP_eCS_InstitutionNumber_Extension
   * valueIdentifier 1..1 MS
-  * valueIdentifier.system 1..1 MS
+  * valueIdentifier.system 1..1
+  * valueIdentifier.system = $JP_InstitutionNumber (exactly) MS
   * valueIdentifier.value 1..1 MS  
-* insert eCS_InstitutionNumber_value("医療機関１０桁番号(都道府県コード2桁、保険医療機関区分1桁、保険医療機関番号7桁)")
+* insert eCS_InstitutionNumber_value
 
 * extension[eCS_Department] 0..1 MS
   * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
@@ -394,15 +395,31 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 // OUL^R22.OBX[*]-6  単位
 * valueQuantity ^short = "検査結果が「数値」の場合、値、単位を設定する。"
 * valueQuantity ^comment = "ー"
+* valueQuantity.value 1..1 MS
 
 // if OUL^R22.OBX[*]-2 == "CWE":
 // OUL^R22.OBX[*]-5  結果
+* valueCodeableConcept 0..*
 * valueCodeableConcept ^short = "検査結果が「コード値」の場合、コード、テキスト、コードのValue setを定義する。"
 * valueCodeableConcept ^definition = "結果がコード化されたコンセプトで記述できる場合。定性検査値の場合などに使用する。質問項目の回答記号もコードと回答文字列とみなしてこの結果記述方法を使用することができる。"
+* valueCodeableConcept.coding 1..1
+* valueCodeableConcept.coding.system 1..1
+* valueCodeableConcept.coding.code 1..1
+* valueCodeableConcept.coding.display 1..1
 
 // if OUL^R22.OBX[*]-2 == "ST":
 // OUL^R22.OBX[*]-5  結果
 * valueString ^short = "検査結果値が「文字列」の場合、その文字列を指定する。"
+
+* valueBoolean ..0
+* valueInteger ..0
+* valueRange ..0
+* valueRatio ..0
+* valueSampleData ..0
+* valueTime ..0
+* valueDateTime ..0
+* valuePeriod ..0
+
 
 // Valueが欠落する場合には必ずその理由コードを記述する
 * dataAbsentReason MS

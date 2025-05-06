@@ -121,9 +121,10 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービスでは、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
   * url 1..1 
-  * url = $JP_InstitutionNumber (exactly)
+  * url = $JP_eCS_InstitutionNumber_Extension
   * valueIdentifier 1..1 MS
   * valueIdentifier.system 1..1
+  * valueIdentifier.system = $JP_InstitutionNumber (exactly)
   * valueIdentifier.value 1..1 MS  
 * insert eCS_InstitutionNumber_value
 
