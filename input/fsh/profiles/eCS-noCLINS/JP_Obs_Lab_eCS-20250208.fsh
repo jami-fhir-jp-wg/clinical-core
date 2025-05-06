@@ -399,7 +399,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 // if OUL^R22.OBX[*]-2 == "CWE":
 // OUL^R22.OBX[*]-5  結果
-* valueCodeableConcept 0..*
+* valueCodeableConcept 0..1
 * valueCodeableConcept ^short = "検査結果が「コード値」の場合、コード、テキスト、コードのValue setを定義する。"
 * valueCodeableConcept ^definition = "結果がコード化されたコンセプトで記述できる場合。定性検査値の場合などに使用する。質問項目の回答記号もコードと回答文字列とみなしてこの結果記述方法を使用することができる。"
 * valueCodeableConcept.coding 1..1
@@ -410,16 +410,6 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 // if OUL^R22.OBX[*]-2 == "ST":
 // OUL^R22.OBX[*]-5  結果
 * valueString ^short = "検査結果値が「文字列」の場合、その文字列を指定する。"
-
-* valueBoolean ..0
-* valueInteger ..0
-* valueRange ..0
-* valueRatio ..0
-* valueSampleData ..0
-* valueTime ..0
-* valueDateTime ..0
-* valuePeriod ..0
-
 
 // Valueが欠落する場合には必ずその理由コードを記述する
 * dataAbsentReason MS
