@@ -101,10 +101,10 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。")
   * ^comment = "電子カルテ情報サービス(このリソースが２文書に含まれるケース)では、この拡張による記述は必須。医療機関１０桁番号を示すsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no\"を使用する。"
   * url 1..1 
-  * url = $JP_eCS_InstitutionNumber_Extension
+
   * valueIdentifier 1..1 MS
   * valueIdentifier.system 1..1
-  * valueIdentifier.system = $JP_InstitutionNumber (exactly) MS
+  * valueIdentifier.system = $JP_InstitutionNumber (exactly)
   * valueIdentifier.value 1..1 MS  
 * insert eCS_InstitutionNumber_value
 
@@ -112,7 +112,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」")
   * ^comment = "電子カルテ情報サービス(このリソースが２文書に含まれるケース)では、この拡張による記述は必須。コード化する場合には、JAMI(SS-MIX2) 診療科コード表のsystem値\"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment\"を使用する。診療科を記述する場合には、そのコード化の有無に関わらずtext要素による記述は必須。"
   * url 1..1 
-  * url = "http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment" (exactly)
+
   * valueCodeableConcept 1..1
   * valueCodeableConcept.coding 0..*
   * valueCodeableConcept.coding.system 0..1
@@ -133,9 +133,19 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 
 * status = #completed
 * intent = #order
-* category MS 
+* category 0..* 
 // * category 薬剤使用区分（外来、院内、院外などの区分）上位Profileで定義済み
 * obeys warning-anyOf-YJ-or-KikakubetsuYakuzaiSeibun-medicationCode
+* category.coding 1..1
+* category.coding.system 1..1 
+  * ^short = "薬剤使用区分のコード体系のコード"
+  * ^definition = "JP Core Medication Oral/External Category ValueSetとして、MERIT9コード：http://jpfhir.jp/fhir/core/CodeSystem/JP_MedicationCategoryMERIT9_CS、またはJHSP0007コード　http://jpfhir.jp/fhir/core/CodeSystem/JHSP0007　のいずれかを使用する。"
+* category.coding.code 1..1 MS 
+  * ^short = "薬剤使用区分のコード"
+  * ^definition = "薬剤使用区分のコード。MERIT9コードから、OHP:外来処方、OHI:院内処方（外来）、OHO:院外処方（外来）、IHP:入院処方、DCG:退院時処方、ORD:定期処方（入院）、XTR:臨時処方(入院）。JHSP0007コードから、BDP:持参薬処方　などのコード部分（"OHP"など）を使用することができる。"
+* category.coding.display 0..1 MS 
+  * ^short = "薬剤使用区分のコード体系のコード"
+  * ^definition = "コードに対応する文字列部分。（OHI:院内処方、OHO:院外処方、IHP:入院処方、DCG:退院時処方、ORD:定期処方、XTR:臨時処方、BDP:持参薬処方　の\"院内処方\"の文字列など）"
 
 * medication[x] ^short = "医薬品コードと医薬品名称。ひとつの 必須のtext 要素と、複数の coding 要素を記述できる。"
 * medication[x] ^definition = "本仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ず text 要素に格納した上で、coding要素を繰り返すことでHOT9やYJコードなど複数のコード体系で医薬品コードを並記することが可能。coding要素を繰り返すことで複数のコード体系で医薬品コード並記することが可能。\r\n本Profile仕様では、処方オーダ時に選択または入力し、実際に処方箋に印字される文字列を必ずtext要素に格納した上で、それをコード化した情報を1個以上のcoding 要素に記述する。使用できるコード体系は電子カルテ情報共有サービスに利用される場合には、個別医薬品コード（通称YJコード）または規格別薬剤成分コードのどちらかを必須とする。それ以外のコード体系も追加で記述して構わない。"
@@ -288,6 +298,14 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 
 * dispenseRequest.performer 
   * ^comment = "当面、診療５情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
+
+* substitution　0..1
+* substitution.allowedCodeableConcept　1..1
+* substitution.allowedCodeableConcept.coding　1..1
+* substitution.allowedCodeableConcept.coding.system　1..1
+* substitution.allowedCodeableConcept.coding.code　1..1 MS
+* substitution.allowedCodeableConcept.coding.display 0..1 MS
+// binding http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationSubstitutionNotAllowedReason_VS はJP_Coreで記述済み
 
 
 
