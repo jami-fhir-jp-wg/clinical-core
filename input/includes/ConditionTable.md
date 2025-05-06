@@ -1,1995 +1,1709 @@
-<table border=0 cellpadding=0 cellspacing=0 width=1111 style='border-collapse:
- collapse;table-layout:fixed;width:833pt'>
- <col class=xl266 width=97 style='mso-width-source:userset;mso-width-alt:2669;
- width:73pt'>
- <col class=xl266 width=83 style='mso-width-source:userset;mso-width-alt:2267;
- width:62pt'>
- <col class=xl266 width=73 span=3 style='mso-width-source:userset;mso-width-alt:
- 2011;width:55pt'>
- <col class=xl266 width=35 style='mso-width-source:userset;mso-width-alt:950;
- width:26pt'>
- <col class=xl266 width=87 style='mso-width-source:userset;mso-width-alt:2377;
- width:65pt'>
- <col class=xl290 width=359 style='mso-width-source:userset;mso-width-alt:9837;
- width:269pt'>
- <col class=xl266 width=36 style='mso-width-source:userset;mso-width-alt:987;
- width:27pt'>
- <col class=xl266 width=195 style='mso-width-source:userset;mso-width-alt:5339;
- width:146pt'>
- <tr height=61 style='mso-height-source:userset;height:46.0pt'>
-  <td colspan=10 height=61 class=xl437 width=1111 style='height:46.0pt;
-  width:833pt'><ruby>多重度<span style='display:none'><rt>タジュウド </rt></span></ruby>は、<ruby>親<span
-  style='display:none'><rt>オヤ </rt></span></ruby><ruby>要素<span
-  style='display:none'><rt>ヨウソ </rt></span></ruby>が<ruby>出現<span
-  style='display:none'><rt>シュツゲン </rt></span></ruby>した<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>の<ruby>多重度<span
-  style='display:none'><rt>タジュウド </rt></span></ruby>。たとえばある<ruby>子要素<span
-  style='display:none'><rt>コヨウソ </rt></span></ruby>の<ruby>多重度<span
-  style='display:none'><rt>タジュウド </rt></span></ruby>が1..1であっても<ruby>親要素<span
-  style='display:none'><rt>オヤヨウソ </rt></span></ruby>が<ruby>出現<span
-  style='display:none'><rt>シュツゲン </rt></span></ruby>しない<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>にはその<ruby>子要素<span
-  style='display:none'><rt>コヨウソ </rt></span></ruby>は<ruby>出現<span
-  style='display:none'><rt>シュツゲン </rt></span></ruby>しない。<ruby>逆<span
-  style='display:none'><rt>ギャク </rt></span></ruby>に<ruby>親要素<span
-  style='display:none'><rt>オヤヨウソ </rt></span></ruby>が<ruby>出現<span
-  style='display:none'><rt>シュツゲン </rt></span></ruby>する<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、この<ruby>子要素<span
-  style='display:none'><rt>コヨウソ </rt></span></ruby>は<ruby>出現<span
-  style='display:none'><rt>シュツゲン </rt></span></ruby>しなければならない。</td>
- </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl204 width=97 style='height:75.0pt;border-top:none;
-  width:73pt'>要素Lv1</td>
-  <td class=xl205 width=83 style='border-top:none;width:62pt'>要素Lv2</td>
-  <td class=xl205 width=73 style='border-top:none;width:55pt'>要素Lv3</td>
-  <td class=xl205 width=73 style='border-top:none;width:55pt'>　</td>
-  <td class=xl205 width=73 style='border-top:none;width:55pt'>要素Lv4</td>
-  <td class=xl206 width=35 style='border-top:none;width:26pt'>多重度</td>
-  <td class=xl205 width=87 style='border-top:none;width:65pt'>型</td>
-  <td class=xl205 width=359 style='border-top:none;width:269pt'>説明</td>
-  <td class=xl205 width=36 style='border-top:none;width:27pt'><ruby>固定値<span
-  style='display:none'><rt class=font9>コテイチ</rt></span></ruby> <br>
-    <ruby>／<span style='display:none'><rt class=font9>レイジ</rt></span></ruby> <ruby>例<span
-  style='display:none'><rt class=font9>ジ</rt></span></ruby> 示</td>
-  <td class=xl228 width=195 style='border-top:none;width:146pt'><ruby>固定値<span
-  style='display:none'><rt class=font9>コテイチ</rt></span></ruby> または<ruby>例示<span
-  style='display:none'><rt class=font9>レイジ</rt></span></ruby></td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>resourceType</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl229 width=359 style='width:269pt'>Conditionリソースであることを示す。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;Condition&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl211 width=35 style='width:26pt'>1..*</td>
-  <td class=xl79 width=87 style='width:65pt'>Meta</td>
-  <td class=xl79 width=359 style='width:269pt'>　</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=340 style='height:255.0pt'>
-  <td height=340 class=xl168 width=97 style='height:255.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>lastUpdated</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl211 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>instant</td>
-  <td class=xl79 width=359 style='width:269pt'>最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz<br>
-   
-  この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。<ruby>本要素<span
-  style='display:none'><rt>ホンヨウソ </rt></span></ruby>に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;2015-02-07T13:28:17.239+09:00&quot;</td>
- </tr>
- <tr height=160 style='height:120.0pt'>
-  <td height=160 class=xl168 width=97 style='height:120.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>profile[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..*</td>
-  <td class=xl79 width=87 style='width:65pt'>canonical(StructureDefinition)</td>
-  <td class=xl72 width=359 style='width:269pt'>本プロファイルを識別するURLとバージョンを指定する。<br>
-   
-  http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定する(|x.y.z
-  は（U+007C）パイプ文字（縦棒文字）とバージョンx.y.zを指定する)。|x.y.z　のバージョン表記は省略可能で、省略した場合には、受信側により受信時点での最新バージョンに準拠しているとみなされる。<br>
-    </td>
-  <td class=xl72 width=36 style='width:27pt'>固定値(x.y.zは置き換える)</td>
-  <td class=xl170 width=195 style='width:146pt'>&quot;http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z&quot;<br>
-    </td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[*]</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>0..*</td>
-  <td class=xl79 width=87 style='width:65pt'>Coding</td>
-  <td class=xl79 width=359 style='width:269pt'><ruby>本リソースのタグ情報<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby></td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl213 width=359 style='width:269pt'>電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>長期保存フラグ</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;LTS&quot;</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl213 width=359 style='width:269pt'>電子カルテ情報サービスで未告知フラグを設定する場合に使用</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>未告知フラグ</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;UNINFORMED&quot;</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl213 width=359 style='width:269pt'>電子カルテ情報サービスで<ruby>未提供<span
-  style='display:none'><rt>ミテイキョウ </rt></span></ruby>フラグを設定する場合に使用</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>meta</td>
-  <td class=xl79 width=83 style='width:62pt'>tag[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl83 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>未<ruby>提供<span style='display:
-  none'><rt>テイキョウ </rt></span></ruby>フラグ</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;UNDELIVERED&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>contained[*]</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl84 width=35 style='width:26pt'>0..*</td>
-  <td class=xl79 width=87 style='width:65pt'>　</td>
-  <td class=xl79 width=359 style='width:269pt'>　</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl168 width=97 style='height:90.0pt;width:73pt'>contained[+]</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>ß</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl83 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Resource(JP_Encounter)</td>
-  <td class=xl79 width=359 style='width:269pt'>入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<font
-  class="font14">電子カルテ情報サービスでは必須。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl168 width=97 style='height:60.0pt;width:73pt'>contained[+]</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl84 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Resource(JP_Practitioner<span
-  style='mso-spacerun:yes'>  </span>)</td>
-  <td class=xl79 width=359 style='width:269pt'><ruby>傷病名<span style='display:
-  none'><rt>ショウビョウメイ </rt></span></ruby><ruby>登録者<span style='display:none'><rt>トウロクシャ
-  </rt></span></ruby><ruby>情報<span style='display:none'><rt>ジョウホウ </rt></span></ruby>。recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl282 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[*]</td>
-  <td class=xl232 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl232 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl267 width=359 style='border-top:none;border-left:none;width:269pt'>電子カルテ情報サービスでは、<ruby>作成<span
-  style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
-  style='display:none'><rt>ハッコウ </rt></span></ruby>した<ruby>医療<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
-  style='display:none'><rt>キカｎ </rt></span></ruby><ruby>番号<span
-  style='display:none'><rt>バンゴウ </rt></span></ruby>や<ruby>診療科<span
-  style='display:none'><rt>シンリョウカ </rt></span></ruby><ruby>情報<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby>を<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する<ruby>拡張<span
-  style='display:none'><rt>カクチョウ </rt></span></ruby>。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl268 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl197 width=97 style='height:20.0pt;width:73pt'>extension[+]</td>
-  <td class=xl283 width=83 style='border-left:none;width:62pt'>　</td>
-  <td class=xl283 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl283 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl283 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl269 width=35 style='border-left:none;width:26pt'>0..1</td>
-  <td class=xl283 width=87 style='border-left:none;width:65pt'>Extension</td>
-  <td class=xl242 width=359 style='border-left:none;width:269pt'>　</td>
-  <td class=xl216 width=36 style='border-left:none;width:27pt'>　</td>
-  <td class=xl271 width=195 style='border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=177 style='mso-height-source:userset;height:133.0pt'>
-  <td height=177 class=xl197 width=97 style='height:133.0pt;width:73pt'>extension[=]</td>
-  <td class=xl142 width=83 style='border-left:none;width:62pt'>url</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl269 width=35 style='border-left:none;width:26pt'>1..1</td>
-  <td class=xl142 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl242 width=359 style='border-left:none;width:269pt'>本情報を作成発行した診療科または<ruby>作成<span
-  style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
-  style='display:none'><rt>ハッコウ </rt></span></ruby>者の診療科情報を記述するために使用する拡張「eCS_InstitutionNumber」。<br>
-    <font class="font14">電子カルテ情報サービスでは、この拡張による記述は必須。</font></td>
-  <td class=xl142 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl265 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"
-  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber&quot;</span></a></td>
- </tr>
- <tr height=47 style='mso-height-source:userset;height:35.0pt'>
-  <td height=47 class=xl196 width=97 style='height:35.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueIdentifier</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Identifier</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>医療<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
-  style='display:none'><rt>キカｎ </rt></span></ruby><ruby>識別<span
-  style='display:none'><rt>シキベツ </rt></span></ruby><ruby>情報<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby>。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl196 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueIdentifier</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl142 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>医療<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
-  style='display:none'><rt>キカｎ </rt></span></ruby>１０<ruby>桁<span
-  style='display:none'><rt>ケタ </rt></span></ruby><ruby>番号<span
-  style='display:none'><rt>バンゴウ </rt></span></ruby>を<ruby>示<span
-  style='display:none'><rt>シメス </rt></span></ruby>すURL。</td>
-  <td class=xl142 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl335 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no&quot;</td>
- </tr>
- <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl202 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl88 width=83 style='border-top:none;border-left:none;width:62pt'>valueIdentifier</td>
-  <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>value</td>
-  <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl273 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl88 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl88 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>医療機関１０桁番号。<span
-  style='display:none'><rt>ケタ </rt></span></ruby></td>
-  <td class=xl217 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
-  <td class=xl286 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;1318814790&quot;</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl276 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>extension[+]</td>
-  <td class=xl287 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
-  <td class=xl287 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl287 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl287 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl338 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl287 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl242 width=359 style='border-left:none;width:269pt'>本情報を作成発行した診療科または<ruby>作成<span
-  style='display:none'><rt>サクセイ </rt></span></ruby><ruby>発行<span
-  style='display:none'><rt>ハッコウ </rt></span></ruby>者の診療科情報を記述するために使用する拡張「eCS_Department」。<font
-  class="font14">電子カルテ情報サービスでは、この拡張による記述は必須。</font></td>
-  <td class=xl218 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl288 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl197 width=97 style='height:45.0pt;width:73pt'>extension[=]</td>
-  <td class=xl142 width=83 style='border-left:none;width:62pt'>url</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl269 width=35 style='border-left:none;width:26pt'>1..1</td>
-  <td class=xl142 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl142 width=359 style='border-left:none;width:269pt'>診療科情報を記述するために使用する拡張を識別するURL。</td>
-  <td class=xl142 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl265 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department&quot;</span></a></td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>診療科情報。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>診療科のコード化記述。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl196 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl142 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI
-  診療科コード表のURI。</td>
-  <td class=xl142 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI
-  診療科コード。2<ruby>桁<span style='display:none'><rt>ケタ </rt></span></ruby>コード。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;08&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>JAMI
-  診療科コードでのコードに対応する表示名。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<ruby>循環器科<span
-  style='display:none'><rt>ジュンカンキカ </rt></span></ruby>&quot;</td>
- </tr>
- <tr height=95 style='mso-height-source:userset;height:71.0pt'>
-  <td height=95 class=xl196 width=97 style='height:71.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>コード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby>の<ruby>有無<span
-  style='display:none'><rt>ウム </rt></span></ruby>に<ruby>関<span
-  style='display:none'><rt>カカワラズ </rt></span></ruby>わらず、<ruby>当該<span
-  style='display:none'><rt>トウガイ </rt></span></ruby><ruby>医療<span
-  style='display:none'><rt>イリョウ </rt></span></ruby><ruby>機関<span
-  style='display:none'><rt>キカン </rt></span></ruby>の<ruby>情報<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby>システムのマスターで<ruby>定<span
-  style='display:none'><rt>サダメラレタ </rt></span></ruby>められた<ruby>診<span
-  style='display:none'><rt>モットモ </rt></span></ruby>療<ruby>科<span
-  style='display:none'><rt>ナガイ </rt></span></ruby><ruby>名称<span
-  style='display:none'><rt>メイショウ </rt></span></ruby><ruby>の文字<span
-  style='display:none'><rt>シンリョウカ </rt></span></ruby><ruby>列<span
-  style='display:none'><rt>メイ </rt></span></ruby>（<ruby>文字数<span
-  style='display:none'><rt>モジスウ </rt></span></ruby>の<ruby>長<span
-  style='display:none'><rt>ナガサ </rt></span></ruby>さにより<ruby>複数<span
-  style='display:none'><rt>フクスウ </rt></span></ruby>ある<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、<ruby>最<span
-  style='display:none'><rt>モットモ </rt></span></ruby>も<ruby>短<span
-  style='display:none'><rt>ミジカイ </rt></span></ruby>い<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>）。<ruby><font class="font14">電子カ</font><span
-  style='display:none'><rt>モジレツ </rt></span></ruby><font class="font14">ルテ情報サービスでは、この拡張による記述は必須。</font></td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'><ruby>例示<span
-  style='display:none'><rt>&#128347;</rt></span></ruby></td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;<ruby>循<span
-  style='display:none'><rt>ジュンカンキ </rt></span></ruby><ruby>内<span
-  style='display:none'><rt>ナイ </rt></span></ruby>&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl276 width=97 style='height:30.0pt;width:73pt'>extension[+]</td>
-  <td class=xl287 width=83 style='border-left:none;width:62pt'>　</td>
-  <td class=xl287 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl287 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl287 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl338 width=35 style='border-left:none;width:26pt'>0..1</td>
-  <td class=xl287 width=87 style='border-left:none;width:65pt'>Extension</td>
-  <td class=xl277 width=359 style='border-left:none;width:269pt'><ruby>主傷病<span
-  style='display:none'><rt>シュショウビョウメイ </rt></span></ruby>フラグのある<ruby>傷病名<span
-  style='display:none'><rt>ショウビョウメイ </rt></span></ruby>であることを<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>するための拡張「eCS_DiagnosisType」。</td>
-  <td class=xl218 width=36 style='border-left:none;width:27pt'>　</td>
-  <td class=xl288 width=195 style='border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl197 width=97 style='height:45.0pt;width:73pt'>extension[=]</td>
-  <td class=xl142 width=83 style='border-left:none;width:62pt'>url</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl142 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl269 width=35 style='border-left:none;width:26pt'>1..1</td>
-  <td class=xl142 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl142 width=359 style='border-left:none;width:269pt'>主傷病であることを記述するために使用する拡張を識別するURL。</td>
-  <td class=xl142 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl339 width=195 style='border-left:none;width:146pt'><a
-  href="http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department"
-  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType&quot;</span></a></td>
- </tr>
- <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl196 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>診断<span
-  style='display:none'><rt>シンダン </rt></span></ruby>タイプ<ruby>情報<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby>。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl196 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>診断タイプのコード化記述。</td>
-  <td class=xl92 width=36 style='border-left:none;width:27pt'>　</td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=68 style='mso-height-source:userset;height:51.0pt'>
-  <td height=68 class=xl196 width=97 style='height:51.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl142 width=87 style='border-left:none;width:65pt'>uri</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>HL7
-  FHIR Claimリソースで<ruby>用<span style='display:none'><rt>モチイラレル </rt></span></ruby>いられる<ruby>診断<span
-  style='display:none'><rt>シンダン </rt></span></ruby>タイプコードのURLを<ruby>使用<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>する。</td>
-  <td class=xl92 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://terminology.hl7.org/CodeSystem/ex-diagnosistype&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>extension[=]</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>主傷病<span
-  style='display:none'><rt>シュショウビョウ </rt></span></ruby>コードとして、principal　を<ruby>設定<span
-  style='display:none'><rt>セッテイ ケタ </rt></span></ruby>する。</td>
-  <td class=xl92 width=36 style='border-left:none;width:27pt'><ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby></td>
-  <td class=xl284 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;principal&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl176 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>identifier[*]</td>
-  <td class=xl110 width=83 style='border-top:none;width:62pt'>　</td>
-  <td class=xl110 width=73 style='border-top:none;width:55pt'>　</td>
-  <td class=xl110 width=73 style='border-top:none;width:55pt'>　</td>
-  <td class=xl110 width=73 style='border-top:none;width:55pt'>　</td>
-  <td class=xl237 width=35 style='border-top:none;width:26pt'>1..*</td>
-  <td class=xl110 width=87 style='border-top:none;width:65pt'>Identifier</td>
-  <td class=xl169 width=359 style='width:269pt'>このリソース情報の識別ID。</td>
-  <td class=xl110 width=36 style='border-top:none;width:27pt'>　</td>
-  <td class=xl177 width=195 style='border-top:none;width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>identifier[+]</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Identifier</td>
-  <td class=xl314 width=359 style='border-top:none;border-left:none;width:269pt'>リソース一意識別ID。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>identifier[=]</td>
-  <td class=xl79 width=83 style='width:62pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl236 width=359 style='width:269pt'>「リソース一意識別ID」のsystem値を固定で設定する。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl281 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"
-  target="_parent"><span style='color:black;font-size:10.0pt;text-decoration:
-  none;font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier&quot;<ruby><font
-  class="font9"><rt class=font9></rt></font></ruby></span></a></td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>identifier[=]</td>
-  <td class=xl79 width=83 style='width:62pt'>value</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl333 width=359 style='border-top:none;border-left:none;width:269pt'>「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。<ruby><font
-  class="font21"><rt class=font21></rt></font></ruby></td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>&quot;http://sample.jp/fhir/1311234567/ehr2020/condition/0008363939-20210826-002&quot;</td>
- </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl168 width=97 style='height:75.0pt;width:73pt'>clinicalStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl219 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>CodeableConcept</td>
-  <td class=xl79 width=359 style='width:269pt'>臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはな<ruby>らな<span
-  style='display:none'><rt>ヨウソ &#0;l&#2;&#4;&#2;&#8;</rt></span></ruby>い。<font
-  class="font14">'entered-in-error'以外では、必須。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>clinicalStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[*]</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..*</td>
-  <td class=xl79 width=87 style='width:65pt'>Coding</td>
-  <td class=xl79 width=359 style='width:269pt'>臨床的状態のステータスのコード化情報</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>clinicalStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>コードで記述が必須で、少なくともひとつのsystem値は固定値。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;</td>
- </tr>
- <tr height=140 style='height:105.0pt'>
-  <td height=140 class=xl168 width=97 style='height:105.0pt;width:73pt'>clinicalStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）,
-  remission(軽快または寛解), resolved (軽快または治癒) 、unkn<ruby>ow<span style='display:
-  none'><rt>フメイ </rt></span></ruby>n（不明）のいずれかを選ぶ。軽快では状況に応じてremissionまたはresolvedを使用する。<font
-  class="font14">電子カルテ情報共有サービスでは、recurrence、relapse、inactiveは使用しない。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;active&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>clinicalStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>display</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>Active|Remission|Resolved|Unknownのいずれかの文字列。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;Active&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>clinicalStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>text</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>コードだけでは記述できない情報がある場合にコードと併用してもよい。値が使用されない可能性はある。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl168 width=97 style='height:60.0pt;width:73pt'>verificationStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl81 width=35 style='width:26pt'>1..1<ruby><font class="font9"><rt
-  class=font9></rt></font></ruby></td>
-  <td class=xl79 width=87 style='width:65pt'>CodeableConcept</td>
-  <td class=xl79 width=359 style='width:269pt'>入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須。clinicalStatusとの制約条件を参照のこと。<font
-  class="font14">疑い病名フラグとしても使用される。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>verificationStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[*]</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl81 width=35 style='width:26pt'>1..*</td>
-  <td class=xl79 width=87 style='width:65pt'>Coding</td>
-  <td class=xl79 width=359 style='width:269pt'>臨床的状態に対する検証状況のコード化情報</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>verificationStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl81 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>コードで記述が必須で、少なくともひとつのsystem値は固定値。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl291 width=195 style='width:146pt'><a
-  href="http://terminology.hl7.org/CodeSystem/condition-ver-status"
-  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot;</span></a></td>
- </tr>
- <tr height=260 style='height:195.0pt'>
-  <td height=260 class=xl168 width=97 style='height:195.0pt;width:73pt'>verificationStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl81 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl72 width=359 style='width:269pt'>疑い病名フラグがない病名には、confirmed を設定するが、<ruby>一度<span
-  style='display:none'><rt>イチド </rt></span></ruby><ruby>登録<span
-  style='display:none'><rt>トウロク </rt></span></ruby>された<ruby>病名<span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby>を<ruby>取<span
-  style='display:none'><rt>トリケシタ </rt></span></ruby>り消した<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>やそれが<ruby>入力<span
-  style='display:none'><rt>ニュウリョク </rt></span></ruby>エラーであったことを<ruby>明示<span
-  style='display:none'><rt>メイジ </rt></span></ruby>したい<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、refuted（<ruby>取<span
-  style='display:none'><rt>トリケシ </rt></span></ruby>り消された<ruby>病名<span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby>）、entered-in-error（<ruby>誤<span
-  style='display:none'><rt>アヤマッテ </rt></span></ruby>って<ruby>登録<span
-  style='display:none'><rt>トウロク </rt></span></ruby>された<ruby>病名<span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby>）のいずれかを<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>することもできる。<br>
-    疑い病<ruby>名フ<span style='display:none'><rt>デンシ </rt></span></ruby>ラグの<ruby>ある<span
-  style='display:none'><rt>ジョウホウ </rt></span></ruby><ruby>病名<span
-  style='display:none'><rt>キョウユウ </rt></span></ruby>には、unconfirmed を必ず設定する。<font
-  class="font14">なお、電子カルテ情報共有サービスでは、confirmed、unconfirmed</font><ruby><font
-  class="font14">以外</font><span style='display:none'><rt>ソウシン カコ ソウシン ビョウメイ
-  トホゾン&#0; &#2;&#4;&quot; ソウシン カコ ソウシン ビョウメイ トホゾン</rt></span></ruby><font
-  class="font14">の病名に対してはその情報は保存されるが、利用されたり表示されたりすることはない。過去の登録病名情報に対して削除や取り消しなどの処理を行うために使われることもないため、refutedやentered-in-errorをつけて送信しても過去に送信した病名を取り消すことはできない</font><font
-  class="font16">。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;unconfirmed&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>verificationStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>display</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl211 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl72 width=359 style='width:269pt'>Unconfirmed|Confirmed|Refuted|EnteredinErrorのいずれかの文字列。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;Unconfirmed&quot;</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>verificationStatus</td>
-  <td class=xl79 width=83 style='width:62pt'>text</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>コードだけでは記述できない情報がある場合や、コード化できない場合には本要素だけで記述してもよい。コードと併用してもよい</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=88 style='mso-height-source:userset;height:66.0pt'>
-  <td height=88 class=xl168 width=97 style='height:66.0pt;width:73pt'>category</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl81 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>CodeableConcept</td>
-  <td class=xl79 width=359 style='width:269pt'><ruby>臨床<span style='display:
-  none'><rt>リンショウ </rt></span></ruby><ruby>的<span style='display:none'><rt>テキ </rt></span></ruby>状態に割り当てられたカテゴリー。設定する<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、problem-list-item
-  （プロブレムリスト）| encounter-diagnosis （<ruby>診察<span style='display:none'><rt>シンサツ </rt></span></ruby><ruby>時点<span
-  style='display:none'><rt>ジテン </rt></span></ruby>での<ruby>診断名<span
-  style='display:none'><rt>シンダンメイ </rt></span></ruby>）のいずれ<ruby>かを<span
-  style='display:none'><rt>セッテイ キョウユウ セッテイ セッテイ </rt></span></ruby>設定する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;encounter-diagnosis&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>category</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[*]</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..*</td>
-  <td class=xl79 width=87 style='width:65pt'>Coding</td>
-  <td class=xl79 width=359 style='width:269pt'>カテゴリーのコード記述</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>category</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>category.coding.systemは、&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;を設定する。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl291 width=195 style='width:146pt'><a
-  href="http://terminology.hl7.org/CodeSystem/condition-category"
-  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;</span></a></td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>category</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl213 width=359 style='width:269pt'>電子カルテ情報共有サービスでは、'encounter-diagnosis'をcategory.coding.codeに設定すること。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;encounter-diagnosis&quot;</td>
- </tr>
- <tr height=107 style='mso-height-source:userset;height:80.0pt'>
-  <td height=107 class=xl168 width=97 style='height:80.0pt;width:73pt'>category</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>display</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>コードencounter-diagnosisに対応するdisplay
-  nameとしては、&quot;Encounter
-  Diagnosis&quot;を設定する。（コードproblem-list-itemに対応するのは&quot;Problem List
-  Item&quot;）</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;Encounter Diagnosis&quot;</td>
- </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl168 width=97 style='height:90.0pt;width:73pt'>severity</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>潜在的な臨床的危険性、致命度。記述する場合は、コード表：&quot;http://jpfhir.jp/fhir/core/CodeSystem/JP_ConditionSeverity_CS&quot;からMI：軽度、MO：中度、SE：重度、UK：不明のいずれかを<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>する。<br>
-    </td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;SE&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>CodeableConcept</td>
-  <td class=xl72 width=359 style='width:269pt'>	傷病名のコードと名称。code.textには<ruby>病名<span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby><ruby>入力<span
-  style='display:none'><rt>ニュウリョク </rt></span></ruby><ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>を<ruby>必<span
-  style='display:none'><rt>カナラズ </rt></span></ruby>ずそのまま<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>する。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[*]</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl232 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl234 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語または後置修飾語をあれば、それぞれ<ruby>用<span
-  style='display:none'><rt>ヨウ </rt></span></ruby>の拡張を用いて<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する。</td>
-  <td class=xl215 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl268 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[+]</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl234 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語があればその<ruby>数<span
-  style='display:none'><rt>カズ </rt></span></ruby>だけ<ruby>繰<span
-  style='display:none'><rt>クリカエシ </rt></span></ruby>り返しで<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する。<ruby>登録<span
-  style='display:none'><rt>トウロク </rt></span></ruby><ruby>順序<span
-  style='display:none'><rt>ジュンジョ </rt></span></ruby>は<ruby>原則<span
-  style='display:none'><rt>ゲンソク </rt></span></ruby>として<ruby>配列<span
-  style='display:none'><rt>ハイレツ </rt></span></ruby><ruby>順<span
-  style='display:none'><rt>ジュン </rt></span></ruby>とする。</td>
-  <td class=xl216 width=36 style='border-left:none;width:27pt'>　</td>
-  <td class=xl271 width=195 style='border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl168 width=97 style='height:60.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>url</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>病名の前置修飾語を格納するための拡張(JP_Condition_DiseasePrefixModifier_eCS)</td>
-  <td class=xl79 width=36 style='width:27pt'><ruby>固定値<span style='display:
-  none'><rt>コテイチ </rt></span></ruby></td>
-  <td class=xl291 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"
-  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier&quot;</span></a></td>
- </tr>
- <tr height=63 style='mso-height-source:userset;height:47.0pt'>
-  <td height=63 class=xl168 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>前置修飾語のコード記述。コード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby>できない<ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>の<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>にはtext<ruby>要素<span
-  style='display:none'><rt>ヨウソ </rt></span></ruby>だけで<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>してもよい。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=63 style='mso-height-source:userset;height:47.0pt'>
-  <td height=63 class=xl168 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>前置修飾語のコード記述</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=235 style='mso-height-source:userset;height:176.0pt'>
-  <td height=235 class=xl168 width=97 style='height:176.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>前<span
-  style='display:none'><rt>ゼンチ </rt></span></ruby>置<ruby>修<span
-  style='display:none'><rt>シュウ&#0;&#0;&#1;&#4;&#2;</rt></span></ruby>飾語のコードsystem<ruby>値<span
-  style='display:none'><rt>&#1;&#12;</rt></span></ruby>。ME<ruby>DI<span
-  style='display:none'><rt>&#1;&amp;F&#3;.</rt></span></ruby><ruby>S<span
-  style='display:none'><rt>I&#2;2</rt></span></ruby>標準病名マスタの「修飾語管理番号」を<ruby>必ず<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>使用する。<ruby>これ<span
-  style='display:none'><rt>イガイ </rt></span></ruby>以<ruby>外<span
-  style='display:none'><rt>ホカ </rt></span></ruby>に他のコー<ruby>ドを<span
-  style='display:none'><rt>ヘイヨウ </rt></span></ruby>併用し<ruby>て<span
-  style='display:none'><rt>カマワナイ </rt></span></ruby>も構わない<ruby>。（<span
-  style='display:none'><rt>サンコウ </rt></span></ruby>参考：M<ruby>EDI<span
-  style='display:none'><rt>K&#2;7r&#2;&lt;t&#1;</rt></span></ruby><ruby>S標<span
-  style='display:none'><rt>?u&#3;&#20;</rt></span></ruby><ruby>準<span
-  style='display:none'><rt>ç&#2;&#25;í&#2;</rt></span></ruby><ruby>病<span
-  style='display:none'><rt>ドウ </rt></span></ruby>名マスタの「修飾語交換用コード」：http://medis.or.jp/CodeSystem/master-disease-modExCode<br>
-    同「修飾語管理番号」: http://medis.or.jp/CodeSystem/master-disease-modKeyNumber<br>
-    レセプト電算用修飾語コード: http://jpfhir.jp/fhir/core/mhlw/Co<ruby>de<span
-  style='display:none'><rt>&#25;&#2;&#27;&#27;&#1;</rt></span></ruby>System/masterZ-disease-modifier）<br>
-    </td>
-  <td class=xl79 width=36 style='width:27pt'><ruby>例<span style='display:none'><rt>レイジ
-  </rt></span></ruby>示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-modKeyNumber&quot;</td>
- </tr>
- <tr height=100 style='mso-height-source:userset;height:75.0pt'>
-  <td height=100 class=xl168 width=97 style='height:75.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl79 width=73 style='width:55pt'>version</td>
-  <td class=xl214 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl169 width=359 style='width:269pt'>コードマスターのバージョン<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>。<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>することを<ruby>推奨<span
-  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>&quot;20240601&quot;</td>
- </tr>
- <tr height=63 style='mso-height-source:userset;height:47.0pt'>
-  <td height=63 class=xl168 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>前置<span
-  style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>のコード</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=63 style='mso-height-source:userset;height:47.0pt'>
-  <td height=63 class=xl168 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl186 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl235 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl186 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>前置修飾語のコードに<ruby>対応<span
-  style='display:none'><rt>タイオウ </rt></span></ruby>する文字列</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=63 style='mso-height-source:userset;height:47.0pt'>
-  <td height=63 class=xl168 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
-  <td class=xl186 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl235 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl186 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>前置修飾語はコードに<ruby>対応<span
-  style='display:none'><rt>タイオウ </rt></span></ruby>する<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>では<ruby>不十分<span
-  style='display:none'><rt>フジュウブｎ </rt></span></ruby>な<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>や、コード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby>できない<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>に、フルテキストを<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>することができる。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[+]</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl232 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Extension</td>
-  <td class=xl234 width=359 style='border-top:none;border-left:none;width:269pt'>病名の<ruby>後置<span
-  style='display:none'><rt>コウチ </rt></span></ruby>修飾語があればその<ruby>数<span
-  style='display:none'><rt>カズ </rt></span></ruby>だけ<ruby>繰<span
-  style='display:none'><rt>クリカエシ </rt></span></ruby>り返しで<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する。<ruby>登録<span
-  style='display:none'><rt>トウロク </rt></span></ruby><ruby>順序<span
-  style='display:none'><rt>ジュンジョ </rt></span></ruby>は<ruby>原則<span
-  style='display:none'><rt>ゲンソク </rt></span></ruby>として<ruby>配列<span
-  style='display:none'><rt>ハイレツ </rt></span></ruby><ruby>順<span
-  style='display:none'><rt>ジュン </rt></span></ruby>とする。</td>
-  <td class=xl216 width=36 style='border-left:none;width:27pt'>　</td>
-  <td class=xl271 width=195 style='border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=80 style='height:60.0pt'>
-  <td height=80 class=xl168 width=97 style='height:60.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>url</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>病名の後置修飾語を格納するための拡張(JP_Condition_DiseasePostfixModifier_eCS)</td>
-  <td class=xl79 width=36 style='width:27pt'><ruby>固定値<span style='display:
-  none'><rt>コテイチ </rt></span></ruby></td>
-  <td class=xl291 width=195 style='width:146pt'><a
-  href="http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"
-  target="_parent"><span style='font-size:10.0pt;text-decoration:none;
-  font-family:"ＭＳ 明朝";mso-generic-font-family:auto;mso-font-charset:128'>&quot;http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier&quot;</span></a></td>
- </tr>
- <tr height=63 style='mso-height-source:userset;height:47.0pt'>
-  <td height=63 class=xl168 width=97 style='height:47.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>後<span
-  style='display:none'><rt>ゴ </rt></span></ruby>置修飾語のコード記述。コード化できない修飾語の場合にはtext要素だけで記述してもよい。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=55 style='mso-height-source:userset;height:41.0pt'>
-  <td height=55 class=xl168 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Coding</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>後置修飾語のコード記述</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=55 style='mso-height-source:userset;height:41.0pt'>
-  <td height=55 class=xl168 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>system</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>uri</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>後<span
-  style='display:none'><rt>ゼンチ </rt></span></ruby>置<ruby>修<span
-  style='display:none'><rt>シュウ&#0;&#0;&#1;&#4;&#2;</rt></span></ruby>飾語のコードsystem<ruby>値<span
-  style='display:none'><rt>&#1;&#12;</rt></span></ruby><br>
-    <ruby>前置<span style='display:none'><rt>&#15;&#1;&#14;&#17;</rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>&#2;&#18;&#19;&#3;&#26;&#23;&#1;&#0;</rt></span></ruby>と<ruby>同<span
-  style='display:none'><rt></rt></span></ruby>じ。</td>
-  <td class=xl79 width=36 style='width:27pt'><ruby>例<span style='display:none'><rt>レイジ
-  </rt></span></ruby>示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-modKeyNumber&quot;</td>
- </tr>
- <tr height=59 style='mso-height-source:userset;height:44.0pt'>
-  <td height=59 class=xl168 width=97 style='height:44.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl79 width=73 style='width:55pt'>version</td>
-  <td class=xl214 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl169 width=359 style='width:269pt'>コードマスターのバージョン<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>。<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>することを<ruby>推奨<span
-  style='display:none'><rt>スイショウ </rt></span></ruby>する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>&quot;20240601&quot;</td>
- </tr>
- <tr height=55 style='mso-height-source:userset;height:41.0pt'>
-  <td height=55 class=xl168 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>code</td>
-  <td class=xl233 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'><ruby>後置<span
-  style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>のコード</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=55 style='mso-height-source:userset;height:41.0pt'>
-  <td height=55 class=xl168 width=97 style='height:41.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>coding</td>
-  <td class=xl186 width=73 style='border-top:none;border-left:none;width:55pt'>display</td>
-  <td class=xl235 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl186 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>後置修飾語のコードに<ruby>対応<span
-  style='display:none'><rt>タイオウ </rt></span></ruby>する文字列</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>code</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>extension[=]</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>valueCodeableConcept</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>text</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>0..1</td>
-  <td class=xl186 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl145 width=359 style='border-top:none;border-left:none;width:269pt'>後置修飾語はコードに<ruby>対応<span
-  style='display:none'><rt>タイオウ </rt></span></ruby>する<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>では<ruby>不十分<span
-  style='display:none'><rt>フジュウブｎ </rt></span></ruby>な<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>やコード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby>できない<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>に、フルテキストを<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>することができる。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=85 style='mso-height-source:userset;height:64.0pt'>
-  <td height=85 class=xl168 width=97 style='height:64.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[*]</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..*</td>
-  <td class=xl79 width=87 style='width:65pt'>Coding</td>
-  <td class=xl79 width=359 style='width:269pt'><ruby>病名<span style='display:
-  none'><rt>ビョウメイ </rt></span></ruby>本体部分（extens<ruby>io<span style='display:
-  none'><rt>シヨウ </rt></span></ruby>nを<ruby>使用<span style='display:none'><rt>キジュツ
-  </rt></span></ruby>して<ruby>記述<span style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>した前<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>置<ruby>修飾<span
-  style='display:none'><rt>コウチ </rt></span></ruby><ruby>語、後<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>置<ruby>修<span
-  style='display:none'><rt>ノゾク </rt></span></ruby>飾<ruby>語を<span
-  style='display:none'><rt>ブブン </rt></span></ruby>除く部分）<ruby>のコ<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>ード記述。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=251 style='mso-height-source:userset;height:188.0pt'>
-  <td height=251 class=xl168 width=97 style='height:188.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[+]</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>MEDIS<ruby>標準<span
-  style='display:none'><rt>ヒョウジュン </rt></span></ruby><ruby>病名<span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby>マスター「病名管理番号」（system値は&quot;http://medis.or.jp/CodeSystem/master-disease-keyNumber&quot;）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する<ruby>。<span
-  style='display:none'><rt>スイショウ </rt></span></ruby>これに加えて、病名管理番号以外のコード記<ruby>述<span
-  style='display:none'><rt>カ </rt></span></ruby>を<ruby>併用<span
-  style='display:none'><rt>ヒッス </rt></span></ruby>しても構わない。(参考：MED<ruby>I<span
-  style='display:none'><rt>ウエ </rt></span></ruby>S
-  標準病名マスター「病名交換コード」：http://medis.or.jp/CodeSystem/master-disease-exCode、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-keyNumber&quot;</td>
- </tr>
- <tr height=100 style='mso-height-source:userset;height:75.0pt'>
-  <td height=100 class=xl168 width=97 style='height:75.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>version</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl214 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl169 width=359 style='width:269pt'><ruby>電子<span style='display:
-  none'><rt>デンシ </rt></span></ruby>カルテ<ruby>情報<span style='display:none'><rt>ジョウホウ
-  </rt></span></ruby><ruby>共有<span style='display:none'><rt>キョウユウ </rt></span></ruby>サービスに<ruby>送信<span
-  style='display:none'><rt>ソウシン </rt></span></ruby>する<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には、コーディングに<ruby>使用<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>したコードシステムのバージョン<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>（<ruby>電子<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>カルテ情報<ruby>共有<span
-  style='display:none'><rt>ゲンソク </rt></span></ruby>サービス<ruby>運用<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>者から公開<ruby>され<span
-  style='display:none'><rt>バアイ </rt></span></ruby>る）を<ruby>設定<span
-  style='display:none'><rt>ソウシン </rt></span></ruby><ruby>す<span
-  style='display:none'><rt>ジ </rt></span></ruby>る<ruby>ことを<span
-  style='display:none'><rt>サイシンバン </rt></span></ruby>原<ruby>則と<span
-  style='display:none'><rt>シヨウ </rt></span></ruby>する。設定していない<ruby>場合<span
-  style='display:none'><rt>ケンショウ </rt></span></ruby>には、送信時の最新版を使用しているとみなされて検証される。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>&quot;20240601&quot;</td>
- </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl168 width=97 style='height:75.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'><ruby>病名<span style='display:
-  none'><rt>ビョウメイ </rt></span></ruby><ruby>本体<span style='display:none'><rt>ホンタイ
-  </rt></span></ruby><ruby>部分<span style='display:none'><rt>ブブｎ </rt></span></ruby>のコード。<ruby>前置<span
-  style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>と<ruby>後置<span
-  style='display:none'><rt>コウチ </rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>については<ruby>前出<span
-  style='display:none'><rt>ゼンシュツ </rt></span></ruby>の<ruby>拡張<span
-  style='display:none'><rt>カクチョウ </rt></span></ruby>を<ruby>用<span
-  style='display:none'><rt>モチイテ </rt></span></ruby>いて<ruby>記述<span
-  style='display:none'><rt>キジュツ </rt></span></ruby>する。なお、新出現病態や<ruby>特殊<span
-  style='display:none'><rt>トクシュ </rt></span></ruby>な<ruby>疾患<span
-  style='display:none'><rt>シッカｎ </rt></span></ruby>で<ruby>適切<span
-  style='display:none'><rt>テキセツ </rt></span></ruby>な<ruby>既存<span
-  style='display:none'><rt>キゾｎ </rt></span></ruby>コードが<ruby>存在<span
-  style='display:none'><rt>ソンザイ </rt></span></ruby>しないなどのためにコード化ができない例外的な場合には、<ruby>同一<span
-  style='display:none'><rt>&#0;&#0;&#2;&#6;&#2;&#2;<br>
-    &#4;&#2;&#15;<br>
-    &#2;&#19;<br>
-    &#3;</rt></span></ruby>桁数でオール9のコードを使用する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;20064049&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>coding[=]</td>
-  <td class=xl79 width=73 style='width:55pt'>display</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>コードに対応する表示名。オール９のコードの<ruby>場合<span
-  style='display:none'><rt>バアイ </rt></span></ruby>には&quot;<ruby>未<span
-  style='display:none'><rt>ミ </rt></span></ruby>コード<ruby>化<span
-  style='display:none'><rt>カ </rt></span></ruby><ruby>傷病名<span
-  style='display:none'><rt>ショウビョウメイ </rt></span></ruby>&quot;という<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>を<ruby>固定<span
-  style='display:none'><rt>コテイ </rt></span></ruby>で<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;十二指腸潰瘍&quot;</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>code</td>
-  <td class=xl79 width=83 style='width:62pt'>text</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'><ruby>傷病名<span style='display:
-  none'><rt>ショウビョウメイ </rt></span></ruby>の<ruby>元<span style='display:none'><rt>モト
-  </rt></span></ruby>の<ruby>入力<span style='display:none'><rt>ニュウリョク </rt></span></ruby><ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby>。<ruby>前置<span
-  style='display:none'><rt>ゼンチ </rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>、<ruby>後置<span
-  style='display:none'><rt>コウチ </rt></span></ruby><ruby>修飾語<span
-  style='display:none'><rt>シュウショクゴ </rt></span></ruby>も<ruby>含<span
-  style='display:none'><rt>フクメテ </rt></span></ruby>めて<ruby>電子<span
-  style='display:none'><rt>デンシ </rt></span></ruby>カルテ<ruby>上<span
-  style='display:none'><rt>ジョウ </rt></span></ruby>での<ruby>表示<span
-  style='display:none'><rt>ヒョウジ </rt></span></ruby>（<ruby>入力<span
-  style='display:none'><rt>ニュウリョク </rt></span></ruby>）<ruby>文字列<span
-  style='display:none'><rt>モジレツ </rt></span></ruby><ruby>全体<span
-  style='display:none'><rt>ゼンタイ </rt></span></ruby>を<ruby>設定<span
-  style='display:none'><rt>セッテイ </rt></span></ruby>する。<br>
-    </td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;十二指腸潰瘍・<ruby>H1<span
-  style='display:none'><rt>カツドウ </rt></span></ruby><ruby>期<span
-  style='display:none'><rt>キ </rt></span></ruby>&quot;</td>
- </tr>
- <tr height=140 style='height:105.0pt'>
-  <td height=140 class=xl168 width=97 style='height:105.0pt;width:73pt'>bodySite</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..*</td>
-  <td class=xl79 width=87 style='width:65pt'>CodeableConcept</td>
-  <td class=xl79 width=359 style='width:269pt'>該当する状態が現れている解剖学的な場所を示す。<br>
-   
-  system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。&quot;1244&quot;は、MEDIS標準病名マスター修飾語交換用コードで&quot;腹部&quot;のコード。&quot;腹部&quot;はそのテキスト記述の例。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>.coding[+].system =
-  .coding[=].&quot;http://medis.or.jp/CodeSystem/master-disease-modExCode&quot;<br>
-    .coding[=].code = &quot;1244&quot;<br>
-    .coding[=].display =&quot;腹部&quot;<br>
-    .text&quot;腹部&quot;</td>
- </tr>
- <tr height=160 style='height:120.0pt'>
-  <td height=160 class=xl168 width=97 style='height:120.0pt;width:73pt'>subject</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl209 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Reference(JP_Patient )<br>
-    電子カルテ情報サービスでは、Reference(JP_Patient_eCS)</td>
-  <td class=xl79 width=359 style='width:269pt'>患者のFHIRリソースへの参照。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl170 width=195 style='width:146pt'>実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照）
-  」に従う。</td>
- </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl168 width=97 style='height:75.0pt;width:73pt'>encounter</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl212 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Reference (JP_Encounter )</td>
-  <td class=xl169 width=359 style='width:269pt'>この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。<font
-  class="font14">電子カルテ情報サービスでは必須。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl170 width=195 style='width:146pt'>実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
- </tr>
- <tr height=340 style='height:255.0pt'>
-  <td height=340 class=xl168 width=97 style='height:255.0pt;width:73pt'>(onset)</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
-  <td class=xl79 width=359 style='width:269pt'>この傷病名情報が同定された時期。患者にこの<ruby>傷病<span
-  style='display:none'><rt>ショウビョウ </rt></span></ruby>が出現した時期、あるいはなんらかのエビデンスによりこの<ruby>傷病<span
-  style='display:none'><rt>ショウビョウ </rt></span></ruby>が患者にあると確認できた時期を記述する。<ruby><font
-  class="font17">電子</font><span style='display:none'><rt>デンシ </rt></span></ruby><font
-  class="font17">カルテシステムの</font><ruby><font class="font17">病名</font><span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby><ruby><font class="font17">開始日</font><span
-  style='display:none'><rt>カイシビ </rt></span></ruby><font class="font17">をdateTime</font><ruby><font
-  class="font17">型</font><span style='display:none'><rt>ガタ </rt></span></ruby><font
-  class="font17">で</font><ruby><font class="font17">記述</font><span
-  style='display:none'><rt>キジュツ </rt></span></ruby><font class="font17">するのが</font><ruby><font
-  class="font17">一般的</font><span style='display:none'><rt>イッパンテキ </rt></span></ruby><font
-  class="font17">な</font><ruby><font class="font17">方法</font><span
-  style='display:none'><rt>ホウホウ </rt></span></ruby><font class="font17">である。</font><font
-  class="font14">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述する。</font><br>
-   
-  記録を登録した日時は、別途recordedDateに記述する。記述方法として、1時点の日時、患者の年齢（曖昧な年齢時期の記述も可能）、開始時期と終了時期による期間、年齢の区間、（なんらかの出来事を引用して記述するような）文字列で時期を記述、の5通りのいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRange、onsetString）からひとつの記述方法を選択して、それにより記述する。複数を選択はできない。onset要素は記述しないで、直接onsetDateTime要素などonsetXXXXの要素により記述する。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=140 style='height:105.0pt'>
-  <td height=140 class=xl168 width=97 style='height:105.0pt;width:73pt'>onsetDateTime</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl83 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>dateTime</td>
-  <td class=xl79 width=359 style='width:269pt'>一時点の記述方式：<br>
-   
-  日付または日時。年や年月だけでもよい。例：2018,1973-06,1905-08-23,2015-02-07T13:28:17+09:00。<br>
-    時刻に24:00の使用はできない。<br>
-    <font class="font14">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述することが</font><ruby><font
-  class="font14">必須</font><span style='display:none'><rt>ヒッス </rt></span></ruby><font
-  class="font14">。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;2018&quot;<br>
-    &quot;1973-06&quot;<br>
-    &quot;1989-08-23&quot;<br>
-    &quot;2015-02-07T13:28:17+09:00&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetAge</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Age</td>
-  <td class=xl79 width=359 style='width:269pt'>年齢や年齢を基準にして記述する方式：<br>
-    患者の申告による、状態が出現し始めた年齢。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>50歳 の例 、50歳 以上 の例 を以下 に示 す。</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetAge</td>
-  <td class=xl79 width=83 style='width:62pt'>value</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>decimal</td>
-  <td class=xl79 width=359 style='width:269pt'>年齢の値。月齢や週齢なども可能。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;50&quot;</td>
- </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl168 width=97 style='height:90.0pt;width:73pt'>onsetAge</td>
-  <td class=xl79 width=83 style='width:62pt'>comparator</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>valueの値と等しい年齢を表現したい場合には、=は不要でこの要素は出現しない。<br>
-    そうでない指定をしたい場合には、&lt;、&lt;=、&gt;=、&gt;のいずれか。<br>
-    要素valueの値の解釈方法。例では、「50歳以上で」と記述したい場合には、&gt;=を記述する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;&gt;=&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetAge</td>
-  <td class=xl79 width=83 style='width:62pt'>unit</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>1..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>単位表現。文字列で単位文字列を記述する。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;歳&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetAge</td>
-  <td class=xl79 width=83 style='width:62pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>単位体系UCUMコード体系。固定値。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetAge</td>
-  <td class=xl79 width=83 style='width:62pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>単位体系における単位コード。min：minutes、h：hours、d：days、wk：weeks、mo：months、a：years</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;a&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetPeriod</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Preiod</td>
-  <td class=xl79 width=359 style='width:269pt'>期間。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetPeriod</td>
-  <td class=xl79 width=83 style='width:62pt'>start</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>dateTime</td>
-  <td class=xl79 width=359 style='width:269pt'>期間の開始日時</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetPeriod</td>
-  <td class=xl79 width=83 style='width:62pt'>end</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>dateTime</td>
-  <td class=xl79 width=359 style='width:269pt'>期間の終了日時</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Range</td>
-  <td class=xl79 width=359 style='width:269pt'>曖昧な時期を最小値と最大値とで記述する。以下の記述例は50歳台。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>low</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>SimpleQuantity</td>
-  <td class=xl79 width=359 style='width:269pt'>下限値表現</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>low</td>
-  <td class=xl79 width=73 style='width:55pt'>value</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>decimal</td>
-  <td class=xl79 width=359 style='width:269pt'>年齢の値。月齢や週齢なども可能</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;50&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>low</td>
-  <td class=xl79 width=73 style='width:55pt'>unit</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>単位表現</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;歳&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>low</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>単位体系UCUMコード体系。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>low</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>単位体系における単位コード。min：minutes、h：hours、d：days、wk：weeks、mo：months、a：years</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;a&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>high</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>SimpleQuantity</td>
-  <td class=xl79 width=359 style='width:269pt'>　</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>high</td>
-  <td class=xl79 width=73 style='width:55pt'>value</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>decimal</td>
-  <td class=xl79 width=359 style='width:269pt'>年齢の値。月齢や週齢なども可能</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;59&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>high</td>
-  <td class=xl79 width=73 style='width:55pt'>unit</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>単位表現</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;歳&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>high</td>
-  <td class=xl79 width=73 style='width:55pt'>system</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>uri</td>
-  <td class=xl79 width=359 style='width:269pt'>単位体系UCUMコード体系。</td>
-  <td class=xl79 width=36 style='width:27pt'>固定値</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;http://unitsofmeasure.org&quot;</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl168 width=97 style='height:30.0pt;width:73pt'>onsetRange</td>
-  <td class=xl79 width=83 style='width:62pt'>high</td>
-  <td class=xl79 width=73 style='width:55pt'>code</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>code</td>
-  <td class=xl79 width=359 style='width:269pt'>単位体系における単位コード。min：minutes、h：hours、d：days、wk：weeks、mo：months、a：years</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;a&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>onsetString</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>string</td>
-  <td class=xl79 width=359 style='width:269pt'>｀</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;70歳台&quot;</td>
- </tr>
- <tr height=260 style='height:195.0pt'>
-  <td height=260 class=xl168 width=97 style='height:195.0pt;width:73pt'>（abatement）</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl80 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
-  <td class=xl79 width=359 style='width:269pt'>この傷病名情報による<ruby>患者<span
-  style='display:none'><rt>カンジャ </rt></span></ruby><ruby>状態<span
-  style='display:none'><rt>ジョウタイ </rt></span></ruby>が<ruby>終了<span
-  style='display:none'><rt>シュウリョウ </rt></span></ruby>したと<ruby>同定<span
-  style='display:none'><rt>ドウテイ </rt></span></ruby>された時期。患者にこの<ruby>傷病<span
-  style='display:none'><rt>ショウビョウ </rt></span></ruby>のある<ruby>状態<span
-  style='display:none'><rt>ジョウタイ </rt></span></ruby>が<ruby>終了<span
-  style='display:none'><rt>シュウリョウ </rt></span></ruby>した時期、あるいはなんらかのエビデンスによりこの<ruby>傷病<span
-  style='display:none'><rt>ショウビョウ </rt></span></ruby>のある<ruby>状態<span
-  style='display:none'><rt>ジョウタイ </rt></span></ruby>が<ruby>改善<span
-  style='display:none'><rt>カイゼン </rt></span></ruby>もしくはある<ruby>状態<span
-  style='display:none'><rt>ジョウタイ </rt></span></ruby>になったと確認できた時期を記述する。<ruby><font
-  class="font14">電子</font><span style='display:none'><rt>デンシ </rt></span></ruby><font
-  class="font14">カルテシステムの</font><ruby><font class="font14">病名</font><span
-  style='display:none'><rt>ビョウメイ </rt></span></ruby><ruby><font class="font14">終了</font><span
-  style='display:none'><rt>シュウリョウ </rt></span></ruby><ruby><font class="font14">日</font><span
-  style='display:none'><rt>カイシビ </rt></span></ruby><font class="font14">をdateTime</font><ruby><font
-  class="font14">型</font><span style='display:none'><rt>ガタ </rt></span></ruby><font
-  class="font14">で</font><ruby><font class="font14">記述</font><span
-  style='display:none'><rt>キジュツ </rt></span></ruby><font class="font14">するのが</font><ruby><font
-  class="font14">一般的</font><span style='display:none'><rt>イッパンテキ </rt></span></ruby><font
-  class="font14">な</font><ruby><font class="font14">方法</font><span
-  style='display:none'><rt>ホウホウ </rt></span></ruby><font class="font14">である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名</font><ruby><font
-  class="font14">終了</font><span style='display:none'><rt>シュウリョウ </rt></span></ruby><font
-  class="font14">日をdateTime型で記述する。この</font><ruby><font class="font14">終了日</font><span
-  style='display:none'><rt>シュウリョウヒ </rt></span></ruby><font class="font14">における</font><ruby><font
-  class="font14">転帰</font><span style='display:none'><rt>テンキ </rt></span></ruby><ruby><font
-  class="font14">情報</font><span style='display:none'><rt>ジョウホウ </rt></span></ruby><font
-  class="font14">をclinicalStatus</font><ruby><font class="font14">要素</font><span
-  style='display:none'><rt>ヨウソ </rt></span></ruby><font class="font14">に</font><ruby><font
-  class="font14">記述</font><span style='display:none'><rt>キジュツ </rt></span></ruby><font
-  class="font14">すること。この</font><ruby><font class="font14">日付</font><span
-  style='display:none'><rt>ヒヅケ </rt></span></ruby><font class="font14">がある</font><ruby><font
-  class="font14">場合</font><span style='display:none'><rt>バアイ </rt></span></ruby><font
-  class="font14">のclinicalStatus</font><ruby><font class="font14">要素</font><span
-  style='display:none'><rt>ヨウソ </rt></span></ruby><font class="font14">は&quot;active&quot;,&quot;unknown&quot;</font><ruby><font
-  class="font14">以外</font><span style='display:none'><rt>イガイ </rt></span></ruby><font
-  class="font14">の</font><ruby><font class="font14">値</font><span
-  style='display:none'><rt>アタイ </rt></span></ruby><font class="font14">でなければならない。</font><br>
-    abatement要素は記述しないで、直接abatementDateTime要素などabatementXXXXの要素により記述する。</td>
-  <td class=xl79 width=36 style='width:27pt'>　</td>
-  <td class=xl178 width=195 style='width:146pt'>　</td>
- </tr>
- <tr height=160 style='height:120.0pt'>
-  <td height=160 class=xl168 width=97 style='height:120.0pt;width:73pt'>abatementDateTime</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl83 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>dateTime</td>
-  <td class=xl79 width=359 style='width:269pt'>一時点の記述方式：<br>
-   
-  日付または日時。年や年月だけでもよい。例：2018,1973-06,1905-08-23,2015-02-07T13:28:17+09:00。<br>
-    時刻に24:00の使用はできない。<br>
-    dateTime以外の方法で記述したい場合には、oncet要素の説明を参照のこと。<font class="font14">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述することが必須。</font></td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;1989-08-23&quot;<br>
-    </td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl168 width=97 style='height:20.0pt;width:73pt'>recordedDate</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl84 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>dateTime</td>
-  <td class=xl110 width=359 style='border-top:none;width:269pt'>この状態が記録された日時。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl178 width=195 style='width:146pt'>&quot;1989-08-23&quot;</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl168 width=97 style='height:45.0pt;width:73pt'>recorder</td>
-  <td class=xl79 width=83 style='width:62pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl79 width=73 style='width:55pt'>　</td>
-  <td class=xl223 width=35 style='width:26pt'>0..1</td>
-  <td class=xl79 width=87 style='width:65pt'>Reference(JP_Practitioner )</td>
-  <td class=xl79 width=359 style='width:269pt'>この状態を記録した人の情報への参照。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
- </tr>
- <tr height=140 style='height:105.0pt'>
-  <td height=140 class=xl230 width=97 style='height:105.0pt;width:73pt'>asserter</td>
-  <td class=xl116 width=83 style='width:62pt'>　</td>
-  <td class=xl116 width=73 style='width:55pt'>　</td>
-  <td class=xl116 width=73 style='width:55pt'>　</td>
-  <td class=xl116 width=73 style='width:55pt'>　</td>
-  <td class=xl231 width=35 style='width:26pt'>0..1</td>
-  <td class=xl116 width=87 style='width:65pt'>Reference(JP_Patient|
-  JP_Practitioner| |RelatedPerson|)</td>
-  <td class=xl116 width=359 style='width:269pt'>この状態があると確認（主張）した人の情報を記述しているJP_Patient、J<ruby>P_<span
-  style='display:none'><rt>サンショウ </rt></span></ruby>Practitioner、RelatedPersonのいずれかのリソースへの参照。<br>
-   
-  本仕様ではこの情報を記録しないが、記録したい場合にはPractitionerへの参照におけるdisplay子要素だけとし、別のリソースへの参照をしない。（新たなリソースによる追加記述を避けるため）</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>{<br>
-    <span style='mso-spacerun:yes'>    </span>&quot;type&quot;:
-  &quot;Practitioner&quot;,<span style='mso-spacerun:yes'>  </span><br>
-    <span style='mso-spacerun:yes'>    </span>&quot;display&quot;: &quot;<ruby>患者<span
-  style='display:none'><rt>カンジャ </rt></span></ruby>の<ruby>母<span
-  style='display:none'><rt>ハハ </rt></span></ruby>&quot;<br>
-    }</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl196 width=97 style='height:20.0pt;width:73pt'>stage</td>
-  <td class=xl87 width=83 style='border-left:none;width:62pt'>　</td>
-  <td class=xl87 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-left:none;width:65pt'>　</td>
-  <td class=xl87 width=359 style='border-left:none;width:269pt'>この状態の臨床的ステージやグレード表現。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td rowspan=3 class=xl87 width=83 style='border-top:none;width:62pt'>summary</td>
-  <td rowspan=3 class=xl87 width=73 style='border-top:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td rowspan=3 class=xl87 width=73 style='border-top:none;width:55pt'>　</td>
-  <td rowspan=3 class=xl87 width=35 style='border-top:none;width:26pt'>0..1</td>
-  <td rowspan=3 class=xl87 width=87 style='border-top:none;width:65pt'>CodeableConcept</td>
-  <td rowspan=3 class=xl87 width=359 style='border-top:none;width:269pt'>system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。&quot;1244&quot;は、MEDIS標準病名マスター修飾語交換用コードで&quot;第１期&quot;のコード。&quot;第１期&quot;はそのテキスト記述の例。</td>
-  <td rowspan=3 class=xl179 width=36 style='border-bottom:.5pt solid black;
-  border-top:none;width:27pt'>例示</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-modExCode&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl196 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;32GR&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl196 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;第１期&quot;</td>
- </tr>
- <tr height=120 style='height:90.0pt'>
-  <td height=120 class=xl196 width=97 style='height:90.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>assessment</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>Reference(ClinicalImpression
-  | DiagnosticReport | Observation)</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>ステージ情報の根拠となる診断レポートや検査結果、または臨床評価情報への参照する。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl170 width=195 style='width:146pt'>「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
- </tr>
- <tr height=60 style='height:45.0pt'>
-  <td height=60 class=xl196 width=97 style='height:45.0pt;border-top:none;
-  width:73pt'>stage</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>type</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>ステージ分類の種類。病理学的分類、臨床分類、TNM肺癌分類、など。当面コーディングをせず、text記述だけ必要に応じて行う。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>evidence</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>状態を確認または反駁した証拠など、状態の検証ステータスの基礎となる裏付けとなる証拠/兆候。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=100 style='height:75.0pt'>
-  <td height=100 class=xl196 width=97 style='height:75.0pt;border-top:none;
-  width:73pt'>evidence</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>code</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>CodeableConcept</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>状態を裏付ける症状や所見。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。&quot;BOEF&quot;は、MEDIS標準病名マスター病名交換用コードで&quot;持続腹痛&quot;のコード。&quot;持続腹痛&quot;はそのテキスト記述の例。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;http://medis.or.jp/CodeSystem/master-disease-exCode&quot;<br>
-    &quot;B0EF&quot;<br>
-    &quot;持続腹痛&quot;<br>
-    &quot;長く続く腹部の痛み&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl196 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..*</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>患者状態に関する追加的な情報</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl196 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>author</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>　</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>　</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=40 style='height:30.0pt'>
-  <td height=40 class=xl196 width=97 style='height:30.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>author</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>authorString</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>string</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
-  <td class=xl79 width=36 style='width:27pt'>例示</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>&quot;病理検査担当者&quot;</td>
- </tr>
- <tr height=27 style='height:20.0pt'>
-  <td height=27 class=xl196 width=97 style='height:20.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl87 width=83 style='border-top:none;border-left:none;width:62pt'>time</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl87 width=35 style='border-top:none;border-left:none;width:26pt'>0..1</td>
-  <td class=xl87 width=87 style='border-top:none;border-left:none;width:65pt'>dateTime</td>
-  <td class=xl87 width=359 style='border-top:none;border-left:none;width:269pt'>この追加的な情報が作成された日時。</td>
-  <td class=xl87 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl238 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
- <tr height=41 style='height:31.0pt'>
-  <td height=41 class=xl202 width=97 style='height:31.0pt;border-top:none;
-  width:73pt'>note</td>
-  <td class=xl88 width=83 style='border-top:none;border-left:none;width:62pt'>text</td>
-  <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl88 width=73 style='border-top:none;border-left:none;width:55pt'>　</td>
-  <td class=xl88 width=35 style='border-top:none;border-left:none;width:26pt'>1..1</td>
-  <td class=xl88 width=87 style='border-top:none;border-left:none;width:65pt'>markdown</td>
-  <td class=xl88 width=359 style='border-top:none;border-left:none;width:269pt'>追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。</td>
-  <td class=xl88 width=36 style='border-top:none;border-left:none;width:27pt'>　</td>
-  <td class=xl239 width=195 style='border-top:none;border-left:none;width:146pt'>　</td>
- </tr>
-
-</table>
+    <div class="segment">
+        <div class="container">
+            <div class="row">
+                <div class="inner-wrapper">
+                    <div class="col-12">
+                        <div class="htmlTable">
+                            <table style="border-collapse:collapse;table-layout:fixed;">
+                                <colgroup>
+                                    <col style="width:73pt">
+                                    <col style="width:62pt">
+                                    <col style="width:55pt">
+                                    <col style="width:91pt">
+                                    <col style="width:91pt">
+                                    <col style="width:33pt">
+                                    <col style="width:65pt">
+                                    <col style="width:269pt">
+                                    <col style="width:27pt">
+                                    <col style="width:146pt">
+                                </colgroup>
+                                <tbody>
+                                    <tr style="height:46pt">
+                                        <td colspan="10" class="xl_1st"><a>多重度は、親要素が出現した場合の多重度。たとえばある子要素の多重度が1..1であっても親要素が出現しない場合にはその子要素は出現しない。逆に親要素が出現する場合には、この子要素は出現しなければならない。</a></td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_2nd_l" style="background:#D9D9D9;">要素Lv1</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">要素Lv2</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">要素Lv3</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;"></td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">要素Lv4</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">多重度</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">型</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">説明</td>
+                                        <td class="xl_2nd_m" style="background:#D9D9D9;">固定値 
+／ 例 示</td>
+                                        <td class="xl_2nd_r" style="background:#D9D9D9;">固定値 または例示</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">resourceType</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold">Conditionリソースであることを示す。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"Condition"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:255pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">lastUpdated</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">instant</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz
+この要素は、このリソースのデータを取り込んで蓄積していたシステムが、このリソースになんらかの変更があった可能性があった日時を取得し、このデータを再取り込みする必要性の判断をするために使われる。本要素に前回取り込んだ時点より後の日時が設定されている場合には、なんらかの変更があった可能性がある（変更がない場合もある）ものとして判断される。したがって、内容になんらかの変更があった場合、またはこのリソースのデータが初めて作成された場合には、その時点以降の日時（たとえば、このリソースのデータを作成した日時）を設定しなければならない。内容の変更がない場合でも、このリソースのデータが作り直された場合や単に複写された場合にその日時を設定しなおしてもよい。ただし、内容に変更がないのであれば、日時を変更しなくてもよい。また、この要素の変更とmeta.versionIdの変更とは、必ずしも連動しないことがある。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"2015-02-07T13:28:17.239+09:00"</td>
+                                    </tr>
+                                    <tr style="height:35pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">profile[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本プロファイルが従うプロファイル</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:120pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">profile[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">canonical(StructureDefinition)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本プロファイルを識別するURLとバージョンを指定する。
+http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定する(|x.y.z は（U+007C）パイプ文字（縦棒文字）とバージョンx.y.zを指定する)。|x.y.z　のバージョン表記は省略可能で、省略した場合には、受信側により受信時点での最新バージョンに準拠しているとみなされる。
+</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値(x.y.zは置き換える)</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z"
+</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本リソースのタグ情報</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold">電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold">電子カルテ情報共有サービスで長期保存フラグの設定する場合に使用</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">長期保存フラグ</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"LTS"</td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold">電子カルテ情報サービスで未告知フラグを設定する場合に使用</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">未告知フラグ</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"UNINFORMED"</td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold">電子カルテ情報サービスで未提供フラグを設定する場合に使用</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http:/jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">tag[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">未提供フラグ</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"UNDELIVERED"</td>
+                                    </tr>
+                                    <tr style="height:27pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Containedリソース</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:90pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。電子カルテ情報サービスでは必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:60pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Practitioner  )</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">傷病名登録者情報。recorder要素から参照される場合には、そのJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">電子カルテ情報サービスでは、作成発行した医療機関番号や診療科情報を記述する拡張。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:90pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
+本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。
+電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">url</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するための拡張を識別するURL。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber' target='_blank'>"http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"</a></td>
+                                    </tr>
+                                    <tr style="height:35pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueIdentifier</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Identifier</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">医療機関識別情報。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueIdentifier</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">医療機関１０桁番号を示すURL。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no"</td>
+                                    </tr>
+                                    <tr style="height:31pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueIdentifier</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">医療機関１０桁番号。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1318814790"</td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">url</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診療科情報を記述するために使用する拡張を識別するURL。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department' target='_blank'>"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department"</a></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診療科情報。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診療科のコード化記述。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI(SS-MIX2) 診療科コード表のURI。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jami.jp/SS-MIX2/CodeSystem/ClinicalDepartment"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI(SS-MIX2) 診療科コード。2桁コードだけを使用する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"08"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI(SS-MIX2) 診療科2桁コードでのコードに対応する表示名。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"循環器科"</td>
+                                    </tr>
+                                    <tr style="height:71pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード化の有無に関わらず、当該医療機関の情報システムのマスターで定められた診療科名称の文字列（文字数の長さにより複数ある場合には、最も短い文字列）。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"循内"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">主傷病フラグのある傷病名であることを記述するための拡張「eCS_DiagnosisType」。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">url</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">主傷病であることを記述するために使用する拡張を識別するURL。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department' target='_blank'>"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType"</a></td>
+                                    </tr>
+                                    <tr style="height:31pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診断タイプ情報。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:31pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診断タイプのコード化記述。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:31pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:51pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">HL7 FHIR Claimリソースで用いられる診断タイプコードのURLを使用する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://terminology.hl7.org/CodeSystem/ex-diagnosistype"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">主傷病コードとして、principal　を設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"principal"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">このリソース情報の識別ID。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Identifier</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">リソース一意識別ID。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">「リソース一意識別ID」のsystem値を固定で設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier' target='_blank'>"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"</a></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://sample.jp/fhir/1311234567/ehr2020/condition/0008363939-20210826-002"</td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。'entered-in-error'以外では、必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態のステータスのコード化情報</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードで記述が必須で、少なくともひとつのsystem値は固定値。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://terminology.hl7.org/CodeSystem/condition-clinical"</td>
+                                    </tr>
+                                    <tr style="height:105pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快または寛解), resolved (軽快または治癒) 、unknown（不明）のいずれかを選ぶ。軽快では状況に応じてremissionまたはresolvedを使用する。電子カルテ情報共有サービスでは、recurrence、relapse、inactiveは使用しない。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"active"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Active|Remission|Resolved|Unknownのいずれかの文字列。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"Active"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードだけでは記述できない情報がある場合にコードと併用してもよい。値が使用されない可能性はある。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:60pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態に対する検証状況のコード化情報</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードで記述が必須で、少なくともひとつのsystem値は固定値。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://terminology.hl7.org/CodeSystem/condition-ver-status' target='_blank'>"http://terminology.hl7.org/CodeSystem/condition-ver-status"</a></td>
+                                    </tr>
+                                    <tr style="height:195pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">疑い病名フラグがない病名には、confirmed を設定するが、一度登録された病名を取り消した場合やそれが入力エラーであったことを明示したい場合には、refuted（取り消された病名）、entered-in-error（誤って登録された病名）のいずれかを設定することもできる。
+疑い病名フラグのある病名には、unconfirmed を必ず設定する。なお、電子カルテ情報共有サービスでは、confirmed、unconfirmed以外の病名に対してはその情報は保存されるが、利用されたり表示されたりすることはない。過去の登録病名情報に対して削除や取り消しなどの処理を行うために使われることもないため、refutedやentered-in-errorをつけて送信しても過去に送信した病名を取り消すことはできない。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"unconfirmed"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Unconfirmed|Confirmed|Refuted|EnteredinErrorのいずれかの文字列。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"Unconfirmed"</td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードだけでは記述できない情報がある場合や、コード化できない場合には本要素だけで記述してもよい。コードと併用してもよい</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:66pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態に割り当てられたカテゴリー。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:66pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態に割り当てられたカテゴリーで、problem-list-item （プロブレムリスト）| encounter-diagnosis （診察時点での診断名）のいずれかを設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">カテゴリーのコード記述</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態のカテゴリーを識別するURL。"http://terminology.hl7.org/CodeSystem/condition-category"を設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://terminology.hl7.org/CodeSystem/condition-category' target='_blank'>"http://terminology.hl7.org/CodeSystem/condition-category"</a></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold">電子カルテ情報共有サービスでは、'encounter-diagnosis'を設定すること。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"encounter-diagnosis"</td>
+                                    </tr>
+                                    <tr style="height:80pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードencounter-diagnosisに対応するdisplay nameとしては、"Encounter Diagnosis"を設定する。（電子カルテ情報共有サービス以外で使用するコードproblem-list-itemに対応するのは"Problem List Item"）</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"Encounter Diagnosis"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">	傷病名のコードと名称。code.textには病名入力文字列を必ずそのまま設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の前置修飾語または後置修飾語をあれば、それぞれ用の拡張を用いて記述する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の前置修飾語があればその数だけ繰り返しで記述する。登録順序は原則として配列順とする。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:60pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">url</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の前置修飾語を格納するための拡張(JP_Condition_DiseasePrefixModifier_eCS)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier' target='_blank'>"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"</a></td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">前置修飾語のコード記述。コード化できない修飾語の場合にはtext要素だけで記述してもよい。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">前置修飾語のコード記述</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:176pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">前置修飾語のコードsystem値。MEDIS標準病名マスタの「修飾語管理番号」を必ず使用する。これ以外に他のコードを併用しても構わない。（参考：MEDIS標準病名マスタの「修飾語交換用コード」：http://medis.or.jp/CodeSystem/master-disease-modExCode
+同「修飾語管理番号」: http://medis.or.jp/CodeSystem/master-disease-modKeyNumber
+レセプト電算用修飾語コード: http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterZ-disease-modifier）
+</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://medis.or.jp/CodeSystem/master-disease-modKeyNumber"</td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">version</td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードマスターのバージョン文字列。設定することを推奨する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20240601"</td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">前置修飾語のコード</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">前置修飾語のコードに対応する文字列</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">前置修飾語はコードに対応する文字列では不十分な場合や、コード化できない場合に、フルテキストを記述することができる。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の後置修飾語があればその数だけ繰り返しで記述する。登録順序は原則として配列順とする。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:60pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">url</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の後置修飾語を格納するための拡張(JP_Condition_DiseasePostfixModifier_eCS)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier' target='_blank'>"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier"</a></td>
+                                    </tr>
+                                    <tr style="height:47pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">後置修飾語のコード記述。コード化できない修飾語の場合にはtext要素だけで記述してもよい。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:41pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">後置修飾語のコード記述</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:41pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:41pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">後置修飾語のコードsystem値
+前置修飾語と同じ。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://medis.or.jp/CodeSystem/master-disease-modKeyNumber"</td>
+                                    </tr>
+                                    <tr style="height:44pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">version</td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードマスターのバージョン文字列。設定することを推奨する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20240601"</td>
+                                    </tr>
+                                    <tr style="height:41pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">後置修飾語のコード</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:41pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">後置修飾語のコードに対応する文字列</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">後置修飾語はコードに対応する文字列では不十分な場合やコード化できない場合に、フルテキストを記述することができる。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:64pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名本体部分（extensionを使用して記述した前置修飾語、後置修飾語を除く部分）のコード記述。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:64pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:188pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">MEDIS標準病名マスター「病名管理番号」（system値は"http://medis.or.jp/CodeSystem/master-disease-keyNumber"）を必ず使用する。なお、病名のコード化ができない場合には、病名管理番号と同じ桁数の全桁9の文字列を設定する。これに加えて、病名管理番号以外のコード記述を併用しても構わない。(参考：MEDIS 標準病名マスター「病名交換コード」：http://medis.or.jp/CodeSystem/master-disease-exCode、ICD10分類コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/ICD10-2013-full、レセプト電算処理用傷病名コード：http://jpfhir.jp/fhir/core/mhlw/CodeSystem/masterB-disease）</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://medis.or.jp/CodeSystem/master-disease-keyNumber"</td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">version</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">電子カルテ情報共有サービスに送信する場合には、コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス運用者から公開される）を設定することを原則とする。設定していない場合には、送信時の最新版を使用しているとみなされて検証される。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20240601"</td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名本体部分のコード。前置修飾語と後置修飾語については前出の拡張を用いて記述する。なお、新出現病態や特殊な疾患で適切な既存コードが存在しないなどのためにコード化ができない例外的な場合には、同一桁数でオール9のコードを使用する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20064049"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードに対応する表示名。オール９のコードの場合には"未コード化傷病名"という文字列を固定で設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"十二指腸潰瘍"</td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">傷病名の元の入力文字列。前置修飾語、後置修飾語も含めて電子カルテ上での表示（入力）文字列全体を設定する。
+</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"十二指腸潰瘍・H1期"</td>
+                                    </tr>
+                                    <tr style="height:105pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">bodySite[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">(CodeableConceptの子要素の仕様を省略)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">該当する状態が現れている解剖学的な場所を示す。
+system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。"1244"は、MEDIS標準病名マスター修飾語交換用コードで"腹部"のコード。"腹部"はそのテキスト記述の例。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">.coding[+].system = .coding[=]."http://medis.or.jp/CodeSystem/master-disease-modExCode"
+.coding[=].code = "1244"
+.coding[=].display ="腹部"
+.text"腹部"</td>
+                                    </tr>
+                                    <tr style="height:120pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">subject</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference(JP_Patient )
+電子カルテ情報サービスでは、Reference(JP_Patient_eCS)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">患者のFHIRリソースへの参照。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。</td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">encounter</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference (JP_Encounter )</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。電子カルテ情報サービスでは必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
+                                    </tr>
+                                    <tr style="height:255pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">(onset)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報が同定された時期。患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述する。
+記録を登録した日時は、別途recordedDateに記述する。記述方法として、1時点の日時、患者の年齢（曖昧な年齢時期の記述も可能）、開始時期と終了時期による期間、年齢の区間、（なんらかの出来事を引用して記述するような）文字列で時期を記述、の5通りのいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRange、onsetString）からひとつの記述方法を選択して、それにより記述する。複数を選択はできない。onset要素は記述しないで、直接onsetDateTime要素などonsetXXXXの要素により記述する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:105pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetDateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">一時点の記述方式：
+日付または日時。年や年月だけでもよい。例：2018,1973-06,1905-08-23,2015-02-07T13:28:17+09:00。
+時刻に24:00の使用はできない。
+電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述することが必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"2018"
+"1973-06"
+"1989-08-23"
+"2015-02-07T13:28:17+09:00"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetAge</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Age</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">年齢や年齢を基準にして記述する方式：
+患者の申告による、状態が出現し始めた年齢。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">50歳 の例 、50歳 以上 の例 を以下 に示 す。</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetAge</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">decimal</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">年齢の値。月齢や週齢なども可能。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"50"</td>
+                                    </tr>
+                                    <tr style="height:90pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetAge</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">comparator</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueの値と等しい年齢を表現したい場合には、=は不要でこの要素は出現しない。
+そうでない指定をしたい場合には、<、<=、>=、>のいずれか。
+要素valueの値の解釈方法。例では、「50歳以上で」と記述したい場合には、>=を記述する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">">="</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetAge</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">unit</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位表現。文字列で単位文字列を記述する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"歳"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetAge</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位体系UCUMコード体系。固定値。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://unitsofmeasure.org"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetAge</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位体系における単位コード。min：minutes、h：hours、d：days、wk：weeks、mo：months、a：years</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"a"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetPeriod</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Preiod</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">期間。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetPeriod</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">start</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">期間の開始日時</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetPeriod</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">end</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">期間の終了日時</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Range</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">曖昧な時期を最小値と最大値とで記述する。以下の記述例は50歳台。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">low</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">SimpleQuantity</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">下限値表現</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">low</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">decimal</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">年齢の値。月齢や週齢なども可能</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"50"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">low</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">unit</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位表現</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"歳"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">low</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位体系UCUMコード体系。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://unitsofmeasure.org"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">low</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位体系における単位コード。min：minutes、h：hours、d：days、wk：weeks、mo：months、a：years</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"a"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">high</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">SimpleQuantity</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">high</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">decimal</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">年齢の値。月齢や週齢なども可能</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"59"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">high</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">unit</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位表現</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"歳"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">high</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位体系UCUMコード体系。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://unitsofmeasure.org"</td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetRange</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">high</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">単位体系における単位コード。min：minutes、h：hours、d：days、wk：weeks、mo：months、a：years</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"a"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetString</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">｀</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"70歳台"</td>
+                                    </tr>
+                                    <tr style="height:195pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">（abatement）</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報による患者状態が終了したと同定された時期。患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。この日付がある場合のclinicalStatus要素は"active"以外の値でなければならない。
+abatement要素は記述しないで、直接abatementDateTime要素などabatementXXXXの要素により記述する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:120pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">abatementDateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">一時点の記述方式：
+日付または日時。年や年月だけでもよい。例：2018,1973-06,1905-08-23,2015-02-07T13:28:17+09:00。
+時刻に24:00の使用はできない。
+dateTime以外の方法で記述したい場合には、oncet要素の説明を参照のこと。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述することが必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1989-08-23"
+</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">recordedDate</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この状態が記録された日時。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1989-08-23"</td>
+                                    </tr>
+                                    <tr style="height:45pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">recorder</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#E2EFDA; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference(JP_Practitioner )</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この状態を記録した人の情報への参照。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
+                                    </tr>
+                                    <tr style="height:105pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">asserter</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference(JP_Patient| JP_Practitioner| |RelatedPerson|)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この状態があると確認（主張）した人の情報を記述しているJP_Patient、JP_Practitioner、RelatedPersonのいずれかのリソースへの参照。
+本仕様ではこの情報を記録しないが、記録したい場合にはPractitionerへの参照におけるdisplay子要素だけとし、別のリソースへの参照をしない。（新たなリソースによる追加記述を避けるため）</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">{
+    "type": "Practitioner",  
+    "display": "患者の母"
+}</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">stage[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この状態の臨床的ステージやグレード表現。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:48pt">
+                                        <td class="xl_l" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">stage</td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">summary</td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">(CodeableConceptの子要素の仕様を省略)</td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">system値はMEDIS標準病名マスター修飾語交換用コードを使用する場合の例示。"1244"は、MEDIS標準病名マスター修飾語交換用コードで"第１期"のコード。"第１期"はそのテキスト記述の例。</td>
+                                        <td class="xl_m" rowspan="3" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://medis.or.jp/CodeSystem/master-disease-modExCode"</td>
+                                    </tr>
+                                    <tr style="height:48pt">
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"32GR"</td>
+                                    </tr>
+                                    <tr style="height:48pt">
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"第１期"</td>
+                                    </tr>
+                                    <tr style="height:108pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">stage</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">assessment[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference(ClinicalImpression | DiagnosticReport | Observation)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">ステージ情報の根拠となる診断レポートや検査結果、または臨床評価情報への参照する。記述方法は、「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">「診療情報・サマリー汎用リソース外部参照仕様」を参照のこと。</td>
+                                    </tr>
+                                    <tr style="height:60pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">stage</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">type</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">(CodeableConceptの子要素の仕様を省略)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">ステージ分類の種類。病理学的分類、臨床分類、TNM肺癌分類、など。当面コーディングをせず、text記述だけ必要に応じて行う。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">evidence[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">状態を確認または反駁した証拠など、状態の検証ステータスの基礎となる裏付けとなる証拠/兆候。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:75pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">evidence[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">(CodeableConceptの子要素の仕様を省略)</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">状態を裏付ける症状や所見。system値はMEDIS標準病名マスター病名交換用コードを使用する場合の例示。"BOEF"は、MEDIS標準病名マスター病名交換用コードで"持続腹痛"のコード。"持続腹痛"はそのテキスト記述の例。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://medis.or.jp/CodeSystem/master-disease-exCode"
+"B0EF"
+"持続腹痛"
+"長く続く腹部の痛み"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">note[*]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">患者状態に関する追加的な情報</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">note[+]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">note[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">author</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:30pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">note[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">author</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">authorString</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">記載者氏名などの文字列。必ずしも氏名でなくてもよい。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"病理検査担当者"</td>
+                                    </tr>
+                                    <tr style="height:0pt">
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">note[=]</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">time</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この追加的な情報が作成された日時。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                    <tr style="height:31pt">
+                                        <td class="xl_last_l" style="color:#000000; background:#FFFFFF; font-weight: normal">note[=]</td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal">markdown</td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal">追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。</td>
+                                        <td class="xl_last_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_last_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
