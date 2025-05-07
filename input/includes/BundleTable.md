@@ -88,7 +88,7 @@
 http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Bundle_CLINS|x.y.z　を設定する(|x.y.z は（U+007C）パイプ文字（縦棒文字）とバージョンx.y.zを指定する)。|x.y.z　のバージョン表記は省略可能で、省略した場合には、受信側により受信時点での最新バージョンに準拠しているとみなされる。
 </td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値(x.y.zは置き換える)</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS' target='_blank'>http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|x.y.z</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_CLINS|x.y.z</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
@@ -122,7 +122,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Bundle_CLINS|x.y.z　を設定�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値 http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS　を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS' target='_blank'>http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/clins/CodeSystem/BundleResourceType_CS</td>
                                     </tr>
                                     <tr style="height:120pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>

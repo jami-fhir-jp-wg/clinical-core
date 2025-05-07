@@ -266,7 +266,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するための拡張を識別するURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber' target='_blank'>"http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"</td>
                                     </tr>
                                     <tr style="height:35pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -326,7 +326,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診療科情報を記述するために使用する拡張を識別するURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department' target='_blank'>"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department"</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -434,7 +434,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">主傷病であることを記述するために使用する拡張を識別するURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department' target='_blank'>"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_DiagnosisType"</td>
                                     </tr>
                                     <tr style="height:31pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -530,7 +530,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">「リソース一意識別ID」のsystem値を固定で設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier' target='_blank'>"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"</td>
                                     </tr>
                                     <tr style="height:45pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
@@ -674,7 +674,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コードで記述が必須で、少なくともひとつのsystem値は固定値。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://terminology.hl7.org/CodeSystem/condition-ver-status' target='_blank'>"http://terminology.hl7.org/CodeSystem/condition-ver-status"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://terminology.hl7.org/CodeSystem/condition-ver-status"</td>
                                     </tr>
                                     <tr style="height:195pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
@@ -771,7 +771,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態のカテゴリーを識別するURL。"http://terminology.hl7.org/CodeSystem/condition-category"を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://terminology.hl7.org/CodeSystem/condition-category' target='_blank'>"http://terminology.hl7.org/CodeSystem/condition-category"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://terminology.hl7.org/CodeSystem/condition-category"</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
@@ -843,7 +843,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の前置修飾語を格納するための拡張(JP_Condition_DiseasePrefixModifier_eCS)</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier' target='_blank'>"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier"</td>
                                     </tr>
                                     <tr style="height:47pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
@@ -966,7 +966,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">病名の後置修飾語を格納するための拡張(JP_Condition_DiseasePostfixModifier_eCS)</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePrefixModifier' target='_blank'>"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Condition_DiseasePostfixModifier"</td>
                                     </tr>
                                     <tr style="height:47pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>

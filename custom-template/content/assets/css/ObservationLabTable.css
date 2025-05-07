@@ -38,6 +38,14 @@ border-bottom: 0.5pt solid windowtext;
 border-left: none;
 white-space: normal;
 }
+.htmlTable .xl_r {
+text-align: left;
+border-top: none;
+border-right: 1pt solid windowtext;
+border-bottom: 0.5pt solid windowtext;
+border-left: none;
+white-space: normal;
+}
 .htmlTable .xl_2nd_l {
   text-align: left;
   border-top: 1pt solid windowtext;
@@ -50,6 +58,14 @@ white-space: normal;
   text-align: left;
   border-top: 1pt solid windowtext;
   border-right: 0.5pt solid windowtext;
+  border-bottom: 0.5pt solid windowtext;
+  border-left: none;
+  white-space: normal;
+}
+.htmlTable .xl_2nd_r {
+  text-align: left;
+  border-top: 1pt solid windowtext;
+  border-right: 1pt solid windowtext;
   border-bottom: 0.5pt solid windowtext;
   border-left: none;
   white-space: normal;
@@ -76,4 +92,12 @@ white-space: normal;
   border-bottom: 1pt solid windowtext;
   border-left: none;
  white-space: normal;
+}
+.htmlTable .xl_last_r {
+  text-align: left;
+  border-top: none;
+  border-right: 1pt solid windowtext;
+  border-bottom: 1pt solid windowtext;
+  border-left: none;
+  white-space: normal;
 }

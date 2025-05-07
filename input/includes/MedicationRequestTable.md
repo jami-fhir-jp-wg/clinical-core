@@ -183,7 +183,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。
 電子カルテ情報サービスでは、この拡張による記述は必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber' target='_blank'>"http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -207,7 +207,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">医療機関１０桁番号を示すURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no' target='_blank'>"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no"</td>
                                     </tr>
                                     <tr style="height:31pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -243,7 +243,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">診療科情報を記述するために使用する拡張を識別するURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_Department' target='_blank'>"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_Department"</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -364,7 +364,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">「リソース一意識別ID」のsystem値を固定で設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier' target='_blank'>"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier"</td>
                                     </tr>
                                     <tr style="height:60pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
@@ -498,13 +498,13 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:30pt">
+                                    <tr style="height:0pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">1..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -906,7 +906,7 @@ quest_DispenseRequest_InstructionForDispense"</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">頓用回数を表現する拡張を識別するURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/StructureDefinition/ExpectedRepeatCount' target='_blank'>"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount"</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationRequest_DispenseRequest_ExpectedRepeatCount"</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">dispenseRequest</td>

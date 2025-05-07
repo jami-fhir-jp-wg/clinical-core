@@ -63,7 +63,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">投与開始日を明示するために使用する拡張を識別するURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse' target='_blank'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse</td>
                                     </tr>
                                     <tr style="height:0pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -107,7 +107,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">実投与日数を明示したい場合に使用する拡張を識別するためのURL。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_UsageDuration' target='_blank'>http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_UsageDuration</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_UsageDuration</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
@@ -229,7 +229,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI補足用法８桁コードを識別するURI（固定値参照）。やむを得ず施設固有コードを使用する場合には、"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsageAdditional/医療機関10桁コード"を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jami.jp/CodeSystem/MedicationUsageAdditional' target='_blank'>http://jami.jp/CodeSystem/MedicationUsageAdditional</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jami.jp/CodeSystem/MedicationUsageAdditional</td>
                                     </tr>
                                     <tr style="height:28pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">additionalInstruction[=]</td>
@@ -574,7 +574,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">投与経路コード表のsystemを設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"><a href='http://jpfhir.jp/fhir/core/CodeSystem/route-codes' target='_blank'>http://jpfhir.jp/fhir/core/CodeSystem/route-codes</a></td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/core/CodeSystem/route-codes</td>
                                     </tr>
                                     <tr style="height:0pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">route</td>
