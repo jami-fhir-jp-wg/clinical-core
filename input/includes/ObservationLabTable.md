@@ -1,4 +1,4 @@
-        <div class="segment">
+    <div class="segment">
         <div class="container">
             <div class="row">
                 <div class="inner-wrapper">
@@ -146,14 +146,14 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:90pt">
+                                    <tr style="height:105pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。電子カルテ情報サービスでは必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
