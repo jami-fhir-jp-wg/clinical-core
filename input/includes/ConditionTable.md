@@ -1204,7 +1204,7 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:105pt">
+                                    <tr style="height:138pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetDateTime</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -1485,12 +1485,12 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報による患者状態が終了したと同定された時期。患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。この日付がある場合のclinicalStatus要素は"active"以外の値でなければならない。
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報による患者状態が終了したと同定された時期。患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。この日付がある場合のclinicalStatus要素は"active","unknown"以外の値でなければならない。
 abatement要素は記述しないで、直接abatementDateTime要素などabatementXXXXの要素により記述する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:120pt">
+                                    <tr style="height:135pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">abatementDateTime</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>

@@ -1,4 +1,4 @@
-    <div class="segment">
+        <div class="segment">
         <div class="container">
             <div class="row">
                 <div class="inner-wrapper">
@@ -1118,7 +1118,7 @@ H:High,L:Low,N:Normal のいずれかを使う。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">BackboneElement</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この患者のこの検査に対する基準値の下限値と上限値</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
