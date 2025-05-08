@@ -235,7 +235,7 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
     * insert relative_short_definition("追加的な情報の内容。markdown形式のテキストが使用できる。データとして1Mバイト以内であること。")
 
 * reaction 0.. MS
-  * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。mabifestationには、アレルギー反応に関連する症状や所見を、可能ならMEDIS病名管理番号で記述する。コード化しにくい場合にはmanifestaiton.textで記述する。")
+  * insert relative_short_definition("対象物質に暴露したことに関連して派生した有害反応の履歴事実に関する情報。複数記述できる。manifestationには、アレルギー反応に関連する症状や所見を、可能ならMEDIS病名管理番号で記述する。コード化しにくい場合にはmanifestaiton.textで記述する。")
   * manifestation from $JP_Disease_MEDIS_ManagementID_VS (preferred)
     * insert relative_short_definition("アレルギー反応に関連する症状や所見症状がテキスト表現も記述できない（情報を持っていない）場合には、http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor 拡張を使用して、コード'NI'を記述することで、manifestationが記述できないことを記述できる。記述例はComment参照のこと。")
     * ^comment = "NullFlaverの記述する場合の記述例：manifestation: { \"extension\":[ {\"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor\", \"valueCode\": \"NI\"}]}"

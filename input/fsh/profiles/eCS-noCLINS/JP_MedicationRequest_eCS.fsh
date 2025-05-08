@@ -135,7 +135,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 * intent = #order
 * category 0..* 
 // * category 薬剤使用区分（外来、院内、院外などの区分）上位Profileで定義済み
-* obeys warning-anyOf-YJ-or-KikakubetsuYakuzaiSeibun-medicationCode
+* obeys warning-anyOf-YJ-medicationCode
 * category.coding 1..
 * category.coding.system 1..1 
   * ^short = "薬剤使用区分のコード体系のコード"

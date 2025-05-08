@@ -40,7 +40,9 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 
 * reaction[0].manifestation[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
 * reaction[=].manifestation[=].extension[=].valueCode = #NI
+* reaction[=].manifestation[=].text = "詳細不明の強い反応あり"
 * reaction[=].severity = #severe
+
 
 //* encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * note[+].text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
@@ -91,6 +93,7 @@ Description: "AllergyIntoleranceリソース　CLINS必須要素で記述した�
 
 * reaction[0].manifestation[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor"
 * reaction[=].manifestation[=].extension[=].valueCode = #NI
+* reaction[=].manifestation[=].text = "詳細不明の強い反応あり"
 * reaction[=].severity = #severe
 
 * note[+].text = "ポビドンヨード含嗽後に嘔吐と全身に発疹"
