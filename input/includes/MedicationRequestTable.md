@@ -110,7 +110,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:105pt">
+                                    <tr style="height:120pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -119,7 +119,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter )</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">
-入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。電子カルテ情報サービスでは必須。</td>
+入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -155,7 +155,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold">電子カルテ情報サービスでは、作成発行した医療機関番号や診療科情報を記述する拡張。</td>
+                                        <td class="xl_m" style="color:#FF0000; background:#FFFFFF; font-weight: bold"><span   class="font_red font_bold">電子カルテ情報サービスでは、作成発行した医療機関番号や診療科情報を記述する拡張。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -181,7 +181,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。
-電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber"</td>
                                     </tr>
@@ -221,7 +221,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1318814790"</td>
                                     </tr>
-                                    <tr style="height:45pt">
+                                    <tr style="height:60pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -229,7 +229,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -672,7 +672,7 @@ YJ（個別医薬品）コード: "http://capstandard.jp/iyaku.info/CodeSystem/Y
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference (JP_Encounter )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。電子カルテ情報サービスでは必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
                                     </tr>

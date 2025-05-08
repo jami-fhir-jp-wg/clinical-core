@@ -401,7 +401,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
 診療情報提供書の場合、情報提供の理由（主訴・目的）。
 コードで記述できる場合にはそのコード記述。
 
-診療情報提供書の場合、text要素で情報提供の理由を自由記述することが必須。</td>
+<span   class="font_red font_bold">診療情報提供書の場合、text要素で情報提供の理由を自由記述することが必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>

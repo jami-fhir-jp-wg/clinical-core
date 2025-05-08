@@ -375,7 +375,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:128pt">
+                                    <tr style="height:147pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">timing</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
@@ -383,7 +383,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化し、コード化できない場合にもダミーコードを使用してコード化する。施設固有のコード化による記述も可能であるが、できる限り上記標準コードと併用することは望ましい。
-電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。</td>
+<span   class="font_red font_bold">電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -411,14 +411,14 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20240601"</td>
                                     </tr>
-                                    <tr style="height:30pt">
+                                    <tr style="height:45pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">timing</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">用法コード。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードを設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">用法コード。<span   class="font_red font_bold">電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードを設定する。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1013044400000000"</td>
                                     </tr>
