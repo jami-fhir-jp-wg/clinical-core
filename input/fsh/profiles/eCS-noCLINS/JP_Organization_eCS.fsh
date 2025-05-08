@@ -38,6 +38,12 @@ Description: "診療情報・サマリー汎用　Organizationリソース（医
 * extension contains
     JP_eCS_Department named department ..1
 
+* extension[prefectureNo] ^short = "都道府県番号２桁を表現するExtension"
+* extension[prefectureNo] ^comment = "都道府県番号２桁。Identifier型の拡張を使用する。  
+valueには都道府県番号2桁の値を格納し、systemには都道府県番号を表すURL「http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo」を指定する。"
+* extension[organizationCategory] ^short = "点数表コード１桁（医科１、非保険検診施設２、歯科３、調剤４、訪問看護ステーション６）を表現するExtension【詳細参照】"
+* extension[organizationCategory] ^comment = "点数表コード１桁（医科１、非保険検診施設２、歯科３、調剤４、訪問看護ステーション６）。systemには点数表番号を表すURL「http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory」を指定する。"
+
 * extension[department] 0.. MS
 * extension[department] ^short = "診療科情報"
 * extension[department] ^definition = "診療科情報。コード化する場合にはSS-MIX2診療科コードを使用する。"
@@ -48,11 +54,12 @@ Description: "診療情報・サマリー汎用　Organizationリソース（医
 * identifier[medicalInstitutionCode].value 1..1 MS  //http://jpfhir.jp/fhir/core/IdSystem/insurance-medical-institution-no 10桁　保険医用期間番号
 
 * type 0..* MS
+* type.coding 1..1 MS
 * type.coding.system = "http://terminology.hl7.org/CodeSystem/organization-type" (exactly)
-* type.coding.system MS
+* type.coding.system 1.. MS
 * type.coding.system ^short = "施設種別を表すコード体系を識別するURI"
 * type.coding.system ^definition = "施設種別を表すコード体系を識別するURI。http://terminology.hl7.org/CodeSystem/organization-type　固定値。"
-* type.coding.code MS
+* type.coding.code 1..1 MS
 * type.coding.code from OrganizationType (extensible)
 * type.coding.code ^short = "施設種別コード"
 * type.coding.code ^definition = "医療機関の場合、\"prov\" を指定する。他の種別の場合には、http://terminology.hl7.org/CodeSystem/organization-type　に定義されているコードを指定する。"

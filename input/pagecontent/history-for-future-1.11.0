@@ -165,8 +165,6 @@
       - 7.1 プロファイル詳細
         - JLAC10,JLAC11のコード表が整備されたことに伴い、code:slice nameを整合性をとるために一部変更。
     - Validationで使用するjp-coreパッケージをjp-core.r4-1.1.2-clinsに変更（整合性をとるためJP_ServiceRequest-dummy版を削除）
-    - Validationで使用するJpFhirTerminologyパッケージをjpfhir-terminology.r4-1.2.4-urlに変更（医薬品関係、アレルギー関係のTerminologyを更新）
-      - 規格別薬剤成分コード　http://jpfhir.jp/fhir/core/ValueSet/JP_MedicationCodeKYS_VS を新規追加。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.5.2 (2024.9.29) 
 
@@ -308,7 +306,6 @@
 | |	医薬品コード（医薬品マスター）	|	(urn:oid:1.2.392.100495.20.2.71)	|	関係者調整中	|
 |		|	薬価基準収載医薬品コード	|	(urn:oid:1.2.392.100495.20.2.72)	|	関係者調整中	|
 |＊	|	個別医薬品コード（YJ コード）リスト	|	(urn:oid:1.2.392.100495.20.2.73)	|	http://capstandard.jp/iyaku.info/CodeSystem/YJ-code	|
-|＊	|	規格別薬剤成分コード（注：YJコードの末尾3桁をZZZとした）|	なし	|	http://capstandard.jp/CodeSystem/KikakubetsuYakuzaiSeibun	|
 |		|	HOT コード（9 桁）	|	(urn:oid:1.2.392.100495.20.2.74)	|	MEDISー医薬品基準番号（ＨＯＴ９）を参照	|
 |		|	一般名処方マスタ	|	urn:oid:1.2.392.100495.20.2.81	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationGeneralOrderCode	|
 |	＊	|	医薬品単位略号	|	urn:oid:1.2.392.100495.20.2.101	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUnitMERIT9Code	|

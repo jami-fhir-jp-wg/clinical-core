@@ -239,6 +239,6 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
   * manifestation from $JP_Disease_MEDIS_ManagementID_VS (preferred)
     * insert relative_short_definition("アレルギー反応に関連する症状や所見症状がテキスト表現も記述できない（情報を持っていない）場合には、http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor 拡張を使用して、コード'NI'を記述することで、manifestationが記述できないことを記述できる。記述例はComment参照のこと。")
     * ^comment = "NullFlaverの記述する場合の記述例：manifestation: { \"extension\":[ {\"url\": \"http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor\", \"valueCode\": \"NI\"}]}"
-  * manifestation.text 0..1 
+  * manifestation.text 1..1 
     * insert relative_short_definition("アレルギー反応に関連する症状や所見症状のテキスト表現。")
 

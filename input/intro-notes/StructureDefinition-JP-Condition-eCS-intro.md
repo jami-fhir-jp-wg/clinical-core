@@ -40,7 +40,7 @@
   - extension (eCS_InstitutionNumber) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須。２文書内で送信される場合はなくてもよい。医療機関番号１０桁
   - extension (eCS_Department) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須。２文書内で送信される場合はなくてもよい。診療科名称（とコード）
   - extension (eCS_DiagnosisType) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）で、主傷病名フラグのある傷病名には設定必須。
-  - clinicalStatus : 臨床的状態(傷病の状態)のコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。abatementDateTime要素に日付が設定されている場合にはその時点での状態を設定し、同要素がない場合にはactiveを設定する。
+  - clinicalStatus : 臨床的状態(傷病の状態)のコード化情報。コード化必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。abatementDateTime要素に日付が設定されている場合にはその時点での状態を設定し、同要素がない場合にはactiveアクティブまたはunknownを設定する。
   - code.extension (JP_Condition_DiseasePrefixModifier_eCS) : 傷病名の前置修飾語
   - code.extension (JP_Condition_DiseasePostfixModifier_eCS) : 傷病名の前置修飾語
   - encounter : 電子カルテ情報共有サービスでは必須（5情報のひとつとして送信される場合）。この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。２文書内で送信される場合はなくてもよい。

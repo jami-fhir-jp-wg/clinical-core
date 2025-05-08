@@ -481,7 +481,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * hasMember ^definition = "同じ検査・観察において、メソッドが1つ、観察が1つ、実行者が1つ、デバイスが1つ、時間が1つしかない１回の検査・観察で同時に複数の検査結果が得られる場合に、その各検査をcomponentをみなしてcomponent要素に記述する。たとえばこのObservationリソースが血圧である場合に、収縮期血圧値と拡張期血圧値の2つは、Observationリソース：血圧の2つのcomponentとして記述される。ただし、実際にこの方式で記述するか、または別々のObservationリソースで記述するかについては、記述方針が別途定められている場合にはそれに従う。"
 
 * component MS
-  * referenceRange MS
+  * referenceRange 0..1 MS
   * referenceRange.id ..0
   * referenceRange.extension ..0
   * referenceRange.modifierExtension ..0

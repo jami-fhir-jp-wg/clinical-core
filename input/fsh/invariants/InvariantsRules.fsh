@@ -182,16 +182,16 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 
 // R3010 医薬品コードの妥当性チェック（標準コードなしもOK）
 
-Invariant: warning-anyOf-YJ-or-KikakubetsuYakuzaiSeibun-medicationCode
-Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、規格別薬剤成分コードのいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。電子カルテ共有サービスで使用するのでなければこの警告は無視できる。"
+Invariant: warning-anyOf-YJ-medicationCode
+Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコードを必須とする。その上でそれ以外のコード体系が存在してもよい。電子カルテ共有サービスで使用するのでなければこの警告は無視できる。"
 Severity: #warning
-Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/CodeSystem/KikakubetsuYakuzaiSeibun').count()=1)"
+Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1))"
 
-// R3011 医薬品コードの妥当性チェックYJか規格別薬剤成分コードのいずれかが必須（標準コードなしはX）
-Invariant: needs-anyOf-YJ-or-KikakubetsuYakuzaiSeibun-medicationCode
-Description: "R3011:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコード、規格別薬剤成分コードのいずれかを必須とする。その上でそれ以外のコード体系が存在してもよい。"
+// R3011 医薬品コードの妥当性チェックYJが必須（標準コードなしはX）
+Invariant: needs-anyOf-YJ-medicationCode
+Description: "R3011:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコードを必須とする。その上でそれ以外のコード体系が存在してもよい。"
 Severity: #error
-Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1) or (medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/CodeSystem/KikakubetsuYakuzaiSeibun').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
+Expression: "((medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1)) and ((medication.ofType(CodeableConcept).coding.where(system = 'http://jpfhir.jp/fhir/eCS/CodeSystem/MedicationCodeNocoded_CS').count()=0))"
 
 // R4011 薬剤アレルギーとその他アレルギー等の情報とを区別するため、電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、必ず本要素は"medication"として存在しなければならず、criticality要素は"high"を設定しなければならない。これ以外の場合には、本リソースの情報はやその他のアレルギー情報として取り扱われる。
 // Invariant: needs-anyOfStandardCode-medication

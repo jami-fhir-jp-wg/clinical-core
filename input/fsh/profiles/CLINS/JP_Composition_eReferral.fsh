@@ -199,9 +199,9 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * type from $doc-typecodes_VS (required)
 * type.coding.system = $doc-typecodes_CS (exactly)
 * type.coding.system ^definition = "文書区分コードのコード体系を識別するURI。固定値"
-* type.coding.system MS
+* type.coding.system 1..1 MS
 * type.coding.version MS
-* type.coding.code 1.. MS
+* type.coding.code 1..1 MS
 * type.coding.code = #57133-1 (exactly)
 * type.coding.code ^definition = "診療情報提供書\"57133-1\"を指定。固定値。"
 * type.coding.display = "診療情報提供書" (exactly)
