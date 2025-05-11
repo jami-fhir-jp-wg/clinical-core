@@ -177,7 +177,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.y.z　
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。
-電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -368,14 +368,14 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.y.z　
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://sample.jp/fhir/1311234567/ehr2020/observation/0008363939-202108260941060286066600-J9FA32280000"</td>
                                     </tr>
-                                    <tr style="height:60pt">
+                                    <tr style="height:75pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態のステータス。コードで記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では必須。記述する場合にはコード化記述が必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態のステータス。コードで記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。<span   class="font_red font_bold">それ以外では必須。</span>記述する場合にはコード化記述が必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -552,7 +552,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.y.z　
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">特定された原因物質のカテゴリ。記述を可能な限り推奨する。コード表："http://hl7.org/fhir/allergy-intolerance-category"からfood|medication|environment|biologic（食物、医薬品、環境、バイオロジー物質）のいずれかを選択する。電子カルテシステムで、これらのカテゴリーが区別されて登録されている場合には適切なコードを設定すること。
-電子カルテ情報サービスでは、薬剤アレルギー等の情報として本リソース種別を使用する場合には、必ず本要素は"medication"、もしくは"biologic"として存在しなければならない。それ以外が設定されている場合、及び本要素が存在しない場合には、その他アレルギー等の情報として取り扱われる。</td>
+<span   class="font_red font_bold">電子カルテ情報サービスでは、薬剤アレルギー等の情報として本リソース種別を使用する場合には、必ず本要素は"medication"、もしくは"biologic"として存在しなければならない。それ以外が設定されている場合、及び本要素が存在しない場合には、その他アレルギー等の情報として取り扱われる。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"food"</td>
                                     </tr>

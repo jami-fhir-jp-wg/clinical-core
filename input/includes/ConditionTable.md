@@ -206,7 +206,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:90pt">
+                                    <tr style="height:105pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -214,7 +214,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter)</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。電子カルテ情報サービスでは必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -252,7 +252,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。
-電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -304,7 +304,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1318814790"</td>
                                     </tr>
-                                    <tr style="height:45pt">
+                                    <tr style="height:60pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
@@ -312,7 +312,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。電子カルテ情報サービスでは、この拡張による記述は必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -544,7 +544,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://sample.jp/fhir/1311234567/ehr2020/condition/0008363939-20210826-002"</td>
                                     </tr>
-                                    <tr style="height:75pt">
+                                    <tr style="height:90pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -552,7 +552,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。'entered-in-error'以外では、必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。<<span   class="font_red font_bold">>'entered-in-error'以外では、必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -592,7 +592,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://terminology.hl7.org/CodeSystem/condition-clinical"</td>
                                     </tr>
-                                    <tr style="height:105pt">
+                                    <tr style="height:120pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">clinicalStatus</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
@@ -600,7 +600,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快または寛解), resolved (軽快または治癒) 、unknown（不明）のいずれかを選ぶ。軽快では状況に応じてremissionまたはresolvedを使用する。電子カルテ情報共有サービスでは、recurrence、relapse、inactiveは使用しない。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快または寛解), resolved (軽快または治癒) 、unknown（不明）のいずれかを選ぶ。軽快では状況に応じてremissionまたはresolvedを使用する。<span   class="font_red font_bold">電子カルテ情報共有サービスでは、recurrence、relapse、inactiveは使用しない。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"active"</td>
                                     </tr>
@@ -636,7 +636,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須。clinicalStatusとの制約条件を参照のこと。疑い病名フラグとしても使用される。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入力された臨床的状態に対する検証状況を示す。確からしさと考えられる。コード化記述が必須。clinicalStatusとの制約条件を参照のこと。<span   class="font_red font_bold">疑い病名フラグとしても使用される。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -676,7 +676,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://terminology.hl7.org/CodeSystem/condition-ver-status"</td>
                                     </tr>
-                                    <tr style="height:195pt">
+                                    <tr style="height:210pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">verificationStatus</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
@@ -685,7 +685,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">疑い病名フラグがない病名には、confirmed を設定するが、一度登録された病名を取り消した場合やそれが入力エラーであったことを明示したい場合には、refuted（取り消された病名）、entered-in-error（誤って登録された病名）のいずれかを設定することもできる。
-疑い病名フラグのある病名には、unconfirmed を必ず設定する。なお、電子カルテ情報共有サービスでは、confirmed、unconfirmed以外の病名に対してはその情報は保存されるが、利用されたり表示されたりすることはない。過去の登録病名情報に対して削除や取り消しなどの処理を行うために使われることもないため、refutedやentered-in-errorをつけて送信しても過去に送信した病名を取り消すことはできない。</td>
+疑い病名フラグのある病名には、unconfirmed を必ず設定する。<span   class="font_red font_bold">なお、電子カルテ情報共有サービスでは、confirmed、unconfirmed以外の病名に対してはその情報は保存されるが、利用されたり表示されたりすることはない。過去の登録病名情報に対して削除や取り消しなどの処理を行うために使われることもないため、refutedやentered-in-errorをつけて送信しても過去に送信した病名を取り消すことはできない。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"unconfirmed"</td>
                                     </tr>
@@ -1187,11 +1187,11 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference (JP_Encounter )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。電子カルテ情報サービスでは必須。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
                                     </tr>
-                                    <tr style="height:255pt">
+                                    <tr style="height:270pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">(onset)</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -1199,12 +1199,12 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報が同定された時期。患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述する。
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報が同定された時期。患者にこの傷病が出現した時期、あるいはなんらかのエビデンスによりこの傷病が患者にあると確認できた時期を記述する。電子カルテシステムの病名開始日をdateTime型で記述するのが一般的な方法である。<span   class="font_red font_bold">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述する。</span>
 記録を登録した日時は、別途recordedDateに記述する。記述方法として、1時点の日時、患者の年齢（曖昧な年齢時期の記述も可能）、開始時期と終了時期による期間、年齢の区間、（なんらかの出来事を引用して記述するような）文字列で時期を記述、の5通りのいずれかの要素（onsetDateTime、onseAge、onsetPeriod、onsetRange、onsetString）からひとつの記述方法を選択して、それにより記述する。複数を選択はできない。onset要素は記述しないで、直接onsetDateTime要素などonsetXXXXの要素により記述する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:105pt">
+                                    <tr style="height:138pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">onsetDateTime</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -1215,7 +1215,7 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">一時点の記述方式：
 日付または日時。年や年月だけでもよい。例：2018,1973-06,1905-08-23,2015-02-07T13:28:17+09:00。
 時刻に24:00の使用はできない。
-電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述することが必須。</td>
+<span   class="font_red font_bold">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名開始日をdateTime型で記述することが必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"2018"
 "1973-06"
@@ -1477,7 +1477,7 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"70歳台"</td>
                                     </tr>
-                                    <tr style="height:195pt">
+                                    <tr style="height:210pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">（abatement）</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -1485,12 +1485,12 @@ system値はMEDIS標準病名マスター修飾語交換用コードを使用す
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">（dateTime、Age、Period、Range、string）のいずれかの型をとる。</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報による患者状態が終了したと同定された時期。患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。この日付がある場合のclinicalStatus要素は"active"以外の値でなければならない。
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この傷病名情報による患者状態が終了したと同定された時期。患者にこの傷病のある状態が終了した時期、あるいはなんらかのエビデンスによりこの傷病のある状態が改善もしくはある状態になったと確認できた時期を記述する。<span   class="font_red font_bold">電子カルテシステムの病名終了日をdateTime型で記述するのが一般的な方法である。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述する。この終了日における転帰情報をclinicalStatus要素に記述すること。この日付がある場合のclinicalStatus要素は"active","unknown"以外の値でなければならない。</span>
 abatement要素は記述しないで、直接abatementDateTime要素などabatementXXXXの要素により記述する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:120pt">
+                                    <tr style="height:135pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">abatementDateTime</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -1501,7 +1501,7 @@ abatement要素は記述しないで、直接abatementDateTime要素などabatem
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">一時点の記述方式：
 日付または日時。年や年月だけでもよい。例：2018,1973-06,1905-08-23,2015-02-07T13:28:17+09:00。
 時刻に24:00の使用はできない。
-dateTime以外の方法で記述したい場合には、oncet要素の説明を参照のこと。電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述することが必須。</td>
+dateTime以外の方法で記述したい場合には、oncet要素の説明を参照のこと。<span   class="font_red font_bold">電子カルテ共有サービスにおける6情報のひとつとして本リソースが記述される場合には、病名終了日をdateTime型で記述することが必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1989-08-23"
 </td>

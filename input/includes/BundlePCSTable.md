@@ -75,27 +75,18 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Bundle_ePCS|x.y.z　を設定�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値(x.y.zは置き換える)</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/clins/StructureDefinition/JP_Bundle_ePCS|x.y.z"</td>
                                     </tr>
-                                    <tr style="height:30pt">
-                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[*]</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..*</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Identifier</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本文参照のこと。本文書を電子カルテ情報共有サービスに送信する場合は、その仕様に従うこと。</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                    </tr>
                                     <tr style="height:131pt">
-                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[+]</td>
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Identifier</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この文書Bundleの一意の識別子。Bundle作成時にシステムが設定する。
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この文書Bundleの一意の識別子。Bundle作成時にシステムが設定する。本文参照のこと。本文書を電子カルテ情報共有サービスに送信する場合は、その仕様に従うこと。
 Bundleリソースのidentifier要素は、電子カルテ情報共有サービス側で保存される。送信側は、後続の送信においてこのidentifierを指定することで、受信側は過去に受信したBundleリソースを特定し、それに含まれていた全データについて削除、更新などの処理を行うためにこれを使用する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
                                     <tr style="height:42pt">
-                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
                                         <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
@@ -104,7 +95,7 @@ Bundleリソースのidentifier要素は、電子カルテ情報共有サービ�
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/clins/bundle-identifier</td>
                                     </tr>
                                     <tr style="height:36pt">
-                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
+                                        <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
                                         <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>

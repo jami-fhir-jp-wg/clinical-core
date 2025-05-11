@@ -240,7 +240,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">「IMP:入院(inpatient Encounter)」または、「AMB:外来受診(ambulatory)」
 退院時サマリーで退院時を記述する場合には"IMP"を使用する。
 * INPではなくIMPであることに注意。</td>
@@ -253,7 +253,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">display</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">"IMP"に対応する"入院"、または"AMB"に対応する"外来"など。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"入院"</td>
@@ -264,7 +264,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Period</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院期間、外来受診日を記述する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -318,7 +318,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">end</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">dateTime</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この入院の退院日時。外来受診の場合には不要。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -379,13 +379,13 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"d"</td>
                                     </tr>
-                                    <tr style="height:30pt">
+                                    <tr style="height:0pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">reasonCode[*]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..*</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">このEncounterが発生した事由、理由。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -396,7 +396,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院時主訴・入院理由、外来受診理由、診療情報提供理由など。
 診療情報提供書の場合、情報提供の理由（主訴・目的）。
 コードで記述できる場合にはそのコード記述。
@@ -433,7 +433,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード記述のコードシステムURL</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">MEDIS標準病名マスター病名交換用コードを使う場合のsystem値："持続腹痛"のコード。"http://medis.or.jp/CodeSystem/master-disease-exCode"</td>
@@ -444,7 +444,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード記述のコード</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"BOEF"　</td>
@@ -555,7 +555,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">AD:入院時診断、DD:退院時診断、CC:主訴、CM:併存症診断、pre-op:術前診断、post-op:術後診断、billing:会計請求診断（FHIR準拠の場合のコード表）。値は例示。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"DD"</td>
@@ -638,7 +638,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">specialCourtesy</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">特別配慮を要する入院。VIP、職員、医療専門職といった区分。当面未使用</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -649,7 +649,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">SpecialArrangement</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">CodeableConcept</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">特別調整を要する入院。車椅子、増設ベッド、通訳、付き添い、盲導犬等の必要性。当面未使用</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
