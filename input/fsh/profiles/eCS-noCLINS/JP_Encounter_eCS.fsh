@@ -77,11 +77,17 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * period ^short = "入院期間。退院時サマリーでは必須。外来では必要な場合を除き省略可。"
 * period ^definition = "入院期間。退院時サマリーでは必須。外来では必要な場合を除き省略可。"
 * period.start 1..1 MS
+* period.start ^short = "この入院の入院日時。外来受診の場合には外来受診日。"
+* period.start ^definition = "この入院の入院日時。外来受診の場合には外来受診日。"
 * period.end 0..1 MS
+* period.start ^short = "この入院の退院日時。外来受診の場合には不要。"
+* period.start ^definition = "この入院の退院日時。外来受診の場合には不要。"
 * length 0..1 MS
-* length ^short = "この入院の在院日数"
-* length ^definition = "この入院の在院日数"
+* length ^short = "この入院の在院日数。外来受診の場合には不要。"
+* length ^definition = "この入院の在院日数。外来受診の場合には不要。"
 * length.value 1..1 MS
+* length.value ^short = "この入院の在院日数の数値。"
+* length.value ^definition = "この入院の在院日数の数値。"
 * length.unit 1..1 MS
 * length.unit = "日" (exactly)
 * length.unit ^definition = "日"
@@ -93,14 +99,16 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 
 * reasonCode 0..* MS
 * reasonCode ^short = "入院時主訴・入院理由。紹介する理由（主訴・目的）"
-* reasonCode ^definition = "コードで記述できる場合にそのコード記述。system値はMEDIS標準病名マスター病名交換用コードを使用できる。text要素にフリーテキストで記述してもよい。"
+* reasonCode ^definition = "コードで記述できる場合にそのコード記述。system値はMEDIS標準病名マスター病名交換用コードを使用できる。text要素にフリーテキストで記述することができる。"
 * reasonCode.coding 0..* MS
+* reasonCode.coding.system 1..1 MS
+* reasonCode.coding.system  ^short = "コード記述のコードシステムURL"
+* reasonCode.coding.system  ^definition = "コード記述のコードシステムURL。例としてMEDIS標準病名マスター病名交換用コードを使う場合では、http://medis.or.jp/CodeSystem/master-disease-exCode　を設定する。"
 * reasonCode.coding.system 1..1 MS
 * reasonCode.coding.code 1..1 MS
 * reasonCode.coding.display 1..1 MS
 * reasonCode.text 1..1 MS
 * reasonCode.text ^short = "入院時主訴・入院理由、情報提供理由などのテキスト記述。reasonCode要素を記述する場合には、text記述は必須。"
-
 
 * diagnosis 0..* MS
 * diagnosis ^short = "入院期間中の診断情報。診療情報提供書では不要。"
