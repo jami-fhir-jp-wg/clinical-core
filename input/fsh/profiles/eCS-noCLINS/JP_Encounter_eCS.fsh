@@ -97,6 +97,7 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * reasonCode.coding 0..* MS
 * reasonCode.coding.system 1..1 MS
 * reasonCode.coding.code 1..1 MS
+* reasonCode.coding.display 1..1 MS
 * reasonCode.text 1..1 MS
 * reasonCode.text ^short = "入院時主訴・入院理由、情報提供理由などのテキスト記述。reasonCode要素を記述する場合には、text記述は必須。"
 

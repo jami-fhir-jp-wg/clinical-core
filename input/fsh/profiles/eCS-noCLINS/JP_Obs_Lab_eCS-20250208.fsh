@@ -449,21 +449,21 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.low.value 1..1  MS
   * insert relative_short_definition("基準値の小さいほうの値")
 * referenceRange.low.unit 0..1 MS
-  * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+  * insert relative_short_definition("検査下限値の単位。検査結果の単位と同じであること。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、マスターに表示用単位があれば記述する。")
 * referenceRange.low.system 0..1 MS
-  * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+  * insert relative_short_definition("単位体系 UCUMコード体系。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には記述する。\"http://unitsofmeasure.org\"")
 * referenceRange.low.code 0..1 MS
-  * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+  * insert relative_short_definition("検査結果単位コード。値は例示。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、、マスターにXML単位コードがあれば記述する。")
 
 * referenceRange.high.extension ..0
 * referenceRange.high.value 1..1  MS
   * insert relative_short_definition("基準値の大きいほうの値")
 * referenceRange.high.unit 0..1 MS
-  * insert relative_short_definition("基準値の単位。検査結果の単位と同じであること。")
+  * insert relative_short_definition("検査上限値の単位。検査結果の単位と同じであること。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、マスターに表示用単位があれば記述する。")
 * referenceRange.high.system 0..1 MS
-  * insert relative_short_definition("基準値の単位のコード化記述をするコード体系を表すsystem値。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。\"http://unitsofmeasure.org\"")
+  * insert relative_short_definition("単位体系 UCUMコード体系。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には記述する。\"http://unitsofmeasure.org\"")
 * referenceRange.high.code 0..1 MS
-  * insert relative_short_definition("基準値の単位のコード。電子カルテ情報共有サービスでの検査値の場合には、マスターに単位指定があれば記述する。")
+  * insert relative_short_definition("検査結果単位コード。値は例示。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、、マスターにXML単位コードがあれば記述する。")
 
 * referenceRange.text 0..1 MS
 

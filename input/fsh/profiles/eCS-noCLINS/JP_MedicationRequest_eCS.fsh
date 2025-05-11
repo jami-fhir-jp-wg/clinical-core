@@ -121,7 +121,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * valueCodeableConcept from $JP_Department_SsMix_VS (preferred)
   * valueCodeableConcept.text 1..1
   
-* identifier MS // JP_MedicationRequestでは2..*が設定されている。 
+* identifier 3.. MS // JP_MedicationRequestでは2..*が設定されているのを3に変更
   * insert relative_short_definition("このリソース情報の識別ID、および必要であれば処方箋における剤グループ番号、剤グループ内の順序番号などを格納する。")
   * ^comment = "リソース一意識別IDの仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
 
