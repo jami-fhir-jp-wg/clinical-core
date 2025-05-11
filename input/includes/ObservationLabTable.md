@@ -146,14 +146,14 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:105pt">
+                                    <tr style="height:90pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。電子カルテ情報サービスでは必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -168,14 +168,14 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:90pt">
+                                    <tr style="height:75pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">contained[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Practitioner )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">performer要素から参照されるJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。検査オーダ医師のIDや氏名の情報などをこのリソースに記述する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">performer要素から参照されるJP_Practitionerリソースの実体。JP_Practitionerリソースにおける必要最小限の要素だけが含まれればよい。検査オーダ医師のIDや氏名の情報などをこのリソースに記述する。電子カルテ情報サービスでは必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -210,7 +210,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した医療機関の識別番号を記述するために使用する拡張「eCS_InstitutionNumber」。
 本情報は、ServiceRequestの要素として記述することも可能であるが、その場合もこの拡張で記述することとする。
-<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
+電子カルテ情報サービスでは、この拡張による記述は必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -265,7 +265,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: bold"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Extension</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">本情報を作成発行した診療科または作成発行者の診療科情報を記述するために使用する拡張「eCS_Department」。電子カルテ情報サービスでは、この拡張による記述は必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -342,7 +342,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード化の有無に関わらず、当該医療機関の情報システムのマスターで定められた診療科名称の文字列（文字数の長さにより複数ある場合には、最も短い文字列）。<span   class="font_red font_bold">電子カルテ情報サービスでは、この拡張による記述は必須。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">コード化の有無に関わらず、当該医療機関の情報システムのマスターで定められた診療科名称の文字列（文字数の長さにより複数ある場合には、最も短い文字列）。電子カルテ情報サービスでは、この拡張による記述は必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"循内"</td>
                                     </tr>
@@ -583,7 +583,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference (JP_Encounter )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。電子カルテ情報サービスでは必須。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
                                     </tr>
@@ -619,7 +619,7 @@ YYYY-MM-DDThh:mm:ss+zz:zz</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference(Practitioner)</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">検査結果を責任を持つ医療者への参照。<span   class="font_red font_bold">電子カルテ情報サービスでは必須とし、オーダした医師（結果を確認した医師に相当）のPractitionerリソースへの参照を設定する。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">検査結果を責任を持つ医療者への参照。電子カルテ情報サービスでは必須とし、オーダした医師（結果を確認した医師に相当）のPractitionerリソースへの参照を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>
                                     </tr>
@@ -1118,7 +1118,7 @@ H:High,L:Low,N:Normal のいずれかを使う。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..*</td>
+                                        <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">BackboneElement</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この患者のこの検査に対する基準値の下限値と上限値</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
