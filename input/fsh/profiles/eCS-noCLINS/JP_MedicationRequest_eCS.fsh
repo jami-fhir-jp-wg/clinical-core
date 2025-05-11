@@ -125,10 +125,16 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * insert relative_short_definition("このリソース情報の識別ID、および必要であれば処方箋における剤グループ番号、剤グループ内の順序番号などを格納する。")
   * ^comment = "リソース一意識別IDの仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
 
-//* identifier contains requestIdentifier 1..1 MS // 上位Profileで定義済み
-* identifier[requestIdentifier].system ^comment = "リソース一意識別IDのsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier\"　を設定する。"
-* identifier[requestIdentifier].value 1..1 MS
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+
+* identifier contains resourceIdentifier 1..1 MS
+* identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
+* identifier[resourceIdentifier].system ^comment = "リソース一意識別IDのsystem値は\"http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier\"　を設定する。"
+* identifier[resourceIdentifier].value 1..1 MS
   * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
+
 
 
 * status = #completed
