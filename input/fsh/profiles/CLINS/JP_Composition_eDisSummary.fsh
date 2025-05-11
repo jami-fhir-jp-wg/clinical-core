@@ -197,7 +197,7 @@ and authorDepartment 0..1 MS
 // CDA参照セクションと構造情報セクションは、どちらか一方だけが出現する。制約条件の記述が必要。
 //
 //
-* insert sectionTitleCodeDefinition(eDischargeSummary,cdaSection,CDA参照,200,本セクションは電子カルテ情報共有サービスでは使用しない。)
+* insert sectionTitleCodeDefinition(eDischargeSummary,cdaSection,CDA参照,200,-本セクションは電子カルテ情報共有サービスでは使用しない。)
 * insert sectionTextDefinition(cdaSection)
 * section[cdaSection].mode ..0
 * section[cdaSection].orderedBy ..0

@@ -79,8 +79,8 @@ RuleSet: compositionSectionTextDefinition(compositionSection,sectionSlice02)
 */
 
 RuleSet: sectionTitleCodeDefinition(documentCategory,sectionSlice01,sectionName,sectionCode,appexNote)
-* section[{sectionSlice01}] ^short = "{sectionName}セクション {appexNote}"
-* section[{sectionSlice01}] ^definition = "{sectionName}セクション {appexNote}"
+* section[{sectionSlice01}] ^short = "{sectionName}セクション{appexNote}"
+* section[{sectionSlice01}] ^definition = "{sectionName}セクション{appexNote}"
 * section[{sectionSlice01}].title 1.. MS
 * section[{sectionSlice01}].title = "{sectionName}" (exactly)
 * section[{sectionSlice01}].title ^short = "セクションタイトル"
@@ -361,7 +361,7 @@ and authorDepartment 0..1 MS
 
 //
 //
-* insert sectionTitleCodeDefinition(eReferral,cdaSection,CDA参照,200,本セクションは電子カルテ情報共有サービスでは使用しない。)
+* insert sectionTitleCodeDefinition(eReferral,cdaSection,CDA参照,200,-本セクションは電子カルテ情報共有サービスでは使用しない。)
 * insert sectionTextDefinition(cdaSection)
 * section[cdaSection].mode ..0
 * section[cdaSection].orderedBy ..0
