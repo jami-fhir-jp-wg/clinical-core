@@ -185,7 +185,7 @@ Expression: "(identifier.where(system = 'http://jpfhir.jp/fhir/clins/bundle-iden
 Invariant: warning-anyOf-YJ-medicationCode
 Description: "R3010:medicationCodeableConcept は、電子カルテ共有サービスで使用する場合には、YJコードを必須とする。その上でそれ以外のコード体系が存在してもよい。電子カルテ共有サービスで使用するのでなければこの警告は無視できる。"
 Severity: #warning
-Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1))"
+Expression: "(medication.ofType(CodeableConcept).coding.where(system = 'http://capstandard.jp/iyaku.info/CodeSystem/YJ-code').count()=1)"
 
 // R3011 医薬品コードの妥当性チェックYJが必須（標準コードなしはX）
 Invariant: needs-anyOf-YJ-medicationCode
