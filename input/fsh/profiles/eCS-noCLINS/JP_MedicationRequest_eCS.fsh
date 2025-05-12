@@ -296,7 +296,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 * dispenseRequest.performer 
   * ^comment = "当面、診療５情報・サマリー用ではこの情報を記録しないが、記録する場合には display子要素だけとし、別のリソースへの参照をしない。" 
 
-* substitution　0..1
+* substitution 0..1
 * substitution.allowedCodeableConcept 1..1
 * substitution.allowedCodeableConcept.coding 1..1
 * substitution.allowedCodeableConcept.coding.system 1..1
