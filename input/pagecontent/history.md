@@ -11,7 +11,102 @@
     - 患者サマリーの「JP_Composition_ePCS：Composition.meta」　プロファイルを修正
   - 実装ガイド(6.1の表)とプロファイルとで説明または設定値の記載が異なるため、プロファイルまたは実装ガイドを修正。
     - 患者サマリーの「JP_Composition_ePCS：Composition.title」 実装ガイドを修正（固定値として"患者サマリー（療養計画書）"に修正）
-
+JP_Bundle_CLINS
+JP_Bundle_eDisSummary
+JP_Bundle_ePatientCareSummary
+JP_Bundle_eReferral
+　meta 1..1 を明記
+JP_Composition_eDisSummary
+　meta 1..1 を明記
+	author 2.2 を明記
+JP_Composition_ePatientCareSummary
+　meta 1..1 を明記
+   type.coding.system、type.coding.code、の多重度1..1を明記
+   section の多重度 1..1を明記
+   section.code.coding.displayの多重度0..1を明記
+   section.author 多重度0..0として使用しないことを明記
+　section.focus . 多重度0..0として使用しないことを明記
+　section.text  多重度0..0として使用しないことを明記
+　section.emptyReason　  多重度0..0として使用しないことを明記
+JP_Composition_eReferral
+　meta 1..1 を明記
+　type.coding.system 多重度1..1を明記
+　type.coding.code 多重度1..1を明記
+	author 多重度2..3を明記
+JP_CarePlan_eCS
+	meta 1..1 を明記
+	meta.profile 1..* を明記
+JP_Coverage_eCS_insurance
+JP_Coverage_eCS_publicPayment
+JP_FamilyMemberHistory_eCS
+JP_Organization_eCS_coveragePayer
+JP_Organization_eCS_department
+JP_Practitioner_eCS_author
+JP_PractitionerRole_eCS_author
+	meta 1..1 を明記
+	meta.lastUpdated 1..1を明記
+	meta.profile 1..* を明記
+JP_AllergyIntolerance_eCS
+	contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
+	extension[eCS_InstitutionNumber]の子要素の多重度を明記(1..1）
+	extension[eCS_InstitutionNumber].valueIdentifier.valueの定義説明を追加
+	encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+	reaction.manifestation.text の多重度を0..1から1..1に修正
+JP_Condition_eCS
+	contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
+	extension[eCS_InstitutionNumber]の子要素の多重度を明記(1..1）
+	extension[eCS_Department].valueCodeableConceptの子要素の多重度を明記
+	verificationStatus.coding 多重度を0..1から1..1に修正
+	encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+JP_Encounter_eCS
+	meta 1..1 を明記
+	meta.lastUpdated 1..1を明記
+	meta.profile 1..* を明記
+	classHistory 0..1を0.**に修正
+	period 定義の説明を追加
+	length.value 定義の説明を追加
+	reasonCode 子要素の多重度を明記
+	reasonCode.coding.display 多重度を0..1から1..1に修正
+JP_MedicationDosage_eCS
+	extension[usageDuration].valueDuration とその子要素の多重度を明記
+	timing.repeat.boundsDurationの子要素の多重度を明記
+	site、route、methodの子要素の多重度を明記
+	doseAndRate.type.codingの多重度を1..*から1..1に修正
+JP_MedicationRequest_eCS
+	contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
+	extension[eCS_InstitutionNumber].valueIdentifier.valueの子要素の多重度を明記
+	extension[eCS_Department].valueCodeableConceptの子要素の多重度を明記
+	identifier 多重度を2..*から3..* に修正
+	identifier[requestIdentifier] 多重度1..1を明記
+	category 多重度0..*を明記
+	category.coding　多重度1..*を明記
+	category.coding　子要素の多重度を明記
+	medication[x].coding[codingKYS] から規格別薬剤成分コードを削除
+	encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+	note の多重度を0..1から0..*に修正
+	dispenseRequest.quantity.unit　の多重度を1..1に修正
+	dispenseRequest.quantity.unitの子要素の多重度を明記
+	dispenseRequest.expectedSupplyDuration の多重度を0..1と明記
+	dispenseRequest.expectedSupplyDurationの子要素の多重度を明記
+	substitution の多重度を0..1と明記
+	substitution.allowedCodeableConcept の多重度を1..1と明記
+	substitution.allowedCodeableConcept の子要素の多重度を明記
+JP_Observation_LabResult_eCS
+	contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
+	extension[eCS_InstitutionNumber]の子要素の多重度を明記(1..1）
+	extension[eCS_InstitutionNumber].valueIdentifier.valueの定義説明を追加
+	encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+	extension[eCS_Department].valueCodeableConceptの子要素の多重度を明記
+	code.codingの子要素の多重度を明記
+	感染症コードに関する項目名やHIV-1+2抗体・p24抗原に関する定義を削除（JLACコード表修正予定を反映）
+	encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+	valueQuantity.value　多重度1.1を明記
+	valueCodeableConcept 多重度0..1を明記
+	valueCodeableConcept.coding　多重度1.1を明記
+	valueCodeableConcept.codingの子要素の多重度を明記
+	referenceRange 多重度を0..*と明記
+	referenceRange.low  同.highに関する個々の説明を追加
+	component.referenceRange 多重度0..1を明記
 
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)
