@@ -430,16 +430,16 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Composition_eCS|x.y.z　を設�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">urn:uuid:179f9f7f-e546-04c2-6888-a9e0b24e5720</td>
                                     </tr>
-                                    <tr style="height:24pt">
+                                    <tr style="height:55pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">title</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この文書の（人が読める）タイトル。固定値。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この文書の（人が読める）タイトル。固定値で使用する長音文字はUTF8:E383BC、SJIS:815B の文字を使用する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">""</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"患者サマリー（療養計画書）"</td>
                                     </tr>
                                     <tr style="height:32pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">custodian</td>

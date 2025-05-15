@@ -109,6 +109,8 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
  
 * title 1..1 MS
 * title = "患者サマリー（療養計画書）" (exactly)  // 長音はU+E383BC　SJIS:815B
+* title ^short = "人間が読みやすい名前/タイトル。長音文字はUTF8:E383BC、SJIS:815B の文字を使用する。"
+* title ^definition = "人間が読みやすい名前/タイトル。長音文字はUTF8:E383BC、SJIS:815B の文字を使用する。"
 
 * custodian ..0 MS
 
@@ -118,8 +120,8 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * section ^short = "計画サマリー"
 * section ^definition = "計画サマリーセクション"
 * section.title 1.. MS
-* section.title ^short = "セクションタイトル"
-* section.title ^definition = "セクションタイトル。固定値。"
+* section.title ^short = "セクションタイトル。長音文字はUTF8:E383BC、SJIS:815B の文字を使用する。"
+* section.title ^definition = "セクションタイトル。固定値。長音文字はUTF8:E383BC、SJIS:815B の文字を使用する。"
 * section.title = "計画サマリー" (exactly)
 
 * section.code 1.. MS
