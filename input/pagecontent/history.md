@@ -107,6 +107,20 @@ JP_Observation_LabResult_eCS
 	referenceRange 多重度を0..*と明記
 	referenceRange.low  同.highに関する個々の説明を追加
 	component.referenceRange 多重度0..1を明記
+JP_Organization_eCS
+	meta 多重度　1..1 を明記
+	meta.lastUpdated 多重度　1..1 を明記
+	meta.profile 多重度　1..*　を明記
+	extension[prefectureNo]、extension[organizationCategory]　に説明を追加。
+	type　子要素の多重度を明記
+	telecom 多重度　0..*　と子要素の多重度を明記
+JP_Practitioner_eCS
+	meta 多重度　1..1 を明記
+	meta.lastUpdated 多重度　1..1 を明記
+	meta.profile 多重度　1..*　を明記
+CodeSystemとValueSet
+	HIV-1+2抗体・p24抗原関係のコードを削除
+	コントール比と陽性コントロール比とを陽性コントロール比に集約
 
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)
