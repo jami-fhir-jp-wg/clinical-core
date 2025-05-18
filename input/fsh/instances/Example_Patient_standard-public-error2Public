@@ -8,7 +8,7 @@ Description: "Patientリソース　標準的記述 エラー生活保護受給�
 /*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 */
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
@@ -16,7 +16,7 @@ Description: "Patientリソース　標準的記述 エラー生活保護受給�
 * language = #ja
 
 
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11311234567"
 * identifier[=].value = "000999739"
 * identifier[+].system = $JP_PublicPayer_memberID
 * identifier[=].value = "99912345:1:１２３４５６７:"    // 二要素目は存在してはいけないが存在している

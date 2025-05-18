@@ -1,14 +1,14 @@
 Instance: Example-JP-Patient-standard-public-error1Public
 InstanceOf: JP_Patient_eCS
 Usage: #example
-Description: "Patientリソース　標準的記述 エラー生活保護受給者番号使用（受給者番号6桁エラー）　データ作成例"
+Description: "Patientリソース　標準的記述 エラーテスト用生活保護受給者番号使用（公費負担者番号が8桁でないエラー）　データ作成例"
 
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>Patientリソース　標準的記述 データ作成例</p> </div>"
 /*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 */
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
@@ -16,10 +16,11 @@ Description: "Patientリソース　標準的記述 エラー生活保護受給�
 * language = #ja
 
 
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11311234567"
 * identifier[=].value = "000999739"
 * identifier[+].system = $JP_PublicPayer_memberID
-* identifier[=].value = "99912345::１２３４５６:"
+* identifier[=].value = "9991234::１２３４５６７:"
+
 //* identifier[=].value = "50012:あいう:123:05"
 //* identifier[=].value = "00012345::１８７:05"
 //* identifier[=].value = "00012345:あいう::05"

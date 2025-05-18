@@ -18,7 +18,7 @@ Description: "conditionReferralExample01 診療情報提供書　現病歴例　
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -60,7 +60,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -107,7 +107,7 @@ Description: "Conditionリソース 現在の傷病名（副病名）　例1　�
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -153,7 +153,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例2　�
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension

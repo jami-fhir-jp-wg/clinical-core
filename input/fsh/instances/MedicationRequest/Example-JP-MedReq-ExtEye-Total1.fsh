@@ -9,7 +9,7 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-ExtEye-Total1"
 
 // * contained[+] = Example-Patient-minimun
@@ -25,9 +25,9 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 * identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[requestIdentifierCommon].value = "1318814790-9990767-AC12821012A0552021070513070302-1"
+* identifier[requestIdentifierCommon].value = "1311234567-9990767-AC12821012A0552021070513070302-1"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].value = "1318814790-9990767-AC12821012A0552021070513070302-1"
+* identifier[requestIdentifier].value = "1311234567-9990767-AC12821012A0552021070513070302-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryJHSP0007_CS#BDP "持参薬処方"
@@ -46,7 +46,7 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 * requester.type = "Practitioner"
 * recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-9990767-AC12821012A0552021070513070302-1"
+* groupIdentifier.value = "1311234567-9990767-AC12821012A0552021070513070302-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-05"
 

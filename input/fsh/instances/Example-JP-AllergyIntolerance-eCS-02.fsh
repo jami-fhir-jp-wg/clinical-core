@@ -15,7 +15,7 @@ Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素と
     
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension  //CLINS必須
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber  //CLINS必須
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"  //CLINS必須
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"  //CLINS必須
 
 //* contained[+] = Example-Contained-JP-Encounter-AMB 
 
@@ -71,7 +71,7 @@ Description: "AllergyIntoleranceリソース CLINS必須要素と推奨要素と
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension  //CLINS必須
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber  //CLINS必須
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"  //CLINS必須
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"  //CLINS必須
 
 //* contained[+] = Example-Contained-JP-Encounter-AMB 
 

@@ -9,7 +9,7 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-PO-SID-28days"
 
 // * contained[+] = Example-Patient-minimun
@@ -25,9 +25,9 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 * identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[requestIdentifierCommon].value = "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
+* identifier[requestIdentifierCommon].value = "1311234567-9990767-AC1282108E9DAA2021071215222803-2"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].value = "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
+* identifier[requestIdentifier].value = "1311234567-9990767-AC1282108E9DAA2021071215222803-2"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#DCG "退院処方"
@@ -45,7 +45,7 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 * requester.type = "Practitioner"
 * recorder = Reference(Example-Contained-JP-Practitioner-minimun-R001)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-9990767-AC1282108E9DAA2021071215222803-2"
+* groupIdentifier.value = "1311234567-9990767-AC1282108E9DAA2021071215222803-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-12"
 * dosageInstruction.text = "1日1回 就寝前 １回 1錠  (１日  1錠) 28　日分,自己調節可"

@@ -12,7 +12,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
 * extension[eCS_Department].valueCodeableConcept = $JP_Department_SsMix_CS#01 "内科"
 * extension[eCS_Department].valueCodeableConcept.text = "内科"
@@ -38,9 +38,9 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * identifier[orderInRp].value = "1"
 //* identifier[requestIdentifierCommon].system = "http://jpfhir.jp/fhir/core/mhlw/IdSystem/PrescriptionDocumentID" // "urn:oid:1.2.392.100495.20.3.11"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11" // 
-* identifier[requestIdentifierCommon].value = "1318814790-9990767-0A172220B35F172021071410514001-1"
+* identifier[requestIdentifierCommon].value = "1311234567-9990767-0A172220B35F172021071410514001-1"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].value = "1318814790-9990767-0A172220B35F172021071410514001-1"
+* identifier[requestIdentifier].value = "1311234567-9990767-0A172220B35F172021071410514001-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
@@ -63,7 +63,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
 * recorder.type = "Practitioner"
 
-* groupIdentifier.value = "1318814790-9990767-0A172220B35F172021071410514001-1"
+* groupIdentifier.value = "1311234567-9990767-0A172220B35F172021071410514001-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-14"
 * dosageInstruction.text = "坐薬 便秘時 1回1個 肛門へ挿入"

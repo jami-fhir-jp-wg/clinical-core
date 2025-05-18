@@ -9,7 +9,7 @@ Description: "【注意喚起例】：入院処方　外用（塗布）全量処
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-ExtSkin-Total2"
 
 * contained[+] = Example-Contained-JP-Encounter-IMP
@@ -27,9 +27,9 @@ Description: "【注意喚起例】：入院処方　外用（塗布）全量処
 * identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[requestIdentifierCommon].value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+* identifier[requestIdentifierCommon].value = "1311234567-9990767-0A172C13361BBE2021070517301001-1"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+* identifier[requestIdentifier].value = "1311234567-9990767-0A172C13361BBE2021070517301001-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#XTR "臨時処方"
@@ -50,7 +50,7 @@ Description: "【注意喚起例】：入院処方　外用（塗布）全量処
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-9990767-0A172C13361BBE2021070517301001-1"
+* groupIdentifier.value = "1311234567-9990767-0A172C13361BBE2021070517301001-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-05"
 * dosageInstruction.text = "1日数回 塗布"

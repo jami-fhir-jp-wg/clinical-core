@@ -37,7 +37,7 @@ Description: "JPPatient患者　例"
 * language = #ja
 
 
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11311234567"
 * identifier[=].value = "000999739"
 * identifier[+].system = $JP_Insurance_memberID
 * identifier[=].value = "00012345:あいう:１８７:05"

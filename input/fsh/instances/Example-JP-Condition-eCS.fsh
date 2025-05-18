@@ -19,7 +19,7 @@ Description: "Conditionリソース 必須要素だけの データ作成例"
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -75,7 +75,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -134,7 +134,7 @@ Description: "Conditionリソース 必須要素と推奨要素を記述した �
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -186,7 +186,7 @@ Description: "Conditionリソース 現在の傷病名（主病名）　例1　�
 //-- CLINSの場合に必須
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 //-- CLINSの場合に必須
 * extension[eCS_Department].url = $JP_eCS_Department_Extension

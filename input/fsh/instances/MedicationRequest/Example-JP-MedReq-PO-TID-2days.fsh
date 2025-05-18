@@ -9,7 +9,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
 * extension[eCS_Department].valueCodeableConcept.coding[+] = $JP_Department_SsMix_CS#08 "循環器科"
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
@@ -29,9 +29,9 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * identifier[orderInRp].value = "1"
 
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[requestIdentifierCommon].value = "1318814790-9990767-0A1720D83807672021070909210705-2"
+* identifier[requestIdentifierCommon].value = "1311234567-9990767-0A1720D83807672021070909210705-2"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].value = "1318814790-9990767-0A1720D83807672021070909210705-2"
+* identifier[requestIdentifier].value = "1311234567-9990767-0A1720D83807672021070909210705-2"
 
 // * contained[+] = Example-Contained-JP-Patient-minimun
 * contained[+] = Example-Contained-JP-Practitioner-minimun-D001
@@ -54,7 +54,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * requester.type = "Practitioner"
 * recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-9990767-0A1720D83807672021070909210705-2"
+* groupIdentifier.value = "1311234567-9990767-0A1720D83807672021070909210705-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-09"
 * dosageInstruction.text = "1日3回 毎食後 １回 2錠  (１日  6錠) 2　日分"

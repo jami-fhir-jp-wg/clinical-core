@@ -16,8 +16,8 @@ Description: "■ 検体検査結果3件　Bundleリソース(CLINS送信用)　
 * language = #ja
 
 * identifier.system = $JP_BundleIdentifier
-* identifier.value = "1318814790^2024^0123-IDa-203949583950"    //正しい例
-//* identifier.value = "1318814790^2024^0123-ID^-203949583949"    //エラーの例
+* identifier.value = "1311234567^2024^0123-IDa-203949583950"    //正しい例
+//* identifier.value = "1311234567^2024^0123-ID^-203949583949"    //エラーの例
 
 * type = #collection
 

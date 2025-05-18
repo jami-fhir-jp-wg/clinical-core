@@ -8,7 +8,7 @@ Description: "Patientリソース　標準的記述 データ作成例"
 /*
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 */
 
 * meta.lastUpdated = "2023-11-12T10:00:00+09:00"
@@ -16,7 +16,7 @@ Description: "Patientリソース　標準的記述 データ作成例"
 * language = #ja
 
 
-* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11318814790"
+* identifier[+].system = "urn:oid:1.2.392.100495.20.3.51.11311234567"
 * identifier[=].value = "000999739"
 * identifier[+].system = $JP_Insurance_memberID
 * identifier[=].value = "00012345:あいう:１８７:01"

@@ -12,7 +12,7 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 
 
 * identifier.system = $JP_BundleIdentifier
-* identifier.value = "1318814790^2024^0123-Referral-203949583949"    //正しい例
+* identifier.value = "1311234567^2024^0123-Referral-203949583949"    //正しい例
 
 * type = #document
 

@@ -10,7 +10,7 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 
 
 * extension[eCS_Department].url = $JP_eCS_Department_Extension
@@ -18,7 +18,7 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 * extension[eCS_Department].valueCodeableConcept.text = "循環器診療科"
 
 * identifier[resourceIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[resourceIdentifier].value = "1318814790-9990767-OBSLAB13883807672021070909210705-2"
+* identifier[resourceIdentifier].value = "1311234567-9990767-OBSLAB13883807672021070909210705-2"
 
 // 入院外来区分
 * contained[+] = Example-Contained-JP-Encounter-AMB

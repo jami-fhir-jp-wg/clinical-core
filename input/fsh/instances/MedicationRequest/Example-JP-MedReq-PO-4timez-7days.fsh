@@ -8,7 +8,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 
 * extension[eCS_InstitutionNumber].url = $JP_eCS_InstitutionNumber_Extension 
 * extension[eCS_InstitutionNumber].valueIdentifier.system = $JP_InstitutionNumber
-* extension[eCS_InstitutionNumber].valueIdentifier.value = "1318814790"
+* extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-PO-4timez-7days"
 
 * contained[+] = Example-Contained-JP-Encounter-IMP
@@ -25,9 +25,9 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 * identifier[orderInRp].system = $JP_MedicationAdministrationIndex // "http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex" // 
 * identifier[orderInRp].value = "1"
 * identifier[requestIdentifierCommon].system = "urn:oid:1.2.392.100495.20.3.11"
-* identifier[requestIdentifierCommon].value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
+* identifier[requestIdentifierCommon].value = "1311234567-9990767-0A172BC10398DD2021071314262201-1"
 * identifier[requestIdentifier].system = $JP_ResourceInstanceIdentifier
-* identifier[requestIdentifier].value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
+* identifier[requestIdentifier].value = "1311234567-9990767-0A172BC10398DD2021071314262201-1"
 * status = #completed
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
@@ -45,7 +45,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 * requester.type = "Practitioner"
 * recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D003)
 * recorder.type = "Practitioner"
-* groupIdentifier.value = "1318814790-9990767-0A172BC10398DD2021071314262201-1"
+* groupIdentifier.value = "1311234567-9990767-0A172BC10398DD2021071314262201-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"
 * dosageInstruction.extension[periodOfUse].valuePeriod.start = "2021-07-13"
 * dosageInstruction.text = "1日4回 毎食後と就寝前 １回 1錠  (１日  4錠) 7　日分"

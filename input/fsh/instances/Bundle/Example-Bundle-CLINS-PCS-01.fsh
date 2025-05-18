@@ -11,7 +11,7 @@ Description: "■ 患者療養計画サマリー　Bundleリソース(CLINS送�
 * language = #ja
 
 * identifier.system = $JP_BundleIdentifier
-* identifier.value = "1318814790^2024^0123-PCS-203949583949"    //正しい例
+* identifier.value = "1311234567^2024^0123-PCS-203949583949"    //正しい例
 
 * type = #document
 
