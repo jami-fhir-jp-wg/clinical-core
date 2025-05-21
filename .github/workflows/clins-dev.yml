@@ -1,4 +1,4 @@
-name: Ohe-build
+name: clins-dev
 on:
   push:
     branches: 
