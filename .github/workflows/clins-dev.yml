@@ -2,7 +2,7 @@ name: Ohe-build
 on:
   push:
     branches: 
-      - update-20250208
+      - develop-v1.11.x
     paths:
       - 'sushi-config.yaml_dev'
       - 'input/**'
@@ -10,11 +10,11 @@ on:
       - '.github/workflows/clins-dev.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ update-20250208 ]
+    branches: [ develop-1.11.x ]
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.10.0-20250208dev
+  release_version : 1.10.0-20250522dev
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
@@ -76,15 +76,14 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile2
       with:
-        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-latest.tgz"
+        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-1.4.0.tgz"
         target: .    
-
         
     - name: Prepare for using all dependent packages including Jp modified version of hl7.fhir.r4.core Package 
       env:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
-        JPTerminologyCOREdir: jpfhir-terminology.r4#latest
-        JPTerminologyCOREPtgz: jpfhir-terminology.r4-latest.tgz
+        JPTerminologyCOREdir: jpfhir-terminology.r4#current
+        JPTerminologyCOREPtgz: jpfhir-terminology.r4-1.4.0.tgz
         JPCOREtgzjp: jp-core.r4-1.1.2-clins.tgz
         JPCOREdir: jp-core.r4#1.1.2-clins
       run: |
@@ -220,6 +219,7 @@ jobs:
         rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ ; rm -rf output; tar xzf output.tgz; rm -rf igv${{ env.release_version }}/output; mv output igv${{ env.release_version }}'
 
+
     - name: copy CLINS Profiles to the target      
       run: |
         : # rm -rf input/fsh/profiles/eCS-noCLINS
@@ -263,6 +263,7 @@ jobs:
         : # cd ..
         : # cp CLINSsnap/jp-CLINS-package-snap.tgz jp-CLINS.r4-${{ env.release_version }}-snap.tgz
         : # cd ..
+
     - name: rsync remote-site-deploy
       run: |
         : # rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}"  forPackageRelease/jp-CLINS.r4-${{ env.release_version }}.tgz forPackageRelease/jp-CLINS.r4-${{ env.release_version }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins-dev/ --exclude .htaccess
