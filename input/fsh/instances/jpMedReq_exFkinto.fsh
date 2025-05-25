@@ -32,7 +32,7 @@
 
 //不均等投与1日用法の医薬品処方１件　
 //MedicationRequestリソースのインスタンス例
-//プレドニン錠５ｍｇ・塩野義１日３回　毎食後　７錠（４錠－２錠－１錠）
+//プレドニン錠５ｍｇ１日３回　毎食後　７錠（４錠－２錠－１錠）
 
 Instance: Example-JP-MedReq-eCS-fukintouByDay
 InstanceOf: JP_MedicationRequest_eCS
@@ -57,10 +57,10 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * status = #completed
 * intent = #order
 
-* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#105271807 "プレドニン錠５ｍｇ・塩野義"
+* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#105271807 "プレドニン錠５ｍｇ"
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2456001F1310 "プレドニン錠５ｍｇ"
 
-* medicationCodeableConcept.text = "プレドニン錠５ｍｇ・塩野義"
+* medicationCodeableConcept.text = "プレドニン錠５ｍｇ"
 
 //* subject.reference = "Patient/Example-JP-Patient-eCS-MAKINO"
 

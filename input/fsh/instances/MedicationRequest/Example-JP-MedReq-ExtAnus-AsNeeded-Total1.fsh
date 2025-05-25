@@ -45,7 +45,7 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#104937401 "新レシカルボン坐剤・ゼリア新薬"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#104937401 "新レシカルボン坐剤"
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2359800J1035 "新レシカルボン坐剤"
 * medicationCodeableConcept.coding[+] = $Icode#I3344500 "新レシカルボン坐剤"
 * medicationCodeableConcept.text = "新レシカルボン坐剤"

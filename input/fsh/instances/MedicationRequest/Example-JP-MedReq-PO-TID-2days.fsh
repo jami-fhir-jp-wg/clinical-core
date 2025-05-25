@@ -40,7 +40,7 @@ Description: "外来院外処方　内服1日1回１回1錠 標準用法コー�
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#104195801 "ミヤＢＭ錠・ミヤリサン製薬"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#104195801 "ミヤＢＭ錠"
 * medicationCodeableConcept.coding[+] = $Icode#I1656900 "ミヤＢＭ錠（２０ｍｇ／錠）"
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2316009F1022 "ミヤＢＭ錠"
 * medicationCodeableConcept.text = "ミヤＢＭ錠（２０ｍｇ／錠）"

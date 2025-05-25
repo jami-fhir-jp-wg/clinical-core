@@ -255,9 +255,9 @@ Success: 0 errors, 2 warnings, 0 notes
 
 -- ExampleJson/MedicationRequest-Example-JP-MedReq-ExtAnus-AsNeeded-Total1.json ------------------------------------------------------------------------------------
 Success: 0 errors, 4 warnings, 0 notes
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため) for 'http://medis.or.jp/CodeSystem/master-HOT9#104937401'
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept) (line 156, col4): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
-  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤・ゼリア新薬' (ja) (言語 'ja' のため)
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤' (ja) (言語 'ja' のため) for 'http://medis.or.jp/CodeSystem/master-HOT9#104937401'
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept) (line 156, col4): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤' (ja) (言語 'ja' のため)
+  Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[0] (line 158, col8): http://medis.or.jp/CodeSystem/master-HOT9#104937401 の誤ったdisplay '新レシカルボン坐剤' - 1 の選択肢のうちの一つであるべきです: '新レシカルボン坐剤' (ja) (言語 'ja' のため)
   Warning @ MedicationRequest.medication.ofType(CodeableConcept).coding[1].system (line 165, col80): URL値 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567' は解決できません
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

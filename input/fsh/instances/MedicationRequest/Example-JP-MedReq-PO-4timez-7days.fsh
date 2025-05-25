@@ -32,7 +32,7 @@ Description: "MedicationRequestリソース　入院・内服処方1日4回7日�
 * intent = #order
 * category.coding[0] = $JP_MedicationCategoryMERIT9_CS#IHP "入院処方"
 * category.text = "入院臨時処方"
-* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#123812902 "カロナール錠５００・あゆみ製薬"
+* medicationCodeableConcept.coding[0] = $JP_MedicationCodeHOT9_CS#123812902 "カロナール錠５００　５００ｍｇ"
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#1141007F3023 "カロナール錠５００"
 * medicationCodeableConcept.coding[+] = $Icode#I1187300 "カロナール錠５００"
 * medicationCodeableConcept.text = "カロナール錠５００mg"
