@@ -23,7 +23,8 @@ Description: "■ 患者療養計画サマリー　Bundleリソース(CLINS送�
 
 // entry[patient]
 * entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
-* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
+//* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
+* entry[patient].resource = InlineExample-JP-Patient-standard-public
 
 // entry[practitioners]　医師IDと医師氏名
 * entry[practitioners].fullUrl = "urn:uuid:22212c2d-4837-fd90-c6c5-6ee2a4b7eed2"
