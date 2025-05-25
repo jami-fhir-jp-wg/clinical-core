@@ -682,7 +682,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS|x.y.z　を設定
 7:傷病以外による死亡
 9:その他（検査入院,正常分娩及び人間ドック含む）</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system値：固定値</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/eCS/CodeSystem/discharge-disposition</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">http://jpfhir.jp/fhir/Common/CodeSystem/discharge-disposition</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">location[*]</td>
