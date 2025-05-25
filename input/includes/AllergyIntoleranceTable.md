@@ -563,7 +563,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.y.z　
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">潜在的な臨床的危険性、致命度。記述する場合は、コード表："http://hl7.org/fhir/allergy-intolerance-criticality"からlow|high|unable-to-assessのいずれかを選択する。（低、高、評価不能）。
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">潜在的な臨床的危険性、致命度。電子カルテ情報共有サービスでは「重症度（criticality）」と記載している。記述する場合は、コード表："http://hl7.org/fhir/allergy-intolerance-criticality"からlow|high|unable-to-assessのいずれかを選択する。（低、高、評価不能）。
 </td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"high"</td>

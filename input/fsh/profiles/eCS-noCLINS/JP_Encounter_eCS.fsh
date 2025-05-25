@@ -150,6 +150,7 @@ Description: "Encounterリソース（受診時・入院時等のEncounter情報
 * hospitalization.dischargeDisposition 1..1 MS
 * hospitalization.dischargeDisposition ^short = "退院時転帰コード情報"
 * hospitalization.dischargeDisposition ^definition = "退院時転帰コード情報"
+* hospitalization.dischargeDisposition from $JP_dischargeDisposition_VS
 * hospitalization.dischargeDisposition.coding 1..1 MS
 * hospitalization.dischargeDisposition.coding.system 1..1 MS
 * hospitalization.dischargeDisposition.coding.system = $JP_dischargeDisposition_CS 

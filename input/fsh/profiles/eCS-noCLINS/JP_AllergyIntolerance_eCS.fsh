@@ -189,8 +189,8 @@ Description: "AllergyIntoleranceリソース（アレルギー情報／薬剤ア
 
 
 * criticality 0..1 MS
-* criticality ^short = "潜在的な臨床的危険性、致命度"
-* criticality ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-criticality\" から　low | high | unable-to-assess　のいずれか（低、高、評価不能）。電子カルテ情報サービスでは、薬剤アレルギー等情報として本リソース種別を使用する場合には、category要素の記述を参照すること。"
+* criticality ^short = "潜在的な臨床的危険性、致命度。電子カルテ情報共有サービスでは「重症度（criticality）」と記載している。"
+* criticality ^definition = "記述する場合は、コード表：\"http://hl7.org/fhir/allergy-intolerance-criticality\" から　low | high | unable-to-assess　のいずれか（低、高、評価不能）。電子カルテ情報サービスでは、電子カルテ情報共有サービスでは「重症度（criticality）」と記載している。"
 
 
 * code  1..1 MS
