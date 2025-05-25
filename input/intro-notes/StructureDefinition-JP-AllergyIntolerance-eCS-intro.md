@@ -57,7 +57,7 @@
 　MustSupport要素では、データ作成・出力側ではその要素に相当するデータを持っている場合には出力しなければならず、受信側では要素が存在していればそのデータを（利用するかどうかに関わらず）格納しなければならない。
   - 必須要素、条件により必須要素、推奨要素は、自動的にMustSupport要素である。それ以外に以下の要素がMustSupport要素である。
   - extension (eCS_Department) : 診療科情報
-  - ciriticality : 臨床的危険性、致命度。電子カルテ情報共有サービスでは「重症度（criticality）」と記載している。
+  - ciriticality : 臨床的危険性、致命度。discharge-disposition
   - reaction : 有害反応履歴情報。
 
 ## 要素の説明とプロファイル
