@@ -63,8 +63,7 @@ pages:
     title: 全バージョン一覧
   qanda.md:
     title: Q＆Aよくある質問
-  clins-develop.md:
-    title: 開発者向け情報  
+
 
 #-------------------------------------
 # メニュー設定
