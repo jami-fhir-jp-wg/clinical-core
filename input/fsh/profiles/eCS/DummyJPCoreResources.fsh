@@ -237,7 +237,6 @@ Description:    "Derived Profile from JP-Core"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
-* meta.lastUpdated 0.. MS
 
 
 /*

@@ -139,6 +139,7 @@ CodeSystemとValueSet
   - 処方情報リソース　MedicationRequestの　6.1の表「MedicationRequest」および　7.1詳細プロファイルにおいて、note要素の多重度を0..1から0..*（規定仕様およびJP-Coreの仕様）に戻した。
   - 患者情報プロファイル　JP_Patient_eCSで、生活保護受給者識別子の制約チェックに関する修正を追加した。
   - アレルギー情報プロファイルのcritilcalityの説明に、電子カルテ情報共有サービスでは「重症度（criticality）」と記載している旨の記載を追加した。
+  - JP_Bundle_ePCSの6.1表のhospitalization.dischargeDispositionのsystem固定値はhttp://jpfhir.jp/fhir/eCS/CodeSystem/discharge-dispositionではなくhttp://jpfhir.jp/fhir/Common/CodeSystem/discharge-dispositionに修正（7.1 ツリーに合わせた）。
   
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.9.0  (2025.1.11) 
   - 退院時サマリーセクション区分ValueSet(JP_valueSet_eDischargeSummary_document_section) の退院時サマリー特有のセクションコードの抽出条件が診療情報提供書のもの同一となっていたのを修正。

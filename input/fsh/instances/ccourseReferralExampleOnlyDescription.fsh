@@ -19,7 +19,7 @@ Description: "DocumentReferenceリソース　（診療情報提供書　臨床�
 
 * type.coding.system = "http://loinc.org"
 * type.coding.code = #11506-3
-* type.coding.display = "Progress note"
+* type.coding.display = "Provider-unspecified Progress note"
 
 
 * description = "臨床経過：入院後経過観察をしていたが、特に症状悪化することもなく、3日目に軽快退院した。"

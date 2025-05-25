@@ -256,7 +256,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">医療機関１０桁番号。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1311234567"</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1318814790"</td>
                                     </tr>
                                     <tr style="height:62pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>

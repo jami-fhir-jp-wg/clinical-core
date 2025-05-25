@@ -16,7 +16,7 @@ Description: "Example-JP-DocRef-eCS-clinical-ccourse-Referral01 診療情報提�
 
 * type.coding.system = "http://loinc.org"
 * type.coding.code = #11506-3
-* type.coding.display = "Progress note"
+* type.coding.display = "Provider-unspecified Progress note"
 
 * description = "臨床経過"
 

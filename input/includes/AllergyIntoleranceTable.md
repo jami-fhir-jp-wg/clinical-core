@@ -223,7 +223,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.y.z　
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">医療機関１０桁番号。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1311234567"</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1318814790"</td>
                                     </tr>
                                     <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
@@ -556,7 +556,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS|x.y.z　
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"food"</td>
                                     </tr>
-                                    <tr style="height:75pt">
+                                    <tr style="height:105pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">criticality</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>

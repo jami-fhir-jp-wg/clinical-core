@@ -16,7 +16,7 @@ Description: "DocumentReferenceリソース　（診療情報提供書　臨床�
 
 * type.coding.system = "http://loinc.org"
 * type.coding.code = #11506-3
-* type.coding.display = "Progress note"
+* type.coding.display = "Provider-unspecified Progress note"
 
 * description = "臨床経過"
 
