@@ -22,7 +22,8 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[composition].resource = compositionReferralExample01Inline
 
 * entry[patient].fullUrl = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
-* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
+//* entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
+* entry[patient].resource = InlineExample-JP-Patient-standard-public
 
 * entry[referralEncounter][+].fullUrl = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
 * entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-AMB-01Inline
