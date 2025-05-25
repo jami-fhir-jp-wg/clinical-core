@@ -96,6 +96,7 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * subject.reference 1..1 MS
 * subject.reference ^short = "PatientリソースのfullUrl要素に指定されるUUIDを指定。"
 * subject.reference ^definition = "Bundleリソースに記述されるPatientリソースのfullUrl要素に指定されるUUIDを指定。\r\n例：\"urn:uuid:11f0a9a6_a91d_3aef_fc4e_069995b89c4f\""
+* subject only  Reference(JP_Patient_eCS)
 
 * encounter ^short = "この文書が作成された受診時状況情報を表すEncounterリソースへの参照"
 * encounter ^definition = "この文書が作成された受診時状況情報を表すEncounterリソースへの参照"
