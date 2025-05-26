@@ -21,9 +21,9 @@
 厚生労働省が定めるいわゆる「3文書6情報」のうち健診結果報告書を除く、２文書5情報のFHIRデータ記述方法とそのプロファイル（計算機で処理するための定義ファイル）を記載した実装ガイドである。また、５情報をCLINSに送信する際のBundleリソースの仕様や、送信した情報を同定するための識別子に関する仕様もこのIGで定めている。
 また、以下の２文書（診療情報提供書、退院時サマリー）のFHIR実装ガイドも含まれる。
 
-  - [FHIR厚生労働省標準規格の2文書](https://std.jpfhir.jp/)
-     - HS038　診療情報提供書HL7FHIR記述仕様
-     - HS039　退院時サマリーHL7FHIR記述仕様
+  - FHIR厚生労働省標準規格の2文書
+     - HS038　[診療情報提供書HL7FHIR記述仕様](https://std.jpfhir.jp/stddoc/eReferralFHIR_v1.10_20250522.pdf)
+     - HS039　[退院時サマリーHL7FHIR記述仕様](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v1.10_20250522.pdf)
 
 本実装ガイド（IG）は、[HL7 FHIR R4.0.1](https://hl7.org/fhir/R4/index.html)に従い、[JP-Core V1.1.x](https://jpfhir.jp/fhir/core/)からの派生プロファイルの実装ガイドとして作成されている。従って、本IGに記述されていないことについては、[JP-Core V1.1.x](https://jpfhir.jp/fhir/core/)を参照していただきたい。
 
