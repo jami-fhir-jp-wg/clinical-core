@@ -133,7 +133,7 @@ Validation の実行
       -best-practice ignore \
       -tx n/a  \
       -ig [pkgClins]/jp-core.r4-1.1.2-clins.tgz  \
-      -ig [pkgClins]/jpfhir-terminology.r4-1.3.0.tgz  \
+      -ig [pkgClins]/jpfhir-terminology.r4-1.4.0.tgz  \
       -ig [pkgClins]/jp-eCSCLINS.r4-1.x.x-temp.tgz  
         
 ```
