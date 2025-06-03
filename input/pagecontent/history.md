@@ -6,7 +6,8 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0-20250522  (2025.5.22)　正誤反映版
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0-20250522  (2025.5.22)　正誤反映版 2025.6.3追記
+  - 施設番号10桁チェックの制約ルールで10桁以上でもエラーにならない場合があるのを修正（2025.6.3）
   - 患者情報プロファイル　JP_Patient_eCSで、生活保護受給者識別子を記述可能とし、その識別子の形式に関するチェックを追加。
   - 診療情報提供書のデータ作例（以下の２件：Composition.sectionにentryが無く、text要素にだけ内容を記述する例）において、仕様書に従い section[compositionSection].emptyReason　および　section[compositionSection].section[xxx].emptyReason にunavailableを記述するよう修正。（ただしValidationではemptyReasonが無くてもエラーにならない）
     - Bundle-CLINS-Referral-NoEntry-Example-01
