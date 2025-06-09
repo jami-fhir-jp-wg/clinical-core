@@ -6,7 +6,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -23,7 +23,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -39,7 +39,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGDIL_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -55,7 +55,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HbsAGOD_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -71,7 +71,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -87,7 +87,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -103,7 +103,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsAGPOSCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -119,7 +119,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsABDIL_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -136,7 +136,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsABRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -152,7 +152,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HBsABQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -168,7 +168,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVNRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -185,7 +185,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVNQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -202,7 +202,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVAGRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -218,7 +218,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVAGQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -236,7 +236,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVABCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -252,7 +252,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVABDIL_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -268,7 +268,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVABRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -284,7 +284,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVABPOSCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -300,7 +300,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1QUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -316,7 +316,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1RESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -333,7 +333,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24COI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -350,7 +350,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABOD_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -368,7 +368,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24RESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -385,7 +385,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24QUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -402,7 +402,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24POSCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -419,7 +419,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -435,7 +435,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABDIL_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -451,7 +451,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -467,7 +467,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABPOSCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -483,7 +483,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1ABDIL_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -499,7 +499,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1ABRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -515,7 +515,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV2ABDIL_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -531,7 +531,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV2ABRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -547,7 +547,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSQLRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -563,7 +563,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -579,7 +579,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPRESULT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -595,7 +595,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPPOSCOI_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -611,7 +611,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -627,7 +627,7 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPHQUANT_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
