@@ -22,8 +22,8 @@
 また、以下の２文書（診療情報提供書、退院時サマリー）のFHIR実装ガイドも含まれる。
 
   - FHIR厚生労働省標準規格の2文書
-     - HS038　[診療情報提供書HL7FHIR記述仕様](https://std.jpfhir.jp/stddoc/eReferralFHIR_v1.10_20250522.pdf)
-     - HS039　[退院時サマリーHL7FHIR記述仕様](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v1.10_20250522.pdf)
+     - HS038　[診療情報提供書HL7FHIR記述仕様](https://std.jpfhir.jp/stddoc/eReferralFHIR_v1.11.pdf)
+     - HS039　[退院時サマリーHL7FHIR記述仕様](https://std.jpfhir.jp/stddoc/eDischargeSummaryFHIR_v1.11.pdf)
 
 本実装ガイド（IG）は、[HL7 FHIR R4.0.1](https://hl7.org/fhir/R4/index.html)に従い、[JP-Core V1.1.x](https://jpfhir.jp/fhir/core/)からの派生プロファイルの実装ガイドとして作成されている。従って、本IGに記述されていないことについては、[JP-Core V1.1.x](https://jpfhir.jp/fhir/core/)を参照していただきたい。
 
