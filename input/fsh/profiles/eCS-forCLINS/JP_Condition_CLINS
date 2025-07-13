@@ -282,7 +282,7 @@ Id: jp-condition-disease-prefix-modifier
 Title: "JP Core Disease Prefix Modifier Extension"
 Description: "病名の前置修飾語を格納するための拡張"
 * ^url = $JP_Condition_DiseasePrefixModifier
-* ^version = "x.x.x-profile".0.1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-02-25"
 * ^context.type = #element
@@ -335,7 +335,7 @@ Id: jp-condition-disease-postfix-modifier
 Title: "JP Core Disease Postfix Modifier Extension"
 Description: "病名の後置修飾語を格納するための拡張"
 * ^url = $JP_Condition_DiseasePostfixModifier
-* ^version = "x.x.x-profile".0.1"
+* ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2024-02-25"
 * ^context.type = #element

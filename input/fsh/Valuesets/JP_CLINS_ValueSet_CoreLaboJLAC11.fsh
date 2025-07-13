@@ -6,7 +6,7 @@ Description: "CLINS 電子カルテ共有サービス用 43検査項目 JLAC11 V
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2025-01-11T00:00:00.000+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_VS
-* ^version = "1.1.0"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2025-01-11"
@@ -23,7 +23,7 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(ABO) JLAC11 V
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_abo_bld_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -47,7 +47,7 @@ Description: "CLINS 電子カルテ共有サービス用 血液型(Rh) JLAC11 Va
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_rh_bld_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -65,7 +65,7 @@ Description: "CLINS 電子カルテ共有サービス用 アルブミン JLAC11 
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_alb_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -81,7 +81,7 @@ Description: "CLINS 電子カルテ共有サービス用 アルカリホスフ�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_alp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -97,7 +97,7 @@ Description: "CLINS 電子カルテ共有サービス用 ALT(GPT) JLAC11 ValueSe
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_alt_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -115,7 +115,7 @@ Description: "CLINS 電子カルテ共有サービス用 アミラ－ゼ JLAC11 
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_amy_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -131,7 +131,7 @@ Description: "CLINS 電子カルテ共有サービス用 活性化部分トロ�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_aptt_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -147,7 +147,7 @@ Description: "CLINS 電子カルテ共有サービス用 AST(GOT) JLAC11 ValueSe
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ast_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -163,7 +163,7 @@ Description: "CLINS 電子カルテ共有サービス用 ヒト脳性Na利尿ペ
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_nt_probnp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -179,7 +179,7 @@ Description: "CLINS 電子カルテ共有サービス用 グルコース(血糖)
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_bg_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -195,7 +195,7 @@ Description: "CLINS 電子カルテ共有サービス用 随時血糖 JLAC11 Val
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_cbg_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -211,7 +211,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿素窒素(BUN) JLAC1
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_bun_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -227,7 +227,7 @@ Description: "CLINS 電子カルテ共有サービス用 カルシウム JLAC11 
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ca_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -243,7 +243,7 @@ Description: "CLINS 電子カルテ共有サービス用 カリウム JLAC11 Val
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_k_VS 
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2022-09-26"
@@ -259,7 +259,7 @@ Description: "CLINS 電子カルテ共有サービス用 コリンエステラ�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_che_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -275,7 +275,7 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチンキナ�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ck_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -291,7 +291,7 @@ Description: "CLINS 電子カルテ共有サービス用 クロール JLAC11 Val
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_cl_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -307,7 +307,7 @@ Description: "CLINS 電子カルテ共有サービス用 クレアチニン JLAC
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_cre_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -323,7 +323,7 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白 JLAC
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_crp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -339,7 +339,7 @@ Description: "CLINS 電子カルテ共有サービス用 Ｃ反応性蛋白判�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_crp_class_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -355,7 +355,7 @@ Description: "CLINS 電子カルテ共有サービス用 シスタチンC JLAC11
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_cys_c_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -371,7 +371,7 @@ Description: "CLINS 電子カルテ共有サービス用 直接ビリルビン J
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_d_bil_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -387,7 +387,7 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー定量 JLA
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_dd_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-12-15"
@@ -403,7 +403,7 @@ Description: "CLINS 電子カルテ共有サービス用 Dダイマー定性 JLA
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2024-12-15T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_dd_class_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-12-15"
@@ -420,7 +420,7 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時血糖 JLAC11 
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_fbg_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -436,7 +436,7 @@ Description: "CLINS 電子カルテ共有サービス用 γ-GTPJLAC11 ValueSet (
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ggt_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -452,7 +452,7 @@ Description: "CLINS 電子カルテ共有サービス用 HbA1c(NGSP) ValueSet (J
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_hba1c_ngsp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -468,7 +468,7 @@ Description: "CLINS 電子カルテ共有サービス用 HDL-コレステロー�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_hdl_c_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -484,7 +484,7 @@ Description: "CLINS 電子カルテ共有サービス用 LD(LDH) ValueSet (JLAC1
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ld_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -500,7 +500,7 @@ Description: "CLINS 電子カルテ共有サービス用 LDL-コレステロー�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ldl_c_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -516,7 +516,7 @@ Description: "CLINS 電子カルテ共有サービス用 ナトリウム ValueSe
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_na_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -532,7 +532,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_pt_sec_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -548,7 +548,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンAC
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_pt_act_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -564,7 +564,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビンIN
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_pt_inr_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -580,7 +580,7 @@ Description: "CLINS 電子カルテ共有サービス用 プロトロンビン�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_pt_ratio_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -596,7 +596,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-ヘモグロビ�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_hb_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -612,7 +612,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-血小板数 Val
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_plt_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -628,7 +628,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-赤血球数 Val
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_rbc_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -644,7 +644,7 @@ Description: "CLINS 電子カルテ共有サービス用 血算-白血球数 Val
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_wbc_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -660,7 +660,7 @@ Description: "CLINS 電子カルテ共有サービス用 総コレステロー�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_t_cho_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -674,7 +674,7 @@ Description: "CLINS 電子カルテ共有サービス用 総ビリルビン Valu
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_t_bil_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -688,7 +688,7 @@ Description: "CLINS 電子カルテ共有サービス用 総蛋白 ValueSet (JLA
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_tp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -702,7 +702,7 @@ Description: "CLINS 電子カルテ共有サービス用 中性脂肪 ValueSet (
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_tg_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -716,7 +716,7 @@ Description: "CLINS 電子カルテ共有サービス用 空腹時中性脂肪FT
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ftg_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-12-20"
@@ -730,7 +730,7 @@ Description: "CLINS 電子カルテ共有サービス用 随時中性脂肪CTG V
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ctg_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-12-20"
@@ -744,7 +744,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿酸 ValueSet (JLAC11
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_ua_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -758,7 +758,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(定性) Value
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_bld_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -773,7 +773,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿潜血(半定量、�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_bld_QLHalfQty_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -788,7 +788,7 @@ Description: "CLINS 電子カルテ共有サービス用  尿潜血(半定量、
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_bld_HalfQty_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -803,7 +803,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(定性) Value
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_utp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -818,7 +818,7 @@ Description: "CLINS 電子カルテ共有サービス用  尿蛋⽩(定性半定
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_utp_QLHalfQty_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -833,7 +833,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿蛋⽩(半定量) Va
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_utp_HalfQty_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -848,7 +848,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿中アルブミン/�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_ac_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -862,7 +862,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿中蛋白/クレア�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_pc_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -876,7 +876,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(定性)ValueSet 
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_glu_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -891,7 +891,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量、判�
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_glu_QLHalfQty_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -906,7 +906,7 @@ Description: "CLINS 電子カルテ共有サービス用 尿糖(半定量) 　Va
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_u_glu_HalfQty_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"
@@ -920,7 +920,7 @@ Description: "CLINS 電子カルテ共有サービス用 脳性Na利尿ペプチ
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_CoreLaboJLAC11_bnp_VS
-* ^version = "1.1.0a"
+* ^version = "1.1.1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2024-02-25"

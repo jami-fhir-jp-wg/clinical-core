@@ -11,7 +11,7 @@ Description: "FHIR文書の文書区分（医療文書全般）"
 * ^content = #complete
 * ^caseSensitive = false
 * ^date = "2023-04-01T00:00:00+09:00"
-* ^version = "5.11"
+* ^version = "5.11.0"
 * #JPGCHKUP01 "健診結果報告書"
 //* #JPMCHKUP01 "自治体検診結果報告書"
 * #18842-5 "退院時サマリー"
@@ -31,7 +31,7 @@ Description: "FHIR文書の文書サブ区分（医療文書全般）"
 * ^content = #complete
 * ^caseSensitive = false
 * ^date = "2024-07-10T00:00:00+09:00"
-* ^version = "1.0"
+* ^version = "1.0.0"
 * #ADMISSION "入院時文書" "入院時の作成文書"
 * #SECONDOP "セカンドオピニオン文書" "セカンドオピニオン目的の作成文書"
 * #EXAMIN  "要精査依頼文書" "健診・検診後の精密検査依頼の文書"
