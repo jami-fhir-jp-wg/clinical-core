@@ -10,7 +10,7 @@
   - Ver. 1.10.0-20250522  (2025.5.22)　正誤反映版 2025.6.3　を1.11.0としてリリース
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0-20250522  (2025.5.22)　正誤反映版 2025.6.3追記
-  - 施設番号10桁チェックの制約ルールで10桁以上でもエラーにならない場合があるのを修正（2025.6.3）
+  - 施設番号10桁チェックの制約ルールで10桁以上でもエラーにならない場合があるのを修正（valid-value-institutionNumberExtension制約）（2025.6.3）
   - 患者情報プロファイル　JP_Patient_eCSで、生活保護受給者識別子を記述可能とし、その識別子の形式に関するチェックを追加。
   - 診療情報提供書のデータ作例（以下の２件：Composition.sectionにentryが無く、text要素にだけ内容を記述する例）において、仕様書に従い section[compositionSection].emptyReason　および　section[compositionSection].section[xxx].emptyReason にunavailableを記述するよう修正。（ただしValidationではemptyReasonが無くてもエラーにならない）
     - Bundle-CLINS-Referral-NoEntry-Example-01
@@ -22,11 +22,20 @@
     - 患者サマリーの「JP_Composition_ePCS：Composition.title」 実装ガイドを修正（固定値として"患者サマリー（療養計画書）"に修正）
     - 患者サマリーの「JP_Composition_ePCS：Composition.meta」　プロファイルを修正
     - 修正のあったプロファイル
+      - JP_AllergyIntolerance_eCS
+        - contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
+        - extension[eCS_InstitutionNumber]の子要素の多重度を明記(1..1）
+        - extension[eCS_InstitutionNumber].valueIdentifier.valueの定義説明を追加
+        - encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+        - reaction.manifestation.text の多重度を0..1から1..1に修正
       - JP_Bundle_CLINS
       - JP_Bundle_eDisSummary
       - JP_Bundle_ePatientCareSummary
       - JP_Bundle_eReferral
         - meta 1..1 を明記
+      - JP_CarePlan_eCS
+        - meta 1..1 を明記
+        - meta.profile 1..* を明記
       - JP_Composition_eDisSummary
         - meta 1..1 を明記
         - author 2.2 を明記
@@ -44,31 +53,14 @@
         - type.coding.system 多重度1..1を明記
         - type.coding.code 多重度1..1を明記
         - author 多重度2..3を明記
-      - JP_CarePlan_eCS
-        - meta 1..1 を明記
-        - meta.profile 1..* を明記
-      - JP_Coverage_eCS_insurance
-      - JP_Coverage_eCS_publicPayment
-      - JP_FamilyMemberHistory_eCS
-      - JP_Organization_eCS_coveragePayer
-      - JP_Organization_eCS_department
-      - JP_Practitioner_eCS_author
-      - JP_PractitionerRole_eCS_author
-        - meta 1..1 を明記
-        - meta.lastUpdated 1..1を明記
-        - meta.profile 1..* を明記
-      - JP_AllergyIntolerance_eCS
-        - contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
-        - extension[eCS_InstitutionNumber]の子要素の多重度を明記(1..1）
-        - extension[eCS_InstitutionNumber].valueIdentifier.valueの定義説明を追加
-        - encounterに許容されるProfileとしてJP_Encounter_eCSを追加
-        - reaction.manifestation.text の多重度を0..1から1..1に修正
       - JP_Condition_eCS
         - contained[encounter]に許容されるProfileとしてJP_Encounter_eCSを追加
         - extension[eCS_InstitutionNumber]の子要素の多重度を明記(1..1）
         - extension[eCS_Department].valueCodeableConceptの子要素の多重度を明記
         - verificationStatus.coding 多重度を0..1から1..1に修正
         - encounterに許容されるProfileとしてJP_Encounter_eCSを追加
+      - JP_Coverage_eCS_insurance
+      - JP_Coverage_eCS_publicPayment
       - JP_Encounter_eCS
         - meta 1..1 を明記
         - meta.lastUpdated 1..1を明記
@@ -78,6 +70,8 @@
         - length.value 定義の説明を追加
         - reasonCode 子要素の多重度を明記f
         - reasonCode.coding.display 多重度を0..1から1..1に修正
+        - hospitalization.dischargeDisposition のbindingを  退院時転帰コード情報　(出典：厚労省DPC導入影響評価調査) ValueSet が必須であることを追記。
+      - JP_FamilyMemberHistory_eCS
       - JP_MedicationDosage_eCS
         - extension[usageDuration].valueDuration とその子要素の多重度を明記
         - timing.repeat.boundsDurationの子要素の多重度を明記
@@ -125,13 +119,21 @@
         - extension[prefectureNo]、extension[organizationCategory]　に説明を追加。
         - type　子要素の多重度を明記
         - telecom 多重度　0..*　と子要素の多重度を明記
+      - JP_Organization_eCS_coveragePayer
+      - JP_Organization_eCS_department
       - JP_Practitioner_eCS
         - meta 多重度　1..1 を明記
         - meta.lastUpdated 多重度　1..1 を明記
         - meta.profile 多重度　1..*　を明記
-      - CodeSystemとValueSet
-        - HIV-1+2抗体・p24抗原関係のコードを削除
-        - コントール比と陽性コントロール比とを陽性コントロール比に集約
+      - JP_Practitioner_eCS_author
+      - JP_PractitionerRole_eCS_author
+        - meta 1..1 を明記
+        - meta.lastUpdated 1..1を明記
+        - meta.profile 1..* を明記
+  - HIV-1+2抗体・p24抗原、コントール比と陽性コントロール比等に関係するCodeSystemとValueSetの修正方針に対応。
+    - CodeSystemとValueSet　
+      - HIV-1+2抗体・p24抗原関係のコードを削除（v1.12で修正の上で復活する方針となっている。）
+      - コントール比と陽性コントロール比とを陽性コントロール比に集約
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.10.0  (2025.1.29)
   - 検体検査結果プロファイル（JP_Observation_LabResult_eCS）の以下を修正した。
