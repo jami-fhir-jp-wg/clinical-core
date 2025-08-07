@@ -26,7 +26,7 @@ Description: "Observationリソース　（診療情報提供書　腹部所見�
 
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
 
-* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimum-D002)
 
 * valueString = "上腹部圧痛あり、その他特に所見なし。"
 

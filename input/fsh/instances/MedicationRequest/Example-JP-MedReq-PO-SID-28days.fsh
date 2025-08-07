@@ -12,9 +12,9 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-PO-SID-28days"
 
-// * contained[+] = Example-Patient-minimun
+// * contained[+] = Example-Patient-minimum
 * contained[+] = Example-Contained-JP-Encounter-IMP
-* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
+* contained[+] = Example-Contained-JP-Practitioner-minimum-R001
 
 * meta.lastUpdated = "2021-07-13T02:41:19.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS
@@ -41,9 +41,9 @@ Description: "退院時処方　薬剤コード＝YJコード　内服1日1回�
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimum-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Example-Contained-JP-Practitioner-minimun-R001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimum-R001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1311234567-9990767-AC1282108E9DAA2021071215222803-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

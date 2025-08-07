@@ -51,7 +51,7 @@ Description: "Encounterリソース（入院） データ作成例"
 
 
 //-------- 埋め込み　Practitionerリソース　医療者R001
-Instance: Example-Contained-JP-Practitioner-minimun-R001
+Instance: Example-Contained-JP-Practitioner-minimum-R001
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者R001  データ作成例"
@@ -62,7 +62,7 @@ Description: "埋め込み　Practitionerリソース　医療者R001  データ
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者R001  データ作成例</p> </div>"
 
 
-* id = "Example-Contained-JP-Practitioner-minimun-R001"
+* id = "Example-Contained-JP-Practitioner-minimum-R001"
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
 * identifier.value = "R001"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
@@ -70,7 +70,7 @@ Description: "埋め込み　Practitionerリソース　医療者R001  データ
 * name.text = "医学 一郎"
 
 //-------- 埋め込み　Practitionerリソース　医療者D001
-Instance: Example-Contained-JP-Practitioner-minimun-D001
+Instance: Example-Contained-JP-Practitioner-minimum-D001
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者D001  データ作成例"
@@ -81,7 +81,7 @@ Description: "埋め込み　Practitionerリソース　医療者D001  データ
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D001  データ作成例</p> </div>"
 
 
-* id = "Example-Contained-JP-Practitioner-minimun-D001"
+* id = "Example-Contained-JP-Practitioner-minimum-D001"
 
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
 * identifier.value = "D001"
@@ -91,7 +91,7 @@ Description: "埋め込み　Practitionerリソース　医療者D001  データ
 * name.text = "医療 太郎"
 
 //-------- 埋め込み　Practitionerリソース　医療者D002
-Instance: Example-Contained-JP-Practitioner-minimun-D002
+Instance: Example-Contained-JP-Practitioner-minimum-D002
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者D002  データ作成例"
@@ -101,7 +101,7 @@ Description: "埋め込み　Practitionerリソース　医療者D002  データ
 * language = #ja
 
 
-* id = "Example-Contained-JP-Practitioner-minimun-D002"
+* id = "Example-Contained-JP-Practitioner-minimum-D002"
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
 * identifier.value = "D001"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
@@ -109,7 +109,7 @@ Description: "埋め込み　Practitionerリソース　医療者D002  データ
 * name.text = "田中 宏"
 
 //-------- 埋め込み　Practitionerリソース　医療者D003
-Instance: Example-Contained-JP-Practitioner-minimun-D003
+Instance: Example-Contained-JP-Practitioner-minimum-D003
 InstanceOf: JP_Practitioner
 Usage: #example
 Description: "埋め込み　Practitionerリソース　医療者D003  データ作成例"
@@ -119,7 +119,7 @@ Description: "埋め込み　Practitionerリソース　医療者D003  データ
 // * text.status = #additional
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>埋め込み　Practitionerリソース　医療者D003  データ作成例</p> </div>"
 
-* id = "Example-Contained-JP-Practitioner-minimun-D003"
+* id = "Example-Contained-JP-Practitioner-minimum-D003"
 * identifier.system  = "urn:oid:1.2.392.100495.20.3.41.11311234567"
 * identifier.value = "D003"
 * name.extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"

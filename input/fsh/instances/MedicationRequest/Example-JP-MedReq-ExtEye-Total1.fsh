@@ -12,9 +12,9 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-ExtEye-Total1"
 
-// * contained[+] = Example-Patient-minimun
+// * contained[+] = Example-Patient-minimum
 * contained[+] = Example-Contained-JP-Encounter-IMP
-* contained[+] = Example-Contained-JP-Practitioner-minimun-D001
+* contained[+] = Example-Contained-JP-Practitioner-minimum-D001
 
 * meta.lastUpdated = "2021-07-05T19:28:23.000+09:00"
 //* meta.profile = $JP_MedicationRequest_eCS
@@ -42,9 +42,9 @@ Description: "【注意喚起例】：薬剤を標準コードで記述してい
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimum-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimum-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1311234567-9990767-AC12821012A0552021070513070302-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

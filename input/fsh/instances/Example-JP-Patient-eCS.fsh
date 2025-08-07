@@ -1,6 +1,6 @@
 //--------
 
-Instance: Example-JP-Patient-minimun
+Instance: Example-JP-Patient-minimum
 InstanceOf: JP_Patient
 Usage: #example
 Description: "Patientリソース　（患者情報）最小限  データ作成例 (CLINS要件を満たさないバージョン)"
@@ -12,7 +12,7 @@ Description: "Patientリソース　（患者情報）最小限  データ作成
 // * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報最小限  データ作成例</p> </div>"
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 
-* id = "Example-JP-Patient-minimun"
+* id = "Example-JP-Patient-minimum"
 
 * identifier[+].system = $JP_Hospital_PatientID
 * identifier[=].value = "000999739"

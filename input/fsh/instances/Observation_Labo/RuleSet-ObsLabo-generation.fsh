@@ -19,7 +19,7 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac,JLA
 // 検体材料　* contained[+] = Example-Contained-JP-Specimen-Serum
 //* contained[+] = Example-Contained-JP-Specimen-Serum
 // 検査オーダ医師
-* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+* contained[+] = Example-Contained-JP-Practitioner-minimum-D002
 * status = #final
 * category[laboratory].coding = $JP_SimpleObservationCategory_CS#laboratory
 * code.coding[+] = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS#{local} "{itemName}"
@@ -31,7 +31,7 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac,JLA
 * effectiveDateTime = "2024-12-14T14:11:13.000+09:00"
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * issued = "2024-12-15T14:11:13.000+09:00"
-* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimum-D002)
 
 RuleSet: laboItemValueStringWithUnit(specimen,valueNum,unitString,unitCode)
 // valueString は引用なしの数値文字列

@@ -14,8 +14,8 @@ Description: "MedicationRequestリソース　入院・内服処方頓用発熱�
 * id = "Example-JP-MedReq-PO-AsNeeded-LimitMax"
 
 * contained[+] = Example-Contained-JP-Encounter-IMP
-// * contained[+] = Example-Contained-JP-Patient-minimun
-* contained[+] = Example-Contained-JP-Practitioner-minimun-D001
+// * contained[+] = Example-Contained-JP-Patient-minimum
+* contained[+] = Example-Contained-JP-Practitioner-minimum-D001
 
 * meta.lastUpdated = "2021-07-07T21:34:05.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
@@ -43,9 +43,9 @@ Description: "MedicationRequestリソース　入院・内服処方頓用発熱�
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimum-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-D001)
+* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimum-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1311234567-9990767-0A1721342FB30D2021070718303401-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

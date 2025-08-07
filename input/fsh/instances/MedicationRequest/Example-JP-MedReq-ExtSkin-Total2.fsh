@@ -13,8 +13,8 @@ Description: "【注意喚起例】：入院処方　外用（塗布）全量処
 * id = "Example-JP-MedReq-ExtSkin-Total2"
 
 * contained[+] = Example-Contained-JP-Encounter-IMP
-// * contained[+] = Example-Contained-JP-Patient-minimun
-* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
+// * contained[+] = Example-Contained-JP-Patient-minimum
+* contained[+] = Example-Contained-JP-Practitioner-minimum-R001
 
 * meta.lastUpdated = "2021-07-05T19:07:58.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
@@ -46,9 +46,9 @@ Description: "【注意喚起例】：入院処方　外用（塗布）全量処
 
 
 * authoredOn = "2021-07-05T17:31:48+09:00"
-* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimum-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001)
+* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimum-R001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1311234567-9990767-0A172C13361BBE2021070517301001-1"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

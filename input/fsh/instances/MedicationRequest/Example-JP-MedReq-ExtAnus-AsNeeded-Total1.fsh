@@ -17,9 +17,9 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 * extension[eCS_Department].valueCodeableConcept = $JP_Department_SsMix_CS#01 "内科"
 * extension[eCS_Department].valueCodeableConcept.text = "内科"
 
-// * contained[+] = Example-Contained-JP-Patient-minimun
+// * contained[+] = Example-Contained-JP-Patient-minimum
 * contained[+] = Example-Contained-JP-Encounter-IMP
-* contained[+] = Example-Contained-JP-Practitioner-minimun-R001
+* contained[+] = Example-Contained-JP-Practitioner-minimum-R001
 
 * meta.lastUpdated = "2021-07-14T16:14:35.000+09:00"
 * meta.profile = $JP_MedicationRequest_eCS
@@ -58,9 +58,9 @@ Description: "MedicationRequestリソース　入院・外用(坐剤)頓用全�
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
+* requester = Reference(Practitioner/Example-Contained-JP-Practitioner-minimum-R001) "医学 一郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimun-R001) "医学 一郎"
+* recorder = Reference(Practitioner/Example-Contained-JP-Practitioner-minimum-R001) "医学 一郎"
 * recorder.type = "Practitioner"
 
 * groupIdentifier.value = "1311234567-9990767-0A172220B35F172021071410514001-1"

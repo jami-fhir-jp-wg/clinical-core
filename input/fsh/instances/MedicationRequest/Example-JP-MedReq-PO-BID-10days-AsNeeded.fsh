@@ -12,9 +12,9 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 * extension[eCS_InstitutionNumber].valueIdentifier.value = "1311234567"
 * id = "Example-JP-MedReq-PO-BID-10days-AsNeeded"
 
-// * contained[+] = Example-Contained-JP-Patient-minimun
+// * contained[+] = Example-Contained-JP-Patient-minimum
 * contained[+] = Example-Contained-JP-Encounter-IMP
-* contained[+] = Example-Contained-JP-Practitioner-minimun-D001
+* contained[+] = Example-Contained-JP-Practitioner-minimum-D001
 
 * meta.lastUpdated = "2021-07-13T14:24:21.000+09:00"
 * meta.profile = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.x.x-instance"
@@ -42,9 +42,9 @@ Description: "MedicationRequestリソース　入院・内服処方1日1回１�
 
 * authoredOn = "2021-07-14T10:52:26+09:00"
 
-* requester = Reference(Example-Contained-JP-Practitioner-minimun-D001) "医療 太郎"
+* requester = Reference(Example-Contained-JP-Practitioner-minimum-D001) "医療 太郎"
 * requester.type = "Practitioner"
-* recorder = Reference(Example-Contained-JP-Practitioner-minimun-D001)
+* recorder = Reference(Example-Contained-JP-Practitioner-minimum-D001)
 * recorder.type = "Practitioner"
 * groupIdentifier.value = "1311234567-9990767-0A17296D729AE72021071219211801-2"
 * dosageInstruction.extension[periodOfUse].url = "http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_MedicationDosage_PeriodOfUse"

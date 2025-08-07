@@ -27,7 +27,7 @@ Description: "Observationリソース（検体検査結果）尿蛋⽩(定性)�
 //* contained[+] = Example-Contained-JP-Specimen-Serum
 
 // 検査オーダ医師
-* contained[+] = Example-Contained-JP-Practitioner-minimun-D002
+* contained[+] = Example-Contained-JP-Practitioner-minimum-D002
 
 * status = #final
 
@@ -42,7 +42,7 @@ Description: "Observationリソース（検体検査結果）尿蛋⽩(定性)�
 * effectiveDateTime = "2021-07-05T11:19:41+09:00"
 * encounter = Reference(Example-Contained-JP-Encounter-AMB)
 * issued = "2021-07-05T15:38:59.000+09:00"
-* performer[+] = Reference(Example-Contained-JP-Practitioner-minimun-D002)
+* performer[+] = Reference(Example-Contained-JP-Practitioner-minimum-D002)
 
 * valueCodeableConcept.coding = urn:oid:1.2.392.200119.6.2102#2 "±"
 * valueCodeableConcept.text = "(±)"
