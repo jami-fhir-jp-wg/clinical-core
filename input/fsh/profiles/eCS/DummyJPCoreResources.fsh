@@ -340,7 +340,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
-
+/*
 Profile:        JP_Device
 Parent:			Device
 Id:             JP-Device
@@ -355,7 +355,7 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
-
+*/
 
 Profile:        JP_Device_eCS
 Parent:			JP_Device
@@ -372,7 +372,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
-
+/*
 Profile:        JP_Consent
 Parent:			Consent
 Id:             JP-Consent
@@ -387,6 +387,7 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
+*/
 
 Profile:        JP_Consent_eCS
 Parent:			JP_Consent
@@ -403,6 +404,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
+/*
 Profile:        JP_ResearchSubject
 Parent:			ResearchSubject
 Id:             JP-ResearchSubject
@@ -417,6 +419,7 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
+*/
 
 Profile:        JP_ResearchSubject_eCS
 Parent:			JP_ResearchSubject
@@ -433,6 +436,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
+/*
 Profile:        JP_ResearchStudy
 Parent:			ResearchStudy
 Id:             JP-ResearchStudy
@@ -447,6 +451,7 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
+*/
 
 Profile:        JP_ResearchStudy_eCS
 Parent:			JP_ResearchStudy
@@ -463,6 +468,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
+/*
 Profile:        JP_RelatedPerson
 Parent:			RelatedPerson
 Id:             JP-RelatedPerson
@@ -477,6 +483,7 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
+*/
 
 Profile:        JP_RelatedPerson_eCS
 Parent:			JP_RelatedPerson
@@ -493,6 +500,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
+/*
 Profile:        JP_Binary
 Parent:			Binary
 Id:             JP-Binary
@@ -507,3 +515,4 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
+*/
