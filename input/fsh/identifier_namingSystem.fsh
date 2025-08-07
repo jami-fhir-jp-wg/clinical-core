@@ -12,7 +12,7 @@ Usage: #definition
 * uniqueId[=].value = "urn:oid:1.2.392.100495.20.3.51.11311234567"
 
 // 医師施設固有ID
-Instance: jp-local_physician-identifier_11311234567
+Instance: jp-local-physician-identifier-11311234567
 InstanceOf: NamingSystem
 Usage: #definition
 * name = "JP_local_physician_identifier_11311234567_NamingSystem"
