@@ -26,7 +26,7 @@ Description: "Patientリソース（患者情報）プロファイル"
 
 * ^version = "x.x.x-profile"
 * ^status = #active
-* ^date = "2024-10-27"
+* ^date = "2025-08-18"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -54,7 +54,7 @@ Description: "Patientリソース（患者情報）プロファイル"
 
 * name 1.. MS
 * name.text 1.. MS  
-* name.family 1.. MS
+* name.family 0.. MS    //--- 2025.8.18  v1.12から姓は必須でないことにした　1.. --> 0..
 * name.given 1.. MS
 
 * gender 1.. MS

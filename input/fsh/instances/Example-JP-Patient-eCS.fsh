@@ -48,7 +48,7 @@ Description: "Patientリソース　（患者情報）01  データ作成例"
 * birthDate = "1955-05-04"
 * address.text = "東京都文京区白山１−２−３"
 
-//-------- 患者情報02
+//-------- 患者情報02　姓なしデータ
 Instance: Example-JP-Patient-eCS-02-Contained
 InstanceOf: JP_Patient_eCS
 Usage: #example
@@ -68,7 +68,7 @@ Description: "Patientリソース　（患者情報）02"
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
 * name[=].extension.valueCode = #IDE
 * name[=].text = "田中 太郎"
-* name[=].family = "田中"
+//* name[=].family = "田中" テスト的に姓なしデータを作成　for v1.12.0
 * name[=].given = "太郎"
 
 * name[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-EN-representation"
