@@ -2,7 +2,7 @@ name: clins-dev
 on:
   push:
     branches: 
-      - develop-v1.11.x
+      - v1.12.0-pre
     paths:
       - 'sushi-config.yaml_dev'
       - 'input/**'
@@ -10,11 +10,11 @@ on:
       - '.github/workflows/clins-dev.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ v1.11.0-release ]
+    branches: [ v1.12.0-pre ]
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.11.0
+  release_version : 1.12.0
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
