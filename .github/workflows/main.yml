@@ -77,7 +77,7 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile2
       with:
-        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-2.0.0.tgz"
+        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-2.0.0-dev.tgz"
         target: .
 
     - name: Download the file
@@ -91,9 +91,7 @@ jobs:
       env:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
         JPTerminologyCOREdir: jpfhir-terminology.r4#2.0.0
-        JPTerminologyCOREPtgz: jpfhir-terminology.r4-2.0.0.tgz
-        JPTerminologyPdir: jpfhir-periodic-terminology.r4#2025.7.0
-        JPTerminologyPtgz: jpfhir-periodic-terminology.r4-2025.7.0-dev.tgz
+        JPTerminologyCOREPtgz: jpfhir-terminology.r4-2.0.0-dev.tgz
         JPCOREtgzjp: jp-core.r4-1.1.2-clins.tgz
         JPCOREdir: jp-core.r4#1.1.2-clins
       run: |
