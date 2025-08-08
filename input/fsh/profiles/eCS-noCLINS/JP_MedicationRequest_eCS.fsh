@@ -124,6 +124,9 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 * identifier 3.. MS // JP_MedicationRequestでは2..*が設定されているのを3に変更
   * insert relative_short_definition("このリソース情報の識別ID、および必要であれば処方箋における剤グループ番号、剤グループ内の順序番号などを格納する。")
   * ^comment = "リソース一意識別IDの仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
+* identifier[rpNumber] MS
+* identifier[orderInRp] MS
+* identifier[requestIdentifierCommon] MS
 * identifier[requestIdentifier] 1..1 MS
 * identifier[requestIdentifier].value 1..1 MS
   * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
@@ -159,7 +162,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 //    codingGS1 0..1 MS and
     codingGeneralName 0..1 MS and
 //    codingKYS 0..1 MS and // 規格別薬剤成分コード
-    nocoded 0..1
+    nocoded 0..1 MS
 
 * medication[x].coding[nocoded].system 1.. MS
 * medication[x].coding[nocoded].system = $JP_eCS_MedicationCodeNocoded_CS (exactly)
