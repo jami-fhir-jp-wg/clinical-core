@@ -309,7 +309,7 @@ Description:    "Derived Profile from JP-Core"
 
 * meta.lastUpdated 0.. MS
 
-
+/*
 Profile:        JP_DeviceUseStatement
 Parent:			DeviceUseStatement
 Id:             JP-DeviceUseStatement
@@ -324,6 +324,7 @@ Description:    "Derived Profile from JP-Core"
 * ^language = #ja
 
 * meta.lastUpdated 0.. MS
+*/
 
 Profile:        JP_DeviceUseStatement_eCS
 Parent:			JP_DeviceUseStatement
