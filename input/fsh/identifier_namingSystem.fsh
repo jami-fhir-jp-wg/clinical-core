@@ -10,6 +10,8 @@ Usage: #definition
 * description = "SAMPLE_JP_local_patient_identifier_11311234567_NamingSystem"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "urn:oid:1.2.392.100495.20.3.51.11311234567"
+* uniqueId[+].type = #uri
+* uniqueId[=].value = "urn:oid:1.2.392.100495.20.3.51.11234567890"
 
 // 医師施設固有ID
 Instance: sample-jp-local-physician-identifier-11311234567
