@@ -179,7 +179,7 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
 
 * method MS
   * insert relative_short_definition("投与方法の基本用法区分（1 : 内服、2 : 外用、3 : 注射、4 : 注入の区分）、またはさらに1段階詳しい用法区分（10：経口、11：舌下、…など）を記述する。")
-  * coding 0..1 MS
+  * coding 0..2 MS
     * ^short = "投与方法区分をコード化するか、text子要素で記述する。2桁で出せる場合には必ず2桁粒度で出力すること。1桁出力しかできない場合には、必ず詳細投与方法をmethod.textに記載すること。"
     * system 1..1 MS
       * ^short = "投与方法の区分に対応するJAMI用法コード表基本用法１桁コードを識別するURI（\"http://jami.jp/CodeSystem/MedicationMethodBasicUsage\"）。同2桁コード（\"http://jami.jp/CodeSystem/MedicationMethodDetailUsage\"）を使用してもよい。" 
@@ -187,7 +187,8 @@ and unCoded 0..1 MS // ダミーコード（system=http://jpfhir.jp/fhir/clins/C
       * ^short = "JAMI用法コード表基本用法１桁コード。同2桁コードを使用してもよい。" 
     * display 0..1 MS 
       * ^short = "JAMI用法コード表基本用法１桁コードの表示名または同2桁コードの表示名。" 
-
+  * coding[unitDigit1] MS
+  * coding[unitDigit2] MS
 
 * doseAndRate MS
 * doseAndRate ^definition = "投与量を記録する。
