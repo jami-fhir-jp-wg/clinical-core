@@ -7,11 +7,18 @@ Invariant: validEntryProfile-MedicationRequest
 Invariant: validEntryProfile-ObservationLabResult
 * insert validEntryProfile(Observation,JP_Observation_LabResult_eCS,http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS)
 
+/* バージョンがない時に指定ProfileURL以外でもOKとなってしまう
 RuleSet: validEntryProfile(par1,par2,par3)
 * human = "Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
 * severity = #error 
 * expression = "(entry.resource.ofType({par1}).exists().not()) or ((entry.resource.ofType({par1}).meta.profile.where($this.indexOf('|')>0 and ($this.indexOf('|')>0 implies ($this.substring(0,$this.indexOf('|'))!='{par3}'))).exists()).not()) or ((entry.resource.ofType({par1}).meta.profile.where($this!='{par3}').exists()).not())"
-
+*/
+// 修正版
+RuleSet: validEntryProfile(par1,par2,par3)
+* human = "Bundle-entry-{par1}: Bundleのentryとして含まれる{par1}は、プロファイル{par2}のいずれかのバージョンに準拠していなければならない。"
+* severity = #error 
+* expression = "(entry.resource.ofType({par1}).exists().not()) // {par1}リソースが１個でもあればFALSE １個もなければTRUE（チェック不要）
+or ((entry.resource.ofType({par1}).meta.profile.where(($this.indexOf('|')>0 and ($this.substring(0,$this.indexOf('|'))!='{par3}'))).exists()).not() ) and ((entry.resource.ofType({par1}).meta.profile.where(($this.indexOf('|')<=0 and ($this!='{par3}'))).exists()).not() )" 
 
 Invariant: mustHaveOneMoreResources-with-designatedResourceType
 * human = "R02143:Bundle.meta.tagに記述されたresourceTypeで指定されたAllergyIntolerance, Condition, Observationのリソースが１つ以上含まれていなければならない。"
