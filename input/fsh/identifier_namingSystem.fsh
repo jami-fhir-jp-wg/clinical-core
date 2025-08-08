@@ -78,7 +78,7 @@ Usage: #definition
 * name = "JP_CLINS_ObsLabResult_LocalCode_NamingSystem"
 * status = #active
 * date = "2025-08-15"
-* kind = #CodeSystem
+* kind = #codesystem
 * description = "JP_CLINS_ObsLabResult_LocalCode_NamingSystem"
 * uniqueId[+].type = #uri
 * uniqueId[=].value = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS"
