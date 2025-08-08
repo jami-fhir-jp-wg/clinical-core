@@ -38,7 +38,7 @@ CodeSystem: JP_CLINS_LocalLaboCode_CS
 Id: jp-clins-localLaboCode-cs
 Title: "CLINSでの施設固有コードシステムの存在だけを記述するコードシステム"
 Description: "CLINSでの施設固有コードシステムの存在だけを記述するコードシステム"
-* ^url = http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS
+* ^url = "http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS"
 * ^title = "CLINSでの施設固有コードシステムの存在だけを記述するコードシステム"
 * ^version = "1.0.0"
 * ^status = #active
