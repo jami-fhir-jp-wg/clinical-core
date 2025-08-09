@@ -22,14 +22,14 @@ Severity: #error
 Expression: "(meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication').exists().not()) or  ((meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code='LTS').exists()) and (code.coding.where((memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS')) or (memberOf('http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_VS'))).exists()))"
 
 Invariant: referenceRangeLowUnits-isSameAs-resultValueUnits
-Description: "基準値lowの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
+Description: "検査結果定量値が報告されている場合には、基準値lowの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
 Severity: #error
-Expression: "((referenceRange.low.unit.exists() implies (value.ofType(Quantity).unit.exists() and (value.ofType(Quantity).unit = referenceRange.low.unit)))  and (referenceRange.low.code.exists() implies (value.ofType(Quantity).code.exists() and (value.ofType(Quantity).code = referenceRange.low.code))))" 
+Expression: "value.ofType(Quantity).value.exists() implies ((referenceRange.low.unit.exists() implies (value.ofType(Quantity).unit.exists() and (value.ofType(Quantity).unit = referenceRange.low.unit)))  and (referenceRange.low.code.exists() implies (value.ofType(Quantity).code.exists() and (value.ofType(Quantity).code = referenceRange.low.code))))" 
 
 Invariant: referenceRangeHighUnits-isSameAs-resultValueUnits
-Description: "基準値highの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
+Description: "検査結果定量値が報告されている場合には、基準値highの単位情報は検査結果値の単位情報と完全に同一でなければならない。"
 Severity: #error
-Expression: "((referenceRange.high.unit.exists() implies (value.ofType(Quantity).unit.exists() and (value.ofType(Quantity).unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (value.ofType(Quantity).code.exists() and (value.ofType(Quantity).code = referenceRange.high.code))))" 
+Expression: "value.ofType(Quantity).value.exists() implies ((referenceRange.high.unit.exists() implies (value.ofType(Quantity).unit.exists() and (value.ofType(Quantity).unit = referenceRange.high.unit))) and (referenceRange.high.code.exists() implies (value.ofType(Quantity).code.exists() and (value.ofType(Quantity).code = referenceRange.high.code))))" 
 
 // R6021とセット Observation CLINS ではローカルコードの記述は必須であることに注意喚起
 Invariant: warn-localCode-observation-laboresult
