@@ -37,6 +37,14 @@ Description: "注意喚起：このリソースでは、電子カルテ情報共
 Severity: #warning
 Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS').exists()"
 
+
+// R06041 電子カルテ情報共有サービスで取り扱う検査結果（43項目）、感染症結果（5項目）について、結果を登録する際に基準値（基準範囲）の登録も必須・43+5項目以外で使用する一般項目JLACコード、未標準化コード、施設固有コードのCodeSystemをチェック対象外
+Invariant: require-refRange-forQuantityValue-against-CoreLaboSet
+Description: "R06041 電子カルテ情報共有サービスの検査結果（43項目）、感染症結果（5項目）の定量値には結果の基準値が必須。"
+Severity: #error
+Expression: "((code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_CS').exists()) and (value.ofType(Quantity))) implies referenceRange.where(low.exists() or high.exists()).exists()"
+
+
 // ==================================================
 //   Profile 定義 診療５情報・サマリー用
 //   検体検査結果／感染症検体検査結果 リソースタイプ:Observation
@@ -48,6 +56,7 @@ Id: JP-Observation-LabResult-eCS
 Title:  "JP_Observation_LabResult_eCS"
 Description: "診療情報・サマリー汎用 Observationリソース（検体検査結果／感染症検体検査結果）プロファイル"
 
+
 //* obeys resource-needs-extension-of-institutionNumber
 //* obeys test-MemberOf-MEDIS-JLAC10
 //* obeys test-not-MemberOf-infectionLabo
@@ -55,8 +64,8 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * obeys needs-performer-on-CLINS
 * obeys referenceRangeLowUnits-isSameAs-resultValueUnits
 * obeys referenceRangeHighUnits-isSameAs-resultValueUnits
-
 * obeys warn-localCode-observation-laboresult // R6022 Observation CLINS ではローカルコードの記述は必須である。注意喚起
+* obeys require-refRange-forQuantityValue-against-CoreLaboSet
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
