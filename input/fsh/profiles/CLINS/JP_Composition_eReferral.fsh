@@ -553,10 +553,10 @@ and authorDepartment 0..1 MS
 * section[compositionSection].section[infectiousDiseaseInformationSection].mode ..0
 * section[compositionSection].section[infectiousDiseaseInformationSection].orderedBy ..0
 * section[compositionSection].section[infectiousDiseaseInformationSection].entry 0..* MS
-* section[compositionSection].section[infectiousDiseaseInformationSection].entry only Reference(JP_Observation_Common_eCS)
-* section[compositionSection].section[infectiousDiseaseInformationSection].entry ^short = "感染症情報を記述したObservationリソースを参照"
+* section[compositionSection].section[infectiousDiseaseInformationSection].entry only Reference(JP_Observation_Common_eCS or JP_Condition_eCS)
+* section[compositionSection].section[infectiousDiseaseInformationSection].entry ^short = "感染症情報を記述したObservationリソースまたはConditionリソースを参照"
 * section[compositionSection].section[infectiousDiseaseInformationSection].entry ^definition = "感染症情報を記述して参照する。
-                                                                1つの感染症情報につき1つのObservationリソースで記述されたものを参照する。
+                                                                1つの感染症情報につき1つのObservationリソース(JP_Observation_Common_eCSの派生プロファイル（たとえばJP_Observation_LabResult_eCS）に従うリソース）またはConditionリソース（JP_Condition_eCS）で記述されたものを参照する。
                                                                 記述すべき感染症情報が存在しないことを明示的に記述する（「特になし」など）場合にはentry要素は出現せず、emptyReasonに nilknown を記述する。
                                                                 感染症情報を聴取しようとしていない場合でそれを明示的に記述する（「取得せず」など）場合にはentry要素は出現せず、emptyReasonに notasked を記述する。
                                                                 情報が患者やシステムから取得できない状況でそれを明示的に記述する（「取得できず」「不明」など）場合にはentry要素は出現せず、emptyReasonに unavailable を記述する。
