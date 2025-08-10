@@ -203,7 +203,7 @@ Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV2ABDIL_VS  = http://jpfhir.jp/f
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_HIV2ABRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HIV2ABRESULT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSQLRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STSQLRESULT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STSQUANT_VS
-Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STSRESULT_VS
+//Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STSRESULT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSHQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STSHQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPRESULT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPRESULT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPQUANTCOI_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANTCOI_VS
@@ -213,6 +213,17 @@ Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPPOSCOI_VS  = http://jpfhir.jp/fh
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_TPHQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_TPHQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STS_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STS_VS
+//-- for 2025.12 追加8件
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_STSDIL_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HCVAGABRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HCVAGABPOSCOI_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGPOSCOI_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGABOD_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGABRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGABPOSCOI_VS
+
+
 
 //
 
@@ -272,3 +283,12 @@ Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPPOSCOI_VS  = http://jpfhir.jp/fh
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_TPQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPHQUANT_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_TPHQUANT_VS
 Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STS_VS = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_STS_VS
+//-- for 2025.12 追加8件
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_STSDIL_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HCVAGABRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HCVAGABPOSCOI_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGPOSCOI_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGABOD_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGABRESULT_VS
+Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS  = http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_HIV1P24AGABPOSCOI_VS

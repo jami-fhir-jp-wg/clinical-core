@@ -292,6 +292,40 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HCV-AB-POS-COI
 
+//---for 2025.12
+// HCV抗原・抗体同時(定性)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVAGABRESULT_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hcvagabresult-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HCV抗原・抗体同時(定性)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HCV抗原・抗体同時(定性)"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVAGABRESULT_VS
+* ^version = "1.2.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2025-08-15"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HCV-AGAB-RESULT
+
+//---for 2025.12
+// HCV抗原・抗体同時(陽性コントロール比)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVAGABPOSCOI_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hcvagabposcoi-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HCV抗原・抗体同時(陽性コントロール比)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HCV抗原・抗体同時(陽性コントロール比)"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HCVAGABPOSCOI_VS
+* ^version = "1.2.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2025-08-15"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HCV-AGAB-POS-COI
+
 // HIV-1(ウイルスRNA定量)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1QUANT_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hiv1quant-vs
@@ -324,109 +358,94 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1-RESULT
 
-// HIV-1+2抗体・p24抗原(コントロール比)
-/*
-ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24COI_VS
-Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abp24coi-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(コントロール比)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(コントロール比)"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24COI_VS
-* ^version = "1.1.0a"
-* ^status = #active
-* ^experimental = false
-* ^date = "2024-02-25"
-* ^publisher = "（一社）日本医療情報学会"
-* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-COI
-*/
-// HIV-1+2抗体・p24抗原(吸光度)
-/*
-ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABOD_VS
-Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abod-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(吸光度)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(吸光度)"
-* ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABOD_VS
-* ^version = "1.1.0a"
-* ^status = #active
-* ^experimental = false
-* ^date = "2024-02-25"
-* ^publisher = "（一社）日本医療情報学会"
-* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-OD
-*/
 
-// HIV-1+2抗体・p24抗原(定性)
-/*
-ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24RESULT_VS
-Id: jp-clins-valueset-infectionlaboJLAC11-HIV1P2ABP24RESULT-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(定性)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(定性)"
+
+//-- for 2025.12
+// HIV-1p24抗原(定性)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGRESULT_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p24agresult-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1p24抗原(定性)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1p24抗原(定性)"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24RESULT_VS
-* ^version = "1.1.0a"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGRESULT_VS
+* ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2025-08-15"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-RESULT
-*/
-// HIV-1+2抗体・p24抗原(定量)
-/*
-ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24QUANT_VS
-Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abp24quant-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(定量)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(定量)"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P24AG-RESULT
+
+//-- for 2025.12
+// HIV-1p24抗原(陽性コントロール比)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGPOSCOI_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p24agposcoi-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1p24抗原(陽性コントロール比)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1p24抗原(陽性コントロール比)"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24QUANT_VS
-* ^version = "1.1.0a"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGPOSCOI_VS
+* ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2025-08-15"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-QUANT
-*/
-// HIV-1+2抗体・p24抗原(陽性コントロール比)
-/*
-ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24POSCOI_VS
-Id: jp-clins-valueset-infectionlaboJLAC11-HIV1P2ABP24POSCOI-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(陽性コントロール比)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗体・p24抗原(陽性コントロール比)"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P24AG-POS-COI
+
+//-- for 2025.12
+// HIV-1+2抗原・抗体同時(吸光度)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGABOD_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p24agabod-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗原・抗体同時(吸光度)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗原・抗体同時(吸光度)"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABP24POSCOI_VS
-* ^version = "1.1.0a"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGABOD_VS
+* ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2025-08-15"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-P24-POS-COI
-*/
-// HIV-1+2抗体(コントロール比)
-/*
-ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABCOI_VS
-Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abcoi-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗体(コントロール比)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗体(コントロール比)"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P24AGAB-OD
+
+//-- for 2025.12
+// HIV-1+2抗原・抗体同時(定性)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGABRESULT_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p24agabresult-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗原・抗体同時(定性)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗原・抗体同時(定性)"
 * ^meta.versionId = "1"
-* ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
-* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABCOI_VS
-* ^version = "1.1.0a"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGABRESULT_VS
+* ^version = "1.2.0"
 * ^status = #active
 * ^experimental = false
-* ^date = "2024-02-25"
+* ^date = "2025-08-15"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
-* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P2-AB-COI
-*/
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P24AGAB-RESULT
+
+//-- for 2025.12
+// HIV-1+2抗原・抗体同時(陽性コントロール比)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGABPOSCOI_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p24agabposcoi-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 HIV-1+2抗原・抗体同時(陽性コントロール比))"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 HIV-1+2抗原・抗体同時(陽性コントロール比)"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P24AGABPOSCOI_VS
+* ^version = "1.2.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2025-08-15"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #HIV-1P24AGAB-POS-COI
+
+
 // HIV-1+2抗体(希釈倍率)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_HIV1P2ABDIL_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-hiv1p2abdil-vs
@@ -571,6 +590,23 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #STS-QUANT
 
+//-- for 2025.12
+// 梅毒STS(希釈倍率)
+ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS
+Id: jp-clins-valueset-infectionlaboJLAC11-stsdil-vs
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 梅毒STS(希釈倍率)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 梅毒STS(希釈倍率)"
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2025-08-15T21:17:22.426+09:00"
+* ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_STSDIL_VS
+* ^version = "1.2.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2025-08-15"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #STS-DIL
+
 // 梅毒TP抗体(定性)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_TPRESULT_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-tpresult-vs
@@ -587,11 +623,11 @@ Description: "CLINS 電子カルテ共有サービス用 感染症検査項目�
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * include codes from system $JP_CLINS_CodeSystem_JLAC11_InfectionLabo_CS where concept descendant-of #TP-RESULT
 
-// 梅毒TP抗体(定量、陽性コントロール比)
+// 梅毒TP抗体(陽性コントロール比)
 ValueSet: JP_CLINS_ValueSet_InfectionLaboJLAC11_TPPOSCOI_VS
 Id: jp-clins-valueset-infectionlaboJLAC11-tpposcoi-vs
-Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 梅毒TP抗体(定量、陽性コントロール比)"
-Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 梅毒TP抗体(定量、陽性コントロール比)"
+Title: "CLINS 電子カルテ共有サービス用:感染症検査項目セットJLAC11 梅毒TP抗体(陽性コントロール比)"
+Description: "CLINS 電子カルテ共有サービス用 感染症検査項目セットJLAC11 梅毒TP抗体(陽性コントロール比)"
 * ^meta.versionId = "1"
 * ^meta.lastUpdated = "2022-10-11T21:17:22.426+09:00"
 * ^url = $JP_CLINS_ValueSet_InfectionLaboJLAC11_TPPOSCOI_VS

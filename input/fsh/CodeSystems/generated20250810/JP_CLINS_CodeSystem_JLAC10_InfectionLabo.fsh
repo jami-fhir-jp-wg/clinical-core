@@ -1,0 +1,6203 @@
+CodeSystem: JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
+Id: jp-clins-codesystem-JLAC10-infectionlabo-cs
+Title: "CLINS 電子カルテ共有サービス用:JLAC10感染症検査項目セット"
+Description: "CLINS 電子カルテ共有サービス用 JLAC10感染症検査項目セット"
+* ^url = $JP_CLINS_CodeSystem_JLAC10_InfectionLabo_CS
+* ^meta.versionId = "1"
+* ^meta.lastUpdated = "2025-08-10T00:00:00.000+09:00"
+* ^version = "2025.12"
+* ^status = #active
+* ^content = #complete
+* ^caseSensitive = true
+* ^experimental = false
+* ^date = "2025-08-10"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^hierarchyMeaning = #is-a
+* ^property[+].code = #unitCode
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#unitCode"
+* ^property[=].type = #string
+* ^property[+].code = #unitDisplay
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#unitDisplay"
+* ^property[=].type = #string
+* ^property[+].code = #specimen
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#specimen"
+* ^property[=].type = #string
+* ^property[+].code = #method
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#method"
+* ^property[=].type = #string
+* ^property[+].code = #fullNumberOfDigits
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#fullNumberOfDigits"
+* ^property[=].type = #integer
+* ^property[+].code = #numberOfDecimalDigits
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#numberOfDecimalDigits"
+* ^property[=].type = #integer
+* ^property[+].code = #oidOfValueSet
+* ^property[=].uri = "http://jpfhir.jp/fhir/eCS/CodeSystem/laboItem_property#oidOfValueSet"
+* ^property[=].type = #string
+* #CORE-INFECTIONS
+  * #STS-QLRESULT
+    * #5E074000002299911  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E074000002206211  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E074135102211711  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074000002211711  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074000002399911  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E074000002306211  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E074000002306311  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5E074000002311711  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074135102311711  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074000002299811  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E074135102299811  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E074000002399811  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E074135102399811  "梅毒STS(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #STS-QUANT
+    * #5E074000002299901  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E074000002206201  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E074000002211705  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074000002399901  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E074000002306201  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E074000002306301  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5E074000002311705  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074000002299801  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E074000002299805  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E074000002399801  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E074000002399805  "梅毒STS(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #STS-DIL
+    * #5E074000002299905  "梅毒STS(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E074000002211705  "梅毒STS(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E074000002399905  "梅毒STS(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E074000002311705  "梅毒STS(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒STS(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+  * #TP-RESULT
+    * #5E075000001899911  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000001806211  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075135101819011  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5E075000002199911  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "毛細管血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002106211  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "毛細管血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002299911  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002205211  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5E075000002205111  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5E075000002205311  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5E075000002206211  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002211711  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E075000002206311  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5E075000002219011  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5E075135102219011  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5E075000002399911  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002305211  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5E075000002305111  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5E075000002305311  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5E075000002304111  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "蛍光イムノアッセイ(FIA)_蛍光偏光イムノアッセイ(FPIA)"
+    * #5E075000002310311  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "受身赤血球凝集反応(PHA法)"
+    * #5E075000002310411  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "逆受身赤血球凝集反応(RPHA法)"
+    * #5E075000002306211  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002311711  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E075000002306311  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5E075000002302311  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5E075135102319011  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5E075000001899811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075135101899811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002199811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "毛細管血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002299811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075135102299811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002399811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075135102399811  "梅毒TP抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #TP-POS-COI
+    * #5E075000002299933  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002205233  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5E075000002205133  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5E075000002205333  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5E075000002206233  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002399933  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002305233  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5E075000002305133  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5E075000002305333  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5E075000002304133  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "蛍光イムノアッセイ(FIA)_蛍光偏光イムノアッセイ(FPIA)"
+    * #5E075000002306233  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002302333  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5E075000002299833  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002399833  "梅毒TP抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #TP-HQUANT
+    * #5E075000001899905  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000001806205  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002199905  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "毛細管血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002106205  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "毛細管血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002299905  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002211705  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E075000002219005  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5E075000002399905  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002310305  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "受身赤血球凝集反応(PHA法)"
+    * #5E075000002310405  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "逆受身赤血球凝集反応(RPHA法)"
+    * #5E075000002311705  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5E075000002306205  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000001899805  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002199805  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "毛細管血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002299805  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002399805  "梅毒TP抗体(半定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(半定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #TP-QUANT
+    * #5E075000002299901  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002206201  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002206301  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5E075000002399901  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5E075000002306201  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5E075000002306301  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5E075000002299801  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5E075000002399801  "梅毒TP抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "梅毒TP抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AG-RESULT
+    * #5F016141001899911  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141001819011  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F016141002299911  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002206311  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F016141002202311  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002205111  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016141002205311  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016141002205211  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002211711  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F016141002210411  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "逆受身赤血球凝集反応(RPHA法)"
+    * #5F016141002219011  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F016141002399911  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002306311  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F016141002302311  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002305111  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016141002305311  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016141002305211  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002311711  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F016141002310411  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "逆受身赤血球凝集反応(RPHA法)"
+    * #5F016141002319011  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F016141001899811  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002299811  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002399811  "HBs抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AG-DIL
+    * #5F016141002299905  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002211705  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F016141002210405  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "逆受身赤血球凝集反応(RPHA法)"
+    * #5F016141002399905  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002311705  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F016141002310405  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "逆受身赤血球凝集反応(RPHA法)"
+    * #5F016141002299805  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002399805  "HBs抗原(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AG-OD 
+    * #5F016141002299904  "HBs抗原(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002202304  "HBs抗原(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002399904  "HBs抗原(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002302304  "HBs抗原(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002299804  "HBs抗原(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002399804  "HBs抗原(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AG-QUANT
+    * #5F016141002299901  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002206301  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F016141002205101  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016141002205333  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016141002202301  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002205201  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002205301  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016141002399901  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002305101  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016141002306301  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F016141002305333  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016141002302301  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002305201  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002305301  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016141002299801  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002299833  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002399801  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002399833  "HBs抗原(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "U/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AG-POS-COI
+    * #5F016141002299933  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002202333  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002205133  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016141002202331  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002205233  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002205231  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002399933  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016141002302333  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002305133  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016141002302331  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002305233  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016141002305231  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016143002299933  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002202333  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016143002399933  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002302333  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016141002299831  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016141002399831  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016143002299833  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016143002399833  "HBs抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AB-RESULT
+    * #5F016143002299911  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002205111  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016143002202311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016143002205211  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016143002205311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016143002210311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "受身赤血球凝集反応(PHA法)"
+    * #5F016143002219011  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F016143002399911  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002306311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F016143002302311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016143002305111  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016143002305211  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016143002305311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016143002310311  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "受身赤血球凝集反応(PHA法)"
+    * #5F016143002319011  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F016143002299811  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016143002399811  "HBs抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AB-DIL
+    * #5F016143002299905  "HBs抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002210305  "HBs抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "受身赤血球凝集反応(PHA法)"
+    * #5F016143002399905  "HBs抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002310305  "HBs抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "受身赤血球凝集反応(PHA法)"
+    * #5F016143002299805  "HBs抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016143002399805  "HBs抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HBs-AB-QUANT
+    * #5F016143002299901  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002205101  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016143002202301  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016143002205201  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016143002205301  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016143002399901  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F016143002306301  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F016143002305101  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F016143002302301  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F016143002305201  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F016143002305301  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F016143002299801  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F016143002399801  "HBs抗体(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HBs抗体(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "mU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-NQUANT
+    * #5F360145302299901  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360145302287501  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F360145302288601  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "TMA法"
+    * #5F360145302399901  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360145302387501  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F360145302388601  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "TMA法"
+    * #5F360145302299801  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360145302399801  "HCV核酸増幅検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{Log_IU}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "LogU/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-NRESULT
+    * #5F360145302299911  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360145302287511  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F500145302287501  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F360145302399911  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360145302387511  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F360145302299811  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F500145302299801  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360145302399811  "HCV核酸増幅検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV核酸増幅検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AG-RESULT
+    * #5F360150002399911  "HCV抗原検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360150002305111  "HCV抗原検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360150002302311  "HCV抗原検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360150002399811  "HCV抗原検査(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AG-QUANT
+    * #5F360150002399901  "HCV抗原検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360150002305101  "HCV抗原検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360150002302301  "HCV抗原検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360150002399801  "HCV抗原検査(定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原検査(定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "fmol/L"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AB-DIL
+    * #5F360151402299905  "HCV抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151402211705  "HCV抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F360151402399905  "HCV抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151402311705  "HCV抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F360151402299805  "HCV抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151402399805  "HCV抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AB-RESULT
+    * #5F360151601999911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151601906311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F360151002299911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151002219011  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F360148702206211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5F360151602206311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F360151202202311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360151102205111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360148802205311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360152102205311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360148202202311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148502205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151902205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151502205111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360151702205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148702205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151002205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151302202311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148702204111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "蛍光イムノアッセイ(FIA)_蛍光偏光イムノアッセイ(FPIA)"
+    * #5F360148802202311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360152002205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151802205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151402211711  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F360151302205211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148802205111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360151202299911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148802299911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151002399911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151002319011  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F360148702306211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5F360151602306311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F360151202302311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360151102305111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360148802305311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360152102305311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360148202302311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148502305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151902305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151502305111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360151702305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148702305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151002305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151302302311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148702304111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "蛍光イムノアッセイ(FIA)_蛍光偏光イムノアッセイ(FPIA)"
+    * #5F360148802302311  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360152002305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151802305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151402311711  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F360151302305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148802305211  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148802305111  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360148702299911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148702399911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148802399911  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151601999811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151002299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148702299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151602299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151202299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151102299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148802299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152102299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148202299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148502299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151902299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151502299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151702299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151302299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152002299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151802299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151402299811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151002399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148702399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151602399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151202399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151102399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148802399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152102399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148202399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148502399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151902399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151502399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151702399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151302399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152002399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151802399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151402399811  "HCV抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AB-POS-COI
+    * #5F360151601999931  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360151601906331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F360148702299933  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148702206233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5F360151602206331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F360151202202331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360151102205133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360148802205331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360152102205331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360148202202333  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148502205233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151902205233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151502205133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360151702205231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148702205231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151002205231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151302202333  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148702204133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "蛍光イムノアッセイ(FIA)_蛍光偏光イムノアッセイ(FPIA)"
+    * #5F360148802202333  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360152002205233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151802205233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151302205231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148702205233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148802205133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360151202299931  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148802299933  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148702399933  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148702306233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "ラテックス凝集比濁法"
+    * #5F360151602306331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F360151202302331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360151102305133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360148802305331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360152102305331  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360148202302333  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148502305233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151902305233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151502305133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360151702305231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148702305231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151002305231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151302302333  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360148702304133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "蛍光イムノアッセイ(FIA)_蛍光偏光イムノアッセイ(FPIA)"
+    * #5F360148802302333  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F360152002305233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151802305233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151302305231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148702305233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148802305233  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360148802305133  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F360148802399931  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360148802305231  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F360151601999831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148702299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151602299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151202299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151102299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148802299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152102299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148202299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148502299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151902299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151502299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151702299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148702299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151002299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151302299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148802299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152002299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151802299833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151302299831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148702399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151602399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151202399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151102399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148802399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152102399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148202399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148502399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151902399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151502399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151702399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148702399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151002399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151302399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360148802399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360152002399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151802399833  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360151302399831  "HCV抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AGAB-RESULT
+    * #5F360150102299952  "HCV抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360150102205352  "HCV抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360150102299852  "HCV抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HCV-AGAB-POS-COI
+    * #5F360150102299953  "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360150102205353  "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360150102399953  "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F360150102305353  "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F360150102299853  "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F360150102399853  "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HCV抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1-QUANT
+    * #5F500145302299901  "HIV-1(ウイルスRNA定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1(ウイルスRNA定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{copies}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "copies/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F500145302287501  "HIV-1(ウイルスRNA定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1(ウイルスRNA定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{copies}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "copies/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F500145302288601  "HIV-1(ウイルスRNA定量)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1(ウイルスRNA定量)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{copies}/mL"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "copies/mL"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "TMA法"
+  * #HIV-1-RESULT
+    * #5F500145302299911  "HIV-1(ウイルスRNA定量判定)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1(ウイルスRNA定量判定)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F500145302287511  "HIV-1(ウイルスRNA定量判定)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1(ウイルスRNA定量判定)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "リアルタイムRT-PCR法"
+    * #5F500145302299811  "HIV-1(ウイルスRNA定量判定)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1(ウイルスRNA定量判定)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P24AG-RESULT
+    * #5F560155001999952  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155001919052  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F512141002299911  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F512141002205211  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002219052  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F512141002399911  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F512141002305211  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002319052  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F560155001999852  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F512141002299811  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002299852  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F512141002399811  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399852  "HIV-1p24抗原(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P24AG-POS-COI
+    * #5F512141002299933  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F512141002205233  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F512141002399933  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F512141002305233  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002305352  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F512141002299833  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F512141002399833  "HIV-1p24抗原(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1p24抗原(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P2AB-DIL
+    * #5F560143002299905  "HIV-1+2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002211705  "HIV-1+2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F560143002399905  "HIV-1+2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002311705  "HIV-1+2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F560143002299805  "HIV-1+2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002399805  "HIV-1+2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P2AB-RESULT
+    * #5F560143001999911  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143001919011  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F560143001906311  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F560155001919053  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F560143002299911  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002205111  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560143002211711  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F560143002219011  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F560143002205211  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560143002206311  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F560143002399911  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002305111  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560143002311711  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F560143002319011  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F560143002305211  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560143002306311  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F560155002319053  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "イムノクロマトグラフィ法"
+    * #5F560143001999811  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155001999853  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002299811  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002399811  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399853  "HIV-1+2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P2AB-POS-COI
+    * #5F560143001999931  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143001906331  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F560143002299931  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002205131  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560143002205231  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560143002206331  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F560143002205233  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560143002299933  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002399931  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560143002305131  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560143002305231  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560143002306331  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "免疫比朧法(ネフェロメトリー)"
+    * #5F560143002305233  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002305353  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F560143001999831  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "全血(添加物入り)"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002299831  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002299833  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002399831  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560143002399833  "HIV-1+2抗体(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗体(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P24AGAB-OD
+    * #5F560155002299904  "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155002202304  "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F560155002399904  "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155002302304  "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F560155002299804  "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399804  "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(吸光度)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{absorbance}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "吸光度"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P24AGAB-RESULT
+    * #5F560155002299911  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155002205111  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560155002205311  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F560155002202311  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F560155002205211  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002399911  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155002305111  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560155002305311  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F560155002302311  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F560155002305211  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002305351  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F560155002299811  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399811  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399851  "HIV-1+2抗原・抗体同時(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1P24AGAB-POS-COI
+    * #5F560155002299933  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155002205133  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560155002205331  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F560155002202333  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F560155002205233  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002205231  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002399933  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F560155002305133  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLIA)"
+    * #5F560155002305331  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(ECLIA)"
+    * #5F560155002302333  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "エンザイムイムノアッセイ(EIA)_IEMA法"
+    * #5F560155002305233  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002305231  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "化学･生物発光イムノアッセイ(CLEIA)"
+    * #5F560155002299833  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002299831  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399833  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F560155002399831  "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1+2抗原・抗体同時(陽性コントロール比)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{COI}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "COI"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1-AB-DIL
+    * #5F500143002299905  "HIV-1抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F500143002211705  "HIV-1抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F500143002399905  "HIV-1抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F500143002311705  "HIV-1抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F500143002299805  "HIV-1抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F500143002399805  "HIV-1抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-1-AB-RESULT
+    * #5F500143002299911  "HIV-1抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F500143002211711  "HIV-1抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F500143002399911  "HIV-1抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F500143002311711  "HIV-1抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F500143002299811  "HIV-1抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F500143002399811  "HIV-1抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-1抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-2-AB-DIL
+    * #5F550143002299905  "HIV-2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F550143002211705  "HIV-2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F550143002399905  "HIV-2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F550143002311705  "HIV-2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F550143002299805  "HIV-2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F550143002399805  "HIV-2抗体(希釈倍率)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(希釈倍率)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "{dilution}"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "倍"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+  * #HIV-2-AB-RESULT
+    * #5F550143002299911  "HIV-2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F550143002211711  "HIV-2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F550143002399911  "HIV-2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "その他の測定法"
+    * #5F550143002311711  "HIV-2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "粒子凝集反応"
+    * #5F550143002299811  "HIV-2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血漿"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
+    * #5F550143002399811  "HIV-2抗体(定性)"
+      * ^designation.language = #ja
+      * ^designation.value = "HIV-2抗体(定性)"
+      * ^property[+].code = #unitCode
+      * ^property[=].valueString = "-"
+      * ^property[+].code = #unitDisplay
+      * ^property[=].valueString = "定性･判定"
+      * ^property[+].code = #specimen
+      * ^property[=].valueString = "血清"
+      * ^property[+].code = #method
+      * ^property[=].valueString = "測定法を問わず"
