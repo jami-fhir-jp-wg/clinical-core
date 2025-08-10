@@ -42,11 +42,12 @@ Description: "CLINSでの施設固有コードシステムの存在だけを記�
 * ^title = "CLINSでの施設固有コードシステムの存在だけを記述するコードシステム"
 * ^version = "1.0.0"
 * ^status = #active
-* ^content = #not-present
+* ^content = #complete
 * ^caseSensitive = true
 * ^experimental = false
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* #99999999999999999  "ダミーコード"
 
 CodeSystem: JP_CLINS_ObsLabResult_LocalUncoded_CS
 Id: jp-clins-obslabresult-localuncoded-cs
