@@ -33,7 +33,6 @@ dependencies:
   jpfhir-periodic-terminology.r4:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
     version: 2025.7.0
-
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
 #----------------------------------------
 # ページタイトル名称設定
