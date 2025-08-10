@@ -69,21 +69,14 @@ jobs:
       uses: suisei-cn/actions-download-file@v1.4.0
       id: downloadfile2
       with:
-        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-2.0.0-dev.tgz"
-        target: .
-
-    - name: Download the file
-      uses: suisei-cn/actions-download-file@v1.4.0
-      id: downloadfile3
-      with:
-        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-periodic-terminology.r4-2025.7.0-dev.tgz"
+        url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-latest-dev.tgz"
         target: .
 
     - name: Prepare for using all dependent packages including Jp modified version of hl7.fhir.r4.core Package 
       env:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
-        JPTerminologyCOREdir: jpfhir-terminology.r4#2.0.0
-        JPTerminologyCOREPtgz: jpfhir-terminology.r4-2.0.0-dev.tgz
+        JPTerminologyCOREdir: jpfhir-terminology.r4#latest
+        JPTerminologyCOREPtgz: jpfhir-terminology.r4-latest-dev.tgz
         JPCOREtgzjp: jp-core.r4-1.1.2-clins.tgz
         JPCOREdir: jp-core.r4#1.1.2-clins
       run: |
@@ -107,19 +100,6 @@ jobs:
         mkdir -p /home/runner/.fhir/packages/$JPCOREdir
         ls -l /home/runner/.fhir/packages/
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPCOREdir/
-
-    - name: Prepare for JPTerminologyPtgz jpfhir-periodic-terminology.r4-2025.7.0-dev.tgz
-      env:
-        JPTerminologyPdir: jpfhir-periodic-terminology.r4#2025.7.0
-        JPTerminologyPtgz: jpfhir-periodic-terminology.r4-2025.7.0-dev.tgz
-      run: |
-        mkdir -p /home/runner/.fhir/work2
-        mv $JPTerminologyPtgz /home/runner/.fhir/work2/$JPTerminologyPtgz
-        cd /home/runner/.fhir/work2
-        tar xzf $JPTerminologyPtgz
-        cd /home/runner/.fhir
-        mkdir -p packages/$JPTerminologyPdir
-        mv /home/runner/.fhir/work2/package /home/runner/.fhir/packages/$JPTerminologyPdir
 
     - name: Set current datetime
       run: echo "CURRENT_DATETIME=$(date '+%Y-%m-%dT%H:%M')" >> $GITHUB_ENV
