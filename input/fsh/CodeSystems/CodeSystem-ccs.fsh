@@ -33,7 +33,7 @@ Description: "検体検査結果項目で標準コードが割り当てられな
 * ^caseSensitive = false
 * #99999999999999999  "未標準化コード項目(JLAC)"
 
-
+/*
 CodeSystem: JP_CLINS_LocalLaboCode_CS
 Id: jp-clins-localLaboCode-cs
 Title: "CLINSでの施設固有コードシステムの存在だけを記述するコードシステム"
@@ -48,6 +48,7 @@ Description: "CLINSでの施設固有コードシステムの存在だけを記�
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * #99999999999999999  "ダミーコード"
+*/
 
 CodeSystem: JP_CLINS_ObsLabResult_LocalUncoded_CS
 Id: jp-clins-obslabresult-localuncoded-cs
