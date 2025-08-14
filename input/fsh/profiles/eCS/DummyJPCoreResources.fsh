@@ -177,7 +177,7 @@ Description:    "JP-Specimen　プロファイル"
 * ^fhirVersion = #4.0.1
 * meta.lastUpdated 0.. MS
 */  
-
+/*
 Profile:        JP_Observation_Common_eCS
 Parent:			JP_Observation_Common
 Id:             JP-Observation-Common-eCS
@@ -190,9 +190,10 @@ Description:    "Derived Profile from JP-Core"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
-
-
 * meta.lastUpdated 0.. MS
+
+*/
+
 
 Profile:        JP_DocumentReference_CDAdocument
 Parent:			JP_DocumentReference

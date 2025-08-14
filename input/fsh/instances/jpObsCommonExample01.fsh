@@ -1,13 +1,13 @@
 // ObservationCommonリソース
 
 Instance: Example-JP-Obs-Common-eCS-PS-textOnly01
-InstanceOf: JP_Observation_Common_eCS
+InstanceOf: JP_Observation_Common
 Usage: #example
-  
+
 Description: "Observationリソース　（診療情報提供書　腹部所見テキスト）"
 
 * meta.lastUpdated = "2021-11-26T10:00:00+09:00"
-* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS"
+* meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common"
 * language = #ja
 
 * contained[+] = Example-Contained-JP-Encounter-IMP

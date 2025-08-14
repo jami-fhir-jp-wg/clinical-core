@@ -124,7 +124,7 @@ and bundleData 0..* MS   // 他のBundle情報（たとえば処方や退院時�
 * entry[familyHistory] ^short = "家族歴情報を記述したFamilyMemberHistoryリソースを参照"
 * entry[familyHistory] ^definition = "家族歴情報情報を記述して参照する。"
 
-* entry[observation].resource only  JP_Observation_Common_eCS
+* entry[observation].resource only  JP_Observation_Common
 * entry[observation] ^short = "身体所見／感染症情報／社会歴・生活習慣情報／検査結果を記述したObservationリソースを参照"
 * entry[observation] ^definition = "身体所見／感染症情報／社会歴・生活習慣情報／検査結果を記述して参照する。"
 

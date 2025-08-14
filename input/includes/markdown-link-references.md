@@ -43,7 +43,6 @@
 [JP_FamilyMemberHistory_eCS]: StructureDefinition-JP-FamilyMemberHistory-eCS.html
 [JP_Immunization_eCS]: StructureDefinition-JP-Immunization-eCS.html
 [JP_MedicationRequest_eCS]: StructureDefinition-JP-MedicationRequest-eCS.html
-[JP_Observation_Common_eCS]: StructureDefinition-JP-Observation-Common-eCS.html
 [JP_Observation_LabResult_eCS]: StructureDefinition-JP-Observation-LabResult-eCS.html
 [JP_Organization_eCS_coveragePayer]: StructureDefinition-JP-Organization-eCS-coveragePayer.html
 [JP_Organization_eCS_department]: StructureDefinition-JP-Organization-eCS-department.html

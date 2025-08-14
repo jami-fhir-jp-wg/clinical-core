@@ -149,7 +149,6 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_FamilyMemberHistory_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Immunization_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS
-    - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_Common_eCS
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS
     - http://jpfhir.jp/fhir/ePrescription/StructureDefinition/JP_Organization_eCS_coveragePayer
     - http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Organization_eCS_department

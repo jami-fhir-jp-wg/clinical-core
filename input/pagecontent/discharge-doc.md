@@ -119,8 +119,8 @@
         <td style="column-width:30%">
            <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="StructureDefinition-JP-Observation-Common-eCS.html"
-                title="StructureDefinition/JP-Observation-Common-eCS">JP_Observation_Common_eCS</a></p>
+           <p> <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Observation-Common.html"
+                title="StructureDefinition/JP-Observation-Common">JP_Observation_Common</a></p>
         </td>
         <td>
             <p>Observationリソース（検体検査結果／感染症検体検査結果）</p>
