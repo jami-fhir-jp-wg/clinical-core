@@ -375,7 +375,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:147pt">
+                                    <tr style="height:166pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">timing</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
@@ -383,22 +383,23 @@
                                         <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI標準用法コード、または厚生労働省電子処方箋用法コードによりコード化し、コード化できない場合にもダミーコードを使用してコード化する。施設固有のコード化による記述も可能であるが、できる限り上記標準コードと併用することは望ましい。
-<span   class="font_red font_bold">電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化することが必須。</span></td>
+<span   class="font_red font_bold">電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードによりコード化するかダミーコードを使用することが必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:144pt">
+                                    <tr style="height:234pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">timing</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">system</td>
                                         <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI標準用法コード(http://jami.jp/CodeSystem/MedicationUsage)、または厚生労働省電子処方箋用法コードを識別するURI（固定値参照）。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードを表すsystem値を設定する。
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI標準用法コード(http://jami.jp/CodeSystem/MedicationUsage)、または厚生労働省電子処方箋用法コードを識別するURI（固定値参照）。電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードを表すsystem値、またはダミーコードのsystem値を設定する。
 内部利用などで施設固有コードを使用する場合には、"http://jpfhir.jp/fhir/clins/CodeSystem/MedicationUsage/医療機関10桁コード"を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">JAMI表標準用法コード："http://jami.jp/CodeSystem/MedicationUsage"
-厚生労働省電子処方箋用法コード: "：　http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription"</td>
+厚生労働省電子処方箋用法コード: ：　"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationUsage_ePrescription"
+ダミーコードを使用する場合："http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS"</td>
                                     </tr>
                                     <tr style="height:45pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">timing</td>
@@ -411,14 +412,14 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20240601"</td>
                                     </tr>
-                                    <tr style="height:45pt">
+                                    <tr style="height:76pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">timing</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
                                         <td class="xl_m" style="color:#000000; background:#FFBF00; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">code</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">用法コード。<span   class="font_red font_bold">電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コードを設定する。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">用法コード。<span   class="font_red font_bold">電子カルテ情報共有サービスでは、厚生労働省電子処方箋用法コード、またはダミーコード "0X0XXXXXXXXX0000"を設定する。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1013044400000000"</td>
                                     </tr>
