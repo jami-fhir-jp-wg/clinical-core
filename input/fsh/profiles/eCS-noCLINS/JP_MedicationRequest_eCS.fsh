@@ -121,15 +121,21 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * valueCodeableConcept from $JP_Department_SsMix_VS (preferred)
   * valueCodeableConcept.text 1..1
   
-* identifier 3.. MS // JP_MedicationRequestでは2..*が設定されているのを3に変更
+* identifier 3.. MS // JP_MedicationRequestでは2..*が設定されているのを3に変更 
   * insert relative_short_definition("このリソース情報の識別ID、および必要であれば処方箋における剤グループ番号、剤グループ内の順序番号などを格納する。")
-  * ^comment = "リソース一意識別IDの仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
+  * ^comment = "処方オーダに対するID（リソース一意識別ID）の仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
 * identifier[rpNumber] MS
 * identifier[orderInRp] MS
-* identifier[requestIdentifierCommon] MS
+* identifier[requestIdentifierCommon] 0..1 //  診療情報提供書などではリソース情報の識別IDは出力不要であるため。
+  * ^short = "全国で⼀意となる処方箋ID。"
+  * ^definition = "全国で⼀意となる処方箋ID。system='urn:oid:1.2.392.100495.20.3.11'"
+  * ^comment = "全国で⼀意となる処方箋IDは、全国統一的な一意の処方箋番号システムが存在する場合に使用可能なIDであるが、今のところ存在しないため、当面使用することはない。"
 * identifier[requestIdentifier] 1..1 MS
-* identifier[requestIdentifier].value 1..1 MS
-  * insert relative_short_definition("「リソース一意識別ID」の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
+  * ^short = "処方箋を作成・発行した医療機関において、オーダシステム等でこのオーダを一意に識別できる処方オーダID"
+  * ^definition = "処方オーダに対するID（リソース一意識別IDに相当する）。system='http://jpfhir.jp/fhir/core/IdSystem/resourceInstance-identifier'"
+  * ^comment = "このオーダIDがあれば、処方箋を作成・発行した医療機関において、オーダシステムでこの処方オーダーを検索することができるキー情報に相当する。診療情報提供書や退院時サマリーなどで単に処方内容だけを記述するだけの場合や、オーダに基づかない処方内容の場合には、適当なダミー番号でも構わないが、設定は必須。"
+* identifier[requestIdentifier].value 1..1 MS // 
+  * insert relative_short_definition("処方オーダに対するID（リソース一意識別ID）の文字列。URI形式を使う場合には、urn:ietf:rfc:3986に準拠すること。")
 
 * status = #completed
 * intent = #order
