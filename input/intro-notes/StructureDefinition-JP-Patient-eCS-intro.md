@@ -21,7 +21,7 @@
   - meta.lastUpdated : 最終更新日時
   - meta.profile : プロファイルURL
   - identifier : インスタンス識別ID。電子カルテ情報共有サービスでは、被保険者個人識別子の記述が必須。本ページ　セクション6で解説。
-  - name : 姓と名、それぞれname.family、name.givenが必須。
+  - name : name.given(名)が必須。
   - name : name.text　が必須。
   - gender : 性別　必須。
   - birthDate : 生年月日　必須。
