@@ -339,8 +339,9 @@ Description:    "Derived Profile from JP-Core"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
-
 * meta.lastUpdated 0.. MS
+* bodySite 0..1
+  * ^requirements = "複数の部位が考えられる場合、デバイスのターゲット部位を把握することは追跡において重要です。コード以外の情報が必要な場合は、拡張機能 [http://hl7.org/fhir/StructureDefinition/bodySite](http://hl7.org/fhir/StructureDefinition/bodySite) を使用してください。"
 
 /*
 Profile:        JP_Device
