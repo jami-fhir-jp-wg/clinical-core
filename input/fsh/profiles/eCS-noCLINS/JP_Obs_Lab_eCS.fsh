@@ -42,7 +42,7 @@ Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/J
 Invariant: require-refRange-forQuantityValue-against-CoreLaboSet
 Description: "R06041 電子カルテ情報共有サービスの検査結果（43項目）、感染症結果（5項目）の定量値には結果の基準値が必須。"
 Severity: #error
-Expression: "((code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_CS').exists()) and (value.ofType(Quantity))) implies referenceRange.where(low.exists() or high.exists()).exists()"
+Expression: "((code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_CS').exists()) and (value.ofType(Quantity).exists())) implies referenceRange.where(low.exists() or high.exists()).exists()"
 
 
 // ==================================================
