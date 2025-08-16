@@ -56,7 +56,7 @@ Description: "MedicationRequestリソース　（診療情報提供書　内服�
 * identifier[requestIdentifier].value = "1311234567-2020-00123456"
 * intent = #order
 
-* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#103831601 "カルボシステイン錠２５０ｍｇ「サワイ」"
+//* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#103831601 "カルボシステイン錠２５０ｍｇ「サワイ」"
 
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2233002F1280 "カルボシステイン錠２５０ｍｇ「サワイ」"
 

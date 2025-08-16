@@ -56,7 +56,7 @@ Description: "内服　処方例１件　MedicationRequestリソースのイン�
 
 * intent = #order
 
-* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#103831601 "カルボシステイン錠２５０ｍｇ「サワイ」"
+//* medicationCodeableConcept.coding[+] = $JP_MedicationCodeHOT9_CS#103831601 "カルボシステイン錠２５０ｍｇ「サワイ」"
 
 * medicationCodeableConcept.coding[+] = $JP_MedicationCodeYJ_CS#2233002F1280 "カルボシステイン錠２５０ｍｇ「サワイ」"
 
