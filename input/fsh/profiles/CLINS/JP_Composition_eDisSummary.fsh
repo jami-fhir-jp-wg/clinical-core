@@ -275,7 +275,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[detailsOnAdmissionSection].mode ..0
 * section[structuredSection].section[detailsOnAdmissionSection].orderedBy ..0
 * section[structuredSection].section[detailsOnAdmissionSection].entry 1..1 MS
-* section[structuredSection].section[detailsOnAdmissionSection].entry only Reference(JP_Encounte_eCS)
+* section[structuredSection].section[detailsOnAdmissionSection].entry only Reference(JP_Encounter_eCS)
 * section[structuredSection].section[detailsOnAdmissionSection].entry ^short = "Encounterリソースを参照"
 * section[structuredSection].section[detailsOnAdmissionSection].entry ^definition = "Encounterリソースを参照"
 * section[structuredSection].section[detailsOnAdmissionSection].emptyReason ..1 MS
