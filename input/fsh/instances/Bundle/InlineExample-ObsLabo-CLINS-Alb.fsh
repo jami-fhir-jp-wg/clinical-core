@@ -51,6 +51,8 @@ Description: "Observationリソース（検体検査結果）アルブミン　3
 
 * valueQuantity.value = 3.9
 * valueQuantity.unit = "mg/L"
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code = #mg/L
 //* interpretation.coding.version = "4.0.1"
 //* interpretation.coding = $v3-ObservationInterpretation#null "範囲未定義、もしくは正常が適用されない"
 //* interpretation.text = "範囲未定義、もしくは正常が適用されない"
