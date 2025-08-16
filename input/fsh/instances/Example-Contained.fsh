@@ -159,7 +159,6 @@ Description: "埋め込み　Specimemリソース　検体検査材料　尿(含
 
 //* meta.profile[+] = $JP_Patient_eCS
 * id = "Example-Contained-JP-Specimen-Urine"
-
 * type.coding[+] = $JP_ObservationSampleMaterialCodeJLAC10_CS#001  "尿(含むその他)"
 * type.coding[+] = http://terminology.hl7.org/CodeSystem/v2-0487#UR	"Urine"
 * type.text = "尿"
