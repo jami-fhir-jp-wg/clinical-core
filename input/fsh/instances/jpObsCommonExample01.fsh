@@ -25,8 +25,12 @@ Description: "Observationリソース　（診療情報提供書　腹部所見�
 * subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 
 * encounter = Reference(Example-Contained-JP-Encounter-IMP)
+* effectiveDateTime = "2021-07-05T11:19:41+09:00"
 
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimum-D002)
 
 * valueString = "上腹部圧痛あり、その他特に所見なし。"
+
+
+
 
