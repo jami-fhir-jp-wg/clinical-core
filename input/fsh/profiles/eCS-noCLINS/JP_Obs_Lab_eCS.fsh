@@ -39,7 +39,7 @@ Expression: "code.coding.where(system ='http://jpfhir.jp/fhir/clins/CodeSystem/J
 
 
 // R06041 電子カルテ情報共有サービスで取り扱う検査結果（43項目）、感染症結果（5項目）について、結果を登録する際に基準値（基準範囲）の登録も必須・43+5項目以外で使用する一般項目JLACコード、未標準化コード、施設固有コードのCodeSystemをチェック対象外
-Invariant: require-refRange-forQuantityValue-against-CoreLaboSet
+Invariant: require-refRange-forQuantityValue-against-CoreLaboOrInfectionSet
 Description: "R06041 電子カルテ情報共有サービスの検査結果（43項目）、感染症結果（5項目）の定量値には結果の基準値が必須。"
 Severity: #error
 Expression: "((code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_CS').exists()) and (value.ofType(Quantity).exists())) implies referenceRange.where(low.exists() or high.exists()).exists()"
@@ -65,7 +65,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * obeys referenceRangeLowUnits-isSameAs-resultValueUnits
 * obeys referenceRangeHighUnits-isSameAs-resultValueUnits
 * obeys warn-localCode-observation-laboresult // R6022 Observation CLINS ではローカルコードの記述は必須である。注意喚起
-* obeys require-refRange-forQuantityValue-against-CoreLaboSet
+* obeys require-refRange-forQuantityValue-against-CoreLaboOrInfectionSet
 
 * extension contains JP_eCS_InstitutionNumber named eCS_InstitutionNumber ..1 MS
 * extension contains JP_eCS_Department named eCS_Department ..* MS
