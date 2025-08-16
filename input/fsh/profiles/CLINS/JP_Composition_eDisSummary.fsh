@@ -104,7 +104,7 @@ Identifier型のvalue要素に、保険医療機関番号（10桁）、発行年
 * encounter.reference ^short = "EncounterリソースのfullUrl要素に指定されるUUIDを指定。"
 * encounter.reference ^definition = "Bundleリソースに記述されるEncounterリソースのfullUrl要素に指定されるUUIDを指定。\r\n例：\"urn:uuid:12f0a9a6_a91d_8aef_d14e_069795b89c9f\""
 * encounter.reference 1..1 MS
-* encounter only Reference(JP_Encounter)
+* encounter only Reference(JP_Encounter_eCS)
 
 * date ^definition = "このリソースを作成または最後に編集した日時。ISO8601に準拠し、秒の精度まで記録し、タイムゾーンも付記する。\r\n午前0時を\"24:00\"と記録することはできないため\"00:00\"と記録すること。　\r\n例：\"2020_08_21T12:28:21+09:00\""
 * date 1..1 MS
@@ -275,7 +275,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[detailsOnAdmissionSection].mode ..0
 * section[structuredSection].section[detailsOnAdmissionSection].orderedBy ..0
 * section[structuredSection].section[detailsOnAdmissionSection].entry 1..1 MS
-* section[structuredSection].section[detailsOnAdmissionSection].entry only Reference(JP_Encounter)
+* section[structuredSection].section[detailsOnAdmissionSection].entry only Reference(JP_Encounte_eCS)
 * section[structuredSection].section[detailsOnAdmissionSection].entry ^short = "Encounterリソースを参照"
 * section[structuredSection].section[detailsOnAdmissionSection].entry ^definition = "Encounterリソースを参照"
 * section[structuredSection].section[detailsOnAdmissionSection].emptyReason ..1 MS
@@ -327,7 +327,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[reasonForAdmissionSection].mode ..0
 * section[structuredSection].section[reasonForAdmissionSection].orderedBy ..0
 * section[structuredSection].section[reasonForAdmissionSection].entry 0..1 MS
-* section[structuredSection].section[reasonForAdmissionSection].entry only Reference(JP_Encounter)
+* section[structuredSection].section[reasonForAdmissionSection].entry only Reference(JP_Encounter_eCS)
 * section[structuredSection].section[reasonForAdmissionSection].entry ^short = "入院理由をEncounter.reasonCodeに記述する"
 * section[structuredSection].section[reasonForAdmissionSection].entry ^definition = "CodeableConceptであるEncounter.reasonCodeに病名あるいはtextで記述できる"
 * section[structuredSection].section[reasonForAdmissionSection].emptyReason ..1
@@ -449,7 +449,7 @@ and authorDepartment 0..1 MS
 * section[structuredSection].section[detailsOnDischargeSection].mode ..0
 * section[structuredSection].section[detailsOnDischargeSection].orderedBy ..0
 * section[structuredSection].section[detailsOnDischargeSection].entry 1..1 MS
-* section[structuredSection].section[detailsOnDischargeSection].entry only Reference(JP_Encounter)
+* section[structuredSection].section[detailsOnDischargeSection].entry only Reference(JP_Encounter_eCS)
 * section[structuredSection].section[detailsOnDischargeSection].entry ^short = "Encounterへの参照"
 * section[structuredSection].section[detailsOnDischargeSection].entry ^definition = "Encounterへの参照"
 * section[structuredSection].section[detailsOnDischargeSection].emptyReason ..1

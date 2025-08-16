@@ -83,9 +83,9 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
     and order 0..1
 //    and patient 0..1 MS
 
-* contained[encounter] only  JP_Encounter  or JP_Encounter_eCS
+* contained[encounter] only  JP_Encounter_eCS
   * insert relative_short_definition("【電子カルテ情報共有サービスでは必須】処方情報を作成したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "encounter要素から参照される場合には、そのJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
+  * ^comment = "encounter要素から参照される場合には、そのJP_Encounter_eCSに従うリソースの実体。JP_Encounter_eCSに従うリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounter_eCSに従うリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
 
 * contained[requester] only  JP_Practitioner
   * insert relative_short_definition("処方情報を作成したときの作成医療者情報をコンパクトに格納したPractitionerリソース")
@@ -244,7 +244,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter or JP_Encounter_eCS)
+* encounter only  Reference(JP_Encounter_eCS)
   * insert relative_short_definition("処方を発行したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」のいずれかを使用すること。電子カルテ情報サービス(このリソースが２文書に含まれるケース)では必須。"
 

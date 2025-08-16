@@ -33,7 +33,7 @@ Description: "CLINS 電子カルテ情報共有サービスへの5情報送信�
 * obeys condition-needs-extension-of-Department
 * obeys condition-needs-onsetDateTime
 
-* obeys observation-needs-contained-of-Encounter //contained (JP_Encounter) :電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
+* obeys observation-needs-contained-of-Encounter //contained (JP_Encounter_eCS) :電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-needs-extension-of-Department  //extension (eCS_Department) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-needs-performer //performer : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須
 * obeys observation-needs-contained-of-Practitioner //contained (JP_Practitioner) : 電子カルテ情報共有サービス（5情報のひとつとして送信される場合）では必須

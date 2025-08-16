@@ -96,7 +96,7 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
     and recorder 0..1 MS
 //    and patient 0..1 MS
 
-* contained[encounter] only  JP_Encounter  or JP_Encounter_eCS
+* contained[encounter] only  JP_Encounter_eCS
   * insert relative_short_definition("傷病名情報を記録（登録）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
   * ^comment = "入院外来区分情報。encounter要素から参照されるJP_Encounterリソースの実体。JP_Encounterリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounterリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービスでは必須。"
 
@@ -229,7 +229,7 @@ and receipt 0..
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法（2）　Bundleリソースの別のentryのリソースを参照する方法（fullUrlを用いるリテラル参照） 」に従う。"
 
 * encounter 0..1 MS
-* encounter only  Reference(JP_Encounter or JP_Encounter_eCS)
+* encounter only  Reference(JP_Encounter_eCS)
   * insert relative_short_definition("病名をつけたときの受診情報（入外区分など）を記述しているEncounterリソースへの参照")
   * ^comment = "記述方法は、実装ガイド本文の「リソースへの参照方法　(1)」を使用すること。"
 

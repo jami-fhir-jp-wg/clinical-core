@@ -80,7 +80,7 @@ Description:    "診療情報・サマリー汎用 CarePlan"
 * encounter  0..1    MS
 * encounter ^short = "対象となる入院情報または退院情報を含む入院詳細情報"
 * encounter ^definition = "対象となる入院情報または退院情報を含む入院詳細情報"
-* encounter  only Reference(JP_Encounter)
+* encounter  only Reference(JP_Encounter_eCS)
 
 * period    1..1 MS
 * period ^short = "このプランがカバーする期間"

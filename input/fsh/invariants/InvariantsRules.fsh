@@ -236,19 +236,19 @@ Description: "R9012:Bundleに含まれるPatient以外のリソースには、�
 Severity: #error
 Expression: "entry.tail().resource.all(extension.where(url='http://jpfhir.jp/fhir/clins/Extension/StructureDefinition/JP_eCS_InstitutionNumber').value.ofType(Identifier).value.matches('^[0-4][0-9][1-3][0-9]{7}$'))"
 
-// R9013O Bundleに含まれるObservationリソースには、Contained JP_Encounterリソースが必須である。
+// R9013O Bundleに含まれるObservationリソースには、Contained JP_Encounter_eCSリソースに従うが必須である。
 Invariant: observation-needs-contained-of-Encounter
-Description: "R9013O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Encounterリソースが必須である。"
+Description: "R9013O:Bundleに含まれるすべてのObservationのリソースには、Contained JP_Encounter_eCSに従うリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Observation).all(contained.meta.where(profile.where($this.startsWith('http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter')).exists()).exists())"
+Expression: "entry.select(resource as Observation).all(contained.meta.where(profile.where($this.startsWith('http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS')).exists()).exists())"
 
 
                 
-// R9013C  Bundleに含まれるConditionリソースには、Contained JP_Encounterリソースが必須である。
+// R9013C  Bundleに含まれるConditionリソースには、Contained JP_Encounter_eCSに従うリソースが必須である。
 Invariant: condition-needs-contained-of-Encounter
-Description: "R9013C:Bundleに含まれるすべてのConditionのリソースには、Contained JP_Encounterリソースが必須である。"
+Description: "R9013C:Bundleに含まれるすべてのConditionのリソースには、Contained JP_Encounter_eCSに従うリソースが必須である。"
 Severity: #error
-Expression: "entry.select(resource as Condition).all(contained.meta.where(profile.where($this.startsWith('http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter')).exists()).exists())"
+Expression: "entry.select(resource as Condition).all(contained.meta.where(profile.where($this.startsWith('http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Encounter_eCS')).exists()).exists())"
 
 
 // R9014C  Bundleに含まれるConditionリソースには、診療科拡張が必須である。

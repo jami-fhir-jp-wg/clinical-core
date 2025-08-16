@@ -93,7 +93,7 @@ Description:    "JP-ServiceRequest　Commonプロファイル(JP-Core V1.2系)"
 //
 * encounter ^short = "サービスがリクエストされる診療時の場面"
 * encounter ^definition = "サービスがリクエストされる医療背景についての追加情報を提供する診療時の場面"
-* encounter only Reference(JP_Encounter)
+* encounter only Reference(JP_Encounter_eCS)
 //
 * occurrence[x] ^short = "サービスを実施すべき日時"
 * occurrence[x] ^definition = "リクエストされたサービスを実施すべき日時"
