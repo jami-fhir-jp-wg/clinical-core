@@ -33,7 +33,7 @@ RuleSet: core43LaboItemInstanceCodeUnit(laboItemFHIRcode,itemName,local,jlac,JLA
 * issued = "2024-12-15T14:11:13.000+09:00"
 * performer[+] = Reference(Example-Contained-JP-Practitioner-minimum-D002)
 
-RuleSet: laboItemValueStringWithUnit(specimen,valueNum,unitString,unitCode)
+RuleSet: laboItemValueStringWithUnit(specimen,valueNum,unitString,unitCode,low,high)
 // valueString は引用なしの数値文字列
 // unitStringは引用符なしの文字列
 * valueQuantity.value = {valueNum}
@@ -48,6 +48,17 @@ RuleSet: laboItemValueStringWithUnit(specimen,valueNum,unitString,unitCode)
 //* specimen.type = "Specimen"
 * specimen.display = "{specimen}"
 * specimen.type = "Specimen"
+
+* referenceRange.low.value = {low}
+* referenceRange.low.unit = "{unitString}"
+* referenceRange.low.system = "http://unitsofmeasure.org"
+* referenceRange.low.code = #{unitCode}
+
+* referenceRange.high.value = {high}
+* referenceRange.high.unit = "{unitString}"
+* referenceRange.high.system = "http://unitsofmeasure.org"
+* referenceRange.high.code = #{unitCode}
+
 
 RuleSet: laboItemValueString(specimen,valueString)
 // valueString は引用なしの文字列
