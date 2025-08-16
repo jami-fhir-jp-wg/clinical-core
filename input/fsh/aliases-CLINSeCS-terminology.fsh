@@ -1,7 +1,11 @@
 // Terminology clins固有に必要なAlias
 
-Alias: $JP_ObservationSampleMaterialCode_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCode_CS
-Alias: $JP_ObservationSampleMaterialCode_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationSampleMaterialCode_VS
+Alias: $JP_ObservationSampleMaterialCodeJLAC10_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC10_CS
+Alias: $JP_ObservationSampleMaterialCodeJLAC10_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationSampleMaterialCodeJLAC10_VS
+
+Alias: $JP_ObservationSampleMaterialCodeJLAC11_CS = http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CS
+Alias: $JP_ObservationSampleMaterialCodeJLAC11_VS = http://jpfhir.jp/fhir/core/ValueSet/JP_ObservationSampleMaterialCodeJLAC11_VS
+
 //Alias: $JP_CLINS_ValueSet_CoreLaboJLAC10_VS =   http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_VS
 //Alias: $JP_CLINS_ValueSet_CoreLaboJLAC11_VS =   http://jpfhir.jp/fhir/clins/ValueSet/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_VS
 //Alias: $JP_CLINS_ValueSet_InfectionLaboJLAC10_VS =   http://jpfhir.jp/fhir/clins/ValueSet/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_VS
