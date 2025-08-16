@@ -71,4 +71,7 @@ markdownには%
 #Ignore ObservationLocalCode messages
 A definition for CodeSystem 'http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_ObsLabResult_LocalCode_CS' could not be found%
 A definition for CodeSystem 'http://jpfhir.jp/fhir/eCS/CodeSystem/DrugCode/19911234567' could not be found%
-%CodeSystem%未知です
+%CodeSystem%未知です%
+%複数の一致するプロファイル%
+%matched more than one%
+%複数のprofileがマッチ%
