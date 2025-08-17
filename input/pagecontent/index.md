@@ -16,6 +16,7 @@ table th {
 }
     h1 {
       counter-reset: chapter;
+      counter-increment: chapter;
     }
 
     h2 {
@@ -77,6 +78,8 @@ table th {
 </style>  
 
 <!-- no-toc -->
+
+<h2>実装ガイドIG</h2>
 
 ### 留意事項
 
