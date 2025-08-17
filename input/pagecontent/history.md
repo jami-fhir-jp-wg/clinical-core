@@ -6,7 +6,7 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### Ver.1.12.0-pre20250818（非公開）
+### Ver.1.12.0-pre20250815（非公開）
   - No.1 : CLINS：Bundle_CLINSの制約構文に係る制約の修正
     - JP_Bundle_CLINSの次の制約を修正（profileにバージョンが入っていない場合、どのようなプロファイルでもデータ登録ができてしまう）
     - validEntryProfile-XXX (XXXはAllergyIntolerance、Condition、MedicationRequest、ObservationLabResult)
