@@ -1,19 +1,48 @@
 
   <style type="text/css">
 
-table {
-  border: solid 1px black;
-  border-collapse: collapse;
-}
+  table {
+    border: solid 1px black;
+    border-collapse: collapse;
+  }
 
-table td {
-  border: solid 1px black;
+  table td {
+    border: solid 1px black;
 
-}
-table th {
-  border: solid 1px black;
+  }
+  table th {
+    border: solid 1px black;
 
-}
+  }
+    h1 {
+      counter-reset: chapter;
+      counter-increment: chapter;
+    }
+
+    h2 {
+      counter-reset: sub-chapter;
+      counter-increment: chapter;
+    }
+
+    h3 {
+      counter-reset: section;
+      counter-increment: chapter;
+    }
+
+    h4 {
+      counter-reset: sub-section;
+      counter-increment: chapter;
+    }
+
+    h5 {
+      counter-reset: composite;
+      counter-increment: chapter;
+    }
+
+    h6 {
+      counter-reset: sub-composite;
+      counter-increment: chapter;
+    }
 
     h1:before {
       color: black;
