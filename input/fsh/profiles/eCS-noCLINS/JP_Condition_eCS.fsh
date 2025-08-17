@@ -103,7 +103,8 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 
 * contained[encounter] only  JP_Encounter_eCS
   * insert relative_short_definition("【電子カルテ情報共有サービス（5情報送信）では必須】傷病名情報を記録（登録）したときの入院外来受診情報をコンパクトに格納したEncounterリソース")
-  * ^comment = "_eCSに従う.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービスでは必須。"
+  * ^comment = "入院外来区分情報。encounter要素から参照されるJP_Encounter_eCSプロファイルに従うEncounterリソースの実体。JP_Encounter_eCSリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounter_eCSリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分など）を記述して使用する。電子カルテ情報サービスでは必須。"
+
 
 * contained[recorder] only  JP_Practitioner
   * insert relative_short_definition("傷病名情報の記録者情報をコンパクトに格納したPractitionerリソース")
