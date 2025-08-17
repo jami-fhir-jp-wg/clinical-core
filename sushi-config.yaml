@@ -86,6 +86,7 @@ menu:
     最新の標準(diff)版: https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.x.x-temp@buildDateXXX-temp.tgz
     最新のsnapshot版: https://jpfhir.jp/fhir/clins/pkghistory/jp-eCSCLINS.r4-1.x.x-temp@buildDateXXX-temp-snap.tgz
     全バージョン一覧: all-igs.html
+    
 #-----------------------------------------
 # IG 外部パラメータ設定
 #-----------------------------------------
