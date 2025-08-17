@@ -52,9 +52,9 @@ Description: "Patientリソース　（患者情報）01  データ作成例"
 Instance: Example-JP-Patient-eCS-02-Contained
 InstanceOf: JP_Patient_eCS
 Usage: #example
-Description: "Patientリソース　（患者情報）02"
+Description: "Patientリソース　（患者情報）02  姓なし"
 // * text.status = #additional
-// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報02  データ作成例</p> </div>"
+// * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> <p>患者情報02  姓なし データ作成例</p> </div>"
 
 * meta.lastUpdated = "2023-04-01T10:00:00+09:00"    //必須
 * meta.profile[+] = "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS|x.x.x-instance"
