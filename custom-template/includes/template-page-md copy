@@ -54,7 +54,8 @@
   {% include {{path}}.md %}
   {% endcapture %}
 
-  {% assign teststring = no-toc-content | markdownify | remove: '###### ' | remove: '##### '| remove: '#### ' |
-  replace: "<h3", "### " | remove_first: '### ' %} {% assign h3headers="### " %} {% if teststring contains h3headers %}
+  {% assign teststring = no-toc-content | markdownify | remove: '###### ' | remove: '##### '| remove: '#### ' |replace: "<h3", "### " | remove_first: '### ' %}
+  {% assign h3headers = "### " %}
+  {% if teststring contains h3headers %}
     {{ toc-content | markdownify }} {% else %} {{ no-toc-content | markdownify }} {% endif %} </div>
     {% include fragment-pageend.html %}
