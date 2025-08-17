@@ -165,7 +165,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS|x.y.z
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">0..1*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Specimen )</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">specimen要素(検体材料情報bの要素)から参照される場合には、そのJP_Specimenリソースの実体。JP_Specimenリソースにおける必要最小限の要素（type要素にJLAC10またはJLAC11検体材料コード情報を設定するなど）だけが含まれればよい。
-JLAC10検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC10_CS、JFAGY11検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CSのそれぞれCodeSystemを使用する。</td>
+JLAC10検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC10_CS、JLAC11検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CSのそれぞれCodeSystemを使用する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
