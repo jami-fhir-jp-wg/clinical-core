@@ -243,7 +243,7 @@ Bundleリソースのidentifier要素は、電子カルテ情報共有サービ�
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Patient_eCS"
           ]
         }, 
-<以降省略></td>
+＜以降省略＞</td>
                                     </tr>
                                     <tr style="height:62pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">entry[+]</td>
@@ -285,7 +285,7 @@ Bundleリソースのidentifier要素は、電子カルテ情報共有サービ�
             "http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Observation_LabResult_eCS"
           ]
         }, 
-<以降省略></td>
+＜以降省略＞</td>
                                     </tr>
                                 </tbody>
                             </table>

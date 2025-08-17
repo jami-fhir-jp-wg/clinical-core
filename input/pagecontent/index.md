@@ -74,9 +74,11 @@ table th {
       counter-increment: sub-sub-section;
       content: "　　"counter(sub-sub-section) "）";
     }
-</style>
+</style>  
 
 <!-- no-toc -->
+
+## 実装ガイド(IG)
 
 ### 留意事項
 
