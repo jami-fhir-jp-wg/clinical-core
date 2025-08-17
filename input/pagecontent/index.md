@@ -14,30 +14,6 @@ table th {
   border: solid 1px black;
 
 }
-    h1 {
-      counter-reset: chapter;
-      counter-increment: chapter;
-    }
-
-    h2 {
-      counter-reset: sub-chapter;
-    }
-
-    h3 {
-      counter-reset: section;
-    }
-
-    h4 {
-      counter-reset: sub-section;
-    }
-
-    h5 {
-      counter-reset: composite;
-    }
-
-    h6 {
-      counter-reset: sub-composite;
-    }
 
     h1:before {
       color: black;
