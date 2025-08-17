@@ -16,32 +16,32 @@
   }
     h1 {
       counter-reset: chapter;
-      counter-increment: chapter;
+
     }
 
     h2 {
       counter-reset: sub-chapter;
-      counter-increment: chapter;
+
     }
 
     h3 {
       counter-reset: section;
-      counter-increment: chapter;
+
     }
 
     h4 {
       counter-reset: sub-section;
-      counter-increment: chapter;
+
     }
 
     h5 {
       counter-reset: composite;
-      counter-increment: chapter;
+
     }
 
     h6 {
       counter-reset: sub-composite;
-      counter-increment: chapter;
+
     }
 
     h1:before {
