@@ -232,7 +232,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[remarksCommunicationSection].code.coding = $referral-section#220 "備考・連絡情報セクション"
 * section[remarksCommunicationSection].text.status = #additional
 * section[remarksCommunicationSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\"> よろしくお願いします。</div>"
-* section[remarksCommunicationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
+//* section[remarksCommunicationSection].emptyReason = http://terminology.hl7.org/CodeSystem/list-empty-reason#unavailable
 
 
 
