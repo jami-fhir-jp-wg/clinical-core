@@ -51,7 +51,7 @@ var(--publish-box-border); */
   /* 2. Header container color -- CLINSで青系に変更 -- */
   --footer-bg-color: #292727;
   /* 3. Footer background color*/
-  --footer-container-bg-color: # --navbar-bg-color: #138BAE;
+  --footer-container-bg-color: #138BAE;
   /* 4. Footer container color -- CLINSで青系に変更 -- */
   --stripe-bg-color: #999999;
   /* 5. Header strip color */
