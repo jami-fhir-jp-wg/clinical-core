@@ -99,6 +99,9 @@ parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+
     - fsh-generated/includes
     #- input/summaries
   path-expansion-params: '../../input/_resources/exp-params.json'
+  logging:
+    - progress
+    - generate
   no-narrative: 
     - CodeSystem/*
   active-tables: 'false'
