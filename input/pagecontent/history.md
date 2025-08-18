@@ -61,7 +61,9 @@
     - サンプルファイル（データ作成）の検査結果で定量値検査結果に基準値がないものについて、基準値を追加。検査結果値の単位と基準値の単位との不一致を修正。
     - サンプルファイル（データ作成）の処方で、HOT9コードを併記しているものについてHOT9コード記述を削除。
     -　各リソースに参照として記述するEncounterリソースは、すべてJP_Encounter_eCSプロファイルに従うEncounterリソースに1本化した（従前はJP_Encounterプロファイル、JP_Encounter_eCSプロファイルのどちらでもOKであった）。
-    
+    - MedicationResourceのidentifer:requestIdentifier のdefinition、comment等の説明を補足した。
+    - 上記に加え、各リソースのidentifer:requestIdentifierの仕様として「診療情報・サマリー汎用リソース一意識別ID仕様」(core6spec.html#%EF%BC%95%E6%83%85%E5%A0%B1%E3%81%AE%E5%90%84%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AEidentifier%E8%A6%81%E7%B4%A0%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E8%A8%BA%E7%99%82%E6%83%85%E5%A0%B1%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E6%B1%8E%E7%94%A8%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E4%B8%80%E6%84%8F%E8%AD%98%E5%88%A5id%E4%BB%95%E6%A7%98)を新たに記載した。
+
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.11.0  (2025.7.14)　
   - Ver. 1.10.0-20250522  (2025.5.22)　正誤反映版 2025.7.14　を1.11.0としてリリース
   - Validationの説明で使用するjpfhir-terminology.r4　パッケージのバージョンを特定のバージョンに依存しない記載に更新した。
