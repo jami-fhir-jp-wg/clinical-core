@@ -344,7 +344,8 @@ Description: "病名の前置修飾語を格納するための拡張"
 * . ^definition = "前置修飾語を格納するための拡張。\r\n前置修飾語をCodeableConcept型で記述する。"
 * ^language = #ja
 
-* url = $JP_Condition_DiseasePrefixModifier (exactly)
+//* url = $JP_Condition_DiseasePrefixModifier (exactly)
+* extension 0..0
 * value[x] only CodeableConcept
 * value[x] ^short = "前置修飾語"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value
@@ -402,7 +403,8 @@ Description: "病名の後置修飾語を格納するための拡張"
 * . ^definition = "後置修飾語を格納するための拡張。\r\n後置修飾語をCodeableConcept型で記述する。"
 * ^language = #ja
 
-* url = $JP_Condition_DiseasePostfixModifier (exactly)
+//* url = $JP_Condition_DiseasePostfixModifier (exactly)
+* extension 0..0
 * value[x] only CodeableConcept
 * value[x] ^short = "後置修飾語"
 * valueCodeableConcept.coding ^slicing.discriminator.type = #value

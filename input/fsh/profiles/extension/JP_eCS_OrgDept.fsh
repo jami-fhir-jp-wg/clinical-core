@@ -32,7 +32,8 @@ Description: "診療サマリーや5情報等に記述する際に、作成発�
 * ^language = #ja
 
 * url 1..1
-* url = $JP_eCS_InstitutionNumber_Extension (exactly)
+//* url = $JP_eCS_InstitutionNumber_Extension (exactly)
+* extension 0..0
 * value[x] only Identifier
 * value[x] ^short = "作成発行した医療機関番号を設定する。"
 * value[x] ^definition = "作成発行した医療機関番号を設定する。"
@@ -65,7 +66,8 @@ Description: "診療サマリーや5情報等に記述する際に、発行診�
 * . ^short = "診療科情報を記述するための拡張"
 * . ^definition = "発行診療科または発行者の診療科情報を記述する"
 * url 1..1
-* url = $JP_eCS_Department_Extension (exactly)
+//* url = $JP_eCS_Department_Extension (exactly)
+* extension 0..0
 * value[x] only CodeableConcept
 * value[x] ^short = "診療科コードと名称等を設定する。"
 * value[x] ^definition = "診療科コードと名称等を設定する。"

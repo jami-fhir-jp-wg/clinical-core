@@ -54,7 +54,7 @@
   - No.10　 CLINS：退院時サマリーのBundle.entryから参照するObservationプロファイルの修正
     - entry[observation].resourceに許容されるリソースプロファイルをJP_Observation_Common_eCSからJP_Observation_Commonに修正。
   - No.16(NO.1 FHIR-Terminology) 材料コードにJLAC11材料コードも使用できるようにする。
-    - JP_Observation_LabResult_eCS の表6.1 contained[+](JP_Specimen)の説明で、「JLAC11検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CSを使用」の記載を追加。
+    - JP_Observation_LabResult_eCS の表6.1 contained(JP_Specimen)の説明で、「JLAC11検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CSを使用」の記載を追加。
   - ************ 以下は依頼事項以外で修正した事項(サンプルファイルについては主なもの)　************ 
     - JLAC10,JLAC11の毎月更新されるCodeSystemをFHIR Terminology v2.0.0 に移動
     - サンプルファイル（データ作成）でminimumのスペル違い（minimun）を修正
