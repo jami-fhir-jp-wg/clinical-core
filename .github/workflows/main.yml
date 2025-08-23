@@ -15,7 +15,7 @@ on:
     types: [update]
 env:
   release_version : 1.12.0
-  version_date : -pre20250815
+  version_date : -pre20250823
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
@@ -120,6 +120,7 @@ jobs:
         mv sushi-config-temp.yaml sushi-config.yaml
         
         sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/validationGuide.md > input/pagecontent/validationGuide-temp.md
+        sed -i 's/@buildDateXXX-temp/${{ env.version_date }}/g' input/pagecontent/validationGuide-temp.md
         mv input/pagecontent/validationGuide-temp.md input/pagecontent/validationGuide.md
 
         sed 's/.r4-1.x.x-temp/.r4-${{ env.release_version }}/g' input/pagecontent/index.md > input/pagecontent/index-temp.md
