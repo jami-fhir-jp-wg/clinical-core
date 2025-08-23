@@ -755,7 +755,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">uri</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">力価区分コードのコード体系を識別するURI。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType"</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"</td>
                                     </tr>
                                     <tr style="height:0pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">doseAndRate[=]</td>
