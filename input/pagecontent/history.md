@@ -6,6 +6,9 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### Ver.1.12.0-pre20250823（非公開、未提供）
+  - JP_MedicationRequest-eCSの説明にある「表　MedicationRequest.DosageInstruction」のdoseAndRate[=].type.coding[=].systemに設定する固定値URIの値の誤記を修正（誤："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType" → 正："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"）　
+
 ### Ver.1.12.0-pre20250815（非公開）
   - No.1 : CLINS：Bundle_CLINSの制約構文に係る制約の修正
     - JP_Bundle_CLINSの次の制約を修正（profileにバージョンが入っていない場合、どのようなプロファイルでもデータ登録ができてしまう）
@@ -484,7 +487,7 @@
 |		|	医薬品成分コード（電子カルテ共有サービス）	|		|	関係者調整中	|
 |		|	以下は厚労省処方箋CDA記述仕様第1版に収載の表	|		|		|
 |		|	剤形区分コード	|	urn:oid:1.2.392.100495.20.2.21	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationForm	|
-|	＊	|	力価区分コード	|	urn:oid:1.2.392.100495.20.2.22	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType	|
+|	＊	|	力価区分コード	|	urn:oid:1.2.392.100495.20.2.22	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType	|
 |	＊	|	後発品変更不可コード	|	urn:oid:1.2.392.100495.20.2.41	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationSubstitutionProhibittedCategory	|
 |		|	残薬確認指示コード	|	urn:oid:1.2.392.100495.20.2.42	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/RequestCheckRemainingMedicine	|
 |	＊	|	診療科コード	|	urn:oid:1.2.392.100495.20.2.51	|	http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationRequestDepartment	|
