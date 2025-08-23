@@ -6,8 +6,9 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.11.1  (2025.8.23)　
-
+### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.11.0 (20250823版)　
+  - JP_MedicationRequest-eCSの説明にある「表　MedicationRequest.DosageInstruction」の力価区分コードのsystem値に設定する固定値URIの値の誤記載を修正（誤："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType" → 正："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"） 
+  - 上記の表以外は、ProfileやValidation Packageを含めて内容、バージョン、日付ともに変更なし。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.11.0  (2025.8.11)　
   - JP-Core　プロファイルへのリンクが適切でないためにpage not foundになるリンクがあったのを修正。

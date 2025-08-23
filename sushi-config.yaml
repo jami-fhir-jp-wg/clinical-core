@@ -10,7 +10,7 @@ name: "JP_CLINS_FHIR_IG"
 title: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS（CLinical Information Sharing ImplementationGuide） v1.x.x-temp"
 description: "電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide v1.x.x-temp"
 status: active # draft | active | retired | unknown 
-version: "1.x.x-temp"
+version: "1.x.x-temp（20250823版）"
 date: 2025-08-23  ##### input/pagecontent/all-igs.mdもアップデートしてください。
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+

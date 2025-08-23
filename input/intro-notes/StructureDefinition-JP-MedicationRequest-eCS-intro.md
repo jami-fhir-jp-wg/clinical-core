@@ -105,6 +105,11 @@
 <br>
 
 <h3>表「MedicationRequest.DosageInstruction」</h3>
+
+<!-- ===　一時的に挿入　20250823版 == -->
+<span class="font_red font_bold">本表の力価区分コードのsystem値の設定するURIに誤記があり、20250823版で修正されています。</span><br>
+<!-- =========================================== -->
+
 <button id="dic" type="button" onclick="details_open(true,'DosageInstructionDetails', 'dic')">表「MedicationRequest.DosageInstruction」を開く</button>
 <details id="DosageInstructionDetails">
 <button type="button" onclick="details_open(false,'DosageInstructionDetails', 'dic')">閉じる</button>
