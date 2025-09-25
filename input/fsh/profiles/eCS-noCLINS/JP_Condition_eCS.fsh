@@ -161,8 +161,8 @@ Description: "Conditionリソース（傷病名情報）プロファイル"
 
 * clinicalStatus   0..1 MS
 * clinicalStatus ^short = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。"
-* clinicalStatus ^definition = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。コードでの記述は必須。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では、必須。"
-* clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(軽快、寛解), inactive（治癒以外での病名の終了）→CLINSでは使用しない, resolved (治癒) 、unknown（不明）のいずれかを選ぶ（軽快は状況に応じてremissionまたはresolvedを使用）。"
+* clinicalStatus ^definition = "臨床的状態。病名最終日（abatementDateTime)での状態（転帰）。以下のコードでの記述は必須。active（存続）, remission(寛解),resolved (軽快、または治癒) 、unknown（不明）。ただし、verificationStatus要素が'entered-in-error'であれば、本要素は存在してはならない。それ以外では、必須。"
+* clinicalStatus ^comment = "コード表　http://terminology.hl7.org/CodeSystem/condition-clinical　から　active（存続）, remission(寛解), inactive（治癒以外での病名の終了）→CLINSでは使用しない, resolved (軽快、または治癒) 、unknown（不明）のいずれかを選ぶ。"
 * clinicalStatus.coding 1..* MS
 * clinicalStatus.coding.system 1.. MS
 * clinicalStatus.coding.code 1.. MS
