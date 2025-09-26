@@ -6,6 +6,10 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### Ver.1.12.0-pre20250926
+  - JP_Condition_eCSにおけるclinicalStatusのremissionを寛解のみとし、軽快を削除した。この修正は、JP_Condition_eCSの説明の12.13.6.1の表のclinicalStatusの説明、および12.13.7.1 プロファイル詳細（ツリー）のCondition.clinicalStatusのDefinitionおよびCommentsの同記述に反映させた。
+  - 検体検査コードJLAC10/11の12月予定版の修正を反映させた。
+
 ### Ver.1.12.0-pre20250823（非公開、未提供）
   - JP_MedicationRequest-eCSの説明にある「表　MedicationRequest.DosageInstruction」のdoseAndRate[=].type.coding[=].systemに設定する固定値URIの値の誤記を修正（誤："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType" → 正："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"）　
 
