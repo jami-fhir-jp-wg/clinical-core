@@ -162,7 +162,7 @@ jobs:
         cd ..
     - name: prepare gtz files for upload to remote site
       run: | 
-        tar czf output.tgz output
+        tar czf output-pre.tgz output
 
     - name:  create differential package 
       run: | 
@@ -206,8 +206,8 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-prerelease.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap-prerelease.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
-        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output.tgz'; mv output igv${{ env.release_version }}${{ env.version_date }}
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output-pre.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-prerelease.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap-prerelease.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
+        ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output-pre.tgz'; mv output igv${{ env.release_version }}${{ env.version_date }}
 
     - name: copy IG and Pkg to history folders
       run: |
