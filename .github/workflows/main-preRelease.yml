@@ -7,7 +7,7 @@ on:
       - 'sushi-config-preRelease'
       - 'input/**'
       - 'custom-template/**'
-      - '.github/workflows/main.yml'
+      - '.github/workflows/main-preRelease.yml'
       - 'script/*.py'
   pull_request:
     branches: [ v1.12.0-pre ]
