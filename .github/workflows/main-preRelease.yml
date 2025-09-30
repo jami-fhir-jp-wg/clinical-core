@@ -1,10 +1,10 @@
-name: main-yaml
+name: main-yaml-preRelease
 on:
   push:
     branches: 
       - v1.12.0-pre
     paths:
-      - 'sushi-config.yaml'
+      - 'sushi-config-preRelease'
       - 'input/**'
       - 'custom-template/**'
       - '.github/workflows/main.yml'
@@ -109,6 +109,7 @@ jobs:
     - name: replace sushi-config.yaml
       run: |
         : # cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
+        cp sushi-config-preRelease sushi-config.yaml
 
     - name: apply the version of sushi-config.yaml
       run: |

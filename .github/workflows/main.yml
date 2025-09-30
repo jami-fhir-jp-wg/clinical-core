@@ -106,7 +106,7 @@ jobs:
     - name: Use datetime in a script
       run: echo "The current datetime is ${{ env.CURRENT_DATETIME }}"
 
-    - name: replace sushi-config.yaml
+    - name: replace head-caution to dummy
       run: |
         cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
 
