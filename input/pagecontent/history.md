@@ -9,28 +9,24 @@
 ### Ver.1.12.0-pre20250926
   - JP_Condition_eCSにおけるclinicalStatusのremissionを寛解のみとし、軽快を削除した。この修正は、JP_Condition_eCSの説明の12.13.6.1の表のclinicalStatusの説明、および12.13.7.1 プロファイル詳細（ツリー）のCondition.clinicalStatusのDefinitionおよびCommentsの同記述に反映させた。
   - 検体検査コードJLAC10/11の12月予定版の修正を反映させた。
-
-### Ver.1.12.0-pre20250823（非公開、未提供）
   - JP_MedicationRequest-eCSの説明にある「表　MedicationRequest.DosageInstruction」のdoseAndRate[=].type.coding[=].systemに設定する固定値URIの値の誤記を修正（誤："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType" → 正："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"）　
-
-### Ver.1.12.0-pre20250815（非公開）
-  - No.1 : CLINS：Bundle_CLINSの制約構文に係る制約の修正
+  - Bundle_CLINSの制約構文に係る制約の修正
     - JP_Bundle_CLINSの次の制約を修正（profileにバージョンが入っていない場合、どのようなプロファイルでもデータ登録ができてしまう）
     - validEntryProfile-XXX (XXXはAllergyIntolerance、Condition、MedicationRequest、ObservationLabResult)
       -"(entry.resource.ofType(XXX).exists().not()) or ((entry.resource.ofType(XXX).meta.profile.where(($this.indexOf('|')>0 and ($this.substring(0,$this.indexOf('|'))!='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_XXX_eCS'))).exists()).not() ) and ((entry.resource.ofType(XXX).meta.profile.where(($this.indexOf('|')<=0 and ($this!='http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_XXX_eCS'))).exists()).not() )" 
-  - No.2 : CLINS：検査結果の基準値の必須化に係る制約の追加
+  - 検査結果の基準値の必須化に係る制約の追加
     - JP_Observation_LabResult_eCS　に次の制約を追加
     -  R06041 電子カルテ情報共有サービスの検査結果（43項目）、感染症結果（5項目）の定量値には結果の基準値が必須。
       - 43+5項目以外で使用する一般項目JLACコード、未標準化コード、施設固有コードのCodeSystemはチェック対象外
     - require-refRange-forQuantityValue-against-CoreLaboOrInfectionSet      
       - "((code.coding.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_CoreLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC10/JP_CLINS_ObsLabResult_InfectionLabo_CS' or system='http://jpfhir.jp/fhir/clins/CodeSystem/JLAC11/JP_CLINS_ObsLabResult_InfectionLabo_CS').exists()) and (value.ofType(Quantity).exists())) implies referenceRange.where(low.exists() or high.exists()).exists()"
-  - No.3　 CLINS：検査結果がない場合の基準値単位チェックをしないように制約を修正
+  - 検査結果がない場合の基準値単位チェックをしないように制約を修正
     - JP_Observation_LabResult_eCS　に次の制約を修正
       - 「検査結果定量値が報告されている場合のみ、」基準値の単位の記述と結果の単位の記述が完全に一致していることをチェックする。
       - referenceRangeLowUnits-isSameAs-resultValueUnits、 referenceRangeHighUnits-isSameAs-resultValueUnits
         - "value.ofType(Quantity).value.exists() implies ((referenceRange.low.unit.exists() implies (value.ofType(Quantity).unit.exists() and (value.ofType(Quantity).unit = referenceRange.low.unit)))  and (referenceRange.low.code.exists() implies (value.ofType(Quantity).code.exists() and (value.ofType(Quantity).code = referenceRange.low.code))))" 
         - high についても同様。
-  - No.4  CLINS： FHIR識別文字列のプロファイル反映 
+  - FHIR識別文字列のプロファイル反映 
     - JP_Observation_LabResult_eCS
       - 「梅毒STS(希釈倍率)」のFHIR識別文字列を追加。slice=STS-DIL
       - 「梅毒TP抗体(定量、陽性コントロール比)」と定義されたFHIR識別文字列を「梅毒TP抗体(陽性コントロール比)」に変更
@@ -44,32 +40,32 @@
         -「HIV-1+2抗原・抗体同時(定性)」
         -「HIV-1+2抗原・抗体同時(陽性コントロール比)」
     - JP_CLINS_ValueSet_InfectionLaboJLAC10_XXX、JP_CLINS_ValueSet_InfectionLaboJLAC11_XXX の上記追加検査に対する関連ValueSetを追加。
-  - No.5　 CLINS：診療情報提供書の感染症情報セクションに格納できるリソース種別をPDF仕様に合わせてObservationとConditionの両方が許容されるように修正
+  - 診療情報提供書の感染症情報セクションに格納できるリソース種別をPDF仕様に合わせてObservationとConditionの両方が許容されるように修正
     - section[compositionSection].section[infectiousDiseaseInformationSection].entryの以下の説明を修正。
       - short:"感染症情報を記述したObservationリソースを参照"->"感染症情報を記述したObservationリソースまたはConditionリソースを参照"
       - definition:1つの感染症情報につき1つのObservationリソースで記述されたものを参照する。->1つの感染症情報につき1つのObservationリソース(JP_Observation_Commonの派生プロファイル（たとえばJP_Observation_LabResult_eCS）に従うリソース）またはConditionリソース（JP_Condition_eCS）で記述されたものを参照する。
       - Reference(JP_Observation_Common_eCS) -> Reference(JP_Observation_Common or JP_Condition_eCS)
-  - No.6　 CLINS：Compositionリソースのsection.emptyReasonの制約追加
-    - text要素があるならemptyReasonは不要であるため修正対応せず。
+  - Compositionリソースのsection.emptyReasonの制約追加
     - 「診療情報提供書　Compositionリソース データ作成例」（Bundle-CLINS-Referral-NoEntry-Example-01-RefText、Bundle-CLINS-Referral-NoEntry-Example-01）において、備考・連絡情報セクションのemptyReasonの記述は不要であるため削除
-  - No.7　 CLINS：用法の説明記載に関するダミーコードの追記
+  - 用法の説明記載に関するダミーコードの追記
     - 表6.2　「MedicationRequest.DosageInstruction」のtiming.code.codingの説明に用法としてダミーコード（http://jpfhir.jp/fhir/clins/CodeSystem/JP_CLINS_MedicationUsage_Uncoded_CS#0X0XXXXXXXXX0000)の使用ができることを追記。
-  - No.8　 CLINS： AllergyIntoleranceにおけるmeta.profileの修正依頼
+  - AllergyIntoleranceにおけるmeta.profileの修正依頼
     -  JP_AllergyIntolerance_eCS.meta.profile の説明で、設定すべきprofileのURL記述に誤記があったのを"http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_AllergyIntolerance_eCS"に修正。
-  - No.9 CLINS ：Patientにおけるname.familyの多重度変更の修正依頼
+  - Patientにおけるname.familyの多重度変更の修正依頼
     - JP_Patient_eCS.name.family の多重度を1.. から0.. に変更し、姓のない氏名も記述可能とした。
-  - No.10　 CLINS：退院時サマリーのBundle.entryから参照するObservationプロファイルの修正
+  - 退院時サマリーのBundle.entryから参照するObservationプロファイルの修正
     - entry[observation].resourceに許容されるリソースプロファイルをJP_Observation_Common_eCSからJP_Observation_Commonに修正。
-  - No.16(NO.1 FHIR-Terminology) 材料コードにJLAC11材料コードも使用できるようにする。
+  - 材料コードにJLAC11材料コードも使用できるようにする。
     - JP_Observation_LabResult_eCS の表6.1 contained(JP_Specimen)の説明で、「JLAC11検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CSを使用」の記載を追加。
-  - ************ 以下は依頼事項以外で修正した事項(サンプルファイルについては主なもの)　************ 
-    - JLAC10,JLAC11の毎月更新されるCodeSystemをFHIR Terminology v2.0.0 に移動
+  - JLAC10,JLAC11の毎月更新されるCodeSystemをFHIR Terminology v2.0.0 に移動
+  - 同時に使用するFHIR Terminologyをv1.5.0からv2.0.0に変更
+  - 以下、サンプルファイルについては主なもの 
     - サンプルファイル（データ作成）でminimumのスペル違い（minimun）を修正
     - サンプルファイル（データ作成）の検査結果で定量値検査結果に基準値がないものについて、基準値を追加。検査結果値の単位と基準値の単位との不一致を修正。
     - サンプルファイル（データ作成）の処方で、HOT9コードを併記しているものについてHOT9コード記述を削除。
     -　各リソースに参照として記述するEncounterリソースは、すべてJP_Encounter_eCSプロファイルに従うEncounterリソースに1本化した（従前はJP_Encounterプロファイル、JP_Encounter_eCSプロファイルのどちらでもOKであった）。
     - MedicationResourceのidentifer:requestIdentifier のdefinition、comment等の説明を補足した。
-    - 上記に加え、各リソースのidentifer:requestIdentifierの仕様として[診療情報・サマリー汎用リソース一意識別ID仕様](core6spec.html#%EF%BC%95%E6%83%85%E5%A0%B1%E3%81%AE%E5%90%84%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AEidentifier%E8%A6%81%E7%B4%A0%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E8%A8%BA%E7%99%82%E6%83%85%E5%A0%B1%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E6%B1%8E%E7%94%A8%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E4%B8%80%E6%84%8F%E8%AD%98%E5%88%A5id%E4%BB%95%E6%A7%98)を新たに記載した。
+    - 各リソースのidentifer:requestIdentifierの仕様として[診療情報・サマリー汎用リソース一意識別ID仕様](core6spec.html#%EF%BC%95%E6%83%85%E5%A0%B1%E3%81%AE%E5%90%84%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AEidentifier%E8%A6%81%E7%B4%A0%E3%81%AB%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B%E8%A8%BA%E7%99%82%E6%83%85%E5%A0%B1%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E6%B1%8E%E7%94%A8%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E4%B8%80%E6%84%8F%E8%AD%98%E5%88%A5id%E4%BB%95%E6%A7%98)を新たに記載した。
 
 ### ２文書５情報＋患者サマリー（CLINS）  Ver. 1.11.0  (2025.7.14)　
   - Ver. 1.10.0-20250522  (2025.5.22)　正誤反映版 2025.7.14　を1.11.0としてリリース

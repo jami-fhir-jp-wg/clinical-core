@@ -108,14 +108,14 @@ jobs:
 
     - name: replace sushi-config.yaml
       run: |
-        cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
+        : # cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
 
     - name: apply the version of sushi-config.yaml
       run: |
         find input/fsh/profiles -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-profile/${{ env.release_version }}/g" {} \;
         find input/fsh/instances -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-instance/${{ env.release_version }}/g" {} \;
 
-        sed 's/1.x.x-temp/${{ env.release_version }}/g' sushi-config.yaml > sushi-config-temp.yaml
+        sed 's/1.x.x-temp/${{ env.release_version }}${{ env.version_date }}/g' sushi-config.yaml > sushi-config-temp.yaml
         sed -i 's/@buildDateXXX-temp/${{ env.version_date }}/g' sushi-config-temp.yaml
         mv sushi-config-temp.yaml sushi-config.yaml
         
@@ -127,12 +127,13 @@ jobs:
         mv input/pagecontent/index-temp.md input/pagecontent/index.md
 
         cd forPackageRelease
-        sed 's/1.x.x-temp/${{ env.release_version }}/g' package-diff.json >package-diff-temp.json
-        sed 's/1.x.x-temp/${{ env.release_version }}/g' package-snap.json >package-snap-temp.json
-        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diff-temp.json > package-diff-temp2.json
-        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snap-temp.json > package-snap-temp2.json
-        mv package-diff-temp2.json package-diff.json
-        mv package-snap-temp2.json package-snap.json
+        sed 's/1.x.x-temp/${{ env.release_version }}${{ env.version_date }}/g' package-diff.json >package-diff-temp3.json
+        sed 's/1.x.x-temp/${{ env.release_version }}${{ env.version_date }}/g' package-snap.json >package-snap-temp3.json
+        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diff-temp3.json > package-diff-temp4.json
+        sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snap-temp3.json > package-snap-temp4.json
+
+        mv package-diff-temp4.json package-diff-prerelease.json
+        mv package-snap-temp4.json package-snap-prerelease.json
         cd ..
 
     - name: Run sushi and IG Publisher
@@ -171,9 +172,9 @@ jobs:
         cp resources/CodeSystem-* package/
         cp resources/ImplementationGuide-* package/
         cp resources/NamingSystem-* package/
-        cp ../forPackageRelease/package-diff.json package/package.json
-        tar czf jp-eCSCLINS-package-diff.tgz package
-        cp jp-eCSCLINS-package-diff.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}.tgz
+        cp ../forPackageRelease/package-diff-prerelease.json package/package.json
+        tar czf jp-eCSCLINS-package-diff-prerelease.tgz package
+        cp jp-eCSCLINS-package-diff-prerelease.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-prerelease.tgz
   
     - name: backup the generated files
       run: |
@@ -190,11 +191,11 @@ jobs:
         cp fsh-generated-snap/resources/CodeSystem-* forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/ImplementationGuide-* forPackageRelease/snapshot/package/
         cp fsh-generated-snap/resources/NamingSystem-* forPackageRelease/snapshot/package/
-        cp forPackageRelease/package-snap.json forPackageRelease/snapshot/package/package.json
+        cp forPackageRelease/package-snap-prerelease.json forPackageRelease/snapshot/package/package.json
         cd forPackageRelease/snapshot
-        tar czf jp-eCSCLINS-package-snap.tgz package
+        tar czf jp-eCSCLINS-package-snap-prerelease.tgz package
         cd ..
-        cp snapshot/jp-eCSCLINS-package-snap.tgz jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap.tgz
+        cp snapshot/jp-eCSCLINS-package-snap-prerelease.tgz jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap-prerelease.tgz
         cd ..
 
     - name: ssh key generate
@@ -204,7 +205,7 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-prerelease.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap-prerelease.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; tar xzf output.tgz'; mv output igv${{ env.release_version }}${{ env.version_date }}
 
     - name: copy IG and Pkg to history folders
