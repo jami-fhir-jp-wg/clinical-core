@@ -109,6 +109,7 @@ jobs:
     - name: replace sushi-config.yaml
       run: |
         : # cp custom-template/includes/head-caution-dev-dummy custom-template/includes/head-caution-dev.html
+        cp custom-template/includes/head-caution-dev custom-template/includes/head-caution-dev.html
         cp custom-template/includes/fragment-resourceTable.clins.html_開発警告を上部に表示する custom-template/includes/fragment-resourceTable.html
         cp sushi-config-preRelease sushi-config.yaml
 
