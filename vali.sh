@@ -1,6 +1,6 @@
 #!/bin/bash
 release_version=1.12.0-pre
-version_date=-pre20250926
+version_date=-pre20251108
 CURRENT_DATETIME=$(date '+%Y-%m-%dT%H:%M')
 
 find input/fsh/profiles -type f -name '*.fsh' -exec sed -ibak "s/x.x.x-profile/${release_version}/g" {} \;
