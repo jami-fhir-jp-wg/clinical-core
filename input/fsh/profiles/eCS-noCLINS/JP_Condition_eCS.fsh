@@ -253,8 +253,8 @@ and icd10 0.. MS
 * code.extension ^slicing.discriminator.path = "url"
 * code.extension ^slicing.rules = #open
 * code.extension contains
-    JP_Condition_DiseasePrefixModifier_eCS named diseasePrefixModifier ..* and
-    JP_Condition_DiseasePostfixModifier_eCS named diseasePostfixModifier ..*
+    JP_Condition_DiseasePrefixModifier_eCS named diseasePrefixModifier ..* MS and
+    JP_Condition_DiseasePostfixModifier_eCS named diseasePostfixModifier ..* MS
 
 * bodySite 0..*
 * bodySite ^short = "該当する状態が現れている解剖学的な場所を示す。"
