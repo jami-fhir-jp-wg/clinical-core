@@ -1080,7 +1080,7 @@ quest_DispenseRequest_InstructionForDispense"</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..1*</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">1..*</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Coding</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
