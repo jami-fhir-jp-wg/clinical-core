@@ -73,7 +73,7 @@
 
   1.  [患者情報	Patientリソース][JP_Patient_eCS]
   1.  [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
-  1.  [医療者情報　Practitionerリソース][JP_Practitioner_eCS]
+  1.  [医療者情報　Practitionerリソース](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP_Practitioner.html)
   1.  [オーダ情報 ServiceRequestリソース JP_ServiceRequest](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html)
   1.  [検査検体情報	Sepecimenリソース JP_Specimen](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html)
 
