@@ -28,6 +28,8 @@ Description:    "診療情報・サマリー汎用 CarePlan"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
+* obeys limitOfLength-description-1000chars
+
 * meta 1..1 MS
 * meta.lastUpdated 1..1 MS
   * insert relative_short_definition("このリソースのデータが最後に作成、更新、複写された日時。最終更新日時。YYYY-MM-DDThh:mm:ss.sss+zz:zz　例:2015-02-07T13:28:17.239+09:00")

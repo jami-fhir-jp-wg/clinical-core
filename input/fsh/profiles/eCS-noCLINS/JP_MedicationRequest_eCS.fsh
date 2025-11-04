@@ -125,7 +125,11 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
   * insert relative_short_definition("このリソース情報の識別ID、および必要であれば処方箋における剤グループ番号、剤グループ内の順序番号などを格納する。")
   * ^comment = "処方オーダに対するID（リソース一意識別ID）の仕様は、「診療情報・サマリー汎用リソース一意識別ID仕様」を参照のこと。"
 * identifier[rpNumber] MS
+* identifier[rpNumber] obeys rpNumber-min1-max999
+
 * identifier[orderInRp] MS
+* identifier[orderInRp] obeys orderInRp-min1-max99
+
 * identifier[requestIdentifierCommon] 0..1 //  診療情報提供書などではリソース情報の識別IDは出力不要であるため。
   * ^short = "全国で⼀意となる処方箋ID。"
   * ^definition = "全国で⼀意となる処方箋ID。system='urn:oid:1.2.392.100495.20.3.11'"

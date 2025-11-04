@@ -308,7 +308,7 @@ Expression: "entry.select(resource as Observation).all(extension.where(url='http
 
 // R70010 このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。
 Invariant: meta-tag-code-LTS-restriction
-Description: "このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
+Description: "R70010:このリソースには、電子カルテ情報共有サービスのmeta.tagとしては長期保存フラグLTSだけが許可される。"
 Severity: #error
 Expression: "meta.tag.where(system='http://jpfhir.jp/fhir/clins/CodeSystem/JP_ehrshrs_indication' and code!='LTS').exists().not()"
 
@@ -318,3 +318,20 @@ Description: "注意喚起：このリソースでは、電子カルテ情報共
 Severity: #warning
 Expression: "performer.exists()"
 
+// RC0010 CarePlanリソースのdescription要素では、文字数は9999文字以下とする
+Invariant: limitOfLength-description-1000chars
+Description: "RC0010:description要素の値の長さの上限は9999文字である。"
+Severity: #error
+Expression: "description.length() <= 9999"
+
+// RM0011 MedicationRequest.identifier:rpNumberの桁数は1以上3桁数字以内
+Invariant: rpNumber-min1-max999
+Description: "RM0011:rpNumberの桁数は１以上3桁数字以内であること。"
+Severity: #error
+Expression: "value.matches('^[1-9][0-9]{0,2}$')"
+
+// RM0012 MedicationRequest.identifier:orderInNumberの桁数は1以上2桁数字以内
+Invariant: orderInRp-min1-max99
+Description: "RM0012:orderInNumberの桁数は１以上2桁数字以内であること。"
+Severity: #error
+Expression: "value.matches('^[1-9][0-9]?$')"
