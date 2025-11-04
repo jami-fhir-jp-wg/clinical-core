@@ -71,7 +71,7 @@
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"2015-02-07T13:28:17.239+09:00"</td>
                                     </tr>
-                                    <tr style="height:35pt">
+                                    <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">meta</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">profile[*]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -117,9 +117,8 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1*</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter )</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">
-入院外来区分情報。encounter要素から参照されるJP_Encounter_eCSリソースの実体。JP_Encounter_eCSリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounter_eCSリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Resource(JP_Encounter_eCS )</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">入院外来区分情報。encounter要素から参照されるJP_Encounter_eCSリソースの実体。JP_Encounter_eCSリソースにおける必要最小限の要素だけが含まれればよい。ここで埋め込まれるJP_Encounter_eCSリソースでは、Encounter.classにこの情報を記録したときの受診情報（入外区分）を記述して使用する。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
@@ -147,7 +146,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:35pt">
+                                    <tr style="height:45pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[*]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -159,7 +158,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:28pt">
+                                    <tr style="height:30pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -317,7 +316,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"循環器科"</td>
                                     </tr>
-                                    <tr style="height:71pt">
+                                    <tr style="height:46pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">extension[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">valueCodeableConcept</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">text</td>
@@ -402,7 +401,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/mhlw/IdSystem/Medication-RPGroupNumber"</td>
                                     </tr>
-                                    <tr style="height:60pt">
+                                    <tr style="height:90pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -410,9 +409,9 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">剤グループ番号。この医薬品が処方箋の中のひとつの医薬品情報として記述されたのではない場合や、元の処方箋内での番号などを必要としない場合には、常に"1"を設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">剤グループ番号。<span   class="font_red font_bold">数値1から999までの整数を文字列（半角数字列）にした記述とすること。</span>この医薬品が処方箋の中のひとつの医薬品情報として記述されたのではない場合や、元の処方箋内での番号などを必要としない場合には、常に"1"を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1"</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"2"</td>
                                     </tr>
                                     <tr style="height:31pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[+]</td>
@@ -438,7 +437,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">固定値</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"http://jpfhir.jp/fhir/core/mhlw/IdSystem/MedicationAdministrationIndex"</td>
                                     </tr>
-                                    <tr style="height:61pt">
+                                    <tr style="height:91pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">identifier[=]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">value</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -446,9 +445,9 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFC000; font-weight: normal">1..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">剤グループ内連番。この医薬品が処方箋の中のひとつの医薬品情報として記述されたのではない場合や、元の処方箋内での剤グループ内の番号などを必要としない場合には、常に"1"を設定する。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">剤グループ内連番。<span   class="font_red font_bold">数値1から99までの整数を文字列（半角数字列）にした記述とすること。</span>この医薬品が処方箋の中のひとつの医薬品情報として記述されたのではない場合や、元の処方箋内での剤グループ内の番号などを必要としない場合には、常に"1"を設定する。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
-                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"1"</td>
+                                        <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"10"</td>
                                     </tr>
                                     <tr style="height:46pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">status</td>
@@ -486,7 +485,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_MedicationRequest_eCS|x.y.z　�
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                     </tr>
-                                    <tr style="height:29pt">
+                                    <tr style="height:0pt">
                                         <td class="xl_l" style="color:#000000; background:#FFFFFF; font-weight: normal">category[+]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">coding[*]</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
@@ -671,7 +670,7 @@ YJ（個別医薬品）コード: "http://capstandard.jp/iyaku.info/CodeSystem/Y
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#FFF2CC; font-weight: normal">0..1</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference (JP_Encounter )</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">Reference (JP_Encounter_eCS )</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">この情報を記録したときの受診情報（入外区分など）を記述しているEncounterリソースへの参照。<span   class="font_red font_bold">電子カルテ情報サービスでは必須。</span></td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">実装ガイド本文の「リソースへの参照方法　(1)containedリソースをインラインリソースIDにより参照する記述方法」を参照のこと。</td>

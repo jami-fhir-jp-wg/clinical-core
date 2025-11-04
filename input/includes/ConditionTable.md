@@ -1109,7 +1109,7 @@ http://jpfhir.jp/fhir/eCS/StructureDefinition/JP_Condition_eCS|x.y.z　を設定
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal"></td>
                                         <td class="xl_m" style="color:#000000; background:#E2F0D9; font-weight: normal">0..1</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">string</td>
-                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">電子カルテ情報共有サービスに送信する場合には、コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス運用者から公開される）を設定することを原則とする。設定していない場合には、送信時の最新版を使用しているとみなされて検証される。</td>
+                                        <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">電子カルテ情報共有サービスに送信する場合には、コーディングに使用したコードシステムのバージョン文字列（電子カルテ情報共有サービス運用者から公開される）を設定することを原則とする。</td>
                                         <td class="xl_m" style="color:#000000; background:#FFFFFF; font-weight: normal">例示</td>
                                         <td class="xl_r" style="color:#000000; background:#FFFFFF; font-weight: normal">"20240601"</td>
                                     </tr>
