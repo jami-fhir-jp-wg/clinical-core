@@ -307,7 +307,7 @@ Description: "診療情報・サマリー汎用 MedicationRequestリソース（
 
 * substitution 0..1
 * substitution.allowedCodeableConcept 1..1
-* substitution.allowedCodeableConcept.coding 1..1
+* substitution.allowedCodeableConcept.coding 1..*
 * substitution.allowedCodeableConcept.coding.system 1..1
 * substitution.allowedCodeableConcept.coding.code 1..1 MS
 * substitution.allowedCodeableConcept.coding.display 0..1 MS
