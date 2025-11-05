@@ -6,7 +6,23 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### Ver.1.12.0-pre20250926
+### Ver.1.12.0-pre20251108
+  - JP-Core 1.1.2-clins パッケージ
+    - 2025-05-25以降にダウンロードされるJP-Core 1.1.2-clins パッケージでは、これに含まれているJP-DocumentReferenceのtype要素のValuseSetへのbindingが、それまでpreferredとなっていたところ、requiredに変更されていた。JP-Coreではpreferredのままであり、この変更は同パッケージのいくつかの説明記述を改訂したことに伴い偶発的に変更されていたもので、本来変更されるものではなかった。そこで2025-11-05付けでpreferredに戻したパッケージにバージョンを変えずに置き換えた。パッケージを確認する方法は、パッケージtgzファイルを https://jpfhir.jp/fhir/core/1.1.2-clins/jp-core.r4-1.1.2-clins.tgz からダウンロードし、展開内容中のファイル package.json の内容に「 "description": "JP-CORE V1.1.2-clins differential package for release. build 2025.11.05: Changing the binding strength of DocumentReference.type from required to preferred.",」と記載があることで確認できる。
+    - JP-Core 1.1.2-clins パッケージは、JP-Core (https://jpfhir.jp/jpcoreV1/)で公開されている1.1.2-urlのパッケージと内容的には同等であり、packageファイル名および格納されているpackage.json内で定義されるパッケージ名を変更してCLINS用として明示した違いがあるだけである。
+  - JP_AllergyIntolerance_eCS
+    -　12.2.4.4 MustSupport要素の説明中で、criticalityのスペル間違いがあったので修正した。
+  - JP_CarePlan_eCS
+    - description要素に記述できる文字数を受信側の制限から、9999文字までとするよう、Profileに制約を追加設定した。
+  - JP_Condition_eCS
+    - 前置修飾語、後置修飾語のコードを記述する拡張についてMustSupportのフラグ設定が漏れていたため追加した。
+    - 病名のcode.coding.versionの説明（仕様の表）でversionが設定されていない場合の受信側の取り扱い記載を削除した。（受信システムの挙動をここに記載することはスコープ外であるため）
+  - JP_MedicationRequest_eCS
+    - substitution.allowed要素のCodeableConcept.codingの多重度を1..1から1..* に修正した。「1：後発品変更不可」の指示の他に「２：剤形変更不可」の指示や「３：含量規格変更不可」の指示も同時に設定できる必要があり、これらの複数コード設定ができるようにするため。
+    - identifier要素の記述するrpNmuber(剤グループ番号、RP番号), orderInRp(剤グループ内番号、RP補足連番)について、1以上の整数でそれぞれ3桁まで、2桁までとするようにProfileに制約を追加設定した。
+  - 「5情報送信仕様」ページの「埋め込みリソースの補足説明」に関して、医療者情報　Practitionerリソースのクリックリンク先ページをJP_Practitioner_eCSからJP Core Practitioner Profile(URL版）に修正した。埋め込みリソース内ではmeta.lastUpdate要素は記述できないため。
+  
+### Ver.1.12.0-pre20250926（非公開）
   - JP_Condition_eCSにおけるclinicalStatusのremissionを寛解のみとし、軽快を削除した。この修正は、JP_Condition_eCSの説明の12.13.6.1の表のclinicalStatusの説明、および12.13.7.1 プロファイル詳細（ツリー）のCondition.clinicalStatusのDefinitionおよびCommentsの同記述に反映させた。
   - 検体検査コードJLAC10/11の12月予定版の修正を反映させた。
   - JP_MedicationRequest-eCSの説明にある「表　MedicationRequest.DosageInstruction」のdoseAndRate[=].type.coding[=].systemに設定する固定値URIの値の誤記を修正（誤："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType" → 正："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"）　
