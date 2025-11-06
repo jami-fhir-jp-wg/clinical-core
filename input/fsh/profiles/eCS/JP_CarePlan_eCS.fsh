@@ -28,7 +28,7 @@ Description:    "診療情報・サマリー汎用 CarePlan"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
-* obeys limitOfLength-description-1000chars
+
 
 * meta 1..1 MS
 * meta.lastUpdated 1..1 MS
@@ -121,6 +121,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
+* obeys limitOfLength-description-1000chars
 
 * meta.lastUpdated 1.. MS
 
