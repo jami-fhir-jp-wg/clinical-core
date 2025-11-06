@@ -319,7 +319,7 @@ Severity: #warning
 Expression: "performer.exists()"
 
 // RC0010 CarePlanリソースのdescription要素では、文字数は9999文字以下とする
-Invariant: limitOfLength-description-1000chars
+Invariant: limitOfLength-description-9999chars
 Description: "RC0010:description要素の値の長さの上限は9999文字である。"
 Severity: #error
 Expression: "description.length() <= 9999"

@@ -121,7 +121,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
-* obeys limitOfLength-description-1000chars
+* obeys limitOfLength-description-9999chars
 
 * meta.lastUpdated 1.. MS
 
