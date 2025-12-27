@@ -15,7 +15,7 @@ on:
     types: [update]
 env:
   release_version : 1.12.0
-  version_date : -pre20251108
+  version_date : -pre20251108test
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
