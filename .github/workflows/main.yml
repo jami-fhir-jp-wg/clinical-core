@@ -31,7 +31,6 @@ jobs:
       with:
         ref: ${{ github.event.client_payload.ref }}
         submodules: true
-
     - name: Setup npm
       uses: actions/setup-node@v2
       with: 
