@@ -135,7 +135,7 @@ jobs:
         sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-diff-temp3.json > package-diff-temp4.json
         sed 's/"description": "/"description": "${{ env.CURRENT_DATETIME }}UTC_/g' package-snap-temp3.json > package-snap-temp4.json
 
-        mv package-diff-temp4.json package-diff${{ env.version_date }}json
+        mv package-diff-temp4.json package-diff${{ env.version_date }}.json
         mv package-snap-temp4.json package-snap${{ env.version_date }}.json
         cd ..
         ls -l forPackageRelease
