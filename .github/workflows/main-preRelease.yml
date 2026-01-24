@@ -138,6 +138,7 @@ jobs:
         mv package-diff-temp4.json package-diff${{ env.version_date }}json
         mv package-snap-temp4.json package-snap${{ env.version_date }}.json
         cd ..
+        ls -l forPackageRelease
 
     - name: Run sushi and IG Publisher
       run: | 
@@ -175,6 +176,7 @@ jobs:
         cp resources/CodeSystem-* package/
         cp resources/ImplementationGuide-* package/
         cp resources/NamingSystem-* package/
+        ls -l ../forPackageRelease
         cp ../forPackageRelease/package-diff${{ env.version_date }}.json package/package.json
         tar czf jp-eCSCLINS-package-diff${{ env.version_date }}.tgz package
         cp jp-eCSCLINS-package-diff${{ env.version_date }}.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}${{ env.version_date }}.tgz
