@@ -121,7 +121,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 * ^fhirVersion = #4.0.1
 * ^language = #ja
 
-* obeys limitOfLength-description-9999chars
+* obeys limitOfLength-description-9999chars // 文字数制限9999文字までの制約チェック
 
 * meta.lastUpdated 1.. MS
 
@@ -151,7 +151,7 @@ Description:    "療養計画患者サマリー専用のCarePlan"
 
 * description   1..1 MS
 * description ^short = "療養計画内容サマリー"
-* description ^definition = "ここに具体的な内容を文字列で記述する。1MB以内。"
+* description ^definition = "ここに具体的な内容を文字列で記述する。9999文字以内とすること。"
 
 * subject   1..1    MS
 * subject ^short = "患者Patientリソースへの参照"
