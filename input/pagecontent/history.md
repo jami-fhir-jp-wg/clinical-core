@@ -6,13 +6,23 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
-### Ver.1.12.0-pre20251108
+### Ver.1.12.0-preR1
+  - 3月版（2月中旬にVer.1.12.0として正式リリース予定）の事前公開版
+  - Ver. 1.11.0  (2025.7.14)　からの修正点は以下の非公開版の修正履歴を参照のこと。
+  - 修正履歴Ver.1.12.0-pre20250926（非公開）の最初の2件に以下の記載があるように、このバージョンから一緒に使用するjpfhir terminologyのバージョンはv2の系列の版(最新版)を使用する必要がある。v1系列の版は使用できないので注意が必要である。
+    - JLAC10,JLAC11,YJコード等の毎月更新されるCodeSystemをFHIR Terminology v2.x.x に移動
+    - 同時に使用するFHIR Terminologyをv1.5.0からv2.x.xに変更
+  - （参考）2026年1月以降のjpfhir terminologyのバージョン番号ルールについて
+    - v1系列：　v1.yymm.z とし、yymm の部分は、20yy年mm月中旬更新マスターを反映した版を示す（例：v1.2601.0 : 2026年1月中旬更新のマスターを反映した版）　zの部分は、通常0で、同じyymm月のマスターに更新があった場合に、それを反映した版では1増やす。（例：v1.2601.2 : 2026年1月中旬更新のマスターを反映した第3版）
+　　 - v2系列：　v2.yymm.z とし、yymm、zについてはv1系列と同じ。
+
+### Ver.1.12.0-pre20251108（非公開）
   - JP-Core 1.1.2-clins パッケージ
-    - 2025-05-25以降にダウンロードされるJP-Core 1.1.2-clins パッケージでは、これに含まれているJP-DocumentReferenceのtype要素のValuseSetへのbindingが、それまでpreferredとなっていたところ、requiredに変更されていた。JP-Coreではpreferredのままであり、この変更は同パッケージのいくつかの説明記述を改訂したことに伴い偶発的に変更されていたもので、本来変更されるものではなかった。そこで2025-11-05付けでpreferredに戻したパッケージにバージョンを変えずに置き換えた。パッケージを確認する方法は、パッケージtgzファイルを https://jpfhir.jp/fhir/core/1.1.2-clins/jp-core.r4-1.1.2-clins.tgz からダウンロードし、展開内容中のファイル package.json の内容に「 "description": "JP-CORE V1.1.2-clins differential package for release. build 2025.11.05: Changing the binding strength of DocumentReference.type from required to preferred.",」と記載があることで確認できる。
-    - JP-Core 1.1.2-clins パッケージは、JP-Core (https://jpfhir.jp/jpcoreV1/)で公開されている1.1.2-urlのパッケージと内容的には同等であり、packageファイル名および格納されているpackage.json内で定義されるパッケージ名を変更してCLINS用として明示した違いがあるだけである。
+    - 2025-05-25以降にダウンロードされるJP-Core 1.1.2-clins パッケージでは、これに含まれているJP-DocumentReferenceのtype要素のValuseSetへのbindingが、それまでpreferredとなっていたところ、requiredに変更されていた。JP-Coreではpreferredのままであり、この変更は同パッケージのいくつかの説明記述を改訂したことに伴い偶発的に変更されていたもので、本来変更されるものではなかった。そこでバージョンを変えずに、preferredに戻したパッケージに置き換えた。パッケージを確認する方法は、パッケージtgzファイルを https://jpfhir.jp/fhir/core/1.1.2-clins/jp-core.r4-1.1.2-clins.tgz からダウンロードし、展開内容中のファイル package.json の内容に「 "description": "JP-CORE V1.1.2-clins differential package for release. build 2025.11.05: Changing the binding strength of DocumentReference.type from required to preferred.",」と記載があることで確認できる。
+    - JP-Core (https://jpfhir.jp/jpcoreV1/)で公開されている1.1.2-urlのパッケージをJP-Core 1.1.2-clins パッケージと同一の1.1.2-clinsパッケージに変更した。
   - JP_AllergyIntolerance_eCS
     -　12.2.4.4 MustSupport要素の説明中で、criticalityのスペル間違いがあったので修正した。
-  - JP_CarePlan_eCS
+  - JP_CarePlan_ePCS
     - description要素に記述できる文字数を受信側の制限から、9999文字までとするよう、Profileに制約を追加設定した。
   - JP_Condition_eCS
     - 前置修飾語、後置修飾語のコードを記述する拡張についてMustSupportのフラグ設定が漏れていたため追加した。
@@ -23,6 +33,8 @@
   - 「5情報送信仕様」ページの「埋め込みリソースの補足説明」に関して、医療者情報　Practitionerリソースのクリックリンク先ページをJP_Practitioner_eCSからJP Core Practitioner Profile(URL版）に修正した。埋め込みリソース内ではmeta.lastUpdate要素は記述できないため。
   
 ### Ver.1.12.0-pre20250926（非公開）
+  - JLAC10,JLAC11,YJコード等の毎月更新されるCodeSystemをFHIR Terminology v2.x.x に移動
+  - 同時に使用するFHIR Terminologyをv1.5.0からv2.x.xに変更
   - JP_Condition_eCSにおけるclinicalStatusのremissionを寛解のみとし、軽快を削除した。この修正は、JP_Condition_eCSの説明の12.13.6.1の表のclinicalStatusの説明、および12.13.7.1 プロファイル詳細（ツリー）のCondition.clinicalStatusのDefinitionおよびCommentsの同記述に反映させた。
   - 検体検査コードJLAC10/11の12月予定版の修正を反映させた。
   - JP_MedicationRequest-eCSの説明にある「表　MedicationRequest.DosageInstruction」のdoseAndRate[=].type.coding[=].systemに設定する固定値URIの値の誤記を修正（誤："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthType" → 正："http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationIngredientStrengthStrengthType"）　
@@ -73,8 +85,6 @@
     - entry[observation].resourceに許容されるリソースプロファイルをJP_Observation_Common_eCSからJP_Observation_Commonに修正。
   - 材料コードにJLAC11材料コードも使用できるようにする。
     - JP_Observation_LabResult_eCS の表6.1 contained(JP_Specimen)の説明で、「JLAC11検体材料コードの場合には、http://jpfhir.jp/fhir/core/CodeSystem/JP_ObservationSampleMaterialCodeJLAC11_CSを使用」の記載を追加。
-  - JLAC10,JLAC11の毎月更新されるCodeSystemをFHIR Terminology v2.0.0 に移動
-  - 同時に使用するFHIR Terminologyをv1.5.0からv2.0.0に変更
   - 以下、サンプルファイルについては主なもの 
     - サンプルファイル（データ作成）でminimumのスペル違い（minimun）を修正
     - サンプルファイル（データ作成）の検査結果で定量値検査結果に基準値がないものについて、基準値を追加。検査結果値の単位と基準値の単位との不一致を修正。
