@@ -179,7 +179,7 @@ jobs:
         ls -l ../forPackageRelease
         cp ../forPackageRelease/package-diff${{ env.version_date }}.json package/package.json
         tar czf jp-eCSCLINS-package-diff${{ env.version_date }}.tgz package
-        cp jp-eCSCLINS-package-diff${{ env.version_date }}.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}${{ env.version_date }}.tgz
+        cp jp-eCSCLINS-package-diff${{ env.version_date }}.tgz ../forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}.tgz
   
     - name: backup the generated files
       run: |
@@ -200,7 +200,7 @@ jobs:
         cd forPackageRelease/snapshot
         tar czf jp-eCSCLINS-package-snap${{ env.version_date }}.tgz package
         cd ..
-        cp snapshot/jp-eCSCLINS-package-snap${{ env.version_date }}.tgz jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap${{ env.version_date }}.tgz
+        cp snapshot/jp-eCSCLINS-package-snap${{ env.version_date }}.tgz jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap.tgz
         cd ..
 
     - name: ssh key generate
@@ -210,5 +210,5 @@ jobs:
 
     - name: rsync remote-site-deploy
       run: |
-        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output${{ env.version_date }}.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}${{ env.version_date }}.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap${{ env.version_date }}.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
+        rsync -auzrv -e "ssh -i key -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p ${{ secrets.SSH_PORT_JPFHIR }}" --delete output${{ env.version_date }}.tgz  forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}.tgz forPackageRelease/jp-eCSCLINS.r4-${{ env.release_version }}${{ env.version_date }}-snap.tgz ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}:${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ --exclude .htaccess
         ssh -i key  -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no  -p ${{ secrets.SSH_PORT_JPFHIR }} ${{ secrets.JAMIWG_USERID_AT_WEBHOST }}   'cd ${{ secrets.JAMIWG_WEBPATH }}/jpfhir.jp/fhir/clins/ ; rm -rf output; tar xzf output${{ env.version_date }}.tgz; rm -rf igpre-v${{ env.release_version }}${{ env.version_date }}; mv output igpre-v${{ env.release_version }}${{ env.version_date }}'
