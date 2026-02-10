@@ -6,6 +6,9 @@
     
     トップページの日付が更新されているのにバージョン番号の変更がない場合には、上記のような内容の変更に関わらない修正があったことを示す。
 
+### Ver.1.12.0-preR2
+  - JP-Composition-eDischargeSummaryのmeta.profileの説明（shortおよびDefinition)で、"http://jpfhir.jp/fhir/<span style="color: red;">ePCS</span>/StructureDefinition/JP_Composition_eDischargeSummary"を、"http://jpfhir.jp/fhir/<span style="color: red;">eDischargeSummary</span>/StructureDefinition/JP_Composition_eDischargeSummary"に修正。
+
 ### Ver.1.12.0-preR1
   - 3月版（2月中旬にVer.1.12.0として正式リリース予定）の事前公開版
   - Ver. 1.11.0  (2025.7.14)　からの修正点は以下の非公開版の修正履歴を参照のこと。

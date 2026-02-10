@@ -17,7 +17,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 
 * ^version = "x.x.x-profile"
 * ^status = #active
-* ^date = "2024-09-14"
+* ^date = "2026-02-10"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
@@ -26,7 +26,7 @@ Description:  "退院時サマリーのリソース構成情報と文書日付�
 * meta 1..1 MS
 * meta.lastUpdated 1.. MS
 * meta.profile 1.. MS
-  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/ePCS/StructureDefinition/JP_Composition_eDischargeSummary|x.y.z")
+  * insert relative_short_definition("準拠しているプロファイルとして次のURLとバージョンを指定する。バージョン指定を省略した場合には、データ受信時点の最新バージョンとみなされる。http://jpfhir.jp/fhir/eDischargeSummary/StructureDefinition/JP_Composition_eDischargeSummary|x.y.z")
 
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

@@ -12,7 +12,7 @@ title: "【今後正式リリース予定の準備版】電子カルテ情報共
 description: "【今後正式リリース予定の準備版】電子カルテ情報共有サービス2文書５情報+患者サマリー　FHIR実装ガイド JP-CLINS ImplementationGuide v1.x.x-temp@buildDateXXX-temp"
 status: active # draft | active | retired | unknown 
 version: "1.x.x-temp@buildDateXXX-temp"
-date: 2026-01-26  ##### input/pagecontent/all-igs.mdもアップデートしてください。
+date: 2026-02-10  ##### input/pagecontent/all-igs.mdもアップデートしてください。
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html 
 copyrightYear: 2023+
 releaseLabel: update # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
