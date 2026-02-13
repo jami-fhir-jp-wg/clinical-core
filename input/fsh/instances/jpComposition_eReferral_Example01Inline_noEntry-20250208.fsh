@@ -26,7 +26,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * category = $doc-subtypecodes_CS#OUTPATIENT "外来文書"
 
 // * subject.reference = "Example-JP-Patient-eCS-MAKINOInline"
-* subject.reference = "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+* subject.reference = "urn:uuid:e02806e0-bbd7-01e0-3036-ff56619a9409" // "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * subject.type = "Patient"
 * subject.display = "患者リソースPatient"
 
@@ -40,18 +40,18 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * date = "2020-08-21T12:12:20+09:00"
 
 // * author[0].reference = "Example-JP-Practitioner-eCS-ReferralFrom01Inline"
-* author[0].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* author[0].reference = "urn:uuid:415fd368-a6e2-6f68-6178-f95d4b3babfc"  // "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * author[=].type = "Practitioner"
 * author[=].display = "診療情報提供書作成者Practitionerリソース"
 
 // * author[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-* author[1].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* author[1].reference = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * author[=].type = "Organization"
 * author[=].display = "診療情報提供書作成機関Organizationリソース"
 
 * title = "診療情報提供書"
 // * custodian.reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-* custodian.reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* custodian.reference = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * custodian.type = "Organization"
 * custodian.display = "診療情報提供書交付責任機関Organizationリソース"
 
@@ -64,7 +64,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralToSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\">紹介先医療機関名：東京第一テスト病院<br />内科<br />紹介先医師：野口 英世丸先生</div>"
 
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-ReferralTo01Inline"
-* section[referralToSection].entry[referralToOrganization].reference = "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
+* section[referralToSection].entry[referralToOrganization].reference = "urn:uuid:62579f9e-da16-3231-1eb8-8e66974a31a6" // "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
 * section[referralToSection].entry[referralToOrganization].type = "Organization"
 * section[referralToSection].entry[referralToOrganization].display = "紹介先医療機関"
 
@@ -77,7 +77,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 */
 
 // * section[=].entry[+].reference = "Example-JP-Practitioner-eCS-ReferralTo01Inline"
-* section[referralToSection].entry[referralToDoctor].reference = "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
+* section[referralToSection].entry[referralToDoctor].reference = "urn:uuid:1a543c2e-9947-294a-cade-0220c4b6426a" // "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
 * section[referralToSection].entry[referralToDoctor].type = "Practitioner"
 * section[referralToSection].entry[referralToDoctor].display = "紹介先医師"
 
@@ -88,7 +88,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralFromSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\">東京都港区新橋１−２−３
 <br />電話:03-9876-5432><br />港診療所<br />眼科<br />大河内 勘三郎</div>"
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-* section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * section[referralFromSection].entry[referralFromOrganization].type = "Organization"
 * section[referralFromSection].entry[referralFromOrganization].display = "紹介元医療機関"
 
@@ -101,7 +101,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 */
 
 // * section[=].entry[+].reference = "Example-JP-Practitioner-eCS-ReferralFrom01Inline"
-* section[referralFromSection].entry[referralFromDoctor].reference = "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* section[referralFromSection].entry[referralFromDoctor].reference = "urn:uuid:415fd368-a6e2-6f68-6178-f95d4b3babfc"  // "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * section[referralFromSection].entry[referralFromDoctor].type = "Practitioner"
 * section[referralFromSection].entry[referralFromDoctor].display = "紹介元医師"
 

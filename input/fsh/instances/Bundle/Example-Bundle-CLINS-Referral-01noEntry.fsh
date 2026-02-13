@@ -18,25 +18,25 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 
 * timestamp = "2021-11-26T10:00:00+09:00"
 
-* entry[composition].fullUrl = "urn:uuid:776358c0-c5da-d122-14a3-c64afa3c554c"  // "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
+* entry[composition].fullUrl = "urn:uuid:8610c5e8-95fd-79b0-ce70-b2caa3b604a7"  // "urn:uuid:830ec2d1-67a7-427e-b6fe-ad0eb29da7fb"
 * entry[composition].resource = compositionReferralExample01InlineNoEntry
 
-* entry[patient].fullUrl = "urn:uuid:b96ce9f5-62f8-45c2-59da-bf53cbd6aa2b" // "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
+* entry[patient].fullUrl = "urn:uuid:e02806e0-bbd7-01e0-3036-ff56619a9409" // "urn:uuid:0a48a4bf-0d87-4efb-aafd-d45e0842a4dd"
 * entry[patient].resource = Example-JP-Patient-eCS-MAKINOInline
 
 //* entry[referralEncounter][+].fullUrl = "urn:uuid:7cad1f19-3435-451d-9a71-a81b61f3358e"
 //* entry[referralEncounter][=].resource = Example-JP-Encounter-eCS-AMB-01Inline
 
-* entry[practitioners][+].fullUrl = "urn:uuid:04565c5a-a36d-3225-37d6-4f6bacd63c60"  // "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
+* entry[practitioners][+].fullUrl = "urn:uuid:415fd368-a6e2-6f68-6178-f95d4b3babfc"  // "urn:uuid:3e6a0ba2-d781-4fd7-9de6-e077b690daed"
 * entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralFrom02Inline
 
-* entry[practitioners][+].fullUrl = "urn:uuid:8d1901fb-ce69-01bf-a120-1148c2e8b786" // "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
+* entry[practitioners][+].fullUrl = "urn:uuid:1a543c2e-9947-294a-cade-0220c4b6426a" // "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
 * entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralTo02Inline
 
-* entry[organization][+].fullUrl = "urn:uuid:cca67335-5c60-ae7b-32b3-5a5b9cc8488d" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* entry[organization][+].fullUrl = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * entry[organization][=].resource = Example-JP-Org-eCS-Inst-Referral01Inline
 
-* entry[organization][+].fullUrl = "urn:uuid:7b189ddf-ad2e-2706-118d-156eb8cb4908" // "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
+* entry[organization][+].fullUrl = "urn:uuid:62579f9e-da16-3231-1eb8-8e66974a31a6" // "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
 * entry[organization][=].resource = Example-JP-Org-eCS-ReferralTo01Inline
 
 //* entry[problem][+].fullUrl = "urn:uuid:6a31db8e-109d-4349-b0cf-095131c3307a"
