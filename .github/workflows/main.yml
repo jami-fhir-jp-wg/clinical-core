@@ -159,6 +159,18 @@ jobs:
         cd ..
     - name: prepare gtz files for upload to remote site
       run: | 
+        ruby ./script/create_symbolic_link_from_file2url.rb
+        : # 上記rubyにより、sushi_configのspecial_URLブロックに出力されるの同じテキストが作成され、各行にln -sコマンドとしてmakeSymbolicLink.bashファイルに出力される。
+        cat makeSymbolicLink.bash
+        echo "cat makeSymbolicLink.bash completed"
+        ls -l output
+        cd output
+        echo "cd output completed"
+        source ../makeSymbolicLink.bash
+        echo "source ../makeSymbolicLink.bash completed"
+        ls -l
+        cd ..
+        : # 
         tar czf output.tgz output
 
     - name:  create differential package 
