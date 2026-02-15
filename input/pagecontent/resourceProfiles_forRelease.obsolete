@@ -137,7 +137,7 @@
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
             </td>
             <td>
 <p>検査検体情報　JP-Specimen</p>
@@ -169,7 +169,7 @@
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-DocumentReference.html" title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
             </td>
             <td>
 <p>参照ドキュメント　DocumentReference</p>

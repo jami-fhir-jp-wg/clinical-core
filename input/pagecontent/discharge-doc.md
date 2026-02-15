@@ -119,7 +119,7 @@
         <td style="column-width:30%">
            <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Observation-Common.html"
+           <p> <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-Observation-Common.html"
                 title="StructureDefinition/JP-Observation-Common">JP_Observation_Common</a></p>
         </td>
         <td>
@@ -140,7 +140,7 @@
     <tr>
         <td style="column-width:30%">入院中経過セクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+            <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-DocumentReference.html"
                 title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
         </td>
         <td>
@@ -150,7 +150,7 @@
     <tr>
         <td style="column-width:30%">入院中治療セクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-jp-procedure.html"
+            <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-jp-procedure.html"
                 title="StructureDefinition/JP-Procedure">JP-Procedure</a>
         </td>
         <td>
@@ -170,7 +170,7 @@
     <tr>
         <td style="column-width:30%">添付情報セクション、PDFセクションから参照されるエントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+            <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-DocumentReference.html"
                 title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
         </td>
         <td>

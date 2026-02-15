@@ -80,8 +80,8 @@
   1.  [患者情報	Patientリソース][JP_Patient_eCS]
   1.  [外来受診・入院歴情報	Encounterリソース][JP_Encounter_eCS]
   1.  [医療者情報　Practitionerリソース](https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-jp-practitioner.html)
-  1.  [オーダ情報 ServiceRequestリソース JP_ServiceRequest](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html)
-  1.  [検査検体情報	Sepecimenリソース JP_Specimen](https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html)
+  1.  [オーダ情報 ServiceRequestリソース JP_ServiceRequest](https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-ServiceRequest.html)
+  1.  [検査検体情報	Sepecimenリソース JP_Specimen](https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-Specimen.html)
 
   <span style="color: blue;">上記のうち、患者情報以外のリソースは、５情報では、[埋め込みリソース（containedリソース）](core6spec.html#contained-%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E5%8F%96%E3%82%8A%E6%89%B1%E3%81%84)の形で記述される。患者情報のリソースはBundleリソースのひとつのentryとして記述され、５情報からは参照の形をとる。</span>
   <br>
@@ -213,7 +213,7 @@ identifier.value	:  以下に記載するリソース一意識別IDを設定す�
          </tr>
                   <tr>
             <td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-ServiceRequest.html" title="StructureDefinition/JP-ServiceRequest">JP_ServiceRequest</a>
             </td>
             <td>
 <p>オーダー情報　JP-ServiceRequest</p>
@@ -221,7 +221,7 @@ identifier.value	:  以下に記載するリソース一意識別IDを設定す�
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
+               <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-Specimen.html" title="StructureDefinition/JP-Specimen">JP_Specimen</a>
             </td>
             <td>
 <p>検査検体情報　JP-Specimen</p>

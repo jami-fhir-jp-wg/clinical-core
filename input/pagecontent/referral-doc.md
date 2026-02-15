@@ -143,7 +143,7 @@
         <td style="column-width:30%">
            <p> <a href="StructureDefinition-JP-Observation-LabResult-eCS.html"
                 title="StructureDefinition/JP-Observation-LabResult-eCS">JP_Observation_LabResult_eCS</a></p>
-           <p> <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP_Observation_Common.html"
+           <p> <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP_Observation_Common.html"
                 title="StructureDefinition/JP_Observation_Common">JP_Observation_Common</a></p>
         </td>
         <td>
@@ -164,7 +164,7 @@
     <tr>
         <td style="column-width:30%">“臨床経過セクション"（別紙様式１１の「治療経過」に対応）</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+            <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-DocumentReference.html"
                 title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
         </td>
         <td>
@@ -174,7 +174,7 @@
     <tr>
         <td style="column-width:30%">“添付文書情報、PDF情報エントリ</td>
         <td style="column-width:30%">
-            <a href="https://jpfhir.jp/fhir/core/1.1.2/StructureDefinition-JP-DocumentReference.html"
+            <a href="https://jpfhir.jp/fhir/core/1.1.2-clins/StructureDefinition-JP-DocumentReference.html"
                 title="StructureDefinition/JP-DocumentReference">JP_DocumentReference</a>
         </td>
         <td>
