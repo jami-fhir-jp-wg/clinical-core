@@ -70,6 +70,13 @@ jobs:
         url: "https://jpfhir.jp/fhir/core/terminology/jpfhir-terminology.r4-2.0.0-test.tgz"
         target: .
 
+    - name: Download the file
+      uses: suisei-cn/actions-download-file@v1.4.0
+      id: downloadfile2
+      with:
+        url: "https://jpfhir.jp/fhir/core/1.1.2-clins/jp-core.r4-1.1.2-clins.tgz"
+        target: .
+
     - name: Prepare for using all dependent packages including Jp modified version of hl7.fhir.r4.core Package 
       env:
         JPPACKAGECOREtgz: fhir_dotFHIR_packages.tgz
@@ -92,7 +99,7 @@ jobs:
         cd /home/runner/.fhir
         mkdir -p packages/$JPTerminologyCOREdir
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPTerminologyCOREdir
-        mv /home/runner/work/clinical-core/clinical-core/packages_snapshot/$JPCOREtgzjp /home/runner/.fhir/work/
+        mv $JPCOREtgzjp /home/runner/.fhir/work/
         cd /home/runner/.fhir/work
         tar xzf $JPCOREtgzjp
         mkdir -p /home/runner/.fhir/packages/$JPCOREdir
