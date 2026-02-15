@@ -33,10 +33,10 @@ Description: "■ 診療情報提供書　Bundleリソース(CLINS送信用)　#
 * entry[practitioners][+].fullUrl = "urn:uuid:1a543c2e-9947-294a-cade-0220c4b6426a" // "urn:uuid:f11535c2-043d-43b6-bf99-b8298ea3c946"
 * entry[practitioners][=].resource = Example-JP-Practitioner-eCS-ReferralTo02Inline
 
-* entry[organization][+].fullUrl = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* entry[organization][+].fullUrl =  "urn:uuid:aa97b192-f08c-5db9-2276-9048f4f1d14e" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * entry[organization][=].resource = Example-JP-Org-eCS-Inst-Referral01Inline
 
-* entry[organization][+].fullUrl = "urn:uuid:62579f9e-da16-3231-1eb8-8e66974a31a6" // "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
+* entry[organization][+].fullUrl =  "urn:uuid:62579f9e-da16-3231-1eb8-8e66974a31a6" // "urn:uuid:a44951be-cdaa-4c53-9e35-6be013da5441"
 * entry[organization][=].resource = Example-JP-Org-eCS-ReferralTo01Inline
 
 //* entry[problem][+].fullUrl = "urn:uuid:6a31db8e-109d-4349-b0cf-095131c3307a"

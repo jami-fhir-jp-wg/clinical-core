@@ -45,13 +45,13 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * author[=].display = "診療情報提供書作成者Practitionerリソース"
 
 // * author[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-* author[1].reference = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* author[1].reference = "urn:uuid:aa97b192-f08c-5db9-2276-9048f4f1d14e" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * author[=].type = "Organization"
 * author[=].display = "診療情報提供書作成機関Organizationリソース"
 
 * title = "診療情報提供書"
 // * custodian.reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-* custodian.reference = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* custodian.reference = "urn:uuid:aa97b192-f08c-5db9-2276-9048f4f1d14e" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * custodian.type = "Organization"
 * custodian.display = "診療情報提供書交付責任機関Organizationリソース"
 
@@ -88,7 +88,7 @@ Description: "診療情報提供書　Compositionリソース データ作成例
 * section[referralFromSection].text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"ja\" xml:lang=\"ja\">東京都港区新橋１−２−３
 <br />電話:03-9876-5432><br />港診療所<br />眼科<br />大河内 勘三郎</div>"
 // * section[=].entry[+].reference = "Example-JP-Org-eCS-Inst-Referral01Inline"
-* section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:c4b718611-dffa-c20f-8a96-5356f759133c" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
+* section[referralFromSection].entry[referralFromOrganization].reference = "urn:uuid:aa97b192-f08c-5db9-2276-9048f4f1d14e" // "urn:uuid:8a888471-9781-4fb7-b5c4-b34afcdea638"
 * section[referralFromSection].entry[referralFromOrganization].type = "Organization"
 * section[referralFromSection].entry[referralFromOrganization].display = "紹介元医療機関"
 
