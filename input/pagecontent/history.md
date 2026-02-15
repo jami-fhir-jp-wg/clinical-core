@@ -8,8 +8,10 @@
 
 ### Ver.1.12.0
   - Ver.1.12.0-preR2 に以下の修正を加えて正式公開
-  - jp-core-1.1.2-clinsへリンクすべきいくつかのページ内リンクがjp-core-1.1.2のままになっていた箇所があったため、jp-core-1.1.2-clinsへのリンクに修正。
-  - データ作例集の"Bundle-CLINS-Referral-NoEntry-Example-01"と"Bundle-CLINS-Referral-NoEntry-Example-01-RefText"に含まれるentryのUUIDを各ファイル内で参照するように修正（これまでBundle-CLINS-Referral-Example-01ファイル内のリソースを参照していた）。
+    - jp-core-1.1.2-clinsへリンクすべきいくつかのページ内リンクがjp-core-1.1.2のままになっていた箇所があったため、jp-core-1.1.2-clinsへのリンクに修正。
+    - データ作例集の"Bundle-CLINS-Referral-NoEntry-Example-01"と"Bundle-CLINS-Referral-NoEntry-Example-01-RefText"に含まれるentryのUUIDを各ファイル内で参照するように修正（これまでBundle-CLINS-Referral-Example-01ファイル内のリソースを参照していた）。
+    - JP_Organization_eCS のextension:prefectureNo　の詳細説明（Comments)のsystem値のURL記載にExtensionを定義するURLが記載されていたのを、CodeSystemのURL記載に修正。（http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo　→　http://jpfhir.jp/fhir/core/mhlw/CodeSystem/PrefectureNo-2digits）
+    - JP_Organization_eCS のextension:organizationCategory　の詳細説明（Comments)のsystem値のURL記載にExtensionを定義するURLが記載されていたのを、CodeSystemのURL記載に修正。（http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory　→　http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationFeeScoreType）
 
 ### Ver.1.12.0-preR2
   - JP-Composition-eDischargeSummaryのmeta.profileの説明（shortおよびDefinition)で、"http://jpfhir.jp/fhir/<span style="color: red;">ePCS</span>/StructureDefinition/JP_Composition_eDischargeSummary"を、"http://jpfhir.jp/fhir/<span style="color: red;">eDischargeSummary</span>/StructureDefinition/JP_Composition_eDischargeSummary"に修正。

@@ -42,9 +42,9 @@ Description: "診療情報・サマリー汎用　Organizationリソース（医
 
 * extension[prefectureNo] ^short = "都道府県番号２桁を表現するExtension"
 * extension[prefectureNo] ^comment = "都道府県番号２桁。Identifier型の拡張を使用する。  
-valueには都道府県番号2桁の値を格納し、systemには都道府県番号を表すURL「http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_PrefectureNo」を指定する。"
+valueには都道府県番号2桁の値を格納し、systemには都道府県番号を表す「http://jpfhir.jp/fhir/core/mhlw/CodeSystem/PrefectureNo-2digits」を指定する。"
 * extension[organizationCategory] ^short = "点数表コード１桁（医科１、非保険検診施設２、歯科３、調剤４、訪問看護ステーション６）を表現するExtension【詳細参照】"
-* extension[organizationCategory] ^comment = "点数表コード１桁（医科１、非保険検診施設２、歯科３、調剤４、訪問看護ステーション６）。systemには点数表番号を表すURL「http://jpfhir.jp/fhir/core/Extension/StructureDefinition/JP_Organization_InsuranceOrganizationCategory」を指定する。"
+* extension[organizationCategory] ^comment = "点数表コード１桁（医科１、非保険検診施設２、歯科３、調剤４、訪問看護ステーション６）。systemには点数表番号を表す「http://jpfhir.jp/fhir/core/mhlw/CodeSystem/MedicationFeeScoreType」を指定する。"
 
 * extension[department] 0.. MS
 * extension[department] ^short = "診療科情報"
