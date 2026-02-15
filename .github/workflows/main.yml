@@ -72,7 +72,7 @@ jobs:
 
     - name: Download the file
       uses: suisei-cn/actions-download-file@v1.4.0
-      id: downloadfile2
+      id: downloadfile3
       with:
         url: "https://jpfhir.jp/fhir/core/1.1.2-clins/jp-core.r4-1.1.2-clins.tgz"
         target: .
