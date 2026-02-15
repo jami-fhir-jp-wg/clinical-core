@@ -2,7 +2,7 @@ name: main-yaml
 on:
   push:
     branches: 
-      - v1.12.0-preMarch
+      - v1.12.0
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,12 +10,12 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ v1.12.0-preMarch ]
+    branches: [ v1.12.0 ]
   repository_dispatch:
     types: [update]
 env:
   release_version : 1.12.0
-  version_date : -pre20251108test
+  version_date : 
 defaults:
   run:
     shell: bash # ワークフローで使うシェルをまとめて指定
