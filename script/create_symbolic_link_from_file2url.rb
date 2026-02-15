@@ -35,9 +35,9 @@ def fillUrl(prefix, sb, extension = false)
                 if fileID != "" then
                   urlfilebase = prefix + "-" + fileID
                   if pathfilebase != urlfilebase
-                    sb << "ln -s " + pathfilebase + ".json.html " + urlfilebase + ".json.html" + "\n"
-                    sb << "ln -s " + pathfilebase + ".html " + urlfilebase + ".html" + "\n"
-                    sb << "ln -s " + pathfilebase + ".json " + urlfilebase + ".json" + "\n"
+                    sb << "ln -s " + pathfilebase + ".json.html " + urlfilebase + ".json.html" + "  2>/dev/null || true\n"
+                    sb << "ln -s " + pathfilebase + ".html " + urlfilebase + ".html" + "  2>/dev/null || true\n"
+                    sb << "ln -s " + pathfilebase + ".json " + urlfilebase + ".json" + "  2>/dev/null || true\n"
                   end
                 end
             end
