@@ -8,7 +8,7 @@
 
 ### Ver.1.12.0
   - Ver.1.12.0-preR2 に以下の修正を加えて正式公開
-  - 実装ガイドの各リソースページの表題部分にある定義URLをクリックした場合にリンク切れのものがあったのを修正。 
+  - jp-core-1.1.2-clinsへリンクすべきいくつかのページ内リンクがjp-core-1.1.2のままになっていた箇所があったため、jp-core-1.1.2-clinsへのリンクに修正。
   - データ作例集の"Bundle-CLINS-Referral-NoEntry-Example-01"と"Bundle-CLINS-Referral-NoEntry-Example-01-RefText"に含まれるentryのUUIDを各ファイル内で参照するように修正（これまでBundle-CLINS-Referral-Example-01ファイル内のリソースを参照していた）。
 
 ### Ver.1.12.0-preR2
