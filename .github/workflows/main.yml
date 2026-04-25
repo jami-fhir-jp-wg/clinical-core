@@ -152,8 +152,6 @@ jobs:
         cat '/home/runner/.fhir/packages/jpfhir-terminology.r4#2.0.0/package/package.json'
         echo 'jp-core.r4#1.1.2-clins'
         cat '/home/runner/.fhir/packages/jp-core.r4#1.1.2-clins/package/package.json'
-        echo 'jp-core.r4#1.1.0'
-        cat '/home/runner/.fhir/packages/jp-core.r4#1.1.0/package/package.json'
         java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -no-sushi -ig ig.ini  -tx n/a -language "ja" 
 
     - name: replace url of html files referring simplifier.net package
