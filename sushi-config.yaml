@@ -24,6 +24,7 @@ publisher:
   email: office@jami.jp
 copyright: （一社）日本医療情報学会. CC BY-ND 4.0 （クリエイティブ・コモンズ 表示-改変禁止 4.0 国際 パブリック・ライセンス）
 jurisdiction: 'urn:iso:std:iso:3166-2#JP'
+
 dependencies:
   jp-core.r4:
     uri: http://jpfhir.jp/fhir/core/ImplementationGuide/jpfhir.jp.core
