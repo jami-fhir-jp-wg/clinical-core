@@ -1,3 +1,34 @@
+Alias: $JP_eCS_SimpleQuantityWithComparator = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator
+// -----------------------------------------
+//JP_eCS_SimpleQuantityWithComparator
+// -----------------------------------------
+Extension: JP_eCS_SimpleQuantityWithComparator
+Id: jp-ecs-simpleQuantityWithComparator
+Title: "JP eCS SimpleQuantity with Comparator"
+Description: "SimpleQuatityに不等号を追加可能とする拡張"
+* ^url = $JP_eCS_SimpleQuantityWithComparator
+* ^version = "x.x.x-profile"
+* ^status = #active
+* ^date = "2026-04-25"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+* ^purpose = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
+* ^language = #ja 
+* ^context[+].type = #element
+* ^context[=].expression = "Observation"
+
+* . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
+* . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
+* . ^comment = "使用できるcomparatorには制限があり、referenceRange.low.extension.valueCode では'>'、referenceRange.high.extension.valueCode では、'<'だけが使える"
+
+* extension 0..0
+* value[x] only code
+* value[x] ^short = "QuantityComparatorのうち'>'または'<'のどちらかを設定する。"
+* value[x] ^definition = "QuantityComparatorのうち'>'または'<'のどちらかを設定する。"
+* valueCode from http://hl7.org/fhir/ValueSet/quantity-comparator 
+
+//==================
 //* code.coding[+] = $JP_CLINS_CodeSystem_JLAC10_CoreLabo_CS#3H015000002326101  "K"
 //* code.coding[+] = $JP_ObservationLabResultCode_CS#3H015000002326101  "カリウム_血清_電位差測定_定量値"   
 // * code.coding[jlac10LaboCode] from $JP_ObservationLabResultCode_VS (required)

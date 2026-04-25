@@ -2,7 +2,7 @@ name: main-yaml
 on:
   push:
     branches: 
-      - V1.12.0
+      - V1.12.0-featureRefRangeComparator
     paths:
       - 'sushi-config.yaml'
       - 'input/**'
@@ -10,11 +10,11 @@ on:
       - '.github/workflows/main.yml'
       - 'script/*.py'
   pull_request:
-    branches: [ V1.12.0 ]
+    branches: [ V1.12.0-featureRefRangeComparator ]
   repository_dispatch:
     types: [update]
 env:
-  release_version : 1.12.0
+  release_version : 1.12.0-RefTest
   version_date : 
 defaults:
   run:
