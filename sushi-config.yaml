@@ -28,12 +28,10 @@ jurisdiction: 'urn:iso:std:iso:3166-2#JP'
 dependencies:
   jp-core.r4:
     uri: http://jpfhir.jp/fhir/core/ImplementationGuide/jpfhir.jp.core
-    version: file:./packages
-#    version: 1.1.2-clins
+    version: 1.1.2-clins
   jpfhir-terminology.r4:
     uri: http://jpfhir.jp/fhir/jpfhir-terminology/ImplementationGuide/jpfhir-terminology
-    version: file:./packages
-#     version: 2.0.0
+    version: 2.0.0
 # to avoid warning message "The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole"
 #----------------------------------------
 # ページタイトル名称設定

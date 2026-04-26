@@ -88,30 +88,12 @@ jobs:
         pwd
         echo '--1-'
         : # 
-        mkdir -p packages
-        mkdir -p packages/$JPTerminologyCOREdir
-        mkdir -p packages/$JPCOREdir
-        tar xzf $JPTerminologyCOREPtgz -C packages/$JPTerminologyCOREdir
-        tar xzf $JPCOREtgzjp -C packages/$JPCOREdir
-        : #   
-        mkdir -p /home/runner/.fhir
-        mv $JPPACKAGECOREtgz /home/runner/.fhir/
-        mkdir -p /home/runner/.fhir/work
-        mv $JPTerminologyCOREPtgz /home/runner/.fhir/work/$JPTerminologyCOREPtgz
-        mv $JPCOREtgzjp /home/runner/.fhir/work/
-        cd /home/runner/.fhir
-        tar xzf $JPPACKAGECOREtgz
-        cd /home/runner/.fhir/work
-        tar xzf $JPTerminologyCOREPtgz
-        cd /home/runner/.fhir
-        mkdir -p packages/$JPTerminologyCOREdir
-        mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPTerminologyCOREdir
-        cd /home/runner/.fhir/work
-        tar xzf $JPCOREtgzjp
+        mkdir -p /home/runner/.fhir/packages/$JPTerminologyCOREdir
         mkdir -p /home/runner/.fhir/packages/$JPCOREdir
-        ls -l /home/runner/.fhir/packages/
-        mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPCOREdir/
-
+        tar xzf $JPTerminologyCOREPtgz -C /home/runner/.fhir/packages/$JPTerminologyCOREdir
+        tar xzf $JPCOREtgzjp -C /home/runner/.fhir/packages/$JPCOREdir
+        cp packages-cache/packages.ini /home/runner/.fhir/packages/packages.ini
+        : #   
 
     - name: Set current datetime
       run: echo "CURRENT_DATETIME=$(date '+%Y-%m-%dT%H:%M')" >> $GITHUB_ENV
@@ -157,9 +139,9 @@ jobs:
         : # CodeSystem-v3-ActCode.jsonはFSHから変換するのではなくJSONを直接コピーする。
         : # Ccp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCode.json
         echo 'jpfhir-terminology.r4#2.0.0'
-        cat '/home/runner/.fhir/packages/jpfhir-terminology.r4#2.0.0/package/package.json'
+        cat 'packages/jpfhir-terminology.r4#2.0.0/package/package.json'
         echo 'jp-core.r4#1.1.2-clins'
-        cat '/home/runner/.fhir/packages/jp-core.r4#1.1.2-clins/package/package.json'
+        cat 'packages/jp-core.r4#1.1.2-clins/package/package.json'
         java -Xmx12G -Djava.awt.headless=true -jar ./input-cache/publisher.jar -ig ig.ini  -tx n/a -language "ja" 
 
     - name: replace url of html files referring simplifier.net package
