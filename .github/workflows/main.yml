@@ -87,6 +87,13 @@ jobs:
         ls -l .
         pwd
         echo '--1-'
+        : # 
+        mkdir -p packages
+        mkdir -p packages/$JPTerminologyCOREdir
+        mkdir -p packages/$JPCOREdir
+        tar $JPTerminologyCOREPtgz packages/$JPTerminologyCOREdir
+        tar $JPCOREtgzjp packages/$JPCOREdir
+        : #   
         mkdir -p /home/runner/.fhir
         mv $JPPACKAGECOREtgz /home/runner/.fhir/
         mkdir -p /home/runner/.fhir/work
@@ -104,6 +111,7 @@ jobs:
         mkdir -p /home/runner/.fhir/packages/$JPCOREdir
         ls -l /home/runner/.fhir/packages/
         mv /home/runner/.fhir/work/package /home/runner/.fhir/packages/$JPCOREdir/
+
 
     - name: Set current datetime
       run: echo "CURRENT_DATETIME=$(date '+%Y-%m-%dT%H:%M')" >> $GITHUB_ENV
@@ -145,7 +153,7 @@ jobs:
         mkdir -p input-cache
         mv ./publisher.jar ./input-cache
         unset DISPLAY
-        : # sushi .
+        sushi .
         : # CodeSystem-v3-ActCode.jsonはFSHから変換するのではなくJSONを直接コピーする。
         : # Ccp v3ActJSON/CodeSystem-v3-ActCode.json  fsh-generated/resources/CodeSystem-v3-ActCode.json
         echo 'jpfhir-terminology.r4#2.0.0'
