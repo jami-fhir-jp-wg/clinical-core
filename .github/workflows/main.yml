@@ -54,6 +54,7 @@ jobs:
       with:
         repository: HL7/fhir-ig-publisher
         tag: '2.2.6'
+        : # 2.2.7 is the newest version on 2026 April 27. However, 2.2.7 causes many Error for expanding ValueSets and this may be Bug in the version.
         path: .
         file: publisher.jar
     - name: Download the file
