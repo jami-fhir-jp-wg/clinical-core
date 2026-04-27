@@ -1,32 +1,53 @@
-Alias: $JP_eCS_ObsRefRangeWithComparatorExtension = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_ObsRefRangeWithComparatorExtension
+Alias: $JP_eCS_ObsRefRangeLimit = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_ObsRefRangeLimit
+Alias: $JP_eCS_ObsCompRefRangeLimit = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_ObsCompRefRangeLimit
+
 // -----------------------------------------
-//JP_eCS_ObsRefRangeWithComparatorExtension
+//JP_eCS_ObsRefRangeLimit
 // -----------------------------------------
-Extension: JP_eCS_ObsRefRangeWithComparatorExtension
-Id: jp-ecs-ObsRefRangeWithComparatorExtension
+Extension: JP_eCS_ObsRefRangeLimit
+Id: jp-ecs-ObsRefRangeLimit
 Title: "Extension ObsRefRange with Comparator"
 Description: "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果の基準値境界を含まない時に使用する。"
-* ^url = $JP_eCS_ObsRefRangeWithComparatorExtension
+* ^url = $JP_eCS_ObsRefRangeLimit
 * ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2026-04-25"
 * ^publisher = "（一社）日本医療情報学会"
 * ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
 * ^fhirVersion = #4.0.1
-* ^purpose = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
-* ^language = #ja 
+* ^purpose = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値を範囲に含む。"
+* ^language = #ja
 * ^context[+].type = #element
 * ^context[=].expression = "Observation.referenceRange.low"
 * ^context[+].type = #element
 * ^context[=].expression = "Observation.referenceRange.high"
+* . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
+* . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値を範囲に含む。"
+* . ^comment = "使用できるcomparatorには制限があり、referenceRange.low.extension.valueCode では'>'、referenceRange.high.extension.valueCode では、'<'だけが使える"
+
+// -----------------------------------------
+//JP_eCS_ObsCompRefRangeLimit
+// -----------------------------------------
+Extension: JP_eCS_ObsCompRefRangeLimit
+Id: jp-ecs-ObsCompRefRangeLimit
+Title: "Extension ObsCompRefRange with Comparator"
+Description: "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果の基準値境界を含まない時に使用する。"
+* ^url = $JP_eCS_ObsCompRefRangeLimit
+* ^version = "x.x.x-profile"
+* ^status = #active
+* ^date = "2026-04-25"
+* ^publisher = "（一社）日本医療情報学会"
+* ^copyright = "（一社）日本医療情報学会. CC BY-ND 4.0"
+* ^fhirVersion = #4.0.1
+* ^purpose = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のcomponent.referenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
+* ^language = #ja 
 * ^context[+].type = #element
 * ^context[=].expression = "Observation.component.referenceRange.low"
 * ^context[+].type = #element
 * ^context[=].expression = "Observation.component.referenceRange.high"
-
-* . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
-* . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
-* . ^comment = "使用できるcomparatorには制限があり、referenceRange.low.extension.valueCode では'>'、referenceRange.high.extension.valueCode では、'<'だけが使える"
+* . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のcomponent.referenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
+* . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のcomponent.referenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
+* . ^comment = "使用できるcomparatorには制限があり、component.referenceRange.low.extension.valueCode では'>'、component.referenceRange.high.extension.valueCode では、'<'だけが使える"
 
 * extension 0..0
 * value[x] only code
@@ -513,14 +534,14 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.modifierExtension ..0
 
 
-//* referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparator ..1 MS
+//* referenceRange.low.extension contains JP_eCS_ObsRefRangeLimit named lowComparator ..1 MS
 //* referenceRange.low.extension[lowComparator].url 1..1
-//* referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
+//* referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeLimit
 //* referenceRange.low.extension[lowComparator].valueCode  1..1
 //* referenceRange.low.extension[lowComparator].valueCode = #> (exactly)
 * referenceRange.low.extension ..1
 * referenceRange.low.extension.url 1..1
-* referenceRange.low.extension.url=$JP_eCS_ObsRefRangeWithComparatorExtension
+* referenceRange.low.extension.url=$JP_eCS_ObsRefRangeLimit
 * referenceRange.low.extension.valueCode  1..1
 * referenceRange.low.extension.valueCode = #> (exactly)
 
@@ -535,9 +556,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 //* referenceRange.high.extension ..1
 
-* referenceRange.high.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named highComparator ..1 MS
+* referenceRange.high.extension contains JP_eCS_ObsRefRangeLimit named highComparator ..1 MS
 //* referenceRange.high.extension[highComparator].url 1..1
-//* referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
+//* referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeLimit
 * referenceRange.high.extension[highComparator].valueCode  1..1
 * referenceRange.high.extension[highComparator].valueCode = #< (exactly)
 
@@ -571,19 +592,19 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.extension ..0
   * referenceRange.modifierExtension ..0
   * referenceRange.low.id ..0
-//  * referenceRange.low.extension ..1
 
-//  * referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparatorComp ..1 MS
+// 以下を記述したかったが、publihser 2.2.6では無限エラーが出る
+//  * referenceRange.low.extension ..1
+//  * referenceRange.low.extension contains JP_eCS_ObsRefRangeLimit named lowComparatorComp ..1 MS
 //  * referenceRange.low.extension[lowComparator].url 1..1
-//  * referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
+//  * referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeLimit
 //  * referenceRange.low.extension[lowComparatorComp].valueCode  1..1
 //  * referenceRange.low.extension[lowComparatorComp].valueCode = #> (exactly)
-
-  * referenceRange.low.extension ..1
-  * referenceRange.low.extension.url 1..1
-  * referenceRange.low.extension.url=$JP_eCS_ObsRefRangeWithComparatorExtension
-  * referenceRange.low.extension.valueCode  1..1
-  * referenceRange.low.extension.valueCode = #> (exactly)
+    * referenceRange.low.extension ..1
+    * referenceRange.low.extension.url 1..1
+    * referenceRange.low.extension.url=$JP_eCS_ObsCompRefRangeLimit
+    * referenceRange.low.extension.valueCode  1..1
+    * referenceRange.low.extension.valueCode = #> (exactly)
 
   * referenceRange.low.value 1..1  MS
     * insert relative_short_definition("基準値の小さいほうの値")
@@ -598,9 +619,9 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.high.id ..0
 //  * referenceRange.high.extension ..1
 
-//  * referenceRange.high.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named highComparatorComp ..1 MS
+//  * referenceRange.high.extension contains JP_eCS_ObsRefRangeLimit named highComparatorComp ..1 MS
 //  * referenceRange.high.extension[highComparator].url 1..1
-//  * referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
+//  * referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeLimit
 //  * referenceRange.high.extension[highComparatorComp].valueCode  1..1
 //  * referenceRange.high.extension[highComparatorComp].valueCode = #< (exactly)
 
