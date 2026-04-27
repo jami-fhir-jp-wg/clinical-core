@@ -1,5 +1,5 @@
 Instance: Example-JP-Obs-LabResult-eCS-eGFR-testRef
-InstanceOf: JP_Observation_LabResult_eCS-testRef
+InstanceOf: JP_Observation_LabResult_eCS
 Usage: #example
 Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"
 * note.text = "Observationリソース（検体検査結果）eGFR　75.0 ml/min/1.73m2 　　ローカルコード=0000181910 一般項目JLACコードJLAC10=8A065000002391901 検体：血清"

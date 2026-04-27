@@ -506,11 +506,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.extension ..0
 * referenceRange.modifierExtension ..0
 
-  * referenceRange.low.extension ..1
-  * referenceRange.low.extension url 1..1
-  * referenceRange.low.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
-  * referenceRange.low.extension.valueCode  1..1
-  * referenceRange.low.extension.valueCode = #>
+* referenceRange.low.extension ..1
+* referenceRange.low.extension.url 1..1
+* referenceRange.low.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
+* referenceRange.low.extension.valueCode  1..1
+* referenceRange.low.extension.valueCode = #>
 
 * referenceRange.low.value 1..1  MS
   * insert relative_short_definition("基準値の小さいほうの値")
@@ -522,7 +522,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * insert relative_short_definition("検査結果単位コード。値は例示。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、、マスターにXML単位コードがあれば記述する。")
 
 * referenceRange.high.extension ..1
-* referenceRange.high.extension url 1..1
+* referenceRange.high.extension.url 1..1
 * referenceRange.high.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
 * referenceRange.high.extension.valueCode  1..1
 * referenceRange.high.extension.valueCode = #<
@@ -558,7 +558,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.modifierExtension ..0
   * referenceRange.low.id ..0
   * referenceRange.low.extension ..1
-  * referenceRange.low.extension url 1..1
+  * referenceRange.low.extension.url 1..1
   * referenceRange.low.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
   * referenceRange.low.extension.valueCode  1..1
   * referenceRange.low.extension.valueCode = #>
@@ -574,7 +574,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
   * referenceRange.high.id ..0
   * referenceRange.high.extension ..1
-  * referenceRange.high.extension url 1..1
+  * referenceRange.high.extension.url 1..1
   * referenceRange.high.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
   * referenceRange.high.extension.valueCode  1..1
   * referenceRange.high.extension.valueCode = #<
