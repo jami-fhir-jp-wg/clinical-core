@@ -600,11 +600,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //  * referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeLimit
 //  * referenceRange.low.extension[lowComparatorComp].valueCode  1..1
 //  * referenceRange.low.extension[lowComparatorComp].valueCode = #> (exactly)
-    * referenceRange.low.extension ..1
-    * referenceRange.low.extension.url 1..1
-    * referenceRange.low.extension.url=$JP_eCS_ObsCompRefRangeLimit
-    * referenceRange.low.extension.valueCode  1..1
-    * referenceRange.low.extension.valueCode = #> (exactly)
+  * referenceRange.low.extension ..1
+  * referenceRange.low.extension.url 1..1
+  * referenceRange.low.extension.url=$JP_eCS_ObsCompRefRangeLimit
+  * referenceRange.low.extension.valueCode  1..1
+  * referenceRange.low.extension.valueCode = #> (exactly)
 
   * referenceRange.low.value 1..1  MS
     * insert relative_short_definition("基準値の小さいほうの値")
