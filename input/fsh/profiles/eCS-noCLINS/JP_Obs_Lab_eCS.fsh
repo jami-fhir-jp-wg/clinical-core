@@ -527,7 +527,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.high.extension[highComparator].url 1..1
 * referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
 * referenceRange.high.extension[highComparator].valueCode  1..1
-* referenceRange.high.extension[lowComparator].valueCode = #<
+* referenceRange.high.extension[highComparator].valueCode = #<
 
 * referenceRange.high.value 1..1  MS
   * insert relative_short_definition("基準値の大きいほうの値")
@@ -582,7 +582,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.high.extension[highComparator].url 1..1
   * referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
   * referenceRange.high.extension[highComparator].valueCode  1..1
-  * referenceRange.high.extension[lowComparator].valueCode = #<
+  * referenceRange.high.extension[highComparator].valueCode = #<
   * referenceRange.high.value 1..1  MS
     * insert relative_short_definition("基準値の大きいほうの値")
   * referenceRange.high.unit 0..1 MS
