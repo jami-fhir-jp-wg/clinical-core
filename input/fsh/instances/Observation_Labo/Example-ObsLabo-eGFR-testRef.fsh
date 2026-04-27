@@ -55,14 +55,14 @@ Description: "Observationリソース（検体検査結果）eGFR　75.0 ml/min/
 * specimen.display = "血清"
 * specimen.type = "Specimen"
 
-* referenceRange.low.extension.url = "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
-* referenceRange.low.extension.valueCode = #>
+* referenceRange.low.extension[+].url = "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
+* referenceRange.low.extension[=].valueCode = #>
 
 * referenceRange.low.value = 68.0
 * referenceRange.low.unit = "ml/min/1.73m2"
 
-* referenceRange.high.extension.url = "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
-* referenceRange.high.extension.valueCode = #<
+* referenceRange.high.extension[+].url = "http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
+* referenceRange.high.extension[=].valueCode = #<
 
 * referenceRange.high.value = 110.0
 * referenceRange.high.unit = "ml/min/1.73m2"
