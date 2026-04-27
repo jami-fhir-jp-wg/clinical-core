@@ -512,13 +512,17 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.extension ..0
 * referenceRange.modifierExtension ..0
 
-//* referenceRange.low.extension ..1
 
-* referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparator ..1 MS
+//* referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparator ..1 MS
 //* referenceRange.low.extension[lowComparator].url 1..1
 //* referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
-* referenceRange.low.extension[lowComparator].valueCode  1..1
-* referenceRange.low.extension[lowComparator].valueCode = #> (exactly)
+//* referenceRange.low.extension[lowComparator].valueCode  1..1
+//* referenceRange.low.extension[lowComparator].valueCode = #> (exactly)
+* referenceRange.low.extension ..1
+* referenceRange.low.extension.url 1..1
+* referenceRange.low.extension.url=$JP_eCS_ObsRefRangeWithComparatorExtension
+* referenceRange.low.extension.valueCode  1..1
+* referenceRange.low.extension.valueCode = #> (exactly)
 
 * referenceRange.low.value 1..1  MS
   * insert relative_short_definition("基準値の小さいほうの値")
@@ -569,11 +573,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.low.id ..0
 //  * referenceRange.low.extension ..1
 
-  * referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparatorComp ..1 MS
+//  * referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparatorComp ..1 MS
 //  * referenceRange.low.extension[lowComparator].url 1..1
 //  * referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
-  * referenceRange.low.extension[lowComparatorComp].valueCode  1..1
-  * referenceRange.low.extension[lowComparatorComp].valueCode = #> (exactly)
+//  * referenceRange.low.extension[lowComparatorComp].valueCode  1..1
+//  * referenceRange.low.extension[lowComparatorComp].valueCode = #> (exactly)
 
   * referenceRange.low.value 1..1  MS
     * insert relative_short_definition("基準値の小さいほうの値")
