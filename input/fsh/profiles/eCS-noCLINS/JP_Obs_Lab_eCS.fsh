@@ -16,7 +16,9 @@ Description: "SimpleQuatityに不等号を追加可能とする拡張で、数�
 * ^purpose = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
 * ^language = #ja 
 * ^context[+].type = #element
-* ^context[=].expression = "Observation"
+* ^context[=].expression = "Observation.referenceRange.low"
+* ^context[+].type = #element
+* ^context[=].expression = "Observation.referenceRange.high"
 
 * . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
 * . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
@@ -507,13 +509,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.modifierExtension ..0
 
 * referenceRange.low.extension ..1
-/*
+
 * referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparator ..1 MS
 * referenceRange.low.extension[lowComparator].url 1..1
 * referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
 * referenceRange.low.extension[lowComparator].valueCode  1..1
 * referenceRange.low.extension[lowComparator].valueCode = #>
-*/
+
 * referenceRange.low.value 1..1  MS
   * insert relative_short_definition("基準値の小さいほうの値")
 * referenceRange.low.unit 0..1 MS
@@ -524,13 +526,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * insert relative_short_definition("検査結果単位コード。値は例示。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、、マスターにXML単位コードがあれば記述する。")
 
 * referenceRange.high.extension ..1
-/*
+
 * referenceRange.high.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named highComparator ..1 MS
 * referenceRange.high.extension[highComparator].url 1..1
 * referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
 * referenceRange.high.extension[highComparator].valueCode  1..1
 * referenceRange.high.extension[highComparator].valueCode = #<
-*/
+
 * referenceRange.high.value 1..1  MS
   * insert relative_short_definition("基準値の大きいほうの値")
 * referenceRange.high.unit 0..1 MS
@@ -562,13 +564,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.modifierExtension ..0
   * referenceRange.low.id ..0
   * referenceRange.low.extension ..1
-/*
+
   * referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparator ..1 MS
   * referenceRange.low.extension[lowComparator].url 1..1
   * referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
   * referenceRange.low.extension[lowComparator].valueCode  1..1
   * referenceRange.low.extension[lowComparator].valueCode = #>
-*/
+
   * referenceRange.low.value 1..1  MS
     * insert relative_short_definition("基準値の小さいほうの値")
   * referenceRange.low.unit 0..1 MS
@@ -581,13 +583,13 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
   * referenceRange.high.id ..0
   * referenceRange.high.extension ..1
-/*
+
   * referenceRange.high.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named highComparator ..1 MS
   * referenceRange.high.extension[highComparator].url 1..1
   * referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
   * referenceRange.high.extension[highComparator].valueCode  1..1
   * referenceRange.high.extension[highComparator].valueCode = #<
-*/
+
   * referenceRange.high.value 1..1  MS
     * insert relative_short_definition("基準値の大きいほうの値")
   * referenceRange.high.unit 0..1 MS
