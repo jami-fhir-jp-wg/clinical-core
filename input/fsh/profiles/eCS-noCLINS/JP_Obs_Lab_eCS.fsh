@@ -19,6 +19,10 @@ Description: "SimpleQuatityに不等号を追加可能とする拡張で、数�
 * ^context[=].expression = "Observation.referenceRange.low"
 * ^context[+].type = #element
 * ^context[=].expression = "Observation.referenceRange.high"
+* ^context[+].type = #element
+* ^context[=].expression = "Observation.component.referenceRange.low"
+* ^context[+].type = #element
+* ^context[=].expression = "Observation.component.referenceRange.high"
 
 * . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
 * . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値をっ範囲に含む。"
