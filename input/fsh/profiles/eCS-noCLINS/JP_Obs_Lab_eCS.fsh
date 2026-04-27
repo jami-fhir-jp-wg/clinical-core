@@ -1,12 +1,12 @@
-Alias: $JP_eCS_SimpleQuantityWithComparator = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator
+Alias: $JP_eCS_ObsRefRangeWithComparatorExtension = http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_ObsRefRangeWithComparatorExtension
 // -----------------------------------------
-//JP_eCS_SimpleQuantityWithComparator
+//JP_eCS_ObsRefRangeWithComparatorExtension
 // -----------------------------------------
-Extension: JP_eCS_SimpleQuantityWithComparator
-Id: jp-ecs-simpleQuantityWithComparator
-Title: "JP eCS SimpleQuantity with Comparator"
-Description: "SimpleQuatityに不等号を追加可能とする拡張"
-* ^url = $JP_eCS_SimpleQuantityWithComparator
+Extension: JP_eCS_ObsRefRangeWithComparatorExtension
+Id: jp-ecs-ObsRefRangeWithComparatorExtension
+Title: "Extension ObsRefRange with Comparator"
+Description: "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果の基準値境界を含まない時に使用する。"
+* ^url = $JP_eCS_ObsRefRangeWithComparatorExtension
 * ^version = "x.x.x-profile"
 * ^status = #active
 * ^date = "2026-04-25"
@@ -507,10 +507,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 * referenceRange.modifierExtension ..0
 
 * referenceRange.low.extension ..1
-* referenceRange.low.extension.url 1..1
-* referenceRange.low.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
-* referenceRange.low.extension.valueCode  1..1
-* referenceRange.low.extension.valueCode = #>
+* referenceRange.low.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named lowComparator ..1 MS
+* referenceRange.low.extension[lowComparator].url 1..1
+* referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
+* referenceRange.low.extension[lowComparator].valueCode  1..1
+* referenceRange.low.extension[lowComparator].valueCode = #>
 
 * referenceRange.low.value 1..1  MS
   * insert relative_short_definition("基準値の小さいほうの値")
@@ -522,10 +523,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * insert relative_short_definition("検査結果単位コード。値は例示。単位のない数値結果の場合には省略する。電子カルテ情報共有サービスでの検査値の場合には、、マスターにXML単位コードがあれば記述する。")
 
 * referenceRange.high.extension ..1
-* referenceRange.high.extension.url 1..1
-* referenceRange.high.extension.url="http://jpfhir.jp/fhir/eCS/Extension/StructureDefinition/JP_eCS_SimpleQuantityWithComparator"
-* referenceRange.high.extension.valueCode  1..1
-* referenceRange.high.extension.valueCode = #<
+* referenceRange.high.extension contains JP_eCS_ObsRefRangeWithComparatorExtension named highComparator ..1 MS
+* referenceRange.high.extension[highComparator].url 1..1
+* referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeWithComparatorExtension
+* referenceRange.high.extension[highComparator].valueCode  1..1
+* referenceRange.high.extension[highComparator].valueCode = #<
 
 * referenceRange.high.value 1..1  MS
   * insert relative_short_definition("基準値の大きいほうの値")
