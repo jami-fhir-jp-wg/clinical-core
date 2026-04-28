@@ -539,11 +539,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 //* referenceRange.low.extension[lowComparator].url=$JP_eCS_ObsRefRangeLimit
 //* referenceRange.low.extension[lowComparator].valueCode  1..1
 //* referenceRange.low.extension[lowComparator].valueCode = #> (exactly)
-* referenceRange.low.extension ..1
-* referenceRange.low.extension.url 1..1
-* referenceRange.low.extension.url=$JP_eCS_ObsRefRangeLimit
-* referenceRange.low.extension.valueCode  1..1
-* referenceRange.low.extension.valueCode = #> (exactly)
+//* referenceRange.low.extension ..1
+//* referenceRange.low.extension.url 1..1
+//* referenceRange.low.extension.url=$JP_eCS_ObsRefRangeLimit
+//* referenceRange.low.extension.valueCode  1..1
+//* referenceRange.low.extension.valueCode = #> (exactly)
 
 * referenceRange.low.value 1..1  MS
   * insert relative_short_definition("基準値の小さいほうの値")
@@ -556,11 +556,11 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
 
 //* referenceRange.high.extension ..1
 
-* referenceRange.high.extension contains JP_eCS_ObsRefRangeLimit named highComparator ..1 MS
+//* referenceRange.high.extension contains JP_eCS_ObsRefRangeLimit named highComparator ..1 MS
 //* referenceRange.high.extension[highComparator].url 1..1
 //* referenceRange.high.extension[highComparator].url=$JP_eCS_ObsRefRangeLimit
-* referenceRange.high.extension[highComparator].valueCode  1..1
-* referenceRange.high.extension[highComparator].valueCode = #< (exactly)
+//* referenceRange.high.extension[highComparator].valueCode  1..1
+//* referenceRange.high.extension[highComparator].valueCode = #< (exactly)
 
 * referenceRange.high.value 1..1  MS
   * insert relative_short_definition("基準値の大きいほうの値")
