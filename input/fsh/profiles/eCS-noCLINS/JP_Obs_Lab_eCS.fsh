@@ -24,6 +24,11 @@ Description: "SimpleQuatityに不等号を追加可能とする拡張で、数�
 * . ^short = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張"
 * . ^definition = "SimpleQuatityに不等号を追加可能とする拡張で、数値検査結果のreferenceRange.lowまたはhighの値を含まない場合に、comparatorを付与できるようにする拡張。これを使用しない場合には、元の仕様通り記述した値を範囲に含む。"
 * . ^comment = "使用できるcomparatorには制限があり、referenceRange.low.extension.valueCode では'>'、referenceRange.high.extension.valueCode では、'<'だけが使える"
+* extension 0..0
+* value[x] only code
+* value[x] ^short = "QuantityComparatorのうち'>'または'<'のどちらかを設定する。"
+* value[x] ^definition = "QuantityComparatorのうち'>'または'<'のどちらかを設定する。"
+* valueCode from http://hl7.org/fhir/ValueSet/quantity-comparator 
 
 // -----------------------------------------
 //JP_eCS_ObsCompRefRangeLimit
@@ -604,7 +609,7 @@ Description: "診療情報・サマリー汎用 Observationリソース（検体
   * referenceRange.low.extension.url 1..1
   * referenceRange.low.extension.url=$JP_eCS_ObsCompRefRangeLimit
   * referenceRange.low.extension.valueCode  1..1
-  * referenceRange.low.extension.valueCode = #> (exactly)
+  //* referenceRange.low.extension.valueCode = #> (exactly)
 
   * referenceRange.low.value 1..1  MS
     * insert relative_short_definition("基準値の小さいほうの値")
